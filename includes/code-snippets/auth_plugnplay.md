@@ -1,0 +1,3 @@
+```ts
+await auth.connect();
+```

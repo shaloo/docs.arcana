@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400&display=block");
+
+:root > * {
+     --md-primary-fg-color:        #058aff;
+     --md-primary-fg-color--light: #13a3fd;
+     --md-primary-fg-color--dark:  #5cf5ff;
+}
+
+[data-md-color-scheme="black"] {
+    --md-hue: 360; 
+}
+
+.md-button {
+    border-radius: 0.3rem !important;
+}
+
+.md-grid {
+  max-width: 100vw; 
+}
+
+.md-content {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+[class="md-banner"] {
+    background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 0.5rem,
+    rgb(19, 163, 253, 0.25) 0.25rem,
+    rgb(19, 163, 253, 0.25) 1rem
+  ) !important;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: var(--md-secondary-fg-color);
+    overflow: auto;
+}
+
+.cards {
+    max-width: "80%";
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 2rem;
+    font-size: 0.7rem;
+}
+
+.card:hover {
+    /* On mouse-over, add a deeper shadow */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_container {
+    /* Add some padding inside the card container */
+    padding: 2px 16px;
+}

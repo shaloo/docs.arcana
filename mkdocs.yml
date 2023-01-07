@@ -1,0 +1,255 @@
+site_name: Auth SDK Docs
+
+# Remove for dev
+site_url: ""
+use_directory_urls: false
+# upto here
+
+nav: 
+  - Introduction: index.md
+  - Quick Start: walletsdk/wallet_qs.md
+  - How-To Guides:
+      - howto/index.md
+      - Configure dApp Settings: howto/config_dapp.md
+      - Configure Auth Usage:
+        - howto/config_social_providers.md
+        - Discord Setup: howto/config_social_login/discord_oauth.md
+        - GitHub Setup: howto/config_social_login/github_oauth.md
+        - Google Setup: howto/config_social_login/google_oauth.md
+        - Twitch Setup: howto/config_social_login/twitch_oauth.md
+        - Twitter Setup: howto/config_social_login/twitter_oauth.md
+      - Integrate Auth SDK: 
+        - howto/integrate_auth/index.md
+        - Vanilla JS Apps: howto/integrate_auth/integrate_wallet.md
+        - React Apps: 
+          - howto/integrate_auth/react/index.md
+          - Simple React/NextJS Apps: howto/integrate_auth/integrate_wallet_react.md
+          - Using Wallet Connectors:
+            - howto/integrate_auth/react/connectors/index.md
+            - Wagmi: howto/integrate_auth/integrate_wagmi.md
+            - RainbowKit: howto/integrate_auth/integrate_rainbow.md
+        - Vue dApp: https://github.com/arcana-network/basic-storage-wallet-integration
+      - Onboard Users: 
+        - howto/onboard_users/index.md
+        - Plug and Play Auth: howto/onboard_users/wallet_plugnplay.md
+        - Build Social Login: 
+          - howto/onboard_users/build_social/index.md
+          - Discord: howto/onboard_users/build_social/wallet_discord_oauth.md
+          - GitHub: howto/onboard_users/build_social/wallet_github_oauth.md
+          - Google: howto/onboard_users/build_social/wallet_google_oauth.md
+          - Twitch: howto/onboard_users/build_social/wallet_twitch_oauth.md
+          - Twitter: howto/onboard_users/build_social/wallet_twitter_oauth.md
+        - Build Passwordless Login: howto/onboard_users/wallet_pwdless_login.md
+      - Enable Arcana Wallet:
+        - howto/arcana_wallet/index.md
+        - Configure Wallet: howto/arcana_wallet/config_wallet.md
+        - Configure Wallet Visibility: howto/arcana_wallet/config_wallet_modes.md
+        - Add / Switch Network: howto/arcana_wallet/wallet_add_switch_ntwk.md
+        - Sign Transactions: howto/arcana_wallet/wallet_sign.md
+        - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
+        - Send Tokens: howto/arcana_wallet/wallet_send.md
+        - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
+  - Tutorials: 
+      - tutorials/index.md
+      - Code Samples: 
+        - tutorials/code_samples/index.md
+        - Auth Example: https://github.com/arcana-network/auth/tree/main/examples
+        - React Example: tutorials/code_samples/react_code_sample.md
+      - Videos: 
+        - tutorials/videos/index.md
+        - Get Started: tutorials/videos/an_academy.md
+  - User Guides:
+      - user_guides/index.md
+      - Using Arcana Dashboard: db/config_dApp_with_db.md
+      - Using Arcana Wallet: 
+        - user_guides/wallet_ui/index.md
+        - Basic Wallet Operations: howto/wallet_ui.md
+        - Export Private Key: howto/wallet_exkey.md
+        - Manage Tokens: howto/wallet_manage_tokens.md
+        - Manage NFTs: howto/wallet_manage_nft.md
+  - Arcana Academy:
+      - an_academy/index.md
+      - Understanding Arcana Network:
+        - understanding_an/index.md
+        - What is Arcana Auth?: whatisan.md
+        - Why Arcana Auth?: whyan.md
+        - Web3 Auth Use Cases: use_cases.md
+        - How do I use it?: howdoiuse.md
+      - Architecture: howitworks.md
+      - Smart Contracts:
+        - concepts/ansmartc/index.md
+        - Overview: concepts/ansmartc/an_smart_contracts.md
+        - Types of Contracts: concepts/ansmartc/an_smartc_types.md
+        - Deployed Contracts: concepts/ansmartc/an_smartc_deployed.md
+        - Contract Details: concepts/ansmartc/an_smartc_details.md
+        - Contract Flows: concepts/ansmartc/an_smartc_flows.md
+        - Upgradeable Contracts: concepts/ansmartc/an_smartc_upgrades.md
+      - Concepts: 
+        - concepts/index.md
+        - Aggregate Login: concepts/authtype/aggregatelogin.md
+        - Arcana Web3 Wallet: 
+          - concepts/anwallet/index.md
+          - Overview: concepts/anwallet/arcanawallet_oview.md
+          - Wallet Features: concepts/anwallet/walletfeatures.md
+          - Wallet Visibility: concepts/anwallet/walletuimodes.md
+          - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
+          - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
+          - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
+        - Auth SDK: concepts/authsdk.md
+        - Authentication: concepts/authtype/arcanaauth.md
+        - Auth Types:
+          - concepts/authtype/index.md
+          - Social Authentication: concepts/authtype/socialauth.md
+          - Passwordless: concepts/authtype/pwdless.md
+        - Dashboard: concepts/dashboard.md
+        - DKG:
+          - concepts/dkg/index.md
+          - What is DKG?: concepts/dkg.md
+          - How does DKG work?: concepts/how_dkg_works.md
+        - Gateway: concepts/gateway_nodes.md
+        - Plug and Play Auth: concepts/plugnplayauth.md
+        - Private Key: concepts/privatekey.md
+        - Validator Nodes: concepts/validator_nodes.md
+      - Usage Flows: 
+        - user_flows/index.md
+        - User Auth and DKG: user_flows/user_auth_and_dkg.md
+        - Encryption and KMS: user_flows/encryption_and_kms.md
+      - New to Web3:  an_academy/new_web3_dev.md
+  - FAQ:
+    - faq/index.md
+    - General: faq/faq_gen.md
+    - Dashboard: faq/faq_db.md
+    - Auth SDK: faq/faq_auth.md
+    - Validator Nodes: faq/faq_validator.md
+  - Release Notes:
+    - relnotes/index.md
+    - Auth 0.3.0: relnotes/rn_beta_auth_v0.3.0.md
+  - Migration Guides:
+    - migration/index.md
+    - Auth 0.3.0: migration/beta_auth_v0.3.0_migration.md
+  - DKG Validators: validator_intro.md
+  - Reference:
+      - reference/index.md
+      - Auth SDK Status: state_of_the_ntwk.md
+      - Auth SDK Usage Guide: walletsdk/wallet_usage.md
+      - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
+      - Handling Auth Errors: walletsdk/wallet_err.md
+      - Troubleshooting Guide: troubleshooting.md
+      - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
+  - Support: support.md
+
+extra:
+  homepage: https://arcana.network
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/arcananetwork
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/ArcanaNetwork
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/invite/w6ej4FtqYS
+    - icon: material/chat
+      link: https://forum.arcana.network/
+  generator: false
+  analytics:
+    provider: google
+    property: G-SQ2P3069GR
+    feedback:
+      title: <hr>Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! 
+  arcana:
+    product_name: Auth SDK
+
+copyright: Copyright &copy; 2022 - 2023 Arcana Network
+repo_url: https://github.com/arcana-network
+edit_uri: ""
+
+theme:
+  name: material
+  logo: img/arcana-logo-light.png
+  icon:
+    repo: fontawesome/brands/github
+  favicon: img/an_favicon.svg
+  custom_dir: docs/overrides
+  features: 
+    - header.autohide 
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.sections
+  #  - navigation.expand
+  #  - navigation.tabs
+  #  - navigation.tabs.sticky
+  #  - navigation.prune
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  # - toc.integrate 
+    - content.tabs.link
+  palette:
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to Dark Mode
+
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to Light Mode
+
+extra_css:
+  - stylesheets/custom.css
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - md_in_html
+  - admonition
+  - def_list
+  - footnotes
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.snippets:
+      auto_append:
+        - ./includes/abbreviations.md
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - tables
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  
+plugins:
+  - macros:
+      include_dir: ./includes

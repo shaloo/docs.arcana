@@ -1,0 +1,17 @@
+1. Generate a symmetric key, **S** and a temporary public/private key pair **T**, where
+
+     T = {public key $P_k$, private key $S_k$} associated with an address **A**
+
+     Symmetric key **S** is used to encrypt file data.
+
+2. Initiate a meta-transaction to Gateway. This will record upload request on Arcana blockchain and the address **A** . Note that this address corresponds to the temporary public/private key pair *T*, created earlier. **T** is used to sign the symmetric key **S**.
+
+3. Before storing, split key **S** into key shares $K_i$.
+
+4. Sign $K_i$ with temporary secret private key $S_k$.
+
+5. Encrypt signed $K_i$ using corresponding ${P_k}_i$, the public key of DKG node, and send a share to each node.
+
+6. Decrypt signed $K_i$ using secret private key ${S_k}_i$ of DKG node to get signed $K_i$.
+
+7. Verify that signed $K_i$ was signed correctly by $P_k$ (temporary public key) and that $P_k$ corresponds to the address **A** on chain.
