@@ -12,7 +12,7 @@ arcana:
 
 In this tutorial, you will learn about how to configure [Arcana Wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) and what are the available Arcana wallet customizations. 
 
-If you wish to control when the integrated Arcana wallet shows up, see [howt to configure wallet visibility modes]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md).
+If you wish to control when the integrated Arcana wallet shows up, see [how to configure wallet visibility modes]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md).
 
 ## Prerequisites
 

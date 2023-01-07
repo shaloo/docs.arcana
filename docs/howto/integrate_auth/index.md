@@ -26,6 +26,6 @@ For detailed instructions, select the application type below:
 
 [Vanilla JS Apps :material-language-javascript:](./integrate_wallet.md){ .md-button }
 
-[React/NuxtJS Apps :fontawesome-brands-react: :simple-nuxtdotjs:](./react/index.md){ .md-button }
+[React/NextJS Apps :fontawesome-brands-react: :simple-nextdotjs:](./react/index.md){ .md-button }
 
 [Vue dApp :material-vuejs:](https://github.com/arcana-network/basic-storage-wallet-integration){ .md-button }

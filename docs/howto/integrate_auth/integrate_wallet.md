@@ -63,7 +63,7 @@ You have successfully integrated your application with the Auth SDK and can invo
 
 ## What's Next?
 
-After integrating with the Arcana Auth SDK, a application can onboard users through social authentication and passwordless login. The application users can utilize the embedded Arcana wallet to sign blockchain transactions, transfer or send blockchain tokens, etc.
+After integrating with the Arcana Auth SDK, an application can onboard users through social authentication and passwordless login. The application users can utilize the embedded Arcana wallet to sign blockchain transactions, transfer or send blockchain tokens, etc.
 
 ## See also
 

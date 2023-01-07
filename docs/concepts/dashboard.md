@@ -23,7 +23,7 @@ Developers can access the Arcana Developer Dashboard at: {% include "./text-snip
 <img src="/img/diagrams/d_an_dashboard_light.png#only-light" width="80%" height="80%"/>
 <img src="/img/diagrams/d_an_dashboard_dark.png#only-dark" width="80%" height="80%"/>
 
-The Dashboard can be used used to register applications with the Arcana Network and configure them as per the application use case. It works with the Arcana Gateway node to process application configuration inputs and collect and display application usage data. Arcana Network manages application configuration using smart contracts. 
+The Dashboard can be used to register applications with the Arcana Network and configure them as per the application use case. It works with the Arcana Gateway node to process application configuration inputs and collect and display application usage data. Arcana Network manages application configuration using smart contracts. 
 
 !!! important
 

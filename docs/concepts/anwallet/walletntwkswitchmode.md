@@ -14,7 +14,7 @@ arcana:
 
 !!! note
 
-      Configuring, adding, and switching network features in the Arcana wallet behave differently depending upon how a application developer has integrated and initialized the Arcana Auth SDK.
+      Configuring, adding, and switching network features in the Arcana wallet behave differently depending upon how an application developer has integrated and initialized the Arcana Auth SDK.
 
 ## Network Switching Behavior
 

@@ -51,7 +51,7 @@ Developers can refer to the [How To Guides]({{page.meta.arcana.root_rel_path}}/h
 
 If you are new to Web3 ecosystem, we recommend that you check out [Arcana Academy]({{page.meta.arcana.root_rel_path}}/an_academy/index.md) section first before jumping into the [Tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) and [code samples]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/index.md). 
 
-Web3 application users can learn more about how to use the Arcana wallet and various user interfaces for performing Web3 operations by refering to the [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
+Web3 application users can learn more about how to use the Arcana wallet and various user interfaces for performing Web3 operations by referring to the [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
 
 Learn about new product features in the [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) section. You can see detailed changelog for the [Auth SDK](https://github.com/arcana-network/auth/releases/tag/0.3.0) and [Arcana Dashboard](https://github.com/arcana-network/developer-dashboard/releases/tag/v0.2.0) to figure out what has changed.
 

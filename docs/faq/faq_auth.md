@@ -31,7 +31,7 @@ No, Arcana's [DKG]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md) alg
 
 ### Does Arcana Auth use different keys for the same user across multiple blockchains?
 
-If the user uses the same email but different authentication mechanism to log into a application, then Arcana Auth associates a single key for the user across multiple blockchains. The [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature enables Auth SDK to figure out that it is the same user using different authentication mechanisms to log in.
+If the user uses the same email but different authentication mechanism to log into an application, then Arcana Auth associates a single key for the user across multiple blockchains. The [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature enables Auth SDK to figure out that it is the same user using different authentication mechanisms to log in.
 
 ---
 
@@ -43,7 +43,7 @@ If the user uses the same email but different authentication mechanism to log in
 
 The Arcana Auth SDK enables an embedded Web3 Arcana wallet in all applications that integrate with the SDK.
 
-While instantiating the `AuthProvider` during Auth SDK integration, application developers can specify the kind of user experience they wish to provide for signing blockchain transactions. The input parameter `alwaysVisible` controls when the Arcana wallet is displayed and what functions are available to a application user.
+While instantiating the `AuthProvider` during Auth SDK integration, application developers can specify the kind of user experience they wish to provide for signing blockchain transactions. The input parameter `alwaysVisible` controls when the Arcana wallet is displayed and what functions are available to an application user.
 
 For details, see [Arcana wallet visibility modes](/docs/walletuimodes).
 

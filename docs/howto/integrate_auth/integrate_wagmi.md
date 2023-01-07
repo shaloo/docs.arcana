@@ -58,7 +58,7 @@ Now you can provide the newly instantiated ArcanaConnector to the `createClient`
 
 That is all! :tada:
 
-You have successfully integrated your dApp with the the Arcana Wagmi Connector. Users can choose and use Arcana wallet or one of the built-in wallet connectors in Wagmi and sign blockchain transactions.
+You have successfully integrated your dApp with the Arcana Wagmi Connector. Users can choose and use Arcana wallet or one of the built-in wallet connectors in Wagmi and sign blockchain transactions.
 
 ## What's Next?
 

@@ -24,7 +24,7 @@ If you are building Web3 applications or dApps that require complete data privac
 
 At Arcana, we take security, privacy, and ownership seriously. We are actively working towards tracking and plugging in any vulnerabilities in our solution.
 
-Take a quick look at the overview of the [architecture and key components]({{page.meta.arcana.root_rel_path}}/howitworks.md) of the Arcana network platformand see [Arcana Network Technical White Paper v1.0](https://www.notion.so/arcananetwork/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for implementation details.
+Take a quick look at the overview of the [architecture and key components]({{page.meta.arcana.root_rel_path}}/howitworks.md) of the Arcana network platform and see [Arcana Network Technical White Paper v1.0](https://www.notion.so/arcananetwork/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for implementation details.
 
 !!! tip
 
