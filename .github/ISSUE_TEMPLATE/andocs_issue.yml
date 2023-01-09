@@ -1,0 +1,68 @@
+name: Arcana Auth SDK Documentation Issue Report
+description: File an bug report for Arcana Networ Documetation
+title: "[Docs Issue]: "
+labels: ["docs", "bug", "triage"]
+assignees:
+  - shaloo
+body:
+  - type: markdown
+    attributes:
+      value: |
+
+        :wave:  **Hey, there!**
+        *Thank you for visiting Arcana Auth SDK Documentation website!*
+        Help us timely address and prioritize your issue by going through this checklist and providing all the requisite issue details.
+  - type: checkboxes
+    id: issue-checklist
+    attributes:
+      label: Issue Checklist
+      description: Before you submit the issue, verify it is indeed a bug and not a question.
+      options:
+        - label: Is this something you can **debug and fix**? Send a pull request! Your contributions to Arcana Network documentation are valuable to us.
+          required: false
+        - label: Have a documentation **usage question**? Ask your question on [StackOverflow](https://stackoverflow.com/search?q=%22arcana+network%22%2B%22XAR%22) or [Discord channel](https://discord.gg/6g7fQvEpdy). We use GitHub solely for bugs and feature enhancement requests.
+          required: false
+  - type: markdown
+    attributes:
+      value: "## Create GitHub Issue for Arcana Auth SDK Documentation"
+  - type: markdown
+    attributes:
+      value: |
+
+        Make sure to add all the information needed to understand the bug or your feature request.
+
+        If the info is missing we'll add the 'Needs more information' label and prioritize it only when there is enough information provided.
+  - type: textarea
+    id: ref-page
+    attributes:
+      label: Reference Page Link
+      description: Please provide a link to the reference page and describe the documentation bug.
+      placeholder: Tell us what you see!
+      value: "Can't find information regarding... or some section is missing a detail or some incorrect information."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Reader Expectation
+      description: Tell us, what did you expect to read or find in Arcana Network documentation?
+      placeholder: Was the information missing or confusing or unclear?
+      value: "On the page it does not state that..., etc."
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        * Provide screenshots where appropriate
+  - type: textarea
+    id: browser-env
+    attributes:
+      label: Documentation Browsing Environment
+      description: Describe your browser environment.
+      placeholder: Chrome / Safari / Other
+      value: |
+        * Which browser / version you were using to access the Arcana Network documentation?
+        * Are you using Mac, Linux or Windows desktop platform?
+        * Are you using iOS / Android / other mobile platform?
+    validations:
+      required: false
