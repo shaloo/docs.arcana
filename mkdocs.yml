@@ -120,7 +120,7 @@ nav:
     - General: faq/faq_gen.md
     - Dashboard: faq/faq_db.md
     - Auth SDK: faq/faq_auth.md
-    - Validator Nodes: faq/faq_validator.md
+    # - Validator Nodes: faq/faq_validator.md
   - Release Notes:
     - relnotes/index.md
     - Auth 0.3.0: relnotes/rn_beta_auth_v0.3.0.md

@@ -32,13 +32,13 @@ Arcana Network offering consists of two key components:
 === "Dashboard"
 
        <p>
-       <ul><p>🖥️ Use the <a href="/docs/conceptdb">Arcana Dashboard</a> to register and configure your dApp, before integrating dApps with the Arcana SDKs.</p><p> </p><p>🖥️ Select the type of user onboarding experience, blockchain signing experience as per the use case.</p><p> </p><p>🖥️ Choose the geographic location where uploaded dApp user data should reside, secured by Arcana Store.</p><p> </p><p>🖥️ Set limits for storage and bandwidth usage per user or keep the default setting (unlimited).</p></ul>
+       <ul><p>🖥️ Use the <a href="{{page.meta.arcana.root_rel_path}}/concepts/dashboard.md">Arcana Dashboard</a> to register and configure your dApp, before integrating dApps with the Arcana SDKs.</p><p> </p><p>🖥️ Select the type of user onboarding experience, blockchain signing experience as per the use case.</p><p> </p><p>🖥️ Choose the geographic location where uploaded dApp user data should reside, secured by Arcana Store.</p><p> </p><p>🖥️ Set limits for storage and bandwidth usage per user or keep the default setting (unlimited).</p></ul>
        </p>
    
 === "Auth SDK"
 
        <p>
-       <ul><p>🔐 Address Web3 user onboarding, data privacy challenges faced by dApps by integrating with Arcana Auth SDK.</p><p> </p><p>🔐 Enable frictionless, familiar Web2 user onboarding experience via social authentication, passwordless login.</p><p> </p><p>🔐 Secure user data, and ensure privacy with state-of-the-art data encryption offered by the Auth SDK.</p> <p> </p><p>🔐 Let dApp users securely sign blockchain transactions with <a href="/docs/arcanawallet">Arcana Wallet</a> visibility setting, for a seamless user experience.</p></ul> <blockquote><p>When developers integrate with <b>Arcana Auth SDK</b>, they can access secure standard Ethereum provider interface exposed by the SDK. Once users are authenticated, the dApp can utilize this provider and let dApp users sign/approve blockchain operations.</p></blockquote>
+       <ul><p>🔐 Address Web3 user onboarding, data privacy challenges faced by dApps by integrating with Arcana Auth SDK.</p><p> </p><p>🔐 Enable frictionless, familiar Web2 user onboarding experience via social authentication, passwordless login.</p><p> </p><p>🔐 Secure user data, and ensure privacy with state-of-the-art data encryption offered by the Auth SDK.</p> <p> </p><p>🔐 Let dApp users securely sign blockchain transactions with <a href="{{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md">Arcana Wallet</a> visibility setting, for a seamless user experience.</p></ul> <blockquote><p>When developers integrate with <b>Arcana Auth SDK</b>, they can access secure standard Ethereum provider interface exposed by the SDK. Once users are authenticated, the dApp can utilize this provider and let dApp users sign/approve blockchain operations.</p></blockquote>
        </p>
 
 ## How is this documentation organized?
@@ -53,20 +53,20 @@ If you are new to Web3 ecosystem, we recommend that you check out [Arcana Academ
 
 Web3 application users can learn more about how to use the Arcana wallet and various user interfaces for performing Web3 operations by referring to the [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
 
-Learn about new product features in the [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) section. You can see detailed changelog for the [Auth SDK](https://github.com/arcana-network/auth/releases/tag/0.3.0) and [Arcana Dashboard](https://github.com/arcana-network/developer-dashboard/releases/tag/v0.2.0) to figure out what has changed.
+Learn about new product features in the [Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/index.md) section. You can see detailed changelog for the [Auth SDK](https://github.com/arcana-network/auth/releases/tag/v0.3.0) and [Arcana Dashboard](https://github.com/arcana-network/developer-dashboard/releases/tag/v0.2.0) to figure out what has changed.
 
 If you do not find answers to your questions in our [FAQ]({{page.meta.arcana.root_rel_path}}/faq/index.md) section, drop us an [email](mailto://support@arcana.network) or contact us through the [support channels](#support--feedback).
 
 ## Support & Feedback
 
-At Arcana Network, we are continuously working on improving the product and its documentation for an enhanced user experience. We would love to hear from you. :signal_strength:
+At Arcana Network, we are continuously working on improving the product and its documentation for an enhanced user experience. We would love to hear from you. :fontawesome-solid-signal:
 
 If you find bugs, have questions, or want to share feedback, please contact us through these channels:
 
-- :couch_and_lamp: [Developer Forum](https://forum.arcana.network)
-- :speech_balloon: [Developer Discord](https://discord.gg/6g7fQvEpdy)
-- :gift: [Developer Relations](mailto:devrel@arcana.network)
-- :envelope_with_arrow: [Contact Support Team](mailto:support@arcana.network)
+- :material-forum: [Developer Forum](https://forum.arcana.network)
+- :fontawesome-brands-discord: [Developer Discord](https://discord.gg/6g7fQvEpdy)
+- :fontawesome-solid-users: [Developer Relations](mailto:devrel@arcana.network)
+- :material-checkbox-multiple-marked-circle-outline: [Contact Support Team](mailto:support@arcana.network)
 
 !!! info
 

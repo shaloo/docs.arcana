@@ -34,7 +34,7 @@ The following figure shows how Arcana wallet displays the details of a blockchai
 
 <img src="/img/an_wallet_sign.png" width="300"/>
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 *You are all set to allow dApp users to sign blockchain transactions.*
 
 ## What's Next?

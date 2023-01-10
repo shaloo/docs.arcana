@@ -57,7 +57,7 @@ Initialize the newly instantiated `AuthProvider`. Before you call any other Auth
 
     The application must wait until the initialization is complete, before invoking any of the other Auth SDK functions such as triggering user login, encryption/decryption, obtaining public keys, etc.
 
-That is all! :tada:
+That is all! :material-party-popper:
 
 You have successfully integrated your application with the Auth SDK and can invoke any supported functions.
 

@@ -226,7 +226,7 @@ Make sure you update the dependency for polyfills in `package.json` file as well
 }
 ```
 
-For a complete sample app that addresses polyfill issues - refer to [sources in GitHub](https://github.com/arcana-network/test-vite-app).
+For a complete sample app that addresses polyfill issues - refer to [sources in GitHub](https://github.com/arcana-network/test-vite-app/).
 
 ---
 

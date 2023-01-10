@@ -80,17 +80,17 @@ To learn about how the users access Arcana wallet UI to perform Web3 operations 
 
 This is a vanilla HTML/JS application that integrates with the Auth SDK, onboards users and allows authenticated users to sign blockchain transactions using the Arcana wallet.
 
-[Auth Example (GitHub) :tools:](https://github.com/arcana-network/auth/tree/main/examples){ .md-button }
+[Auth Example (GitHub) :material-login:](https://github.com/arcana-network/auth/tree/main/examples){ .md-button }
 
 ## Step 3b: React Example
 
 Learn how to integrate Arcana Auth SDK in a simple React Application.
 
-[React Example :tools:]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/react_code_sample.md){ .md-button }
+[React Example :material-react:]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/react_code_sample.md){ .md-button }
 
 !!! note "Milestone Achieved!""
 
-      Congratulations!!! :tada:
+      Congratulations!!! :material-party-popper:
 
       **You have now graduated to the next level - Web3 developer.**
 

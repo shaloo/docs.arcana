@@ -16,10 +16,10 @@ These are the building blocks to help you learn about various Arcana Network ter
 
 [DKG :material-key-plus:](dkg/index.md){ .md-button }
 
-[Gateway :simple-amazonapigateway:](gateway_nodes.md){ .md-button }
+[Gateway :fontawesome-solid-torii-gate:](gateway_nodes.md){ .md-button }
 
 [Plug and Play Auth :lock: :fontawesome-solid-plug:](plugnplayauth.md){ .md-button }
 
-[Private Key :key:](privatekey.md){ .md-button }
+[Private Key :material-key:](privatekey.md){ .md-button }
 
 [Validator Nodes :material-checkbox-multiple-marked-circle-outline:](validator_nodes.md){ .md-button }

@@ -111,7 +111,7 @@ Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"
 
 <img src="/img/an_wallet_home.png" width="200"/>
 
-For more details, see [how to view, select, send, receive tokens, add custom tokens using Arcana wallet](/{{page.meta.arcana.root_rel_path}}/howto/wallet_manage_tokens.md) guide.
+For more details, see [how to view, select, send, receive tokens, add custom tokens using Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_tokens.md) guide.
 
 ### Manage NFT Assets
 
