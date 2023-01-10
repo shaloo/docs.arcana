@@ -93,7 +93,7 @@ function App() {
 export default App;
 ```
 
-That is all! :tada:
+That is all! :material-party-pooper:
 
 You have successfully integrated your React/Next.js application with the Arcana Auth SDK using the Auth-React wrapper. Checkout another example with source code demonstrating [React application integration]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/react_code_sample.md).
 
