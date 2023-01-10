@@ -24,10 +24,10 @@ nav:
         - React Apps: 
           - howto/integrate_auth/react/index.md
           - Simple React/NextJS Apps: howto/integrate_auth/integrate_wallet_react.md
-          - Using Wallet Connectors:
-            - howto/integrate_auth/react/connectors/index.md
-            - Wagmi: howto/integrate_auth/integrate_wagmi.md
-            - RainbowKit: howto/integrate_auth/integrate_rainbow.md
+          # - Using Wallet Connectors:
+          #   - howto/integrate_auth/react/connectors/index.md
+          #   - Wagmi: howto/integrate_auth/integrate_wagmi.md
+          #  - RainbowKit: howto/integrate_auth/integrate_rainbow.md
         - Vue dApp: https://github.com/arcana-network/basic-storage-wallet-integration
       - Onboard Users: 
         - howto/onboard_users/index.md
@@ -127,7 +127,7 @@ nav:
   - Migration Guides:
     - migration/index.md
     - Auth 0.3.0: migration/beta_auth_v0.3.0_migration.md
-  - DKG Validators: validator_intro.md
+  # - DKG Validators: validator_intro.md
   - Reference:
       - reference/index.md
       - Auth SDK Status: state_of_the_ntwk.md

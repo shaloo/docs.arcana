@@ -35,6 +35,7 @@ Simply configure your application settings using Arcana Dashboard and then integ
 
 Yes. You can integrate Arcana Auth SDK with any vanilla JS application or one that uses React, NextJS, Vue, and Remix. See [how to integrate Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) section in documentation.
 
+<!---
 ---
 
 ## Wallet Connectors
@@ -44,6 +45,7 @@ Yes. You can integrate Arcana Auth SDK with any vanilla JS application or one th
 ### If an application uses wallet connector frameworks such as Wagmi or RainbowKit, can Arcana wallet be plugged into those wallet connectors?
 
 Yes. Applications using Wagmi or Rainbowkit can simply use the Auth SDK wrapper, 'Auth-wagmi' and enable Arcana wallet as one of the choices for application users besides the built-in wallets that are available with the wallet connect frameworks.
+--->
 
 ---
 
