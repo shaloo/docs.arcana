@@ -32,13 +32,13 @@ Arcana Network offering consists of two key components:
 === "Dashboard"
 
        <p>
-       <ul><p>🖥️ Use the <a href="{{page.meta.arcana.root_rel_path}}/concepts/dashboard.md">Arcana Dashboard</a> to register and configure your dApp, before integrating dApps with the Arcana SDKs.</p><p> </p><p>🖥️ Select the type of user onboarding experience, blockchain signing experience as per the use case.</p><p> </p><p>🖥️ Choose the geographic location where uploaded dApp user data should reside, secured by Arcana Store.</p><p> </p><p>🖥️ Set limits for storage and bandwidth usage per user or keep the default setting (unlimited).</p></ul>
+       <ul><p>🖥️ Use the <a href="{{page.meta.arcana.root_rel_path}}/concepts/dashboard.html">Arcana Dashboard</a> to register and configure your dApp, before integrating dApps with the Arcana SDKs.</p><p> </p><p>🖥️ Select the type of user onboarding experience, blockchain signing experience as per the use case.</p><p> </p><p>🖥️ Choose the geographic location where uploaded dApp user data should reside, secured by Arcana Store.</p><p> </p><p>🖥️ Set limits for storage and bandwidth usage per user or keep the default setting (unlimited).</p></ul>
        </p>
    
 === "Auth SDK"
 
        <p>
-       <ul><p>🔐 Address Web3 user onboarding, data privacy challenges faced by dApps by integrating with Arcana Auth SDK.</p><p> </p><p>🔐 Enable frictionless, familiar Web2 user onboarding experience via social authentication, passwordless login.</p><p> </p><p>🔐 Secure user data, and ensure privacy with state-of-the-art data encryption offered by the Auth SDK.</p> <p> </p><p>🔐 Let dApp users securely sign blockchain transactions with <a href="{{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md">Arcana Wallet</a> visibility setting, for a seamless user experience.</p></ul> <blockquote><p>When developers integrate with <b>Arcana Auth SDK</b>, they can access secure standard Ethereum provider interface exposed by the SDK. Once users are authenticated, the dApp can utilize this provider and let dApp users sign/approve blockchain operations.</p></blockquote>
+       <ul><p>🔐 Address Web3 user onboarding, data privacy challenges faced by dApps by integrating with Arcana Auth SDK.</p><p> </p><p>🔐 Enable frictionless, familiar Web2 user onboarding experience via social authentication, passwordless login.</p><p> </p><p>🔐 Secure user data, and ensure privacy with state-of-the-art data encryption offered by the Auth SDK.</p> <p> </p><p>🔐 Let dApp users securely sign blockchain transactions with <a href="./concepts/anwallet/">Arcana Wallet</a> visibility setting, for a seamless user experience.</p></ul> <blockquote><p>When developers integrate with <b>Arcana Auth SDK</b>, they can access secure standard Ethereum provider interface exposed by the SDK. Once users are authenticated, the dApp can utilize this provider and let dApp users sign/approve blockchain operations.</p></blockquote>
        </p>
 
 ## How is this documentation organized?

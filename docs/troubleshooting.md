@@ -95,11 +95,9 @@ module.exports = defineConfig({
 
 CRA by default doesn’t allow customizing Webpack configuration. The recommended way to address polyfill issues is to use “react-app-rewired”  with a configuration like this.
 
-:::note
+!!! note
 
-You need to exclude “console” otherwise it’ll fail.
-
-:::
+      You need to exclude “console” otherwise it’ll fail.
 
 ```javascript
 const NodePolyfillPlugin = require('node-polyfill-webpack-plugin')
