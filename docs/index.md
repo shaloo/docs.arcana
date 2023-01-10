@@ -12,7 +12,7 @@ sidebar_custom_props:
 
 Welcome to the **{{ config.site_name }}**! 
 
-:rocket: *Let's make user onboarding for Web3 apps a breeze.!!!* :sparkles:
+*Let's make user onboarding for Web3 apps a breeze!!!*
 
 ==}
 

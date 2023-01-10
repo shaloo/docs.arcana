@@ -18,7 +18,7 @@ arcana:
 
 ## Network Switching Behavior
 
-The `alwaysVisible` [input parameter](/docs/setupwallet#step-2-initialize-the-auth-sdk) configured by the application developer controls the blockchain transaction signing experience for the user.
+The `alwaysVisible` [input parameter](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) configured by the application developer at the time of instantiating the `AuthProvider`, controls the blockchain transaction signing experience for the user.
 
 Let's take a look and how network switching behavior varies depending on `alwaysVisible` configuration settings.
 

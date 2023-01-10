@@ -51,7 +51,7 @@ Click **Save** to add the custom token. The newly added custom token will show u
 
 ## Select Native/Custom Token
 
-Before sending tokens, users can specify whether they intend to transfer native or custom tokens.  To select a custom token, it should already be [added to the Arcana wallet](/docs/walletui#add-custom-tokens).
+Before sending tokens, users can specify whether they intend to transfer native or custom tokens.  To select a custom token, it should already be [added to the Arcana wallet](#add-custom-tokens).
 
 Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon to bring up the **Token Assets** screen.
 

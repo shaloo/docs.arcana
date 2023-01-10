@@ -53,7 +53,7 @@ Yes. Applications using Wagmi or Rainbowkit can simply use the Auth SDK wrapper,
 
 ### How do I enable the Web2 social authentication experience in my dApp to onboard new users?
 
-You can enable one or more social authentication mechanisms in your dApp by configuring Auth settings using the dashboard and integrating with Arcana Auth SDK. For details, see [how to enable Google authentication Guide](/docs/googleoauth).
+You can enable one or more social authentication mechanisms in your dApp by configuring Auth settings using the dashboard and integrating with Arcana Auth SDK. For details, see [how to enable Google authentication Guide]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md).
 
 ### How do I enable passwordless login in my dApp to easily onboard new users?
 

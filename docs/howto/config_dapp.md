@@ -35,7 +35,7 @@ In this tutorial, you will learn how to use the [Arcana Developer Dashboard]({{p
 
 You can reconfigure application settings for Auth SDK usage later anytime by visiting the Arcana Developer Dashboard and clicking on the **Configure** menu item on the top right of the screen.
 
-That is all! :tada:
+That is all! 🎉
 
 You have successfully registered and configured your application. 
 

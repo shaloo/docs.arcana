@@ -48,7 +48,7 @@ Visit the 'home' screen of the Arcana wallet by clicking on the 'home' icon on t
 
 <img src="/img/an_wallet_receive.png" width="600"/>
 
-Share this QR code or the account address with the sender. The sender can use the Arcana wallet or any other third-party Web3 wallet to send tokens.  The dApp user can view the tokens once they are received in the wallet home screen. Use the 'Refresh Balance' button to check the balance. For more details, see [Arcana wallet flows](/docs/walletui).
+Share this QR code or the account address with the sender. The sender can use the Arcana wallet or any other third-party Web3 wallet to send tokens.  The dApp user can view the tokens once they are received in the wallet home screen. Use the 'Refresh Balance' button to check the balance. For more details on wallet usage, see [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
 
 **That is all!**  :tada:
 *You are all set to send and receive tokens using the Arcana wallet.*

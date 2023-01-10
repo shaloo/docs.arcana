@@ -45,7 +45,7 @@ Arcana Network offering consists of two key components:
 
 The primary audience for this documentation is Web3 application developers.
 
-Seasoned Web3 developers can jump right in with the [Auth Quick Start Guide](/docs/auth_qs), [Auth SDK Usage Guide]() and {% include "./text-snippets/authsdkref_url.md" %}.
+Seasoned Web3 developers can jump right in with the [Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md), [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and {% include "./text-snippets/authsdkref_url.md" %}.
 
 Developers can refer to the [How To Guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) to learn more about how to register and configure the Web3 applications before they can be integrated with the Auth SDK.
 
