@@ -14,17 +14,14 @@ Developers can choose to enable user onboarding in their applications by either 
 
 To use a built-in default user login UI, developers can directly use the [plug-and-play authentication feature]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) to enable user authentication. Alternately, they can build their own UI and enable social login or passwordless authentication.
 
-
 [How to enable 'Plug & Play' Auth? :fontawesome-solid-plug:](./wallet_plugnplay.md){ .md-button }
 
 [How to enable 'Social Login'? :fontawesome-solid-users:](./build_social/index.md){ .md-button } 
 
 [How to enable 'Passwordless Login'? :material-email-open-outline:](./wallet_plugnplay.md){ .md-button }
 
-!!! note "User Onboarding Options"
+!!! note
 
-     The options displayed by the plug and play, built-in login pop-up UI in the Auth SDK depend upon the ones configured by the dApp developer using the Arcana Developer Dashboard. 
-     
-     For example, if the dApp chooses to configure only the Google OAuth, then only the Google option will show up in the pop-up login screen:
+    Arcana supports the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature that can identify application users even if they use different authentication mechanisms to log in. Aggregate login ensures there are no duplicate user identities or Arcana Web3 wallet addresses assigned to the same user.  
 
-     <img src="/img/an_wallet_google_auth.png" width="300"></img>
+    Aggregate login feature works **only if** the user specifies the **same** email ID to register with different social authentication providers and passwordless login.

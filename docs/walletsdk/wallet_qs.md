@@ -72,12 +72,6 @@ Here are some examples of Auth SDK usage:
   
   Developers can refer to the [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and the {% include "./text-snippets/authsdkref_url.md" %} for SDK usage details.
 
-!!! info
-
-    Arcana supports the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature that can identify application users even if they use different authentication mechanisms to log in. Aggregate login ensures there are no duplicate user identities or Arcana Web3 wallet addresses assigned to the same user.  
-
-    Aggregate login feature works **only if** the user specifies the **same** email ID to register with different social authentication providers and passwordless login.
-
 ## See also
 
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
