@@ -8,4 +8,4 @@ Do you have questions about Arcana Network SDKs and their usage? Try this FAQ. I
 
 [Auth](./faq_auth.md){ .md-button }
 
-<!-- [Validator](./faq_validator.md){.md-button } --->
+[Validator](./faq_validator.md){.md-button }
