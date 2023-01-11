@@ -34,7 +34,7 @@ Make sure you have already initialized the wallet before invoking network add/sw
 
 {% include "./code-snippets/auth_switch_ntwk.md" %}
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 
 *You are all set to programmatically add/switch networks from your dApp using Arcana wallet.*
 

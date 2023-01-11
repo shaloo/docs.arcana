@@ -106,7 +106,7 @@ To see details of a send transaction, click on the arrow to expand the view.
 
       The dApp user must [add the custom tokens](#add-custom-tokens) manually to the Arcana wallet before the activity related to tokens can be viewed in the **Activity** tab.
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 
 *You are all set to send and receive tokens using the Arcana wallet.*
 

@@ -57,7 +57,7 @@ Pass the wagmi client as a parameter to `WagmiConfig` component before plugging 
 
 {% include "./code-snippets/auth_rainbow_use.md" %}
 
-That is all! :tada:
+That is all! :material-party-popper:
 
 You have successfully integrated your dApp with the Arcana Wagmi Connector. Users can choose and use Arcana wallet or one of the built-in wallet connectors in Wagmi and sign blockchain transactions.
 

@@ -6,7 +6,7 @@ These are the building blocks to help you learn about various Arcana Network ter
 
 [Arcana Web3 Wallet :material-wallet:](anwallet/index.md){ .md-button }
 
-[Auth SDK :lock: :fontawesome-solid-file-signature:](authsdk.md){ .md-button }
+[Auth SDK :material-lock: :fontawesome-solid-file-signature:](authsdk.md){ .md-button }
 
 [Authentication :material-lock-check:](authtype/arcanaauth.md){ .md-button }
 
@@ -18,7 +18,7 @@ These are the building blocks to help you learn about various Arcana Network ter
 
 [Gateway :fontawesome-solid-torii-gate:](gateway_nodes.md){ .md-button }
 
-[Plug and Play Auth :lock: :fontawesome-solid-plug:](plugnplayauth.md){ .md-button }
+[Plug and Play Auth :material-lock: :fontawesome-solid-plug:](plugnplayauth.md){ .md-button }
 
 [Private Key :material-key:](privatekey.md){ .md-button }
 
