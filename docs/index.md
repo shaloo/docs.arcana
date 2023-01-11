@@ -4,6 +4,8 @@ id: idintro
 title: Arcana Auth
 sidebar_custom_props:
   cardIcon: 📚
+arcana:
+  root_rel_path: .
 ---
 
 # Introduction
@@ -19,11 +21,14 @@ Welcome to the **{{ config.site_name }}**!
 Arcana {{ arcana.product_name }} offers a simple _user onboarding framework_ and a _non-custodial wallet_ solution for Web3 applications or dApps. Designed with both developers and Web3 users in mind, {{ arcana.product_name }} is easy to integrate and customize, bringing to life a sleek and secure user experience for signing blockchain transactions. 
 
 It is a client-side library that can be integrated with any Web3 application. Auth SDK works with any application whether it is vanilla JS or built using various application frameworks such as _React, NextJS_, _Remix_ and _Vue_.
-<!---> or wallet connectors such as _Wagmi_ and _Rainbowkit_.--->
+
+<!---
+ or wallet connectors such as _Wagmi_ and _Rainbowkit_.
+ --->
 
 Powered by cutting-edge cryptographic algorithms, the Auth SDK has built-in _decentralized key generation_ that ensures no single entity owns or manages the user's keys. 
 
-[Get Started :fontawesome-solid-paper-plane:](./walletsdk/wallet_qs.md){ .md-button .md-button--primary}
+[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md){ .md-button .md-button--primary}
 
 ## Key Features
 
