@@ -9,9 +9,13 @@ arcana:
 
 # Arcana Auth SDK Release Notes
 
+{==
+
 **Version: v{% include "./text-snippets/latest_auth_sdk.md" %}**
 
 **Release Date: December 2022**
+
+==}
 
 ## What's New 
 
@@ -66,7 +70,11 @@ Arcana wallet now supports programmatic addition of custom tokens by application
 
 ## Get Started
 
-Ready to dive in? :diving_mask:
+{==
+
+*Ready to dive in?* 
+
+==}
 
 See [Auth SDK Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md). 
 

@@ -14,3 +14,7 @@ The Arcana Auth SDK can be integrated with React/NextJS applications that use wa
 [Wagmi Connector :material-card-account-mail:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md){ .md-button }
 
 [RainbowKit Connector :material-card-account-mail:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth//integrate_rainbow.md){ .md-button }
+
+!!! caution
+
+      Wallet connections are not yet part of the Auth release.

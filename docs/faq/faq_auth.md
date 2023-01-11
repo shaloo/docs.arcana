@@ -45,7 +45,7 @@ The Arcana Auth SDK enables an embedded Web3 Arcana wallet in all applications t
 
 While instantiating the `AuthProvider` during Auth SDK integration, application developers can specify the kind of user experience they wish to provide for signing blockchain transactions. The input parameter `alwaysVisible` controls when the Arcana wallet is displayed and what functions are available to an application user.
 
-For details, see [Arcana wallet visibility modes](/docs/walletuimodes).
+For details, see [Arcana wallet visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md).
 
 ### How is Arcana wallet different from other non-custodial Web3 wallets?
 

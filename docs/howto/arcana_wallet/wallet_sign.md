@@ -16,7 +16,7 @@ In this guide, you will learn how a dApp can add functionality to allow users to
 
 ## Prerequisites
 
-Register and configure your application using the Arcana Developer Dashboard. Next, install the `@arcana/auth` package. Integrate the Auth SDK with your dApp. For details, see [Arcana Auth Quick Start Guide](/docs/auth_qs).
+Register and configure your application using the Arcana Developer Dashboard. Next, install the `@arcana/auth` package. Integrate the Auth SDK with your dApp. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
 {% include "./code-snippets/import_auth.md" %}
 {% include "./code-snippets/new_auth.md" %}
@@ -34,7 +34,7 @@ The following figure shows how Arcana wallet displays the details of a blockchai
 
 <img src="/img/an_wallet_sign.png" width="300"/>
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 *You are all set to allow dApp users to sign blockchain transactions.*
 
 ## What's Next?

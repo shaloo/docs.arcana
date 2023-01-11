@@ -31,7 +31,7 @@ If an application requires to switch to a specific network programmatically, a s
 ## Send Transaction
 
 <img alt="send tx" src="/img/an_wallet_signtx_send.png" width="35%"></img>
-<img alt="send tx" src="/img/an_wallet_signtx_send_2.png width="35%""></img>
+<img alt="send tx" src="/img/an_wallet_signtx_send_2.png" width="35%"></img>
 
 
 ## Deploy Contract

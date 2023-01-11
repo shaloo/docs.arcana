@@ -34,7 +34,7 @@ We are actively working towards the Arcana Mainnet release, early January 2023.
 
 ### DKG Validator Nodes
 
-There will be seven DKG validator nodes.  Out of these four are owned by Arcana and the remaining three  [validator node](/docs/validator_nodes) are run by trusted partners.
+There will be seven DKG validator nodes.  Out of these four are owned by Arcana and the remaining three  [validator node]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md) are run by trusted partners.
 
 ### ADKG
 
@@ -60,7 +60,7 @@ Arcana Auth SDK can be integrated with any applications that work on one of the 
 
 ## Dashboard Login Options
 
-The dApp developers can log into the [Arcana Developer Dashboard](/docs/conceptdb) via one of these supported social authentication mechanisms or passwordless login:
+The dApp developers can log into the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these supported social authentication mechanisms or passwordless login:
 
 {% include "./text-snippets/db_supported_oauth.md" %}
 
@@ -68,7 +68,7 @@ The dApp developers can log into the [Arcana Developer Dashboard](/docs/conceptd
 
 ### User Onboarding Options
 
-The [Arcana Auth SDK](/docs/conceptauthsdk) allows dApps to integrate and onboard users via one or more of the supported user authentication mechanisms:
+The [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) allows dApps to integrate and onboard users via one or more of the supported user authentication mechanisms:
 
 {% include "./text-snippets/auth_supported.md" %}
 
@@ -80,6 +80,6 @@ The [Arcana Auth SDK](/docs/conceptauthsdk) allows dApps to integrate and onboar
 
 #### Supported Blockchains
 
-[Arcana wallet](/docs/category/arcana-wallet) is an embedded Web3 wallet offered by the Auth SDK that shows up in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for the following EVM-compatible blockchains:
+[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet offered by the Auth SDK that shows up in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for the following EVM-compatible blockchains:
 
 {% include "./text-snippets/wallet_supported_networks.md" %}

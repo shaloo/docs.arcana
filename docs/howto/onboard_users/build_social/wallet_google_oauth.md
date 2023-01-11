@@ -18,7 +18,7 @@ In this guide, you will learn how to enable Google authentication and onboard dA
 * Make sure you can access the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 * Install the `@arcana/auth` package. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
-Note that some steps are performed using Google Console, and others using Arcana Dashboard. After that simply integrate your dApp with the [Arcana Auth SDK](/docs/conceptauthsdk) to trigger Google login and onboard users.
+Note that some steps are performed using Google Console, and others using Arcana Dashboard. After that simply integrate your dApp with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) to trigger Google login and onboard users.
 
 {% include "./text-snippets/google_config_steps.md" %}
 
@@ -44,7 +44,7 @@ Add code in the application to log out an authenticated user:
 
 {% include "./code-snippets/auth_logout.md" %}
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 
 Your dApp is all set for onboarding users via the Google authentication mechanism.
 

@@ -44,7 +44,7 @@ Add code in the application to log out an authenticated user:
 
 {% include "./code-snippets/auth_logout.md" %}
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 
 Your dApp is all set for onboarding users via the Twitter authentication mechanism.
 

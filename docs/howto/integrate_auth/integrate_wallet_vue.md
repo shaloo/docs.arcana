@@ -1,17 +1,15 @@
 ---
-slug: /setupwallet
-id: idsetupwallet
+slug: /setupwalletvue
+id: idsetupwalletvue
 sidebar_custom_props:
   cardIcon: 🔐 
 arcana:
   root_rel_path: ../..
 ---
 
-# Integrate Vanilla JS application
+# Integrate Vue application
 
-In this tutorial, you will learn how to integrate a vanilla JS application with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) to enable user onboarding and signing of blockchain transactions via the embedded Web3 [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
-
-{% include "./text-snippets/sample_int_app_src.md" %}
+In this tutorial, you will learn how to integrate a Vue application with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) to enable user onboarding and signing of blockchain transactions via the embedded Web3 [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
 
 [Try Auth Example :material-rocket-launch:](https://9mt0h4.csb.app/){ .md-button .md-button--primary}
 
@@ -19,7 +17,7 @@ In this tutorial, you will learn how to integrate a vanilla JS application with 
 
 * Developers must first log into the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 
-* Use the dashboard to [register and configure application settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for using the Auth SDK. Click on the *Auth* tab in the dashboard. Configure the application settings as per the required user onboarding experience.  Choose and configure from a list of supported authentication mechanisms:
+* Use the dashboard to [register and configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) your Vue application settings for using the Auth SDK. Click on the *Auth* tab in the dashboard. Configure the application settings as per the required user onboarding experience.  Choose and configure from a list of supported authentication mechanisms:
 
     {% include "./text-snippets/auth_supported.md" %}
 
@@ -43,23 +41,19 @@ Follow these two steps:
 
 ### Step 2: Initialize the Auth SDK
 
-Import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **App Address** value assigned to your application after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Also, specify the [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter.
+To integrate the application, first, you need to import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **App Address** value assigned to your application after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the dashboard. Also, specify the [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter.
 
-{% include "./code-snippets/import_auth.md" %}
+You can club all the Auth SDK related code in a file `src/lib/auth.js` and export the function that instantiates the `AuthProvider`.
 
-{% include "./code-snippets/new_auth.md" %}
+{% include "./code-snippets/vue_auth_js.md" %}
 
-Initialize the newly instantiated `AuthProvider`. Before you call any other Auth SDK functions, make sure initialization function is complete. You can use `getProvider` to access the Web3 Wallet provider exported by the Auth SDK.   
+Next, import and call this exported function in `App.vue` file as shown below:
 
-{% include "./code-snippets/init_auth.md" %}
-
-!!! caution
-
-    The application must wait until the initialization is complete, before invoking any of the other Auth SDK functions such as triggering user login, encryption/decryption, obtaining public keys, etc.
+{% include "./code-snippets/vue_app_js.md" %}
 
 That is all! :material-party-popper:
 
-You have successfully integrated your application with the Auth SDK and can invoke any supported functions.
+You have successfully integrated your Vue application with the Auth SDK and can invoke any supported functions.
 
 ## What's Next?
 

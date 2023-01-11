@@ -130,7 +130,7 @@ To see the details of a transaction, click on the arrow next to transaction type
 
 <img src="/img/an_wallet_combined_notification_details_send_nft.png" width="200"/><br></br><br></br>
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 *You are all set to manage your NFTs using the Arcana wallet.*
 
 ## What's Next?

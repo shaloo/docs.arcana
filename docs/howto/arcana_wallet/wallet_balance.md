@@ -40,7 +40,7 @@ The following figure shows how Arcana wallet displays the balance for the dApp u
 
 <img src="/img/an_wallet_balance.png" width="300"/>
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 
 *You are all set to enable dApp users to view their Arcana wallet account balance.*
 

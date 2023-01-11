@@ -2,7 +2,7 @@
 
 How to configure and use the Auth SDK.
 
-[Configure dApp Settings :tools:](./config_dapp.md){ .md-button }
+[Configure dApp Settings :material-tools:](./config_dapp.md){ .md-button }
 
 [Configure Social Logins :fontawesome-solid-users:](./config_social_providers.md){ .md-button }
 

@@ -42,7 +42,7 @@ The figure below shows the plug-and-play pop-up authentication screen for Arcana
 
 <img src="/img/an_plug_n_play_auth.png" width="300"/>
 
-That is all! :tada:
+That is all! :material-party-popper:
 
 You have successfully enabled plug-and-play authentication feature to onboard the dApp users.
 

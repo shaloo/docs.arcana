@@ -9,7 +9,7 @@ arcana:
 
 # DKG Validators
 
-Validators in the Arcana distributed key generation [(DKG)](/docs/dkg) subsystem play a crucial role in decentralizing the system by setting up and managing [validator nodes]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md). To qualify as a validator, you must be a trusted partner of Arcana and operate a DKG node. In return for participating in the DKG protocol and providing this service, validators earn rewards based on various factors such as the uptime of their node and the output of their key generation work.
+Validators in the Arcana distributed key generation [(DKG)]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md) subsystem play a crucial role in decentralizing the system by setting up and managing [validator nodes]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md). To qualify as a validator, you must be a trusted partner of Arcana and operate a DKG node. In return for participating in the DKG protocol and providing this service, validators earn rewards based on various factors such as the uptime of their node and the output of their key generation work.
 
 ## Validator Entry/ Exit
 

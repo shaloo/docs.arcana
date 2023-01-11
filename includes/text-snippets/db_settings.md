@@ -7,7 +7,7 @@ Developers can configure dApps using the various tabs in the dashboard. **Click*
     * Application name, wallet branding/logo customization
     * Control to delete the dApp record from the Arcana blockchain
 
-=== "Auth SDK"
+=== "Auth"
 
     **Settings:**
 

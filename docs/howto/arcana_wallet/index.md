@@ -15,16 +15,14 @@ To enable Arcana wallet in the context of a Web3 application, you need to first 
 
 Once you have integrated your application with the Auth SDK, you can access the standard Ethereum provider `AuthProvider` and use various Web3 wallet functions programmatically in your application from the list below:
 
-[Configure Arcana Wallet :tools:](./config_wallet_modes.md){ .md-button }
+[Configure Arcana Wallet :material-tools:](./config_wallet_modes.md){ .md-button }
 
-[Add/Switch Networks :lock_with_ink_pen:](./wallet_add_switch_ntwk.md){ .md-button }
+[Add/Switch Networks :material-wifi-cog:](./wallet_add_switch_ntwk.md){ .md-button }
 
-[Sign Transactions :lock_with_ink_pen:](./wallet_sign.md){ .md-button }
+[Sign Transactions :material-signature-freehand:](./wallet_sign.md){ .md-button }
 
-[Check Wallet Balance :moneybag:](./wallet_balance.md){ .md-button }
+[Check Wallet Balance :material-wallet:](./wallet_balance.md){ .md-button }
 
-[Send Tokens :outbox_tray:](./wallet_send.md){ .md-button }
+[Send Tokens :fontawesome-solid-coins:](./wallet_send.md){ .md-button }
 
 [Watch Assets :fontawesome-solid-magnifying-glass-dollar:](./wallet_watchasset.md){ .md-button }
-
-!!! tip "Example: Enabling Arcana wallet"

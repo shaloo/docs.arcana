@@ -50,6 +50,7 @@ Refer to figure below for details:
 ![GitHub Profile email visible](/img/an_trbs_gh_issue_visible_email.png)
 ![GitHub Email Settings not private](/img/an_trbs_gh_issue_email_not_private.png)
 
+<!--
 ---
 
 ## Application Tooling Issues
@@ -95,11 +96,9 @@ module.exports = defineConfig({
 
 CRA by default doesn’t allow customizing Webpack configuration. The recommended way to address polyfill issues is to use “react-app-rewired”  with a configuration like this.
 
-:::note
+!!! note
 
-You need to exclude “console” otherwise it’ll fail.
-
-:::
+      You need to exclude “console” otherwise it’ll fail.
 
 ```javascript
 const NodePolyfillPlugin = require('node-polyfill-webpack-plugin')
@@ -226,7 +225,9 @@ Make sure you update the dependency for polyfills in `package.json` file as well
 }
 ```
 
-For a complete sample app that addresses polyfill issues - refer to [sources in GitHub](https://github.com/arcana-network/test-vite-app).
+For a complete sample app that addresses polyfill issues - refer to [sources in GitHub](https://github.com/arcana-network/test-vite-app/).
+
+-->
 
 ---
 

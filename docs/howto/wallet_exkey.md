@@ -43,7 +43,7 @@ After successfully copying or downloading the key, the user **must** close the A
 
       Once exported, keeping the private key safe is the responsibility of the user. 
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 
 *You are all set to use these exported private keys in another EVM-compatible wallet.*
 

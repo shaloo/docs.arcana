@@ -37,7 +37,7 @@ Similarly, if a dApp has plugged in code to watch assets can remove the newly so
 
 <img src="/img/an_wallet_send_inputs.png" width="300"/>
 
-**That is all!**  :tada:
+**That is all!**  :material-party-popper:
 *You are all set to watch assets associated with the specified Arcana wallet.*
 
 ## What's Next?
