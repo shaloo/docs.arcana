@@ -36,6 +36,7 @@
     font-weight: bold;
     color: var(--md-secondary-fg-color);
     overflow: auto;
+    text-align: center;
 }
 
 .cards {
