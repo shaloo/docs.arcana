@@ -28,7 +28,7 @@ nav:
           #   - howto/integrate_auth/react/connectors/index.md
           #   - Wagmi: howto/integrate_auth/integrate_wagmi.md
           #  - RainbowKit: howto/integrate_auth/integrate_rainbow.md
-        - Vue dApp: https://github.com/arcana-network/basic-storage-wallet-integration
+        - Vue dApp: https://github.com/arcana-network/auth-sample-integration-new
       - Onboard Users: 
         - howto/onboard_users/index.md
         - Plug and Play Auth: howto/onboard_users/wallet_plugnplay.md
