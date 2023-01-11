@@ -197,7 +197,7 @@ Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="2
 
 <img src="/img/an_wallet_profile.png" width="200"/><br></br><br></br>
 
-**That is all!**  :m:material-party-popper::
+**That is all!**  :material-party-popper:
 
 *You are now well-versed with various Arcana wallet screens and how to use the Arcana wallet to perform blockchain transactions.*
 

@@ -28,7 +28,7 @@ Take a quick look at the overview of the [architecture and key components]({{pag
 
 !!! tip
 
-     If you prefer to immediately jump into integrating your dApp with the Arcana Network right away, see the Arcana [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md). :rocket:
+     If you prefer to immediately jump into integrating your dApp with the Arcana Network right away, see the Arcana [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md). :material-rocket-launch:
 
 ## Build dApps faster
 
