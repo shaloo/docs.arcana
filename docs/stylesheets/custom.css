@@ -4,6 +4,7 @@
      --md-primary-fg-color:        #058aff;
      --md-primary-fg-color--light: #13a3fd;
      --md-primary-fg-color--dark:  #5cf5ff;
+     --md-text-font: "Inter";
 }
 
 [data-md-color-scheme="black"] {
