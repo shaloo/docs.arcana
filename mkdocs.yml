@@ -28,7 +28,7 @@ nav:
           #   - howto/integrate_auth/react/connectors/index.md
           #   - Wagmi: howto/integrate_auth/integrate_wagmi.md
           #  - RainbowKit: howto/integrate_auth/integrate_rainbow.md
-        - Vue dApp: https://github.com/arcana-network/auth-sample-integration-new
+        - Vue dApp: howto/integrate_auth/integrate_wallet_vue.md
       - Onboard Users: 
         - howto/onboard_users/index.md
         - Plug and Play Auth: howto/onboard_users/wallet_plugnplay.md
@@ -55,6 +55,7 @@ nav:
         - tutorials/code_samples/index.md
         - Auth Example: https://github.com/arcana-network/auth/tree/main/examples
         - React Example: tutorials/code_samples/react_code_sample.md
+        - Vue Example: https://github.com/arcana-network/auth-sample-integration-new
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/an_academy.md

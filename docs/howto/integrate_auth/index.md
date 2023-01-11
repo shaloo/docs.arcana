@@ -28,4 +28,4 @@ For detailed instructions, select the application type below:
 
 [React/NextJS Apps :fontawesome-brands-react: :simple-nextdotjs:](./react/index.md){ .md-button }
 
-[Vue dApp :material-vuejs:](https://github.com/arcana-network/auth-sample-integration-new){ .md-button }
+[Vue dApp :material-vuejs:](./integrate_wallet_vue.md){ .md-button }
