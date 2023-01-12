@@ -8,9 +8,9 @@ Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %}
           
       {% include "./text-snippets/socialauth_add_config.md" %}
   
-Register your dApp by creating a new dApp. Specify a dApp name, and select the preferred `Storage Region`. Use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
+Register your dApp by creating a new dApp entry and specify a dApp name. Use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
 
-Go to the `Auth` tab in the dashboard and copy the **redirect URI** value displayed there.  This will be used in the next step to generate GitHub OAuth credentials.
+Go to the `Configure->Social Auth` configuration section and copy the **redirect URI** value displayed there.   This will be used in the next step to generate GitHub OAuth credentials.
 
 ![redirect_page](/img/an_dApp_config_redirect_uri.png)
 
@@ -38,10 +38,10 @@ Copy and save the **Client ID** and the **secret** assigned by GitHub for the ne
 
 ## Step 3: Update Arcana Dashboard
 
-Revisit the dashboard `Auth` configuration tab. Refer to the "GitHub" field and paste the **Client ID** and the **Secret** assigned by GitHub, in the previous step.
+Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit the application dashboard page. Click `Configure->Social Auth` in the LHS navigation bar and refer to the "GitHub" field. Paste the **Client ID** and the **Secret** assigned by GitHub, in the previous step.
 
 ![howto_config_github_clientid](/img/an_dApp_github_config.png)
 
-Save the settings. Arcana Network assigns an **App Address** to every registered and configured dApp. You need to save this **App Address** and use it while integrating the dApp with the Auth SDK. ![howto_app_id](/img/howto_app_id.png)
+Save the settings. Arcana Network assigns an **App Address** to every registered and configured dApp. You need to save this **App Address** and use it while integrating the dApp with the Auth SDK. ![App Address](/img/an_db_appid.png)
 
 *You are all set with GitHub Setup. Integrate Web3 application with the Arcana Auth SDK and call social login function when the user chooses to log in.*
