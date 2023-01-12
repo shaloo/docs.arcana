@@ -13,7 +13,7 @@ sidebar_custom_props:
 
 With Arcana Auth, users can easily onboard any Web3 application with passwordless authentication simply by providing an email ID. 
 
-Application users receive an email verification link or a time-sensitive OTP that can be used to log in to the application. This passwordless approach eliminates the need to remember passwords or share social account identifiers with the application provider, making the onboarding process completely frictionless. 
+Application users receive an email verification link or a time-sensitive OTP that can be used to log in to the application. This passwordless approach eliminates the need to remember passwords or share social account identifiers with the application provider, making the onboarding process completely friction-free. 
 
 !!! note
 

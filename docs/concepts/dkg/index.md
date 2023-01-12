@@ -1,6 +1,6 @@
 # DKG
 
-Leran about Arcana's decentralized key generation protocol.
+Learn about Arcana's decentralized key generation protocol.
 
 [What is DKG? :octicons-key-24:](../dkg.md){ .md-button } 
 

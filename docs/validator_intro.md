@@ -7,7 +7,7 @@ arcana:
   root_rel_path: .
 ---
 
-# Validator Bootcamp
+# Validator Onboarding
 
 This DKG validator onboarding guide is meant for trusted partners, the *'validators'*, who wish to set up DKG [validator nodes]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md). 
 
