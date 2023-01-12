@@ -4,7 +4,7 @@ To enable Discord based social authentication in Web3 applications, developers m
 
 Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %} 
 
-Register your dApp by creating a new dApp, specifying a name, and choosing your preferred `Storage Region` in the dashboard. 
+Register your dApp by creating a new dApp entry and specifying a name using the 'Create New App' wizard. 
 
 !!! tip "Registering the Application"
     
@@ -12,7 +12,7 @@ Register your dApp by creating a new dApp, specifying a name, and choosing your 
 
 You can choose to use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
 
-Go to the `Auth` configuration section and copy the **redirect URI** value displayed there.  This will be used in the next step to setup Discord OAuth.![redirect_page](/img/an_dApp_config_redirect_uri.png)
+Go to the `Configure->Social Auth` configuration section and copy the **redirect URI** value displayed there.  This will be used in the next step to setup Discord OAuth.![redirect_page](/img/an_dApp_config_redirect_uri.png)
 
 Do not close the dashboard browser tab. Open another tab and set up Discord OAuth. Then revisit the Dashboard tab to complete the dApp configuration settings.
 
@@ -30,12 +30,12 @@ Copy the **Application ID** and the **public key**. It will be required in the n
 
 ## Step 3: Update Arcana Dashboard
 
-In the Arcana Dashboard `Auth` tab, refer to the "Discord" section. Paste the **Application ID** and **public key** assigned by Discord, in the previous step as the ClientID and secret respectively. 
+Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit the application dashboard. Click `Configure->Social Auth` in the LHS navigation bar and refer to the "Discord" settings. Paste the **Application ID** and **public key** assigned by Discord, in the previous step as the ClientID and secret respectively. 
 
 ![howto_config_discord_clientid](/img/an_dApp_discord_config.png)
 
 Save the settings. Arcana Network assigns an **App Address** to every registered and configured dApp. If you plan to integrate with the Arcana SDKs, you need to save this **App Address**. 
 
-![howto_app_id](/img/howto_app_id.png)
+![App Address](/img/an_db_appid.png)
 
 *You are all set with Discord Setup. Integrate Web3 application with the Arcana Auth SDK and call social login function when the user chooses to log in.*

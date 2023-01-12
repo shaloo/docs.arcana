@@ -4,13 +4,15 @@ To enable Google based social authentication in Web3 applications, developers mu
 
 Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 
+Register your dApp by creating a new dApp entry and specifying a name using the 'Create New App' wizard. .
+
 !!! tip "Registering the Application"
 
       {% include "./text-snippets/socialauth_add_config.md" %}
   
-Register your dApp by creating a new dApp. Specify a dApp name, and select `Storage Region` as per dApp requirements.You can use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
+You can use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
 
-Go to the `Auth` tab in the dashboard and copy the **redirect URI** value displayed there.  This will be used in the next step to generate Google Client ID.
+Go to the `Configure->Social Auth` configuration section and copy the **redirect URI** value displayed there.  This will be used in the next step to generate Google Client ID.
 
 ![redirect_page](/img/an_dApp_config_redirect_uri.png)
 
@@ -40,12 +42,12 @@ Save the **Client ID** assigned by Google. It will be required in the next step.
 
 ## Step 3: Update Arcana Dashboard
 
-Revisit the Arcana Dashboard `Auth` configuration tab in your browser. Refer to the "Google" field and paste the **Client ID** assigned by Google Cloud Console in the previous step. 
+Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit the application dashboard. Click `Configure->Social Auth` in the LHS navigation bar. Refer to the "Google" settings and paste the **Client ID** assigned by Google Cloud Console in the previous step. 
 
 ![howto_google_auth_type](/img/an_dApp_google_config.png)
 
 Save the settings on the dashboard. Arcana Network assigns an **App Address** to every registered and configured dApp. If you plan to integrate with Arcana SDKs, you need to save this **App Address**. 
 
-![howto_app_id](/img/howto_app_id.png)
+![App Address](/img/an_db_appid.png)
 
 *You are all set with Google Setup. Integrate Web3 application with the Arcana Auth SDK and call social login function when the user chooses to log in.*

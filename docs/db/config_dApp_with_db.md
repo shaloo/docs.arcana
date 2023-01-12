@@ -61,6 +61,16 @@ You can monitor application usage statistics via the dashboard.
 
 ![Dashboard metrics](/img/an_db_metrics.png)
 
+### Delete Application
+
+To de-register an application the developers must delete the entry using the dashboard. Go to the 'Manage Apps' dashboard page that lists all the registered applications.  
+
+![Manage Apps Dashboard](/img/an_db_manage_apps.png)
+
+Select the application you wish to de-register and choose **Delete**.
+
+![Delete App](/img/an_db_delete_app.png)
+
 ## Dashboard FAQ
 
 New users can get help with Auth SDK configuration and dashboard usage by consulting the [Arcana Dashboard FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_db.md) or contacting {% include "./text-snippets/support_email_link.md" %}.

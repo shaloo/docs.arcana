@@ -43,6 +43,14 @@ You have successfully registered and configured your application.
 
     {% include "./text-snippets/warn_config_wallet_ui.md" %}
 
+To delete the application entry, visit the **Manage Apps** screen on the developer dashboard.
+
+<img src="/img/an_db_manage_apps.png" alt="manage apps" width="85%"></img>
+
+Use **Delete** to remove the application entry and de-register it.
+
+<img src="/img/an_db_delete_app.png" alt="Delete app entry" width="85%"></img>
+
 ## What's next?
 
 After registering and configuring the application, install the Auth SDK and then [integrate it with the application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) to enable user authentication and signing of Web3 blockchain transactions.

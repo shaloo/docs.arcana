@@ -4,11 +4,19 @@ To enable Twitter based social authentication in Web3 applications, developers m
 
 Go to the Arcana Dashboard: {% include "./text-snippets/db_portal_url.md" %}
 
-Register your dApp by creating a new dApp. Specify a dApp name, and select the preferred `Storage Region`. Go to the `Auth` tab and copy the **redirect URI** value displayed there.  This will be used in the next step to generate Twitter authentication credentials.
+Register your dApp by creating a new dApp entry and specifying a name using the 'Create New App' wizard.
+
+!!! tip "Registering the Application"
+    
+      {% include "./text-snippets/socialauth_add_config.md" %}
+
+Go to the `Configure->Social Auth` configuration section and copy the **redirect URI** value displayed there.   This will be used in the next step to generate Twitter authentication credentials.
 
 ![redirect_page](/img/an_dApp_config_redirect_uri.png)
 
-You can choose to use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details. Do not close the dashboard browser tab. Open another tab and set up Twitter OAuth. Then come back to the Dashboard tab and complete the dApp configuration settings.
+You can choose to use defaults for other settings or change them as per your use case. Refer to the [how to configure dApp guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details. 
+
+Do not close the dashboard browser tab. Open another tab and set up Twitter OAuth. Then come back to the Dashboard tab and complete the dApp configuration settings.
 
 ## Step 2: Use Twitter Developer Console
 
@@ -60,10 +68,10 @@ Make sure you save all the settings.
 
 ## Step 3: Update Arcana Dashboard
 
-Revisit the dashboard `Auth` configuration tab. Refer to the "Twitter" field and paste the **API Key** assigned by Twitter, in the previous step. 
+Revisit the Arcana Developer Dashboard portal. Click on your app entry and visit the application dashboard. Click `Configure->Social Auth` in the LHS navigation bar. Refer to the "Twitter" settings and paste the **API Key** assigned by Twitter, in the previous step. 
 
 ![howto_config_twitter_clientid](/img/an_dApp_twitter_config.png)
 
-Save the settings. Arcana Network assigns an **App Address** to every registered and configured dApp. You need to save this **App Address** and use it while integrating the dApp with the Auth SDK. ![howto_app_id](/img/howto_app_id.png)
+Save the settings. Arcana Network assigns an **App Address** to every registered and configured dApp. You need to save this **App Address** and use it while integrating the dApp with the Auth SDK. ![App Address](/img/an_db_appid.png)
 
 *You are all set with Twitter Setup. Integrate Web3 application with the Arcana Auth SDK and call social login function when the user chooses to log in.*

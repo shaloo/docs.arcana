@@ -1,6 +1,6 @@
-* Developers must use the Arcana dashboard to configure the Auth SDK. 
+* Developers must use the Arcana Developer Dashboard to configure the Auth SDK usage settings before integrating their application.
 
-* One of the following social provider accounts is required to log in to the dashboard. Alternatively, passwordless login option can be used as well.
+* To log in to the Arcana Developer Dashboard, one of the following social provider accounts is required. Alternatively, passwordless login option can be used as well.
 
     - Google
     - GitHub
