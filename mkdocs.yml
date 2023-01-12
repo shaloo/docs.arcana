@@ -128,7 +128,8 @@ nav:
   - Migration Guides:
     - migration/index.md
     - Auth 0.3.0: migration/beta_auth_v0.3.0_migration.md
-  - DKG Validators: validator_intro.md
+  - DKG Validators: 
+    - validator_intro.md
   - Reference:
       - reference/index.md
       - Auth SDK Status: state_of_the_ntwk.md
