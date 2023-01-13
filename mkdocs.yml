@@ -142,7 +142,9 @@ nav:
 
 extra:
   arcana:
-    product_name: Auth SDK
+    product_name: Arcana Auth
+    sdk_name: Arcana Auth SDK
+    dashboard_name: Arcana Developer Dashboard
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
@@ -156,7 +158,7 @@ extra:
   generator: false
   analytics:
     provider: google
-    property: G-SQ2P3069GR
+    property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
     feedback:
       title: <hr>Was this page helpful?
       ratings:
@@ -189,6 +191,7 @@ theme:
     - navigation.tracking
     - navigation.indexes
     - navigation.sections
+    - navigation.footer
   #  - navigation.expand
   #  - navigation.tabs
   #  - navigation.tabs.sticky
@@ -257,3 +260,6 @@ plugins:
       include_dir: ./includes
   - search:
       lang: en
+  - git-authors:
+      show_email_address: false
+  - git-revision-date-localized

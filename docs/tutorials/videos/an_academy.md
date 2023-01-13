@@ -3,7 +3,7 @@ slug: /anacademy
 id: idanacademy
 title: Get Started
 sidebar_custom_props:
-  cardIcon: ℹ️
+  cardIcon: 🎓
 arcana:
   root_rel_path: ../..
 ---

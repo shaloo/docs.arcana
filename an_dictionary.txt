@@ -213,6 +213,7 @@ Mainnet
 MetaMask
 MinIO
 MissionTutLinkText
+Mkdocs
 NFT
 NFT's
 NFTDocWalkthruTutLinkText
@@ -810,6 +811,7 @@ migration_to_beta_auth_0_3_0
 migration_to_mainnet
 minHeadingLevel
 mintpvtnft
+mkdocs
 newdevweb3
 no-UI
 non-Arcana
