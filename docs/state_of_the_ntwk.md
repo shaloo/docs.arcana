@@ -46,7 +46,7 @@ The alpha release offered a distributed DKG and that had its well-known shortcom
 
 All data stored in Arcana Store is encrypted via secure keys. The encrypted data is accessible only to the data owner. Arcana Network platform components do not store any keys that belong to the dApp user.  Data is decrypted only at the client end after user verification. 
 
-Arcana uses the [asynchronous verifiable secret sharing and proactive crypto systems distributed Key storage scheme by Cachin et al. (2002)](https://eprint.iacr.org/2002/134.pdf). In the future, we plan to use asynchronous distributed key generation (DKG) and improved file transfer ownership using ZK-SNARK for verifiable encryption and key sharing.
+Arcana uses the [asynchronous verifiable secret sharing and proactive crypto systems distributed Key storage scheme by Cachin et al. (2002)](https://eprint.iacr.org/2002/134.pdf). In the future, we plan to use asynchronous distributed key generation (DKG).
 
 ### Audit
 
