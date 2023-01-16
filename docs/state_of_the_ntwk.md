@@ -48,9 +48,9 @@ All data stored in Arcana Store is encrypted via secure keys. The encrypted data
 
 Arcana uses the [asynchronous verifiable secret sharing and proactive crypto systems distributed Key storage scheme by Cachin et al. (2002)](https://eprint.iacr.org/2002/134.pdf). In the future, we plan to use asynchronous distributed key generation (DKG) and improved file transfer ownership using ZK-SNARK for verifiable encryption and key sharing.
 
-### Protocol Audit
+### Audit
 
-The Arcana Network protocol is undergoing a thorough audit to ensure its security and reliability. 
+At Arcana, we take security and privacy of applications seriously and believe in transparency. To eliminate security vulnerabilities in Arcana Smart Contracts and the Arcana's ADKG module, we put it under the rigorous vetting process and cybersecurity tests conducted by [Certik](https://www.certik.com/). The audit is complete and you can refer to the [reports]({{page.meta.arcana.root_rel_path}}/audit/index.html) for details.
 
 ## Supported Browsers
 
