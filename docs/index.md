@@ -49,4 +49,9 @@ Developers use the {{config.extra.arcana.dashboard_name}} to configure {{config.
 
 <!--- 
 [Let's begin! ++enter++](./walletsdk/wallet_qs.md){ .md-button .md-button--primary}
+
+
+
+Git: {{ git.short_commit}}
+
 --->

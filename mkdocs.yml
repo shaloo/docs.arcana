@@ -138,7 +138,10 @@ nav:
       - Handling Auth Errors: walletsdk/wallet_err.md
       - Troubleshooting Guide: troubleshooting.md
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
-  - Support: support.md
+  - Audit Reports:
+    - audit/index.md
+  - Contact Us: 
+    - support.md
 
 extra:
   arcana:
@@ -237,7 +240,7 @@ markdown_extensions:
       alternate_style: true 
   - pymdownx.snippets:
       auto_append:
-        - ./includes/abbreviations.md
+        - ./includes/git_info.md
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
