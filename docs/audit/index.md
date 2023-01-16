@@ -1,3 +1,8 @@
+---
+arcana:
+  root_rel_path: ..
+---
+
 #  Arcana Auth Audit Reports
 
 At Arcana, we take security and privacy of applications seriously and believe in transparency. Our offering, Arcana Auth, has been audited by [Certik](https://www.certik.com/).
