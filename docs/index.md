@@ -40,11 +40,13 @@ Developers use the {{config.extra.arcana.dashboard_name}} to configure {{config.
 
 ## Key Features
 
-<div class="grid cards" markdown>
+<div class="grid card_container" markdown>
+  <div class="cards" markdown>
   <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Provides fast user onboarding for Web3 applications.</li><li>Developers can easily add user authentication with just a few lines of code.</li><li>Developers can configure the onboarding settings and users can choose between popular Web2 social login or passwordless login options.</li></ul></p></div>
   <div class="card" markdown><h4><b>:fontawesome-brands-ethereum: Web3 Transactions</b></h4><hr><p><ul><li>Authenticated users can access the Arcana wallet and sign blockchain transactions.</li><li>Developers can customize the Arcana wallet and manage user experience for EVM-compatible networks.</li><li>Users can perform various wallet operations, such as sending and receiving tokens and NFTs, managing NFT collections, deploying contracts, and interacting with them.</li></ul></p></div>
   <div class="card" markdown><h4><b>:simple-letsencrypt: Secure</b></h4><hr><p><ul><li>Provides an easy yet secure way for authenticated users to sign blockchain transactions.</li><li>Uses asynchronous distributed key generation protocols to ensure security and privacy.</li></ul></p></div>
   <div class="card" markdown><h4><b>:material-gesture-tap-button: Easy to Use</b></h4><hr><p><ul><li>Easily  integrate into vanilla JS, React, NextJS, Remix, and Vue applications.</li><li>Includes an embedded, non-custodial wallet that works within the Web3 application.</li><li>Users do not need to set up any browser extensions to use it.<li>Users do not need to remember seed phrases or manage keys in order to sign blockchain transactions.</li></ul></p></div>
+  </div>
 </div>
 
 <!--- 
