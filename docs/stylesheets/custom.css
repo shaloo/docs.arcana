@@ -4,6 +4,7 @@
      --md-primary-fg-color:        #058aff;
      --md-primary-fg-color--light: #13a3fd;
      --md-primary-fg-color--dark:  #5cf5ff;
+     --md-default-bg-color--lighter: #e7f6ff;
      --md-text-font: "Inter";
 }
 
@@ -26,17 +27,20 @@
 
 [class="md-banner"] {
     background: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 0.5rem,
+      -45deg,
+      transparent,
+      transparent 0.5rem,
     rgb(19, 163, 253, 0.25) 0.25rem,
-    rgb(19, 163, 253, 0.25) 1rem
-  ) !important;
+    rgb(19, 163, 253, 0.25) 1rem) !important;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     color: var(--md-secondary-fg-color);
     overflow: auto;
     text-align: center;
+}
+
+.md-nav__item--section {
+    padding: 0.5rem;
 }
 
 .cards {
