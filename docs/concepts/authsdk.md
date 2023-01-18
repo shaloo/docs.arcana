@@ -27,7 +27,7 @@ Developers must first use the [Arcana Developer Dashboard]({{page.meta.arcana.ro
 
   * Developers can configure user onboarding options and allow users to log in easily with familiar Web2 experience of social authentication and passswordless login
   * Users can easily onboard Web3 dApps without having to manage keys and secrets 
-  * Developers can choose to integrate their application with the Auth SDK and use instant plug-and-play authentication with a single line of code or build customized UI that calls social and passwordless login functions of the Auth SDK.
+  * Developers can choose to integrate their application with the Auth SDK and use instant plug-and-play authentication with a single line of code or build customized UI that calls social and passwordless login functions of the Auth SDK
 
 **Web3 Wallet**
 
