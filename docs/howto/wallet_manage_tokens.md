@@ -27,15 +27,15 @@ Arcana wallet supports both native as well as custom ERC-20 tokens. The followin
 
 ## Check Balance
 
-Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon at the bottom left of the Arcana wallet. The account balance for the wallet account is displayed. Refer to the **Assets** tab to see a list of token assets in the wallet account.
+Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon at the bottom left of the Arcana wallet. The account balance for the wallet account is displayed. It also displays a list of token assets in the wallet account and their corresponding amounts.
 
-Click **Refresh** to fetch the latest account balance for native and custom tokens.
+Click **Refresh** to fetch the latest account balance. If you use the Arcana wallet to send native or custom tokens, the account balance gets automatically updated once the transfer is processed.
 
 <img src="/img/an_wallet_home.png" width="200"/><br></br><br></br>
 
 ## Add Custom Tokens
 
-Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon to bring up the **Token Assets** tab.  
+Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon to view the tokens associated with the wallet account.  
 
 If you do not see your custom token already listed in the token asset list, click the <img src="/img/icons/an_wallet_addtoken_icon.png" width="50"/> icon to add your custom token.
 
@@ -45,7 +45,7 @@ You will see a custom token specification wallet screen.
 
 Add the **Token Contract Address**. Once you add the address, the Arcana wallet validates whether it is an ERC-20 standard custom token. After the contract is verified, the wallet automatically fetches the **Token Symbol** and the **Token Decimal** values as configured in the custom contract.
 
-Click **Save** to add the custom token. The newly added custom token will show up under the **Token Assets** tab on the wallet screen.
+Click **Save** to add the custom token. The newly added custom token will show up under account balance on the main wallet screen.
 
 <img src="/img/an_wallet_custom_tokens.png" width="200"/><br></br><br></br>
 
@@ -53,7 +53,7 @@ Click **Save** to add the custom token. The newly added custom token will show u
 
 Before sending tokens, users can specify whether they intend to transfer native or custom tokens.  To select a custom token, it should already be [added to the Arcana wallet](#add-custom-tokens).
 
-Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon to bring up the **Token Assets** screen.
+Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon to view native and custom tokens screen.
 
 <img src="/img/an_wallet_choose_custom.png" width="200"/><br></br><br></br>
 
@@ -61,7 +61,7 @@ Use the drop-down list by clicking on the arrow next to the native token symbol 
  
 ## Send Tokens
 
-Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon at the bottom left of the wallet to access the **Token Assets** screen.
+Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon at the bottom left of the wallet to access the tokens associated with the wallet account.
 
 <img src="/img/an_wallet_home.png" width="200"/><br></br><br></br>
 
