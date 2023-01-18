@@ -14,7 +14,7 @@ In this guide, you will learn how to enable passwordless authentication and onbo
 ## Prerequisites
 
 * Make sure you can access Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
-* Install the `@arcana/auth` package. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
+* Install the `@arcana/auth` package. For details, see [Arcana Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md#install-auth-sdk).
 
 ## Steps
 
