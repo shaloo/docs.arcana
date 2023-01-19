@@ -9,11 +9,13 @@ arcana:
 
 # Configure Application
 
-In this tutorial, you will learn how to use the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to register and configure your application before integrating it with the Auth SDK. Learn about various configuration settings that control the user experience for onboarding applications and signing blockchain transactions.
+In this tutorial, you will learn how to register and configure an application before integrating it with the Auth SDK. 
 
 !!! note "Configure first, integrate later"
 
-    After registration and configuration, each application is assigned a unique identifier **App Address** displayed on the application page of the dashboard . Developers are required to provide this **App Address** value to [integrate with the Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md).
+    By using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to register and configure applications, Web3 application developers can control the user onboarding experience and the blockchain transaction signing experience.
+    
+    As part of application registration and configuration, each application is assigned a unique identifier called **App Address**. The **App Address** is required later to [integrate an application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the Arcana Auth SDK. 
 
 ## Prerequisites
 

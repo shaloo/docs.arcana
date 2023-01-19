@@ -18,6 +18,6 @@ Click **Create** to create a new application entry and register it with the Arca
 
       Once an application entry is created, you cannot edit the application name. To do that, you will need to delete the application entry on the dashboard and create a new one.
 
-After successful registration, you will see the application dashboard screen as shown below:
+After a successful registration, you will see the application dashboard screen as shown below:
 
 ![New app dashboard](/img/an_db_new_app_screen.png)
