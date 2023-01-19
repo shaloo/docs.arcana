@@ -13,9 +13,9 @@ In this tutorial, you will learn how to register and configure an application be
 
 !!! note "Configure first, integrate later"
 
-    By using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to register and configure applications, Web3 application developers can control the user onboarding experience and the blockchain transaction signing experience.
+    The [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) allows developers to customize the user onboarding experience and the blockchain transaction signing experience. 
     
-    As part of application registration and configuration, each application is assigned a unique identifier called **App Address**. The **App Address** is required later to [integrate an application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the Arcana Auth SDK. 
+    Developers can register and configure their app, and are given a unique identifier called an App Address. This is used to [integrate an application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the Arcana Auth SDK.
 
 ## Prerequisites
 
@@ -35,23 +35,9 @@ In this tutorial, you will learn how to register and configure an application be
 
 ---
 
-You can reconfigure application settings for Auth SDK usage later anytime by visiting the Arcana Developer Dashboard and clicking on the **Configure** menu item on the top right of the screen.
-
 That is all! 🎉
 
 You have successfully registered and configured your application. 
-
-!!! caution "Wallet Visibility Mode"
-
-    {% include "./text-snippets/warn_config_wallet_ui.md" %}
-
-To delete the application entry, visit the **Manage Apps** screen on the developer dashboard.
-
-<img src="/img/an_db_manage_apps.png" alt="manage apps" width="85%"></img>
-
-Use **Delete** to remove the application entry and de-register it.
-
-<img src="/img/an_db_delete_app.png" alt="Delete app entry" width="85%"></img>
 
 ## What's next?
 
@@ -63,8 +49,13 @@ After registering and configuring the application, install the Auth SDK and then
 
     ![App Address](/img/an_db_appid.png)
 
+You can reconfigure application settings for Auth SDK usage later anytime by visiting the Arcana Developer Dashboard. Simply log in, select your app entry and double click on it to view the **Configure** screen.
+
 ## See Also
 
+* [Configure wallet visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md)
+* [Deleting Application Entry]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#delete-application)
+* [Managing Testnet and Mainnet Configurations]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.html#manage-testnet-and-mainnet-configurations)
 * [Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md)
 * [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

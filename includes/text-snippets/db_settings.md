@@ -1,12 +1,12 @@
-Click **Configure** in the LHS navigation area and provide inputs for various settings that control Auth SDK usage and the Arcana wallet experience for application users. 
+Click **Configure** in the LHS navigation area and provide inputs for various settings that control Auth SDK usage and the Arcana wallet experience for the users. 
 
 <img src="/img/an_db_configure_details.png" alt="config details" width="100px"></img>
 
-**Click** on the tabs below to learn more about the available configuration settings and how they work.
+**Click** on the tabs below to learn more about the available configuration settings.
 
 === "Branding"
 
-    Manage the look and feel of Arcana wallet that shows up in an application context. By default, Arcana wallet displays <img src="/img/an_wallet_default_branding_logo.png" alt="default branding logo" width="4%" /> logo and uses the dark theme.
+    Manage the look and feel of Arcana wallet that shows up in an application context. By default, Arcana wallet displays <img src="/img/an_wallet_default_branding_logo.png" alt="default branding logo" width="3%" /> logo and uses the dark theme.
 
     **Branding Settings:**
 
