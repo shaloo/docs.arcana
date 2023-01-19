@@ -21,8 +21,6 @@ arcana:
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" /><img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50"/><img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
 
-**Version: v{% include "./text-snippets/latest_auth_sdk.md" %}**
-
 ### NFT Support
 
 A new separate wallet screen to manage and view details related to the NFTs owned by the wallet address.
@@ -44,7 +42,7 @@ New UI for blockchain transaction notifications. This combined notification scre
   - Smart contract deployment
   - Smart contract interaction
 
-See [notifications screen]({{page.meta.arcana.root_rel_path}}//howto/wallet_ui.md#wallet-notifications) for details.
+See [notifications screen]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md#wallet-notifications) for details.
 
 <img src="/img/an_wallet_combined_notify.png" width="200"/>
 

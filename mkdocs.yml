@@ -125,6 +125,7 @@ nav:
   - Release Notes:
     - relnotes/index.md
     - Auth 0.3.0: relnotes/rn_beta_auth_v0.3.0.md
+    - Mainnet Auth 0.3.0: relnotes/rn_main_auth_v0.3.0.md
   - Migration Guides:
     - migration/index.md
     - Auth 0.3.0: migration/beta_auth_v0.3.0_migration.md
