@@ -93,6 +93,7 @@ CRA
 CSP
 CSS
 Cachin
+Certik
 ChainID
 ChangeOwnerSignMsgText
 Changelog
@@ -505,6 +506,7 @@ cryptographically
 css
 customizable
 customizations
+cybersecurity
 dApp
 dApp's
 dApp-specific
@@ -720,6 +722,7 @@ idrnbeta1_1
 idrnbeta1_2
 idrnbeta1_5
 idrnbetaauth030
+idrnmainauth030
 idrnmainnet
 idsample_int_wallet
 idsetupauthsdk
@@ -867,6 +870,7 @@ rn_beta1_5
 rn_beta2
 rn_beta_2
 rn_beta_auth_0_3_0
+rn_main_auth_0_3_0
 rn_mainnet
 rnbeta1_1
 rpc
