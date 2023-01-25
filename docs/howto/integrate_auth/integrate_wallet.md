@@ -49,9 +49,13 @@ Import Arcana Auth SDK and create a 'new' `AuthProvider`. During instantiation o
 
 {% include "./code-snippets/new_auth.md" %}
 
-Initialize the newly instantiated `AuthProvider`. Before you call any other Auth SDK functions, make sure initialization function is complete. You can use `getProvider` to access the Web3 Wallet provider exported by the Auth SDK.   
+Initialize the newly instantiated `AuthProvider`. 
 
 {% include "./code-snippets/init_auth.md" %}
+
+Before you call any other Auth SDK functions, make sure initialization function is successful. 
+
+{% include "./code-snippets/provider.md" %}
 
 !!! caution
 
@@ -67,6 +71,7 @@ After integrating with the Arcana Auth SDK, an application can onboard users thr
 
 ## See also
 
+* Access Ethereum providers [web3.js, ethers.js]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#quick-start-with-ethersjs)
 * Using Auth SDK to enable [Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md) based social authentication
 * [Passwordless authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
 * [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)

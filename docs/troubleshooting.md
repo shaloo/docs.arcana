@@ -257,4 +257,4 @@ Lastly, initialize the `AuthProvider`. This is important as it initializes the e
 
 !!! caution
 
-      If an application integrates with the Auth SDK, it must follow these steps above before calling any other SDK method such as `getProvider()` or `connect()` or `loginWithSocial('providerstring')`.
+      If an application integrates with the Auth SDK, it must follow these steps above before calling any other SDK method such as `isLoggedIn()` or `connect()` or `loginWithSocial('providerstring')`.
