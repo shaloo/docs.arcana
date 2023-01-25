@@ -12,7 +12,7 @@ Use the 'Create New App' wizard and provide the following inputs to create your 
 
 Click **Create** to create a new application entry and register it with the Arcana network.
 
-![Register dApp](/img/dashboard_create_newapp_screen.png)
+![Register dApp](/img/an_db_create_newapp_screen.png)
 
 !!! note
 
@@ -22,4 +22,8 @@ After a successful registration, you will see the application dashboard screen:
 
 ![New app dashboard](/img/an_db_new_app_screen.png)
 
-The application dashboard screen displays usage statistics and application configuration settings. Use these settings to manage user onboarding options and Arcana wallet user experience.
+The application dashboard screen displays usage statistics and application configuration settings. By default, 'Testnet' configuration profile is created. Developers can specify application settings to manage user onboarding options and Arcana wallet user experience.
+
+Every registered application shows up as a card on the Arcana dashboard *Manage Apps* screen next to the *Create New App** wizard:
+
+![New app card](/img/an_db_new_app_card.png)

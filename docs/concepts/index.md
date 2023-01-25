@@ -22,4 +22,8 @@ These are the building blocks to help you learn about various Arcana Network ter
 
 [Private Key :material-key:](privatekey.md){ .md-button }
 
+[Shared Key Space :material-key:](sharedkeys.md){ .md-button }
+
+[Usage Metrics :material-monitor-eye:](usage_metrics.md){ .md-button }
+
 [Validator Nodes :material-checkbox-multiple-marked-circle-outline:](validator_nodes.md){ .md-button }

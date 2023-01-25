@@ -110,6 +110,8 @@ nav:
         - Gateway: concepts/gateway_nodes.md
         - Plug and Play Auth: concepts/plugnplayauth.md
         - Private Key: concepts/privatekey.md
+        - Shared Key Space: concepts/sharedkeys.md
+        - Usage Metrics: concepts/usage_metrics.md
         - Validator Nodes: concepts/validator_nodes.md
       - Usage Flows: 
         - user_flows/index.md
