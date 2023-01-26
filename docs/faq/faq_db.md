@@ -13,17 +13,9 @@ toc_depth: 2
 
 Frequently asked questions about using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to configure an application before integrating it with the Auth SDK.
 
-## General Settings
+## General
 
 ---
-
-??? an-faq "Why can't I upload the logo file?"
-
-      Make sure the file is less than the 2MB limit for a successful upload.
-
-??? an-faq "How do I change the logo file that I uploaded earlier?"
-
-      Click on the 'x' icon next to the uploaded logo file. You will see a notification about the successful deletion of the file. Click on the upload icon and upload a new logo file.
 
 ??? an-faq "How do I delete the application configuration and start afresh?"
 
@@ -48,7 +40,23 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
           When switching your application from Arcana Testnet to Mainnet, you must ensure to use the new **App Address** corresponding to the application's 'Mainnet' profile while integrating with the Auth SDK and then bring up your application on the Arcana Mainnet. This will ensure that user onboarding and the blockchain transactions happen as per the Mainnet configuration settings and not as per the Testnet configuration profile. 
 
-## Auth Settings
+??? an-faq "How do I delete Mainnet configuration settings and run my application using Arcana Testnet only?"
+
+      Once you have enabled 'Mainnet' for an application, you cannot delete the 'Mainnet' configuration profile independently in the current release.  You can [switch your application from 'Mainnet' to 'Testnet']({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#switch-profiles) by using the dropdown button in the application configuration screen. 
+
+      The only way to delete Mainnet settings is to deregister the app and delete the app entry altogether.  This removes both Testnet and Mainnet configuration profiles. You will need to re-register the application.  This will create a totally new **App Address** and you will be required to specify the new App Address when integrating your application with the Auth SDK.  As a result, when your application users log in, they will see brand-new wallet addresses. If you wish to ensure that the user wallet address does not change, you must register your application and request for the ['Shared Key Space']({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) option at the very start. In that case, users will be allowed to use the same wallet address across all applications in the Arcana ecosystem and even if an application is de-registered and re-registered.
+
+## Branding Settings
+
+??? an-faq "Why can't I upload the logo file?"
+
+      Make sure the file is less than the 2MB limit for a successful upload.
+
+??? an-faq "How do I change the logo file that I uploaded earlier?"
+
+      Click on the 'x' icon next to the uploaded logo file. You will see a notification about the successful deletion of the file. Click on the upload icon and upload a new logo file.
+
+## Social Auth Settings
 
 ---
 
@@ -68,6 +76,8 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
       For more details, see [Arcana wallet visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
 
+<!---
+
 ## Store Settings
 
 ---
@@ -78,10 +88,12 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
       To change the storage region setting for your application, you will need to delete the application from the dashboard and re-register it, selecting a different storage region during the registration process.
 
-## Access Settings
+-->
+
+## Wallet Settings
 
 ---
 
-??? an-faq "Will selecting a specific `Chain type` setting affect the fees I pay for using Auth SDK?"
+??? an-faq "Why do I need to specify Wallet Website Domain setting?"
 
-      No, the Chain type selection does not impact fees. It is simply an optional setting that allows us to gauge user preference for certain blockchain technologies. This information is used internally to prioritize the development and improvement of features within the Arcana Network Platform and the Auth SDK.
+      This is an optional setting for additional security. If specified, Arcana Network Auth subsystem uses this setting to restrict Arcana wallet from loading anywhere else other than the application website domain that a developer specifies. for restricting domains, the [frame-ancestor Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/web/http/headers/content-security-policy#frame-ancestors) is used.

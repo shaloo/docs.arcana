@@ -51,46 +51,55 @@ This comprehensive guide will walk you through the various configuration options
 
 ### Manage Configurations
 
-Each application that is registered using the Arcana Developer Dashboard has one entry displayed in the main dashboard screen next to the 'Create New App' wizard. 
+Every application that is registered using the Arcana Developer Dashboard is represented by a single card displayed in the 'Manage Apps' dashboard screen, next to the 'Create New App' wizard. Each application can only be associated with two configuration profiles, 'Testnet' and 'Mainnet. Both these configurations are maintained separately and each is associated with a unique **App Address**. 
 
 ![New App config card](/img/an_db_new_app_card.png)
-After validation on the 'Testnet', the application can be deployed on the Arcana 'Mainnet'. To do this, developers must create a corresponding 'Mainnet' configuration profile using the dashboard. Each application can have only two configuration profiles, one for 'Testnet' and the other for 'Mainnet. Each configuration is independently maintained and is associated with a unique **App Address**.
 
-**Testnet Configuration**
+#### Testnet
 
-Any new application that is registered with the Arcana Network using the dashboard will result in the creation of a default 'Testnet' configuration profile. The application is assigned a unique **App Address** associated with this 'Testnet' profile.
+By default, all newly registered applications are enabled for using the Arcana 'Testnet'. The default configuration profile created for every registered application is meant for 'Testnet' usage. Developers can view or edit the default configuration settings by clicking 'Testnet' on the application card displayed in the 'Manage Apps' dashboard.
 
-**Mainnet Configuration**
+After validation on the 'Testnet', the application can be configured to use the Arcana 'Mainnet'. To do this, developers must create a corresponding 'Mainnet' configuration profile. 
 
-In addition to the default 'Testnet' configuration settings profile, developers can create a corresponding 'Mainnet' configuration profile for their registered applications. Use the 'Testnet'/'Mainnet' dropdown in the 'Testnet' configuration profile screen. 
+#### Mainnet
+
+By default, all newly registered applications are enabled to use Arcana 'Testnet' and associated with the 'Testnet' configuration. To switch an application from using 'Testnet' to 'Mainnet', developers must first create a 'Mainnet' profile using the developer dashboard. 
+
+A newly registered application does not have any 'Mainnet' profile associated with it. The application card displayed in the 'Manage Apps' screen will show the 'Mainnet' configuration as disabled. To create a 'Mainnet' configuration profile, the developer must use the Testnet profile settings page and refer to the dropdown on the top right indicating 'Testnet' selection for the application. Use this dropdown to select 'Mainnet'.
 
 ![Testnet Mainnet Selection](/img/an_db_testnet_mainnet_select.png)
 
-This network selection to 'Mainnet' will automatically create a 'Mainnet' configuration profile. When the developer selects 'Mainnet' from the dropdown, a pop up shows up displaying options to either copy the 'Testnet' configuration or create a new blank configuration for 'Mainnet' settings. 
+When 'Mainnet' is selected using the dropdown, a pop up shows up asking the developer to choose one of the options to create the 'Mainnet' configuration. You can either copy the exact 'Testnet' configuration or create a new blank configuration for 'Mainnet' settings. 
 
 ![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_creation.png)
 
-When a new Mainnet profile is created, it is automatically registered with the Arcana Network and a new unique **App Address** is assigned to it. 
+After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. A new unique **App Address** is assigned to the application and must be utilized to integrate the application with the Auth SDK and enable it for using Arcana Mainnet network. 
 
 ![Mainnet Profile entry](/img/an_db_mainnet_profile.png)
 
-**Switching Application Profile**
+#### Switch Profiles
 
-There are multiple ways to switch between Testnet and Mainnet for a registered application. 
+There are multiple ways to switch an application from using Testnet to Mainnet. 
 
-* By default, each new registered application has only a single configuration profile, the Testnet configuration. To switch to 'Mainnet', select the dropdown on the top RHS of the configuration profile screen and choose 'Mainnet'. After successful profile creation, the app is automatically switched to 'Mainnet'.
+* To switch to 'Mainnet', select the dropdown on the top RHS of the configuration profile screen and choose 'Mainnet'. After successful profile creation, the app is automatically switched to 'Mainnet' and a new **App Address** is assigned to it. If the app has already been enabled for 'Mainnet' then you can switch to 'Testnet' by using the same dropdown menu and selecting 'Testnet'.  
 
-* If the app has been enabled for 'Mainnet' then you can switch to 'Testnet' by using the same dropdown menu and selecting 'Testnet'.  ![Select Testnet or Mainnet](/img/an_db_testnet_mainnet_select.png)  
+![Select Testnet or Mainnet](/img/an_db_testnet_mainnet_select.png)  
 
-  You can also go to the 'Manage Apps' dashboard screen, refer to the application card and click on 'Testnet' button to switch the application to 'Testnet'. ![Switch to Testnet](/img/an_db_all_app_card.png)
+* Alternatively, you can switch to a different configuration profile by using the 'Manage Apps' dashboard screen, selecting the application card and clicking on 'Testnet' or 'Mainnet' to switch the profile. 
+
+![Switch to Testnet](/img/an_db_all_app_card.png)
 
 !!! caution
 
-      Depending upon whether the 'Testnet' **App Address** value or the 'Mainnet' **App Address** value is used to integrate an application with the Auth SDK, the appropriate configuration is used for user authentication and displaying the Arcana wallet.
+      Depending upon whether the 'Testnet' **App Address** value or the 'Mainnet' **App Address** value is used to integrate an application with the Auth SDK, the respective Arcana Network is used by the application for user authentication and displaying the Arcana wallet. "Testnet" usage is not billed but if an application chooses 'Mainnet', it will be billed in the forthcoming releases.
 
-**Switching to a Different Application Profile**
+#### Switch Applications
 
-Developers can switch from one application configuration profile screen to another by using the 'Manage Apps' screen and clicking on the requisite application card. Another way is to use the LHS navigation pane and click on the dropdown next to the application name. It shows all the applications registered by the developer. Select a different application from the drop down list and you will see the configuration details for that app. ![Switch Application](/img/an_db_switch_application.png)
+Developers can switch from one application configuration profile screen to another by using the 'Manage Apps' screen and clicking on the requisite application card. 
+
+Alternatively, you can use the LHS navigation pane in the configuration screen and click on the dropdown next to the application name. It shows all the applications registered by the developer. Select a different application from the drop down list and you will be switched to the configuration details for that app. 
+
+![Switch Application](/img/an_db_switch_application.png)
 
 <!--
 
@@ -98,13 +107,13 @@ If the application entry in the drop down list is associated with 'Mainnet' sett
 
 -->
 
-### Monitor application Usage Metrics
+### Monitor Usage
 
 Developers can monitor their registered application usage statistics via the Arcana Developer Dashboard. 
 
-#### Usage Summary
+#### Account Usage Metrics
 
-The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all applications registered in the account that are using the 'Mainnet'. Any application using the 'Testnet' is not billed and not included in this statistic.
+The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all applications registered using the dev account for all the applications that are configured to use Arcana 'Mainnet'. Any application using the 'Testnet' is not billed and not included in this overall account usage statistic.
 
 ![Dashboard metrics](/img/an_db_metrics.png)
 
@@ -112,7 +121,7 @@ The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer a
 
       The billing data is only applicable for Mainnet usage and will be made available in the forthcoming releases.
 
-#### Per Application Usage
+#### Usage per Application
 
 You can see the 'Total Users' for each application in the *Manage Apps* screen card displayed for each registered application. Arcana Network maintains per application usage statistics separately for both the 'Testnet' and 'Mainnet' usage. 
 

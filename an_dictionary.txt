@@ -260,6 +260,7 @@ Pwdless
 PwdlessAuthConfigText
 QoS
 RFP
+RHS
 RPC
 RainbowKit
 Rarible
@@ -479,12 +480,14 @@ cleartext
 clientID
 composable
 conceptauthsdk
+conceptdappusage
 conceptdb
 conceptkeystore
 conceptnftminter
 conceptnftviewer
 conceptpvtnft
 conceptruleACL
+conceptsharedkeys
 conceptstgsdk
 conceptstore
 config
@@ -636,12 +639,14 @@ idbyok
 idchangefileowner
 idchangeownerpvtnft
 idconceptauthsdk
+idconceptdappusage
 idconceptdb
 idconceptkeystore
 idconceptnftminter
 idconceptnftviewer
 idconceptpvtnft
 idconceptruleACL
+idconceptsharedkeys
 idconceptstgsdk
 idconceptstore
 idconfig3pwallet
