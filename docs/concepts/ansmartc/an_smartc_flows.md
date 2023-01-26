@@ -8,7 +8,7 @@ sidebar_custom_props:
 
 # Arcana Contract Flows
 
-The interactions between various Arcana smart contracts corresponding to storage operations are captured by the following two workflows: 
+The interactions between various Arcana smart contracts corresponding for various features offered by the Arcana Auth product are captured by the following two workflows: 
 
 1. Data Access Flow
 2. New dApp Registration Flow
@@ -18,7 +18,7 @@ The interactions between various Arcana smart contracts corresponding to storage
 ![Arcana Data Access Flow](/img/diagrams/d_an_sc_stg_flow_light.svg#only-light)
 ![Arcana Data Access Flow](/img/diagrams/d_an_sc_stg_flow_dark.svg#only-dark)
 
-* All dApp user storage operation-related calls made via the client-side <StorageSDKName/> are intercepted by the Arcana Gateway.
+* All dApp user operation-related calls made via the client-side Auth SDK are intercepted by the Arcana Gateway.
 
 * The Gateway executes meta transactions with relevant data and signatures.
 

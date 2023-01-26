@@ -1,8 +1,6 @@
-At the very first login to the dashboard, you will see the **Create New App** wizard. 
+Login to the dashboard, use the **Create New App** wizard and provide the following inputs to register your application with the Arcana Network. 
 
-<img src="/img/icons/dashboard_newappwizard.png" alt="create new app wizard icon" width="150px"></img>
-
-Use the 'Create New App' wizard and provide the following inputs to create your app entry:
+<img src="/img/icons/dashboard_newappwizard.png" alt="create new app wizard icon" width="200px"></img> 
 
 * **App Name:** The name of your registered application
 
@@ -10,20 +8,23 @@ Use the 'Create New App' wizard and provide the following inputs to create your 
 * **Region:** The physical location where the application's configuration data will be stored.
 -->
 
-Click **Create** to create a new application entry and register it with the Arcana network.
-
 ![Register dApp](/img/an_db_create_newapp_screen.png)
 
-!!! note
+Click **Create** to register your application with the Arcana Testnet (default network).
 
-      Once an application entry is created, you can edit the application name and change it. To do that, you will need to click on the pen icon, update the name and press ++enter++ key.
 
-After a successful registration, you will see the application dashboard screen:
+!!! tip
+
+      After registration, you can change the application entry name by using the pen icon. Click ++enter++ in the editable text field to save the new application entry name.
+
+After a successful registration, you will see the application dashboard screen for 'Testnet' configuration profile (default).
 
 ![New app dashboard](/img/an_db_new_app_screen.png)
 
-The application dashboard screen displays usage statistics and application configuration settings. By default, 'Testnet' configuration profile is created. Developers can specify application settings to manage user onboarding options and Arcana wallet user experience.
+Application dashboard screen displays per application usage statistics. Use the LHS navigation and choose *Configure* to view and edit configuration settings. Refer to the next section for details.
 
-Every registered application shows up as a card on the Arcana dashboard *Manage Apps* screen next to the *Create New App** wizard:
+Every registered application shows up as a card on the Arcana dashboard *Manage Apps* screen next to the *Create New App* wizard. You can view the list of all registered applications for a developer account in the form of cards.
 
 ![New app card](/img/an_db_new_app_card.png)
+
+

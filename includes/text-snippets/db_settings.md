@@ -1,21 +1,27 @@
-Click **Configure** in the LHS navigation area and provide inputs for various settings that control Auth SDK usage and the Arcana wallet experience for the users. 
+Click **Configure** in the LHS navigation of the Application dashboard screen. It has the following sections:
+
+* Branding
+* Social Auth 
+* Arcana Wallet
+
+Use defaults or provide inputs for the required settings as per your application use case. These settings control Auth SDK usage, user onboarding and blockchain transaction signing experience.
 
 <img src="/img/an_db_configure_details.png" alt="config details" width="100px"></img>
 
-**Click** on the tabs below to learn more about the available configuration settings.
+**Click** on the tabs below to learn more about various configuration settings for branding, social authentication and Arcana wallet.
 
 === "Branding"
 
-    Manage the look and feel of Arcana wallet that shows up in an application context. By default, Arcana wallet displays <img src="/img/an_wallet_default_branding_logo.png" alt="default branding logo" width="3%" /> logo and uses the dark theme.
+    Use branding settings to manage the look and feel of the Arcana wallet that shows up in an application context. By default, Arcana wallet displays <img src="/img/an_wallet_default_branding_logo.png" alt="default branding logo" width="3%" /> logo and uses the dark theme.
 
     **Branding Settings:**
 
-    * **Upload Logo:** Upload light and dark theme branding/logo images to customize the wallet UI.
-    * **Wallet Theme:** Choose an appropriate wallet theme for your application.<br></br><img alt="Branding" src="/img/an_db_configure_branding.png" width="85%"></img>
+    * **Upload Logo:** Upload light and dark theme branding/logo images and customize the wallet UI that shows up in the context of your application for any authenticated user. You can customize the logo mark that shows in a minimized wallet. You can also customize the horizontal logo that shows up in the top left of the Arcana wallet UI right before the registered application name. 
+    * **Wallet Theme:** Choose an appropriate wallet theme for your application. Dark theme is the default.<br></br><img alt="Branding" src="/img/an_db_configure_branding.png" width="85%"></img>
 
 === "Social Auth"
 
-    Manage user onboarding experience by setting up requisite social login providers. Only the providers that are configured for an application will be enabled in the Auth SDK as options for users to onboard the application.
+    Use the social authentication section to manage user onboarding experience by setting up requisite social login providers. Only the providers that are configured for an application will be enabled in the Auth SDK as options for users to onboard the application.
 
     !!! Example
     
@@ -30,7 +36,7 @@ Click **Configure** in the LHS navigation area and provide inputs for various se
 
 === "Arcana Wallet"
 
-    Manage Arcana wallet additional security settings. (Optional)
+    Use the Arcana wallet section to specify Arcana wallet additional security settings. (Optional)
 
     **Arcana Wallet Settings:**
 

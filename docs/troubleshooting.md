@@ -16,9 +16,13 @@ This troubleshooting guide will cover common issues that users may encounter whe
 
 ---
 
+<!---
+
 ### Cannot change storage region from North America to Europe
 
 Storage Region can be configured for any application using the dashboard just once.  This setting cannot be changed later, but other application settings such as social authentication provider settings can be reconfigured at any time. To change the storage region, you must [delete the dApp from the dashboard and then configure it again]({{page.meta.arcana.root_rel_path}}/faq/faq_db.md).
+
+--->
 
 ### Cannot turn off UI for wallet mode
 

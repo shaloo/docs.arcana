@@ -32,7 +32,7 @@ Arcana Network offering consists of two key components:
 === "Dashboard"
 
        <p>
-       <ul><p>🖥️ Use the <a href="{{page.meta.arcana.root_rel_path}}/concepts/dashboard.html">Arcana Dashboard</a> to register and configure your dApp, before integrating dApps with the Arcana SDKs.</p><p> </p><p>🖥️ Select the type of user onboarding experience, blockchain signing experience as per the use case.</p><p> </p><p>🖥️ Choose the geographic location where uploaded dApp user data should reside, secured by Arcana Store.</p><p> </p><p>🖥️ Set limits for storage and bandwidth usage per user or keep the default setting (unlimited).</p></ul>
+       <ul><p>🖥️ Use the <a href="{{page.meta.arcana.root_rel_path}}/concepts/dashboard.html">Arcana Dashboard</a> to register and configure your dApp, before integrating dApps with the Arcana SDKs.</p><p> </p><p>🖥️ Select the type of user onboarding experience, blockchain signing experience as per the use case.</p><p> </p></ul>
        </p>
    
 === "Auth SDK"

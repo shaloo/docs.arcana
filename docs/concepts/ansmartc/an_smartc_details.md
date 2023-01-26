@@ -30,6 +30,6 @@ ArcanaBeacon smart contract points to the latest version of Arcana’s core syst
 
 ## Forwarder.sol
 
-This UUPS proxy upgradable smart contract is used to manage the meta transactions.  A meta transaction is a regular Ethereum transaction that contains another transaction, the actual transaction.  Meta transactions are a means of delegating payment of gas fees to an external entity such as Arcana Gateway. They are meant to facilitate the onboarding of first-time dApp users. Arcana uses meta-transactions to implement data storage and access operations. The Arcana Gateway module handles all the meta transactions. 
+This UUPS proxy upgradable smart contract is used to manage the meta transactions.  A meta transaction is a regular Ethereum transaction that contains another transaction, the actual transaction.  Meta transactions are a means of delegating payment of gas fees to an external entity such as Arcana Gateway. They are meant to facilitate the onboarding of first-time dApp users. Arcana uses meta-transactions to implement Arcana Auth related data and access operations. The Arcana Gateway module handles all the meta transactions. 
 
 The forwarder smart contract is used in the context of meta transactions, together with an ERC-2771 compatible contract.  It forwards blockchain transaction calls from the Gateway, made on behalf of the dApp user  (proxy blockchain transactions) to the core system contract, Arcana.sol. 
