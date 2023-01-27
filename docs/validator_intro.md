@@ -104,6 +104,7 @@ or
 ```sh
 init 6
 ```
+
 * Validate that ulimit for open files has been updated to 20000 by using the command:
 
 ```sh
