@@ -52,6 +52,64 @@ Preferably deploy Ubuntu Linux v20.04.4 LTS or higher.
 * [Install Golang](https://go.dev/doc/install) v1.17
 --->
 
+**Ulimit Settings**
+
+Use the following command to check the ulimit settings for open file descriptors (default):
+
+```sh
+ulimit -n
+```
+
+or
+
+```sh
+ulimit -aS
+```
+
+If the soft limit for **open files** is lower than 20,000 use the following instructions to update it:
+
+* Edit the Linux Kernel parameter file `/etc/sysctl.conf`
+
+```sh 
+  vi /etc/sysctl.conf 
+```
+
+  Add " fs.file-max = 20000 " in the file. To apply the changes, execute:
+  
+```sh
+sysctl -p
+```
+
+* Change the ulimit setting in the file `/etc/security/limits.conf`
+
+```sh
+vi /etc/security/limits.conf
+```
+
+  Specify the following limits in `/etc/security/limits.conf`
+
+```sh
+ * soft nofile 20000
+ * hard nofile 20000
+```
+
+After making these changes to both the files, make sure that you reboot the ADKG node.
+
+```sh
+reboot
+```
+
+or
+
+```sh
+init 6
+```
+* Validate that ulimit for open files has been updated to 20000 by using the command:
+
+```sh
+ulimit -n
+```
+
 **Network Settings**:
 
 1. Obtain a domain name for your server and set up associated SSL certificates. 
@@ -62,7 +120,7 @@ Preferably deploy Ubuntu Linux v20.04.4 LTS or higher.
 
 **Setup DKG Software**
 
-1. Copy the [DKG binary](https://github.com/arcana-network/dkgnode).
+1. Copy the [DKG binary v1.0.1](https://github.com/arcana-network/adkg/releases/tag/v1.0.1) locally on your node.
 
 2. Change the binary file permissions to 'executable'.
 
