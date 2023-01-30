@@ -39,7 +39,7 @@ The DKG subsystem in the Arcana Network protocol is decentralized. At the launch
 * [Comdex - interchain DeFi infrastructure](https://comdex.one/)
 * [Luganodes - institutional-grade blockchain infrastructure providers](https://www.luganodes.com/)
 
-We are actively working with other partners for making the Arcana DKG subsytem truly decentralized.
+We are actively working with other partners for making the Arcana DKG subsystem truly decentralized.
 
 ### ADKG
 

@@ -117,6 +117,7 @@ DID_NFT_linked
 DID_NFT_linked_and_cannot_be_deleted
 DIDs
 DKG
+DPSS
 DashboardChlogText
 DbAppIDLinkText
 DbAuthSuppText
@@ -128,6 +129,7 @@ DbPrerequisitesText
 DbRegisterdAppText
 DbSettingsText
 DbSuppOAuthText
+DeFi
 Decrypt
 Decrypting
 Delegator
@@ -791,6 +793,7 @@ indexusingwallet
 indexwalletdev
 init
 instantiation
+interchain
 isLoggedIn
 issues
 js

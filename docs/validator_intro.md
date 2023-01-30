@@ -178,9 +178,16 @@ The key generation begins only when **all** the nodes in the DKG subsystem, Arca
 
 Before you start the validator node, make sure you have completed all the prerequisites and followed the steps defined in the **DKG Start Ceremony**.
 
-You can start the node by issuing `dkg start` command along with command line options and flags or by specifying all the startup options in a configuration file in JSON format.
+!!! note "Node Start Command"
 
-#### Use Configuration File
+      You can run the `dkg start` command and specify validator node configuration details using one of ways listed below:
+      
+      * run `dkg start` with a JSON configuration file that contains all the configuration 
+      * run `dkg start` with various flags/parameter values on the command line itself 
+
+      Registration of validator node happens automatically using the information that is provided in the configuration file or via the command line.
+
+#### Option1: Use Configuration File
 
 ```sh
 dkg start --config=/path/to/config.json
@@ -188,21 +195,21 @@ dkg start --config=/path/to/config.json
 
 ```json title="config.json"
 {
-  ipAddress: "172.23.22.231",
-  domain: "keyserver.example.com",
-  dataDir: "/path/to/data",
-  secretConfig: "/path/to/secret/config.json",
+  ipAddress: "172.23.22.231",      //Example value. Replace with public IP Addres of your node
+  domain: "keyserver.example.com", // Example value. Do not specify https://
+  dataDir: "/path/to/data",        // Ensure dataDir directory access permissions allow DKG binary to access it
+  secretConfig: "/path/to/secret/config.json", //Use appropriate file access permissions for DKG binary to access it
   port: "3000",
 }
 ```
 
-#### Use Command Line Options
+#### Option 2: Use Command Line
 
 ```sh
 dkg start --secret-config=/path/to/secret/config --data-dir=/path/to/data --domain=keyserver.example.com --ip-address=172.23.22.231  --server-port=3000
 ```
 
-**Command Line Options**
+**Node Start Options**
 
 `--secret-config`
 
