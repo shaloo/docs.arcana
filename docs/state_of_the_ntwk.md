@@ -34,11 +34,16 @@ We are actively working towards the Arcana Mainnet release, early January 2023.
 
 ### DKG Validator Nodes
 
-There will be seven DKG validator nodes.  Out of these four are owned by Arcana and the remaining three  [validator node]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md) are run by trusted partners.
+The DKG subsystem in the Arcana Network protocol is decentralized. At the launch of Mainnet, there will be seven DKG validator nodes in all.  Five of these are owned by Arcana and the remaining two  [validator node]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md) are own and managed by trusted partners:
+
+* [Comdex - interchain DeFi infrastructure](https://comdex.one/)
+* [Luganodes - institutional-grade blockchain infrastructure providers](https://www.luganodes.com/)
+
+We are actively working with other partners for making the Arcana DKG subsytem truly decentralized.
 
 ### ADKG
 
-The alpha release offered a distributed DKG and that had its well-known shortcomings. Arcana actively collaborates with leading cryptography experts and researchers to fold recent advances in 'Asynchronous DKG' technology into the Arcana Network platform. 
+We have come a long way since our alpha release that offered a distributed DKG. Several shortcomings regarding trusted dealer, robustness have been resolved in the state-of-the-art asynchronous distributed key generation protocol built into the Arcana Network. We have collaborated with some of the leading cryptography experts and researchers to fold recent advances in 'Asynchronous DKG' technology into the Arcana Network platform. Refer to the Arcana Technical Whitepaper for more details on ADKG.
 
 ## Security
 
@@ -46,7 +51,11 @@ The alpha release offered a distributed DKG and that had its well-known shortcom
 
 All data stored in Arcana Store is encrypted via secure keys. The encrypted data is accessible only to the data owner. Arcana Network platform components do not store any keys that belong to the dApp user.  Data is decrypted only at the client end after user verification. 
 
-Arcana uses the [asynchronous verifiable secret sharing and proactive crypto systems distributed Key storage scheme by Cachin et al. (2002)](https://eprint.iacr.org/2002/134.pdf). In the future, we plan to use asynchronous distributed key generation (DKG).
+### Key Access
+
+Arcana combines several algorithms to have a highly secure and robust ADKG subsystem. It uses [asynchronous verifiable secret sharing and proactive crypto systems distributed Key storage scheme by Cachin et al. (2002)](https://eprint.iacr.org/2002/134.pdf) and [robust asynchronous DPSS](https://eprint.iacr.org/2022/971) to ensure that no single node in the system has access to the user's keys and the system can handle malicious nodes. We are also working on key repair, refresh, multi-factor-authentication (MFA) and multi-party computation (MPC) for even stronger security without compromising on ease of use for Web3 users.
+
+###  
 
 ### Audit
 

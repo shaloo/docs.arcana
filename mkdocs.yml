@@ -135,7 +135,7 @@ nav:
     - validator_intro.md
   - Reference:
       - reference/index.md
-      - Auth SDK Status: state_of_the_ntwk.md
+      - State of the Arcana Auth: state_of_the_ntwk.md
       - Auth SDK Usage Guide: walletsdk/wallet_usage.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Handling Auth Errors: walletsdk/wallet_err.md
