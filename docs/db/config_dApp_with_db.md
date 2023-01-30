@@ -75,7 +75,35 @@ When 'Mainnet' is selected from the dropdown, if there already exists a 'Mainnet
 
 ![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_creation.png)
 
-After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. A new unique **App Address** is assigned to the application and must be utilized to integrate the application with the Auth SDK. 
+After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 'Mainnet' configuration requires an additional setting which is not there for 'Testnet' configuration profile. This additional setting is **keyspace** and it is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana 'Mainnet'. Refer to the next section for more details.
+
+!!! note "Mainnet App Address"
+
+      The newly creat4ed 'Mainnet' configuration profile is associated with a brand new unique **App Address**. Developers must specify this new app address while integrating the application with the Auth SDK and deploy it on Arcana 'Mainnet'.
+
+#### Configure Mainnet Keyspace 
+
+To deploy an application on the Arcana Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. You can choose to copy the 'Testnet' profile as 'Mainnet' configuration or create a new one. In both cases, you need to specify an additional keyspace option. Keyspace is only available for **Mainnet**.  There are two keyspace options: [App-specific and Global Keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md).
+
+You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
+
+![Mainnet Keyspace options](/img/an_db_keyspace_options.png)
+
+Use global keyspace if you want to allow the Web3 users experience where same wallet address is assigned to the user across different Arcana application logins. It is less secure than the default **App-specific** keyspace option whereby a user will see different wallet address across different application.
+
+Select **Global Keyspace** and click **Verify**. This will bring up a verification form. Fill out the verification form, click **Submit**. 
+
+<img alt="Global Keyspace Verify" src="/img/an_db_global_keysp_verify.png" width="40%" />
+
+You can check the status of **Global Keyspace** verification by using the **Keyspace** screen. After submitting the form, you will see the status as **In Review**.
+
+![Mainnet Global keyspace in review](/img/an_db_global_keysp_inreview.png)
+
+The status will change to **Approved** once verification is complete. You can integrate your application with the Auth SDK but do not deploy it until the verification is complete. Otherwise users that log in before verification is complete may see different wallet addresses after the process is complete.
+
+![Mainnet Global keyspace approved](/img/an_db_global_keysp_approved.png)
+
+Now your application is configured to use the Arcana Mainnet. You can further edit configuration settings for Mainnet by using the LHS navigation pane and selecting **Configure**.  
 
 ![Mainnet Profile entry](/img/an_db_mainnet_profile.png)
 
@@ -85,11 +113,11 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
 * To switch to 'Mainnet', use the application dashboard screen, select **Configuration >> Social Auth** in the LHS navigation pane. Refer to the dropdown next to 'Testnet' on the top RHS of the screen and choose 'Mainnet'. If there is a preexisting 'Mainnet profile, the app is automatically switched to it and you can see the social authentication settings and assigned **App Address** for the 'Mainnet' profile. Otherwise, the profile wizard gets activated and assists the developer in creating a 'Mainnet' configuration profile for the application. Once the profile is created, a new **App Address** is automatically assigned and the configuration switches to 'Mainnet'.
 
-![Select Testnet or Mainnet](/img/an_db_testnet_mainnet_select.png)  
+    ![Select Testnet or Mainnet](/img/an_db_testnet_mainnet_select.png)  
 
 * Alternatively, if a 'Mainnet' configuration profile is already created for an application, you can also switch between Testnet/Mainnet configuration profiles by using the 'Manage Apps' dashboard screen. Simply select the application card and click on 'Testnet' or 'Mainnet'. This will bring up the application dashboard screen displaying the application dashboard for the selected configuration profile. 
 
-![Switch to Testnet](/img/an_db_all_app_card.png)
+    ![Switch to Testnet](/img/an_db_all_app_card.png)
 
 !!! caution
 

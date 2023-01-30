@@ -42,6 +42,18 @@ Use defaults or provide inputs for the required settings as per your application
 
     * **Wallet:** Website Domain - Set our website domain here. It is used for security reasons by the server, to restrict Arcana wallet from loading anywhere else other than the domain you specify. Arcana uses frame-ancestor CSP for restricted domains.<br></br><img alt="Social OAuth" src="/img/an_db_configure_wallet.png" width="85%"></img>
 
-!!! important
+=== "Shared Keyspace"
+
+    Use the shared keyspace section to use default **App-specific** or **Global Keys** feature. Global keys allows an application user to have the same wallet address across different applications in the Arcana Network ecosystem. Learn more about [App-specific and global keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) and use the [Arcana Developer Dashboard User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#configure-mainnet-keyspace) to configure shared keyspace.
+
+    **Keyspace**
+
+    * **App-Specific**:  Highly secure but an authenticated user will be assigned unique, different wallet address for every apps in the Arcana Network ecosystem.
+
+    * **Global Keys**: Less secure but better user experience as an authenticated user will be assigned a unique address that remains the same whether user logs into any application in the Arcana Network ecosystem.
+
+    ![Mainnet Keyspace options](/img/an_db_keyspace_options.png)
+
+!!! note
 
       Make sure you save the configuration settings before leaving the dashboard page in your browser.
