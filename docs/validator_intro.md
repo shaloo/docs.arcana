@@ -180,12 +180,16 @@ Before you start the validator node, make sure you have completed all the prereq
 
 !!! note "Node Start Command"
 
-      You can run the `dkg start` command and specify validator node configuration details using one of ways listed below:
+      You can run the `dkg start` command and specify validator node configuration details using **one** of ways listed below:
       
-      * run `dkg start` with a JSON configuration file that contains all the configuration 
+      * run `dkg start` with a JSON configuration file that contains all the configuration, or
       * run `dkg start` with various flags/parameter values on the command line itself 
 
       Registration of validator node happens automatically using the information that is provided in the configuration file or via the command line.
+
+!!! caution "Restart"
+
+      If this is not the first time you are starting the node, please make sure that you perform a clean re-start. Refer to the section [Re-starting the Node](#re-starting-the-node) to see how to perform a clean restart.
 
 #### Option1: Use Configuration File
 
@@ -227,7 +231,7 @@ The data directory where all the node specific and shared data will be stored, t
 
 `--domain`
 
-The domain name for the node you are running is needed for the users and other nodes to be able to reach the node for RPC calls.
+The domain name for the validator node that you are running. This is needed to enable users and other nodes to be able to access the validator node via RPC calls.
 
 `--ip-address`
 
@@ -243,7 +247,15 @@ The port number at which the **http server** is listening for requests.
 
 ### Stop Validator Node
 
-You need to kill the running DKG process to stop the validator node.
+You need to kill the running DKG process to stop the validator node. 
+
+### Re-starting the Node
+
+We are working on providing a cleaner way to stop and restart the node.  Until then, before you restart the node, please make sure that the following are taken care of:
+
+* `dkg.sock` file is created in case the node crashed or did not have a clean shutdown. Make sure you remove this file manually before issuing a `dkg start` command.
+* Use the [latest DKG binary](https://github.com/arcana-network/adkg/releases) before you restart the node. 
+      
 
 ## Validator Responsibilities
 
