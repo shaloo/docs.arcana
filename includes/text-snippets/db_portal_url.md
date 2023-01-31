@@ -1,1 +1,1 @@
-<span><a href="https://dashboard.beta.arcana.network">https://dashboard.beta.arcana.network</a></span>
+<span><a href="https://dashboard.arcana.network">https://dashboard.arcana.network</a></span>
