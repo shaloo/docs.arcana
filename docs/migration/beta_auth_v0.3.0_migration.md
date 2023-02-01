@@ -21,12 +21,17 @@ When you migrate from an older version of the Arcana Auth SDK to v0.3.0, you wil
 
 * All blockchain transaction activity is no longer available as a tab in the main Arcana wallet main screen. Refer to the newly added combined notification screen in the Arcana wallet.
 
+### Developer Dashboard
+
+* There were some breaking changes in the registered application database schema. If you were already using older version of the Auth SDK, you need to re-register and configure your application again. Your application **App Address** will change as a result of re-registration. Make sure you use the new **App Address** while integrating with the Auth SDK.
+
 ### Auth SDK
 
 <img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50" />
 <img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
 
 * There is no usage change in the Auth SDK in this release. 
+* After re-registering your app, the dashboard will assign a new **App Address**. You need to use this during integration with the Auth SDK.
 
 ## What's New?
 

@@ -126,10 +126,11 @@ nav:
     - Validator Nodes: faq/faq_validator.md
   - Release Notes:
     - relnotes/index.md
-    - Auth 0.3.0 (Mainnet): relnotes/rn_main_auth_v0.3.0.md
+    - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
     - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
   - Migration Guides:
     - migration/index.md
+    - Auth 1.0.0: migration/main_auth_v1.0.0_migration.md
     - Auth 0.3.0: migration/beta_auth_v0.3.0_migration.md
   - DKG Validators: 
     - validator_intro.md
