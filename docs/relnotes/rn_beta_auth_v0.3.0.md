@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Arcana Auth SDK Release Notes
+# Release Notes Arcana Auth (Testnet)
 
 {==
 

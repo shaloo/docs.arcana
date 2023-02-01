@@ -7,13 +7,13 @@ arcana:
   root_rel_path: ..
 ---
 
-# Arcana Auth SDK Mainnet Release Notes
+# Release Notes Arcana Auth (Mainnet)
 
 {==
 
 **Version: v{% include "./text-snippets/latest_auth_sdk.md" %}**
 
-**Release Date: January 2022**
+**Release Date: February 2022**
 
 ==}
 
@@ -25,32 +25,53 @@ arcana:
 
 Our design team has used their magic wand to spruce up the developer dashboard for better productivity.
 
-  - Easily register and configure Web3 applications
-  - Simple to create and delete application configuration
-  - View application usage details, settings 
-  - Quickly switch from configuring / viewing one application settings to another
-  
-See [Arcana Developer Dashboard User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for details.
-
-TBD - Add a fully populated dashboard screenshot that shows multiple apps on the Manage apps screen.
-
-### Easily Manage Application Configuration Profile (Testnet / Mainnet)  
+### Application Configuration Profiles
 
 We have made it super easy for developers to migrate their Web3 applications from Testnet to Mainnet. You can start with the default testnet profile and once the application is tested and ready to deploy, simply toggle to Mainnet settings.
 
-  - By default, both testnet and mainnet profiles are identical.
-  - Both Testnet and Mainnet configuration setting profiles can be edited and managed independently.
-  - For mainnet configuration profile, a new unique App Address is assigned to the app.
+![Dashboard with multiple Apps](/img/an_db_mulitiple_apps.png)
 
-Note: Do remember to use the correct App Address when you deploy your application on the Mainnet.
+- Easily register and configure Web3 applications
+- Create, delete and manage application configurations for 'Testnet' and 'Mainnet'
+- Copy settings or create a fresh 'Mainnet' profile
+- Toggle between 'Testnet' and 'Mainnet' easily
+- Both profiles can be edited and managed independently
+- A new unique **App Address** is associated with 'Mainnet' application configuration profile
 
-See [manage application profiles]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#manage-testnet-and-mainnet-configurations) for details.
+    !!! note
+          Do remember to use the correct App Address for integrating with the Auth SDK when you deploy your application on the Mainnet.
 
-TBD - Add a fully populated screenshot with some non zero users logged into an application configuration screen.
+See [manage application profiles]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#manage-testnet-and-mainnet-configurations) for details. 
 
-## Bug Fixes
+### App-specific and Global Keys
 
-  - TBD
+- Mainnet configuration settings requires [configuring keyspace]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#configure-mainnet-keyspace)
+- App-specific keys are the default
+- Global keys require submitting a verification form and approval
+- Global keys are less secure but allow user experience of same wallet address across apps in the Arcana ecosystem
+
+### Monitor Application Usage Metrics
+
+- Usage tracking per application is now enabled. Application dashboard screen displays usage metrics.
+- Monthly Active Users (MAU) is calculated for every unique user that logs in to an application during the month.
+- Billing for 'Mainnet' use will be calculated at the end of every month.
+  
+See [Arcana Developer Dashboard User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#monitor-usage) for details.
+
+![Dashboard Usage Metrics](/img/an_db_usage_metrics.png)
+
+### Wallet Enhancements 
+
+- Auto-refresh of balance amount is now supported
+
+### State-of-the-art DKG
+
+- Secure, self-sovereign user identity management via asynchronous, distributed key generation protocol
+- Decentralized: Two of the DKG nodes are run by Comdex and LugaNodes.
+
+### Audits
+
+Arcana smart contracts and ADKG subsystem have been audited by Certik. See [Audit Reports]({{page.meta.arcana.root_rel_path}}/audit/index.md) for details.
 
 ---
 
