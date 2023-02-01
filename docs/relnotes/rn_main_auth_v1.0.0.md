@@ -1,6 +1,6 @@
 ---
-slug: /rn_main_auth_0_3_0
-id: idrnmainauth030
+slug: /rn_main_auth_v1_0_0
+id: idrnmainauthv100
 sidebar_custom_props:
   cardIcon: 🏁
 arcana:
