@@ -1,3 +1,4 @@
+dummy
 .dmg
 .json
 .md-button
@@ -99,6 +100,7 @@ ChangeOwnerSignMsgText
 Changelog
 ClientID
 Coinbase
+Comdex
 ComingSoonTutLinkText
 Config
 ConfigIssuesText
@@ -213,6 +215,7 @@ LatestReleaseText
 LatestReleaseText.avi
 LatestStorageReleaseText
 ListenDisconnEventText
+LugaNodes
 Mainnet
 MetaMask
 MinIO
@@ -924,6 +927,7 @@ trustless
 tus
 twitchoauth
 twitteroauth
+tx
 ui
 uitemplates
 un-delegate
