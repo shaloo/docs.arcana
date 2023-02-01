@@ -215,6 +215,7 @@ LatestReleaseText.avi
 LatestStorageReleaseText
 ListenDisconnEventText
 LugaNodes
+MAU
 Mainnet
 MetaMask
 MinIO
@@ -734,6 +735,7 @@ idrnbeta1_2
 idrnbeta1_5
 idrnbetaauth030
 idrnmainauth030
+idrnmainauthv100
 idrnmainnet
 idsample_int_wallet
 idsetupauthsdk
@@ -884,6 +886,7 @@ rn_beta2
 rn_beta_2
 rn_beta_auth_0_3_0
 rn_main_auth_0_3_0
+rn_main_auth_v1_0_0
 rn_mainnet
 rnbeta1_1
 rpc
