@@ -117,7 +117,6 @@ nav:
       - Usage Flows: 
         - user_flows/index.md
         - User Auth and DKG: user_flows/user_auth_and_dkg.md
-        - Encryption and KMS: user_flows/encryption_and_kms.md
       - New to Web3:  an_academy/new_web3_dev.md
   - FAQ:
     - faq/index.md
