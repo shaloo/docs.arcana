@@ -57,12 +57,12 @@ You have successfully integrated your Vue application with the Auth SDK and can 
 
 ## What's Next?
 
-After integrating with the Arcana Auth SDK, an application can onboard users through social authentication and passwordless login. The application users can utilize the embedded Arcana wallet to sign blockchain transactions, transfer or send blockchain tokens, etc.
+After integrating with the Arcana Auth SDK, an application can onboard users through social authentication and password-free login. The application users can utilize the embedded Arcana wallet to sign blockchain transactions, transfer or send blockchain tokens, etc.
 
 ## See also
 
 * Using Auth SDK to enable [Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md) based social authentication
-* [Passwordless authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
+* [Password-free authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
 * [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
 * [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

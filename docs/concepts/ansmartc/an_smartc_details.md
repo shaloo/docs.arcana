@@ -36,4 +36,4 @@ The forwarder smart contract is used in the context of meta transactions, togeth
 
 ## NodeList.sol
 
-This smart contract is the key to managing Arcana's DKG protocol. It keeps track of the ADKG nodes and their epochs. Not all nodes are run and managed by Arcana. There are trusted third-party providers that run ADKG protocol nodes.
+NodeList.sol contract is the key to managing Arcana's DKG protocol. It keeps track of public information related to ADKG nodes and the epoch details. Besides these, it manages the buffer size for controlling the number of ‘pre-generated’ keys and the information regarding whitelisting of validator nodes.

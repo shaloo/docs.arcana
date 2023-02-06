@@ -12,7 +12,7 @@ arcana:
 
 Arcana wallet allows authenticated users to securely perform blockchain operations without having to bother about generating and managing secret keys. By [integrating their applications with the Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md), Web3 developers can enable Arcana wallet for the application users. With Arcana wallet, users can sign blockchain transactions and manage their digital assets such as cryptocurrencies, native or custom tokens, and NFTs: 
 
-* **User Identity Management:** Arcana wallet associates application users with a secret.  This secret is generated using decentralized, distributed key generation algorithms.  The application users are authenticated through social authentication or passwordless login by the Auth SDK and assigned this secret after successful authentication. This frees the application users from having to manage Web3 secrets or worry about centralized identity management servers, or storing them securely to guard against losing private keys.
+* **User Identity Management:** Arcana wallet associates application users with a secret.  This secret is generated using decentralized, distributed key generation algorithms.  The application users are authenticated through social authentication or password-free login by the Auth SDK and assigned this secret after successful authentication. This frees the application users from having to manage Web3 secrets or worry about centralized identity management servers, or storing them securely to guard against losing private keys.
 
 * **Sign Blockchain Transactions:** Arcana wallet also allows application users to switch blockchain networks and sign blockchain transactions for any EVM-compatible network.
 

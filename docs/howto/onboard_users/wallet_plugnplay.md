@@ -22,7 +22,7 @@ The Auth SDK's plug and play authentication simplifies and speeds up addition of
     
       During dApp configuration, make sure you follow the steps 1-3 listed for each of the supported social logins and configure the Auth settings in the dashboard.  For details, refer to the [social logins configuration guide]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
 
-      Only the configured providers will show up in the plug and play pop up screen as the available onboarding options.  If no providers are configured, only the passwordless login option is enabled by default.
+      Only the configured providers will show up in the plug and play pop up screen as the available onboarding options.  If no providers are configured, only the password-free login option is enabled by default.
   
 * Install the `@arcana/auth` package and [integrate the dApp with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
 
@@ -38,7 +38,7 @@ Ensure that you have successfully integrated with the Auth SDK, as listed in the
 
 This will bring up the plug-and-play pop-up modal on the dApp window and display the available options for user onboarding. Only those options are displayed that are configured by the dApp developer using the Arcana Developer Dashboard.
 
-The figure below shows the plug-and-play pop-up authentication screen for Arcana wallet for a sample dApp that allowed only Google social authentication and passwordless login.
+The figure below shows the plug-and-play pop-up authentication screen for Arcana wallet for a sample dApp that allowed only Google social authentication and password-free login.
 
 <img src="/img/an_plug_n_play_auth.png" width="300"/>
 
@@ -55,7 +55,7 @@ Once the Auth SDK is integrated with a dApp, authenticated users can access the 
 ## See also
 
 * Configure Social Login: [Google]({{page.meta.arcana.root_rel_path}}/howto/config_social_login/google_oauth.md)
-* [Passwordless authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
+* [Password-free authentication using Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
 * [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
 * [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

@@ -20,7 +20,7 @@ This is totally unlike Web2, where user data is owned by the applications and co
 
 ## Privacy-Preserving Applications
 
-If you are building Web3 applications or dApps that require complete data privacy, and security, the Arcana Network Platform does the heavy lifting for you to onboard users using popular social login and passwordless options. Onboard your dApp users easily and quickly enable them to sign blockchain transactions, manage tokens and more without having to bother about the Web3 secret key management.
+If you are building Web3 applications or dApps that require complete data privacy, and security, the Arcana Network Platform does the heavy lifting for you to onboard users using popular social login and password-free options. Onboard your dApp users easily and quickly enable them to sign blockchain transactions, manage tokens and more without having to bother about the Web3 secret key management.
 
 At Arcana, we take security, privacy, and ownership seriously. We are actively working towards tracking and plugging in any vulnerabilities in our solution.
 

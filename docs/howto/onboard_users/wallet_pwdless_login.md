@@ -7,9 +7,9 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Build Passwordless Auth
+# Build Password-free Auth
 
-In this guide, you will learn how to enable passwordless authentication and onboard dApp users.
+In this guide, you will learn how to enable password-free authentication and onboard dApp users.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ In this guide, you will learn how to enable passwordless authentication and onbo
 
 ## Steps
 
-To set up passwordless authentication, you simply need to register your dApp using the Arcana Developer dashboard and then integrate and use the Arcana Auth SDK. No additional setup or configuration is required.
+To set up password-free authentication, you simply need to register your dApp using the Arcana Developer dashboard and then integrate and use the Arcana Auth SDK. No additional setup or configuration is required.
 
 ### Step 1: Register and Configure dApp
 
@@ -40,13 +40,13 @@ Optionally, you can use defaults for other dApp settings or choose to modify the
 
 !!! note
 
-      You can enable more than one authentication mechanism for dApp end users. In addition to passwordless login, you can also allow dApp users to onboard using other [supported authentication mechanisms]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
+      You can enable more than one authentication mechanism for dApp end users. In addition to password-free login, you can also allow dApp users to onboard using other [supported authentication mechanisms]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md).
 
 ### Step 2: Integrate with Arcana Auth SDK
 
 Use instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
 
-Trigger passwordless to onboard users. Specify the email ID provided by the dApp user as the input.
+Trigger password-free to onboard users. Specify the email ID provided by the dApp user as the input.
 
 {% include "./code-snippets/auth_pwdless.md" %}
 
@@ -62,11 +62,11 @@ Log out the dApp user when requested:
 
 **That is all!**  :material-party-popper:
 
-Your dApp is all set for onboarding users via the passwordless login mechanism.
+Your dApp is all set for onboarding users via the password-free login mechanism.
 
 ## What's Next?
 
-After enabling passwordless login in your dApp, you can allow authenticated users to access the Arcana wallet for signing blockchain transactions on any EVM-compatible network.
+After enabling password-free login in your dApp, you can allow authenticated users to access the Arcana wallet for signing blockchain transactions on any EVM-compatible network.
 
 ## See also
 

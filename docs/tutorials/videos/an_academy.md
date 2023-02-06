@@ -28,7 +28,7 @@ Everything you need to get started with Arcana Auth is lined up here!
 
 To use the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md), you must first register your dApp using the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and then integrate your dApp for:
 
-* **User authentication:** Onboarding new users via the familiar Web2 social authentication, passwordless login options
+* **User authentication:** Onboarding new users via the familiar Web2 social authentication, password-free login options
 
 * **Enabling Blockchain transactions:** Securely signing blockchain transactions using standard EIP-1193 Ethereum provider, send blockchain transactions, send and receive custom tokens, switching blockchain network, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
 
@@ -48,7 +48,7 @@ Arcana Auth SDK uses modern distributed key generation, symmetric key cryptograp
 
 Web3 developers can [integrate their dApp with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) for one or more of the following reasons:
 
-* Onboard dApp users via social authentication, Passwordless login
+* Onboard dApp users via social authentication, Password-free login
 * Obtain an EIP-1193 standard Ethereum provider for enabling Web3 operations
 * Use the Auth SDKs embedded Web3 wallet provider for allowing users to sign blockchain transactions
 

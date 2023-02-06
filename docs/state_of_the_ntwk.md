@@ -69,7 +69,7 @@ Arcana Auth SDK can be integrated with any applications that work on one of the 
 
 ## Dashboard Login Options
 
-The dApp developers can log into the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these supported social authentication mechanisms or passwordless login:
+The dApp developers can log into the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these supported social authentication mechanisms or password-free login:
 
 {% include "./text-snippets/db_supported_oauth.md" %}
 
@@ -83,7 +83,7 @@ The [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) al
 
 !!! tip
 
-    Besides social authentication, a passwordless login option is also available to onboard dApp users.
+    Besides social authentication, a password-free login option is also available to onboard dApp users.
 
 ### Arcana Wallet
 

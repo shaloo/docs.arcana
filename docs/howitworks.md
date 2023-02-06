@@ -33,7 +33,7 @@ Arcana Network Platform offers two key components. The dashboard and the Auth SD
 | Component   | Purpose           | Functions                                  |
 | :---        | :---              | :---                                       |
 | [Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)   | dApp on boarding  | dApp registration, configuration of dApps and platform SDKs as per dApp use case    |
-| [Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)      | User on boarding, Arcana wallet  | Social authentication, passwordless login, standard Ethereum provider interface, data encryption/decryption |
+| [Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)      | User on boarding, Arcana wallet  | Social authentication, password-free login, standard Ethereum provider interface, data encryption/decryption |
 
 You can also check out various [control flows]({{page.meta.arcana.root_rel_path}}/user_flows/index.md) for user authentication and key management functions.
 

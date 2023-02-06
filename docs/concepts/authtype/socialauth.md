@@ -27,4 +27,4 @@ Auth SDK lowers this barrier by providing a convenient and secure way for users 
 
     Arcana supports the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature that can identify application users even if they use different authentication mechanisms to log in. Aggregate login ensures there are no duplicate user identities or Arcana Web3 wallet addresses assigned to the same user.  
 
-    Aggregate login feature works **only if** the user specifies the **same** email ID to register with different social authentication providers and passwordless login.
+    Aggregate login feature works **only if** the user specifies the **same** email ID to register with different social authentication providers and password-free login.
