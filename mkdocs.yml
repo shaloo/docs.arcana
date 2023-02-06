@@ -181,7 +181,7 @@ extra:
             Thanks for your feedback! 
 
 copyright: Copyright &copy; 2022 - 2023 Arcana Network
-repo_url: https://github.com/arcana-network
+repo_url: https://github.com/arcana-network/
 edit_uri: ""
 
 theme:
@@ -192,7 +192,9 @@ theme:
   favicon: img/an_favicon.svg
   custom_dir: docs/overrides
   features: 
+  # - announce.dismiss
     - header.autohide 
+  #  - navigation.path  //Sponsors only
     - navigation.instant
     - navigation.top
     - navigation.tracking

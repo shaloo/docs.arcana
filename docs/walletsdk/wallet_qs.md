@@ -9,6 +9,10 @@ arcana:
 
 # Quick Start
 
+!!! danger
+  
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+
 In this guide, you will learn how you can quickly integrate your application with the [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) to:
 
 * [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms).
