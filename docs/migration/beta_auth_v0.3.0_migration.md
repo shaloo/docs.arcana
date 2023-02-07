@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Auth SDK v0.3.0 Migration Guide 
+# Auth SDK v0.2.x -> v0.3.0 Migration
 
 When you migrate from an older version of the Arcana Auth SDK to v0.3.0, or later there are some breaking changes. These changes are mostly related to how developers configure and integrate the apps. There are no breaking changes in the user onboarding or blockchain transaction signing functions.  The Arcana wallet has a revamped, better UI in this release.
 
@@ -41,7 +41,7 @@ When you migrate from an older version of the Arcana Auth SDK to v0.3.0, or late
 
 3. You need to [re-integrate your app with the Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) by providing the renewed **App Address** after re-configuring your application using the developer dashboard.
 
-4. If you were using **Arcana Dev/Arcana Testnet** networks while instantiating the `AuthProvider` or in wallet operations, you will need to remove these networks.  The Arcana Network Dev/Testnet Explorer too is no longer available.  Arcana Network smart contracts are deployed on Polygon now. In this release Arcana wallet supports all EVM-compatible chains besides the default ones that show in the drop down list.  Use the [Wallet User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) and the [Wallet Developer Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) to add and switch networks using the wallet UI or programmatically.
+4. If you were using **Arcana Testnet** network while instantiating the `AuthProvider` or in wallet operations, you will need to remove this network altogether as it no longer exists.  The Arcana Network Testnet Explorer too is no longer available.  Arcana Network smart contracts are deployed on Polygon now. In this release Arcana wallet supports all EVM-compatible chains besides the default ones that show in the drop down list.  Use the [Wallet User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) and the [Wallet Developer Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) to add and switch networks using the wallet UI or programmatically.
 
 5. In older release the token transactions were listed in the activity tab.  That tab is no longer there but we now have a new feature 'combined notification screen'. Refer to the [notification tab]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md#wallet-notifications) in the wallet to see all the send token, contract deployment and interaction transactions performed by the wallet user.
 
