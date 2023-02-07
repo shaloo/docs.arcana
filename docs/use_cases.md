@@ -9,7 +9,7 @@ sidebar_custom_props:
 
 The following Web3 application requirements can be easily met with Arcana Auth SDK:
 
-* Onboard users with minimal coding effort and support popular Web2 social logins or enable password-free login via plug-and-play authentication.
+* Onboard users with minimal coding effort and support popular Web2 social logins or enable passwordless login via plug-and-play authentication.
 
 * Choose which providers / login options are visible to the user at the time of logging in to the Web3 application.
 

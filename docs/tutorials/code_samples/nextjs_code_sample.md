@@ -17,7 +17,7 @@ See [sample NextJS app source](https://github.com/arcana-network/auth-next-js) a
 
 ## Registration & Configuration
 
-The following dashboard screen shows that a test deployment of NextJS app is configured to onboard users via Google, Twitch, and password-free login. Follow the instructions in the [how to configure your app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) guide for details.
+The following dashboard screen shows that a test deployment of NextJS app is configured to onboard users via Google, Twitch, and passwordless login. Follow the instructions in the [how to configure your app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) guide for details.
 
 ![NextJS App config](/img/nextjs_app_db_setup_google_twitch.png)
 
@@ -120,7 +120,7 @@ Alright, now that you have configured Auth SDK usage via the dashboard and plugg
 
 ![NextJS App UI Connect](/img/nextjs_connectauth.png)
 
-On clicking connect, the NextJS sample app user will see the plug-and-play login screen which was configured by the developer using the Arcana dashboard for Google and Twitch login. Password-free authentication is enabled by default. 
+On clicking connect, the NextJS sample app user will see the plug-and-play login screen which was configured by the developer using the Arcana dashboard for Google and Twitch login. Passwordless authentication is enabled by default. 
 
 !!! note
 

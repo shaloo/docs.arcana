@@ -17,11 +17,11 @@ arcana:
 
 Simply **follow this guide** to quickly get started and build your foundation before you get into building a Web3 application that is integrated with the Arcana Auth SDK.
 
-Arcana Auth SDK allows Web3 application developers to quickly plug in user onboarding functions via social and password-free login. It also provides authenticated users to access the embedded Web3 Arcana wallet in the application and sign blockchain transactions.
+Arcana Auth SDK allows Web3 application developers to quickly plug in user onboarding functions via social and passwordless login. It also provides authenticated users to access the embedded Web3 Arcana wallet in the application and sign blockchain transactions.
 
 !!! tip
 
-      If you are already familiar with how Web3 works, typical social authentication mechanisms, password-free login, using Web3 wallet provider to sign blockchain transactions in your dApp, you can jump right into the [Arcana Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) and start integrating with the Auth SDK.
+      If you are already familiar with how Web3 works, typical social authentication mechanisms, passwordless login, using Web3 wallet provider to sign blockchain transactions in your dApp, you can jump right into the [Arcana Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) and start integrating with the Auth SDK.
 
 After the foundation, your next stop is to figure out when and how to use Arcana Auth SDK and build a basic dApp that utilizes Arcana SDKs.
 
@@ -35,7 +35,7 @@ Get a firm grip on the topics listed under the prerequisites section. These will
 * How to build a dApp using [CreateReactApp](https://create-react-app.dev/)?
 * How to build a dApp using [Vue](https://vuejs.org/) starter kit?
 * User onboarding and authentication methods:
-   - Using popular Web2 [Social OAuth](https://auth0.com/learn/social-login/) and [Password-free login](https://auth0.com/passwordless)
+   - Using popular Web2 [Social OAuth](https://auth0.com/learn/social-login/) and [passwordless login](https://auth0.com/passwordless)
    - Difference between Web2 and [Web3 authentication](https://blog.mycrypto.com/sign-in-with-ethereum-an-alternative-to-centralized-identity-providers)
 * Blockchain basics
   - What is a [blockchain](https://ethereum.org/en/developers/docs/intro-to-ethereum/#what-is-a-blockchain)?

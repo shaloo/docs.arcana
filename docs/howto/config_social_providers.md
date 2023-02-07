@@ -19,9 +19,9 @@ In this tutorial, you will learn how to use the [Arcana Developer Dashboard]({{p
 
 Developers can enable one or more social authentication providers in Web3 applications and configure them using the Arcana dashboard. 
 
-!!! tip "Password-free Login"
+!!! tip "Passwordless Login"
 
-          By default, password-free login is always available for any application that integrates with the Arcana Auth SDK.  Unlike social authentication, password-free login does not requires any additional setup via the Arcana developer dashboard.
+          By default, passwordless login is always available for any application that integrates with the Arcana Auth SDK.  Unlike social authentication, passwordless login does not requires any additional setup via the Arcana developer dashboard.
  
 ## Setup Social Logins
 

@@ -845,7 +845,7 @@ ownershipxfer
 param
 params
 passcode
-passwordless-login-template
+passwordless
 performant
 permissioned
 permissioned-data

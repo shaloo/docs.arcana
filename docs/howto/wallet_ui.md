@@ -205,7 +205,7 @@ Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="2
 
 It is highly recommended that you try out the Arcana sample demo app deployed at the portal: <DemoAppDeploymentLinkText/>
 
-This sample demo application integrates with Arcana Auth SDK. It is configured to enable dApp users to onboard using password-free login and Google social authentication. When you bring up this dApp, you will see the Arcana wallet on the bottom right area of the screen. Click on it to log into the wallet and perform blockchain operations.
+This sample demo application integrates with Arcana Auth SDK. It is configured to enable dApp users to onboard using passwordless login and Google social authentication. When you bring up this dApp, you will see the Arcana wallet on the bottom right area of the screen. Click on it to log into the wallet and perform blockchain operations.
 
 ## See also
 

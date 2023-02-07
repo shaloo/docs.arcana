@@ -62,11 +62,11 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
 
 ??? an-faq "Is it mandatory to specify all configurations in the Auth section?"
 
-      If you intend to integrate your application with the Arcana Auth SDK for onboarding users, you must specify at least the configuration for the social authentication mechanisms that you would like to allow in your application. If you would only allow user onboarding via password-free login, then there is no need for any Auth configuration. Simply integrate with the Auth SDK using default settings and call the `loginWithLink` API.
+      If you intend to integrate your application with the Arcana Auth SDK for onboarding users, you must specify at least the configuration for the social authentication mechanisms that you would like to allow in your application. If you would only allow user onboarding via passwordless login, then there is no need for any Auth configuration. Simply integrate with the Auth SDK using default settings and call the `loginWithLink` API.
 
 ??? an-faq "Can an application enable more than one authentication mechanism?"  
 
-      Yes. The application developer can enable one or more social authentication mechanisms and password-free login if their use case requires it. This will allow application users to use any of the supported authentication mechanisms to log into the application easily with the comfort and familiarity of the Web2 application onboarding experience.
+      Yes. The application developer can enable one or more social authentication mechanisms and passwordless login if their use case requires it. This will allow application users to use any of the supported authentication mechanisms to log into the application easily with the comfort and familiarity of the Web2 application onboarding experience.
 
 ??? an-faq "Is there a way to control when, which position in the application window, and what type of Arcana wallet is displayed by the Auth SDK?"
 

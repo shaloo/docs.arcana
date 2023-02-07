@@ -10,7 +10,7 @@ arcana:
 
 # Plug & Play Auth
 
-Previously, the application developer had to implement the user interfaces and logic for onboarding users through different social authentication and password-free login options supported by the Auth SDK. For example, if the application wanted to support Google OAuth, the developer had to add a specific user interface for the user to choose the 'Google' option and call the Auth SDK `loginWithSocial` method with 'google' as the input parameter. Similarly, for password-free login, the developer had to add an input field for the user to provide an email ID, which was used to send a login link to the user and call the `loginWithLink` method of the Auth SDK. 
+Previously, the application developer had to implement the user interfaces and logic for onboarding users through different social authentication and passwordless login options supported by the Auth SDK. For example, if the application wanted to support Google OAuth, the developer had to add a specific user interface for the user to choose the 'Google' option and call the Auth SDK `loginWithSocial` method with 'google' as the input parameter. Similarly, for passwordless login, the developer had to add an input field for the user to provide an email ID, which was used to send a login link to the user and call the `loginWithLink` method of the Auth SDK. 
 
 With the Auth SDK's new "plug and play" feature, developers do not necessarily need to build login UI for their application. 
 

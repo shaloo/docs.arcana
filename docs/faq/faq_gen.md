@@ -51,6 +51,6 @@ Yes. Applications using Wagmi or Rainbowkit can simply use the Auth SDK wrapper,
 
       You can enable one or more social authentication mechanisms in your dApp by configuring Auth settings using the dashboard and integrating with Arcana Auth SDK. For details, see [how to enable Google authentication Guide]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md).
 
-??? an-faq "How do I enable password-free login in my dApp to easily onboard new users?"
+??? an-faq "How do I enable passwordless login in my dApp to easily onboard new users?"
 
-      You can enable a password-free login mechanism to onboard dApp users by simply calling the [`loginWithLink` API](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) in your dApp after integrating with the Arcana Auth SDK. For details, see [how to enable password-free authentication Guide]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md).
+      You can enable a passwordless login mechanism to onboard dApp users by simply calling the [`loginWithLink` API](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) in your dApp after integrating with the Arcana Auth SDK. For details, see [how to enable passwordless authentication Guide]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md).
