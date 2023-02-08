@@ -6,7 +6,7 @@ let authInstance
 export async function getAuthInstance () {
   if (authInstance == null) {
     authInstance = new AuthProvider(process.env.VUE_APP_ARCANA_APP_ADDRESS, {
-      network: process.env.VUE_APP_ARCANA_NETWORK ?? 'dev',
+      network: process.env.VUE_APP_ARCANA_NETWORK ?? 'testnet',
       alwaysVisible: true,
       theme: 'light',
       position: 'right'

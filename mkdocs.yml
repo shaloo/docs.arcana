@@ -24,10 +24,10 @@ nav:
         - React Apps: 
           - howto/integrate_auth/react/index.md
           - Simple React/NextJS Apps: howto/integrate_auth/integrate_wallet_react.md
-          # - Using Wallet Connectors:
-          #   - howto/integrate_auth/react/connectors/index.md
-          #   - Wagmi: howto/integrate_auth/integrate_wagmi.md
-          #  - RainbowKit: howto/integrate_auth/integrate_rainbow.md
+          - Using Wallet Connectors: 
+            - howto/integrate_auth/react/connectors/index.md
+            - Wagmi: howto/integrate_auth/integrate_wagmi.md
+            - RainbowKit: howto/integrate_auth/integrate_rainbow.md
         - Vue dApp: howto/integrate_auth/integrate_wallet_vue.md
       - Onboard Users: 
         - howto/onboard_users/index.md
@@ -126,12 +126,12 @@ nav:
     - Validator Nodes: faq/faq_validator.md
   - Release Notes:
     - relnotes/index.md
-    - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
+    - Auth 1.0.0 (Mainnet/Testnet): relnotes/rn_main_auth_v1.0.0.md
     - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
   - Migration Guides:
     - migration/index.md
-    - Auth 1.0.0: migration/main_auth_v1.0.0_migration.md
-    - Auth 0.3.0: migration/beta_auth_v0.3.0_migration.md
+    - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
+    - v0.2.x -> v0.3.0: migration/beta_auth_v0.3.0_migration.md
   - DKG Validators: 
     - validator_intro.md
   - Reference:
