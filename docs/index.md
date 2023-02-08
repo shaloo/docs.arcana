@@ -10,7 +10,7 @@ arcana:
 
 # Introduction
 
-!!! danger inline end
+!!! danger inline end "Already using Auth?"
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 

@@ -9,7 +9,7 @@ arcana:
 
 # Quick Start
 
-!!! danger
+!!! danger "Already using Auth?"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -17,8 +17,6 @@ In this guide, you will learn how you can quickly integrate your application wit
 
 * [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms).
 * [use Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) to sign blockchain transactions, manage tokens and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
-
-{% include "./text-snippets/sdk_version_info.md" %}
 
 ## Overview
 
@@ -88,6 +86,8 @@ Here are some examples of Auth SDK usage:
   For more details on how users interact with the Arcana wallet, see [Arcana wallet User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md). 
   
   Developers can refer to the [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and the {% include "./text-snippets/authsdkref_url.md" %} for SDK usage details.
+
+{% include "./text-snippets/sdk_version_info.md" %}
 
 ## See also
 

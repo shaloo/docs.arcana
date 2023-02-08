@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { getAuthInstance } from '@/lib/auth'
+import { getAuthInstance } from './lib/auth'
 export default {
   name: 'App',
   async mounted () {
