@@ -4,6 +4,12 @@
   <div class="an_announcement"> 🎉 Auth SDK Mainnet Release v1.0.0 is now live! ⚡⚡⚡</div>
 {% endblock %}
 
+
+{% block extrahead %}
+  {{ super() }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
 {% block site_meta %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}
