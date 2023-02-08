@@ -28,31 +28,41 @@ Storage Region can be configured for any application using the dashboard just on
 
 {% include "./text-snippets/warn_config_wallet_ui.md" %}
 
-### Aggregate login does not work with GitHub
+### Registered app does not show up in 'Manage Apps' screen on the Developer Dashboard
+
+After logging into the Arcana Developer Dashboard, you should see any registered apps in previous sessions in the 'Manage Apps' dashboard screens.  There is one card per registered application.
+
+If you do not see your registered application card, check if you used a different social provider or email ID to log into the dashboard. Arcana supports [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature whereby if a developer uses different social providers to log into the dashboard in subsequent logins, both logins will be recognized as a single developer. This feature works if the **same** email ID is used by the developer across social providers.
+
+!!! caution "Migrating to v1.0.0"
+
+      If you are migrating to the Arcana Auth SDK release v1.0.0, you will not see your pre-registered apps in the dashboard due to some breaking changes. You need to re-register your apps again.
+
+### Aggregate login does not work when GitHub is one of the provider used to login into the Arcana Developer Dashboard
 
 **Scenario**
 
-Developer logs into the Arcana Dashboard using social authentication provider P1. For the very first login, the dashboard brings up 'create new dApp' workflow allowing the developer to register a new application and obtain a unique **App Address** say Addr1. Now if the developer logs out and logs back in using a different social authentication provider P2, Arcana Network can recognize that the login is by the same developer so it brings up the 'monitor dashboard' screen for appAddress=Addr1 that was earlier registered by this same developer.  This happens provided the developer has the same email ID associated with both providers P1 and P2.
+A developer logs into the Arcana Dashboard for the very first time, using social authentication provider, say P1. The dashboard shows the 'Manage Apps' screen with 'create new dApp' wizard and zero registered app configuration profile cards. The developer can register a new application and obtain a unique **App Address** say Addr1. This will create a new app configuration profile card on the 'Manage Apps' screen for the newly registered app. Now if the developer logs out and logs back in using a different social authentication provider, say P2, Arcana Network can recognize that the login is by the same developer. This results in dashboard displaying the 'Manage Apps' screen with the previously registered application configuration profile card. This behavior is supported only if the developer has the same email ID associated with both the social providers P1 and P2.
 
-If the user has a different email ID associated with providers P1 and P2 then during the second login using a different provider, the same developer cannot be recognized and associated with the developer that registered the appAddress=Addr1. The dashboard considers login with a new provider (different email ID) as a new identity and assumes this is a fresh login by a new developer. It brings up 'create new dApp' workflow allowing this 'new' developer to register the application.
+If the user has a different email ID associated with providers P1 and P2 then during the second login with a different provider, the same developer cannot be recognized and associated with the apps registered earlier using the different social provider. The dashboard considers login with a new provider (different email ID) as a new identity and assumes this is a fresh login by a new developer. It brings up the 'Manage Apps' screen where the same user will not be able to see the application configuration card that was present earlier while logging in with a different social provider.
 
-If one of the provider is GitHub, then even if the same email ID is associated with all providers, Arcana Network may fail to associate GitHub identity of the same developer with other providers.  Instead of bringing up the 'monitor dashboard' for appAddress=Addr1, it brings up the first login specific workflow, 'create new dApp' and expects the same user to register a new application.
+If one of the providers is GitHub, then even if the same email ID is associated with all providers, Arcana Network may fail to associate GitHub identity of the same developer with other providers.  
 
-How can a developer make sure that Arcana Network can successfully associate the GitHub account of a developer with other social authentication providers, if same email ID is used in every provider account?
+Is there a way to get this working?
 
 **Solution**
 
-The [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature of Arcana Network allows an application developer to login into the dashboard using any supported social authentication mechanism and register and configure their application. The same application is associated with multiple social accounts that the developer uses to login. This feature works only if the developer has the exact same email ID associated with all the social OAuth providers. This allows Arcana Network to recognize the developer irrespective of any social OAuth used to login into the dashboard. What this means is, every time this developer logs into the dashboard, (s)he will be able to see the same application that is configured by them.
+The [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature of Arcana Network allows an application developer to login into the dashboard using any supported social authentication mechanism and register and configure their application.
 
-With GitHub, the behavior is different, only if the GitHub user settings are not in place.  To ensure the same behavior as other social authentication providers in case of GitHub, make sure that you specify the following details in GitHub Settings:
+With GitHub, the behavior is different, only if the GitHub user settings are not in place.  To ensure the same behavior as other social authentication providers, in the case of GitHub, make sure that you specify the following details in GitHub Settings:
 
 1. In your GitHub profile setting, allow your email to be visible
 2. In the GitHub Email Settings preferences, make sure you do not select the checkbox which says 'Keep my email address private'.
 
 Refer to figure below for details:
 
-![GitHub Profile email visible](/img/an_trbs_gh_issue_visible_email.png)
-![GitHub Email Settings not private](/img/an_trbs_gh_issue_email_not_private.png)
+<img alt="GitHub Profile email visible" src="/img/an_trbs_gh_issue_visible_email.png" width="50%"/>
+<img alt="GitHub Email Settings not private" src="/img/an_trbs_gh_issue_email_not_private.png" width="50%"/>
 
 <!--
 ---
@@ -231,17 +241,27 @@ Make sure you update the dependency for polyfills in `package.json` file as well
 
 For a complete sample app that addresses polyfill issues - refer to [sources in GitHub](https://github.com/arcana-network/test-vite-app/).
 
--->
-
 ---
+
+-->
 
 ## Auth Issues
 
 ---
 
+### Configured social providers do not show up in the wallet UI with v1.0.0
+
+If you are using an older version of Arcana Auth SDK, simply upgrading the package to v1.0.0 is not sufficient. Your older app configuration settings will no longer work and if you bring up your wallet it will not show any of the configured social providers. 
+
+Please follow the instructions in the [Migration to v1.0.0 Guide]({{page.meta.arcana.root_rel_path}}/migration/main_auth_v1.0.0_migration.md) before integrating the latest Auth SDK.
+
+If you continue to the issue after migrating properly, please double check the **App Address** that is specified at the time of instantiating the `AuthProvider`.  If you are using v1.0.0, and do not explicitly specify any `network` value while instantiating the `AuthProvider`, then by default 'Mainnet' is selected. In this case, make sure you provide the **App Address** assigned to your app's 'Mainnet' configuration profile. If you specify wrong **App Address** then you will not see the social providers when the wallet UI comes up after login.
+
+If you choose to specify `network` as 'testnet' then make sure you specify the **App Address** corresponding to the 'Testnet' configuration profile of your app from the dashboard.
+
 ### Error: Wallet is not initialized.
 
-![Wallet Not Initialized Error](/img/trbs_wallet_not_init.png)
+<img alt="Wallet Not Initialized Error" src="/img/trbs_wallet_not_init.png" width="35%"/>
 
 This error is caused due to incorrect integration of the Auth SDK.  While integrating with the Auth SDK, you need to perform the following key steps in the suggested order:
 
