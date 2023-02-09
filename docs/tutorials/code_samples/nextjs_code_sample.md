@@ -30,8 +30,8 @@ In the sample code, refer to the  `auth/getArcanaAuth.js` file. It shows how `Au
 ```js title="auth/getArcanaAuth.js" hl_lines="1 3-5"
 import { AuthProvider } from "@arcana/auth";
 
-const auth = new AuthProvider(process.env.NEXT_PUBLIC_ARCANA_APP_ID, {
-  theme: "light",
+const auth = new AuthProvider(process.env.NEXT_PUBLIC_ARCANA_APP_ID, { //App Address is required
+  theme: "light", //Check SDK Reference Guide for other optional parameters
 });
 
 const getAuth = () => {

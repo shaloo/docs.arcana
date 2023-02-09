@@ -3,6 +3,8 @@ slug: /reactcodesample
 id: idreactcodesample
 sidebar_custom_props:
   cardIcon: 📃 
+arcana:
+  root_rel_path: ../..
 ---
 
 # Using React Auth Wrapper
@@ -22,7 +24,7 @@ import { ProvideAuth } from "@arcana/auth-react";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-const provider = new AuthProvider(process.env.REACT_APP_ARCANA_APP_ID);
+const provider = new AuthProvider(process.env.REACT_APP_ARCANA_APP_ID); //See SDK Reference Guide for optional parameters
 
 root.render(
   <StrictMode>
@@ -63,3 +65,8 @@ export default function App() {
   );
 }
 ```
+## See Also
+
+* [Auth SDK Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
+* [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* {% include "./text-snippets/authsdkref_url.md" %}
