@@ -1,4 +1,4 @@
-```js hl_lines="1 6 7"
+```js hl_lines="1 3-5"
 import {AuthProvider, CHAIN} from "@arcana/auth";
 
 const provider = new AuthProvider(
