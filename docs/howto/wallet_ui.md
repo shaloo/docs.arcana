@@ -9,9 +9,11 @@ arcana:
 
 # Basic Web3 Wallet Operations
 
-This guide is intended for Web3 application users. Developers who wish to programmatically enable various wallet operations can refer to the developer guides listed below.
+This guide is intended for Web3 application users trying login into an application and use Arcana wallet. 
 
-!!! info "Developer Guides"
+Developers who wish to programmatically enable various wallet operations can refer to the various developer guides listed below.
+
+!!! info "Wallet Developer Guides"
 
       To enable Arcana wallet in the context of a Web3 application, you need to first [register your Web3 application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and [configure user authentication mechanisms]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md) using the Arcana Dashboard. 
       
@@ -27,7 +29,7 @@ To use the Arcana wallet, you need to log in to a Web3 app that is connected to 
 
 Any dApp that [integrates with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and initializes the `AuthProvider` can use the standard Ethereum provider to sign blockchain transactions. Authenticated users can access the Arcana wallet for Web3 wallet operations.
 
-<img src="/img/an_wallet_home.png" width="200"/><br></br><br></br>
+<img src="/img/an_wallet_home.png" width="200"/>
 
 Arcana wallet displays the following tabs located at the bottom of the wallet screen:
 
@@ -36,7 +38,7 @@ Arcana wallet displays the following tabs located at the bottom of the wallet sc
 * <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> User Profile Tab
 * <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> Notification Tab
 
-These tab contains interfaces to perform the following Web3 wallet operations:
+These tab contain interfaces to perform the following Web3 wallet operations:
 
 * Sign (approve, reject) blockchain transactions
 * Add and configure network settings
@@ -63,9 +65,9 @@ A blockchain transaction sign request can be generated either by the dApp or via
 
 <img src="/img/an_wallet_personalsign.png" width="350"/>
 
-If the user does not take any action but chooses to close the transaction request using the <img src="/img/icons/wallet_close_icon.png" width="15"/> icon on the top right of the Arcana wallet, the wallet is displayed in the minimized form with a red dot and number indicating a pending transaction. 
+If the user does not take any action but chooses to close the transaction request using the <img src="/img/icons/wallet_close_icon.png" width="15"/> icon on the top right of the Arcana wallet screen, the wallet switches from maximized screen state to the minimized state. If there are any pending transactions they are highlighted in the minimized state with a red dot. 
 
-Once the user takes action on the pending transaction, the notification screen of the wallet will show a **No Pending Requests!** message.
+Once the user takes action on the pending transaction, the notification tab of the wallet will show a **No Pending Requests!** message.
 
 <img src="/img/an_wallet_nopending.png" width="200"/>
 
@@ -91,13 +93,13 @@ Once you click **Save**, the newly added network is automatically selected as th
 
 ### Switch Network
 
-Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon to bring up the wallet screen. Use the network drop-down list to switch to a different network from the list of configured networks.
+Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon to bring up the wallet token asset tab. Use the network drop-down list to switch to a different network from the list of configured networks.
 
-<img src="/img/an_wallet_switch_ntwk.png" width="200"/><br></br><br></br>
+<img src="/img/an_wallet_switch_ntwk.png" width="200"/>
 
 ### Manage Token Assets
 
-Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon on the bottom left of the Arcana wallet to bring up the token assets screen. It displays the following information:
+Click <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> icon on the bottom left of the Arcana wallet to bring up the token assets tab. It displays the following information:
 
 * View, and copy Arcana wallet address
 * View wallet address details on the Block Explorer
@@ -115,7 +117,7 @@ For more details, see [how to view, select, send, receive tokens, add custom tok
 
 ### Manage NFT Assets
 
-Click <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> icon on the bottom of the Arcana wallet to bring up the NFT assets screen. It displays the following information:
+Click <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> icon on the bottom of the Arcana wallet to bring up the NFT assets tab. It displays the following information:
 
 * View, and copy Arcana wallet address
 * View wallet address details on the Block Explorer
@@ -127,13 +129,13 @@ Click <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/>
 * View NFT transaction activity
 * Manage NFT collections
 
-<img src="/img/an_wallet_nft_assets.png" width="200"/><br></br><br></br>
+<img src="/img/an_wallet_nft_assets.png" width="200"/>
 
 For details, see [how to send, share and manage NFTs using Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_nft.md) guide.
 
 ### View User Profile Details
 
-Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> icon on the bottom of the Arcana wallet to see the user profile screen with these details:
+Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> icon on the bottom of the Arcana wallet to see the user profile tab displaying these details:
 
 * User name 
 * Email ID used to log into the wallet
@@ -143,27 +145,27 @@ Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="2
 * Logout button
 * Minimize / Close button
 
-<img src="/img/an_wallet_profile.png" width="200"/><br></br><br></br>
+<img src="/img/an_wallet_profile.png" width="200"/>
 
 ### Wallet Notifications
 
 Click <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> icon on the bottom right of the Arcana wallet to see wallet notifications.
 
-The wallet notifications screen list all transactions processed using the Arcana wallet for different digital assets such as native tokens, custom tokens, and NFTs. It also displays pending blockchain transaction approval requests, if any. 
+The wallet notifications tab list all transactions processed using the Arcana wallet for different digital assets such as native tokens, custom tokens, and NFTs. It also displays pending blockchain transaction approval requests, if any. 
 
-<img src="/img/an_wallet_combined_notify.png" width="200"/><br></br><br></br>
+<img src="/img/an_wallet_combined_notify.png" width="200"/>
 
 You can view all activities in the list or filter them based on whether the blockchain transactions were initiated by the user or the dApp. Click on the filter icon and choose the desired option.
 
-<img src="/img/an_wallet_combined_notify_filter_nav_options.png" width="500"/><br></br><br></br>
+<img src="/img/an_wallet_combined_notify_filter_nav_options.png" width="500"/>
 
 If you see a red dot on the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> icon at the bottom left of the Arcana wallet, it indicates a pending blockchain transaction that a user needs to review and act upon. 
 
-Click on the icon to see details of the pending transaction and take appropriate action. The figure below shows a pending contract deployment transaction in the wallet notification screen:
+Click on the icon to see details of the pending transaction and take appropriate action. The figure below shows a pending contract deployment transaction in the wallet notification tab:
 
 <img src="/img/an_wallet_combined_notification_details_contract.png" width="200" />
 
-Once all pending transactions are processed, you will not see the red dot. The Arcana wallet shows a **No Pending Requests!** message on the notification screen, once the user acts upon any pending requests.  
+Once all pending transactions are processed, you will not see the red dot. The Arcana wallet shows a **No Pending Requests!** message on the notification tab, once the user acts upon any pending requests.  
 
 <img src="/img/an_wallet_nopending.png" alt="No pending request" width="200" />>
 
@@ -187,15 +189,15 @@ Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="2
 
 If the dApp developer has integrated the Arcana Auth SDK and specified the 'Full UI' wallet visibility mode, the Arcana wallet can be minimized using the 'x' icon on the top right corner of the wallet screen. Minimized wallet displays as a circular widget on the dApp window. 
 
-<img src="/img/an_wallet_min.png" width="150"/><br></br><br></br>
+<img src="/img/an_wallet_min.png" width="150"/>
 
-During minimized state, if the dApp issues a transaction or if a user action results in a blockchain transaction sign request, the wallet screen shows up again in its maximized form in the dApp window.
+During minimized state, if the dApp issues a transaction or if a user action results in a blockchain transaction sign request, the wallet screen pops up in maximized state in the dApp window.
 
 ### Logout
 
-Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> icon in the bottom of the Arcana wallet screen. To log out of the Arcana wallet and the dApp, use **Logout** in the user profile screen.
+Click <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> icon in the bottom of the Arcana wallet screen to bring up the user profile tab. Click **Logout** in the user profile tab to log out.
 
-<img src="/img/an_wallet_profile.png" width="200"/><br></br><br></br>
+<img src="/img/an_wallet_profile.png" width="200"/>
 
 **That is all!**  :material-party-popper:
 
