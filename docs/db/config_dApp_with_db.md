@@ -59,19 +59,21 @@ Each application can only be associated with two configuration profiles, 'Testne
 
 #### Testnet
 
-All newly registered applications are enabled for using the Arcana 'Testnet'. The default configuration profile created for every registered application is meant for 'Testnet' usage. Developers can view or edit the default configuration settings by clicking 'Testnet' on the application card displayed in the 'Manage Apps' dashboard. This will bring up the application dashboard screen with various navigation options in the LHS pane.
+By default, all newly registered applications are enabled for using the Arcana 'Testnet'. Developers can view or edit the default configuration settings by clicking 'Testnet' on the application card displayed in the 'Manage Apps' dashboard. This will bring up the application dashboard screen with various navigation options in the LHS pane.
 
 After validation on the 'Testnet', the application can be configured to use the Arcana 'Mainnet'. To do this, developers must create a corresponding 'Mainnet' configuration profile. 
 
 #### Mainnet
 
-By default, all newly registered applications are enabled to use Arcana 'Testnet' and associated with the 'Testnet' configuration. To switch an application from using 'Testnet' to 'Mainnet', developers must first create a 'Mainnet' profile using the developer dashboard. 
+To use Arcana Mainnet, the developers must first create a 'Mainnet' configuration profile using the developer dashboard. 
 
-A newly registered application does not have any 'Mainnet' profile associated with it. The application card displayed in the 'Manage Apps' screen will show the 'Mainnet' configuration as disabled. To create a 'Mainnet' configuration profile, the developer must use the application dashboard screen displaying the Testnet profile and select the **Social Auth** settings. In the social authentication settings screen, refer to the dropdown on the top right next to 'Testnet'. Use this dropdown to select and switch to 'Mainnet'.
+A newly registered application does not have any 'Mainnet' profile associated with it, it has to be explicitly created by the developer. The application card displayed in the 'Manage Apps' screen will show the 'Mainnet' configuration as disabled for all newly registered apps. To create a 'Mainnet' configuration profile, the developer must use the application dashboard screen displaying the Testnet profile, use the LHS navigation pane and select the **Social Auth** settings. 
+
+In the social authentication settings screen, refer to the dropdown on the top right next to 'Testnet'. Use this dropdown to select and switch to the 'Mainnet' configuration.
 
 ![Testnet Mainnet Selection](/img/an_db_testnet_mainnet_select.png)
 
-When 'Mainnet' is selected from the dropdown, if there already exists a 'Mainnet' profile then the configuration settings for social authentication for Mainnet are displayed. Otherwise, a new 'Mainnet' profile creation wizard gets activated and displays a pop-up screen asking the developer to choose one of the options to create the 'Mainnet' configuration. You can either copy the exact 'Testnet' configuration or create a new blank configuration for 'Mainnet' settings. 
+When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation wizard gets activated and displays a pop-up screen asking the developer to choose one of the options to create the 'Mainnet' configuration. You can either copy the exact 'Testnet' configuration or create a new blank configuration for 'Mainnet' settings. 
 
 ![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_creation.png)
 
@@ -85,15 +87,17 @@ When 'Mainnet' is selected from the dropdown, if there already exists a 'Mainnet
 
       ![Update redirect URI](/img/an_db_add_mainnte_redirect_uri.png)
 
-After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 'Mainnet' configuration requires an additional setting which is not there for the 'Testnet' configuration profile. This additional setting is **keyspace** and it is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana Mainnet. Refer to the next section for more details.
+After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 
 
 !!! note "Mainnet App Address"
 
       The newly created 'Mainnet' configuration profile is associated with a brand new unique **App Address**. Developers must specify this new app address while integrating the application with the Auth SDK and deploy it on Arcana 'Mainnet'.
 
+'Mainnet' configuration requires an additional setting which is not available for the 'Testnet' configuration profile. This additional setting, **Keyspace**, is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana Mainnet. Refer to the next section on configuring keyspace.
+
 #### Configure Mainnet Keyspace 
 
-To deploy an application on the Arcana Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. You can choose to copy the 'Testnet' profile as the 'Mainnet' configuration or create a new one. In both cases, you need to specify an additional keyspace option. Keyspace is only available for **Mainnet**.  There are two keyspace options: [App-specific and Global Keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md).
+To deploy an application on the Arcana Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. You can choose to copy the 'Testnet' profile as the 'Mainnet' configuration or create a new one. In both cases, you need to specify an additional keyspace option. Note that the keyspace feature is only available for the Arcana Mainnet. There are two keyspace options: [App-specific and Global Keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md).
 
 You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
 
@@ -121,18 +125,17 @@ Now your application is configured to use the Arcana Mainnet. You can further ed
 
 There are multiple ways to switch an application from using Testnet to Mainnet. 
 
-* To switch an app from using Testnet to the Mainnet, use the application dashboard screen, and select **Configuration >> Social Auth** in the LHS navigation pane. Refer to the dropdown next to 'Testnet' on the top RHS of the screen and choose 'Mainnet'. If there is a preexisting 'Mainnet profile, the app is automatically switched to it and you can see the social authentication settings and assigned **App Address** for the 'Mainnet' profile. Otherwise, the profile wizard gets activated and assists the developer in creating a 'Mainnet' configuration profile for the application. Once the profile is created, a new **App Address** is automatically assigned and the configuration switches to 'Mainnet'.
+* To switch from Testnet to the Mainnet profile, use the application dashboard screen, and select **Configuration >> Social Auth** in the LHS navigation pane. Refer to the dropdown next to 'Testnet' on the top RHS of the screen and choose 'Mainnet'. If there is a preexisting 'Mainnet profile, the app is automatically switched to it and you can see the social authentication settings and assigned **App Address** for the 'Mainnet' profile. Otherwise, the profile wizard gets activated and assists the developer in creating a 'Mainnet' configuration profile for the application. Once the profile is created, a new **App Address** is automatically assigned and the configuration switches to 'Mainnet'.
 
     ![Select Testnet or Mainnet](/img/an_db_testnet_mainnet_select.png)  
 
-* Alternatively, if a 'Mainnet' configuration profile is already created for an application, you can also switch between Testnet/Mainnet configuration profiles by using the 'Manage Apps' dashboard screen. Simply select the application card and click on 'Testnet' or 'Mainnet'. This will bring up the application dashboard screen displaying the application dashboard for the selected configuration profile. 
+* If a 'Mainnet' configuration profile is already created for an application, you can also switch between Testnet/Mainnet configuration profiles by using the 'Manage Apps' dashboard screen. Simply select the application card and click on 'Testnet' or 'Mainnet'. This will bring up the application dashboard screen displaying the application dashboard for the selected configuration profile. 
 
     ![Switch to Testnet](/img/an_db_all_app_card.png)
 
 !!! caution
 
-      Depending upon whether the 'Testnet' **App Address** value or the 'Mainnet' **App Address** value is used to integrate an application with the Auth SDK, the corresponding Arcana Network is used by the application users. "Testnet" usage is not billed but if an application chooses 'Mainnet', it will be billed in the forthcoming releases.
-
+      Depending upon whether the 'Testnet' **App Address** value or the 'Mainnet' **App Address** value is used to integrate an application with the Auth SDK, the app is deployed on the corresponding Arcana Network. "Testnet" usage is not billed but if an application chooses 'Mainnet' while integrating with the Auth SDK, it will be billed in the forthcoming releases.
 
 #### Switch Applications
 
