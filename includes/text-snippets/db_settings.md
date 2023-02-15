@@ -49,7 +49,7 @@ Use defaults or provide inputs for the required settings as per your application
 
            This tab is visible only if a developer chooses to create a 'Mainnet' configuration profile for the app.
 
-           Developers can choose to use **App-Specific Keys** (default) at the start and change to **Global Keys** later. However, once global keys are selected, you cannot revert to app-specific keys.
+           Developers can choose to use **App-Specific Keys** (default) at the start and change to **Global Keys** later. However, transitioning between the two will mean that your user's wallet address will change.
 
     Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys allow an application user to have the same wallet address across different applications in the Arcana Network ecosystem. Learn more about [App-specific and global keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) and use the [Arcana Developer Dashboard User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#configure-mainnet-keyspace) to configure keyspace.
 
