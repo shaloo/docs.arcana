@@ -52,7 +52,7 @@ import App from "./App";
 import { AuthProvider } from "@arcana/auth";
 import { ProvideAuth } from "@arcana/auth-react";
 
-const provider = new AuthProvider(`${appAddress}`) // required
+const provider = new AuthProvider(`${clientId}`) // Client ID assigned to the app, see Arcana Dashboard
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
