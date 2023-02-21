@@ -19,13 +19,13 @@ arcana:
 
 ## Feature Updates
 
-**Fiat On-ramp Providers**
+### Fiat On-ramp Providers
 
 Arcana wallet supports fiat on-ramping that allows wallet users to buy cryptocurrency (native and ERC20 tokens) easily from any of the supported providers:
 
 {% include "./text-snippets/fiat_on_ramp_providers.md" %}
 
-**App Address -> Client ID**
+### App Address -> Client ID
 
 Each registered Web3 app is associated with a unique Arcana Network identifier. Earlier, it was referred to as **App Address**. Now it is referred to as **{{config.extra.arcana.app_address}}** in the documentation and on the Arcana Developer Dashboard screen.
 
@@ -33,7 +33,7 @@ The format of the **{{config.extra.arcana.app_address}}** has also changed but i
 * v1.0.1
 * v1.0.0
 
-**Minimized Wallet Widget**
+### Minimized Wallet Widget Update
 
 The circular widget displayed when a wallet was minimized by clicking the 'x' icon on the top right of the wallet screen has changed. In the current release, the minimized wallet state is displayed in the form of a smaller widget. 
 
