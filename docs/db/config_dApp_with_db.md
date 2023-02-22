@@ -169,9 +169,11 @@ In the *Manage Apps* dashboard screen, all registered applications are listed as
 
 Use the 'Daily' and 'Monthly' tabs to see the respective usage statistics. 
 
+![Application Usage Stats Testnet](/img/an_db_app_usage_metrics_testnet.png)
+
 You can use the dropdown in the top right of the application dashboard screen to select Testnet/Mainnet usage details.
 
-![Application Usage Stats](/img/an_db_app_usage_metrics.png)
+![Application Usage Stats Mainnet](/img/an_db_app_usage_metrics_mainnet.png)
 
 ### Delete Application
 
