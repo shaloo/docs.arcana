@@ -48,7 +48,7 @@ Import Arcana's `auth-wagmi` library and create a 'new' `ArcanaConnector`. Durin
 
 {% include "./code-snippets/auth_wagmi_configure.md" %}
 
-Now you can provide the newly instantiated ArcanaConnector to the `createClient` wagmi function. 
+Next, provide the newly instantiated and configured `ArcanaConnector` to the `createClient` wagmi function. 
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
@@ -56,9 +56,15 @@ Now you can provide the newly instantiated ArcanaConnector to the `createClient`
 
       For more details on the `createClient` function of wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started).
 
-### Step 3: Use Wagmi Client
+### Step 3: Use `ArcanaConnector` in Wagmi
 
-{% include "./code-snippets/auth_wagmi_use.md" %}
+You can use the `wagmiClient` created earlier, configured with `ArcanaConnector` in your `_app.tsx` file.
+
+{% include "./code-snippets/auth_wagmi_use_app.md" %}
+
+Here a basic, generic example how you can layout the various wagmi clients options on the app page and allow user to choose how to connect using one of the connectors:
+
+{% include "./code-snippets/auth_wagmi_use_index.md" %}
 
 That is all! :material-party-popper:
 
