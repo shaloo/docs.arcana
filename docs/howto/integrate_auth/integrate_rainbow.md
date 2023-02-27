@@ -65,7 +65,7 @@ That is all! :material-party-popper:
 
 !!! tip "RainbowKit Integration Example"
 
-      Here is the [RainbowIt integration example source code](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) for your reference.
+      Here is the [RainbowKit integration example source code](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) for your reference.
 
 You have successfully integrated your dApp with the Arcana RainbowKit Connector.
 
