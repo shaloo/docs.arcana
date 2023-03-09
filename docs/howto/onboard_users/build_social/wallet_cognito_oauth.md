@@ -24,7 +24,7 @@ Note that some steps are performed using [AWS Management Console](https://docs.a
 
 !!! tip
 
-      The **App Address** is displayed on the top right of your dashboard.
+      The **Client ID** is displayed on the top right of your dashboard.
 
       You can revisit the Arcana Dashboard later to view and modify configuration settings. 
 
