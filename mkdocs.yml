@@ -11,8 +11,9 @@ nav:
   - How-To Guides:
       - howto/index.md
       - Configure dApp Settings: howto/config_dapp.md
-      - Configure Auth Usage:
+      - Configure Auth Usage: 
         - howto/config_social_providers.md
+        - Cognito Setup: howto/config_social_login/cognito_oauth.md
         - Discord Setup: howto/config_social_login/discord_oauth.md
         - GitHub Setup: howto/config_social_login/github_oauth.md
         - Google Setup: howto/config_social_login/google_oauth.md
@@ -32,6 +33,7 @@ nav:
         - Plug and Play Auth: howto/onboard_users/wallet_plugnplay.md
         - Build Social Login: 
           - howto/onboard_users/build_social/index.md
+          - Cognito: howto/onboard_users/build_social/wallet_cognito_oauth.md
           - Discord: howto/onboard_users/build_social/wallet_discord_oauth.md
           - GitHub: howto/onboard_users/build_social/wallet_github_oauth.md
           - Google: howto/onboard_users/build_social/wallet_google_oauth.md
@@ -43,16 +45,17 @@ nav:
         - Configure Wallet: howto/arcana_wallet/config_wallet.md
         - Configure Wallet Visibility: howto/arcana_wallet/config_wallet_modes.md
         - Add / Switch Network: howto/arcana_wallet/wallet_add_switch_ntwk.md
-        - Sign Transactions: howto/arcana_wallet/wallet_sign.md
         - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
         - Send Tokens: howto/arcana_wallet/wallet_send.md
+        - Sign Transactions: howto/arcana_wallet/wallet_sign.md
+        - Show Wallet: howto/arcana_wallet/wallet_show.md
         - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
       - Deploy App: howto/deploy_app.md
   - Tutorials: 
       - tutorials/index.md
       - Code Samples: 
         - tutorials/code_samples/index.md
-        - Auth Example: https://github.com/arcana-network/auth/tree/main/examples
+        - HTML/JS Example: tutorials/code_samples/vanilla_html_js_sample.md
         - React Example: tutorials/code_samples/react_code_sample.md
         - NextJS Example: tutorials/code_samples/nextjs_code_sample.md
         - Vue Example: https://github.com/arcana-network/auth-sample-integration-new
@@ -125,12 +128,14 @@ nav:
     - Validator Nodes: faq/faq_validator.md
   - Release Notes:
     - relnotes/index.md
+    - Auth 1.0.3 : relnotes/rn_main_auth_v1.0.3.md
     - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
     - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md
     - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
     - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
   - Migration Guides:
     - migration/index.md
+    - v1.0.2 -> v1.0.3: migration/main_auth_v1.0.3_migration.md
     - v1.0.1 -> v1.0.2: migration/main_auth_v1.0.2_migration.md
     - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
     - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
@@ -147,6 +152,12 @@ nav:
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Audit Reports:
     - audit/index.md
+  - Blockchains:
+    - EVM Chains:
+      - Shardeum: 
+        - integrations/shardeum/index.md
+        - Developer's Guide: integrations/shardeum/integrate_shardeum.md
+        - Using Wallet UI: integrations/shardeum/wallet_config_shardeum.md
   - Contact Us: 
     - support.md
 
@@ -156,6 +167,7 @@ extra:
     sdk_name: Arcana Auth SDK
     dashboard_name: Arcana Developer Dashboard
     app_address: Client ID
+    latest_version: 'v1.0.3'
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
