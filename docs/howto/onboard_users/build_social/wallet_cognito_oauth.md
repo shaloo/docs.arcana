@@ -6,7 +6,7 @@ sidebar_custom_props:
   cardIcon: 🤝
 arcana:
   root_rel_path: ../../..
-  social_provider: "'cognito'"
+  social_provider: "'aws'"
 ---
 
 # AWS Cognito

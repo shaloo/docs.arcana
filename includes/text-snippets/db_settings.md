@@ -30,9 +30,9 @@ Use defaults or provide inputs for the required settings as per your application
 
           By default, passwordless login is always enabled in the Auth SDK.
 
-    !!! note "Cognito"
+    !!! note "Multiple Providers"
 
-          Cognito itself supports multiple verifiers such as Google. If you enable Cognito as one of the multiple onboarding options then you can directly configure other social providers such as Google through Cognito via the Cognito Console. See [Choosing onboarding options]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md#choose-onboarding-options) for details.
+          You can enable multiple social providers for an app via the Arcana Developer Dashboard. Note that Cognito itself supports multiple verifiers including Google. If you enable Cognito as one of the multiple onboarding options then you can directly configure Google through Cognito via the Cognito Console instead of using the Arcana dashboard. See [Choosing onboarding options]({{page.meta.arcana.root_rel_path}}/howto/config_social_providers.md#choose-onboarding-options) for details.
 
          
 
