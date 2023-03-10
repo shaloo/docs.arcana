@@ -50,6 +50,11 @@ Add code in the application to log out an authenticated user:
 
 Your dApp is all set for onboarding users via Cognito.
 
+!!! warning "Using Cognito with other social providers"
+
+      {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}
+      
+
 ## What's Next?
 
 After enabling user sign-in via Cognito, you can allow authenticated users to access the Arcana wallet for signing blockchain transactions on any EVM-compatible network.
