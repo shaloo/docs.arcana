@@ -48,7 +48,7 @@ Add code in the application to log out an authenticated user:
 
 **That is all!**  :material-party-popper:
 
-Your dApp is all set for onboarding users via Cognito.
+Your dApp is all set for onboarding users via AWS Cognito social provider.
 
 !!! warning "Using Cognito with other social providers"
 
