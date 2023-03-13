@@ -13,7 +13,7 @@ In this tutorial, you will learn how to integrate a Web3 application that uses [
 
 !!! caution "No need to install Auth SDK"
 
-      If you are using the Auth Wagmi Connector then you simply follow the instructions below. This connector includes the Auth SDK. You do not need to install Arcana Auth SDK separately. No need to create a provider. In the `App.tsx` file, use wagmi functions.
+      {% include "./text-snippets/warn_wagmi_noauth.md" %}
 
 ## Prerequisites
 

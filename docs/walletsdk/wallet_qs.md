@@ -39,7 +39,7 @@ To enable the embedded Arcana wallet in an application, the application develope
       
       To integrate the Auth SDK with a React App, it is recommended that you install and use the `auth` as well as the `auth-react` packages. For details, see [React App Integration Example]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/react_code_sample.md).
 
-      To integrate with Wagmi or RainbowKit, use the `ArcanaConnector` wrapper by installing and integrating with the `auth-wagmi` package. You do not need to use the auth package or instantiate and initialize the `AuthProvider` when using the `auth-wagmi` package. For details, see [Wagmi example](https://github.com/arcana-network/auth-wagmi-example) and [RainbowKit Example](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration).
+      To integrate the Auth SDK with apps that use Wagmi or RainbowKit, use the `ArcanaConnector` wrapper by installing and integrating with the `auth-wagmi` package. You do not need to use the auth package or instantiate and initialize the `AuthProvider` when using the `auth-wagmi` package. For details, see [Wagmi example](https://github.com/arcana-network/auth-wagmi-example) and [RainbowKit Example](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration).
 
 ## Register & Configure
 
