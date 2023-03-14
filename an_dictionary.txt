@@ -951,6 +951,7 @@ setupwalletvue
 setupwidgetwallet
 sharded
 sharefile
+showWallet
 signingtx
 signup
 simple-nextdotjs
