@@ -11,7 +11,7 @@ arcana:
 
 In this tutorial, you will learn how to integrate a Web3 application that uses [RainbowKit](https://www.rainbowkit.com/) with [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md). RainbowKit works with [wagmi](https://wagmi.sh/) which allows Web3 application users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector that can be used to enable Arcana wallet for applications using RainbowKit.
 
-!!! caution "No need to install Auth SDK"
+!!! caution "Deploying `auth-wagmi` package"
 
       {% include "./text-snippets/warn_wagmi_noauth.md" %}
 

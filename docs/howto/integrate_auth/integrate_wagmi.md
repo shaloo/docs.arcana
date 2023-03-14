@@ -11,7 +11,7 @@ arcana:
 
 In this tutorial, you will learn how to integrate a Web3 application that uses [wagmi](https://wagmi.sh) wallet connector to plug in the [Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).  With wagmi, Web3 developers can allow their users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector to enable the use of the Arcana wallet alongside built-in options like MetaMask, WalletConnect, and Coinbase Wallet.
 
-!!! caution "No need to install Auth SDK"
+!!! caution "Deploying `auth-wagmi` package"
 
       {% include "./text-snippets/warn_wagmi_noauth.md" %}
 
