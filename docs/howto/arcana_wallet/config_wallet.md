@@ -23,12 +23,11 @@ If you wish to control when the integrated Arcana wallet shows up, see [how to c
 
 Follow the instructions here to [integrate Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) in your dApp. During `AuthProvider` instantiation, the following configuration parameters are available:
 
-* alwaysVisible: by default, set to true, wallet is always visible
+* alwaysVisible: by default, set to true, the wallet is always visible
 * position: location of wallet on the application screen.  (default = right)
 * theme: light or dark theme
-* network: the Auth, Gateway and Wallet UI URL
-* chainConfig: the chainID and RPC URL of the blockchain network selected as default
-* redirectUri: Auth SDK redirectUri
+* network: the Auth, Gateway, and Wallet UI URL
+* chainConfig: the chainID and RPC URL of the blockchain network selected as the default
 
 For a complete list of parameters see [Auth SDK Reference Guide](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
 
