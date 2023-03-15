@@ -9,7 +9,7 @@ arcana:
 
 ## Latest Release
 
-* Arcana Auth SDK v0.3.0
+* Arcana Auth SDK v{% include "./text-snippets/latest_auth_sdk.md" %}
 * Arcana Developer Dashboard {% include "./text-snippets/db_portal_url.md" %}
 
 ## Mode of Operation
