@@ -27,6 +27,7 @@ AccessControlOpsListText
 AccessStepsText
 Addr1
 Ajay
+Algorand
 AppID
 AppId
 Arcana
@@ -212,6 +213,7 @@ Jira
 KMS
 KV
 KYC
+Kakaotalk
 Keyspace
 Keystore
 KeystoreInput
@@ -436,6 +438,7 @@ Web2
 Web2-like
 Web3
 Webpack
+Wechat
 WhatIsPvtNFTLinkText
 Whitepaper
 XAR
