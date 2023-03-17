@@ -28,8 +28,8 @@ To integrate an application with the Auth SDK, developers must:
 
 To enable the embedded Arcana wallet in an application, the application developers need to integrate with the Auth SDK and use the `AuthProvider` interface. The `AuthProvider` is a standard Ethereum Web3 provider that allows application users to sign blockchain transactions after they have been authenticated. For more information on `AuthProvider`, see [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and {% include "./text-snippets/authsdkref_url.md" %}.
 
-<img src="/img/an_auth_usage_overview_light.png#only-light" alt="Arcana Auth Usage Overview" width="50%"/>
-<img src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Arcana Auth Usage Overview" width="50%"/>
+<img src="/img/an_auth_usage_overview_light.png#only-light" alt="Arcana Auth Usage Overview" width="125%"/>
+<img src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Arcana Auth Usage Overview" width="125%"/>
 
 !!! caution "`AuthProvider` Wrappers"
   

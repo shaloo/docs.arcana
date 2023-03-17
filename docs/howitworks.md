@@ -18,14 +18,14 @@ The Arcana Network platform provides Auth SDK that helps Web3 developers quickly
 
 Arcana Network platform components work on the principles of privacy by design, using a distributed, decentralized framework that is built using the state of the art cryptographic techniques, data encryption, pluggable modules. 
 
-The figure below gives a high-level overview of key component interactions in the Arcana Network platform.
+The figure below gives a high-level overview of how the developer registers and integrates the app with the Auth SDK to enable user onboarding and signing of blockchain transactions by authenticated users.
 
 ![How Arcana Works (Top level)](/img/how-an-works-top-light.svg#only-light)
 ![How Arcana Works (Top level)](/img/how-an-works-top-dark.svg#only-dark)
 
 ## Architectural Components
 
-Arcana Network Platform offers two key components. The dashboard and the Auth SDK. The figure below highlights how these components interact with each other:
+Arcana Network Platform offers two key components. The dashboard and the Auth SDK. The developer uses the dashboard to register and configure Auth SDK usage before integrating the Auth SDK with the Web3 app. Once integrated, and deployed, the app users can easily onboard the app and access the wallet to sign blockchain transactions.
 
 ![Arcana Architectural Components](/img/an-arch-components-light.svg#only-light)
 ![Arcana Architectural Components](/img/an-arch-components-dark.svg#only-dark)
