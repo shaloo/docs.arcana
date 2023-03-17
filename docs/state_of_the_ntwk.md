@@ -94,7 +94,9 @@ The [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) al
 
 #### Supported Blockchains
 
-[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet offered by the Auth SDK that shows up in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for the following EVM-compatible blockchains:
+[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet offered by the Auth SDK that shows up in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for any  EVM-compatible blockchain networks. 
+
+Following chains are configured by default and displayed in the {{config.extra.arcana.wallet_name}}:
 
 {% include "./text-snippets/wallet_supported_networks.md" %}
 

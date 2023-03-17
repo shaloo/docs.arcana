@@ -1,4 +1,4 @@
-**EVM-compatible blockchain networks**:
+**Configured Blockchain Networks (Default)**:
 
   * Ethereum_Goerli
   * Ethereum_Mainnet
@@ -6,7 +6,7 @@
   * Polygon_Mainnet
   * Polygon_Mumbai_Testnet
 
-For more details, see [Supported Chains](https://dev-authsdk-ref-guide.netlify.app/enums/chain).
+For more information, see [Supported Chains](https://dev-authsdk-ref-guide.netlify.app/enums/chain).
 
 **Other blockchain networks**: (Coming soon!)
 

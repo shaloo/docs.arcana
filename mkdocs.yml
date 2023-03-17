@@ -1,4 +1,4 @@
-site_name: Auth SDK Docs
+site_name: Auth Docs
 
 # Remove for dev
 site_url: ""
@@ -171,11 +171,16 @@ nav:
 
 extra:
   arcana:
+    company_name: Arcana
     product_name: Arcana Auth
     sdk_name: Arcana Auth SDK
     dashboard_name: Arcana Developer Dashboard
+    wallet_name: Arcana wallet
     app_address: Client ID
     latest_version: 'v1.0.3'
+    auth_sdk_pkg_name: auth
+    react_sdk_pkg_name: auth-react
+    wagmi_sdk_pkg_name: auth-wagmi
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
@@ -212,10 +217,10 @@ edit_uri: ""
 
 theme:
   name: material
-  logo: img/arcana-logo-light.png
+  logo: img/arcana-logo-white.svg
   icon:
     repo: fontawesome/brands/github
-  favicon: img/an_favicon.svg
+  favicon: img/an-favicon.png
   custom_dir: docs/overrides
   features: 
   #  - announce.dismiss
