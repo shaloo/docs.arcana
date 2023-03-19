@@ -29,7 +29,7 @@ To use the Arcana wallet, you need to log in to a Web3 app that is connected to 
 
 Any dApp that [integrates with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and initializes the `AuthProvider` can use the standard Ethereum provider to sign blockchain transactions. Authenticated users can access the Arcana wallet for Web3 wallet operations.
 
-<img src="/img/an_wallet_home.png" width="200"/>
+<img class="an-screenshots" src="/img/an_wallet_home.png" width="200"/>
 
 Arcana wallet displays the following tabs located at the bottom of the wallet screen:
 

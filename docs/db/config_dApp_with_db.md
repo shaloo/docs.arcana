@@ -43,9 +43,9 @@ This guide will walk you through the various configuration options available on 
 
         {% include "./text-snippets/warn_config_wallet_ui.md" %}
 
-!!! note "{{config.extra.arcana.app_address}}"
+!!! info "{{config.extra.arcana.app_address}}"
 
-      The {{config.extra.arcana.app_address}} assigned to your application can be found on the top right of the dashboard. ![Dashboard Client Identifier](/img/an_db_app_address.png)
+      The {{config.extra.arcana.app_address}} assigned to your application can be found on the top right of the dashboard. ![Dashboard Client Identifier](/img/an_db_app_address.png){.an-screenshots}
 
 ### Manage Configurations
 
@@ -55,7 +55,7 @@ To view configuration details for an application, use the LHS navigation menu an
 
 Each application can only be associated with two configuration profiles, 'Testnet' and 'Mainnet'. Both these configurations are maintained separately and each is associated with a unique **{{config.extra.arcana.app_address}}**. 
 
-![New App config card](/img/an_db_new_app_card.png)
+![New App config card](/img/an_db_new_app_card.png){.an-screenshots}
 
 #### Testnet
 
@@ -71,11 +71,11 @@ A newly registered application does not have any 'Mainnet' profile associated wi
 
 In the social authentication settings screen, refer to the dropdown on the top right next to 'Testnet'. Use this dropdown to select and switch to the 'Mainnet' configuration.
 
-![Testnet Mainnet Selection](/img/an_db_testnet_mainnet_select.png)
+![Testnet Mainnet Selection](/img/an_db_testnet_mainnet_select.png){.an-screenshots}
 
 When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation wizard gets activated and displays a pop-up screen asking the developer to choose one of the options to create the 'Mainnet' configuration. You can either copy the exact 'Testnet' configuration or create a new blank configuration for 'Mainnet' settings. 
 
-![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_creation.png)
+![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_creation.png){.an-screenshots}
 
 !!! caution "Copying Testnet Profile"
 
@@ -87,13 +87,13 @@ When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation w
       
       For example, the figure below shows how the 'redirect URI' is updated in a scenario where Google and Twitch were configured for the 'Testnet' configuration profile and that profile was copied for configuring Mainnet usage.
 
-      ![Update redirect URI](/img/an_db_example_add_mainnet_redirect_uri.png)
+      ![Update redirect URI](/img/an_db_example_add_mainnet_redirect_uri.png){.an-screenshots}
 
 After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 
 
 !!! note "Mainnet {{config.extra.arcana.app_address}}"
 
-      The newly created 'Mainnet' configuration profile is associated with a brand new unique **{{config.extra.arcana.app_address}}**. Developers must specify this new {{config.extra.arcana.app_address}} while integrating the application with the Auth SDK and deploy it on Arcana 'Mainnet'.
+      The newly created 'Mainnet' configuration profile is associated with a brand new unique **{{config.extra.arcana.app_address}}**. Developers must specify this new {{config.extra.arcana.app_address}} while integrating the application with the Auth SDK and deploying it on Arcana 'Mainnet'.
 
 'Mainnet' configuration requires an additional setting which is not available for the 'Testnet' configuration profile. This additional setting, **Keyspace**, is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana Mainnet. Refer to the next section on configuring keyspace.
 
@@ -103,25 +103,25 @@ To deploy an application on the Arcana Mainnet, developers need to create a 'Mai
 
 You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
 
-![Mainnet Keyspace options](/img/an_db_keyspace_options.png)
+![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
 
 Use global keyspace if you want to enable the kind of Web3 user experience whereby the same wallet address is assigned to the user across different Arcana application logins. It is less secure than the default **App-specific** keyspace option whereby a user will see different wallet addresses across the different applications.
 
 Select **Global Keyspace** and click **Verify**. This will bring up a verification form. Fill out the verification form, and click **Submit**. 
 
-<img alt="Global Keyspace Verify" src="/img/an_db_global_keysp_verify.png" width="40%" />
+<img class="an-screenshots-noeffects" alt="Global Keyspace Verify" src="/img/an_db_global_keys_verify.png" width="25%" />
 
 You can check the status of **Global Keyspace** verification by using the **Keyspace** screen. After submitting the form, you will see the status as **In Review**.
 
-![Mainnet Global keyspace in review](/img/an_db_global_keysp_inreview.png)
+![Mainnet Global keyspace in review](/img/an_db_global_keys_inreview.png){.an-screenshots}
 
 The status will change to **Approved** once verification is complete. You can integrate your application with the Auth SDK but do not deploy it until the verification is complete. Otherwise, users that log in before verification is complete may see different wallet addresses after the process is complete.
 
-![Mainnet Global keyspace approved](/img/an_db_global_keysp_approved.png)
+![Mainnet Global keyspace approved](/img/an_db_global_keys_approved.png){.an-screenshots}
 
 Now your application is configured to use the Arcana Mainnet. You can further edit configuration settings for Mainnet by using the LHS navigation pane and selecting **Configure**.  
 
-![Mainnet Profile entry](/img/an_db_mainnet_profile.png)
+![Mainnet Profile entry](/img/an_db_mainnet_profile.png){.an-screenshots}
 
 #### Switch Profiles
 
@@ -129,11 +129,11 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
 * To switch from Testnet to the Mainnet profile, use the application dashboard screen, and select **Configuration >> Social Auth** in the LHS navigation pane. Refer to the dropdown next to 'Testnet' on the top RHS of the screen and choose 'Mainnet'. If there is a preexisting 'Mainnet profile, the app is automatically switched to it. You can view the social authentication settings and the assigned **{{config.extra.arcana.app_address}}** for the 'Mainnet' profile. If there is no 'Mainnet' profile associated with the app, then on selecting 'Mainnet' from the dropdown, the app wizard gets activated and assists in creating a 'Mainnet' configuration profile for the application. Once the profile is created, a new **{{config.extra.arcana.app_address}}** is automatically assigned and the configuration switches to 'Mainnet'.
 
-    ![Select Testnet or Mainnet](/img/an_db_testnet_mainnet_select.png)  
+    ![Select Testnet or Mainnet](/img/an_db_testnet_mainnet_select.png){.an-screenshots}  
 
 * If a 'Mainnet' configuration profile is already created for an application, you can also switch between Testnet/Mainnet configuration profiles by using the 'Manage Apps' dashboard screen. Simply select the application card and click on 'Testnet' or 'Mainnet'. This will bring up the application dashboard screen displaying the application dashboard for the selected configuration profile. 
 
-    ![Switch to Testnet](/img/an_db_all_app_card.png)
+    ![Switch to Testnet](/img/an_db_all_app_card.png){.an-screenshots}
 
 !!! caution
 
@@ -145,7 +145,7 @@ Developers can switch from one application configuration profile screen to anoth
 
 Alternatively, you can use the LHS navigation pane in the configuration screen and click on the dropdown next to the application name in the top left. The dropdown displays a list of all the applications registered by the developer and a link to navigate to the *Manage Apps* dashboard screen. Select a different application from the drop-down list and you will be switched to a different application dashboard screen. 
 
-![Switch Application](/img/an_db_switch_application.png)
+![Switch Application](/img/an_db_switch_application.png){.an-screenshots}
 
 ### Monitor Usage
 
@@ -155,7 +155,7 @@ Developers can monitor their registered application usage statistics via the Arc
 
 The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a dev account and configured to use the Arcana Mainnet. Any application using the 'Testnet' are not billed and not included in this overall account usage statistic.
 
-![Dashboard metrics](/img/an_db_metrics.png)
+![Dashboard metrics](/img/an_db_metrics.png){.an-screenshots}
 
 !!! caution
 
@@ -171,21 +171,21 @@ In the *Manage Apps* dashboard screen, all registered applications are listed as
 
 Use the 'Daily' and 'Monthly' tabs to see the respective usage statistics. 
 
-![Application Usage Stats Testnet](/img/an_db_app_usage_metrics_testnet.png)
+![Application Usage Stats Testnet](/img/an_db_app_usage_metrics_testnet.png){.an-screenshots}
 
 You can use the dropdown in the top right of the application dashboard screen to select Testnet/Mainnet usage details.
 
-![Application Usage Stats Mainnet](/img/an_db_app_usage_metrics_mainnet.png)
+![Application Usage Stats Mainnet](/img/an_db_app_usage_metrics_mainnet.png){.an-screenshots}
 
 ### Delete Application
 
 To de-register an application the developers must delete the entry using the dashboard. Go to the 'Manage Apps' dashboard page which lists all the registered applications.  
 
-![Manage Apps Dashboard](/img/an_db_manage_apps.png)
+![Manage Apps Dashboard](/img/an_db_manage_apps.png){.an-screenshots}
 
 Select the application you wish to de-register and choose **Delete**.
 
-![Delete App](/img/an_db_delete_app.png)
+![Delete App](/img/an_db_delete_app.png){.an-screenshots}
 
 ## Dashboard FAQ
 
