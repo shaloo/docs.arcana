@@ -75,19 +75,7 @@ In the social authentication settings screen, refer to the dropdown on the top r
 
 When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation wizard gets activated and displays a pop-up screen asking the developer to choose one of the options to create the 'Mainnet' configuration. You can either copy the exact 'Testnet' configuration or create a new blank configuration for 'Mainnet' settings. 
 
-![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_creation.png){.an-screenshots}
-
-!!! caution "Copying Testnet Profile"
-
-      If the developer chooses to create the 'Mainnet' profile by copying the 'Testnet' profile, there is an additional setup required to enable the configured social providers. Once the 'Mainnet' profile is created, visit the dashboard and copy the `Redirect URI' displayed for the 'Mainnet' profile. You need to update this `Redirect URI` value using the respective social provider's developer console, similar to the one added that you added earlier in the case of the 'Testnet' profile.
-
-      For example, if Google is enabled in your app's 'Testnet' profile, then during the configuration of the social provider using the Google Developer console, the Testnet redirect URI was added.  Copy the 'Mainnet' profile redirect URI value from the Arcana dashboard and use Google Console to re-configure the Google OAuth settings. 
-
-      Make sure that you add the 'Mainnet' redirect URI value for other social providers that are enabled for the 'Testnet' profile. This is required for enabling your app on 'Mainnet'. 
-      
-      For example, the figure below shows how the 'redirect URI' is updated in a scenario where Google and Twitch were configured for the 'Testnet' configuration profile and that profile was copied for configuring Mainnet usage.
-
-      ![Update redirect URI](/img/an_db_example_add_mainnet_redirect_uri.png){.an-screenshots}
+![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_anim.gif){.an-screenshots}
 
 After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 
 
@@ -95,11 +83,27 @@ After the selection is made and the developer confirms, the 'Mainnet' profile is
 
       The newly created 'Mainnet' configuration profile is associated with a brand new unique **{{config.extra.arcana.app_address}}**. Developers must specify this new {{config.extra.arcana.app_address}} while integrating the application with the Auth SDK and deploying it on Arcana 'Mainnet'.
 
-'Mainnet' configuration requires an additional setting which is not available for the 'Testnet' configuration profile. This additional setting, **Keyspace**, is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana Mainnet. Refer to the next section on configuring keyspace.
+!!! caution "Copying Testnet Profile"
+
+      If the developer chooses to create the 'Mainnet' profile by copying the 'Testnet' profile, there is an additional setup required to enable the configured social providers. Once the 'Mainnet' profile is created, visit the dashboard and copy the `Redirect URI' displayed for the 'Mainnet' profile. You need to update this `Redirect URI` value using the respective social provider's developer console, similar to the one added that you added earlier in the case of the 'Testnet' profile.
+
+??? example "Example: Copying Google Profile"
+      
+      If Google is enabled in your app's 'Testnet' profile, then during the configuration of the social provider with the Google Developer console, the Testnet redirect URI was added.  Copy the 'Mainnet' profile redirect URI value from the Arcana dashboard and update them in the Google Console OAuth settings. 
+
+      Make sure that you add the 'Mainnet' redirect URI value for the other social providers that are enabled in the 'Testnet' profile. This is required for enabling your app to use the Arcana Mainnet. 
+      
+      The figure below shows how the 'redirect URI' is updated in a scenario where Google and Twitch were configured for the 'Testnet' configuration profile and that profile was copied to create a 'Mainnet' profile.
+
+      ![Update redirect URI](/img/an_db_example_add_mainnet_redirect_uri.png){.an-screenshots}
+
+'Mainnet' configuration requires an additional setting which is not available for the 'Testnet' configuration profile. This additional setting, **Keyspace**, is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana Mainnet.
 
 #### Configure Mainnet Keyspace 
 
-To deploy an application on the Arcana Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. You can choose to copy the 'Testnet' profile as the 'Mainnet' configuration or create a new one. In both cases, you need to specify an additional keyspace option. Note that the keyspace feature is only available for the Arcana Mainnet. There are two keyspace options: [App-specific and Global Keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md).
+To deploy an application on the Arcana Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. Setting up keyspace is mandatory irrespective of whether the developer chooses to copy the 'Testnet' profile as the 'Mainnet' configuration or creates a new one.
+
+There are two keyspace options: [App-specific and Global Keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md).
 
 You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
 
@@ -145,7 +149,7 @@ Developers can switch from one application configuration profile screen to anoth
 
 Alternatively, you can use the LHS navigation pane in the configuration screen and click on the dropdown next to the application name in the top left. The dropdown displays a list of all the applications registered by the developer and a link to navigate to the *Manage Apps* dashboard screen. Select a different application from the drop-down list and you will be switched to a different application dashboard screen. 
 
-![Switch Application](/img/an_db_switch_application.png){.an-screenshots}
+![Switch Application](/img/an_db_switch_application_anim.gif){.an-screenshots}
 
 ### Monitor Usage
 
@@ -171,11 +175,11 @@ In the *Manage Apps* dashboard screen, all registered applications are listed as
 
 Use the 'Daily' and 'Monthly' tabs to see the respective usage statistics. 
 
-![Application Usage Stats Testnet](/img/an_db_app_usage_metrics_testnet.png){.an-screenshots}
+![Application Usage Stats Testnet](/img/an_db_app_usage_metrics_testnet_anim.gif){.an-screenshots}
 
 You can use the dropdown in the top right of the application dashboard screen to select Testnet/Mainnet usage details.
 
-![Application Usage Stats Mainnet](/img/an_db_app_usage_metrics_mainnet.png){.an-screenshots}
+![Application Usage Stats Mainnet](/img/an_db_app_usage_metrics_mainnet_anim.gif){.an-screenshots}
 
 ### Delete Application
 
@@ -185,7 +189,7 @@ To de-register an application the developers must delete the entry using the das
 
 Select the application you wish to de-register and choose **Delete**.
 
-![Delete App](/img/an_db_delete_app.png){.an-screenshots}
+![Delete App](/img/an_db_delete_app_anim.gif){.an-screenshots}
 
 ## Dashboard FAQ
 

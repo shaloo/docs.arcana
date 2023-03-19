@@ -26,7 +26,7 @@ Frequently asked questions about using the [Arcana Developer Dashboard]({{page.m
       * Click the trash icon on the top right to delete the app entry.
       * Your application registration will be canceled and the **{{config.extra.arcana.app_address}}** assigned to your application will no longer work
 
-      ![Delete App Entry](/img/an_db_delete_app.png)
+      ![Delete App Entry](/img/an_db_delete_app_anim.gif)
 
 ??? an-faq "How do I migrate an application from Testnet to Mainnet?"
 

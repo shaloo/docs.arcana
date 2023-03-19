@@ -94,14 +94,16 @@ The [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) al
 
 #### Supported Blockchains
 
-[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet offered by the Auth SDK that shows up in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for any  EVM-compatible blockchain networks. 
-
-Following chains are configured by default and displayed in the {{config.extra.arcana.wallet_name}}:
+[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet offered by the Auth SDK that displays in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for any  **EVM-compatible blockchain networks**. Some of these supported networks are pre-configured in the {{config.extra.arcana.wallet_name}} by default.
 
 {% include "./text-snippets/wallet_supported_networks.md" %}
 
+!!! info "Other Blockchain Networks (Coming soon!)"
+
+      Besides supporting all EVM-compatible blockchain networks, we are working on supporting other chains that are not EVM-compatible in the upcoming releases. For e.g., Cosmos, Solana, Near, TON, and Algorand
+
 ## Dashboard Login Options
 
-The Web3 app developers can log into the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these supported social authentication mechanisms or passwordless login:
+The Web3 app developers can log into the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these social providers or use passwordless login:
 
 {% include "./text-snippets/db_supported_oauth.md" %}
