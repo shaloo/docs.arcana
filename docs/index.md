@@ -20,10 +20,6 @@ Welcome to **{{ config.extra.arcana.product_name }}**!
 
 Use {{config.extra.arcana.product_name}} to onboard users via Web2 social providers and enable the embedded, non-custodial {{config.extra.arcana.wallet_name}} in Web3 apps. Designed for developers and Web3 users, it is easy to integrate and provides a simple, secure, and customizable user experience for signing blockchain transactions. It is powered by cutting-edge cryptographic algorithms and a built-in _decentralized key generation_ that ensures no single entity owns or manages the user's keys. 
 
-<!--
-[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md){ .md-button .md-button--primary}
--->
-
 !!! danger "Already using {{config.extra.arcana.product_name}}?"
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
@@ -58,6 +54,8 @@ Developers must first configure the {{config.extra.arcana.sdk_name}} usage as pe
       For apps using the Wagmi or RainbowKit connectors, simply install the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create the `ArcanaConnector` instance by specifying the **{{config.extra.arcana.app_address}}**. When using the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, it is not required to install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
         
       See the [how to guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) and [tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) for details.
+
+[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md){ .md-button .md-button--primary}
 
 ## Key Features
 
