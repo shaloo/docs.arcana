@@ -24,7 +24,7 @@ The Auth SDK's plug-and-play authentication simplifies and speeds up the additio
 
       Only the configured providers will show up in the plug-and-play pop-up screen as the available onboarding options.  If no providers are configured, only the passwordless login option is enabled by default.
   
-* Install the `@arcana/auth` package and [integrate the dApp with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
+* Install the `@arcana/auth` package and [integrate the dApp with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md).
 
 ## Steps
 

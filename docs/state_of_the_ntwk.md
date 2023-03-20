@@ -86,6 +86,13 @@ The [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) al
 
 {% include "./text-snippets/auth_supported.md" %}
 
+We are working on supporting additional social providers for onboarding users. Watch out for the upcoming Auth SDK releases:
+
+- Telegram
+- LINE
+- Wechat
+- Kakaotalk
+
 !!! tip
 
     Besides social authentication, a passwordless login option is also available to onboard dApp users.

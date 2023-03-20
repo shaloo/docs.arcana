@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ../../..
 ---
 
-# React/NextJS Apps
+# Integrate React Apps
 
 Depending upon whether your React Web3 app is a simple React app, or a React app that uses [Wagmi](https://wagmi.sh/), you may need to install one or more of the following Arcana Auth SDK packages - `auth`, `auth-react` and `auth-wagmi`.
 

@@ -39,11 +39,13 @@ You have successfully registered and configured your application.
 
 ## What's next?
 
-After registering and configuring the application, install the {{config.extra.arcana.sdk_name}} and then [integrate it with the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md), onboard users and allow authenticated users to sign blockchain transactions.
+See [how to configure {{config.extra.arcana.sdk_name}} usage]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) for details on setting up authentication providers.
+
+After registering and configuring the application, developers must install the {{config.extra.arcana.sdk_name}} and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) before enabling user onboarding and allowing the authenticated users to sign blockchain transactions. 
 
 !!! info "Save {{config.extra.arcana.app_address}}"
 
-    The unique **{{config.extra.arcana.app_address}}** assigned to every registered app, displayed on the top right in the dashboard screen, will be required later when you integrate the app with the {{config.extra.arcana.sdk_name}}.
+    The unique **{{config.extra.arcana.app_address}}** assigned to every registered app, displayed on the top right in the dashboard screen, will be required later to integrate the app with the {{config.extra.arcana.sdk_name}}.
 
     ![App unique identifier](/img/an_db_app_address.png){.an-screenshots}
 
@@ -52,6 +54,6 @@ After registering and configuring the application, install the {{config.extra.ar
 * [Configure wallet visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md)
 * [Deleting Application Entry]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#delete-application)
 * [Managing Testnet and Mainnet Configurations]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#manage-testnet-and-mainnet-configurations)
-* [Auth Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md)
-* [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md)
+* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}
