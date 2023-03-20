@@ -9,13 +9,11 @@ arcana:
 
 # Register & Configure Application
 
-In this tutorial, you will learn how to register and configure an application before integrating it with the Auth SDK. 
+In this tutorial, you will learn how to register and configure a Web3 app before integrating it with the {{config.extra.arcana.sdk_name}}. 
 
-!!! note "Configure first, integrate later"
-
-    The [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) allows developers to customize the user onboarding experience and the blockchain transaction signing experience. 
+!!! info "{{config.extra.arcana.app_address}}"
     
-    Developers can register and configure their apps using the dashboard. Each registered app is assigned a unique identifier called the **{{config.extra.arcana.app_address}}**. This is used to [integrate an application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the Arcana Auth SDK.
+    Each registered app is assigned a unique identifier, **{{config.extra.arcana.app_address}}**, required to [integrate an app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}.
 
 ## Prerequisites
 
@@ -33,23 +31,21 @@ In this tutorial, you will learn how to register and configure an application be
 
 {% include "./text-snippets/db_settings.md" %}
 
----
+You can reconfigure Web3 app settings for {{config.extra.arcana.sdk_name}} usage anytime later by using the {{config.extra.arcana.dashboard_name}}.
 
 That is all! 🎉
 
-You have successfully registered and configured your application. 
+You have successfully registered and configured your application.  
 
 ## What's next?
 
-After registering and configuring the application, install the Auth SDK and then [integrate it with the application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) to enable user authentication and signing of Web3 blockchain transactions.
+After registering and configuring the application, install the {{config.extra.arcana.sdk_name}} and then [integrate it with the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md), onboard users and allow authenticated users to sign blockchain transactions.
 
-!!! note
+!!! info "Save {{config.extra.arcana.app_address}}"
 
-    You can copy the assigned **{{config.extra.arcana.app_address}}** once an application is registered and configured using the dashboard. It will be required when you integrate the application with the Auth SDK.
+    The unique **{{config.extra.arcana.app_address}}** assigned to every registered app, displayed on the top right in the dashboard screen, will be required later when you integrate the app with the {{config.extra.arcana.sdk_name}}.
 
-    ![App unique identifier](/img/an_db_app_address.png)
-
-You can reconfigure application settings for Auth SDK usage later anytime by visiting the Arcana Developer Dashboard. Simply log in, select your app entry, and double-click on it to view the **Configure** screen.
+    ![App unique identifier](/img/an_db_app_address.png){.an-screenshots}
 
 ## See Also
 
