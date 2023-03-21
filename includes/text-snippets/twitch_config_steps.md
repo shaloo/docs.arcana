@@ -40,4 +40,4 @@ Save the settings. Arcana Network assigns an **{{config.extra.arcana.app_address
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 
-*You are all set with the Twitch configuration. Integrate the Web3 app with the {{config.extra.arcana.sdk_name}} and call the user onboarding function.*
+*You are all set with the Twitch configuration. [Integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*

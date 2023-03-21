@@ -67,4 +67,4 @@ Save the settings. Arcana Network assigns a unique **{{config.extra.arcana.app_a
 
 ![Client ID](/img/an_db_app_address.png){an-screenshots}
 
-*You are all set with the Cognito configuration. Integrate the Web3 application with the{{config.extra.arcana.sdk_name}}. After authentication, users can access the {{config.extra.arcana.wallet_name}} for Web3 wallet operations.*
+*You are all set with the Cognito configuration. Next, [integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}} and enable the authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*

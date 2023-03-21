@@ -38,19 +38,18 @@ Check if a user is logged in:
 
 {% include "./code-snippets/auth_isloggedin.md" %}
 
-Use other Auth SDK functions in your dApp. See [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) for details.
-
 Add code in the application to log out an authenticated user:
 
 {% include "./code-snippets/auth_logout.md" %}
 
 **That is all!**  :material-party-popper:
 
-Your dApp is all set for onboarding users via the GitHub OAuth authentication mechanism.
+The Web3 app is all set for onboarding users via the GitHub social provider. 
 
 ## What's Next?
 
-After enabling user sign-in via GitHub, you can allow authenticated users to access the Arcana wallet for signing blockchain transactions on any EVM-compatible network.
+After onboarding app users via GitHub, you can allow authenticated users to access the {{config.extra.arcana.wallet_name}} for signing blockchain transactions on any [supported blockchain network]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains). Plug in other {{config.extra.arcana.sdk_name}} functions in the app code such as getting the authenticated user's account details, performing Web3 wallet operations, etc. See [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and [{{config.extra.arcana.wallet_name}} Developer's Guide] for details.
+
 
 ## See also
 

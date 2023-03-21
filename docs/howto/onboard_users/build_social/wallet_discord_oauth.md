@@ -9,9 +9,9 @@ arcana:
   social_provider: "'discord'"
 ---
 
-# Discord
+# Onboard App users via Discord
 
-In this guide, you will learn how to enable Discord authentication and onboard dApp users.
+In this guide, you will learn how to enable Discord authentication and onboard app users.
 
 ## Prerequisites
 
@@ -28,9 +28,9 @@ Note that some of the configuration steps are performed using [Discord Developer
 
       You can revisit the Arcana Dashboard later to view and modify configuration settings. 
       
-## Step 4: Integrate and Use Arcana Auth SDK 
+## Step 4: Integrate App
 
-Use the instructions here to [integrate with Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, use the following code to trigger Discord login to onboard users:
+Follow the instructions depending upon the app type and [integrate with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integration, onboard users via Discord by adding the following code:
 
 {% include "./code-snippets/auth_social_login.md" %}
 
@@ -38,19 +38,17 @@ Check if a user is logged in:
 
 {% include "./code-snippets/auth_isloggedin.md" %}
 
-Use other Auth SDK functions in your dApp. See [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) for details.
-
 Add code in the application to log out an authenticated user:
 
 {% include "./code-snippets/auth_logout.md" %}
 
 **That is all!**  :material-party-popper:
 
-Your dApp is all set for onboarding users via the Discord authentication mechanism.
+The Web3 app is all set for onboarding users via the Discord social provider. 
 
 ## What's Next?
 
-After enabling user sign-in via Discord, you can allow authenticated users to access the Arcana wallet for signing blockchain transactions on any EVM-compatible network. 
+After onboarding app users via Discord, you can allow authenticated users to access the {{config.extra.arcana.wallet_name}} for signing blockchain transactions on any [supported blockchain network]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains). Plug in other {{config.extra.arcana.sdk_name}} functions in the app code such as getting the authenticated user's account details, performing Web3 wallet operations, etc. See [Auth SDK Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and [{{config.extra.arcana.wallet_name}} Developer's Guide] for details.
 
 ## See also
 
