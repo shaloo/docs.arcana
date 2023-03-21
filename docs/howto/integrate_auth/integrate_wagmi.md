@@ -11,7 +11,7 @@ arcana:
 
 In this guide, you will learn how to integrate the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) with Web3 apps that use [wagmi](https://wagmi.sh) wallet connector. 
 
-With wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. The {{config.extra.arcana.sdk_name}} offers a custom wagmi connector that enables the {{config.extra.arcana.wallet_name}} in Web3 apps using wagmi.
+With wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. The {{config.extra.arcana.sdk_name}} offers a custom wagmi connector that enables the {{config.extra.arcana.wallet_name}} in Web3 apps using Wagmi.
 
 !!! caution "Using `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package"
 
@@ -55,7 +55,7 @@ Next, provide the newly instantiated and configured `ArcanaConnector` to the `cr
 
 !!! tip "Wagmi `createClient`"
 
-      For more details on the `createClient` function of the wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started).
+      For more details on the `createClient` function of the Wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started).
 
 ### Step 3: Set up WagmiConfig
 

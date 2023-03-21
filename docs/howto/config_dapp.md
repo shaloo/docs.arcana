@@ -45,7 +45,7 @@ After registering and configuring the application, developers must install the {
 
 !!! info "Save {{config.extra.arcana.app_address}}"
 
-    The unique **{{config.extra.arcana.app_address}}** assigned to every registered app, displayed on the top right in the dashboard screen, will be required later to integrate the app with the {{config.extra.arcana.sdk_name}}.
+    A unique **{{config.extra.arcana.app_address}}** is assigned to every registered app. It is displayed on the top right of the dashboard screen. Copy and use it to integrate the app with the {{config.extra.arcana.sdk_name}}.
 
     ![App unique identifier](/img/an_db_app_address.png){.an-screenshots}
 

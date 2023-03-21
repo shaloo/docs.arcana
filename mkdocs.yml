@@ -109,9 +109,10 @@ nav:
           - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
         - Auth SDK: concepts/authsdk.md
         - Authentication: concepts/authtype/arcanaauth.md
-        - Auth Types:
+        - Auth Providers:
           - concepts/authtype/index.md
-          - Social Authentication: concepts/authtype/socialauth.md
+          - Social Providers: concepts/authtype/socialauth.md
+          - Federated Identity Providers: concepts/authtype/fedauth.md
           - Passwordless: concepts/authtype/pwdless.md
         - Dashboard: concepts/dashboard.md
         - DKG:

@@ -10,15 +10,17 @@ arcana:
 
 # Introduction
 
-Welcome to **{{ config.extra.arcana.product_name }}**! 
+Welcome to **{{config.extra.arcana.product_name }}** documentation! 
 
 {==
 
-*Our mission is to make Web3 apps user onboarding a breeze and enable authenticated users to easily sign blockchain transactions!!!*
+*Our mission is to make user onboarding for Web3 apps a breeze and enable authenticated users to easily sign blockchain transactions!!!*
 
 ==}
 
-Use {{config.extra.arcana.product_name}} to onboard users via Web2 social providers and enable the embedded, non-custodial {{config.extra.arcana.wallet_name}} in Web3 apps. Designed for developers and Web3 users, it is easy to integrate and provides a simple, secure, and customizable user experience for signing blockchain transactions. It is powered by cutting-edge cryptographic algorithms and a built-in _decentralized key generation_ that ensures no single entity owns or manages the user's keys. 
+Use {{config.extra.arcana.product_name}} to easily onboard users to Web3 apps through the familiar Web2 authentication providers. The authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} and sign blockchain transactions. 
+
+Designed for developers and Web3 users, {{config.extra.arcana.product_name}} is easy to integrate and offers a simple yet secure, and customizable user experience for signing blockchain transactions. It is powered by cutting-edge cryptographic algorithms and a built-in _decentralized key generation subsystem_ that ensures no single entity owns or manages the user's keys. 
 
 !!! note "Already using {{config.extra.arcana.product_name}}?"
 
@@ -31,13 +33,13 @@ Use {{config.extra.arcana.product_name}} to onboard users via Web2 social provid
 
 ## {{config.extra.arcana.sdk_name}}
 
-{{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 apps, be it a _vanilla JS app_, apps built using various application frameworks such as _React, NextJS_, _Remix_, _Vue_, apps that use wallet connector frameworks such as _Wagmi_ and _RainbowKit_, or the apps using federated identity managers such as AWS Cognito. 
+{{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 app, be it a _vanilla JS app_, apps built using various application frameworks such as _React, NextJS_, _Remix_, _Vue_, apps that use wallet connector frameworks such as _Wagmi_ and _RainbowKit_, or the apps using federated identity managers such as AWS Cognito. 
 
 Once integrated, apps can easily onboard users and allow authenticated users to instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
 
 ## {{config.extra.arcana.dashboard_name}}
 
-Developers must first configure the {{config.extra.arcana.sdk_name}} usage as per the Web3 app requirements by using the {{config.extra.arcana.dashboard_name}}. Once an app is registered and configured, developers can install the {{config.extra.arcana.sdk_name}} and integrate the app. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
+Developers must first register and configure the {{config.extra.arcana.sdk_name}} usage as per the Web3 app requirements by using the {{config.extra.arcana.dashboard_name}}. Once an app is registered and configured, a unique {{config.extra.arcana.app_address}} is assigned to it. Developers can install the {{config.extra.arcana.sdk_name}}, use this {{config.extra.arcana.app_address}} and integrate the app with the {{config.extra.arcana.sdk_name}}. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
 
 ## Usage
 

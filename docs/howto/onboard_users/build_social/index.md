@@ -1,6 +1,6 @@
 # Build Social Auth
 
-Create custom UX and wire it to Auth SDK functions for onboarding users via the configured social providers.
+Instead of using the plug-and-play Auth UI feature to onboard users, Web3 app developers can choose to build custom UI that is wired to the user onboarding function offered by the {{config.extra.arcana.sdk_name}} for various supported authentication providers.
 
 [Discord :fontawesome-brands-discord:](./wallet_discord_oauth.md){ .md-button }
 

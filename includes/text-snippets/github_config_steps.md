@@ -1,4 +1,4 @@
-Web3 apps can enable user onboarding via GitHub by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} and then integrating the app with the {{config.extra.arcana.sdk_name}}.
+Web3 apps can select and enable user onboarding via GitHub by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 ## Step 1: Get Redirect URI
 
@@ -10,23 +10,23 @@ Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db
           
       {% include "./text-snippets/socialauth_add_config.md" %}
 
-Go to the **Configure->Social Auth** configuration section in the {{config.extra.arcana.dashboard_name}} app configuration screen and copy the **redirect URI** value displayed there.   This will be used in the next step to generate GitHub OAuth credentials.
+Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate GitHub OAuth credentials.
 
-![redirect_page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
+![Redirect page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
 
 Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and set up GitHub OAuth. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete the app configuration settings.
 
 ## Step 2: GitHub Developer Settings
 
-Go to the [GitHub Developer Settings > OAuth Apps](https://github.com/settings/applications/new) and register the app as a new GitHub application. 
+Go to the [GitHub Developer Settings > OAuth Apps](https://github.com/settings/applications/new) and register the app as a new GitHub application.
 
-![github console](/img/an_dApp_github_dev_console.png){.an-screenshots}
+![GitHub console](/img/an_dApp_github_dev_console.png){.an-screenshots}
 
 - Enter the app name.
 - Specify the homepage URL where the app is deployed.
-- Provide a brief description of the dApp. 
+- Provide a brief description of the dApp.
 
-![github config details](/img/an_dApp_github_dev_console_config_details.png){.an-screenshots}
+![GitHub config details](/img/an_dApp_github_dev_console_config_details.png){.an-screenshots}
 
 Use the **redirect URI** value that you saved in the previous step from the `Auth` tab of the {{config.extra.arcana.dashboard_name}}d, in the **Authorization callback URL** field. See [here](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps) for GitHub OAuth details.
 
@@ -38,11 +38,11 @@ Copy and save the **Client ID** and the **secret** assigned by GitHub for the ne
 
 ## Step 3: Update the {{config.extra.arcana.dashboard_name}}
 
-Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration screen. Click **Configure->Social Auth** in the LHS navigation bar and refer to the "GitHub" field. Paste the **Client ID** and the **Secret** assigned by GitHub, in the previous step.
+Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration screen. Click **Configure > Social Auth** in the LHS navigation bar and refer to the "GitHub" field. Paste the **Client ID** and the **Secret** assigned by GitHub, in the previous step.
 
-![howto_config_github_clientid](/img/an_dApp_github_config.png){.an-screenshots}
+![howto configure GitHub clientid](/img/an_dApp_github_config.png){.an-screenshots}
 
-Save the settings. Arcana Network assigns a **{{config.extra.arcana.app_address}}** to every registered and configured app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
+Save the settings. Arcana Network assigns a **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 

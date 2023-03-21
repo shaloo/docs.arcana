@@ -1,4 +1,4 @@
-Web3 apps can enable user onboarding via Twitter by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} and then integrating the app with the {{config.extra.arcana.sdk_name}}.
+Web3 apps can select and enable user onboarding via Twitter by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 ## Step 1: Get Redirect URI
 
@@ -10,7 +10,7 @@ Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db
     
       {% include "./text-snippets/socialauth_add_config.md" %}
 
-Go to the **Configure->Social Auth** configuration section and copy the **redirect URI** value displayed there. This will be used in the next step to generate Twitter authentication credentials.
+Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate Twitter authentication credentials.
 
 ![redirect_page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
 
@@ -67,11 +67,11 @@ Make sure you save all the settings.
 
 ## Step 3: Update the {{config.extra.arcana.dashboard_name}}
 
-Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration screen. Click **Configure->Social Auth** in the LHS navigation bar. Refer to the "Twitter" settings and paste the **API Key** assigned by Twitter, in the previous step. 
+Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration screen. Click **Configure > Social Auth** in the LHS navigation bar. Refer to the "Twitter" settings and paste the **API Key** assigned by Twitter, in the previous step. 
 
 ![Copy Client ID](/img/an_dApp_twitter_config.png){.an-screenshots}
 
-Save the settings. Arcana Network assigns an **{{config.extra.arcana.app_address}}** to every registered and configured app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}. 
+Save the settings. Arcana Network assigns an **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}. 
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 
