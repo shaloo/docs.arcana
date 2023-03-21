@@ -255,5 +255,4 @@ This sample demo application integrates with Arcana Auth SDK. It is configured t
 ## See also
 
 * [Arcana wallet capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
-* [Set up Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet.md)
-* [Configuring Arcana wallet visibility modes]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md)
+* [Configure the Arcana wallet]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md)

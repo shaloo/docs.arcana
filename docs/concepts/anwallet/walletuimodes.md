@@ -33,7 +33,7 @@ Once the user takes action, the request disappears and the user cannot access th
 
 ## Summary
 
-The table below summarizes how `alwaysVisible` parameter specified during Auth SDK initialization in the application code controls the user experience. For step-by-step instructions see [how to configure Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md) guide.
+The table below summarizes how `alwaysVisible` parameter specified during Auth SDK initialization in the application code controls the user experience. For step-by-step instructions see [how to configure Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) guide.
 
 | Wallet UI Mode | Flag | User Experience|
 | :------ | :----- | :----------- |

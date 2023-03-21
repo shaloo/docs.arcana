@@ -1,5 +1,9 @@
-Web3 apps can enable user onboarding via Google by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} and then integrating the app with the {{config.extra.arcana.sdk_name}}.
+Web3 apps can select and enable user onboarding via Google by configuring the **Social Auth** settings in the {{config.extra.arcana.dashboard_name}} before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
+!!! warning
+
+      Some of the authentication provider configuration steps are performed using the Google Console, whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Google, simply [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Google.
+      
 ## Step 1: Get Redirect URI
 
 Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
@@ -10,7 +14,7 @@ Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db
 
       {% include "./text-snippets/socialauth_add_config.md" %}
 
-Go to the **Configure->Social Auth** configuration section in the app configuration screen and copy the **redirect URI** value displayed there.  This will be used in the next step to generate Google Client ID.
+Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate Google Client ID.
 
 ![redirect_page](/img/an_dApp_config_redirect_uri.png){.an-screenshots}
 
@@ -40,11 +44,11 @@ Save the **Client ID** assigned by Google. It will be required in the next step.
 
 ## Step 3: Update the {{config.extra.arcana.dashboard_name}}
 
-Revisit the {{config.extra.arcana.dashboard_name}}. Click on the app entry and visit the application configuration screen. Click **Configure->Social Auth** in the LHS navigation bar. Refer to the "Google" settings and paste the **Client ID** assigned by Google Cloud Console in the previous step. 
+Revisit the {{config.extra.arcana.dashboard_name}}. Click on the app entry and visit the application configuration screen. Click **Configure > Social Auth** in the LHS navigation bar. Refer to the "Google" settings and paste the **Client ID** assigned by Google Cloud Console in the previous step. 
 
 ![howto_google_auth_type](/img/an_dApp_google_config.png){.an-screenshots}
 
-Save the settings. Arcana Network assigns a **{{config.extra.arcana.app_address}}** to every registered and configured app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
+Save the settings. Arcana Network assigns a **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 
