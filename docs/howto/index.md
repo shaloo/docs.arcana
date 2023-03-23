@@ -16,7 +16,3 @@ We recommend that you check out these guides to learn how to register and config
 [Onboard Users :fontawesome-solid-user-gear:](./onboard_users/index.md){ .md-button }
 
 [Enable Arcana Wallet :material-wallet-plus-outline:](./arcana_wallet/index.md){ .md-button }
-
-[Configure Federated Identity Providers :fontawesome-brands-aws:](./config_idm/index.md){ .md-button }
-
-[Enable wallet with Federated Identity Providers :fontawesome-brands-aws:](./plug_idm/index.md){ .md-button }

@@ -9,36 +9,29 @@ arcana:
 
 # Build Passwordless Auth
 
-In this guide, you will learn how Web3 apps can integrate with the {{config.extra.arcana.sdk_name}} and enable passwordless authentication to onboard users.
+In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via the passwordless login option.
 
 ## Prerequisites
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
-* Install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package. For details, see the [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md#install-auth-sdk).
+* The app must be [registered using the {{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and a unique {{config.extra.arcana.app_address}} must be already assigned to it. This {{config.extra.arcana.app_address}} is essential for integrating the app with the {{config.extra.arcana.sdk_name}}
+* Follow the instructions as per the app type and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}.
+
+!!! info "Configuring App"
+
+      Unlike other user onboarding options that require enabling authentication providers, passwordless login can be enabled without any configuration setup using the {{config.extra.arcana.dashboard_name}}.
+
+      Developers can optionally choose to modify the default settings for branding and the {{config.extra.arcana.wallet_name}} settings in the {{config.extra.arcana.dashboard_name}}.
 
 ## Steps
 
-To enable passwordless authentication, register the app using the {{config.extra.arcana.dashboard_name}} and then [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}. Unlike social authentication, no app configuration is required to enable passwordless login.
+*Enabling passwordless login in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
 
-### Step 1: Register App
+Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via the passwordless login option.
 
-Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+### Step 1: Call User Onboarding Function: `loginWithLink`
 
-Log in to the {{config.extra.arcana.dashboard_name}}, use the 'Create New App' wizard to register the app if not already registered. The Arcana Network assigns a unique **{{config.extra.arcana.app_address}}** to every registered app.
-
-![Get Dashboard App identifier](/img/an_db_app_address.png){.an-screenshots}
-
-!!! info "Save {{config.extra.arcana.dashboard_name}}"
-
-      The **{{config.extra.arcana.app_address}}** will be required while integrating the app code with the {{config.extra.arcana.sdk_name}}.
-
-      You can revisit the {{config.extra.arcana.dashboard_name}} later and refer to the **{{config.extra.arcana.app_address}}** displayed on the top right of the dashboard. 
-
-Optionally, you can use defaults for branding and {{config.extra.arcana.wallet_name}} settings in the {{config.extra.arcana.dashboard_name}}. See [how to configure app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) guide for details.
-
-### Step 2: Integrate App
-
-Follow the instructions and [integrate app with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). After integrating the app, add the code to use `loginWithLink` function of the {{config.extra.arcana.sdk_name}} and trigger passwordless login to onboard the users. App users are required to provide an email ID as the input for passwordless authentication.
+After integrating the app, add the code to use `loginWithLink` function of the {{config.extra.arcana.sdk_name}} and trigger passwordless login to onboard the users. App users are required to supply an email ID as input for passwordless login.
 
 {% include "./code-snippets/auth_pwdless.md" %}
 
@@ -52,7 +45,7 @@ Log out the dApp user when requested:
 
 **That is all!**  :material-party-popper:
 
-Your dApp is all set for onboarding users via the passwordless login mechanism.
+Your dApp is all set for onboarding users via the passwordless login option.
 
 ## What's Next?
 

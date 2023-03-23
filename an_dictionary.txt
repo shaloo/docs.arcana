@@ -200,6 +200,7 @@ HDWallet
 HTML
 Hashicorp
 HighwayHash
+IAM
 IBFT
 ID1
 IPFS

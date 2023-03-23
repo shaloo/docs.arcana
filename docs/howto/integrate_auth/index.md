@@ -18,7 +18,7 @@ To integrate a Web3 app with the {{config.extra.arcana.sdk_name}}, first registe
 **Prerequisites**
 
 1. Go to the {{config.extra.arcana.dashboard_name}} and [register your application]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Save the **{{config.extra.arcana.app_address}}** assigned to the registered app. This will be required during integration.
-2. Configure the {{config.extra.arcana.sdk_name}} usage settings based on the required user onboarding experience and the {{config.extra.arcana.wallet_name}} usage for signing blockchain transactions. See [how to configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) for details.
+2. Configure the {{config.extra.arcana.sdk_name}} user onboarding settings via the {{config.extra.arcana.dashboard_name}} . See [how to configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) to onboard users.
 
 **Select Integration Method**
 

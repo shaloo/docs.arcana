@@ -11,32 +11,31 @@ arcana:
 
 # Onboard App users via Discord
 
-In this guide, you will learn how an app that is integrated with the {{config.extra.arcana.sdk_name}} can easily onboard users via Discord as the authentication provider.
+In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via Discord as the authentication provider.
 
 ## Prerequisites
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
-* Install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package. For details, see [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
-!!! warning
+* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-      Some of the authentication provider configuration steps are performed using the [Discord Developer Portal](https://discord.com/developers/applications), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Discord, simply [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Discord.
+* Carefully [follow the instructions to configure Discord]({{page.meta.arcana.root_rel_path}}/howto/config_social/discord_oauth.md) as the authentication provider.
+  
+* Use the appropriate integration method as per the app type and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
 
-{% include "./text-snippets/discord_config_steps.md" %}
+!!! info "Using `{{config.extra.arcana.wagmi_sdk_pkg_name}}`"
 
-!!! tip
+      If an app uses Wagmi or RainbowKit wallet connector and the developer chooses to integrate the app with the {{config.extra.arcana.sdk_name}} via the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, then it is **not possible to build custom UI to onboard users** as described in the steps below. {% include "./text-snippets/warn_wagmi_pnp_limitation.md" %}
+    
+## Steps
 
-      The **{{config.extra.arcana.app_address}}** is displayed on the top right of your {{config.extra.arcana.dashboard_name}}.
+*Using Discord to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
 
-      You can revisit the  {{config.extra.arcana.dashboard_name}} later to view and modify configuration settings. 
-      
-## Step 4: Integrate App
+Just a single line of code!
 
-Follow the instructions to [integrate an app with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). Make sure the `AuthProvider` is initialized before calling any {{config.extra.arcana.sdk_name}} functions to onboard users.
+## Step 1: Call `loginWithSocial` function
 
-## Step 5: Use Discord to Authenticate Users
-
-After integrating the app with the {{config.extra.arcana.sdk_name}}, onboard users via Discord by adding the following code:
+Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via Discord.
 
 {% include "./code-snippets/auth_social_login.md" %}
 

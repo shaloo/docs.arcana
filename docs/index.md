@@ -33,7 +33,7 @@ Designed for developers and Web3 users, {{config.extra.arcana.product_name}} is 
 
 ## {{config.extra.arcana.sdk_name}}
 
-{{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 app, be it a _vanilla JS app_, apps built using various application frameworks such as _React, NextJS_, _Remix_, _Vue_, apps that use wallet connector frameworks such as _Wagmi_ and _RainbowKit_, or the apps using federated identity managers such as AWS Cognito. 
+{{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 app, be it a _vanilla JS app_, apps built using various application frameworks such as _React, NextJS_, _Remix_, _Vue_, apps that use wallet connector frameworks such as _Wagmi_ and _RainbowKit_, or the apps using custom IAM providers such as AWS Cognito. 
 
 Once integrated, apps can easily onboard users and allow authenticated users to instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
 
@@ -63,7 +63,7 @@ Developers must first register and configure the {{config.extra.arcana.sdk_name}
 
 <div class="grid card_container" markdown>
   <div class="cards" markdown>
-  <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Fast user onboarding for Web3 applications.</li><li>Add user authentication with just a few lines of code.</li><li>Configure user onboarding options and allow users to authenticate via popular Web2 social providers, federated identity providers or go passwordless.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Fast user onboarding for Web3 applications.</li><li>Add user authentication with just a few lines of code.</li><li>Configure user onboarding options and allow users to authenticate via popular Web2 social providers, custom IAM providers, or go passwordless.</li></ul></p></div>
   <div class="card" markdown><h4><b>:fontawesome-brands-ethereum: Web3 Wallet Transactions</b></h4><hr><p><ul><li>Authenticated users can access the {{config.extra.arcana.wallet_name}}  and sign blockchain transactions.</li><li>Developers can customize the {{config.extra.arcana.wallet_name}}  and manage user experience for the <a href="{{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.html#supported-blockchains">supported blockchain networks</a>.</li><li>Users can perform Web3 wallet operations, such as sending and receiving tokens and NFTs, managing NFT collections, deploying contracts, and interacting with them.</li></ul></p></div>
   <div class="card" markdown><h4><b>:simple-letsencrypt: Secure</b></h4><hr><p><ul><li>Authenticated Web3 application users now have an easy yet secure way to sign blockchain transactions.</li><li>Powered by asynchronous distributed key generation protocol and Shamir's Secret Sharing for security and privacy.</li></ul></p></div>
   <div class="card" markdown><h4><b>:material-gesture-tap-button: Easy to Use</b></h4><hr><p><ul><li>Easily integrate with Web3 vanilla JS, React, NextJS, Vue, Wagmi and RainbowKit apps.</li><li>Offers an embedded, non-custodial wallet that works within the Web3 apps context.</li><li>Users do not need to set up any browser extensions to use the {{config.extra.arcana.wallet_name}}.<li>Users do not need to remember any seed phrases or manage keys to sign blockchain transactions.</li></ul></p></div>

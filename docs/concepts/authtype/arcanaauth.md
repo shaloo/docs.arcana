@@ -18,11 +18,11 @@ Authentication in the Web3 ecosystem is more complex than in traditional Web2 ap
 
 Web3 app developers can use {{config.extra.arcana.sdk_name}} [plug-and-play login UI]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) to add user onboarding code in the app. Or they can also build a custom UI for user login and call the {{config.extra.arcana.sdk_name}} user onboarding functions to enable user authentication.
 
-The {{config.extra.arcana.sdk_name}} allows developers to configure multiple user authentication providers and onboard users. Following authentication mechanisms are supported:
+The {{config.extra.arcana.sdk_name}} allows developers to configure multiple user authentication providers and onboard users. The following authentication mechanisms are supported:
 
 * [Passwordless Login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/pwdless.md)
 * [Social Providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/socialauth.md)
-* [Federated Identity Providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/fedauth.md)
+* [Custom IAM Providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/customauth.md)
 
 !!! note "Associating Web3 Keys with Authenticated Users"
 

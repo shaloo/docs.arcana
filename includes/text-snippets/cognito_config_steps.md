@@ -1,5 +1,9 @@
 Web3 apps that use AWS Cognito for user authentication can enable authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. This requires configuring AWS Cognito before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
+!!! warning
+
+      Some of the authentication provider configuration steps are performed using the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-app-idp-settings.html), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring AWS Cognito, simply [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to use the {{config.extra.arcana.sdk_name}} functions for enabling authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
+
 ## Step 1: Get Redirect URI
 
 Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}

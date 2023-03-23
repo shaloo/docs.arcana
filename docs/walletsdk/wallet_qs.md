@@ -112,7 +112,7 @@ Here are some examples of {{config.extra.arcana.sdk_name}} usage:
 
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
 * [Video Tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/videos/an_academy.md)
-* [Configuring {{config.extra.arcana.wallet_name}} visibility modes]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md)
+* [Configuring {{config.extra.arcana.wallet_name}} visibility]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md)
 * [Handling {{config.extra.arcana.sdk_name}} error messages]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
 * [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

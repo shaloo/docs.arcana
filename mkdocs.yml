@@ -20,7 +20,7 @@ nav:
           - Google Setup: howto/config_social/google_oauth.md
           - Twitch Setup: howto/config_social/twitch_oauth.md
           - Twitter Setup: howto/config_social/twitter_oauth.md
-        - Federated Identity Providers:
+        - Custom IAM Providers:
           - howto/config_idm/index.md
           - Cognito: howto/config_idm/cognito_oauth.md
       - Integrate Auth SDK: 
@@ -34,19 +34,22 @@ nav:
         - Vue dApp: howto/integrate_auth/integrate_wallet_vue.md
       - Onboard Users: 
         - howto/onboard_users/index.md
-        - Plug and Play Auth: howto/onboard_users/wallet_plugnplay.md
-        - Build Social Auth: 
-          - howto/onboard_users/build_social/index.md
-          - Discord: howto/onboard_users/build_social/wallet_discord_oauth.md
-          - GitHub: howto/onboard_users/build_social/wallet_github_oauth.md
-          - Google: howto/onboard_users/build_social/wallet_google_oauth.md
-          - Twitch: howto/onboard_users/build_social/wallet_twitch_oauth.md
-          - Twitter: howto/onboard_users/build_social/wallet_twitter_oauth.md
-        - Build Passwordless Auth: howto/onboard_users/wallet_pwdless_login.md
+        - Plug and Play Login UI: howto/onboard_users/wallet_plugnplay.md
+        - Custom Login UI:
+          - Build Passwordless Auth: howto/onboard_users/wallet_pwdless_login.md
+          - Build Social Auth: 
+            - howto/onboard_users/build_social/index.md
+            - Discord: howto/onboard_users/build_social/wallet_discord_oauth.md
+            - GitHub: howto/onboard_users/build_social/wallet_github_oauth.md
+            - Google: howto/onboard_users/build_social/wallet_google_oauth.md
+            - Twitch: howto/onboard_users/build_social/wallet_twitch_oauth.md
+            - Twitter: howto/onboard_users/build_social/wallet_twitter_oauth.md
+          - Build Custom Auth:
+            - howto/plug_idm/index.md
+            - Cognito: howto/plug_idm/wallet_cognito_oauth.md           
       - Enable Arcana Wallet:
         - howto/arcana_wallet/index.md
-        - Configure Wallet: howto/arcana_wallet/config_wallet.md
-        - Configure Wallet Visibility: howto/arcana_wallet/config_wallet_modes.md
+        - Configure Wallet Visibility: howto/arcana_wallet/config_walletvisibility.md
         - Web3 Wallet Ops:
           - howto/arcana_wallet/web3ops/index.md
           - Add / Switch Network: howto/arcana_wallet/wallet_add_switch_ntwk.md
@@ -55,9 +58,6 @@ nav:
           - Sign Transactions: howto/arcana_wallet/wallet_sign.md
           - Show Wallet: howto/arcana_wallet/wallet_show.md
           - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
-        - Apps using Federated Identity Providers:
-          - howto/plug_idm/index.md
-          - Cognito: howto/plug_idm/wallet_cognito_oauth.md
       - Deploy App: howto/deploy_app.md
   - Tutorials: 
       - tutorials/index.md
@@ -112,7 +112,7 @@ nav:
         - Auth Providers:
           - concepts/authtype/index.md
           - Social Providers: concepts/authtype/socialauth.md
-          - Federated Identity Providers: concepts/authtype/fedauth.md
+          - Custom IAM Providers: concepts/authtype/customauth.md
           - Passwordless: concepts/authtype/pwdless.md
         - Dashboard: concepts/dashboard.md
         - DKG:

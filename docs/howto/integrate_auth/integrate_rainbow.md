@@ -9,7 +9,7 @@ arcana:
 
 # Integrate Rainbow App
 
-In this guide, you will learn how to integrate the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) with Web3 apps that use [RainbowKit](https://www.rainbowkit.com/). RainbowKit works with [wagmi](https://wagmi.sh/) wallet connector that allows Web3 app users to easily switch between multiple wallets within a single application. Arcana offers a custom wagmi connector that can be used to enable the {{config.extra.arcana.wallet_name}} for apps using RainbowKit.
+In this guide, you will learn how to integrate the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) with Web3 apps that use [RainbowKit](https://www.rainbowkit.com/). RainbowKit works with [Wagmi](https://wagmi.sh/) wallet connector that allows Web3 app users to easily switch between multiple wallets within a single application. Arcana offers a custom Wagmi connector that can be used to enable the {{config.extra.arcana.wallet_name}} for apps using RainbowKit.
 
 !!! caution "Using `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package"
 
@@ -18,7 +18,7 @@ In this guide, you will learn how to integrate the [{{config.extra.arcana.sdk_na
 ## Prerequisites
 
 * Developers need to first log into the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
- to register and configure app before using the wagmi `ArcanaConnector`.
+ to register and configure app before using the Wagmi `ArcanaConnector`.
 
 * Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more supported authentication providers for onboarding the app users.
 
@@ -30,7 +30,7 @@ In this guide, you will learn how to integrate the [{{config.extra.arcana.sdk_na
 
           For details, see [how to configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md).
 
-* After registering the application, a unique **{{config.extra.arcana.app_address}}** is assigned to every application. Save the **{{config.extra.arcana.app_address}}** displayed in the {{config.extra.arcana.dashboard_name}}. It is required while instantiating the `ArcanaConnector` for wagmi later.
+* After registering the application, a unique **{{config.extra.arcana.app_address}}** is assigned to every application. Save the **{{config.extra.arcana.app_address}}** displayed in the {{config.extra.arcana.dashboard_name}}. It is required while instantiating the `ArcanaConnector` for Wagmi later.
 
 ## Steps
 
@@ -48,18 +48,17 @@ Import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` and create a 'new' `ArcanaCo
 
 {% include "./code-snippets/auth_rainbow_configure.md" %}
 
-Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` file for creating the wagmi client using the `createClient` function:
+Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` file for creating the Wagmi client using the `createClient` function:
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
-
 !!! tip "Wagmi `createClient`"
 
-      For more details on the `createClient` function of the wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started). Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
+      For more details on the `createClient` function of the Wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started). Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
 
 ### Step 3: RainbowKit Context Provider
 
-Finally, pass the wagmi client created earlier as a parameter to the `WagmiConfig` component in the `_app.js` file.
+Finally, pass the `wagmiClient` created earlier as a parameter to the `WagmiConfig` component in the `_app.js` file.
 
 {% include "./code-snippets/auth_rainbow_use.md" %}
 
@@ -73,7 +72,13 @@ The Web3 app using RainbowKit is successfully integrated with the {{config.extra
 
 ## What's Next?
 
-After integrating with the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, developers do not need to explicitly call the user onboarding functions of the {{config.extra.arcana.sdk_name}}. The `ArcanaConnector` is a wrapper around the `AuthProvider` and once wagmi `createClient` function is called, the `ArcanaConnector` is plugged in as a wagmi connector. When wagmi `connect()` is called for the configured wallet connectors, it automatically brings up the {{config.extra.arcana.sdk_name}} built-in, plug-and-play Auth UI to allow users to onboard the app. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions. Developers can add code to programmatically and [enable Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) in the authenticated user's context.
+After integrating with the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, developers do not need to explicitly call the user onboarding functions of the {{config.extra.arcana.sdk_name}}. The `ArcanaConnector` is a wrapper around the `AuthProvider` and once Wagmi `createClient` function is called, the `ArcanaConnector` is plugged in as a Wagmi connector. 
+
+When the Wagmi `connect()` function is called for the configured wallet connectors, it automatically brings up the {{config.extra.arcana.sdk_name}} built-in, plug-and-play Auth UI to allow users to onboard the app. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions. Developers can add code to programmatically and [enable Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) in the authenticated user's context.
+
+!!! info "Using `{{config.extra.arcana.wagmi_sdk_pkg_name}}`"
+
+      {% include "./text-snippets/warn_wagmi_pnp_limitation.md" %}
 
 ## See also
 

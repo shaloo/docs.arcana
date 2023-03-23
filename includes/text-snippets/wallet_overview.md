@@ -22,7 +22,7 @@
 
 **Wallet Usage Configuration**
 
-Arcana wallet can be configured at the time of integrating the application with the Auth SDK. While instantiating a new `AuthProvider`, the developer can choose one of the available wallet user experiences for signing blockchain transactions through the `alwaysVisible` input parameter. See [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) and the [Arcana wallet configuration guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_wallet_modes.md) for details.
+Arcana wallet can be configured at the time of integrating the application with the Auth SDK. While instantiating a new `AuthProvider`, the developer can choose one of the available wallet user experiences for signing blockchain transactions through the `alwaysVisible` input parameter. See [Arcana wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) and the [Arcana wallet configuration guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) for details.
 
 {% include "./text-snippets/wallet_ntwk_switch_warning.md" %}
 

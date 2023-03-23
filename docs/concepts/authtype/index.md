@@ -9,7 +9,7 @@ The {{config.extra.arcana.sdk_name}} supports the following authentication provi
 
 [Social Providers :fontawesome-solid-users-gear:](./socialauth.md){ .md-button }
 
-[Federated Identity Providers :fontawesome-solid-users-gear:](./fedauth.md){ .md-button }
+[Custom IAM Providers :fontawesome-solid-users-gear:](./customauth.md){ .md-button }
 
 [Passwordless Login :material-card-account-mail:](./pwdless.md){ .md-button }
 
