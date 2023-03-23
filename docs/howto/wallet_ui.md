@@ -100,7 +100,7 @@ Once you click **Save**, the newly added network is automatically selected as th
 
 Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab to bring up the wallet token asset screen. Use the network drop-down list to switch to a different network.
 
-<img class="an-screenshots-noeffects"src="/img/an_wallet_switch_ntwk.png" width="20%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_switch_ntwk.png" width="20%"/>
 
 ### Fiat On-ramp
 
@@ -118,7 +118,7 @@ Click **Buy** to initiate the fiat on-ramp process for your {{config.extra.arcan
 
 You will see the list of available fiat on-ramp providers:
 
-<img class="an-screenshots-noeffects"src="/img/an_wallet_onramp_providers.png" width="20%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_onramp_providers.png" width="20%"/>
 
 Pick up one of the providers and click **Proceed**. This will bring up the provider-specific user interface. Each provider may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Also, the basic minimum purchase amount for a country or cryptocurrency may vary across countries and providers.
 

@@ -25,7 +25,7 @@ This guide explains how a web3 user can export their private key by using the {{
 
 ## Steps 
 
-Click the **User Profile** tab in the {{config.extra.arcana.wallet_name}} UI. Under the 'Private Key' section, you will see the **Export Key** option.
+Click the **User Profile** tab in the {{config.extra.arcana.wallet_name}} screen. Under the 'Private Key' section, you will see the **Export Key** option.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_export_key_screen.png" width="20%"/>
 
@@ -51,7 +51,7 @@ After successfully copying or downloading the key, the user **must** close the {
 
 ## What's Next?
 
-You can use {{config.extra.arcana.wallet_name}} UI to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and [more]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
+Authenticated users can use the {{config.extra.arcana.wallet_name}} to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and [more]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
 
 ## See also
 
