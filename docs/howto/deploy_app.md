@@ -19,7 +19,7 @@ In this guide you will learn how the Web3 app developers can deploy apps integra
 
 * Make sure the app is [registered and configured]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) via the {{config.extra.arcana.dashboard_name}}. 
 
-* After successful registration, a unique **{{config.extra.arcana.app_address}}** is assigned to the app. It will be required later for integrating the app with the {{config.extra.arcana.sdk_name}}. Also, a default 'Testnet' configuration profile is associated with every newly registered app. To learn more about various configuration settings, see [how to use the Arcana Developer Dashboard to configure app settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).
+* After successful registration, a unique **{{config.extra.arcana.app_address}}** is assigned to the app. It will be required later for integrating the app with the {{config.extra.arcana.sdk_name}}. Also, a default 'Testnet' configuration profile is associated with every newly registered app. To learn more about various configuration settings, see [how to use the {{config.extra.arcana.dashboard_name}} to configure app settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).
 
 * Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi or RainbowKit. Follow the instructions in the respective [integration guides]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and choose carefully depending on the app type. 
 

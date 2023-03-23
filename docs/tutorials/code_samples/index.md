@@ -1,6 +1,6 @@
 # Code Samples
 
-Code samples to demonstrate how to integrate your application with the {{ arcana.product_name }}.
+These code samples demonstrate how to integrate your application with the {{ config.extra.arcana.sdk_name }} and allow authenticated users to access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
 [Vanilla JS Example :material-language-typescript:](vanilla_html_js_sample.md){ .md-button }
 
