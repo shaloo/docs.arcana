@@ -13,7 +13,7 @@ If you integrate a Web3 app with the {{config.extra.arcana.sdk_name}}, you might
 
 For more insights, refer to the [{{config.extra.arcana.sdk_name}} troubleshooting guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md).
 
-## Auth SDK Error Messages
+## {{config.extra.arcana.sdk_name}} Error Messages
 
 | Error  |  Description |
 | ---    |  ---  |

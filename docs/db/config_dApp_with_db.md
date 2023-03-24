@@ -35,7 +35,7 @@ This guide will walk you through the various configuration options available on 
 
 {% include "./text-snippets/db_settings.md" %}
 
-!!! caution "Arcana Wallet"
+!!! caution "{{config.extra.arcana.wallet_name}}"
 
         {% include "./text-snippets/warn_config_wallet_ui.md" %}
 

@@ -9,8 +9,8 @@ arcana:
 
 ## Latest Release
 
-* Arcana Auth SDK v{% include "./text-snippets/latest_auth_sdk.md" %}
-* Arcana Developer Dashboard {% include "./text-snippets/db_portal_url.md" %}
+* Download the {{config.extra.arcana.sdk_name}} v{% include "./text-snippets/latest_auth_sdk.md" %} npm package: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
+* Access the latest {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
 ## Mode of Operation
 
@@ -30,14 +30,14 @@ Arcana Network protocol is built and operates using the [Proof of Stake](https:/
 
 ## Mainnet Roadmap
 
-The Arcana Mainnet was released in January 2023 with Auth SDK v1.0.0.
+The Arcana Mainnet was released in January 2023 with the {{config.extra.arcana.sdk_name}} release v1.0.0.
 
-The current Auth SDK release is v{% include "./text-snippets/latest_auth_sdk.md" %}.
+The current {{config.extra.arcana.sdk_name}} release is v{% include "./text-snippets/latest_auth_sdk.md" %}.
 
 We are actively working towards adding new features:
 
 * Gasless transactions
-* 'Forget'/delete private keys from ADKG subsystem for truly self-custodial keys
+* 'Forget'/delete private keys from the ADKG subsystem for truly self-custodial keys
 * MFA
 * Multi-chain including those that are not EVM-compatible
 * Support for additional platform SDKs for Mac (Unity, Unreal), and Mobile (React Native, Flutter)
@@ -62,7 +62,7 @@ We have come a long way since our alpha release that offered a distributed DKG. 
 
 ### Key Shares
 
-Arcana Network platform components do not store any key shares that belong to the dApp user.  The key shares are used to generate the user's keys only at the client end after user verification. 
+Arcana Network platform components do not store any key shares that belong to the app user.  The key shares are used to generate the user's keys only at the client end after user verification. 
 
 ### Key Generation
 
@@ -74,19 +74,19 @@ At Arcana, we take the security and privacy of applications seriously and believ
 
 ## Supported Browsers
 
-Arcana Auth SDK can be integrated with any applications that work on one of the supported browsers:
+{{config.extra.arcana.sdk_name}} can be integrated with any applications that work on one of the supported browsers:
 
 {% include "./text-snippets/supported_browsers.md" %}
 
-## Auth SDK
+## {{config.extra.arcana.sdk_name}}
 
 ### User Onboarding Options
 
-The [Arcana Auth SDK]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) allows dApps to integrate and onboard users via one or more of the supported user authentication mechanisms:
+The [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) allows Web3 apps to integrate and onboard users via one or more of the supported user authentication mechanisms:
 
 {% include "./text-snippets/auth_supported.md" %}
 
-We are working on supporting additional social providers for onboarding users. Watch out for the upcoming Auth SDK releases:
+We are working on supporting additional social providers for onboarding users. Watch out for the upcoming {{config.extra.arcana.sdk_name}} releases:
 
 - Telegram
 - LINE
@@ -95,13 +95,13 @@ We are working on supporting additional social providers for onboarding users. W
 
 !!! tip
 
-    Besides social authentication, a passwordless login option is also available to onboard dApp users.
+    Besides social authentication, a passwordless login option is also available to onboard app users.
 
-### Arcana Wallet
+### {{config.extra.arcana.wallet_name}}
 
 #### Supported Blockchains
 
-[Arcana wallet]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet offered by the Auth SDK that displays in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for any  **EVM-compatible blockchain networks**. Some of these supported networks are pre-configured in the {{config.extra.arcana.wallet_name}} by default.
+[{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet offered by the {{config.extra.arcana.sdk_name}} that displays in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for any  **EVM-compatible blockchain network**. Some of these supported networks are pre-configured in the {{config.extra.arcana.wallet_name}} by default.
 
 {% include "./text-snippets/wallet_supported_networks.md" %}
 
@@ -109,8 +109,8 @@ We are working on supporting additional social providers for onboarding users. W
 
       Besides supporting all EVM-compatible blockchain networks, we are working on supporting other chains that are not EVM-compatible in the upcoming releases. For e.g., Cosmos, Solana, Near, TON, and Algorand
 
-## Dashboard Login Options
+## {{config.extra.arcana.dashboard_name}} Login Options
 
-The Web3 app developers can log into the [Arcana Developer Dashboard]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these social providers or use passwordless login:
+The Web3 app developers can log into the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these social providers or use passwordless login:
 
 {% include "./text-snippets/db_supported_oauth.md" %}

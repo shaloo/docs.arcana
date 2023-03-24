@@ -9,9 +9,9 @@ arcana:
 
 # HTML/CSS/JS App Code Sample
 
-You need to first [configure user onboarding options and other settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. 
+First of all, before adding any code to the Web3 app, [register the app and configure user onboarding options and other settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. 
 
-Next, install the `{{ config.extra.arcana.auth_sdk_pkg_name }}` package, integrate the HTML/CSS/JS app, and onboard users. Only authenticated users can access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
+Next, install the `{{ config.extra.arcana.auth_sdk_pkg_name }}` package, [integrate the HTML/CSS/JS app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet.md), and then add code in the app to [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). Only authenticated users can access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
 Check out the code sandbox for the [sample vanilla HTML/CSS/JS app](https://codesandbox.io/s/simple-html-app-auth-integration-4gqf6q). This is a very basic vanilla HTML/CSS/JS app that uses Parcel. It integrates with the {{config.extra.arcana.sdk_name}} and uses the plug-and-play login UI for onboarding users.
 
@@ -59,7 +59,7 @@ try {
 
 <img class="an-screenshots-noeffects"  alt="Arcana Wallet HTML/CSS/JS app Init" src="/img/auth_ex_html_css_js_app1.png" width="50%"/>
 
-### Use Auth Plug-&-Play User Authentication
+### Onboard Users
 
 After integrating the app with the {{config.extra.arcana.sdk_name}}, instantiating the `AuthProvider`, add code to onboard users via the plug-and-play login UI offered by the {{config.extra.arcana.sdk_name}} in your HTML/CSS/JS app. Use the `connect` function to bring up the built-in, plug-and-play login UI. It will display only those authentication providers that the developer has configured earlier using the {{config.extra.arcana.dashboard_name}}.
 
@@ -77,7 +77,9 @@ Once a user logs in to the HTML/CSS/JS app and authenticates, the {{config.extra
 
 An authenticated app user can access the {{config.extra.arcana.wallet_name}} UI to perform various Web3 blockchain operations such as adding tokens, checking the wallet balance, switching networks, etc. See [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) for more details.
 
-Developers can add code to programmatically call the Web3 operations for authenticated users in the HTML/CSS/JS app, as required. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) and the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
+### Use Web3 Wallet Operations
+
+Developers can add code to programmatically call the Web3 wallet operations for authenticated users in the HTML/CSS/JS app, as required. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) and the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
 
 !!! caution "Use the latest {{config.extra.arcana.sdk_name}}"
 
