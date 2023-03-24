@@ -13,7 +13,7 @@ In this guide, you will learn how to integrate a Web3 app with the {{config.extr
 
 ## Step 1: Register and Configure App
 
-Use the {{config.extra.arcana.dashboard_name}} to register and configure Web3 applications. Each registered application is assigned a unique **{{config.extra.arcana.app_address}}**. Follow the instructions in the [How to Register and Configure Applications Guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Save the **{{config.extra.arcana.app_address}}** as it will be required to integrate with the Arcana Auth SDK later.
+Use the {{config.extra.arcana.dashboard_name}} to register and configure Web3 applications. Each registered application is assigned a unique **{{config.extra.arcana.app_address}}**. Follow the instructions in the [How to Register and Configure Applications Guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Save the **{{config.extra.arcana.app_address}}** as it will be required to integrate with the {{config.extra.arcana.sdk_name}} later.
 
 ## Step 2: Install `{{config.extra.arcana.auth_sdk_pkg_name}}`
 
