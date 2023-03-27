@@ -46,7 +46,7 @@ Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration s
 
 ![howto configure GitHub clientid](/img/an_dApp_github_config.png){.an-screenshots}
 
-Save the settings. Arcana Network assigns a **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
+Save the settings. {{config.extra.arcana.company_name}} assigns a **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 

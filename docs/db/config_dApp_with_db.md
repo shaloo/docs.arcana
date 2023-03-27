@@ -13,7 +13,7 @@ The {{config.extra.arcana.dashbaord_name}} allows Web3 app developers to configu
 
 Developers must first register the app by using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and obtain a unique **{{config.extra.arcana.app_address}}** that is required to integrate the app with the {{config.extra.arcana.sdk_name}}.
 
-By default, each newly registered app is associated with a 'Testnet' configuration profile. When the app is deployed, it is set to use the Arcana Testnet.
+By default, each newly registered app is associated with a 'Testnet' configuration profile. When the app is deployed, it is set to use the {{config.extra.arcana.company_name}} Testnet.
 
 This guide will walk you through the various configuration options available on the {{config.extra.arcana.dashboard_name}} to tailor the {{config.extra.arcana.sdk_name}} usage.  For instructions on how to install {{config.extra.arcana.sdk_name}} and integrate your application, refer to the [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
 
@@ -45,7 +45,7 @@ This guide will walk you through the various configuration options available on 
 
 ### Manage Configurations
 
-Every application that is registered using the {{config.extra.arcana.dashboard_name}} is represented by a single card displayed in the 'Manage Apps' screen, next to the 'Create New App' wizard. Click on the application card to view the application dashboard screen. By default, the application dashboard screen shows application usage details for the 'Testnet' configuration profile and some links to the Arcana Auth documentation. 
+Every application that is registered using the {{config.extra.arcana.dashboard_name}} is represented by a single card displayed in the 'Manage Apps' screen, next to the 'Create New App' wizard. Click on the application card to view the application dashboard screen. By default, the application dashboard screen shows application usage details for the 'Testnet' configuration profile and some links to the {{config.extra.arcana.product_name}} documentation. 
 
 To view configuration details for an application, use the LHS navigation menu and click *Configure* to view/edit the application configuration settings as described in an earlier section of this guide.
 
@@ -55,13 +55,13 @@ Each application can only be associated with two configuration profiles, 'Testne
 
 #### Testnet
 
-By default, all newly registered applications are enabled for using the Arcana 'Testnet'. Developers can view or edit the default configuration settings by clicking 'Testnet' on the application card displayed in the 'Manage Apps' dashboard screen. This will bring up the application dashboard screen with various navigation options in the LHS pane.
+By default, all newly registered applications are enabled for using the {{config.extra.arcana.company_name}} 'Testnet'. Developers can view or edit the default configuration settings by clicking 'Testnet' on the application card displayed in the 'Manage Apps' dashboard screen. This will bring up the application dashboard screen with various navigation options in the LHS pane.
 
-After validation on the 'Testnet', the application can be configured to use the Arcana 'Mainnet'. To do this, developers must create a corresponding 'Mainnet' configuration profile. 
+After validation on the 'Testnet', the application can be configured to use the {{config.extra.arcana.company_name}} 'Mainnet'. To do this, developers must create a corresponding 'Mainnet' configuration profile. 
 
 #### Mainnet
 
-To use Arcana Mainnet, the developers must first create a 'Mainnet' configuration profile using the {{config.extra.arcana.dashboard_name}}. 
+To use the {{config.extra.arcana.company_name}} Mainnet, the developers must first create a 'Mainnet' configuration profile using the {{config.extra.arcana.dashboard_name}}. 
 
 A newly registered application does not have any 'Mainnet' profile associated with it, it has to be explicitly created by the developer. The application card displayed in the 'Manage Apps' screen will show the 'Mainnet' configuration as disabled for all newly registered apps. To create a 'Mainnet' configuration profile, the developer must use the application dashboard screen displaying the Testnet profile, use the LHS navigation pane and select the **Social Auth** settings. 
 
@@ -73,11 +73,11 @@ When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation w
 
 ![Switch to Mainnet Profile](/img/an_db_new_mainnet_config_anim.gif){.an-screenshots}
 
-After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with the Arcana Network. 
+After the selection is made and the developer confirms, the 'Mainnet' profile is created and automatically registered with {{config.extra.arcana.company_name}}. 
 
 !!! note "Mainnet {{config.extra.arcana.app_address}}"
 
-      The newly created 'Mainnet' configuration profile is associated with a brand new unique **{{config.extra.arcana.app_address}}**. Developers must specify this new {{config.extra.arcana.app_address}} while integrating the application with the {{config.extra.arcana.sdk_name}} and deploying it on Arcana 'Mainnet'.
+      The newly created 'Mainnet' configuration profile is associated with a brand new unique **{{config.extra.arcana.app_address}}**. Developers must specify this new {{config.extra.arcana.app_address}} while integrating the application with the {{config.extra.arcana.sdk_name}} and deploying it on {{config.extra.arcana.company_name}} 'Mainnet'.
 
 !!! caution "Copying Testnet Profile"
 
@@ -87,17 +87,17 @@ After the selection is made and the developer confirms, the 'Mainnet' profile is
       
       If Google is enabled in your app's 'Testnet' profile, then during the configuration of the social provider with the Google Developer console, the Testnet redirect URI was added.  Copy the 'Mainnet' profile redirect URI value from the {{config.extra.arcana.dashboard_name}} and update them in the Google Console OAuth settings. 
 
-      Make sure that you add the 'Mainnet' redirect URI value for the other social providers that are enabled in the 'Testnet' profile. This is required for enabling your app to use the Arcana Mainnet. 
+      Make sure that you add the 'Mainnet' redirect URI value for the other social providers that are enabled in the 'Testnet' profile. This is required for enabling your app to use the {{config.extra.arcana.company_name}} Mainnet. 
       
       The figure below shows how the 'redirect URI' is updated in a scenario where Google and Twitch were configured for the 'Testnet' configuration profile and that profile was copied to create a 'Mainnet' profile.
 
       ![Update redirect URI](/img/an_db_example_add_mainnet_redirect_uri.png){.an-screenshots}
 
-'Mainnet' configuration requires an additional setting which is not available for the 'Testnet' configuration profile. This additional setting, **Keyspace**, is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the Arcana Mainnet.
+'Mainnet' configuration requires an additional setting which is not available for the 'Testnet' configuration profile. This additional setting, **Keyspace**, is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the {{config.extra.arcana.company_name}} Mainnet.
 
 #### Configure Mainnet Keyspace 
 
-To deploy an application on the Arcana Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. Setting up keyspace is mandatory irrespective of whether the developer chooses to copy the 'Testnet' profile as the 'Mainnet' configuration or creates a new one.
+To deploy an application on the {{config.extra.arcana.company_name}} Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. Setting up keyspace is mandatory irrespective of whether the developer chooses to copy the 'Testnet' profile as the 'Mainnet' configuration or creates a new one.
 
 There are two keyspace options: [App-specific and Global Keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md).
 
@@ -105,7 +105,7 @@ You can either use the default, highly secure **App-specific** keyspace option o
 
 ![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
 
-Use global keyspace if you want to enable the kind of Web3 user experience whereby the same wallet address is assigned to the user across different Arcana application logins. It is less secure than the default **App-specific** keyspace option whereby a user will see different wallet addresses across the different applications.
+Use global keyspace if you want to enable the kind of Web3 user experience whereby the same wallet address is assigned to the user across different application logins in the {{config.extra.arcana.company_name}} ecosystem. It is less secure than the default **App-specific** keyspace option whereby a user will see different wallet addresses across the different applications.
 
 Select **Global Keyspace** and click **Verify**. This will bring up a verification form. Fill out the verification form, and click **Submit**. 
 
@@ -119,7 +119,7 @@ The status will change to **Approved** once verification is complete. You can in
 
 ![Mainnet Global keyspace approved](/img/an_db_global_keys_approved.png){.an-screenshots}
 
-Now your application is configured to use the Arcana Mainnet. You can further edit configuration settings for Mainnet by using the LHS navigation pane and selecting **Configure**.  
+Now your application is configured to use the {{config.extra.arcana.company_name}} Mainnet. You can further edit configuration settings for Mainnet by using the LHS navigation pane and selecting **Configure**.  
 
 ![Mainnet Profile entry](/img/an_db_mainnet_profile.png){.an-screenshots}
 
@@ -137,7 +137,7 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
 !!! caution
 
-      Depending upon whether the 'Testnet' **{{config.extra.arcana.app_address}}** value or the 'Mainnet' **{{config.extra.arcana.app_address}}** value is used to integrate an application with the {{config.extra.arcana.sdk_name}}, the deployment of the app happens on the respective Arcana Network. "Testnet" usage is not billed but if an application chooses 'Mainnet' while integrating with the {{config.extra.arcana.sdk_name}}, it will be billed in the forthcoming releases.
+      Depending upon whether the 'Testnet' **{{config.extra.arcana.app_address}}** value or the 'Mainnet' **{{config.extra.arcana.app_address}}** value is used to integrate an application with the {{config.extra.arcana.sdk_name}}, deployment of the app happens on the respective {{config.extra.arcana.company_name}} Network. "Testnet" usage is not billed but if an application chooses 'Mainnet' while integrating with the {{config.extra.arcana.sdk_name}}, it will be billed in the forthcoming releases.
 
 #### Switch Applications
 
@@ -153,7 +153,7 @@ Developers can monitor their registered application usage statistics via the {{c
 
 #### Account Usage Metrics
 
-The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a dev account and configured to use the Arcana Mainnet. Any application using the 'Testnet' are not billed and not included in this overall account usage statistic.
+The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a dev account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' are not billed and not included in this overall account usage statistic.
 
 ![Dashboard metrics](/img/an_db_metrics.png){.an-screenshots}
 
@@ -163,9 +163,9 @@ The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer a
 
 #### Usage per Application
 
-Arcana Network maintains per-application usage statistics separately for both the 'Testnet' and 'Mainnet' configuration profiles. 
+{{config.extra.arcana.company_name}} Network maintains per-application usage statistics separately for both the 'Testnet' and 'Mainnet' configuration profiles. 
 
-In the *Manage Apps* dashboard screen, all registered applications are listed as cards. Each application card displays the 'Total Users' statistic. This refers to the total monthly active application users that are utilizing the Arcana Testnet/Mainnet. To view per application usage details, you need to select 'Testnet' or 'Mainnet' profile and look at the application dashboard screen that displays the following usage statistics: 
+In the *Manage Apps* dashboard screen, all registered applications are listed as cards. Each application card displays the 'Total Users' statistic. This refers to the total monthly active application users that are utilizing the {{config.extra.arcana.company_name}} Testnet/Mainnet. To view per application usage details, you need to select 'Testnet' or 'Mainnet' profile and look at the application dashboard screen that displays the following usage statistics: 
 
 * Number of logged-in users 
 

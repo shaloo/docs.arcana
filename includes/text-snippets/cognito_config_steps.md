@@ -67,7 +67,7 @@ Revisit the {{config.extra.arcana.dashboard_name}}. Click on the app entry and v
 
 ![howto_config_cognito](/img/an_dApp_cognito_config.png){an-screenshots}
 
-Save the settings. Arcana Network assigns a unique **{{config.extra.arcana.app_address}}** to every registered app. Save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
+Save the settings. {{config.extra.arcana.company_name}}assigns a unique **{{config.extra.arcana.app_address}}** to every registered app. Save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 ![Client ID](/img/an_db_app_address.png){an-screenshots}
 

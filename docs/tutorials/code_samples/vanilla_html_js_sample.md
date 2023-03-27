@@ -57,7 +57,7 @@ try {
 }
 ```
 
-<img class="an-screenshots-noeffects"  alt="Arcana Wallet HTML/CSS/JS app Init" src="/img/auth_ex_html_css_js_app1.png" width="50%"/>
+<img class="an-screenshots-noeffects"  alt="AuthProvider HTML/CSS/JS app Init" src="/img/auth_ex_html_css_js_app1.png" width="50%"/>
 
 ### Onboard Users
 
@@ -73,13 +73,13 @@ try {
 
 Once a user logs in to the HTML/CSS/JS app and authenticates, the {{config.extra.arcana.wallet_name}} will be accessible and can be used for signing blockchain transactions.
 
-<img class="an-screenshots" alt="Arcana Wallet HTML/CSS/JS app Connect" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
+<img class="an-screenshots" alt="AuthProvider HTML/CSS/JS app Connect" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
 
 An authenticated app user can access the {{config.extra.arcana.wallet_name}} UI to perform various Web3 blockchain operations such as adding tokens, checking the wallet balance, switching networks, etc. See [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) for more details.
 
 ### Use Web3 Wallet Operations
 
-Developers can add code to programmatically call the Web3 wallet operations for authenticated users in the HTML/CSS/JS app, as required. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) and the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
+Developers can add code to programmatically call the Web3 walletoperations for authenticated users in the HTML/CSS/JS app, as required. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) and the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
 
 !!! caution "Use the latest {{config.extra.arcana.sdk_name}}"
 

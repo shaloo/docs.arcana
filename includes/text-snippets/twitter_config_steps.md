@@ -75,7 +75,7 @@ Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration s
 
 ![Copy Client ID](/img/an_dApp_twitter_config.png){.an-screenshots}
 
-Save the settings. Arcana Network assigns an **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}. 
+Save the settings. {{config.extra.arcana.company_name}} assigns an **{{config.extra.arcana.app_address}}** to every registered app. You need to save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}. 
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 

@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Arcana Wallet User Guide
+# {{config.extra.arcana.wallet_name}} User Guide
 
 The [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded, non-custodial Web3 wallet that is available to all authenticated app users once the app integrates with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md). 
 

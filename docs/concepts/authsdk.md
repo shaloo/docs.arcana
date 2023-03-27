@@ -17,8 +17,8 @@ The {{config.extra.arcana.sdk_name}} integrates with Web3 apps and allows them t
 
 Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and [register, configure apps]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Each registered app is assigned a unique **{{config.extra.arcana.app_address}}**. This is used for integrating the app with the {{config.extra.arcana.sdk_name}}. 
 
-<img src="/img/diagrams/d_an_authsdk_light.png#only-light" alt="Auth SDK Diagram" height="20%"/>
-<img src="/img/diagrams/d_an_authsdk_dark.png#only-dark" alt="Auth SDK Diagram Dark" height="20%"/>
+<img src="/img/diagrams/d_an_authsdk_light.png#only-light" alt="{{config.extra.arcana.sdk_name}} Diagram" height="20%"/>
+<img src="/img/diagrams/d_an_authsdk_dark.png#only-dark" alt="{{config.extra.arcana.sdk_name}} Diagram Dark" height="20%"/>
 
 ## Key Features
 
@@ -26,7 +26,7 @@ Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.me
 
   * Developers can configure user onboarding options and allow users to log in easily with a familiar Web2-like login experience via authentication providers and passwordless login
   * Users can easily onboard Web3 apps without having to manage keys and secrets 
-  * Developers have a choice to enable plug-and-play authentication in the application with a single line of code or build customized UI that calls social and passwordless login functions of the Auth SDK
+  * Developers have a choice to enable plug-and-play authentication in the application with a single line of code or build customized UI that calls social and passwordless login functions of the {{config.extra.arcana.sdk_name}}
 
 **Web3 Wallet Operations**
 

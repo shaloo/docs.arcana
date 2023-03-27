@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Enable Arcana Wallet
+# Enable {{config.extra.arcana.wallet_name}}
 
 Application developers can enable the authenticated users in a Web3 app to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. Authenticated users can access the wallet UI and perform various Web3 wallet operations such as adding/switching blockchain networks, checking their wallet balance, managing crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
 
@@ -17,7 +17,7 @@ Once the app is integrated with the {{config.extra.arcana.sdk_name}}, developers
 
 The guides below describe how to configure the {{config.extra.arcana.wallet_name}} while integrating the app with the {{config.extra.arcana.sdk_name}} and then add code to call Web3 wallet operations in the context of the authenticated users.
 
-[Configure Arcana Wallet :material-tools:](./config_walletvisibility.md){ .md-button }
+[Configure {{config.extra.arcana.wallet_name}} :material-tools:](./config_walletvisibility.md){ .md-button }
 
 [Web3 Wallet Ops :material-wallet:](./web3ops/index.md){ .md-button }
 

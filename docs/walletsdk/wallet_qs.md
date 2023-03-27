@@ -28,8 +28,8 @@ Follow these steps to register, configure, integrate, and use the {{config.extra
 4. Add code in the app for using the built-in plug-and-play UI or build your own login UI that uses user onboarding functions of the {{config.extra.arcana.sdk_name}}. Authenticated users can access the {{config.extra.arcana.wallet_name}}.
 5. Add code in the app for programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}.
 
-<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="Arcana Auth Usage Overview"/>
-<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Arcana Auth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
 !!! note "{{config.extra.arcana.sdk_name}}: `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages"
   
@@ -84,9 +84,9 @@ An app integrated with the {{config.extra.arcana.sdk_name}} must be deployed for
 * Add code to onboard users 
 * Add code to allow authenticated users to sign the blockchain transactions
 
-Developers can choose to deploy one instance of the app (say, under active development) on the Arcana Testnet while simultaneously deploying a stable version of their app (say, one validated on Testnet and ready for users) on the Arcana Mainnet.
+Developers can choose to deploy one instance of the app (say, under active development) on the {{config.extra.arcana.company_name}} Testnet while simultaneously deploying a stable version of their app (say, one validated on Testnet and ready for users) on the {{config.extra.arcana.company_name}} Mainnet.
 
-By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the Arcana Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. Also, you need to specify the `network` parameter in the `AuthProvider` constructor as the 'mainnet'. For details on how to deploy your app on the Arcana Testnet / Mainnet, see [App Deployment Guide]({{page.meta.arcana.root_rel_path}}/howto/deploy_app.md).
+By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. Also, you need to specify the `network` parameter in the `AuthProvider` constructor as the 'mainnet'. For details on how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet, see [App Deployment Guide]({{page.meta.arcana.root_rel_path}}/howto/deploy_app.md).
 
 ## Examples
 

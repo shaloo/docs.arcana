@@ -45,7 +45,7 @@ Revisit the {{config.extra.arcana.dashboard_name}} tab and view the app configur
 
 ![howto_config_discord_clientid](/img/an_dApp_discord_config.png){.an-screenshots}
 
-Save the settings. Arcana Network assigns a **{{config.extra.arcana.app_address}}** to every registered app. Save the **{{config.extra.arcana.app_address}}** as it will be required during integration with the {{config.extra.arcana.sdk_name}}. 
+Save the settings. {{config.extra.arcana.company_name}} assigns a **{{config.extra.arcana.app_address}}** to every registered app. Save the **{{config.extra.arcana.app_address}}** as it will be required during integration with the {{config.extra.arcana.sdk_name}}. 
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 

@@ -39,7 +39,7 @@ When a new asset is bought, sold or shared using the authenticated user's wallet
 
 **That is all!**  :material-party-popper:
 
-*The web3 app is all set to programmatically watch assets associated with the specified Arcana wallet.*
+*The web3 app is all set to programmatically watch assets associated with the {{config.extra.arcana.wallet_name}}.*
 
 ## What's Next?
 

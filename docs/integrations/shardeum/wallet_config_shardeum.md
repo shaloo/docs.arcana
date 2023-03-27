@@ -13,7 +13,7 @@ If a developer has not integrated the app with the Shardeum Network programmatic
 
 ## Step 2: Configure Wallet UI
 
-Bring up the {{config.extra.arcana.wallet_name}} UI screen if it is minimized in the app's context. Refer to the instructions in the {{config.extra.arcana.wallet_name}} User Guide for [adding a network]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md#addselect-a-network). Use the [latest Shardeum Network configuration details](https://docs.shardeum.org/network/endpoints) and provide them in the Arcana wallet.
+Bring up the {{config.extra.arcana.wallet_name}} UI screen if it is minimized in the app's context. Refer to the instructions in the {{config.extra.arcana.wallet_name}} User Guide for [adding a network]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md#addselect-a-network). Use the [latest Shardeum Network configuration details](https://docs.shardeum.org/network/endpoints) and provide them in the {{config.extra.arcana.wallet_name}}.
 
 ## See Also
 

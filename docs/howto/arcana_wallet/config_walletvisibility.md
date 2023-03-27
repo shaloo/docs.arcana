@@ -1,7 +1,6 @@
 ---
 slug: /configwalletmodes
 id: idconfigwalletmodes
-title: Configure Arcana Wallet
 sidebar_custom_props:
   cardIcon: ⚒️
 arcana:

@@ -17,7 +17,7 @@ The interactions between various {{config.extra.arcana.company_name}} smart cont
 ![Arcana Data Access Flow](/img/diagrams/d_an_sc_stg_flow_light.svg#only-light)
 ![Arcana Data Access Flow](/img/diagrams/d_an_sc_stg_flow_dark.svg#only-dark)
 
-* All app user operation-related calls made via the client-side Auth SDK are intercepted by the {{config.extra.arcana.company_name}} Gateway.
+* All app user operation-related calls made via the client-side {{config.extra.arcana.sdk_name}} are intercepted by the {{config.extra.arcana.company_name}} Gateway.
 
 * The Gateway executes meta transactions with relevant data and signatures.
 

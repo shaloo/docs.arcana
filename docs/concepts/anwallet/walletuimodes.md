@@ -9,7 +9,7 @@ arcana:
 
 ## Wallet Visibility
 
-The {{config.extra.arcana.wallet_name}} is an embedded, non-custodial Web3 wallet that is enabled for every user that logs into an app integrated with the Auth SDK. App developers can manage the wallet user experience by controlling the wallet's visibility in the app context.
+The {{config.extra.arcana.wallet_name}} is an embedded, non-custodial Web3 wallet that is enabled for every user that logs into an app integrated with the {{config.extra.arcana.sdk_name}}. App developers can manage the wallet user experience by controlling the wallet's visibility in the app context.
 
 To manage the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet) visibility, the applications must [integrate with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md), specify the appropriate `alwaysVisible` input parameter while instantiating the `AuthProvider`, and choose one of the wallet visibility modes:
 
@@ -18,7 +18,7 @@ To manage the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_
 
 ## `alwaysVisible=true`
 
-By default, `alwaysVisible` is set to `true` and the wallet is displayed immediately after a user logs into the app that is integrated with the Auth SDK.
+By default, `alwaysVisible` is set to `true` and the wallet is displayed immediately after a user logs into the app that is integrated with the {{config.extra.arcana.sdk_name}}.
 
 As the wallet is always visible in the context of the app, an authenticated user has full access to all the Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}. For example, checking the wallet account balance, adding or switching blockchain networks, and sending/receiving native/custom tokens. Users can choose to minimize/maximize the {{config.extra.arcana.wallet_name}} UI displayed on the application screen.
 
@@ -34,7 +34,7 @@ Once the user takes action, the request disappears and the user cannot access th
 
 ## Summary
 
-The table below summarizes how `alwaysVisible` parameter specified during Auth SDK initialization in the application code controls the user experience. For step-by-step instructions see [how to configure the {{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) guide.
+The table below summarizes how `alwaysVisible` parameter specified during the `AuthProvider` initialization in the application code controls the user experience. For step-by-step instructions see [how to configure the {{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) guide.
 
 | Wallet UI Mode | Flag | User Experience|
 | :------ | :----- | :----------- |

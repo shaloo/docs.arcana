@@ -10,15 +10,15 @@ arcana:
 
 # Get Started
 
-Everything you need to get started with Arcana Auth is lined up here!
+Everything you need to get started with the {{config.extra.arcana.product_name}} product is lined up here!
 
-## Arcana Network (60 seconds)
+## {{config.extra.arcana.company_name}} (60 seconds)
 
 {% include "./text-snippets/tut_getstarted_arcana_url.md" %}
 
 ---
 
-## Arcana Network Overview (6 Minutes)
+## {{config.extra.arcana.company_name}} Overview (6 Minutes)
 
 {% include "./text-snippets/tut_mission_url.md" %}
 
@@ -34,7 +34,7 @@ Apps can integrate with the {{config.extra.arcana.sdk_name}} to enable:
 
 ## Dashboard
 
-Developers can use the {{config.extra.arcana.dashboard_name}} to [register and configure app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Registering the app with the Arcana Network associates a unique {{config.extra.arcana.app_address}} that is needed for integrating the app with the {{config.extra.arcana.sdk_name}}.
+Developers can use the {{config.extra.arcana.dashboard_name}} to [register and configure app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} that is needed for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 {% include "./text-snippets/tut_comingsoontut_url.md" %}
 

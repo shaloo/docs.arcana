@@ -44,7 +44,7 @@ If the {{config.extra.arcana.wallet_name}} is not already displayed in the conte
 
 !!! note
 
-      If the `AuthProvider` is configured with the default `alwaysVisible=true` setting, the built-in Arcana wallet will be automatically displayed in the minimized form when the user logs in. If `showWallet()` is called or if the user clicks the minimized wallet UI, then the maximized wallet UI is displayed.
+      If the `AuthProvider` is configured with the default `alwaysVisible=true` setting, the built-in {{config.extra.arcana.wallet_name}} will be automatically displayed in the minimized form when the user logs in. If `showWallet()` is called or if the user clicks the minimized wallet UI, then the maximized wallet UI is displayed.
 
       If the `alwaysVisible=false` setting is selected by the app developer, then the built-in {{config.extra.arcana.wallet_name}} is **not displayed** automatically once the user logs in. It shows up only when a blockchain transaction is triggered. Developers can also bring up the {{config.extra.arcana.wallet_name}} UI for authenticated users by making an explicit call to the `showWallet()` function. Note that the `AuthProvider` must be initialized and the user authenticated before the {{config.extra.arcana.wallet_name}} is displayed.
 

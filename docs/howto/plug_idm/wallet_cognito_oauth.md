@@ -15,7 +15,7 @@ In this guide, you will learn how to configure AWS Cognito and integrate the {{c
 
 ## Prerequisites
 
-* Make sure you can access the Arcana Developer Dashboard: {% include "./text-snippets/db_portal_url.md" %}
+* Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
 * Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
@@ -59,9 +59,9 @@ Your app is all set for authenticating users via AWS Cognito. Authenticated user
 
 ## What's Next?
 
-To know more about how to use Web3 wallet operations programmatically in your app, see [Arcana Wallet Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md). Refer to the [Arcana Wallet User's Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) for more information on how authenticated app users can access the wallet UI.
+To know more about how to use Web3 wallet operations programmatically in your app, see [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md). Refer to the [{{config.extra.arcana.wallet_name}} User's Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) for more information on how authenticated app users can access the wallet UI.
 ## See also
 
-* [Arcana authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
+* [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
 * [How to integrate with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
 * [Handling authentication errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)

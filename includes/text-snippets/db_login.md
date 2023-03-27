@@ -4,4 +4,4 @@
 
 !!! tip
     
-      The Arcana Network protocol [aggregates multiple login identities across social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) under a single identifiable Arcana account. This enables developers to log into the {{config.extra.arcana.dashboard_name}} through any of the supported social providers and access the same developer account in the Arcana Network.
+      The {{config.extra.arcana.product_name}} protocol [aggregates multiple login identities across social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) under a single identifiable {{config.extra.arcana.company_name}} account. This enables developers to log into the {{config.extra.arcana.dashboard_name}} through any of the supported social providers and access the same {{config.extra.arcana.company_name}} developer account.

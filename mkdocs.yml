@@ -6,7 +6,6 @@ use_directory_urls: false
 # upto here
 
 nav: 
-  - Home: howto/index.md
   - Introduction: index.md
   - Quick Start: walletsdk/wallet_qs.md
   - How-To Guides:
