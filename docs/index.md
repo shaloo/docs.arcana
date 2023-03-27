@@ -1,7 +1,6 @@
 ---
 slug: /
 id: idintro
-title: Arcana Auth
 sidebar_custom_props:
   cardIcon: 📚
 arcana:
@@ -14,7 +13,7 @@ Welcome to **{{config.extra.arcana.product_name }}** documentation!
 
 {==
 
-*Our mission is to make user onboarding for Web3 apps a breeze and enable authenticated users to easily sign blockchain transactions!!!*
+*At {{config.extra.arcana.company_name }}, our mission is to make user onboarding for Web3 apps a breeze and enable authenticated users to easily sign blockchain transactions!!!*
 
 ==}
 
