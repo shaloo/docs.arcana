@@ -1,7 +1,6 @@
 ---
 slug: /pwdless
 id: idpwdless
-title: Passwordless Login
 sidebar_custom_props:
   cardIcon: ▶️
 arcana:

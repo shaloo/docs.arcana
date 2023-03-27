@@ -5,7 +5,7 @@ arcana:
   root_rel_path: .
 ---
   
-# State of the Arcana Auth
+# State of the {{config.extra.arcana.product_name}}
 
 ## Latest Release
 
@@ -14,7 +14,7 @@ arcana:
 
 ## Mode of Operation
 
-Arcana Network protocol is built and operates using the [Proof of Stake](https://ethereum.org/en/developers/docs/consensus-mechanisms/#proof-of-stake) Polygon chain.
+The {{config.extra.arcana.product_name}} protocol is built and operates using the [Proof of Stake](https://ethereum.org/en/developers/docs/consensus-mechanisms/#proof-of-stake) Polygon chain.
 
 ### Network Nodes
 
@@ -30,7 +30,7 @@ Arcana Network protocol is built and operates using the [Proof of Stake](https:/
 
 ## Mainnet Roadmap
 
-The Arcana Mainnet was released in January 2023 with the {{config.extra.arcana.sdk_name}} release v1.0.0.
+The {{config.extra.arcana.product_name}} Mainnet was released in January 2023 with the {{config.extra.arcana.sdk_name}} release v1.0.0.
 
 The current {{config.extra.arcana.sdk_name}} release is v{% include "./text-snippets/latest_auth_sdk.md" %}.
 
@@ -45,32 +45,32 @@ We are actively working towards adding new features:
 
 ### DKG Validator Nodes
 
-The DKG subsystem in the Arcana Network protocol is envisioned as a truly decentralized subsystem. 
+The DKG subsystem in the {{config.extra.arcana.product_name}} protocol is envisioned as a truly decentralized subsystem. 
 
-At the launch of Mainnet, there are seven DKG validator nodes, five of these are owned by Arcana and the remaining two  [validator nodes]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md) are owned and managed by trusted partners:
+At the launch of Mainnet, there are seven DKG validator nodes, five of these are owned by {{config.extra.arcana.company_name}} and the remaining two  [validator nodes]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md) are owned and managed by trusted partners:
 
 * [Comdex - interchain DeFi infrastructure](https://comdex.one/)
 * [Luganodes - institutional-grade blockchain infrastructure providers](https://www.luganodes.com/)
 
-We are actively working with other partners for making the Arcana DKG subsystem truly decentralized.
+We are actively working with other partners for making sure that the {{config.extra.arcana.company_name}} DKG subsystem is truly decentralized.
 
 ### ADKG
 
-We have come a long way since our alpha release that offered a distributed DKG. Several shortcomings regarding trusted dealer, robustness have been resolved in the state-of-the-art asynchronous distributed key generation protocol built into the Arcana Network. We have collaborated with some of the leading cryptography experts and researchers to fold recent advances in **asynchronous DKG** technology into the Arcana Network platform. Refer to the [Arcana Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for more details on ADKG.
+We have come a long way since our alpha release that offered a distributed DKG. Several shortcomings regarding trusted dealer, robustness have been resolved in the state-of-the-art asynchronous distributed key generation protocol built into the {{config.extra.arcana.product_name}}. We have collaborated with some of the leading cryptography experts and researchers to fold recent advances in **asynchronous DKG** technology in {{config.extra.arcana.product_name}}. Refer to the [{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for more details on ADKG.
 
 ## Security
 
 ### Key Shares
 
-Arcana Network platform components do not store any key shares that belong to the app user.  The key shares are used to generate the user's keys only at the client end after user verification. 
+{{config.extra.arcana.product_name}} components do not store any key shares that belong to the app user. The key shares are used to generate the user's keys only at the client end after user verification. 
 
 ### Key Generation
 
-Arcana combines several algorithms to have a highly secure and robust ADKG subsystem. It uses a [robust asynchronous DPSS mechanism](https://eprint.iacr.org/2022/971) to ensure that no single node in the system has access to the user's keys and that the system can handle malicious nodes. We are also working on other enhancements to this ADKG subsystem to enable key share repair, key share refresh, and more. Besides these other enhancements include Arcana multi-factor authentication (MFA), and multi-party computation (MPC) for even stronger security without compromising on ease of use for Web3 users.
+{{config.extra.arcana.product_name}} combines several algorithms to have a highly secure and robust ADKG subsystem. It uses a [robust asynchronous DPSS mechanism](https://eprint.iacr.org/2022/971) to ensure that no single node in the system has access to the user's keys and that the system can handle malicious nodes. We are also working on other enhancements to this ADKG subsystem to enable key share repair, key share refresh, and more. Besides these other enhancements include {{config.extra.arcana.product_name}} multi-factor authentication (MFA), and multi-party computation (MPC) for even stronger security without compromising on ease of use for Web3 users.
 
 ### Audit
 
-At Arcana, we take the security and privacy of applications seriously and believe in transparency. To eliminate security vulnerabilities in Arcana Smart Contracts and Arcana's ADKG module, we put it under the rigorous vetting process and cybersecurity tests conducted by [Certik](https://www.certik.com/). The audit is complete and you can refer to the [reports]({{page.meta.arcana.root_rel_path}}/audit/index.md) for details.
+At Arcana, we take the security and privacy of applications seriously and believe in transparency. To eliminate security vulnerabilities in {{config.extra.arcana.company_name}} Smart Contracts and Arcana's ADKG module, we put it under the rigorous vetting process and cybersecurity tests conducted by [Certik](https://www.certik.com/). The audit is complete and you can refer to the [reports]({{page.meta.arcana.root_rel_path}}/audit/index.md) for details.
 
 ## Supported Browsers
 

@@ -1,7 +1,6 @@
 ---
 slug: /socialauth
 id: idsocialauth
-title: Social Providers
 sidebar_custom_props:
   cardIcon: ▶️
 arcana:
@@ -13,7 +12,7 @@ arcana:
 <img src="/img/icons/i_an_socialauth_light.png#only-light" width="50"/>
 <img src="/img/icons/i_an_socialauth_dark.png#only-dark" width="50"/>
 
-Social providers are popular Web2 identity providers that allow apps to onboard users and validate the user identity. The {{config.extra.arcana.sdk_name}} supports user authentication in Web3 applications via the following social providers:
+Social authentication providers are popular Web2 user identity providers that allow apps to onboard users and validate the user identity. The {{config.extra.arcana.sdk_name}} supports user authentication in Web3 applications via the following social providers:
 
 {% include "./text-snippets/auth_supported.md" %}
 

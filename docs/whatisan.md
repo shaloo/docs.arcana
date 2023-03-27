@@ -9,13 +9,13 @@ arcana:
 
 # What is {{config.extra.arcana.product_name}}?
 
-[Arcana Technical White Paper]: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
+[{{config.extra.arcana.company_name}} Technical White Paper]: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
 
 ---
 
-Arcana Network offers an infrastructure solution, a platform that allows Web3 app developers to quickly build **privacy-preserving Web3 applications**. Developers can onboard users through a simplified Web3 onboarding process. Arcana Network makes it easy for developers to integrate their apps and allow authenticated users to sign blockchain transactions quickly.
+{{config.extra.arcana.company_name}} offers an infrastructure solution, a platform that allows Web3 app developers to quickly build **privacy-preserving Web3 applications**. Developers can onboard users through a simplified Web3 onboarding process. Our product, {{config.extra.arcana.product_name}}, makes it easy for developers to integrate their apps and allow authenticated users to sign blockchain transactions quickly.
 
-Arcana Network offers {{config.extra.arcana.product_name}} product. It consists of two key components:
+The {{config.extra.arcana.product_name}} product consists of two key components:
 
 * {{config.extra.arcana.dashboard_name}}
 * {{config.extra.arcana.sdk_name}}
@@ -44,7 +44,7 @@ Seasoned Web3 developers can jump right in with the [{{config.extra.arcana.produ
 
 Developers can refer to the [How To Guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) to learn more about how to register and configure the Web3 applications before they can be integrated with the {{config.extra.arcana.wallet_name}}.
 
-If you are new to the Web3 ecosystem, we recommend that you check out the [Arcana Academy]({{page.meta.arcana.root_rel_path}}/an_academy/index.md) section first before jumping into the [Tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) and [code samples]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/index.md). 
+If you are new to the Web3 ecosystem, we recommend that you check out the [{{config.extra.arcana.company_name}} Academy]({{page.meta.arcana.root_rel_path}}/an_academy/index.md) section first before jumping into the [Tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) and [code samples]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/index.md). 
 
 Web3 application users can learn more about how to use the {{config.extra.arcana.wallet_name}} for performing Web3 operations by referring to the [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
 
@@ -54,7 +54,7 @@ If you do not find answers to your questions in our [FAQ]({{page.meta.arcana.roo
 
 ## Support & Feedback
 
-At Arcana Network, we are continuously working on improving the product and its documentation for an enhanced user experience. We would love to hear from you. :fontawesome-solid-signal:
+At {{config.extra.arcana.company_name}}, we are continuously working on improving the product and its documentation for an enhanced user experience. We would love to hear from you. :fontawesome-solid-signal:
 
 If you find bugs, have questions, or want to share feedback, please contact us through these channels:
 
@@ -69,6 +69,6 @@ If you find bugs, have questions, or want to share feedback, please contact us t
 
 ## References
 
-* [Arcana Technical White Paper]
+* [{{config.extra.arcana.company_name}} Technical White Paper]
 * [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

@@ -1,7 +1,6 @@
 ---
 slug: /fedidmauth
 id: idfedidmauth
-title: Custom IAM Providers
 sidebar_custom_props:
   cardIcon: ▶️
 arcana:
