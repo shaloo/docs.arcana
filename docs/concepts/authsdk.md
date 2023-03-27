@@ -31,7 +31,7 @@ Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.me
 **Web3 Wallet Operations**
 
   * Developers can configure and manage blockchain transaction signing experience for users by using [{{config.extra.arcana.wakket_name}}visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
-  * Authenticated users can securely sign blockchain transactions for EVM-compatible networks
+  * Authenticated users can securely sign blockchain transactions on any [supported blockchain network]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains)
   * Supports Web3 wallet operations and the standard Ethereum JSON-RPC calls
         
     - configure and switch networks and accounts

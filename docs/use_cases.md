@@ -3,6 +3,8 @@ slug: /an_use_cases
 id: idanusecases
 sidebar_custom_props:
   cardIcon: 📝
+arcana:
+  root_rel_path: .
 ---
 
 #  Web3 Auth Use Cases
@@ -39,7 +41,7 @@ Web3 developers can integrate apps with the {{config.extra.arcana.sdk_name}} to 
     - Send/Receive native, custom tokens
     - Send/Receive NFTs
     - Browse NFTs, view NFT details
-    - Add EVM-compatible networks
+    - Add networks [Supported Networks]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains)
     - Switch networks
     - Monitor transaction activity
     - JSON-RPC method support

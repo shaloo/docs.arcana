@@ -28,7 +28,7 @@ Arcana wallet can be configured at the time of integrating the application with 
 
 **Adding Networks**
 
-The Arcana wallet comes pre-configured with some of the popular blockchain networks such as Ethereum and Polygon. Other EVM-compatible blockchain network configurations can be added programmatically to the wallet by application developers. 
+The Arcana wallet comes pre-configured with some of the popular blockchain networks such as Ethereum and Polygon. Other [supported blockchain network]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains) configurations can be added programmatically to the wallet by application developers. 
         
 These additional network settings are stored and retained across user login sessions. If the developer has configured the Arcana wallet visibility mode to `alwaysVisible=true`, then the wallet is always visible in the applications' context. Users can use the wallet UI to add new network configurations and switch to a different network than the one that the developer has provided by default. This is not possible if the `alwaysVisible=false` setting is used during Auth SDK integration. In this case, the wallet shows up only when a user has to approve a blockchain transaction and disappears after a user action. For more details, see [Arcana wallet visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) and [network switching behavior]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletntwkswitchmode.md).
 
