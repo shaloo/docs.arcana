@@ -12,6 +12,14 @@ arcana:
 * Download the {{config.extra.arcana.sdk_name}} v{% include "./text-snippets/latest_auth_sdk.md" %} npm package: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
 * Access the latest {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
+## What's New?
+
+* [MFA support]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md) enables enhanced wallet security for the users.
+* [Billing and invoicing feature]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for Arcana Mainnet usage.
+* New theme for the {{config.extra.arcana.product_name}} documentation.
+
+See [{{config.extra.arcana.product_name}} Release Notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.4.md) for details.
+
 ## Mode of Operation
 
 The {{config.extra.arcana.product_name}} protocol is built and operates using the [Proof of Stake](https://ethereum.org/en/developers/docs/consensus-mechanisms/#proof-of-stake) Polygon chain.
@@ -38,7 +46,6 @@ We are actively working towards adding new features:
 
 * Gasless transactions
 * 'Forget'/delete private keys from the ADKG subsystem for truly self-custodial keys
-* MFA
 * Multi-chain including those that are not EVM-compatible
 * Support for additional platform SDKs for Mac (Unity, Unreal), and Mobile (React Native, Flutter)
 * White-labeling, other customizations
