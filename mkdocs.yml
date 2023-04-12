@@ -9,7 +9,7 @@ nav:
   - index.md
   - Introduction: introduction.md
   - Quick Start: walletsdk/wallet_qs.md
-  - How-To Guides:
+  - Getting Started:
       - howto/index.md
       - Register App: howto/config_dapp.md
       - Configure Auth: 

@@ -11,19 +11,24 @@ arcana:
 
 {==
 
-**Version: v1.0.4**
+**Version: v1.0.4** 
 
-**Release Date: April 4th, 2023**
+**Release Date: April 12th, 2023** 
+
+This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+
+
+* [{{config.extra.arcana.sdk_name}} v1.0.3](https://www.npmjs.com/package/@arcana/auth/v/1.0.3)
+* [{{config.extra.arcana.dashboard_name}} v1.0.4](https://dashboard.arcana.network/)
+* {{config.extra.arcana.wallet_name}} UI v1.0.4  
 
 ==}
 
-This release of {{config.extra.arcana.product_name}} consists of the following components:
+!!! warning "No change in the {{config.extra.arcana.sdk_name}}"
 
-* {{config.extra.arcana.sdk_name}} v1.0.3
-* {{config.extra.arcana.dashboard_name}} v1.0.4
-* {{config.extra.arcana.wallet_name}} v1.0.4
+      Note, in the latest {{config.extra.arcana.product_name}} product release, there is **no change** in the {{config.extra.arcana.sdk_name}} package.
 
-## Feature Updates
+## New Product Features
 
 ---
 
@@ -35,17 +40,17 @@ This release of {{config.extra.arcana.product_name}} consists of the following c
 
 The latest {{config.extra.arcana.product_name}} provides enhanced wallet security for more robust user authentication through multi-factor authentication. Web3 app users can choose to enable it when they log into an app. Once enabled, it cannot be turned off. For details, see [how Arcana MFA]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md) works in apps that integrate with the {{config.extra.arcana.sdk_name}}.
 
-App users can set up MFA individually for their app accounts and enable enhanced wallet security. See the [MFA user's guide]({{page.meta.arcana.root_rel_path}}/user_guides/mfa/mfa_ug.md) for details.
+See the [MFA user's guide]({{page.meta.arcana.root_rel_path}}/user_guides/mfa/mfa_ug.md) to learn more about how the app users can enable MFA for their app accounts and use the enhanced wallet security.
 
-## Enhancements
+## Product Enhancements
 
 ---
 
 ### Better Login Performance
 
-Users can now log in to Web3 apps even quicker than before with the latest speed boost in the {{config.extra.arcana.product_name}}. 
+Users can now log in to Web3 apps even quicker than before with the recent speed boost in the latest {{config.extra.arcana.product_name}} product release. 
 
-### Wallet Balance
+### Wallet Balance Precision
 
 The {{config.extra.arcana.wallet_name}} UI now displays the wallet balance numeric value with the precision of 4 decimal places instead of 2 earlier.
 
@@ -86,25 +91,22 @@ The {{config.extra.arcana.wallet_name}} UI now displays the wallet balance numer
 
 {==
 
-*New to Auth SDK and ready to dive in?* 
+*Ready to dive in?* 
 
 ==}
 
-See [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md). 
+See [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) and the [how-to guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) in the Getting Started section. 
 
-To enable {{config.extra.arcana.product_name}} in a Web3 app, see [how to integrate with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) guide. 
+Check out the sample dApp integration example for apps using the [React/NextJS]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md), and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
-Check out the sample dApp integration example for [React/NextJS]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md), and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks-based dApps.
-
----
 
 ## Migrate to v1.0.4
 
 ---
 
-To migrate to the {{config.extra.arcana.product_name}} v1.0.4, no {{config.extra.arcana.sdk_name}} upgrade is required.
+If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package already, then to migrate to the {{config.extra.arcana.product_name}} product release v1.0.4, **no {{config.extra.arcana.sdk_name}} upgrade is required**.
 
-If you using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 package.
+But if you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 package.
 
 ## Questions? 
 
