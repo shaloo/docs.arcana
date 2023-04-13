@@ -22,9 +22,9 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 ==}
 
-!!! warning "No change in the {{config.extra.arcana.sdk_name}}"
+!!! tip "No {{config.extra.arcana.sdk_name}} upgrade required"
 
-      Note, in the latest {{config.extra.arcana.product_name}} product release, there is **no change** in the {{config.extra.arcana.sdk_name}} package. Developers are not required to upgrade the {{config.extra.arcana.sdk_name}}.
+      Note, in the latest {{config.extra.arcana.product_name}} product release, there is **no change** in the {{config.extra.arcana.sdk_name}} package. Developers can continue to use {{config.extra.arcana.sdk_name}} v1.0.3.
 
 ## New Product Features
 
