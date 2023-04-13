@@ -20,8 +20,8 @@ arcana:
 This release of the {{config.extra.arcana.product_name}} product consists of the following components:
 
 * [{{config.extra.arcana.sdk_name}} v1.0.2](https://www.npmjs.com/package/@arcana/auth/v/1.0.2)
-* {{config.extra.arcana.dashboard_name}} v1.0.2
-* {{config.extra.arcana.wallet_name}} UI v1.0.2
+* {{config.extra.arcana.dashboard_name}}
+* {{config.extra.arcana.wallet_name}} UI
 
 ## New Product Features
 

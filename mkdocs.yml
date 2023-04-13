@@ -81,6 +81,44 @@ nav:
         - Manage Tokens: howto/wallet_manage_tokens.md
         - Manage NFTs: howto/wallet_manage_nft.md
       - MFA Setup User Guide: user_guides/mfa/mfa_ug.md
+  - Developer Resources:
+    - Handling Auth Errors: walletsdk/wallet_err.md
+    - FAQ:
+      - faq/index.md
+      - General: faq/faq_gen.md
+      - Dashboard: faq/faq_db.md
+      - Auth SDK: faq/faq_auth.md
+      - Validator Nodes: faq/faq_validator.md
+    - Troubleshooting Guide: troubleshooting.md
+    - Blockchains:
+      - EVM Chains:
+        - Shardeum: 
+          - integrations/shardeum/index.md
+          - Developer's Guide: integrations/shardeum/integrate_shardeum.md
+          - Using Wallet UI: integrations/shardeum/wallet_config_shardeum.md
+    - Migration Guides:
+      - migration/index.md
+      - v1.0.3 -> v1.0.4: migration/main_auth_v1.0.4_migration.md
+      - v1.0.2 -> v1.0.3: migration/main_auth_v1.0.3_migration.md
+      - v1.0.1 -> v1.0.2: migration/main_auth_v1.0.2_migration.md
+      - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
+      - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
+      - v0.2.x -> v0.3.0: migration/beta_auth_v0.3.0_migration.md
+    - Release Notes:
+      - relnotes/index.md
+      - Auth 1.0.4 : relnotes/rn_main_auth_v1.0.4.md
+      - Auth 1.0.3 : relnotes/rn_main_auth_v1.0.3.md
+      - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
+      - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md
+      - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
+      - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
+    - Release Changelog: https://github.com/arcana-network/auth/releases/tag/v0.3.0
+  - Reference:
+      - reference/index.md
+      - State of the Arcana Auth: state_of_the_ntwk.md
+      - Auth SDK Usage Guide: walletsdk/wallet_usage.md
+      - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
+      - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Arcana Academy:
       - an_academy/index.md
       - About Arcana Auth:
@@ -133,46 +171,12 @@ nav:
         - user_flows/index.md
         - User Auth and DKG: user_flows/user_auth_and_dkg.md
       - New to Web3:  an_academy/new_web3_dev.md
-  - FAQ:
-    - faq/index.md
-    - General: faq/faq_gen.md
-    - Dashboard: faq/faq_db.md
-    - Auth SDK: faq/faq_auth.md
-    - Validator Nodes: faq/faq_validator.md
-  - Release Notes:
-    - relnotes/index.md
-    - Auth 1.0.4 : relnotes/rn_main_auth_v1.0.4.md
-    - Auth 1.0.3 : relnotes/rn_main_auth_v1.0.3.md
-    - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
-    - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md
-    - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
-    - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
-  - Migration Guides:
-    - migration/index.md
-    - v1.0.3 -> v1.0.4: migration/main_auth_v1.0.4_migration.md
-    - v1.0.2 -> v1.0.3: migration/main_auth_v1.0.3_migration.md
-    - v1.0.1 -> v1.0.2: migration/main_auth_v1.0.2_migration.md
-    - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
-    - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
-    - v0.2.x -> v0.3.0: migration/beta_auth_v0.3.0_migration.md
   - DKG Validators: 
     - validator_intro.md
-  - Reference:
-      - reference/index.md
-      - State of the Arcana Auth: state_of_the_ntwk.md
-      - Auth SDK Usage Guide: walletsdk/wallet_usage.md
-      - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
-      - Handling Auth Errors: walletsdk/wallet_err.md
-      - Release Changelog: https://github.com/arcana-network/auth/releases/tag/v0.3.0
-      - Troubleshooting Guide: troubleshooting.md
-      - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
-  - Audit Reports: audit/index.md
-  - Blockchains:
-    - EVM Chains:
-      - Shardeum: 
-        - integrations/shardeum/index.md
-        - Developer's Guide: integrations/shardeum/integrate_shardeum.md
-        - Using Wallet UI: integrations/shardeum/wallet_config_shardeum.md
+  - Audit Reports: 
+    - audit/index.md
+    - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
+    - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
   - Contact Us: 
     - support.md
 

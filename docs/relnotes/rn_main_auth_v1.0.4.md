@@ -19,8 +19,8 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 
 * [{{config.extra.arcana.sdk_name}} v1.0.3](https://www.npmjs.com/package/@arcana/auth/v/1.0.3)
-* [{{config.extra.arcana.dashboard_name}} v1.0.4](https://dashboard.arcana.network/)
-* {{config.extra.arcana.wallet_name}} UI v1.0.4  
+* [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network/)
+* {{config.extra.arcana.wallet_name}} UI 
 
 ==}
 
