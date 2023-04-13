@@ -1,13 +1,9 @@
 # Release Notes
 
-Learn about the latest features offered by the {{config.extra.arcana.sdk_name}}, changes in usage, and bug fixes.
+Learn about the latest features offered by the {{config.extra.arcana.product_name}}, usage enhancements, and bug fixes. 
 
-[Auth v1.0.3 :material-note-text:](./rn_main_auth_v1.0.3.md){ .md-button }
+If you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3, we highly recommend you upgrade to the latest [{{config.extra.arcana.sdk_name}} package](https://www.npmjs.com/package/@arcana/auth) and follow the [instructions for migration](../migration/index.md). 
 
-[Auth v1.0.2 :material-note-text:](./rn_main_auth_v1.0.2.md){ .md-button }
+[Arcana Auth :material-note-text:](./rn_main_auth_v1.0.3.md){ .md-button }
 
-[Auth v1.0.1 :material-note-text:](./rn_main_auth_v1.0.1.md){ .md-button }
-
-[Auth v1.0.0 :material-note-text:](./rn_main_auth_v1.0.0.md){ .md-button }
-
-[Auth v0.3.0 :material-note-text:](./rn_beta_auth_v0.3.0.md){ .md-button }
+[Past Auth Versions :octicons-archive-24:](./archives/index.md){ .md-button }

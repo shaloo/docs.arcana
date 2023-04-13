@@ -7,15 +7,15 @@ arcana:
   root_rel_path: ..
 ---
 
-# Arcana Auth v0.2.x -> v0.3.0 Migration
+# Arcana Auth SDK v0.2.x -> v0.3.0 Migration
 
 This guide is meant for developers who have already integrated apps with an older version of the Arcana Auth SDK and run them using Arcana Network Testnet. If you are new to Arcana Network, please visit [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) to get started.
 
-When you migrate from an older version of the {{config.extra.arcana.product_name}} to v0.3.0, there are some breaking changes. These changes are mostly related to deploying an app on the {{config.extra.arcana.company_name}}  Testnet and the use of {{config.extra.arcana.company_name}} Storage SDK (no longer supported). There are no breaking changes in the {{config.extra.arcana.sdk_name}}  usage related to user onboarding or blockchain transaction signing functions.  Also, the Arcana wallet has a revamped, better look in this release.
+When you migrate from an older version of the {{config.extra.arcana.sdk_name}} to v0.3.0, there are some breaking changes. These changes are mostly related to deploying an app on the {{config.extra.arcana.company_name}} Testnet and the use of {{config.extra.arcana.company_name}} Storage SDK (no longer supported). There are no breaking changes in the {{config.extra.arcana.sdk_name}}  usage related to user onboarding or blockchain transaction signing functions.  Also, the Arcana wallet has a revamped, better look in this release.
 
 ## What has Changed?
 
-* This release **does not** contain {{config.extra.arcana.company_name}}  Storage SDK. 
+* This release **does not** contain {{config.extra.arcana.company_name}} Storage SDK. 
 
 * Arcana Blockchain is no longer listed in the list of available blockchain networks in the Arcana wallet dropdown.
 
@@ -25,7 +25,7 @@ When you migrate from an older version of the {{config.extra.arcana.product_name
 
 ### {{config.extra.arcana.dashboard_name}} 
 
-* There were some breaking changes in the registered application database schema. If you were already using an older version of the {{config.extra.arcana.sdk_name}}, you need to re-register and configure your application again using the latest {{config.extra.arcana.dashboard_name}} . The **{{config.extra.arcana.app_address}}** assigned to you earlier will not work. You need to re-register and obtain a new one. Make sure you use the new **{{config.extra.arcana.app_address}}** while integrating with the {{config.extra.arcana.sdk_name}} .
+* There were some breaking changes in the registered application database schema. If you were already using an older version of the {{config.extra.arcana.sdk_name}}, you need to re-register and configure your application again using the latest {{config.extra.arcana.dashboard_name}}. The **{{config.extra.arcana.app_address}}** assigned to you earlier will not work. You need to re-register and obtain a new one. Make sure you use the new **{{config.extra.arcana.app_address}}** while integrating with the {{config.extra.arcana.sdk_name}} .
 
 ### {{config.extra.arcana.sdk_name}} 
 
@@ -33,7 +33,7 @@ When you migrate from an older version of the {{config.extra.arcana.product_name
 <img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
 
 * There is no usage change in the {{config.extra.arcana.sdk_name}} in this release. 
-* After re-registering your app, the dashboard will assign a new **{{config.extra.arcana.app_address}}**. You need to use the new {{config.extra.arcana.app_address}} during integration with the {{config.extra.arcana.sdk_name}} .
+* After re-registering your app, the dashboard will assign a new **{{config.extra.arcana.app_address}}**. You need to use the new {{config.extra.arcana.app_address}} during integration with the {{config.extra.arcana.sdk_name}}.
 
 ## How to Migrate to v0.3.0
 

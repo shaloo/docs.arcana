@@ -7,15 +7,13 @@ arcana:
   root_rel_path: ..
 ---
 
-# Release Notes Arcana Auth (Mainnet)
+# Release Notes Arcana Auth 
 
 {==
 
-**Version: v1.0.4** 
+**Release Date: April 14th, 2023** 
 
-**Release Date: April 12th, 2023** 
-
-This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
 
 
 * [{{config.extra.arcana.sdk_name}} v1.0.3](https://www.npmjs.com/package/@arcana/auth/v/1.0.3)
@@ -26,21 +24,21 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 !!! warning "No change in the {{config.extra.arcana.sdk_name}}"
 
-      Note, in the latest {{config.extra.arcana.product_name}} product release, there is **no change** in the {{config.extra.arcana.sdk_name}} package.
+      Note, in the latest {{config.extra.arcana.product_name}} product release, there is **no change** in the {{config.extra.arcana.sdk_name}} package. Developers are not required to upgrade the {{config.extra.arcana.sdk_name}}.
 
 ## New Product Features
 
 ---
-
-### Billing & Invoices
-
-{{config.extra.arcana.product_name}} now supports [billing and invoicing features]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for Arcana Mainnet usage. Developers can use {{config.extra.arcana.dashboard_name}} to enter billing information and payment methods and to see any pending invoices or past payment details.
 
 ### Multi-Factor Authentication (MFA)
 
 The latest {{config.extra.arcana.product_name}} provides enhanced wallet security for more robust user authentication through multi-factor authentication. Web3 app users can choose to enable it when they log into an app. Once enabled, it cannot be turned off. For details, see [how Arcana MFA]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md) works in apps that integrate with the {{config.extra.arcana.sdk_name}}.
 
 See the [MFA user's guide]({{page.meta.arcana.root_rel_path}}/user_guides/mfa/mfa_ug.md) to learn more about how the app users can enable MFA for their app accounts and use the enhanced wallet security.
+
+### Billing & Invoices
+
+{{config.extra.arcana.product_name}} now supports [billing and invoicing features]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for Arcana Mainnet usage. Developers can use {{config.extra.arcana.dashboard_name}} to enter billing information and payment methods and to see any pending invoices or past payment details.
 
 ## Product Enhancements
 
@@ -100,11 +98,11 @@ See [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.
 Check out the sample dApp integration example for apps using the [React/NextJS]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md), and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
 
-## Migrate to v1.0.4
+## Use Latest {{config.extra.arcana.sdk_name}} 
 
 ---
 
-If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package already, then to migrate to the {{config.extra.arcana.product_name}} product release v1.0.4, **no {{config.extra.arcana.sdk_name}} upgrade is required**.
+If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package already, then **you are all set!**
 
 But if you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 package.
 

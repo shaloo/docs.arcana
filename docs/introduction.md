@@ -17,10 +17,11 @@ Welcome to **{{config.extra.arcana.product_name }}** documentation!
 
 ==}
 
-{{config.extra.arcana.product_name}} consists of two components: 
+{{config.extra.arcana.product_name}} product comprises of the following: 
 
-* {{config.extra.arcana.sdk_name}}
-* {{config.extra.arcana.dashboard_name}}
+* [{{config.extra.arcana.sdk_name}}](https://www.npmjs.com/package/@arcana/auth)
+* [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network)
+* {{config.extra.arcana.wallet_name}} UI
 
 Use {{config.extra.arcana.product_name}} to easily onboard users to Web3 apps through the familiar Web2 authentication providers. The authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} and sign blockchain transactions. 
 
@@ -39,6 +40,10 @@ Once integrated, apps can easily onboard users via any of the configured social 
 ## {{config.extra.arcana.dashboard_name}}
 
 Developers must first register and configure the {{config.extra.arcana.sdk_name}} usage as per the Web3 app requirements by using the {{config.extra.arcana.dashboard_name}}. Once an app is registered and configured, a unique {{config.extra.arcana.app_address}} is assigned to it. Developers can install the {{config.extra.arcana.sdk_name}}, use this {{config.extra.arcana.app_address}} and integrate the app with the {{config.extra.arcana.sdk_name}}. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
+
+## {{config.extra.arcana.wallet_name}} UI
+
+Web3 application developers can enable the embedded, non-custodial Web3 wallet to their users by integrating with the {{config.extra.arcana.sdk_name}}. The {{config.extra.arcana.wallet_name}} offers a user-friendly, secure, and customizable interface that can be branded to match your application. Users do not need to generate or manage their cryptographic keys or remember any passphrases. The wallet is built using the state-of-the-art asynchronous, distributed key generation protocol which allows users to have full control over their wallets and abstracts the complexity of cryptography. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
 
 ## Usage
 

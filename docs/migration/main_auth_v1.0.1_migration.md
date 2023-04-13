@@ -7,15 +7,15 @@ arcana:
   root_rel_path: ..
 ---
 
-# Arcana Auth v1.0.0 -> v1.0.1 Migration
+# Arcana Auth SDK v1.0.0 -> v1.0.1 Migration
 
-This guide is meant for developers who have already integrated apps with {{config.extra.arcana.product_name}} product release v1.0.0 and run them using {{config.extra.arcana.company_name}} Testnet. 
+This guide is meant for developers who have already integrated apps with {{config.extra.arcana.sdk_name}} v1.0.0 and run them using {{config.extra.arcana.company_name}} Testnet. 
 
 If you are new to Arcana Network, please visit [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) to get started.
 
 ## What has Changed?
 
-The following section lists changes between {{config.extra.arcana.product_name}} v1.0.0 and v1.0.1. 
+The following section lists changes between {{config.extra.arcana.sdk_name}} v1.0.0 and v1.0.1. 
 
 ### {{config.extra.arcana.dashboard_name}} 
 

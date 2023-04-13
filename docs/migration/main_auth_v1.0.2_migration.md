@@ -7,17 +7,17 @@ arcana:
   root_rel_path: ..
 ---
 
-# Arcana Auth v1.0.1 -> v1.0.2 Migration
+# Arcana Auth SDK v1.0.1 -> v1.0.2 Migration
 
-This guide is meant for developers who have already integrated apps with an older version of the {{config.extra.arcana.product_name}}  product release and run them using {{config.extra.arcana.company_name}}  Testnet. 
+This guide is meant for developers who have already integrated apps with an older version of the {{config.extra.arcana.sdk_name}} and run them using {{config.extra.arcana.company_name}} Testnet. 
 
 If you are new to Arcana Network, please visit [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) to get started.
 
-When you migrate from using the {{config.extra.arcana.product_name}}  v1.0.1 to the latest v1.0.2 release, there is no major update besides minor bug fixes and wallet UI updates.
+When you migrate from using the {{config.extra.arcana.sdk_name}}  v1.0.1 to the latest v1.0.2 release, there is no major update besides minor bug fixes and wallet UI updates.
 
 ## What has Changed?
 
-The following section lists changes between {{config.extra.arcana.product_name}} v1.0.1 and v1.0.2. 
+The following section lists changes between {{config.extra.arcana.sdk_name}} v1.0.1 and v1.0.2. 
 
 ### {{config.extra.arcana.dashboard_name}} 
 
@@ -28,7 +28,7 @@ The following section lists changes between {{config.extra.arcana.product_name}}
 <img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50" />
 <img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
 
-* {{config.extra.arcana.wallet_name}}  now supports fiat/on-ramp feature that allows users to buy crypto currency and tokens.
+* {{config.extra.arcana.wallet_name}}  now supports fiat/on-ramp feature that allows users to buy cryptocurrency and tokens.
 * The wallet UI has a new minimized widget.
 * There was a bug that allowed users to log into a different app using the same tab where they had logged in without having to explicitly log in to a different app in the same tab. This is now fixed. For details, see the [release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.2.md).
 
