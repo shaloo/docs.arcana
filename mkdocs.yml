@@ -110,6 +110,7 @@ nav:
           - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
           - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
         - Changelog:
+          - changelog/index.md
           - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.3
           - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.4
     - Blockchain Integrations:
