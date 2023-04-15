@@ -318,6 +318,12 @@ plugins:
       include_dir: ./includes
   - search:
       lang: en
+  - meta-descriptions:
+      export_csv: true
+      quiet: false
+      enable_checks: false
+      min_length: 50
+      max_length: 160
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

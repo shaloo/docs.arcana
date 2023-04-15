@@ -1,9 +1,6 @@
 ---
 template: newintro.html
-slug: /newintro
-id: idnewintro
-sidebar_custom_props:
-  cardIcon: 📚
+description: 'Arcana Auth Product Documentation. Developer Guides, User Guides, Tutorials and References.'
 arcana:
   root_rel_path: .
 ---
