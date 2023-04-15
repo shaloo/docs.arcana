@@ -1,19 +1,26 @@
 ---
 slug: /newdevweb3
 id: idnewdevweb3
-title: New to Web3
+title: 'The Complete Web3 Auth Tutorial: Protect Your Digital Assets'
+description: 'Web3 Auth Tutorial: How to Safeguard Your Online Transactions and Protect Your Identity. Learn More Here'
 sidebar_custom_props:
   cardIcon: ✨
 arcana:
   root_rel_path: ..
 ---
 
-# Are you new to Web3?
+# New to Web3?
 
 ![New to Web3 Diagram](/img/diagrams/d_new_2_web3_light.png#only-light)
 ![New to Web3 Diagram](/img/diagrams/d_new_2_web3_dark.png#only-dark)
 
+{==
+
+*Are you new to Web3?*
+
 **We have you covered!**
+
+==}
 
 Simply **follow this guide** and quickly get started with building a foundation before integrating a Web3 application with the {{config.extra.arcana.sdk_name}}.
 

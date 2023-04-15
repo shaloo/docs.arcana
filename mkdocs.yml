@@ -5,6 +5,10 @@ site_url: ""
 use_directory_urls: false
 # upto here
 
+site_description: >-
+  Web3 auth made easy with Arcana Auth. Provide instant, non-custodial wallets in your app.
+  Remove the friction of wallet installation, key backup, & crypto on-ramp.
+
 nav: 
   - index.md
   - Introduction: introduction.md
@@ -318,6 +322,12 @@ plugins:
       include_dir: ./includes
   - search:
       lang: en
+  - meta-descriptions:
+      export_csv: true
+      quiet: false
+      enable_checks: false
+      min_length: 50
+      max_length: 160
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
