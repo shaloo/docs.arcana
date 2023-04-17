@@ -11,7 +11,7 @@ site_description: >-
 
 nav: 
   - index.md
-  - Introduction: introduction.md
+  - Introduction: introducing-arcana-auth.md
   - Quick Start: walletsdk/wallet_qs.md
   - Getting Started:
       - howto/index.md
@@ -322,12 +322,16 @@ plugins:
       include_dir: ./includes
   - search:
       lang: en
+  - open-in-new-tab
   - meta-descriptions:
       export_csv: true
       quiet: false
       enable_checks: false
       min_length: 50
       max_length: 160
+  - redirects:
+      redirect_maps:
+        'introduction.md': 'introducing-arcana-auth.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

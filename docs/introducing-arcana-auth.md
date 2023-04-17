@@ -1,27 +1,22 @@
 ---
-slug: /intro
-id: idintro
-sidebar_custom_props:
-  cardIcon: 📚
+description: 
 arcana:
   root_rel_path: .
 ---
 
 # Introduction
 
-Welcome to **{{config.extra.arcana.product_name }}** documentation! 
-
 {==
 
-*At {{config.extra.arcana.company_name }}, our mission is to make user onboarding for Web3 apps a breeze and enable authenticated users to easily sign blockchain transactions!!!*
-
-==}
+**{{config.extra.arcana.product_name }}** *makes user onboarding for Web3 apps a breeze and enables authenticated users to easily sign blockchain transactions!!!*
 
 {{config.extra.arcana.product_name}} product comprises of the following: 
 
 * [{{config.extra.arcana.sdk_name}}](https://www.npmjs.com/package/@arcana/auth)
 * [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network)
 * {{config.extra.arcana.wallet_name}} UI
+
+==}
 
 Use {{config.extra.arcana.product_name}} to easily onboard users to Web3 apps through the familiar Web2 authentication providers. The authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} and sign blockchain transactions. 
 
@@ -31,19 +26,27 @@ Designed for developers and Web3 users, {{config.extra.arcana.product_name}} is 
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
+
 ## {{config.extra.arcana.sdk_name}}
+
 
 {{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 app, be it a _vanilla JS app_, apps built using various application frameworks such as _React, NextJS_, _Remix_, _Vue_, apps that use wallet connector frameworks such as _Wagmi_ and _RainbowKit_. 
 
-Once integrated, apps can easily onboard users via any of the configured social providers or the custom lAM providers such as AWS Cognito. The authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
+Once integrated, apps can easily onboard users via any of the configured social providers or the custom lAM providers such as AWS Cognito. The authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions. 
+    
+[Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
 
 ## {{config.extra.arcana.dashboard_name}}
 
-Developers must first register and configure the {{config.extra.arcana.sdk_name}} usage as per the Web3 app requirements by using the {{config.extra.arcana.dashboard_name}}. Once an app is registered and configured, a unique {{config.extra.arcana.app_address}} is assigned to it. Developers can install the {{config.extra.arcana.sdk_name}}, use this {{config.extra.arcana.app_address}} and integrate the app with the {{config.extra.arcana.sdk_name}}. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
+Developers must first register and configure the {{config.extra.arcana.sdk_name}} usage as per the Web3 app requirements by using the {{config.extra.arcana.dashboard_name}}. Once an app is registered and configured, a unique {{config.extra.arcana.app_address}} is assigned to it. Developers can install the {{config.extra.arcana.sdk_name}}, use this {{config.extra.arcana.app_address}} and integrate the app with the {{config.extra.arcana.sdk_name}}. 
+
+[Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
 
 ## {{config.extra.arcana.wallet_name}} UI
 
-Web3 application developers can enable the embedded, non-custodial Web3 wallet to their users by integrating with the {{config.extra.arcana.sdk_name}}. The {{config.extra.arcana.wallet_name}} offers a user-friendly, secure, and customizable interface that can be branded to match your application. Users do not need to generate or manage their cryptographic keys or remember any passphrases. The wallet is built using the state-of-the-art asynchronous, distributed key generation protocol which allows users to have full control over their wallets and abstracts the complexity of cryptography. [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
+Web3 application developers can enable the embedded, non-custodial Web3 wallet to their users by integrating with the {{config.extra.arcana.sdk_name}}. The {{config.extra.arcana.wallet_name}} offers a user-friendly, secure, and customizable interface that can be branded to match your application. Users do not need to generate or manage their cryptographic keys or remember any passphrases. The wallet is built using the state-of-the-art asynchronous, distributed key generation protocol which allows users to have full control over their wallets and abstracts the complexity of cryptography. 
+    
+[Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
 
 ## Usage
 
