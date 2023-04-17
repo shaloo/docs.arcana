@@ -28,7 +28,7 @@ Simply **follow this guide** and quickly get started with building a foundation 
 
 !!! tip
 
-      If you are already familiar with how Web3 works, using authentication providers to onboard users, passwordless login, using Web3 wallet provider to sign blockchain transactions, etc., then you can skip the beginners' section and jump right into the [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md).
+      If you are already familiar with how Web3 works, using authentication providers to onboard users, passwordless login, using Web3 wallet provider to sign blockchain transactions, etc., then you can skip the beginners' section and jump right into the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] .
 
 After the foundation, your next stop is to figure out when and how to use {{config.extra.arcana.sdk_name}} and build a basic Web3 app that integrates with it for onboarding users and allowing authenticated users to sign blockchain transactions.
 

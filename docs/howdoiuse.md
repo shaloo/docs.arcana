@@ -38,6 +38,6 @@ Once the user is authenticated, developers can use the standard Ethereum provide
 
 ## See Also
 
-* [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md)
+* [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] 
 * [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
 * {% include "./text-snippets/authsdkref_url.md" %}

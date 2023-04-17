@@ -12,7 +12,7 @@ site_description: >-
 nav: 
   - index.md
   - Introduction: introducing-arcana-auth.md
-  - Quick Start: walletsdk/wallet_qs.md
+  - Quick Start: auth-quick-start.md
   - Getting Started:
       - howto/index.md
       - Register App: howto/config_dapp.md
@@ -323,6 +323,7 @@ plugins:
   - search:
       lang: en
   - open-in-new-tab
+  - alias
   - meta-descriptions:
       export_csv: true
       quiet: false
@@ -332,6 +333,7 @@ plugins:
   - redirects:
       redirect_maps:
         'introduction.md': 'introducing-arcana-auth.md'
+        'walletsdk/wallet_qs.md': 'auth-quick-start.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

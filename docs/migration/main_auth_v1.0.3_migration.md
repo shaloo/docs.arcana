@@ -11,7 +11,7 @@ arcana:
 
 This guide is meant for developers who have already integrated apps with an older version of the {{config.extra.arcana.sdk_name}} and run them using {{config.extra.arcana.company_name}} Testnet. 
 
-If you are new to Arcana Network, please visit [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) to get started.
+If you are new to Arcana Network, please visit [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] to get started.
 
 When you migrate from using the {{config.extra.arcana.sdk_name}} v1.0.2 to the latest v1.0.3 release, there is no breaking change.  
 

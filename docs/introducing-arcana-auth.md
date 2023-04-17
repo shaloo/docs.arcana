@@ -64,7 +64,7 @@ Web3 application developers can enable the embedded, non-custodial Web3 wallet t
         
       See the [how to guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) and [tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) for details.
 
-[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md){ .md-button .md-button--primary}
+[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/auth-quick-start.md){ .md-button .md-button--primary}
 
 ## Key Features
 
@@ -78,7 +78,7 @@ Web3 application developers can enable the embedded, non-custodial Web3 wallet t
 </div>
 
 <!--- 
-[Let's begin! ++enter++](./walletsdk/wallet_qs.md){ .md-button .md-button--primary}
+[Let's begin! ++enter++]({{page.meta.arcana.root_rel_path}}/auth-quick-start.md){ .md-button .md-button--primary}
 
 
 

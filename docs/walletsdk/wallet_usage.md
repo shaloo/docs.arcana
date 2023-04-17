@@ -124,7 +124,7 @@ const auth = new AuthProvider(`${clientId}`, {  //Arcana Unique App Identifier v
 await auth.init()  // Note: Initialize Auth SDK before calling any other Auth APIs
 ```
 
-See [Get Started with Auth SDK](https://docs.dev.arcana.network/walletsdk/wallet_qs.html) for more Auth SDK usage insights.
+See [Get Started with Auth SDK](https://docs.arcana.network/auth-quick-start.html) for more Auth SDK usage insights.
 
 ### Auth APIs
 

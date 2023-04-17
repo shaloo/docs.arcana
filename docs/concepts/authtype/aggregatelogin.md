@@ -18,10 +18,10 @@ What this means is that if an application user logs into an application integrat
 
 ``` mermaid
 graph LR
-  A[[User]] -.-> B(Social Provider A) -.-> E{Email ID Same?} ==Yes==> F>User ID 1];
+  A\[[User]] -.-> B(Social Provider A) -.-> E{Email ID Same?} ==Yes==> F>User ID 1];
   E{Email ID Same?} ==No==> G>New unique User ID];
-  A[[User]] -.-> M(Social Provider B) -.-> E{Email ID Same?};
-  A[[User]] -.-> C(Passwordless Login) -.-> E{Email ID Same?};
+  A\[[User]] -.-> M(Social Provider B) -.-> E{Email ID Same?};
+  A\[[User]] -.-> C(Passwordless Login) -.-> E{Email ID Same?};
 ```
 
 Aggregate login also works in the case of developers logging into the {{config.extra.arcana.dashboard_name}} to register and configure their applications. If a developer uses multiple login options to log into the {{config.extra.arcana.dashboard_name}} and the email ID is not the same across the selected authentication providers, then each login by the same developer is considered as a different unique developer account. In this case, any applications configured by the developer using say, provider **A** to log into the {{config.extra.arcana.dashboard_name}}, will not be visible to the same developer when using provider **B** to log into the {{config.extra.arcana.dashboard_name}}.

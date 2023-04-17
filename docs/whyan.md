@@ -27,7 +27,7 @@ Take a quick look at the overview of the [architecture and key components]({{pag
 
 !!! tip
 
-     If you prefer to immediately jump into integrating your app with the {{config.extra.arcana.sdk_name}} right away, see the [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md). :material-rocket-launch:
+     If you prefer to immediately jump into integrating your app with the {{config.extra.arcana.sdk_name}} right away, see the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]]. :material-rocket-launch:
 
 ## Build Web3 Apps Faster
 

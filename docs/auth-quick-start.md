@@ -1,10 +1,7 @@
 ---
-slug: /auth_qs
-id: idwallet_qs
-sidebar_custom_props:
-  cardIcon: 🛫
 arcana:
-  root_rel_path: ..
+  root_rel_path: .
+alias: auth-quick-start
 ---
 
 # Quick Start

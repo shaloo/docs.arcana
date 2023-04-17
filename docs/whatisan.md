@@ -20,7 +20,7 @@ The {{config.extra.arcana.product_name}} product consists of two key components:
 * {{config.extra.arcana.dashboard_name}}
 * {{config.extra.arcana.sdk_name}}
 
-[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md){ .md-button }
+[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/auth-quick-start.md){ .md-button }
 
 ## Platform Components
 
@@ -40,7 +40,7 @@ The {{config.extra.arcana.product_name}} product consists of two key components:
 
 The primary audience for this documentation is Web3 application developers.
 
-Seasoned Web3 developers can jump right in with the [{{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md), [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and {% include "./text-snippets/authsdkref_url.md" %}.
+Seasoned Web3 developers can jump right in with the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]], [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and {% include "./text-snippets/authsdkref_url.md" %}.
 
 Developers can refer to the [How To Guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) to learn more about how to register and configure the Web3 applications before they can be integrated with the {{config.extra.arcana.wallet_name}}.
 

@@ -9,7 +9,7 @@ arcana:
 
 # Arcana Auth SDK v0.2.x -> v0.3.0 Migration
 
-This guide is meant for developers who have already integrated apps with an older version of the Arcana Auth SDK and run them using Arcana Network Testnet. If you are new to Arcana Network, please visit [Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) to get started.
+This guide is meant for developers who have already integrated apps with an older version of the Arcana Auth SDK and run them using Arcana Network Testnet. If you are new to Arcana Network, please visit [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] to get started.
 
 When you migrate from an older version of the {{config.extra.arcana.sdk_name}} to v0.3.0, there are some breaking changes. These changes are mostly related to deploying an app on the {{config.extra.arcana.company_name}} Testnet and the use of {{config.extra.arcana.company_name}} Storage SDK (no longer supported). There are no breaking changes in the {{config.extra.arcana.sdk_name}}  usage related to user onboarding or blockchain transaction signing functions.  Also, the Arcana wallet has a revamped, better look in this release.
 
