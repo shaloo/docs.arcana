@@ -56,5 +56,5 @@ Tailor the user experience for your Web3 applications as per your use case and t
 ## See Also
 
 * [Integration Code Samples]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/index.md)
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

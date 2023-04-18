@@ -43,7 +43,7 @@ Check if a user is logged in:
 
 {% include "./code-snippets/auth_isloggedin.md" %}
 
-After onboarding users, developers can add code to access the other {{config.extra.arcana.sdk_name}} functions in the app. See [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) for details.
+After onboarding users, developers can add code to access the other {{config.extra.arcana.sdk_name}} functions in the app. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
 
 Add code in the application to log out an authenticated user:
 
@@ -66,4 +66,4 @@ To know more about how to use Web3 wallet operations programmatically in your ap
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
 * [How to integrate with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
-* [Handling authentication errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
+* [[web-auth-error-msg|Handing authentication errors]]

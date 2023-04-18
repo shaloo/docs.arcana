@@ -49,12 +49,12 @@ Your dApp is all set for onboarding users via the passwordless login option.
 
 ## What's Next?
 
-After enabling passwordless login in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and enable Web3 wallet operations for authenticated users. See [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md), [how to enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
+After enabling passwordless login in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and enable Web3 wallet operations for authenticated users. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]], [how to enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
 
 ## See also
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
 * [Configure Social Providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md)
-* [Troubleshooting authentication errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

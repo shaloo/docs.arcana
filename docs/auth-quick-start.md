@@ -30,7 +30,7 @@ Follow these steps to register, configure, integrate, and use the {{config.extra
 
 !!! note "{{config.extra.arcana.sdk_name}}: `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages"
   
-      To integrate vanilla HTML/CSS/JS apps with `{{config.extra.arcana.sdk_name}}`, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and use the `AuthProvider` to access the standard Ethereum provider exposed for blockchain transactions. For details, see [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md).
+      To integrate vanilla HTML/CSS/JS apps with `{{config.extra.arcana.sdk_name}}`, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and use the `AuthProvider` to access the standard Ethereum provider exposed for blockchain transactions. For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]].
       
       Use the **`AuthProvider` wrappers**, namely, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages for easily integrating the {{config.extra.arcana.sdk_name}} with Web3 React apps or with the apps that use wallet connectors such as **Wagmi** and **RainbowKit**.  
       
@@ -58,7 +58,7 @@ During app configuration, developers can enable one or more options to onboard a
 
 Follow these instructions and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the  {{config.extra.arcana.sdk_name}}. Manage user experience for signing blockchain transactions with [wallet visibility settings]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md). These must be specified during app integration and instantiation of the `AuthProvider`.
 
-After integrating with the {{config.extra.arcana.sdk_name}} app developers can use the `AuthProvider` to access the standard Ethereum Web3 provider interface in the context of an authenticated user. Use `AuthProvider` functions to onboard users, and sign blockchain transactions. For more information, see [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and {% include "./text-snippets/authsdkref_url.md" %}, and the [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md)
+After integrating with the {{config.extra.arcana.sdk_name}} app developers can use the `AuthProvider` to access the standard Ethereum Web3 provider interface in the context of an authenticated user. Use `AuthProvider` functions to onboard users, and sign blockchain transactions. For more information, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and {% include "./text-snippets/authsdkref_url.md" %}, and the [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md)
 
 ### Onboard Users
 
@@ -101,7 +101,7 @@ Here are some examples of {{config.extra.arcana.sdk_name}} usage:
 
   For more details on how users interact with the {{config.extra.arcana.wallet_name}}, see [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md). 
 
-  Developers can refer to the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) to learn more about how to register and configure the apps. Also, see [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and the {% include "./text-snippets/authsdkref_url.md" %} for various functions offered by the {{config.extra.arcana.sdk_name}}. To programmatically access Web3 wallet operations, see [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
+  Developers can refer to the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) to learn more about how to register and configure the apps. Also, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and the {% include "./text-snippets/authsdkref_url.md" %} for various functions offered by the {{config.extra.arcana.sdk_name}}. To programmatically access Web3 wallet operations, see [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
 
 {% include "./text-snippets/sdk_version_info.md" %}
 
@@ -110,6 +110,6 @@ Here are some examples of {{config.extra.arcana.sdk_name}} usage:
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
 * [Video Tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/videos/an_academy.md)
 * [Configuring {{config.extra.arcana.wallet_name}} visibility]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md)
-* [Handling {{config.extra.arcana.sdk_name}} error messages]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-error-msg|Handling {{config.extra.arcana.sdk_name}} error messages]]
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

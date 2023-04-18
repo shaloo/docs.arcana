@@ -40,7 +40,7 @@ The {{config.extra.arcana.product_name}} product consists of two key components:
 
 The primary audience for this documentation is Web3 application developers.
 
-Seasoned Web3 developers can jump right in with the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]], [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and {% include "./text-snippets/authsdkref_url.md" %}.
+Seasoned Web3 developers can jump right in with the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]], [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and {% include "./text-snippets/authsdkref_url.md" %}.
 
 Developers can refer to the [How To Guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) to learn more about how to register and configure the Web3 applications before they can be integrated with the {{config.extra.arcana.wallet_name}}.
 
@@ -70,5 +70,5 @@ If you find bugs, have questions, or want to share feedback, please contact us t
 ## References
 
 * [{{config.extra.arcana.company_name}} Technical White Paper]
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

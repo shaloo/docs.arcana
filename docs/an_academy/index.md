@@ -1,9 +1,7 @@
 ---
-slug: /an_academyindex
-id: idanacademyindex
 title: Arcana Academy
-sidebar_custom_props:
-  cardIcon: ✨
+title: 'Arcana Academy'
+description: 'Index page listing the resources to help learn more about Arcana Auth, especially for those who are new to Web3.'
 arcana:
   root_rel_path: ..
 ---
@@ -20,4 +18,4 @@ Developer resources for using {{config.extra.arcana.product_name}}.
 
 [Usage Flows :material-clipboard-flow-outline:](../user_flows/index.md){ .md-button }
 
-[New to Web3 :material-new-box:](./new_web3_dev.md){ .md-button }
+[[new-to-web3| New to Web3 :material-new-box:]]{ .md-button }

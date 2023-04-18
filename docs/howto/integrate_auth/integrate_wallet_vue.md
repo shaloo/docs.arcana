@@ -67,6 +67,6 @@ After integrating an app with the {{config.extra.arcana.sdk_name}}, developers c
 
 * Using the {{config.extra.arcana.sdk_name}} to [ enable social authentication via Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md)
 * [Passwordless authentication]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
-* [{{config.extra.arcana.sdk_name}} Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

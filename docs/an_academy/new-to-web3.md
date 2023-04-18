@@ -1,10 +1,7 @@
 ---
-slug: /newdevweb3
-id: idnewdevweb3
 title: 'The Complete Web3 Auth Tutorial: Protect Your Digital Assets'
 description: 'Web3 Auth Tutorial: How to Safeguard Your Online Transactions and Protect Your Identity. Learn More Here'
-sidebar_custom_props:
-  cardIcon: ✨
+alias: new-to-web3
 arcana:
   root_rel_path: ..
 ---
@@ -111,7 +108,7 @@ Learn how to integrate {{config.extra.arcana.sdk_name}} in a simple React Applic
 
 ## Step 4: Advanced Usage
 
-For advanced options related to user onboarding and the {{config.extra.arcana.sdk_name}} usage, you can check out [{{config.extra.arcana.sdk_name}} usage]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) and {% include "./text-snippets/authsdkref_url.md" %}.
+For advanced options related to user onboarding and the {{config.extra.arcana.sdk_name}} usage, you can check out [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} usage]] and {% include "./text-snippets/authsdkref_url.md" %}.
 
 ## Troubleshooting
 

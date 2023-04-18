@@ -71,9 +71,9 @@ After integrating an app with the {{config.extra.arcana.sdk_name}}, developers c
 
 ## See also
 
-* Access Ethereum providers [web3.js, ethers.js]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#quick-start-with-ethersjs)
+* Access Ethereum providers [[web-auth-usage-guide#quick-start-with-ethersjs|web3.js, ethers.js]]
 * Using the {{config.extra.arcana.sdk_name}} to [enable user onboarding via Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md)
 * [Passwordless user onboarding]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
-* [{{config.extra.arcana.sdk_name}} Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

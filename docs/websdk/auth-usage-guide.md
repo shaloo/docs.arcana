@@ -1,3 +1,14 @@
+---
+alias: web-auth-usage-guide
+arcana:
+  root_rel_path: ..
+---
+
+<!--
+Note, this is a pure markdown file with no mkdocs related tags or keywords. It is a copy 
+of the file in the `auth` repo: https://github.com/arcana-network/auth/blob/main/usage.md
+-->
+
 # Usage Guide
 
 ## Authentication & Arcana Web3 wallet

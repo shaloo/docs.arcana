@@ -2,11 +2,11 @@
 
 [State of the {{config.extra.arcana.product_name}}](../state_of_the_ntwk.md){ .md-button }
 
-[{{config.extra.arcana.sdk_name}} Usage Guide](../walletsdk/wallet_usage.md){ .md-button }
+[[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]{ .md-button }
 
 [{{config.extra.arcana.sdk_name}} Reference Guide](https://authsdk-ref-guide.netlify.app/){ .md-button }
 
-[Handling Auth Errors](../walletsdk/wallet_err.md){ .md-button }
+[[web-auth-error-msg|Handling Auth Errors]]{ .md-button }
 
 [Release Changelog](https://github.com/arcana-network/auth/releases/tag/v0.3.0){ .md-button }
 

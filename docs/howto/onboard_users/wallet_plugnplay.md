@@ -43,12 +43,12 @@ The plug-and-play user onboarding feature is successfully enabled in an app inte
 
 ## What's Next?
 
-After enabling the plug-and-play user onboarding feature in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and enable Web3 wallet operations for authenticated users. See [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md), [how to enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
+After enabling the plug-and-play user onboarding feature in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and enable Web3 wallet operations for authenticated users. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]], [how to enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
 
 ## See also
 
 * [Configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md)
 * [Build custom login UI]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md)
-* [{{config.extra.arcana.sdk_name}}Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

@@ -1,8 +1,5 @@
 ---
-slug: /auth_err
-id: idwalleterr
-sidebar_custom_props:
-  cardIcon: 🔐
+alias: web-auth-error-msg
 arcana:
   root_rel_path: ..
 ---
