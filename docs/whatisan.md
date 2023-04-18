@@ -20,7 +20,7 @@ The {{config.extra.arcana.product_name}} product consists of two key components:
 * {{config.extra.arcana.dashboard_name}}
 * {{config.extra.arcana.sdk_name}}
 
-[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/auth-quick-start.md){ .md-button }
+[[auth-quick-start|Get Started :fontawesome-solid-paper-plane:]]{ .md-button }
 
 ## Platform Components
 

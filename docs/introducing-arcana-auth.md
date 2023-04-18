@@ -54,6 +54,9 @@ Web3 application developers can enable the embedded, non-custodial Web3 wallet t
 
       Use {{config.extra.arcana.dashboard_name}} to register the app, configure the user onboarding settings, and specify the wallet user experience settings. Save the unique app identifier called the **{{config.extra.arcana.app_address}}** assigned to the registered app. This will be required when the app is integrated with the {{config.extra.arcana.sdk_name}}.
 
+
+
+
 ??? abstract "2. Install & Integrate App"
 
       Install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and integrate the app. For vanilla HTML/CSS/JS apps, create the `AuthProvider` by specifying the unique **{{config.extra.arcana.app_address}}** assigned to the app. Initialize the `AuthProvider` before calling its functions for onboarding users and Web3 wallet operations. Developers can use the `AuthProvider` to obtain the standard Ethereum provider and use it for blockchain transactions. 
@@ -64,7 +67,7 @@ Web3 application developers can enable the embedded, non-custodial Web3 wallet t
         
       See the [how to guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) and [tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) for details.
 
-[Get Started :fontawesome-solid-paper-plane:]({{page.meta.arcana.root_rel_path}}/auth-quick-start.md){ .md-button .md-button--primary}
+[[auth-quick-start|Get Started :fontawesome-solid-paper-plane:]]{.md-button .md-button--primary}
 
 ## Key Features
 
@@ -77,11 +80,10 @@ Web3 application developers can enable the embedded, non-custodial Web3 wallet t
   </div>
 </div>
 
-<!--- 
-[Let's begin! ++enter++]({{page.meta.arcana.root_rel_path}}/auth-quick-start.md){ .md-button .md-button--primary}
+<!--
 
-
+[[auth-quick-start|Let's begin! ++enter++]]{ .md-button .md-button--primary}
 
 Git: {{ git.short_commit}}
 
---->
+-->

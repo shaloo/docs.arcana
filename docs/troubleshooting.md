@@ -267,7 +267,7 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       This error is caused due to incorrect integration of the {{config.extra.arcana.sdk_name}}.  While integrating with the {{config.extra.arcana.sdk_name}}, you need to perform the following key steps in the suggested order:
 
-      1. First, [install the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/auth-quick-start.md#install-arcana-auth-sdk).
+      1. First, [[auth-quick-start#install-arcana-auth-sdk|install the {{config.extra.arcana.sdk_name}}]]
 
       2. Next, create an `AuthProvider` instance. 
 
