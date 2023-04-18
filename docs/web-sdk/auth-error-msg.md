@@ -1,5 +1,7 @@
 ---
 alias: web-auth-error-msg
+title: 'Arcana Auth Web SDK Error Messages'
+description: 'List of error messages, the cause of errors, description and how to handle them.'
 arcana:
   root_rel_path: ..
 ---

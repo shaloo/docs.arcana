@@ -1,5 +1,7 @@
 ---
-description: 
+alias: introducing-arcana-auth
+title: 'Introducing Arcana Auth'
+description: 'Introducing Arcana Auth, different components that makeup Arcana Auth, how to use it, Arcana Auth product features.'
 arcana:
   root_rel_path: .
 ---

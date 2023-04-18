@@ -1,5 +1,7 @@
 ---
 alias: web-auth-usage-guide
+title: 'Arcana Auth Web SDK Usage Guide'
+description: 'How to install and use the Arcana Auth Web SDK with sample code and references.'
 arcana:
   root_rel_path: ..
 ---

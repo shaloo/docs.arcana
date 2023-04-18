@@ -1,7 +1,7 @@
 ---
+alias: new-to-web3
 title: 'The Complete Web3 Auth Tutorial: Protect Your Digital Assets'
 description: 'Web3 Auth Tutorial: How to Safeguard Your Online Transactions and Protect Your Identity. Learn More Here'
-alias: new-to-web3
 arcana:
   root_rel_path: ..
 ---

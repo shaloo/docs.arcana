@@ -1,5 +1,4 @@
 ---
-title: Arcana Academy
 title: 'Arcana Academy'
 description: 'Index page listing the resources to help learn more about Arcana Auth, especially for those who are new to Web3.'
 arcana:

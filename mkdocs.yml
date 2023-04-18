@@ -86,7 +86,7 @@ nav:
         - Manage NFTs: howto/wallet_manage_nft.md
       - MFA Setup User Guide: user_guides/mfa/mfa_ug.md
   - Developer Resources:
-    - Handling Auth Errors: websdk/auth-error-msg.md
+    - Handling Auth Errors: web-sdk/auth-error-msg.md
     - FAQ:
       - faq/index.md
       - General: faq/faq_gen.md
@@ -126,7 +126,7 @@ nav:
   - Reference:
       - reference/index.md
       - State of the Arcana Auth: state_of_the_ntwk.md
-      - Auth SDK Usage Guide: websdk/auth-usage-guide.md
+      - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Arcana Academy:
@@ -334,8 +334,8 @@ plugins:
       redirect_maps:
         'introduction.md': 'introducing-arcana-auth.md'
         'walletsdk/wallet_qs.md': 'auth-quick-start.md'
-        'walletsdk/wallet_err.md': 'websdk/auth-error-msg.md'
-        'walletsdk/wallet_usage.md': 'websdk/auth-usage-guide.md'
+        'walletsdk/wallet_err.md': 'web-sdk/auth-error-msg.md'
+        'walletsdk/wallet_usage.md': 'web-sdk/auth-usage-guide.md'
         'an_academy/new_web3_dev.md': 'an_academy/new-to-web3.md'
   - git-authors:
       show_email_address: false
