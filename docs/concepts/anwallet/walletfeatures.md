@@ -1,27 +1,26 @@
 ---
-slug: /arcanawallet
-id: idarcanawallet
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: arcana-wallet-features
+title: 'Arcana Wallet Features'
+description: 'List of Web3 operations supported by the Arcana wallet. JSON RPC calls, monitoring transaction activity and more.'
 arcana:
   root_rel_path: ../..
 ---
 
 # Wallet Features
 
-The {{config.extra.arcana.wallet_name}}allows authenticated users to securely perform blockchain operations without having to bother about generating and managing secret keys. By [integrating their applications with the {{config.extra.arcana.wallet_name}} ]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md), Web3 developers can enable the {{config.extra.arcana.wallet_name}}  for the application users. With the {{config.extra.arcana.wallet_name}}, users can sign blockchain transactions and manage their digital assets such as cryptocurrencies, native or custom tokens, and NFTs: 
+The {{config.extra.arcana.wallet_name}} allows authenticated users to securely perform blockchain operations without having to bother about generating and managing secret keys. By [integrating their applications with the {{config.extra.arcana.wallet_name}} ]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md), Web3 developers can enable the {{config.extra.arcana.wallet_name}}  for the application users. With the {{config.extra.arcana.wallet_name}}, users can sign blockchain transactions and manage their digital assets such as cryptocurrencies, native or custom tokens, and NFTs: 
 
 * **User Identity Management:** The {{config.extra.arcana.wallet_name}} associates application users with a secret.  This secret is generated using decentralized, distributed key generation algorithms.  The application users are authenticated through the configured authentication providers or via the passwordless login option by the {{config.extra.arcana.sdk_name}} and assigned this secret after successful authentication. This frees the application users from having to manage Web3 secrets or worry about centralized identity management servers, or storing them securely to guard against losing private keys.
 
-* **Sign Blockchain Transactions:** The {{config.extra.arcana.wallet_name}} also allows application users to switch between supported blockchain networks and sign blockchain transactions for any [supported blockchain network]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains).
+* **Sign Blockchain Transactions:** The {{config.extra.arcana.wallet_name}} also allows application users to switch between supported blockchain networks and sign blockchain transactions for any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]].
 
 * **Send and Receive Native Tokens:** Using the {{config.extra.arcana.wallet_name}}, application users can transact native tokens for the selected network. To receive tokens, the QR code or the account address can be copied and shared with the sender.
 
-* **Custom Token Support:** Users can add custom tokens, send or receive tokens, and view token assets for any [supported blockchain network]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains).
+* **Custom Token Support:** Users can add custom tokens, send or receive tokens, and view token assets for any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]].
 
 * **Send and Receive NFT assets:** Similar to native and custom tokens, the {{config.extra.arcana.wallet_name}} allows users to preview, share/sell or receive NFT assets. Unlike cryptocurrencies and tokens, NFT assets are unique and can be traced back to their original owner. Only the NFT owner can download or exchange NFTs with other users.
 
-* **Add Network Configuration:** Developers can choose to add any [supported blockchain networks]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains) to the {{config.extra.arcana.wallet_name}} by specifying the following details:
+* **Add Network Configuration:** Developers can choose to add any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]] to the {{config.extra.arcana.wallet_name}} by specifying the following details:
 
     - Network Name
     - RPC URL

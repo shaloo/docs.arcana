@@ -1,13 +1,12 @@
 ---
-slug: /an_use_cases
-id: idanusecases
-sidebar_custom_props:
-  cardIcon: 📝
+alias: arcana-auth-use-cases
+title: 'Arcana Auth Use Cases'
+description: 'What problems does Arcana Auth solve? What can Web3 app developers gain by integrating apps with the Auth SDK?'
 arcana:
   root_rel_path: .
 ---
 
-#  Web3 Auth Use Cases
+#  Arcana Auth Use Cases
 
 The {{config.extra.arcana.sdk_name}} allows developers to supercharge their Web3 apps with plug-and-play user authentication. Also, authenticated app users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} to securely sign blockchain transactions, without having to install any browser extension or manage keys.
 
@@ -41,7 +40,7 @@ Web3 developers can integrate apps with the {{config.extra.arcana.sdk_name}} to 
     - Send/Receive native, custom tokens
     - Send/Receive NFTs
     - Browse NFTs, view NFT details
-    - Add networks [Supported Networks]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains)
+    - Add [[state-of-the-arcana-auth#supported-blockchains|supported networks]]
     - Switch networks
     - Monitor transaction activity
     - JSON-RPC method support

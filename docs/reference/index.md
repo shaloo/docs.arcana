@@ -1,6 +1,14 @@
+---
+alias: index-arcana-auth-references
+title: 'References'
+description: 'List of reference documents for more information related to Arcana Auth.'
+arcana:
+  root_rel_path: ..
+---
+
 # References
 
-[State of the {{config.extra.arcana.product_name}}](../state_of_the_ntwk.md){ .md-button }
+[[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]]{ .md-button }
 
 [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]{ .md-button }
 

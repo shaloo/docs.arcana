@@ -1,6 +1,7 @@
 ---
-sidebar_custom_props:
-  cardIcon: ⚒️
+alias: state-of-the-arcana-auth
+title: 'State of the Arcana Auth'
+description: 'The current status of the Web3 Auth, Arcana Auth and the blockchain network, Arcana Network roadmap, what is cooking, who are the decentralization partners and more.'
 arcana:
   root_rel_path: .
 ---

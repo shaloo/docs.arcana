@@ -1,8 +1,7 @@
 ---
-slug: /migration_to_beta_auth_0_3_0
-id: idmigrationtobetaauth030
-sidebar_custom_props:
-  cardIcon: 📂
+alias: migration-guide-v0.3.0
+title: 'Arcana Auth Web SDK Migration Guide v0.3.0'
+description: 'Instructions on how to migrate a Web3 app to Arcana Auth Web SDK v0.3.0?'
 arcana:
   root_rel_path: ..
 ---

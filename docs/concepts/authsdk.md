@@ -1,8 +1,7 @@
 ---
-slug: /conceptauthsdk
-id: idconceptauthsdk
-sidebar_custom_props:
-  cardIcon: 💠
+alias: concept-authsdk
+title: 'Arcana Auth SDK'
+description: 'What is Arcana Auth SDK and what are its key features, what kind of authentication is supported for Web3 apps and what kind of wallet operations can be accessed by app users.'
 arcana:
   root_rel_path: ..
 ---
@@ -31,7 +30,7 @@ Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.me
 **Web3 Wallet Operations**
 
   * Developers can configure and manage blockchain transaction signing experience for users by using [{{config.extra.arcana.wallet_name}} visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
-  * Authenticated users can securely sign blockchain transactions on any [supported blockchain network]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains)
+  * Authenticated users can securely sign blockchain transactions on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]
   * Supports Web3 wallet operations and the standard Ethereum JSON-RPC calls
         
     - configure and switch networks and accounts

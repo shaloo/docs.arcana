@@ -1,8 +1,7 @@
 ---
-slug: /migration_to_main_auth_1_0_0
-id: idmigrationtomainauth100
-sidebar_custom_props:
-  cardIcon: 📂
+alias: migration-guide-v1.0.0
+title: 'Arcana Auth Web SDK Migration Guide v1.0.0'
+description: 'How to migrate to Arcana Auth Web SDK v1.0.0'
 arcana:
   root_rel_path: ..
 ---
@@ -106,4 +105,4 @@ Once a user authenticates, the following wallet UI is displayed when the app is 
 
 Besides Testnet/Mainnet and Global Keyspace features, the {{config.extra.arcana.sdk_name}} v1.0.0 uses a new, improved asynchronous distributed key generation (ADKG) subsystem. In addition to the DKG nodes operated by Arcana, two nodes are run and managed by Comdex and LugaNodes. 
 
-For more details, see [{{config.extra.arcana.product_name}} v1.0.0 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.0.md) and [State of the {{config.extra.arcana.product_name}}]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md).
+For more details, see [{{config.extra.arcana.product_name}} v1.0.0 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.0.md) and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].

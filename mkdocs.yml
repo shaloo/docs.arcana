@@ -125,7 +125,7 @@ nav:
           - Using Wallet UI: integrations/shardeum/wallet_config_shardeum.md
   - Reference:
       - reference/index.md
-      - State of the Arcana Auth: state_of_the_ntwk.md
+      - State of the Arcana Auth: state-of-the-arcana-auth.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
@@ -337,6 +337,7 @@ plugins:
         'walletsdk/wallet_err.md': 'web-sdk/auth-error-msg.md'
         'walletsdk/wallet_usage.md': 'web-sdk/auth-usage-guide.md'
         'an_academy/new_web3_dev.md': 'an_academy/new-to-web3.md'
+        'state_of_the_ntwk.md': 'state-of-the-arcana-auth.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

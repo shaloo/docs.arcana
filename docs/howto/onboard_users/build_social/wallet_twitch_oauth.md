@@ -1,15 +1,13 @@
 ---
-slug: /twitchoauth
-id: idtwitchoauth
-title: Twitch
-sidebar_custom_props:
-  cardIcon: 🤝
+alias: twitch-social-auth
+title: 'User Login with Twitch'
+description: 'Learn how to build social authentication in Web3 apps and allow users to log in using Twitch.'
 arcana:
   root_rel_path: ../../..
   social_provider: "'twitch'"
 ---
 
-# Twitch
+# User Login with Twitch
 
 In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via Twitch as the authentication provider.
 
@@ -54,7 +52,7 @@ The Web3 app is all set for onboarding users via Twitch.
 
 ## What's Next?
 
-After onboarding app users via Twitch, you can allow authenticated users to access the {{config.extra.arcana.wallet_name}} for signing blockchain transactions on any [supported blockchain network]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains). Plug in other {{config.extra.arcana.sdk_name}} functions in the app code such as getting the authenticated user's account details, performing Web3 wallet operations, etc. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
+After onboarding app users via Twitch, you can allow authenticated users to access the {{config.extra.arcana.wallet_name}} for signing blockchain transactions on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]. Plug in other {{config.extra.arcana.sdk_name}} functions in the app code such as getting the authenticated user's account details, performing Web3 wallet operations, etc. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
 
 
 ## See also

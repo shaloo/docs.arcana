@@ -1,8 +1,7 @@
 ---
-slug: /migration_to_main_auth_1_0_3
-id: idmigrationtomainauth103
-sidebar_custom_props:
-  cardIcon: 📂
+alias: migration-guide-v1.0.3
+title: 'Arcana Auth Web SDK Migration Guide v1.0.3'
+description: 'How to migrate to Arcana Auth Web SDK v1.0.3'
 arcana:
   root_rel_path: ..
 ---
@@ -27,4 +26,4 @@ Simply upgrade the {{config.extra.arcana.sdk_name}} from v1.0.2 to v1.0.3 and re
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
-See [{{config.extra.arcana.product_name}} v1.0.3 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.3.md) and [State of the {{config.extra.arcana.product_name}} ]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md).
+See [{{config.extra.arcana.product_name}} v1.0.3 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.3.md) and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].

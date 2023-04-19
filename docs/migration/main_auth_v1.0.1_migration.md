@@ -1,8 +1,7 @@
 ---
-slug: /migration_to_main_auth_1_0_1
-id: idmigrationtomainauth101
-sidebar_custom_props:
-  cardIcon: 📂
+alias: migration-guide-v1.0.1
+title: 'Arcana Auth Web SDK Migration Guide v1.0.1'
+description: 'How to migrate to Arcana Auth Web SDK v1.0.1'
 arcana:
   root_rel_path: ..
 ---
@@ -64,4 +63,4 @@ Once a user authenticates, the following wallet UI is displayed when the app is 
 
 There are no other new features in this release.
 
-For more details about this release, see [{{config.extra.arcana.product_name}} v1.0.1 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.1.md) and [State of the {{config.extra.arcana.product_name}} ]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md).
+For more details about this release, see [{{config.extra.arcana.product_name}} v1.0.1 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.1.md) and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
