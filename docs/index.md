@@ -7,6 +7,9 @@ arcana:
   root_rel_path: .
 ---
 
-# Documentation Landing Page
+#
 
-Arcana Auth - for Web3 App builders. Learn more...
+<!--
+Do not add any content here.
+The default landing page is overridden.
+-->
