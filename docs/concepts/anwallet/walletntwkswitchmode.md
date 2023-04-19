@@ -1,9 +1,6 @@
 ---
-slug: /walletntwkswitchmode
-id: idwalletntwkswitchmode
-title: Switching Networks
-sidebar_custom_props:
-  cardIcon: ▶️
+title: 'Arcana wallet blockchain network switching behavior'
+description: 'Arcana wallet setting for wallet visibility controls blockchain network switching behavior.'
 arcana:
   root_rel_path: ../..
 ---
@@ -23,10 +20,10 @@ The `alwaysVisible` [input parameter](https://authsdk-ref-guide.netlify.app/inte
 
 ### Network Switching: `alwaysVisible=true`
 
-By default, `alwaysVisible=true`. If the app developer uses this default setting then the wallet UI shows up right after a user authenticates. The wallet can be minimized by clicking on the 'x' icon in the top right of the wallet screen but the wallet is always visible in the app's context. To switch the network displayed in the wallet UI, a user can simply click on the drop-down list and select an entry from the list to change the network. The app developer can programmatically use [`wallet_addEthereumChain`]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#switching-chains) and [wallet_switchEthereumChain]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#switching-chains) methods to add and switch to a supported blockchain network preferred by the app. When a network addition or switching is initiated by the app developer, it requires the user's approval before the network switch takes effect.
+By default, `alwaysVisible=true`. If the app developer uses this default setting then the wallet UI shows up right after a user authenticates. The wallet can be minimized by clicking on the 'x' icon in the top right of the wallet screen but the wallet is always visible in the app's context. To switch the network displayed in the wallet UI, a user can simply click on the drop-down list and select an entry from the list to change the network. The app developer can programmatically use [[web-auth-usage-guide#switching-chains | `wallet_addEthereumChain`]] and [[web-auth-usage-guide#switching-chains | `wallet_switchEthereumChain`]] methods to add and switch to a supported blockchain network preferred by the app. When a network addition or switching is initiated by the app developer, it requires the user's approval before the network switch takes effect.
 
 ### Network Switching:`alwaysVisible=false`
 
-If the developer has opted for `alwaysVisible=false` while integrating the app with the {{config.extra.arcana.sdk_name}}, then the wallet UI does not show up automatically after a user logs in. It is displayed only if a blockchain transaction is triggered that requires the user's approval. Once the user approves the transaction, the wallet UI disappears. There is no way for an authenticated user to add, configure or switch the network using the wallet UI. Only the developer can programmatically add and switch the network by using the [`wallet_addEthereumChain`]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#switching-chains) and [wallet_switchEthereumChain]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md#switching-chains) methods. When a network addition or switching is initiated by the app developer, it requires the user's approval before the network switch takes effect.
+If the developer has opted for `alwaysVisible=false` while integrating the app with the {{config.extra.arcana.sdk_name}}, then the wallet UI does not show up automatically after a user logs in. It is displayed only if a blockchain transaction is triggered that requires the user's approval. Once the user approves the transaction, the wallet UI disappears. There is no way for an authenticated user to add, configure or switch the network using the wallet UI. Only the developer can programmatically add and switch the network by using the [[web-auth-usage-guide#switching-chains | `wallet_addEthereumChain`]] and [[web-auth-usage-guide#switching-chains | `wallet_switchEthereumChain`]] methods. When a network addition or switching is initiated by the app developer, it requires the user's approval before the network switch takes effect.
 
 {% include "./text-snippets/add_wallet_config_warning.md" %}

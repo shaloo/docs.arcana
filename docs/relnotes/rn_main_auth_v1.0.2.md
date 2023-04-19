@@ -17,22 +17,32 @@ arcana:
 
 ==}
 
-## Feature Updates
+This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+
+* [{{config.extra.arcana.sdk_name}} v1.0.2](https://www.npmjs.com/package/@arcana/auth/v/1.0.2)
+* {{config.extra.arcana.dashboard_name}}
+* {{config.extra.arcana.wallet_name}} UI
+
+## New Product Features
+
+---
 
 ### Fiat On-ramp Providers
 
-Arcana wallet supports fiat on-ramping that allows wallet users to buy cryptocurrency (native and ERC20 tokens) easily from any of the supported providers:
+{{config.extra.arcana.wallet_name}} supports fiat on-ramping that allows wallet users to buy cryptocurrency (native and ERC20 tokens) easily from any of the supported providers:
 
 {% include "./text-snippets/fiat_on_ramp_providers.md" %}
 
 ### App Address -> Client ID
 
-Each registered Web3 app is associated with a unique Arcana Network identifier. Earlier, it was referred to as **App Address**. Now it is referred to as **{{config.extra.arcana.app_address}}** in the documentation and on the Arcana Developer Dashboard screen.
+Each registered Web3 app is associated with a unique {{config.extra.arcana.company_name}} identifier. Earlier, it was referred to as **App Address**. Now it is referred to as **{{config.extra.arcana.app_address}}** in the documentation and on the {{config.extra.arcana.dashboard_name}} screen.
 
-The format of the **{{config.extra.arcana.app_address}}** has also changed but it does not impact Auth SDK usage. Developers can continue to use the existing **App Address** with the new Auth SDK as well. No need to re-register the app if you were using the following Auth SDKs: 
+The format of the **{{config.extra.arcana.app_address}}** has also changed but it does not impact {{config.extra.arcana.sdk_name}} usage. Developers can continue to use the existing **App Address** with the new {{config.extra.arcana.sdk_name}}. If the app is integrated using the following {{config.extra.arcana.sdk_name}} versions, there is **no need to re-register the app**: 
 
 * v1.0.1
 * v1.0.0
+
+If the app is using an older version of the {{config.extra.arcana.sdk_name}}, refer to the migration guide and upgrade to the latest version. 
 
 ### Minimized Wallet Widget Update
 
@@ -40,13 +50,13 @@ The circular widget displayed when a wallet was minimized by clicking the 'x' ic
 
 | Minimized Wallet Widget v1.0.1 | Minimized Wallet Widget v1.0.2 |
 | :---: | :---:|
-| <img src="/img/an_wallet_min.png" width="75"/> | <img src="/img/an_wallet_min_light.png#only-light" width="75"/> <img src="/img/an_wallet_min_dark.png#only-dark" width="75"/> |
+| <img class="an-screenshots-noeffects" src="/img/an_wallet_min.png" width="25%"/> | <img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-light" width="25%"/> <img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-dark" width="25%"/> |
 
-### Auth SDK additions:  Wagmi & RainbowKit support
+### {{config.extra.arcana.sdk_name}} package additions:  Wagmi & RainbowKit support
 
-Typical React/NextJS apps <img alt="react logo" src="/img/react_logo.png" width="2%" /> <img alt="nextjs logo" src="/img/nextjs_logo.png" width="2%" /> integrate with the Arcana Auth SDK by installing the `auth` and `auth-react` npm packages and instantiating the `AuthProvider` and `ProviderAuth` before using them in the app. See [how to integrate a React app with the Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md) guide for details.
+Typical React/NextJS apps <img alt="react logo" src="/img/react_logo.png" width="2%" /> <img alt="nextjs logo" src="/img/nextjs_logo.png" width="2%" /> integrate with the {{config.extra.arcana.sdk_name}} by installing the `auth` and `auth-react` npm packages and instantiating the `AuthProvider` and `ProviderAuth` before using them in the app. See [how to integrate a React app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md) for details.
 
-The React/NextJS apps that use [Wagmi](https://wagmi.sh/) <img alt="wagmi logo" src="/img/wagmi_logo.png" width="2%" /> can be integrated with the Auth SDK by simply installing the `auth-wagmi` package and instantiating the `ArcanaConnector` wrapper component. For details, see [how to integrate a React app that uses Wagmi]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md) guide. 
+The React/NextJS apps that use [Wagmi](https://wagmi.sh/) <img alt="wagmi logo" src="/img/wagmi_logo.png" width="2%" /> can be integrated with the {{config.extra.arcana.sdk_name}} by simply installing the `auth-wagmi` package and instantiating the `ArcanaConnector` wrapper component. For details, see [how to integrate a React app that uses Wagmi]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md) guide. 
 
 Similarly, for React apps using the [RainbowKit framework](https://www.rainbowkit.com/), <img alt="rainbowkit logo" src="/img/rainbowkit_logo.png" width="2%" /> see [how to integrate a React app that uses RainbowKit]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_rainbow.md) guide.
 
@@ -55,6 +65,8 @@ Similarly, for React apps using the [RainbowKit framework](https://www.rainbowki
       {% include "./text-snippets/warn_wagmi_noauth.md" %}
 
 ## Bug Fixes
+
+---
 
 **Securing Local/Session store partition**
 
@@ -68,24 +80,26 @@ This issue is fixed in the current release. The user will have to log in to the 
 
 ## Get Started
 
+---
+
 {==
 
-*New to Auth SDK and ready to dive in?* 
+*Ready to dive in?* 
 
 ==}
 
-See [Auth SDK Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md). 
+See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [how-to guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) in the Getting Started section. 
 
-For step-by-step instructions, see [how to integrate with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) guide. 
-
-Check out the sample dApp integration example with the Arcana SDKs for [React]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md),[Vue](https://github.com/arcana-network/basic-storage-wallet-integration) dApps.
-
----
+Check out the sample dApp integration example for apps using the [React/NextJS]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md), and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
 ## Migrate to v1.0.2
 
-Are you using an older version of the Arcana Auth SDK? Refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the latest version.
+---
+
+Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the latest version.
 
 ## Questions? 
 
-Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md) and other developer resources or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+---
+
+Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).

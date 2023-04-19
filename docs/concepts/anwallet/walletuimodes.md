@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ../..
 ---
 
-## Wallet Visibility
+# Wallet Visibility
 
 The {{config.extra.arcana.wallet_name}} is an embedded, non-custodial Web3 wallet that is enabled for every user that logs into an app integrated with the {{config.extra.arcana.sdk_name}}. App developers can manage the wallet user experience by controlling the wallet's visibility in the app context.
 

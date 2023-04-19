@@ -1,8 +1,7 @@
 ---
-slug: /troubleshooting
-id: idtroubleshooting
-sidebar_custom_props:
-  cardIcon: 📕
+alias: troubleshooting
+title: 'Troubleshooting Arcana Auth'
+description: 'If you are facing any issues while installing, integrating with the Arcana Auth SDK or during app deployment on Arcana Testnet/Mainnet, check out these known issues and how to troubleshoot them before contacting us.'
 arcana:
   root_rel_path: .
 toc_depth: 2
@@ -267,7 +266,7 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       This error is caused due to incorrect integration of the {{config.extra.arcana.sdk_name}}.  While integrating with the {{config.extra.arcana.sdk_name}}, you need to perform the following key steps in the suggested order:
 
-      1. First, [install the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md#registration-configuration).
+      1. First, [[auth-quick-start#install-arcana-auth-sdk|install the {{config.extra.arcana.sdk_name}}]]
 
       2. Next, create an `AuthProvider` instance. 
 

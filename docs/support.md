@@ -1,9 +1,9 @@
 ---
-slug: /support
-id: idsupport
-title: Support
-sidebar_custom_props:
-  cardIcon: 📨
+alias: support
+title: 'Support'
+description: 'Need help? Contact Arcana support team for any questions. We are happy to help!'
+arcana:
+  root_rel_path: .
 ---
 
 # Support

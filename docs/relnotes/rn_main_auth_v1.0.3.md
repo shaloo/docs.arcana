@@ -17,23 +17,35 @@ arcana:
 
 ==}
 
-## Feature Updates
+This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+
+* [{{config.extra.arcana.sdk_name}} v1.0.3](https://www.npmjs.com/package/@arcana/auth/v/1.0.3)
+* {{config.extra.arcana.dashboard_name}}
+* {{config.extra.arcana.wallet_name}} UI
+
+## New Product Features
+
+---
 
 ### Social Provider: AWS Cognito
 
-Arcana Auth SDK now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [how to onboard users via Cognito]({{page.meta.arcana.root_rel_path}}/howto/plug_idm/wallet_cognito_oauth.md) for details.
+{{config.extra.arcana.product_name}} now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [how to onboard users via Cognito]({{page.meta.arcana.root_rel_path}}/howto/plug_idm/wallet_cognito_oauth.md) for details.
 
 ### New API: showWallet()
 
-Developers can use the `showWallet()` function to display the in-built Arcana wallet UI in the context of an app integrated with the Auth SDK. The `showWallet()` function can be called in the application context after the `AuthProvider` is created and initialized using the `init` function. Once the app is deployed and the user logs in, the `showWallet` function call brings up the wallet UI. For details, see [Arcana Wallet Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
+Developers can use the newly added `showWallet()` function in the {{config.extra.arcana.sdk_name}} to display the in-built Arcana wallet UI. The `showWallet()` function can be called in the application context after the `AuthProvider` is created and initialized using the `init` function. Once the app is deployed and the user logs in, the `showWallet` function call displays the wallet UI. For details, see [Arcana Wallet Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
 
-## Enhancements
+## Product Enhancements
+
+---
 
 ### Better Login Performance
 
-The Auth SDK has been updated for better login performance powered by an improved [ADKG subsystem](https://github.com/arcana-network/adkg/releases).
+The {{config.extra.arcana.sdk_name}} has been updated for better login performance powered by an improved [ADKG subsystem](https://github.com/arcana-network/adkg/releases).
 
 ## Bug Fixes
+
+---
 
 **Wallet UI Display on Mobile**
 
@@ -43,24 +55,27 @@ In the earlier releases, the built-in Arcana wallet UI **did not** utilize the e
 
 ## Get Started
 
+---
+
 {==
 
-*New to Auth SDK and ready to dive in?* 
+*Ready to dive in?* 
 
 ==}
 
-See [Auth SDK Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md). 
+See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [how-to guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) in the Getting Started section. 
 
-For step-by-step instructions, see [how to integrate with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) guide. 
+Check out the sample dApp integration example for apps using the [React/NextJS]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md), and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
-Check out the sample dApp integration example with the Arcana SDKs for [React]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md),[Vue](https://github.com/arcana-network/basic-storage-wallet-integration) dApps.
-
----
 
 ## Migrate to v1.0.3
 
-Are you using an older version of the Arcana Auth SDK? Refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the latest version.
+---
+
+Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the latest version.
 
 ## Questions? 
 
-Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+---
+
+Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).

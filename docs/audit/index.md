@@ -3,7 +3,7 @@ arcana:
   root_rel_path: ..
 ---
 
-#  {{config.extra.arcana.product_name}}Audit Reports
+#   Arcana Audit Reports
 
 At {{config.extra.arcana.company_name}}, we take the security and privacy of applications seriously and believe in transparency. Our offering, {{config.extra.arcana.product_name}}, has been audited by [Certik](https://www.certik.com/).
 

@@ -3,7 +3,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# How To Guides
+# Getting Started
 
 We recommend that you check out these guides to learn how to register and configure the {{config.extra.arcana.sdk_name}} usage, how to integrate it with a Web3 app to onboard users and allow authenticated users to sign blockchain transactions with the {{config.extra.arcana.wallet_name}}.
 

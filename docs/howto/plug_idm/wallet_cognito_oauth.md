@@ -43,7 +43,7 @@ Check if a user is logged in:
 
 {% include "./code-snippets/auth_isloggedin.md" %}
 
-After onboarding users, developers can add code to access the other {{config.extra.arcana.sdk_name}} functions in the app. See [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md) for details.
+After onboarding users, developers can add code to access the other {{config.extra.arcana.sdk_name}} functions in the app. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
 
 Add code in the application to log out an authenticated user:
 
@@ -57,6 +57,8 @@ Your app is all set for authenticating users via AWS Cognito. Authenticated user
 
       {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}
 
+{% include "./text-snippets/aggrlogin-nocognito-support.md" %}
+
 ## What's Next?
 
 To know more about how to use Web3 wallet operations programmatically in your app, see [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md). Refer to the [{{config.extra.arcana.wallet_name}} User's Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) for more information on how authenticated app users can access the wallet UI.
@@ -64,4 +66,4 @@ To know more about how to use Web3 wallet operations programmatically in your ap
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
 * [How to integrate with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
-* [Handling authentication errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
+* [[web-auth-error-msg|Handing authentication errors]]

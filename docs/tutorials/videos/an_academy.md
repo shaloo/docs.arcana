@@ -1,9 +1,7 @@
 ---
-slug: /anacademy
-id: idanacademy
-title: Get Started
-sidebar_custom_props:
-  cardIcon: 🎓
+alias: arcana-video-tutorials
+title: 'Video Tutorials: Get Started with Arcana'
+description: 'Video tutorials to help Web3 app developers to get started with Arcana Auth and learn how to register the app, integrate the app and allow users to sign blockchain transactions.'
 arcana:
   root_rel_path: ../..
 ---
@@ -61,7 +59,7 @@ Check out this video to see the {{config.extra.arcana.wallet_name}} in action wh
 
 ### Sign Blockchain Transactions
 
-The {{config.extra.arcana.sdk_name}} enables the embedded, non-custodial {{config.extra.arcana.wallet_name}} for every authenticate user to sign blockchain transactions on any [supported networks]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains). [Learn more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) about the  {{config.extra.arcana.wallet_name}} features.
+The {{config.extra.arcana.sdk_name}} enables the embedded, non-custodial {{config.extra.arcana.wallet_name}} for every authenticate user to sign blockchain transactions on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]. [Learn more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) about the  {{config.extra.arcana.wallet_name}} features.
 
 The app developers can [configure {{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) to manage the user's blockchain signing experience. [Learn more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) about wallet visibility and other configurations.
 
@@ -71,7 +69,7 @@ Check out this video to see the  {{config.extra.arcana.wallet_name}} in action f
 
 !!! tip
 
-      See [ {{config.extra.arcana.sdk_name}} Use cases]({{page.meta.arcana.root_rel_path}}/use_cases.md).
+      See [[use-cases|{{config.extra.arcana.product_name}} Use cases]].
 
 ---
 

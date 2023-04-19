@@ -23,7 +23,7 @@ Developers can choose to configure the [{{config.extra.arcana.wallet_name}} visi
 
 *Managing {{config.extra.arcana.wallet_name}} visibility in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
 
-### Step1: Integrate App 
+### Step1: Integrate the App 
 
 Follow the instructions to [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). During `AuthProvider` instantiation, make sure you set the `alwaysVisible` input parameter to one of the following values as per the required app user experience for signing blockchain transactions:
 
@@ -39,7 +39,7 @@ Besides the {{config.extra.arcana.wallet_name}} visibility setting, app develope
 
 For a complete list of parameters see [{{config.extra.arcana.sdk_name}} Reference Guide](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
 
-Here is some sample code that shows how to an app can integrate with the {{config.extra.arcana.sdk_name}} and specify the {{config.extra.arcana.wallet_name}} configuration so that the {{config.extra.arcana.wallet_name}} shows up only when a blockchain transactions is triggered and requires user's approval.
+Here is some sample code that shows how an app can integrate with the {{config.extra.arcana.sdk_name}} and specify the {{config.extra.arcana.wallet_name}} configuration so that the {{config.extra.arcana.wallet_name}} shows up only when a blockchain transaction is triggered and requires the user's approval.
 
 {% include "./code-snippets/auth_install.md" %}
 {% include "./code-snippets/import_auth.md" %}
@@ -60,6 +60,6 @@ After integrating an app with the {{config.extra.arcana.sdk_name}}, with the req
 
 ## See also
 
-* [{{config.extra.arcana.sdk_name}} Errors]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_err.md)
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

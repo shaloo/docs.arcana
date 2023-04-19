@@ -17,21 +17,29 @@ arcana:
 
 ==}
 
-## Feature Updates 
+This release of the {{config.extra.arcana.product_name}} product consists of the following components:
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" /><img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50"/><img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
+* [{{config.extra.arcana.sdk_name}} v1.0.0](https://www.npmjs.com/package/@arcana/auth/v/1.0.0)
+* {{config.extra.arcana.dashboard_name}}
+* {{config.extra.arcana.wallet_name}} UI
 
-### Brand new look: Arcana Developer Dashboard
+## New Product Features 
 
-Check out the newly redesigned Arcana Developer Dashboard. It allows Web3 app developers to register apps with the Arcana network, and configure user onboarding and wallet settings before integrating with the Auth SDK.
+---
+
+<img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" /><img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="3%0"/><img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="3%" />
+
+### Brand new look: {{config.extra.arcana.dashboard_name}} 
+
+Check out the newly redesigned {{config.extra.arcana.dashboard_name}}. It allows Web3 app developers to register apps with {{config.extra.arcana.company_name}} , and configure user onboarding and wallet settings before integrating with the {{config.extra.arcana.sdk_name}}.
 
 ### Application Configuration Profiles
 
-Developers can now choose to deploy applications on the Arcana Testnet or the Mainnet. You can start with the default 'Testnet' app configuration profile and once the application is tested and ready to deploy, deploy it on the Arcana Mainnet.
+Developers can now choose to deploy applications on the {{config.extra.arcana.company_name}} Testnet or the Mainnet. You can start with the default 'Testnet' app configuration profile and once the application is tested and ready to deploy, deploy it on the Arcana Mainnet.
 
-An under-development application can be deployed on the Arcana Testnet. At the same time, a tested and stable version can be deployed on the Arcana Mainnet where user's log in and utilize the app.
+An under-development application can be deployed on the {{config.extra.arcana.company_name}} Testnet. At the same time, a tested and stable version can be deployed on the {{config.extra.arcana.company_name}} Mainnet where the app users can log in and utilize the app.
 
-![Dashboard with multiple Apps](/img/an_db_mulitiple_apps.png)
+![Dashboard with multiple Apps](/img/an_db_mulitiple_apps.png){.an-screenshots-noeffects  width="75%"}
 
 - Easily register and configure Web3 applications
 - Create, delete, and manage application configurations for 'Testnet' and 'Mainnet'
@@ -41,27 +49,27 @@ An under-development application can be deployed on the Arcana Testnet. At the s
 - A new unique **{{config.extra.arcana.app_address}}** is associated with the 'Mainnet' configuration profile
 
     !!! note
-          Do remember to use the correct {{config.extra.arcana.app_address}} for integrating with the Auth SDK when you deploy your application on the Mainnet.
+          Do remember to use the correct {{config.extra.arcana.app_address}} for integrating with the {{config.extra.arcana.sdk_name}}when you deploy your application on the Mainnet.
 
 See [how to manage application profiles]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#manage-testnet-and-mainnet-configurations) for details. 
 
 ### App-specific and Global Keys
 
-- Mainnet configuration settings require [configuring keyspace]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#configure-mainnet-keyspace)
+- Mainnet configuration settings require [configuring keyspace type]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#configure-mainnet-keyspace)
 - App-specific keys are the default
 - Developers must submit a verification form and seek approval for enabling global keys 
-- Global keys are less secure but enable simpler user experience whereby users see the same wallet address across when they log into any app in the Arcana ecosystem
+- Global keys enable a simpler user experience whereby users see the same wallet address across when they log into any app in the {{config.extra.arcana.company_name}} ecosystem. Users must ensure that they do not sign any malicious transactions of any fraudulent app. To mitigate this risk, {{config.extra.arcana.company_name}} requires developers to submit a verification form before the global keys feature is enabled for an app.
 
 ### Monitor Application Usage Metrics
 
 - Both Testnet and Mainnet Usage are now tracked for monthly active users (MAU). The application dashboard screen displays usage metrics.
 - 'Testnet' configuration profile screen displays Testnet usage
 - 'Mainnet' configuration profile screen displays Mainnet usage
-- No charges are levied for using Arcana Testnet. Billing for Arcana Mainnet usage will be calculated at the end of every month.
+- No charges are levied for using {{config.extra.arcana.company_name}} Testnet. Billing for {{config.extra.arcana.company_name}} Mainnet usage will be calculated at the end of every month.
   
-See [Arcana Developer Dashboard User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#monitor-usage) for details.
+See [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#monitor-usage) for details.
 
-![Dashboard Usage Metrics](/img/an_db_usage_metrics.png)
+![Dashboard Usage Metrics](/img/an_db_usage_metrics.png){.an-screenshots-noeffects width="75%"}
 
 ### Wallet Enhancements 
 
@@ -74,11 +82,13 @@ Auto-refresh of the account balance amount is now supported.
 
 ### Audits
 
-Arcana smart contracts and ADKG subsystem have been audited by Certik. See [Audit Reports]({{page.meta.arcana.root_rel_path}}/audit/index.md) for details.
+{{config.extra.arcana.company_name}}  smart contracts and ADKG subsystem have been audited by Certik. See [Audit Reports]({{page.meta.arcana.root_rel_path}}/audit/index.md) for details.
 
 ---
 
 ## Get Started
+
+---
 
 {==
 
@@ -86,20 +96,20 @@ Arcana smart contracts and ADKG subsystem have been audited by Certik. See [Audi
 
 ==}
 
-See [Auth SDK Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md). 
+See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [how-to guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) in the Getting Started section. 
 
-For step-by-step instructions, see [how to integrate with Auth SDK]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) guide. 
-
-Check out the sample dApp integration example with the Arcana SDKs for [React]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md),[Vue](https://github.com/arcana-network/basic-storage-wallet-integration) dApps.
-
----
+Check out the sample app integration example for apps using the [React/NextJS]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md), and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
 ## Migrate to v1.0.0
 
-Are you using an older version of the Arcana Auth SDK? Refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the latest version.
+---
+
+Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the latest version.
 
 ---
 
 ## Questions? 
 
-Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md) and other developer resources or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+---
+
+Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [{{config.extra.arcana.company_name}} Support]({{page.meta.arcana.root_rel_path}}/support.md).

@@ -1,16 +1,14 @@
 ---
-slug: /walletaddswitchntwk
-id: idwalletaddswitchntwk
-title: Add/Switch Network
-sidebar_custom_props:
-  cardIcon: 🔏
+alias: how-to-add-switch-wallet-network-programmatically
+title: 'How to Add or Switch Network in the Arcana wallet programmatically'
+description: 'Instructions on how Web3 app developers can update the app and programmatically add/switch network in the Arcana wallet so that app users can access the configured blockchain networks when they use the wallet UI.'
 arcana:
   root_rel_path: ../..
 ---
 
 # Add/Switch Networks
 
-In this guide, you will learn how to programmatically add a blockchain network or switch to a different network when using the {{config.extra.arcana.wallet_name}} in the context of a Web3 app. Developers can add any [supported blockchain networks]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains) that are not already part of the default networks displayed in the {{config.extra.arcana.wallet_name}} UI. 
+In this guide, you will learn how to programmatically add a blockchain network or switch to a different network when using the {{config.extra.arcana.wallet_name}} in the context of a Web3 app. Developers can add any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]] that are not already part of the default networks displayed in the {{config.extra.arcana.wallet_name}} UI. 
 
 When a network addition or a switch is initiated programmatically, a request for user approval pops up in the wallet screen, asking for permission from the user to allow the app to switch to the requested blockchain network.
 

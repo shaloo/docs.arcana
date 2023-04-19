@@ -1,8 +1,7 @@
 ---
-slug: /walletui
-id: idwalletui
-sidebar_custom_props:
-  cardIcon: 📺
+alias: arcana-wallet-user-guide
+title: 'Arana Wallet User Guide'
+description: 'Learn how to use the Arcana wallet within a Web3 app context, how to use the various Web3 wallet operations supported by the wallet such as viewing account balance, sending and receiving tokens, NFTs, add and switch networks and more.'
 arcana:
   root_rel_path: ..
 ---
@@ -19,7 +18,7 @@ Developers who wish to programmatically enable the Web3 wallet operations in an 
       
       Next, follow the [instructions to integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and then add code to [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). The authenticated users can instantly access the  {{config.extra.arcana.wallet_name}} in the context of the app. Developers can add code to bring up the wallet UI in the context of the authenticated users, initiated Web3 wallet operations, and enable authenticated users to sign blockchain transactions.
 
-      For more details, see [ {{config.extra.arcana.product_name}} Quick Start Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_qs.md) and the [ {{config.extra.arcana.wallet_name}} Developers Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
+      For more details, see [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [ {{config.extra.arcana.wallet_name}} Developers Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
 
 ## Prerequisites
 
@@ -78,7 +77,7 @@ Once the user takes action on the pending transactions, the wallet notification 
 
 ### Add/Select a Network
 
-The {{config.extra.arcana.wallet_name}} allows authenticated app users to sign blockchain transactions on various [supported blockchain networks]({{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.md#supported-blockchains). By default, a few of the supported networks are automatically displayed in the wallet home screen. Users can select a different network from the drop-down list. Additional networks can be added to the default list as long as they are supported by {{config.extra.arcana.product_name}}. 
+The {{config.extra.arcana.wallet_name}} allows authenticated app users to sign blockchain transactions on various [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]]. By default, a few of the supported networks are automatically displayed on the wallet home screen. Users can select a different network from the drop-down list. Additional networks can be added to the default list as long as they are supported by {{config.extra.arcana.product_name}}. 
 
 To add a network:
 

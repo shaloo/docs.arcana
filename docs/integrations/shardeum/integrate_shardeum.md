@@ -39,7 +39,7 @@ To enable the {{config.extra.arcana.wallet_name}} after integrating the Web3 app
 
 ## Step 4: Configure & Switch to the Shardeum Network
 
-To ensure that the {{config.extra.arcana.wallet_name}} shows up for an authenticated user with preconfigured Shardeum Network, the developer must configure, and add Shardeum Network programmatically by using the `wallet_addEthereumChain` JSON-RPC method and then switch to it via wallet_switchEthereumChain JSON-RPC method. Set up requisite hooks for JSON-RPC.
+To ensure that the {{config.extra.arcana.wallet_name}} shows up for an authenticated user with pre-configured Shardeum Network, the developer must configure, and add Shardeum Network programmatically by using the `wallet_addEthereumChain` JSON-RPC method and then switch to it via wallet_switchEthereumChain JSON-RPC method. Set up requisite hooks for JSON-RPC.
 
 ### Enable JSON-RPC Hooks
 
@@ -100,5 +100,5 @@ The wallet displays a 'Proceed' button to allow for user confirmation before the
 ## See Also
 
 * [{{config.extra.arcana.wallet_name}} Developers' Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md)
-* [{{config.extra.arcana.sdk_name}} Usage Guide]({{page.meta.arcana.root_rel_path}}/walletsdk/wallet_usage.md)
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
