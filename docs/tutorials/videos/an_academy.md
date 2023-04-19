@@ -69,7 +69,7 @@ Check out this video to see the  {{config.extra.arcana.wallet_name}} in action f
 
 !!! tip
 
-      See [ {{config.extra.arcana.sdk_name}} Use cases]({{page.meta.arcana.root_rel_path}}/use_cases.md).
+      See [[use-cases|{{config.extra.arcana.product_name}} Use cases]].
 
 ---
 

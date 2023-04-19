@@ -1,8 +1,7 @@
 ---
-slug: /whyan
-id: idwhyan
-sidebar_custom_props:
-  cardIcon: 📝
+alias: why-arcana-auth
+title: 'Why Arcana Auth'
+description: 'Learn about why a Web3 app developer needs a solution like Arcana Auth and what problems in Web3 it solves?'
 arcana:
   root_rel_path: .
 ---
@@ -23,7 +22,7 @@ If you are building Web3 apps that require complete data privacy, and security, 
 
 At {{config.extra.arcana.company_name}}, we take security, privacy, and ownership seriously. We are actively working towards tracking and plugging in any vulnerabilities in our solution.
 
-Take a quick look at the overview of the [architecture and key components]({{page.meta.arcana.root_rel_path}}/howitworks.md) of the {{config.extra.arcana.product_name}} and see [{{config.extra.arcana.company_name}} Network Technical White Paper v1.0](https://www.notion.so/arcananetwork/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for implementation details.
+Take a quick look at the overview of the [[auth-architecture|architecture and key components]] of the {{config.extra.arcana.product_name}} and see [{{config.extra.arcana.company_name}} Network Technical White Paper v1.0](https://www.notion.so/arcananetwork/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for implementation details.
 
 !!! tip
 
@@ -51,7 +50,7 @@ Read more about the [{{config.extra.arcana.wallet_name}} features]({{page.meta.a
 
 ## Flexibility & Choice
 
-Tailor the user experience for your Web3 applications as per your use case and target audience. Learn more about the [{{config.extra.arcana.product_name}} Use Cases]({{page.meta.arcana.root_rel_path}}/use_cases.md).
+Tailor the user experience for your Web3 applications as per your use case and target audience. Learn more about the [[use-cases|{{config.extra.arcana.product_name}} Use Cases]].
 
 ## See Also
 

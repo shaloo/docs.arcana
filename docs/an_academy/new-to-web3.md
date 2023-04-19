@@ -66,13 +66,13 @@ Get a firm grip on the topics listed under the prerequisites section. These will
 
 Now that you are familiar with the basics, let us take a look at what {{config.extra.arcana.product_name}} is and what it can do for Web3 app developers.
 
-* [What is {{config.extra.arcana.product_name}}?]({{page.meta.arcana.root_rel_path}}/whatisan.md)
+* [[what-is-arcana-auth|What is {{config.extra.arcana.product_name}}?]]
 
-* [Why should you use {{config.extra.arcana.sdk_name}}?]({{page.meta.arcana.root_rel_path}}/whyan.md)
+* [[why-arcana-auth|Why should you use {{config.extra.arcana.sdk_name}}?]]
 
-* [Auth Use Cases]({{page.meta.arcana.root_rel_path}}/use_cases.md)
+* [[how-to-use-auth|How to use the {{config.extra.arcana.sdk_name}} in Web3 apps?]]
 
-* [How to integrate with the {{config.extra.arcana.sdk_name}}?]({{page.meta.arcana.root_rel_path}}/howdoiuse.md)
+* [[use-cases|Auth Use Cases]]
 
 ## Step 2: Getting Started with the {{config.extra.arcana.sdk_name}}
 

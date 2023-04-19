@@ -1,9 +1,7 @@
 ---
-slug: /howitworks
-id: howitworks
-sidebar_custom_props:
-  cardIcon: ⚙️
-description: High-level overview of how Arcana Auth works.
+alias: auth-architecture
+title: 'Arcana Auth Architecture'
+description: 'A high-level overview of how the Arcana Auth works, key components and their interactions.'
 arcana:
   root_rel_path: .
 ---

@@ -1,5 +1,5 @@
 ---
-alias: arcana-auth-use-cases
+alias: use-cases
 title: 'Arcana Auth Use Cases'
 description: 'What problems does Arcana Auth solve? What can Web3 app developers gain by integrating apps with the Auth SDK?'
 arcana:

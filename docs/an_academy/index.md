@@ -10,9 +10,9 @@ arcana:
 
 Developer resources for using {{config.extra.arcana.product_name}}.
 
-[Understanding {{config.extra.arcana.product_name}} :material-bookshelf:](../understanding_an/index.md){ .md-button }
+[[index-about-auth|Understanding {{config.extra.arcana.product_name}} :material-bookshelf:]]{ .md-button }
 
-[{{config.extra.arcana.product_name}} Architecture :fontawesome-solid-users-gear:](../howitworks.md){ .md-button }
+[[auth-architecture|{{config.extra.arcana.product_name}} Architecture :fontawesome-solid-users-gear:]]{ .md-button }
 
 [Concepts :fontawesome-solid-puzzle-piece:](../concepts/index.md){ .md-button }
 

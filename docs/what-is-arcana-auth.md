@@ -1,8 +1,7 @@
 ---
-slug: /whatisan
-id: idwhatisan
-sidebar_custom_props:
-  cardIcon: 📝
+alias: what-is-arcana-auth
+title: 'What is Arcana Auth?'
+description: 'About Arcana Auth, what are the key constituents of Arcana Auth and how is it documented? How is the Arcana Auth documentation organized?'
 arcana:
   root_rel_path: .
 ---

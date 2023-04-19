@@ -6,7 +6,7 @@ arcana:
   root_rel_path: .
 ---
 
-# How do I use it?
+# How to use Arcana Auth in Web3 Apps?
 
 The {{config.extra.arcana.product_name}} is meant for Web3 app developers. It is really simple to integrate an app with the {{config.extra.arcana.sdk_name}} to quickly onboard users via selected authentication providers and allow authenticated users to sign blockchain transactions.
 
@@ -18,7 +18,7 @@ The {{config.extra.arcana.product_name}} is meant for Web3 app developers. It is
 
 Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-Use the {{config.extra.arcana.dashboard_name}} to [register and configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) your application as per the [use case]({{page.meta.arcana.root_rel_path}}/use_cases.md). The app registration process assigns a unique **{{config.extra.arcana.app_address}}** to every application. The **{{config.extra.arcana.app_address}}** is required for integrating your application with the {{config.extra.arcana.sdk_name}}.
+Use the {{config.extra.arcana.dashboard_name}} to [register and configure]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) your application as per the [[use-cases| use case]]. The app registration process assigns a unique **{{config.extra.arcana.app_address}}** to every application. The **{{config.extra.arcana.app_address}}** is required for integrating your application with the {{config.extra.arcana.sdk_name}}.
 
 Enable and configure the requisite [authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) so that the app users can choose one to easily onboard the app.
 
