@@ -94,10 +94,9 @@ nav:
       - Auth SDK: faq/faq_auth.md
       - Validator Nodes: faq/faq_validator.md
     - Troubleshooting Guide: troubleshooting.md
-    - Release Notes:
+    - Release Notes: 
       - relnotes/index.md
-      - Arcana Auth: relnotes/rn_main_auth_latest.md
-      - Past Auth Versions: 
+    - Release Archives: 
         - relnotes/archives/index.md
         - Migration Guides:
           - migration/index.md
@@ -106,17 +105,17 @@ nav:
           - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
           - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
           - v0.2.x -> v0.3.0: migration/beta_auth_v0.3.0_migration.md
-        - Release Info:
+        - Release Notes:
           - relnotes/relinfo/index.md
           - Auth 1.0.3 : relnotes/rn_main_auth_v1.0.3.md
           - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
           - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md
           - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
           - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
-        - Changelog:
-          - changelog/index.md
-          - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.3
-          - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.4
+    - Changelog:
+      - changelog/index.md
+      - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.3
+      - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.4
     - Blockchain Integrations:
       - EVM Chains:
         - Shardeum: 

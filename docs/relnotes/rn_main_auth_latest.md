@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Release Notes Arcana Auth 
+# Arcana Auth: Release Notes
 
 {==
 
