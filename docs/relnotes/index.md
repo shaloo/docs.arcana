@@ -6,7 +6,7 @@ arcana:
 
 # Arcana Auth: Release Notes
 
- %
+{% include "./text-snippets/rn-template.md" %}
 
 
 <!--
