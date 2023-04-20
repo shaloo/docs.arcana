@@ -33,9 +33,13 @@ The latest {{config.extra.arcana.product_name}} provides enhanced wallet securit
 
 See the [MFA user's guide]({{page.meta.arcana.root_rel_path}}/user_guides/mfa/mfa_ug.md) to learn more about how the app users can enable MFA for their app accounts and use the enhanced wallet security.
 
+<!--
+
 ### Billing & Invoices
 
 {{config.extra.arcana.product_name}} now supports [billing and invoicing features]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for Arcana Mainnet usage. Developers can use {{config.extra.arcana.dashboard_name}} to enter billing information and payment methods and to see any pending invoices or past payment details.
+
+-->
 
 ## Product Enhancements
 
