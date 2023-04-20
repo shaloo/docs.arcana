@@ -1,6 +1,12 @@
+---
+alias: index-auth-past-versions
+title: 'Arcana Auth Archives'
+description: 'List of past Auth Version Resources:  Release Notes and Migration Guides'
+
+---
 
 # Past Auth Versions
 
-[Migration Guides :material-camera-enhance:](../../migration/index.md){ .md-button }
+[[past-auth-migration-guides|Migration Guides :material-camera-enhance:]]{ .md-button }
 
-[Release Notes :material-note-text:](../relinfo/index.md){ .md-button }
+[[past-auth-release-notes|Release Notes :material-note-text:]]{ .md-button }

@@ -104,7 +104,7 @@ Check out the sample dApp integration example for apps using the [React/NextJS](
 
 If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package already, then **you are all set!**
 
-But if you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 package.
+But if you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [[auth-past-migration-guides|Migration Guides]] and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 package.
 
 ## Questions? 
 

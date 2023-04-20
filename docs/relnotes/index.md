@@ -101,7 +101,7 @@ Check out the sample dApp integration example for apps using the [React/NextJS](
 
 If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package already, then **you are all set!**
 
-But if you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 package.
+But if you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [[auth-past-migration-guides|Migration Guides]] and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 package.
 
 ## Questions? 
 
@@ -115,7 +115,7 @@ Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshoot
 
 Learn about the latest features offered by the {{config.extra.arcana.product_name}}, usage enhancements, and bug fixes. 
 
-If you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3, we highly recommend you upgrade to the latest [{{config.extra.arcana.sdk_name}} package](https://www.npmjs.com/package/@arcana/auth) and follow the [instructions for migration](../migration/index.md). 
+If you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3, we highly recommend you upgrade to the latest [{{config.extra.arcana.sdk_name}} package](https://www.npmjs.com/package/@arcana/auth) and follow the [[auth-past-migration-guides|instructions for migration]]. 
 
 [Arcana Auth :material-note-text:](./rn_main_auth_latest.md){ .md-button }
 

@@ -13,7 +13,7 @@ In this guide you will learn how the Web3 app developers can deploy apps integra
 
 !!! caution "Already using {{config.extra.arcana.sdk_name}}?"
 
-      If your app is already integrated with an older version of the {{config.extra.arcana.sdk_name}}, v0.3.0 or earlier, use the appropriate [Migration Guide]({{page.meta.arcana.root_rel_path}}/migration/index.md) to upgrade to the latest {{config.extra.arcana.sdk_name}} v{% include "./text-snippets/latest_auth_sdk.md" %}. 
+      If your app is already integrated with an older version of the {{config.extra.arcana.sdk_name}}, v0.3.0 or earlier, use the appropriate [[auth-past-migration-guides|Migration Guide]] to upgrade to the latest {{config.extra.arcana.sdk_name}} v{% include "./text-snippets/latest_auth_sdk.md" %}. 
 
 ## Prerequisites
 

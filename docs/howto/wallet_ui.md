@@ -1,6 +1,6 @@
 ---
 alias: arcana-wallet-user-guide
-title: 'Arana Wallet User Guide'
+title: 'Arcana Wallet User Guide'
 description: 'Learn how to use the Arcana wallet within a Web3 app context, how to use the various Web3 wallet operations supported by the wallet such as viewing account balance, sending and receiving tokens, NFTs, add and switch networks and more.'
 arcana:
   root_rel_path: ..

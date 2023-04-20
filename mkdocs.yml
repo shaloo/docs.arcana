@@ -344,6 +344,7 @@ plugins:
         'whatisan.md': 'what-is-arcana-auth.md'
         'whyan.md': 'why-arcana-auth.md'
         'understanding_an/index.md': 'about-auth/index.md'
+        'migration/index.md': 'migration/archives/index.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

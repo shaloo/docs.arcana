@@ -72,7 +72,7 @@ Check out the sample dApp integration example for apps using the [React/NextJS](
 
 ---
 
-Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [Migration Guides]({{page.meta.arcana.root_rel_path}}/migration/index.md) and upgrade to the latest version.
+Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [[auth-past-migration-guides|Migration Guides]] and upgrade to the latest version.
 
 ## Questions? 
 
