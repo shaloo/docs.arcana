@@ -63,4 +63,4 @@ Once a user authenticates, the following wallet UI is displayed when the app is 
 
 There are no other new features in this release.
 
-For more details about this release, see [{{config.extra.arcana.product_name}} v1.0.1 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.1.md) and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+For more details about this release, see [[rn-main-auth-v1.0.1|{{config.extra.arcana.product_name}} v1.0.1 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].

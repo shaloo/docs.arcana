@@ -26,4 +26,4 @@ Simply upgrade the {{config.extra.arcana.sdk_name}} from v1.0.2 to v1.0.3 and re
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
-See [{{config.extra.arcana.product_name}} v1.0.3 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.3.md) and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+See [[rn-main-auth-v1.0.3|{{config.extra.arcana.product_name}} v1.0.3 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].

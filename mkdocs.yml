@@ -100,18 +100,18 @@ nav:
         - archives/index.md
         - Migration Guides:
           - migration/archives/index.md
-          - v1.0.2 -> v1.0.3: migration/main_auth_v1.0.3_migration.md
-          - v1.0.1 -> v1.0.2: migration/main_auth_v1.0.2_migration.md
-          - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
-          - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
-          - v0.2.x -> v0.3.0: migration/beta_auth_v0.3.0_migration.md
+          - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
+          - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
+          - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
+          - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
+          - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
         - Release Notes:
           - relnotes/archives/index.md
-          - Auth 1.0.3 : relnotes/rn_main_auth_v1.0.3.md
-          - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
-          - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md
-          - Auth 1.0.0 (Mainnet): relnotes/rn_main_auth_v1.0.0.md
-          - Auth 0.3.0 (Testnet): relnotes/rn_beta_auth_v0.3.0.md
+          - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
+          - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
+          - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
+          - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
+          - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
     - Changelog:
       - changelog/index.md
       - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.3
@@ -345,6 +345,8 @@ plugins:
         'whyan.md': 'why-arcana-auth.md'
         'understanding_an/index.md': 'about-auth/index.md'
         'migration/index.md': 'migration/archives/index.md'
+        'relnotes/rn_main_auth_v1.0.3.md': 'relnotes/rn-main-auth-v1.0.3.md'
+        'migration/main_auth_v1.0.3_migration.md': 'migration/main-auth-v1.0.3-migration.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

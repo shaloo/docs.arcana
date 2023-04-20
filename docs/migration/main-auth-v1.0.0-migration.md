@@ -20,7 +20,7 @@ The following section lists changes between {{config.extra.arcana.sdk_name}} v0.
 
 !!! caution 
 
-      If you are using {{config.extra.arcana.sdk_name}} v0.2.2 or older, please see [How to migrate to {{config.extra.arcana.sdk_name}} v0.3.0]({{page.meta.arcana.root_rel_path}}/migration/beta_auth_v0.3.0_migration.md).
+      If you are using {{config.extra.arcana.sdk_name}} v0.2.2 or older, please see [[migration-guide-v0.3.0|How to migrate to {{config.extra.arcana.sdk_name}} v0.3.0]].
 
 ### {{config.extra.arcana.dashboard_name}} 
 
@@ -105,4 +105,4 @@ Once a user authenticates, the following wallet UI is displayed when the app is 
 
 Besides Testnet/Mainnet and Global Keyspace features, the {{config.extra.arcana.sdk_name}} v1.0.0 uses a new, improved asynchronous distributed key generation (ADKG) subsystem. In addition to the DKG nodes operated by Arcana, two nodes are run and managed by Comdex and LugaNodes. 
 
-For more details, see [{{config.extra.arcana.product_name}} v1.0.0 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.0.md) and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+For more details, see [[rn-main-auth-v1.0.0|{{config.extra.arcana.product_name}} v1.0.0 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].

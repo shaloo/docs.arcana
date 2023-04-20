@@ -250,7 +250,7 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       If you are using an older version of the {{config.extra.arcana.sdk_name}} before v1.0.0, simply upgrading the package to v1.0.0 or beyond is not sufficient. Your older app configuration settings will no longer work. If you allow users to log in, their auth plug-and-play pop-up UI will not show any of the configured social providers. 
 
-      Please follow the instructions in the [Migration to v1.0.0 Guide]({{page.meta.arcana.root_rel_path}}/migration/main_auth_v1.0.1_migration.md) before integrating with the {{config.extra.arcana.sdk_name}} v1.0.0. We highly recommend that you use the latest {{config.extra.arcana.sdk_name}}.
+      Please follow the instructions in the [[migration-guide-v1.0.1|Migration to v1.0.0 Guide]] before integrating with the {{config.extra.arcana.sdk_name}} v1.0.0. We highly recommend that you use the latest {{config.extra.arcana.sdk_name}}.
 
       If your app users continue to see the same issue of social providers not showing after migrating properly, please double-check the **{{config.extra.arcana.app_address}}** that is specified at the time of instantiating the `AuthProvider`.  If you are using v1.0.0, and do not explicitly specify any `network` value while instantiating the `AuthProvider`, then by default 'Mainnet' is selected. In this case, make sure you provide the **{{config.extra.arcana.app_address}}** assigned to your app's 'Mainnet' configuration profile. If you specify the wrong **{{config.extra.arcana.app_address}}** then you will not see the social providers when the {{config.extra.arcana.wallet_name}} UI comes up after login.
 

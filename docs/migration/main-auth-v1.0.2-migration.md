@@ -29,7 +29,7 @@ The following section lists changes between {{config.extra.arcana.sdk_name}} v1.
 
 * {{config.extra.arcana.wallet_name}}  now supports fiat/on-ramp feature that allows users to buy cryptocurrency and tokens.
 * The wallet UI has a new minimized widget.
-* There was a bug that allowed users to log into a different app using the same tab where they had logged in without having to explicitly log in to a different app in the same tab. This is now fixed. For details, see the [release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.2.md).
+* There was a bug that allowed users to log into a different app using the same tab where they had logged in without having to explicitly log in to a different app in the same tab. This is now fixed. For details, see the [[rn-main-auth-v1.0.2|release notes]].
 
 ## How to Migrate to v1.0.2?
 
@@ -43,4 +43,4 @@ Simply upgrade the {{config.extra.arcana.sdk_name}} to the latest package v1.0.2
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" />
 
-See [{{config.extra.arcana.product_name}} v1.0.2 release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_main_auth_v1.0.2.md) and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+See [[rn-main-auth-v1.0.2|{{config.extra.arcana.product_name}} v1.0.2 release notes]].

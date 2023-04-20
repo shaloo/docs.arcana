@@ -50,4 +50,4 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" />
 
-The new improved {{config.extra.arcana.product_name}} now supports NFT preview, NFT transactions, and management of NFT collections. A new combined notification screen displays blockchain transactions related to smart contracts, tokens as well as NFTs. For details, see [{{config.extra.arcana.product_name}} release notes]({{page.meta.arcana.root_rel_path}}/relnotes/rn_beta_auth_v0.3.0.md).
+The new improved {{config.extra.arcana.product_name}} now supports NFT preview, NFT transactions, and management of NFT collections. A new combined notification screen displays blockchain transactions related to smart contracts, tokens as well as NFTs. For details, see [[rn-beta-auth-v0.3.0|{{config.extra.arcana.product_name}} release notes]].
