@@ -13,7 +13,7 @@ arcana:
 
 Learn about the latest features offered by the {{config.extra.arcana.product_name}}, usage enhancements, and bug fixes. 
 
-If you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3, we highly recommend you upgrade to the latest [{{config.extra.arcana.sdk_name}} package](https://www.npmjs.com/package/@arcana/auth) and follow the [[auth-past-migration-guides|instructions for migration]]. 
+If you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3, we highly recommend you upgrade to the latest [{{config.extra.arcana.sdk_name}} package](https://www.npmjs.com/package/@arcana/auth) and follow the [[index-migration-guides|instructions for migration]]. 
 
 [Arcana Auth :material-note-text:](./rn_main_auth_latest.md){ .md-button }
 

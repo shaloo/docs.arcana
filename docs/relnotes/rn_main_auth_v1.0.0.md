@@ -1,8 +1,7 @@
 ---
-slug: /rn_main_auth_v1_0_0
-id: idrnmainauthv100
-sidebar_custom_props:
-  cardIcon: 🏁
+alias: rn-main-auth-v1.0.0
+title: 'Release Notes Arcana Auth v1.0.0'
+description: 'Arcana Auth product release details for v1.0.0. What is new, what features have been added, optimizations and performance changes, and more.'
 arcana:
   root_rel_path: ..
 ---
@@ -104,7 +103,7 @@ Check out the sample app integration example for apps using the [React/NextJS]({
 
 ---
 
-Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [[auth-past-migration-guides|Migration Guides]] and upgrade to the latest version.
+Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
 
 ---
 

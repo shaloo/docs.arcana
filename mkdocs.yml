@@ -96,17 +96,17 @@ nav:
     - Troubleshooting Guide: troubleshooting.md
     - Release Notes: 
       - relnotes/index.md
-    - Release Archives: 
-        - relnotes/archives/index.md
+    - Archives: 
+        - archives/index.md
         - Migration Guides:
-          - migration/index.md
+          - migration/archives/index.md
           - v1.0.2 -> v1.0.3: migration/main_auth_v1.0.3_migration.md
           - v1.0.1 -> v1.0.2: migration/main_auth_v1.0.2_migration.md
           - v1.0.0 -> v1.0.1: migration/main_auth_v1.0.1_migration.md
           - v0.3.0 -> v1.0.0: migration/main_auth_v1.0.0_migration.md
           - v0.2.x -> v0.3.0: migration/beta_auth_v0.3.0_migration.md
         - Release Notes:
-          - relnotes/relinfo/index.md
+          - relnotes/archives/index.md
           - Auth 1.0.3 : relnotes/rn_main_auth_v1.0.3.md
           - Auth 1.0.2 : relnotes/rn_main_auth_v1.0.2.md
           - Auth 1.0.1 : relnotes/rn_main_auth_v1.0.1.md

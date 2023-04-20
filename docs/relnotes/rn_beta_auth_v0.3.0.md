@@ -1,8 +1,7 @@
 ---
-slug: /rn_beta_auth_0_3_0
-id: idrnbetaauth030
-sidebar_custom_props:
-  cardIcon: 🏁
+alias: rn-beta-auth-v0.3.0
+title: 'Release Notes Arcana Auth v0.3.0'
+description: 'Arcana Auth product release details for v0.3.0. What is new, what features have been added, optimizations and performance changes, and more.'
 arcana:
   root_rel_path: ..
 ---
@@ -74,7 +73,7 @@ See the [notifications screen]({{page.meta.arcana.root_rel_path}}/howto/wallet_u
 
 !!! tip
 
-      If you were using the {{config.extra.arcana.sdk_name}} v0.2.2 release or earlier, we highly recommend that you refer to the [{{config.extra.arcana.product_name}} 0.3.0 Migration Guide]({{page.meta.arcana.root_rel_path}}/migration/beta_auth_v0.3.0_migration.md).
+      If you were using the {{config.extra.arcana.sdk_name}} v0.2.2 release or earlier, we highly recommend that you refer to the [[migration-guide-v0.3.0|{{config.extra.arcana.product_name}} 0.3.0 Migration Guide]].
 
 ---
 
