@@ -35,7 +35,7 @@ Web3 app developer can use the {{config.extra.arcana.dashboard_name}} to registe
 | [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)   | Configure the {{config.extra.arcana.sdk_name}} usage  | Register Web3 app with {{config.extra.arcana.company_name}}, configure user onboarding options, configure the {{config.extra.arcana.wallet_name}} user experience    |
 | [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)      | Simplify user onboarding and signing blockchain transactions  | Social authentication, passwordless login, standard Ethereum provider interface via the embedded, non-custodial {{config.extra.arcana.wallet_name}} |
 
-You can also check out various [control flows]({{page.meta.arcana.root_rel_path}}/user_flows/index.md) for user authentication and key management functions.
+You can also check out various [[index-user-flows|control flows]] for user authentication and key management functions.
 
 Besides these components, the {{config.extra.arcana.product_name}} has an internal component called [Gateway]({{page.meta.arcana.root_rel_path}}/concepts/gateway_nodes.md) that is utilized for managing application configuration settings and communicating with the [{{config.extra.arcana.company_name}} smart contracts]({{page.meta.arcana.root_rel_path}}/concepts/ansmartc/index.md).
 

@@ -177,8 +177,8 @@ nav:
         - Usage Metrics: concepts/usage_metrics.md
         - Validator Nodes: concepts/validator_nodes.md
       - Usage Flows: 
-        - user_flows/index.md
-        - User Auth and DKG: user_flows/user_auth_and_dkg.md
+        - user-flows/index.md
+        - User Auth and DKG: user-flows/user-auth-and-dkg.md
       - New to Web3:  an_academy/new-to-web3.md
   - DKG Validators: 
     - onboard-validators.md
@@ -347,6 +347,8 @@ plugins:
         'migration/index.md': 'migration/archives/index.md'
         'relnotes/rn_main_auth_v1.0.3.md': 'relnotes/rn-main-auth-v1.0.3.md'
         'migration/main_auth_v1.0.3_migration.md': 'migration/main-auth-v1.0.3-migration.md'
+        'user_flows/index.md': 'user-flows/index.md'
+        'user_flows/user_auth_and_dkg.md': 'user-flows/user-auth-and-dkg.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

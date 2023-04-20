@@ -16,6 +16,6 @@ Developer resources for using {{config.extra.arcana.product_name}}.
 
 [Concepts :fontawesome-solid-puzzle-piece:](../concepts/index.md){ .md-button }
 
-[Usage Flows :material-clipboard-flow-outline:](../user_flows/index.md){ .md-button }
+[[index-user-flows|Usage Flows :material-clipboard-flow-outline:]]{ .md-button }
 
 [[new-to-web3| New to Web3 :material-new-box:]]{ .md-button }
