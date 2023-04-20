@@ -50,11 +50,11 @@ An under-development application can be deployed on the {{config.extra.arcana.co
     !!! note
           Do remember to use the correct {{config.extra.arcana.app_address}} for integrating with the {{config.extra.arcana.sdk_name}}when you deploy your application on the Mainnet.
 
-See [how to manage application profiles]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#manage-testnet-and-mainnet-configurations) for details. 
+See [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|how to manage application profiles]] for details. 
 
 ### App-specific and Global Keys
 
-- Mainnet configuration settings require [configuring keyspace type]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#configure-mainnet-keyspace)
+- Mainnet configuration settings require [[dashboard-user-guide#configure-mainnet-keyspace|configuring keyspace type]]
 - App-specific keys are the default
 - Developers must submit a verification form and seek approval for enabling global keys 
 - Global keys enable a simpler user experience whereby users see the same wallet address across when they log into any app in the {{config.extra.arcana.company_name}} ecosystem. Users must ensure that they do not sign any malicious transactions of any fraudulent app. To mitigate this risk, {{config.extra.arcana.company_name}} requires developers to submit a verification form before the global keys feature is enabled for an app.
@@ -66,7 +66,7 @@ See [how to manage application profiles]({{page.meta.arcana.root_rel_path}}/db/c
 - 'Mainnet' configuration profile screen displays Mainnet usage
 - No charges are levied for using {{config.extra.arcana.company_name}} Testnet. Billing for {{config.extra.arcana.company_name}} Mainnet usage will be calculated at the end of every month.
   
-See [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#monitor-usage) for details.
+See [[dashboard-user-guide#monitor-usage|{{config.extra.arcana.dashboard_name}} User Guide]] for details.
 
 ![Dashboard Usage Metrics](/img/an_db_usage_metrics.png){.an-screenshots-noeffects width="75%"}
 

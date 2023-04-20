@@ -1,8 +1,7 @@
 ---
-slug: /config_dashboard
-id: idconfigdashboard
-sidebar_custom_props:
-  cardIcon: ⚒️
+alias: dashboard-user-guide
+title: 'Arcana Developer Dashboard User Guide'
+description: 'Web3 app developers can use the Arcana Developer Dashboard to register and configure the apps before integration with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 ---
@@ -15,7 +14,7 @@ Developers must first register the app by using the [{{config.extra.arcana.dashb
 
 By default, each newly registered app is associated with a 'Testnet' configuration profile. When the app is deployed, it is set to use the {{config.extra.arcana.company_name}} Testnet.
 
-This guide will walk you through the various configuration options available on the {{config.extra.arcana.dashboard_name}} to tailor the {{config.extra.arcana.sdk_name}} usage.  For instructions on how to install {{config.extra.arcana.sdk_name}} and integrate your application, refer to the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] .
+This guide will walk you through the various configuration options available on the {{config.extra.arcana.dashboard_name}} to tailor the {{config.extra.arcana.sdk_name}} usage.  For instructions on how to install {{config.extra.arcana.sdk_name}} and integrate your application, refer to the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]].
 
 ## Prerequisites
 

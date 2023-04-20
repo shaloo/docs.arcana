@@ -23,7 +23,7 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 The latest {{config.extra.arcana.product_name}} provides enhanced wallet security for more robust user authentication through multi-factor authentication. Web3 app users can choose to enable it when they log into an app. Once enabled, it cannot be turned off. For details, see [how Arcana MFA]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md) works in apps that integrate with the {{config.extra.arcana.sdk_name}}.
 
-See the [MFA user's guide]({{page.meta.arcana.root_rel_path}}/user_guides/mfa/mfa_ug.md) to learn more about how the app users can enable MFA for their app accounts and use the enhanced wallet security.
+See the [[mfa-user-guide|MFA user's guide]] to learn more about how the app users can enable MFA for their app accounts and use the enhanced wallet security.
 
 <!--
 

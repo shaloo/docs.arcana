@@ -128,7 +128,7 @@ After successful authentication, an app user will see a minimized wallet. On cli
 
 ![Wallet Display NextJS App](/img/nextjs_wallet_display.png){.an-screenshots}
 
-See [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md), [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md), and the [{{config.extra.arcana.dashboard_name}} User Guide]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md) for more details.
+See [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md), [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md), and the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]] for more details.
 
 !!! caution "Use the latest {{config.extra.arcana.sdk_name}}"
 

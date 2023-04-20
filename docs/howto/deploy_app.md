@@ -61,7 +61,7 @@ Visit the app dashboard screen to view the 'Testnet' configuration profile and m
 
 ### Deploying App (Mainnet Configuration)
 
-Before deploying the app on the Arcana Mainnet, make sure that there exists a 'Mainnet' configuration profile for the app. By default, when you register an app, only the 'Testnet' configuration profile is created. See [how to create the 'Mainnet' configuration profile]({{page.meta.arcana.root_rel_path}}/db/config_dApp_with_db.md#manage-configurations) section in the {{config.extra.arcana.dashboard_name}} User Guide.
+Before deploying the app on the Arcana Mainnet, make sure that there exists a 'Mainnet' configuration profile for the app. By default, when you register an app, only the 'Testnet' configuration profile is created. See [[dashboard-user-guide#manage-configurations|how to create the 'Mainnet' configuration profile]] section in the {{config.extra.arcana.dashboard_name}} User Guide.
 
 !!! tip "Check Mainnet Configuration Profile"
 

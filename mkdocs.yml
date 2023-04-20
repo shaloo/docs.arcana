@@ -76,15 +76,15 @@ nav:
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/an_academy.md
   - User Guides:
-      - user_guides/index.md
-      - Using Arcana Dashboard: db/config_dApp_with_db.md
+      - user-guides/index.md
+      - Using Arcana Dashboard: db/config-dApp-with-db.md
       - Using Arcana Wallet: 
-        - user_guides/wallet_ui/index.md
+        - user-guides/wallet-ui/index.md
         - Basic Wallet Operations: howto/wallet_ui.md
         - Export Private Key: howto/wallet_exkey.md
         - Manage Tokens: howto/wallet_manage_tokens.md
         - Manage NFTs: howto/wallet_manage_nft.md
-      - MFA Setup User Guide: user_guides/mfa/mfa_ug.md
+      - MFA Setup User Guide: user-guides/mfa/mfa-ug.md
   - Developer Resources:
     - Handling Auth Errors: web-sdk/auth-error-msg.md
     - FAQ:
@@ -349,6 +349,10 @@ plugins:
         'migration/main_auth_v1.0.3_migration.md': 'migration/main-auth-v1.0.3-migration.md'
         'user_flows/index.md': 'user-flows/index.md'
         'user_flows/user_auth_and_dkg.md': 'user-flows/user-auth-and-dkg.md'
+        'user_guides/index.md': 'user-guides/index.md'
+        'user_guides/wallet_ui/index.md': 'user-guides/wallet-ui/index.md'
+        'user_guides/mfa/mfa_ug.md': 'user-guides/mfa/mfa-ug.md'
+        'db/config_dApp_with_db.md': 'db/config-dApp-with-db.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

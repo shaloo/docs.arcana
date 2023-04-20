@@ -137,10 +137,10 @@ To see the details of a transaction, click on the arrow next to the transaction 
 
 ## What's Next?
 
-You can use {{config.extra.arcana.wallet_name}} UI to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and [more]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
+You can use {{config.extra.arcana.wallet_name}} UI to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and [[index-wallet-user-guide| more]].
 
 ## See also
 
 * [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
-* [Using Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md)
+* [[index-wallet-user-guide|Using Web3 wallet operations]]
 * [Managing tokens]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_tokens.md)

@@ -1,8 +1,7 @@
 ---
-slug: /mfa-user-guide
-id: idmfauserguide
-sidebar_custom_props:
-  cardIcon: 📺
+alias: mfa-user-guide
+title: 'MFA User Guide'
+description: 'Web3 app users can enable enhanced wallet security by using Arcana Auth MFA feature. Learn more about how to set up MFA while using a Web3 app that is integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---

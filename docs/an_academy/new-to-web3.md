@@ -84,7 +84,7 @@ There are two ways to add user onboarding functionality in an app using the {{co
 
 With the {{config.extra.arcana.sdk_name}}, developers can easily enable the embedded, non-custodial {{config.extra.arcana.wallet_name}} for authenticated users and allow them to sign blockchain transactions. See the [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
 
-To learn about how the users access the {{config.extra.arcana.wallet_name}} UI to perform Web3 operations and sign blockchain transactions, see the [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/user_guides/wallet_ui/index.md).
+To learn about how the users access the {{config.extra.arcana.wallet_name}} UI to perform Web3 operations and sign blockchain transactions, see the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
 
 *Now that you understand the {{config.extra.arcana.sdk_name}} usage better let's get into some sample applications and coding!*
 

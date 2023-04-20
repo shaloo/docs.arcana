@@ -1,9 +1,7 @@
 ---
-slug: /indexusingwallet
-id: idiindexusingwallet
-title: Arcana Wallet User Guide
-sidebar_custom_props:
-  cardIcon: 📺
+alias: index-wallet-user-guide
+title: 'Arcana Wallet User Guide'
+description: 'Web3 app users can use this guide to quickly figure out how to use the Arcana wallet once they authenticate and log in an app that is integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---
