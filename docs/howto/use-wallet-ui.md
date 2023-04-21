@@ -177,7 +177,7 @@ Click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="2
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_nft_assets.png" width="20%"/>
 
-For details, see [how to send, share, and manage NFTs using the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_nft.md) guide.
+For details, see [[use-wallet-to-manage-nfts|how to send, share, and manage NFTs using the {{config.extra.arcana.wallet_name}}]] UI.
 
 ### View User Profile Details
 

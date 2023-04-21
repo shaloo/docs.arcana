@@ -83,7 +83,7 @@ nav:
         - Basic Wallet Operations: howto/use-wallet-ui.md
         - Export Private Key: howto/use-wallet-to-export-keys.md
         - Manage Tokens: howto/use-wallet-to-manage-tokens.md
-        - Manage NFTs: howto/wallet_manage_nft.md
+        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
       - MFA Setup User Guide: user-guides/mfa/mfa-ug.md
   - Developer Resources:
     - Handling Auth Errors: web-sdk/auth-error-msg.md
@@ -363,6 +363,7 @@ plugins:
         'howto/wallet_ui.md': 'howto/use-wallet-ui.md'
         'howto/wallet_manage_tokens.md': 'howto/use-wallet-to-manage-tokens.md'
         'howto/wallet_exkey.md': 'howto/use-wallet-to-export-keys.md'
+        'howto/wallet_manage_nft.md': 'howto/use-wallet-to-manage-nfts.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

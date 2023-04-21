@@ -118,4 +118,4 @@ You can use {{config.extra.arcana.wallet_name}} UI to sign blockchain transactio
 
 * [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
 * [[index-wallet-user-guide|Using Web3 wallet operations]]
-* [Managing NFTs]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_nft.md)
+* [[use-wallet-to-manage-nfts|Managing NFTs]]

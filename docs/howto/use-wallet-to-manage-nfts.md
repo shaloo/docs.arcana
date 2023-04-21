@@ -1,9 +1,7 @@
 ---
-slug: /walletmanagenft
-id: idwalletmanagenft
-title: Manage NFTs
-sidebar_custom_props:
-  cardIcon: 📤
+alias: use-wallet-to-manage-nfts
+title: 'Manage NFTs'
+description: 'Web3 apps can integrate with the Arcana Auth SDK and allow ap users to use Arcana wallet UI and manage NFT assets. Users can view NFT details, send and share NFTs, monitor NFT transaction activity done via the Arcana wallet and create NFT collections.'
 arcana:
   root_rel_path: ..
 ---

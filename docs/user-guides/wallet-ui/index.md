@@ -18,4 +18,4 @@ Users can perform various Web3 wallet operations and sign blockchain transaction
 
 [[use-wallet-ui-to-manage-tokens|Manage Tokens :fontawesome-solid-coins:]]{ .md-button }
 
-[Manage NFTs :material-image-lock: :material-image-multiple:](../../howto/wallet_manage_nft.md){ .md-button }
+[[use-wallet-to-manage-nfts|Manage NFTs :material-image-lock: :material-image-multiple:]]{ .md-button }

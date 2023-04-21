@@ -36,7 +36,7 @@ A new separate wallet screen is now available to manage and view details related
   - Transfer NFTs from within the wallet
   - Easily add NFTs to the wallet by searching from a list of popular collections on Ethereum Mainnet
   
-Refer to the [documentation on managing NFT Assets]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_nft.md).
+Refer to the [[use-wallet-to-manage-nfts|documentation on managing NFT Assets]].
 
 <img src="/img/an_wallet_nft_asset_thumbnail.png" width="200"/>
 
