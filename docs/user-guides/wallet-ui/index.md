@@ -14,7 +14,7 @@ Users can perform various Web3 wallet operations and sign blockchain transaction
 
 [[arcana-wallet-user-guide|Basic Wallet Operations :material-signature-image:]]{ .md-button }
 
-[[use-wallet-to-export-keys|Export Private Key :material-key-chain:]]{ .md-button }
+[[use-wallet-to-export-keys| Export Private Keys :material-key-chain:]]{ .md-button }
 
 [[use-wallet-ui-to-manage-tokens|Manage Tokens :fontawesome-solid-coins:]]{ .md-button }
 
