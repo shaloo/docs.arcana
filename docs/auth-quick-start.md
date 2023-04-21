@@ -103,7 +103,7 @@ Here are some examples of {{config.extra.arcana.sdk_name}} usage:
 
   For more details on how users interact with the {{config.extra.arcana.wallet_name}}, see [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md). 
 
-  Developers can refer to the [[#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}} User Guide]] to learn more about how to register and configure the apps. Also, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and the {% include "./text-snippets/authsdkref_url.md" %} for various functions offered by the {{config.extra.arcana.sdk_name}}. To programmatically access Web3 wallet operations, see [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
+  Developers can refer to the [[dashboard-user-guide#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}} User Guide]] to learn more about how to register and configure the apps. Also, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and the {% include "./text-snippets/authsdkref_url.md" %} for various functions offered by the {{config.extra.arcana.sdk_name}}. To programmatically access Web3 wallet operations, see [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
 
 {% include "./text-snippets/sdk_version_info.md" %}
 

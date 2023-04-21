@@ -101,4 +101,4 @@ Are you using an older version of the {{config.extra.arcana.product_name}}? Use 
 
 ---
 
-Refer to [FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_gen.md), [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).

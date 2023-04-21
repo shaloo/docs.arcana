@@ -1,8 +1,7 @@
 ---
-slug: /faq_validator
-id: idfaqvalidator
-sidebar_custom_props:
-  cardIcon: 🙋
+alias: faq-validator
+title: 'FAQ: Validator Onboarding'
+description: 'Frequently asked questions about setting up a validator node for the Arcana ADKG subsystem.'
 arcana:
   root_rel_path: ..
 toc_depth: 2

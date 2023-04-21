@@ -288,4 +288,4 @@ We are working on providing more details regarding validator rewards that answer
 
 * When are the rewards realized and how?
 
-Check out [Validator FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_validator.md) if you have any questions or write to us: {% include "./text-snippets/support_email_link.md" %}
+Check out [[faq-validator|Validator FAQ]] if you have any questions or write to us: {% include "./text-snippets/support_email_link.md" %}

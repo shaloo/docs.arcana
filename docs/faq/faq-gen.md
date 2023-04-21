@@ -1,9 +1,7 @@
 ---
-slug: /faq_gen
-id: idfaqgen
-title: General
-sidebar_custom_props:
-  cardIcon: 🙋
+alias: faq-gen
+title: 'FAQ: General queries about the Arcana Auth product'
+description: 'Frequently asked questions about how to get started and integrate apps with the Auth SDK, which application frameworks are supported, how can user onboarding be customized and more.'
 arcana:
   root_rel_path: ..
 toc_depth: 2

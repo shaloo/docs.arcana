@@ -250,4 +250,4 @@ Select the application you wish to de-register and choose **Delete**.
 
 ## FAQ: {{config.extra.arcana.dashboard_name}}
 
-New users can get help with {{config.extra.arcana.sdk_name}} configuration and {{config.extra.arcana.dashboard_name}} usage by consulting the [{{config.extra.arcana.dashboard_name}} FAQ]({{page.meta.arcana.root_rel_path}}/faq/faq_db.md) or contacting {% include "./text-snippets/support_email_link.md" %}.
+New users can get help with {{config.extra.arcana.sdk_name}} configuration and {{config.extra.arcana.dashboard_name}} usage by consulting the [[faq-db|{{config.extra.arcana.dashboard_name}} FAQ]] or contacting {% include "./text-snippets/support_email_link.md" %}.

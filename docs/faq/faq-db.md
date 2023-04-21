@@ -1,8 +1,7 @@
 ---
-slug: /faq_db
-id: idfaqdb
-sidebar_custom_props:
-  cardIcon: 🙋
+alias: faq-db
+title: 'FAQ: Arcana Developer Dashboard'
+description: 'Frequently asked questions about how developers can use the Arcana Dashboard to register their apps, get a unique clientId, configure the app auth providers and other usage settings before integrating the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 toc_depth: 2

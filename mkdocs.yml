@@ -89,10 +89,10 @@ nav:
     - Handling Auth Errors: web-sdk/auth-error-msg.md
     - FAQ:
       - faq/index.md
-      - General: faq/faq_gen.md
-      - Dashboard: faq/faq_db.md
-      - Auth SDK: faq/faq_auth.md
-      - Validator Nodes: faq/faq_validator.md
+      - General: faq/faq-gen.md
+      - Dashboard: faq/faq-db.md
+      - Auth SDK: faq/faq-auth.md
+      - Validator Nodes: faq/faq-validator.md
     - Troubleshooting Guide: troubleshooting.md
     - Release Notes: 
       - relnotes/index.md

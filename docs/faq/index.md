@@ -1,9 +1,17 @@
+---
+alias: index-faq
+title: 'Arcana Auth FAQ'
+description: 'Frequently asked questions about the Arcana Auth product, usage, billing, registering an app and getting an Arcana clientId and more.'
+arcana:
+  root_rel_path: ..
+---
+
 # FAQ
 
-[General](./faq_gen.md){ .md-button }
+[[faq-gen|General Queries]]{ .md-button }
 
-[{{config.extra.arcana.dashboard_name}}](./faq_db.md){ .md-button }
+[[faq-db| {{config.extra.arcana.dashboard_name}} Queries]]{ .md-button }
 
-[{{config.extra.arcana.sdk_name}}](./faq_auth.md){ .md-button }
+[[faq-auth| {{config.extra.arcana.sdk_name}} Usage Queries]]{ .md-button }
 
-[Validator Setup](./faq_validator.md){.md-button }
+[[faq-validator|Validator Onboarding Queries]]{.md-button }

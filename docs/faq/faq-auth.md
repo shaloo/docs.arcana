@@ -1,8 +1,7 @@
 ---
-slug: /faq_auth
-id: idfaqauth
-sidebar_custom_props:
-  cardIcon: 🙋
+alias: faq-auth
+title: 'FAQ: Arcana Auth SDK'
+description: 'Frequently asked questions about integrating an app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 toc_depth: 2
