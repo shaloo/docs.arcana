@@ -272,7 +272,7 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       3. Lastly, initialize the `AuthProvider` by calling the `init()` function. This is important as it initializes the embedded {{config.extra.arcana.wallet_name}}. Only after a successful login, the {{config.extra.arcana.wallet_name}} is visible in the context of an application. 
       
-      See [integration code sample]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/vanilla_html_js_sample.md#integrate-auth-sdk) for more details.
+      See [[html-js-code-sample#integrate-auth-sdk|integration code sample]] for more details.
 
 ??? an-trbs "User could log in to the Web3 app but subsequent login fails after a developer enables the 'global keys' feature in the app."
 

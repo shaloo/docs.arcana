@@ -43,7 +43,7 @@ Seasoned Web3 developers can jump right in with the [[auth-quick-start|{{config.
 
 Developers can refer to the [How To Guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) to learn more about how to register and configure the Web3 applications before they can be integrated with the {{config.extra.arcana.wallet_name}}.
 
-If you are new to the Web3 ecosystem, we recommend that you check out the [{{config.extra.arcana.company_name}} Academy]({{page.meta.arcana.root_rel_path}}/an_academy/index.md) section first before jumping into the [Tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) and [code samples]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/index.md). 
+If you are new to the Web3 ecosystem, we recommend that you check out the [[index-arcana-academy|{{config.extra.arcana.company_name}} Academy]] section first before jumping into the [Tutorials]({{page.meta.arcana.root_rel_path}}/tutorials/index.md) and [[index-code-samples|code samples]]. 
 
 Web3 application users can learn more about how to use the {{config.extra.arcana.wallet_name}} for performing Web3 operations by referring to the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
 

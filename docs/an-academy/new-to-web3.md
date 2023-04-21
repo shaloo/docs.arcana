@@ -98,7 +98,7 @@ This is a vanilla HTML/JS application that integrates with the {{config.extra.ar
 
 Learn how to integrate {{config.extra.arcana.sdk_name}} in a simple React Application.
 
-[React Example :material-react:]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/react_code_sample.md){ .md-button }
+[[react-code-sample|React Example :material-react:]]{ .md-button }
 
 !!! note "Milestone Achieved!"
 

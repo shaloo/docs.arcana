@@ -1,8 +1,7 @@
 ---
-slug: /nextjscodesample
-id: idnextjscodesample
-sidebar_custom_props:
-  cardIcon: 📃 
+alias: nextjs-code-sample
+title: 'NextJS Code Sample'
+description: 'Sample code to help developers that are building NextJS-based apps to quickly integrate with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---

@@ -1,5 +1,5 @@
 ---
-alias: arcana-video-tutorials
+alias: video-tutorials-get-started
 title: 'Video Tutorials: Get Started with Arcana'
 description: 'Video tutorials to help Web3 app developers to get started with Arcana Auth and learn how to register the app, integrate the app and allow users to sign blockchain transactions.'
 arcana:

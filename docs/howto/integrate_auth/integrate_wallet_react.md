@@ -103,7 +103,7 @@ export default App;
 
 That is all! :material-party-popper:
 
-The React/Next.js app is now successfully integrated with the {{config.extra.arcana.sdk_name}} using the Auth-React wrapper. Check out another example with source code demonstrating [React app integration]({{page.meta.arcana.root_rel_path}}/tutorials/code_samples/react_code_sample.md).
+The React/Next.js app is now successfully integrated with the {{config.extra.arcana.sdk_name}} using the Auth-React wrapper. Check out another example with source code demonstrating [[react-code-sample|React app integration]].
 
 ## What's Next?
 

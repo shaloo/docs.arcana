@@ -1,8 +1,7 @@
 ---
-slug: /reactcodesample
-id: idreactcodesample
-sidebar_custom_props:
-  cardIcon: 📃 
+alias: react-code-sample
+title: 'React Code Sample'
+description: 'Sample code to help developers that are building React-based apps to quickly integrate with the Arcana Auth SDK.' 
 arcana:
   root_rel_path: ../..
 ---

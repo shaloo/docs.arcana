@@ -1,8 +1,7 @@
 ---
-slug: /htmljscodesample
-id: idhtmljscodesample
-sidebar_custom_props:
-  cardIcon: 📃 
+alias: html-js-code-sample
+title: 'HTML/CSS and JavaScript Code Sample'
+description: 'Sample code to help developers that are building HTML/CSS and JavaScript-based apps to quickly integrate with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---
