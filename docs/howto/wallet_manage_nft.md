@@ -143,4 +143,4 @@ You can use {{config.extra.arcana.wallet_name}} UI to sign blockchain transactio
 
 * [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
 * [[index-wallet-user-guide|Using Web3 wallet operations]]
-* [Managing tokens]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_tokens.md)
+* [[use-wallet-ui-to-manage-tokens|Managing tokens with Arcana wallet]]

@@ -80,9 +80,9 @@ nav:
       - Using Arcana Dashboard: db/config-dApp-with-db.md
       - Using Arcana Wallet: 
         - user-guides/wallet-ui/index.md
-        - Basic Wallet Operations: howto/wallet_ui.md
-        - Export Private Key: howto/wallet_exkey.md
-        - Manage Tokens: howto/wallet_manage_tokens.md
+        - Basic Wallet Operations: howto/use-wallet-ui.md
+        - Export Private Key: howto/use-wallet-to-export-keys.md
+        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
         - Manage NFTs: howto/wallet_manage_nft.md
       - MFA Setup User Guide: user-guides/mfa/mfa-ug.md
   - Developer Resources:
@@ -360,6 +360,9 @@ plugins:
         'tutorials/code_samples/react_code_sample.md': tutorials/code-samples/react-code-sample.md
         'tutorials/code_samples/nextjs_code_sample.md': tutorials/code-samples/nextjs-code-sample.md
         'tutorials/videos/an_academy.md': 'tutorials/videos/get-started.md'
+        'howto/wallet_ui.md': 'howto/use-wallet-ui.md'
+        'howto/wallet_manage_tokens.md': 'howto/use-wallet-to-manage-tokens.md'
+        'howto/wallet_exkey.md': 'howto/use-wallet-to-export-keys.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

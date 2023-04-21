@@ -49,7 +49,7 @@ This release has a new UI for blockchain transaction notifications. This combine
   - Smart contract deployment
   - Smart contract interaction
 
-See the [notifications screen]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md#wallet-notifications) for details.
+See the [[arcana-wallet-user-guide#wallet-notifications|notifications screen]] for details.
 
 <img src="/img/an_wallet_combined_notify.png" width="200"/>
 

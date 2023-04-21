@@ -12,10 +12,10 @@ The [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/con
 
 Users can perform various Web3 wallet operations and sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
 
-[Basic Wallet Operations :material-signature-image:](../../howto/wallet_ui.md){ .md-button }
+[[arcana-wallet-user-guide|Basic Wallet Operations :material-signature-image:]]{ .md-button }
 
-[Export Private Key :material-key-chain:](../../howto/wallet_exkey.md){ .md-button }
+[[use-wallet-to-export-keys|Export Private Key :material-key-chain:]]{ .md-button }
 
-[Manage Tokens :fontawesome-solid-coins:](../../howto/wallet_manage_tokens.md){ .md-button }
+[[use-wallet-ui-to-manage-tokens|Manage Tokens :fontawesome-solid-coins:]]{ .md-button }
 
 [Manage NFTs :material-image-lock: :material-image-multiple:](../../howto/wallet_manage_nft.md){ .md-button }

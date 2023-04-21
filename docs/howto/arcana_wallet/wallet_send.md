@@ -14,7 +14,7 @@ In this guide, you will learn how Web3 apps that integrate with the {{config.ext
 
 !!! tip "Receiving tokens"
 
-      To receive tokens using the {{config.extra.arcana.wallet_name}}, the app user can choose to use either the wallet account address or the QR code for an account.  The account address or QR code must be shared with the sender in order to receive tokens. See the [{{config.extra.arcana.sdk_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_tokens.md#manage-token-assets) for details.
+      To receive tokens using the {{config.extra.arcana.wallet_name}}, the app user can choose to use either the wallet account address or the QR code for an account.  The account address or QR code must be shared with the sender in order to receive tokens. See [[use-wallet-ui-to-manage-tokens#manage-token-assets|how to manage token assets in the {{config.extra.arcana.sdk_name}} User Guide]] for details.
 
 ## Prerequisites
 

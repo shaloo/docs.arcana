@@ -74,7 +74,7 @@ Once a user logs in to the HTML/CSS/JS app and authenticates, the {{config.extra
 
 <img class="an-screenshots" alt="AuthProvider HTML/CSS/JS app Connect" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
 
-An authenticated app user can access the {{config.extra.arcana.wallet_name}} UI to perform various Web3 blockchain operations such as adding tokens, checking the wallet balance, switching networks, etc. See [{{config.extra.arcana.wallet_name}} User Guide]({{page.meta.arcana.root_rel_path}}/howto/wallet_ui.md) for more details.
+An authenticated app user can access the {{config.extra.arcana.wallet_name}} UI to perform various Web3 blockchain operations such as adding tokens, checking the wallet balance, switching networks, etc. See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for more details.
 
 ### Use Web3 Wallet Operations
 

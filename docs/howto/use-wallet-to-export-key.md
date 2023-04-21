@@ -1,8 +1,7 @@
 ---
-slug: /walletexportkey
-id: idwalletexportkey
-sidebar_custom_props:
-  cardIcon: 🔏
+alias: use-wallet-to-export-keys
+title: 'Export User Keys'
+description: 'How to use the Arcana wallet UI and export user keys. Once the keys are exported, securing them is the user's responsibility.
 arcana:
   root_rel_path: ..
 ---
@@ -51,7 +50,8 @@ After successfully copying or downloading the key, the user **must** close the {
 
 ## What's Next?
 
-Authenticated users can use the {{config.extra.arcana.wallet_name}} to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and [[index-wallet-user-guide| more]].
+Authenticated users can use the {{config.extra.arcana.wallet_name}} to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and [[index-wallet-user-guide| 
+more]].
 
 ## See also
 

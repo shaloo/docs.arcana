@@ -159,7 +159,7 @@ Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width=
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="20%"/>
 
-For more details, see [how to view, select, send, receive tokens, add custom tokens using the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/wallet_manage_tokens.md) guide.
+For more details, see [[use-wallet-ui-to-manage-tokens|how to view, select, send, receive tokens, add custom tokens using the {{config.extra.arcana.wallet_name}}]] UI.
 
 ### Manage NFT Assets
 
@@ -229,7 +229,7 @@ Once all pending transactions are processed, you will not see the red dot. The {
 
 ### Export Private Key
 
-Click the<img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom left of the {{config.extra.arcana.wallet_name}} to see the user profile screen. It provides an option to export the user's private key. For details, see [how to export a user's private key]({{page.meta.arcana.root_rel_path}}/howto/wallet_exkey.md) guide.
+Click the<img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom left of the {{config.extra.arcana.wallet_name}} to see the user profile screen. It provides an option to export the user's private key. For details, see [[use-wallet-to-export-keys|how to export a user's private key]] guide.
 
 ### Minimize Wallet
 
@@ -251,7 +251,7 @@ Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" widt
 
 ## What's Next?
 
-Besides the basic Web3 wallet operations, the authenticated users can use the {{config.extra.arcana.wallet_name}} to view and [export their private keys]({{page.meta.arcana.root_rel_path}}/howto/wallet_exkey.md), and [[index-wallet-user-guide|manage crypto assets such as tokens and NFTs]]. 
+Besides the basic Web3 wallet operations, the authenticated users can use the {{config.extra.arcana.wallet_name}} to view and [[use-wallet-to-export-keys|export their private keys]], and [[index-wallet-user-guide|manage crypto assets such as tokens and NFTs]]. 
 
 ## See also
 
