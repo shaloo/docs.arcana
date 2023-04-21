@@ -251,7 +251,7 @@ Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" widt
 
 ## What's Next?
 
-Besides the basic Web3 wallet operations, the authenticated users can use the {{config.extra.arcana.wallet_name}} to view and [[use-wallet-to-export-keys|export their private keys]], and [[index-wallet-user-guide|manage crypto assets such as tokens and NFTs]]. 
+Besides the basic Web3 wallet operations, the authenticated users can use the {{config.extra.arcana.wallet_name}} to view and [[use-wallet-to-export-keys|export their private keys]] and [[index-wallet-user-guide|manage crypto assets such as tokens and NFTs]]. 
 
 ## See also
 
