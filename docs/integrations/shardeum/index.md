@@ -6,6 +6,6 @@ arcana:
 
 # Using Shardeum Network with the {{config.extra.arcana.sdk_name}}
 
-[Developers Guide to Integrating Shardeum](./integrate_shardeum.md){ .md-button }
+[[integrate-shardeum|Developers Guide to Integrating Shardeum]]{ .md-button }
 
-[{{config.extra.arcana.wallet_name}} UI: Add Shardeum Network](wallet_config_shardeum.md){ .md-button }
+[[wallet-add-shardeum|{{config.extra.arcana.wallet_name}} UI: Add Shardeum Network]]{ .md-button }

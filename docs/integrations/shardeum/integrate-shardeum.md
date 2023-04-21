@@ -1,4 +1,7 @@
 ---
+alias: integrate-shardeum
+title: 'Use Arcana Auth SDK with Shardeum'
+description: 'This guide explains how app developers can programmatically integrate with Arcana Auth SDK and allow users to work with Shardeum blockchain network.'
 arcana:
   root_rel_path: ../..
 ---

@@ -1,4 +1,7 @@
 ---
+alias: wallet-add-shardeum
+title: 'Add Shardeum network using the Arcana wallet UI'
+description: 'This guide explains how the Web3 apps that are integrated with the Arcana Auth SDK can enable the app users to access Arcana wallet and add Shardeum network using the wallet UI interfaces, manually.'
 arcana:
   root_rel_path: ../..
 ---

@@ -120,8 +120,8 @@ nav:
       - EVM Chains:
         - Shardeum: 
           - integrations/shardeum/index.md
-          - Developer's Guide: integrations/shardeum/integrate_shardeum.md
-          - Using Wallet UI: integrations/shardeum/wallet_config_shardeum.md
+          - Developer's Guide: integrations/shardeum/integrate-shardeum.md
+          - Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
   - Reference:
       - reference/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
@@ -353,6 +353,8 @@ plugins:
         'user_guides/wallet_ui/index.md': 'user-guides/wallet-ui/index.md'
         'user_guides/mfa/mfa_ug.md': 'user-guides/mfa/mfa-ug.md'
         'db/config_dApp_with_db.md': 'db/config-dApp-with-db.md'
+        'integrations/shardeum/integrate_shardeum.md': 'integrations/shardeum/integrate-shardeum.md'
+        'integrations/shardeum/wallet_config_shardeum.md': 'integrations/shardeum/wallet-config-shardeum.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
