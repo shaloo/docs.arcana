@@ -8,7 +8,7 @@ arcana:
 
 # HTML/CSS/JS App Code Sample
 
-First of all, before adding any code to the Web3 app, [register the app and configure user onboarding options and other settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. 
+First of all, before adding any code to the Web3 app, [[configure-auth|register the app and configure user onboarding options and other settings]] using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. 
 
 Next, install the `{{ config.extra.arcana.auth_sdk_pkg_name }}` package, [integrate the HTML/CSS/JS app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet.md), and then add code in the app to [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md). Only authenticated users can access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
@@ -16,7 +16,7 @@ Check out the code sandbox for the [sample vanilla HTML/CSS/JS app](https://code
 
 ## Registration & Configuration
 
-The following {{config.extra.arcana.dashboard_name}} screen shows the app 'Testnet' configuration set up to onboard users via multiple authentication providers: Google, Twitch, and passwordless login. For details, see [how to configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).
+The following {{config.extra.arcana.dashboard_name}} screen shows the app 'Testnet' configuration set up to onboard users via multiple authentication providers: Google, Twitch, and passwordless login. For details, see [[configure-auth|how to configure authentication providers]].
 
 <img class="an-screenshots" alt="NextJS App config" src="/img/nextjs_app_db_setup_google_twitch.png"/>
 

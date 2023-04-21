@@ -19,7 +19,7 @@ In this guide, you will learn how to integrate a vanilla HTML/CSS/JS app with th
 
 * Developers need to first log into the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-* Use the {{config.extra.arcana.dashboard_name}} to [register and configure app settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) before integrating with the {{config.extra.arcana.sdk_name}}. 
+* Use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure app settings]] before integrating with the {{config.extra.arcana.sdk_name}}. 
 
 * Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more supported authentication providers for onboarding the app users.
 
@@ -45,7 +45,7 @@ Follow these two steps:
 
 ### Step 2: Initialize the {{config.extra.arcana.sdk_name}}
 
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) it using the {{config.extra.arcana.dashboard_name}}. Also, specify the [{{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter to manage the wallet user experience.
+Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. Also, specify the [{{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter to manage the wallet user experience.
 
 {% include "./code-snippets/import_auth.md" %}
 

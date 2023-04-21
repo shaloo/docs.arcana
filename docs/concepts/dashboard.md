@@ -27,4 +27,4 @@ The {{config.extra.arcana.dashboard_name}} can be used to register apps with {{c
 
 !!! important
 
-    Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [registered and configured]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the {{config.extra.arcana.dashboard_name}}.
+    Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [[configure-auth|registered and configured]] using the {{config.extra.arcana.dashboard_name}}.

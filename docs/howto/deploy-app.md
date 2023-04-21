@@ -1,8 +1,7 @@
 ---
-slug: /deploy_app
-id: iddeployapp
-sidebar_custom_props:
-  cardIcon: ⚒️
+alias: deploy-app
+title: 'Deploying Web3 App on the Arcana Testnet/Mainnet'
+description: 'Learn how developers can deploy the apps integrated with the Arcana Auth SDK on the Arcana Testnet/Mainnet.'
 arcana:
   root_rel_path: ..
 ---
@@ -17,9 +16,9 @@ In this guide you will learn how the Web3 app developers can deploy apps integra
 
 ## Prerequisites
 
-* Make sure the app is [registered and configured]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) via the {{config.extra.arcana.dashboard_name}}. 
+* Make sure the app is [[configure-auth|registered and configured]] via the {{config.extra.arcana.dashboard_name}}. 
 
-* After successful registration, a unique **{{config.extra.arcana.app_address}}** is assigned to the app. It will be required later for integrating the app with the {{config.extra.arcana.sdk_name}}. Also, a default 'Testnet' configuration profile is associated with every newly registered app. To learn more about various configuration settings, see [how to use the {{config.extra.arcana.dashboard_name}} to configure app settings]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md).
+* After successful registration, a unique **{{config.extra.arcana.app_address}}** is assigned to the app. It will be required later for integrating the app with the {{config.extra.arcana.sdk_name}}. Also, a default 'Testnet' configuration profile is associated with every newly registered app. To learn more about various configuration settings, see [[configure-auth|how to use the {{config.extra.arcana.dashboard_name}} to configure app settings]].
 
 * Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi or RainbowKit. Follow the instructions in the respective [integration guides]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and choose carefully depending on the app type. 
 

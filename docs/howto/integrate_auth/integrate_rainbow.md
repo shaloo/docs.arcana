@@ -44,7 +44,7 @@ Follow these two steps:
 
 ### Step 2: Configure RainbowKit Connector 
 
-Import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) it using the {{config.extra.arcana.dashboard_name}}. Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector` and export the `connectors` to be used later in the `_app.js` file:
+Import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector` and export the `connectors` to be used later in the `_app.js` file:
 
 {% include "./code-snippets/auth_rainbow_configure.md" %}
 

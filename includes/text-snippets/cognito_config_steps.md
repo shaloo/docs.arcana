@@ -8,13 +8,13 @@ Web3 apps that use AWS Cognito for user authentication can enable authenticated 
 
 Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-[Register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md#step-2-register-application) by creating a new entry using the 'Create New App' wizard. 
+[[configure-auth#step-2-register-application|Register the app]] by creating a new entry using the 'Create New App' wizard. 
 
 !!! tip "Registering App"
           
       {% include "./text-snippets/socialauth_add_config.md" %}
 
-Use defaults for configuration settings or edit them as per the app requirements. See the [ How to configure an app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) guide for details.
+Use defaults for configuration settings or edit them as per the app requirements. See the [[configure-auth|How to configure an app]] guide for details.
 
 Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}} and click **Configure > Social Auth** section in the LHS. Copy the **redirect URI** value displayed on the top RHS. This will be used in the next step to generate Cognito OAuth credentials.
 

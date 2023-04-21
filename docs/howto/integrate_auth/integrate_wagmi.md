@@ -45,7 +45,7 @@ Follow these two steps:
 
 ### Step 2: Create and Configure  `ArcanaConnector`
 
-Import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [registering and configuring]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) through the {{config.extra.arcana.dashboard_name}}. 
+Import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] through the {{config.extra.arcana.dashboard_name}}. 
 
 {% include "./code-snippets/auth_wagmi_configure.md" %}
 

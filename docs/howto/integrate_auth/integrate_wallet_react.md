@@ -15,7 +15,7 @@ In this guide, you will learn how to integrate a React/NextJS application with t
 
 * Developers need to first log into the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-* Use the {{config.extra.arcana.dashboard_name}} to [register and configure the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) before integrating it with the {{config.extra.arcana.sdk_name}}. 
+* Use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure the app]] before integrating it with the {{config.extra.arcana.sdk_name}}. 
 
 * Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more supported authentication providers for onboarding the app users.
 

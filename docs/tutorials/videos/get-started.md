@@ -28,11 +28,11 @@ Apps can integrate with the {{config.extra.arcana.sdk_name}} to enable:
 
 * **User authentication:** Onboarding new users via the familiar Web2 authentication providers, passwordless login options
 
-* **Signing blockchain transactions:** Securely signing blockchain transactions using standard EIP-1193 Ethereum provider, perform other Web3 wallet operations such as send blockchain transactions, sending and receiving native and custom tokens, adding/switching blockchain networks, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
+* **Signing blockchain transactions:** Securely signing blockchain transactions using standard EIP-1193 Ethereum provider, performing other Web3 wallet operations such as the 'send' blockchain transactions, sending and receiving native and custom tokens, adding/switching blockchain networks, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
 
 ## Dashboard
 
-Developers can use the {{config.extra.arcana.dashboard_name}} to [register and configure app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} that is needed for integrating the app with the {{config.extra.arcana.sdk_name}}.
+Developers can use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure app]]. Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} that is needed for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 {% include "./text-snippets/tut_comingsoontut_url.md" %}
 

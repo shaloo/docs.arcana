@@ -36,7 +36,7 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 ## How to Migrate to v0.3.0
 
-1. You need to re-register your app using the {{config.extra.arcana.dashboard_name}} . This is required to obtain a fresh **{{config.extra.arcana.app_address}}** and use that for integrating with the {{config.extra.arcana.sdk_name}} . The older **{{config.extra.arcana.app_address}}** will **NOT WORK** with the latest {{config.extra.arcana.sdk_name}} v0.3.0 release. Follow the instructions in the [How to Configure App Guide]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) to re-register and configure your app.
+1. You need to re-register your app using the {{config.extra.arcana.dashboard_name}}. This is required to obtain a fresh **{{config.extra.arcana.app_address}}** and use that for integrating with the {{config.extra.arcana.sdk_name}}. The older **{{config.extra.arcana.app_address}}** will **NOT WORK** with the latest {{config.extra.arcana.sdk_name}} v0.3.0 release. Follow the instructions in the [[configure-auth|How to Configure App Guide]] to re-register and configure your app.
 
 2. If you were using the {{config.extra.arcana.company_name}} Storage SDK, that is no longer supported. You need to stop using Storage SDK in your app for the time being until we begin supporting Storage SDK in a future release.
 

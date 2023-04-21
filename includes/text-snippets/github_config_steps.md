@@ -8,7 +8,7 @@ Web3 apps can select and enable user onboarding via GitHub by configuring the **
 
 Go to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-[Register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md#step-2-register-application) by creating a new entry using the 'Create New App' wizard. 
+[[configure-auth#step-2-register-application|Register the app]] by creating a new entry using the 'Create New App' wizard. 
 
 !!! tip "Registering App"
           

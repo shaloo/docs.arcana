@@ -15,7 +15,7 @@ nav:
   - Quick Start: auth-quick-start.md
   - Getting Started:
       - howto/index.md
-      - Register App: howto/config_dapp.md
+      - Register App: howto/configure-auth.md
       - Configure Auth: 
         - howto/config_auth/index.md
         - Social Providers: 
@@ -63,7 +63,7 @@ nav:
           - Sign Transactions: howto/arcana_wallet/wallet_sign.md
           - Show Wallet: howto/arcana_wallet/wallet_show.md
           - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
-      - Deploy App: howto/deploy_app.md
+      - Deploy App: howto/deploy-app.md
   - Tutorials: 
       - tutorials/index.md
       - Code Samples: 
@@ -364,6 +364,8 @@ plugins:
         'howto/wallet_manage_tokens.md': 'howto/use-wallet-to-manage-tokens.md'
         'howto/wallet_exkey.md': 'howto/use-wallet-to-export-keys.md'
         'howto/wallet_manage_nft.md': 'howto/use-wallet-to-manage-nfts.md'
+        'howto/deploy_app.md': 'howto/deploy-app.md'
+        'howto/config_dapp.md': 'howto/configure-auth.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

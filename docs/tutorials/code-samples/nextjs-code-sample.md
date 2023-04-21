@@ -8,13 +8,13 @@ arcana:
 
 # NextJS App Code Sample
 
-You need to first [register the app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [configure authentication providers]() for onboarding users. After that, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages and integrate the NextJS app.
+You need to first [[configure-auth#step-2-register-application|register the app]] using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [[configure-auth#step-3-configure-application|configure authentication providers]] for onboarding users. After that, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages and integrate the NextJS app.
 
 See [sample NextJS app source](https://github.com/arcana-network/auth-next-js) at GitHub. This is a very basic NextJS app that is created using the [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) template. It integrates with the {{config.extra.arcana.sdk_name}} and uses the built-in, [plug-and-play]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) login UI to onboard users and allow them to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. 
 
 ## Registration & Configuration
 
-The following {{config.extra.arcana.dashboard_name}} screen shows the 'Testnet' configuration settings for the NextJS app such that users can onboard it via Google, Twitch, and passwordless login. See [how to configure app]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md) for details.
+The following {{config.extra.arcana.dashboard_name}} screen shows the 'Testnet' configuration settings for the NextJS app such that users can onboard it via Google, Twitch, and passwordless login. See [[configure-auth|how to configure app]] for details.
 
 ![NextJS App config](/img/nextjs_app_db_setup_google_twitch.png){.an-screenshots}
 

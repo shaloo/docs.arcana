@@ -14,7 +14,7 @@ arcana:
 
 The {{config.extra.arcana.sdk_name}} integrates with Web3 apps and allows them to quickly onboard users. It offers an embedded, non-custodial Web3 wallet that enables authenticated users to sign blockchain transactions on any supported blockchain network. 
 
-Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and [register, configure apps]({{page.meta.arcana.root_rel_path}}/howto/config_dapp.md). Each registered app is assigned a unique **{{config.extra.arcana.app_address}}**. This is used for integrating the app with the {{config.extra.arcana.sdk_name}}. 
+Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and [[configure-auth|register, configure apps]]. Each registered app is assigned a unique **{{config.extra.arcana.app_address}}**. This is used for integrating the app with the {{config.extra.arcana.sdk_name}}. 
 
 <img src="/img/diagrams/d_an_authsdk_light.png#only-light" alt="{{config.extra.arcana.sdk_name}} Diagram" height="20%"/>
 <img src="/img/diagrams/d_an_authsdk_dark.png#only-dark" alt="{{config.extra.arcana.sdk_name}} Diagram Dark" height="20%"/>

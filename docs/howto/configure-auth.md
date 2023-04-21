@@ -1,8 +1,7 @@
 ---
-slug: /config_dapp
-id: idconfigdapp
-sidebar_custom_props:
-  cardIcon: ⚒️
+alias: configure-auth
+title: 'Register & Configure App for using Auth SDK'
+description: 'Developers must first register the app using the Arcana Developer Dashboard and obtain a unique clientId. This clientId value is used to integrate the app with the Auth SDK. After registering the app, use the dashboard to configure auth usage settings and specify which providers will be available for app users to log into the app.'
 arcana:
   root_rel_path: ..
 ---
