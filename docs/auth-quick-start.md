@@ -48,7 +48,7 @@ During app configuration, developers can enable one or more options to onboard a
 
 !!! info "User Onboarding Options"
 
-      Web3 app developers can [configure one or more authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) to let app users choose one of the available options and log in.
+      Web3 app developers can [[index-configure-auth|configure one or more authentication providers]] to let app users choose one of the available options and log in.
         
       If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the [passwordless login]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md) can be used to onboard app users.
 

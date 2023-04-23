@@ -17,7 +17,7 @@ nav:
       - howto/index.md
       - Register App: howto/configure-auth.md
       - Configure Auth: 
-        - howto/config_auth/index.md
+        - howto/configure-auth/index.md
         - Social Providers: 
           - howto/config_social/index.md
           - Discord Setup: howto/config_social/discord_oauth.md
@@ -366,6 +366,7 @@ plugins:
         'howto/wallet_manage_nft.md': 'howto/use-wallet-to-manage-nfts.md'
         'howto/deploy_app.md': 'howto/deploy-app.md'
         'howto/config_dapp.md': 'howto/configure-auth.md'
+        'howto/config_auth/index.md': 'howto/configure-auth/index.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

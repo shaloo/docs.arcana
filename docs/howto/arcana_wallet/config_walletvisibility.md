@@ -17,7 +17,7 @@ Developers can choose to configure the [{{config.extra.arcana.wallet_name}} visi
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[configure-auth|register and configure the app]]. Optionally, [configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md).
+* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[configure-auth|register and configure the app]]. Optionally, [[index-configure-auth|configure authentication providers]].
 
 ## Steps
 

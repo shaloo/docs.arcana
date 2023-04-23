@@ -20,7 +20,7 @@ Use the defaults or provide inputs for various settings as per your application 
 
 === "Social Auth"
 
-    Use the social authentication settings to manage the user onboarding experience. Only the social providers that are configured for an application will be made available in the {{config.extra.arcana.sdk_name}} as user onboarding options. Developers can enable multiple providers for an app and allow users to choose anyone to onboard the app. For details on how to configure authentication providers, see [configuring social providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md).
+    Use the social authentication settings to manage the user onboarding experience. Only the social providers that are configured for an application will be made available in the {{config.extra.arcana.sdk_name}} as user onboarding options. Developers can enable multiple providers for an app and allow users to choose anyone to onboard the app. For details on how to configure authentication providers, see [[index-configure-auth|configuring social providers]].
 
     ??? example "Enable Google, Discord for Onboarding Users"
     
@@ -29,7 +29,7 @@ Use the defaults or provide inputs for various settings as per your application 
           By default, passwordless login is always enabled in the {{config.extra.arcana.sdk_name}}.
     
     * **Redirect URI:** Displays the URL auto-generated for each registered app by {{config.extra.arcana.company_name}}. This is required to complete **OAuth** verification via the selected authentication providers.
-    * **Social Auth:** Select and [configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) for onboarding app users. <br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_social.png"></img>
+    * **Social Auth:** Select and [[index-configure-auth|configure authentication providers]] for onboarding app users. <br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_social.png"></img>
 
 === "{{config.extra.arcana.wallet_name}}"
 

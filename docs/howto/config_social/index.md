@@ -1,8 +1,7 @@
 ---
-slug: /config_social
-id: idconfigdsocial
-sidebar_custom_props:
-  cardIcon: ⚒️
+alias: index-config-social-providers
+title: 'Configure Social Providers'
+description: 'List of social providers that are supported by Arcana Auth for onboarding Web3 app users in apps integrated with the Arcana SDK.'
 arcana:
   root_rel_path: ../..
 ---

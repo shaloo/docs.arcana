@@ -38,7 +38,7 @@ You have successfully registered and configured your application.
 
 ## What's next?
 
-See [how to configure {{config.extra.arcana.sdk_name}} usage]({{page.meta.arcana.root_rel_path}}/howto/config_auth/index.md) for details on setting up authentication providers.
+See [[index-configure-auth|how to configure {{config.extra.arcana.sdk_name}} usage]] for details on setting up authentication providers.
 
 After registering and configuring the application, developers must install the {{config.extra.arcana.sdk_name}} and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) before enabling user onboarding and allowing the authenticated users to sign blockchain transactions. 
 
