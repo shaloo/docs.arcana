@@ -68,7 +68,7 @@ After installing and integrating with the {{config.extra.arcana.sdk_name}}, app 
 
 1. Use the [plug-and-play]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_plugnplay.md) feature of {{config.extra.arcana.sdk_name}} to instantly access the built-in, default pop-up user login interface. No need to build any user login UI in the app. Simply add code asking the user to log in and call the plug-and-play function of the `AuthProvider`. App users can log in by choosing one of the authentication mechanisms configured by the app developer, displayed in the plug-and-play pop-up UI.
 
-2. Build a custom user login UI for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured [social providers]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md) and the [passwordless login option]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md).
+2. Build a custom user login UI for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured [[index-build-social-providers|social providers]] and the [passwordless login option]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md).
 
 ### Sign Blockchain Transactions
 
@@ -91,7 +91,7 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 Here are some examples of {{config.extra.arcana.sdk_name}} usage:
 
-1. See how to integrate an app with the {{config.extra.arcana.sdk_name}} and create a Web2-like familiar user onboarding experience via [Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md), [passwordless login]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md).
+1. See how to integrate an app with the {{config.extra.arcana.sdk_name}} and create a Web2-like familiar user onboarding experience via [[google-social-auth|Google ]], [passwordless login]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md).
 
 2. Manage Web3 user experience for signing blockchain transactions with the {{config.extra.arcana.wallet_name}}:
 

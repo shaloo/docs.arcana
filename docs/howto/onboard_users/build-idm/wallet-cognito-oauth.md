@@ -3,7 +3,7 @@ alias: build-iam-cognito-auth
 title: 'Build AWS Cognito Auth in Web3 Apps'
 description: 'How to custom build user authentication UI and onboard users via the IAM provider, AWS Cognito, in a Web3 app that is integrated with the Arcana Auth SDK.'
 arcana:
-  root_rel_path: ../..
+  root_rel_path: ../../..
   social_provider: "'aws'"
 ---
 

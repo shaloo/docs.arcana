@@ -38,7 +38,7 @@ Developers can easily plug in the popular Web2 sign-up/login mechanisms in the W
 
 To onboard users in a Web3 app, the {{config.extra.arcana.sdk_name}} allows developers to select and configure user authentication providers for the app. Developers can choose the default, built-in plug-and-play user authentication UI via `connect` function of the {{config.extra.arcana.sdk_name}}. Or, they can customize and build a custom user authentication UI, and simply add code to call `loginWithSocial` and `loginWithLink` functions to easily onboard users.
 
-Read more about the [plug-and-play]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) feature, and [how to enable plug-and-play in the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_plugnplay.md). See [onboarding users for apps using custom login UI]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md). 
+Read more about the [plug-and-play]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) feature, and [how to enable plug-and-play in the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_plugnplay.md). See [[index-build-social-providers|onboarding users for apps using custom login UI]]. 
 
 Before you can integrate an app with the {{config.extra.arcana.sdk_name}}, developers must use the {{config.extra.arcana.dashboard_name}} and configure onboarding options and user experience for signing blockchain transactions. Learn about [authentication providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md), and [[index-configure-auth|how to configure authentication providers]] using the {{config.extra.arcana.dashboard_name}}.
 

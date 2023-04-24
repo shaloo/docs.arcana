@@ -48,7 +48,7 @@ After enabling the plug-and-play user onboarding feature in the app, developers 
 ## See also
 
 * [[index-configure-auth|Configure authentication providers]]
-* [Build custom login UI]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/index.md)
+* [[index-build-social-providers|Build custom login UI]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

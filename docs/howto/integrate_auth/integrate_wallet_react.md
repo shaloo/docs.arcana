@@ -111,7 +111,7 @@ After integrating an app with the {{config.extra.arcana.sdk_name}}, developers c
 
 ## See also
 
-* How to onboard app users via [Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md)
+* How to onboard app users via [[google-social-auth|Google ]]
 * [Passwordless authentication using the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]

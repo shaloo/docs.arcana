@@ -16,4 +16,4 @@ Developers can choose to enable user onboarding in their applications by either 
 
 [Enable Plug-and-Play UI :fontawesome-solid-plug:](./wallet_plugnplay.md){ .md-button }
 
-[Build Custom UI for Login :fontawesome-solid-users:](./build_social/index.md){ .md-button } 
+[[index-build-social-providers|Build Custom UI for Login :fontawesome-solid-users:]]{ .md-button } 

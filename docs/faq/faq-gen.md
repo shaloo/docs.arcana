@@ -45,7 +45,7 @@ toc_depth: 2
 
 ??? an-faq "How do I enable the Web2-like social provider login experience in a Web3 app to onboard users?"
 
-      First, register the app with the Arcana Network. Next, configure one or more authentication providers for onboarding app users by configuring the **Social Auth** settings using the {{config.extra.arcana.dashboard_name}}. Then integrate the app with the {{config.extra.arcana.sdk_name}} and add code to onboard users. For example, see [how to onboard users via Google]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/build_social/wallet_google_oauth.md).
+      First, register the app with the Arcana Network. Next, configure one or more authentication providers for onboarding app users by configuring the **Social Auth** settings using the {{config.extra.arcana.dashboard_name}}. Then integrate the app with the {{config.extra.arcana.sdk_name}} and add code to onboard users. For example, see [[google-social-auth|how to onboard users via Google]].
 
 ??? an-faq "How do I enable passwordless login in an app to onboard new users?"
 
