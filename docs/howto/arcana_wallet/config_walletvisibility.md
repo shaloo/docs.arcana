@@ -56,7 +56,7 @@ The Web3 app is successfully integrated with the {{config.extra.arcana.sdk_name}
 
 ## What's Next?
 
-After integrating an app with the {{config.extra.arcana.sdk_name}}, with the requisite wallet visibility setting, the developers can add code to [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and allow the authenticated users to sign blockchain transactions, and manage crypto assets using the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) UI. Developers can also add code to call other [Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/web3ops/index.md) programmatically in the app.
+After integrating an app with the {{config.extra.arcana.sdk_name}}, with the requisite wallet visibility setting, the developers can add code to [[index-onboard-users|onboard users]] and allow the authenticated users to sign blockchain transactions, and manage crypto assets using the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) UI. Developers can also add code to call other [Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/web3ops/index.md) programmatically in the app.
 
 ## See also
 

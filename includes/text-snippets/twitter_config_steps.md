@@ -79,4 +79,4 @@ Save the settings. {{config.extra.arcana.company_name}} assigns an **{{config.ex
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 
-*You are all set with the Twitter configuration. [Integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*
+*You are all set with the Twitter configuration. [Integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, [[index-onboard-users|onboard users]] and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*

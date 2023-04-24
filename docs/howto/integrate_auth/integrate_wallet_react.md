@@ -107,12 +107,12 @@ The React/Next.js app is now successfully integrated with the {{config.extra.arc
 
 ## What's Next?
 
-After integrating an app with the {{config.extra.arcana.sdk_name}}, developers can add code to [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and [enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for authenticated users to sign blockchain transactions.
+After integrating an app with the {{config.extra.arcana.sdk_name}}, developers can add code to [[index-onboard-users|onboard users]] and [enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for authenticated users to sign blockchain transactions.
 
 ## See also
 
 * How to onboard app users via [[google-social-auth|Google ]]
-* [Passwordless authentication using the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
+* [[build-password-less-auth|Passwordless authentication using the {{config.extra.arcana.sdk_name}}]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

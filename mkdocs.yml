@@ -38,20 +38,20 @@ nav:
           - RainbowKit App: howto/integrate_auth/integrate_rainbow.md
         - Vue dApp: howto/integrate_auth/integrate_wallet_vue.md
       - Onboard Users: 
-        - howto/onboard_users/index.md
-        - Plug and Play Login UI: howto/onboard_users/wallet_plugnplay.md
+        - howto/onboard-users/index.md
+        - Plug and Play Login UI: howto/onboard-users/use-plug-play-auth.md
         - Custom Login UI:
-          - Build Passwordless Auth: howto/onboard_users/wallet_pwdless_login.md
+          - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
           - Build Social Auth: 
-            - howto/onboard_users/build-social/index.md
-            - Discord: howto/onboard_users/build-social/discord-oauth.md
-            - GitHub: howto/onboard_users/build-social/github-oauth.md
-            - Google: howto/onboard_users/build-social/google-oauth.md
-            - Twitch: howto/onboard_users/build-social/twitch-oauth.md
-            - Twitter: howto/onboard_users/build-social/twitter-oauth.md
+            - howto/onboard-users/build-social/index.md
+            - Discord: howto/onboard-users/build-social/discord-oauth.md
+            - GitHub: howto/onboard-users/build-social/github-oauth.md
+            - Google: howto/onboard-users/build-social/google-oauth.md
+            - Twitch: howto/onboard-users/build-social/twitch-oauth.md
+            - Twitter: howto/onboard-users/build-social/twitter-oauth.md
           - Build Custom Auth:
-            - howto/onboard_users/build-idm/index.md
-            - Cognito: howto/onboard_users/build-idm/wallet-cognito-oauth.md           
+            - howto/onboard-users/build-idm/index.md
+            - Cognito: howto/onboard-users/build-idm/wallet-cognito-oauth.md           
       - Enable Arcana Wallet:
         - howto/arcana_wallet/index.md
         - Configure Wallet Visibility: howto/arcana_wallet/config_walletvisibility.md
@@ -369,14 +369,16 @@ plugins:
         'howto/config_auth/index.md': 'howto/configure-auth/index.md'
         'howto/config_idm/index.md': 'howto/config-idm/index.md'
         'howto/config_idm/cognito_oauth.md': 'howto/config-idm/cognito-oauth.md'
-        'howto/plug_idm/index.md': 'howto/onboard_users/build-idm/index.md'
-        'howto/plug_idm/wallet_cognito_oauth.md': 'howto/onboard_users/build-idm/wallet-cognito-oauth.md'
-        'howto/onboard_users/build_social/index.md': 'howto/onboard_users/build-social/index.md'
-        'howto/onboard_users/build_social/wallet_discord_oauth.md': 'howto/onboard_users/build-social/discord-oauth.md'
-        'howto/onboard_users/build_social/wallet_github_oauth.md': 'howto/onboard_users/build-social/github-oauth.md'
-        'howto/onboard_users/build_social/wallet_google_oauth.md': 'howto/onboard_users/build-social/google-oauth.md'
-        'howto/onboard_users/build_social/wallet_twitch_oauth.md': 'howto/onboard_users/build-social/twitch-oauth.md'
-        'howto/onboard_users/build_social/wallet_twitter_oauth.md': 'howto/onboard_users/build-social/twitter-oauth.md'
+        'howto/plug_idm/index.md': 'howto/onboard-users/build-idm/index.md'
+        'howto/plug_idm/wallet_cognito_oauth.md': 'howto/onboard-users/build-idm/wallet-cognito-oauth.md'
+        'howto/onboard_users/build_social/index.md': 'howto/onboard-users/build-social/index.md'
+        'howto/onboard_users/build_social/wallet_discord_oauth.md': 'howto/onboard-users/build-social/discord-oauth.md'
+        'howto/onboard_users/build_social/wallet_github_oauth.md': 'howto/onboard-users/build-social/github-oauth.md'
+        'howto/onboard_users/build_social/wallet_google_oauth.md': 'howto/onboard-users/build-social/google-oauth.md'
+        'howto/onboard_users/build_social/wallet_twitch_oauth.md': 'howto/onboard-users/build-social/twitch-oauth.md'
+        'howto/onboard_users/build_social/wallet_twitter_oauth.md': 'howto/onboard-users/build-social/twitter-oauth.md'
+        'howto/onboard_users/wallet_plugnplay.md': 'howto/onboard-users/use-plug-play-auth.md'
+        'howto/onboard_users/wallet_pwdless_login.md': 'howto/onboard-users/build-pwdless-auth.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

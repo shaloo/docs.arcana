@@ -1,8 +1,7 @@
 ---
-slug: /pwdlessauth
-id: idpwdlessauth
-sidebar_custom_props:
-  cardIcon: 🤝
+alias: build-password-less-auth
+title: 'Build Passwordless Auth'
+description: 'How to custom build user authentication UI and onboard users via passwordless authentication option in a Web3 app that is integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---

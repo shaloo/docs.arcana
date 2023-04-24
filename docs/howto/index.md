@@ -13,6 +13,6 @@ We recommend that you check out these guides to learn how to register and config
 
 [Integrate with {{config.extra.arcana.sdk_name}} :material-lock-check:](./integrate_auth/index.md){ .md-button }
 
-[Onboard Users :fontawesome-solid-user-gear:](./onboard_users/index.md){ .md-button }
+[[index-onboard-users|Onboard Users :fontawesome-solid-user-gear:]]{ .md-button }
 
 [Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:](./arcana_wallet/index.md){ .md-button }

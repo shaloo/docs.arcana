@@ -10,7 +10,7 @@ arcana:
 
 Developers can use this guide to integrate Web3 apps with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and quickly build the following features:
 
-* [Onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
+* [[index-onboard-users|Onboard users]] easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
 * [Enable {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) and allow authenticated users to sign blockchain transactions, manage crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
 
 !!! note "Already using Auth?"
@@ -50,7 +50,7 @@ During app configuration, developers can enable one or more options to onboard a
 
       Web3 app developers can [[index-configure-auth|configure one or more authentication providers]] to let app users choose one of the available options and log in.
         
-      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the [passwordless login]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md) can be used to onboard app users.
+      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the [[build-password-less-auth|passwordless login]] can be used to onboard app users.
 
 ## Install {{config.extra.arcana.sdk_name}}
 
@@ -66,9 +66,9 @@ After integrating with the {{config.extra.arcana.sdk_name}} app developers can u
 
 After installing and integrating with the {{config.extra.arcana.sdk_name}}, app developers can add code to onboard the users. There are two ways to build user onboarding in the app:
 
-1. Use the [plug-and-play]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_plugnplay.md) feature of {{config.extra.arcana.sdk_name}} to instantly access the built-in, default pop-up user login interface. No need to build any user login UI in the app. Simply add code asking the user to log in and call the plug-and-play function of the `AuthProvider`. App users can log in by choosing one of the authentication mechanisms configured by the app developer, displayed in the plug-and-play pop-up UI.
+1. Use the [[use-plug-play-auth|plug-and-play ]] feature of {{config.extra.arcana.sdk_name}} to instantly access the built-in, default pop-up user login interface. No need to build any user login UI in the app. Simply add code asking the user to log in and call the plug-and-play function of the `AuthProvider`. App users can log in by choosing one of the authentication mechanisms configured by the app developer, displayed in the plug-and-play pop-up UI.
 
-2. Build a custom user login UI for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured [[index-build-social-providers|social providers]] and the [passwordless login option]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md).
+2. Build a custom user login UI for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured [[index-build-social-providers|social providers]] and the [[build-password-less-auth|passwordless login option]].
 
 ### Sign Blockchain Transactions
 
@@ -91,7 +91,7 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 Here are some examples of {{config.extra.arcana.sdk_name}} usage:
 
-1. See how to integrate an app with the {{config.extra.arcana.sdk_name}} and create a Web2-like familiar user onboarding experience via [[google-social-auth|Google ]], [passwordless login]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md).
+1. See how to integrate an app with the {{config.extra.arcana.sdk_name}} and create a Web2-like familiar user onboarding experience via [[google-social-auth|Google ]], [[build-password-less-auth|passwordless login]].
 
 2. Manage Web3 user experience for signing blockchain transactions with the {{config.extra.arcana.wallet_name}}:
 

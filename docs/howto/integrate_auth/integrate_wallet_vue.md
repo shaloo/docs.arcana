@@ -61,12 +61,12 @@ The Vue app is now successfully integrated with the {{config.extra.arcana.sdk_na
 
 ## What's Next?
 
-After integrating an app with the {{config.extra.arcana.sdk_name}}, developers can add code to [onboard users]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/index.md) and [enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for authenticated users to sign blockchain transactions.
+After integrating an app with the {{config.extra.arcana.sdk_name}}, developers can add code to [[index-onboard-users|onboard users]] and [enable the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for authenticated users to sign blockchain transactions.
 
 ## See also
 
 * Using the {{config.extra.arcana.sdk_name}} to [[google-social-auth|enable social authentication via Google]]
-* [Passwordless authentication]({{page.meta.arcana.root_rel_path}}/howto/onboard_users/wallet_pwdless_login.md)
+* [[build-password-less-auth|Passwordless authentication]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
