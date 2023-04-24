@@ -20,7 +20,7 @@ Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippet
 
 Use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure]] your application as per the [[use-cases| use case]]. The app registration process assigns a unique **{{config.extra.arcana.app_address}}** to every application. The **{{config.extra.arcana.app_address}}** is required for integrating your application with the {{config.extra.arcana.sdk_name}}.
 
-Enable and configure the requisite [authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) so that the app users can choose one to easily onboard the app.
+Enable and configure the requisite [[index-config-social-providers|authentication providers]] so that the app users can choose one to easily onboard the app.
 
 See [[configure-auth|how to configure app]] and the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]] for details.
 

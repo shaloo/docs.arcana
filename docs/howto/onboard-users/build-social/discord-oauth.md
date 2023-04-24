@@ -17,7 +17,7 @@ In this guide, you will learn how an app that builds a custom login UI and integ
 
 * Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[configure-auth#step-2-register-application|register the app]] and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-* Carefully [follow the instructions to configure Discord]({{page.meta.arcana.root_rel_path}}/howto/config_social/discord_oauth.md) as the authentication provider.
+* Carefully [[config-auth-discord|follow the instructions to configure Discord]] as the authentication provider.
   
 * Use the appropriate integration method as per the app type and [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
 

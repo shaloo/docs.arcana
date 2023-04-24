@@ -74,7 +74,7 @@ toc_depth: 2
       
       If you do not configure any authentication providers in your 'Testnet' or 'Mainnet' configuration profile settings in the {{config.extra.arcana.dashboard_name}}d, then your app can only onboard users via the passwordless option that is enabled by default. You can use the plug-and-play UI via the `connect` method or build your own auth UI and use the `loginWithLink` method to onboard users via the passwordless login option.
       
-      To enable any authentication providers for app onboarding you must configure them using the {{config.extra.arcana.dashboard_name}}. See the [how to configure authentication providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) guide for more details.
+      To enable any authentication providers for app onboarding you must configure them using the {{config.extra.arcana.dashboard_name}}. See the [[index-config-social-providers|how to configure authentication providers]] guide for more details.
 
 ??? an-faq "Can an application enable more than one authentication provider to onboard users?"  
 

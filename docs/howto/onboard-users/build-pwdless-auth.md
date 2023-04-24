@@ -53,7 +53,7 @@ After enabling passwordless login in the app, developers can use other {{config.
 ## See also
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [Configure Social Providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md)
+* [[index-config-social-providers|Configure Social Providers]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

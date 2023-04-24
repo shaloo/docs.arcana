@@ -14,7 +14,7 @@ Developers who wish to programmatically enable the Web3 wallet operations in an 
 
 ??? info "{{config.extra.arcana.wallet_name}} Developer Guide"
 
-      To enable the {{config.extra.arcana.wallet_name}} in the context of a Web3 app, developers must first [[configure-auth|register the app]] and [configure social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) via the {{config.extra.arcana.dashboard_name}} to authenticate users. 
+      To enable the {{config.extra.arcana.wallet_name}} in the context of a Web3 app, developers must first [[configure-auth|register the app]] and [[index-config-social-providers|configure social providers]] via the {{config.extra.arcana.dashboard_name}} to authenticate users. 
       
       Next, follow the [[index-integrate-app|instructions to integrate the app]] and then add code to [[index-onboard-users|onboard users]]. The authenticated users can instantly access the  {{config.extra.arcana.wallet_name}} in the context of the app. Developers can add code to bring up the wallet UI in the context of the authenticated users, initiated Web3 wallet operations, and enable authenticated users to sign blockchain transactions.
 

@@ -19,12 +19,12 @@ nav:
       - Configure Auth: 
         - howto/configure-auth/index.md
         - Social Providers: 
-          - howto/config_social/index.md
-          - Discord Setup: howto/config_social/discord_oauth.md
-          - GitHub Setup: howto/config_social/github_oauth.md
-          - Google Setup: howto/config_social/google_oauth.md
-          - Twitch Setup: howto/config_social/twitch_oauth.md
-          - Twitter Setup: howto/config_social/twitter_oauth.md
+          - howto/config-social/index.md
+          - Discord Setup: howto/config-social/discord-oauth.md
+          - GitHub Setup: howto/config-social/github-oauth.md
+          - Google Setup: howto/config-social/google-oauth.md
+          - Twitch Setup: howto/config-social/twitch-oauth.md
+          - Twitter Setup: howto/config-social/twitter-oauth.md
         - Custom IAM Providers:
           - howto/config-idm/index.md
           - Cognito: howto/config-idm/cognito-oauth.md
@@ -54,9 +54,9 @@ nav:
             - Cognito: howto/onboard-users/build-idm/cognito-oauth.md           
       - Enable Arcana Wallet:
         - howto/arcana-wallet/index.md
-        - Configure Wallet Visibility: howto/arcana-wallet/config-walletvisibility.md
+        - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
         - Web3 Wallet Ops:
-          - howto/arcana-wallet/web3ops/index.md
+          - howto/arcana-wallet/web3-ops/index.md
           - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
           - Check Wallet Balance: howto/arcana-wallet/balance.md
           - Send Tokens: howto/arcana-wallet/send.md
@@ -387,14 +387,20 @@ plugins:
         'howto/integrate_auth/integrate_rainbow.md': 'howto/integrate-app/rainbow.md'
         'howto/integrate_auth/integrate_wallet_vue.md': 'howto/integrate-app/vue.md'
         'howto/arcana_wallet/index.md': 'howto/arcana-wallet/index.md'
-        'howto/arcana_wallet/config_walletvisibility.md': 'howto/arcana-wallet/config-walletvisibility.md'
-        'howto/arcana_wallet/web3ops/index.md': 'howto/arcana-wallet/web3ops/index.md'
+        'howto/arcana_wallet/config_walletvisibility.md': 'howto/arcana-wallet/config-wallet-visibility.md'
+        'howto/arcana_wallet/web3ops/index.md': 'howto/arcana-wallet/web3-ops/index.md'
         'howto/arcana_wallet/wallet_add_switch_ntwk.md': 'howto/arcana-wallet/add-switch-ntwk.md'
         'howto/arcana_wallet/wallet_balance.md': 'howto/arcana-wallet/balance.md'
         'howto/arcana_wallet/wallet_send.md': 'howto/arcana-wallet/send.md'
         'howto/arcana_wallet/wallet_sign.md': 'howto/arcana-wallet/sign.md'
         'howto/arcana_wallet/wallet_show.md': 'howto/arcana-wallet/show.md'
         'howto/arcana_wallet/wallet_watchasset.md': 'howto/arcana-wallet/watchasset.md'
+        'howto/config_social/index.md': 'howto/config-social/index.md'
+        'howto/config_social/discord_oauth.md': 'howto/config-social/discord-oauth.md'
+        'howto/config_social/github_oauth.md': 'howto/config-social/github-oauth.md'
+        'howto/config_social/google_oauth.md': 'howto/config-social/google-oauth.md'
+        'howto/config_social/twitch_oauth.md': 'howto/config-social/twitch-oauth.md'
+        'howto/config_social/twitter_oauth.md': 'howto/config-social/twitter-oauth.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
