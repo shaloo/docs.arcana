@@ -14,7 +14,7 @@ In this guide, Web3 app users can learn how to manage token assets through the {
 
 * To use the {{config.extra.arcana.wallet_name}}, users must log in to a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}. 
 
-* Depending on the [type of blockchain signing experience]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in.
+* Depending on the [[configure-wallet-visibility|type of blockchain signing experience]] set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in.
 
 ## Token Operations
 

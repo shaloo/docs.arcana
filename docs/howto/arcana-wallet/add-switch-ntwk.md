@@ -1,5 +1,5 @@
 ---
-alias: how-to-add-switch-wallet-network-programmatically
+alias: add-switch-network
 title: 'How to Add or Switch Network in the Arcana wallet programmatically'
 description: 'Instructions on how Web3 app developers can update the app and programmatically add/switch network in the Arcana wallet so that app users can access the configured blockchain networks when they use the wallet UI.'
 arcana:
@@ -44,16 +44,16 @@ The following code snippets show how developers can programmatically add code in
 
 ## What's Next?
 
-After registering the app, configuring authentication providers, integrating the {{config.extra.arcana.sdk_name}} with the app and onboarding users, developers can further add code in the app to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and other [Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/web3ops/index.md).
+After registering the app, configuring authentication providers, integrating the {{config.extra.arcana.sdk_name}} with the app and onboarding users, developers can further add code in the app to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and other [[index-web3-wallet-ops|Web3 wallet operations]].
 
 For a complete list of other JSON RPC calls supported by the {{config.extra.arcana.wallet_name}}, see [JSON-RPC Specifications](https://ethereum.github.io/execution-apis/api-documentation/). 
 
 ## See also
 
 * [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
-* [Configure {{config.extra.arcana.wallet_name}} visibility]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md)
-* [Sign transactions]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_sign.md)
-* [Send transaction]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_send.md)
-* [Check the wallet account balance]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_balance.md)
-* [Watch crypto assets]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/wallet_watchasset.md)
+* [[configure-wallet-visibility|Configure {{config.extra.arcana.wallet_name}} visibility]]
+* [[send-transaction|Send transactions]]
+* [[check-balance|Check the wallet account balance]]
+* [[watch-assets|Watch crypto assets]]
+* [[sign-transaction|Sign transactions]]
 * {% include "./text-snippets/authsdkref_url.md" %}

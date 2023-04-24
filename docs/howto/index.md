@@ -18,4 +18,4 @@ We recommend that you check out these guides to learn how to register and config
 
 [[index-onboard-users|Onboard Users :fontawesome-solid-user-gear:]]{ .md-button }
 
-[Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:](./arcana_wallet/index.md){ .md-button }
+[[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }

@@ -42,7 +42,7 @@ Initialize the newly created `AuthProvider` before adding code in the integrated
 
 {% include "./code-snippets/init_auth.md" %}
 
-Only authenticated users are allowed to sign blockchain transactions and perform Web3 wallet operations using the {{config.extra.arcana.wallet_name}}. To onboard app users, developers can use plug-and-play auth via `connect` method or build custom login UI by plugging in {{config.extra.arcana.sdk_name}} `loginWithSocial` and `loginWithLink` methods. For details, see [[index-onboard-users|how to onboard users]]. You can also plug in additional business logic and [utilize the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) programmatically for allowing authenticated users to sign blockchain transactions.
+Only authenticated users are allowed to sign blockchain transactions and perform Web3 wallet operations using the {{config.extra.arcana.wallet_name}}. To onboard app users, developers can use plug-and-play auth via `connect` method or build custom login UI by plugging in {{config.extra.arcana.sdk_name}} `loginWithSocial` and `loginWithLink` methods. For details, see [[index-onboard-users|how to onboard users]]. You can also plug in additional business logic and [[index-arcana-wallet|utilize the {{config.extra.arcana.wallet_name}}]] programmatically for allowing authenticated users to sign blockchain transactions.
 
 #### Run your App
 
@@ -78,7 +78,7 @@ Initialize the newly created `AuthProvider` before adding code in the integrated
 
 {% include "./code-snippets/init_auth.md" %}
 
-Only authenticated users are allowed to sign blockchain transactions and perform Web3 wallet operations using the {{config.extra.arcana.wallet_name}}. To onboard app users, developers can use plug-and-play auth via `connect` method or build custom login UI by plugging in {{config.extra.arcana.sdk_name}} `loginWithSocial` and `loginWithLink` methods. For details, see [[index-onboard-users|how to onboard users]]. You can also plug in additional business logic and [utilize the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) programmatically for allowing authenticated users to sign blockchain transactions.
+Only authenticated users are allowed to sign blockchain transactions and perform Web3 wallet operations using the {{config.extra.arcana.wallet_name}}. To onboard app users, developers can use plug-and-play auth via `connect` method or build custom login UI by plugging in {{config.extra.arcana.sdk_name}} `loginWithSocial` and `loginWithLink` methods. For details, see [[index-onboard-users|how to onboard users]]. You can also plug in additional business logic and [[index-arcana-wallet|utilize the {{config.extra.arcana.wallet_name}}]] programmatically for allowing authenticated users to sign blockchain transactions.
 
 #### Run your App
 

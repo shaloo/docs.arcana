@@ -1,8 +1,7 @@
 ---
-slug: /configwalletmodes
-id: idconfigwalletmodes
-sidebar_custom_props:
-  cardIcon: ⚒️
+alias: configure-wallet-visibility
+title: 'Configure Wallet Visibility'
+description: 'Web3 app developers can manage whether the wallet is always visible or shows up only when a blockchain transaction is triggered in an app that is integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---
@@ -56,7 +55,7 @@ The Web3 app is successfully integrated with the {{config.extra.arcana.sdk_name}
 
 ## What's Next?
 
-After integrating an app with the {{config.extra.arcana.sdk_name}}, with the requisite wallet visibility setting, the developers can add code to [[index-onboard-users|onboard users]] and allow the authenticated users to sign blockchain transactions, and manage crypto assets using the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) UI. Developers can also add code to call other [Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/web3ops/index.md) programmatically in the app.
+After integrating an app with the {{config.extra.arcana.sdk_name}}, with the requisite wallet visibility setting, the developers can add code to [[index-onboard-users|onboard users]] and allow the authenticated users to sign blockchain transactions, and manage crypto assets using the [[arcana-wallet-user-guide| {{config.extra.arcana.wallet_name}} UI]]. . Developers can also add code to call other [[index-web3-wallet-ops|Web3 wallet operations]] programmatically in the app. For details refer to the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developers Guide]].
 
 ## See also
 

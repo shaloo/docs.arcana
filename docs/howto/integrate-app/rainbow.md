@@ -73,7 +73,7 @@ The Web3 app using RainbowKit is successfully integrated with the {{config.extra
 
 After integrating with the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, developers do not need to explicitly call the user onboarding functions of the {{config.extra.arcana.sdk_name}}. The `ArcanaConnector` is a wrapper around the `AuthProvider` and once Wagmi `createClient` function is called, the `ArcanaConnector` is plugged in as a Wagmi connector. 
 
-When the Wagmi `connect()` function is called for the configured wallet connectors, it automatically brings up the {{config.extra.arcana.sdk_name}} built-in, plug-and-play Auth UI to allow users to onboard the app. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions. Developers can add code to programmatically and [enable Web3 wallet operations]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) in the authenticated user's context.
+When the Wagmi `connect()` function is called for the configured wallet connectors, it automatically brings up the {{config.extra.arcana.sdk_name}} built-in, plug-and-play Auth UI to allow users to onboard the app. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions. Developers can add code to programmatically and [[index-arcana-wallet|enable Web3 wallet operations]] in the authenticated user's context.
 
 !!! info "Using `{{config.extra.arcana.wagmi_sdk_pkg_name}}`"
 

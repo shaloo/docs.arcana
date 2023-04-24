@@ -32,7 +32,7 @@ Once integrated, the {{config.extra.arcana.sdk_name}} enables the embedded, non-
 
 {{config.extra.arcana.sdk_name}} allows developers to either use built-in user login UI offered by the {{config.extra.arcana.sdk_name}} or they can build customized UI for user login. See the [[index-onboard-users|onboarding users]] guide for details.
 
-Once the user is authenticated, developers can use the standard Ethereum provider interface exposed by the {{config.extra.arcana.sdk_name}}, `AuthProvider` to programmatically enable various Web3 wallet functions for the authenticated users. For example, send transactions, get the account balance, sign messages, and more. For details, see the [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
+Once the user is authenticated, developers can use the standard Ethereum provider interface exposed by the {{config.extra.arcana.sdk_name}}, `AuthProvider` to programmatically enable various Web3 wallet functions for the authenticated users. For example, send transactions, get the account balance, sign messages, and more. For details, see the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]].
 
 ## See Also
 

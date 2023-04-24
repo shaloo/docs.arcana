@@ -50,7 +50,7 @@ After registering and configuring the application, developers must install the {
 
 ## See Also
 
-* [Configure wallet visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md)
+* [[configure-wallet-visibility|Configure wallet visibility mode]]
 * [[dashboard-user-guide#delete-application|Deleting Application Entry]]
 * [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|Managing Testnet and Mainnet Configurations]]
 * [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] 

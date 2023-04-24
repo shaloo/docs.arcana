@@ -18,13 +18,13 @@ Developers who wish to programmatically enable the Web3 wallet operations in an 
       
       Next, follow the [[index-integrate-app|instructions to integrate the app]] and then add code to [[index-onboard-users|onboard users]]. The authenticated users can instantly access the  {{config.extra.arcana.wallet_name}} in the context of the app. Developers can add code to bring up the wallet UI in the context of the authenticated users, initiated Web3 wallet operations, and enable authenticated users to sign blockchain transactions.
 
-      For more details, see [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [ {{config.extra.arcana.wallet_name}} Developers Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
+      For more details, see [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developers Guide]].
 
 ## Prerequisites
 
 * To use the {{config.extra.arcana.wallet_name}}, users must log in to a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}. 
 
-* Depending on the [type of blockchain signing experience]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in.
+* Depending on the [[configure-wallet-visibility|type of blockchain signing experience]] set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in.
 
 ##  {{config.extra.arcana.wallet_name}} Features
 
@@ -256,4 +256,4 @@ Besides the basic Web3 wallet operations, the authenticated users can use the {{
 ## See also
 
 * [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
-* [Configure the {{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md)
+* [[configure-wallet-visibility|Configure the {{config.extra.arcana.wallet_name}}]]

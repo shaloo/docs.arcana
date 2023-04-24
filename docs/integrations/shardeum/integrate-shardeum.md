@@ -102,6 +102,6 @@ The wallet displays a 'Proceed' button to allow for user confirmation before the
 
 ## See Also
 
-* [{{config.extra.arcana.wallet_name}} Developers' Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md)
+* [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developers' Guide]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

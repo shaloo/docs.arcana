@@ -82,7 +82,7 @@ After configuring application settings using the {{config.extra.arcana.dashboard
 
 There are two ways to add user onboarding functionality in an app using the {{config.extra.arcana.sdk_name}} by using built-in plug-and-play login UI or building a user login UI from scratch and adding code for enabling various supported authentication providers. For the new Web3 developers, we recommend the [{{config.extra.arcana.sdk_name}} plug-and-play feature]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) that is quick and easy to use. Seasoned developers can build custom user authentication UI. See [[index-onboard-users|User Onboarding Guide]]. 
 
-With the {{config.extra.arcana.sdk_name}}, developers can easily enable the embedded, non-custodial {{config.extra.arcana.wallet_name}} for authenticated users and allow them to sign blockchain transactions. See the [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.
+With the {{config.extra.arcana.sdk_name}}, developers can easily enable the embedded, non-custodial {{config.extra.arcana.wallet_name}} for authenticated users and allow them to sign blockchain transactions. See the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.
 
 To learn about how the users access the {{config.extra.arcana.wallet_name}} UI to perform Web3 operations and sign blockchain transactions, see the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
 

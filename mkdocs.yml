@@ -53,16 +53,16 @@ nav:
             - howto/onboard-users/build-idm/index.md
             - Cognito: howto/onboard-users/build-idm/cognito-oauth.md           
       - Enable Arcana Wallet:
-        - howto/arcana_wallet/index.md
-        - Configure Wallet Visibility: howto/arcana_wallet/config_walletvisibility.md
+        - howto/arcana-wallet/index.md
+        - Configure Wallet Visibility: howto/arcana-wallet/config-walletvisibility.md
         - Web3 Wallet Ops:
-          - howto/arcana_wallet/web3ops/index.md
-          - Add / Switch Network: howto/arcana_wallet/wallet_add_switch_ntwk.md
-          - Check Wallet Balance: howto/arcana_wallet/wallet_balance.md
-          - Send Tokens: howto/arcana_wallet/wallet_send.md
-          - Sign Transactions: howto/arcana_wallet/wallet_sign.md
-          - Show Wallet: howto/arcana_wallet/wallet_show.md
-          - Watch Assets: howto/arcana_wallet/wallet_watchasset.md
+          - howto/arcana-wallet/web3ops/index.md
+          - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
+          - Check Wallet Balance: howto/arcana-wallet/balance.md
+          - Send Tokens: howto/arcana-wallet/send.md
+          - Sign Transactions: howto/arcana-wallet/sign.md
+          - Show Wallet: howto/arcana-wallet/show.md
+          - Watch Assets: howto/arcana-wallet/watchasset.md
       - Deploy App: howto/deploy-app.md
   - Tutorials: 
       - tutorials/index.md
@@ -386,6 +386,15 @@ plugins:
         'howto/integrate_auth/integrate_wagmi.md': 'howto/integrate-app/wagmi.md'
         'howto/integrate_auth/integrate_rainbow.md': 'howto/integrate-app/rainbow.md'
         'howto/integrate_auth/integrate_wallet_vue.md': 'howto/integrate-app/vue.md'
+        'howto/arcana_wallet/index.md': 'howto/arcana-wallet/index.md'
+        'howto/arcana_wallet/config_walletvisibility.md': 'howto/arcana-wallet/config-walletvisibility.md'
+        'howto/arcana_wallet/web3ops/index.md': 'howto/arcana-wallet/web3ops/index.md'
+        'howto/arcana_wallet/wallet_add_switch_ntwk.md': 'howto/arcana-wallet/add-switch-ntwk.md'
+        'howto/arcana_wallet/wallet_balance.md': 'howto/arcana-wallet/balance.md'
+        'howto/arcana_wallet/wallet_send.md': 'howto/arcana-wallet/send.md'
+        'howto/arcana_wallet/wallet_sign.md': 'howto/arcana-wallet/sign.md'
+        'howto/arcana_wallet/wallet_show.md': 'howto/arcana-wallet/show.md'
+        'howto/arcana_wallet/wallet_watchasset.md': 'howto/arcana-wallet/watchasset.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

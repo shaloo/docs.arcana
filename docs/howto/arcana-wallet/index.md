@@ -1,5 +1,5 @@
 ---
-alias: index-howto-web3-wallet-ops
+alias: index-arcana-wallet
 title: 'Enable Arcana Wallet Web3 Operations'
 description: 'How to call the Arcana wallet and Web3 wallet operations in an app integrated with the Arcana Auth SDK for performing wallet operations programmatically - show wallet, check wallet balance, send blockchain transaction, sign blockchain transaction and watch wallet assets.'
 arcana:
@@ -16,8 +16,10 @@ Once the app is integrated with the {{config.extra.arcana.sdk_name}}, developers
 
 The guides below describe how to configure the {{config.extra.arcana.wallet_name}} while integrating the app with the {{config.extra.arcana.sdk_name}} and then add code to call Web3 wallet operations in the context of the authenticated users.
 
-[Configure {{config.extra.arcana.wallet_name}} :material-tools:](./config_walletvisibility.md){ .md-button }
+[[configure-wallet-visibility|Configure {{config.extra.arcana.wallet_name}} :material-tools:]]{ .md-button }
 
-[Web3 Wallet Ops :material-wallet:](./web3ops/index.md){ .md-button }
+[[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet:]]{ .md-button }
 
+<!--
 [[index-build-iam-providers|Apps using Custom IAM Providers :fontawesome-brands-aws:]]{ .md-button }
+-->

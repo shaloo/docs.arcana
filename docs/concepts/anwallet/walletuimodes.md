@@ -34,7 +34,7 @@ Once the user takes action, the request disappears and the user cannot access th
 
 ## Summary
 
-The table below summarizes how `alwaysVisible` parameter specified during the `AuthProvider` initialization in the application code controls the user experience. For step-by-step instructions see [how to configure the {{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/config_walletvisibility.md) guide.
+The table below summarizes how `alwaysVisible` parameter specified during the `AuthProvider` initialization in the application code controls the user experience. For step-by-step instructions see [[configure-wallet-visibility|how to configure the {{config.extra.arcana.wallet_name}} visibility mode]] guide.
 
 | Wallet UI Mode | Flag | User Experience|
 | :------ | :----- | :----------- |
