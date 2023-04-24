@@ -26,7 +26,7 @@ See [[configure-auth|how to configure app]] and the [[dashboard-user-guide|{{con
 
 ## Step 2: Integrate App
 
-After registering and configuring your application using the {{config.extra.arcana.dashboard_name}}, you need to use the unique  **{{config.extra.arcana.app_address}}** assigned to the registered app and [integrate the app with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). Choose the specific instructions depending on the type of the app such as simple HTML/JS app, React/NextJS app or Vue app, apps using the Wagmi, RainbowKit frameworks, etc.
+After registering and configuring your application using the {{config.extra.arcana.dashboard_name}}, you need to use the unique  **{{config.extra.arcana.app_address}}** assigned to the registered app and [[index-integrate-app|integrate the app with the {{config.extra.arcana.sdk_name}}]]. Choose the specific instructions depending on the type of the app such as simple HTML/JS app, React/NextJS app or Vue app, apps using the Wagmi, RainbowKit frameworks, etc.
 
 Once integrated, the {{config.extra.arcana.sdk_name}} enables the embedded, non-custodial Web3 wallet called the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) for every authenticated application user.  Users can sign blockchain transactions with the {{config.extra.arcana.wallet_name}} on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]. The authenticated users can use the wallet to view account balances, switch networks, send tokens, manage NFTs, and other Web3 wallet operations. See the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for usage details.
 

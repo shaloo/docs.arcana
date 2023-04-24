@@ -25,7 +25,7 @@ Developers can choose to configure the [{{config.extra.arcana.wallet_name}} visi
 
 ### Step1: Integrate the App 
 
-Follow the instructions to [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md). During `AuthProvider` instantiation, make sure you set the `alwaysVisible` input parameter to one of the following values as per the required app user experience for signing blockchain transactions:
+Follow the instructions to [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. During `AuthProvider` instantiation, make sure you set the `alwaysVisible` input parameter to one of the following values as per the required app user experience for signing blockchain transactions:
 
 * `alwaysVisible = true`(default): The {{config.extra.arcana.wallet_name}} UI is always visible once the user logs in.
 * `alwaysVisible = false`: The {{config.extra.arcana.wallet_name}} UI is displayed only when a blockchain transaction requires the user's approval.

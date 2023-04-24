@@ -16,7 +16,7 @@ Developers who wish to programmatically enable the Web3 wallet operations in an 
 
       To enable the {{config.extra.arcana.wallet_name}} in the context of a Web3 app, developers must first [[configure-auth|register the app]] and [configure social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) via the {{config.extra.arcana.dashboard_name}} to authenticate users. 
       
-      Next, follow the [instructions to integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and then add code to [[index-onboard-users|onboard users]]. The authenticated users can instantly access the  {{config.extra.arcana.wallet_name}} in the context of the app. Developers can add code to bring up the wallet UI in the context of the authenticated users, initiated Web3 wallet operations, and enable authenticated users to sign blockchain transactions.
+      Next, follow the [[index-integrate-app|instructions to integrate the app]] and then add code to [[index-onboard-users|onboard users]]. The authenticated users can instantly access the  {{config.extra.arcana.wallet_name}} in the context of the app. Developers can add code to bring up the wallet UI in the context of the authenticated users, initiated Web3 wallet operations, and enable authenticated users to sign blockchain transactions.
 
       For more details, see [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [ {{config.extra.arcana.wallet_name}} Developers Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md).
 
@@ -28,7 +28,7 @@ Developers who wish to programmatically enable the Web3 wallet operations in an 
 
 ##  {{config.extra.arcana.wallet_name}} Features
 
-Any Web3 app that [integrates with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) can enable authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}} UI. 
+Any Web3 app that [[index-integrate-app|integrates with the {{config.extra.arcana.sdk_name}}]] can enable authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}} UI. 
 
 The {{config.extra.arcana.wallet_name}} UI allows an authenticated user to perform the following Web3 wallet operations:
 

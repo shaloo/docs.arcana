@@ -76,7 +76,7 @@ Now that you are familiar with the basics, let us take a look at what {{config.e
 
 ## Step 2: Getting Started with the {{config.extra.arcana.sdk_name}}
 
-To use the {{config.extra.arcana.sdk_name}} in your application, you need to first [[configure-auth|register the application]] using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Configure [social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) to onboard users before you [integrate your application]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) and call any {{config.extra.arcana.sdk_name}} functions in your application.
+To use the {{config.extra.arcana.sdk_name}} in your application, you need to first [[configure-auth|register the application]] using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Configure [social providers]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md) to onboard users before you [[index-integrate-app|integrate your application]] and call any {{config.extra.arcana.sdk_name}} functions in your application.
 
 After configuring application settings using the {{config.extra.arcana.dashboard_name}}, you can install the {{config.extra.arcana.sdk_name}} and integrate your application. Once integrated, applications can access the `AuthProvider` interface to onboard users and enable authenticated users to sign blockchain transactions.
 

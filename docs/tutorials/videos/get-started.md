@@ -40,7 +40,7 @@ Developers can use the {{config.extra.arcana.dashboard_name}} to [[configure-aut
 
 ### Integrating App
 
-Web3 developers can [integrate app with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) only after the following pre-requisites are met:
+Web3 developers can [[index-integrate-app|integrate app with the {{config.extra.arcana.sdk_name}}]] only after the following pre-requisites are met:
 
 * The app is registered using the {{config.extra.arcana.dashboard_name}} and is assigned a unique {{config.extra.arcana.app_address}}.
 * Developer has configured the user onboarding options via the {{config.extra.arcana.dashboard_name}}. 

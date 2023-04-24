@@ -2,7 +2,7 @@ Web3 apps can select and enable user onboarding via GitHub by configuring the **
 
 !!! warning
 
-      Some of the authentication provider configuration steps are performed using the [GitHub Developer Settings Dashboard](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring GitHub, simply [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via GitHub.
+      Some of the authentication provider configuration steps are performed using the [GitHub Developer Settings Dashboard](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring GitHub, simply [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via GitHub.
       
 ## Step 1: Get Redirect URI
 
@@ -50,4 +50,4 @@ Save the settings. {{config.extra.arcana.company_name}} assigns a **{{config.ext
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 
-*You are all set with the GitHub configuration. [Integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, [[index-onboard-users|onboard users]] and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*
+*You are all set with the GitHub configuration. [[index-integrate-app|Integrate the Web3 app]] with the {{config.extra.arcana.sdk_name}}, [[index-onboard-users|onboard users]] and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*

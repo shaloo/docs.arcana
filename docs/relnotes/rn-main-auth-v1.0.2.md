@@ -53,11 +53,11 @@ The circular widget displayed when a wallet was minimized by clicking the 'x' ic
 
 ### {{config.extra.arcana.sdk_name}} package additions:  Wagmi & RainbowKit support
 
-Typical React/NextJS apps <img alt="react logo" src="/img/react_logo.png" width="2%" /> <img alt="nextjs logo" src="/img/nextjs_logo.png" width="2%" /> integrate with the {{config.extra.arcana.sdk_name}} by installing the `auth` and `auth-react` npm packages and instantiating the `AuthProvider` and `ProviderAuth` before using them in the app. See [how to integrate a React app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md) for details.
+Typical React/NextJS apps <img alt="react logo" src="/img/react_logo.png" width="2%" /> <img alt="nextjs logo" src="/img/nextjs_logo.png" width="2%" /> integrate with the {{config.extra.arcana.sdk_name}} by installing the `auth` and `auth-react` npm packages and instantiating the `AuthProvider` and `ProviderAuth` before using them in the app. See [[integrate-react-nextjs-app|how to integrate a React app]] for details.
 
-The React/NextJS apps that use [Wagmi](https://wagmi.sh/) <img alt="wagmi logo" src="/img/wagmi_logo.png" width="2%" /> can be integrated with the {{config.extra.arcana.sdk_name}} by simply installing the `auth-wagmi` package and instantiating the `ArcanaConnector` wrapper component. For details, see [how to integrate a React app that uses Wagmi]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md) guide. 
+The React/NextJS apps that use [Wagmi](https://wagmi.sh/) <img alt="wagmi logo" src="/img/wagmi_logo.png" width="2%" /> can be integrated with the {{config.extra.arcana.sdk_name}} by simply installing the `auth-wagmi` package and instantiating the `ArcanaConnector` wrapper component. For details, see [[integrate-wagmi-app|how to integrate a React app that uses Wagmi]] guide. 
 
-Similarly, for React apps using the [RainbowKit framework](https://www.rainbowkit.com/), <img alt="rainbowkit logo" src="/img/rainbowkit_logo.png" width="2%" /> see [how to integrate a React app that uses RainbowKit]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_rainbow.md) guide.
+Similarly, for React apps using the [RainbowKit framework](https://www.rainbowkit.com/), <img alt="rainbowkit logo" src="/img/rainbowkit_logo.png" width="2%" /> see [[integrate-rainbow-app|how to integrate a React app that uses RainbowKit]] guide.
 
 !!! tip "Using `auth-wagmi`"
 
@@ -89,7 +89,7 @@ This issue is fixed in the current release. The user will have to log in to the 
 
 See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [how-to guides]({{page.meta.arcana.root_rel_path}}/howto/index.md) in the Getting Started section. 
 
-Check out the sample dApp integration example for apps using the [React/NextJS]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md), and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
+Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|NextJS ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
 ## Migrate to v1.0.2
 

@@ -1,4 +1,7 @@
 ---
+alias: index-howto-guides
+title: 'Getting Started'
+description: 'List of how-to guides with step-by-step instructions on how to configure Arcana Auth usage using the Arcana Developer Dashboard, how to integrate with the Auth SDK and how to onboard users, perform wallet operations and allow the authenticated users to sign blockchain transactions.'
 arcana:
   root_rel_path: ..
 ---
@@ -9,9 +12,9 @@ We recommend that you check out these guides to learn how to register and config
 
 [[configure-auth|Register App :material-tools:]]{ .md-button }
 
-[Configure Social Providers :fontawesome-solid-users:](./config_social/index.md){ .md-button }
+[[index-config-social-providers|Configure Social Providers :fontawesome-solid-users:]]{ .md-button }
 
-[Integrate with {{config.extra.arcana.sdk_name}} :material-lock-check:](./integrate_auth/index.md){ .md-button }
+[[index-integrate-app|Integrate with {{config.extra.arcana.sdk_name}} :material-lock-check:]]{ .md-button }
 
 [[index-onboard-users|Onboard Users :fontawesome-solid-user-gear:]]{ .md-button }
 

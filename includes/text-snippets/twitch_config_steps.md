@@ -2,7 +2,7 @@ Web3 apps can select and enable user onboarding via Twitch by configuring the **
 
 !!! warning
 
-      Some of the authentication provider configuration steps are performed using the [Twitch Developer Dashboard](https://dev.twitch.tv/login), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Twitch, simply [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Twitch.
+      Some of the authentication provider configuration steps are performed using the [Twitch Developer Dashboard](https://dev.twitch.tv/login), whereas the others use the {{config.extra.arcana.dashboard_name}}. After configuring Twitch, simply [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}, initialize the `AuthProvider`, and only then add code in the app to trigger user authentication via Twitch.
       
 ## Step 1: Get Redirect URI
 
@@ -44,4 +44,4 @@ Save the settings. {{config.extra.arcana.company_name}} assigns an **{{config.ex
 
 ![App Identifier](/img/an_db_app_address.png){.an-screenshots}
 
-*You are all set with the Twitch configuration. [Integrate the Web3 app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}, [[index-onboard-users|onboard users]] and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*
+*You are all set with the Twitch configuration. [[index-integrate-app|Integrate the Web3 app]] with the {{config.extra.arcana.sdk_name}}, [[index-onboard-users|onboard users]] and enable the authenticated users to sign blockchain transactions. See [{{config.extra.arcana.wallet_name}} Developer's Guide]({{page.meta.arcana.root_rel_path}}/howto/arcana_wallet/index.md) for details.*

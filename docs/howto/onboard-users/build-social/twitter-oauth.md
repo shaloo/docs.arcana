@@ -19,7 +19,7 @@ In this guide, you will learn how an app that builds a custom login UI and integ
 
 * Carefully [follow the instructions to configure Twitter]({{page.meta.arcana.root_rel_path}}/howto/config_social/twitter_oauth.md) as the authentication provider.
   
-* Use the appropriate integration method as per the app type and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
+* Use the appropriate integration method as per the app type and [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
 
 !!! info "Using `{{config.extra.arcana.wagmi_sdk_pkg_name}}`"
 
@@ -57,5 +57,5 @@ After onboarding app users via Twitter, you can allow authenticated users to acc
 ## See also
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [How to integrate with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md)
+* [[index-integrate-app|How to integrate with the {{config.extra.arcana.sdk_name}}]]
 * [[web-auth-error-msg|Handling authentication errors]]

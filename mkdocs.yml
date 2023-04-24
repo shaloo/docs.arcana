@@ -29,14 +29,14 @@ nav:
           - howto/config-idm/index.md
           - Cognito: howto/config-idm/cognito-oauth.md
       - Integrate App: 
-        - howto/integrate_auth/index.md
-        - Vanilla JS App: howto/integrate_auth/integrate_wallet.md
+        - howto/integrate-app/index.md
+        - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
         - React App: 
-          - howto/integrate_auth/react/index.md
-          - React/NextJS App: howto/integrate_auth/integrate_wallet_react.md
-          - Wagmi App: howto/integrate_auth/integrate_wagmi.md
-          - RainbowKit App: howto/integrate_auth/integrate_rainbow.md
-        - Vue dApp: howto/integrate_auth/integrate_wallet_vue.md
+          - howto/integrate-app/react/index.md
+          - React/NextJS App: howto/integrate-app/react-nextjs.md
+          - Wagmi App: howto/integrate-app/wagmi.md
+          - RainbowKit App: howto/integrate-app/rainbow.md
+        - Vue dApp: howto/integrate-app/vue.md
       - Onboard Users: 
         - howto/onboard-users/index.md
         - Plug and Play Login UI: howto/onboard-users/use-plug-play-auth.md
@@ -51,7 +51,7 @@ nav:
             - Twitter: howto/onboard-users/build-social/twitter-oauth.md
           - Build Custom Auth:
             - howto/onboard-users/build-idm/index.md
-            - Cognito: howto/onboard-users/build-idm/wallet-cognito-oauth.md           
+            - Cognito: howto/onboard-users/build-idm/cognito-oauth.md           
       - Enable Arcana Wallet:
         - howto/arcana_wallet/index.md
         - Configure Wallet Visibility: howto/arcana_wallet/config_walletvisibility.md
@@ -370,7 +370,7 @@ plugins:
         'howto/config_idm/index.md': 'howto/config-idm/index.md'
         'howto/config_idm/cognito_oauth.md': 'howto/config-idm/cognito-oauth.md'
         'howto/plug_idm/index.md': 'howto/onboard-users/build-idm/index.md'
-        'howto/plug_idm/wallet_cognito_oauth.md': 'howto/onboard-users/build-idm/wallet-cognito-oauth.md'
+        'howto/plug_idm/wallet_cognito_oauth.md': 'howto/onboard-users/build-idm/cognito-oauth.md'
         'howto/onboard_users/build_social/index.md': 'howto/onboard-users/build-social/index.md'
         'howto/onboard_users/build_social/wallet_discord_oauth.md': 'howto/onboard-users/build-social/discord-oauth.md'
         'howto/onboard_users/build_social/wallet_github_oauth.md': 'howto/onboard-users/build-social/github-oauth.md'
@@ -379,6 +379,13 @@ plugins:
         'howto/onboard_users/build_social/wallet_twitter_oauth.md': 'howto/onboard-users/build-social/twitter-oauth.md'
         'howto/onboard_users/wallet_plugnplay.md': 'howto/onboard-users/use-plug-play-auth.md'
         'howto/onboard_users/wallet_pwdless_login.md': 'howto/onboard-users/build-pwdless-auth.md'
+        'howto/integrate_auth/index.md': 'howto/integrate-app/index.md'
+        'howto/integrate_auth/integrate_wallet.md': 'howto/integrate-app/vanilla-html-css-js.md'
+        'howto/integrate_auth/react/index.md': 'howto/integrate-app/react/index.md'
+        'howto/integrate_auth/integrate_wallet_react.md': 'howto/integrate-app/react-nextjs.md'
+        'howto/integrate_auth/integrate_wagmi.md': 'howto/integrate-app/wagmi.md'
+        'howto/integrate_auth/integrate_rainbow.md': 'howto/integrate-app/rainbow.md'
+        'howto/integrate_auth/integrate_wallet_vue.md': 'howto/integrate-app/vue.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

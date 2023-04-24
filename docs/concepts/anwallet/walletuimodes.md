@@ -11,7 +11,7 @@ arcana:
 
 The {{config.extra.arcana.wallet_name}} is an embedded, non-custodial Web3 wallet that is enabled for every user that logs into an app integrated with the {{config.extra.arcana.sdk_name}}. App developers can manage the wallet user experience by controlling the wallet's visibility in the app context.
 
-To manage the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet) visibility, the applications must [integrate with the {{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md), specify the appropriate `alwaysVisible` input parameter while instantiating the `AuthProvider`, and choose one of the wallet visibility modes:
+To manage the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet) visibility, the applications must [[index-integrate-app|integrate with the {{config.extra.arcana.sdk_name}}]], specify the appropriate `alwaysVisible` input parameter while instantiating the `AuthProvider`, and choose one of the wallet visibility modes:
 
 * **Always visible mode**: Visible once the user logs into an app
 * **Not always visible mode**: Visible only when a user is logged into an app and a blockchain transaction requires the user's approval

@@ -1,6 +1,7 @@
 ---
-slug: /reactnextjs
-id: idreactnextjs
+alias: index-integrate-react-app
+title: 'Integrate React App'
+description: 'Integrate Web3 apps that are built using the React framework, with the Arcana Auth SDK using the instructions listed here. Make sure that you have configured the Web3 app using the Arcana developer dashboard and obtained a unique clientId for the app. The clientId is required to integrate the app.'
 sidebar_custom_props:
   cardIcon: 🏁
 arcana:
@@ -16,8 +17,8 @@ Depending upon whether your React Web3 app is a simple React app or a React app 
 
 For detailed instructions, select **one of the options below** as per your application type.
 
-[Integrate React/NextJS  :fontawesome-brands-react: :simple-nextdotjs:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet_react.md){ .md-button } 
+[[integrate-react-nextjs-app|Integrate React/NextJS  :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button } 
 
-[Integrate Wagmi Connector :material-card-account-mail:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wagmi.md){ .md-button } 
+[[integrate-wagmi-app|Integrate Wagmi Connector :material-card-account-mail:]]{ .md-button } 
 
-[RainbowKit Connector :material-card-account-mail:]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth//integrate_rainbow.md){ .md-button }
+[[integrate-rainbow-app|RainbowKit Connector :material-card-account-mail:]]{ .md-button }

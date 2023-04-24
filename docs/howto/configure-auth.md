@@ -12,7 +12,7 @@ In this tutorial, you will learn how to register and configure a Web3 app before
 
 !!! info "{{config.extra.arcana.app_address}}"
     
-    Each registered app is assigned a unique identifier, **{{config.extra.arcana.app_address}}**, required to [integrate an app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}}.
+    Each registered app is assigned a unique identifier, **{{config.extra.arcana.app_address}}**, required to [[index-integrate-app|integrate an app]] with the {{config.extra.arcana.sdk_name}}.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ You have successfully registered and configured your application.
 
 See [[index-configure-auth|how to configure {{config.extra.arcana.sdk_name}} usage]] for details on setting up authentication providers.
 
-After registering and configuring the application, developers must install the {{config.extra.arcana.sdk_name}} and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) before enabling user onboarding and allowing the authenticated users to sign blockchain transactions. 
+After registering and configuring the application, developers must install the {{config.extra.arcana.sdk_name}} and [[index-integrate-app|integrate the app]] before enabling user onboarding and allowing the authenticated users to sign blockchain transactions. 
 
 !!! info "Save {{config.extra.arcana.app_address}}"
 

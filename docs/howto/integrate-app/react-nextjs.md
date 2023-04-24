@@ -1,8 +1,7 @@
 ---
-slug: /setupwalletreact
-id: idsetupwalletreact
-sidebar_custom_props:
-  cardIcon: 🔐 
+alias: integrate-react-nextjs-app
+title: 'Integrate React/NextJS App'
+description: 'Integrate Web3 apps built using the React/NextJS frameworks with the Arcana Auth SDK using the instructions listed here. Make sure that you have configured the Web3 app using the Arcana developer dashboard and obtained a unique clientId for the app. The clientId is required to integrate the app.'
 arcana:
   root_rel_path: ../..
 ---

@@ -1,8 +1,7 @@
 ---
-slug: /indexintegrate
-id: idindexintegrate
-sidebar_custom_props:
-  cardIcon: 📺
+alias: index-integrate-app
+title: 'Integrate App'
+description: 'Integrate Web3 apps with the Arcana Auth SDK using the instructions listed here. Make sure that you have configured the Web3 app using the Arcana developer dashboard and obtained a unique clientId for the app. The clientId is required to integrate the app.'
 arcana:
   root_rel_path: ../..
 ---
@@ -30,8 +29,8 @@ Depending upon whether your Web3 app is a vanilla HTML/CSS/JS app, a React app, 
 
 For detailed step-by-step integration instructions, select **one of the options below** as per your application type.
 
-[Integrate Vanilla JS App :material-language-javascript:](./integrate_wallet.md){ .md-button }
+[[integrate-vanilla-app|Integrate Vanilla JS App :material-language-javascript:]]{ .md-button }
 
-[Integrate React/NextJS App :fontawesome-brands-react: :simple-nextdotjs:](./react/index.md){ .md-button }
+[[integrate-react-nextjs-app|Integrate React/NextJS App :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button }
 
-[Integrate Vue App :material-vuejs:](./integrate_wallet_vue.md){ .md-button }
+[[integrate-vue-app|Integrate Vue App :material-vuejs:]]{ .md-button }

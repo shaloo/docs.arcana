@@ -10,7 +10,7 @@ arcana:
 
 First of all, before adding any code to the Web3 app, [[configure-auth|register the app and configure user onboarding options and other settings]] using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. 
 
-Next, install the `{{ config.extra.arcana.auth_sdk_pkg_name }}` package, [integrate the HTML/CSS/JS app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/integrate_wallet.md), and then add code in the app to [[index-onboard-users|onboard users]]. Only authenticated users can access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
+Next, install the `{{ config.extra.arcana.auth_sdk_pkg_name }}` package, [[integrate-vanilla-app|integrate the HTML/CSS/JS app]], and then add code in the app to [[index-onboard-users|onboard users]]. Only authenticated users can access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
 Check out the code sandbox for the [sample vanilla HTML/CSS/JS app](https://codesandbox.io/s/simple-html-app-auth-integration-4gqf6q). This is a very basic vanilla HTML/CSS/JS app that uses Parcel. It integrates with the {{config.extra.arcana.sdk_name}} and uses the plug-and-play login UI for onboarding users.
 
