@@ -1,9 +1,7 @@
 ---
-slug: /cognitooauth
-id: idcognitooauth
-title: Cognito
-sidebar_custom_props:
-  cardIcon: 🤝
+alias: build-iam-cognito-auth
+title: 'Build AWS Cognito Auth in Web3 Apps'
+description: 'How to custom build user authentication UI and onboard users via the IAM provider, AWS Cognito, in a Web3 app that is integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
   social_provider: "'aws'"
@@ -19,7 +17,7 @@ In this guide, you will learn how to configure AWS Cognito and integrate the {{c
 
 * Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[configure-auth|register the app]] and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-* Carefully [follow the instructions to configure AWS Cognito]({{page.meta.arcana.root_rel_path}}/howto/config_idm/cognito_oauth.md) as the authentication provider.
+* Carefully [[config-auth-cognito|follow the instructions to configure AWS Cognito]] as the authentication provider.
   
 * Use the appropriate integration method as per the app type and [integrate the app]({{page.meta.arcana.root_rel_path}}/howto/integrate_auth/index.md) with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
 

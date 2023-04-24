@@ -26,8 +26,8 @@ nav:
           - Twitch Setup: howto/config_social/twitch_oauth.md
           - Twitter Setup: howto/config_social/twitter_oauth.md
         - Custom IAM Providers:
-          - howto/config_idm/index.md
-          - Cognito: howto/config_idm/cognito_oauth.md
+          - howto/config-idm/index.md
+          - Cognito: howto/config-idm/cognito-oauth.md
       - Integrate App: 
         - howto/integrate_auth/index.md
         - Vanilla JS App: howto/integrate_auth/integrate_wallet.md
@@ -50,8 +50,8 @@ nav:
             - Twitch: howto/onboard_users/build_social/wallet_twitch_oauth.md
             - Twitter: howto/onboard_users/build_social/wallet_twitter_oauth.md
           - Build Custom Auth:
-            - howto/plug_idm/index.md
-            - Cognito: howto/plug_idm/wallet_cognito_oauth.md           
+            - howto/plug-idm/index.md
+            - Cognito: howto/plug-idm/wallet-cognito-oauth.md           
       - Enable Arcana Wallet:
         - howto/arcana_wallet/index.md
         - Configure Wallet Visibility: howto/arcana_wallet/config_walletvisibility.md
@@ -367,6 +367,10 @@ plugins:
         'howto/deploy_app.md': 'howto/deploy-app.md'
         'howto/config_dapp.md': 'howto/configure-auth.md'
         'howto/config_auth/index.md': 'howto/configure-auth/index.md'
+        'howto/config_idm/index.md': 'howto/config-idm/index.md'
+        'howto/config_idm/cognito_oauth.md': 'howto/config-idm/cognito-oauth.md'
+        'howto/plug_idm/index.md': 'howto/plug-idm/index.md'
+        'howto/plug_idm/wallet_cognito_oauth.md': 'howto/plug-idm/wallet-cognito-oauth.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

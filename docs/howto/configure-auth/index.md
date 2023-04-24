@@ -12,4 +12,4 @@ Use these guides to learn how to use the [{{config.extra.arcana.dashboard_name}}
 
 [Social Providers :material-web:]({{page.meta.arcana.root_rel_path}}/howto/config_social/index.md){ .md-button }
 
-[Custom IAM Providers :material-identifier:]({{page.meta.arcana.root_rel_path}}/howto/config_idm/index.md){ .md-button }
+[[index-config-iam-providers|Custom IAM Providers :material-identifier:]]{ .md-button }

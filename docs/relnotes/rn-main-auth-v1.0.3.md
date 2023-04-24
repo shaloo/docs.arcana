@@ -28,7 +28,7 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 ### Social Provider: AWS Cognito
 
-{{config.extra.arcana.product_name}} now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [how to onboard users via Cognito]({{page.meta.arcana.root_rel_path}}/howto/plug_idm/wallet_cognito_oauth.md) for details.
+{{config.extra.arcana.product_name}} now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [[build-iam-cognito-auth|how to onboard users via Cognito]] for details.
 
 ### New API: showWallet()
 

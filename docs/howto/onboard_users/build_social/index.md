@@ -16,4 +16,4 @@ Instead of using the plug-and-play Auth UI feature to onboard users, Web3 app de
 
 ## Custom IAM Providers
 
-[AWS Cognito :fontawesome-brands-aws:](../../plug_idm/wallet_cognito_oauth.md){ .md-button }
+[[build-iam-cognito-auth|AWS Cognito :fontawesome-brands-aws:]]{ .md-button }
