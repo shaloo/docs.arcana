@@ -1,8 +1,7 @@
 ---
-slug: /conceptdappusage
-id: idconceptdappusage
-sidebar_custom_props:
-  cardIcon: 💠
+alias: concept-usage-metrics
+title: 'Application Usage Metrics'
+description: 'Developers can monitor Arcana Network usage through the Arcana Developer Dashboard. Learn more about various usage metrics that are tracked per application and per developer account.'
 arcana:
   root_rel_path: ..
 ---

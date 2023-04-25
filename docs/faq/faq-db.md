@@ -52,7 +52,7 @@ toc_depth: 2
 
       The only way to delete Mainnet settings is to deregister the app and delete the app entry altogether.  This removes both Testnet and Mainnet configuration profiles. You will need to re-register the application.  This will create a new **{{config.extra.arcana.app_address}}** and you will be required to specify this new {{config.extra.arcana.app_address}} when integrating your application with the {{config.extra.arcana.sdk_name}}.  As a result, when you deploy your app and the users log in, they will see brand-new wallet addresses. 
       
-      If you wish to ensure that the user wallet address does not change, you must register your application and request for the ['Shared Key Space']({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) option at the very start. In that case, users will be allowed to use the same wallet address across all applications in the {{config.extra.arcana.company_name}} ecosystem and even if an application is de-registered and re-registered.
+      If you wish to ensure that the user wallet address does not change, you must register your application and request for the [[concept-keyspace-type|Shared Key Space]] option at the very start. In that case, users will be allowed to use the same wallet address across all applications in the {{config.extra.arcana.company_name}} ecosystem and even if an application is de-registered and re-registered.
 
 ## Branding Settings
 

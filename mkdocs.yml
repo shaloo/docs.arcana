@@ -173,8 +173,8 @@ nav:
         - MFA: concepts/mfa.md
         - Plug and Play Auth: concepts/plugnplayauth.md
         - Private Key: concepts/privatekey.md
-        - Shared Key Space: concepts/sharedkeys.md
-        - Usage Metrics: concepts/usage_metrics.md
+        - Shared Key Space: concepts/keyspace-types.md
+        - Usage Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
       - Usage Flows: 
         - user-flows/index.md
@@ -402,6 +402,8 @@ plugins:
         'howto/config_social/twitch_oauth.md': 'howto/config-social/twitch-oauth.md'
         'howto/config_social/twitter_oauth.md': 'howto/config-social/twitter-oauth.md'
         'concepts/validator_nodes.md': 'concepts/validator-nodes.md'
+        'concepts/usage_metrics.md': 'concepts/usage-metrics.md'
+        'concepts/sharedkeys.md': 'concepts/keyspace-types.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

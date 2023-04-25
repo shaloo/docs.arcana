@@ -40,7 +40,7 @@ toc_depth: 2
 
       If a developer selects the **Global Keys** option, then the user gets assigned the same key across all applications that integrate with the {{config.extra.arcana.sdk_name}} and chooses the same **Global Keys** option. The same key means the wallet address of the user is the same across different Web3 apps that integrate with the {{config.extra.arcana.sdk_name}}.  This is true across apps that use EVM-compatible chains. If two apps use global keys but one of them is on an EVM-compatible chain and the other is not, then the keys will be different across such apps. The Arcana's ADKG subsystem will assign the user different sets of keys for such apps resulting in different wallet addresses across such apps.
 
-      For more details, see [app-specific vs. global keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md)
+      For more details, see [[concept-keyspace-type|app-specific vs. global keys]]
 
 ??? an-faq "Does the **global keys** feature work across EVM-compatible and not EVM-compatible chains?"
 

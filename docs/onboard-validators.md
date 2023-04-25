@@ -8,7 +8,7 @@ arcana:
 
 # Validator Onboarding
 
-This DKG validator onboarding guide is meant for trusted partners, the *'validators'*, who wish to set up DKG [[validator-nodes|validator nodes]]. 
+This DKG validator onboarding guide is meant for trusted partners, the *'validators'*, who wish to set up DKG [[concept-validator-nodes|validator nodes]]. 
 
 Validators in the Arcana distributed key generation [(DKG)]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md) subsystem play a crucial role in decentralizing the system by setting up and managing validator nodes. To qualify as a validator, you must be a trusted partner of Arcana and operate a DKG node. In return for participating in the DKG protocol and providing this service, validators earn rewards based on various factors such as the uptime of their node and the output of their key generation work.
 

@@ -9,7 +9,7 @@ toc_depth: 2
 
 # Validator Onboarding
 
-Frequently asked questions regarding setting up [[validator-nodes|Arcana DKG validator nodes]].
+Frequently asked questions regarding setting up [[concept-validator-nodes|Arcana DKG validator nodes]].
 
 ## General
 

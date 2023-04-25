@@ -1,8 +1,7 @@
 ---
-slug: /conceptsharedkeys
-id: idconceptsharedkeys
-sidebar_custom_props:
-  cardIcon: 💠
+alias: concept-keyspace-type
+title: 'Keyspace Types: App-Specific vs. Global Keys'
+description: 'Developers can choose the keyspace type as per the application use case.  App-specific keys are unique across all the applications whereas the global keys remain the same across different applications in the Arcana Network for the same user.'
 arcana:
   root_rel_path: ..
 ---

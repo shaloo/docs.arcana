@@ -26,8 +26,8 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [Private Key :material-key:](privatekey.md){ .md-button }
 
-[Shared Key Space :material-key:](sharedkeys.md){ .md-button }
+[[concept-keyspace-type|Keyspace Type: App-specific vs. Global Keys :material-key:]]{ .md-button }
 
-[Usage Metrics :material-monitor-eye:](usage_metrics.md){ .md-button }
+[[concept-usage-metrics|Usage Metrics :material-monitor-eye:]]{ .md-button }
 
-[[validator-nodes|Validator Nodes :material-checkbox-multiple-marked-circle-outline:]]{ .md-button }
+[[concept-validator-nodes|Validator Nodes :material-checkbox-multiple-marked-circle-outline:]]{ .md-button }

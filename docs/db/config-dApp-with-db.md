@@ -98,7 +98,7 @@ After the selection is made and the developer confirms, the 'Mainnet' profile is
 
 To deploy an application on the {{config.extra.arcana.company_name}} Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. Setting up keyspace is mandatory irrespective of whether the developer chooses to copy the 'Testnet' profile as the 'Mainnet' configuration or creates a new one.
 
-There are two keyspace options: [App-specific and Global Keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md).
+There are two keyspace options: [[concept-keyspace-type|App-specific and Global Keys]].
 
 You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
 

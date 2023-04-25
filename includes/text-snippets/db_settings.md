@@ -39,7 +39,7 @@ Use the defaults or provide inputs for various settings as per your application 
 
 === "Keyspace"
 
-    Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [App-specific and global keys]({{page.meta.arcana.root_rel_path}}/concepts/sharedkeys.md) and how to use the [[dashboard-user-guide#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.
+    Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to use the [[dashboard-user-guide#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.
 
     ![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
 
