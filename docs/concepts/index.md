@@ -30,4 +30,4 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [Usage Metrics :material-monitor-eye:](usage_metrics.md){ .md-button }
 
-[Validator Nodes :material-checkbox-multiple-marked-circle-outline:](validator_nodes.md){ .md-button }
+[[validator-nodes|Validator Nodes :material-checkbox-multiple-marked-circle-outline:]]{ .md-button }

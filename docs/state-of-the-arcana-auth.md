@@ -55,7 +55,7 @@ We are actively working towards adding new features:
 
 The DKG subsystem in the {{config.extra.arcana.product_name}} protocol is envisioned as a truly decentralized subsystem. 
 
-At the launch of Mainnet, there are seven DKG validator nodes, five of these are owned by {{config.extra.arcana.company_name}} and the remaining two  [validator nodes]({{page.meta.arcana.root_rel_path}}/concepts/validator_nodes.md) are owned and managed by trusted partners:
+At the launch of Mainnet, there are seven DKG validator nodes, five of these are owned by {{config.extra.arcana.company_name}} and the remaining two  [[validator-nodes|validator nodes]] are owned and managed by trusted partners:
 
 * [Comdex - interchain DeFi infrastructure](https://comdex.one/)
 * [Luganodes - institutional-grade blockchain infrastructure providers](https://www.luganodes.com/)

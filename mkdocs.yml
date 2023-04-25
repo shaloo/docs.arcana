@@ -175,7 +175,7 @@ nav:
         - Private Key: concepts/privatekey.md
         - Shared Key Space: concepts/sharedkeys.md
         - Usage Metrics: concepts/usage_metrics.md
-        - Validator Nodes: concepts/validator_nodes.md
+        - Validator Nodes: concepts/validator-nodes.md
       - Usage Flows: 
         - user-flows/index.md
         - User Auth and DKG: user-flows/user-auth-and-dkg.md
@@ -401,6 +401,7 @@ plugins:
         'howto/config_social/google_oauth.md': 'howto/config-social/google-oauth.md'
         'howto/config_social/twitch_oauth.md': 'howto/config-social/twitch-oauth.md'
         'howto/config_social/twitter_oauth.md': 'howto/config-social/twitter-oauth.md'
+        'concepts/validator_nodes.md': 'concepts/validator-nodes.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
