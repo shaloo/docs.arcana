@@ -1,4 +1,7 @@
 ---
+alias: index-audit-reports
+title: 'Arcana Audit Reports'
+description: 'Arcana Network ADKG protocol and smart contracts implementation have been audited for security and cryptographic vulnerabilities, limitatiosns.'
 arcana:
   root_rel_path: ..
 ---

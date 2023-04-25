@@ -1,7 +1,7 @@
 ---
 alias: concept-gateway-node
 title: 'Gateway node'
-description: "Gateway is a key component of the Arcana Auth solution. Developers and users don't interact with it directly. It handles all the blockchain and other Arcana Network protocol-related functionalities. It communicates with the Arcana Developer Dashboard, the ADKG subsystem and the blockchain."
+description: "Gateway communicates with the Arcana Developer Dashboard, the ADKG subsystem and the blockchain. Developers don't interact with it directly."
 arcana:
   root_rel_path: ..
 ---

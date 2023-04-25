@@ -1,7 +1,7 @@
 ---
 alias: concept-wallet-or-key
 title: 'Using Web3 wallet vs. Key'
-description: 'What to use and when, web wallet versus the keys.'
+description: 'Learn more about using a Web3 wallet for securely signing blockchain transactions. Users familiar with cryptographic keys can use them.'
 arcana:
   root_rel_path: ../..
 ---

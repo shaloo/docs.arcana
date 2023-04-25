@@ -1,7 +1,7 @@
 ---
 alias: concept-authsdk
 title: 'Arcana Auth SDK'
-description: 'What is Arcana Auth SDK and what are its key features, what kind of authentication is supported for Web3 apps and what kind of wallet operations can be accessed by app users.'
+description: 'Arcana Auth SDK key features, kind of authentication supported for Web3 apps and the wallet operations can be accessed by app users.'
 arcana:
   root_rel_path: ..
 ---

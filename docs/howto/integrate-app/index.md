@@ -1,7 +1,7 @@
 ---
 alias: index-integrate-app
 title: 'Integrate App'
-description: 'Integrate Web3 apps with the Arcana Auth SDK using the instructions listed here. Make sure that you have configured the Web3 app using the Arcana developer dashboard and obtained a unique clientId for the app. The clientId is required to integrate the app.'
+description: 'Integrate Web3 apps with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../..
 ---

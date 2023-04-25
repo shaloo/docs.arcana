@@ -2,6 +2,8 @@
 alias: user-auth-dkg-flow
 title: 'User Auth and DKG Flow'
 description: 'Diagram and user flow for authentication and how DKG interacts with various components in the Arcana Auth.'
+arcana:
+  root_rel_path: ..
 ---
 
 # User Authentication and DKG Access

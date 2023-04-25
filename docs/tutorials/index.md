@@ -1,3 +1,11 @@
+---
+alias: index-tutorials
+title: 'List of tutorials for Arcana Auth'
+description: 'Code Samples and Video tutorials to get developers started quickly with the Arcana Auth SDK.'
+arcana:
+  root_rel_path: ..
+---
+
 # Tutorials
 
 Check out the {{config.extra.arcana.sdk_name}} code samples and video tutorials.

@@ -1,6 +1,7 @@
 ---
 alias: concept-arcana-wallet-overview
 title: 'Arcana Wallet Overview'
+description: 'What is Arcana wallet, how can a developer enable it in the context of an app and what features does it support.'
 arcana:
   root_rel_path: ../..
 ---

@@ -1,7 +1,7 @@
 ---
 alias: index-howto-guides
 title: 'Getting Started'
-description: 'List of how-to guides with step-by-step instructions on how to configure Arcana Auth usage using the Arcana Developer Dashboard, how to integrate with the Auth SDK and how to onboard users, perform wallet operations and allow the authenticated users to sign blockchain transactions.'
+description: 'List of how-to guides. Steps to register, configure Arcana Auth usage with the dashboard, integrate app, onboard users, perform Web3 wallet ops and sign blockchain transactions.'
 arcana:
   root_rel_path: ..
 ---

@@ -1,7 +1,7 @@
 ---
 alias: troubleshooting
 title: 'Troubleshooting Arcana Auth'
-description: 'If you are facing any issues while installing, integrating with the Arcana Auth SDK or during app deployment on Arcana Testnet/Mainnet, check out these known issues and how to troubleshoot them before contacting us.'
+description: 'If you are facing any issues while installing, integrating with the Arcana Auth SDK or during app deployment on Arcana Testnet/Mainnet, check this out.'
 arcana:
   root_rel_path: .
 toc_depth: 2

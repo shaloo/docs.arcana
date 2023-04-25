@@ -1,7 +1,7 @@
 ---
 alias: concept-wallet-switch-mode
 title: 'Arcana wallet blockchain network switching behavior'
-description: 'Arcana wallet setting for wallet visibility controls blockchain network switching behavior.'
+description: 'Arcana wallet configuration setting for wallet visibility controls the blockchain network switching behavior.'
 arcana:
   root_rel_path: ../..
 ---

@@ -1,7 +1,7 @@
 ---
 alias: concept-arcana-auth
 title: 'Web3 Authentication'
-description: 'What is Web3 authentication and how is it different from Web2 authentication. Key offerings provided by the Arcana decentralized authentication solution to Web3 app developers.'
+description: 'What is Web3 authentication and how is it different from Web2. Arcana Auth provides decentralized authentication to Web3 app developers.'
 arcana:
   root_rel_path: ../..
 ---

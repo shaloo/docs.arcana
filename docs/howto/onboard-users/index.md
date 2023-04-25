@@ -1,7 +1,7 @@
 ---
 alias: index-onboard-users
 title: 'Onboard Users'
-description: 'After configuring the Web3 app using the Arcana Developer Dashboard, devs obtain a unique clientId and use it to integrate the app with the Arcana Auth SDK. Use these guides to plug in requisite code in the app for onboarding users via the configured authentication mechanisms. Developers can either use plug and play UI or build their own custom UI to onboard users and simply call Arcana SDK functions for passwordless login or login using the authentication providers.'
+description: 'Use these guides to add code in the app for onboarding users via the configured authentication mechanisms. Use plug-and-play UI or build custom UI to onboard users.'
 arcana:
   root_rel_path: ../..
 ---

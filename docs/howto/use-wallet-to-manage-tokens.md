@@ -1,7 +1,7 @@
 ---
 alias: use-wallet-ui-to-manage-tokens
 title: 'How to use Arcana Wallet UI and Manage Token Assets'
-description: 'How to manage blockchain token assets through the Arcana wallet, how to check the balance, add custom tokens, send and receive native and custom tokens and monitor token transaction activities performed using the Arcana wallet.'
+description: 'How to manage blockchain token assets through the Arcana wallet, how to check the balance, add custom tokens, send and receive tokens and monitor token transactions.'
 arcana:
   root_rel_path: ..
 ---

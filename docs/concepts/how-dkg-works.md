@@ -1,9 +1,7 @@
 ---
 alias: concept-how-dkg-works
-id: idhowdkgworks
-sidebar_custom_props:
-  cardIcon: ▶️
-description: How decentralized key generation works in the Arcana Network.
+title: 'How does DKG work?'
+description: 'How decentralized key generation works in the Arcana Network.'
 arcana:
   root_rel_path: ..
 ---

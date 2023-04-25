@@ -1,7 +1,7 @@
 ---
 alias:  concept-validator-nodes
 title: 'Validator Nodes'
-description: "Arcana Auth uses asynchronous distributed key generation and the validator nodes play a big part in making the ADKG subsystem decentralized. What this means is user's keys and wallet addresses are not locked into the Arcana Network protocol."
+description: "Arcana Auth uses asynchronous distributed key generation and the validator nodes play a big part in making the ADKG subsystem decentralized."
 arcana:
   root_rel_path: ..
 ---

@@ -1,7 +1,7 @@
 ---
 alias: index-migration-guides
 title: 'Arcana Auth Migration Guides'
-description: 'If you are not using the latest version of the Arcana Auth SDK, we strongly recommend that you migrate to the latest release. Use the appropirate migration guides to help you upgrade from the older version of the Auth SDK.'
+description: 'If you are not using the latest version of the Arcana Auth SDK, we strongly recommend that you migrate to the latest release.'
 arcana:
   root_rel_path: ../..
 ---

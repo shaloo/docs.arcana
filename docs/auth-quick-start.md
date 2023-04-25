@@ -1,7 +1,7 @@
 ---
 alias: auth-quick-start
 title: 'Arcana Auth Quick Start Guide'
-description: 'Get Started quickly using these step-by-step instructions. Register the Web3 app, obtain a ClientID and then integrate the app with the Arcana Auth SDK to enable Arcana wallet in the app context.'
+description: 'Get Started quickly using these step-by-step instructions. Register the Web3 app, obtain a ClientID and then integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: .
 ---

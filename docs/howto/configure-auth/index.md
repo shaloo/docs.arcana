@@ -1,7 +1,7 @@
 ---
 alias: index-configure-auth
 title: 'List of Arcana Auth authentication provider types.'
-description: 'Web3 app developers can enable various social authentication providers or custom IAM providers to onboard users in the app. Click to find a complete list of social and custom IAM providers that are supported by the Arcana Auth.'
+description: 'Web3 app developers can enable various social authentication providers or custom IAM providers to onboard users in the app.'
 arcana:
   root_rel_path: ../..
 ---

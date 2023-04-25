@@ -2,7 +2,6 @@
 alias: index-archives
 title: 'Arcana Auth Archives'
 description: 'List of past Auth Version Resources:  Release Notes and Migration Guides'
-
 ---
 
 # Past Auth Versions

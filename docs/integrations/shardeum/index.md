@@ -1,5 +1,7 @@
 ---
-title: Using Shardeum Network with Arcana Auth SDK
+alias: index-integrate-shardeum
+title: 'Using Shardeum Network with Arcana Auth SDK'
+description: 'List of developer and user guides for Shardeum Network integration with the Arcana wallet.'
 arcana:
   root_rel_path: ../..
 ---

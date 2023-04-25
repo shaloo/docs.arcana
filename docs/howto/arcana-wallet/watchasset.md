@@ -1,7 +1,7 @@
 ---
 alias: watch-assets
 title: 'Watch Assets'
-description: 'Step-by-step instructions on how to watch wallet assets (custom and native tokens, NFTs) using the Arcana wallet programmatically in an app that is integrated with the Arcana Auth SDK.'
+description: 'Step-by-step instructions on how to watch wallet assets (custom and native tokens, NFTs) using the Arcana wallet programmatically in an app.'
 arcana:
   root_rel_path: ../..
 ---

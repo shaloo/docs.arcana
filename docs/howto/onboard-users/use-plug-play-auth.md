@@ -1,7 +1,7 @@
 ---
 alias: use-plug-play-auth
 title: 'Plug and Play Auth'
-description: 'After configuring authentication providers using the dashboard and integrating the app using the unique clientId assigned to the app during registration, developers can use the Arcana Auth SDK plug-and-play auth feature to quickly add code in the Web3 app for onboarding users. Only the configured authentication options show up in the plug-and-play UI pop-up UI.'
+description: 'Use the Arcana Auth SDK plug-and-play feature to quickly add code in the Web3 app for onboarding users via the configured options.'
 arcana:
   root_rel_path: ../..
 ---

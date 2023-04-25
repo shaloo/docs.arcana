@@ -1,7 +1,7 @@
 ---
 alias: concept-keyspace-type
 title: 'Keyspace Types: App-Specific vs. Global Keys'
-description: 'Developers can choose the keyspace type as per the application use case.  App-specific keys are unique across all the applications whereas the global keys remain the same across different applications in the Arcana Network for the same user.'
+description: 'Developers can choose the keyspace type as per the application use case at the time of registering an app. Changing keyspace later may change user keys.'
 arcana:
   root_rel_path: ..
 ---

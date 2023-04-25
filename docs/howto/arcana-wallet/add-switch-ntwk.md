@@ -1,7 +1,7 @@
 ---
 alias: add-switch-network
 title: 'How to Add or Switch Network in the Arcana wallet programmatically'
-description: 'Instructions on how Web3 app developers can update the app and programmatically add/switch network in the Arcana wallet so that app users can access the configured blockchain networks when they use the wallet UI.'
+description: 'See how Web3 app devs can programmatically add/switch network in the Arcana wallet. App users can access the configured blockchain networks via UI.'
 arcana:
   root_rel_path: ../..
 ---

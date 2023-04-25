@@ -1,7 +1,7 @@
 ---
 alias: faq-db
 title: 'FAQ: Arcana Developer Dashboard'
-description: 'Frequently asked questions about how developers can use the Arcana Dashboard to register their apps, get a unique clientId, configure the app auth providers and other usage settings before integrating the app with the Arcana Auth SDK.'
+description: 'Frequently asked questions about using the Arcana Dashboard to register their apps, get a unique clientId, configure the app auth providers etc.'
 arcana:
   root_rel_path: ..
 toc_depth: 2

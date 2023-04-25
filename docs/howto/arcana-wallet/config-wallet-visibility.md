@@ -1,7 +1,7 @@
 ---
 alias: configure-wallet-visibility
 title: 'Configure Wallet Visibility'
-description: 'Web3 app developers can manage whether the wallet is always visible or shows up only when a blockchain transaction is triggered in an app that is integrated with the Arcana Auth SDK.'
+description: 'Web3 app developers can manage whether the wallet is always visible or shows up only when a blockchain transaction is triggered.'
 arcana:
   root_rel_path: ../..
 ---

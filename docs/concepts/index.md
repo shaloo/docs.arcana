@@ -1,4 +1,12 @@
-# Concepts
+---
+alias: index-concepts
+title: 'Arcana Network Concepts'
+description: 'Key concepts related to the Arcana Auth solution.'
+arcana:
+  root_rel_path: ..
+---
+
+  # Concepts
 
 These are the building blocks to help you learn about various {{config.extra.arcana.product_name}} terms and usage.
 

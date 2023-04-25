@@ -1,7 +1,7 @@
 ---
 alias: concept-usage-billing
 title: 'Usage & Billing'
-description: 'Learn about how usage is tracked and billing is done for Arcana Mainnet usage, where to find the invoice, what is the billing cycle, how to set up a payment method and more.'
+description: 'Learn how app usage is tracked and billed for Arcana Mainnet, where to find the invoice, what is the billing cycle, how to set up a payment method and more.'
 arcana:
   root_rel_path: ..
 ---

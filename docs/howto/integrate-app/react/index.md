@@ -1,7 +1,7 @@
 ---
 alias: index-integrate-react-app
 title: 'Integrate React App'
-description: 'Integrate Web3 apps that are built using the React framework, with the Arcana Auth SDK using the instructions listed here. Make sure that you have configured the Web3 app using the Arcana developer dashboard and obtained a unique clientId for the app. The clientId is required to integrate the app.'
+description: 'Integrate Web3 apps that are built using the React framework, with the Arcana Auth SDK using the instructions listed here.'
 sidebar_custom_props:
   cardIcon: 🏁
 arcana:

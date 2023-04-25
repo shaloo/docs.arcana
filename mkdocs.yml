@@ -150,7 +150,7 @@ nav:
         - Aggregate Login: concepts/authtype/aggregatelogin.md
         - Arcana Web3 Wallet: 
           - concepts/anwallet/index.md
-          - Overview: concepts/anwallet/arcanawallet_oview.md
+          - Overview: concepts/anwallet/wallet-overview.md
           - Wallet Features: concepts/anwallet/walletfeatures.md
           - Wallet Visibility: concepts/anwallet/walletuimodes.md
           - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
@@ -408,6 +408,7 @@ plugins:
         'concepts/plugnplayauth.md': 'concepts/plug-and-play-auth.md'
         'concepts/how_dkg_works.md': 'concepts/how-dkg-works.md'
         'concepts/gateway_nodes.md': 'concepts/gateway-node.md'
+        'concepts/anwallet/arcanawallet_oview.md': 'concepts/anwallet/wallet-overview.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
