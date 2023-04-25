@@ -2,7 +2,7 @@
 
 These are the building blocks to help you learn about various {{config.extra.arcana.product_name}} terms and usage.
 
-[Aggregate Login :material-login:](authtype/aggregatelogin.md){ .md-button }
+[[concept-aggregate-login|Aggregate Login :material-login:]](authtype/aggregatelogin.md){ .md-button }
 
 [{{config.extra.arcana.wallet_name}} :material-wallet:](anwallet/index.md){ .md-button }
 
@@ -20,11 +20,11 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [MFA :material-two-factor-authentication:](mfa.md){ .md-button }
 
-[Gateway :fontawesome-solid-torii-gate:](gateway_nodes.md){ .md-button }
+[[concept-gateway-node|Gateway :fontawesome-solid-torii-gate:]]{ .md-button }
 
-[Plug-and-Play Auth :material-lock: :fontawesome-solid-plug:](plugnplayauth.md){ .md-button }
+[[concept-plug-and-play-auth|Plug-and-Play Auth :material-lock: :fontawesome-solid-plug:]]{ .md-button }
 
-[Private Key :material-key:](privatekey.md){ .md-button }
+[[concept-private-key|Private Key :material-key:]]{ .md-button }
 
 [[concept-keyspace-type|Keyspace Type: App-specific vs. Global Keys :material-key:]]{ .md-button }
 

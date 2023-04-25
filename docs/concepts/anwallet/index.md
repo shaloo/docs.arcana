@@ -1,12 +1,11 @@
 ---
-slug: /arcanawalletindex
-id: idarcanawalletindex
-title: Arcana Wallet
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-index-arcana-wallet
+title: 'Arcana Wallet Topics'
+description: 'Learn about the Arcana wallet features and what kind of wallet it is, what operations are supported and more.'
 arcana:
   root_rel_path: ../..
 ---
+
 # {{config.extra.arcana.wallet_name}} 
 
 The {{config.extra.arcana.sdk_name}} offers an embedded Web3 wallet - the {{config.extra.arcana.wallet_name}}. Use the {{config.extra.arcana.wallet_name}} to configure the user's blockchain signing experience, and allow authenticated users to perform Web3 wallet operations such as executing send transactions on supported blockchains, switching to a different blockchain network and managing tokens and NFTs.

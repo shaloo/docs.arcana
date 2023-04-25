@@ -1,8 +1,9 @@
 ---
-slug: /ansmartcontracts
-id: idansmartcontracts
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-arcana-smart-contract
+title: 'Arcana Smart Contracts'
+description: 'Learn about the various smart contracts implemented as part of the Arcana Network protocol.'
+arcana:
+  root_rel_path: ../..
 ---
 
 # {{config.extra.arcana.company_name}} Smart Contracts

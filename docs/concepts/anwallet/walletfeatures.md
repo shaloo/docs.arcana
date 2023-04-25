@@ -1,5 +1,5 @@
 ---
-alias: arcana-wallet-features
+alias: concept-wallet-features
 title: 'Arcana Wallet Features'
 description: 'List of Web3 operations supported by the Arcana wallet. JSON RPC calls, monitoring transaction activity and more.'
 arcana:

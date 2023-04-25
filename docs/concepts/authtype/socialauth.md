@@ -1,13 +1,12 @@
 ---
-slug: /socialauth
-id: idsocialauth
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-social-auth
+title: 'Social Authentication Providers'
+description: 'What is a social authentication provider and how they can be used to onboard Web3 app users.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Social Providers
+# Social Authentication Providers
 
 <img src="/img/icons/i_an_socialauth_light.png#only-light" width="50"/>
 <img src="/img/icons/i_an_socialauth_dark.png#only-dark" width="50"/>

@@ -1,8 +1,7 @@
 ---
-slug: /fedidmauth
-id: idfedidmauth
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-index-custom-auth
+title: 'Custom IAM Providers List'
+description: 'List of supported custom IAM providers that can be plugged into apps that integrate with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---

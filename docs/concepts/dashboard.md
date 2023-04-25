@@ -1,9 +1,7 @@
 ---
-slug: /conceptdb
-id: idconceptdb
-title: Dashboard
-sidebar_custom_props:
-  cardIcon: 💠
+alias: concept-arcana-dashboard
+title: 'Arcana Developer Dashboard'
+description: 'What is Arcana Developer Dashboard and what features does it offer for Web3 app developers.'
 arcana:
   root_rel_path: ..
 ---

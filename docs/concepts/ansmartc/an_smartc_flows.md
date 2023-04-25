@@ -1,8 +1,9 @@
 ---
-slug: /ansmartcflows
-id: idansmartcflows
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-ansc-flows
+title: 'Arcana Smart Contracts Flows'
+description: 'Learn how various smart contracts implemented as part of the Arcana Network protocol interact with each other.'
+arcana:
+  root_rel_path: ../..
 ---
 
 # {{config.extra.arcana.company_name}} Contract Flows

@@ -1,8 +1,9 @@
 ---
-slug: /ansmartcupgrade
-id: idansmartcupgrade
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-ansc-upgradable
+title: 'Upgradable Smart Contracts'
+description: 'Learn about how Arcana Network protocol upgrades are handled by the smart contracts.'
+arcana:
+  root_rel_path: ../..
 ---
 
 # Upgradable Contracts

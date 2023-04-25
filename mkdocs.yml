@@ -168,11 +168,11 @@ nav:
         - DKG:
           - concepts/dkg/index.md
           - What is DKG?: concepts/dkg.md
-          - How does DKG work?: concepts/how_dkg_works.md
-        - Gateway: concepts/gateway_nodes.md
+          - How does DKG work?: concepts/how-dkg-works.md
+        - Gateway: concepts/gateway-node.md
         - MFA: concepts/mfa.md
-        - Plug and Play Auth: concepts/plugnplayauth.md
-        - Private Key: concepts/privatekey.md
+        - Plug and Play Auth: concepts/plug-and-play-auth.md
+        - Private Key: concepts/private-key.md
         - Shared Key Space: concepts/keyspace-types.md
         - Usage Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
@@ -404,6 +404,10 @@ plugins:
         'concepts/validator_nodes.md': 'concepts/validator-nodes.md'
         'concepts/usage_metrics.md': 'concepts/usage-metrics.md'
         'concepts/sharedkeys.md': 'concepts/keyspace-types.md'
+        'concepts/privatekey.md': 'concepts/private-key.md'
+        'concepts/plugnplayauth.md': 'concepts/plug-and-play-auth.md'
+        'concepts/how_dkg_works.md': 'concepts/how-dkg-works.md'
+        'concepts/gateway_nodes.md': 'concepts/gateway-node.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

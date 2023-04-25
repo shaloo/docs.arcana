@@ -1,9 +1,7 @@
 ---
-slug: /plugnplayauth
-id: idplugnplayauth
-title: Plug & Play Auth
-sidebar_custom_props:
-  cardIcon: 💠
+alias: concept-plug-and-play-auth
+title: 'Plug & Play Auth'
+description: 'Web3 app developers can quickly enable user onboarding with a single line of code and use the built-in plug-and-play UI pop-up for allowing users to onboard the app. It is not essential to write UI code in the app to enable user login via the various configured authentication providers.'
 arcana:
   root_rel_path: ..
 ---

@@ -1,8 +1,7 @@
 ---
-slug: /walletorkey
-id: idwalletorkey
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-wallet-or-key
+title: 'Using Web3 wallet vs. Key'
+description: 'What to use and when, web wallet versus the keys.'
 arcana:
   root_rel_path: ../..
 ---

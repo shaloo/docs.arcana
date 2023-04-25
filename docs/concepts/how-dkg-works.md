@@ -1,5 +1,5 @@
 ---
-slug: /howdkgworks
+alias: concept-how-dkg-works
 id: idhowdkgworks
 sidebar_custom_props:
   cardIcon: ▶️

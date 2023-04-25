@@ -1,8 +1,6 @@
 ---
-slug: /arcanawalletoview
-id: idarcanawalletoview
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-arcana-wallet-overview
+title: 'Arcana Wallet Overview'
 arcana:
   root_rel_path: ../..
 ---

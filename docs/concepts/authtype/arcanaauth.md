@@ -1,13 +1,12 @@
 ---
-slug: /arcanaauth
-id: idarcanaauth
-sidebar_custom_props:
-  cardIcon: 💠
+alias: concept-arcana-auth
+title: 'Web3 Authentication'
+description: 'What is Web3 authentication and how is it different from Web2 authentication. Key offerings provided by the Arcana decentralized authentication solution to Web3 app developers.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Authentication
+# Web3 Authentication
 
 Authentication in the Web3 ecosystem is more complex than in traditional Web2 applications. Users must have a private key to interact with the blockchain networks and cryptographic systems. This can be cumbersome for users, as generating and managing private keys can be difficult and there is no central authority for recovery if a key is lost. Web3 wallets can make this process easier, but they are a new concept for many Web2 users and managing secrets for the wallet can be an additional burden. This can make it difficult for new users to onboard Web3 applications and the onboarding experience is different from and more complex than that of Web2 applications.
 
@@ -17,7 +16,7 @@ Authentication in the Web3 ecosystem is more complex than in traditional Web2 ap
 
 Web3 app developers can enable one or more of the supported authentication providers and onboard users.
 
-To add user onboarding functionality, the developers can use one of the two ways to plug in the authentication provider code in the app. They can either use the default, built-in, [plug-and-play login UI]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md) provided by the {{config.extra.arcana.sdk_name}} or choose to build a custom UI for user login and call the {{config.extra.arcana.sdk_name}} user onboarding functions.
+To add user onboarding functionality, the developers can use one of the two ways to plug in the authentication provider code in the app. They can either use the default, built-in, [[concept-plug-and-play-auth|plug-and-play login UI]] provided by the {{config.extra.arcana.sdk_name}} or choose to build a custom UI for user login and call the {{config.extra.arcana.sdk_name}} user onboarding functions.
 
 The {{config.extra.arcana.sdk_name}} allows developers to configure multiple user authentication providers and onboard users. The following authentication mechanisms are supported:
 

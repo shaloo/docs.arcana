@@ -1,13 +1,12 @@
 ---
-slug: /pwdless
-id: idpwdless
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-pwdless-auth
+title: 'Passwordless Login'
+description: 'What is passwordless authentication for Web3 apps?'
 arcana:
   root_rel_path: ../..
 ---
 
-# Passwordless Login
+# Passwordless Authentication
 
 <img src="/img/icons/i_an_pwdless_light.png#only-light" width="50"/>
 <img src="/img/icons/i_an_pwdless_dark.png#only-dark" width="50"/>

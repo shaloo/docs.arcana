@@ -1,8 +1,9 @@
 ---
-slug: /ansmartcdeployed
-id: idansmartcdeployed
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-deployed-contracts
+title: 'Deployed Contracts'
+description: 'Learn about the various smart contracts implemented as part of the Arcana Network protocol.'
+arcana:
+  root_rel_path: ../..
 ---
 
 # Deployed Contracts

@@ -9,7 +9,7 @@ arcana:
 
 User onboarding requires developers to first register their applications and configure the authentication providers using the {{config.extra.arcana.dashboard_name}}. Next, install and integrate the app with the {{config.extra.arcana.sdk_name}}.
 
-Developers can choose to enable user onboarding in their applications by either using the default, built-in UI offered by the {{config.extra.arcana.sdk_name}}  through the [plug-and-play authentication feature]({{page.meta.arcana.root_rel_path}}/concepts/plugnplayauth.md). Or they can build customized UI and simply call the {{config.extra.arcana.sdk_name}} functions to onboard users.
+Developers can choose to enable user onboarding in their applications by either using the default, built-in UI offered by the {{config.extra.arcana.sdk_name}}  through the [[concept-plug-and-play-auth|plug-and-play authentication feature]]. Or they can build customized UI and simply call the {{config.extra.arcana.sdk_name}} functions to onboard users.
 
 [[use-plug-play-auth|Enable Plug-and-Play UI :fontawesome-solid-plug:]]{ .md-button }
 

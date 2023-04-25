@@ -1,9 +1,9 @@
 ---
-slug: /ansmartcindex
-id: idansmartcindex
-title: Arcana Smart Contracts
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-index-ansc
+title: 'Arcana Smart Contracts'
+description: 'Learn about the various smart contracts implemented as part of the Arcana Network protocol.'
+arcana:
+  root_rel_path: ../..
 ---
 
 # {{config.extra.arcana.company_name}} Smart Contracts

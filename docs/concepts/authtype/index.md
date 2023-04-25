@@ -1,4 +1,7 @@
 ---
+alias: concept-index-auth-type
+title: 'Authentication Types'
+description: 'Types of authentication supported by Arcana Auth solution for onboarding Web3 app users.'
 arcana:
   root_rel_path: ../..
 ---

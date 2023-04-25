@@ -1,8 +1,7 @@
 ---
-slug: /aggregatelogin
-id: idaggregatelogin
-sidebar_custom_props:
-  cardIcon: 💠
+alias: concept-aggregate-login
+title: 'Aggregate Login'
+description: 'The aggregate login feature can uniquely identify application users even if they use different social accounts to log in to the app.'
 arcana:
   root_rel_path: ../..
 ---

@@ -1,8 +1,7 @@
 ---
-slug: /walletsigntx
-id: idwalletsigntx
-sidebar_custom_props:
-  cardIcon: 📤
+alias: concept-wallet-transaction-messages
+title: 'Blockchain Sign Transaction Messages'
+description: 'Various types of user sign approval messages that are displayed via the Arcana wallet.'
 arcana:
   root_rel_path: ../..
 ---

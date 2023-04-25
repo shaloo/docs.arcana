@@ -37,7 +37,7 @@ Web3 app developer can use the {{config.extra.arcana.dashboard_name}} to registe
 
 You can also check out various [[index-user-flows|control flows]] for user authentication and key management functions.
 
-Besides these components, the {{config.extra.arcana.product_name}} has an internal component called [Gateway]({{page.meta.arcana.root_rel_path}}/concepts/gateway_nodes.md) that is utilized for managing application configuration settings and communicating with the [{{config.extra.arcana.company_name}} smart contracts]({{page.meta.arcana.root_rel_path}}/concepts/ansmartc/index.md).
+Besides these components, the {{config.extra.arcana.product_name}} has an internal component called [[concept-gateway-node|Gateway Node]] that is utilized for managing application configuration settings and communicating with the [{{config.extra.arcana.company_name}} smart contracts]({{page.meta.arcana.root_rel_path}}/concepts/ansmartc/index.md).
 
 Another internal component that is critical to user onboarding and signing blockchain transactions is the  [Asynchronous DKG]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md) module. It is a decentralized component and there are trusted partners that act as DKG validators by owning and running some of the DKG [[concept-validator-nodes|Validator Nodes]] that help in distributed key generation.
 

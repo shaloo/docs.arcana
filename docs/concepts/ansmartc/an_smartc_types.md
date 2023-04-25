@@ -1,8 +1,9 @@
 ---
-slug: /ansmartctypes
-id: idansmartctypes
-sidebar_custom_props:
-  cardIcon: ▶️
+alias: concept-ansc-types
+title: 'Types of Smart Contracts'
+description: 'Learn about the various smart contracts types used in implementing the Arcana Network protocol.'
+arcana:
+  root_rel_path: ../..
 ---
 
 # Types of Smart Contracts

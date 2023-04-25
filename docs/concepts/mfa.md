@@ -1,8 +1,7 @@
 ---
-slug: /mfa
-id: idmfa
-sidebar_custom_props:
-  cardIcon: 💠
+alias: concept-mfa
+title: 'Multi-Factor Authentication'
+description: 'Arcana Auth offers enhanced Arcana wallet security via the MFA feature. Learn more.'
 arcana:
   root_rel_path: ..
 ---
