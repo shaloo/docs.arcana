@@ -1,6 +1,6 @@
 ---
 alias: onboard-validators
-title: 'Onboard Arcana ADKG Validators'
+title: 'Validator Onboarding'
 description: 'Validator onboarding guide contains instructions for the trusted partners on how to become a validator by setting up an Arcana ADKG node, install, upgrade, restart and more.'
 arcana:
   root_rel_path: .

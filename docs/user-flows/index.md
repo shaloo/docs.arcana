@@ -1,6 +1,6 @@
 ---
 alias: index-user-flows
-title: 'List of user control flows for Arcana Auth'
+title: 'Usage Flows'
 description: 'Various workflows in Arcana Auth usage.'
 arcana:
   root_rel_path: ..

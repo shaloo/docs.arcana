@@ -10,14 +10,14 @@ arcana:
 
 Learn about the different types of smart contracts used in the {{config.extra.arcana.product_name}}protocol.
 
-[Overview :fontawesome-solid-file-contract:](./an_smart_contracts.md){ .md-button }
+[[concept-arcana-smart-contract|Overview :fontawesome-solid-file-contract:]]{ .md-button }
 
-[Types of Smart Contracts :fontawesome-solid-file-contract:](./an_smartc_types.md){ .md-button }
+[[concept-ansc-types|Types of Smart Contracts :fontawesome-solid-file-contract:]]{ .md-button }
 
-[Deployed Contracts :fontawesome-solid-file-contract:](./an_smartc_deployed.md){ .md-button }
+[[concept-deployed-contracts|Deployed Contracts :fontawesome-solid-file-contract:]]{ .md-button }
 
-[Contract Details :fontawesome-solid-file-contract:](./an_smartc_details.md){ .md-button }
+[[concept-ansc-details|Contract Details :fontawesome-solid-file-contract:]]{ .md-button }
 
-[Contract Flows :fontawesome-solid-file-contract:](./an_smartc_flows.md){ .md-button }
+[[concept-ansc-flows|Contract Flows :fontawesome-solid-file-contract:]]{ .md-button }
 
-[Upgrade Contracts :fontawesome-solid-file-contract:](./an_smartc_upgrades.md){ .md-button }
+[[concept-ansc-upgradable|Upgrade Contracts :fontawesome-solid-file-contract:]]{ .md-button }

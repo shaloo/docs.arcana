@@ -6,27 +6,27 @@ arcana:
   root_rel_path: ..
 ---
 
-  # Concepts
+# Concepts
 
 These are the building blocks to help you learn about various {{config.extra.arcana.product_name}} terms and usage.
 
-[[concept-aggregate-login|Aggregate Login :material-login:]](authtype/aggregatelogin.md){ .md-button }
+[[concept-aggregate-login|Aggregate Login :material-login:]]{ .md-button }
 
-[{{config.extra.arcana.wallet_name}} :material-wallet:](anwallet/index.md){ .md-button }
+[[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}} :material-wallet:]]{ .md-button }
 
-[{{config.extra.arcana.sdk_name}} :material-lock: :fontawesome-solid-file-signature:](authsdk.md){ .md-button }
+[[concept-authsdk|{{config.extra.arcana.sdk_name}} :material-lock: :fontawesome-solid-file-signature:]]{ .md-button }
 
-[Authentication :material-lock-check:](authtype/arcanaauth.md){ .md-button }
+[[concept-arcana-auth|Authentication :material-lock-check:]]{ .md-button }
 
-[Auth Types :material-clipboard-text-search-outline:](authtype/index.md){ .md-button }
+[[concept-index-auth-type|Auth Types :material-clipboard-text-search-outline:]]{ .md-button }
 
-[Billing :fontawesome-solid-money-check-dollar:](billing.md){ .md-button }
+[[concept-usage-billing|Billing :fontawesome-solid-money-check-dollar:]]{ .md-button }
 
-[Dashboard :material-monitor-dashboard:](dashboard.md){ .md-button }
+[[concept-arcana-dashboard|Dashboard :material-monitor-dashboard:]]{ .md-button }
 
-[DKG :material-key-plus:](dkg/index.md){ .md-button }
+[[concept-dkg|DKG :material-key-plus:]]{ .md-button }
 
-[MFA :material-two-factor-authentication:](mfa.md){ .md-button }
+[[concept-mfa|MFA :material-two-factor-authentication:]]{ .md-button }
 
 [[concept-gateway-node|Gateway :fontawesome-solid-torii-gate:]]{ .md-button }
 

@@ -139,12 +139,12 @@ nav:
       - Architecture: auth-architecture.md
       - Smart Contracts:
         - concepts/ansmartc/index.md
-        - Overview: concepts/ansmartc/an_smart_contracts.md
-        - Types of Contracts: concepts/ansmartc/an_smartc_types.md
-        - Deployed Contracts: concepts/ansmartc/an_smartc_deployed.md
-        - Contract Details: concepts/ansmartc/an_smartc_details.md
-        - Contract Flows: concepts/ansmartc/an_smartc_flows.md
-        - Upgradeable Contracts: concepts/ansmartc/an_smartc_upgrades.md
+        - Overview: concepts/ansmartc/an-smart-contracts.md
+        - Types of Contracts: concepts/ansmartc/an-smartc-types.md
+        - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
+        - Contract Details: concepts/ansmartc/an-smartc-details.md
+        - Contract Flows: concepts/ansmartc/an-smartc-flows.md
+        - Upgradeable Contracts: concepts/ansmartc/an-smartc-upgrades.md
       - Concepts: 
         - concepts/index.md
         - Aggregate Login: concepts/authtype/aggregatelogin.md
@@ -409,6 +409,12 @@ plugins:
         'concepts/how_dkg_works.md': 'concepts/how-dkg-works.md'
         'concepts/gateway_nodes.md': 'concepts/gateway-node.md'
         'concepts/anwallet/arcanawallet_oview.md': 'concepts/anwallet/wallet-overview.md'
+        'concepts/ansmartc/an_smart_contracts.md': 'concepts/ansmartc/an-smart-contracts.md'
+        'concepts/ansmartc/an_smartc_types.md': 'concepts/ansmartc/an-smartc-types.md'
+        'concepts/ansmartc/an_smartc_deployed.md': 'concepts/ansmartc/an-smartc-deployed.md'
+        'concepts/ansmartc/an_smartc_details.md': 'concepts/ansmartc/an-smartc-details.md'
+        'concepts/ansmartc/an_smartc_flows.md': 'concepts/ansmartc/an-smartc-flows.md'
+        'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smartc-upgrades.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
