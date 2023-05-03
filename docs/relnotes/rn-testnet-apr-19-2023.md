@@ -1,6 +1,6 @@
 ---
-alias: index-latest-release-note
-title: 'Arcana Auth: Release Notes'
+alias: rn-main-auth-testnet-apr-19-23
+title: 'Release Notes Arcana Auth Testnet Release'
 description: 'Arcana Auth Release Notes (Testnet Apr 19th, 2023)'
 arcana:
   root_rel_path: ..
