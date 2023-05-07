@@ -107,7 +107,6 @@ nav:
           - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
         - Release Notes:
           - relnotes/archives/index.md
-          # - Apr 19th Testnet Release: relnotes/rn-testnet-apr-19-2023.md
           - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
           - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
           - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
