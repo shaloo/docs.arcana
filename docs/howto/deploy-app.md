@@ -24,7 +24,7 @@ In this guide you will learn how the Web3 app developers can deploy apps integra
 
     !!! caution 
 
-          Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages, or only `{{config.extra.arcana.wagmi_sdk_pkg_name}}` wrapper package. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, or the Wagmi `ArcanaConnector`, as the case may be. 
+          Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages, or the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, or the Wagmi `ArcanaConnector`, as the case may be. 
   
           {% include "./text-snippets/warn_wagmi_noauth.md" %}
 
