@@ -46,7 +46,15 @@ Follow these two steps:
 
 Import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] through the {{config.extra.arcana.dashboard_name}}. 
 
-{% include "./code-snippets/auth_wagmi_configure.md" %}
+Web3 app developers can choose to either use the built-in plug-and-play login UI in the {{config.extra.arcana.sdk_name}} or they can build their own custom login UI. The process of creation and configuration of the `ArcanaConnector` varies in each case. See the sample code below:
+
+#### Configure for Plug-and-Play Login UI
+
+{% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
+
+#### Configure for Custom Login UI
+
+{% include "./code-snippets/auth_wagmi_configure_custom_ui.md" %}
 
 Next, provide the newly instantiated and configured `ArcanaConnector` to the `createClient` Wagmi function. 
 
@@ -62,7 +70,7 @@ Now specify the `wagmiClient` in `WagmiConfig` component in the `_app.js` file.
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 
-Here is a basic, generic example of how you can layout the `wagmiClient` with the {{config.extra.arcana.wallet_name}} configured as the wallet option on the app page:
+Here is an example of how you can layout the `wagmiClient` with the {{config.extra.arcana.wallet_name}} configured as the wallet option on the app page. Note that in this example, the `setLogin` function is used after creating the wallet connector (the alternative custom UI option listed above):
 
 {% include "./code-snippets/auth_wagmi_use_index.md" %}
 
