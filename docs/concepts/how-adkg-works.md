@@ -38,7 +38,8 @@ ADKG requires a set of at least 4 connected nodes at a minimum for accommodating
 
 At a very high level, the protocol requires each node to **independently generate secrets** and then share a part of that secret with the other nodes. Each node then **shares a proposed set of key shares** with other nodes. Asynchronous Binary Agreement (ABA) **voting** is done by the nodes for each proposed set. Only the accepted and agreed-upon set is used to derive the key shares and then those key shares are combined to **arrive at the final key pair**. None of the nodes have full access to the secret key.
 
-<img src="/img/diagrams/d_concept_how_adkg_works.png"/>
+<img alt="How ADKG works" src="/img/diagrams/d_concept_how_adkg_works_light.png#only-light"/>
+<img alt="How ADKG works" src="/img/diagrams/d_concept_how_adkg_works_dark.png#only-dark"/>
 
 There are four key phases in the ADKG protocol:
 
