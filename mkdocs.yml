@@ -36,6 +36,7 @@ nav:
           - React/NextJS App: howto/integrate-app/react-nextjs.md
           - Wagmi App: howto/integrate-app/wagmi.md
           - RainbowKit App: howto/integrate-app/rainbow.md
+          - Web3-React App: howto/integrate-app/web3-react.md
         - Vue dApp: howto/integrate-app/vue.md
       - Onboard Users: 
         - howto/onboard-users/index.md
@@ -201,6 +202,7 @@ extra:
     auth_sdk_pkg_name: auth
     react_sdk_pkg_name: auth-react
     wagmi_sdk_pkg_name: auth-wagmi
+    web3_react_sdk_pkg_name: auth-web3-react
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
