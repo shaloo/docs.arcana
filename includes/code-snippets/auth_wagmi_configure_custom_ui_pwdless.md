@@ -6,7 +6,7 @@ import { polygon, polygonMumbai } from "wagmi/chains";
 import { configureChains, createClient, Chain } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 
-/* Using Custom UI for user login via Google */
+/* Using Custom UI for Passwordless user login */
 const auth = new AuthProvider(`${arcana_client_id}`) // Singleton
 export const connector = (chains: Chain[]) => {
   return new ArcanaConnector({
@@ -14,8 +14,9 @@ export const connector = (chains: Chain[]) => {
     options: {
       auth: auth,        
       login:  {
-          provider: 'google', //See 'Custom Login UI' section in the documentation for other supported providers.
-        } // Optional, specify here during ArcanaConnector instantiation or in the setLogin function
+          provider: 'passwordless', 
+          email: 'abc@example.com'
+        } // Optional, specify login details here or during ArcanaConnector instantiation or in the setLogin function
     },
   });
 };
@@ -35,7 +36,8 @@ export const connector = (chains: Chain[]) => {
 };
 as
 connector.setLogin({
-  provider: 'google'
+  provider: 'passwordless',
+  email: 'abc@example.com'
 })
 */
 

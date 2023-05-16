@@ -54,7 +54,15 @@ Web3 app developers can choose to either use the built-in plug-and-play login UI
 
 #### Configure for Custom Login UI
 
+To build custom login UI, developers can choose from the list of [[state-of-the-arcana-auth#user-onboarding-options|supported authentication providers]] or use passwordless.
+
+_Enable Authentication Provider_
+
 {% include "./code-snippets/auth_wagmi_configure_custom_ui.md" %}
+
+_Enable Passwordless Login_
+
+{% include "./code-snippets/auth_wagmi_configure_custom_ui_pwdless.md" %}
 
 Next, provide the newly instantiated and configured `ArcanaConnector` to the `createClient` Wagmi function. 
 

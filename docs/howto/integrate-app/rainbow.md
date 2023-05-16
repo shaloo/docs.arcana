@@ -45,7 +45,15 @@ Follow these two steps:
 
 Import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` and create a 'new' `ArcanaConnector`. During instantiation of the `ArcanaConnector`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector` and export the `connectors` to be used later in the `_app.js` file:
 
-{% include "./code-snippets/auth_rainbow_configure.md" %}
+Web3 app developers can choose to either use the built-in plug-and-play login UI in the {{config.extra.arcana.sdk_name}} or they can build their own custom login UI. The process of creation and configuration of the `ArcanaConnector` varies in each case. See the sample code below:
+
+#### Configure for Plug-and-Play Login UI
+
+{% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
+
+#### Configure for Custom Login UI
+
+{% include "./code-snippets/auth_wagmi_configure_custom_ui.md" %}
 
 Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` file for creating the Wagmi client using the `createClient` function:
 
