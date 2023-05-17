@@ -10,4 +10,6 @@ arcana:
 
 [[index-react-nextjs-onboard-users|React/NextJS Apps :fontawesome-brands-react:]]{ .md-button }
 
-[[index-wallet-connectors-onboard-users| Wallet Connectors :material-wallet-plus:]]{ .md-button }
+[[index-wagmi-onboard-users| Wagmi Apps :material-card-account-mail:]]{ .md-button }
+
+[[index-rainbow-onboard-users| RainbowKit Apps :material-card-account-mail:]]{ .md-button }

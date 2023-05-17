@@ -74,13 +74,13 @@ nav:
                 - howto/onboard-users/build-idm/index.md
                 - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
           - Wagmi Apps: 
-            - howto/onboard-users/wallet-connectors/wagmi/index.md
-            - Plug-and-Play Login UI: howto/onboard-users/wallet-connectors/wagmi/wagmi-pnp-ui.md
-            - Custom Login UI: howto/onboard-users/wallet-connectors/wagmi/wagmi-custom-ui.md
+            - howto/onboard-users/wagmi/index.md
+            - Plug-and-Play Login UI: howto/onboard-users/wagmi/wagmi-pnp-ui.md
+            - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
           - RainbowKit Apps: 
-            - howto/onboard-users/wallet-connectors/rainbow/index.md
-            - Plug-and-Play Login UI: howto/onboard-users/wallet-connectors/rainbow/rainbow-pnp-ui.md 
-            - Custom Login UI: howto/onboard-users/wallet-connectors/rainbow/rainbow-custom-ui.md
+            - howto/onboard-users/rainbow/index.md
+            - Plug-and-Play Login UI: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
+            - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
         - Vue Apps: 
             - howto/onboard-users/vue/index.md
             - Plug-and-Play Login UI: howto/onboard-users/use-plug-play-auth.md
