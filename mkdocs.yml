@@ -40,19 +40,64 @@ nav:
         - Vue dApp: howto/integrate-app/vue.md
       - Onboard Users: 
         - howto/onboard-users/index.md
-        - Plug and Play Login UI: howto/onboard-users/use-plug-play-auth.md
-        - Custom Login UI:
-          - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
-          - Build Social Auth: 
-            - howto/onboard-users/build-social/index.md
-            - Discord: howto/onboard-users/build-social/discord-oauth.md
-            - GitHub: howto/onboard-users/build-social/github-oauth.md
-            - Google: howto/onboard-users/build-social/google-oauth.md
-            - Twitch: howto/onboard-users/build-social/twitch-oauth.md
-            - Twitter: howto/onboard-users/build-social/twitter-oauth.md
-          - Build Custom Auth:
-            - howto/onboard-users/build-idm/index.md
-            - Cognito: howto/onboard-users/build-idm/cognito-oauth.md           
+        - Vanilla JS Apps:
+          - howto/onboard-users/vanilla/index.md
+          - Plug-and-Play Login UI: howto/onboard-users/use-plug-play-auth.md
+          - Custom Login UI:
+            - howto/onboard-users/custom-ui/index.md
+            - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
+            - Build Social Auth: 
+              - howto/onboard-users/build-social/index.md
+              - Discord: howto/onboard-users/build-social/discord-oauth.md
+              - GitHub: howto/onboard-users/build-social/github-oauth.md
+              - Google: howto/onboard-users/build-social/google-oauth.md
+              - Twitch: howto/onboard-users/build-social/twitch-oauth.md
+              - Twitter: howto/onboard-users/build-social/twitter-oauth.md
+            - Build Custom Auth:
+              - howto/onboard-users/build-idm/index.md
+              - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
+        - React Apps:
+          - howto/onboard-users/react/index.md
+          - React/NextJS Apps: 
+            - howto/onboard-users/react-nextjs/index.md
+            - Plug-and-Play Login UI: howto/onboard-users/use-plug-play-auth.md
+            - Custom Login UI:
+              - howto/onboard-users/custom-ui/index.md
+              - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
+              - Build Social Auth: 
+                - howto/onboard-users/build-social/index.md
+                - Discord: howto/onboard-users/build-social/discord-oauth.md
+                - GitHub: howto/onboard-users/build-social/github-oauth.md
+                - Google: howto/onboard-users/build-social/google-oauth.md
+                - Twitch: howto/onboard-users/build-social/twitch-oauth.md
+                - Twitter: howto/onboard-users/build-social/twitter-oauth.md
+              - Build Custom Auth:
+                - howto/onboard-users/build-idm/index.md
+                - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
+          - Wagmi Apps: 
+            - howto/onboard-users/wagmi/index.md
+            - Plug-and-Play Login UI: howto/onboard-users/wagmi/wagmi-pnp-ui.md
+            - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
+          - RainbowKit Apps: 
+            - howto/onboard-users/rainbow/index.md
+            - Plug-and-Play Login UI: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
+            - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
+        - Vue Apps: 
+            - howto/onboard-users/vue/index.md
+            - Plug-and-Play Login UI: howto/onboard-users/use-plug-play-auth.md
+            - Custom Login UI:
+              - howto/onboard-users/custom-ui/index.md
+              - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
+              - Build Social Auth: 
+                - howto/onboard-users/build-social/index.md
+                - Discord: howto/onboard-users/build-social/discord-oauth.md
+                - GitHub: howto/onboard-users/build-social/github-oauth.md
+                - Google: howto/onboard-users/build-social/google-oauth.md
+                - Twitch: howto/onboard-users/build-social/twitch-oauth.md
+                - Twitter: howto/onboard-users/build-social/twitter-oauth.md
+              - Build Custom Auth:
+                - howto/onboard-users/build-idm/index.md
+                - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
       - Enable Arcana Wallet:
         - howto/arcana-wallet/index.md
         - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
@@ -130,6 +175,7 @@ nav:
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
+      - Coming Soon: arcana-coming-soon.md
   - Arcana Academy:
       - an-academy/index.md
       - About Arcana Auth:

@@ -22,6 +22,10 @@ In this guide you will learn how the Web3 app developers can deploy apps integra
 
 * Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi, RainbowKit or Web3-React wallet connector frameworks. Follow the instructions in the respective [[index-integrate-app|integration guides]] and choose carefully depending on the app type. 
 
+    !!! caution 
+
+          Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages, or the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, or the Wagmi `ArcanaConnector`, as the case may be. 
+
 ### Deploying App (Testnet Configuration)
 
 Before deploying an app that uses the Arcana Testnet configurations, make sure that during the app integration with the {{config.extra.arcana.sdk_name}} a new `AuthProvider` is created using the correct **{{config.extra.arcana.app_address}}** assigned to the 'Testnet' configuration profile. If you specify the `network` parameter in the `AuthProvider` constructor, assign it the value 'testnet' as shown in the sample code:
