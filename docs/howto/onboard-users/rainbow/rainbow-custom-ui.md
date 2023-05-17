@@ -1,16 +1,16 @@
 ---
-alias: integrate-rainbow-app
-title: 'Integrate Rainbow App'
-description: 'Integrate Web3 RainbowKit apps with the Arcana Auth SDK using the instructions listed here.'
+alias: onboard-rainbow-app-custom-ui
+title: 'RainbowKit App: Build Custom Login UI'
+description: 'Onboard Users via Custom Login UI in Web3 RainbowKit apps integrated with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Integrate Rainbow App
+# RainbowKit App: Custom Login UI
 
 [RainbowKit](https://www.rainbowkit.com/) works with [Wagmi](https://wagmi.sh/) wallet connector that allows Web3 app users to easily switch between multiple wallets within a single application. For Web3 apps using RainbowKit, the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Wagmi connector that can be used to enable the {{config.extra.arcana.wallet_name}} in the app's context.
 
-In this guide, you will learn how to integrate Web3 RainbowKit apps with the {{config.extra.arcana.sdk_name}}. 
+In this guide, you will learn how to onboard users in Web3 apps that use RainbowKit wallet connectors.  It shows how the developers can integrate apps with the {{config.extra.arcana.product_name}} SDKs and then use custom login UI to onboard users easily.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ In this guide, you will learn how to integrate Web3 RainbowKit apps with the {{c
 
 ## Steps
 
-*Integrating Web3 RainbowKit apps with the {{config.extra.arcana.sdk_name}} is simple!*
+*Onboarding users in Web3 RainbowKit apps via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
 
 Follow these three steps:
 
@@ -42,11 +42,25 @@ Follow these three steps:
 
 Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create `AuthProvider` by specifying the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. Then import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create an `ArcanaConnector`.
 
-Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector` and export the `connectors` to be used later in the `_app.js` file:
+Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. 
 
-{% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
+Web3 app developers can choose to either use the built-in plug-and-play login UI in the {{config.extra.arcana.sdk_name}} or they can build their own custom login UI. The process of creation and configuration of the `ArcanaConnector` varies in each case. See the sample code below:
 
-Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` file for creating the Wagmi client using the `createClient` function:
+If the custom login UI is configured such that it allow a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the provider and later call the `setLogin` function for the selected provider, in response to the user's selection.
+
+!!! note "Configure Authentication Providers before `ArcanaConnector` creation"
+
+      To build a custom login UI, developers can choose from the list of [[state-of-the-arcana-auth#user-onboarding-options|supported authentication providers]] or use passwordless. Wire the UI buttons for onboarding via different options to the `setLogin` function of the `ArcanaConnector`.
+
+_Enable Authentication Provider_
+
+{% include "./code-snippets/auth_wagmi_configure_custom_ui.md" %}
+
+_Enable Passwordless Login_
+
+{% include "./code-snippets/auth_wagmi_configure_custom_ui_pwdless.md" %}
+
+Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector` and export the `connectors` to be used later in the `_app.js` file. Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` file for creating the Wagmi client using the `createClient` function:
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
@@ -62,22 +76,15 @@ Finally, pass the `wagmiClient` created earlier as a parameter to the `WagmiConf
 
 That is all! :material-party-popper:
 
-The Web3 app using RainbowKit is successfully integrated with the {{config.extra.arcana.sdk_name}}.
+The Web3 Wagmi app can now onboard users using the custom login UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
-!!! tip "Example: Sample RainbowKit App"
+!!! tip "RainbowKit Integration Example"
 
-      See [sample RainbowKit app](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) for details.
+      Here is the [RainbowKit integration example source code](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) for your reference.
 
 ## What's Next?
 
-After integrating with a Web3 RainbowKit app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. There are two ways to onboard users: 
-
-* Use built-in plug-and-play login UI with a single function call that displays all the configured authentication providers
-* Use custom login UI to onboard users and wire it to the {{config.extra.arcana.sdk_name}} functions for calling the configured authentication providers.
-
-See [[index-rainbow-onboard-users|for details.]]
-
-{{config.extra.arcana.wallet_name}} can also be used in applications that integrate with [Wagmi](https://wagmi.sh). For details, see [[integrate-wagmi-app|how to enable {{config.extra.arcana.wallet_name}} in apps using Wagmi]].
+After integrating and onboarding users in the Web3 app developers can add code programmatically and [[index-arcana-wallet|enable Web3 wallet operations]] in the authenticated user's context.
 
 ## See also
 
