@@ -1,16 +1,16 @@
 ---
-alias: integrate-web3-react-app
-title: 'Integrate Web3 React App'
+alias: onboard-web3-react-app-pnp-ui
+title: 'Web3 React App: Plug-and-Play Auth'
 description: 'Integrate Web3-React apps with the Arcana Auth SDK using the instructions listed here.'
 arcana:
-  root_rel_path: ../..
+  root_rel_path: ../../..
 ---
 
-# Integrate Web3-React App
+# Web3-React App: Plug-and-Play Auth 
 
-With [Web3-React](https://www.npmjs.com/package/web3-react?activeTab=readmet) wallet connector framework, developers can allow app users to easily switch between multiple wallets within a single application. The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Web3-React connector that enables the {{config.extra.arcana.wallet_name}} in apps using Web3-React.
+With [Web3-React](https://www.npmjs.com/package/web3-react) wallet connector framework, developers can allow app users to easily switch between multiple wallets within a single application. The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Web3-React connector that enables the {{config.extra.arcana.wallet_name}} in apps using Web3-React.
 
-In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_name}} with apps that use Web3-React wallet connectors.
+In this guide, you will learn how to onboard users in Web3 React apps. It shows how the developers can integrate apps with the {{config.extra.arcana.product_name}} SDKs and then use the built-in plug-and-play login UI out of the box to onboard users easily.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_nam
 
 ## Steps
 
-*Integrating Web3-React apps with the {{config.extra.arcana.sdk_name}} is simple!*
+*Onboarding users in Web3 React apps via the plug-and-play auth feature of the {{config.extra.arcana.sdk_name}} is simple!*
 
 Follow these three steps:
 
@@ -40,15 +40,15 @@ Follow these three steps:
 
 ### Step 2: Create `AuthProvider` and `ArcanaConnector`
 
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create `AuthProvider`. Then import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create an `ArcanaConnector`. 
+Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages. First, create `AuthProvider` and specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] through the {{config.extra.arcana.dashboard_name}}. 
 
-To instantiate the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] through the {{config.extra.arcana.dashboard_name}}. Call `initializeConnector` from the `web3-react/core` library and instantiate the `ArcanaConnector` by specifying the `AuthProvider` as shown in the sample code below.
+Next, call `initializeConnector` from the `web3-react/core` library and instantiate the `ArcanaConnector` by specifying the `AuthProvider` as shown in the sample code below.
 
 {% include "./code-snippets/auth_web3_react_configure.md" %}
 
 ### Step 3: Use ArcanaConnector
 
-In the Web3 React app, use the `ArcanaConnector` and set up the required hooks:
+In the Web3 React app, use the `ArcanaConnector` created earlier and set up the required hooks:
 
 {% include "./code-snippets/auth_web3_react_use.md" %}
 
@@ -56,9 +56,11 @@ Now, you are all set to onboard users in the Web3 React app using the plug-and-p
 
 {% include "./code-snippets/auth_web3_react_homepage.md" %}
 
+![Web3 React App integrated with the Arcana Auth](/img/web3_react_example_an_wallet.png){.an-screenshot-noeffects}
+
 That is all! :material-party-popper:
 
-The Web3 React app is successfully integrated with the {{config.extra.arcana.sdk_name}}.
+The Web3 React app can now onboard users using the plug-and-play login UI built-in the {{config.extra.arcana.sdk_name}}. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 
 !!! tip "Example: Sample Web3 React App"
 
@@ -85,3 +87,4 @@ See [[index-web3-react-onboard-users|for details.]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
 * [`{{config.extra.arcana.web3_react_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-web3-react/blob/main/readme.md)
+

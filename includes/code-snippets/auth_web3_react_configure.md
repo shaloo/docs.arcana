@@ -1,17 +1,17 @@
-```js title="auth-react-example/utils/auth_init.ts" hl_lines="1 2 6 8 10 12"
-import { ArcanaConnector } from "@arcana/auth-web3-react"
-import { AuthProvider } from "@arcana/auth"
-import { initializeConnector } from "@web3-react/core"
+```js title="example/connectors/arcanaWallet.ts" hl_lines="2-3 6-8 9-14"
+import { initializeConnector } from "@web3-react/core";
+import { ArcanaConnector } from "@arcana/auth-web3-react";
+import { AuthProvider } from "@arcana/auth";
+import { URLS } from "../chains";
 
-// Example arcana_client_id `xar_live_d7c88d9b033d100e4200d21a5c4897b896e60063`
-const auth = new AuthProvider(`${arcana_client_id}`) // Singleton
-
-export const [authConnector, authHooks] = initializeConnector<ArcanaConnector>(
+const auth = new AuthProvider(
+  "xar_test_b2dde12aad64eb35d72b2c80926338e178b1fa3f"
+);
+export const [arcanaConnect, hooks] = initializeConnector<ArcanaConnector>(
   (actions) =>
-    new ArcanaConnector({
+    new ArcanaConnector(auth, {
       actions,
-      auth,
     })
-)
+);
 ...
 ```
