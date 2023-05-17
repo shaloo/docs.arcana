@@ -1,4 +1,4 @@
-```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="1-2 7-15"
+```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="1-2 7-20 36-39"
 
 import { AuthProvider } from "@arcana/auth";
 import { ArcanaConnector } from "@arcana/auth-wagmi";
@@ -15,7 +15,7 @@ export const connector = (chains: Chain[]) => {
       auth: auth,        
       login:  {
           provider: 'passwordless', 
-          email: 'abc@example.com'
+          email: 'abc@example.com' //optional
         } // Optional, specify login details here or during ArcanaConnector instantiation or in the setLogin function
     },
   });
@@ -34,10 +34,10 @@ export const connector = (chains: Chain[]) => {
     },
   });
 };
-as
+
 connector.setLogin({
   provider: 'passwordless',
-  email: 'abc@example.com'
+  email: 'abc@example.com' //optional
 })
 */
 

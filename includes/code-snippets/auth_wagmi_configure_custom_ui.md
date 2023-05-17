@@ -1,4 +1,4 @@
-```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="1-2 7-15"
+```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="1-2 7-19 35-37"
 
 import { AuthProvider } from "@arcana/auth";
 import { ArcanaConnector } from "@arcana/auth-wagmi";
@@ -33,7 +33,7 @@ export const connector = (chains: Chain[]) => {
     },
   });
 };
-as
+
 connector.setLogin({
   provider: 'google'
 })
