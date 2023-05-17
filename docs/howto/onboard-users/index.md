@@ -9,7 +9,7 @@ arcana:
 
 User onboarding requires developers to first register their applications and configure the authentication providers using the {{config.extra.arcana.dashboard_name}}. Next, install and integrate the app with the {{config.extra.arcana.sdk_name}}.
 
-Developers can choose to enable user onboarding in their applications by either using the default, built-in UI offered by the {{config.extra.arcana.sdk_name}}  through the [[concept-plug-and-play-auth|plug-and-play authentication feature]]. Or they can build customized UI and simply call the {{config.extra.arcana.sdk_name}} functions to onboard users.
+After integrating, the Web3 apps can add code to onboard users via the supported authentication providers or the passwordless mechanism. {% include "./text-snippets/user_onboard_options.md" %} 
 
 Note that the user onboarding process may vary depending on the application type as listed below:
 
