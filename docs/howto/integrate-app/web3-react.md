@@ -44,7 +44,7 @@ Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create `AuthProvi
 
 To instantiate the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] through the {{config.extra.arcana.dashboard_name}}. Call `initializeConnector` from the `web3-react/core` library and instantiate the `ArcanaConnector` by specifying the `AuthProvider` as shown in the sample code below.
 
-{% include "./code-snippets/auth_web3_react_configure.md" %}
+{% include "./code-snippets/auth_web3_react_configure_pnp.md" %}
 
 ### Step 3: Use ArcanaConnector
 
@@ -74,10 +74,6 @@ After integrating with a Web3 React app with the {{config.extra.arcana.sdk_name}
 See [[index-web3-react-onboard-users|for details.]]
 
 {{config.extra.arcana.wallet_name}} can also be used in applications that integrate with other wallet connectors such as [Wagmi](https://wagmi.sh) and [Rainbow Kit](https://www.rainbowkit.com/). See [[index-integrate-react-app|how to enable {{config.extra.arcana.wallet_name}} for apps using Wagmi and Rainbow Kit]].
-
-!!! info "Using `{{config.extra.arcana.web3_react_sdk_pkg_name}}`"
-
-      {% include "./text-snippets/warn_web3_react_pnp_limitation.md" %}
 
 ## See also
 

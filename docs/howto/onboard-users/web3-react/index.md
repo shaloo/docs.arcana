@@ -10,3 +10,5 @@ arcana:
 
 [[onboard-web3-react-app-pnp-ui| Plug-and-Play UI  :material-card-account-mail:]]{ .md-button }
 
+[[onboard-web3-react-app-custom-ui| Custom UI  :material-card-account-mail:]]{ .md-button }
+

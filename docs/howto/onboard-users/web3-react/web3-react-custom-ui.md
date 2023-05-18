@@ -1,16 +1,16 @@
 ---
-alias: onboard-web3-react-app-pnp-ui
-title: 'Web3 React App: Plug-and-Play Auth'
-description: 'Integrate Web3-React apps with the Arcana Auth SDK using the instructions listed here.'
+alias: onboard-web3-react-app-custom-ui
+title: 'Web3 React App: Custom Login UI'
+description: 'Onboard Users via custom login UI in Web3-React apps integrated with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../../..
 ---
 
-# Web3-React App: Plug-and-Play Auth 
+# Web3-React App: Custom Login UI 
 
 With [Web3-React](https://www.npmjs.com/package/web3-react) wallet connector framework, developers can allow app users to easily switch between multiple wallets within a single application. The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Web3-React connector that enables the {{config.extra.arcana.wallet_name}} in apps using Web3-React.
 
-In this guide, you will learn how to onboard users in Web3 React apps. It shows how the developers can integrate apps with the {{config.extra.arcana.product_name}} SDKs and then use the built-in plug-and-play login UI out of the box to onboard users easily.
+In this guide, you will learn how to onboard users in Web3-React apps. It shows how the developers can integrate apps with the {{config.extra.arcana.product_name}} SDKs and then use custom login UI to onboard users easily.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ In this guide, you will learn how to onboard users in Web3 React apps. It shows 
 
 ## Steps
 
-*Onboarding users in Web3 React apps via the plug-and-play auth feature of the {{config.extra.arcana.sdk_name}} is simple!*
+*Onboarding users in Web3 React apps via via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
 
 Follow these three steps:
 
@@ -44,7 +44,19 @@ Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and `{{config.extra.a
 
 Next, call `initializeConnector` from the `web3-react/core` library and instantiate the `ArcanaConnector` by specifying the `AuthProvider` as shown in the sample code below.
 
-{% include "./code-snippets/auth_web3_react_configure_pnp.md" %}
+If the custom login UI is configured such that it allows a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the authentication provider as input and later call the `setLogin` function for the selected provider, in response to the user's onboarding choice.
+
+!!! note "Configure Authentication Providers before `ArcanaConnector` creation"
+
+      To build a custom login UI, developers can choose from the list of [[state-of-the-arcana-auth#user-onboarding-options|supported authentication providers]] or use passwordless. Wire the UI buttons for onboarding via different options to the `setLogin` function of the `ArcanaConnector`.
+
+_Enable Authentication Provider_
+
+{% include "./code-snippets/auth_wagmi_configure_custom_ui.md" %}
+
+_Enable Passwordless Login_
+
+{% include "./code-snippets/auth_wagmi_configure_custom_ui_pwdless.md" %}
 
 ### Step 3: Use ArcanaConnector
 
@@ -60,7 +72,7 @@ Now, you are all set to onboard users in the Web3 React app using the plug-and-p
 
 That is all! :material-party-popper:
 
-The Web3 React app can now onboard users using the plug-and-play login UI built-in the {{config.extra.arcana.sdk_name}}. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
+The Web3-React app can now onboard users using the custom login UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
 !!! tip "Example: Sample Web3 React App"
 

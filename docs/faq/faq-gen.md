@@ -42,7 +42,7 @@ toc_depth: 2
 
      As part of the integration, these applications can enable the {{config.extra.arcana.wallet_name}} as one of the wallet choices for the app users in addition to the built-in wallets available in the wallet connect frameworks.
      
-     For step by step integration instructions for these wallet connector frameworks, see how to [[integrate-wagmi-app|integrate Wagmi apps]], how to [[integrate-rainbow-app| integrate RainbowKit apps]] and [[integrate-web3-react-app| how to integrate Web3-React apps]].
+     For step-by-step integration instructions for these wallet connector frameworks, see how to [[integrate-wagmi-app|integrate Wagmi apps]], how to [[integrate-rainbow-app| integrate RainbowKit apps]] and [[integrate-web3-react-app| how to integrate Web3-React apps]].
 
 ## User Onboarding
 

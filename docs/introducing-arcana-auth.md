@@ -32,7 +32,7 @@ Designed for developers and Web3 users, {{config.extra.arcana.product_name}} is 
 ## {{config.extra.arcana.sdk_name}}
 
 
-{{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 app, be it a _vanilla JS app_, apps built using various application frameworks such as _React, NextJS_, _Remix_, _Vue_, apps that use wallet connector frameworks such as _Wagmi_,_RainbowKit_, and _Web3-React_. 
+{{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with any Web3 app, be it a _vanilla JS app_, apps built using various application frameworks such as _React, NextJS_, _Remix_, _Vue_, apps that use wallet connector frameworks such as _Wagmi_, _RainbowKit_, and _Web3-React_. 
 
 Once integrated, apps can easily onboard users via any of the configured social providers or the custom lAM providers such as AWS Cognito. The authenticated users can instantly access the embedded, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions. 
     

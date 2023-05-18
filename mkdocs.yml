@@ -85,6 +85,7 @@ nav:
           - Web3-React Apps:
             - howto/onboard-users/web3-react/index.md
             - Plug-and-Play Login UI: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
+            - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
         - Vue Apps: 
             - howto/onboard-users/vue/index.md
             - Plug-and-Play Login UI: howto/onboard-users/use-plug-play-auth.md
