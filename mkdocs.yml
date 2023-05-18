@@ -1,7 +1,11 @@
 site_name: Auth Documentation
 
-# Remove for dev
-site_url: "https://docs.arcana.network"
+# For for dev
+site_url: "https://docs.dev.arcana.network"
+
+# For production
+#site_url: "https://docs.arcana.network"
+
 use_directory_urls: false
 # upto here
 
