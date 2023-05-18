@@ -1,6 +1,6 @@
 ---
 alias: onboard-web3-react-app-custom-ui
-title: 'Web3 React App: Custom Login UI'
+title: 'Web3-React App: Custom Login UI'
 description: 'Onboard Users via custom login UI in Web3-React apps integrated with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../../..
@@ -30,7 +30,7 @@ In this guide, you will learn how to onboard users in Web3-React apps. It shows 
 
 ## Steps
 
-*Onboarding users in Web3 React apps via via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
+*Onboarding users in Web3-React apps via via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
 
 Follow these three steps:
 
@@ -60,23 +60,23 @@ _Enable Passwordless Login_
 
 ### Step 3: Use ArcanaConnector
 
-In the Web3 React app, use the `ArcanaConnector` created earlier and set up the required hooks:
+In the Web3-React app, use the `ArcanaConnector` created earlier and set up the required hooks:
 
 {% include "./code-snippets/auth_web3_react_use.md" %}
 
-Now, you are all set to onboard users in the Web3 React app using the plug-and-play login UI and enable {{config.extra.arcana.wallet_name}} for the authenticated users.
+Now, you are all set to onboard users in the Web3-React app using the plug-and-play login UI and enable {{config.extra.arcana.wallet_name}} for the authenticated users.
 
 {% include "./code-snippets/auth_web3_react_homepage.md" %}
 
-![Web3 React App integrated with the Arcana Auth](/img/web3_react_example_an_wallet.png){.an-screenshot-noeffects}
+![Web3-React App integrated with the Arcana Auth](/img/web3_react_example_an_wallet.png){.an-screenshot-noeffects}
 
 That is all! :material-party-popper:
 
 The Web3-React app can now onboard users using the custom login UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
-!!! tip "Example: Sample Web3 React App"
+!!! tip "Example: Sample Web3-React App"
 
-      See [sample Web3 React app](https://github.com/arcana-network/auth-web3-react/example) for details.
+      See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/example) for details.
       
 ## What's Next?
 

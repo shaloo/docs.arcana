@@ -1,6 +1,6 @@
 ---
 alias: integrate-web3-react-app
-title: 'Integrate Web3 React App'
+title: 'Integrate Web3-React App'
 description: 'Integrate Web3-React apps with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../..
@@ -48,25 +48,25 @@ To instantiate the `AuthProvider`, specify the unique **{{config.extra.arcana.ap
 
 ### Step 3: Use ArcanaConnector
 
-In the Web3 React app, use the `ArcanaConnector` and set up the required hooks:
+In the Web3-React app, use the `ArcanaConnector` and set up the required hooks:
 
 {% include "./code-snippets/auth_web3_react_use.md" %}
 
-Now, you are all set to onboard users in the Web3 React app using the plug-and-play login UI and enable {{config.extra.arcana.wallet_name}} for the authenticated users.
+Now, you are all set to onboard users in the Web3-React app using the plug-and-play login UI and enable {{config.extra.arcana.wallet_name}} for the authenticated users.
 
 {% include "./code-snippets/auth_web3_react_homepage.md" %}
 
 That is all! :material-party-popper:
 
-The Web3 React app is successfully integrated with the {{config.extra.arcana.sdk_name}}.
+The Web3-React app is successfully integrated with the {{config.extra.arcana.sdk_name}}.
 
-!!! tip "Example: Sample Web3 React App"
+!!! tip "Example: Sample Web3-React App"
 
-      See [sample Web3 React app](https://github.com/arcana-network/auth-web3-react/example) for details.
+      See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/example) for details.
       
 ## What's Next?
 
-After integrating with a Web3 React app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. There are two ways to onboard users: 
+After integrating with a Web3-React app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. There are two ways to onboard users: 
 
 * Use built-in plug-and-play login UI with a single function call that displays all the configured authentication providers
 * Use custom login UI to onboard users and wire it to the {{config.extra.arcana.sdk_name}} functions for calling the configured authentication providers.
