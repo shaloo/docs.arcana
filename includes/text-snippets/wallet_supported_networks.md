@@ -7,5 +7,3 @@
   * Ethereum_Sepolia
   * Polygon_Mainnet
   * Polygon_Mumbai_Testnet
-
-See [Default Chain Definitions](https://dev-authsdk-ref-guide.netlify.app/enums/chain) for network codes.
