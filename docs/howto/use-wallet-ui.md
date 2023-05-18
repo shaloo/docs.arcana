@@ -133,7 +133,7 @@ For the first purchase, you may also be required to do KYC formalities.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_fiat_kyc_rampnetwork.png" width="50%"/>
 
-If you are new to Transak or Ramp, see [Transak User Guide](https://support.transak.com/hc/en-us/articles/360020615378-Buying-cryptocurrency-for-beginners) and [Ramp User Guide](https://support.ramp.network/en/articles/18887-how-to-use-ramp) for step-by-step details on buying crypto assets.
+If you are new to Transak or Ramp, see [Transak User Guide](https://support.transak.com/en/articles/7846055-buying-cryptocurrency-for-beginners) and [Ramp User Guide](https://support.ramp.network/en/articles/18887-how-to-use-ramp) for step-by-step details on buying crypto assets.
 
 For details on what assets and cryptocurrency, countries are supported by these providers refer to [Transak coverage](https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits) and [Ramp Network coverage](https://support.ramp.network/en/articles/432-what-cryptoassets-does-ramp-support). 
 
