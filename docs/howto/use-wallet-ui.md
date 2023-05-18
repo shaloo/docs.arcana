@@ -230,15 +230,51 @@ Once all pending transactions are processed, you will not see the red dot. The {
 
 ### Export Private Key
 
-Click the<img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom left of the {{config.extra.arcana.wallet_name}} to see the user profile screen. It provides an option to export the user's private key. For details, see [[use-wallet-to-export-keys|how to export a user's private key]] guide.
+Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom left of the {{config.extra.arcana.wallet_name}} to see the user profile screen. It provides an option to export the user's private key. For details, see [[use-wallet-to-export-keys|how to export a user's private key]] guide.
 
-### Minimize Wallet
+### Minimized Wallet Screen
 
-The {{config.extra.arcana.wallet_name}} can be in one of two states - maximized or minimized. The wallet UI can be minimized using the 'x' icon on the top right corner of the wallet screen. Minimized wallet displays as a small widget on the application window. To maximize the wallet, simply click on it.
+The {{config.extra.arcana.wallet_name}} is displayed as an embedded wallet within the context of the Web3 app that is integrated with The {{config.extra.arcana.sdk_name}}. 
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-light" width="75"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-dark" width="75"/>
+When the user authenticates, the wallet is shown as an icon on the screen in a minimized state. 
 
-During minimized state, if the app issues a transaction or if a user action results in a blockchain transaction that requires approval from the user, then the wallet screen is automatically changed to the maximized state in the application window.
+<img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-dark" width="7%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-light" width="7%"/>
+
+On clicking, it expands to display the fully maximized wallet screen. It can be minimized by clicking the 'x' icon on the top right corner of the wallet screen. 
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_max_light.png#only-dark" width="20%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_max_dark.png#only-light" width="20%"/>
+
+In the minimized state, the wallet displays a red dot with a number indicating pending transactions waiting for user's approval,
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.gif#only-dark" width="7%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.gif#only-light" width="7%"/>
+
+### View Transaction Summary & Details
+
+If a blockchain transaction is triggered via the app that requires the user's approval, the user will see a transaction request screen. If the wallet was in minimized state at the time the request was generated, then the transaction request will show up in a minimized wallet screen. It will display basic details of the transaction along with the buttons to approve or reject. 
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_sign_msg.png" width="20%"/>>
+
+The user can click on the top right arrow icon in the minimized transaction screen to view more details of the transaction. 
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_sign_msg.png" width="20%"/>
+
+Here is an example of how a `eth_sendTransaction` triggers an approval request from the user. A minimized send transaction screen is displayed:
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_send_tx.png" width="20%"/>
+
+In the case of the send transaction request or sign transaction request, the details screen allows the user to edit the gas fees before approving the request. 
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_send_tx.gif" width="20%"/>
+
+For other transactions that do not involve gas fees such as personal sign or signature requests, the details screen simply shows the message details about what is required to be signed.
+
+Here is an example of signature request message displayed in a summarized form:
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_smtx_req_sign.png" width="20%"/>
+
+On clicking at the top right icon, user can see the signature request details:
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_req_sign.png" width="20%"/>
 
 ### Logout
 
