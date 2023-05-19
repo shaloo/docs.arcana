@@ -240,7 +240,7 @@ When the user authenticates, the wallet is shown as an icon on the screen in a m
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-dark" width="7%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-light" width="7%"/>
 
-On clicking, it expands to display the fully maximized wallet screen. It can be minimized by clicking the 'x' icon on the top right corner of the wallet screen. 
+On clicking, it expands to display the fully maximized wallet screen. It can be minimized by clicking the '∨' icon on the top right corner of the wallet screen. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_max_light.png#only-dark" width="20%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_max_dark.png#only-light" width="20%"/>
 
