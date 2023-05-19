@@ -3,7 +3,7 @@ site_name: Auth Documentation
 # For for dev
 site_url: "https://docs.dev.arcana.network"
 
-# For production
+# For main
 #site_url: "https://docs.arcana.network"
 
 use_directory_urls: false
