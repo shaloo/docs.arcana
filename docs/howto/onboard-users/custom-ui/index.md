@@ -1,12 +1,12 @@
 ---
 alias: index-custom-ui-onboard-users
-title: 'Onboard Users: Custom Login UI Options'
+title: 'Custom Login UI'
 description: 'List of options for onboarding users via custom login UI - passwordless login, login via social authentication providers or custom authentication providers.'
 arcana:
   root_rel_path: ../../..
 ---
 
-# Onboard Users: Custom Login UI Options
+# Custom Login UI
 
 [[build-password-less-auth|Build Custom UI for Login via Passwordless Auth :material-email-open-outline:]]{ .md-button }
 

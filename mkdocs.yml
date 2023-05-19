@@ -41,12 +41,12 @@ nav:
           - Wagmi App: howto/integrate-app/wagmi.md
           - RainbowKit App: howto/integrate-app/rainbow.md
           - Web3-React App: howto/integrate-app/web3-react.md
-        - Vue dApp: howto/integrate-app/vue.md
+        - Vue App: howto/integrate-app/vue.md
       - Onboard Users: 
         - howto/onboard-users/index.md
         - Vanilla JS Apps:
           - howto/onboard-users/vanilla/index.md
-          - Plug-and-Play Login UI: howto/onboard-users/use-plug-play-auth.md
+          - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
           - Custom Login UI:
             - howto/onboard-users/custom-ui/index.md
             - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
@@ -64,7 +64,7 @@ nav:
           - howto/onboard-users/react/index.md
           - React/NextJS Apps: 
             - howto/onboard-users/react-nextjs/index.md
-            - Plug-and-Play Login UI: howto/onboard-users/use-plug-play-auth.md
+            - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
             - Custom Login UI:
               - howto/onboard-users/custom-ui/index.md
               - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
@@ -80,19 +80,19 @@ nav:
                 - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
           - Wagmi Apps: 
             - howto/onboard-users/wagmi/index.md
-            - Plug-and-Play Login UI: howto/onboard-users/wagmi/wagmi-pnp-ui.md
+            - Plug-and-Play Auth: howto/onboard-users/wagmi/wagmi-pnp-ui.md
             - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
           - RainbowKit Apps: 
             - howto/onboard-users/rainbow/index.md
-            - Plug-and-Play Login UI: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
+            - Plug-and-Play Auth: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
             - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
           - Web3-React Apps:
             - howto/onboard-users/web3-react/index.md
-            - Plug-and-Play Login UI: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
+            - Plug-and-Play Auth: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
             - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
         - Vue Apps: 
             - howto/onboard-users/vue/index.md
-            - Plug-and-Play Login UI: howto/onboard-users/use-plug-play-auth.md
+            - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
             - Custom Login UI:
               - howto/onboard-users/custom-ui/index.md
               - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md

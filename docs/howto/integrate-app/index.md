@@ -8,9 +8,9 @@ arcana:
 
 # Integrate App
 
-To integrate a Web3 app with the {{config.extra.arcana.sdk_name}}, developers must first register and configure the app with Arcana Network using the {{config.extra.arcana.dashboard_name}}. 
+To integrate with the {{config.extra.arcana.sdk_name}}, Web3 app developers must first use the {{config.extra.arcana.dashboard_name}} to register and configure the app with Arcana Network. 
 
-Then [select the appropriate integration method](#select-integration-method) based on your application type, and follow the instructions to integrate the app. 
+Next, [select the app type](#select-app-type) and follow the instructions. 
 
 !!! note
 
@@ -18,7 +18,7 @@ Then [select the appropriate integration method](#select-integration-method) bas
 
 ## Prerequisites
 
-1. Go to the {{config.extra.arcana.dashboard_name}} and [[configure-auth|register your application]]. Save the **{{config.extra.arcana.app_address}}** assigned to the registered app. This will be required during integration.
+1. Go to the {{config.extra.arcana.dashboard_name}}, [[configure-auth|register your application]] and save the **{{config.extra.arcana.app_address}}** assigned to the registered app. This will be required during integration.
 2. Configure the {{config.extra.arcana.sdk_name}} user onboarding settings via the {{config.extra.arcana.dashboard_name}} . See [[index-configure-auth|how to configure authentication providers]] to onboard users.
 
 ## Select App Type
