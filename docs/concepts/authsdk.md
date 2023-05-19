@@ -37,3 +37,5 @@ Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.me
     - sign blockchain transactions
     - send and receive tokens, NFTs
     - manage NFTs and preview NFT details using the wallet
+
+{% include "./text-snippets/auth_sdk_flavors.md" %}

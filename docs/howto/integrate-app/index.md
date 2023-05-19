@@ -21,7 +21,7 @@ Then [select the appropriate integration method](#select-integration-method) bas
 1. Go to the {{config.extra.arcana.dashboard_name}} and [[configure-auth|register your application]]. Save the **{{config.extra.arcana.app_address}}** assigned to the registered app. This will be required during integration.
 2. Configure the {{config.extra.arcana.sdk_name}} user onboarding settings via the {{config.extra.arcana.dashboard_name}} . See [[index-configure-auth|how to configure authentication providers]] to onboard users.
 
-## Select Integration Method
+## Select App Type
 
 Depending upon whether the Web3 app is a vanilla HTML/CSS/JS app, a React app, or a React app that uses [Wagmi](https://wagmi.sh/) or [RainbowKit](https://www.rainbowkit.com/) wallet connectors, developers must install a combination of the following {{config.extra.arcana.product_name}} packages - `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}`.
 
