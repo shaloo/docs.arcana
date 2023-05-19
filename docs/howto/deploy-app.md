@@ -20,13 +20,11 @@ In this guide you will learn how the Web3 app developers can deploy apps integra
 
 * After successful registration, a unique **{{config.extra.arcana.app_address}}** is assigned to the app. It will be required later for integrating the app with the {{config.extra.arcana.sdk_name}}. Also, a default 'Testnet' configuration profile is associated with every newly registered app. To learn more about various configuration settings, see [[configure-auth|how to use the {{config.extra.arcana.dashboard_name}} to configure app settings]].
 
-* Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi or RainbowKit. Follow the instructions in the respective [[index-integrate-app|integration guides]] and choose carefully depending on the app type. 
+* Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi, RainbowKit or Web3-React wallet connector frameworks. Follow the instructions in the respective [[index-integrate-app|integration guides]] and choose carefully depending on the app type. 
 
     !!! caution 
 
-          Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages, or the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, or the Wagmi `ArcanaConnector`, as the case may be. 
-  
-          {% include "./text-snippets/warn_wagmi_noauth.md" %}
+          Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and app type package such as `{{config.extra.arcana.react_sdk_pkg_name}}`, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` or `{{config.extra.arcana.web3_react_sdk_pkg_name}}`. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, the Wagmi/Web3-React `ArcanaConnector`, as the case may be. 
 
 ### Deploying App (Testnet Configuration)
 

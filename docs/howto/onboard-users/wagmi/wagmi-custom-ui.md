@@ -44,7 +44,7 @@ Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and `{{config.extra.arcana.wa
 
 Next, create the `ArcanaConnector` and specify the `AuthProvider`. 
 
-If the custom login UI is configured such that it allow a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the provider and later call the `setLogin` function for the selected provider, in response to the user's selection.
+If the custom login UI is configured such that it allows a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the authentication provider and later call the `setLogin` function for the selected provider, in response to the user's onboarding choice.
 
 !!! note "Configure Authentication Providers before `ArcanaConnector` creation"
 

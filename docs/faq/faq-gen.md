@@ -33,11 +33,16 @@ toc_depth: 2
 
 ---
 
-??? an-faq "If an application uses wallet connector frameworks such as Wagmi or RainbowKit, can the {{config.extra.arcana.wallet_name}} be plugged into those wallet connectors?"
+??? an-faq "If an application uses wallet connector frameworks such as Wagmi, RainbowKit, or Web3-React, can the {{config.extra.arcana.wallet_name}} be plugged into those wallet connectors?"
 
-     Yes. Applications using Wagmi or RainbowKit can simply use the {{config.extra.arcana.sdk_name}} Wagmi wrapper, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, and enable the {{config.extra.arcana.wallet_name}} as one of the wallet choices for the app users in addition to the built-in wallets available in the wallet connect frameworks.
+     Yes. 
+     
+     * Applications using Wagmi, RainbowKit must install and integrate with the `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages. 
+     * ApplicationsWeb3-React framework can install and integrate with the `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages.
 
-       For more details, see [[integrate-wagmi-app|integrating apps that use Wagmi]], and [[integrate-rainbow-app|integrating apps that use the RainbowKit]] wallet connector.
+     As part of the integration, these applications can enable the {{config.extra.arcana.wallet_name}} as one of the wallet choices for the app users in addition to the built-in wallets available in the wallet connect frameworks.
+     
+     For step-by-step integration instructions for these wallet connector frameworks, see how to [[integrate-wagmi-app|integrate Wagmi apps]], how to [[integrate-rainbow-app| integrate RainbowKit apps]] and [[integrate-web3-react-app| how to integrate Web3-React apps]].
 
 ## User Onboarding
 

@@ -30,15 +30,15 @@ Follow these steps to register, configure, integrate, and use the {{config.extra
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
-!!! note "{{config.extra.arcana.sdk_name}}: `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages"
-  
-      To integrate vanilla HTML/CSS/JS apps with `{{config.extra.arcana.sdk_name}}`, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and use the `AuthProvider` to access the standard Ethereum provider exposed for blockchain transactions. For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]].
-      
-      Use the **`AuthProvider` wrappers**, namely, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages for easily integrating the {{config.extra.arcana.sdk_name}} with Web3 React apps or with the apps that use wallet connectors such as **Wagmi** and **RainbowKit**.  
-      
-      * To integrate the {{config.extra.arcana.sdk_name}} with a React app, it is recommended that you install and use the `{{config.extra.arcana.auth_sdk_pkg_name}}` as well as the `{{config.extra.arcana.react_sdk_pkg_name}}` packages. For details, see [[react-code-sample|React App Integration Example]].
+!!! note "{{config.extra.arcana.sdk_name}}: `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}`, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` and `{{config.extra.arcana.web3_react_sdk_pkg_name}}`packages"
 
-      * To integrate the {{config.extra.arcana.sdk_name}} with apps that use Wagmi or RainbowKit, use the `ArcanaConnector` by installing and integrating the app with the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. You do not need to use the `{{config.extra.arcana.auth_sdk_pkg_name}}` package or instantiate and initialize the `AuthProvider` when using the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. For details, see [Wagmi example](https://github.com/arcana-network/auth-wagmi-example) and [RainbowKit Example](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration).
+      Depending upon the type of Web3 app, developers may need to integrate with one or more {{config.extra.arcana.product_name}} packages:
+  
+      * To integrate vanilla HTML/CSS/JS apps with `{{config.extra.arcana.sdk_name}}`, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and use the `AuthProvider` to access the standard Ethereum provider exposed for blockchain transactions. For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]].
+      
+      * In addition to the `{{config.extra.arcana.auth_sdk_pkg_name}}` package, also use the `{{config.extra.arcana.react_sdk_pkg_name}}` package for simple React apps. Initialize the `AuthProvider` and then use it to instantiate `ProviderAuth`. For details, see [[react-code-sample|React App Integration Example]].
+      
+      * For Web3 apps using wallet connector frameworks such as Wagmi and RainbowKit, use the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the`{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages. For the Web3-React wallet connector framework, use the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages.  After installing, integrate the apps by initializing the `AuthProvider` first and then using it to create an `ArcanaConnector` that is used to initialize the respective wallet connector framework. For details, see [Wagmi example](https://github.com/arcana-network/auth-wagmi-example), [RainbowKit example](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) and [Web3-React example](https://github.com/arcana-network/auth-web3-react/tree/dev/example). 
 
 ## Register & Configure
 
