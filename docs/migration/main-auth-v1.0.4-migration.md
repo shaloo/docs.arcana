@@ -1,5 +1,5 @@
 ---
-alias: latest-migration-guide
+alias: migration-guide-v1.0.4
 title: 'Arcana Auth SDK v1.0.3 -> v1.0.4 Migration'
 description: 'How to migrate to Arcana Auth Web SDK v1.0.4'
 arcana:

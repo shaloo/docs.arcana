@@ -110,7 +110,7 @@ Check out the sample dApp integration example for apps using [[react-code-sample
 
 ---
 
-If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package you can continue to use it with the latest {{config.extra.arcana.product_name}} release. To use the new product features and enhancements, we recommend that you follow the [[latest-migration-guide|migration guide]] for a swift upgrade.
+If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package you can continue to use it with the latest {{config.extra.arcana.product_name}} release. To use the new product features and enhancements, we recommend that you follow the [[migration-guide-v1.0.4|migration guide]] for a swift upgrade.
 
 Please note, in case are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.4 then refer to the [[index-migration-guides|Migration Guides]] and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 first before upgrading to the v{% include "./text-snippets/latest_auth_sdk.md" %}.
 
