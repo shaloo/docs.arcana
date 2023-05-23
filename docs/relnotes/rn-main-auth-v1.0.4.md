@@ -82,7 +82,9 @@ The {{config.extra.arcana.wallet_name}} allows users to buy cryptocurrency. In t
 
 ### Usage Update: `AuthProvider`
 
-A new parameter is now supported in the `AuthProvider` constructor for explicitly setting the `window.ethereum` to the provider in the app's context. Previously, it was set by default. In the latest release, by default, it is **not set**. The developer must specify `setWindowProvider=true` while instantiating the `AuthProvider` to ensure that `window.ethereum` is set when `AuthProvider` is instantiated.  See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
+* **`setWindowProvider`**: A new parameter is now supported in the `AuthProvider` constructor for explicitly setting the `window.ethereum` to the provider in the app's context. Previously, it was set by default. In the latest release, by default, it is **not set**. The developer must specify `setWindowProvider=true` while instantiating the `AuthProvider` to ensure that `window.ethereum` is set when `AuthProvider` is instantiated.  See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
+
+* **`network`**: Previously, to deploy an app integrated with the {{config.extra.arcana.sdk_name}} on the Arcana Mainnet, developers were required to specify the `network` parameter in the `AuthProvider` constructor as the 'mainnet'. This is no longer mandatory. The {{config.extra.arcana.app_address}} value itself is sufficient to specify whether the deployment is meant for the Arcana Testnet or Mainnet.
 
 ## Bug Fixes
 

@@ -28,13 +28,17 @@ In this guide you will learn how the Web3 app developers can deploy apps integra
 
 ### Deploying App (Testnet Configuration)
 
-Before deploying an app that uses the Arcana Testnet configurations, make sure that during the app integration with the {{config.extra.arcana.sdk_name}} a new `AuthProvider` is created using the correct **{{config.extra.arcana.app_address}}** assigned to the 'Testnet' configuration profile. If you specify the `network` parameter in the `AuthProvider` constructor, assign it the value 'testnet' as shown in the sample code:
+Before deploying an app that uses the Arcana Testnet configurations, make sure that during the app integration with the {{config.extra.arcana.sdk_name}} a new `AuthProvider` is created using the correct **{{config.extra.arcana.app_address}}** assigned to the 'Testnet' configuration profile.
 
 {% include "./code-snippets/init_auth_testnet.md" %}
+
+<!--
 
 !!! note "Default Network Setting"
 
       If you do not provide any `network` parameter in the `AuthProvider` constructor, the {{config.extra.arcana.sdk_name}} uses the value 'testnet' as the default. What this means is, by default your app will be deployed to use the Arcana Testnet blockchain protocol.
+      
+-->
 
 Initialize the newly created `AuthProvider` before adding code in the integrated app to onboard users.  
 
@@ -64,13 +68,17 @@ Before deploying the app on the Arcana Mainnet, make sure that there exists a 'M
 
       You can check if a 'Mainnet' configuration profile is already created for your app by visiting the **Manage Apps** screen on the {{config.extra.arcana.dashboard_name}}. Refer to the app card. Each card displays Testnet and Mainnet buttons. If the Mainnet button is disabled it means you have not created a 'Mainnet' profile for your app yet.
 
-Once you have created the 'Mainnet' configuration profile for your app, please note that a **new {{config.extra.arcana.app_address}}** is associated with it that must be used while integrating the app with the {{config.extra.arcana.sdk_name}}. While creating a new `AuthProvider`, do remember to update your integration code with the new **{{config.extra.arcana.app_address}}** that is assigned to the 'Mainnet' configuration profile. Also, specify the `network` parameter in the `AuthProvider` constructor and assign it the value 'mainnet' as shown in the code below.  
+Once you have created the 'Mainnet' configuration profile for your app, please note that a **new {{config.extra.arcana.app_address}}** is associated with it that must be used while integrating the app with the {{config.extra.arcana.sdk_name}}. While creating a new `AuthProvider`, do remember to update your integration code with the new **{{config.extra.arcana.app_address}}** that is assigned to the 'Mainnet' configuration profile. 
 
 {% include "./code-snippets/init_auth_mainnet.md" %}
+
+<!--
 
 !!! caution "Default Network Setting"
 
       While integrating your app code for using Arcana Mainnet, if you do not provide any `network` parameter in the `AuthProvider` constructor, the {{config.extra.arcana.sdk_name}} will use the default value 'testnet'. What this means is, by default your app will be configured to use Arcana Testnet but with the specified 'Mainnet' **{{config.extra.arcana.app_address}}**. This mismatch will not work. You need to provide the values for 'Mainnet' in both places, **{{config.extra.arcana.app_address}}** as well as the `network` parameter in the `AuthProvider` constructor.
+
+-->
 
 Initialize the newly created `AuthProvider` before adding code in the integrated app to onboard users. 
 
