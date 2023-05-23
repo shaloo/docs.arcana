@@ -8,16 +8,18 @@ arcana:
   
 # State of the {{config.extra.arcana.product_name}}
 
-## Latest Release
+## Latest Release v{% include "./text-snippets/latest_auth_sdk.md" %}
 
-* Download the {{config.extra.arcana.sdk_name}} v{% include "./text-snippets/latest_auth_sdk.md" %} npm package: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
+* Download the {{config.extra.arcana.sdk_name}} npm packages required as per the Web3 application type: 
+
+    - All app types: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
+    - Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
+    - Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
+    - Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+
 * Access the latest {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
 ## What's New?
-
-* [MFA support]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md) enables enhanced wallet security for the users.
-* [Billing and invoicing feature]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for Arcana Mainnet usage.
-* New theme for the {{config.extra.arcana.product_name}} documentation.
 
 See [[rn-main-auth-v1.0.4|{{config.extra.arcana.product_name}} Release Notes]] for details.
 
@@ -43,13 +45,7 @@ The {{config.extra.arcana.product_name}} Mainnet was released in January 2023 wi
 
 The current {{config.extra.arcana.sdk_name}} release is v{% include "./text-snippets/latest_auth_sdk.md" %}.
 
-We are actively working towards adding new features:
-
-* Gasless transactions
-* 'Forget'/delete private keys from the ADKG subsystem for truly self-custodial keys
-* Multi-chain including those that are not EVM-compatible
-* Support for additional platform SDKs for Mac (Unity, Unreal), and Mobile (React Native, Flutter)
-* White-labeling, other customizations
+We are actively working towards adding newer features and capabilities. For details, check out the [[arcana-coming-soon| coming soon section]].
 
 ### DKG Validator Nodes
 
