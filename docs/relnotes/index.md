@@ -1,5 +1,5 @@
 ---
-alias: index-may3-23-release-note
+alias: index-latest-release-note
 title: 'Arcana Auth: Release Notes'
 description: 'Arcana Auth Release Notes (Latest)'
 arcana:
