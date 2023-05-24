@@ -76,7 +76,7 @@ The Web3-React app can now onboard users using the custom login UI. Authenticate
 
 !!! tip "Example: Sample Web3-React App"
 
-      See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/example) for details.
+      See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example) for details.
       
 ## What's Next?
 
