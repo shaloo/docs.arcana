@@ -23,9 +23,13 @@ Storage Region can be configured for any application using the dashboard just on
 
 --->
 
-??? an-trbs "Cannot turn off UI for the {{config.extra.arcana.wallet_name}}."
+??? an-trbs "Cannot stop the {{config.extra.arcana.wallet_name}} from being displayed in the app's context."
 
-      {% include "./text-snippets/warn_config_wallet_ui.md" %}
+      The {{config.extra.arcana.product_name}} allows developers to manage the user experience for signing blockchain transactions. In effect, developers can integrate with the {{config.extra.arcana.sdk_name}} and control whether the {{config.extra.arcana.wallet_name}} is always displayed once the user is authenticated in the app's context. Or they can choose to hide and show the wallet as per the app's business logic. 
+      
+      After installing the {{config.extra.arcana.sdk_name}}, during integration with the app, create a new `AuthProvider` instance and specify the wallet [[concept-wallet-visibility|visibility mode]] as `false`. This ensures that the wallet does not display by default once the user is authenticated. With the `alwaysVisible` set to `false, the developer can call the `showWallet() function to display the wallet when required. Irrespective of whether the wallet is visible or not, any blockchain transaction will result in a transaction notification. The user can view the notification in the app context and take appropriate action to dismiss the notification.
+      
+      See the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
 
 ??? an-trbs "Registered app does not show up in the {{config.extra.arcana.dashboard_name}} 'Manage Apps' screen."
 
@@ -254,7 +258,7 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       If your app users continue to see the same issue of social providers not showing after migrating properly, please double-check the **{{config.extra.arcana.app_address}}** that is specified at the time of instantiating the `AuthProvider`.  If you are using v1.0.0, and do not explicitly specify any `network` value while instantiating the `AuthProvider`, then by default 'Mainnet' is selected. In this case, make sure you provide the **{{config.extra.arcana.app_address}}** assigned to your app's 'Mainnet' configuration profile. If you specify the wrong **{{config.extra.arcana.app_address}}** then you will not see the social providers when the {{config.extra.arcana.wallet_name}} UI comes up after login.
 
-      If you choose to specify the `network` parameter as 'testnet', then make sure you specify the **{{config.extra.arcana.app_address}}** corresponding to the 'Testnet' configuration profile of your app from the {{config.extra.arcana.dashboard_name}}.
+      If you choose to specify the optional `network` parameter as 'testnet' while instantiating the `AuthProvider`, then make sure you specify the **{{config.extra.arcana.app_address}}** corresponding to the 'Testnet' configuration profile of the app as displayed in the {{config.extra.arcana.dashboard_name}}.
 
 ??? an-trbs "Error: Wallet is not initialized."
 
