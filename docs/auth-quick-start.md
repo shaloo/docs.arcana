@@ -8,7 +8,7 @@ arcana:
 
 # Quick Start
 
-Developers can use this guide to integrate Web3 apps with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and quickly build the following features:
+Use this guide to integrate Web3 apps with the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] and quickly build the following features:
 
 * [[index-onboard-users|Onboard users]] easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
 * [[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}}]] and allow authenticated users to sign blockchain transactions, manage crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
