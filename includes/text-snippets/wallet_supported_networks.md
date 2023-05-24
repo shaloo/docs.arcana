@@ -2,8 +2,14 @@
 
 **Pre-configured {{config.extra.arcana.wallet_name}} chains (default)**
 
-  * Ethereum_Goerli
-  * Ethereum_Mainnet
-  * Ethereum_Sepolia
-  * Polygon_Mainnet
-  * Polygon_Mumbai_Testnet
+* Arbitrum
+* Avalanche
+* Binance Smart Chain
+* Caduceus
+* Ethereum
+* IoTeX
+* Optimism 
+* Polygon 
+* Shardeum Sphinx 1.x
+
+<img src="/img/an_wallet_default_chain_list.png" alt="Supported Blockchains Image" width="50%"/>>
