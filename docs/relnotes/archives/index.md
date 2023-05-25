@@ -10,6 +10,8 @@ arcana:
 
 [[rn-main-auth-v1.0.4|Auth v1.0.4 :material-note-text:]]{ .md-button }
 
+[[index-may3-23-release-note| Dashboard update :material-note-text:]]{ .md-button }
+
 [[rn-main-auth-v1.0.3|Auth v1.0.3 :material-note-text:]]{ .md-button }
 
 [[rn-main-auth-v1.0.2|Auth v1.0.2 :material-note-text:]]{ .md-button }
