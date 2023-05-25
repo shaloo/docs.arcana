@@ -2,10 +2,14 @@
 
 **Pre-configured {{config.extra.arcana.wallet_name}} chains (default)**
 
-  * Ethereum_Goerli
-  * Ethereum_Mainnet
-  * Ethereum_Sepolia
-  * Polygon_Mainnet
-  * Polygon_Mumbai_Testnet
+* Arbitrum
+* Avalanche
+* Binance Smart Chain
+* Caduceus
+* Ethereum
+* IoTeX
+* Optimism 
+* Polygon 
+* Shardeum Sphinx 1.x
 
-See [Default Chain Definitions](https://dev-authsdk-ref-guide.netlify.app/enums/chain) for network codes.
+<img src="/img/an_wallet_default_chain_list.png" alt="Supported Blockchains Image" width="50%" class="an-screenshots"/>>

@@ -20,23 +20,25 @@ In this guide you will learn how the Web3 app developers can deploy apps integra
 
 * After successful registration, a unique **{{config.extra.arcana.app_address}}** is assigned to the app. It will be required later for integrating the app with the {{config.extra.arcana.sdk_name}}. Also, a default 'Testnet' configuration profile is associated with every newly registered app. To learn more about various configuration settings, see [[configure-auth|how to use the {{config.extra.arcana.dashboard_name}} to configure app settings]].
 
-* Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi or RainbowKit. Follow the instructions in the respective [[index-integrate-app|integration guides]] and choose carefully depending on the app type. 
+* Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi, RainbowKit or Web3-React wallet connector frameworks. Follow the instructions in the respective [[index-integrate-app|integration guides]] and choose carefully depending on the app type. 
 
     !!! caution 
 
-          Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages, or only `{{config.extra.arcana.wagmi_sdk_pkg_name}}` wrapper package. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, or the Wagmi `ArcanaConnector`, as the case may be. 
-  
-          {% include "./text-snippets/warn_wagmi_noauth.md" %}
+          Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and app type package such as `{{config.extra.arcana.react_sdk_pkg_name}}`, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` or `{{config.extra.arcana.web3_react_sdk_pkg_name}}`. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, the Wagmi/Web3-React `ArcanaConnector`, as the case may be. 
 
 ### Deploying App (Testnet Configuration)
 
-Before deploying an app that uses the Arcana Testnet configurations, make sure that during the app integration with the {{config.extra.arcana.sdk_name}} a new `AuthProvider` is created using the correct **{{config.extra.arcana.app_address}}** assigned to the 'Testnet' configuration profile. If you specify the `network` parameter in the `AuthProvider` constructor, assign it the value 'testnet' as shown in the sample code:
+Before deploying an app that uses the Arcana Testnet configurations, make sure that during the app integration with the {{config.extra.arcana.sdk_name}} a new `AuthProvider` is created using the correct **{{config.extra.arcana.app_address}}** assigned to the 'Testnet' configuration profile.
 
 {% include "./code-snippets/init_auth_testnet.md" %}
+
+<!--
 
 !!! note "Default Network Setting"
 
       If you do not provide any `network` parameter in the `AuthProvider` constructor, the {{config.extra.arcana.sdk_name}} uses the value 'testnet' as the default. What this means is, by default your app will be deployed to use the Arcana Testnet blockchain protocol.
+      
+-->
 
 Initialize the newly created `AuthProvider` before adding code in the integrated app to onboard users.  
 
@@ -66,13 +68,17 @@ Before deploying the app on the Arcana Mainnet, make sure that there exists a 'M
 
       You can check if a 'Mainnet' configuration profile is already created for your app by visiting the **Manage Apps** screen on the {{config.extra.arcana.dashboard_name}}. Refer to the app card. Each card displays Testnet and Mainnet buttons. If the Mainnet button is disabled it means you have not created a 'Mainnet' profile for your app yet.
 
-Once you have created the 'Mainnet' configuration profile for your app, please note that a **new {{config.extra.arcana.app_address}}** is associated with it that must be used while integrating the app with the {{config.extra.arcana.sdk_name}}. While creating a new `AuthProvider`, do remember to update your integration code with the new **{{config.extra.arcana.app_address}}** that is assigned to the 'Mainnet' configuration profile. Also, specify the `network` parameter in the `AuthProvider` constructor and assign it the value 'mainnet' as shown in the code below.  
+Once you have created the 'Mainnet' configuration profile for your app, please note that a **new {{config.extra.arcana.app_address}}** is associated with it that must be used while integrating the app with the {{config.extra.arcana.sdk_name}}. While creating a new `AuthProvider`, do remember to update your integration code with the new **{{config.extra.arcana.app_address}}** that is assigned to the 'Mainnet' configuration profile. 
 
 {% include "./code-snippets/init_auth_mainnet.md" %}
+
+<!--
 
 !!! caution "Default Network Setting"
 
       While integrating your app code for using Arcana Mainnet, if you do not provide any `network` parameter in the `AuthProvider` constructor, the {{config.extra.arcana.sdk_name}} will use the default value 'testnet'. What this means is, by default your app will be configured to use Arcana Testnet but with the specified 'Mainnet' **{{config.extra.arcana.app_address}}**. This mismatch will not work. You need to provide the values for 'Mainnet' in both places, **{{config.extra.arcana.app_address}}** as well as the `network` parameter in the `AuthProvider` constructor.
+
+-->
 
 Initialize the newly created `AuthProvider` before adding code in the integrated app to onboard users. 
 

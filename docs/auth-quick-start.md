@@ -8,7 +8,7 @@ arcana:
 
 # Quick Start
 
-Developers can use this guide to integrate Web3 apps with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and quickly build the following features:
+Use this guide to integrate Web3 apps with the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] and quickly build the following features:
 
 * [[index-onboard-users|Onboard users]] easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
 * [[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}}]] and allow authenticated users to sign blockchain transactions, manage crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
@@ -19,26 +19,26 @@ Developers can use this guide to integrate Web3 apps with the [{{config.extra.ar
 
 ## Overview
 
-Follow these steps to register, configure, integrate, and use the {{config.extra.arcana.sdk_name}} features in Web3 apps:
+Follow these steps to register, configure, integrate, and use the {{config.extra.arcana.sdk_name}} features such as onboarding users and allowing them to sign blockchain transactions in Web3 apps:
 
 1. Use the {{config.extra.arcana.dashboard_name}} and register the app; obtain a unique **{{config.extra.arcana.app_address}}**.
 2. Set up social providers that will be enabled for onboarding app users.
-3. Install and integrate the app with the {{config.extra.arcana.sdk_name}}.
-4. Add code in the app for using the built-in plug-and-play UI or build your own login UI that uses user onboarding functions of the {{config.extra.arcana.sdk_name}}. Authenticated users can access the {{config.extra.arcana.wallet_name}}.
+3. Install and integrate the app with the {{config.extra.arcana.sdk_name}} and onboard users either via the built-in plug-and-play login UI or custom UI.
+4. Allow authenticated users to instantly access the {{config.extra.arcana.wallet_name}}.
 5. Add code in the app for programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
-!!! note "{{config.extra.arcana.sdk_name}}: `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages"
-  
-      To integrate vanilla HTML/CSS/JS apps with `{{config.extra.arcana.sdk_name}}`, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and use the `AuthProvider` to access the standard Ethereum provider exposed for blockchain transactions. For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]].
-      
-      Use the **`AuthProvider` wrappers**, namely, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages for easily integrating the {{config.extra.arcana.sdk_name}} with Web3 React apps or with the apps that use wallet connectors such as **Wagmi** and **RainbowKit**.  
-      
-      * To integrate the {{config.extra.arcana.sdk_name}} with a React app, it is recommended that you install and use the `{{config.extra.arcana.auth_sdk_pkg_name}}` as well as the `{{config.extra.arcana.react_sdk_pkg_name}}` packages. For details, see [[react-code-sample|React App Integration Example]].
+!!! note "{{config.extra.arcana.sdk_name}}: `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}`, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` and `{{config.extra.arcana.web3_react_sdk_pkg_name}}`packages"
 
-      * To integrate the {{config.extra.arcana.sdk_name}} with apps that use Wagmi or RainbowKit, use the `ArcanaConnector` by installing and integrating the app with the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. You do not need to use the `{{config.extra.arcana.auth_sdk_pkg_name}}` package or instantiate and initialize the `AuthProvider` when using the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. For details, see [Wagmi example](https://github.com/arcana-network/auth-wagmi-example) and [RainbowKit Example](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration).
+      Depending upon the type of Web3 app, developers may need to integrate with one or more {{config.extra.arcana.product_name}} packages:
+  
+      * To integrate vanilla HTML/CSS/JS apps with `{{config.extra.arcana.sdk_name}}`, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and use the `AuthProvider` to access the standard Ethereum provider exposed for blockchain transactions. For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]].
+      
+      * In addition to the `{{config.extra.arcana.auth_sdk_pkg_name}}` package, also use the `{{config.extra.arcana.react_sdk_pkg_name}}` package for simple React apps. Initialize the `AuthProvider` and then use it to instantiate `ProviderAuth`. For details, see [[react-code-sample|React App Integration Example]].
+      
+      * For Web3 apps using wallet connector frameworks such as Wagmi and RainbowKit, use the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the`{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages. For the Web3-React wallet connector framework, use the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages.  After installing, integrate the apps by initializing the `AuthProvider` first and then using it to create an `ArcanaConnector` that is used to initialize the respective wallet connector framework. For details, see [Wagmi example](https://github.com/arcana-network/auth-wagmi-example), [RainbowKit example](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) and [Web3-React example](https://github.com/arcana-network/auth-web3-react/tree/dev/example). 
 
 ## Register & Configure
 
@@ -76,7 +76,7 @@ After onboarding users, developers can add code to use the `AuthProvider` in the
 
 ### Deploy App
 
-An app integrated with the {{config.extra.arcana.sdk_name}} must be deployed for use only after the developer has completed the following:
+An app integrated with the {{config.extra.arcana.sdk_name}} can be deployed for use only **after** the developer has completed these steps:
 
 * Register and configure the app via the {{config.extra.arcana.dashboard_name}} 
 * Integrate the app with the {{config.extra.arcana.sdk_name}} 
@@ -85,7 +85,7 @@ An app integrated with the {{config.extra.arcana.sdk_name}} must be deployed for
 
 Developers can choose to deploy one instance of the app (say, under active development) on the {{config.extra.arcana.company_name}} Testnet while simultaneously deploying a stable version of their app (say, one validated on Testnet and ready for users) on the {{config.extra.arcana.company_name}} Mainnet.
 
-By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. Also, you need to specify the `network` parameter in the `AuthProvider` constructor as the 'mainnet'. For details on how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet, see [[deploy-app|App Deployment Guide]].
+By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. For details on how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet, see [[deploy-app|App Deployment Guide]].
 
 ## Examples
 

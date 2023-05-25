@@ -10,6 +10,8 @@ arcana:
 
 We recommend that you use the most recent {{config.extra.arcana.sdk_name}}. Use the appropriate migration guide to learn how to migrate to the latest version.
 
+[[migration-guide-v1.0.4|Auth SDK v1.0.3 -> v1.0.4]]{ .md-button }
+
 [[migration-guide-v1.0.3|Auth SDK v1.0.2 -> v1.0.3]]{ .md-button }
 
 [[migration-guide-v1.0.2|Auth SDK v1.0.1 -> v1.0.2]]{ .md-button }

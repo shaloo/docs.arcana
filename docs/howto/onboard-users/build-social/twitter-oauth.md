@@ -20,10 +20,6 @@ In this guide, you will learn how an app that builds a custom login UI and integ
 * Carefully [[config-auth-twitter|follow the instructions to configure Twitter]] as the authentication provider.
   
 * Use the appropriate integration method as per the app type and [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
-
-!!! info "Using `{{config.extra.arcana.wagmi_sdk_pkg_name}}`"
-
-      If an app uses Wagmi or RainbowKit wallet connector and the developer chooses to integrate the app with the {{config.extra.arcana.sdk_name}} via the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, then it is **not possible to build custom UI to onboard users** as described in the steps below. {% include "./text-snippets/warn_wagmi_pnp_limitation.md" %}
     
 ## Steps
 

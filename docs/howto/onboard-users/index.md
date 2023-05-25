@@ -9,12 +9,12 @@ arcana:
 
 User onboarding requires developers to first register their applications and configure the authentication providers using the {{config.extra.arcana.dashboard_name}}. Next, install and integrate the app with the {{config.extra.arcana.sdk_name}}.
 
-Developers can choose to enable user onboarding in their applications by either using the default, built-in UI offered by the {{config.extra.arcana.sdk_name}}  through the [[concept-plug-and-play-auth|plug-and-play authentication feature]]. Or they can build customized UI and simply call the {{config.extra.arcana.sdk_name}} functions to onboard users.
+After integrating, the Web3 apps can add code to onboard users via the supported authentication providers or the passwordless mechanism. {% include "./text-snippets/user_onboard_options.md" %} 
 
-[[use-plug-play-auth|Enable Plug-and-Play UI :fontawesome-solid-plug:]]{ .md-button }
+Note that the user onboarding process may vary depending on the application type as listed below:
 
-[[build-password-less-auth|Build Custom UI for Login via Passwordless Auth :material-email-open-outline:]]{ .md-button }
+[[index-vanilla-onboard-users|Vanilla HTML/CSS/JS Apps :fontawesome-solid-plug:]]{ .md-button }
 
-[[index-build-social-providers|Build Custom UI for Login via Social Providers :fontawesome-solid-users:]]{ .md-button } 
+[[index-react-onboard-users| React Apps :material-card-account-mail:]]{ .md-button }
 
-[[index-build-iam-providers| Build Custom UI for login via Custom IAM Providers :fontawesome-brands-aws:]]{ .md-button }
+[[index-vue-onboard-users| Vue Apps :material-card-account-mail:]]{ .md-button }

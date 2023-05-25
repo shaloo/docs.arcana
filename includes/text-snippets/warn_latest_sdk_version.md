@@ -1,3 +1,3 @@
-  **{{config.extra.arcana.sdk_name}} v1.0.2 -> v1.0.3**:  Simply upgrade your installation to the latest `{{config.extra.arcana.auth_sdk_pkg_name}}` package v1.0.3 and you are good to go!
+  **{{config.extra.arcana.sdk_name}} v1.0.3 -> v1.0.4**:  Follow the instructions in the [[migration-guide-v1.0.4|Migration Guide]] and upgrade easily!
   
-    **Past {{config.extra.arcana.sdk_name}} versions -> v1.0.3**: Note that there may be breaking changes that require you to reconfigure your app and also update the integration code. For more information, see [[index-migration-guides|Migration Guides]] and [[index-release-notes|Release Notes]].
+    **Past {{config.extra.arcana.sdk_name}} versions < v1.0.3**: Note that there may be breaking changes that require you to reconfigure your app and also update the integration code. For more information, see archives for [[index-migration-guides|Migration Guides]] and [[index-release-notes|Release Notes]].

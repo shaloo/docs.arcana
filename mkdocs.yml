@@ -1,7 +1,11 @@
 site_name: Auth Documentation
 
-# Remove for dev
-site_url: "https://docs.arcana.network"
+# For for dev
+site_url: "https://docs.dev.arcana.network"
+
+# For main
+#site_url: "https://docs.arcana.network"
+
 use_directory_urls: false
 # upto here
 
@@ -36,22 +40,72 @@ nav:
           - React/NextJS App: howto/integrate-app/react-nextjs.md
           - Wagmi App: howto/integrate-app/wagmi.md
           - RainbowKit App: howto/integrate-app/rainbow.md
-        - Vue dApp: howto/integrate-app/vue.md
+          - Web3-React App: howto/integrate-app/web3-react.md
+        - Vue App: howto/integrate-app/vue.md
       - Onboard Users: 
         - howto/onboard-users/index.md
-        - Plug and Play Login UI: howto/onboard-users/use-plug-play-auth.md
-        - Custom Login UI:
-          - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
-          - Build Social Auth: 
-            - howto/onboard-users/build-social/index.md
-            - Discord: howto/onboard-users/build-social/discord-oauth.md
-            - GitHub: howto/onboard-users/build-social/github-oauth.md
-            - Google: howto/onboard-users/build-social/google-oauth.md
-            - Twitch: howto/onboard-users/build-social/twitch-oauth.md
-            - Twitter: howto/onboard-users/build-social/twitter-oauth.md
-          - Build Custom Auth:
-            - howto/onboard-users/build-idm/index.md
-            - Cognito: howto/onboard-users/build-idm/cognito-oauth.md           
+        - Vanilla JS Apps:
+          - howto/onboard-users/vanilla/index.md
+          - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
+          - Custom Login UI:
+            - howto/onboard-users/custom-ui/index.md
+            - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
+            - Build Social Auth: 
+              - howto/onboard-users/build-social/index.md
+              - Discord: howto/onboard-users/build-social/discord-oauth.md
+              - GitHub: howto/onboard-users/build-social/github-oauth.md
+              - Google: howto/onboard-users/build-social/google-oauth.md
+              - Twitch: howto/onboard-users/build-social/twitch-oauth.md
+              - Twitter: howto/onboard-users/build-social/twitter-oauth.md
+            - Build Custom Auth:
+              - howto/onboard-users/build-idm/index.md
+              - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
+        - React Apps:
+          - howto/onboard-users/react/index.md
+          - React/NextJS Apps: 
+            - howto/onboard-users/react-nextjs/index.md
+            - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
+            - Custom Login UI:
+              - howto/onboard-users/custom-ui/index.md
+              - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
+              - Build Social Auth: 
+                - howto/onboard-users/build-social/index.md
+                - Discord: howto/onboard-users/build-social/discord-oauth.md
+                - GitHub: howto/onboard-users/build-social/github-oauth.md
+                - Google: howto/onboard-users/build-social/google-oauth.md
+                - Twitch: howto/onboard-users/build-social/twitch-oauth.md
+                - Twitter: howto/onboard-users/build-social/twitter-oauth.md
+              - Build Custom Auth:
+                - howto/onboard-users/build-idm/index.md
+                - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
+          - Wagmi Apps: 
+            - howto/onboard-users/wagmi/index.md
+            - Plug-and-Play Auth: howto/onboard-users/wagmi/wagmi-pnp-ui.md
+            - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
+          - RainbowKit Apps: 
+            - howto/onboard-users/rainbow/index.md
+            - Plug-and-Play Auth: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
+            - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
+          - Web3-React Apps:
+            - howto/onboard-users/web3-react/index.md
+            - Plug-and-Play Auth: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
+            - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
+        - Vue Apps: 
+            - howto/onboard-users/vue/index.md
+            - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
+            - Custom Login UI:
+              - howto/onboard-users/custom-ui/index.md
+              - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
+              - Build Social Auth: 
+                - howto/onboard-users/build-social/index.md
+                - Discord: howto/onboard-users/build-social/discord-oauth.md
+                - GitHub: howto/onboard-users/build-social/github-oauth.md
+                - Google: howto/onboard-users/build-social/google-oauth.md
+                - Twitch: howto/onboard-users/build-social/twitch-oauth.md
+                - Twitter: howto/onboard-users/build-social/twitter-oauth.md
+              - Build Custom Auth:
+                - howto/onboard-users/build-idm/index.md
+                - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
       - Enable Arcana Wallet:
         - howto/arcana-wallet/index.md
         - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
@@ -68,10 +122,13 @@ nav:
       - tutorials/index.md
       - Code Samples: 
         - tutorials/code-samples/index.md
-        - HTML/JS Example: tutorials/code-samples/vanilla-html-js-sample.md
-        - React Example: tutorials/code-samples/react-code-sample.md
-        - NextJS Example: tutorials/code-samples/nextjs-code-sample.md
-        - Vue Example: https://github.com/arcana-network/auth-sample-integration-new
+        - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
+        - React App: tutorials/code-samples/react-code-sample.md
+        - NextJS App: tutorials/code-samples/nextjs-code-sample.md
+        - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
+        - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
+        - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
+        - Vue App: https://github.com/arcana-network/auth-sample-integration-new
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
@@ -94,8 +151,8 @@ nav:
       - Auth SDK: faq/faq-auth.md
       - Validator Nodes: faq/faq-validator.md
     - Troubleshooting Guide: troubleshooting.md
-    - Release Notes: 
-      - relnotes/index.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.4.md
+    - Migration Guide: migration/main-auth-v1.0.4-migration.md
     - Archives: 
         - archives/index.md
         - Migration Guides:
@@ -107,6 +164,7 @@ nav:
           - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
         - Release Notes:
           - relnotes/archives/index.md
+          - Release May3-2023: relnotes/rn-main-auth-May3-23.md
           - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
           - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
           - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
@@ -201,6 +259,7 @@ extra:
     auth_sdk_pkg_name: auth
     react_sdk_pkg_name: auth-react
     wagmi_sdk_pkg_name: auth-wagmi
+    web3_react_sdk_pkg_name: auth-web3-react
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
