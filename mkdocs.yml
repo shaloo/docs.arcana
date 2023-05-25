@@ -122,10 +122,13 @@ nav:
       - tutorials/index.md
       - Code Samples: 
         - tutorials/code-samples/index.md
-        - HTML/JS Example: tutorials/code-samples/vanilla-html-js-sample.md
-        - React Example: tutorials/code-samples/react-code-sample.md
-        - NextJS Example: tutorials/code-samples/nextjs-code-sample.md
-        - Vue Example: https://github.com/arcana-network/auth-sample-integration-new
+        - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
+        - React App: tutorials/code-samples/react-code-sample.md
+        - NextJS App: tutorials/code-samples/nextjs-code-sample.md
+        - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
+        - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
+        - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
+        - Vue App: https://github.com/arcana-network/auth-sample-integration-new
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md

@@ -8,12 +8,18 @@ arcana:
 
 # Code Samples
 
-These code samples demonstrate how to integrate a Web3 app with the {{ config.extra.arcana.sdk_name }} and enable authenticated users to sign blockchain transactions using the {{ config.extra.arcana.wallet_name }}.
+Refer to the following code samples to learn how to integrate the {{ config.extra.arcana.sdk_name }} with different types of Web3 apps. Once integrated, apps can add code to onboard users, and enable the authenticated users to access the {{ config.extra.arcana.wallet_name }} and sign blockchain transactions.
 
-[[html-js-code-sample|Vanilla JS Example :material-language-typescript:]]{ .md-button }
+[[html-js-code-sample|HTML/CSS/JS :material-language-typescript:]]{ .md-button }
 
-[[react-code-sample|React Example :fontawesome-brands-react:]]{ .md-button }
+[[react-code-sample|React App :fontawesome-brands-react:]]{ .md-button }
 
-[[nextjs-code-sample|NextJS Example :simple-nextdotjs:]]{ .md-button }
+[[nextjs-code-sample|NextJS App :simple-nextdotjs:]]{ .md-button }
 
-[Vue Example :fontawesome-brands-vuejs:](https://github.com/arcana-network/auth-sample-integration-new){ .md-button }
+[Wagmi App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-wagmi-example){ .md-button }
+
+[RainbowKit App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration){ .md-button }
+
+[Web3-React App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-web3-react/tree/main/example){ .md-button }
+
+[Vue App :fontawesome-brands-vuejs:](https://github.com/arcana-network/auth-sample-integration-new){ .md-button }
