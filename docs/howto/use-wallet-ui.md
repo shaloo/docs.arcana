@@ -167,15 +167,14 @@ Click the <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="2
 * View wallet address details on the 'Block Explorer' associated with the selected network
 * Refresh the wallet UI
 * Add/Select network
-* List NFT assets associated with the wallet address
-* View NFT details
-* Send, and share NFTs
-* View NFT transaction activity
-* Manage NFT collections
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_assets.png" width="20%"/>
+**NFT Operations**
 
-For details, see [[use-wallet-to-manage-nfts|how to send, share, and manage NFTs using the {{config.extra.arcana.wallet_name}}]] UI.
+{% include "./text-snippets/nft_ops.md" %}
+
+<img class="an-screenshots-noeffects" src="/img/an_wallet_nft_asset_thumbnail.gif" width="20%"/>
+
+For details, see [[use-wallet-to-manage-nfts|how Web3 app users can send NFTs, manage NFTs and monitor NFT transactions through the {{config.extra.arcana.wallet_name}}]].
 
 ### View User Profile Details
 

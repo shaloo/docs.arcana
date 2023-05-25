@@ -34,11 +34,9 @@ This guide will walk you through the various configuration options available on 
 
 {% include "./text-snippets/db_settings.md" %}
 
-!!! caution "Configuring the {{config.extra.arcana.wallet_name}}"
+!!! caution "{{config.extra.arcana.wallet_name}}"
 
-      {{config.extra.arcana.sdk_name}} allows developers to manage the app user experience for signing blockchain transactions with {{config.extra.arcana.wallet_name}}. 
-      
-      The user experience with the {{config.extra.arcana.wallet_name}} is configured programmatically through the `alwaysVisible` option. Install the {{config.extra.arcana.sdk_name}} and as part of the integration, add code in the app to create a new `AuthProvider` instance. Specify the appropriate wallet visibility mode via the `alwaysVisible` option. See the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
+        {% include "./text-snippets/warn_config_wallet_ui.md" %}
 
 !!! info "{{config.extra.arcana.app_address}}"
 
