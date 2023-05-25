@@ -1,10 +1,10 @@
 site_name: Auth Documentation
 
 # For for dev
-site_url: "https://docs.dev.arcana.network"
+#site_url: "https://docs.dev.arcana.network"
 
 # For main
-#site_url: "https://docs.arcana.network"
+site_url: "https://docs.arcana.network"
 
 use_directory_urls: false
 # upto here
@@ -260,7 +260,7 @@ extra:
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
-    latest_version: 'v1.0.3'
+    latest_version: !ENV [AUTH_SDK_VERSION,'v1.0.4']
     auth_sdk_pkg_name: auth
     react_sdk_pkg_name: auth-react
     wagmi_sdk_pkg_name: auth-wagmi
