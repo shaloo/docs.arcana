@@ -24,11 +24,7 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[concept-arcana-dashboard|Dashboard :material-monitor-dashboard:]]{ .md-button }
 
-[[concept-dkg|DKG :material-key-plus:]]{ .md-button }
-
-[[concept-adkg|ADKG? :material-sync-off: :octicons-key-24:]]{ .md-button } 
-
-[[concept-mfa|MFA :material-two-factor-authentication:]]{ .md-button }
+[[index-dkg|Distributed Key Generation :material-key-plus:]]{ .md-button }
 
 [[concept-gateway-node|Gateway :fontawesome-solid-torii-gate:]]{ .md-button }
 

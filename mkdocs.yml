@@ -218,7 +218,7 @@ nav:
           - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
         - Auth SDK: concepts/authsdk.md
         - Authentication: concepts/authtype/arcanaauth.md
-        - Auth Providers:
+        - Auth Types:
           - concepts/authtype/index.md
           - Social Providers: concepts/authtype/socialauth.md
           - Custom IAM Providers: concepts/authtype/customauth.md
@@ -236,7 +236,7 @@ nav:
         - MFA: concepts/mfa.md
         - Plug and Play Auth: concepts/plug-and-play-auth.md
         - Private Key: concepts/private-key.md
-        - Shared Key Space: concepts/keyspace-types.md
+        - Key Space Type: concepts/keyspace-types.md
         - Usage Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
       - Usage Flows: 
