@@ -109,7 +109,6 @@ nav:
       - Enable Arcana Wallet:
         - howto/arcana-wallet/index.md
         - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
-        - Manage Chains: howto/arcana-wallet/config-wallet-chains.md
         - Web3 Wallet Ops:
           - howto/arcana-wallet/web3-ops/index.md
           - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
@@ -123,10 +122,13 @@ nav:
       - tutorials/index.md
       - Code Samples: 
         - tutorials/code-samples/index.md
-        - HTML/JS Example: tutorials/code-samples/vanilla-html-js-sample.md
-        - React Example: tutorials/code-samples/react-code-sample.md
-        - NextJS Example: tutorials/code-samples/nextjs-code-sample.md
-        - Vue Example: https://github.com/arcana-network/auth-sample-integration-new
+        - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
+        - React App: tutorials/code-samples/react-code-sample.md
+        - NextJS App: tutorials/code-samples/nextjs-code-sample.md
+        - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
+        - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
+        - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
+        - Vue App: https://github.com/arcana-network/auth-sample-integration-new
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
@@ -184,7 +186,6 @@ nav:
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
-      - Coming Soon: arcana-coming-soon.md
   - Arcana Academy:
       - an-academy/index.md
       - About Arcana Auth:
@@ -226,10 +227,7 @@ nav:
           - concepts/dkg/index.md
           - What is DKG?: concepts/dkg.md
           - How does DKG work?: concepts/how-dkg-works.md
-          - What is ADKG?: concepts/adkg.md
-          - How does ADKG work?: concepts/how-adkg-works.md
         - Gateway: concepts/gateway-node.md
-        - Manage Chains: concepts/manage-chains.md
         - MFA: concepts/mfa.md
         - Plug and Play Auth: concepts/plug-and-play-auth.md
         - Private Key: concepts/private-key.md
