@@ -108,13 +108,15 @@ See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] 
 Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|NextJS ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
 
-## Use Latest {{config.extra.arcana.sdk_name}} 
+## Upgrade to the Latest {{config.extra.arcana.sdk_name}} 
 
 ---
 
-If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package you can continue to use it with the latest {{config.extra.arcana.product_name}} release. To use the new product features and enhancements, we recommend that you follow the [[migration-guide-v1.0.4|migration guide]] for a swift upgrade.
+If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package you can choose to either continue to use it with the latest {{config.extra.arcana.product_name}} product release or upgrade. 
 
-Please note, in case are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.4 then refer to the [[index-migration-guides|Migration Guides]] and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 first before upgrading to the v{% include "./text-snippets/latest_auth_sdk.md" %}.
+To use the new product features, enhancements and bug-fixes we **highly recommend** that you follow the [[migration-guide-v1.0.4|migration guide]] for a swift upgrade.
+
+Please note, in case are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [[index-migration-guides|Migration Guides]] and make requisite changes to upgrade to the latest version.
 
 ## Questions? 
 

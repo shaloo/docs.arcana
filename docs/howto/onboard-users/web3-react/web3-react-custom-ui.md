@@ -30,7 +30,7 @@ In this guide, you will learn how to onboard users in Web3-React apps. It shows 
 
 ## Steps
 
-*Onboarding users in Web3-React apps via via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
+*Onboarding users in Web3-React apps via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
 
 Follow these three steps:
 

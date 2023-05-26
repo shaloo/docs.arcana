@@ -31,6 +31,7 @@ Algorand
 Ankr
 AppID
 AppId
+Arbitrum
 Arcana
 Arcana's
 Arcana-Wagmi
@@ -89,6 +90,7 @@ AuthWatchAssetText
 BLS
 BYOK
 BeaconProxy
+Binance
 Blockchain
 Blockchains
 Bootcamp
@@ -208,6 +210,7 @@ IPFS
 ImportAuthSDKText
 InitParams
 InstallArcanaSDKsText
+IoTeX
 JS
 JSON
 JSON-RPC
@@ -260,6 +263,7 @@ OAuth2
 OTP
 Okta
 Onboarding
+Onramp
 OpenID
 OpenSea
 OtpLoginResponse
@@ -1060,6 +1064,7 @@ rn_main_auth_v1_0_3
 rn_main_auth_v1_0_4
 rn_mainnet
 rnbeta1_1
+roadmap
 rpc
 rpcUrl
 scalable

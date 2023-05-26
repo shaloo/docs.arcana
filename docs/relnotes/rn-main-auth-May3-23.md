@@ -16,7 +16,7 @@ arcana:
 
 The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
 
-* [{{config.extra.arcana.sdk_name}} v1.0.3](https://www.npmjs.com/package/@arcana/auth/v/1.0.3)
+* [{{config.extra.arcana.sdk_name}} v{{config.extra.arcana.latest_version}}](https://www.npmjs.com/package/@arcana/auth/v/1.0.3)
 * [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network/)
 * {{config.extra.arcana.wallet_name}} UI 
 
@@ -104,7 +104,7 @@ Check out the sample dApp integration example for apps using [[react-code-sample
 
 If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package already, then **you are all set!**
 
-But if you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [[index-migration-guides|Migration Guides]] and upgrade to the {{config.extra.arcana.sdk_name}} v{% include "./text-snippets/latest_auth_sdk.md" %}.
+But if you are using an older version of the {{config.extra.arcana.sdk_name}} prior to v1.0.3 then refer to the [[index-migration-guides|Migration Guides]] and upgrade to the {{config.extra.arcana.sdk_name}} v1.0.3 release.
 
 ## Questions? 
 

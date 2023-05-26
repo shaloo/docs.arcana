@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ../../..
 ---
 
-# Onboard Users: React Apps
+# Onboard Users: Vue Apps
 
 [[use-plug-play-auth|Enable Plug-and-Play UI :fontawesome-solid-plug:]]{ .md-button }
 

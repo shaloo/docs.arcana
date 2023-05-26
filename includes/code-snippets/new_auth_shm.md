@@ -5,6 +5,7 @@ let provider;
 const auth = new AuthProvider(`${clientId}`, {
   network: "testnet",
   alwaysVisible: true,
+  setWindowProvider: true,
   position: "right",
   theme: "dark"
 });

@@ -55,7 +55,7 @@ However, if the apps use `window.ethereum` browser setting or wallet connectors 
 
 ### Apps using `windows.ethereum`
 
-Previously, Web3 desktop apps could integrate with the {{config.extra.arcana.sdk_name}} and directly access the [standard ERC-1193 Ethereum provider](https://eips.ethereum.org/EIPS/eip-1193) via `window.ethereum` in the web browser. In the latest release of the {{config.extra.arcana.sdk_name}}, `window.ethereum` is not automatically set to the provider. To enable this feature, specify `setWindowProvider=true` when creating the `AuthProvider`.
+Previously, Web3 desktop apps could integrate with the {{config.extra.arcana.sdk_name}} and directly access the [standard EIP-1193 Ethereum provider](https://eips.ethereum.org/EIPS/eip-1193) via `window.ethereum` in the web browser. In the latest release of the {{config.extra.arcana.sdk_name}}, `window.ethereum` is not automatically set to the provider. To enable this feature, specify `setWindowProvider=true` when creating the `AuthProvider`.
      
 For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]].
 

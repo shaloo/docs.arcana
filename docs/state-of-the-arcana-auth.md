@@ -8,7 +8,7 @@ arcana:
   
 # State of the {{config.extra.arcana.product_name}}
 
-## Latest Release v{% include "./text-snippets/latest_auth_sdk.md" %}
+## Latest Release v{{config.extra.arcana.latest_version}}
 
 * Download the {{config.extra.arcana.sdk_name}} npm packages required as per the Web3 application type: 
 
@@ -43,7 +43,7 @@ The {{config.extra.arcana.product_name}} protocol is built and operates using th
 
 The {{config.extra.arcana.product_name}} Mainnet was released in January 2023 with the {{config.extra.arcana.sdk_name}} release v1.0.0.
 
-The current {{config.extra.arcana.sdk_name}} release is v{% include "./text-snippets/latest_auth_sdk.md" %}.
+The current {{config.extra.arcana.sdk_name}} release is v{{config.extra.arcana.latest_version}}.
 
 We are actively working towards adding newer features and capabilities. For details, check out the [[arcana-coming-soon| coming soon section]].
 
