@@ -16,7 +16,10 @@ site_description: >-
 nav: 
   - index.md
   - Introduction: introducing-arcana-auth.md
-  - Quick Start: auth-quick-start.md
+  - Quick Start: 
+    - quick-start/index.md
+    - Web Apps: quick-start/web-apps-quick-start.md
+    - Unity Apps: quick-start/unity-quick-start.md
   - Getting Started:
       - howto/index.md
       - Register App: howto/configure-auth.md
@@ -257,6 +260,7 @@ extra:
     company_name: Arcana
     product_name: Arcana Auth
     sdk_name: Arcana Auth SDK
+    gaming_sdk_name: Arcana Auth Gaming SDK
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
@@ -399,7 +403,7 @@ plugins:
   - redirects:
       redirect_maps:
         'introduction.md': 'introducing-arcana-auth.md'
-        'walletsdk/wallet_qs.md': 'auth-quick-start.md'
+        'walletsdk/wallet_qs.md': 'quick-start/auth-quick-start.md'
         'walletsdk/wallet_err.md': 'web-sdk/auth-error-msg.md'
         'walletsdk/wallet_usage.md': 'web-sdk/auth-usage-guide.md'
         'an_academy/new_web3_dev.md': 'an-academy/new-to-web3.md'
