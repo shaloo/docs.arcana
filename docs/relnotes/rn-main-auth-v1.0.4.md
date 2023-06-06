@@ -1,7 +1,7 @@
 ---
 alias: rn-main-auth-v1.0.4
 title: 'Arcana Auth: Release Notes'
-description: 'Arcana Auth Release Notes (Latest)'
+description: 'Arcana Auth Release Notes for Auth SDK release version 1.0.4'
 arcana:
   root_rel_path: ..
 ---
