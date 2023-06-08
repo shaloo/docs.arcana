@@ -437,6 +437,7 @@ Vite
 Vn
 Vue
 Vue-CLI
+Vuplex
 Wagmi
 Wagmi.
 WagmiConfig
@@ -454,7 +455,9 @@ Web2
 Web2-like
 Web3
 Web3-React
+WebView
 Webpack
+Webview
 Wechat
 WhatIsPvtNFTLinkText
 Whitepaper
@@ -672,13 +675,16 @@ fontawesome-brands-react
 fontawesome-brands-telegram
 fontawesome-brands-twitch
 fontawesome-brands-twitter
+fontawesome-brands-unity
 fontawesome-brands-vuejs
 fontawesome-regular-message
 fontawesome-solid-caret-down
 fontawesome-solid-coins
+fontawesome-solid-desktop
 fontawesome-solid-file-contract
 fontawesome-solid-file-signature
 fontawesome-solid-magnifying-glass-dollar
+fontawesome-solid-mobile-screen
 fontawesome-solid-money-check-dollar
 fontawesome-solid-paper-plane
 fontawesome-solid-plug
@@ -1189,4 +1195,5 @@ what-is-arcana-auth
 whatisan
 why-arcana-auth
 whyan
+wireframe
 withUI
