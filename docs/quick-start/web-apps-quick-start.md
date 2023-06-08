@@ -1,12 +1,12 @@
 ---
-alias: auth-quick-start
-title: 'Arcana Auth Quick Start Guide'
+alias: web-apps-quick-start
+title: 'Quick Start (Web Apps)'
 description: 'Get Started quickly using these step-by-step instructions. Register the Web3 app, obtain a ClientID and then integrate the app with the Arcana Auth SDK.'
 arcana:
-  root_rel_path: .
+  root_rel_path: ..
 ---
 
-# Quick Start
+# Quick Start (Web Apps)
 
 Use this guide to integrate Web3 apps with the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] and quickly build the following features:
 
