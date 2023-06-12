@@ -333,6 +333,8 @@ theme:
   custom_dir: docs/overrides
   features: 
   #  - announce.dismiss
+    - content.code.copy
+    - content.tabs.link
     - header.autohide 
   #  - navigation.path  //Sponsors only
     - navigation.instant
@@ -350,7 +352,6 @@ theme:
     - search.suggest
     - toc.follow
   # - toc.integrate 
-    - content.tabs.link
   palette:
     # Light Mode
     - scheme: default
