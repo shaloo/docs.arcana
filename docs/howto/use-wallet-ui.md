@@ -231,11 +231,11 @@ The {{config.extra.arcana.wallet_name}} is displayed as an embedded wallet withi
 
 Right after a user authenticates, the wallet is displayed in its minimized state. 
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-dark" width="7%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-light" width="7%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-dark" width="15%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-light" width="15%"/>
 
 On clicking, it expands to display the wallet in its maximized state. It can be minimized again by clicking the '∨' icon on the top in the wallet UI. 
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_max_light.png#only-dark" width="20%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_max_dark.png#only-light" width="20%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_max_light.png#only-dark" width="35%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_max_dark.png#only-light" width="35%"/>
 
 ### View Transaction Summary & Details
 
@@ -263,7 +263,7 @@ Here is an example of a signature request notification summary:
 
 On clicking the topmost arrow icon, the user can see the signature request transaction notification details view:
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_req_sign.png" width="3%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_req_sign.png" width="35%"/>
 
 ### Logout
 
