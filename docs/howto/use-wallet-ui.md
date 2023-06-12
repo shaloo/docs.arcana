@@ -50,20 +50,20 @@ The {{config.extra.arcana.wallet_name}} UI allows an authenticated user to perfo
 * Export private key
 * Logout
 
-When a user logs in to the app, {{config.extra.arcana.wallet_name}} is displayed in its minimized form in the app's context. 
+When a user logs in to the app, {{config.extra.arcana.wallet_name}} is displayed in its minimized form in the app's context. The wallet is positioned on the left or the right side of the app's UI window as configured by the app developer, during app registration and configuration. 
 
-<img src="/img/an_wallet_min_light.png#only-dark" width="8%"/><img src="/img/an_wallet_min_dark.png#only-light" width="8%"/> 
+<img src="/img/an_wallet_min_light.png#only-dark" width="15%"/><img src="/img/an_wallet_min_dark.png#only-light" width="15%"/> 
 
-Clicking on it displays the maximized wallet UI on the left or the right side of the app's UI window as configured by the app developer.
+Clicking on it displays the maximized wallet UI.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="20%"/>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="40%"/>
 
 Users can access various Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}} using the following tabs located at the bottom of the wallet:
 
 * <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> Token Assets Tab 
 * <img src="/img/icons/an_wallet_nft_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_nft_icon_dark.png#only-dark" width="20"/> NFT Assets Tab
 * <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> User Profile Tab
-* <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> Notifications Tab
+* <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> Activity Notifications Tab
 
 ### Sign Transaction
 
