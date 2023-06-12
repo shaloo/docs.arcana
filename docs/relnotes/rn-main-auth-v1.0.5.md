@@ -10,7 +10,7 @@ arcana:
 
 {==
 
-**Release Date: June 6, 2023**  
+**Release Date: June 12, 2023**  
 
 The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
 
