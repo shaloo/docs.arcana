@@ -75,7 +75,7 @@ Choose the appropriate token that you wish to send from the dropdown list, enter
 
 ## Receive Tokens
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="35"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab at the bottom left of the wallet to receive tokens from another wallet address. Click the QR icon <img src="/img/icons/an_wallet_qr_light.png#only-light" width="35"/><img src="/img/icons/an_wallet_qr_dark.png#only-dark" width="20"/> on the top right of the wallet and copy the QR code or the wallet address. Share it with the sender for receiving tokens in your account.  
+Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab at the bottom left of the wallet to receive tokens from another wallet address. Click the QR icon <img src="/img/icons/an_wallet_qr_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_qr_dark.png#only-dark" width="20"/> on the top right of the wallet and copy the QR code or the wallet address. Share it with the sender for receiving tokens in your account.  
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_receive_qr.png" width="35%"/><br></br><br></br>
 
@@ -96,7 +96,7 @@ The wallet notification screen displays a list of different blockchain transacti
 
 To see details of a send transaction, click on the arrow to expand the view.
 
-<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_token.png" width="20%" /><br></br><br></br>
+<img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notification_details_send_token.png" width="35%" /><br></br><br></br>
 
 !!! tip
 
