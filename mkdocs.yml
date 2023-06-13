@@ -19,7 +19,7 @@ nav:
   - Quick Start: 
     - quick-start/index.md
     - Web Apps: quick-start/web-apps-quick-start.md
-    - Unity Apps: quick-start/unity-quick-start.md
+    # - Unity Apps: quick-start/unity-quick-start.md
     - Mobile: 
       - quick-start/mobile/index.md
       - Flutter Apps: quick-start/flutter-quick-start.md
@@ -258,6 +258,7 @@ nav:
         - Key Space Type: concepts/keyspace-types.md
         - Usage Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
+        - Whitelabeled Auth: concepts/white-labeled-auth.md
       - Usage Flows: 
         - user-flows/index.md
         - User Auth and DKG: user-flows/user-auth-and-dkg.md

@@ -19,7 +19,7 @@ In this guide, you will learn how to configure Firebase and integrate the Fireba
 
 * Carefully [[config-auth-firebase|follow the instructions to configure Firebase]] as the authentication provider.
 
-* Install the Firebase SDK and integrate the app as explained in the Firebase documentation for [iOS apps](https://firebase.google.com/docs/ios/setup), [Android apps](https://firebase.google.com/docs/android/setup) and [web apps](https://firebase.google.com/docs/web/setup). Use [Firebase authentication](https://firebase.google.com/docs/auth) as per the Web3 app type, mobile, gaming or web app. Once a user is authenticated by Firebase, the developer must obtain the token and user identifier and provide it as input to the `loginWithBearer` function of the {{config.extra.arcana.sdk_name}} for onboarding users to Web3.
+* Install the Firebase SDK and integrate the app as explained in the Firebase documentation for [iOS apps](https://firebase.google.com/docs/ios/setup), [Android apps](https://firebase.google.com/docs/android/setup) and [web apps](https://firebase.google.com/docs/web/setup). Use [Firebase authentication](https://firebase.google.com/docs/auth) as per the Web3 app type, mobile or web app. Once a user is authenticated by Firebase, the developer must obtain the token and user identifier and provide it as input to the `loginWithBearer` function of the {{config.extra.arcana.sdk_name}} for onboarding users to Web3.
   
 * Install the {{config.extra.arcana.sdk_name}} and [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} by using the appropriate integration method as per the app type. After that follow the steps listed below and add code to onboard users to Web3 and enable them to sign blockchain transactions.
     

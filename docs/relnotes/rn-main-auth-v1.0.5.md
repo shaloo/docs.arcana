@@ -30,12 +30,6 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 ---
 
-### Auth for Gaming Apps (Unity)
-
-The {{config.extra.arcana.product_name}} product now allows gaming apps built using the Unity framework to easily onboard users through the {{config.extra.arcana.sdk_name}} and sign blockchain transactions. Developers must install the `{{config.extra.arcana.gaming_sdk_pkg_name}}` package and refer to the [[unity-quick-start|Arcana Auth Quick Start Guide for Gaming Apps]] to integrate Unity apps with the {{config.extra.arcana.sdk_name}} SDK.
-
-We are working on supporting other gaming platforms in the future, stay tuned. 
-
 ### Auth for Mobile Apps
 
 The {{config.extra.arcana.product_name}} product now allows mobile apps built using Flutter and React-Native frameworks to easily onboard users through the {{config.extra.arcana.sdk_name}} and sign blockchain transactions. 
@@ -43,6 +37,10 @@ The {{config.extra.arcana.product_name}} product now allows mobile apps built us
 Flutter app developers must install the `{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package and refer to the [[flutter-quick-start|Arcana Auth Quick Start Guide for Flutter Apps]] to integrate Web3 Flutter apps with the {{config.extra.arcana.sdk_name}} SDK.
 
 React-Native app developers must install the `{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}` package and refer to the [[react-native-quick-start|Arcana Auth Quick Start Guide for React-Native Apps]] to integrate Web3 React-Native apps with the {{config.extra.arcana.sdk_name}} SDK.
+
+### White-labeled Auth 
+
+The new white-labeled auth feature allows Web3 app developers to configure the {{config.extra.arcana.sdk_name}} and disable the built-in {{config.extra.arcana.wallet_name}} UI. Developers can replace it with a custom wallet UI and build necessary interfaces to call the web3 wallet operations themselves along with notification UI for requesting user approval for signing a blockchain transaction. See [[custom-wallet-ui|how to plug in a custom wallet UI]] and use the white-labeled auth feature. 
 
 ### Steam OAuth Support
 
