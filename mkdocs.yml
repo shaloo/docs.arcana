@@ -19,7 +19,7 @@ nav:
   - Quick Start: 
     - quick-start/index.md
     - Web Apps: quick-start/web-apps-quick-start.md
-    - Unity Apps: quick-start/unity-quick-start.md
+    # - Unity Apps: quick-start/unity-quick-start.md
     - Mobile: 
       - quick-start/mobile/index.md
       - Flutter Apps: quick-start/flutter-quick-start.md
@@ -121,18 +121,20 @@ nav:
                 - howto/onboard-users/build-idm/index.md
                 - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
                 - Firebase: howto/onboard-users/build-idm/firebase-login.md
-      - Enable Arcana Wallet:
-        - howto/arcana-wallet/index.md
-        - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
-        - Manage Chains: howto/arcana-wallet/config-wallet-chains.md
-        - Web3 Wallet Ops:
-          - howto/arcana-wallet/web3-ops/index.md
-          - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
-          - Check Wallet Balance: howto/arcana-wallet/balance.md
-          - Send Tokens: howto/arcana-wallet/send.md
-          - Sign Transactions: howto/arcana-wallet/sign.md
-          - Show Wallet: howto/arcana-wallet/show.md
-          - Watch Assets: howto/arcana-wallet/watchasset.md
+      - Wallet Ops:
+        - Enable Arcana Wallet:
+          - howto/arcana-wallet/index.md
+          - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
+          - Manage Chains: howto/arcana-wallet/config-wallet-chains.md
+          - Web3 Wallet Ops:
+            - howto/arcana-wallet/web3-ops/index.md
+            - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
+            - Check Wallet Balance: howto/arcana-wallet/balance.md
+            - Send Tokens: howto/arcana-wallet/send.md
+            - Sign Transactions: howto/arcana-wallet/sign.md
+            - Show Wallet: howto/arcana-wallet/show.md
+            - Watch Assets: howto/arcana-wallet/watchasset.md
+        - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Deploy App: howto/deploy-app.md
   - Tutorials: 
       - tutorials/index.md
@@ -256,6 +258,7 @@ nav:
         - Key Space Type: concepts/keyspace-types.md
         - Usage Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
+        - Whitelabeled Auth: concepts/white-labeled-auth.md
       - Usage Flows: 
         - user-flows/index.md
         - User Auth and DKG: user-flows/user-auth-and-dkg.md
@@ -424,6 +427,7 @@ plugins:
       redirect_maps:
         'introduction.md': 'introducing-arcana-auth.md'
         'walletsdk/wallet_qs.md': 'quick-start/index.md'
+        'auth-quick-start.md': 'quick-start/index.md'
         'walletsdk/wallet_err.md': 'web-sdk/auth-error-msg.md'
         'walletsdk/wallet_usage.md': 'web-sdk/auth-usage-guide.md'
         'an_academy/new_web3_dev.md': 'an-academy/new-to-web3.md'
