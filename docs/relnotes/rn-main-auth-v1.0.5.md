@@ -48,7 +48,15 @@ Web3 applications that integrate with the {{config.extra.arcana.sdk_name}} can n
 
 ### Firebase Auth Support
 
-In addition to Cognito, now {{config.extra.arcana.sdk_name}} also allows applications to onboard users via Firebase. In the case of Firebase, in addition to [[config-auth-firebase|configuring Firebase in the {{config.extra.arcana.dashboard_name}}]], integrating the app with the {{config.extra.arcana.sdk_name}} and calling the appropriate {{config.extra.arcana.sdk_name}} function to [[build-iam-firebase-auth|onboard Firebase users]], the developers must also integrate the app with the Firebase SDKs and configure the requisite Firebase services and listen for user authentication success. Once a user authenticates, the developers must pass the Firebase token and requisite details to the {{config.extra.arcana.sdk_name}} user onboarding function. Refer to the [Firebase auth integration demo app](https://github.com/arcana-network/auth-firebase-test) for code samples.
+Besides Cognito custom authentication, the {{config.extra.arcana.sdk_name}} now also allows apps to onboard users via Firebase. To enable Firebase, developers must:
+
+* [[config-auth-firebase|Configure Firebase settings]] in the {{config.extra.arcana.dashboard_name}}
+* [[index-integrate-app|Install and integrate the app]] with the {{config.extra.arcana.sdk_name}}
+* Make sure that the app is also integrated with the Firebase SDKs and that the required Firebase services are configured. 
+* Use a custom login UI to initiate Firebase login and listen for user authentication success event from Firebase.
+* Pass on the Firebase token to the {{config.extra.arcana.sdk_name}} user onboarding function - `loginWithBearer` and allow authenticated users to sign blockchain transactions.
+
+Refer to the [Firebase auth integration demo app](https://github.com/arcana-network/auth-firebase-test) for code samples.
 
 ---
 
