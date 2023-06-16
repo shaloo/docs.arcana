@@ -510,6 +510,7 @@ plugins:
         'concepts/ansmartc/an_smartc_details.md': 'concepts/ansmartc/an-smartc-details.md'
         'concepts/ansmartc/an_smartc_flows.md': 'concepts/ansmartc/an-smartc-flows.md'
         'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smartc-upgrades.md'
+        'relnotes/latest.md': 'relnotes/rn-main-auth-v1.0.5.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
