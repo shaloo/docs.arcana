@@ -1,4 +1,4 @@
-site_name: Auth Documentation
+site_name: Documentation
 
 # For for dev
 #site_url: "https://docs.dev.arcana.network"
@@ -14,8 +14,13 @@ site_description: >-
   Remove the friction of wallet installation, key backup, & crypto on-ramp.
 
 nav: 
-  - index.md
-  - Introduction: introducing-arcana-auth.md
+  - Arcana Auth:
+    - index.md
+    - Introduction: 
+      - intro/index.md
+      - Overview: introducing-arcana-auth.md
+      - Usage: auth-usage.md
+      - Features: key-features.md
   - Quick Start: 
     - quick-start/index.md
     - Web Apps: quick-start/web-apps-quick-start.md
@@ -341,16 +346,16 @@ theme:
     - content.tabs.link
     - header.autohide 
   #  - navigation.path  //Sponsors only
+  #  - navigation.expand
+  #  - navigation.tabs
+  #  - navigation.tabs.sticky
+  #  - navigation.prune
     - navigation.instant
     - navigation.top
     - navigation.tracking
     - navigation.indexes
     - navigation.sections
     - navigation.footer
-  #  - navigation.expand
-  #  - navigation.tabs
-  #  - navigation.tabs.sticky
-  #  - navigation.prune
     - search.highlight
     - search.share
     - search.suggest
@@ -425,7 +430,8 @@ plugins:
       max_length: 160
   - redirects:
       redirect_maps:
-        'introduction.md': 'introducing-arcana-auth.md'
+        'introduction.md': 'intro/index.md'
+        'introducing-arcana-auth': 'intro/index.md'
         'walletsdk/wallet_qs.md': 'quick-start/index.md'
         'auth-quick-start.md': 'quick-start/index.md'
         'walletsdk/wallet_err.md': 'web-sdk/auth-error-msg.md'
