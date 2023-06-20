@@ -241,4 +241,4 @@ The React-Native mobile app is now ready to onboard users. Once the user logs in
 
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
 * [[index-video-tutorials|Video Tutorials]]
-* [Demo App Source Code](https://github.com/arcana-network/auth-unity/tree/main/Assets/Demo)
+* [Demo App Source Code](https://github.com/arcana-network/auth-react-native-pg)
