@@ -525,14 +525,11 @@
     </div>
 </div>
 
-{% include "partials/content.html" %}
-
-{% endblock %}
-
 {% block scripts %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}
   <!-- Add scripts that need to run afterwards here -->
+  <!----->
   <script>
     window.chatbaseConfig = {
       chatbotId: "10n3MZUQcfC4WFAzjLlHj",
@@ -543,4 +540,9 @@
     id="10n3MZUQcfC4WFAzjLlHj"
     defer>
   </script>
+  <!----->
+{% endblock %}
+
+{% include "partials/content.html" %}
+
 {% endblock %}
