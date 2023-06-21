@@ -63,7 +63,7 @@ After integrating an app with the {{config.extra.arcana.sdk_name}}, developers c
 ## See also
 
 * Using the {{config.extra.arcana.sdk_name}} to [[google-social-auth|enable social authentication via Google]]
-* [[build-password-less-auth|Passwordless authentication]]
+* [[index-onboard-users|Onboard Users]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

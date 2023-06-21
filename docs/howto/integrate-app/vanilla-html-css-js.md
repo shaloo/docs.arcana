@@ -69,8 +69,7 @@ After integrating an app with the {{config.extra.arcana.sdk_name}}, developers c
 ## See also
 
 * Access Ethereum providers [[web-auth-usage-guide#quick-start-with-ethersjs| `web3.js`, `ethers.js`]]
-* Using the {{config.extra.arcana.sdk_name}} to [[google-social-auth|enable user onboarding via Google]]
-* [[build-password-less-auth|Passwordless user onboarding]]
+* [[index-onboard-users|Onboard users]]
 * [[web-auth-error-msg| {{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide| {{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

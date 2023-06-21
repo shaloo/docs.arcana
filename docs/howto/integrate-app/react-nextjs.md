@@ -108,8 +108,7 @@ After integrating an app with the {{config.extra.arcana.sdk_name}}, developers c
 
 ## See also
 
-* How to onboard app users via [[google-social-auth|Google ]]
-* [[build-password-less-auth|Passwordless authentication using the {{config.extra.arcana.sdk_name}}]]
+* [[index-onboard-users|Onboard Users]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

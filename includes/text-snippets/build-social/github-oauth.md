@@ -1,15 +1,6 @@
----
-alias: github-social-auth
-title: 'User Login with GitHub'
-description: 'Learn how to build social authentication in Web3 apps and allow users to log in using GitHub.'
-arcana:
-  root_rel_path: ../../..
-  social_provider: "'github'"
----
-
 # User Login with GitHub
 
-In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via GitHub as the authentication provider.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} can easily onboard users via custom login UI and GitHub as the authentication provider.
 
 ## Prerequisites
 

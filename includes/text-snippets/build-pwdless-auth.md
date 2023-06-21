@@ -1,14 +1,6 @@
----
-alias: build-password-less-auth
-title: 'Build Passwordless Auth'
-description: 'How to custom build user authentication UI and onboard users via passwordless authentication option in a Web3 app that is integrated with the Arcana Auth SDK.'
-arcana:
-  root_rel_path: ../..
----
-
 # Build Passwordless Auth
 
-In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via the passwordless login option.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via custom login UI that enables passwordless login.
 
 ## Prerequisites
 

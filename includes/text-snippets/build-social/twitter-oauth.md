@@ -1,15 +1,6 @@
----
-alias: twitter-social-auth
-title: 'User Login with Twitter'
-description: 'Learn how to build social authentication in Web3 apps and allow users to log in using Twitter.'
-arcana:
-  root_rel_path: ../../..
-  social_provider: "'twitter'"
----
-
 # User Login with Twitter
 
-In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via Twitter as the authentication provider.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} can easily onboard users via custom login UI and Twitter as the authentication provider.
 
 ## Prerequisites
 

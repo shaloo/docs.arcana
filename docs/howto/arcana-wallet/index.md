@@ -23,5 +23,5 @@ The guides below describe how to configure the {{config.extra.arcana.wallet_name
 [[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet:]]{ .md-button }
 
 <!--
-[[index-build-iam-providers|Apps using Custom IAM Providers :fontawesome-brands-aws:]]{ .md-button }
+[[index-vanilla-build-iam-providers|Apps using Custom IAM Providers :fontawesome-brands-aws:]]{ .md-button }
 -->

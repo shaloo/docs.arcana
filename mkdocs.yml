@@ -61,42 +61,42 @@ nav:
         - howto/onboard-users/index.md
         - Vanilla JS Apps:
           - howto/onboard-users/vanilla/index.md
-          - Plug-and-Play Auth: howto/onboard-users/vanilla/vanilla-pnp.md
+          - Plug-and-Play Auth: howto/onboard-users/vanilla/use-plug-play-auth.md
           - Custom Login UI:
-            - howto/onboard-users/custom-ui/index.md
-            - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
-            - Build Social Auth: 
-              - howto/onboard-users/build-social/index.md
-              - Discord: howto/onboard-users/build-social/discord-oauth.md
-              - GitHub: howto/onboard-users/build-social/github-oauth.md
-              - Google: howto/onboard-users/build-social/google-oauth.md
-              - Steam: howto/onboard-users/build-social/steam-oauth.md
-              - Twitch: howto/onboard-users/build-social/twitch-oauth.md
-              - Twitter: howto/onboard-users/build-social/twitter-oauth.md
-            - Build Custom Auth:
-              - howto/onboard-users/build-idm/index.md
-              - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
-              - Firebase: howto/onboard-users/build-idm/firebase-login.md
+            - howto/onboard-users/vanilla/custom-ui/index.md
+            - Passwordless Auth: howto/onboard-users/vanilla/custom-ui/build-pwdless-auth.md
+            - Social Auth: 
+              - howto/onboard-users/vanilla/custom-ui/build-social/index.md
+              - Discord: howto/onboard-users/vanilla/custom-ui/build-social/discord-oauth.md
+              - GitHub: howto/onboard-users/vanilla/custom-ui/build-social/github-oauth.md
+              - Google: howto/onboard-users/vanilla/custom-ui/build-social/google-oauth.md
+              - Steam: howto/onboard-users/vanilla/custom-ui/build-social/steam-oauth.md
+              - Twitch: howto/onboard-users/vanilla/custom-ui/build-social/twitch-oauth.md
+              - Twitter: howto/onboard-users/vanilla/custom-ui/build-social/twitter-oauth.md
+            - Custom IAM Auth:
+              - howto/onboard-users/vanilla/custom-ui/build-idm/index.md
+              - Cognito: howto/onboard-users/vanilla/custom-ui/build-idm/cognito-oauth.md
+              - Firebase: howto/onboard-users/vanilla/custom-ui/build-idm/firebase-login.md
         - React Apps:
           - howto/onboard-users/react/index.md
           - React/NextJS Apps: 
             - howto/onboard-users/react-nextjs/index.md
-            - Plug-and-Play Auth: howto/onboard-users/react-nextjs/react-nextjs-pnp.md
+            - Plug-and-Play Auth: howto/onboard-users/react-nextjs/use-plug-play-auth.md
             - Custom Login UI:
-              - howto/onboard-users/custom-ui/index.md
-              - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
+              - howto/onboard-users/react-nextjs/custom-ui/index.md
+              - Build Passwordless Auth: howto/onboard-users/react-nextjs/custom-ui/build-pwdless-auth.md
               - Build Social Auth: 
-                - howto/onboard-users/build-social/index.md
-                - Discord: howto/onboard-users/build-social/discord-oauth.md
-                - GitHub: howto/onboard-users/build-social/github-oauth.md
-                - Google: howto/onboard-users/build-social/google-oauth.md
-                - Steam: howto/onboard-users/build-social/steam-oauth.md
-                - Twitch: howto/onboard-users/build-social/twitch-oauth.md
-                - Twitter: howto/onboard-users/build-social/twitter-oauth.md
+                - howto/onboard-users/react-nextjs/custom-ui/build-social/index.md
+                - Discord: howto/onboard-users/react-nextjs/custom-ui/build-social/discord-oauth.md
+                - GitHub: howto/onboard-users/react-nextjs/custom-ui/build-social/github-oauth.md
+                - Google: howto/onboard-users/react-nextjs/custom-ui/build-social/google-oauth.md
+                - Steam: howto/onboard-users/react-nextjs/custom-ui/build-social/steam-oauth.md
+                - Twitch: howto/onboard-users/react-nextjs/custom-ui/build-social/twitch-oauth.md
+                - Twitter: howto/onboard-users/react-nextjs/custom-ui/build-social/twitter-oauth.md
               - Build Custom Auth:
-                - howto/onboard-users/build-idm/index.md
-                - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
-                - Firebase: howto/onboard-users/build-idm/firebase-login.md
+                - howto/onboard-users/react-nextjs/custom-ui/build-idm/index.md
+                - Cognito: howto/onboard-users/react-nextjs/custom-ui/build-idm/cognito-oauth.md
+                - Firebase: howto/onboard-users/react-nextjs/custom-ui/build-idm/firebase-login.md
           - Wagmi Apps: 
             - howto/onboard-users/wagmi/index.md
             - Plug-and-Play Auth: howto/onboard-users/wagmi/wagmi-pnp-ui.md
@@ -111,22 +111,22 @@ nav:
             - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
         - Vue Apps: 
             - howto/onboard-users/vue/index.md
-            - Plug-and-Play Auth: howto/onboard-users/vue/vue-pnp.md
+            - Plug-and-Play Auth: howto/onboard-users/vue/use-plug-play-auth.md
             - Custom Login UI:
-              - howto/onboard-users/custom-ui/index.md
-              - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
+              - howto/onboard-users/vue/custom-ui/index.md
+              - Build Passwordless Auth: howto/onboard-users/vue/custom-ui/build-pwdless-auth.md
               - Build Social Auth: 
-                - howto/onboard-users/build-social/index.md
-                - Discord: howto/onboard-users/build-social/discord-oauth.md
-                - GitHub: howto/onboard-users/build-social/github-oauth.md
-                - Google: howto/onboard-users/build-social/google-oauth.md
-                - Steam: howto/onboard-users/build-social/steam-oauth.md
-                - Twitch: howto/onboard-users/build-social/twitch-oauth.md
-                - Twitter: howto/onboard-users/build-social/twitter-oauth.md
+                - howto/onboard-users/vue/custom-ui/build-social/index.md
+                - Discord: howto/onboard-users/vue/custom-ui/build-social/discord-oauth.md
+                - GitHub: howto/onboard-users/vue/custom-ui/build-social/github-oauth.md
+                - Google: howto/onboard-users/vue/custom-ui/build-social/google-oauth.md
+                - Steam: howto/onboard-users/vue/custom-ui/build-social/steam-oauth.md
+                - Twitch: howto/onboard-users/vue/custom-ui/build-social/twitch-oauth.md
+                - Twitter: howto/onboard-users/vue/custom-ui/build-social/twitter-oauth.md
               - Build Custom Auth:
-                - howto/onboard-users/build-idm/index.md
-                - Cognito: howto/onboard-users/build-idm/cognito-oauth.md
-                - Firebase: howto/onboard-users/build-idm/firebase-login.md
+                - howto/onboard-users/vue/custom-ui/build-idm/index.md
+                - Cognito: howto/onboard-users/vue/custom-ui/build-idm/cognito-oauth.md
+                - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
       - Wallet Ops:
         - Enable Arcana Wallet:
           - howto/arcana-wallet/index.md
@@ -471,17 +471,17 @@ plugins:
         'howto/config_auth/index.md': 'howto/configure-auth/index.md'
         'howto/config_idm/index.md': 'howto/config-idm/index.md'
         'howto/config_idm/cognito_oauth.md': 'howto/config-idm/cognito-oauth.md'
-        'howto/plug_idm/index.md': 'howto/onboard-users/build-idm/index.md'
-        'howto/plug_idm/wallet_cognito_oauth.md': 'howto/onboard-users/build-idm/cognito-oauth.md'
-        'howto/onboard_users/build_social/index.md': 'howto/onboard-users/build-social/index.md'
-        'howto/onboard_users/build_social/wallet_discord_oauth.md': 'howto/onboard-users/build-social/discord-oauth.md'
-        'howto/onboard_users/build_social/wallet_github_oauth.md': 'howto/onboard-users/build-social/github-oauth.md'
-        'howto/onboard_users/build_social/wallet_google_oauth.md': 'howto/onboard-users/build-social/google-oauth.md'
-        'howto/onboard_users/build_social/wallet_twitch_oauth.md': 'howto/onboard-users/build-social/twitch-oauth.md'
-        'howto/onboard_users/build_social/wallet_twitter_oauth.md': 'howto/onboard-users/build-social/twitter-oauth.md'
+        'howto/plug_idm/index.md': 'howto/onboard-users/vanilla/custom-ui/build-idm/index.md'
+        'howto/plug_idm/wallet_cognito_oauth.md': 'howto/onboard-users/vanilla/custom-ui/build-idm/cognito-oauth.md'
+        'howto/onboard_users/build_social/index.md': 'howto/onboard-users/vanilla/custom-ui/build-social/index.md'
+        'howto/onboard_users/build_social/wallet_discord_oauth.md': 'howto/onboard-users/vanilla/custom-ui/build-social/discord-oauth.md'
+        'howto/onboard_users/build_social/wallet_github_oauth.md': 'howto/onboard-users/vanilla/custom-ui/build-social/github-oauth.md'
+        'howto/onboard_users/build_social/wallet_google_oauth.md': 'howto/onboard-users/vanilla/custom-ui/build-social/google-oauth.md'
+        'howto/onboard_users/build_social/wallet_twitch_oauth.md': 'howto/onboard-users/vanilla/custom-ui/build-social/twitch-oauth.md'
+        'howto/onboard_users/build_social/wallet_twitter_oauth.md': 'howto/onboard-users/vanilla/custom-ui/build-social/twitter-oauth.md'
         'howto/onboard_users/wallet_plugnplay.md': 'howto/onboard-users/index.md'
         'howto/onboard-users/use-plug-play-auth.md': 'howto/onboard-users/index.md'
-        'howto/onboard_users/wallet_pwdless_login.md': 'howto/onboard-users/build-pwdless-auth.md'
+        'howto/onboard_users/wallet_pwdless_login.md': 'howto/onboard-users/vanilla/custom-ui/build-pwdless-auth.md'
         'howto/integrate_auth/index.md': 'howto/integrate-app/index.md'
         'howto/integrate_auth/integrate_wallet.md': 'howto/integrate-app/vanilla-html-css-js.md'
         'howto/integrate_auth/react/index.md': 'howto/integrate-app/react/index.md'

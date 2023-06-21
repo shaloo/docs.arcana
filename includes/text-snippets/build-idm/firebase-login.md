@@ -1,21 +1,12 @@
----
-alias: build-iam-firebase-auth
-title: 'User Login with Firebase'
-description: 'How to custom build user authentication UI and onboard users via the Firebase, in a Web3 app that is integrated with the Arcana Auth SDK.'
-arcana:
-  root_rel_path: ../../..
-  social_provider: "'aws'"
----
-
 # User Login with Firebase
 
-In this guide, you will learn how to configure Firebase and integrate the Firebase SDK and the {{config.extra.arcana.sdk_name}} with a Web3 app and onboard users with custom login UI. After integrating with the {{config.extra.arcana.sdk_name}}, developers can allow authenticated users to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} and Firebase SDK can easily onboard users via custom login UI and Firebase as the authentication provider.
 
 ## Prerequisites
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[configure-auth|register the app]] and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
+* Use the [[concept-arcana-dashboard| {{config.extra.arcana.dashboard_name}}]] to [[configure-auth|register the app]] and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 * Carefully [[config-auth-firebase|follow the instructions to configure Firebase]] as the authentication provider.
 

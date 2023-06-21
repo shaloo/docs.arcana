@@ -10,4 +10,4 @@ arcana:
 
 [[react-nextjs-use-plug-play-auth|Plug-and-Play UI :fontawesome-solid-plug:]]{ .md-button }
 
-[[index-custom-ui-onboard-users|Custom Login UI :fontawesome-solid-plug:]]{ .md-button }
+[[index-react-nextjs-custom-ui-onboard-users|Custom Login UI :fontawesome-solid-plug:]]{ .md-button }

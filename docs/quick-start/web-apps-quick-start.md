@@ -50,7 +50,7 @@ During app configuration, developers can enable one or more options to onboard a
 
       Web3 app developers can [[index-configure-auth|configure one or more authentication providers]] to let app users choose one of the available options and log in.
         
-      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the [[build-password-less-auth|passwordless login]] can be used to onboard app users.
+      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
 
 ## Install {{config.extra.arcana.sdk_name}}
 
@@ -64,11 +64,11 @@ After integrating with the {{config.extra.arcana.sdk_name}} app developers can u
 
 ### Onboard Users
 
-After installing and integrating with the {{config.extra.arcana.sdk_name}}, app developers can add code to onboard the users. There are two ways to build user onboarding in the app:
+After installing and integrating with the {{config.extra.arcana.sdk_name}}, app developers can add code to onboard the users using one of the two available methods:
 
-1. Use the [[concept-plug-and-play-auth|plug-and-play ]] feature of {{config.extra.arcana.sdk_name}} to instantly access the built-in, default pop-up user login interface. No need to build any user login UI in the app. Simply add code asking the user to log in and call the plug-and-play function of the `AuthProvider`. App users can log in by choosing one of the authentication mechanisms configured by the app developer, displayed in the plug-and-play pop-up UI.
+1. Use the [[concept-plug-and-play-auth|plug-and-play login UI]] feature to instantly access the built-in, default user login UI provided by the {{config.extra.arcana.sdk_name}}. Simply call `connect` method of the `AuthProvider` to bring up the plug-and-play login UI. The plug-and-play pop-up UI displays all the authentication mechanisms configured by the app developer. User can select one and onboard the app.
 
-2. Build a custom user login UI for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured [[index-build-social-providers|social providers]] and the [[build-password-less-auth|passwordless login option]].
+2. Build a custom user login UI for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured social providers and the passwordless login option.
 
 ### Sign Blockchain Transactions
 
@@ -91,7 +91,7 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 Here are some examples of {{config.extra.arcana.sdk_name}} usage:
 
-1. See how to integrate an app with the {{config.extra.arcana.sdk_name}} and create a Web2-like familiar user onboarding experience via [[google-social-auth|Google ]], [[build-password-less-auth|passwordless login]].
+1. See how to integrate an app with the {{config.extra.arcana.sdk_name}} and create a Web2-like familiar user onboarding experience via [[google-social-auth|Google ]].
 
 2. Manage Web3 user experience for signing blockchain transactions with the {{config.extra.arcana.wallet_name}}:
 

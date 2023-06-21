@@ -54,4 +54,4 @@ toc_depth: 2
 
 ??? an-faq "How do I enable passwordless login in an app to onboard new users?"
 
-      You can enable passwordless login to onboard app users by first registering the app with Arcana Network, then integrating it with the {{config.extra.arcana.sdk_name}} and then simply calling the [`loginWithLink` function](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) in the app code to onboard users. For details, see [[build-password-less-auth|how to enable passwordless login]].
+      You can enable passwordless login to onboard app users by first registering the app with Arcana Network, then integrating it with the {{config.extra.arcana.sdk_name}} and then simply calling the [`loginWithLink` function](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) in the app code to onboard users. For details, see [[index-onboard-users|onboarding users documentation section]], select app type and refer to instructions on how to enable passwordless login.

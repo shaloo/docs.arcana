@@ -1,15 +1,6 @@
----
-alias: discord-social-auth
-title: 'User Login with Discord'
-description: 'Learn how to build social authentication in Web3 apps and allow users to log in using Discord.'
-arcana:
-  root_rel_path: ../../..
-  social_provider: "'discord'"
----
-
 # User Login with Discord
 
-In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via Discord as the authentication provider.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} can easily onboard users via custom login UI and Discord as the authentication provider.
 
 ## Prerequisites
 
@@ -52,5 +43,5 @@ After onboarding app users via Discord, you can allow authenticated users to acc
 ## See also
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [[index-integrate-app|How to integrate with the {{config.extra.arcana.sdk_name}}K]]
+* [[index-integrate-app|How to integrate with the {{config.extra.arcana.sdk_name}}]]
 * [[web-auth-error-msg|Handling authentication errors]]

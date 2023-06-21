@@ -1,15 +1,6 @@
----
-alias: twitch-social-auth
-title: 'User Login with Twitch'
-description: 'Learn how to build social authentication in Web3 apps and allow users to log in using Twitch.'
-arcana:
-  root_rel_path: ../../..
-  social_provider: "'twitch'"
----
-
 # User Login with Twitch
 
-In this guide, you will learn how an app that builds a custom login UI and integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via Twitch as the authentication provider.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} can easily onboard users via custom login UI and Twitch as the authentication provider.
 
 ## Prerequisites
 
