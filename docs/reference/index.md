@@ -8,12 +8,18 @@ arcana:
 
 # References
 
-[[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]]{ .md-button }
+
 
 [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]{ .md-button }
 
 [{{config.extra.arcana.sdk_name}} Reference Guide](https://authsdk-ref-guide.netlify.app/){ .md-button }
 
-[{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08){ .md-button }
+[[index-faq| FAQ]]{ .md-button }
 
-[[arcana-coming-soon|Coming Soon...]]{ .md-button }
+[[troubleshooting| Troubleshooting]]{ .md-button }
+
+[[web-auth-error-msg|Handling Auth Errors]]{ .md-button }
+
+[[index-changelog| Changelog]]{ .md-button }
+
+[[index-archives| Archives]]{ .md-button }

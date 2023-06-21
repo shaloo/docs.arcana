@@ -167,9 +167,11 @@ nav:
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
   - Developer Resources:
+    - dev-resources/index.md
     - Release Notes: relnotes/rn-main-auth-v1.0.5.md
     - Migration Guide: migration/main-auth-v1.0.5-migration.md
     - References:
+      - reference/index.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - FAQ:
@@ -210,7 +212,7 @@ nav:
           - Developer's Guide: integrations/shardeum/integrate-shardeum.md
           - Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
   - Quick Links:
-      - reference/index.md
+      - quick-links/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
       - Coming Soon: arcana-coming-soon.md
       - Audit Reports: 
