@@ -1,6 +1,6 @@
 ---
 alias: auth-quick-start
-title: 'Arcana Auth Quick Start Guide'
+title: 'Quick Start Guide'
 description: 'Get Started quickly using these step-by-step instructions. Register the Web3 app, obtain a ClientID and then integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
@@ -14,6 +14,6 @@ Choose the appropriate {{config.extra.arcana.sdk_name}} Quick Start Guide as per
 
 [[web-apps-quick-start|Desktop/Web Apps :fontawesome-solid-desktop:]]{ .md-button }
 
-[[unity-quick-start|Unity Apps :fontawesome-brands-unity:]]{ .md-button }
+[[unity-quick-start|Unity Gaming Apps :fontawesome-brands-unity:]]{ .md-button }
 
 [[mobile-quick-start|Mobile Apps :fontawesome-solid-mobile-screen:]]{ .md-button }

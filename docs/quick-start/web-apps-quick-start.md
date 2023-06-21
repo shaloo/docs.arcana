@@ -1,12 +1,12 @@
 ---
 alias: web-apps-quick-start
-title: 'Quick Start (Web Apps)'
+title: 'Quick Start: Web Apps '
 description: 'Get Started quickly using these step-by-step instructions. Register the Web3 app, obtain a ClientID and then integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 ---
 
-# Quick Start (Web Apps)
+# Quick Start: Web Apps
 
 Use this guide to integrate Web3 apps with the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] and quickly build the following features:
 
@@ -66,7 +66,7 @@ After integrating with the {{config.extra.arcana.sdk_name}} app developers can u
 
 After installing and integrating with the {{config.extra.arcana.sdk_name}}, app developers can add code to onboard the users. There are two ways to build user onboarding in the app:
 
-1. Use the [[use-plug-play-auth|plug-and-play ]] feature of {{config.extra.arcana.sdk_name}} to instantly access the built-in, default pop-up user login interface. No need to build any user login UI in the app. Simply add code asking the user to log in and call the plug-and-play function of the `AuthProvider`. App users can log in by choosing one of the authentication mechanisms configured by the app developer, displayed in the plug-and-play pop-up UI.
+1. Use the [[concept-plug-and-play-auth|plug-and-play ]] feature of {{config.extra.arcana.sdk_name}} to instantly access the built-in, default pop-up user login interface. No need to build any user login UI in the app. Simply add code asking the user to log in and call the plug-and-play function of the `AuthProvider`. App users can log in by choosing one of the authentication mechanisms configured by the app developer, displayed in the plug-and-play pop-up UI.
 
 2. Build a custom user login UI for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured [[index-build-social-providers|social providers]] and the [[build-password-less-auth|passwordless login option]].
 

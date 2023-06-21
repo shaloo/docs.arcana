@@ -8,6 +8,6 @@ arcana:
 
 # Vanilla Apps
 
-[[use-plug-play-auth|Enable Plug-and-Play UI :fontawesome-solid-plug:]]{ .md-button }
+[[vanilla-use-plug-play-auth|Plug-and-Play Login UI :fontawesome-solid-plug:]]{ .md-button }
 
-[[index-custom-ui-onboard-users|Use Custom Login UI :fontawesome-solid-plug:]]{ .md-button }
+[[index-custom-ui-onboard-users|Custom Login UI :fontawesome-solid-plug:]]{ .md-button }

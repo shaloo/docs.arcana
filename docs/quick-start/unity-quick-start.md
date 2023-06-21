@@ -1,12 +1,12 @@
 ---
 alias: unity-quick-start
-title: 'Quick Start (Unity Apps) '
+title: 'Quick Start: Unity Gaming Apps'
 description: 'Get Started quickly with Unity gaming apps using these step-by-step instructions. Register the Unity app, obtain a ClientID and then integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 ---
 
-# Quick Start (Unity Apps)
+# Quick Start: Unity Gaming Apps
 
 {% include "./text-snippets/warn_early_preview_rel.md" %}
 

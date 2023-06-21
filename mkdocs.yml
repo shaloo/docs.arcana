@@ -18,17 +18,18 @@ nav:
     - index.md
     - Introduction: 
       - intro/index.md
-      - Overview: introducing-arcana-auth.md
+      - Overview: auth-overview.md
       - Usage: auth-usage.md
       - Features: key-features.md
-  - Quick Start: 
-    - quick-start/index.md
-    - Web Apps: quick-start/web-apps-quick-start.md
-    - Unity Apps: quick-start/unity-quick-start.md
-    - Mobile: 
-      - quick-start/mobile/index.md
-      - Flutter Apps: quick-start/flutter-quick-start.md
-      - React-Native Apps: quick-start/react-native-quick-start.md
+    - Quick Start: 
+      - quick-start/index.md
+      - Web Apps: quick-start/web-apps-quick-start.md
+      - Unity Apps: quick-start/unity-quick-start.md
+      - Mobile: 
+        - quick-start/mobile/index.md
+        - Flutter Apps: quick-start/flutter-quick-start.md
+        - React-Native Apps: quick-start/react-native-quick-start.md
+    - New to Web3:  an-academy/new-to-web3.md
   - Getting Started:
       - howto/index.md
       - Register App: howto/configure-auth.md
@@ -60,7 +61,7 @@ nav:
         - howto/onboard-users/index.md
         - Vanilla JS Apps:
           - howto/onboard-users/vanilla/index.md
-          - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
+          - Plug-and-Play Auth: howto/onboard-users/vanilla/vanilla-pnp.md
           - Custom Login UI:
             - howto/onboard-users/custom-ui/index.md
             - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
@@ -80,7 +81,7 @@ nav:
           - howto/onboard-users/react/index.md
           - React/NextJS Apps: 
             - howto/onboard-users/react-nextjs/index.md
-            - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
+            - Plug-and-Play Auth: howto/onboard-users/react-nextjs/react-nextjs-pnp.md
             - Custom Login UI:
               - howto/onboard-users/custom-ui/index.md
               - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
@@ -110,7 +111,7 @@ nav:
             - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
         - Vue Apps: 
             - howto/onboard-users/vue/index.md
-            - Plug-and-Play Auth: howto/onboard-users/use-plug-play-auth.md
+            - Plug-and-Play Auth: howto/onboard-users/vue/vue-pnp.md
             - Custom Login UI:
               - howto/onboard-users/custom-ui/index.md
               - Build Passwordless Auth: howto/onboard-users/build-pwdless-auth.md
@@ -141,6 +142,16 @@ nav:
             - Watch Assets: howto/arcana-wallet/watchasset.md
         - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Deploy App: howto/deploy-app.md
+  - User Guides:
+      - user-guides/index.md
+      - Arcana Dashboard: db/config-dApp-with-db.md
+      - Arcana Wallet UI: 
+        - user-guides/wallet-ui/index.md
+        - Basic Wallet Operations: howto/use-wallet-ui.md
+        - Export Private Key: howto/use-wallet-to-export-keys.md
+        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
+        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
+      - MFA Setup: user-guides/mfa/mfa-ug.md
   - Tutorials: 
       - tutorials/index.md
       - Code Samples: 
@@ -155,63 +166,58 @@ nav:
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
-  - User Guides:
-      - user-guides/index.md
-      - Using Arcana Dashboard: db/config-dApp-with-db.md
-      - Using Arcana Wallet: 
-        - user-guides/wallet-ui/index.md
-        - Basic Wallet Operations: howto/use-wallet-ui.md
-        - Export Private Key: howto/use-wallet-to-export-keys.md
-        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
-        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
-      - MFA Setup User Guide: user-guides/mfa/mfa-ug.md
   - Developer Resources:
-    - Handling Auth Errors: web-sdk/auth-error-msg.md
-    - FAQ:
-      - faq/index.md
-      - General: faq/faq-gen.md
-      - Dashboard: faq/faq-db.md
-      - Auth SDK: faq/faq-auth.md
-      - Validator Nodes: faq/faq-validator.md
-    - Troubleshooting Guide: troubleshooting.md
     - Release Notes: relnotes/rn-main-auth-v1.0.5.md
     - Migration Guide: migration/main-auth-v1.0.5-migration.md
-    - Archives: 
-        - archives/index.md
-        - Migration Guides:
-          - migration/archives/index.md
-          - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
-          - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
-          - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
-          - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
-          - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
-          - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
-        - Release Notes:
-          - relnotes/archives/index.md
-          - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
-          - Release May3-2023: relnotes/rn-main-auth-May3-23.md
-          - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
-          - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
-          - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
-          - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
-          - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
-    - Changelog:
-      - changelog/index.md
-      - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.3
-      - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.4
-    - Blockchain Integrations:
+    - References:
+      - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
+      - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
+      - FAQ:
+        - faq/index.md
+        - General: faq/faq-gen.md
+        - Dashboard: faq/faq-db.md
+        - Auth SDK: faq/faq-auth.md
+        - Validator Nodes: faq/faq-validator.md
+      - Troubleshooting Guide: troubleshooting.md
+      - Handling Auth Errors: web-sdk/auth-error-msg.md
+      - Changelog:
+        - changelog/index.md
+        - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4
+        - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.5
+      - Archives: 
+          - archives/index.md
+          - Migration Guides:
+            - migration/archives/index.md
+            - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
+            - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
+            - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
+            - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
+            - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
+            - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
+          - Release Notes:
+            - relnotes/archives/index.md
+            - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
+            - Release May3-2023: relnotes/rn-main-auth-May3-23.md
+            - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
+            - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
+            - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
+            - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
+            - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+  - Blockchain Integrations:
       - EVM Chains:
         - Shardeum: 
           - integrations/shardeum/index.md
           - Developer's Guide: integrations/shardeum/integrate-shardeum.md
           - Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
-  - Reference:
+  - Quick Links:
       - reference/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
-      - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
-      - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
-      - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
       - Coming Soon: arcana-coming-soon.md
+      - Audit Reports: 
+        - audit/index.md
+        - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
+        - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
+      - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Arcana Academy:
       - an-academy/index.md
       - About Arcana Auth:
@@ -267,13 +273,8 @@ nav:
       - Usage Flows: 
         - user-flows/index.md
         - User Auth and DKG: user-flows/user-auth-and-dkg.md
-      - New to Web3:  an-academy/new-to-web3.md
   - DKG Validators: 
     - onboard-validators.md
-  - Audit Reports: 
-    - audit/index.md
-    - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
-    - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
   - Contact Us: 
     - support.md
 
@@ -431,7 +432,7 @@ plugins:
   - redirects:
       redirect_maps:
         'introduction.md': 'intro/index.md'
-        'introducing-arcana-auth': 'intro/index.md'
+        'introducing-arcana-auth.md': 'intro/index.md'
         'walletsdk/wallet_qs.md': 'quick-start/index.md'
         'auth-quick-start.md': 'quick-start/index.md'
         'walletsdk/wallet_err.md': 'web-sdk/auth-error-msg.md'
@@ -478,7 +479,8 @@ plugins:
         'howto/onboard_users/build_social/wallet_google_oauth.md': 'howto/onboard-users/build-social/google-oauth.md'
         'howto/onboard_users/build_social/wallet_twitch_oauth.md': 'howto/onboard-users/build-social/twitch-oauth.md'
         'howto/onboard_users/build_social/wallet_twitter_oauth.md': 'howto/onboard-users/build-social/twitter-oauth.md'
-        'howto/onboard_users/wallet_plugnplay.md': 'howto/onboard-users/use-plug-play-auth.md'
+        'howto/onboard_users/wallet_plugnplay.md': 'howto/onboard-users/index.md'
+        'howto/onboard-users/use-plug-play-auth.md': 'howto/onboard-users/index.md'
         'howto/onboard_users/wallet_pwdless_login.md': 'howto/onboard-users/build-pwdless-auth.md'
         'howto/integrate_auth/index.md': 'howto/integrate-app/index.md'
         'howto/integrate_auth/integrate_wallet.md': 'howto/integrate-app/vanilla-html-css-js.md'

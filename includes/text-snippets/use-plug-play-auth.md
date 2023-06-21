@@ -1,14 +1,6 @@
----
-alias: use-plug-play-auth
-title: 'Plug-and-Play Auth'
-description: 'Use the Arcana Auth SDK plug-and-play feature to quickly add code in the Web3 app for onboarding users via the configured options.'
-arcana:
-  root_rel_path: ../..
----
-
 # Plug-and-Play Auth
 
-In this guide, you will learn how Web3 apps can integrate with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and use the [[concept-plug-and-play-auth|plug-and-play ]] feature to onboard users with the built-in login UI. 
+In this guide, you will learn how {{page.meta.arcana.app_type}} Web3 apps can integrate with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and use the [[concept-plug-and-play-auth|plug-and-play ]] feature to onboard users with the built-in login UI. 
 
 ## Prerequisites
 
