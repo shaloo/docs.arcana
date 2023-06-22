@@ -35,6 +35,7 @@ nav:
       - Register App: howto/configure-auth.md
       - Configure Auth: 
         - howto/configure-auth/index.md
+        - Manage Chains: howto/configure-auth/config-wallet-chains.md
         - Social Providers: 
           - howto/config-social/index.md
           - Discord Setup: howto/config-social/discord-oauth.md
@@ -131,7 +132,6 @@ nav:
         - Enable Arcana Wallet:
           - howto/arcana-wallet/index.md
           - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
-          - Manage Chains: howto/arcana-wallet/config-wallet-chains.md
           - Web3 Wallet Ops:
             - howto/arcana-wallet/web3-ops/index.md
             - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
