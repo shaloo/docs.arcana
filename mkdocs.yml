@@ -150,27 +150,26 @@ nav:
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
-  - User Guides:
-      - user-guides/index.md
-      - Using Arcana Dashboard: db/config-dApp-with-db.md
-      - Using Arcana Wallet: 
-        - user-guides/wallet-ui/index.md
-        - Basic Wallet Operations: howto/use-wallet-ui.md
-        - Export Private Key: howto/use-wallet-to-export-keys.md
-        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
-        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
-      - MFA Setup User Guide: user-guides/mfa/mfa-ug.md
   - Developer Resources:
-    - Handling Auth Errors: web-sdk/auth-error-msg.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.5.md
+    - SDK Migration: migration/main-auth-v1.0.5-migration.md
+    - Testnet > Mainnet: howto/migrate-testnet-mainnet.md
+    - Developer Guides:
+      - dev-guides/index.md
+      - Using Arcana Dashboard: db/config-dApp-with-db.md
+      - Handling Auth Errors: web-sdk/auth-error-msg.md
+      - Troubleshooting Guide: troubleshooting.md
     - FAQ:
       - faq/index.md
       - General: faq/faq-gen.md
       - Dashboard: faq/faq-db.md
       - Auth SDK: faq/faq-auth.md
-      - Validator Nodes: faq/faq-validator.md
-    - Troubleshooting Guide: troubleshooting.md
-    - Release Notes: relnotes/rn-main-auth-v1.0.5.md
-    - Migration Guide: migration/main-auth-v1.0.5-migration.md
+    - Blockchain Integrations:
+      - EVM Chains:
+        - Shardeum: 
+          - integrations/shardeum/index.md
+          - Developer's Guide: integrations/shardeum/integrate-shardeum.md
+          - Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
     - Archives: 
         - archives/index.md
         - Migration Guides:
@@ -193,13 +192,16 @@ nav:
     - Changelog:
       - changelog/index.md
       - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.3
-      - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.4
-    - Blockchain Integrations:
-      - EVM Chains:
-        - Shardeum: 
-          - integrations/shardeum/index.md
-          - Developer's Guide: integrations/shardeum/integrate-shardeum.md
-          - Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
+      - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.
+  - User Guides:
+      - user-guides/index.md
+      - Using Arcana Wallet: 
+        - user-guides/wallet-ui/index.md
+        - Basic Wallet Operations: howto/use-wallet-ui.md
+        - Export Private Key: howto/use-wallet-to-export-keys.md
+        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
+        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
+      - MFA Setup User Guide: user-guides/mfa/mfa-ug.md
   - Reference:
       - reference/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
@@ -265,6 +267,7 @@ nav:
       - New to Web3:  an-academy/new-to-web3.md
   - DKG Validators: 
     - onboard-validators.md
+    - Validator FAQ: faq/faq-validator.md
   - Audit Reports: 
     - audit/index.md
     - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
