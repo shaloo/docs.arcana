@@ -8,7 +8,7 @@ arcana:
 
 # References
 
-
+[[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide :material-monitor-dashboard:]]{ .md-button }
 
 [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]{ .md-button }
 

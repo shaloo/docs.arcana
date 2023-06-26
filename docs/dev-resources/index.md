@@ -10,6 +10,6 @@ arcana:
 
 [[rn-main-auth-v1.0.5|Release Notes]]{ .md-button }
 
-[[migration-guide-v1.0.5| Migration Guide]]{ .md-button }
+[[migration-guide-v1.0.5| SDK Migration]]{ .md-button }
 
 [[index-arcana-auth-references| References]]{ .md-button }

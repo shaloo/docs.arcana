@@ -142,36 +142,14 @@ nav:
             - Watch Assets: howto/arcana-wallet/watchasset.md
         - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Deploy App: howto/deploy-app.md
-  - User Guides:
-      - user-guides/index.md
-      - Arcana Dashboard: db/config-dApp-with-db.md
-      - Arcana Wallet UI: 
-        - user-guides/wallet-ui/index.md
-        - Basic Wallet Operations: howto/use-wallet-ui.md
-        - Export Private Key: howto/use-wallet-to-export-keys.md
-        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
-        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
-      - MFA Setup: user-guides/mfa/mfa-ug.md
-  - Tutorials: 
-      - tutorials/index.md
-      - Code Samples: 
-        - tutorials/code-samples/index.md
-        - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
-        - React App: tutorials/code-samples/react-code-sample.md
-        - NextJS App: tutorials/code-samples/nextjs-code-sample.md
-        - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
-        - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
-        - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
-        - Vue App: https://github.com/arcana-network/auth-sample-integration-new
-      - Videos: 
-        - tutorials/videos/index.md
-        - Get Started: tutorials/videos/get-started.md
   - Developer Resources:
     - dev-resources/index.md
     - Release Notes: relnotes/rn-main-auth-v1.0.5.md
-    - Migration Guide: migration/main-auth-v1.0.5-migration.md
+    - SDK Migration: migration/main-auth-v1.0.5-migration.md
+    - Testnet > Mainnet: howto/migrate-testnet-mainnet.md
     - References:
       - reference/index.md
+      - Dashboard User Guide: db/config-dApp-with-db.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - FAQ:
@@ -179,7 +157,6 @@ nav:
         - General: faq/faq-gen.md
         - Dashboard: faq/faq-db.md
         - Auth SDK: faq/faq-auth.md
-        - Validator Nodes: faq/faq-validator.md
       - Troubleshooting Guide: troubleshooting.md
       - Handling Auth Errors: web-sdk/auth-error-msg.md
       - Changelog:
@@ -205,6 +182,29 @@ nav:
             - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
             - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
             - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+  - Tutorials: 
+      - tutorials/index.md
+      - Code Samples: 
+        - tutorials/code-samples/index.md
+        - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
+        - React App: tutorials/code-samples/react-code-sample.md
+        - NextJS App: tutorials/code-samples/nextjs-code-sample.md
+        - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
+        - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
+        - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
+        - Vue App: https://github.com/arcana-network/auth-sample-integration-new
+      - Videos: 
+        - tutorials/videos/index.md
+        - Get Started: tutorials/videos/get-started.md
+  - User Guides:
+      - user-guides/index.md
+      - Arcana Wallet UI: 
+        - user-guides/wallet-ui/index.md
+        - Basic Wallet Operations: howto/use-wallet-ui.md
+        - Export Private Key: howto/use-wallet-to-export-keys.md
+        - Manage Tokens: howto/use-wallet-to-manage-tokens.md
+        - Manage NFTs: howto/use-wallet-to-manage-nfts.md
+      - MFA Setup: user-guides/mfa/mfa-ug.md
   - Blockchain Integrations:
       - EVM Chains:
         - Shardeum: 
