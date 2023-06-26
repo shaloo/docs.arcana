@@ -277,14 +277,11 @@ nav:
         - User Auth and DKG: user-flows/user-auth-and-dkg.md
   - DKG Validators: 
     - onboard-validators.md
-<<<<<<< HEAD
-=======
     - Validator FAQ: faq/faq-validator.md
   - Audit Reports: 
     - audit/index.md
     - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
     - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
->>>>>>> main
   - Contact Us: 
     - support.md
 
