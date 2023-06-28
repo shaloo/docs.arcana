@@ -147,32 +147,24 @@ nav:
     - Release Notes: relnotes/rn-main-auth-v1.0.5.md
     - SDK Migration: migration/main-auth-v1.0.5-migration.md
     - Testnet > Mainnet: howto/migrate-testnet-mainnet.md
-    - FAQ:
-      - faq/index.md
-      - General: faq/faq-gen.md
-      - Dashboard: faq/faq-db.md
-      - Auth SDK: faq/faq-auth.md
     - Developer Guides:
-      - reference/index.md
+      - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Troubleshooting Guide: troubleshooting.md
       - Handling Auth Errors: web-sdk/auth-error-msg.md
+    - FAQ:
+      - faq/index.md
+      - General: faq/faq-gen.md
+      - Dashboard: faq/faq-db.md
+      - Auth SDK: faq/faq-auth.md
     - Changelog:
       - changelog/index.md
       - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4
       - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.5
     - Archives: 
         - archives/index.md
-        - Migration Guides:
-          - migration/archives/index.md
-          - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
-          - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
-          - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
-          - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
-          - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
-          - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
         - Release Notes:
           - relnotes/archives/index.md
           - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
@@ -182,6 +174,14 @@ nav:
           - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
           - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
           - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+        - SDK Migration:
+          - migration/archives/index.md
+          - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
+          - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
+          - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
+          - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
+          - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
+          - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
   - Tutorials: 
       - tutorials/index.md
       - Code Samples: 
