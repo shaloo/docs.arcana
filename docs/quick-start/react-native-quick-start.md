@@ -129,7 +129,7 @@ const logout = () => {
 
 ### Web3 Operations
 
-The Arcana wallet supports various web3 operations via JSON-RPC calls and EIP-1193 requests. Use the following methods to get information about the logged-in user, the account details and issue send transaction requests programmatically via the app. When a blockchain transaction is triggered, a transaction notification is displayed in the app context. Users can choose to approve or reject the request.
+The Arcana wallet supports various Web3 operations via JSON-RPC calls and EIP-1193 requests. Use the following methods to get information about the logged-in user, the account details and issue send transaction requests programmatically via the app. When a blockchain transaction is triggered, a transaction notification is displayed in the app context. Users can choose to approve or reject the request.
 
 ```js
 
@@ -234,7 +234,7 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 That is all!
 
-The React-Native mobile app is now ready to onboard users. Once the user logs in, the {{config.extra.arcana.wallet_name}} will be instantly accessible for web3 wallet operations through the UI. Developers can also add code in the React-Native mobile app and call wallet functions programmatically to trigger blockchain transactions. When a user action or programmatically invoked wallet operation triggers a blockchain transaction, a transaction notification will pop up in the React-Native mobile app context, asking the user to review the transaction and accept or reject the blockchain request.
+The React-Native mobile app is now ready to onboard users. Once the user logs in, the {{config.extra.arcana.wallet_name}} will be instantly accessible for Web3 wallet operations through the UI. Developers can also add code in the React-Native mobile app and call wallet functions programmatically to trigger blockchain transactions. When a user action or programmatically invoked wallet operation triggers a blockchain transaction, a transaction notification will pop up in the React-Native mobile app context, asking the user to review the transaction and accept or reject the blockchain request.
 
 ## See also
 

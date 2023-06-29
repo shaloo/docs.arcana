@@ -118,7 +118,7 @@ Flutter app developers can also enable any of the supported Web3 operations in t
 
 #### Web3 Operations
 
-The `AuthProvider` supports the JSON-RPC requests for the following web3 operations:
+The `AuthProvider` supports the JSON-RPC requests for the following Web3 operations:
 
 Make an EIP-1193 Request
 
@@ -144,7 +144,7 @@ Get the user account address:
 auth.getAccount().then((account) => ...);
 ```
 
-After integrating the Flutter mobile app with the {{config.extra.arcana.flutter_sdk_name}} and adding code to onboard users via configured providers such as 'Google' and calling web3 wallet operation requests, developers can deploy the app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
+After integrating the Flutter mobile app with the {{config.extra.arcana.flutter_sdk_name}} and adding code to onboard users via configured providers such as 'Google' and calling Web3 wallet operation requests, developers can deploy the app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
 
 ### Deploy App
 
@@ -161,7 +161,7 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 That is all!
 
-The Flutter mobile app is now ready to onboard users. Once the user logs in, the {{config.extra.arcana.wallet_name}} will be instantly accessible for web3 wallet operations through the UI. Developers can also add code in the Flutter mobile app and call wallet functions programmatically via the supported [Web3 operations](#web3-operations) listed above. When a user action or programmatically invoked wallet operation triggers a blockchain transaction, a transaction notification will pop up in the Flutter mobile app context, asking the user to review the transaction and accept or reject the blockchain request.
+The Flutter mobile app is now ready to onboard users. Once the user logs in, the {{config.extra.arcana.wallet_name}} will be instantly accessible for Web3 wallet operations through the UI. Developers can also add code in the Flutter mobile app and call wallet functions programmatically via the supported [Web3 operations](#web3-operations) listed above. When a user action or programmatically invoked wallet operation triggers a blockchain transaction, a transaction notification will pop up in the Flutter mobile app context, asking the user to review the transaction and accept or reject the blockchain request.
 
 ## See also
 
