@@ -159,6 +159,10 @@ Developers can choose to deploy one instance of the app (say, under active devel
 
 By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.flutter_sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. For details on how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet, see [[deploy-app|App Deployment Guide]].
 
+!!! tip "Testnet > Mainnet"
+
+      If you have deployed your Unity app on Arcana Testnet and are looking to migrate it on the Mainnet, see [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
+
 That is all!
 
 The Flutter mobile app is now ready to onboard users. Once the user logs in, the {{config.extra.arcana.wallet_name}} will be instantly accessible for Web3 wallet operations through the UI. Developers can also add code in the Flutter mobile app and call wallet functions programmatically via the supported [Web3 operations](#web3-operations) listed above. When a user action or programmatically invoked wallet operation triggers a blockchain transaction, a transaction notification will pop up in the Flutter mobile app context, asking the user to review the transaction and accept or reject the blockchain request.

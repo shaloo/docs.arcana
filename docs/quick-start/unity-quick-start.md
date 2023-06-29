@@ -54,10 +54,12 @@ Follow these steps to integrate the Unity app with the {{config.extra.arcana.gam
 
 ### Step 3: Use Arcana Auth APIs
 
-First, call `LoginWithSocial` to onboard the user. Choose one of the [[state-of-the-arcana-auth#user-onboarding-options|supported user onboarding options]] such as Google, Steam, etc. 
+- First, call `LoginWithSocial` to onboard the user. Choose one of the [[state-of-the-arcana-auth#user-onboarding-options|supported user onboarding options]] such as Google, Steam, etc. 
 - Next, call `Request` or `RequestAsync` to make Web3 Wallet operation requests. These methods are similar; choose the one that suits your needs best.
 
-After integrating the Unity app with the {{config.extra.arcana.gaming_sdk_name}} along with code to onboard users via 'Google', you can deploy the app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
+After integrating the Unity app with the {{config.extra.arcana.gaming_sdk_name}} and adding the required code to onboard users via the configured social logins, you are ready to deploy the gaming app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
+
+{% include "./text-snippets/warn_unity_no_firebase.md" %}
 
 ## Deploy App
 
@@ -72,7 +74,11 @@ Developers can choose to deploy one instance of the app (say, under active devel
 
 !!! caution "Testnet/Mainnet Configuration Settings"
 
-      By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.gaming_sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. 
+      By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.gaming_sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. For details on how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet, see [[deploy-app|App Deployment Guide]]. 
+
+!!! tip "Testnet > Mainnet"
+
+      If you have deployed your Unity app on Arcana Testnet and are looking to migrate it on the Mainnet, see [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
 
 That is all!
 
