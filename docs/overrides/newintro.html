@@ -529,13 +529,6 @@
 
 {% include "partials/content.html" %}
 
-
-{% endblock %}
-
-{% block scripts %}
-  <!-- Add scripts that need to run before here -->
-  {{ super() }}
-  <!-- Add scripts that need to run afterwards here -->
   <!-- Marker.io feedback tool for Arcana Documentation -->
   <script>
     window.markerConfig = {
@@ -555,4 +548,5 @@
     };
   </script>
   <script src="https://www.chatbase.co/embed.min.js" id="10n3MZUQcfC4WFAzjLlHj" defer></script>
+
 {% endblock %}

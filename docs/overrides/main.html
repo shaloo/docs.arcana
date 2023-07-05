@@ -7,6 +7,14 @@
 {% block extrahead %}
   {{ super() }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chatbase bot script -->
+    <script>
+      window.chatbaseConfig = {
+        chatbotId: "10n3MZUQcfC4WFAzjLlHj",
+      };
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" id="10n3MZUQcfC4WFAzjLlHj" defer></script>
+    
 {% endblock %}
 
 {% block scripts %}
@@ -28,11 +36,4 @@
   </script>
   <!---->
 
-   <!-- Chatbase bot script -->
-   <script>
-    window.chatbaseConfig = {
-      chatbotId: "10n3MZUQcfC4WFAzjLlHj",
-    };
-  </script>
-  <script src="https://www.chatbase.co/embed.min.js" id="10n3MZUQcfC4WFAzjLlHj" defer></script>
 {% endblock %}
