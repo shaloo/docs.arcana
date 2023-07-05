@@ -317,22 +317,22 @@ extra:
     #- icon: material/chat
     #  link: https://forum.arcana.network/
   generator: false
-  #analytics:
-    #provider: google
-    #property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
-    #feedback:
-      #title: <hr>Was this page helpful?
-      #ratings:
-        #- icon: material/thumb-up-outline
-          #name: This page was helpful
-          #data: 1
-          #note: >-
-            #Thanks for your feedback!
-        #- icon: material/thumb-down-outline
-          #name: This page could be improved
-          #data: 0
-          #note: >-
-            #Thanks for your feedback! 
+  analytics:
+    provider: google
+    property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
+    feedback:
+      title: <hr>Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! 
 
 copyright: Copyright &copy; 2022 - 2023 Arcana Network
 repo_url: https://github.com/arcana-network/
