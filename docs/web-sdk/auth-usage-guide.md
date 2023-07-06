@@ -169,6 +169,14 @@ Check if a user is logged in
 const isloggedIn = await auth.isLoggedIn() // boolean
 ```
 
+Check and reconnect, if required
+
+```js
+const canReconnect = await auth.canReconnect()
+// auth.reconnect() should be on a click event since it opens a new tab
+await auth.reconnect()
+```
+
 Get user information
 
 ```js
