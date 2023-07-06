@@ -525,6 +525,10 @@
     </div>
 </div>
 
+{% include "partials/content.html" %}
+
+{% endblock %}
+
 {% block scripts %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}
@@ -549,8 +553,4 @@
     };
   </script>
   <script src="https://www.chatbase.co/embed.min.js" id="10n3MZUQcfC4WFAzjLlHj" defer></script>
-{% endblock %}
-
-{% include "partials/content.html" %}
-
 {% endblock %}
