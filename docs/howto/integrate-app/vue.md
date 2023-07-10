@@ -42,19 +42,25 @@ Follow these two steps:
 
 ### Step 2: Initialize the {{config.extra.arcana.sdk_name}}
 
-To integrate the application, first, you need to import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create an `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. Also, specify the [{{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter to manage the wallet user experience.
+After installing the SDK, add code to import `{{config.extra.arcana.auth_sdk_pkg_name}}`. Create an `AuthProvider` with with the following inputs:
 
-You can club all the {{config.extra.arcana.sdk_name}} integration code in a file `src/lib/auth.js` and export the function that instantiates the `AuthProvider`.
+* **{{config.extra.arcana.app_address}}** Specify the unique identifier obtained after [[configure-auth|registering and configuring]] the app using the {{config.extra.arcana.dashboard_name}}
+
+* **Wallet User Experience:** Use the `alwaysVisible` parameter to specify the [{{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) that controls the user experience for the wallet.
+
+The sample code below demonstrates how a new `AuthProvider` is created and initialized. It also uses the `connect` function to use the built-in, plug-and-play login UI feature of the {{config.extra.arcana.sdk_name}} to onboard users.
 
 {% include "./code-snippets/vue_auth_js.md" %}
 
-Next, import and call this exported function in the `App.vue` file as shown below:
+In the case of a Vue app, update the `App.vue` file to use the new AuthProvider and allow authenticated users to access the {{config.extra.arcana.wallet_name}}:
 
 {% include "./code-snippets/vue_app_js.md" %}
 
+Once the user logs in the app, they can access the embedded, {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
+
 That is all! :material-party-popper:
 
-The Vue app is now successfully integrated with the {{config.extra.arcana.sdk_name}}.
+The Vue app is now successfully integrated with the {{config.extra.arcana.sdk_name}}. Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for working integration examples.
 
 ## What's Next?
 

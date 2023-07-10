@@ -21,17 +21,13 @@ Next, [select the app type](#select-app-type) and follow the instructions.
 1. Go to the {{config.extra.arcana.dashboard_name}}, [[configure-auth|register your application]] and save the **{{config.extra.arcana.app_address}}** assigned to the registered app. This will be required during integration.
 2. Configure the {{config.extra.arcana.sdk_name}} user onboarding settings via the {{config.extra.arcana.dashboard_name}} . See [[index-configure-auth|how to configure authentication providers]] to onboard users.
 
-## Select App Type
+## Select and Install SDK(s)
 
-Depending upon whether the Web3 app is a vanilla HTML/CSS/JS app, a React app, or a React app that uses [Wagmi](https://wagmi.sh/) or [RainbowKit](https://www.rainbowkit.com/) wallet connectors, developers must install a combination of the following {{config.extra.arcana.product_name}} packages - `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}`.
+Depending upon the type of the Web3 app, developers may need to install one or more of the {{config.extra.arcana.sdk_name}} packages before integrating the SDK with the app. Refer to [[sdk-installation|this table]] and install the appropriate SDK packages.
 
-* Web3 apps built with vanilla HTML/CSS and JavaScript can directly install and integrate the app with the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) package.
+## Integrate App Type
 
-* Simple React or NextJS apps must install both the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) package and the [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react) package. Next, you must integrate the app with the {{config.extra.arcana.sdk_name}}, create and use  `AuthProvider` and also the React component, `ProvideAuth`. 
-
-* React Apps using the Wagmi or RainbowKit wallet connectors must install both the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) package and the [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) package.  Next, you must integrate the app with the {{config.extra.arcana.sdk_name}} and instantiate the `AuthProvider`. Use the `AuthProvider` to create an `ArcanaConnector` for enabling the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
-
-For detailed step-by-step integration instructions, select **one of the options below** as per your application type.
+After installing the SDK, follow the detailed step-by-step integration instructions, as per the app type: 
 
 [[integrate-vanilla-app|Integrate Vanilla JS App :material-language-javascript:]]{ .md-button }
 

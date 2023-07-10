@@ -45,9 +45,7 @@ The {{config.extra.arcana.flutter_sdk_name}} is available at 'Pub.dev' as a [Flu
 
 Add the following line to the dependencies section in your app's `pubspec.yaml` file:
 
-```bash
-  arcana_auth_flutter: ^0.0.6 
-```
+{% include "./code-snippets/auth_flutter_install.md" %}
 
 ### Step 3: Integrate Auth with App
 

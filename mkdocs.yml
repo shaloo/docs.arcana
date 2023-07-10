@@ -2,9 +2,9 @@ site_name: Documentation
 
 # For for dev
 #site_url: "https://docs.dev.arcana.network"
-
+#site_url: ''
 # For main
-site_url: "https://docs.arcana.network"
+#site_url: "https://docs.arcana.network"
 
 use_directory_urls: false
 # upto here
@@ -51,14 +51,16 @@ nav:
           - Firebase: howto/config-idm/firebase-auth.md
       - Integrate App: 
         - howto/integrate-app/index.md
-        - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
-        - React App: 
-          - howto/integrate-app/react/index.md
-          - React/NextJS App: howto/integrate-app/react-nextjs.md
-          - Wagmi App: howto/integrate-app/wagmi.md
-          - RainbowKit App: howto/integrate-app/rainbow.md
-          - Web3-React App: howto/integrate-app/web3-react.md
-        - Vue App: howto/integrate-app/vue.md
+        - Install SDK: sdk-installation.md
+        - App Type:
+          - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
+          - React App: 
+            - howto/integrate-app/react/index.md
+            - React/NextJS App: howto/integrate-app/react-nextjs.md
+            - Wagmi App: howto/integrate-app/wagmi.md
+            - RainbowKit App: howto/integrate-app/rainbow.md
+            - Web3-React App: howto/integrate-app/web3-react.md
+          - Vue App: howto/integrate-app/vue.md
       - Onboard Users: 
         - howto/onboard-users/index.md
         - Vanilla JS Apps:
