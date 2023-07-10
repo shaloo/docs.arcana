@@ -161,3 +161,11 @@
 @keyframes blinker {  
   50% { opacity: 0; }
 }
+
+.width_35pc {
+  width: 25%;
+}
+
+.width_85pc {
+  width: 25%;
+}

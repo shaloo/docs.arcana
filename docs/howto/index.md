@@ -8,14 +8,19 @@ arcana:
 
 # Getting Started
 
-We recommend that you check out these guides to learn how to register and configure the {{config.extra.arcana.sdk_name}} usage, how to integrate it with a Web3 app to onboard users and allow authenticated users to sign blockchain transactions with the {{config.extra.arcana.wallet_name}}.
+Use {{config.extra.arcana.product_name}} to:
 
-[[configure-auth|Register App :material-tools:]]{ .md-button }
+* easily onboard users via popular Web2-like login options.
+* let authenticated users sign blockchain transactions.
 
-[[index-config-social-providers|Configure Social Providers :fontawesome-solid-users:]]{ .md-button }
+[[configure-auth|1. Register App :material-tools:]]{ .md-button }
 
-[[index-integrate-app|Integrate with {{config.extra.arcana.sdk_name}} :material-lock-check:]]{ .md-button }
+[[index-config-social-providers|2. Configure Auth Usage :fontawesome-solid-users-gear:]]{ .md-button }
 
-[[index-onboard-users|Onboard Users :fontawesome-solid-user-gear:]]{ .md-button }
+[[index-integrate-app|3. Integrate with {{config.extra.arcana.sdk_name}} :material-lock-check:]]{ .md-button }
 
-[[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+[[index-onboard-users|4. Onboard Users :fontawesome-solid-user-lock:]]{ .md-button }
+
+[[index-arcana-wallet|5. Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+
+[[deploy-app|6. Deploy App :simple-hive_blockchain:]]{ .md-button }

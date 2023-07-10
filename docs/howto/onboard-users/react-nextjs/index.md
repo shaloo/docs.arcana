@@ -8,6 +8,6 @@ arcana:
 
 # React/NextJS Apps
 
-[[use-plug-play-auth|Enable Plug-and-Play UI :fontawesome-solid-plug:]]{ .md-button }
+[[react-nextjs-use-plug-play-auth|Plug-and-Play UI :fontawesome-solid-plug:]]{ .md-button }
 
-[[index-custom-ui-onboard-users|Use Custom Login UI :fontawesome-solid-plug:]]{ .md-button }
+[[index-react-nextjs-custom-ui-onboard-users|Custom Login UI :fontawesome-solid-plug:]]{ .md-button }
