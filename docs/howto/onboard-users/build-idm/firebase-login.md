@@ -35,7 +35,7 @@ Make sure that all the prerequisites listed above are met. The app should be suc
 
 {% include "./code-snippets/auth_firebase_login.md" %}
 
-Refer to the [Sample Firebase Vue application](https://github.com/arcana-network/auth-firebase-test) to see the `loginWithBearer` function usage.
+Refer to the [Sample Firebase Vue app integration example](https://github.com/arcana-network/auth-examples) to see how the `loginWithBearer` function is used.
 
 After onboarding users, developers can add code to access the other {{config.extra.arcana.sdk_name}} functions in the app. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
 
