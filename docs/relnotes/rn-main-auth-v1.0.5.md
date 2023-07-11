@@ -56,7 +56,7 @@ Besides Cognito custom authentication, the {{config.extra.arcana.sdk_name}} now 
 * Use a custom login UI to initiate Firebase login and listen for user authentication success event from Firebase.
 * Pass on the Firebase token to the {{config.extra.arcana.sdk_name}} user onboarding function - `loginWithBearer` and allow authenticated users to sign blockchain transactions.
 
-Refer to the [Firebase auth integration demo app](https://github.com/arcana-network/auth-firebase-test) for code samples.
+Refer to the [Firebase auth integration example](https://github.com/arcana-network/auth-examples) for details.
 
 ---
 

@@ -169,4 +169,4 @@ The Flutter mobile app is now ready to onboard users. Once the user logs in, the
 
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
 * [[index-video-tutorials|Video Tutorials]]
-* [Flutter app integration example](https://github.com/arcana-network/auth-flutter/tree/main/example)
+* [Flutter app integration example](https://github.com/arcana-network/auth-examples)

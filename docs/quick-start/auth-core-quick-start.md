@@ -89,7 +89,7 @@ The {{config.extra.arcana.auth_core_sdk_name}} offers two kinds of flows:
 * Pop-up UI
 * Redirect UI
 
-The `AuthProvider` can be initialized for a UI flow that uses a pop-up modal within the current app context or redirects to a different app page after login. For more details, see [here](https://github.com/arcana-network/auth-core/blob/dev/readme.md#flow-modes).
+The `AuthProvider` can be initialized for a UI flow that uses a pop-up modal within the current app context or redirects to a different app page after login. For more details, see [[auth-core-usage-guide#flow-modes|here]].
 
 ```js
 const clientId = "xar_test_d24f70cd300823953dfa2a7f5b7c7c113356b1ad"; // obtained after app registration via dashboard
@@ -125,7 +125,7 @@ const result = await auth.loginWithOtp(`${emailAddress}`, PasswordlessOptions);
 - `{ withUI: false }` - the Social / Passwordless login API returns  a `json` response back with no redirection
 - defaults to `{ withUI: true }`
 
-Refer to the sample code [here](https://github.com/arcana-network/auth-core/tree/dev/examples) for details on how to add a pop-up UI user onboarding flow or a redirect flow in the app.
+Refer to the sample code for using Arcana Auth-Core SDK [here](https://github.com/arcana-network/auth-examples) for details on how to add a pop-up UI user onboarding flow or a redirect flow in the app.
 
 ## Sign Transactions
 
@@ -178,5 +178,5 @@ You have successfully installed the  {{config.extra.arcana.auth_core_sdk_name}} 
 
 ## See Also
 
-* [{{config.extra.arcana.auth_core_sdk_name}} Usage Guide](https://github.com/arcana-network/auth-core/blob/dev/readme.md#usage)
+* [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide]]
 * {{config.extra.arcana.auth_core_sdk_name}} API Reference Guide
