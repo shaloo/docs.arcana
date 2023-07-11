@@ -5,7 +5,7 @@ import { AuthProvider } from "@arcana/auth";
 import { URLS } from "../chains";
 
 const auth = new AuthProvider(
-  "xar_test_b2dde12aad64eb35d72b2c80926338e178b1fa3f"
+  "xar_test_b2ddexxxxxxxxxxxxxxxxxxxx8b1fa3f"
 );
 export const [arcanaConnect, hooks] = initializeConnector<ArcanaConnector>(
   (actions) =>

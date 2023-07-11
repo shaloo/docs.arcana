@@ -48,3 +48,4 @@ To know more about how to use Web3 wallet operations programmatically in your ap
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
 * [[index-integrate-app|How to integrate with the {{config.extra.arcana.sdk_name}}]]
 * [[web-auth-error-msg|Handing authentication errors]]
+* [Auth Examples](https://github.com/arcana-network/auth-examples)

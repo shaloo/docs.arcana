@@ -44,33 +44,39 @@ Next, install the Auth React component wrapper via the `{{config.extra.arcana.re
 
 ### Step 3: Update `index.js`
 
-A typical React application has `index.js` and `App.js` files. 
+A typical React application consists of `index.js` and `App.js` files. First update the `index.js` file. 
 
-First update the `index.js` file. Import the `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package. Instantiate the `AuthProvider` and get a Web3 provider. Import the `ProviderAuth` component from the `{{config.extra.arcana.react_sdk_pkg_name}}` package and render it using the Web3 provider as props.
+Import the `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package. Instantiate the `AuthProvider` and get a Web3 provider. 
+
+Next, import the `ProviderAuth` component from the `{{config.extra.arcana.react_sdk_pkg_name}}` package and render it using the Web3 provider as props.
 
 ```js title="index.js"
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { AuthProvider } from "@arcana/auth";
 import { ProvideAuth } from "@arcana/auth-react";
+import App from "./App";
 
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+const provider = new AuthProvider(
+  "xar_dev_5fd5338ee82834d59eee58f37b676bdabdfa41e9", //required
+); //See SDK Reference Guide for optional parameters
 
-// clientId: Arcana Unique App Identifier via Dashboard
-const provider = new AuthProvider(`${clientId}`)
-const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <StrictMode>
     <ProvideAuth provider={provider}>
       <App />
     </ProvideAuth>
-  </React.StrictMode>
+  </StrictMode>
 );
 ```
 
 ### Step 4: Update `App.js`
 
-Lastly, update the `App.js` file by importing `Auth` and `useAuth` from the `{{config.extra.arcana.react_sdk_pkg_name}}` package, rendering it in the `App` function. You can configure the wallet layout settings using `Auth` component props. Once the user logs in successfully set the route to the post-login page in your application.
+Finally to integrate the app with the {{config.extra.arcana.sdk_name}}, update the `App.js` file by importing `Auth` and `useAuth` from the `{{config.extra.arcana.react_sdk_pkg_name}}` package, rendering it in the `App` function. You can configure the wallet layout settings using `Auth` component props. 
+
+Once the user logs in successfully set the route to the post-login page in your application.
 
 ```js title="App.js"
 import { Auth, useAuth } from "@arcana/auth-react";
