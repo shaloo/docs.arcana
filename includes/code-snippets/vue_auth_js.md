@@ -1,27 +1,21 @@
-```js
-import { AuthProvider } from '@arcana/auth'
+```js title="auth.js" hl_lines="1 3 6 7 10 15"
+import { AuthProvider } from "@arcana/auth";
 
-let authInstance
+let authInstance;
 
-export async function getAuthInstance () {
+//Mainnet ClientId
+const clientId = "xar_live_d7c88d9b033d100e4200d21a5c4897b896e60063";
+
+export async function getAuthInstance() {
   if (authInstance == null) {
-    // Client ID is a required parameter
-    // Check SDK Reference Guide for optional parameters
-    authInstance = new AuthProvider(process.env.VUE_APP_ARCANA_CLIENT_ID, {
-      network: process.env.VUE_APP_ARCANA_NETWORK ?? 'testnet',
+    authInstance = new AuthProvider(clientId, {
       alwaysVisible: true,
-      theme: 'light',
-      position: 'right'
-    })
-    await authInstance.init()
-
-    // once auth instance is initialized, you can call Auth SDK functions
-
-    // call plug and play function in the Auth SDK
-    await authInstance.connect()
-
-    // check if a user is logged in , check account balance and more...
+      theme: "light",
+      position: "right",
+    });
+    await authInstance.init();
+    await authInstance.connect();
   }
-  return authInstance
+  return authInstance;
 }
 ```

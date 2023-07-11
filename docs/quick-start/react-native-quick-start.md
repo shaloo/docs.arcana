@@ -43,10 +43,7 @@ After registering and configuring the React-Native app, follow these steps to in
 
 You need to install the [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native) package.
 
-```bash
-npm i @arcana/auth-react-native
-(cd ios && pod install)
-```
+{% include "./code-snippets/auth_react_native_install.md" %}
 
 **Note:** You are **not required** to manually link this module as it supports React Native auto-linking.
 

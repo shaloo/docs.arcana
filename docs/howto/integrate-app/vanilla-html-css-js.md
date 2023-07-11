@@ -52,15 +52,21 @@ Initialize the newly instantiated `AuthProvider`.
 
 {% include "./code-snippets/init_auth.md" %}
 
-That is all! :material-party-popper:
-
-The vanilla HTML/CSS/JS app is now successfully integrated with the {{config.extra.arcana.sdk_name}}.
-
-!!! caution
+!!! caution "Initialize First!"
 
     The app must use wait until the `init` call is complete before invoking any of the other {{config.extra.arcana.sdk_name}} functions such as onboarding users by triggering user login, obtaining the standard Ethereum provider, adding/switching networks in the wallet, etc.
 
+After successful initialization, use `AuthProvider` functions. For e.g., an app with custom login UI can call `loginWithSocial` function when a user clicks the custom login button.
+
+```js
+const arcanaProvider = await auth.loginWithSocial('google')
+```
+
 {% include "./code-snippets/provider.md" %}
+
+That is all! :material-party-popper:
+
+The vanilla HTML/CSS/JS app is now successfully integrated with the {{config.extra.arcana.sdk_name}}. Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for working integration examples.
 
 ## What's Next?
 

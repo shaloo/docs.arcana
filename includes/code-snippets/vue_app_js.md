@@ -1,18 +1,13 @@
-```js title="_App.vue" hl_lines="7 11 12"
+```js title="App.vue" hl_lines="8 10"
 <template>
-  <div id="app">
-  </div>
+  <h1>Hello {{ msg }}</h1>
 </template>
 
-<script>
-import { getAuthInstance } from './lib/auth'
-export default {
-  name: 'App',
-  async mounted () {
-    // eslint-disable-next-line no-unused-vars
-    const a = await getAuthInstance()
-    // Provider available at a.provider
-  }
-}
+<script setup lang="ts">
+import { ref } from "vue";
+
+import { getAuthInstance } from "@/auth";
+const msg = ref<string>("World! 123");
+const myAuth = await getAuthInstance();
 </script>
 ```
