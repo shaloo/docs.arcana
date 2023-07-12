@@ -29,7 +29,7 @@ nav:
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
-#       - Auth-Core: quick-start/auth-core-quick-start.md
+        - Auth-Core: quick-start/auth-core-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
   - Getting Started:
       - howto/index.md
@@ -154,7 +154,7 @@ nav:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
-#     - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
+      - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Troubleshooting Guide: troubleshooting.md
       - Handling Auth Errors: web-sdk/auth-error-msg.md
