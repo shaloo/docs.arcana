@@ -45,3 +45,4 @@ After onboarding app users via Discord, you can allow authenticated users to acc
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
 * [[index-integrate-app|How to integrate with the {{config.extra.arcana.sdk_name}}]]
 * [[web-auth-error-msg|Handling authentication errors]]
+* [Auth Examples](https://github.com/arcana-network/auth-examples)

@@ -26,7 +26,7 @@ Make sure that all the prerequisites listed above are met. The app should be suc
 
 {% include "./code-snippets/auth_firebase_login.md" %}
 
-Refer to the [Sample Firebase Vue application](https://github.com/arcana-network/auth-firebase-test) to see the `loginWithBearer` function usage.
+Refer to the [Sample Firebase Vue application](https://github.com/arcana-network/auth-examples) to see how `loginWithBearer` function is used.
 
 After onboarding users, developers can add code to access the other {{config.extra.arcana.sdk_name}} functions in the app. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
 
@@ -47,3 +47,4 @@ To know more about how to use Web3 wallet operations programmatically in your ap
 * [[web-auth-error-msg|Handing authentication errors]]
 * [Get Firebase User token](https://firebase.google.com/docs/reference/js/auth.user.md#usergetidtoken)
 * [Using Firebase Auth](https://firebase.google.com/docs/auth)
+* [Auth Examples](https://github.com/arcana-network/auth-examples)

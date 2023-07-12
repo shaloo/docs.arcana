@@ -55,13 +55,13 @@ Next, provide the newly instantiated and configured `ArcanaConnector` to the `cr
       For more details on the `createClient` function of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started).
 
 
-Now specify the `wagmiClient` in `WagmiConfig` component in the `_app.js` file.
+Now specify the `wagmiClient` created earlier in the `WagmiConfig` component:
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 
 That is all! :material-party-popper:
 
-The Web3 app is successfully integrated with the {{config.extra.arcana.sdk_name}}. 
+The Web3 app is successfully integrated with the {{config.extra.arcana.sdk_name}}. Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for working integration examples.
 
 !!! tip "Example: Sample Wagmi App"
 
@@ -80,6 +80,7 @@ See [[index-wagmi-onboard-users|for details.]]
 
 ## See also
 
+* [Sample Wagmi app integration](https://github.com/arcana-network/auth-wagmi-example)
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

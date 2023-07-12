@@ -38,13 +38,17 @@ Follow these three steps:
 
 ### Step 2: Configure RainbowKit Connector 
 
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create `AuthProvider` by specifying the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. Then import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create an `ArcanaConnector`.
+Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create `AuthProvider` by specifying the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. 
 
-Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector` and export the `connectors` to be used later in the `_app.js` file:
+{% include "./code-snippets/auth_rainbow_configure_pnp.md" %}
 
-{% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
+Then import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create a new `ArcanaConnector`.
 
-Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` file for creating the Wagmi client using the `createClient` function:
+Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector` and export the `connectors` to be used later.
+
+{% include "./code-snippets/auth_rainbow_connector.md" %}
+
+Use the `connectors` configured with `ArcanaRainbowConnector` in the `App.js` file and create the Wagmi client via `createClient` function:
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
@@ -54,31 +58,26 @@ Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` f
 
 ### Step 3: RainbowKit Context Provider
 
-Finally, pass the `wagmiClient` created earlier as a parameter to the `WagmiConfig` component in the `_app.js` file.
+Finally, pass the `wagmiClient` created earlier as a parameter to the `WagmiConfig` component and use `RainbowKitProvider` context.
 
 {% include "./code-snippets/auth_rainbow_use.md" %}
 
 That is all! :material-party-popper:
 
-The Web3 app using RainbowKit is successfully integrated with the {{config.extra.arcana.sdk_name}}.
-
-!!! tip "Example: Sample RainbowKit App"
-
-      See [sample RainbowKit app](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) for details.
+The Web3 app using RainbowKit is successfully integrated with the {{config.extra.arcana.sdk_name}}. Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for working integration examples.
 
 ## What's Next?
 
-After integrating with a Web3 RainbowKit app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. There are two ways to onboard users: 
+After integrating with a Web3 RainbowKit app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. In the example above, plug-and-play login UI is specified in the way `AuthProvider` is initialized. There are [[index-rainbow-onboard-users|two ways to onboard users]]: 
 
 * Use built-in plug-and-play login UI with a single function call that displays all the configured authentication providers
-* Use custom login UI to onboard users and wire it to the {{config.extra.arcana.sdk_name}} functions for calling the configured authentication providers.
-
-See [[index-rainbow-onboard-users|for details.]]
+* Use [[onboard-rainbow-app-custom-ui|custom login UI to onboard users]] and wire it to the {{config.extra.arcana.sdk_name}} functions for calling the configured authentication providers.
 
 {{config.extra.arcana.wallet_name}} can also be used in applications that integrate with [Wagmi](https://wagmi.sh). For details, see [[integrate-wagmi-app|how to enable {{config.extra.arcana.wallet_name}} in apps using Wagmi]].
 
 ## See also
 
+* [Sample RainbowKit app](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration)
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

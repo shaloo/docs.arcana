@@ -1,29 +1,44 @@
-```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="17-26"
-
-import { ArcanaConnector } from "@arcana/auth-wagmi";
-import { AuthProvider } from "@arcana/auth";
-import { polygon, polygonMumbai } from "wagmi/chains";
-import { configureChains, createClient, Chain } from "wagmi";
+```js title="app.tsx" hl_lines="5-6 11-15 17-26 36-41"
+import { WagmiConfig, configureChains, createClient, Chain } from "wagmi";
+import { goerli, mainnet, polygon, polygonMumbai } from "wagmi/chains";
+import { InjectedConnector } from "wagmi/connectors/injected";
 import { publicProvider } from "wagmi/providers/public";
+import { ArcanaConnector } from "@arcana/auth-wagmi";
+import { newAuthProvider } from "../utils/newArcanaAuth";
 
-const auth = new AuthProvider(`${arcana_client_id}`) // Singleton
-export const connector = (chains: Chain[]) => {
-  return new ArcanaConnector({
-    chains,
-    options: {
-    auth
-    },
-  });
-};
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
 
-const { chains, provider } = configureChains(
-  [polygon, polygonMumbai],
-  [publicProvider()]
+const { chains, provider, webSocketProvider } = configureChains(
+  [mainnet, goerli, polygon, polygonMumbai],
+  [publicProvider()],
+  { targetQuorum: 1 }
 );
 
-export const wagmiClient = createClient({
+const connectors = [
+  new ArcanaConnector({
+    chains,
+    options: {
+      auth: newAuthProvider(),
+      login: {
+        provider: "google",
+      },
+    },
+  }),
+  new InjectedConnector({
+    chains,
+    options: {
+      name: "Browser Wallet",
+      shimDisconnect: true,
+    },
+  }),
+];
+
+const wagmiClient = createClient({
   autoConnect: true,
-  connectors: [connector(chains)],
+  connectors,
   provider,
+  webSocketProvider,
 });
+...
 ```

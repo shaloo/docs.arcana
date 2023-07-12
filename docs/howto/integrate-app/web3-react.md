@@ -56,20 +56,14 @@ Now, you are all set to onboard users in the Web3-React app using the plug-and-p
 
 That is all! :material-party-popper:
 
-The Web3-React app is successfully integrated with the {{config.extra.arcana.sdk_name}}.
-
-!!! tip "Example: Sample Web3-React App"
-
-      See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example) for details.
+The Web3-React app is successfully integrated with the {{config.extra.arcana.sdk_name}}. Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for working integration examples.
       
 ## What's Next?
 
-After integrating with a Web3-React app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. There are two ways to onboard users: 
+After integrating with a Web3-React app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. The example above shows the built-in plug-and-play login UI method. There are [[index-web3-react-onboard-users|two ways to onboard users]]: 
 
 * Use built-in plug-and-play login UI with a single function call that displays all the configured authentication providers
-* Use custom login UI to onboard users and wire it to the {{config.extra.arcana.sdk_name}} functions for calling the configured authentication providers.
-
-See [[index-web3-react-onboard-users|for details.]]
+* Use [[onboard-web3-react-app-custom-ui|custom login UI to onboard users]] and wire it to the {{config.extra.arcana.sdk_name}} functions for calling the configured authentication providers.
 
 {{config.extra.arcana.wallet_name}} can also be used in applications that integrate with other wallet connectors such as [Wagmi](https://wagmi.sh) and [Rainbow Kit](https://www.rainbowkit.com/). See [[index-integrate-react-app|how to enable {{config.extra.arcana.wallet_name}} for apps using Wagmi and Rainbow Kit]].
 
@@ -79,3 +73,4 @@ See [[index-web3-react-onboard-users|for details.]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
 * [`{{config.extra.arcana.web3_react_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-web3-react/blob/main/readme.md)
+* [Sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example)
