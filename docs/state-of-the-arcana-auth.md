@@ -27,7 +27,7 @@ arcana:
 
 ## What's New?
 
-See [[rn-main-auth-v1.0.5|{{config.extra.arcana.product_name}} Release Notes]] for details.
+See [[rn-main-auth-v1.0.6|{{config.extra.arcana.product_name}} Release Notes]] for details.
 
 ## Mode of Operation
 
