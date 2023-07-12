@@ -12,3 +12,4 @@
       | Auth React Native SDK | Mobile apps built using React Native | `{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}` |
       | Auth Unity SDK | Gaming apps built using Unity | [[arcana-coming-soon|*Coming soon!*]] |
       | Auth MetaEngine SDK | Gaming apps built using MetaEngine | [[arcana-coming-soon|*Coming soon!*]] |
+      | Auth-Core SDK | White-labeled Auth SDK for custom wallet UI | `{{config.extra.arcana.auth_core_sdk_pkg_name}}` |
