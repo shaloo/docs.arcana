@@ -1,8 +1,8 @@
 site_name: Documentation
 
 # For for dev
-#site_url: "https://docs.dev.arcana.network"
-#site_url: ''
+site_url: "https://docs.dev.arcana.network"
+
 # For main
 #site_url: "https://docs.arcana.network"
 
