@@ -89,4 +89,4 @@ The Unity app is now ready to onboard users via 'Google'. Once the user logs in,
 
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
 * [[index-video-tutorials|Video Tutorials]]
-* [Demo App Source Code](https://github.com/arcana-network/auth-unity/tree/main/Assets/Demo)
+* [Unity Sample App Integration](https://github.com/arcana-network/auth-examples)
