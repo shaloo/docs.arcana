@@ -1,7 +1,7 @@
 ---
 alias: sdk-installation
 title: 'Install Auth SDK'
-description: 'Multiple flavors of the Aracana Auth SDK depending upon the app type. Use the correct SDK package for installation. Choose from the basic Auth package to the wrapper SDK for React Apps, Wagmi, RainbowKit apps and more.'
+description: 'Multiple flavors of the Arcana Auth SDK depending upon the app type. Use the correct SDK package for installation. Choose from the basic Auth package to the wrapper SDK for React Apps, Wagmi, RainbowKit apps and more.'
 arcana:
   root_rel_path: .
 ---

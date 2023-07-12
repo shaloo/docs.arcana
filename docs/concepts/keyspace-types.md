@@ -24,7 +24,7 @@ These key types enable Web3 application developers to tailor the user experience
 | User sees a unique, different key/wallet address when they log into any app that is integrated with the {{config.extra.arcana.product_name}} product.| User sees the same key/wallet address irrespective of which app they log in as long as they use the same onboarding mechanism and the app is integrated with the {{config.extra.arcana.product_name}} product.|
 | No known security vulnerability.| Potential vulnerability - if the user account in one app gets hacked, all the others are exposed as well due to the single key/wallet address.|
 
-### Global Keys Tradeoffs
+### Global Keys Trade-off
 
 In Web2 applications, users commonly use the same password for multiple applications. Similarly, in Web3 applications integrated with the Arcana Auth product, developers may opt to allow users to use a single wallet address across all integrated applications.
 

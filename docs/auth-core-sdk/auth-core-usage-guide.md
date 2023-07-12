@@ -40,7 +40,7 @@ const { AuthProvider, SocialLoginType } = window.arcana.auth;
 import { AuthProvider } from '@arcana/auth-core';
 ```
 
-### Initialise
+### Initialize
 
 ```js
 const auth = await AuthProvider.init({

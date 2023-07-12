@@ -40,6 +40,7 @@ ArcanaConnector
 Arcana_Dev
 Arcana_Testnet
 Auth
+Auth-Core
 Auth-React
 Auth0
 AuthAddNetworkText
@@ -496,6 +497,8 @@ arcanawalletoview
 architected
 auth
 auth-architecture
+auth-core-quick-start
+auth-core-usage-guide
 auth-mkdocs
 auth-quick-start
 auth_chlog
@@ -642,6 +645,7 @@ enabledelegate
 encryptfilewallet
 encrytion-and-kms
 enum
+enums
 et
 eth
 eth_accounts
@@ -1109,6 +1113,7 @@ rpc
 rpcUrl
 scalable
 sdk-demo
+sdk-installation
 sdk_demo
 secp256k1
 secp256r1
@@ -1182,6 +1187,7 @@ v1.0.2
 v1.0.3
 v1.0.4
 v1.0.5
+v1.0.6
 v2
 validator
 validator_nodes

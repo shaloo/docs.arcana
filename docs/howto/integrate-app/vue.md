@@ -42,7 +42,7 @@ Follow these two steps:
 
 ### Step 2: Initialize the {{config.extra.arcana.sdk_name}}
 
-After installing the SDK, add code to import `{{config.extra.arcana.auth_sdk_pkg_name}}`. Create an `AuthProvider` with with the following inputs:
+After installing the SDK, add code to import `{{config.extra.arcana.auth_sdk_pkg_name}}`. Create an `AuthProvider` with the following inputs:
 
 * **{{config.extra.arcana.app_address}}** Specify the unique identifier obtained after [[configure-auth|registering and configuring]] the app using the {{config.extra.arcana.dashboard_name}}
 

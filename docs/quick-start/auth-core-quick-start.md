@@ -42,7 +42,7 @@ To integrate a Web3 app with the {{config.extra.arcana.auth_core_sdk_name}}, dev
 After registering the app, developers can configure the Auth usage settings specific to the app using the {{config.extra.arcana.dashboard_name}}. For e.g.,
 
 * Fine-tune or edit the list of default blockchains that are accessible to the app users. 
-* Set up [[index-configure-auth|one or more user onboarding options]] such as social login or passwordless.
+* Set up [[index-configure-auth|one or more user onboarding options]] such as social login or password-less.
 
 !!! info "User Onboarding Options"
         
@@ -131,7 +131,7 @@ Refer to the sample code for using Arcana Auth-Core SDK [here](https://github.co
 
 Once the user has successfully onboarded the app, add code to perform Web3 operations such as signing messages, send transactions and more.
 
-The `AuthProvider` is a standard Ethereum ERC-1193 provider and can be used by the apps integrating with the {{config.extra.arcana.auth_core_sdk_name}} to allow authenticated users to sign blockchain transactions.
+The `AuthProvider` is a standard Ethereum EIP-1193 provider and can be used by the apps integrating with the {{config.extra.arcana.auth_core_sdk_name}} to allow authenticated users to sign blockchain transactions.
 
 ```js
 import { AuthProvider, SocialLoginType } from '@arcana/auth-core';
