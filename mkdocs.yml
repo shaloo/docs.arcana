@@ -201,6 +201,49 @@ nav:
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
+  - Developer Resources:
+    - Release Notes: relnotes/rn-main-auth-v1.0.5.md
+    - SDK Migration: migration/main-auth-v1.0.5-migration.md
+    - Testnet > Mainnet: howto/migrate-testnet-mainnet.md
+    - Developer Guides:
+      - dev-guides/index.md
+      - Using Arcana Dashboard: db/config-dApp-with-db.md
+      - Handling Auth Errors: web-sdk/auth-error-msg.md
+      - Troubleshooting Guide: troubleshooting.md
+    - FAQ:
+      - faq/index.md
+      - General: faq/faq-gen.md
+      - Dashboard: faq/faq-db.md
+      - Auth SDK: faq/faq-auth.md
+    - Blockchain Integrations:
+      - EVM Chains:
+        - Shardeum: 
+          - integrations/shardeum/index.md
+          - Developer's Guide: integrations/shardeum/integrate-shardeum.md
+          - Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
+    - Archives: 
+        - archives/index.md
+        - Migration Guides:
+          - migration/archives/index.md
+          - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
+          - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
+          - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
+          - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
+          - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
+          - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
+        - Release Notes:
+          - relnotes/archives/index.md
+          - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
+          - Release May3-2023: relnotes/rn-main-auth-May3-23.md
+          - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
+          - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
+          - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
+          - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
+          - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+    - Changelog:
+      - changelog/index.md
+      - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.5
+      - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.5
   - User Guides:
       - user-guides/index.md
       - Arcana Wallet UI: 

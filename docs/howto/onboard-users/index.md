@@ -18,3 +18,7 @@ Note that the user onboarding process may vary depending on the application type
 [[index-react-onboard-users| React Apps :material-card-account-mail:]]{ .md-button }
 
 [[index-vue-onboard-users| Vue Apps :material-card-account-mail:]]{ .md-button }
+
+!!! tip  "Auto-Reconnect Enhancement"
+
+     Earlier, the {{config.extra.arcana.dashboard_name}} SDK did not allow apps to use third-party cookies to facilitate easy user re-login. Now developers can use `canReconnect` and `reconnect` functions of the `AuthProvider` within a 30-min window of the user-logout action. This will allow users to automatically reconnect without re-authentication. See [`canReconnect`](https://authsdk-ref-guide.netlify.app/classes/authprovider#canReconnect) and [`reconnect`](https://authsdk-ref-guide.netlify.app/classes/authprovider#reconnect) for details.

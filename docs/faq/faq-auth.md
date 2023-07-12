@@ -48,7 +48,15 @@ toc_depth: 2
 
       The global keys feature enables an authenticated user to have the same wallet address across different Web3 apps in the Arcana ecosystem.  
       
-      However, an authenticated user will see **different wallet addresses across two chains configured in a single Web3 app if one of them is EVM-compatible whereas the other is not. Also, in the case of two Web3 apps, one of which uses an EVM-compatible chain and the other that uses chains that are not EVM-compatible, the authenticated user's wallet address will be different for each app. 
+      However, an authenticated user will see **different wallet addresses across two chains configured in a single Web3 app if one of them is EVM-compatible whereas the other is not. Also, in the case of two Web3 apps, one of which uses an EVM-compatible chain and the other that uses chains that are not EVM-compatible, the authenticated user's wallet address will be different for each app.
+
+??? an-faq "Are incognito/private windows in browsers and 'third-party cookies blocked' option supported by the {{config.extra.arcana.sdk_name}}?"
+
+      Yes.
+
+      The {{config.extra.arcana.wallet_name}} supports Chrome browser `Incognito Window` as well as `Private Window` in case of Safari browsers. Earlier, if third-party cookies were disabled, the built-in, plug-and-play login pop-up modal did not show up in some cases.  These use cases are now addressed by the SDK.
+
+      Developers can use the `canReconnect` and `reconnect` [functions of the `AuthProvider`](https://authsdk-ref-guide.netlify.app/classes/authprovider) to check before allowing users to reconnect whereby users do not need to re-login if they refresh the page or close the tab and re-open it again within a 30-minute window.
 
 ## {{config.extra.arcana.wallet_name}}
 
