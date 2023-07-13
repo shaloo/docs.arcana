@@ -8,53 +8,34 @@ arcana:
 
 # Quick Start: Web Apps
 
-Use this guide to integrate Web3 apps with the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] and quickly build the following features:
-
-* [[index-onboard-users|Onboard users]] easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
-* [[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}}]] and allow authenticated users to sign blockchain transactions, manage crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
-
-!!! note "Already using Auth?"
+!!! note "Already using {{config.extra.arcana.product_name}}?"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-## Overview
-
-Follow these steps to register, configure, integrate, and use the {{config.extra.arcana.sdk_name}} features such as onboarding users and allowing them to sign blockchain transactions in Web3 apps:
+Follow these steps to begin using the {{config.extra.arcana.product_name}} product:
 
 1. Use the {{config.extra.arcana.dashboard_name}} and register the app; obtain a unique **{{config.extra.arcana.app_address}}**.
-2. Set up social providers that will be enabled for onboarding app users.
-3. Install and integrate the app with the {{config.extra.arcana.sdk_name}} and onboard users either via the built-in plug-and-play login UI or custom UI.
-4. Allow authenticated users to instantly access the {{config.extra.arcana.wallet_name}}.
+2. Set up [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) that will be enabled for onboarding app users.
+3. Install the SDK and integrate the app with the {{config.extra.arcana.sdk_name}}. Use the {{config.extra.arcana.app_address}} to create a new `AuthProvider` and use either the built-in plug-and-play login UI or custom UI to [[index-onboard-users|onboard users]].
+4. Allow authenticated users to instantly access the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}}]].
 5. Add code in the app for programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
-!!! note "{{config.extra.arcana.sdk_name}}: `{{config.extra.arcana.auth_sdk_pkg_name}}`, `{{config.extra.arcana.react_sdk_pkg_name}}`, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` and `{{config.extra.arcana.web3_react_sdk_pkg_name}}`packages"
-
-      Depending upon the type of Web3 app, developers may need to integrate with one or more {{config.extra.arcana.product_name}} packages:
-  
-      * To integrate vanilla HTML/CSS/JS apps with `{{config.extra.arcana.sdk_name}}`, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and use the `AuthProvider` to access the standard Ethereum provider exposed for blockchain transactions. For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]].
-      
-      * In addition to the `{{config.extra.arcana.auth_sdk_pkg_name}}` package, also use the `{{config.extra.arcana.react_sdk_pkg_name}}` package for simple React apps. Initialize the `AuthProvider` and then use it to instantiate `ProviderAuth`. For details, see [[react-code-sample|React App Integration Example]].
-      
-      * For Web3 apps using wallet connector frameworks such as Wagmi and RainbowKit, use the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the`{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages. For the Web3-React wallet connector framework, use the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages.  After installing, integrate the apps by initializing the `AuthProvider` first and then using it to create an `ArcanaConnector` that is used to initialize the respective wallet connector framework. For details, see [Wagmi example](https://github.com/arcana-network/auth-wagmi-example), [RainbowKit example](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration) and [Web3-React example](https://github.com/arcana-network/auth-web3-react/tree/dev/example). 
-
 ## Register & Configure
 
 First, follow the instructions to [[configure-auth|register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-During app configuration, developers can enable one or more options to onboard app users.
+During app configuration, developers can enable [[index-configure-auth|configure one or more authentication providers]]  to onboard app users.
 
-!!! info "User Onboarding Options"
+!!! info "Password-less Option"
 
-      Web3 app developers can [[index-configure-auth|configure one or more authentication providers]] to let app users choose one of the available options and log in.
-        
       If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
 
 ## Install {{config.extra.arcana.sdk_name}}
 
-Next, install the appropriate {{config.extra.arcana.sdk_name}} package depending upon the app type. See the [[sdk-installation|SDK Installation Guide]] for details.
+{{config.extra.arcana.sdk_name}} can be integrated with different types of Web3 apps. Depending upon the type of Web3 app, developers may need to install one or more {{config.extra.arcana.product_name}} packages and integrate the app. See [[sdk-installation| SDK installation guide]] for more details.
 
 ## Integrate App
 
