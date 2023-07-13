@@ -8,9 +8,7 @@ arcana:
 
 # Quick Start
 
-The {{config.extra.arcana.product_name}} product consists of the [[concept-arcana-dashboard| {{config.extra.arcana.dashboard_name}}]] and the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]]. Developers must use the dashboard to configure product usage and then install the {{config.extra.arcana.sdk_name}}. 
-
-Choose the appropriate {{config.extra.arcana.sdk_name}} Quick Start Guide as per the application type.
+Select the suitable {{config.extra.arcana.sdk_name}} Quick Start Guide based on your application's type.
 
 [[web-apps-quick-start|Desktop/Web Apps :fontawesome-solid-desktop:]]{ .md-button }
 
