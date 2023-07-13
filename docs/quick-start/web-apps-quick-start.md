@@ -55,7 +55,7 @@ After installing and integrating with the {{config.extra.arcana.sdk_name}}, app 
 
 After onboarding users, developers can add code to use the `AuthProvider` in the app and call standard JSON RPC Web3 wallet functions programmatically in the context of an authenticated user. Enable authenticated users to [[sign-transaction|sign blockchain transactions]], send and receive tokens, NFTs, and [[index-arcana-wallet|more ]] using the {{config.extra.arcana.wallet_name}}.
 
-### Deploy App
+## Deploy App
 
 An app integrated with the {{config.extra.arcana.sdk_name}} can be deployed for use only **after** the developer has completed these steps:
 
