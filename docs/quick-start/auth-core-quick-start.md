@@ -8,12 +8,7 @@ arcana:
 
 # Quick Start: Auth-Core
 
-Use this guide to integrate apps with the {{config.extra.arcana.auth_core_sdk_name}} for:
-
-* onboarding users via social login by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
-* allowing authenticated users to sign blockchain transactions, manage crypto assets, and more
-* Using app-specific custom UI for user login as well as custom UI (or **no UI at all**) for Web3 wallet operations.
-
+Use this guide to integrate apps with the {{config.extra.arcana.auth_core_sdk_name}} for using app-specific custom UI for user login as well as custom UI (or **no UI at all**) for Web3 wallet operations.
 
 !!! note 
 
@@ -23,21 +18,21 @@ Use this guide to integrate apps with the {{config.extra.arcana.auth_core_sdk_na
       
       There is **no enhanced wallet security  (MFA)** or key recovery when the user switches devices.
 
-## Overview
+Follow these steps to begin using the {{config.extra.arcana.product_name}} product:
 
-To integrate a Web3 app with the {{config.extra.arcana.auth_core_sdk_name}}, developers must:
+1. Use the {{config.extra.arcana.dashboard_name}} and register the app; obtain a unique **{{config.extra.arcana.app_address}}**.
+2. Set up [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) that will be enabled for onboarding app users.
+3. Install the SDK and integrate the app with the {{config.extra.arcana.sdk_name}}. Use the {{config.extra.arcana.app_address}} to create a new `AuthProvider` and use either the built-in plug-and-play login UI or custom UI to [[index-onboard-users|onboard users]].
+4. Allow authenticated users to instantly access the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}}]].
+5. Add code in the app for programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}.
 
-* Register the app using the {{config.extra.arcana.dashboard_name}}.
-* Configure {{config.extra.arcana.auth_core_sdk_name}} usage by setting up blockchain configurations, and social login options using the {{config.extra.arcana.dashboard_name}}.
-* Install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}`.
-* Integrate the app code by creating an `AuthProvider` with requisite parameters and initialize the {{config.extra.arcana.auth_core_sdk_name}}.
-* Implement user login UI and add code to call {{config.extra.arcana.auth_core_sdk_name}} functions to onboard users.
-* Implement the app logic, add UI code to allow authenticated users to perform Web3 wallet operations such as sending tokens, interacting with contracts, etc. Add notification UI code (optional) to allow users to review, reject or approve blockchain transactions.
-* Secure authenticated user's cryptographic assets including keys.
+<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
+
 
 ## Register & Configure
 
-[[configure-auth|Register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.sdk_name}}.
+[[configure-auth|Register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.auth_core_sdk_name}}.
 
 After registering the app, developers can configure the Auth usage settings specific to the app using the {{config.extra.arcana.dashboard_name}}. For e.g.,
 
@@ -100,26 +95,26 @@ const auth = await AuthProvider.init({
 });
 ```
 
-## Onboard Users
+### Onboard Users
 
 Before adding code in the app for using the {{config.extra.arcana.auth_core_sdk_name}} user onboarding functions, make sure you have configured those properly as instructed [[index-configure-auth| here]]. More than one user onboarding mechanism can be enabled in the app:
 
 * Social Login
 * Passwordless
 
-### Social Login
+#### Social Login
 
 ```js
 await auth.loginWithSocial(SocialLoginType.google);
 ```
 
-### Passwordless
+#### Passwordless
 
 ```js
 const result = await auth.loginWithOtp(`${emailAddress}`, PasswordlessOptions);
 ```
 
-#### PasswordlessOptions:
+##### PasswordlessOptions:
 
 - `{ withUI: true }` - the user is redirected to `email-sent` or `error` page
 - `{ withUI: false }` - the Social / Passwordless login API returns  a `json` response back with no redirection
@@ -127,7 +122,7 @@ const result = await auth.loginWithOtp(`${emailAddress}`, PasswordlessOptions);
 
 Refer to the sample code for using Arcana Auth-Core SDK [here](https://github.com/arcana-network/auth-examples) for details on how to add a pop-up UI user onboarding flow or a redirect flow in the app.
 
-## Sign Transactions
+### Sign Transactions
 
 Once the user has successfully onboarded the app, add code to perform Web3 operations such as signing messages, send transactions and more.
 
@@ -171,6 +166,19 @@ try {
 ...
 
 ```
+
+## Deploy App
+
+An app integrated with the {{config.extra.arcana.auth_core_sdk_name}} can be deployed for use only **after** the developer has completed these steps:
+
+* Register and configure the app via the {{config.extra.arcana.dashboard_name}} 
+* Integrate the app with the {{config.extra.arcana.sdk_name}} 
+* Add code to onboard users 
+* Add code to allow authenticated users to sign the blockchain transactions
+
+Developers can choose to deploy one instance of the app (say, under active development) on the {{config.extra.arcana.company_name}} Testnet while simultaneously deploying a stable version of their app (say, one validated on Testnet and ready for users) on the {{config.extra.arcana.company_name}} Mainnet.
+
+By default, when an app is registered, a 'Testnet' configuration profile is associated with the app, and a unique **{{config.extra.arcana.app_address}}** is assigned to this 'Testnet' profile. To deploy your app on the {{config.extra.arcana.company_name}} Mainnet, you need to create a corresponding 'Mainnet' configuration profile and update the {{config.extra.arcana.sdk_name}} integration code to use the **new {{config.extra.arcana.app_address}}** assigned to the app's 'Mainnet' configuration profile. For details on how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet, see [[deploy-app|App Deployment Guide]].
 
 That's all!!! :tada:
 
