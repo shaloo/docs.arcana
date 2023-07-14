@@ -8,10 +8,13 @@ arcana:
 
 # Getting Started
 
-Use {{config.extra.arcana.product_name}} to:
+!!! abstract "What can you do with {{config.extra.arcana.product_name}}?"
 
-* easily onboard users via popular Web2-like login options.
-* let authenticated users sign blockchain transactions.
+      A. Easily onboard users via popular Web2-like login options.
+      
+      B. Let authenticated users seamlessly sign blockchain transactions.
+
+👇Follow these steps👇
 
 [[configure-auth|1. Register App :material-tools:]]{ .md-button }
 
