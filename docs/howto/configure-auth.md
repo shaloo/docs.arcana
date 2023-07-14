@@ -18,15 +18,17 @@ In this tutorial, you will learn how to register and configure a Web3 app before
 
 {% include "./text-snippets/db_prerequisites.md" %}
 
-## Step 1: Developer Dashboard Login
+## Steps
+
+### 1. Log into Dashboard
 
 {% include "./text-snippets/db_login.md" %}
 
-## Step 2: Register Application
+### 2. Register App
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
-## Step 3: Configure Application
+### 3. Configure Auth Usage
 
 {% include "./text-snippets/db_settings.md" %}
 
