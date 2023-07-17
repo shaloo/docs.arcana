@@ -8,7 +8,7 @@ arcana:
 
 # Integrate Wagmi App
 
-With Wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. Web3 apps using Wagmi can use the custom Wagmi connector offered by the The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}}.
+With Wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. Wagmi apps can use the custom Wagmi connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}}.
 
 In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_name}} with Web3 apps that use [Wagmi](https://wagmi.sh) wallet connectors.
 
