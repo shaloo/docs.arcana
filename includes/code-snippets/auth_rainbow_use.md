@@ -2,7 +2,7 @@
 // Pass wagmi client configured with ArcanaRainbowKitConnector to the RainbowKit Context Provider
 export default function App({ Component, pageProps }) {
   return (
-    <WagmiConfig client={wagmiClient}>
+    <WagmiConfig client={wagmiEntity}>
       <RainbowKitProvider chains={chains}>
         <Component {...pageProps} />
       </RainbowKitProvider>

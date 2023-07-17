@@ -8,9 +8,9 @@ arcana:
 
 # Integrate Wagmi App
 
-With Wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Wagmi connector that enables the {{config.extra.arcana.wallet_name}} in Web3 apps using Wagmi.
+With Wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. Wagmi apps can use the custom Wagmi connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}}.
 
-In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_name}} with Web3 apps that use [Wagmi](https://wagmi.sh) wallet connectors. 
+In this guide, you will learn how to integrate the {{config.extra.arcana.sdk_name}} with Web3 apps that use [Wagmi](https://wagmi.sh) wallet connectors.
 
 ## Prerequisites
 
@@ -46,16 +46,15 @@ To instantiate the `AuthProvider`, specify the unique **{{config.extra.arcana.ap
 
 ### Step 3: Set up WagmiConfig
 
-Next, provide the newly instantiated and configured `ArcanaConnector` to the `createClient` Wagmi function. 
+Next, provide the newly instantiated and configured `ArcanaConnector` to set up WagmiConfig. 
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
-!!! tip "Wagmi `createClient`"
+!!! tip "Wagmi `createClient` and `configClient`"
 
-      For more details on the `createClient` function of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started).
+      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and [Wagmi 1.x.y Migration Guide](https://wagmi.sh/react/migration-guide).
 
-
-Now specify the `wagmiClient` created earlier in the `WagmiConfig` component:
+Now specify the requisite Wagmi constituents to `WagmiConfig` component:
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 

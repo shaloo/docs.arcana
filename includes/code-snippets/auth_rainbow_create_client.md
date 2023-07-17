@@ -1,22 +1,58 @@
-```js title="pages/_app.js" hl_lines="8 15-19"
+=== "`auth-wagmi` version < v2.0.0"
 
-import "../styles/globals.css";
-import "@rainbow-me/rainbowkit/styles.css";
+    ```js title="pages/App.js" hl_lines="12 19 20"
 
-import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { polygon, mainnet } from "wagmi/chains";
-import { publicProvider } from "wagmi/providers/public";
-import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { connectors } from "../utils/wallet";
+    // Note:  
+    // This sample code is for 
+    // wagmi versions <1.x.x and auth-wagmi <2.0.0
 
-const { chains, provider } = configureChains(
-  [mainnet, polygon],
-  [publicProvider()]
-);
+    import "../styles/globals.css";
+    import "@rainbow-me/rainbowkit/styles.css";
 
-const wagmiClient = createClient({
-  autoConnect: true,
-  connectors: connectors(chains),
-  provider,
-});
-```
+    import { configureChains, createClient, WagmiConfig } from "wagmi";
+    import { polygon, mainnet } from "wagmi/chains";
+    import { publicProvider } from "wagmi/providers/public";
+    import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
+    import { connectors } from "../utils/wallet";
+
+    const { chains, provider } = configureChains(
+      [mainnet, polygon],
+      [publicProvider()]
+    );
+
+    const wagmiEntity = createClient({
+      connectors: connectors(chains),
+      autoConnect: true,
+      provider,
+    });
+    ...
+    ```
+
+=== "`auth-wagmi` version > v2.0.0"
+
+    ```js title="pages/App.js" hl_lines="9 18 19"
+    // Note:  
+    // This sample code is for 
+    // wagmi versions 1.x.x and auth-wagmi 2.0.0
+
+    import { configureChains, createConfig, WagmiConfig } from "wagmi";
+    import { polygon, mainnet, optimism, arbitrum } from "wagmi/chains";
+    import { publicProvider } from "wagmi/providers/public";
+    import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
+    import { connectors } from "./wallet";
+    import { useAccount, useConnect } from 'wagmi'
+    import { Connect } from "./Connect";
+
+    const { chains, publicClient } = configureChains(
+      [mainnet, polygon, optimism, arbitrum],
+      [publicProvider()]
+    );
+
+    const wagmiEntity = createConfig({
+      connectors: connectors(chains),
+      autoConnect: true,
+      publicClient,
+    });
+    ...
+
+    ```
