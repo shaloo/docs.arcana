@@ -37,6 +37,10 @@ Also, it is no longer required for a user to re-login in case the browser is ref
 
 See [[web-auth-usage-guide#auth-apis|usage guide]] for more details.
 
+### Support for Wagmi 1.x.y and Viem
+
+The [`{{config.extra.arcana.wagmi_sdk_pkg_name}}` package](https://www.npmjs.com/package/@arcana/auth-wagmi) is now upgraded to version 2.0.0 and supports the latest Wagmi release v1.3.9 which uses Viem. For details, see [Wagmi 1.x.x migration guide](https://wagmi.sh/react/migration-guide) and [sample integration code 'sample-auth-rainbow-viem'](https://github.com/arcana-network/auth-examples).
+
 ### Wagmi/RainbowKit App Connect
 
 When using the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package for RainbowKit apps, it is recommended that developers specify the `name` field as 'Login with Email/Social' and put the Arcana logo as shown in the code below.
