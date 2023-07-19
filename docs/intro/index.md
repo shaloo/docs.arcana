@@ -21,7 +21,7 @@ Use **{{config.extra.arcana.product_name }}** to:
 
 {{config.extra.arcana.product_name}} is powered by cutting-edge cryptographic techniques and _asynchronous distributed key generation_ algorithms. It ensures that users have full control and access to their respective keys and no single entity owns or manages the key shares. 
 
-Designed for developers and Web3 users, {{config.extra.arcana.product_name}} is easy to integrate with Web3 apps for enabling a simpler, secure, and customizable user experience for signing blockchain transactions.
+Arcana Auth offers developers easy integration and a customizable user experience while simplifying and securing blockchain transaction signing for Web3 app users.
 
 !!! note "Already using {{config.extra.arcana.product_name}}?"
 
