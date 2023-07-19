@@ -181,6 +181,7 @@ nav:
           - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
         - SDK Migration:
           - migration/archives/index.md
+          - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md                  
           - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
           - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
           - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
@@ -427,6 +428,13 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   
 plugins:
+  - social:
+      enabled: !ENV [SOCIAL_CARDS_META, true]
+      cards: !ENV [SOCIAL_CARDS_META, true]
+      cards_layout_options:
+        font_family: Inter
+        background_color: "#0D0D0E"
+        color: "#FFFFFF"
   - macros:
       include_dir: ./includes
   - search:
