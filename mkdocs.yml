@@ -1,10 +1,10 @@
 site_name: Documentation
 
 # For for dev
-#site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
-site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
+#site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 use_directory_urls: false
 # upto here
@@ -24,12 +24,12 @@ nav:
     - Quick Start: 
       - quick-start/index.md
       - Web Apps: quick-start/web-apps-quick-start.md
-#     - Unity Apps: quick-start/unity-quick-start.md
+      - Unity Apps: quick-start/unity-quick-start.md
       - Mobile: 
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
-#       - Auth-Core: quick-start/auth-core-quick-start.md
+      - Auth-Core: quick-start/auth-core-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
   - Getting Started:
       - howto/index.md
@@ -154,7 +154,7 @@ nav:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
-#     - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
+      - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Troubleshooting Guide: troubleshooting.md
       - Handling Auth Errors: web-sdk/auth-error-msg.md
@@ -351,7 +351,7 @@ theme:
   logo: img/arcana-logo-white.svg
   icon:
     repo: fontawesome/brands/github
-  favicon: img/an-favicon.png
+  favicon: img/favicon.png
   custom_dir: docs/overrides
   features: 
   #  - announce.dismiss
@@ -434,7 +434,7 @@ plugins:
       cards_layout_options:
         font_family: Inter
         background_color: "#0D0D0E"
-        background_image: img/social_card_image.png
+#sponsors only        background_image: img/social_card_image.png
         color: "#FFFFFF"
   - macros:
       include_dir: ./includes
