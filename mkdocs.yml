@@ -351,7 +351,7 @@ theme:
   logo: img/arcana-logo-white.svg
   icon:
     repo: fontawesome/brands/github
-  favicon: img/an-favicon.png
+  favicon: img/favicon.png
   custom_dir: docs/overrides
   features: 
   #  - announce.dismiss
@@ -434,7 +434,7 @@ plugins:
       cards_layout_options:
         font_family: Inter
         background_color: "#0D0D0E"
-        background_image: img/social_card_image.png
+#sponsors only        background_image: img/social_card_image.png
         color: "#FFFFFF"
   - macros:
       include_dir: ./includes
