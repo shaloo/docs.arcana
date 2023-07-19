@@ -282,6 +282,17 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       By default, {{config.extra.arcana.sdk_name}} is configured to allow app-specific keys for the Web3 apps that integrate with the SDK. Developers can begin deploying their apps on the {{config.extra.arcana.company_name}} Testnet and then deploy them on the {{config.extra.arcana.company_name}} Mainnet.  To use the global keys feature in their apps, the developers are required to fill up an online form, submit it and wait for approval from the {{config.extra.arcana.company_name}} team before global keys are enabled for an app. The status of the feature request is displayed in the {{config.extra.arcana.dashboard_name}}. While the feature is in 'review' status, the app can be deployed on the {{config.extra.arcana.company_name}} Testnet and users are allowed to log in and use the app. 
 
-      While an app is switching over from the default 'app-specific' keys configuration to the 'global keys' configuration, the developer may choose to allow app users to log in before the global features option is approved. Users that log in before the global keys are approved will be assigned 'app-specific' keys. There is some part of key metadata that is stored locally in the authenticated user's device. In this case, once the feature gets **approved**, the user keys are re-assigned. The keys change from 'app-specific' to 'global keys' and this results in new key metadata. There is a mismatch between the keys or {{config.extra.arcana.walket_name}} addresses already in use by the users and the new global keys that are now reconfigured for the app users.  As a result, users will not be able to log in to the app anymore.
+      While an app is switching over from the default 'app-specific' keys configuration to the 'global keys' configuration, the developer may choose to allow app users to log in before the global features option is approved. Users that log in before the global keys are approved will be assigned 'app-specific' keys. There is some part of key metadata that is stored locally in the authenticated user's device. In this case, once the feature gets **approved**, the user keys are re-assigned. The keys change from 'app-specific' to 'global keys' and this results in new key metadata. There is a mismatch between the keys or {{config.extra.arcana.wallet_name}} addresses already in use by the users and the new global keys that are now reconfigured for the app users.  As a result, users will not be able to log in to the app anymore.
 
       To fix this issue, the user needs to clear the local storage used by the {{config.extra.arcana.wallet_name}} on their device by clearing the browser cache and then attempting another login from a fresh browser window.
+
+## Errors
+
+??? an-trbs "Why do users experience a 'Redirect URI Mismatch' error during authentication?"
+
+      This error shows up if the developer has not properly set up the social provider during app registration and configuration with {{config.extra.arcana.company_name}}.
+
+      * Go to the {{config.extra.arcana.dashboard_name}} and check the app settings in the *Social Auth* section. Note that the Redirect URI displayed for the app is exactly the same as the one you have specified in the social provider OAuth settings.  For example, in the case of social provider 'Google', use Google Developer Console and check OAuth settings. Check the spelling of the Redirect URI specified against the entry for your app.
+
+      * If you are deploying the app on the Mainnet, then make sure the Redirect URI displayed in the Mainnet configuration profile of the app in the {{config.extra.arcana.dashboard_name}} is used in the social provider OAuth settings.
+
