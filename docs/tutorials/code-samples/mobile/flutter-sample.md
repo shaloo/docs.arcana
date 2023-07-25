@@ -14,7 +14,7 @@ Before integrating a Flutter Web3 app with the {{config.extra.arcana.sdk_name}},
 
 * Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. [[configure-auth|Register the app and configure user onboarding options and other settings]]. For details, see [[configure-auth|how to configure authentication providers]].
 
-<img class="an-screenshots" alt="NextJS App config" src="/img/nextjs_app_db_setup_google_twitch.png"/>
+<img class="an-screenshots-noeffects" alt="NextJS App config" src="/img/nextjs_app_db_setup_google_twitch.png"/>
 
 * By default, a Testnet configuration profile is created after the app is registered. A unique **{{config.extra.arcana.app_address}}** is assigned to the Flutter app. Note this value, it will be required later during app integration.
 
@@ -28,11 +28,11 @@ The {{config.extra.arcana.company_name}} ['Flutter Plugin'](https://docs.flutter
 
 !!! Note
 
-      Refer to the [Auth Examples GitHub Repository](https://github.com/shaloo/sample-auth-flutter/) for the complete sample code for various types of Web3 apps.
+      Refer to the [Auth Examples GitHub Repository](https://github.com/shaloo/sample-auth-flutter/) for the complete Flutter app integration sample code.
 
 ## Integrate App
 
-Refer to the Flutter sample code in the repository mentioned earlier. In the  `src/index.js` file, the `AuthProvider` is imported and a new instance is created using the  **{{config.extra.arcana.app_address}}** assigned to the Flutter app during app registration.
+Refer to the Flutter sample code in the repository mentioned earlier. In the  `lib/main.dart` file, the `AuthProvider` is imported and a new instance is created using the  **{{config.extra.arcana.app_address}}** assigned to the Flutter app during app registration.
 
 ```js title="sample-auth-flutter/lib/main.dart" hl_lines="3-4 9 19-20 38"
 import 'dart:convert';
