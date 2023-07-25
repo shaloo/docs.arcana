@@ -35,7 +35,7 @@ Select a tab according to the Web3 application type to see code samples:
 
 === "Mobile"
 
-    [[flutter-code-sample|Flutter :fontawesome-brands-react:]]{ .md-button }
+    [[flutter-code-sample|Flutter :simple-flutter:]]{ .md-button }
 
     [[react-native-code-sample|React-Native :fontawesome-brands-react:]]{ .md-button }
 
