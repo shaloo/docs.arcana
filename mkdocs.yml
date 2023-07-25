@@ -24,12 +24,12 @@ nav:
     - Quick Start: 
       - quick-start/index.md
       - Web Apps: quick-start/web-apps-quick-start.md
-      - Unity Apps: quick-start/unity-quick-start.md
+#      - Unity Apps: quick-start/unity-quick-start.md
       - Mobile: 
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
-      - Auth-Core: quick-start/auth-core-quick-start.md
+#      - Auth-Core: quick-start/auth-core-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
   - Getting Started:
       - howto/index.md
@@ -192,13 +192,18 @@ nav:
       - tutorials/index.md
       - Code Samples: 
         - tutorials/code-samples/index.md
-        - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
-        - React App: tutorials/code-samples/react-code-sample.md
-        - NextJS App: tutorials/code-samples/nextjs-code-sample.md
-        - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
-        - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
-        - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
-        - Vue App: https://github.com/arcana-network/auth-sample-integration-new
+        - Web:
+          - tutorials/code-samples/index.md
+          - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
+          - React App: tutorials/code-samples/react-code-sample.md
+          - NextJS App: tutorials/code-samples/nextjs-code-sample.md
+          - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
+          - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
+          - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
+          - Vue App: https://github.com/arcana-network/auth-sample-integration-new
+        - Mobile:
+          - Flutter App: tutorials/code-samples/mobile/flutter-sample.md
+          - React-Native App: tutorials/code-samples/mobile/react-native-sample.md
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md

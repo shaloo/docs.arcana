@@ -38,3 +38,10 @@ mkdocs build
 mkdocs serve -a localhost:8100
 
 ```
+
+## Troubleshooting
+
+If you see issue with using liburl3==2.0.3, replace it with v < 1.0
+
+Ref: https://stackoverflow.com/questions/76187256/importerror-urllib3-v2-0-only-supports-openssl-1-1-1-currently-the-ssl-modu
+
