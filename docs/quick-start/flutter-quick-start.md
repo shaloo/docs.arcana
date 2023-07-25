@@ -43,7 +43,7 @@ Add the following line to the dependencies section in your app's `pubspec.yaml` 
 
 ## Integrate App
 
-As part of integrating an app with the {{config.extra.arcana.flutter_sdk_name}}, specify the unique **client ID** assigned to the registered app in the previous step when creating an `AuthProvider`.
+Once installed, integrate the app with the {{config.extra.arcana.flutter_sdk_name}}, specify the unique **client ID** assigned to the registered app in the previous step when creating an `AuthProvider`.
 
 ```javascript
 import 'package:arcana_sdk/arcana_sdk.dart';

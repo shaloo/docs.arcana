@@ -8,18 +8,44 @@ arcana:
 
 # Code Samples
 
-Refer to the following code samples to learn how to integrate the {{ config.extra.arcana.sdk_name }} with different types of Web3 apps. Once integrated, apps can add code to onboard users, and enable the authenticated users to access the {{ config.extra.arcana.wallet_name }} and sign blockchain transactions.
+Select a tab according to the Web3 application type to see code samples:
 
-[[html-js-code-sample|HTML/CSS/JS :material-language-typescript:]]{ .md-button }
+* Web app
+* Mobile app (Flutter/React-Native)
+<!--
+* Gaming app (Unity/Others)
+* Whitelabelled Auth App (Auth Core SDK, custom wallet UI)
+-->
 
-[[react-code-sample|React App :fontawesome-brands-react:]]{ .md-button }
+=== "Web"
 
-[[nextjs-code-sample|NextJS App :simple-nextdotjs:]]{ .md-button }
+    [[html-js-code-sample|HTML/CSS/JS :material-language-typescript:]]{ .md-button }
 
-[Wagmi App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-wagmi-example){ .md-button }
+    [[react-code-sample|React App :fontawesome-brands-react:]]{ .md-button }
 
-[RainbowKit App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration){ .md-button }
+    [[nextjs-code-sample|NextJS App :simple-nextdotjs:]]{ .md-button }
 
-[Web3-React App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-web3-react/tree/main/example){ .md-button }
+    [Wagmi App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-wagmi-example){ .md-button }
 
-[Vue App :fontawesome-brands-vuejs:](https://github.com/arcana-network/auth-sample-integration-new){ .md-button }
+    [RainbowKit App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration){ .md-button }
+
+    [Web3-React App :material-wallet-plus-outline:](https://github.com/arcana-network/auth-web3-react/tree/main/example){ .md-button }
+
+    [Vue App :fontawesome-brands-vuejs:](https://github.com/arcana-network/auth-sample-integration-new){ .md-button }
+
+=== "Mobile"
+
+    [[flutter-code-sample|Flutter :fontawesome-brands-react:]]{ .md-button }
+
+    [[react-native-code-sample|React-Native :fontawesome-brands-react:]]{ .md-button }
+
+<!---
+
+=== "Gaming"
+
+    TBD Mobile stuff
+
+=== "Whitelabeled Auth"
+
+    TBD Mobile stuff
+--->
