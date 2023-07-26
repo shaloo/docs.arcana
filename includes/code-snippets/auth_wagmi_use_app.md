@@ -2,7 +2,7 @@
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <WagmiConfig client={wagmiClient}>
+    <WagmiConfig client={wagmiEntity}>
       <Component {...pageProps} />
     </WagmiConfig>
   );

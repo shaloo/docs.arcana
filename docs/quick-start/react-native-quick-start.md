@@ -8,46 +8,40 @@ arcana:
 
 # Quick Start: React-Native Apps
 
-Use this guide to integrate Web3 apps with the [[concept-authsdk| {{config.extra.arcana.react_native_sdk_name}}]] and quickly build the following features:
+!!! note "Already using {{config.extra.arcana.product_name}}?"
+  
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-* Onboard users easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
-* Enable {{config.extra.arcana.wallet_name}} and allow authenticated users to sign blockchain transactions, manage crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
-
-## Overview
-
-Follow these steps to register, configure, integrate, and use the {{config.extra.arcana.react_native_sdk_name}} features such as onboarding users and allowing them to sign blockchain transactions in Web3 apps:
+Follow these steps to begin using the {{config.extra.arcana.product_name}} product:
 
 1. Use the {{config.extra.arcana.dashboard_name}} and register the app; obtain a unique **{{config.extra.arcana.app_address}}**.
-2. Set up social providers that will be enabled for onboarding app users.
-3. Install the {{config.extra.arcana.react_native_sdk_name}} and integrate the app to onboard users either via the built-in plug-and-play login UI or custom UI.
-4. Allow authenticated users to instantly access the {{config.extra.arcana.wallet_name}}.
+2. Set up [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) that will be enabled for onboarding app users.
+3. Install the SDK and integrate the app with the {{config.extra.arcana.flutter_sdk_name}}. Use the {{config.extra.arcana.app_address}} to create a new `AuthProvider` and use either the built-in plug-and-play login UI or custom UI to [[index-onboard-users|onboard users]].
+4. Allow authenticated users to instantly access the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}}]].
 5. Add code in the app for programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}.
+
+<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
 ## Register & Configure
 
-First, follow the instructions to [[configure-auth|register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.react_native_sdk_name}}.
+First, [[configure-auth|register and then configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.react_native_sdk_name}}.
 
-During app configuration, developers can enable one or more options to onboard app users.
+During app configuration, developers can enable [[index-configure-auth|configure one or more authentication providers]]  to onboard app users.
 
-!!! info "User Onboarding Options"
+!!! info "Password-less Option"
 
-      Web3 app developers can [[index-configure-auth|configure one or more authentication providers]] to let app users choose one of the available options and log in.
-        
-      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login is available.
+      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
 
-## Integrate React-Native App
+## Install Auth SDK
 
-After registering and configuring the React-Native app, follow these steps to integrate the React-Native app with the {{config.extra.arcana.react_native_sdk_name}}:
-
-### Step 1: Install Auth SDK
-
-You need to install the [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native) package.
+You need to install the [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native) package to integrate the app with the {{config.extra.arcana.react_native_sdk_name}}.
 
 {% include "./code-snippets/auth_react_native_install.md" %}
 
 **Note:** You are **not required** to manually link this module as it supports React Native auto-linking.
 
-### Step 2: Initialize Auth Component
+## Integrate  {{config.extra.arcana.react_native_sdk_name}}
 
 ```jsx
 import React, { useState } from "react";
@@ -70,7 +64,7 @@ Make sure that you specify the unique client ID assigned to the app during regis
 <Auth clientId="xar_test_xxx" theme="dark" />
 ```
 
-### Step 3: Onboard Users
+### Onboard Users
 
 Use the `Auth` functions for onboarding users in the app via the configured social providers such as Google.
 
@@ -124,7 +118,7 @@ const logout = () => {
 };
 ```
 
-### Web3 Operations
+### Sign Blockchain Transactions
 
 The Arcana wallet supports various Web3 operations via JSON-RPC calls and EIP-1193 requests. Use the following methods to get information about the logged-in user, the account details and issue send transaction requests programmatically via the app. When a blockchain transaction is triggered, a transaction notification is displayed in the app context. Users can choose to approve or reject the request.
 

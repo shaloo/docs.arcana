@@ -47,8 +47,16 @@ Developers can use the {{config.extra.arcana.product_name}} product by following
       - install the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages
       - create an `AuthProvider` instance by specifying the **{{config.extra.arcana.app_address}}** as the input parameter
       - create an `ArcanaConnector` instance using the `AuthProvider` as input and use it to initialize the Web3-React framework
+
+      **Mobile: Flutter apps:**
+
+      Use the {{config.extra.arcana.company_name}} [`Pub.Dev` Flutter plugin package](https://pub.dev/packages/arcana_auth_flutter). Refer to the [[flutter-quick-start|Flutter Quick Start Guide]]
+
+      **Mobile: React-Native apps:**
+
+      Install the [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native) package. Refer to the [[react-native-quick-start|React-Native Quick Start Guide]].
               
-      For details, see [[index-integrate-app|how to integrate with the {{config.extra.arcana.sdk_name}}]] and select the instructions for the app type. Also refer to the [[index-tutorials|tutorials]] section.
+      For more details, see [[index-integrate-app|how to integrate with the {{config.extra.arcana.sdk_name}}]] and select the instructions for the app type. Also, refer to the [[index-tutorials|tutorials]] section.
 
 ??? abstract "3. Onboard Users & Enable Wallet"
 

@@ -1,10 +1,10 @@
 site_name: Documentation
 
 # For for dev
-site_url: "https://docs.dev.arcana.network"
+site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
-#site_url: "https://docs.arcana.network"
+#site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 use_directory_urls: false
 # upto here
@@ -29,7 +29,6 @@ nav:
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
-#       - Auth-Core: quick-start/auth-core-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
   - Getting Started:
       - howto/index.md
@@ -154,7 +153,6 @@ nav:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
-#     - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Troubleshooting Guide: troubleshooting.md
       - Handling Auth Errors: web-sdk/auth-error-msg.md
@@ -181,6 +179,7 @@ nav:
           - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
         - SDK Migration:
           - migration/archives/index.md
+          - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md                  
           - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
           - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
           - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
@@ -191,13 +190,18 @@ nav:
       - tutorials/index.md
       - Code Samples: 
         - tutorials/code-samples/index.md
-        - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
-        - React App: tutorials/code-samples/react-code-sample.md
-        - NextJS App: tutorials/code-samples/nextjs-code-sample.md
-        - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
-        - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
-        - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
-        - Vue App: https://github.com/arcana-network/auth-sample-integration-new
+        - Web:
+          - tutorials/code-samples/index.md
+          - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
+          - React App: tutorials/code-samples/react-code-sample.md
+          - NextJS App: tutorials/code-samples/nextjs-code-sample.md
+          - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
+          - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
+          - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
+          - Vue App: https://github.com/arcana-network/auth-sample-integration-new
+        - Mobile:
+          - Flutter App: tutorials/code-samples/mobile/flutter-sample.md
+          - React-Native App: tutorials/code-samples/mobile/react-native-sample.md
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
@@ -350,7 +354,7 @@ theme:
   logo: img/arcana-logo-white.svg
   icon:
     repo: fontawesome/brands/github
-  favicon: img/an-favicon.png
+  favicon: img/favicon.png
   custom_dir: docs/overrides
   features: 
   #  - announce.dismiss
@@ -427,6 +431,14 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   
 plugins:
+  - social:
+      enabled: !ENV [SOCIAL_CARDS_META, true]
+      cards: !ENV [SOCIAL_CARDS_META, true]
+      cards_layout_options:
+        font_family: Inter
+        background_color: "#0D0D0E"
+#sponsors only        background_image: img/social_card_image.png
+        color: "#FFFFFF"
   - macros:
       include_dir: ./includes
   - search:

@@ -496,6 +496,7 @@ arcanawalletindex
 arcanawalletoview
 architected
 auth
+auth-apis
 auth-architecture
 auth-core-quick-start
 auth-core-usage-guide
