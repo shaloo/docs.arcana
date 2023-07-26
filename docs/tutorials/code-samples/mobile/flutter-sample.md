@@ -12,7 +12,7 @@ Before integrating a Flutter Web3 app with the {{config.extra.arcana.sdk_name}},
 
 ## Prerequisites
 
-* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. [[configure-auth|Register the app and configure user onboarding options and other settings]]. For details, see [[configure-auth|how to configure authentication providers]].
+* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then[[configure-auth|register and configure the required user onboarding options]]. For details, see [[configure-auth|how to configure authentication providers]].
 
 <img class="an-screenshots-noeffects" alt="NextJS App config" src="/img/nextjs_app_db_setup_google_twitch.png"/>
 
@@ -22,17 +22,17 @@ Before integrating a Flutter Web3 app with the {{config.extra.arcana.sdk_name}},
 
 ## Install SDK
 
-The {{config.extra.arcana.company_name}} ['Flutter Plugin'](https://docs.flutter.dev/packages-and-plugins/developing-packages) is offered as the [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package](https://pub.dev/packages/arcana_auth_flutter). Install the latest version using the app's pubspec.yaml file: 
+The {{config.extra.arcana.company_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package](https://pub.dev/packages/arcana_auth_flutter) is offered as a ['Flutter Plugin'](https://docs.flutter.dev/packages-and-plugins/developing-packages). Set up the latest version using the app's pubspec.yaml file: 
 
 {% include "./code-snippets/auth_flutter_install.md" %}
 
 !!! Note
 
-      Refer to the [Auth Examples GitHub Repository](https://github.com/shaloo/sample-auth-flutter/) for the complete Flutter app integration sample code.
+      For a complete Flutter app integration example, see the [Auth Examples GitHub Repository](https://github.com/shaloo/sample-auth-flutter/).
 
 ## Integrate App
 
-Refer to the Flutter sample code in the repository mentioned earlier. In the  `lib/main.dart` file, the `AuthProvider` is imported and a new instance is created using the  **{{config.extra.arcana.app_address}}** assigned to the Flutter app during app registration.
+Refer to the Flutter sample code in the repository mentioned earlier. In the  `lib/main.dart` file, the `arcana_auth_flutter/arcana_sdk.dart` file is imported. Create a new instance of `AuthProvider` by specifying the **{{config.extra.arcana.app_address}}** assigned to the Flutter app during app registration.
 
 ```js title="sample-auth-flutter/lib/main.dart" hl_lines="3-4 9 19-20 38"
 import 'dart:convert';
@@ -76,28 +76,33 @@ class _MyAppState extends State<MyApp> {
   }
 ```
 
+Make sure to call the `init` method of the `AuthProvider` first before calling any other methods.
+
 ### Onboard Users
 
 Next, add code to onboard users. In this example, we use the custom login UI option and use `loginWithSocial` method of the `AuthProvider` to onboard users via 'Google' as the social provider.
 
-```js title="sample-auth-flutter/lib/main.dart" hl_lines="6-9"
-            Row(
-              children: [
-                Expanded(
-                  child: ElevatedButton(
-                      onPressed: () {
-                        auth.loginWithSocial("google").then((_) {
-                          action = "login_complete";
-                          setState(() {});
-                        });
-                        logs = '';
-                        action = 'login_google';
-                        setState(() {});
-                      },
-                      child: Text("Login with google")),
-                )
-              ],
-            ),
+```js title="sample-auth-flutter/lib/main.dart" hl_lines="7-10"
+...
+Row(
+  children: [
+    Expanded(
+      child: ElevatedButton(
+          onPressed: () {
+            auth.loginWithSocial("google").then((_) {
+              action = "login_complete";
+              setState(() {});
+            });
+            logs = '';
+            action = 'login_google';
+            setState(() {});
+          },
+          child: Text("Login with google")),
+    )
+  ],
+),
+...
+       
 ```
 
 Once a user authenticates, the built-in {{config.extra.arcana.wallet_name}} is displayed in the app's context and can be used for signing blockchain transactions. See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for more Web3 wallet operation details.
