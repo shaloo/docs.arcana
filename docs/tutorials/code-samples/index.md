@@ -8,15 +8,6 @@ arcana:
 
 # Code Samples
 
-Select a tab according to the Web3 application type to see code samples:
-
-* Web app
-* Mobile app (Flutter/React-Native)
-<!--
-* Gaming app (Unity/Others)
-* Whitelabelled Auth App (Auth Core SDK, custom wallet UI)
--->
-
 === "Web"
 
     [[html-js-code-sample|HTML/CSS/JS :material-language-typescript:]]{ .md-button }

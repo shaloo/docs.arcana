@@ -12,7 +12,7 @@ Before integrating a React-Native Web3 app with the {{config.extra.arcana.sdk_na
 
 ## Prerequisites
 
-* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. [[configure-auth|Register the app and configure user onboarding options and other settings]]. For details, see [[configure-auth|how to configure authentication providers]].
+* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [[configure-auth|register and configure the required user onboarding options]]. For details, see [[configure-auth|how to configure authentication providers]].
 
 <img class="an-screenshots-noeffects" alt="NextJS App config" src="/img/nextjs_app_db_setup_google_twitch.png"/>
 
@@ -28,7 +28,7 @@ Install the latest version of the [`{{config.extra.arcana.mobile_react_native_sd
 
 !!! Note
 
-      Refer to the [Auth Examples GitHub Repository](https://github.com/shaloo/sample-auth-react-native/) for the complete React-Native app integration sample code.
+      For a complete React-Native integration example, see [Auth Examples GitHub Repository](https://github.com/shaloo/sample-auth-react-native/).
 
 ## Integrate App
 
