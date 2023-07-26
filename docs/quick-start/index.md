@@ -12,8 +12,6 @@ Select the suitable {{config.extra.arcana.sdk_name}} Quick Start Guide based on 
 
 [[web-apps-quick-start|Desktop/Web Apps :fontawesome-solid-desktop:]]{ .md-button }
 
-[[unity-quick-start|Unity Gaming Apps :fontawesome-brands-unity:]]{ .md-button }
-
 [[mobile-quick-start|Mobile Apps :fontawesome-solid-mobile-screen:]]{ .md-button }
 
 [[auth-core-quick-start|Auth-Core SDK :material-atom-variant:]]{ .md-button }
