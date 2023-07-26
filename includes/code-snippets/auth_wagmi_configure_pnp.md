@@ -1,4 +1,4 @@
-```js title="utils/newArcanaAuth.ts" hl_lines="1-2 7-15"
+```js title="utils/newArcanaAuth.js" hl_lines="1 7-9 14"
 
 import { AuthProvider } from "@arcana/auth";
 

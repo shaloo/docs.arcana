@@ -8,9 +8,9 @@ arcana:
 
 # Wagmi App: Custom Login UI
 
-With [Wagmi](https://wagmi.sh), Web3 developers can allow app users to easily switch between multiple wallets within a single application. The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Wagmi connector that enables the {{config.extra.arcana.wallet_name}} in Web3 apps using Wagmi.
+With Wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. Wagmi apps can use the custom connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}}.
 
-In this guide, you will learn how to onboard users in Web3 apps that use Wagmi wallet connectors. It shows how the developers can integrate apps with the {{config.extra.arcana.product_name}} SDKs and then use custom login UI to onboard users easily.
+In this guide, you will learn how to onboard users via a custom login UI in Wagmi apps integrated with the {{config.extra.arcana.product_name}} SDK.
 
 ## Prerequisites
 
@@ -58,15 +58,15 @@ _Enable Passwordless Login_
 
 ### Step 3: Set up WagmiConfig
 
-Next, provide the newly instantiated and configured `ArcanaConnector` to the `createClient` Wagmi function. 
+Next, provide the newly instantiated and configured `ArcanaConnector` to set up Wagmi: 
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
-!!! tip "Wagmi `createClient`"
+!!! tip "Wagmi `createClient` and `configClient`"
 
-      For more details on the `createClient` function of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started).
+      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and [Wagmi 1.x.y Migration Guide](https://wagmi.sh/react/migration-guide).
 
-Now specify the `wagmiClient` in `WagmiConfig` component in the `_app.js` file.
+Use the `WagmiConfig` component in the `_app.js` file.
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 

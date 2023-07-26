@@ -8,38 +8,32 @@ arcana:
 
 # Quick Start: Flutter Apps
 
-Use this guide to integrate Flutter mobile apps with the [[concept-authsdk| {{config.extra.arcana.flutter_sdk_name}}]] and quickly build the following features:
+!!! note "Already using {{config.extra.arcana.product_name}}?"
+  
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-* Onboard users easily by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
-* Enable {{config.extra.arcana.wallet_name}} and allow authenticated users to sign blockchain transactions, manage crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
-
-## Overview
-
-Follow these steps to register, configure, integrate, and use the {{config.extra.arcana.flutter_sdk_name}} features such as onboarding users and allowing them to sign blockchain transactions in Web3 apps:
+Follow these steps to begin using the {{config.extra.arcana.product_name}} product:
 
 1. Use the {{config.extra.arcana.dashboard_name}} and register the app; obtain a unique **{{config.extra.arcana.app_address}}**.
-2. Set up social providers that will be enabled for onboarding app users.
-3. Install the {{config.extra.arcana.flutter_sdk_name}} and integrate the app to onboard users either via the built-in plug-and-play login UI or custom UI.
-4. Allow authenticated users to instantly access the {{config.extra.arcana.wallet_name}}.
+2. Set up [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) that will be enabled for onboarding app users.
+3. Install the SDK and integrate the app with the {{config.extra.arcana.flutter_sdk_name}}. Use the {{config.extra.arcana.app_address}} to create a new `AuthProvider` and use either the built-in plug-and-play login UI or custom UI to [[index-onboard-users|onboard users]].
+4. Allow authenticated users to instantly access the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}}]].
 5. Add code in the app for programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}.
+
+<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
 ## Register & Configure
 
-Before integrating an app with the {{config.extra.arcana.flutter_sdk_name}}, follow the instructions to [[configure-auth|register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.flutter_sdk_name}}.
+Before integrating an app with the {{config.extra.arcana.flutter_sdk_name}}, follow the instructions to [[configure-auth|register and then configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.flutter_sdk_name}}.
 
-During app configuration, developers can enable one or more options to onboard app users.
+During app configuration, developers can enable [[index-configure-auth|configure one or more authentication providers]]  to onboard app users.
 
-!!! info "User Onboarding Options"
+!!! info "Password-less Option"
 
-      Web3 app developers can [[index-configure-auth|configure one or more authentication providers]] to let app users choose one of the available options and log in.
-        
       If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
 
-## Integrate Flutter App
-
-Follow these steps to integrate the Flutter mobile app with the {{config.extra.arcana.flutter_sdk_name}}:
-
-### Step 1: Install Auth SDK
+## Install {{config.extra.arcana.flutter_sdk_name}}
 
 The {{config.extra.arcana.flutter_sdk_name}} is available at 'Pub.dev' as a [Flutter plugin](https://docs.flutter.dev/packages-and-plugins/developing-packages) package called [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter). 
 
@@ -47,9 +41,9 @@ Add the following line to the dependencies section in your app's `pubspec.yaml` 
 
 {% include "./code-snippets/auth_flutter_install.md" %}
 
-### Step 3: Integrate Auth with App
+## Integrate App
 
-As part of integrating an app with the {{config.extra.arcana.flutter_sdk_name}}, specify the unique **client ID** assigned to the registered app in the previous step when creating an `AuthProvider`.
+Once installed, integrate the app with the {{config.extra.arcana.flutter_sdk_name}}, specify the unique **client ID** assigned to the registered app in the previous step when creating an `AuthProvider`.
 
 ```javascript
 import 'package:arcana_sdk/arcana_sdk.dart';
@@ -60,7 +54,7 @@ auth.init(context: context);
 
 Once initialized, you can call the `AuthProvider` functions for onboarding users and signing blockchain transactions.
 
-### Step 4: Onboard Users
+### Onboard Users
 
 Add code in the app to onboard users when a user chooses to log in using one of the configured social providers or via OTP.  
 
@@ -114,7 +108,7 @@ auth.clearCache();
 
 Flutter app developers can also enable any of the supported Web3 operations in the Arcana Auth SDK once the users have authenticated. These web operations such as 'send transaction' could trigger blockchain transactions. A transaction notification will be displayed requesting the user to approve or reject the request.
 
-#### Web3 Operations
+### Sign Blockchain Transactions
 
 The `AuthProvider` supports the JSON-RPC requests for the following Web3 operations:
 
@@ -144,7 +138,7 @@ auth.getAccount().then((account) => ...);
 
 After integrating the Flutter mobile app with the {{config.extra.arcana.flutter_sdk_name}} and adding code to onboard users via configured providers such as 'Google' and calling Web3 wallet operation requests, developers can deploy the app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
 
-### Deploy App
+## Deploy App
 
 An app integrated with the {{config.extra.arcana.flutter_sdk_name}} can be deployed for use only **after** the developer has completed these steps:
 

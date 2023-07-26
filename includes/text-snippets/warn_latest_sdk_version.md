@@ -1,3 +1,3 @@
   **{{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} -> v{{config.extra.arcana.latest_version}}**:  Follow the instructions in the [[migration-guide-v{{config.extra.arcana.latest_version}}|Migration Guide]] and upgrade easily!
   
-    **Earlier {{config.extra.arcana.sdk_name}} versions < v{{config.extra.arcana.previous_version}}**: Note that there may be breaking changes that require you to reconfigure your app and also update the integration code. For more information, see archives for [[index-migration-guides|Migration Guides]] and [[index-release-notes|Release Notes]].
+    **{{config.extra.arcana.sdk_name}} version < v{{config.extra.arcana.previous_version}}**: Note that there may be breaking changes that require you to reconfigure your app and also update the integration code. For more information, see archives for [[index-migration-guides|Migration Guides]] and [[index-release-notes|Release Notes]].

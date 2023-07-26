@@ -8,9 +8,11 @@ arcana:
 
 # RainbowKit App: Custom Login UI
 
-[RainbowKit](https://www.rainbowkit.com/) works with [Wagmi](https://wagmi.sh/) wallet connector that allows Web3 app users to easily switch between multiple wallets within a single application. For Web3 apps using RainbowKit, the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Wagmi connector that can be used to enable the {{config.extra.arcana.wallet_name}} in the app's context.
+[RainbowKit](https://www.rainbowkit.com/) works with [Wagmi](https://wagmi.sh/) wallet connector that allows Web3 app users to easily switch between multiple wallets within a single application. RainbowKit apps can use the custom connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}} in the app's context.
 
 In this guide, you will learn how to onboard users in Web3 apps that use RainbowKit wallet connectors.  It shows how the developers can integrate apps with the {{config.extra.arcana.product_name}} SDKs and then use custom login UI to onboard users easily.
+
+In this guide, you will learn how to onboard users via a custom login UI in RainbowKit apps integrated with the {{config.extra.arcana.product_name}} SDK.
 
 ## Prerequisites
 
@@ -62,13 +64,13 @@ Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowC
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
-!!! tip "Wagmi `createClient`"
+!!! tip "Wagmi `createClient` and `configClient`"
 
-      For more details on the `createClient` function of the Wagmi package, see [wagmi Getting Started Guide](https://wagmi.sh/react/getting-started). Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
+      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and [Wagmi 1.x.y Migration Guide](https://wagmi.sh/react/migration-guide). Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
 
 ### Step 3: RainbowKit Context Provider
 
-Finally, pass the `wagmiClient` created earlier as a parameter to the `WagmiConfig` component in the `_app.js` file.
+Finally, pass the `wagmiClient` created earlier as a parameter to the `WagmiConfig` component in the `App.js` file.
 
 {% include "./code-snippets/auth_rainbow_use.md" %}
 
