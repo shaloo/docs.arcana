@@ -107,7 +107,7 @@ Row(
 
 Once a user authenticates, the built-in {{config.extra.arcana.wallet_name}} is displayed in the app's context and can be used for signing blockchain transactions. See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for more Web3 wallet operation details.
 
-<img class="an-screenshots" alt="AuthProvider Flutter app Login" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
+<img alt="AuthProvider Flutter app Login" src="/img/auth_ex_flutter_ios.gif" width="25%"/>
 
 ### Use Web3 Wallet Operations
 
