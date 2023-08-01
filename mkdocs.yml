@@ -24,11 +24,11 @@ nav:
     - Quick Start: 
       - quick-start/index.md
       - Web Apps: quick-start/web-apps-quick-start.md
-      - Unity Apps: quick-start/unity-quick-start.md
       - Mobile: 
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
+      - Unity Apps: quick-start/unity-quick-start.md
       - Auth-Core: quick-start/auth-core-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
   - Getting Started:
@@ -203,6 +203,8 @@ nav:
         - Mobile:
           - Flutter App: tutorials/code-samples/mobile/flutter-sample.md
           - React-Native App: tutorials/code-samples/mobile/react-native-sample.md
+        - Gaming:
+          - Unity App: tutorials/code-samples/gaming/unity-sample.md
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
