@@ -10,26 +10,18 @@ arcana:
 
 {% include "./text-snippets/warn_early_preview_rel.md" %}
 
-This guide shows how to integrate Unity based Web3 apps with the [[concept-authsdk| {{config.extra.arcana.gaming_sdk_name}}]] to:
-
-* Onboard users easily via one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) configured using the {{config.extra.arcana.dashboard_name}}.
-* Enable {{config.extra.arcana.wallet_name}} and allow authenticated users to sign blockchain transactions, manage crypto assets, and [more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md).
-
-## Overview
-
-Unity app developers can use the {{config.extra.arcana.gaming_sdk_name}} for onboarding users and allowing them to sign blockchain transactions. Follow these general steps:
-
-**Register & Configure**
-
-* Use the {{config.extra.arcana.dashboard_name}} to register the app; obtain a unique **{{config.extra.arcana.app_address}}**.
-* Configure social providers for onboarding app users and other {{config.extra.arcana.gaming_sdk_name}} usage settings via the dashboard.
-
-**Integrate Unity App**
-
-* Set up the {{config.extra.arcana.gaming_sdk_name}}, other dependencies and then integrate the app and call appropriate functions to onboard users.
-* Add code in the app for programmatically enabling authenticated users to access Web3 wallet operations supported by the built-in {{config.extra.arcana.wallet_name}} UI or add a custom wallet UI.
-
 The latest {{config.extra.arcana.gaming_sdk_name}} version is: {{config.extra.arcana.latest_auth_unity_sdk_version}}. 
+
+Follow these steps to begin using the {{config.extra.arcana.product_name}} product:
+
+1. Use the {{config.extra.arcana.dashboard_name}} and register the app; obtain a unique **{{config.extra.arcana.app_address}}**.
+2. Set up [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) that will be enabled for onboarding app users.
+3. Install the SDK and integrate the app with the {{config.extra.arcana.sdk_name}}. Use the {{config.extra.arcana.app_address}} to create a new `AuthProvider` and use either the built-in plug-and-play login UI or custom UI to [[index-onboard-users|onboard users]].
+4. Allow authenticated users to instantly access the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}}]].
+5. Add code in the app for programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}.
+
+<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
 ## Register & Configure
 
