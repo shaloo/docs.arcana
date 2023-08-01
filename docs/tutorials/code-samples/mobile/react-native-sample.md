@@ -78,7 +78,7 @@ Next, add code to onboard users. In this example, we use the custom login UI opt
 
 Once a user authenticates, the built-in {{config.extra.arcana.wallet_name}} is displayed in the app's context and can be used for signing blockchain transactions. See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for more Web3 wallet operation details.
 
-<img class="an-screenshots" alt="AuthProvider React-Native app Login" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
+<img alt="AuthProvider React-Native app Login" src="/img/react_native_app_login.png" width="30%"/>
 
 ### Use Web3 Wallet Operations
 
