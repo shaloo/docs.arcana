@@ -30,11 +30,11 @@ arcana:
 
     [[react-native-code-sample|React-Native :fontawesome-brands-react:]]{ .md-button }
 
-<!---
-
 === "Gaming"
 
-    TBD Mobile stuff
+   [[unity-code-sample| Unity :simple-unity:]]{ .md-button }
+
+<!---
 
 === "Whitelabeled Auth"
 
