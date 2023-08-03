@@ -36,6 +36,16 @@ Use the defaults or provide inputs for various settings as per your application 
 
           {% include "./text-snippets/warn_global_keys_no_social_clientid_setup.md" %}
 
+=== "Gasless"
+
+    Use the 'Gasless' section to set up gasless transactions for app users.  Developers must configure gas tanks, ensure the gas tanks have sufficient crypto assets to fund the app user's transactions and also whitelist one or more app operations for gasless payment options.  Only the whitelisted operations will be funded via the gas tank. For all the others, gas fees will have to be paid by individual users. 
+
+    Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
+
+    <img src="/img/ph_gastank1.png" alt="Set up Gas Tanks" class="an-screenshots"/>
+
+     For details, see [[configure-gasless|how to configure gasless operations]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
+
 === "Chain Management"
 
     Use the chain management section to specify the subset of chains from the list of supported blockchains that are configured for the {{config.extra.arcana.wallet_name}} out of the box. This specified subset will be displayed in the {{config.extra.arcana.wallet_name}} UI when a user logs into an app that is integrated with the {{config.extra.arcana.sdk_name}}. Developers can also specify which chain will be the default and show up in the wallet 'Network' dropdown list on the top.
