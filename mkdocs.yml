@@ -130,6 +130,7 @@ nav:
                 - Cognito: howto/onboard-users/vue/custom-ui/build-idm/cognito-oauth.md
                 - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
       - Wallet Ops:
+        - wallet-ops/index.md
         - Enable Arcana Wallet:
           - howto/arcana-wallet/index.md
           - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
