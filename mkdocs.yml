@@ -33,8 +33,8 @@ nav:
       - howto/index.md
       - Register App: howto/configure-auth.md
       - Configure Auth: 
-        - howto/configure-auth/index.md
-        - Manage Chains: howto/configure-auth/config-wallet-chains.md
+        - howto/config-auth/index.md
+        - Manage Chains: howto/config-auth/config-wallet-chains.md
         - Social Providers: 
           - howto/config-social/index.md
           - Discord Setup: howto/config-social/discord-oauth.md
@@ -492,7 +492,7 @@ plugins:
         'howto/wallet_manage_nft.md': 'howto/use-wallet-to-manage-nfts.md'
         'howto/deploy_app.md': 'howto/deploy-app.md'
         'howto/config_dapp.md': 'howto/configure-auth.md'
-        'howto/config_auth/index.md': 'howto/configure-auth/index.md'
+        'howto/config_auth/index.md': 'howto/config-auth/index.md'
         'howto/config_idm/index.md': 'howto/config-idm/index.md'
         'howto/config_idm/cognito_oauth.md': 'howto/config-idm/cognito-oauth.md'
         'howto/plug_idm/index.md': 'howto/onboard-users/vanilla/custom-ui/build-idm/index.md'
