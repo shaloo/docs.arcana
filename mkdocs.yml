@@ -430,6 +430,13 @@ markdown_extensions:
       generic: true
   - tables
 
+validation:
+  nav:
+      omitted_files: warn
+      absolute_links: warn
+  absolute_links: ignore
+  unrecognized_links: warn
+
 extra_javascript:
   - javascripts/mathjax.js
   # - javascripts/andropdown.js
