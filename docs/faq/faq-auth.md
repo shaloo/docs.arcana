@@ -58,6 +58,10 @@ toc_depth: 2
 
       Developers can use the `canReconnect` and `reconnect` [functions of the `AuthProvider`](https://authsdk-ref-guide.netlify.app/classes/authprovider) to check before allowing users to reconnect whereby users do not need to re-login if they refresh the page or close the tab and re-open it again within a 30-minute window.
 
+??? an-faq "Does {{config.extra.arcana.sdk_name}} return a JWT token to verify users post social login?"
+
+      Yes. See [[concept-index-auth-type|Arcana JWT Token]] for details.
+
 ## {{config.extra.arcana.wallet_name}}
 
 ---

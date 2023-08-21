@@ -348,7 +348,8 @@ extra:
             Thanks for your feedback! 
 
 copyright: Copyright &copy; 2022 - 2023 Arcana Network
-repo_url: https://github.com/arcana-network/
+repo_url: https://github.com/arcana-network/auth
+repo_name: arcana-network/auth
 edit_uri: ""
 
 theme:
