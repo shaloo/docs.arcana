@@ -16,4 +16,4 @@ By default, the {{config.extra.arcana.sdk_name}} displays the built-in, embedded
 
 [[index-arcana-wallet| Enable {{config.extra.arcana.wallet_name}} UI :material-wallet-plus-outline:]]{ .md-button }
 
-[[custom-wallet-ui| Custom wallet UI :fontawesome-solid-gear:]]{ .md-button }
+[[custom-wallet-ui| Custom wallet UI :fontawesome-solid-gears:]]{ .md-button }
