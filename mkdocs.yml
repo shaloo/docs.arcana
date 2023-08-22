@@ -34,8 +34,8 @@ nav:
       - howto/index.md
       - Register App: howto/configure-auth.md
       - Configure Auth: 
-        - howto/configure-auth/index.md
-        - Manage Chains: howto/configure-auth/config-wallet-chains.md
+        - howto/config-auth/index.md
+        - Manage Chains: howto/config-auth/config-wallet-chains.md
         - Social Providers: 
           - howto/config-social/index.md
           - Discord Setup: howto/config-social/discord-oauth.md
@@ -353,14 +353,17 @@ extra:
             Thanks for your feedback! 
 
 copyright: Copyright &copy; 2022 - 2023 Arcana Network
-repo_url: https://github.com/arcana-network/
-edit_uri: ""
+repo_url: https://github.com/arcana-network/auth
+repo_name: arcana-network/auth
+edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
 theme:
   name: material
   logo: img/arcana-logo-white.svg
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/brands/git-alt
+    edit: material/pencil 
+    view: material/eye
   favicon: img/favicon.png
   custom_dir: docs/overrides
   features: 
@@ -431,6 +434,16 @@ markdown_extensions:
       generic: true
   - tables
 
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: ignore
+    unrecognized_links: info
+
 extra_javascript:
   - javascripts/mathjax.js
   # - javascripts/andropdown.js
@@ -497,7 +510,7 @@ plugins:
         'howto/wallet_manage_nft.md': 'howto/use-wallet-to-manage-nfts.md'
         'howto/deploy_app.md': 'howto/deploy-app.md'
         'howto/config_dapp.md': 'howto/configure-auth.md'
-        'howto/config_auth/index.md': 'howto/configure-auth/index.md'
+        'howto/config_auth/index.md': 'howto/config-auth/index.md'
         'howto/config_idm/index.md': 'howto/config-idm/index.md'
         'howto/config_idm/cognito_oauth.md': 'howto/config-idm/cognito-oauth.md'
         'howto/plug_idm/index.md': 'howto/onboard-users/vanilla/custom-ui/build-idm/index.md'

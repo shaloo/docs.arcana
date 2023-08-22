@@ -16,6 +16,14 @@ The {{config.extra.arcana.sdk_name}} supports the following authentication mecha
 
 [Passwordless Login :material-card-account-mail:](./pwdless.md){ .md-button }
 
+[[concept-plug-and-play-auth|Plug-and-Play Login UI :material-power-plug:]]{ .md-button }
+
+[[concept-index-custom-auth|Custom Login UI :material-draw-pen:]]{ .md-button }
+
+!!! info "Arcana JWT Token"
+
+     {% include "./text-snippets/jwt_token.md" %}
+
 <!--
 !!! info  "Aggregate Logins"
 

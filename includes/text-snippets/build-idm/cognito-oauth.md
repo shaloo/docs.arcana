@@ -44,6 +44,10 @@ Your app is all set for authenticating users via AWS Cognito. Authenticated user
 
 {% include "./text-snippets/aggrlogin-nocognito-support.md" %}
 
+!!! tip "Arcana JWT Token"
+
+     {% include "./text-snippets/jwt_token.md" %}
+     
 ## What's Next?
 
 To know more about how to use Web3 wallet operations programmatically in your app, see [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]]. Refer to the [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User's Guide]] for more information on how authenticated app users can access the wallet UI.

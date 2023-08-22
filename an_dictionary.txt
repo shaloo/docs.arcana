@@ -168,6 +168,7 @@ EIP-3085
 EIP-3326
 EIP-712
 EIP-747
+EIP1559
 ERC-1155
 ERC-20
 ERC-2771
@@ -215,6 +216,7 @@ IoTeX
 JS
 JSON
 JSON-RPC
+JWT
 JavaScriptOriginText
 Jira
 KMS
@@ -434,6 +436,7 @@ VSS
 Validator
 Validators
 VerifyURLText
+Viem
 Vite
 Vn
 Vue
@@ -1189,6 +1192,7 @@ v1.0.3
 v1.0.4
 v1.0.5
 v1.0.6
+v1.0.7
 v2
 validator
 validator_nodes
