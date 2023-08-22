@@ -8,9 +8,9 @@ arcana:
 
 # Developer Resources
 
-[[rn-main-auth-v1.0.7|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
+[[rn-main-auth-v1.0.8|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
 
-[[migration-guide-v1.0.7| SDK Migration :material-arrow-up:]]{ .md-button }
+[[migration-guide-v1.0.8| SDK Migration :material-arrow-up:]]{ .md-button }
 
 [[migrate-app-testnet-mainnet| Testnet > Mainnet :material-elevation-rise:]]{ .md-button }
 
