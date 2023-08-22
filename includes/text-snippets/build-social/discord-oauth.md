@@ -34,7 +34,11 @@ Add code in the app to log out an authenticated user:
 
 **That is all!**  :material-party-popper:
 
-The Web3 app is all set for onboarding users via Discord. 
+The Web3 app is all set for onboarding users via Discord.
+
+!!! tip "Arcana JWT Token"
+
+     {% include "./text-snippets/jwt_token.md" %}
 
 ## What's Next?
 

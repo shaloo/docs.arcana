@@ -127,7 +127,7 @@ The Arcana wallet supports various Web3 operations via JSON-RPC calls and EIP-11
 // For getting logged in user info
 const getUserInfo = async () => {
   if(authRef !== null){
-    return authRef.current.getUserInfo();
+    return authRef.current.getUser();
   }
 };
 
