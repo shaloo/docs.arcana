@@ -121,7 +121,7 @@ auth.request(method: "...", params: [...]).then(() => ...);
 Get information for the logged-in user:
 
 ```js
-auth.getUserInfo().then((UserInfo info) => ...);
+auth.getUser().then((UserInfo info) => ...);
 ```
 
 Initiate send transaction request:

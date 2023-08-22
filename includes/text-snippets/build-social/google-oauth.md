@@ -36,6 +36,10 @@ Add code in the app to log out an authenticated user:
 
 The Web3 app is all set for onboarding users via Google. 
 
+!!! tip "Arcana JWT Token"
+
+     {% include "./text-snippets/jwt_token.md" %}
+     
 ## What's Next?
 
 After onboarding app users via Google, you can allow authenticated users to access the {{config.extra.arcana.wallet_name}} for signing blockchain transactions on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]. Plug in other {{config.extra.arcana.sdk_name}} functions in the app code such as getting the authenticated user's account details, performing Web3 wallet operations, etc. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.

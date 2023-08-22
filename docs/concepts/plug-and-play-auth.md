@@ -13,3 +13,7 @@ In the earlier releases of the {{config.extra.arcana.sdk_name}}, the app develop
 The latest {{config.extra.arcana.sdk_name}} supports a new "plug-and-play" feature that provides a built-in, ready-to-use login UI that does not require the developer to add custom UI code. Developers can simply use the [`connect`](https://authsdk-ref-guide.netlify.app/classes/authprovider#connect) function to bring up a default, built-in, pop-up user interface that displays all the [[configure-auth|user onboarding options configured by the application developer]] using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Once the user selects a login option and authenticates successfully, the pop-up UI disappears from the application context and the {{config.extra.arcana.wallet_name}} UI shows up allowing the authenticated user to sign blockchain transactions.
 
 The application developer can choose the new `connect` function to enable plug-and-play UI for user onboarding. Or they can continue to use the `loginWithSocial` and `loginWithLink` functions and build a custom user interface to onboard app users.
+
+!!! tip "Arcana JWT Token"
+
+     {% include "./text-snippets/jwt_token.md" %}
