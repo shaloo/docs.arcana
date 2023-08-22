@@ -143,7 +143,7 @@ const auth = await AuthProvider.init({
 const login = async () => {
 const arcanaProvider = await auth.loginWithSocial(SocialLoginType.google);
 if (auth.isLoggedIn()) {
-    const info = await auth.getUserInfo();
+    const info = await auth.getUser();
 }
 };
 
