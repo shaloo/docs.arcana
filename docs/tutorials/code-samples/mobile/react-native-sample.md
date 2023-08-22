@@ -50,7 +50,7 @@ import Auth from "@arcana/auth-react-native";
         <Button title="Get balance" onPress={getBalance} />
         <Button title="Send transaction" onPress={sendTx} />
 
-        <Button title="Get User Info" onPress={getUserInfo} />
+        <Button title="Get User Info" onPress={getUser} />
         <Button title="Get Account" onPress={getAccount} />
         <Button title="Show wallet" onPress={show} />
         <Button title="Logout" onPress={logout} />

@@ -352,14 +352,17 @@ extra:
             Thanks for your feedback! 
 
 copyright: Copyright &copy; 2022 - 2023 Arcana Network
-repo_url: https://github.com/arcana-network/
-edit_uri: ""
+repo_url: https://github.com/arcana-network/auth
+repo_name: arcana-network/auth
+edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
 theme:
   name: material
   logo: img/arcana-logo-white.svg
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/brands/git-alt
+    edit: material/pencil 
+    view: material/eye
   favicon: img/favicon.png
   custom_dir: docs/overrides
   features: 
@@ -432,10 +435,13 @@ markdown_extensions:
 
 validation:
   nav:
-      omitted_files: warn
-      absolute_links: warn
-  absolute_links: ignore
-  unrecognized_links: warn
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: ignore
+    unrecognized_links: info
 
 extra_javascript:
   - javascripts/mathjax.js
