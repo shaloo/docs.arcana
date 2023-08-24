@@ -10,8 +10,8 @@ arcana:
 
 Upon successful authentication, {{config.extra.arcana.sdk_name}} returns a unique JWT token to the app. This token is generated upon successful authentication via any of the supported methods of the `AuthProvider`:
 
-    * Plug-and-play login `connect()` 
-    * Custom login UI methods such as `loginWithSocial()`, `loginWithLink()` and `loginWithBearer()`
+* Plug-and-play login `connect()` 
+* Custom login UI methods such as `loginWithSocial()`, `loginWithLink()` and `loginWithBearer()`
 
 The Arcana JWT token is generated with an asymmetric key so the app developers need to use the public key in order to verify the token after a successful user login in the app. Use the appropriate public key listed below to verify the token depending upon whether the app is deployed on the Arcana Testnet or Mainnet.
 
