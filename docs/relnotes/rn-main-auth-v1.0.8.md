@@ -36,13 +36,13 @@ This is a minor release with enhancements and bug fixes only.
 
 **Arcana JWT Token**
 
-The {{config.extra.arcana.sdk_name}} now returns an [[concept-index-auth-type|Arcana JWT Token]] to the app after successful user login.
+The {{config.extra.arcana.sdk_name}} now returns an [[concept-arcana-jwt-token|Arcana JWT Token]] to the app after successful user login.
 
 **Compact Login UI**
 
-Developers can choose to select a more compact built-in login UI modal that displays all the available, configured login mechanisms for the user to choose from. Use `compactConnectMode: true` while creating a new `AuthProvider` as shown in the code snippet below:
+Developers can choose to select a more compact built-in login UI modal that displays all the available, configured login mechanisms for the user to choose from. Set `compact: true` as the `connectOptions` while creating a new `AuthProvider` as shown in the code snippet below:
 
-```js hl_lines="13"
+```js hl_lines="13-15"
 import { AuthProvider, CHAIN } from '@arcana/auth'
 
 interface ChainConfig {
@@ -55,7 +55,9 @@ const auth = new AuthProvider(`${clientId}`, {
   theme: 'light',          // default - dark
   alwaysVisible: false,    // default - true
   setWindowProvider: true, // default - false
-  compactConnectMode: true // default - false
+  connectOptions: {
+    compact: true // default - false
+  },
   chainConfig: {
     chainId: CHAIN.POLYGON_MAINNET,
     rpcUrl: '',
@@ -65,7 +67,9 @@ const auth = new AuthProvider(`${clientId}`, {
 await auth.init()
 ```
 
-<img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="75%"/>
+<img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="85%"/>
+
+For more details, see [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
 
 ### Bug Fixes
 
