@@ -530,6 +530,7 @@ build-iam-steam-auth
 build-password-less-auth
 bundlers
 byok
+cairo
 cancelled
 cardIcon
 chainID
@@ -695,6 +696,7 @@ fontawesome-solid-coins
 fontawesome-solid-desktop
 fontawesome-solid-file-contract
 fontawesome-solid-file-signature
+fontawesome-solid-gears
 fontawesome-solid-magnifying-glass-dollar
 fontawesome-solid-mobile-screen
 fontawesome-solid-money-check-dollar
@@ -1193,6 +1195,7 @@ v1.0.4
 v1.0.5
 v1.0.6
 v1.0.7
+v1.0.8
 v2
 validator
 validator_nodes

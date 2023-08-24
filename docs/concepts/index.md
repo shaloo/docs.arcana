@@ -30,6 +30,8 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[concept-gateway-node|Gateway :fontawesome-solid-torii-gate:]]{ .md-button }
 
+[[concept-arcana-jwt-token|Arcana JWT Token :material-key:]]{ .md-button}
+
 [[concept-manage-chains|Manage Chains :material-list-box:]]{ .md-button}
 
 [[concept-mfa|MFA :material-two-factor-authentication:]]{ .md-button }
@@ -43,5 +45,7 @@ These are the building blocks to help you learn about various {{config.extra.arc
 [[concept-usage-metrics|Usage Metrics :material-monitor-eye:]]{ .md-button }
 
 [[concept-validator-nodes|Validator Nodes :material-checkbox-multiple-marked-circle-outline:]]{ .md-button }
+
+[[concept-jwt-token-validation|Verify Arcana JWT Token :material-key:]]{ .md-button}
 
 [[concept-white-labeled-auth|White-labeled Auth :flag_white:]]{ .md-button }
