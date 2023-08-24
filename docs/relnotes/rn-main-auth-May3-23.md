@@ -1,7 +1,7 @@
 ---
 alias: index-may3-23-release-note
 title: 'Arcana Auth: Release Notes'
-description: 'Arcana Auth Release Notes (Latest)'
+description: 'Arcana Auth Release Notes May 3rd, 23 Release'
 arcana:
   root_rel_path: ..
 ---

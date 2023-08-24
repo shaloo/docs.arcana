@@ -1,7 +1,7 @@
 ---
-alias: rn-main-auth-v1.0.7
+alias: rn-main-auth-v1.0.8
 title: 'Arcana Auth: Release Notes'
-description: 'Arcana Auth Release Notes (v1.0.7)'
+description: 'Arcana Auth Release Notes (v1.0.8 Latest)'
 arcana:
   root_rel_path: ..
 ---
@@ -10,7 +10,7 @@ arcana:
 
 {==
 
-**Release Date: August 8, 2023**  
+**Release Date: August 23, 2023**  
 
 The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
 
@@ -19,6 +19,8 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
       - [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
       - [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
       - [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+      - [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
+      - [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native)
 
 * [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network/)
 
@@ -30,14 +32,50 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 This is a minor release with enhancements and bug fixes only.
 
-* Enhancements
-    - Improved Gas Fees Estimation
-    - Better error handling
+### Enhancements
 
-* Bug Fixes
-    - Gas Fees were not displayed correctly in the {{config.extra.arcana.wallet_name}} UI
-    - EIP1559 related fixes
-    - MFA restore bug fix in the {{config.extra.arcana.wallet_name}}
+**Arcana JWT Token**
+
+The {{config.extra.arcana.sdk_name}} now returns an [[concept-arcana-jwt-token|Arcana JWT Token]] to the app after successful user login.
+
+**Compact Login UI**
+
+Developers can choose to select a more compact built-in login UI modal that displays all the available, configured login mechanisms for the user to choose from. Set `compact: true` as the `connectOptions` while creating a new `AuthProvider` as shown in the code snippet below:
+
+```js hl_lines="13-15"
+import { AuthProvider, CHAIN } from '@arcana/auth'
+
+interface ChainConfig {
+  chainId: CHAIN
+  rpcUrl?: string
+}
+
+const auth = new AuthProvider(`${clientId}`, {
+  position: 'left',        // default - right
+  theme: 'light',          // default - dark
+  alwaysVisible: false,    // default - true
+  setWindowProvider: true, // default - false
+  connectOptions: {
+    compact: true // default - false
+  },
+  chainConfig: {
+    chainId: CHAIN.POLYGON_MAINNET,
+    rpcUrl: '',
+  },
+})
+
+await auth.init()
+```
+
+<img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="85%"/>
+
+For more details, see [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
+
+### Bug Fixes
+
+**Email Validation**
+
+The email entered by the user in the built-in login UI modal is now validated before initiating a user log in.
 
 ---
 
