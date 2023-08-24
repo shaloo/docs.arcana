@@ -169,6 +169,7 @@ nav:
         - archives/index.md
         - Release Notes:
           - relnotes/archives/index.md
+          - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
           - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
           - Auth 1.0.5 : relnotes/rn-main-auth-v1.0.5.md
           - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
@@ -180,6 +181,8 @@ nav:
           - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
         - SDK Migration:
           - migration/archives/index.md
+          - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
+          - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
           - v1.0.5 -> v1.0.6: migration/main-auth-v1.0.6-migration.md
           - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md                  
           - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
@@ -276,6 +279,7 @@ nav:
           - How does ADKG work?: concepts/how-adkg-works.md
         - Gasless Accounts: concepts/gasless-ops.md
         - Gateway: concepts/gateway-node.md
+        - JWT Token: concepts/an_jwt_token.md
         - Manage Chains: concepts/manage-chains.md
         - MFA: concepts/mfa.md
         - Plug and Play Auth: concepts/plug-and-play-auth.md
@@ -283,6 +287,7 @@ nav:
         - Key Space Type: concepts/keyspace-types.md
         - Usage Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
+        - Verify JWT Token: concepts/jwt_token_validation.md
         - Whitelabeled Auth: concepts/white-labeled-auth.md
       - Usage Flows: 
         - user-flows/index.md
