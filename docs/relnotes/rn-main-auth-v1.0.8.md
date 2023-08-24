@@ -36,7 +36,7 @@ This is a minor release with enhancements and bug fixes only.
 
 **Arcana JWT Token**
 
-The {{config.extra.arcana.sdk_name}} now returns an [[concept-index-auth-type|Arcana JWT Token]] to the app after successful user login.
+The {{config.extra.arcana.sdk_name}} now returns an [[cconcept-arcana-jwt-token|Arcana JWT Token]] to the app after successful user login.
 
 **Compact Login UI**
 
