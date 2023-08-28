@@ -24,6 +24,8 @@ arcana:
 
 [[index-onboard-users|4. Onboard Users :fontawesome-solid-user-lock:]]{ .md-button }
 
-[[index-arcana-wallet|5. Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+[[handle-provider-events|5. Handle Events :material-bell-cog:]]{ .md-button }
 
-[[deploy-app|6. Deploy App :simple-hive_blockchain:]]{ .md-button }
+[[index-arcana-wallet|6. Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+
+[[deploy-app|7. Deploy App :simple-hive_blockchain:]]{ .md-button }
