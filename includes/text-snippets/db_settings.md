@@ -38,13 +38,13 @@ Use the defaults or provide inputs for various settings as per your application 
 
 === "Gasless"
 
-    Use the 'Gasless' section to set up gasless transactions for app users.  Developers must configure gas tanks, ensure the gas tanks have sufficient crypto assets to fund the app user's transactions and also whitelist one or more app operations for gasless payment options.  Only the whitelisted operations will be funded via the gas tank. For all the others, gas fees will have to be paid by individual users. 
+    Use the 'Gasless' section to configure [[concept-gasless-transactions|gasless transactions]] for app users.  Developers must explicitly set up paymasters through the gas tanks, and ensure the gas tanks have sufficient crypto assets to fund the app user's transactions. Also, developers must whitelist one or more app operations for gasless transactions.  Only the gas fees for the whitelisted operations will be paid via the gas tank as long as there is sufficient credit in the gas tank. For all the non-whitelisted app operations, or if the gas tank runs out, the transaction gas fees will have to be paid by the individual user via the user's wallet account associated with the app. 
 
-    Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
+    Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-user-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
 
-    <img src="/img/ph_gastank1.png" alt="Set up Gas Tanks" class="an-screenshots"/>
+    <img src="/img/an_gl_db_new_config.png" alt="Set up Gas Tanks" class="an-screenshots"/>
 
-     For details, see [[configure-gasless|how to configure gasless operations]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
+     For details, see [[configure-gasless|how to configure gasless transactions]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
 
 === "Chain Management"
 
