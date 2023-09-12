@@ -1,48 +1,34 @@
 ---
-alias: concept-wallet-visibility
-title: 'Wallet Visibility'
-description: 'Is the wallet always visible in the app context or can it be displayed only when required by the app? learn more.'
+alias: concept-wallet-uimodes
+title: 'Wallet UI Modes'
+description: 'Arcana Auth SDK allows Web3 apps devs to either choose the built-in Arcana Wallet UI or build their own custom wallet UI. The Wallet UI Mode setting allows developers to choose custom or Arcana Wallet UI.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Wallet Visibility
+# Wallet UI Modes
 
-The [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}] is an embedded, non-custodial Web3 wallet that is enabled for every user that logs into an app integrated with the {{config.extra.arcana.sdk_name}}. App developers can manage the wallet user experience by controlling the wallet's visibility in the app context.
+The [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}] is an embedded, non-custodial Web3 wallet that is enabled for every user that logs into an app integrated with the {{config.extra.arcana.sdk_name}}. App developers can manage the wallet user experience by choosing the built-in {{config.extra.arcana.wallet_name}} UI or building their own custom wallet UI and enabling the authenticated users to sign blockchain transactions with the configured wallet UI.
 
-To manage the {{config.extra.arcana.wallet_name}} visibility, the applications must [[index-integrate-app|integrate with the {{config.extra.arcana.sdk_name}}]], specify the appropriate `alwaysVisible` input parameter while instantiating the `AuthProvider`, and choose one of the wallet visibility modes:
+## Built-in {{config.extra.arcana.wallet_name}} UI
 
-* **Always visible mode**: Visible once the user logs into an app
-* **Not always visible mode**: Visible only when a user is logged into an app and a blockchain transaction requires the user's approval
+To use the built-in {{config.extra.arcana.wallet_name}} UI, developers can keep the default 'Arcana Wallet UI' setting while creating a new app using the {{config.extra.arcana.dashboard_name}}. This is a one-time setting and cannot be reverted once the app is registered with the {{config.extra.arcana.company_name}}, configured and deployed on the Testnet or the Mainnet.
 
-## `alwaysVisible=true`
+## Custom Wallet UI
 
-By default, `alwaysVisible` is set to `true` and the wallet is displayed immediately after a user logs into the app that is integrated with the {{config.extra.arcana.sdk_name}}.
+To use a custom wallet UI, developers must choose the 'Custom UI' setting whiel creating a new app using the {{config.extra.arcana.dashboard_name}}. This is a one-time setting and cannot be reverted once the app is registered with the {{config.extra.arcana.company_name}}, configured and deployed on the Testnet or the Mainnet.
 
-As the wallet is always visible in the context of the app, an authenticated user has full access to all the Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}. For example, checking the wallet account balance, adding or switching blockchain networks, and sending/receiving native/custom tokens. Users can choose to minimize/maximize the {{config.extra.arcana.wallet_name}} UI displayed on the application screen.
+!!! caution "AuthProvider: `appMode` and `alwaysVisible` flags"
 
-<img alt="wallet alwaysVisible true mode" src="/img/an_wallet_full_ui_mode.png" width="85%"></img>
+     Developers can control two key aspects of the user experience related to the wallet. 
 
-## `alwaysVisible=false`
+     * Whether the user experiences the {{config.extra.arcana.wallet_name}} UI or a custom wallet UI
+     * Whether the logged-in user can see the wallet at all times in the app context or only when a blockchain transaction is triggered.
 
-If `alwaysVisible` is set to `false`, then the {{config.extra.arcana.wallet_name}} UI does not show up on the application window immediately after a user logs in. The {{config.extra.arcana.wallet_name}} UI is displayed only when a blockchain transaction is triggered that requires the user's approval.
+     These user experiences are managed by the `appMode` and the `alwaysVisible` flags in the `AuthProvider` constructor.
 
-Once the user takes action, the request disappears and the user cannot access the {{config.extra.arcana.wallet_name}} UI until another blockchain transaction is triggered.  Unlike the always visible mode, authenticated app users **cannot** access the {{config.extra.arcana.wallet_name}} UI on demand and add or switch networks, view the account balance or initiate send/receive of native/custom tokens, or maximize/minimize the {{config.extra.arcana.wallet_name}}.
+     **appMode:**  This can only be set via the dashboard **Wallet UI Mode** setting that is configured at the time of creating a new app entry and registering the app. It is used to choose a custom wallet UI or the {{config.extra.arcana.wallet_name}} UI experience for the app users. The `appMode` flag is ignored when the {{config.extra.arcana.wallet_name}} UI is selected via the **Wallet UI Mode** setting in the dashboard.
+     
+     **alwaysVisible:** If the developer chooses to use the built-in {{config.extra.arcana.wallet_name}} UI via the **Wallet UI Mode** setting in the dashboard while creating and registering the app, then the `alwaysVisible` flag can be used to manage when the {{config.extra.arcana.wallet_name}} UI is visible in the app's context. By default, it is set to true so the {{config.extra.arcana.wallet_name}} UI is always visible in the app's context as a minimized widget. When set to `false`, the {{config.extra.arcana.wallet_name}} UI shows up only when a blockchain transaction is triggered or if the developer calls `showWallet` method of the `AuthProvider`. The `alwaysVisible` flag is ignored when custom UI is selected via the **Wallet UI Mode** setting in the dashboard.
 
-<img alt="wallet widget mode" src="/img/an_wallet_widget_mode.png" width="85%"></img>
-
-## Summary
-
-The table below summarizes how `alwaysVisible` parameter specified during the `AuthProvider` initialization in the application code controls the user experience. For step-by-step instructions see [[configure-wallet-visibility|how to configure the {{config.extra.arcana.wallet_name}} visibility mode]] guide.
-
-| Wallet UI Mode | Flag | User Experience|
-| :------ | :----- | :----------- |
-| **Always visible** | `alwaysVisible = true` <br></br>(default)  | 1. {{config.extra.arcana.wallet_name}}is always visible on the application screen. |
-|         |  | 2. Users can minimize the {{config.extra.arcana.wallet_name}} and it shows as a small widget on the application screen. |
-|         |  | 3. Users can access any of the supported [[concept-wallet-features| {{config.extra.arcana.wallet_name}} features]] using the wallet UI at any point in time. |
-|         |  | 4. When a user action triggers a blockchain transaction, a transaction notification is displayed, and the user can approve or reject the request or ignore it. If a user ignores the request, it is highlighted as a pending request. In the wallet minimized state, a red dot is shown to indicated a pending request. User can click on the wallet minimized state to bring up the wallet and act upon the notification. In the maximized wallet state, a red dot is displayed on the notification tab of the wallet indicating a pending transaction notification. Other transaction notifications queue up until the user takes action on the first one.|
-| **Not always visible** | `alwaysVisible = false` | 1. {{config.extra.arcana.wallet_name}} is not visible in the app context by default. It is displayed only when a user action triggers a blockchain transaction or if the developer calls `showWallet()` function in the app logic. A blockchain transaction triggers notification. Once the user takes an action, the notification disappears.|
-|       |  | 2. Users cannot minimize the {{config.extra.arcana.wallet_name}} if this mode is selected by the application.|
-|       |  | 3. Users cannot access any of the supported [{{config.extra.arcana.wallet_name}} features]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletfeatures.md) through the wallet UI.|
-|       |  | 4. When a user action triggers a blockchain transaction, the {{config.extra.arcana.wallet_name}} transaction notification pops up. It disappears after the user takes an action. If there are other blockchain transactions that show up while the user has not reviewed the current request, those will stay hidden and queue up. After the user action for the first action, subsequent transaction notifications will be displayed one by one for the other pending notifications.  For multiple blockchain transactions, the user will see a series of pop-ups, and then after a user action, those will disappear. In this mode, there is no way for the user to ignore the transaction notification or access the {{config.extra.arcana.wallet_name}} to perform other Web3 wallet operations before first acting upon the transaction notifications.|
-
+      
