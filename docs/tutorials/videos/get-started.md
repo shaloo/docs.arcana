@@ -61,7 +61,7 @@ Check out this video to see the {{config.extra.arcana.wallet_name}} in action wh
 
 The {{config.extra.arcana.sdk_name}} enables the embedded, non-custodial {{config.extra.arcana.wallet_name}} for every authenticate user to sign blockchain transactions on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]. [[Learn more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) about the  {{config.extra.arcana.wallet_name}} features.
 
-The app developers can [[configure-wallet-visibility|configure {{config.extra.arcana.wallet_name}} visibility mode]] to manage the user's blockchain signing experience. [Learn more]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) about wallet visibility and other configurations.
+The app developers can [[configure-wallet-visibility|configure {{config.extra.arcana.wallet_name}} visibility mode]] to manage the user's blockchain signing experience. [[concept-wallet-visibility|Learn more about wallet visibility]] and other configurations.
 
 Check out this video to see the  {{config.extra.arcana.wallet_name}} in action for signing blockchain transactions, checking wallet balances, switching blockchain networks, and more.
 

@@ -42,7 +42,7 @@ Follow these two steps:
 
 ### Step 2: Initialize the {{config.extra.arcana.sdk_name}}
 
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. Also, specify the [{{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) via the `alwaysVisible` parameter to manage the wallet user experience.
+Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] it using the {{config.extra.arcana.dashboard_name}}. Also, specify the [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] via the `alwaysVisible` parameter to manage the wallet user experience.
 
 {% include "./code-snippets/import_auth.md" %}
 

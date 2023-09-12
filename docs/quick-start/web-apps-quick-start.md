@@ -39,7 +39,7 @@ During app configuration, developers can enable [[index-configure-auth|configure
 
 ## Integrate App
 
-Follow the integration instructions as per the app type and [[index-integrate-app|integrate the app]] with the  {{config.extra.arcana.sdk_name}}. Manage user experience for signing blockchain transactions with [wallet visibility settings]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md). These must be specified during app integration and instantiation of the `AuthProvider`.
+Follow the integration instructions as per the app type and [[index-integrate-app|integrate the app]] with the  {{config.extra.arcana.sdk_name}}. Manage user experience for signing blockchain transactions with [[concept-wallet-visibility|wallet visibility settings]]. These must be specified during app integration and instantiation of the `AuthProvider`.
 
 After integrating with the {{config.extra.arcana.sdk_name}} app developers can use the `AuthProvider` to access the standard Ethereum Web3 provider interface in the context of an authenticated user. Use `AuthProvider` functions to onboard users, and sign blockchain transactions. For more information, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and {% include "./text-snippets/authsdkref_url.md" %}, and the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]].
 

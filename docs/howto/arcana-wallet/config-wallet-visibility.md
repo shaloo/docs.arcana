@@ -10,7 +10,7 @@ arcana:
 
 In this tutorial, you will learn how Web3 app developers can configure the {{config.extra.arcana.wallet_name}} user experience for signing blockchain transactions. 
 
-Developers can choose to configure the [{{config.extra.arcana.wallet_name}} visibility]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) such that once the user is authenticated, the {{config.extra.arcana.wallet_name}} is instantly displayed in the context of the app. Or they can configure the {{config.extra.arcana.wallet_name}} to show up only when a blockchain transaction is triggered.
+Developers can choose to configure the [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility]] such that once the user is authenticated, the {{config.extra.arcana.wallet_name}} is instantly displayed in the context of the app. Or they can configure the {{config.extra.arcana.wallet_name}} to show up only when a blockchain transaction is triggered.
 
 ## Prerequisites
 
