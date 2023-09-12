@@ -97,8 +97,8 @@ If the gas tank is depleted, empty or paused then by default the EoA wallet addr
 
 ### User Keys
 
-     Developers can use the `getPublicKey()` method of the `AuthProvider` in the {{config.extra.arcana.sdk_name}} to fetch a user's **public key**. Users can export their **private key** by using the {{config.extra.arcana.wallet_name}} UI.
-     
-     In the case of apps that have gas tanks enabled for blockchain networks, the **public key** returned by the `getPublicKey()` method, irrespective of which wallet account is active in the {{config.extra.arcana.wallet_name}} UI, is always associated with the user's EoA. There is no public key for the SCW address associated with the user's account.
+Developers can use the `getPublicKey()` method of the `AuthProvider` in the {{config.extra.arcana.sdk_name}} to fetch a user's **public key**. Users can export their **private key** by using the {{config.extra.arcana.wallet_name}} UI.
 
-     Similarly, when a user exports **private key** via the {{config.extra.arcana.wallet_name}} UI, irrespective of which wallet account is active in the {{config.extra.arcana.wallet_name}} UI, the key that is returned is the one associated with the user's EoA account. There is no private key for the SCW address associated with the user's account.
+In the case of apps that have gas tanks enabled for blockchain networks, the **public key** returned by the `getPublicKey()` method, irrespective of which wallet account is active in the {{config.extra.arcana.wallet_name}} UI, is always associated with the user's EoA. There is no public key for the SCW address associated with the user's account.
+
+Similarly, when a user exports **private key** via the {{config.extra.arcana.wallet_name}} UI, irrespective of which wallet account is active in the {{config.extra.arcana.wallet_name}} UI, the key that is returned is the one associated with the user's EoA account. There is no private key for the SCW address associated with the user's account.
