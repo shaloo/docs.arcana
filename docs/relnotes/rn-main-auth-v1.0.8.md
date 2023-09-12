@@ -71,6 +71,10 @@ await auth.init()
 
 For more details, see [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
 
+**Gasless Feature**
+
+Developers can simplify user onboarding, reduce the Web3 gas-fees barrier to entry and drive up the app adoption through the gasless transactions feature (early beta) in the {{config.extra.arcana.product_name}} product. See [[concept-gasless-transactions|gasless transactions]] and [[configure-gasless|how to configure gasless]] and set up gas tanks.
+
 ### Bug Fixes
 
 **Email Validation**
