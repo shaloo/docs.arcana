@@ -64,6 +64,22 @@ Use the defaults or provide inputs for various settings as per your application 
 
     * **Wallet:** Website Domain - Set the website domain used by the server, to secure and restrict {{config.extra.arcana.wallet_name}} from loading anywhere else other than the specified domain. {{config.extra.arcana.company_name}} uses the frame-ancestor CSP for restricted domains.<br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_wallet.png"></img>
 
+=== "Gasless"
+
+    Use the 'Gasless' section to configure [[concept-gasless-transactions|gasless transactions]] for app users.  
+    
+    Developers must explicitly set up gas tanks per blockchain network to enable paymasters to bear gas fees for sponsored transactions for that specific chain. The gas tanks should have sufficient crypto assets deposited to fund the app user's transactions. Also, developers must whitelist one or more app operations for gasless transactions.  Only the gas fees for the whitelisted operations will be paid via the gas tank as long as there is sufficient credit in the gas tank. 
+    
+    For all the non-whitelisted app operations, or in case the gas tank assets run out, the transaction gas fees will have to be paid by the individual user via the user's smart contract wallet associated with the app. 
+
+    Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-user-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
+
+    Developers can pause and resume gas tanks.
+
+    <img src="/img/an_gl_db_new_config.png" alt="Set up Gas Tanks" class="an-screenshots"/>
+
+    For details, see [[configure-gasless|how to configure gasless transactions]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
+
 === "Keyspace"
 
     Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to use the [[dashboard-user-guide#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.
