@@ -29,7 +29,7 @@ Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.me
 
 **Web3 Wallet Operations**
 
-  * Developers can configure and manage blockchain transaction signing experience for users by using [{{config.extra.arcana.wallet_name}} visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
+  * Developers can configure and manage blockchain transaction signing experience for users by using [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility modes]]
   * Authenticated users can securely sign blockchain transactions on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]
   * Supports Web3 wallet operations and the standard Ethereum JSON-RPC calls
         
