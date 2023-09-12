@@ -99,7 +99,7 @@ toc_depth: 2
 
            If `AuthProvider` is instantiated with `alwaysVisible = false` then the wallet UI will not be displayed by default in the app's context. However, when a blockchain transaction is triggered by the app, a transaction notification is displayed in the app's context, requesting the user's approval for the transaction. Once the user takes the appropriate action, the transaction notification will disappear.
 
-           For more details, see [{{config.extra.arcana.wallet_name}} visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md)
+           For more details, see [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility modes]].
 
       2. **Position**
 

@@ -34,7 +34,7 @@ The default blockchain refers to the chain selection displayed in the wallet onc
 
 **Wallet UI Mode**
 
-The wallet UI mode setting allows the developers to choose whether they want to enable the built-in {{config.extra.arcana.wallet_name}} UI in the context of their app or build a custom wallet UI for the app users. Note, this is a **one-time** setting at the time of registering the app.
+The [[concept-wallet-uimodes|wallet UI mode]] setting allows the developers to choose whether they want to enable the built-in {{config.extra.arcana.wallet_name}} UI in the context of their app or build a custom wallet UI for the app users. Note, this is a **one-time** setting at the time of registering the app.
 
 By default, {{config.extra.arcana.wallet_name}} UI is enabled for all registered apps. Selecting **Custom Wallet UI** option disables the built-in {{config.extra.arcana.wallet_name}} UI altogether.
 

@@ -15,7 +15,7 @@ toc_depth: 2
 
 ??? an-faq "Can a Web3 app use the {{config.extra.arcana.sdk_name}} only for onboarding users and disable the {{config.extra.arcana.wallet_name}} feature altogether?"
 
-      There is no way to selectively turn off the {{config.extra.arcana.wallet_name}} features.  However, if the application **does not perform any blockchain transactions**, the wallet feature can be disabled by setting the [wallet visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) to `false` while integrating the app with the {{config.extra.arcana.sdk_name}}. In this case, the {{config.extra.arcana.wallet_name}} will not be visible to the authenticated user as long as **no blockchain transaction is triggered**. 
+      There is no way to selectively turn off the {{config.extra.arcana.wallet_name}} features.  However, if the application **does not perform any blockchain transactions**, the wallet feature can be disabled by setting the [[concept-wallet-visibility|wallet visibility mode]] to `false` while integrating the app with the {{config.extra.arcana.sdk_name}}. In this case, the {{config.extra.arcana.wallet_name}} will not be visible to the authenticated user as long as **no blockchain transaction is triggered**. 
 
       If you need to completely disable the {{config.extra.arcana.wallet_name}} feature in the app, you can request a private build of the {{config.extra.arcana.wallet_name}} by [contacting {{config.extra.arcana.company_name}}]({{page.meta.arcana.root_rel_path}}/support.md) with the use case details.
 
@@ -72,7 +72,7 @@ toc_depth: 2
 
       To integrate an app, developers must register and configure the app with the Arcana network, and then install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create a new `AuthProvider`. While instantiating the `AuthProvider` developers can manage the user experience for signing blockchain transactions through the input parameter `alwaysVisible`. This parameter controls whether the {{config.extra.arcana.wallet_name}} UI is automatically displayed in the application's context right after a user authenticates or it shows up only when the app triggers a blockchain transaction that requires the user's approval.
 
-      For details, see [{{config.extra.arcana.wallet_name}} visibility modes]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md).
+      For details, see [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility modes]].
 
 ??? an-faq "Does the {{config.extra.arcana.sdk_name}} set `window.ethereum` value in the app's context?"
 
@@ -84,6 +84,6 @@ toc_depth: 2
 
       | Self-custodial wallets | Arcana's non-custodial wallet |
       | :--- | :--- |
-      | Users need to be responsible for and remember their passphrases.| Users do not require to remember any passphrase.|
+      | Users need to be responsible for and remember their passphrases.| Users are not required to remember any passphrase.|
       | Users need to manage keys themselves in case of self-custody wallets. | {{config.extra.arcana.wallet_name}} offers a sweet spot, users don't have to manage keys as in the self-custody wallet and yet their keys can be generated in a distributed manner via the {{config.extra.arcana.wallet_name}}, a non-custodial wallet.|
       | Users that are new to Web3 typically find self-custodial wallets very challenging to use. | {{config.extra.arcana.wallet_name}} offers a really simple Web2-like onboarding experience for new Web3 users without sacrificing security and ownership.|

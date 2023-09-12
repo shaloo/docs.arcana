@@ -46,7 +46,7 @@ After installing the SDK, add code to import `{{config.extra.arcana.auth_sdk_pkg
 
 * **{{config.extra.arcana.app_address}}** Specify the unique identifier obtained after [[configure-auth|registering and configuring]] the app using the {{config.extra.arcana.dashboard_name}}
 
-* **Wallet User Experience:** Use the `alwaysVisible` parameter to specify the [{{config.extra.arcana.wallet_name}} visibility mode]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/walletuimodes.md) that controls the user experience for the wallet.
+* **Wallet User Experience:** Use the `alwaysVisible` parameter to specify the [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] that controls the user experience for the wallet.
 
 The sample code below demonstrates how a new `AuthProvider` is created and initialized. It also uses the `connect` function to use the built-in, plug-and-play login UI feature of the {{config.extra.arcana.sdk_name}} to onboard users.
 
