@@ -8,7 +8,7 @@ arcana:
 
 # Register & Configure App
 
-In this tutorial, you will learn how to register and configure a Web3 app before integrating it with the {{config.extra.arcana.sdk_name}}. 
+In this tutorial, you will learn how to register and configure a Web3 app before integrating it with the {{config.extra.arcana.sdk_name}}.
 
 !!! info "{{config.extra.arcana.app_address}}"
     

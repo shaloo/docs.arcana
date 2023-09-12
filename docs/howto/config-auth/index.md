@@ -15,3 +15,5 @@ Use these guides to learn how to use the [{{config.extra.arcana.dashboard_name}}
 [[index-config-social-providers|Social Providers :material-web:]]{ .md-button }
 
 [[index-config-iam-providers|Custom IAM Providers :material-identifier:]]{ .md-button }
+
+[[configure-gasless|Gasless :material-gas-station-off:]]{ .md-button }
