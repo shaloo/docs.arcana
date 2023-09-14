@@ -179,6 +179,7 @@ ERC20
 EVM
 EVM-compatible
 EmailID
+EoA
 Ethereum
 Ethereum-compatible
 Ethereum_Goerli
@@ -308,8 +309,10 @@ Roadmap
 Ropsten
 RunDevServerText
 S3-compatible
+SCW
 SDK
 SDK's
+SDK-enabled
 SDK.
 SDKIntIssuesText
 SDKVersionNoteText
@@ -577,6 +580,7 @@ concept-plug-and-play-auth
 concept-pwdless-auth
 concept-social-auth
 concept-validator-nodes
+concept-wallet-uimodes
 concept-white-labeled-auth
 conceptauthsdk
 conceptdappusage
@@ -678,6 +682,7 @@ executables
 explainer
 faq-auth
 faq-db
+faq-gasless
 faq-gen
 faq-validator
 faq_auth
