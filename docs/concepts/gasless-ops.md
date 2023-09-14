@@ -8,36 +8,40 @@ arcana:
 
 # Gasless Transactions
 
-When a user operates a Web3 app, such as for sending ERC20 tokens to another user or buying a crypto asset, the blockchain networks charge a fee called the 'gas fee'. Users are required to pay these fees for completing the blockchain transaction to send ERC20 tokens or for buying a crypto asset. With gasless, users are not required to pay these gas fees. Those are funded by third parties or sponsors.
+In Web3 apps, when a user initiates a blockchain transaction, like sending ERC20 tokens or buying crypto assets, they typically incur a 'gas fee' charged by the blockchain network. However, gasless transactions eliminate the need for users to pay these fees, as developers or third-party sponsors cover the costs.
 
-Developers can simplify user onboarding, reduce the Web3 gas-fees barrier to entry and drive up the app adoption through the gasless transactions feature in the {{config.extra.arcana.product_name}} product. 
+By leveraging {{config.extra.arcana.product_name}} gasless transaction feature, developers can streamline user onboarding, lower the barrier of entry associated with Web3 gas fees, and boost app adoption.
 
 ## Gasless Configuration
 
-Developers can use the *Gasless** configuration section in the {{config.extra.arcana.dashboard_name}} to configure gas tanks as follows:
+Developers can set up gas tanks using the **Gasless** configuration section in {{config.extra.arcana.dashboard_name}} with the following steps:
 
-1. Add one or more Gas Tanks. Only one gas tank can be set up per blockchain network.
-2. Deposit crypto assets in the Gas Tanks or withdraw them. Withdrawal can happen only by the [[concept-gasless-transactions#gas-tank-owner|gas tank owner]].
-3. [[concept-gasless-transactions#whitelisting-app-operations|Whitelist App operations]] by specifying verified smart contracts or specifying the ABI of the contracts and then whitelisting one or more functions of the contract.
-4. Optionally, developers can also pause and resume gas tanks that are already configured for an app.
+1. Add one or more Gas Tanks (limited to one per blockchain network).
+2. Deposit or withdraw crypto assets, with withdrawal restricted to the [[concept-gasless-transactions#gas-tank-owner|gas tank owner]].
+3. [[concept-gasless-transactions#whitelisting-app-operations|Whitelist Web3 app operations]] by specifying verified smart contracts or providing contract ABIs and whitelisting specific functions.
+4. Optionally, pause or resume configured gas tanks.
 
-After configuring the gas tanks,  developers can integrate the app with the {{config.extra.arcana.sdk_name}}, add code to onboard users and deploy the app on the Testnet or the Mainnet.
+Once gas tanks are configured, developers can seamlessly integrate their app with the {{config.extra.arcana.sdk_name}}, onboard users, and deploy the app on either the Testnet or Mainnet. Users can enjoy gas fee waivers for supported blockchain networks with configured gas tanks.
+
+### Supported Chains
+
+The {{config.extra.arcana.product_name}} product gasless feature is powered by [Biconomy Gasless SDK v2](https://docs.biconomy.io/docs/overview). Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable gasless operations in the app for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/).
 
 ### Gas Tank Owner
 
-A developer who adds the gas tank for an app is **the owner** of that gas tank. To set up gas tanks, developers are required to have a MetaMask wallet account or any other browser-enabled wallet account that sets the `windows.enabled` browser variable. This wallet account is referred to as the **owner account** as it is used to set up the gas tank.
+A developer who adds the gas tank for an app is **the owner** of that gas tank. To set up gas tanks, developers are required to have a MetaMask wallet account or any other browser-enabled wallet account that sets the `windows.enabled` browser variable. This wallet account is referred to as the **owner account**.
 
 ### Gas Tank Deposit
 
-After creating the gas tank, developers can fuel the tank by adding crypto assets. They can also allow other sponsors to deposit gas in the tank.
+After setting up the gas tank, developers can fuel it by depositing crypto assets for the respective blockchain network. These assets can include native tokens or any ERC20/ERC721 tokens native to that chain. Additionally, third-party wallets or sponsors can also contribute to the gas tank by making deposits.
 
 ### Withdraw Gas Tank Deposit
 
-Provisioned gas tanks can be funded with the required crypto assets by any depositor. This could be the owner of the gas tank (app developer) or any third-party sponsor. However, funds **can only be withdrawn from a gas tank by the gas tank owner.
+Gas tanks, once provisioned, can receive the necessary crypto assets from any depositor, whether it's the gas tank owner (app developer) or a third-party sponsor. However, it's important to note that funds can only be **withdrawn from a gas tank** into the **owner's account**.
 
 ### Whitelisting App Operations
 
-Besides adding gas tanks and depositing funds in the tank, setting up a gas tank also requires whitelisting one or more app operations. These app operations can be fulfilled via one or more smart contracts and the functions associated with the contract. When the user invokes any of the whitelisted app operations, they do not pay any gas fee for the corresponding blockchain transactions. Those are paid via the gas tanks.
+In addition to creating gas tanks and depositing funds into them, setting up the gasless feature also involves whitelisting one or more app operations by the app developer. These operations can be executed through one or more smart contracts and their associated functions. When a user triggers any of the whitelisted app operations, they are not charged any gas fees for the associated blockchain transactions; instead, these fees are covered by the gas tanks.
 
 ### Pause / Enable Gas Tank
 
@@ -55,50 +59,42 @@ Developers set up gas tanks and deposit crypto assets specific to the blockchain
 
 Waiving gas fees for app operations does not happen when:
 
-* App developer does not set up any gas tanks for the app
+* App developer does not set up any gas tanks for any blockchain network
 * Gas tanks are set up and funded but disabled by the developer
 * Gas tanks are set up but no funds are deposited to pay for the gas fees
 * Gas tanks are depleted and all the funds spent, are not refueled
 * Gas tank owner withdraws the deposited funds depleting the tanks
 
-In such situations, even if the app functions are whitelisted, there is no resource available to pay gas fees. In this case, the user has to bear the gas costs.
+In such situations, even if the app functions are whitelisted, gas tanks are not effective or available, so users have to bear the gas fees.
 
 <img src="/img/an_gasless_howitworks_empty.png" alt="Set up Gas Tanks" class="an-screenshots"/>
 
-### Supported Chains
-
-The {{config.extra.arcana.product_name}} product gasless feature is powered by [Biconomy Gasless SDK v2](https://docs.biconomy.io/docs/overview). Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable gasless operations in the app for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/).
-
 ## User Experience
 
-Apps that integrate with {{config.extra.arcana.sdk_name}} can seamlessly offer gasless operations for the app users.
-
-The authenticated users gain instant access to {{config.extra.arcana.wallet_name}} and can sign blockchain transactions without having to pay for the gas fees, provided the app developer has whitelisted the app operation invoked by the user. Note that the users still need to have requisite crypto assets in the wallet or tokens to pay for whatever operation they are performing using the app, only gas fees for such operations are waived.
-
-If the gas tanks are depleted, empty or paused, the user will have to bear the gas fees for the transaction.
+Apps using the {{config.extra.arcana.sdk_name}} provide seamless gasless operations. Gas tanks are configured and funded to cover gas fees, sparing users these costs unless operations aren't whitelisted or tanks are inactive. Users, on supported blockchain networks with gas tanks, are assigned gasless accounts. Each gasless account is associated with two **wallet addresses**.
 
 ### Gasless User Accounts
 
-When the app developer sets up gasless transactions for the app, the user accounts for such apps are not the typical traditional 'Externally Owned Accounts' (EoA). Each user is also assigned a 'Smart Contract Wallet' (SCW) account address in addition to the traditional EoA account address. This switch to EoA plus SCW accounts happens when the app developer adds a gas tank for a blockchain network. The user will see and can switch between EoA/SCW wallet accounts using the wallet UI. Until a gas tank is added users will only see the typical EoA wallet account in the wallet UI. The moment a gas tank is provisioned by the developer, the users will see EoA and SCW accounts in the wallet UI.
+Gasless user accounts aren't just regular 'Externally Owned Accounts' (EoA). When developers add a gas tank for a blockchain network, each user is also given a 'Smart Contract Wallet' (SCW) address. Users can switch between EoA and SCW accounts using {{config.extra.arcana.wallet_name}} UI. Without a gas tank, users see only the EoA account, but once developers provision a gas tank, both EoA and SCW accounts appear in the {{config.extra.arcana.wallet_name}} UI.
 
-This two wallet addresses approach per user is based on Ethereum account abstraction smart contract specification [ERC-4337](https://www.erc4337.io/docs).
+This two address gasless user account model aligns with the Ethereum account abstraction smart contract specification [ERC-4337](https://www.erc4337.io/docs).
 
 ### Managing EoA and SCW Addresses
 
-By provisioning a gas tank the gasless feature gets triggered and the association of EoA and an additional SCW account happens for every app user. Each user will see two wallet addresses for the chain where at least one gas tank is enabled. Users can switch between EoA and SCW addresses.
-
-By default, gasless apps will have the SCW address active in the user's wallet UI. The user can switch it to the EoA address. Only the active wallet address is used to perform the blockchain transactions. The gasless capability is only associated with the SCW address. If a user switches the wallet to EoA, then the EoA wallet address is used to perform the blockchain transaction. This will result in incurring gas fees via the user's EoA wallet even if the gas tanks are set up and available.
+By default, gasless apps will have the SCW address active in the {{config.extra.arcana.wallet_name}} UI. Users can switch it back to the EoA address. Only the active wallet address is used to perform the blockchain transactions. Note that the gasless capability is associated only with the SCW address. If a user switches the wallet to EoA, then the EoA wallet address is used to perform the blockchain transaction. This will result in gas fees charged via the user's EoA wallet even if the gas tanks are set up and available for that blockchain network.
 
 If the gas tank is depleted, empty or paused then by default the EoA wallet address becomes active for the user and is displayed in the wallet. If the user switches it to the SCW address then that is used for any blockchain transactions. In this case, since the gas tank is not available, the user will have to bear the gas fees via the SCW wallet address. So the user needs to make sure that the SCW account has sufficient funds.
 
-!!! caution "Removing Gasless Capability"
+!!! caution "Disabling Gasless Capability"
 
-      The moment a gas tank is provisioned by the developer for any supported blockchain, the gasless feature is enabled for the {{config.extra.arcana.sdk_name}} for that blockchain.  This cannot be removed but gas tank functioning can be paused and resumed. What this means is each user using this blockchain with a gas tank set up will see two wallet addresses associated with their account - EoA and SCW address. Once enabled, this two-address scheme for users cannot be reverted, even if the gas tanks are depleted, empty or paused. Users will continue to see two wallet addresses and can switch between the two when the blockchain network with gas tanks configured is selected in the wallet UI.
+      Once a developer provisions a gas tank for any supported blockchain, the gasless feature becomes permanently active within {{config.extra.arcana.sdk_name}} for that blockchain. While the gas tank can be paused and resumed, the two-address gasless user accounts system, comprising EoA and SCW addresses, remains in effect.
+      
+      Even if the gas tanks are depleted, empty, or paused, this dual-address system for gas tank-enabled networks cannot be reverted. Users will continue to see both wallet addresses in the {{config.extra.arcana.wallet_name}} UI and can switch between them at will.
 
 ### User Keys
 
-Developers can use the `getPublicKey()` method of the `AuthProvider` in the {{config.extra.arcana.sdk_name}} to fetch a user's **public key**. Users can export their **private key** by using the {{config.extra.arcana.wallet_name}} UI.
+Web3 apps integrated with {{config.extra.arcana.sdk_name}} allow authenticated users to securely access their private keys. Developers can programmatically retrieve a user's public key using the `getPublicKey()` method of the `AuthProvider`. Only authenticated app users can export their **private key** through the {{config.extra.arcana.wallet_name}} UI.
 
-In the case of apps that have gas tanks enabled for blockchain networks, the **public key** returned by the `getPublicKey()` method, irrespective of which wallet account is active in the {{config.extra.arcana.wallet_name}} UI, is always associated with the user's EoA. There is no public key for the SCW address associated with the user's account.
+For apps with gas tanks set up on one or more blockchain networks, users have gasless accounts with EoA and SCW addresses. Regardless of the active wallet account in {{config.extra.arcana.wallet_name}} UI, the getPublicKey() method always returns the public key associated with the EoA address. There is no public key for the SCW address.
 
-Similarly, when a user exports **private key** via the {{config.extra.arcana.wallet_name}} UI, irrespective of which wallet account is active in the {{config.extra.arcana.wallet_name}} UI, the key that is returned is the one associated with the user's EoA account. There is no private key for the SCW address associated with the user's account.
+Similarly, when a user exports the private key via {{config.extra.arcana.wallet_name}} UI, the returned key is always associated with the user's EoA account, regardless of the active wallet account in {{config.extra.arcana.wallet_name}} UI. There is no private key for the SCW address.
