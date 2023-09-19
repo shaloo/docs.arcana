@@ -17,9 +17,10 @@
      --md-admonition-icon--an-faq: url('/img/icons/icons8-question-mark-48.png');
      --md-admonition-icon--an-trbs: url('/img/icons/exclamation.png');
      --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
-     --md-primary-an-banner-text-color: rgba(255, 255, 0, 0.99);
+     --md-primary-an-banner-text-color: rgba(63, 63, 2, 0.99);
      --md-banner-color-1: var(--md-primary-bg-color);
      --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
+     --md-banner-color-yellow: yellow;
      --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
      --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
 }
@@ -67,18 +68,21 @@
 }
 
 .md-banner {
+    background: var(--md-banner-color-yellow);
+    /*
     background: repeating-linear-gradient(
       -45deg,
-      var(--md-banner-color-1) 4%,
-      var(--md-banner-color-2) 8%,
-      transparent 10%) !important;
+      var(--md-banner-color-1) 2%,
+      var(--md-accent-bg-color--light) 4%,
+      var(--md-banner-color-2) 2%) !important;
+    */
     font-family: "Inter", sans-serif;
     font-weight: bold;
     color: var(--md-primary-an-banner-text-color);
     overflow: hidden;
     text-align: center;
     height: 1.7rem;
-    top: -0.25rem;
+    margin-top: -0.5rem;
   }
 
 .md-banner__inner {
