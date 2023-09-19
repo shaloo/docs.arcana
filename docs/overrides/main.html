@@ -1,9 +1,8 @@
 {% extends "base.html" %}
 
 {% block announce %}
-  <div class="an_announcement"><p>🎉🎉🎉<span class="blink_me">{{config.extra.arcana.sdk_name}} <a href="/relnotes/rn-main-auth-v{{config.extra.arcana.latest_version}}.html">Release v{{ config.extra.arcana.latest_version }} </a>is now live on Mainnet!</span>⚡⚡⚡</p></div>
+  <p> 🎉🎉🎉 <a href="/relnotes/rn-main-auth-v{{config.extra.arcana.latest_version}}.html">Release v{{ config.extra.arcana.latest_version }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
 {% endblock %}
-
 {% block extrahead %}
   {{ super() }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">

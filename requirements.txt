@@ -30,8 +30,8 @@ mkdocs-material-extensions==1.1.1
 mkdocs-material==9.1.21
 mkdocs-meta-descriptions-plugin==2.2.0
 mkdocs-open-in-new-tab==1.0.2
-mkdocs-redirects==1.2.0
 mkdocs==1.5.2
+mkdocs-redirects==1.2.1
 packaging==23.1
 pycparser==2.21
 pymdown-extensions==10.0.1

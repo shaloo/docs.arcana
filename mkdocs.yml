@@ -1,5 +1,4 @@
-site_name: Documentation
-
+site_name: Docs
 # For for dev
 site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
@@ -382,8 +381,8 @@ theme:
     - header.autohide 
   #  - navigation.path  //Sponsors only
   #  - navigation.expand
-  #  - navigation.tabs
-  #  - navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
   #  - navigation.prune
     - navigation.instant
     - navigation.top
