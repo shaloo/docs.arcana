@@ -1,18 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400&display=block");
 
 :root > * {
-     /*--md-primary-fg-color:        #058aff;
-     --md-primary-fg-color--light: #13a3fd;
-     --md-primary-fg-color--dark:  #5cf5ff;
-     --md-default-bg-color--lighter: #e7f6ff;
-     */
-     --md-primary-bg-color: #ffffff;
-     --md-primary-fg-color: #424242;
+     --md-primary-fg-color: #242424;
+     --md-primary-fg-color--dark: #9a9a9a;
+     --md-primary-fg-color--lighter: #5e5e5e;
+     --md-primary-fg-color--light: #c2c2c2;
      --md-default-bg-color--light: #aaaaaa;
-     --md-default-bg-color--lighter: #fafafa;
-     --md-primary-fg-color--light: #262626;
-     --md-primary-fg-color--lighter: #424447;
-     --md-primary-fg-color--dark:  #19191c;
+     --md-default-bg-color--lighter: #e7f6ff;
+     --md-primary-bg-color: #ffffff;
      --md-typeset-a-color: #057eff;
      --md-accent-fg-color:  rgb(132, 144, 149);
      --md-accent-fg-color--transparent:   hsla(190, 5%, 49%, 0.1);
@@ -21,10 +16,31 @@
      --md-text-font: "Inter";
      --md-admonition-icon--an-faq: url('/img/icons/icons8-question-mark-48.png');
      --md-admonition-icon--an-trbs: url('/img/icons/exclamation.png');
+     --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
+     --md-primary-an-banner-text-color: rgba(255, 255, 0, 0.99);
+     --md-banner-color-1: var(--md-primary-bg-color);
+     --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
+     --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
+     --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
 }
 
 [data-md-color-scheme="black"] {
     --md-hue: 360; 
+}
+
+:root > [data-md-color-scheme="slate"]{
+  --md-primary-fg-color--lighter: #929292;
+  --md-an-card-color-hover: var(--md-primary-fg-color--dark);
+  /*--md-primary-an-banner-text-color: rgba(255, 155, 0, 99%);*/
+}
+
+.md-header {
+  background: linear-gradient(to bottom, var(--md-primary-bg-color), var(--md-primary-fg-color) 19%,#aaa 69%);
+}
+
+/* Remove site-name space*/
+.md-sidebar--primary {
+  height: 0.25rem;
 }
 
 .md-logo {
@@ -33,7 +49,12 @@
 
 .md-button {
     border-radius: 0.3rem !important;
-    border-color:
+}
+
+.md-typeset .md-button {
+  border-radius: 0.3rem !important;
+  border-color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color--light);
 }
 
 .md-grid {
@@ -45,20 +66,20 @@
   padding-right: 1rem;
 }
 
-[class="md-banner"] {
+.md-banner {
     background: repeating-linear-gradient(
       -45deg,
-      transparent,
-      transparent 0.5rem,
-    rgba(57, 49, 49, 0.255) 0.25rem,
-    rgba(14, 210, 217, 0.25) 1rem) !important;
+      var(--md-banner-color-1) 4%,
+      var(--md-banner-color-2) 8%,
+      transparent 10%) !important;
     font-family: "Inter", sans-serif;
-    font-weight: bolder;
-    color: var(--md-secondary-fg-color);
-    overflow: auto;
+    font-weight: bold;
+    color: var(--md-primary-an-banner-text-color);
+    overflow: hidden;
     text-align: center;
     height: 1.7rem;
-}
+    top: -0.25rem;
+  }
 
 .md-banner__inner {
   font-size: 0.7rem;
@@ -78,7 +99,7 @@
 
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(247, 246, 245, 0.2);
     transition: 0.3s;
     padding: 1rem;
     font-size: 0.7rem;
@@ -87,7 +108,7 @@
 
 .card:hover {
     /* On mouse-over, add a deeper shadow */
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(247, 246, 245, 0.2);
 }
 
 .card_container {
@@ -100,8 +121,8 @@
     border-radius: 5px;
     border-width: 0rem;
     border-left-width: 0.2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 } 
 
 .md-typeset .admonition.an-faq,
@@ -156,6 +177,7 @@
 
 .blink_me {
   animation: blinker 2s linear infinite;
+  color: var(--md-primary-an-banner-text-color);
 }
 
 @keyframes blinker {  

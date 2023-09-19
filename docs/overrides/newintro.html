@@ -4,27 +4,33 @@
 {{ super() }}
 
 {% block announce %}
-    <div class="an_announcement"><p>🎉🎉🎉<span class="blink_me">{{config.extra.arcana.sdk_name}} <a href="/relnotes/rn-main-auth-v{{config.extra.arcana.latest_version}}.html">Release v{{ config.extra.arcana.latest_version }} </a>is now live on Mainnet!</span>⚡⚡⚡</p></div>
+<p> 🎉🎉🎉 <a href="/relnotes/rn-main-auth-v{{config.extra.arcana.latest_version}}.html">Release v{{ config.extra.arcana.latest_version }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
 {% endblock %}
-
 {% block content %}
 
 <style>
     :root > * {
-     --md-primary-fg-color:        #23313c;
-     --md-primary-fg-color--light: #637c8b;
-     --md-primary-fg-color--lighter: #637c8b5f;
-     --md-primary-fg-color--dark:  #121314;
-     --md-default-bg-color--lighter: #e7f6ff;
-     --md-primary-bg-color: #fcfcfc;
+        --md-primary-fg-color:        #101010;
+        --md-primary-fg-color--lighter: #929292;
+        --md-primary-fg-color--light: #c2c2c2;
+        --md-primary-fg-color--dark:  #070707;
+        --md-default-bg-color--lighter: #acacac;
+        --md-primary-bg-color: #fcfcfc;
+        --md-primary-an-heading-color: var(--md-primary-fg-color);
+        --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
+        --md-an-hero-content-color: rgba(247, 246, 245, 0.9);
+        --md-an-hero-button-bg-color: #070707;
+        --md-an-secondary-button-bg-color: #2a2a2a;
+    }
 
+    :root > [data-md-color-scheme="slate"]{
+        --md-primary-fg-color--light: #929292;
+        --md-primary-fg-color--lighter: #c2c2c2;
+        --md-an-card-color-hover: var(--md-primary-fg-color--dark);
+        --md-an-hero-button-bg-color: #070707;
+        --md-an-secondary-button-bg-color: #d0d0d0;
     }
-/*
-    [data-theme="light"] img[src$="#only-dark"],
-    [data-theme="dark"] img[src$="#only-light"] {
-        display: none;
-    }
-*/
+
     .md-sidebar--secondary {
         width: 2%;
     }
@@ -32,11 +38,7 @@
     .md-source-file {
         display: none;
     }
-
-    .md-header {
-        border-bottom: 5px solid rgb(1, 79, 91) 99%;
-    }
-
+/*
     .md-main {
         flex-grow: 0;
         margin-top: -2%;
@@ -47,38 +49,35 @@
         height: 100%;
         width: 100%;
     }
-    
+  */
     .md-sidebar--secondary {
             display: none;
     }
 
     .tx-container {
-        padding-top: 0rem;
-        background: linear-gradient(to top, var(--md-primary-bg-color), rgb(1, 79, 91) 99%,#fff 99%);
+        padding-top: 0.25rem;
+        /*background: linear-gradient(to top, var(--md-primary-bg-color), rgba(56, 56, 55, 0.99) 99%, #ffffff 99%);*/
+        background: linear-gradient(to top, var(--md-primary-bg-color), var(--md-an-hero-slate-gradient-dark) 70%);
     }
 
     .tx-ref {
-        /*margin: 32px 2.8rem;*/
         color: var(--md-primary-bg-color);
         padding: 1rem;
     }
 
     .tx-hero {
-        /*margin: 32px 2.8rem;*/
-        color: var(--md-primary-bg-color);
         justify-content: center;
     }
 
-    .tx-hero h1 {
-        margin-bottom: 1rem;
-        color: currentColor; 
-        font-weight: 700
+    .tx-hero__content > h1 {
+        padding-bottom: 1rem;
+        color: var(--md-an-hero-content-color); 
     }
 
     .tx-hero__content {
         padding-bottom: 1rem;
         margin: 0 auto;
-        color: currentColor; 
+        color: var(--md-an-hero-content-color); 
     }
 
     .tx-hero__image{
@@ -91,19 +90,31 @@
     .tx-hero .md-button {
         margin-top: .5rem;
         color: var(--md-primary-bg-color);
+        background-color: var(--md-primary-bg-color-lighter);
     }
 
     .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color);
-        color: var(--md-primary-fg-color--light);
+        background-color: var(--md-primary-bg-color--light);
+        color: var(--md-an-hero-button-bg-color);
         border-color: var(--md-primary-bg-color);
     }
 
     .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
-        color: var(--md-default-bg-color);
+        background-color: var(--md-an-card-color-hover);
         border-color: var(--md-accent-fg-color)
+    }
+
+    .tx-hero .md-button--an-secondary {
+        background-color: var(--md-primary-fg-color);
+        color: var(--md-an-hero-button-fg-color);
+        border-color: var(--md-primary-fg-color-light);
+    }
+
+    .tx-hero .md-button--an-secondary:focus,
+    .tx-hero .md-button--an-secondary:hover {
+        background-color: var(--md-an-secondary-button-bg-color);
+        border-color: var(--md-an-secondary-button-bg-color);       
     }
 
     .top-hr {
@@ -125,10 +136,9 @@
         box-sizing: border-box;
         padding: 0.75rem 1rem;
         border-radius: 5px;
-        /*border: 1px dotted #aeaeae;*/
         margin: 0.5rem;
         word-break: break-word;
-        box-shadow: 0 4px 8px 0 var(--md-primary-fg-color--light);
+        box-shadow: 0 4px 8px 0 rgba(247, 246, 245);
     }
 
     .feature-item-3 {
@@ -166,7 +176,9 @@
 
     @media screen and (max-width:30em) {
         .tx-hero h1 {
-            font-size: 1.4rem
+            font-size: 1.4rem;
+            color: var(--md-an-hero-content-color);
+            font-style: bold;
         }
     }
 
@@ -188,6 +200,7 @@
             margin-left: 1.0rem;
             margin-right: 4.0rem;
             align-items: center;
+            color: var(--md-an-hero-content-color);
         }
     }
 
@@ -225,9 +238,11 @@
         }
 
         .feature-item:hover {
-            background-color: #aeaeae47;
+            background-color: var(--md-an-card-color-hover);
             border-radius: 3px;
+            color: var(--md-default-fg-color);
         }
+
         .feature-item-2 {
             flex: 1;
             min-width: 0;
@@ -235,7 +250,7 @@
         }
 
         .feature-item-2:hover {
-            background-color: var(--md-primary-fg-color--lighter);
+            background-color: var(--md-an-card-color-hover);
             border-radius: 3px;
         }
     }
@@ -244,6 +259,7 @@
         border-bottom: 1px solid #eee;
         width: 100%;
         margin: 20px 0;
+        color: var(--md-primary-fg-color-light);
     }
 
     .text-center {
@@ -300,18 +316,28 @@
         color: var(--md-primary-bg-color);
         justify-content: center;
     }
+
     .a-link-color {
         color: var(--md-default-fg-color);
     }
 
     .help-bg-color {
         background-color: var(--md-primary-fg-color--lighter);
+        color: var(--md-primary-fg-color);
+    }
+
+    .help-bg-color:hover {
+        background-color: var(--md-primary-fg-color--light);
+        color: var(--md-primary-fg-color--lighter);
     }
 
     .h3-color {
-        color: var(--md-primary-fg-color--light);
-        margin-top: -3%;
-        
+        margin-top: -3%;   
+    }
+
+    .an-hero-footer {
+        font-size: 0.5rem;
+        color: var(--md-primary-fg-color);
     }
 
 </style>
@@ -322,14 +348,19 @@
                 <img src="img/arcana-auth.gif" style="border-radius: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" draggable="false">
             </div>
             <div class="tx-hero__content">
-                <h1> {{config.extra.arcana.product_name}}</h1>
+                <h1><b>{{config.extra.arcana.product_name}}</b><sup>*</sup></h1>
                 <p><i>For Web3 app builders!</i></p>
                 <p></p>
-                <ul><li>Enable Web2-like <b>user onboarding</b> in <b>Web3 apps.</b></li><li>Let authenticated users <b>sign blockchain transactions.</b></li></ul>
+                <ul><li>Web2-like <b>user onboarding experience</b>.</li>
+                    <li><b>Safe & Easy</b> Blockchain Transaction Signing.</li>
+                    <li>Easily customizable.</li>
+                </ul>
                 <p><a style="color:var(--md-primary-bg-color); text-decoration: underline;" href="./introduction.html" >Learn More... </a></p>
                 <p></p>
                 <a href="https://dashboard.arcana.network" title="{{config.extra.arcana.dashboard_name}}" class="md-button md-button--primary">Register App</a>
-                <a href="./auth-quick-start.html" title="Quick Start" class="md-button">Get started</a>
+                <a href="./auth-quick-start.html" title="Quick Start" class="md-button md-button--an-secondary">Get started</a>
+                <p></p>
+                <p class="an-hero-footer"><sup>*</sup>also powers Arcana's <a href="https://sendit.arcana.network/">SendIt!</a> app.</p>
             </div>
         </div>
     </div>
@@ -357,7 +388,7 @@
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/mobile-icon-dark.png#only-dark" width="10%"/><img src="./img/icons/mobile-icon-light.png#only-light" width="10%"/> Integrate Mobile Apps</h3>
                 <p>Enable Arcana Auth in Mobile Apps! </p>
-                <>Integrate with an <b>iOS, Android</b> or hybrid mobile platform app that uses <b>React Native & Flutter</b>.</p>
+                <p>Integrate with an <b>iOS, Android</b> or hybrid mobile platform app that uses <b>React Native & Flutter</b>.</p>
             </div>
         </a>
     </div>
