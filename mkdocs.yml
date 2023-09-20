@@ -298,8 +298,9 @@ nav:
         - user-flows/index.md
         - User Auth and DKG: user-flows/user-auth-and-dkg.md
   - DKG Validators: 
-    - onboard-validators.md
-    - Validator FAQ: faq/faq-validator.md
+    - validators/index.md
+    - Onboarding Guide: onboard-validators.md
+    - FAQ: faq/faq-validator.md
   - Contact Us: 
     - support.md
 

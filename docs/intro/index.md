@@ -8,9 +8,11 @@ arcana:
 
 # Introduction
 
-*Accelerate user journey into the world of decentralized applications with* **Arcana Auth!**
+**{{config.extra.arcana.product_name}}** employs advanced cryptography and asynchronous distributed key generation, enabling user identity control without key management complexities. It offers seamless developer integration and customization for secure blockchain transaction signing in Web3 apps.
 
 {==
+
+*Accelerate user journey into the world of decentralized applications with* **Arcana Auth!**
 
 Use **{{config.extra.arcana.product_name }}** to:
 
@@ -19,12 +21,8 @@ Use **{{config.extra.arcana.product_name }}** to:
 
 ==}
 
-{{config.extra.arcana.product_name}} is powered by cutting-edge cryptographic techniques and _asynchronous distributed key generation_ algorithms. It ensures that users have full control and access to their respective keys and no single entity owns or manages the key shares. 
-
-Arcana Auth offers developers easy integration and a customizable user experience while simplifying and securing blockchain transaction signing for Web3 app users.
-
 !!! note "Already using {{config.extra.arcana.product_name}}?"
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-[[auth-quick-start|Quick Start :fontawesome-solid-paper-plane:]]{.md-button .md-button--primary}
+[[auth-quick-start|Quick Start :fontawesome-solid-paper-plane:]]{.md-button}
