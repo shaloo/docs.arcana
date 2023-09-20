@@ -33,7 +33,7 @@ A developer who adds the gas tank for an app is **the owner** of that gas tank. 
 
 ### Gas Tank Deposit
 
-After setting up the gas tank, developers can fuel it by depositing crypto assets for the respective blockchain network. These assets can include native tokens or any ERC20/ERC721 tokens native to that chain. Additionally, third-party wallets or sponsors can also contribute to the gas tank by making deposits.
+After setting up the gas tank, developers can fuel it by depositing crypto assets for the respective blockchain network. These assets can include native tokens or any ERC-20/ERC-721 tokens native to that chain. Additionally, third-party wallets or sponsors can also contribute to the gas tank by making deposits.
 
 ### Withdraw Gas Tank Deposit
 

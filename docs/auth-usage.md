@@ -8,7 +8,7 @@ arcana:
 
 # Usage
 
-Developers can use the {{config.extra.arcana.product_name}} product by following these steps:
+Follow these steps to use the {{config.extra.arcana.product_name}} product:
 
 ??? abstract "1. Register & Configure App"
 
@@ -16,7 +16,7 @@ Developers can use the {{config.extra.arcana.product_name}} product by following
 
 ??? abstract "2. Install SDK & Integrate App"
 
-      Install the appropriate SDK package and integrate as listed for each app type. 
+      Install the appropriate SDK package and integrate as listed for each app type. Refer to the app-specific [[index-code-samples|code samples]] for details.
       
       **Vanilla HTML/CSS/JS or Vue apps:**
       
