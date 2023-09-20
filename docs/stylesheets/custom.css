@@ -32,7 +32,6 @@
 :root > [data-md-color-scheme="slate"]{
   --md-primary-fg-color--lighter: #929292;
   --md-an-card-color-hover: var(--md-primary-fg-color--dark);
-  /*--md-primary-an-banner-text-color: rgba(255, 155, 0, 99%);*/
 }
 
 .md-header {
