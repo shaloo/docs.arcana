@@ -119,13 +119,19 @@ The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] allows Web3 apps to in
 
 #### Supported Blockchains
 
-[{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) is an embedded Web3 wallet offered by the {{config.extra.arcana.sdk_name}} that displays in the context of the application.  Authenticated users can use the wallet to sign blockchain transactions for any  **EVM-compatible blockchain network**. Some of these supported networks are pre-configured in the {{config.extra.arcana.wallet_name}} by default.
+{{config.extra.arcana.product_name}} product **supports all EVM-compatible blockchain networks**. 
+
+By default, it enables a *pre-configured list* of chains. App developers can add additional EVM-compatible chains specific to their app and update this pre-configured list. Once the user authenticates for the app, only the chains in the pre-configured list are displayed in the [{{config.extra.arcana.wallet_name}}]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) UI dropdown. Users can add other EVM-compatible blockchain networks through the wallet UI and switch networks.
 
 {% include "./text-snippets/wallet_supported_networks.md" %}
 
-!!! info "Other Blockchain Networks (Coming soon!)"
+!!! tip "Updating default pre-configured list"
 
-      Besides supporting all EVM-compatible blockchain networks, we are working on supporting other chains that are not EVM-compatible in the upcoming releases. For e.g., Cosmos, Solana, Near, TON, and Algorand
+      To include a new EVM-compatible chain in {{config.extra.arcana.product_name}}'s default pre-configured list, {{config.extra.arcana.company_name}} collaborates strategically with the chain's team/community. While we can add any such chain, our approach aims to increase the {{config.extra.arcana.product_name}} adoption and maximize our reach and engagement within the chain's development community.
+
+!!! info "Non-EVM chain support (Coming soon!)"
+
+      We are working on supporting other chains that are not EVM-compatible in the upcoming releases. For e.g., Cosmos, Solana, Near, TON, and Algorand.
 
 <!--- #AR-6971
 
