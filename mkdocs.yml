@@ -18,7 +18,7 @@ nav:
     - Introduction: 
       - intro/index.md
       - Overview: auth-overview.md
-      - Usage: auth-usage.md
+      - Benefits & Usage: auth-usage.md
       - Features: key-features.md
     - Quick Start: 
       - quick-start/index.md

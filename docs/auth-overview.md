@@ -10,11 +10,11 @@ arcana:
 
 {==
 
-{{config.extra.arcana.product_name}} consists of: 
+{{config.extra.arcana.product_name}} product consists of:
 
 * [{{config.extra.arcana.sdk_name}}](https://www.npmjs.com/package/@arcana/auth)
 * [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network)
-* {{config.extra.arcana.wallet_name}}
+* {{config.extra.arcana.wallet_name}} (*embedded in the SDK, displayed in the app's context*)
 
 ==}
 
@@ -24,26 +24,8 @@ arcana:
     
     * Web Apps: _Vanilla JS app_, _React, NextJS_, _Vue_
     * Wallet Connector Framework Apps: _Wagmi_, _RainbowKit_, and _Web3-React_
-    * Mobile Apps: *Flutter, React-Native**
-    * Gaming Apps: Unity, Unreal (*Coming soon!*) 
-
-    __Usage__
-
-    **Developers:**
-    
-    - Pick up login mechanisms to onboard app users: *social login, passwordless, custom IAM providers, etc.*
-    - Select blockchain networks available to authenticated users for Web3 operations: *send, receive, NFTs, etc.*
-    - Choose the built-in plug-and-play login UI or create a custom login UI to onboard users
-    - Enable built-in, embedded, non-custodial {{config.extra.arcana.wallet_name}} UI for app users or build a custom wallet UI
-    - Manage the blockchain signing experience for the app users: *wallet UI shows only when a transaction happens or at all times within the app context*
-
-    **Users:**
-
-    - Onboard {{config.extra.arcana.product_name}} enabled Web3 apps easily using popular Web2-like login options
-    - Instantly access Web3 wallet for signing blockchain transactions after a successful login
-    - Fully own and control access to the private key
-    - Can self-recover key shares when switching devices
-    - Securely access wallet and blockchain assets owned by them
+    * Mobile Apps: _Flutter_, _React-Native_
+    * Gaming Apps: _Unity, Unreal_ (<span class="an-marker-text-highlight">Coming soon!</span>) 
     
     [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
 

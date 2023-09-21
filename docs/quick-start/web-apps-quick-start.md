@@ -12,18 +12,21 @@ arcana:
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
+## Overview
+
 Follow these steps to begin using the {{config.extra.arcana.product_name}} product:
 
-1. Use the {{config.extra.arcana.dashboard_name}} and register the app; obtain a unique **{{config.extra.arcana.app_address}}**.
-2. Set up [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) that will be enabled for onboarding app users.
-3. Install the SDK and integrate the app with the {{config.extra.arcana.sdk_name}}. Use the {{config.extra.arcana.app_address}} to create a new `AuthProvider` and use either the built-in plug-and-play login UI or custom UI to [[index-onboard-users|onboard users]].
-4. Allow authenticated users to instantly access the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}}]].
-5. Add code in the app for programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}.
+1. Use the {{config.extra.arcana.dashboard_name}} and register the app; obtain a unique **{{config.extra.arcana.app_address}}**. Set up [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) that will be enabled for onboarding app users.
+2. Install the SDK and integrate the app with the {{config.extra.arcana.sdk_name}}. Use the {{config.extra.arcana.app_address}} to create a new `AuthProvider` and use either the built-in plug-and-play login UI or custom UI to [[index-onboard-users|onboard users]].
+3. Add code in the app for onboarding users and programmatically accessing Web3 wallet operations supported by the {{config.extra.arcana.wallet_name}}. Authenticated users can instantly access the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}}]].
+4. Deploy app on the Testnet, validate and then deploy on Mainnet.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
-## Register & Configure
+## Get Started
+
+### Register & Configure
 
 First, follow the instructions to [[configure-auth|register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
@@ -33,17 +36,17 @@ During app configuration, developers can enable [[index-configure-auth|configure
 
       If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
 
-## Install {{config.extra.arcana.sdk_name}}
+### Install {{config.extra.arcana.sdk_name}}
 
 {{config.extra.arcana.sdk_name}} can be integrated with different types of Web3 apps. Depending upon the type of Web3 app, developers may need to install one or more {{config.extra.arcana.product_name}} packages and integrate the app. See [[sdk-installation| SDK installation guide]] for more details.
 
-## Integrate App
+### Integrate App
 
 Follow the integration instructions as per the app type and [[index-integrate-app|integrate the app]] with the  {{config.extra.arcana.sdk_name}}. Manage user experience for signing blockchain transactions with [[concept-wallet-visibility|wallet visibility settings]]. These must be specified during app integration and instantiation of the `AuthProvider`.
 
 After integrating with the {{config.extra.arcana.sdk_name}} app developers can use the `AuthProvider` to access the standard Ethereum Web3 provider interface in the context of an authenticated user. Use `AuthProvider` functions to onboard users, and sign blockchain transactions. For more information, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and {% include "./text-snippets/authsdkref_url.md" %}, and the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]].
 
-### Onboard Users
+**Onboard Users**
 
 After installing and integrating with the {{config.extra.arcana.sdk_name}}, app developers can add code to onboard the users using one of the two available methods:
 
@@ -51,11 +54,11 @@ After installing and integrating with the {{config.extra.arcana.sdk_name}}, app 
 
 2. Build a custom user login UI for the app and call the appropriate {{config.extra.arcana.sdk_name}} functions for onboarding users via the configured social providers and the passwordless login option.
 
-### Sign Blockchain Transactions
+**Sign Blockchain Transactions**
 
 After onboarding users, developers can add code to use the `AuthProvider` in the app and call standard JSON RPC Web3 wallet functions programmatically in the context of an authenticated user. Enable authenticated users to [[sign-transaction|sign blockchain transactions]], send and receive tokens, NFTs, and [[index-arcana-wallet|more ]] using the {{config.extra.arcana.wallet_name}}.
 
-## Deploy App
+### Deploy App
 
 An app integrated with the {{config.extra.arcana.sdk_name}} can be deployed for use only **after** the developer has completed these steps:
 
