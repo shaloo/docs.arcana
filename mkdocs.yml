@@ -156,7 +156,11 @@ nav:
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Troubleshooting Guide: troubleshooting.md
-      - Handling Auth Errors: web-sdk/auth-error-msg.md
+      - Error Handling: 
+        - Web SDK: 
+          - web-sdk/err/index.md
+          - Auth Errors: web-sdk/auth-error-msg.md
+          - Gasless Errors: web-sdk/gasless-error-msg.md
     - FAQ:
       - faq/index.md
       - General: faq/faq-gen.md
