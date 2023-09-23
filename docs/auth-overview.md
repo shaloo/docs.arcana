@@ -41,11 +41,9 @@ arcana:
 
 === "{{config.extra.arcana.wallet_name}}"
 
-    The {{config.extra.arcana.wallet_name}} functionality is part of the {{config.extra.arcana.product_name}} product. 
-    
-    Web3 application developers can enable the built-in embedded, non-custodial Web3 wallet UI for app users by installing the {{config.extra.arcana.sdk_name}} and integrating the app. The {{config.extra.arcana.wallet_name}} UI can be disabled and developers can choose to plug in a custom wallet UI instead. 
-    
-    With {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.wallet_name}} functionality, Web3 app users do not need to generate or manage their cryptographic keys or remember any passphrases. The user's cryptographic assets are generated using the state-of-the-art asynchronous, distributed key generation protocol which allows users to have full control over their wallets and abstracts the complexity of cryptography. 
+    {{config.extra.arcana.wallet_name}} is a part of {{config.extra.arcana.sdk_name}}, serving as an embedded, non-custodial Web3 wallet within the app. Users can access it immediately upon login. Developers can choose to use the default wallet UI or integrate a custom one.
+
+    With {{config.extra.arcana.wallet_name}}, users don't need to create or handle cryptographic keys or remember passphrases. Their assets are secured through advanced asynchronous distributed key generation, giving them full wallet control while simplifying the complexity of cryptography.
     
     ![Arcana wallet Token Tab](/img/an_wallet_home.png){ .width_35pc }
 
