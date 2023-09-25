@@ -16,7 +16,7 @@ arcana:
 
 To get started with {{config.extra.arcana.product_name}} product, these are the high level steps for Flutter app developers:
 
-1. Register your app using the {{config.extra.arcana.dashboard_name}} and get a unique {{config.extra.arcana.app_address}} required during integration later. Configure [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) for [[index-onboard-users|user onboarding]], select the built-in {{config.extra.arcana.wallet_name}} UI or build a custom wallet UI.
+1. Register your app using the {{config.extra.arcana.dashboard_name}} and get a unique {{config.extra.arcana.app_address}} required during integration later. Configure [social providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms) for [[concept-index-auth-type|authenticating users]], select the built-in {{config.extra.arcana.wallet_name}} UI or build a custom wallet UI.
 2. Install and integrate the {{config.extra.arcana.sdk_name}}. Create a new `AuthProvider` using {{config.extra.arcana.app_address}} and choose either the built-in login UI or custom UI for user onboarding.
 3. Implement programmatic access to [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} operations]] in your app as per the business logic. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} UI or a custom UI as configured by the developer.
 4. Deploy your app on the Testnet for validation, and then proceed to deploy it on Mainnet.
@@ -57,95 +57,95 @@ auth.init(context: context);
 
 Once initialized, you can call the `AuthProvider` functions for onboarding users and signing blockchain transactions.
 
-#### Onboard Users
+=== "Onboard Users"
 
-Add code in the app to onboard users when a user chooses to log in using one of the configured social providers or via OTP.  
+    Add code in the app to onboard users when a user chooses to log in using one of the configured social providers or via OTP.  
 
-**Add Social Login**
+    **Add Social Login**
 
-```js
-auth.loginWithSocial("google").then((_) => {
-  // On login Success
-}).catchError(...);
-```
+    ```js
+    auth.loginWithSocial("google").then((_) => {
+      // On login Success
+    }).catchError(...);
+    ```
 
-**Login with OTP**
+    **Login with OTP**
 
-```js
-auth.loginWithOTP("${email_id}").then((_) => {
-  // On login Success
-}).catchError(...);
-```
+    ```js
+    auth.loginWithOTP("${email_id}").then((_) => {
+      // On login Success
+    }).catchError(...);
+    ```
 
-**Logout**
+    **Logout**
 
-Call the logout method in response to a user's choice to log out.  Once a user is authenticated, the Arcana wallet can be displayed in the context of the Flutter app. The Arcana wallet UI also provides an option to log out via the profile tab.
+    Call the logout method in response to a user's choice to log out.  Once a user is authenticated, the Arcana wallet can be displayed in the context of the Flutter app. The Arcana wallet UI also provides an option to log out via the profile tab.
 
-```js
-auth.logout().then((_) => {
-  // On logout
-});
-```
+    ```js
+    auth.logout().then((_) => {
+      // On logout
+    });
+    ```
 
-**Show/Hide Wallet UI**
+    **Show/Hide Wallet UI**
 
-Developers can choose to show or hide the wallet as per the app requirements. 
+    Developers can choose to show or hide the wallet as per the app requirements. 
 
-```js
-auth.showWallet();
-```
+    ```js
+    auth.showWallet();
+    ```
 
-```js
-auth.hideWallet();
-```
+    ```js
+    auth.hideWallet();
+    ```
 
-**Check Wallet Visibility**
+    **Check Wallet Visibility**
 
-To determine in the Flutter app if the Arcana wallet is visible in the app's context, get the visibility status:
+    To determine in the Flutter app if the Arcana wallet is visible in the app's context, get the visibility status:
 
-```js
-var isVisible = auth.isVisible();
-```
+    ```js
+    var isVisible = auth.isVisible();
+    ```
 
-**Clear Cache**
+    **Clear Cache**
 
-Flutter apps can use `clearCache` to clear the Webview cache:
+    Flutter apps can use `clearCache` to clear the Webview cache:
 
-```js
-auth.clearCache();
-```
+    ```js
+    auth.clearCache();
+    ```
 
-Flutter app developers can also enable any of the supported Web3 operations in the Arcana Auth SDK once the users have authenticated. These web operations such as 'send transaction' could trigger blockchain transactions. A transaction notification will be displayed requesting the user to approve or reject the request.
+    Flutter app developers can also enable any of the supported Web3 operations in the Arcana Auth SDK once the users have authenticated. These web operations such as 'send transaction' could trigger blockchain transactions. A transaction notification will be displayed requesting the user to approve or reject the request.
 
-#### Sign Blockchain Transactions
+=== "Sign Blockchain Transactions"
 
-The `AuthProvider` supports the JSON-RPC requests for the following Web3 operations:
+    The `AuthProvider` supports the JSON-RPC requests for the following Web3 operations:
 
-Make an EIP-1193 Request
+    Make an EIP-1193 Request
 
-```js
-auth.request(method: "...", params: [...]).then(() => ...);
-```
+    ```js
+    auth.request(method: "...", params: [...]).then(() => ...);
+    ```
 
-Get information for the logged-in user:
+    Get information for the logged-in user:
 
-```js
-auth.getUser().then((UserInfo info) => ...);
-```
+    ```js
+    auth.getUser().then((UserInfo info) => ...);
+    ```
 
-Initiate send transaction request:
+    Initiate send transaction request:
 
-```js
-auth.sendTransaction({ to: "", value: "" }).then((hash) => ...);
-```
+    ```js
+    auth.sendTransaction({ to: "", value: "" }).then((hash) => ...);
+    ```
 
-Get the user account address:
+    Get the user account address:
 
-```js
-auth.getAccount().then((account) => ...);
-```
+    ```js
+    auth.getAccount().then((account) => ...);
+    ```
 
-After integrating the Flutter mobile app with the {{config.extra.arcana.flutter_sdk_name}} and adding code to onboard users via configured providers such as 'Google' and calling Web3 wallet operation requests, developers can deploy the app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
+    After integrating the Flutter mobile app with the {{config.extra.arcana.flutter_sdk_name}} and adding code to onboard users via configured providers such as 'Google' and calling Web3 wallet operation requests, developers can deploy the app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
 
 ### Deploy App
 
@@ -166,7 +166,7 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 That is all! :tada:
 
-The Flutter mobile app is now ready to onboard users. 
+The Flutter mobile app is now ready to onboard users.
 
 After logging in, users instantly access the {{config.extra.arcana.wallet_name}} for Web3 wallet operations through the UI. Developers can also programmatically invoke wallet functions in the Flutter mobile app using supported [Web3 operations](#web3-operations). When a user action or programmatically invoked operation triggers a blockchain transaction, a notification will appear in the Flutter mobile app, prompting the user to review and approve or decline the transaction.
 
