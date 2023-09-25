@@ -1,5 +1,3 @@
 !!! info "Release Details"
 
-    Refer to the [[rn-main-auth-v1.0.4|Release Notes]] to see [what's changed](https://github.com/arcana-network/auth/releases) in the latest version.
-
-    You can also [watch GitHub releases](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications#subscription-options) to receive notifications when a new release for the {{config.extra.arcana.sdk_name}} is published.
+    Check the [[rn-main-auth-v1.0.4|Release Notes]] for updates on the [latest version](https://github.com/arcana-network/auth/releases). You can also [watch GitHub releases for notifications](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/about-notifications#subscription-options) on new {{config.extra.arcana.sdk_name}} releases.
