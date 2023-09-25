@@ -14,11 +14,11 @@ arcana:
     
     **Benefits**
 
-    - Flexibility in choosing and enabling popular login mechanisms to onboard app users: *social login, passwordless, custom IAM providers, etc.*
-    - Ease of enabling popular blockchain networks for the authenticated users in Web3 operations: *send, receive, NFTs, etc.*
-    - Simple to customize with the built-in plug-and-play login UI or use a custom login UI to onboard users
-    - Speed of enabling the built-in, embedded, non-custodial {{config.extra.arcana.wallet_name}} UI for app users or build and plug in a custom wallet UI
-    - Manage the blockchain signing experience for the app users: *wallet UI shows only when a transaction happens or at all times within the app context*
+    - Flexible app login options: social, passwordless, custom IAM providers, and more.
+    - Customizable with built-in plug-and-play or custom login UI.
+    - Quick integration of {{config.extra.arcana.wallet_name}} UI or custom wallet UI for app users.
+    - Easy blockchain network integration for authenticated users to sign Web3 operations: send, receive, NFTs, etc.
+    - Total control over the blockchain signing experience: display wallet UI during transactions or continuously within the app.
 
     **Usage**
 
@@ -96,11 +96,11 @@ arcana:
 
     **Benefits**
 
-    - Onboard {{config.extra.arcana.product_name}} enabled Web3 apps easily using popular Web2-like login options
-    - Instantly access Web3 wallet for signing blockchain transactions after a successful login
-    - Fully own and control access to the private key
-    - Can self-recover key shares when switching devices
-    - Securely access wallet and blockchain assets owned by them
+    - Easy Web3 app onboarding with the with familiar Web2-like login
+    - Instant access to Web3 wallet post-login
+    - Full ownership and control of private key
+    - Self-recovery for device switches
+    - Secure access to owned wallet and assets
 
     **Usage**
 
