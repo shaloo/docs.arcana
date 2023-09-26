@@ -1,3 +1,5 @@
+Arcabot
+DW
 .dmg
 .json
 .md-button
