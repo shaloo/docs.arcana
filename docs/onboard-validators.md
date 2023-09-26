@@ -14,7 +14,7 @@ To become a validator, you must be a trusted partner of {{config.extra.arcana.co
 
 ## Entry/ Exit
 
-Initially, {{config.extra.arcana.company_name}} partners exclusively with trusted validators. Future processes will allow validator entry and exit. Our Mainnet's DKG subsystem comprises seven nodes, four owned and run by {{config.extra.arcana.company_name}}, and the rest by trusted partners.
+Initially, {{config.extra.arcana.company_name}} partners exclusively with trusted validators. Future processes will allow validator entry and exit. The DKG subsystem deployed at Mainnet comprises of seven nodes, four owned and run by {{config.extra.arcana.company_name}}, and the rest by trusted partners.
 
 ## Node Setup
 

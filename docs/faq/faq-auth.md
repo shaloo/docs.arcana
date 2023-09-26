@@ -50,6 +50,12 @@ toc_depth: 2
       
       However, an authenticated user will see **different wallet addresses across two chains configured in a single Web3 app if one of them is EVM-compatible whereas the other is not. Also, in the case of two Web3 apps, one of which uses an EVM-compatible chain and the other that uses chains that are not EVM-compatible, the authenticated user's wallet address will be different for each app.
 
+??? an-faq "Why is the Global Keyspace option is not enabled if I select 'Custom Wallet UI' option during app registration in the {{config.extra.arcana.dashboard_name}}?"
+
+      If a Web3 app developer chooses the 'Custom Wallet UI' instead of the built-in {{config.extra.arcana.wallet_name}} UI, during app registration via {{config.extra.arcana.dashboard_name}}, only 'app-specific keys' are allowed. This is for [[concept-keyspace-type#security|keyspace security]].
+      
+      Global keys allow users to have the same private key across all the apps that integrate with the {{config.extra.arcana.sdk_name}}. With custom wallet UI, global keys are disallowed to mitigate the security risk of a malicious app hacking into user keys and gaining access to not just one but all such apps with 'Global Keys' enabled.
+
 ??? an-faq "Are incognito/private windows in browsers and 'third-party cookies blocked' option supported by the {{config.extra.arcana.sdk_name}}?"
 
       Yes.
