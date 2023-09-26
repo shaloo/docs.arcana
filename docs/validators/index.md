@@ -8,7 +8,9 @@ arcana:
 
 # DKG Validators
 
-Only trusted parties can participate as DKG validator nodes as of now. In the future, we plan to have a process for onboarding additional third-party validators for the DKG nodes.
+!!! note "Trusted Partners Only"
+
+      Currently, only trusted partners can participate in the ADKG protocol as third-party [[concept-validator-nodes|DKG validator nodes]]. We are planning to onboard other third-party validators in the future.
 
 [[onboard-validators|Onboarding Guide :octicons-checkbox-16:]]{ .md-button }
 

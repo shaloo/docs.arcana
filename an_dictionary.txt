@@ -1,5 +1,3 @@
-Arcabot
-DW
 .dmg
 .json
 .md-button
@@ -35,6 +33,7 @@ Ankr
 AppID
 AppId
 Arbitrum
+Arcabot
 Arcana
 Arcana's
 Arcana-Wagmi
@@ -133,6 +132,7 @@ DID_NFT_linked_and_cannot_be_deleted
 DIDs
 DKG
 DPSS
+DW
 DashboardChlogText
 DbAppIDLinkText
 DbAuthSuppText
@@ -209,6 +209,7 @@ GoogleStep3Text
 HD
 HDWallet
 HTML
+HW
 Hashicorp
 HighwayHash
 IAM

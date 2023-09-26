@@ -6,19 +6,17 @@ arcana:
   root_rel_path: .
 ---
 
-# Validator Onboarding Guide
+# ADKG Validator Onboarding Guide
 
-This DKG validator onboarding guide is meant for **trusted partners**, the *'validators'*, who have partnered with {{config.extra.arcana.company_name}} to set up DKG [[concept-validator-nodes|validator nodes]].
+This guide is for **trusted partners**, known as 'validators,' selected for the {{config.extra.arcana.company_name}} ADKG protocol. Validators run crucial [[concept-validator-nodes| ADKG validator nodes]], central to {{config.extra.arcana.company_name}}'s DKG subsystem decentralization.
 
-Validator nodes from trusted third parties participate in the {{config.extra.arcana.company_name}} distributed key generation [(DKG)]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md) subsystem. These validator partners have a crucial role to play in the decentralizing of the system by setting up and managing validator nodes.
+To become a validator, you must be a trusted partner of {{config.extra.arcana.company_name}} and run a validator node. In return, validators earn rewards based on node uptime and key generation output
 
-To qualify as a validator, you must be a trusted partner of {{config.extra.arcana.company_name}} and operate a DKG node. In return for participating in the DKG protocol and providing this service, validators earn rewards based on various factors such as the uptime of their node and the output of their key generation work.
+## Entry/ Exit
 
-## Validator Entry/ Exit
+Initially, {{config.extra.arcana.company_name}} partners exclusively with trusted validators. Future processes will allow validator entry and exit. Our Mainnet's DKG subsystem comprises seven nodes, four owned and run by {{config.extra.arcana.company_name}}, and the rest by trusted partners.
 
-Initially, {{config.extra.arcana.company_name}} will only work with a select group of trusted partners as validators. In the future, we will establish a process for validators to join and leave the network. At mainnet launch, the {{config.extra.arcana.company_name}} DKG subsystem will include seven nodes in the key generation process, with four nodes operated by {{config.extra.arcana.company_name}} and three by our partners.
-
-## Validator Node Setup
+## Node Setup
 
 {{config.extra.arcana.company_name}} DKG is a permissioned system that only allows a trusted group of partners to join. To become an external validator node in the DKG subsystem, partners must be whitelisted by {{config.extra.arcana.company_name}}. This process involves providing an Ethereum address, which will be associated with a private key that verifies the node's identity and grants it access to the {{config.extra.arcana.company_name}} DKG subsystem.
 
@@ -35,7 +33,7 @@ Initially, {{config.extra.arcana.company_name}} will only work with a select gro
 
    ![kvsetup image](/img/validator_kv_engine_setup.png)
 
-#### Hardware Requirements
+**HW Configuration**
 
 | Minimum  |  Recommended |
 | :--- | :--- |
@@ -43,7 +41,9 @@ Initially, {{config.extra.arcana.company_name}} will only work with a select gro
 | 500 GB SSD | 1 TB SSD |
 | 4 core CPU | 8 core CPU |
 
-### Step1: Configure Node
+### Steps
+
+#### 1. Node Configuration
 
 **Operating System**:
 
@@ -126,17 +126,18 @@ ulimit -n
 
 2. Change the binary file permissions to 'executable'.
 
-### Step 2: Initiate Validator Secrets
+#### 2. Validator Secrets
 
 There are two parts to initiating validator secrets. First, you must initiate a secrets configuration manager. Then, you must generate secret keys for the validator node. Currently, only the Hashicorp vault is supported.
 
-#### Step 2a: Initiate Secrets Configuration Manager
+**2a. Initiate Secrets Configuration Manager**
 
 Use Hashicorp to initiate the secret configuration manager. Make sure you have already enabled the KV secrets engine as listed in the prerequisites, before running the command listed below.
 
 ```sh
 dkg secret generate --secret-config=<path> --token=<token> --server-url=<url> 
 ```
+
 **Command Line Options**
 
 `--secret-config`
@@ -151,7 +152,7 @@ The access token for the Hashicorp vault. The access token is used for accessing
 
 The API URL of the Hashicorp Vault server.
 
-#### Step 2b: Generate Secret Keys
+**2b: Generate Secret Keys**
 
 After initiating the secret configuration manager, generate keys for the validator node. **The following command will provide the Node Address, which should be shared with the {{config.extra.arcana.company_name}} Team**.
 
@@ -169,13 +170,13 @@ The `path` specified in the previous step where the secret manager configuration
 
       Start the node **only** when you have set up the validator secret and shared the Node Address with the {{config.extra.arcana.company_name}} Team.
 
-### Step 3: Start Ceremony
+#### 3. Start Ceremony
 
 Validator DKG nodes cannot be started individually; all participating nodes must start at the same time for the protocol to work properly. Keep an eye on this space for updates on when to start your DKG node as a validator.
 
 The key generation begins only when **all** the nodes in the DKG subsystem, {{config.extra.arcana.company_name}} DKG nodes, and all validator DKG nodes, have joined in.
 
-### Step 4: Start Validator Node
+#### 4. Node Startup
 
 Before you start the validator node, make sure you have completed all the prerequisites and followed the steps defined in the **DKG Start Ceremony**.
 
@@ -192,7 +193,7 @@ Before you start the validator node, make sure you have completed all the prereq
 
       If this is not the first time you are starting the node, please make sure that you perform a clean re-start. Refer to the section [Re-starting the Node](#re-starting-the-node) to see how to perform a clean restart.
 
-#### Option1: Use Configuration File
+**Option1: Use Configuration File**
 
 ```sh
 dkg start --config=/path/to/config.json
@@ -208,7 +209,7 @@ dkg start --config=/path/to/config.json
 }
 ```
 
-#### Option 2: Use Command Line
+**Option 2: Use Command Line**
 
 ```sh
 dkg start --secret-config=/path/to/secret/config --data-dir=/path/to/data --domain=keyserver.example.com --ip-address=172.23.22.231  --server-port=3000
@@ -246,11 +247,9 @@ The port number at which the **http server** is listening for requests.
 
       The SSL termination can happen on an **Nginx** server which can then map the port 443 to the `--server-port` specified in the `dkg start` command above.
 
-### Stop Validator Node
+#### 5. Stop/Restart Node
 
 You need to kill the running DKG process to stop the validator node. 
-
-### Re-starting the Node
 
 We are working on providing a cleaner way to stop and restart the node.  Until then, follow these steps to cleanly restart your validator node:
 
@@ -258,9 +257,9 @@ We are working on providing a cleaner way to stop and restart the node.  Until t
 2. Replace the DKG binary with the [latest one](https://github.com/arcana-network/adkg/releases).
 3. Remove `dkg.sock` file, if present.
 4. DO NOT REMOVE the directory that your specified for `--data-dir`.
-5. Start the nodes using the `dkg start` command.      
+5. Start the nodes using the `dkg start` command.
 
-## Validator Responsibilities
+## Responsibilities
 
 * Perform all the required technical node operations done by each DKG node.
 
@@ -276,30 +275,30 @@ We are working on providing a cleaner way to stop and restart the node.  Until t
 
 * Communicate any issues with the {{config.extra.arcana.company_name}} team on the DKG Slack channel.
 
+* **Monitoring Metrics**: At present, besides CPU and memory, we do not have any other specific metrics that need to be monitored for the validator node.  Watch out this section for updates!
+
 * Provide feedback and suggestions.
-
-### Monitor Validator Metrics
-
-At present, besides CPU and memory, we do not have any other specific metrics that need to be monitored for the validator node.  Watch out this section for updates!
 
 ## Migrating Validator Node
 
 If you want to migrate the validator node to another server (for backup or temporary purposes) there are a couple of options available. Make sure you have addressed the prerequisites first before migrating the validator setup to another node.
 
-### Migration Prerequisites
+!!! caution "Migration Prerequisites"
 
-* Backup the 'data' directory of the validator node
-* Backup the Hashicorp vault data on a separate node
+      Before migrating a validator node to another physical or virtual server, make sure that the following are addressed:
 
-### Migration Option 1: Node with same Domain and IP Address
+      * Backup the 'data' directory of the validator node
+      * Backup the Hashicorp vault data on a separate node
+
+**Case 1: Migrating to a Node with same Domain and IP Address**
 
 Follow the steps listed under [starting a validator node](#validator-node-setup) section except the instructions in step 2b to bring up a new validator node. The new node can simply be started and join in the ADKG protocol, other nodes are not required to be restarted.
 
-### Migration Option 2: Node with same Domain and different IP Address
+**Case 2: Migrating to a Node with same Domain and different IP Address**
 
 You need to notify the Arcana team as this may require coordinating with other validator node operators.  Follow the steps listed under [starting a validator node](#validator-node-setup) section except the instructions in step 2b to bring up a new validator node. Before starting up the node, wait for all the other nodes in the ADKG subsystem to restart in a synchronized manner. In this case, all validator nodes have to restart together.
 
-### Migration to a different IP Address and Domain
+**Case 3: Migrating to a Node with different IP Address and Domain**
 
 We **do not support** migrating the validator node to a different one that has a different domain and a different IP address. In future releases too, the new node with a different domain and IP address will not be treated as a reincarnate of the previous node but as a brand 'new' replacement node. Adding such a node will follow {{config.extra.arcana.company_name}} ADKG recovery and repair protocol enhancements. In that case, there is no use backing up the validator node data.  Our protocol will re-generate and repair key shares where applicable, in case one node goes down and a different one joins in the ADKG subsystem.
 
@@ -316,3 +315,7 @@ We are working on providing more details regarding validator rewards that answer
 * When are the rewards realized and how?
 
 Check out [[faq-validator|Validator FAQ]] if you have any questions or write to us: {% include "./text-snippets/support_email_link.md" %}
+
+## Questions?
+
+Write to us at the special validator slack channel if you have any further queries.
