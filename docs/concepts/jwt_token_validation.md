@@ -26,7 +26,7 @@ Clx9+8HxPvGHegrBaoZadbeKhfBSfQbxBcdzpDe+3EqUVwvwH3hMIoqa3A==
 -----END PUBLIC KEY-----
 ```
 
-## Token Verification: Testnet 
+## Token Verification: Testnet
 
 ```sh
 -----BEGIN PUBLIC KEY-----
@@ -37,4 +37,9 @@ MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAETjlG1BIL2x0LwJH5iIxXXfJaokUb
 
 ## Token Verification: Mainnet
 
-We will update this section soon! Stay tuned.
+```sh
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0UWoYfR6ii+6PTfWPDtY8jKLJtL1
+8+Nu+qDkaMjFXVlWg6oVpHdBMBvsmia2aQsrjKrYHdmMz5bntsEAu+7QdA==
+-----END PUBLIC KEY-----
+```
