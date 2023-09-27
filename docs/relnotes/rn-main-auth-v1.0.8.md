@@ -10,17 +10,21 @@ arcana:
 
 {==
 
-**Release Date: August 23, 2023**  
+**Release Date: September 20, 2023**  
 
-The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
+Version: **{{config.extra.arcana.latest_version}}**
 
-* {{config.extra.arcana.sdk_name}}
-      - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
-      - [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
-      - [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
-      - [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
-      - [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
-      - [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native)
+The {{config.extra.arcana.product_name}} product consists of the following components:
+
+* {{config.extra.arcana.sdk_name}} 
+      - Web Apps 
+        - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
+        - [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
+        - [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
+        - [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+      - Mobile Apps
+        - [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
+        - [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native)
 
 * [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network/)
 
@@ -70,10 +74,11 @@ await auth.init()
 <img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="85%"/>
 
 For more details, see [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
-
+<!--- AR-6971 
 **Gasless Feature**
 
 Developers can simplify user onboarding, reduce the Web3 gas-fees barrier to entry and drive up the app adoption through the gasless transactions feature (early beta) in the {{config.extra.arcana.product_name}} product. See [[concept-gasless-transactions|gasless transactions]] and [[configure-gasless|how to configure gasless]] and set up gas tanks.
+-->
 
 ### Bug Fixes
 

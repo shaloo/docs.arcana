@@ -194,3 +194,7 @@
 .width_85pc {
   width: 25%;
 }
+
+.an-marker-text-highlight {
+  background-color: yellow;
+}
