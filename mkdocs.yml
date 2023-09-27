@@ -29,6 +29,21 @@ nav:
         - React-Native Apps: quick-start/react-native-quick-start.md
       - Auth-Core: quick-start/auth-core-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
+    - References:
+      - quick-links/index.md
+      - State of the Arcana Auth: state-of-the-arcana-auth.md
+      - Coming Soon: arcana-coming-soon.md
+      - Audit Reports: 
+        - audit/index.md
+        - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
+        - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
+      - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
+    #- Integration Partners:
+        #- EVM Chains:
+          #- Shardeum: 
+            #- integrations/shardeum/index.md
+            #- Developer's Guide: integrations/shardeum/integrate-shardeum.md
+            #- Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
   - Getting Started:
       - howto/index.md
       - Register App: howto/configure-auth.md
@@ -223,21 +238,6 @@ nav:
         - Manage Tokens: howto/use-wallet-to-manage-tokens.md
         - Manage NFTs: howto/use-wallet-to-manage-nfts.md
       - MFA Setup: user-guides/mfa/mfa-ug.md
-  - Blockchain Integrations:
-      - EVM Chains:
-        - Shardeum: 
-          - integrations/shardeum/index.md
-          - Developer's Guide: integrations/shardeum/integrate-shardeum.md
-          - Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
-  - Quick Links:
-      - quick-links/index.md
-      - State of the Arcana Auth: state-of-the-arcana-auth.md
-      - Coming Soon: arcana-coming-soon.md
-      - Audit Reports: 
-        - audit/index.md
-        - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
-        - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
-      - Technical Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Arcana Academy:
       - an-academy/index.md
       - About Arcana Auth:

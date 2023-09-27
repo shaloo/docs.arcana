@@ -50,6 +50,12 @@ toc_depth: 2
       
       However, an authenticated user will see **different wallet addresses across two chains configured in a single Web3 app if one of them is EVM-compatible whereas the other is not. Also, in the case of two Web3 apps, one of which uses an EVM-compatible chain and the other that uses chains that are not EVM-compatible, the authenticated user's wallet address will be different for each app.
 
+??? an-faq "Why is the Global Keyspace option is not enabled if I select 'Custom Wallet UI' option during app registration in the {{config.extra.arcana.dashboard_name}}?"
+
+      If a Web3 app developer chooses the 'Custom Wallet UI' instead of the built-in {{config.extra.arcana.wallet_name}} UI, during app registration via {{config.extra.arcana.dashboard_name}}, only 'app-specific keys' are allowed. This is for [[concept-keyspace-type#security|keyspace security]].
+      
+      Global keys allow users to have the same private key across all the apps that integrate with the {{config.extra.arcana.sdk_name}}. With custom wallet UI, global keys are disallowed to mitigate the security risk of a malicious app hacking into user keys and gaining access to not just one but all such apps with 'Global Keys' enabled.
+
 ??? an-faq "Are incognito/private windows in browsers and 'third-party cookies blocked' option supported by the {{config.extra.arcana.sdk_name}}?"
 
       Yes.
@@ -86,4 +92,26 @@ toc_depth: 2
       | :--- | :--- |
       | Users need to be responsible for and remember their passphrases.| Users are not required to remember any passphrase.|
       | Users need to manage keys themselves in case of self-custody wallets. | {{config.extra.arcana.wallet_name}} offers a sweet spot, users don't have to manage keys as in the self-custody wallet and yet their keys can be generated in a distributed manner via the {{config.extra.arcana.wallet_name}}, a non-custodial wallet.|
-      | Users that are new to Web3 typically find self-custodial wallets very challenging to use. | {{config.extra.arcana.wallet_name}} offers a really simple Web2-like onboarding experience for new Web3 users without sacrificing security and ownership.|
+      | Users that are new to Web3 typically find self-custodial wallets very challenging to use. | {{config.extra.arcana.wallet_name}} offers a really simple Web2-like onboarding experience for new Web3 users without sacrificing security and ownership.
+
+## User Key Privacy
+
+---
+
+??? an-faq "If {{config.extra.arcana.company_name}} is storing nothing related to user's private keys, how does Arcana provide the same wallet to a user when the user signs in for the second time?"
+
+      The {{config.extra.arcana.sdk_name}} maintains a UserID -> Public Key mapping, that is how the user is identified across successive login sessions and the correct wallet is assigned for the authenticated user. This mapping is stored in the DKG nodes.
+
+??? an-faq "How does the {{config.extra.arcana.sdk_name}} ensure that the key shares are fetched by the correct user only?"
+
+      A user can log in only after the social provider authenticates or if the user clicks the verify link in passwordless, Auth can identify the correct user. Providers share JWT/other-identifiers with Auth after successful login for the authenticated login session. So unless user gives away their social ID / verify link to someone else, only a valid user/correct user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
+
+??? an-faq "Can a malicious entity reconstruct the user's private key if they get all the requisite key shares?"
+
+      There are several safeguards against this and we are continuously evolving the ADKG protocol to make it more robust and fast. 
+      
+      One if the methods is MFA. When MFA feature is enabled, it further strengthen the security by using multiple factors used to generate private key besides the key shares. A local share is created for the user at the first login that lives on the user's device. This local key component stored on user's device is required to get the actual private key. If a user changes the device, they are validated via PIN setup during MFA or security answers before the local share is re-created on the new device.
+      
+      Irrespective of whether MFA is enabled or not, the reconstruction of private key happens only once a user is authenticated by the configured social provider and the user is verified by DKG before sharing the key shares. The verification token ID changes for every user session so a malicious entity cannot reuse it. Also note that the same set of key shares is not returned for every user session by the DKG nodes. Only a random subset of shares are needed to construct the private key. 
+
+      In a future version of ADKG protocol, the key shares will be periodically refreshed to safeguard against an eventuality if some of them are somehow stolen by a malicious user.

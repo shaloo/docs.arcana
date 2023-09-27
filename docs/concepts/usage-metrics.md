@@ -12,18 +12,20 @@ arcana:
 
 The aggregate usage metrics are displayed in the *Manage Apps Screen*. The per-application metrics are displayed on the *Application Dashboard* screen.
 
-* **Manage Apps Screen**: 
-  - Aggregate Monthly Active Users (Mainnet)
-  - Number of free MAU (Mainnet)
-  - Number of paid MAU (Mainnet)
+**Manage Apps Screen**: 
 
-  <img alt="Manage App Usage Metrics" src="/img/an_db_manage_apps_metrics.png" width="75%" />
+- Aggregate Monthly Active Users (Mainnet)
+- Number of free MAU (Mainnet)
+- Number of paid MAU (Mainnet)
 
-* **Application Dashboard**: 
-  - Testnet: Daily MAU, Monthly MAU
-  - Mainnet: Daily MAU, Monthly MAU
+<img alt="Manage App Usage Metrics" src="/img/an_db_manage_apps_metrics.png" width="75%" />
 
-  <img alt="Per App Usage Metrics" src="/img/an_db_per_app_metrics.png" width="75%" />
+**Application Dashboard**: 
+
+- Testnet: Daily MAU, Monthly MAU
+- Mainnet: Daily MAU, Monthly MAU
+
+<img alt="Per App Usage Metrics" src="/img/an_db_per_app_metrics.png" width="75%" />
 
 !!! note "Mainnet Usage"
 
