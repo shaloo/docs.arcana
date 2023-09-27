@@ -15,19 +15,16 @@ arcana:
 
 *Are you new to Web3?*
 
-**We have you covered!**
+**DW, We have you covered, read on!**
+
 
 ==}
 
-Simply **follow this guide** and quickly get started with building a foundation before integrating a Web3 application with the {{config.extra.arcana.sdk_name}}.
-
-{{config.extra.arcana.sdk_name}} enables Web3 applications to add user onboarding functions easily through several supported authentication providers. The authenticated users can instantly access the embedded Web3 {{config.extra.arcana.wallet_name}} in the context of the integrated application and sign blockchain transactions. Developers can add code to perform Web3 wallet operations programmatically in the context of an authenticated user, e.g., sending tokens, checking wallet balance, standard Ethereum JSON-RPC calls for blockchain transactions, etc.
+{{config.extra.arcana.sdk_name}} allows Web3 apps to onboard users seamlessly through supported authentication providers. Authenticated users instantly access the embedded Arcana wallet, enabling them to sign blockchain transactions. Developers can programmatically perform Web3 wallet operations, such as token transfers and checking balances, and standard Ethereum JSON-RPC calls for blockchain transactions, in the user's context.
 
 !!! tip
 
-      If you are already familiar with how Web3 works, using authentication providers to onboard users, passwordless login, using Web3 wallet provider to sign blockchain transactions, etc., then you can skip the beginners' section and jump right into the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] .
-
-After the foundation, your next stop is to figure out when and how to use {{config.extra.arcana.sdk_name}} and build a basic Web3 app that integrates with it for onboarding users and allowing authenticated users to sign blockchain transactions.
+      If you're experienced with Web3, including user onboarding, passwordless login, and Web3 wallet operations, feel free to skip the beginner's section and dive into the [[new-to-web3#step-1-understanding-arcana-auth|'Understanding {{config.extra.arcana.product_name}}']] section below.
 
 ## Beginners Journey
 
@@ -46,7 +43,7 @@ Get a firm grip on the topics listed under the prerequisites section. These will
     - Using popular Web2 [Social OAuth](https://auth0.com/learn/social-login/) and [passwordless login](https://auth0.com/passwordless)
     - Difference between Web2 and [Web3 authentication](https://blog.mycrypto.com/sign-in-with-ethereum-an-alternative-to-centralized-identity-providers)
 
-* Blockchain basics
+* Blockchain basic topics:
 
     - What is a [blockchain](https://ethereum.org/en/developers/docs/intro-to-ethereum/#what-is-a-blockchain)?
     - What is [transaction signing](https://ethereum.org/en/developers/tutorials/sending-transactions-using-web3-and-alchemy/#why-do-i-need-to-sign-my-transactions) and why it is used in blockchain?
@@ -54,6 +51,10 @@ Get a firm grip on the topics listed under the prerequisites section. These will
     - What is a [blockchain EIP-1193 standard provider](https://eips.ethereum.org/EIPS/eip-1193)?
     - What is a [wallet](https://ethereum.org/en/wallets/#main-content) and how it is used in the blockchain context?
     - Build a [decentralized Book Rental Web3 app](https://developers.tron.network/docs/build-a-web3-app), set up smart contracts, and more.
+
+* Blockchain advanced topics:
+
+    - [Gasless transactions](https://docs-gasless.biconomy.io/products/enable-gasless-transactions)
 
 * Basic cryptography
 
@@ -76,29 +77,31 @@ Now that you are familiar with the basics, let us take a look at what {{config.e
 
 ## Step 2: Getting Started with the {{config.extra.arcana.sdk_name}}
 
-To use the {{config.extra.arcana.sdk_name}} in your application, you need to first [[configure-auth|register the application]] using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Configure [[index-config-social-providers|social providers]] to onboard users before you [[index-integrate-app|integrate your application]] and call any {{config.extra.arcana.sdk_name}} functions in your application.
+**Register App**: To use the {{config.extra.arcana.sdk_name}} in your application, you need to first [[configure-auth|register the application]] using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Configure [[index-config-social-providers|social providers]] to onboard users before you [[index-integrate-app|integrate your application]] and call any {{config.extra.arcana.sdk_name}} functions in your application.
 
-After configuring application settings using the {{config.extra.arcana.dashboard_name}}, you can install the {{config.extra.arcana.sdk_name}} and integrate your application. Once integrated, applications can access the `AuthProvider` interface to onboard users and enable authenticated users to sign blockchain transactions.
+**Install & Integrate App**: After configuring application settings using the {{config.extra.arcana.dashboard_name}}, you can install the {{config.extra.arcana.sdk_name}} and integrate your application. Once integrated, applications can access the `AuthProvider` interface to onboard users and enable authenticated users to sign blockchain transactions.
 
-There are two ways to add user onboarding functionality in an app using the {{config.extra.arcana.sdk_name}} by using built-in plug-and-play login UI or building a user login UI from scratch and adding code for enabling various supported authentication providers. For the new Web3 developers, we recommend the [[concept-plug-and-play-auth|{{config.extra.arcana.sdk_name}} plug-and-play feature]] that is quick and easy to use. Seasoned developers can build custom user authentication UI. See [[index-onboard-users|User Onboarding Guide]]. 
+**Onboard Users**: There are two ways to add user onboarding functionality in an app using the {{config.extra.arcana.sdk_name}} by using built-in plug-and-play login UI or building a user login UI from scratch and adding code for enabling various supported authentication providers. For the new Web3 developers, we recommend the [[concept-plug-and-play-auth|{{config.extra.arcana.sdk_name}} plug-and-play feature]] that is quick and easy to use. Seasoned developers can build custom user authentication UI. See [[index-onboard-users|User Onboarding Guide]]. 
 
-With the {{config.extra.arcana.sdk_name}}, developers can easily enable the embedded, non-custodial {{config.extra.arcana.wallet_name}} for authenticated users and allow them to sign blockchain transactions. See the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.
+**Wallet Ops**: Developers can choose to enable the built-in {{config.extra.arcana.wallet_name}} UI or plug in a custom wallet UI when integrating an app with the {{config.extra.arcana.sdk_name}}. Once authenticated, an embedded, non-custodial wallet is instantly available to users for signing blockchain transactions. See the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details. To learn about how the app users access the {{config.extra.arcana.wallet_name}} UI to perform Web3 operations and sign blockchain transactions, see the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
 
-To learn about how the users access the {{config.extra.arcana.wallet_name}} UI to perform Web3 operations and sign blockchain transactions, see the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
+**Deploy App**: First deploy the integrated app on the Testnet and then migrate to the Mainnet. See [[deploy-app|Deployment Guide]] on how to deploy an app. Learn [[migrate-app-testnet-mainnet|how to migrate an app deployed on the Testnet to the Mainnet]].
 
 *Now that you understand the {{config.extra.arcana.sdk_name}} usage better let's get into some sample applications and coding!*
 
-## Step 3a: Auth Example
+## Step 3: Example Code
 
-This is a vanilla HTML/JS application that integrates with the {{config.extra.arcana.sdk_name}}, allows users to onboard via configured authentication providers and enables the authenticated users to sign blockchain transactions via the {{config.extra.arcana.wallet_name}}.
+=== "Auth Example"
 
-[Auth Example (GitHub) :material-login:](https://github.com/arcana-network/auth/tree/main/examples){ .md-button }
+    This is a vanilla HTML/JS application that integrates with the {{config.extra.arcana.sdk_name}}, allows users to onboard via configured authentication providers and enables the authenticated users to sign blockchain transactions via the {{config.extra.arcana.wallet_name}}.
 
-## Step 3b: React Example
+    [Auth Example (GitHub) :material-login:](https://github.com/arcana-network/auth/tree/main/examples){ .md-button }
 
-Learn how to integrate {{config.extra.arcana.sdk_name}} in a simple React Application.
+=== "React Example"
 
-[[react-code-sample|React Example :material-react:]]{ .md-button }
+    Learn how to integrate {{config.extra.arcana.sdk_name}} in a simple React Application.
+
+    [[react-code-sample|React Example :material-react:]]{ .md-button }
 
 !!! note "Milestone Achieved!"
 
@@ -108,7 +111,7 @@ Learn how to integrate {{config.extra.arcana.sdk_name}} in a simple React Applic
 
 ## Step 4: Advanced Usage
 
-For advanced options related to user onboarding and the {{config.extra.arcana.sdk_name}} usage, you can check out [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} usage]] and {% include "./text-snippets/authsdkref_url.md" %}.
+For advanced options related to user onboarding and the {{config.extra.arcana.sdk_name}} usage, you can check out [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} usage]] and {% include "./text-snippets/authsdkref_url.md" %}. Refer to [Auth Examples on GitHub](https://github.com/arcana-network/auth-examples) to see how to integrate different types of apps with the {{config.extra.arcana.sdk_name}}.
 
 ## Troubleshooting
 
