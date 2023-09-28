@@ -11,20 +11,11 @@ arcana:
 <img src="/img/icons/i_dkg_light.png#only-light" width="50"/>
 <img src="/img/icons/i_dkg_dark.png#only-dark" width="50"/>
 
-Web3 blockchain transactions need user signing or approval before they can be processed. To sign transactions, users need secrets or keys. Arcana Network uses ADKG algorithms for securely generating key shares and enabling authenticated users to sign blockchain transactions easily.
-
-Arcana Network implements the [Practical Asynchronous Distributed Key Generation](https://eprint.iacr.org/2021/1591.pdf) protocol for generating non-custodial keys meant for the SDK users that can be used to sign blockchain transactions. Our implementation is used for non-custodial key pair generation and onboard the Web3 app users to sign blockchain transactions. It is a simple and effective mechanism that ensures no single node has access to the user’s key ensuring security and robustness.
+{{config.extra.arcana.company_name}} employs ADKG algorithms to securely generate key shares, allowing authenticated users to easily sign Web3 blockchain transactions. Our implementation follows the [Practical Asynchronous Distributed Key Generation](https://eprint.iacr.org/2021/1591.pdf) protocol, providing non-custodial key pairs for SDK users to sign transactions. This approach guarantees security and robustness by preventing any single node from accessing a user's key.
 
 ## How is ADKG better?
 
-Earlier, the Arcana Network protocol used DKG with a trusted dealer mechanism which had its shortcomings such as:
-
-- Dealer has access to all keys as they are the ones generating the keys.
-- Regeneration of lost shares by a node going down or exiting the network was not automated
-
-The new ADKG implementation is more robust than Arcana Network’s previous DKG implementation as it does not involve any trusted dealer or a third party.
-
-Also, unlike the other synchronous DKG protocol models, ADKG protocol is immune to any underlying synchronous network assumptions. By asynchronous network, we mean a network where the presence of a malicious adversary can corrupt a threshold of nodes and delay message sharing but must eventually deliver all messages sent between honest nodes.
+ADKG improves upon {{config.extra.arcana.company_name}}'s previous DKG protocol by eliminating the need for a trusted dealer or third party, addressing issues such as key exposure and automating share regeneration. Unlike synchronous DKG protocols, ADKG is resilient to malicious adversaries and operates effectively in asynchronous network conditions.
 
 ## Assumptions
 
