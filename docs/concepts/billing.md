@@ -56,7 +56,7 @@ Once generated, developers can access their billing history and view the current
 
 {{config.extra.arcana.company_name}} Mainnet usage beyond the free tier is billed **monthly**. Invoices are generated on the last day of each month, summarizing the collective app usage and charges for all apps under a developer account. Access invoice and usage specifics through {{config.extra.arcana.dashboard_name}} by clicking on the user icon on the top right and selecting **Invoices**.
 
-![Per Application Usage Stats Testnet](/img/an_db_billing_invoices_nav.png){.an-screenshots}
+ ![Per Application Usage Stats Testnet](/img/an_db_billing_invoices_nav.png){.an-screenshots}
 
 ## Outstanding Dues
 

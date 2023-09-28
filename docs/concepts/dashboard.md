@@ -27,7 +27,7 @@ Before integrating the {{config.extra.arcana.sdk_name}}, developers must use the
 
 ### Configure Auth Usage
 
-Use the dashboard to customize {{config.extra.arcana.sdk_name}} usage by the app:
+Use the dashboard to customize {{config.extra.arcana.sdk_name}} usage:
 
 - **Wallet UI**: select built-in {{config.extra.arcana.sdk_name}} UI or custom wallet UI
 - **Branding**: customize the look and feel of the {{config.extra.arcana.sdk_name}} UI
