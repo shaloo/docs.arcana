@@ -1,12 +1,12 @@
 ---
 alias: support
-title: 'Support'
+title: 'Need help?'
 description: 'Need help? Contact Arcana support team for any questions. We are happy to help!'
 arcana:
   root_rel_path: .
 ---
 
-# Arcana Support
+# Contact Us
 
 *We are happy to help!*
 
