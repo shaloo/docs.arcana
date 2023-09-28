@@ -20,10 +20,10 @@
      --md-primary-an-banner-text-color: rgba(63, 63, 2, 0.99);
      --md-banner-color-1: var(--md-primary-bg-color);
      --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
-     --md-banner-color-yellow: var(--md-typeset-mark-color);
      --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
      --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
-     --md-typeset-mark-color: rgba(247, 247, 163, 0.95);
+     --md-typeset-mark-color: rgba(247, 247, 163, 0.25);
+     --md-banner-color-yellow: var(--md-typeset-mark-color);
 }
 
 [data-md-color-scheme="black"] {
@@ -33,16 +33,28 @@
 :root > [data-md-color-scheme="slate"]{
   --md-primary-fg-color--lighter: #929292;
   --md-an-card-color-hover: var(--md-primary-fg-color--dark);
-  --md-typeset-mark-color: rgba(56 59 82, 0.95);
-  --md-banner-color-yellow: rgba(247, 247, 163, 0.95);
+  --md-typeset-mark-color: rgba(56, 59, 82, 0.95);
+  --md-banner-color-yellow: rgba(247, 247, 163, 0.25);
 }
 
 .critic .block {
   background-color: var(--md-typeset-mark-color);
 }
 
+/* Highlight tabs when active */
+
+.md-tabs__item {
+  border: 1px 1px 1px 0 solid gray;
+  border-radius: 5px 5px 0 0;
+} 
+
+.md-tabs__item:hover {
+  background-color: var(--md-accent-bg-color);
+  color: var(--md-accent-fg-color);
+} 
+
 .md-header {
-  background: linear-gradient(to bottom, var(--md-primary-bg-color), var(--md-primary-fg-color) 19%,#aaa 69%);
+  /*background: linear-gradient(to bottom, var(--md-primary-bg-color), var(--md-primary-fg-color) 19%,#aaa 69%);*/
 }
 
 /* Remove site-name space*/
