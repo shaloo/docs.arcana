@@ -12,9 +12,9 @@ arcana:
 <img src="/img/icons/i_an_authsdk_dark.png#only-dark" width="50"/>
 
 
-The {{config.extra.arcana.sdk_name}} integrates with Web3 apps and allows them to quickly onboard users. It offers an embedded, non-custodial Web3 wallet that enables authenticated users to sign blockchain transactions on any supported blockchain network. 
+{{config.extra.arcana.sdk_name}} enables swift user onboarding in Web3 apps. It embeds an embedded, non-custodial Web3 wallet displayed in the app's context for secure blockchain transaction signing.
 
-Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and [[configure-auth|register, configure apps]]. Each registered app is assigned a unique **{{config.extra.arcana.app_address}}**. This is used for integrating the app with the {{config.extra.arcana.sdk_name}}. 
+Developers start by [[configure-auth|registering and configuring apps]] in the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Each registered app gets a unique **{{config.extra.arcana.app_address}}** essential for integrating with the {{config.extra.arcana.sdk_name}}. 
 
 <img src="/img/diagrams/d_an_authsdk_light.png#only-light" alt="{{config.extra.arcana.sdk_name}} Diagram" height="20%"/>
 <img src="/img/diagrams/d_an_authsdk_dark.png#only-dark" alt="{{config.extra.arcana.sdk_name}} Diagram Dark" height="20%"/>
@@ -23,19 +23,18 @@ Developers must first use the [{{config.extra.arcana.dashboard_name}}]({{page.me
 
 **User Authentication**
 
-  * Developers can configure user onboarding options and allow users to log in easily with a familiar Web2-like login experience via authentication providers and passwordless login
-  * Users can easily onboard Web3 apps without having to manage keys and secrets 
-  * Developers have a choice to enable plug-and-play authentication in the application with a single line of code or build customized UI that calls social and passwordless login functions of the {{config.extra.arcana.sdk_name}}
+  * Developers customize user onboarding with Web2-style login via authentication providers and passwordless access.
+  * Developers can choose between plug-and-play or custom login UI for authentication.
+  * Seamless user login without key management hassles. 
 
 **Web3 Wallet Operations**
 
-  * Developers can configure and manage blockchain transaction signing experience for users by using [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility modes]]
-  * Authenticated users can securely sign blockchain transactions on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]
-  * Supports Web3 wallet operations and the standard Ethereum JSON-RPC calls
-        
-    - configure and switch networks and accounts
-    - sign blockchain transactions
-    - send and receive tokens, NFTs
-    - manage NFTs and preview NFT details using the wallet
+  * Developers can customize the blockchain transaction signing experience for users with wallet visibility [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility]] settings.
+  * Authenticated users can securely sign transactions on [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]]
+  * Supports Web3 wallet operations and standard Ethereum JSON-RPC calls, including:
+    - Configure and switch networks and accounts.
+    - Sign blockchain transactions.
+    - Send and receive tokens and NFTs.
+    - Manage NFTs and preview NFT details using the wallet.
 
 {% include "./text-snippets/auth_sdk_flavors.md" %}

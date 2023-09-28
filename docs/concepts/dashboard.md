@@ -11,18 +11,30 @@ arcana:
 <img src="/img/icons/i_an_dashboard_light.png#only-light" width="50"/>
 <img src="/img/icons/i_an_dashboard_dark.png#only-dark" width="50"/>
 
-Developers can access the {{config.extra.arcana.dashboard_name}} at: {% include "./text-snippets/db_portal_url.md" %}
+Access the {{config.extra.arcana.dashboard_name}} at: {% include "./text-snippets/db_portal_url.md" %}
 
-## Key Features
-
-* Register Web3 apps with {{config.extra.arcana.company_name}}
-* Configure the {{config.extra.arcana.sdk_name}} usage
-
-<img src="/img/diagrams/d_an_dashboard_light.png#only-light" width="80%" height="80%"/>
-<img src="/img/diagrams/d_an_dashboard_dark.png#only-dark" width="80%" height="80%"/>
-
-The {{config.extra.arcana.dashboard_name}} can be used to register apps with {{config.extra.arcana.company_name}} and configure the app as per the application use case, user onboarding requirements, and the user experience for signing the blockchain transactions. It works with the {{config.extra.arcana.company_name}} Gateway node to process application configuration inputs and app usage tracking. The {{config.extra.arcana.dashboard_name}} displays app usage data in terms of monthly active users per app (MAU). 
+The {{config.extra.arcana.dashboard_name}} lets you register apps with {{config.extra.arcana.company_name}} and tailor them to your use cases and user onboarding preferences. It works alongside the {{config.extra.arcana.company_name}} Gateway for app configuration and usage tracking. The dashboard provides insights, such as monthly and daily active users (MAU) per app.
 
 !!! important
 
     Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [[configure-auth|registered and configured]] using the {{config.extra.arcana.dashboard_name}}.
+
+## Key Functions
+
+### Register App
+
+Before integrating the {{config.extra.arcana.sdk_name}}, developers must use the dashboard to register apps with {{config.extra.arcana.company_name}} and get a unique {{config.extra.arcana.app_address}}. Later, during integration, use {{config.extra.arcana.app_address}} to create a new `AuthProvider` instance for onboarding users and signing blockchain transactions.
+
+### Configure Auth Usage
+
+Use the dashboard to customize {{config.extra.arcana.sdk_name}} usage:
+
+- **Wallet UI**: select built-in {{config.extra.arcana.sdk_name}} UI or custom wallet UI
+- **Branding**: customize the look and feel of the {{config.extra.arcana.sdk_name}} UI
+- **Authentication**: enable social providers for onboarding users
+- **Chain Management**: add more chains to the default preconfigured list of supported chains
+- **Global/App-Specific Keys**: select if app users see same wallet address across all apps deployed on {{config.extra.arcana.company_name}} ecosystem or app-specific unique addresses
+- **Gasless**: enable gasless transactions for app users
+
+<img src="/img/diagrams/d_an_dashboard_light.png#only-light" width="80%" height="80%"/>
+<img src="/img/diagrams/d_an_dashboard_dark.png#only-dark" width="80%" height="80%"/>
