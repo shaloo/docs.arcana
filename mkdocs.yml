@@ -263,9 +263,8 @@ nav:
         - Arcana Web3 Wallet: 
           - concepts/anwallet/index.md
           - Overview: concepts/anwallet/wallet-overview.md
-          - Wallet Features: concepts/anwallet/walletfeatures.md
-          - Wallet Visibility: concepts/anwallet/walletvisibility.md
           - Wallet UI Modes: concepts/anwallet/walletuimodes.md
+          - Wallet Visibility: concepts/anwallet/walletvisibility.md
           - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
           - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
           - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
