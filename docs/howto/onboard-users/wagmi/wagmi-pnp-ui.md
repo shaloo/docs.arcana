@@ -44,6 +44,10 @@ To instantiate the `AuthProvider`, specify the unique **{{config.extra.arcana.ap
 
 {% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
 
+!!! note "Compact Mode"
+
+      While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
+
 ### Step 3: Set up WagmiConfig
 
 Next, provide the newly instantiated and configured `ArcanaConnector` to set up Wagmi. 
