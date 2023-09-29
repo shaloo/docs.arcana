@@ -38,11 +38,15 @@ Follow these three steps:
 
 ### Step 2: Create `AuthProvider` and `ArcanaConnector`
 
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages. First, create `AuthProvider` and specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] through the {{config.extra.arcana.dashboard_name}}. 
+Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages. First, create `AuthProvider` and specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[configure-auth|registering and configuring]] through the {{config.extra.arcana.dashboard_name}}.
 
 Next, call `initializeConnector` from the `web3-react/core` library and instantiate the `ArcanaConnector` by specifying the `AuthProvider` as shown in the sample code below.
 
 {% include "./code-snippets/auth_web3_react_configure_pnp.md" %}
+
+!!! note "Compact Mode"
+
+      While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
 
 ### Step 3: Use ArcanaConnector
 
