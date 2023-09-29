@@ -8,7 +8,7 @@ arcana:
 
 # {{config.extra.arcana.wallet_name}} 
 
-The {{config.extra.arcana.sdk_name}} offers an embedded Web3 wallet - the {{config.extra.arcana.wallet_name}}. Use the {{config.extra.arcana.wallet_name}} to configure the user's blockchain signing experience, and allow authenticated users to perform Web3 wallet operations such as executing send transactions on supported blockchains, switching to a different blockchain network and managing tokens and NFTs.
+The {{config.extra.arcana.sdk_name}} provides an embedded Web3 wallet - the {{config.extra.arcana.wallet_name}}. It allows configuring the user's blockchain signing experience and enables authenticated users to perform various Web3 wallet operations like sending transactions, switching networks, and managing tokens and NFTs.
 
 [[concept-arcana-wallet-overview|Overview :material-folder-text:]]{ .md-button }
 
