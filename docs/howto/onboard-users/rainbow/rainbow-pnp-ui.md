@@ -44,6 +44,10 @@ Set up `ArcanaRainbowConnector` using the newly created `ArcanaConnector`. Initi
 
 {% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
 
+!!! note "Compact Mode"
+
+      While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
+
 Use the `connectors` configured with `ArcanaRainbowConnector` in the `_app.js` file for creating the Wagmi client using the `createClient` function:
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
