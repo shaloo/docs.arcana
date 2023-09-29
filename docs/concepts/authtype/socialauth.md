@@ -11,8 +11,8 @@ arcana:
 <img src="/img/icons/i_an_socialauth_light.png#only-light" width="50"/>
 <img src="/img/icons/i_an_socialauth_dark.png#only-dark" width="50"/>
 
-Social authentication providers are popular Web2 user identity providers that allow apps to onboard users and validate the user identity. {{config.extra.arcana.product_name}} product simplifies Web3 user onboarding with popular social providers:
+Social authentication providers are popular Web2 user identity providers that allow apps to onboard users and validate the user identity. Following social providers are supported by the {{config.extra.arcana.sdk_name}}:
 
 {% include "./text-snippets/socialauth_supported.md" %}
 
-In the Web3 ecosystem, distributed systems use trustless protocols and cryptography for decentralized identity verification. Users generate, manage, and secure their keys, which can be complex. {{config.extra.arcana.product_name}} product lowers this barrier, offering a secure, privacy-preserving way to access Web3 apps and sign blockchain transactions via familiar Web2 authentication providers.
+In Web3, decentralized systems rely on trustless protocols and cryptography for identity verification, involving complex key management. The {{config.extra.arcana.sdk_name}} simplifies this process by allowing secure Web3 access and blockchain transaction signing through familiar Web2 authentication providers.

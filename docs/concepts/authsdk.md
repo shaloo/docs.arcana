@@ -23,13 +23,13 @@ Developers start by [[configure-auth|registering and configuring apps]] in the [
 
 **User Authentication**
 
-  * Developers customize user onboarding with Web2-style login via authentication providers and passwordless access.
+  * Developers customize user onboarding with Web2 login via authentication providers and passwordless access.
   * Developers can choose between plug-and-play or custom login UI for authentication.
-  * Seamless user login without key management hassles. 
+  * Seamless user login without key management hassles.
 
 **Web3 Wallet Operations**
 
-  * Developers can customize the blockchain transaction signing experience for users with wallet visibility [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility]] settings.
+  * Developers can customize the blockchain transaction signing experience for users with [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility]] settings.
   * Authenticated users can securely sign transactions on [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]]
   * Supports Web3 wallet operations and standard Ethereum JSON-RPC calls, including:
     - Configure and switch networks and accounts.

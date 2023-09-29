@@ -24,7 +24,7 @@ Each developer account enjoys a promotional free usage tier. Beyond this free ti
 
 * **Aggregate App Usage**: This metric tracks the 'Monthly Active Users (MAU)' across all apps registered with {{config.extra.arcana.company_name}} per developer account on the Mainnet. Total MAU data includes free and paid usage.
 
-    ![Aggr Application Usage Stats Mainnet](/img/an_db_billing_allapps_MAU.png){.an-screenshots}
+    ![Aggregate Application Usage Stats Mainnet](/img/an_db_billing_allapps_MAU.png){.an-screenshots}
 
 * **Per App Usage**: This metric monitors the 'Daily Active Users (DAU)' and 'Monthly Active Users (MAU)' for individual apps on the Testnet. Data is also available for Mainnet usage per app.
 
