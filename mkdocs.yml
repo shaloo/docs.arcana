@@ -301,9 +301,6 @@ nav:
         - Overview: concepts/ansmartc/an-smart-contracts.md
         - Types of Contracts: concepts/ansmartc/an-smartc-types.md
         - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
-        - Contract Details: concepts/ansmartc/an-smartc-details.md
-        - Contract Flows: concepts/ansmartc/an-smartc-flows.md
-        - Upgradeable Contracts: concepts/ansmartc/an-smartc-upgrades.md
       - Usage Metrics: concepts/usage-metrics.md
       - Validator Nodes: concepts/validator-nodes.md
       - Verify JWT Token: concepts/jwt_token_validation.md

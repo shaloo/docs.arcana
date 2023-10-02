@@ -32,6 +32,8 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[concept-arcana-jwt-token|Arcana JWT Token :material-key:]]{ .md-button}
 
+[[concept-keyspace-type|Keyspace Type: App-specific vs. Global Keys :material-key:]]{ .md-button }
+
 [[concept-manage-chains|Manage Chains :material-list-box:]]{ .md-button}
 
 [[concept-mfa|MFA :material-two-factor-authentication:]]{ .md-button }
@@ -40,7 +42,7 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[concept-private-key|Private Key :material-key:]]{ .md-button }
 
-[[concept-keyspace-type|Keyspace Type: App-specific vs. Global Keys :material-key:]]{ .md-button }
+[[concept-index-ansc| Smart Contracts :material-list-box:]]{ .md-button }
 
 [[concept-usage-metrics|Usage Metrics :material-monitor-eye:]]{ .md-button }
 
