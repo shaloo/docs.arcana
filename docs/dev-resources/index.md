@@ -10,9 +10,11 @@ arcana:
 
 [[rn-main-auth-v1.0.8|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
 
-[[migration-guide-v1.0.8| SDK Migration :material-arrow-up:]]{ .md-button }
+[[sdk-installation|Installation Guide :material-elevation-rise:]]{ .md-button }
 
-[[migrate-app-testnet-mainnet| Testnet > Mainnet :material-elevation-rise:]]{ .md-button }
+[[migration-guide-v1.0.8| SDK Migration Guide :material-arrow-up:]]{ .md-button }
+
+[[migrate-app-testnet-mainnet| Testnet > Mainnet Deployment Migration Guide:material-elevation-rise:]]{ .md-button }
 
 [[index-dev-guides| Developer Guides :simple-bookstack:]]{ .md-button }
 

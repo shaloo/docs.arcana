@@ -1,27 +1,43 @@
 ---
 alias: index-howto-guides
-title: 'Getting Started'
+title: 'Get Started'
 description: 'List of how-to guides. Steps to register, configure Arcana Auth usage with the dashboard, integrate app, onboard users, perform Web3 wallet ops and sign blockchain transactions.'
 arcana:
   root_rel_path: ..
 ---
 
-# Getting Started
+# Get Started
 
-Use {{config.extra.arcana.product_name}} product to onboard Web3 app users via social login or passwordless and enable authenticated users sign blockchain transactions. 
+To use the {{config.extra.arcana.product_name}} product simply configure usage through the {{config.extra.arcana.dashboard_name}}, install the {{config.extra.arcana.sdk_name}} depending upon your app type, integrate the app with the SDK and finally deploy app on the {{config.extra.arcana.company_name}} Testnet/Mainnet. 
 
-👇Simply follow these steps:👇
+=== "Configure Auth Usage"
 
-[[configure-auth|1. Register App :material-tools:]]{ .md-button }
+    [[configure-auth|Register App :material-tools:]]{ .md-button }
 
-[[index-configure-auth|2. Configure Auth Usage :fontawesome-solid-users-gear:]]{ .md-button }
+    [[index-configure-auth|Configure Auth Usage :fontawesome-solid-users-gear:]]{ .md-button }
 
-[[index-integrate-app|3. Integrate with {{config.extra.arcana.sdk_name}} :material-lock-check:]]{ .md-button }
+=== "Integrate App"
 
-[[index-onboard-users|4. Onboard Users :fontawesome-solid-user-lock:]]{ .md-button }
+    ??? abstract "Desktop/Web Apps"
 
-[[handle-provider-events|5. Handle Events :material-bell-cog:]]{ .md-button }
+        [[index-integrate-app|Integrate with {{config.extra.arcana.sdk_name}} :material-lock-check:]]{ .md-button }
 
-[[index-arcana-wallet|6. Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+        [[index-onboard-users|Onboard Users :fontawesome-solid-user-lock:]]{ .md-button }
 
-[[deploy-app|7. Deploy App :simple-hive_blockchain:]]{ .md-button }
+        [[handle-provider-events|Handle Events :material-bell-cog:]]{ .md-button }
+
+        [[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+
+    ??? abstract "Mobile Apps"
+
+        [[flutter-quick-start|Flutter Apps :simple-flutter:]]{ .md-button }
+
+        [[react-native-quick-start|React-Native Apps :simple-react:]]{ .md-button }
+
+    <!--- TBD Gasless, Auth core, Unity etc. --->
+
+=== "Deploy App"
+
+    [[deploy-app#configure-testnet|Deploy App: Testnet :simple-hive_blockchain:]]{ .md-button }
+
+    [[deploy-app#configure-mainnet|Deploy App: Mainnet :simple-hive_blockchain:]]{ .md-button }
