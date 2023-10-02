@@ -1,12 +1,12 @@
 ---
 alias: deploy-app
-title: 'Deploy: Arcana Testnet/Mainnet'
+title: 'Deploy on Testnet/Mainnet'
 description: 'Learn how developers can deploy the apps integrated with the Arcana Auth on the Arcana Testnet/Mainnet.'
 arcana:
   root_rel_path: ..
 ---
 
-# Deploy: Arcana Testnet/Mainnet
+# Deploy on Testnet/Mainnet
 
 In this guide, you will learn how developers can deploy apps integrated with the {{config.extra.arcana.sdk_name}} and deploy it on the Arcana Testnet/Mainnet. 
 

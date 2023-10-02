@@ -16,7 +16,7 @@ In this guide, you will learn how to integrate a Vue application with the [{{con
 
 ## Prerequisites
 
-* Developers need to first log into the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
 * Use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure]] the Vue app before integrating with the {{config.extra.arcana.sdk_name}}. 
 

@@ -25,12 +25,12 @@ Next, [select the app type](#select-app-type) and follow the instructions.
 
 Depending upon the type of the Web3 app, developers may need to install one or more of the {{config.extra.arcana.sdk_name}} packages before integrating the SDK with the app. Refer to [[sdk-installation|this table]] and install the appropriate SDK packages.
 
-## Integrate App Type
+## Integrate App
 
 After installing the SDK, follow the detailed step-by-step integration instructions, as per the app type: 
 
 [[integrate-vanilla-app|Integrate Vanilla JS App :material-language-javascript:]]{ .md-button }
 
-[[integrate-react-nextjs-app|Integrate React/NextJS App :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button }
+[[index-integrate-react-app|Integrate React App :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button }
 
 [[integrate-vue-app|Integrate Vue App :material-vuejs:]]{ .md-button }

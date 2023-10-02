@@ -1,22 +1,20 @@
 ---
 alias: concept-ansc-types
-title: 'Types of Smart Contracts'
-description: 'Learn about the various smart contracts types used in implementing the Arcana Network protocol.'
+title: 'Arcana Smart Contract Types'
+description: 'Learn about the various smart contracts used in implementing the Arcana Network protocol.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Types of Smart Contracts
+# Arcana Smart Contract Types
 
-{{config.extra.arcana.product_name}} uses multiple smart contracts that work together to achieve user data privacy and access control. Some of these contracts are deployed by default while others are deployed when apps register with {{config.extra.arcana.company_name}}.
-
-{{config.extra.arcana.product_name}} uses upgradable proxy contracts to implement the {{config.extra.arcana.product_name}}  protocol.
+{{config.extra.arcana.product_name}} is built using various kinds of smart contracts that work together to achieve user data privacy and access control. Some of these contracts are deployed by default while others are deployed when apps register with {{config.extra.arcana.company_name}}. Upgradable proxy contract pattern is used to implement the {{config.extra.arcana.product_name}}  protocol.
 
 ## Proxy Contract Patterns
 
 There are multiple [upgradable proxy contract](https://docs.openzeppelin.com/contracts/3.x/api/proxy#UpgradeableProxy) patterns that are available. For example, [diamond proxy](https://blog.logrocket.com/using-uups-proxy-pattern-upgrade-smart-contracts/#what-is-a-diamond-pattern), [transparent proxy](https://blog.logrocket.com/using-uups-proxy-pattern-upgrade-smart-contracts/#what-is-a-transparent-proxy-pattern), [beacon proxy](https://docs.openzeppelin.com/contracts/3.x/api/proxy#beacon), and [UUPS proxy](https://blog.logrocket.com/using-uups-proxy-pattern-upgrade-smart-contracts/#what-is-a-uups-proxy-pattern). 
 
-{{config.extra.arcana.company_name}} uses the following proxy contract patterns while implementing the {{config.extra.arcana.product_name}}  protocol:
+{{config.extra.arcana.product_name}} uses the following proxy contract patterns:
 
 - UUPS proxy
 - Beacon proxy
@@ -24,9 +22,9 @@ There are multiple [upgradable proxy contract](https://docs.openzeppelin.com/con
 ![Proxy Contract Patterns](/img/diagrams/d_an_proxy_pattern_light.png#only-light)
 ![Proxy Contract Patterns](/img/diagrams/d_an_proxy_pattern_dark.png#only-dark)
 
-## {{config.extra.arcana.company_name}}  Contract Categories
+## {{config.extra.arcana.company_name}} Contract Types
 
-{{config.extra.arcana.company_name}}  smart contracts can be categorized depending on whether their primary function context is an app or the {{config.extra.arcana.product_name}}  protocol as a whole. These two categories are:
+The smart contracts deployed as part of the {{config.extra.arcana.product_name}} product implementation belong to two categories based on whether their primary function context is an app or the {{config.extra.arcana.product_name}} protocol in general:
 
 1. **Core System Contracts:** These contracts are used to implement the core {{config.extra.arcana.product_name}}  protocol, and are singleton in nature. All of the system contracts implement the protocol logic but not all of them store data (program state).
 

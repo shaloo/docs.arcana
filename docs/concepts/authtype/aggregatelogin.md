@@ -15,7 +15,7 @@ Aggregate Login in [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] identif
 
 For example, if a user logs in with Google and Twitter, both linked to the same email, they're treated as a single user. However, if different emails are used, separate {{config.extra.arcana.company_name}} developer accounts are created.
 
-``` mermaid
+```mermaid
 graph LR
   A\[[User]] -.-> B(Social Provider A) -.-> E{Email ID Same?} ==Yes==> F>User ID 1];
   E{Email ID Same?} ==No==> G>New unique User ID];

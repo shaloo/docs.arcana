@@ -9,9 +9,7 @@ arcana:
 
 User onboarding requires developers to first register their applications and configure the authentication providers using the {{config.extra.arcana.dashboard_name}}. Next, install and integrate the app with the {{config.extra.arcana.sdk_name}}.
 
-After integrating, the Web3 apps can add code to onboard users via the supported authentication providers or the passwordless mechanism. {% include "./text-snippets/user_onboard_options.md" %} 
-
-Note that the user onboarding process may vary depending on the application type as listed below:
+After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug and play auth UI or custom login UI.
 
 [[index-vanilla-onboard-users|Vanilla HTML/CSS/JS Apps :fontawesome-solid-plug:]]{ .md-button }
 
