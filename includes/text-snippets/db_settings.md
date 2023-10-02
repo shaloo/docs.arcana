@@ -54,6 +54,18 @@ Use the defaults or provide inputs for various settings as per your application 
 
     * **Wallet:** Website Domain - Set the website domain used by the server, to secure and restrict {{config.extra.arcana.wallet_name}} from loading anywhere else other than the specified domain. {{config.extra.arcana.company_name}} uses the frame-ancestor CSP for restricted domains.<br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_wallet.png"></img>
 
+=== "Keyspace"
+
+    Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to use the [[dashboard-user-guide#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.
+
+    ![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
+
+    !!! caution "Keyspace Settings: Available for 'Mainnet'"
+
+           The 'Keyspace' tab is visible only if a developer chooses to create a 'Mainnet' configuration profile for the app. 
+
+           There are certain limitations when the 'Global Keys' option is selected by developers for an app integrating with the {{config.extra.arcana.product_name}} product. Make sure you understand these [[concept-keyspace-type|limitations]] related to feature restriction, switching between app-specific and global keys, security and other implications associated with the 'Global Keys' usage. 
+
 <!-- #AR-6971
 === "Gasless"
 
@@ -71,16 +83,5 @@ Use the defaults or provide inputs for various settings as per your application 
 
     For details, see [[configure-gasless|how to configure gasless transactions]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
 -->
-=== "Keyspace"
-
-    Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to use the [[dashboard-user-guide#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.
-
-    ![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
-
-    !!! caution "Keyspace Settings: Available for 'Mainnet'"
-
-           The 'Keyspace' tab is visible only if a developer chooses to create a 'Mainnet' configuration profile for the app. 
-
-           There are certain limitations when the 'Global Keys' option is selected by developers for an app integrating with the {{config.extra.arcana.product_name}} product. Make sure you understand these [[concept-keyspace-type|limitations]] related to feature restriction, switching between app-specific and global keys, security and other implications associated with the 'Global Keys' usage. 
 
 Make sure you save the configuration settings before leaving the {{config.extra.arcana.dashboard_name}} page in your browser.

@@ -16,7 +16,7 @@ In this guide, you will learn how to integrate a vanilla HTML/CSS/JS app with th
 
 ## Prerequisites
 
-* Developers need to first log into the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
 * Use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure app settings]] before integrating with the {{config.extra.arcana.sdk_name}}. 
 
@@ -56,11 +56,7 @@ Initialize the newly instantiated `AuthProvider`.
 
     The app must use wait until the `init` call is complete before invoking any of the other {{config.extra.arcana.sdk_name}} functions such as onboarding users by triggering user login, obtaining the standard Ethereum provider, adding/switching networks in the wallet, etc.
 
-After successful initialization, use `AuthProvider` functions. For e.g., an app with custom login UI can call `loginWithSocial` function when a user clicks the custom login button.
-
-```js
-const arcanaProvider = await auth.loginWithSocial('google')
-```
+After successful initialization, you can use any `AuthProvider` functions in the app code. 
 
 {% include "./code-snippets/provider.md" %}
 

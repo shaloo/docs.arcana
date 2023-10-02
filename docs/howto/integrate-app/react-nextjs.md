@@ -8,11 +8,11 @@ arcana:
 
 # Integrate React/NextJS App
 
-In this guide, you will learn how to integrate a React/NextJS application with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) by leveraging the Auth React wrapper. The Auth React wrapper utilizes React Hooks for setting the Auth component props with requisite initialization values needed for configuring the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.wallet_name}}.
+In this guide, discover how to integrate a React/NextJS app with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) using the Auth React wrapper. The wrapper employs React Hooks to set Auth component props with necessary initialization values for configuring the {{config.extra.arcana.sdk_name}} and the Arcana wallet.
 
 ## Prerequisites
 
-* Developers need to first log into the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
 * Use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure the app]] before integrating it with the {{config.extra.arcana.sdk_name}}. 
 

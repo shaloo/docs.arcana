@@ -182,6 +182,7 @@ ERC20
 EVM
 EVM-compatible
 EmailID
+EntryPoint
 EoA
 Ethereum
 Ethereum-compatible
@@ -540,6 +541,7 @@ build-iam-cognito-auth
 build-iam-firebase-auth
 build-iam-steam-auth
 build-password-less-auth
+bundler
 bundlers
 byok
 cairo
@@ -710,6 +712,7 @@ fontawesome-brands-twitter
 fontawesome-brands-unity
 fontawesome-brands-vuejs
 fontawesome-regular-message
+fontawesome-solid-bug-slash
 fontawesome-solid-caret-down
 fontawesome-solid-coins
 fontawesome-solid-desktop
@@ -745,6 +748,7 @@ google-social-auth
 googleoauth
 googleoauth_authsdk
 grey
+handle0psCallData
 handleRedirectPage
 hardcoded
 hotfix
@@ -992,6 +996,7 @@ index-vue-build-social-providers
 index-vue-custom-ui-onboard-users
 index-vue-onboard-users
 index-wagmi-onboard-users
+index-web-sdk-err
 index-web3-react-onboard-users
 index-web3-wallet-ops
 index_config_auth
@@ -1117,6 +1122,7 @@ reactcodesample
 reactnextjs
 reddit
 redirectUri
+redressal
 refetched
 registerd
 repo
@@ -1207,6 +1213,8 @@ use3pwallet
 user-auth
 user-auth-dkg-flow
 user-onboarding-options
+user0
+user0p
 userInfo
 usingminter
 usingreactconn
@@ -1262,6 +1270,7 @@ walletuimodes
 walletwatchasset
 web-auth-error-msg
 web-auth-usage-guide
+web-gasless-error-msg
 what-is-arcana-auth
 whatisan
 why-arcana-auth
