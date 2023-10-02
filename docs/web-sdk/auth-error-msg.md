@@ -6,13 +6,13 @@ arcana:
   root_rel_path: ..
 ---
 
-# Handling Errors
+# Auth Errors
 
 If you integrate a Web3 app with the {{config.extra.arcana.sdk_name}}, you might encounter some of the following errors depending on user actions, app logic, and the sequence of {{config.extra.arcana.sdk_name}} function calls. 
 
 For more insights, refer to the [{{config.extra.arcana.sdk_name}} troubleshooting guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md).
 
-## {{config.extra.arcana.sdk_name}} Error Messages
+## Error Messages
 
 | Error  |  Description |
 | ---    |  ---  |
