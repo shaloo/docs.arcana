@@ -13,3 +13,5 @@ arcana:
 [[index-wagmi-onboard-users| Wagmi Apps :material-card-account-mail:]]{ .md-button }
 
 [[index-rainbow-onboard-users| RainbowKit Apps :material-card-account-mail:]]{ .md-button }
+
+[[index-web3-react-onboard-users| Web3-React Apps :material-card-account-mail:]]{ .md-button }

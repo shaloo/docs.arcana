@@ -26,13 +26,13 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[index-dkg|Distributed Key Generation :material-key-plus:]]{ .md-button }
 
-<!--- AR_6971
 [[concept-gasless-transactions| Gasless Transactions :material-gas-station-off:]]{ .md-button }
--->
 
 [[concept-gateway-node|Gateway :fontawesome-solid-torii-gate:]]{ .md-button }
 
 [[concept-arcana-jwt-token|Arcana JWT Token :material-key:]]{ .md-button}
+
+[[concept-keyspace-type|Keyspace Type: App-specific vs. Global Keys :material-key:]]{ .md-button }
 
 [[concept-manage-chains|Manage Chains :material-list-box:]]{ .md-button}
 
@@ -42,7 +42,7 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[concept-private-key|Private Key :material-key:]]{ .md-button }
 
-[[concept-keyspace-type|Keyspace Type: App-specific vs. Global Keys :material-key:]]{ .md-button }
+[[concept-index-ansc| Smart Contracts :material-list-box:]]{ .md-button }
 
 [[concept-usage-metrics|Usage Metrics :material-monitor-eye:]]{ .md-button }
 

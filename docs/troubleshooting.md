@@ -65,6 +65,14 @@ Storage Region can be configured for any application using the dashboard just on
       <img alt="GitHub Profile email visible" src="/img/an_trbs_gh_issue_visible_email.png" width="50%"/>
       <img alt="GitHub Email Settings not private" src="/img/an_trbs_gh_issue_email_not_private.png" width="50%"/>
 
+??? an-trbs "Why do users experience a 'Redirect URI Mismatch' error during authentication?"
+
+      This error shows up if the developer has not properly set up the social provider during app registration and configuration with {{config.extra.arcana.company_name}}.
+
+      * Go to the {{config.extra.arcana.dashboard_name}} and check the app settings in the *Social Auth* section. Note that the Redirect URI displayed for the app is exactly the same as the one you have specified in the social provider OAuth settings.  For example, in the case of social provider 'Google', use Google Developer Console and check OAuth settings. Check the spelling of the Redirect URI specified against the entry for your app.
+
+      * If you are deploying the app on the Mainnet, then make sure the Redirect URI displayed in the Mainnet configuration profile of the app in the {{config.extra.arcana.dashboard_name}} is used in the social provider OAuth settings.
+
 <!--
 ---
 
@@ -286,13 +294,11 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       To fix this issue, the user needs to clear the local storage used by the {{config.extra.arcana.wallet_name}} on their device by clearing the browser cache and then attempting another login from a fresh browser window.
 
-## Errors
 
-??? an-trbs "Why do users experience a 'Redirect URI Mismatch' error during authentication?"
 
-      This error shows up if the developer has not properly set up the social provider during app registration and configuration with {{config.extra.arcana.company_name}}.
+## Gasless Errors
 
-      * Go to the {{config.extra.arcana.dashboard_name}} and check the app settings in the *Social Auth* section. Note that the Redirect URI displayed for the app is exactly the same as the one you have specified in the social provider OAuth settings.  For example, in the case of social provider 'Google', use Google Developer Console and check OAuth settings. Check the spelling of the Redirect URI specified against the entry for your app.
+??? an-trbs "Gasless transaction is failing with the generic error 'user0p execution failed'. What is the real cause of the error?"
 
-      * If you are deploying the app on the Mainnet, then make sure the Redirect URI displayed in the Mainnet configuration profile of the app in the {{config.extra.arcana.dashboard_name}} is used in the social provider OAuth settings.
+      The {{config.extra.arcana.sdk_name}} leverages Biconomy Gasless SDK under the covers and is limited by the errors reported by the same. In case of generic errors such as *'user0p execution failed'*, or others that do not point to any actionable reason for failure, the app developers must use Tenderly to pin-point the exact cause of failure and then take corrective action. [[web-gasless-error-msg|Learn more...]]
 
