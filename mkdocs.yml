@@ -17,9 +17,7 @@ nav:
     - index.md
     - Introduction: 
       - intro/index.md
-      - Overview: auth-overview.md
-      - Benefits & Usage: auth-usage.md
-      - Features: key-features.md
+      - Product Details: auth-overview.md
     - Quick Start: 
       - quick-start/index.md
       - Web Apps: quick-start/web-apps-quick-start.md
@@ -27,12 +25,12 @@ nav:
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
-    - New to Web3:  an-academy/new-to-web3.md
     - References:
       - quick-links/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
-      - Coming Soon: arcana-coming-soon.md
+      - Coming Soon...: arcana-coming-soon.md
       - Dev Resources: dev-resources/index.md
+      - New to Web3:  an-academy/new-to-web3.md
       - Audit Reports: 
         - audit/index.md
         - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
@@ -46,7 +44,7 @@ nav:
             #- Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
   - Get Started:
     - howto/index.md
-    - Configure:
+    - Configure Auth Usage:
       - Register App: howto/configure-auth.md
       - Configure Auth: 
         - howto/config-auth/index.md
@@ -164,9 +162,9 @@ nav:
               - Watch Assets: howto/arcana-wallet/watchasset.md
           - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Mobile apps:
-        - howto/integrate-app/mobile/index.md
-        - Flutter Apps: quick-start/flutter-quick-start.md
-        - React-Native Apps: quick-start/react-native-quick-start.md
+        - howto/mobile/index.md
+        - Flutter Apps: howto/mobile/flutter-get-started.md
+        - React-Native Apps: howto/mobile/react-native-get-started.md
     - Deploy:
       - howto/deploy-app.md
   - Developer Resources:
@@ -247,14 +245,51 @@ nav:
         - Manage NFTs: howto/use-wallet-to-manage-nfts.md
       - MFA Setup: user-guides/mfa/mfa-ug.md
   - Arcana Academy:
-      - an-academy/index.md
-      - About Arcana Auth:
-        - about-auth/index.md
-        - What is Arcana Auth?: what-is-arcana-auth.md
-        - Why Arcana Auth?: why-arcana-auth.md
-        - How to Use Auth?: how-to-use-auth.md
-        - Web3 Auth Use Cases: use-cases.md
-      - Architecture: auth-architecture.md
+    - an-academy/index.md
+    - About Arcana Auth:
+      - about-auth/index.md
+      - What is Arcana Auth?: what-is-arcana-auth.md
+      - Why Arcana Auth?: why-arcana-auth.md
+      - How to Use Auth?: how-to-use-auth.md
+      - Web3 Auth Use Cases: use-cases.md
+    - Architecture: auth-architecture.md
+    - Usage Flows: 
+      - user-flows/index.md
+      - User Auth and DKG: user-flows/user-auth-and-dkg.md
+    - Concepts: 
+      - concepts/index.md
+      - Aggregate Login: concepts/authtype/aggregatelogin.md
+      - Arcana Web3 Wallet: 
+        - concepts/anwallet/index.md
+        - Overview: concepts/anwallet/wallet-overview.md
+        - Wallet UI Modes: concepts/anwallet/walletuimodes.md
+        - Wallet Visibility: concepts/anwallet/walletvisibility.md
+        - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
+        - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
+        - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
+      - Auth SDK: concepts/authsdk.md
+      - Authentication: concepts/authtype/arcanaauth.md
+      - Auth Types:
+        - concepts/authtype/index.md
+        - Social Providers: concepts/authtype/socialauth.md
+        - Custom IAM Providers: concepts/authtype/customauth.md
+        - Passwordless: concepts/authtype/pwdless.md
+      - Usage & Billing: concepts/billing.md
+      - Dashboard: concepts/dashboard.md
+      - DKG:
+        - concepts/dkg/index.md
+        - What is DKG?: concepts/dkg.md
+        - How does DKG work?: concepts/how-dkg-works.md
+        - What is ADKG?: concepts/adkg.md
+        - How does ADKG work?: concepts/how-adkg-works.md
+      # - Gasless Transactions: concepts/gasless-ops.md
+      - Gateway: concepts/gateway-node.md
+      - JWT Token: concepts/an_jwt_token.md
+      - Key Space Type: concepts/keyspace-types.md
+      - Manage Chains: concepts/manage-chains.md
+      - MFA: concepts/mfa.md
+      - Plug and Play Auth: concepts/plug-and-play-auth.md
+      - Private Key: concepts/private-key.md
       - Smart Contracts:
         - concepts/ansmartc/index.md
         - Overview: concepts/ansmartc/an-smart-contracts.md
@@ -263,47 +298,11 @@ nav:
         - Contract Details: concepts/ansmartc/an-smartc-details.md
         - Contract Flows: concepts/ansmartc/an-smartc-flows.md
         - Upgradeable Contracts: concepts/ansmartc/an-smartc-upgrades.md
-      - Concepts: 
-        - concepts/index.md
-        - Aggregate Login: concepts/authtype/aggregatelogin.md
-        - Arcana Web3 Wallet: 
-          - concepts/anwallet/index.md
-          - Overview: concepts/anwallet/wallet-overview.md
-          - Wallet UI Modes: concepts/anwallet/walletuimodes.md
-          - Wallet Visibility: concepts/anwallet/walletvisibility.md
-          - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
-          - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
-          - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
-        - Auth SDK: concepts/authsdk.md
-        - Authentication: concepts/authtype/arcanaauth.md
-        - Auth Types:
-          - concepts/authtype/index.md
-          - Social Providers: concepts/authtype/socialauth.md
-          - Custom IAM Providers: concepts/authtype/customauth.md
-          - Passwordless: concepts/authtype/pwdless.md
-        - Usage & Billing: concepts/billing.md
-        - Dashboard: concepts/dashboard.md
-        - DKG:
-          - concepts/dkg/index.md
-          - What is DKG?: concepts/dkg.md
-          - How does DKG work?: concepts/how-dkg-works.md
-          - What is ADKG?: concepts/adkg.md
-          - How does ADKG work?: concepts/how-adkg-works.md
-        # - Gasless Transactions: concepts/gasless-ops.md
-        - Gateway: concepts/gateway-node.md
-        - JWT Token: concepts/an_jwt_token.md
-        - Manage Chains: concepts/manage-chains.md
-        - MFA: concepts/mfa.md
-        - Plug and Play Auth: concepts/plug-and-play-auth.md
-        - Private Key: concepts/private-key.md
-        - Key Space Type: concepts/keyspace-types.md
-        - Usage Metrics: concepts/usage-metrics.md
-        - Validator Nodes: concepts/validator-nodes.md
-        - Verify JWT Token: concepts/jwt_token_validation.md
-        - Whitelabeled Auth: concepts/white-labeled-auth.md
-      - Usage Flows: 
-        - user-flows/index.md
-        - User Auth and DKG: user-flows/user-auth-and-dkg.md
+      - Usage Metrics: concepts/usage-metrics.md
+      - Validator Nodes: concepts/validator-nodes.md
+      - Verify JWT Token: concepts/jwt_token_validation.md
+      - Whitelabeled Auth: concepts/white-labeled-auth.md
+    - New to Web3:  an-academy/new-to-web3.md
   - DKG Validators: 
     - validators/index.md
     - Onboarding Guide: onboard-validators.md

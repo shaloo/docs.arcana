@@ -8,14 +8,12 @@ arcana:
 
 # {{config.extra.arcana.company_name }} Academy
 
-Developer resources for using {{config.extra.arcana.product_name}}.
+[[index-about-auth| About {{config.extra.arcana.product_name}} :material-bookshelf:]]{ .md-button }
 
-[[index-about-auth|Understanding {{config.extra.arcana.product_name}} :material-bookshelf:]]{ .md-button }
-
-[[auth-architecture|{{config.extra.arcana.product_name}} Architecture :fontawesome-solid-users-gear:]]{ .md-button }
-
-[Concepts :fontawesome-solid-puzzle-piece:](../concepts/index.md){ .md-button }
+[[auth-architecture| Architecture :fontawesome-solid-users-gear:]]{ .md-button }
 
 [[index-user-flows|Usage Flows :material-clipboard-flow-outline:]]{ .md-button }
+
+[Concepts :fontawesome-solid-puzzle-piece:](../concepts/index.md){ .md-button }
 
 [[new-to-web3| New to Web3 :material-new-box:]]{ .md-button }

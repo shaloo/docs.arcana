@@ -1,14 +1,20 @@
 ---
 alias: index-quick-links
-title: 'Quick Links'
+title: 'References'
 description: 'List of useful links with more information about the Arcana Auth product.'
 arcana:
   root_rel_path: ..
 ---
 
+# References
+
 [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]]{ .md-button }
 
 [[arcana-coming-soon|Coming Soon...]]{ .md-button }
+
+[[index-dev-resources| Dev Resources]]{ .md-button }
+
+[[new-to-web3| New to Web3]]{ .md-button }
 
 [[index-audit-reports|Audit Reports]]{ .md-button }
 
