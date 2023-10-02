@@ -40,9 +40,9 @@ You have successfully registered and configured your application.
 
 ## What's next?
 
-See [[index-configure-auth|how to configure {{config.extra.arcana.sdk_name}} usage]] for details on setting up authentication providers.
+See [[index-configure-auth|how to configure {{config.extra.arcana.sdk_name}} usage]] for details.
 
-After registering and configuring the application, developers must install the {{config.extra.arcana.sdk_name}} and [[index-integrate-app|integrate the app]] before enabling user onboarding and allowing the authenticated users to sign blockchain transactions. 
+Once you set up the app, install appropriate {{config.extra.arcana.sdk_name}} package as per the app type, and [[index-integrate-app|integrate the app]]. The integration method varies with the app type. As part of integration, initialize the SDK and call appropriate functions for onboarding and allowing authenticated users to sign blockchain transactions.
 
 !!! info "Save {{config.extra.arcana.app_address}}"
 

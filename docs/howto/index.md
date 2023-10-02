@@ -8,13 +8,9 @@ arcana:
 
 # Getting Started
 
-!!! abstract "What can you do with {{config.extra.arcana.product_name}}?"
+Use {{config.extra.arcana.product_name}} product to onboard Web3 app users via social login or passwordless and enable authenticated users sign blockchain transactions. 
 
-      A. Easily onboard users via popular Web2-like login options.
-      
-      B. Let authenticated users seamlessly sign blockchain transactions.
-
-👇Follow these steps👇
+👇Simply follow these steps:👇
 
 [[configure-auth|1. Register App :material-tools:]]{ .md-button }
 

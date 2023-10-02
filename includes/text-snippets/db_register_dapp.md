@@ -48,7 +48,7 @@ After providing all the required inputs, click **Create** to register the app.
 
 ![Register dApp](/img/an_db_create_newapp_anim.gif){.an-screenshots}
 
-After registration, the app dashboard displays the {{config.extra.arcana.company_name}} Testnet usage statistics for the newly registered app. By default, the app is registered for Testnet usage and a unique {{config.extra.arcana.app_address}} assigned corresponding to the Testnet configuration profile. With this Testnet {{config.extra.arcana.app_address}}, the app can **only** be deployed on the {{config.extra.arcana.company_name}} Testnet.
+After registration, the app dashboard shows Testnet usage stats for the newly registered app. By default, the app is set for Testnet use, and a unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. This Testnet {{config.extra.arcana.app_address}} restricts the app deployment to the{{config.extra.arcana.company_name}} Testnet. 
 
 Click **Configure** in the  LHS menu to view and edit {{config.extra.arcana.product_name}} usage configuration settings.
 
