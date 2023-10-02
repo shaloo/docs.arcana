@@ -4,6 +4,9 @@ const auth = new AuthProvider("xar_test_445007f942xxxxxxxxxxxxxxxxxx484cAfd2", {
   theme: 'light', //defaults to dark
   alwaysVisible: false, //defaults to true, wallet always visible
   setWindowProvider: true, //defaults to false, window.ethereum not set
+  connectOptions: {
+    compact: true // default - false, for compact plug-and-play login UI
+  },
   chainConfig: {
     chainId: '137', //defaults to Ethereum
     rpcUrl: 'https://polygon-rpc.com', //defaults to 'https://rpc.ankr.com/eth'

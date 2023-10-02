@@ -42,7 +42,7 @@ You have successfully registered and configured your application.
 
 See [[index-configure-auth|how to configure {{config.extra.arcana.sdk_name}} usage]] for details.
 
-Once you set up the app, install appropriate {{config.extra.arcana.sdk_name}} package as per the app type, and [[index-integrate-app|integrate the app]]. The integration method varies with the app type. As part of integration, initialize the SDK and call appropriate functions for onboarding and allowing authenticated users to sign blockchain transactions.
+Once you set up the app, [[sdk-installation|install appropriate {{config.extra.arcana.sdk_name}} package]] as per the app type, and [[index-integrate-app|integrate the app]]. The integration method varies with the app type. As part of integration, initialize the SDK and call appropriate functions for onboarding and allowing authenticated users to sign blockchain transactions.
 
 !!! info "Save {{config.extra.arcana.app_address}}"
 

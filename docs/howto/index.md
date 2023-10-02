@@ -14,7 +14,7 @@ Use {{config.extra.arcana.product_name}} product to onboard Web3 app users via s
 
 [[configure-auth|1. Register App :material-tools:]]{ .md-button }
 
-[[index-config-social-providers|2. Configure Auth Usage :fontawesome-solid-users-gear:]]{ .md-button }
+[[index-configure-auth|2. Configure Auth Usage :fontawesome-solid-users-gear:]]{ .md-button }
 
 [[index-integrate-app|3. Integrate with {{config.extra.arcana.sdk_name}} :material-lock-check:]]{ .md-button }
 
