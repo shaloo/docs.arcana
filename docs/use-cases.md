@@ -66,4 +66,4 @@ With the [[concept-gasless-transactions|gasless transactions]] feature, Web3 app
 * Non-EVM Chain Support
 * Wallet UI enhancements such as speeding up pending transactions, improved wallet design, etc.
 
-See [[rcana-coming-soon|coming soon]]section for details.
+See [[arcana-coming-soon|coming soon]]section for details.
