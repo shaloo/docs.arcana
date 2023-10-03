@@ -1,7 +1,7 @@
 ---
 alias: configure-wallet-chains
 title: 'Manage Chains'
-description: 'Web3 app developers can update the preconfigured list of supported blockchains shown out of the box in the wallet and assign one of the chains as the default chain.'
+description: 'Web3 app developers can update the pre-configured list of supported blockchains shown out of the box in the wallet and assign one of the chains as the default chain.'
 arcana:
   root_rel_path: ../..
 ---
@@ -24,7 +24,7 @@ This default pre-configured list of displayed chains can be updated by the devel
 
 ## Steps
 
-*Managing the displayed list of preconfigured chains for authenticated users in {{config.extra.arcana.wallet_name}} UI within the Web3 app is simple!*
+*Managing the displayed list of pre-configured chains for authenticated users in {{config.extra.arcana.wallet_name}} UI within the Web3 app is simple!*
 
 Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Chain Management** to configure the default subset of supported chains.
 
