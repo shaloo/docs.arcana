@@ -10,4 +10,6 @@ arcana:
 
 [[web-auth-error-msg| Handling Auth Errors :fontawesome-solid-bug-slash:]]{ .md-button }
 
+<!---
 [[web-gasless-error-msg| Handling Gasless Errors :fontawesome-solid-bug-slash:]]{ .md-button }
+--->

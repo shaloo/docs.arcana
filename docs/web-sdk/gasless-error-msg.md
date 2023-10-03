@@ -23,8 +23,6 @@ Refer to [Biconomy Errors](https://docs.biconomy.io/docs/troubleshooting/commone
 
 ## Debugging Gasless Errors
 
-### The Challenge
-
 Arcana Network's gasless feature leverages the Biconomy SDK under the covers. The error handling for gasless transactions in the {{config.extra.arcana.sdk_name}} is [limited by the error handling offered by the Biconomy SDK](https://docs.biconomy.io/docs/category/troubleshooting). Biconomy does not return very specific error messages in many cases making it very challenging to pinpoint the actual cause of the gasless transaction failure.
 
 For example, the following error may be displayed for a gasless transaction:
