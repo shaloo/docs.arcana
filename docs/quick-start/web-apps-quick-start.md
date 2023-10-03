@@ -98,6 +98,11 @@ Here are some examples of {{config.extra.arcana.sdk_name}} usage.
   
 ## See Also
 
+
+<!-- Add under Developer Guides 
+    * [[configure-gasless|Enabling Gasless Operations in an App]]
+-->
+
 === "Developer Guides"
 
     * [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]]
@@ -106,7 +111,6 @@ Here are some examples of {{config.extra.arcana.sdk_name}} usage.
     * [[index-video-tutorials|Video Tutorials]]
     * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
     * [[index-arcana-wallet|Developer's Guide for {{config.extra.arcana.wallet_name}}]]
-    * [[configure-gasless|Enabling Gasless Operations in an App]]
     * [[web-auth-error-msg|Handling {{config.extra.arcana.sdk_name}} error messages]]
     * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
     * {% include "./text-snippets/authsdkref_url.md" %}
