@@ -19,7 +19,7 @@ toc_depth: 2
 
 ??? an-faq "Is a gas tank associated with one or more blockchain networks?"
 
-      There can only be a single gas tank configured per blockchain network.
+      There can only be a single gas tank configured per blockchain network for every registered app.
 
 ??? an-faq "Can the developer add a gas tank for any EVM-compatible chain that is configured in the **Chain Management** app settings?"
 
@@ -35,7 +35,7 @@ toc_depth: 2
 
       Yes.
       
-      For whitelisted operations, the SCW address signs blockchain transactions, with gas fees covered by the gas tank. Non-whitelisted functions require users to pay gas fees through the active account in {{config.extra.arcana.wallet_name}} UI. Gasless-enabled apps default to the active SCW address, but users can switch between EoA and SCW addresses. If a user selects the EoA address while gas tanks are active, the transaction occurs via EoA, and the user covers the gas fee.
+      For whitelisted operations, the SCW address is used to sign the blockchain transactions. The gas fees are covered via the SCW account through the gas tank. Non-whitelisted functions require users to pay gas fees through the active account in {{config.extra.arcana.wallet_name}} UI. Gasless-enabled apps default to the active SCW address, but users can switch between EoA and SCW addresses. If a user selects the EoA address while gas tanks are active, the transaction occurs via EoA, and the user covers the gas fee.
 
       Developers need to ensure that the EoA account is used for creating blockchain requests to sign personal messages or to export the private key. See [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337) and [EIP-1291](https://eips.ethereum.org/EIPS/eip-1271) and [[concept-gasless-transactions#user-experience|user experience]]for details.
 
@@ -45,25 +45,25 @@ toc_depth: 2
       
       If gas tanks aren't configured for the active blockchain, only the EoA address is shown in {{config.extra.arcana.wallet_name}} UI.
 
-??? an-faq "Can the gasless feature be enabled later ?"
+??? an-faq "Can the gasless feature be enabled later?"
 
       Yes, developers can enable the gasless feature after deploying the app on the Testnet or Mainnet. However, this change affects the user's wallet address experience on blockchain networks with gas tanks.
       
-      If gas tanks are set up for the active network in the wallet, users will have both the EoA and an additional SCW address. Before enabling the gasless feature, users will only see the EoA address in the wallet UI. Once gasless is enabled, the SCW address replaces the EoA address, becomes active, and handles gas fees. Users can switch between EoA and SCW addresses through the wallet UI.
+      If gas tanks are set up for the active network in the wallet, users will have both the EoA and an additional SCW address. Before enabling the gasless feature, users will only see the EoA address in the wallet UI. Once gasless is enabled, the SCW address becomes active instead of the EoA address and handles gas fees. Users can switch between EoA and SCW addresses through the wallet UI.
       
-      If a user switches to the EoA network, even with active gas tanks, they will incur gas fees through the EoA account. 
+      If a user switches to the EoA address, in this case even if the gas tanks are active, users will incur gas fees through the EoA account. 
       
       Users must ensure the SCW wallet address has sufficient crypto assets for transactions like token transfers. Gas fees for token transfers are covered by the SCW address.
 
 ??? an-faq "Is disabling gasless possible once enabled?"
 
-      Once a gas tank is established on a blockchain network, the user account becomes a dual-address gasless account, featuring both EoA and SCW addresses. This change is irreversible. However, developers can deactivate the gas tanks or they may run out of gas funds, resulting in users incurring gas fees.
+      Once a gas tank is established on a blockchain network, the user account becomes a dual-address gasless account, featuring both EoA and SCW addresses. This change is irreversible. However, developers can deactivate the gas tanks or they may run out of gas funds, resulting in users incurring gas fees. Once added, gas tanks cannot be deleted.
 
 ??? an-faq "Can the gas tanks be paused if required?"
 
       Yes. 
       
-      Developers can change the **Enable** toggle setting in the {{config.extra.arcana.dashboard_name}} and pause/resume the gas tank operations for the selected blockchain network in the context of an app.
+      Developers can change the **Enable Smart Account** toggle setting in the {{config.extra.arcana.dashboard_name}} and pause/resume the gas tank operations for the selected blockchain network in the context of an app.
 
 ??? an-faq "For gasless apps which user address does the developer refer to, EoA or SCW or both?"
 
