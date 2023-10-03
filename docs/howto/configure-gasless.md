@@ -10,13 +10,11 @@ arcana:
 
 To enable [[concept-gasless-transactions|gasless transactions]] in an app, before integrating the app with the {{config.extra.arcana.sdk_name}}, developers must configure gas tanks for supported blockchain networks.
 
-!!! danger "Disabling Gasless"
+!!! danger "Disabling Gasless" 
 
-      The moment a gas tank is set up for a blockchain, the gasless feature is enabled. Also, the user account transforms into a dual address [[concept-gasless-transactions#gasless-user-accounts|gasless account]] that is associated with an EoA and an SCW address. 
+      When you create a gas tank for a blockchain, it turns on the gasless feature. At the same time, the user account changes into a dual address [[concept-gasless-transactions#gasless-user-accounts|gasless account]], which links to both an Externally Owned Account (EOA) and a Smart Contract Wallet (SCW) address.
 
-      The gas tanks themselves can be paused or disabled by the developer. The gasless feature is effective only when gas tanks are funded and active but the user account transformation cannot be reversed. 
-
-      
+      Developers cannot delete a gas tank once set up. But they can stop or deactivate gas tanks if needed. The gasless feature works only when gas tanks have funds and are active, but once the user account transforms into a gasless one, you can't undo it.
 
 ## Prerequisites
 
@@ -43,7 +41,7 @@ Note that you can only set up one gas tank per blockchain network. Once configur
 
 ### Step 2. Deposit/Withdraw Gas Tank Credits
 
-To add crypto assets to a new gas tank, the developer needs to use a browser-based wallet like MetaMask and choose an account with sufficient funds. This account is referred to as the owner's account. Anyone, including the developer or third-party sponsors, can contribute credits to the gas tank. However, credits can only be withdrawn into the owner's account.
+To add crypto assets to a new gas tank, the developer needs to use a browser-based wallet like MetaMask and choose an account with sufficient funds. This account is referred to as the [[concept-gasless-transactions#gas-tank-owner|owner's account]]. Anyone, including the developer or third-party sponsors, can contribute credits to the gas tank. However, credits can only be withdrawn into the owner's account.
 
 !!! info "Browser-based wallet"
 
@@ -63,8 +61,7 @@ Add the amount you want to deposit, and confirm the transaction. Once it's done,
 
 To withdraw funds, click 'ellipsis' and choose **Withdraw** from the menu list. Enter the amount you wish to withdraw. After successful withdrawal, the **Total Amount** in the gas tank goes down by the withdrawal amount and the owner's wallet address will see the withdrawn amount added.
 
-To take out money, click the 'ellipsis' and pick Withdraw from the menu. Enter the amount you want to withdraw. When it's done, the gas tank's Total Amount drops by what you withdrew, and the owner's wallet gets the money.
-
+To take out money, click the 'ellipsis' and pick *Withdraw* from the menu. Enter the amount you want to withdraw. When it's done, the gas tank's Total Amount drops by what you withdrew, and the owner's wallet gets the money.
 
 <img src="/img/an_gl_db_withdraw.gif" alt="withdraw from Gas Tank" class="an-screenshots"/>
 
@@ -79,11 +76,11 @@ On the right-hand side, you'll find a list of functions. Use the radio buttons t
 
 <img src="/img/an_gl_db_whitelist.gif" alt="withdraw from Gas Tank" class="an-screenshots"/>
 
-### Optional: Pause/Resume Gasless
+### Optional: Pause/Resume Gas Tank
 
 Developers can choose to pause and resume gas tank operations in the app config settings. When paused, users pay gas fees for whitelisted app operations.
 
-Use the **Enable** toggle in the app configuration settings page of the dashboard to pause and resume a configured gas tank.
+Use the **Enable Smart Account** toggle to pause and resume a configured gas tank.
 
 <img src="/img/an_gl_gas_tank_pause.png" alt="Gas Tank Actions" class="an-screenshots"/>
 
