@@ -3,6 +3,7 @@
 .md-button
 .pdf
 .png
+0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789
 2MB
 2a
 2b
@@ -156,6 +157,7 @@ DemoAppLoginOptionsText
 DemoAppSrcGitHubText
 DemoAppURLText
 DemoTemplateDependencyText
+Dev
 DiscordStep1Text
 DiscordStep2Text
 DiscordStep3Text
@@ -560,6 +562,7 @@ clientID
 clientId
 cognito
 cognitooauth
+compact-plug-play-ui
 composable
 concept-adkg
 concept-ansc-details
