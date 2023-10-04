@@ -8,19 +8,21 @@ arcana:
 
 # MFA Setup
 
-In this guide users of Web3 apps that integrate with the {{config.extra.arcana.sdk_name}} will learn how to enable multi-factor authentication, MFA, for enhanced wallet security. 
-
-See [how MFA works]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md) for more details.
+This guide explains how users of Web3 apps integrated with the {{config.extra.arcana.sdk_name}} can boost wallet security by setting up [Multi-Factor Authentication (MFA)]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md).
 
 ## Enabling MFA at Login
 
-Log in to an app that is integrated with the {{config.extra.arcana.sdk_name}} using one of the available authentication providers. At the very first login user is prompted to set up enhanced wallet security by configuring two-factor authentication:
+Log in to the app integrated with the {{config.extra.arcana.sdk_name}} using one of the available authentication mechanisms. At the very first login, user is prompted to set up enhanced wallet security by configuring two-factor authentication:
 
 <img src="/img/an_mfa_setup_firstlogin.gif" alt="MFA first login setup prompt" class="an-screenshots-noeffects" width="25%"/>
 
 Click **Proceed** to set up MFA.
 
-User must provide answers to five security questions and create a recovery PIN. 
+!!! note "Cannot disable MFA later"
+
+      Once configured, MFA cannot be disabled for a user wallet account.
+
+User must provide answers to five security questions and create a recovery PIN as part of MFA setup.
 
 ### Security Questions
 
@@ -30,40 +32,42 @@ You can use the security questions already listed in the drop-down list or creat
 
 ### Recovery PIN 
 
-The MFA setup also requires the user to provide a 6-digit alphanumeric PIN which is an additional recovery method for the user. 
+The MFA setup also requires the user to provide a 6-digit alphanumeric PIN which is an additional recovery method for the user.
 
 <img src="/img/an_mfa_pin.png" alt="MFA PIN" class="an-screenshots-noeffects" width="30%"/>
 
-That is all! 
-After saving the PIN, MFA Setup is complete, and enhanced wallet security is enabled.
+That is all! :tada:
+
+Users can easily configure MFA to enable enhanced wallet security.
 
 <img src="/img/an_mfa_complete.png" alt="MFA PIN" class="an-screenshots-noeffects" width="30%"/>
 
-!!! note 
+!!! note "Save your Security Answers"
 
-      Save the responses to the security questions and the PIN carefully as you will need to provide either the answers or the PIN for multi-factor authentication when logging into the app from a new device or browser.
+      When logging in from a new device, MFA will require you to either answer three security questions correctly or provide the PIN. Make sure you save the responses to the security questions and the PIN carefully.
 
 ## Enabling MFA Later
 
 If the user chose to not enable MFA at the first login into the app, it can be enabled later. Note that once enabled, MFA cannot be disabled for a user account.
 
-To enable MFA, log into the app that is integrated with the {{config.extra.arcana.sdk_name}}. Access the {{config.extra.arcana.wallet_name}} and click on the **User Profile** tab. Click **Setup Now** and then choose **Proceed** to set up security questions, and answers and specify the recovery PIN as described in the previous section.
+To enable MFA, log into the app integrated with the {{config.extra.arcana.sdk_name}}. Access the {{config.extra.arcana.wallet_name}} UI and click on the 'Profile' tab. Select **Setup Now** under the 'Enhanced Wallet Security' section. Choose **Proceed** to set up security questions, and answers and specify the recovery PIN as described in the previous section.
 
 <img src="/img/an_mfa_enable_later_tab.png" alt="Enable later" class="an-screenshots-noeffects" width="20%"/>
 
 ## MFA Recovery
 
-If the user logs into an app using a different device or a different browser, then the local component of the MFA needs to be regenerated. This is required to prove the user's identity for wallet access. At login, the MFA prompt will guide the user to choose one of the options to recover the encrypted MFA component on the new device or the browser. The user can choose the recovery options:
+The MFA feature secures your wallet by encrypting and saving an authentication factor on your device and browser. If you log into the app using a different device or browser, you'll need to regenerate this local MFA component. This is essential to confirm your identity for wallet access.
 
-* Enter the MFA recovery PIN stored during the MFA setup earlier
-* Answer three security questions correctly
+When logging in on a new device or browser, the MFA prompt will help you recover the encrypted MFA component. You can do this in two ways:
+
+* Enter the MFA recovery PIN you set up during MFA setup.
+* Answer three security questions correctly.
 
 <img src="/img/an_mfa_recover_options.png" alt="Recovery Options" class="an-screenshots-noeffects" width="35%"/>
 
 Once the user provides one of these options, the local MFA factor is regenerated and the user will not be asked for it again on the same device or the browser app unless local storage is cleared for some reason.
 
 ## MFA Errors
-
 
 | MFA Phase | Error Message | Cause  | Corrective Action |
 | :--- | :--- | :--- | :--- |
