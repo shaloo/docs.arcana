@@ -8,15 +8,7 @@ arcana:
 
 # Basic Wallet Operations
 
-This guide explains the Web3 operations of the {{config.extra.arcana.wallet_name}} and how users can access different functions through its UI. Developers looking to enable these operations programmatically in their apps can refer to the [[index-arcana-wallet| {{config.extra.arcana.wallet_name}} Developers Guide]].
-
-??? info "{{config.extra.arcana.wallet_name}} Developer Guide"
-
-      To enable the {{config.extra.arcana.wallet_name}} in the context of a Web3 app, developers must first [[configure-auth|register the app]] and [[index-config-social-providers|configure social providers]] via the {{config.extra.arcana.dashboard_name}} to authenticate users. 
-      
-      Next, follow the [[index-integrate-app|instructions to integrate the app]] and then add code to [[index-onboard-users|onboard users]]. The authenticated users can instantly access the  {{config.extra.arcana.wallet_name}} in the context of the app. Developers can add code to bring up the wallet UI in the context of the authenticated users, initiated Web3 wallet operations, and enable authenticated users to sign blockchain transactions.
-
-      For more details, see [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developers Guide]].
+This guide explains the Web3 operations of the {{config.extra.arcana.wallet_name}} and how users can access different functions through its UI. Developers looking to enable these operations programmatically in their apps can refer to the [[index-web3-wallet-ops| {{config.extra.arcana.wallet_name}} Developer Guides]].
 
 ## Prerequisites
 
@@ -26,9 +18,7 @@ This guide explains the Web3 operations of the {{config.extra.arcana.wallet_name
 
 ##  {{config.extra.arcana.wallet_name}} Features
 
-Any Web3 app that [[index-integrate-app|integrates with the {{config.extra.arcana.sdk_name}}]] can enable authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}} UI. 
-
-The {{config.extra.arcana.wallet_name}} UI allows an authenticated user to perform the following Web3 wallet operations:
+Authenticated users can perform the following Web3 wallet operations through the wallet UI:
 
 * Sign (approve, reject) blockchain transactions
 * Add and configure network settings
@@ -46,15 +36,18 @@ The {{config.extra.arcana.wallet_name}} UI allows an authenticated user to perfo
     - Add NFTs
     - Modify (edit, delete) NFTs
 * View user profile details
-* Monitor blockchain transaction-related activity
+* Monitor blockchain transaction activity
 * Export private key
+<!--
+* Switch between EoA/SCW accounts (Gasless)
+-->
 * Logout
 
-When a user logs in to the app, {{config.extra.arcana.wallet_name}} is displayed in its minimized form in the app's context. The wallet is positioned on the left or the right side of the app's UI window as configured by the app developer, during app registration and configuration. 
+When a user logs into the app, {{config.extra.arcana.wallet_name}} appears in a compact form within the app. The app developer decides whether the wallet is on the left or right side of the app's user interface, and this choice is set during app registration and configuration.
 
-<img src="/img/an_wallet_min_light.png#only-dark" width="15%"/><img src="/img/an_wallet_min_dark.png#only-light" width="15%"/> 
+<img src="/img/an_wallet_min_light_vanilla.gif#only-dark" width="50%"/><img src="/img/an_wallet_min_dark_vanilla.gif#only-light" width="50%"/> 
 
-Clicking on it displays the maximized wallet UI.
+Clicking on the wallet icon displays the maximized wallet UI.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_home.png" width="30%"/>
 
@@ -81,9 +74,9 @@ Once the user takes action on the pending transaction notification, it disappear
 
 ### Add/Select a Network
 
-The {{config.extra.arcana.wallet_name}} allows authenticated app users to sign blockchain transactions on various [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]]. By default, a few of the supported networks are automatically displayed on the wallet home screen. Users can select a different network from the drop-down list. Additional networks can be added to the default list as long as they are supported by {{config.extra.arcana.product_name}}. 
+By default, the {{config.extra.arcana.wallet_name}} UI displays a pre-configured list of blockchain networks. Users can select a different network from the drop-down list or add newer networks that are [[state-of-the-arcana-auth#supported-blockchains|supported by the product]].
 
-To add a network, go to the 'Token Assets' tab in the {{config.extra.arcana.wallet_name}} and select the dropdown next to the blockchain network icon on the top right:
+To add or select a network, click the dropdown next to the blockchain network icon on the top right:
 
 <img src="/img/icons/wallet_add_network_icon.png" width="60"/>
 
@@ -99,7 +92,7 @@ You can either choose one of the available networks to switch or add a new one.
     * **Currency Symbol**: SHM
     * **Explorer URL (Optional)**: https://explorer.liberty10.shardeum.org/
 
-Once you click **Save**, the newly added network is automatically selected as the current active chain in the updated network list. 
+Once you click **Save**, the newly added network is automatically selected as the current active chain in wallet UI. 
 
 <img class="an-screenshots-noeffects" src="/img/wallet_added_network.gif" width="35%"/>
 
@@ -107,11 +100,11 @@ Once you click **Save**, the newly added network is automatically selected as th
 
 ### Switch Network
 
-To switch the existing network using the wallet UI, click on the dropdown next to the network icon on the top right of the 'Token Assets' tab:
+To switch the existing network using the wallet UI, click on the dropdown next to the network icon on the top right of the wallet UI:
 
 <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> 
 
-This will bring up a list of default networks available in the current application's context. Choose one of the available networks to switch to a different one.
+You will see a list of pre-configured blockchain networks available in the current application's context. Simply click one of the available networks to switch networks.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_switch_ntwk.gif" width="35%"/>
 
@@ -121,11 +114,11 @@ This will bring up a list of default networks available in the current applicati
 
 {% include "./text-snippets/fiat_on_ramp_providers.md" %}
 
-Users can purchase the specific token required for the app with either fiat or another cryptocurrency. Also, they can purchase the native cryptocurrency with fiat to pay for the transaction or gas fees. After a successful purchase via a third-party fiat on-ramp provider, the purchased tokens or currency is automatically deposited in the {{config.extra.arcana.wallet_name}} address and displayed in the balance.
+Users can purchase the specific token required for the app with either fiat or another cryptocurrency. Also, they can purchase the native cryptocurrency with fiat to pay for the transaction or the gas fees. After a successful purchase via a third-party fiat on-ramp provider, the purchased tokens or currency is automatically deposited in the {{config.extra.arcana.wallet_name}} address and displayed in the balance amount.
 
-To buy cryptocurrency, click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/>  and refer to the token assets tab. Select a chain from the drop-down list. This choice will govern what cryptocurrencies and tokens are available to purchase subject to local country-specific rules.
+To buy cryptocurrency, click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/>  and select the 'Tokens' tab. Choose a chain from the drop-down list of pre-configured blockchain networks. This choice will govern what cryptocurrencies and tokens available for purchase through the wallet UI, subject to local country-specific rules.
 
-Click **Buy** to initiate the fiat on-ramp process for your {{config.extra.arcana.wallet_name}}. 
+Click **Buy** to initiate the fiat on-ramp process for your {{config.extra.arcana.wallet_name}} account and the selected chain. 
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_onramp_buy.png" width="35%"/>
 
@@ -138,8 +131,6 @@ Pick up one of the providers and click **Proceed**. This will bring up the provi
 <img class="an-screenshots-noeffects" src="/img/an_wallet_onramp_provider_select.png" width="35%"/>
 
 Each provider may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Also, the basic minimum purchase amount for a country or cryptocurrency may vary across countries and providers.
-
-<img class="an-screenshots-noeffects" src="/img/an_wallet_fiat_kyc_rampnetwork.png" width="50%"/>
 
 {% include "./text-snippets/fiat_on_ramp_providers_ui_example.md" %}
 
@@ -155,7 +146,7 @@ Each provider may ask the user to follow country-specific procedures for KYC and
 
 ### Manage Token Assets
 
-Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> tab on the bottom left of the {{config.extra.arcana.wallet_name}} to bring up the token assets screen. It displays the following information:
+Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_token_icon_dark.png#only-dark" width="20"/> 'Tokens' tab on the bottom left of the {{config.extra.arcana.wallet_name}} to bring up the token assets screen. It displays the following information:
 
 * View, and copy the {{config.extra.arcana.wallet_name}} address
 * View wallet address details on the Block Explorer
@@ -166,11 +157,15 @@ Click the <img src="/img/icons/an_wallet_token_icon_light.png#only-light" width=
 * Add new custom tokens
 * Send and receive native and custom tokens
 * View token asset activities - which native or custom tokens requests were sent, whether the status is confirmed or pending, etc.
+<!---
+* Switch between EoA/SCW accounts (Gasless)
+-->
 
 For more details, see [[use-wallet-ui-to-manage-tokens|how to view, select, send, receive tokens, add custom tokens using the {{config.extra.arcana.wallet_name}}]] UI.
 
 ### Manage NFT Assets
-Click the tab on the bottom of the {{config.extra.arcana.wallet_name}} to bring up the NFT assets tab view and manage NFTs associated with the wallet address. The following NFT operations can be performed by the authenticated Web3 app user through the  NFT Assets tab:
+
+Click the 'NFT' tab on the bottom of the {{config.extra.arcana.wallet_name}} UI to view and manage NFTs associated with the wallet address on the selected blockchain network. The following NFT operations can be performed by the authenticated user:
 
 **General Wallet Operations**
 
@@ -178,6 +173,9 @@ Click the tab on the bottom of the {{config.extra.arcana.wallet_name}} to bring 
 * View wallet address details on the 'Block Explorer' associated with the selected network
 * Refresh the wallet UI
 * Add/Select network
+<!---
+* Switch between EoA/SCW accounts (Gasless)
+-->
 
 **NFT Operations**
 
@@ -189,23 +187,26 @@ For details, see [[use-wallet-to-manage-nfts|how Web3 app users can send NFTs, m
 
 ### View User Profile Details
 
-Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to see the user profile details:
+Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_profile_icon_dark.png#only-dark" width="20"/> 'Profile' tab on the bottom of the {{config.extra.arcana.wallet_name}} to see the user profile details:
 
-* User name 
+* User name
 * Email ID used to log into the wallet
-* Network
+* Active Network
 * Wallet Address
 * Option to export the private key
 * Logout button
 * Minimize / Close button
+<!---
+* Active EoA/SCW account (Gasless)
+-->
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_profile.png" width="35%"/>
 
 ### Wallet Notifications
 
-Click the<img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> 'Activity' tab on the bottom right of the {{config.extra.arcana.wallet_name}} to view the wallet notifications screen.
+Click the <img src="/img/icons/an_wallet_notification_icon_light.png#only-light" width="20"/><img src="/img/icons/an_wallet_notification_icon_dark.png#only-dark" width="20"/> 'Activity' tab on the bottom right of the {{config.extra.arcana.wallet_name}} to view the wallet notifications screen.
 
-The activity tab lists all transactions processed through the wallet for different digital assets such as native tokens, custom tokens, and NFTs. It also displays pending blockchain transactions, if any. 
+The activity tab lists all transactions processed through the wallet for different digital assets such as native tokens, custom tokens, and NFTs. It also displays pending blockchain transactions, if any.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_combined_notify.png" width="35%"/>
 
@@ -229,7 +230,7 @@ Click the <img src="/img/icons/an_wallet_profile_icon_light.png#only-light" widt
 
 The {{config.extra.arcana.wallet_name}} is displayed as an embedded wallet within the context of the Web3 app that is integrated with The {{config.extra.arcana.sdk_name}}. 
 
-Right after a user authenticates, the wallet is displayed in its minimized state. 
+Right after a user authenticates, the wallet is displayed in its minimized state.
 
 <img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.png#only-dark" width="15%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.png#only-light" width="15%"/>
 
