@@ -241,6 +241,10 @@ nav:
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
+        - Using Dashboard: tutorials/videos/dashboard.md
+        - Integrate SDK: tutorials/videos/integrate-auth.md
+        - Onboard Users: tutorials/videos/onboard-users.md
+        - Sign Transactions: tutorials/videos/sign-transactions.md
   - User Guides:
       - user-guides/index.md
       - Arcana Wallet UI: 
