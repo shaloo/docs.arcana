@@ -217,3 +217,16 @@
 .an-marker-text-highlight {
   background-color: yellow;
 }
+
+.video_container {
+  display: flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.arcana_video {
+  flex-grow: 1;
+  border: solid 0.2em transparent;
+}
+

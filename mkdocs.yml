@@ -227,7 +227,7 @@ nav:
           - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
   - Tutorials: 
       - tutorials/index.md
-      - Code Samples: 
+      - App Integration: 
         - tutorials/code-samples/index.md
         - Web:
           - tutorials/code-samples/index.md
@@ -244,6 +244,11 @@ nav:
       - Videos: 
         - tutorials/videos/index.md
         - Get Started: tutorials/videos/get-started.md
+        - Using Dashboard: tutorials/videos/dashboard.md
+        - Integrate SDK: tutorials/videos/integrate-auth.md
+        - Onboard Users: tutorials/videos/onboard-users.md
+        - Sign Transactions: tutorials/videos/sign-transactions.md
+      - Integration Examples (GitHub): https://github.com/arcana-network/auth-examples
   - User Guides:
       - user-guides/index.md
       - Arcana Wallet UI: 
