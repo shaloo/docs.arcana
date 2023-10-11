@@ -21,6 +21,7 @@
         --md-an-hero-content-color: rgba(247, 246, 245, 0.9);
         --md-an-hero-button-bg-color: #070707;
         --md-an-secondary-button-bg-color: #2a2a2a;
+        --md-an-color-h2-bottom-rule: var(--md-an-color-light-purple);
     }
 
     :root > [data-md-color-scheme="slate"]{
@@ -29,6 +30,7 @@
         --md-an-card-color-hover: var(--md-primary-fg-color--dark);
         --md-an-hero-button-bg-color: #070707;
         --md-an-secondary-button-bg-color: #d0d0d0;
+        --md-an-color-h2-bottom-rule: var(--md-an-banner-color-purple);
     }
 
     .md-sidebar--secondary {
@@ -130,6 +132,7 @@
         padding: 0 0.5rem;
         word-break: break-word;
         padding: 1rem 1.5rem;
+        border: 3px solid var( --md-primary-bg-color);
     }
 
     .feature-item-2 {
@@ -140,7 +143,8 @@
         border-radius: 5px;
         margin: 0.5rem;
         word-break: break-word;
-        box-shadow: 0 4px 8px 0 rgba(247, 246, 245);
+        /*box-shadow: 0 4px 8px 0 rgba(247, 246, 245);*/
+        box-shadow: 0 1px 2px 0 var(--md-an-color-light-purple);
     }
 
     .feature-item-3 {
@@ -174,6 +178,14 @@
         -webkit-font-smoothing: antialiased;
         margin: 0 0 10px;
         display: block;
+    }
+
+    .md-typeset h2{
+       border-bottom: 1px solid var(--md-an-color-h2-bottom-rule);
+    }
+
+    .md-an-marquee {
+        background-color: var(--md-an-color-light-purple);
     }
 
     @media screen and (max-width:30em) {
@@ -261,7 +273,6 @@
         /*border-bottom: 1px solid #eee;*/
         width: 100%;
         /*margin: 20px 0;*/
-        color: var(--md-primary-fg-color-light);
     }
 
     .md-footer-meta__inner {
@@ -300,7 +311,7 @@
     }
 
     .h3-color {
-        margin-top: -3%;   
+        margin-top: 1rem;   
     }
 
     .an-hero-footer {
@@ -318,7 +329,7 @@
     </div>
 </div>
 
-<div class="top-hr">
+<div class="top-hr md-an-marquee">
     <div class="feature-item">
         <a href="./howto/index.html">
             <div class="a-link-color">
@@ -345,6 +356,7 @@
         </a> 
     </div>
 </div>
+</section>
 
 <div class="top-hr">
     <div class="hr">
@@ -365,7 +377,7 @@
     <div class="feature-item-2">
         <a href="./howto/integrate-app/index.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_build_custom_auth_dark.png#only-dark" width="15%"/><img src="./img/icons/i_build_custom_auth_light.png#only-light" width="15%"/>  Integrate Auth SDK</h3>
+                <h3 class="h3-color"><img src="./img/icons/i_build_custom_auth_dark.png#only-dark" width="15%"/><img src="./img/icons/i_build_custom_auth_light.png#only-light" width="15%"/>  Integrate App</h3>
                 <p>Pick your Web3 App type and simply follow the installation and integration steps with the relevant Arcana SDKs based on your app type.</p>
             </div>
         </a>
@@ -374,7 +386,7 @@
     <div class="feature-item-2">
         <a href="./howto/deploy-app.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_plug_and_play_dark.png#only-dark" width="15%"/><img src="./img/icons/i_plug_and_play_light.png#only-light" width="15%"/>  Deploy App</h3>
+                <h3 class="h3-color"><img src="./img/icons/i_deploy_app_dark.png#only-dark" width="15%"/><img src="./img/icons/i_deploy_app_light.png#only-light" width="15%"/>  Deploy App</h3>
                 <p>Deploy Web3 apps on Arcana Testnet, validate them and then deploy them on the Arcana Mainnet.</p>
             </div>
         </a>
@@ -445,7 +457,7 @@
     <div class="feature-item-2">
         <a href="./howto/index.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i-howto-guide-dark.png#only-dark" width="15%"/><img src="./img/icons/i-howto-guide-light.png#only-light" width="15%"/>  How-to Guides</h3>
+                <h3 class="h3-color"><img src="./img/icons/i-howto-guide-dark.png#only-dark" width="15%"/><img src="./img/icons/i-howto-guide-light.png#only-light" width="15%"/>  How-To ...</h3>
                 <p>Step-by-step instructions on how to register the app, configure authentication providers, integrate with the Auth SDK, onboard users, deploy apps and more.</p>
             </div>
         </a>
@@ -481,8 +493,6 @@
       <a href="mailto:support@arcana.network"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">Contact Us</div></a> 
     </div>
 </div>
-
-</section>
 
 {% include "partials/content.html" %}
 

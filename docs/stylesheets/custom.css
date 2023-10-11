@@ -24,10 +24,11 @@
      --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
      --md-typeset-mark-color: rgba(247, 247, 163, 0.25);
      --md-banner-color-yellow: var(--md-typeset-mark-color);
-     --md-an-banner-color-purple: rgb(108, 102, 235);
+     --md-an-banner-color-purple: rgb(85, 65, 190);
      --md-an-header-color-purple: rgb(24,21,59); 
      --md-an-color-light-purple: rgb(192, 188, 223);
      --md-an-blink-me-link-color: blue;
+     --md-an-banner-bg: rgb(111, 215,145);
     }
 
 [data-md-color-scheme="black"] {
@@ -41,7 +42,7 @@
   --md-banner-color-yellow: rgba(247, 247, 163, 0.25);
   --md-an-banner-color-purple: rgb(59, 52, 150);
   --md-an-header-color-purple: rgb(16,14,36); 
-  --md-an-blink-me-link-color: rgb(177, 172, 239); ;
+  --md-an-color-light-purple: rgb(26, 24, 38);
 }
 
 .critic .block {
@@ -95,7 +96,7 @@
 }
 
 .md-banner {
-    background: var(--md-an-banner-color-purple);
+    background: var(--md-an-banner-bg);
     /*
     background: repeating-linear-gradient(
       -45deg,
