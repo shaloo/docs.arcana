@@ -12,11 +12,15 @@ To use the {{config.extra.arcana.product_name}} product simply configure usage t
 
 === "Configure Auth Usage"
 
+    ## Register & Configure App
+
     [[configure-auth|Register App :material-tools:]]{ .md-button }
 
     [[index-configure-auth|Configure Auth Usage :fontawesome-solid-users-gear:]]{ .md-button }
 
 === "Integrate App"
+
+    ## Integrate with Arcana Auth
 
     ??? abstract "Desktop/Web Apps"
 
@@ -37,6 +41,8 @@ To use the {{config.extra.arcana.product_name}} product simply configure usage t
     <!--- TBD Gasless, Auth core, Unity etc. --->
 
 === "Deploy App"
+
+    ## Deploy on Testnet / Mainnet
 
     [[deploy-app#configure-testnet|Deploy App: Testnet :simple-hive_blockchain:]]{ .md-button }
 
