@@ -10,7 +10,7 @@ arcana:
 
 You need to first [[configure-auth#step-2-register-application|register the app]] using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [[configure-auth#step-3-configure-application|configure authentication providers]] for onboarding users. After that, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages and integrate the NextJS app.
 
-See [sample NextJS app source](https://github.com/arcana-network/auth-next-js) at GitHub. This is a very basic NextJS app that is created using the [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) template. It integrates with the {{config.extra.arcana.sdk_name}} and uses the built-in, [[concept-plug-and-play-auth|plug-and-play] login UI to onboard users and allow them to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. 
+See [sample NextJS app source](https://github.com/arcana-network/auth-next-js) at GitHub. This is a very basic NextJS app that is created using the [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) template. It integrates with the {{config.extra.arcana.sdk_name}} and uses the built-in, [[concept-plug-and-play-auth| plug-and-play]] login UI to onboard users and allow them to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. 
 
 ## Registration & Configuration
 
@@ -133,4 +133,4 @@ See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]],
 
       Check the package.json file in the sample NextJS sources and ensure that you are using the latest {{config.extra.arcana.sdk_name}} npm release.
 
-      The current release is: v{{config.extra.arcana.latest_version}}
+      The current {{config.extra.arcana.sdk_name}} release is: v{{config.extra.arcana.latest_version}}

@@ -52,7 +52,7 @@ toc_depth: 2
 
       First, register the app with the Arcana Network. Next, configure one or more authentication providers for onboarding app users by configuring the **Social Auth** settings using the {{config.extra.arcana.dashboard_name}}. Then integrate the app with the {{config.extra.arcana.sdk_name}} and add code to onboard users. For example, see [[google-social-auth|how to onboard users via Google]].
 
-??? an-faq "Is the ?"
+??? an-faq "Is there a passwordless login option to onboard the users?"
 
       You can enable passwordless login to onboard app users by first registering the app with Arcana Network, then integrating it with the {{config.extra.arcana.sdk_name}} and then simply calling the [`loginWithLink` function](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) in the app code to onboard users. For details, see [[build-password-less-auth|how to enable passwordless login]].
 

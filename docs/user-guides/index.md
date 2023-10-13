@@ -8,6 +8,6 @@ arcana:
 
 # User Guides
 
-[[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide :material-wallet-outline:]]{ .md-button }
+[[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide :material-wallet-outline:]]{ .md-button }
 
 [[mfa-user-guide|MFA Setup User Guide :material-two-factor-authentication:]]{ .md-button }

@@ -17,14 +17,19 @@
      --md-admonition-icon--an-faq: url('/img/icons/icons8-question-mark-48.png');
      --md-admonition-icon--an-trbs: url('/img/icons/exclamation.png');
      --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
-     --md-primary-an-banner-text-color: rgba(63, 63, 2, 0.99);
+     --md-primary-an-banner-text-color: var(--md-an-blink-me-link-color);
      --md-banner-color-1: var(--md-primary-bg-color);
      --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
      --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
      --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
      --md-typeset-mark-color: rgba(247, 247, 163, 0.25);
      --md-banner-color-yellow: var(--md-typeset-mark-color);
-}
+     --md-an-banner-color-purple: rgb(85, 65, 190);
+     --md-an-header-color-purple: rgb(24,21,59); 
+     --md-an-color-light-purple: rgb(192, 188, 223);
+     --md-an-blink-me-link-color: blue;
+     --md-an-banner-bg: rgb(111, 215,145);
+    }
 
 [data-md-color-scheme="black"] {
     --md-hue: 360; 
@@ -35,6 +40,9 @@
   --md-an-card-color-hover: var(--md-primary-fg-color--dark);
   --md-typeset-mark-color: rgba(56, 59, 82, 0.95);
   --md-banner-color-yellow: rgba(247, 247, 163, 0.25);
+  --md-an-banner-color-purple: rgb(59, 52, 150);
+  --md-an-header-color-purple: rgb(16,14,36); 
+  --md-an-color-light-purple: rgb(26, 24, 38);
 }
 
 .critic .block {
@@ -48,13 +56,21 @@
   border-radius: 5px 5px 0 0;
 } 
 
-.md-tabs__item:hover {
+.md-tabs__item:hover{
   background-color: var(--md-accent-bg-color);
-  color: var(--md-accent-fg-color);
+  /*color: var(--md-accent-fg-color);*/
+  color: var(--md-an-header-color-purple);
 } 
+
+.md-tabs__link--active, .md-tabs__link:focus, .md-tabs__link:hover {
+  text-decoration: underline; 
+  text-decoration-color: var(--md-accent-bg-color);
+  text-underline-offset: 0.25rem;
+}
 
 .md-header {
   /*background: linear-gradient(to bottom, var(--md-primary-bg-color), var(--md-primary-fg-color) 19%,#aaa 69%);*/
+  background-color: var(--md-an-header-color-purple);
 }
 
 /* Remove site-name space*/
@@ -86,7 +102,7 @@
 }
 
 .md-banner {
-    background: var(--md-banner-color-yellow);
+    background: var(--md-an-banner-bg);
     /*
     background: repeating-linear-gradient(
       -45deg,
@@ -217,3 +233,16 @@
 .an-marker-text-highlight {
   background-color: yellow;
 }
+
+.video_container {
+  display: flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.arcana_video {
+  flex-grow: 1;
+  border: solid 0.2em transparent;
+}
+
