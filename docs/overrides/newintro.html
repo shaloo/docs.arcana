@@ -4,7 +4,7 @@
 {{ super() }}
 
 {% block announce %}
-<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="/relnotes/rn-main-auth-v{{config.extra.arcana.date_release_tag}}.html">Release v{{ config.extra.arcana.date_release_tag }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
+<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v{{config.extra.arcana.date_release_tag}}.html">Release v{{ config.extra.arcana.date_release_tag }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
 {% endblock %}
 {% block content %}
 
@@ -399,6 +399,29 @@
 </div>
 
 <div class="top-hr">
+
+    <div class="feature-item-2">
+        <a href="./howto/configure-gasless.html">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i_an_gastank.png#only-dark" width="15%"/><img src="./img/icons/i_an_gastank.png#only-light" width="15%"/> Go Gasless</h3>
+                <p>Boost user engagement and adoption with Gasless Transactions in your Web3 apps, incentivizing users effectively..</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-2">
+        <a href="./howto/arcana-wallet/index.html">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i_an_wallet_dark.png#only-dark" width="15%"/><img src="./img/icons/i_an_wallet_light.png#only-light" width="15%"/>  Web3 Wallet Ops</h3>
+                <p>Developers code supported wallet ops for blockchain transactions in Web3 apps, while authenticated users can directly initiate and sign them via the wallet UI.</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+<div class="top-hr">
+
     <div class="feature-item-2">
         <a href="./howto/onboard-users/index.html">
             <div class="a-link-color">
@@ -417,14 +440,6 @@
         </a>
     </div>
 
-    <div class="feature-item-2">
-        <a href="./howto/arcana-wallet/index.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_an_wallet_dark.png#only-dark" width="15%"/><img src="./img/icons/i_an_wallet_light.png#only-light" width="15%"/>  Web3 Wallet Ops</h3>
-                <p>Developers code supported wallet ops for blockchain transactions in Web3 apps, while authenticated users can directly initiate and sign them via the wallet UI.</p>
-            </div>
-        </a>
-    </div>
 </div>
 
 <div class="top-hr">
@@ -434,7 +449,6 @@
 </div>
 
 <div class="top-hr">
-
     <div class="feature-item-2">
         <a href="./tutorials/index.html">
             <div class="a-link-color">
@@ -452,15 +466,30 @@
             </div>
         </a>
     </div>
+</div>
 
+<div class="top-hr">
     <div class="feature-item-2">
         <a href="./dev-resources/dev-guides/index.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="15%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="15%"/>  Dev Guides</h3>
-                <p>Explore Arcana Developer Dashboard User Guide, Troubleshooting, SDK Reference, and resources on usage and error handling.</p>
+                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="15%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="15%"/>  Dev Resources</h3>
+                <p>Refer to Release Notes, Installation Guide, SDK Migration Guide, Arcana Developer Dashboard User Guide, FAQ, Troubleshooting and error handling.</p>
             </div>
         </a>
     </div>
+    
+    <div class="feature-item-2">
+        <a href="https://authsdk-ref-guide.netlify.app/">
+            <div class="a-link-color">
+                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="15%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="15%"/>  Auth SDK Reference</h3>
+                <p>Check out AuthProvider functions, usage and more.</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+<div class="top-hr">
 
     <div class="feature-item-2">
         <a href="./user-guides/index.html">
