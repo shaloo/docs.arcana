@@ -201,7 +201,7 @@ nav:
         - archives/index.md
         - Release Notes:
           - relnotes/archives/index.md
-          - Auth Oct12-23-gasless: relnotes/rn-main-auth-vOct-12-23-gasless.md
+          - Auth Oct12-23-gasless: relnotes/rn-main-auth-vOct12-23-gasless.md
           - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
           - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
           - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
