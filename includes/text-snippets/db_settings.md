@@ -5,6 +5,7 @@ Click **Configure** in the LHS navigation of the app configuration screen in the
 * Chain Management
 * Arcana Wallet
 * Keyspace (Available only after the 'Mainnet' profile is created)
+* Gasless
 
 Use the defaults or provide inputs for various settings as per your application use case. These settings control {{config.extra.arcana.sdk_name}} usage, user onboarding, and blockchain transaction signing experience.
 
@@ -66,7 +67,6 @@ Use the defaults or provide inputs for various settings as per your application 
 
            There are certain limitations when the 'Global Keys' option is selected by developers for an app integrating with the {{config.extra.arcana.product_name}} product. Make sure you understand these [[concept-keyspace-type|limitations]] related to feature restriction, switching between app-specific and global keys, security and other implications associated with the 'Global Keys' usage. 
 
-<!-- #AR-6971
 === "Gasless"
 
     Use the 'Gasless' section to configure [[concept-gasless-transactions|gasless transactions]] for app users.  
@@ -82,6 +82,5 @@ Use the defaults or provide inputs for various settings as per your application 
     <img src="/img/an_gl_db_new_config.png" alt="Set up Gas Tanks" class="an-screenshots"/>
 
     For details, see [[configure-gasless|how to configure gasless transactions]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
--->
 
 Make sure you save the configuration settings before leaving the {{config.extra.arcana.dashboard_name}} page in your browser.
