@@ -8,21 +8,25 @@ arcana:
 
 # Contact Us
 
+**Cannot find what you are looking for?**
+
 *We are happy to help!*
+
+## Arcana Support
 
 ??? abstract "Use Arcabot for instant answers!"
 
       Get instant answers to your queries by starting a conversation 💬 with `Arcabot`. Simply click the circular bot icon on the bottom right of this page. 
-       
-??? abstract "Arcana Communities / Social Channels"
-
-      Reach out to our dev evangelists and community participants via the social channels listed below.
       
 ??? abstract "Email Arcana Support"
 
       Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
 
-## Ask the community
+??? abstract "Try Arcana Communities"
+
+      Use the social coordinates and reach out to our dev evangelists, community enthusiasts.
+
+## Social Coordinates
 
 | GitHub | Discord | Telegram | Twitter |
 | :---: | :---: | :---: | :---: |
