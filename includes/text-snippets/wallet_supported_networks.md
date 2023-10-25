@@ -1,15 +1,21 @@
 <!--**Configured Blockchain Networks (Default)**:-->
 
-**Pre-configured {{config.extra.arcana.wallet_name}} chains (default)**
+**Pre-configured {{config.extra.arcana.wallet_name}} blockchains**
 
-* Arbitrum
-* Avalanche
-* Binance Smart Chain
+* Arbitrum  *(Gasless)*
+* Arbitrum Goerli *(Gasless)*
+* Avalanche *(Gasless)*
+* Binance Smart Chain *(Gasless)*
+* BSC Testnet *(Gasless)*
 * Caduceus
-* Ethereum
+* Ethereum *(Gasless)*
 * IoTeX
-* Optimism 
-* Polygon 
+* Optimism *(Gasless)*
+* Optimism Goerli *(Gasless)*
+* Polygon *(Gasless)*
+* Polygon Mumbai *(Gasless)*
+* Polygon zkEVM Testnet *(Gasless)*
+* Sepolia
 * Shardeum Sphinx 1.x
 
 <img src="/img/an_wallet_default_chain_list.png" alt="Supported Blockchains Image" width="50%" class="an-screenshots"/>
