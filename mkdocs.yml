@@ -585,10 +585,10 @@ plugins:
         'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smart-contracts.md'
         'relnotes/latest.md': 'relnotes/rn-main-auth-vOct12-23-gasless.md'
         #website deprecated links go to contacts page
-        'accesscontrol/index.md': 'support.md'
-        'category/data-access-control/index.md': 'support.md'
-        'category/store-data/index.md': 'support.md'
-        'conceptnftviewer/index.md': 'support.md'
+        'docs/accesscontrol/index.md': 'support.md'
+        'docs/category/data-access-control/index.md': 'support.md'
+        'docs/category/store-data/index.md': 'support.md'
+        'docs/conceptnftviewer/index.md': 'support.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
