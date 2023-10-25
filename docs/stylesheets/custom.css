@@ -73,6 +73,10 @@
   background-color: var(--md-an-header-color-purple);
 }
 
+.md-social {
+  margin-right: 6%; /*To accommodate chatbase bot icon */
+}
+
 .md-button {
     border-radius: 0.3rem !important;
 }
