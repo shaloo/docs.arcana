@@ -73,7 +73,7 @@ toc_depth: 2
       
       App developers should use EoA addresses for messages requiring personal signing or accessing user keys. All other blockchain transactions that are meant to be gasless should utilize the SCW address to ensure gas fees are covered for the user. For transferring tokens and digital assets, if a user deliberately chooses the EoA address via the wallet UI then any subsequent transaction will incur gas fees as they use the EoA address.
 
-??? an-faq "If a eveloper sets up a gas tanks on network N, uses SCW address and then issues the transaction on a different network with no gas tank, why does the transaction fail?"
+??? an-faq "If a developer sets up a gas tanks on network N, uses SCW address and then issues the transaction on a different network with no gas tank, why does the transaction fail?"
 
       This will not work and cause transaction error. Only transactions issued using the SCW address on the network where gas tank is set up (network N in this case) will be gasless and successful if there are sufficient funds in the tank and the SCW wallet address.
       

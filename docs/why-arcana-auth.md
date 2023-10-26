@@ -8,7 +8,7 @@ arcana:
 
 # Why {{config.extra.arcana.product_name}}?
 
-{% include "./text-snippets/sdk_version_info.md" %}
+{% include "./text-snippets/prod_version_info.md" %}
 
 At {{config.extra.arcana.company_name}}, our mission is to build an ecosystem of components that enables developers to build Web3 applications quickly, securely, and with complete data privacy and ownership for application users.
 

@@ -8,8 +8,7 @@ arcana:
 
 # Introduction
 
-**{{config.extra.arcana.product_name}}** employs advanced cryptography and asynchronous distributed key generation, enabling user identity control without key management complexities. It offers seamless developer integration and customization for secure blockchain transaction signing in Web3 apps.
-
+**{{config.extra.arcana.product_name}}** brings higher conversion for Web3 app developers through [[concept-social-login|social login]]. Using advanced cryptography and asynchronous distributed key generation, it provides user identity control with privacy, eliminating key management complexities. Integration is effortless, customization is a breeze, and it supports diverse Web3 app types.
 {==
 
 *Accelerate user journey into the world of decentralized applications with* **Arcana Auth!**
