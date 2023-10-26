@@ -169,13 +169,14 @@
         font-family: inherit;
     }
 
-    .feature-item p, .feature-item-2 p {
+    .feature-item p, .feature-item-2 p, .feature-item ul, .feature-item-2 ul {
         font-size: 0.6rem;
         line-height: 1.8em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         margin: 0 0 10px;
         display: block;
+        list-style-type: disc;
     }
 
     .md-typeset h2{
@@ -326,7 +327,13 @@
         <a href="./quick-start/web-apps-quick-start.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_web_app_dark.png#only-dark" width="10%"/><img src="./img/icons/i_web_app_light.png#only-light" width="10%"/> Web Apps</h3>
-                <p>Integrate vanilla <b>HTML/CSS/JS app, React/NextJS/Vue app</b> or apps that use wallet connectors such as <b>Wagmi,RainbowKit and Web3-React</b> with the Auth SDK.</p>
+                <p>Supported App Types:</p>
+                <ul>
+                    <li>Vanilla HTML/CSS/JS</li>
+                    <li>React/NextJS</li>
+                    <li>Vue</li>
+                    <li>Wallet connectors: Wagmi, RainbowKit, Web3-React</li>
+                </ul>
             </div>
         </a>
     </div>
@@ -335,7 +342,13 @@
         <a href="./quick-start/mobile/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/mobile-icon-dark.png#only-dark" width="10%"/><img src="./img/icons/mobile-icon-light.png#only-light" width="10%"/> Mobile Apps</h3>
-                <p>Integrate with an <b>iOS, Android</b> or hybrid mobile platform app that uses <b>React Native & Flutter</b>.</p>
+                <p>Supported OS/Frameworks:</p>
+                <ul>
+                    <li>iOs</li>
+                    <li>Android</li>
+                    <li>Flutter</li>
+                    <li>React-Native</li>
+                </ul>
             </div>
         </a>
     </div>
@@ -343,7 +356,12 @@
         <a href="./arcana-coming-soon.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/gaming-icon-dark.png#only-dark" width="10%"/> <img src="./img/icons/gaming-icon-light.png#only-light" width="10%"/> Gaming Apps</h3>
-                <p>Allow apps built using gaming platforms such as <b>Unity, Unreal</b> to onboard users easily and securely.</p><p><mark><b>Coming soon!!!</b></mark></p>
+                <p>Supported platforms:</p>
+                <ul>
+                    <li>Unity</li>
+                    <li>Unreal</li>
+                </ul>
+                <p><mark><b>Coming soon!!!</b></mark></p>
             </div>
         </a> 
     </div>
@@ -361,7 +379,13 @@
         <a href="./howto/configure-auth.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_config_dapp_dark.png#only-dark" width="15%"/><img src="./img/icons/i_config_dapp_light.png#only-light" width="15%"/>  Register & Configure</h3>
-                <p>Utilize Arcana Developer Dashboard to register the app, obtain a unique clientId, customize authentication, and refine blockchain signing before SDK integration.</p>
+                <p>Use Arcana Developer Dashboard to:</p>
+                <ul>
+                    <li>register app</li>
+                    <li>get clientId </li>
+                    <li>enable user onboarding options</li>
+                    <li>customize blockchain transaction signing experience</li>
+                </ul>
             </div>
         </a>
     </div>
@@ -370,7 +394,15 @@
         <a href="./howto/index.html#integrate-with-arcana-auth">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_build_custom_auth_dark.png#only-dark" width="15%"/><img src="./img/icons/i_build_custom_auth_light.png#only-light" width="15%"/>  Integrate App</h3>
-                <p>Pick your Web3 App type and simply follow the installation and integration steps with the relevant Arcana SDKs based on your app type.</p>
+                <p>Select and install relevant Arcana SDKs:</p>
+                <ul>
+                    <li>Auth SDK</li>
+                    <li>Auth React SDK</li>
+                    <li>Auth Wagmi SDK</li>
+                    <li>Auth Web3-React SDK</li>
+                    <li>Auth Flutter SDK</li>
+                    <li>Auth React-Native</li>
+                </ul>
             </div>
         </a>
     </div>
@@ -379,7 +411,12 @@
         <a href="./howto/deploy-app.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_deploy_app_dark.png#only-dark" width="15%"/><img src="./img/icons/i_deploy_app_light.png#only-light" width="15%"/>  Deploy App</h3>
-                <p>Deploy Web3 apps on Arcana Testnet, validate them and then deploy them on the Arcana Mainnet.</p>
+                <ul>
+                  <li>Arcana Testnet</li>
+                  <li>Validate Apps</li>
+                  <li>Configure Mainnet Profile</li>
+                  <li>Deploy on Mainnet</li>
+                </ul>
             </div>
         </a>
     </div>
@@ -406,7 +443,7 @@
         <a href="./howto/arcana-wallet/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_an_wallet_dark.png#only-dark" width="15%"/><img src="./img/icons/i_an_wallet_light.png#only-light" width="15%"/>  Web3 Wallet Ops</h3>
-                <p>Developers code supported wallet ops for blockchain transactions in Web3 apps, while authenticated users can directly initiate and sign them via the wallet UI.</p>
+                <p>Enable developers to use supported wallet ops to issue blockchain transaction requests programmatically, while authenticated users can review and approve them or directly initiate and sign transactions via the wallet UI.</p>
             </div>
         </a>
     </div>
@@ -419,7 +456,7 @@
         <a href="./howto/onboard-users/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_plug_and_play_dark.png#only-dark" width="15%"/><img src="./img/icons/i_plug_and_play_light.png#only-light" width="15%"/> Plug & Play Login</h3>
-                <p>Effortlessly onboard users with our Plug & Play Login UI! Choose authentication providers and follow integration instructions based on your Web3 app type.</p>
+                <p>Effortlessly onboard users with our Plug & Play Login UI! Choose authentication providers and follow integration instructions for your app type.</p>
             </div>
         </a>
     </div>
@@ -428,7 +465,7 @@
         <a href="./howto/onboard-users/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_build_custom_auth_dark.png#only-dark" width="15%"/><img src="./img/icons/i_build_custom_auth_light.png#only-light" width="15%"/> Custom Login</h3>
-                <p>Pick our Plug & Play UI or onboard users with a custom login UI. Select custom UI option, set up authentication providers, and follow integration instructions tailored for your Web3 app type.</p>
+                <p>Onboard users with a custom login UI. St up authentication providers, and follow integration instructions for your Web3 app type.</p>
             </div>
         </a>
     </div>
@@ -455,7 +492,7 @@
         <a href="./howto/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i-howto-guide-dark.png#only-dark" width="15%"/><img src="./img/icons/i-howto-guide-light.png#only-light" width="15%"/>  How-To ...</h3>
-                <p>Register your app, configure authentication, integrate with Auth SDK, onboard users, deploy apps, and more with step-by-step instructions.</p>
+                <p>Step-by-step instructions to register your app, configure authentication, integrate with Auth SDK, onboard users, deploy apps, and more.</p>
             </div>
         </a>
     </div>

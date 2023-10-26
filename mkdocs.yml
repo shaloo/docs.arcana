@@ -166,13 +166,14 @@ nav:
         - Flutter Apps: howto/mobile/flutter-get-started.md
         - React-Native Apps: howto/mobile/react-native-get-started.md
     - Deploy:
-      - howto/deploy-app.md
+      - deploy/index.md
+      - Deploy on Testnet/Mainnet: howto/deploy-app.md
+      - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md
     - Release Notes: relnotes/rn-main-auth-vOct12-23-gasless.md
     - Installation Guide: sdk-installation.md
     - SDK Migration Guide: migration/main-auth-vOct12-23-gasless-migration.md
-    - Testnet > Mainnet Deployment Migration Guide: howto/migrate-testnet-mainnet.md
     - Developer Guides:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
