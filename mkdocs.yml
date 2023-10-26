@@ -308,6 +308,7 @@ nav:
         - Overview: concepts/ansmartc/an-smart-contracts.md
         - Types of Contracts: concepts/ansmartc/an-smartc-types.md
         - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
+      - Social Login: concepts/social-login.md
       - Usage Metrics: concepts/usage-metrics.md
       - Validator Nodes: concepts/validator-nodes.md
       - Verify JWT Token: concepts/jwt_token_validation.md
