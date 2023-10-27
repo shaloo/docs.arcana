@@ -1,12 +1,12 @@
 ---
 alias: index-integrate-app
-title: 'Integrate App'
-description: 'Integrate Web3 apps with the Arcana Auth SDK using the instructions listed here.'
+title: 'Web Apps'
+description: 'Integrate Web3 Desktop/Web apps with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Integrate App
+# Web Apps
 
 To integrate with the {{config.extra.arcana.sdk_name}}, Web3 app developers must first use the {{config.extra.arcana.dashboard_name}} to register and configure the app with Arcana Network. 
 
@@ -34,3 +34,33 @@ After installing the SDK, follow the detailed step-by-step integration instructi
 [[index-integrate-react-app|Integrate React App :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button }
 
 [[integrate-vue-app|Integrate Vue App :material-vuejs:]]{ .md-button }
+
+## Onboard Users
+
+After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug and play auth UI or custom login UI.
+
+[[index-vanilla-onboard-users|Vanilla HTML/CSS/JS Apps :fontawesome-solid-plug:]]{ .md-button }
+
+[[index-react-onboard-users| React Apps :material-card-account-mail:]]{ .md-button }
+
+[[index-vue-onboard-users| Vue Apps :material-card-account-mail:]]{ .md-button }
+
+## Handle Events
+
+[[handle-provider-events|Handle Events :material-bell-cog:]]{ .md-button }
+
+## Wallet Ops
+
+[[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+
+[[custom-wallet-ui| Custom wallet UI :fontawesome-solid-gears:]]{ .md-button }
+
+## What's Next?
+
+After integrating the {{config.extra.arcana.sdk_name}} with the app and enabling the built-in {{config.extra.arcana.wallet_name}} UI or custom wallet UI, developers can [[index-deploy| deploy the app on the Testnet]]. Once validated it can be deployed on the Mainnet for production use.
+
+## See also
+
+* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
+* {% include "./text-snippets/authsdkref_url.md" %}
