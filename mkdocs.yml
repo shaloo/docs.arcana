@@ -244,6 +244,8 @@ nav:
         - tutorials/code-samples/mobile/index.md
         - Flutter App: tutorials/code-samples/mobile/flutter-sample.md
         - React-Native App: tutorials/code-samples/mobile/react-native-sample.md
+      - Gaming:
+        - Unity: tutorials/code-samples/gaming/unity-sample.md
     - Examples (GitHub): https://github.com/arcana-network/auth-examples
     - Videos: 
       - tutorials/videos/index.md
