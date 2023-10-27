@@ -10,20 +10,26 @@ arcana:
 
 ## Latest Release v{{config.extra.arcana.date_release_tag}}
 
-* Download the {{config.extra.arcana.sdk_name}} npm packages required as per the Web3 application type: 
+Developers can use the {{config.extra.arcana.dashboard_name}} to register and configure Auth usage: {% include "./text-snippets/db_portal_url.md" %}
 
-    - **Web3/Desktop Apps**
-      - All app types: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
-      - Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
-      - Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
-      - Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
-    - **Mobile Apps**
-      - Flutter apps: {{config.extra.arcana.flutter_sdk_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
-      - React-Native apps: {{config.extra.arcana.react_native_sdk_name}} [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native)
-    - **Gaming Apps**
-      - Unity apps: {{config.extra.arcana.gaming_sdk_name}} `{{config.extra.arcana.gaming_sdk_pkg_name}}` (Coming Soon!)
+Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} packages as per the Web3 application type:
 
-* Use the {{config.extra.arcana.dashboard_name}} to register and configure Auth usage: {% include "./text-snippets/db_portal_url.md" %}
+=== "Web3/Desktop Apps"
+    * All app types: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
+    * Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
+    * Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi)
+    * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+
+=== "Mobile Apps"
+    * Flutter apps: {{config.extra.arcana.flutter_sdk_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
+    * React-Native apps: {{config.extra.arcana.react_native_sdk_name}} [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native)
+
+<!--
+=== "Gaming Apps"
+
+    * Unity apps: (Coming Soon!)
+    * Unreal apps: (Coming Soon!)
+-->
 
 ## What's New?
 

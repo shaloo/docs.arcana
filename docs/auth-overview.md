@@ -161,7 +161,7 @@ arcana:
   <div class="card" markdown><h4><b>:simple-letsencrypt: Secure</b></h4><hr><p><ul><li>Authenticated Web3 app users can securely sign blockchain transactions with ease.</li><li>Powered by state-of-the-art asynchronous distributed key generation for robust, scalable, and private key access security.</li></ul></p></div>
   <div class="card" markdown><h4><b>:material-gesture-tap-button: Gasless Transactions</b></h4><hr><p><ul><li>Developers can specify which app operations are gasless.</li><li>Easy to set up gas tanks and deposit gas fees.</li><li>Users don't pay gas fees for gasless transactions; third party sponsors or app developers pay gas fees.</li></ul></p></div>
   </div>
-  <div class="card" markdown><h4><b>:material-gesture-tap-button: Easy to Use</b></h4><hr><p><ul><li>Embedded, non-custodial wallet within Web3 apps.</li><li>No browser extensions needed to use the embedded Web3 wallet.<li>No seed phrases or key management for transaction signing.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:material-gesture-tap-button: Easy to Use</b></h4><hr><p><ul><li>Embedded, non-custodial wallet displayed within the app context.</li><li>No browser extensions required to use wallet.<li>No seed phrases required, no key management complexity to enable users for signing transactions.</li></ul></p></div>
   </div>
 </div>
 
