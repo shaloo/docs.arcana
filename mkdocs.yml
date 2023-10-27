@@ -47,7 +47,8 @@ nav:
             #- Using Wallet UI: integrations/shardeum/wallet-config-shardeum.md
   - Get Started:
     - howto/index.md
-    - Configure Auth Usage:
+    - Register & Configure:
+      - howto/reg-config/index.md
       - Register App: howto/configure-auth.md
       - Configure Auth: 
         - howto/config-auth/index.md
@@ -65,20 +66,20 @@ nav:
           - Cognito: howto/config-idm/cognito-oauth.md
           - Firebase: howto/config-idm/firebase-auth.md
         - Gasless: howto/configure-gasless.md
-    - Integrate:
+    - Integrate Auth:
+      - howto/integrate/index.md
       - Web apps:
-        - Integrate App: 
-          - howto/integrate-app/index.md
-          - Install SDK: sdk-installation.md
-          - App Type:
-            - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
-            - React App: 
-              - howto/integrate-app/react/index.md
-              - React/NextJS App: howto/integrate-app/react-nextjs.md
-              - Wagmi App: howto/integrate-app/wagmi.md
-              - RainbowKit App: howto/integrate-app/rainbow.md
-              - Web3-React App: howto/integrate-app/web3-react.md
-            - Vue App: howto/integrate-app/vue.md
+        - howto/integrate-app/index.md
+        - Integrate:
+          - howto/integrate-app/app-type/index.md
+          - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
+          - React App: 
+            - howto/integrate-app/react/index.md
+            - React/NextJS App: howto/integrate-app/react-nextjs.md
+            - Wagmi App: howto/integrate-app/wagmi.md
+            - RainbowKit App: howto/integrate-app/rainbow.md
+            - Web3-React App: howto/integrate-app/web3-react.md
+          - Vue App: howto/integrate-app/vue.md
         - Onboard Users: 
           - howto/onboard-users/index.md
           - Vanilla JS Apps:

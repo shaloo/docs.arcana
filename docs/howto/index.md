@@ -10,17 +10,15 @@ arcana:
 
 To use the {{config.extra.arcana.product_name}} product simply configure usage through the {{config.extra.arcana.dashboard_name}}, install the {{config.extra.arcana.sdk_name}} depending upon your app type, integrate the app with the SDK and finally deploy app on the {{config.extra.arcana.company_name}} Testnet/Mainnet. 
 
-=== "Configure Auth Usage"
+=== "Register & Configure"
 
-    ## Register & Configure App
+    ## Get Client ID
 
-    [[configure-auth|Register App :material-tools:]]{ .md-button }
+    [[index-reg-config|Register & Configure :material-tools:]]{ .md-button }
 
-    [[index-configure-auth|Configure Auth Usage :fontawesome-solid-users-gear:]]{ .md-button }
+=== "Integrate Auth"
 
-=== "Integrate App"
-
-    ## Integrate with Arcana Auth
+    ## App Type
 
     ??? abstract "Desktop/Web Apps"
 
