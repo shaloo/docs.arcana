@@ -54,11 +54,7 @@ Earlier, there was only a single EoA wallet address associated with each authent
 
 #### Developers
 
-In addition to configuring the social provider and customizing wallet experience, chains, etc., developers must set up gas tanks for the blockchain net
-
-**xyz**
-
-TBD
+In addition to configuring the social provider and customizing wallet experience, chains, etc., developers must set up gas tanks for the blockchain network, deposit gas in the tanks and ensure that all the requisite app operations that are supposed to be gasless get whitelisted in the gasless configuration settings. Also, developers must ensure that they use the SCW wallet address when issuing blockchain transactions that must be gasless. EoA address should be used for `getPublicKey()` call or to personal sign messages. The user's public/private key is associated with EoA address and **not** with the SCW address.
 
 ---
 
