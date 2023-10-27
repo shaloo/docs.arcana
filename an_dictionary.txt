@@ -92,6 +92,7 @@ AuthWagmiCreateClientText
 AuthWagmiInstallText
 AuthWatchAssetText
 BLS
+BSC
 BYOK
 BeaconProxy
 Biconomy
@@ -612,6 +613,7 @@ config-auth-google
 config-auth-steam
 config-auth-twitch
 config-auth-twitter
+config.extra.arcana.date_release_tag
 config3pwallet
 config_cognito
 config_dapp
@@ -723,6 +725,7 @@ fontawesome-solid-file-contract
 fontawesome-solid-file-signature
 fontawesome-solid-gears
 fontawesome-solid-magnifying-glass-dollar
+fontawesome-solid-mobile
 fontawesome-solid-mobile-screen
 fontawesome-solid-money-check-dollar
 fontawesome-solid-paper-plane
@@ -1036,6 +1039,7 @@ mainnet
 makeMetaDataURL
 manage-testnet-and-mainnet-configurations
 material-firebase
+material-github
 material-language-javascript
 material-vuejs
 material-wifi-cog
@@ -1044,6 +1048,7 @@ metamask
 mfa
 mfa-user-guide
 migrate-app-testnet-mainnet
+migration-guide-vOct12-23-gasless
 migration_to_beta1_1
 migration_to_beta1_2
 migration_to_beta1_5
@@ -1130,6 +1135,7 @@ refetched
 registerd
 repo
 revokefile
+rn-main-auth-vOct12-23-gasless
 rn_alpha
 rn_beta
 rn_beta1_1
@@ -1231,6 +1237,7 @@ v1.0.6
 v1.0.7
 v1.0.8
 v2
+vOct12-23-gasless
 validator
 validator_nodes
 validatoronboarding
@@ -1279,3 +1286,4 @@ whatisan
 why-arcana-auth
 whyan
 wireframe
+zkEVM

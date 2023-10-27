@@ -44,6 +44,8 @@ These are the building blocks to help you learn about various {{config.extra.arc
 
 [[concept-index-ansc| Smart Contracts :material-list-box:]]{ .md-button }
 
+[[concept-social-login| Social Login :fontawesome-solid-users:]]{ .md-button }
+
 [[concept-usage-metrics|Usage Metrics :material-monitor-eye:]]{ .md-button }
 
 [[concept-validator-nodes|Validator Nodes :material-checkbox-multiple-marked-circle-outline:]]{ .md-button }

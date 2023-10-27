@@ -14,8 +14,6 @@ arcana:
 
 [[migration-guide-v{{config.extra.arcana.date_release_tag}}| SDK Migration Guide :material-arrow-up:]]{ .md-button }
 
-[[migrate-app-testnet-mainnet| Testnet > Mainnet Deployment Migration Guide:material-elevation-rise:]]{ .md-button }
-
 [[index-dev-guides| Developer Guides :simple-bookstack:]]{ .md-button }
 
 [[index-faq| FAQ :material-head-question:]]{ .md-button }
