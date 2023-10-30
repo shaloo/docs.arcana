@@ -26,7 +26,7 @@ The {{config.extra.arcana.company_name}} [`{{config.extra.arcana.gaming_sdk_pkg_
 
 ## Demo App
 
-Refer to the [Auth Examples Repo](https://github.com/arcana-network/auth-examples) Unity sample code to learn how to integrate the {{config.extra.arcana.sdk_name}} with a Unity App.
+Refer to the [Auth Examples Repository](https://github.com/arcana-network/auth-examples) for Unity sample code to learn how to integrate the {{config.extra.arcana.sdk_name}} with a Unity App.
 
 ## Deploy App
 

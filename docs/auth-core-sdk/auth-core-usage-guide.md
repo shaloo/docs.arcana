@@ -79,7 +79,7 @@ The user info is saved in memory after successful login, before `unload` event o
 ### Get user info
 
 ```js
-const userInfo = auth.getUserInfo();
+const userInfo = auth.getUser();
 /* 
   UserInfo: {
     loginType: 'google',
@@ -205,7 +205,7 @@ window.onload = async () => {
 
   
   if(auth.isLoggedIn()) {
-    const info = auth.getUserInfo();
+    const info = auth.getUser();
   }
 }
 ```
@@ -223,7 +223,7 @@ window.onload = async () => {
 
     if(auth.isLoggedIn()) {
       /* already logged in, get user info and use */
-      const info = auth.getUserInfo();
+      const info = auth.getUser();
     } else {
       /* add handler to handle login function */
       googleLoginBtn.addEventListener('click', async () => {
@@ -247,7 +247,7 @@ window.onload = async () => {
   googleLoginBtn.addEventListener('click', async () => {
     await auth.loginWithSocial(SocialLoginType.google);
     if(auth.isLoggedIn()) {
-      const info = auth.getUserInfo();
+      const info = auth.getUser();
       // Store info and redirect accordingly
     }
   });
