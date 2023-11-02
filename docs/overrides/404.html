@@ -2,13 +2,18 @@
   
 <!-- Content --> 
 {% block content %} 
-  <div>
-    <img src="/img/arcabot_blink.gif" width="30%"/>
-    <h1 style="font-size: 5rem;">404</h1> 
-    <h2>Oops! Page not found...</h2>
-  </div>
-  <div>
-    <p>For more information, use the <b>Search</b> bar above or <a class="a-link-color" href="/support.html">reach out to us</a>.
-    </p>
-  </div>
+<style>
+  .md-main{
+   background-image: url(/img/404-background.png);
+   background-size: cover;
+ }
+ 
+</style>
+    <div>
+      <p style="background-color: transparent; text-align: center;font-size: 7rem; color: white">404</p> 
+      <p style="background-color: transparent; text-align: center; color: white">Oops! Something went wrong.</p>
+      <p style="background-color: transparent; text-align: center; font-size: 0.5rem; color: white">We couldn't find the page you're looking for.</p>
+      <p style="background-color: transparent; text-align: center; color: white">Try <b>Search</b> bar above or <a class="a-link-color" href="/support.html">contact us.</a>.
+      </p>
+    </div>
 {% endblock %}
