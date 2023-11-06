@@ -4,16 +4,24 @@
 {% block content %} 
 <style>
   .md-main{
-   background-image: url(/img/404-background.png);
-   background-size: cover;
+   background: url(/img/404-background.png), lightgray 50% / cover no-repeat;
  }
  
 </style>
+    <!--
     <div>
-      <p style="background-color: transparent; text-align: center;font-size: 7rem; color: white">404</p> 
-      <p style="background-color: transparent; text-align: center; color: white">Oops! Something went wrong.</p>
+      <p style="background-color: transparent; text-align: center;font-size: 6rem; color: white; opacity: 0.3; font-weight: 700; margin-top: -5%">404</p> 
+      <p style="background-color: transparent; text-align: center; color: white; font-size: 1.15rem; margin-top: -20%;">Oops! Something went wrong.</p>
       <p style="background-color: transparent; text-align: center; font-size: 0.5rem; color: white">We couldn't find the page you're looking for.</p>
-      <p style="background-color: transparent; text-align: center; color: white">Try <b>Search</b> bar above or <a class="a-link-color" href="/support.html">contact us.</a>.
-      </p>
     </div>
+    -->
+
+    <div style="position: relative; margin-inline: auto;">
+      <p style="background-color: transparent; text-align: center;font-size: 6rem; color: white; opacity: 0.3; font-weight: 700; margin: 0">404</p> 
+      <div style="position: relative; bottom: 25%">
+        <p style="background-color: transparent; text-align: center; font-size: 1.15rem; color: white">Oops! Something went wrong.</p>
+        <p style="background-color: transparent; text-align: center; font-size: 0.5rem; font-weight: 100; color: white">We couldn't find the page you're looking for.</p>
+     </div> 
+    </div>
+
 {% endblock %}
