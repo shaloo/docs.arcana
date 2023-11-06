@@ -1,4 +1,6 @@
 ---
+search:
+  exclude: true
 alias: integrate-shardeum
 title: 'Using Shardeum with Arcana Auth'
 description: 'This guide explains how app developers can programmatically integrate with Arcana Auth SDK and allow users to work with Shardeum blockchain network.'
