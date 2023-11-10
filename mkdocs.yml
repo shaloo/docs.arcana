@@ -267,6 +267,7 @@ nav:
       - Integrate SDK: tutorials/videos/integrate-auth.md
       - Onboard Users: tutorials/videos/onboard-users.md
       - Sign Transactions: tutorials/videos/sign-transactions.md
+      - Gasless Transactions: tutorials/videos/gasless.md
   - User Guides:
     - user-guides/index.md
     - Arcana Wallet UI: 
