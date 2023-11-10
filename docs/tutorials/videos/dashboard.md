@@ -10,7 +10,7 @@ arcana:
 
 Developers can use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure app]]. Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} that is needed for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-{% include "./text-snippets/tut_comingsoontut_url.md" %}
+{% include "./text-snippets/tut_dashboard_url.md" %}
 
 ## Questions?
 
