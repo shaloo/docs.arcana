@@ -1,4 +1,4 @@
-```js title="utils/wallet.js" hl_lines="5-6 10-28 34 39"
+```js title="utils/wallet.js" hl_lines="5-6 17-22 34 38"
 //This example uses Arcana Rainbow connector and MetaMask
 
 import { connectorsForWallets } from "@rainbow-me/rainbowkit";
