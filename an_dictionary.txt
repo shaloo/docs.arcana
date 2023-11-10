@@ -1,3 +1,6 @@
+Url
+app_example_submodule
+Auth-Web3-React
 .dmg
 .json
 .md-button
@@ -577,6 +580,8 @@ concept-arcana-jwt-token
 concept-arcana-smart-contract
 concept-arcana-wallet-overview
 concept-authsdk
+concept-custom-login-ui
+concept-custom-wallet-ui
 concept-dkg
 concept-gasless-transactions
 concept-how-adkg-works
@@ -711,6 +716,7 @@ fontawesome-brands-aws
 fontawesome-brands-discord
 fontawesome-brands-github
 fontawesome-brands-google
+fontawesome-brands-js
 fontawesome-brands-react
 fontawesome-brands-telegram
 fontawesome-brands-twitch
@@ -1044,6 +1050,7 @@ material-firebase
 material-github
 material-language-javascript
 material-vuejs
+material-wallet-bifold
 material-wifi-cog
 maxHeadingLevel
 metamask
@@ -1118,12 +1125,14 @@ pwdlessauth
 pwdlessauth_authsdk
 quick-start-with-ethersjs
 quickstart
+rainbowkit-quick-start
 react-nextjs-build-iam-cognito-auth
 react-nextjs-build-iam-firebase-auth
 react-nextjs-build-password-less-auth
 react-nextjs-discord-social-auth
 react-nextjs-github-social-auth
 react-nextjs-google-social-auth
+react-nextjs-quick-start
 react-nextjs-steam-social-auth
 react-nextjs-twitch-social-auth
 react-nextjs-twitter-social-auth
@@ -1255,16 +1264,19 @@ vue-build-password-less-auth
 vue-discord-social-auth
 vue-github-social-auth
 vue-google-social-auth
+vue-quick-start
 vue-steam-social-auth
 vue-twitch-social-auth
 vue-twitter-social-auth
 vue-use-plug-play-auth
 wagmi
+wagmi-quick-start
 wallet-add-shardeum
 wallet_addEthereumChain
 wallet_switchEthereumChain
 walletaddswitchntwk
 walletbalance
+walletconnector
 walletexportkey
 walletmanagenft
 walletmanagetokens
@@ -1283,6 +1295,7 @@ walletwatchasset
 web-auth-error-msg
 web-auth-usage-guide
 web-gasless-error-msg
+web3-react-quick-start
 what-is-arcana-auth
 whatisan
 why-arcana-auth
