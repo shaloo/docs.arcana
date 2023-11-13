@@ -6,37 +6,35 @@ arcana:
   root_rel_path: .
 ---
 
-# Installing {{config.extra.arcana.sdk_name}}
+# Installing {{config.extra.arcana.product_name}} SDKs
 
 Developers must install the appropriate {{config.extra.arcana.sdk_name}} package as per their application type and then integrate the app.
 
 {% include "./text-snippets/auth_sdk_flavors.md" %}
 
-## Installation Instructions
-
-### Simple HTML/CSS/JS Apps
+## Vanilla HTML/CSS/JS Apps
 
 {% include "./code-snippets/auth_install.md" %}
 
-### React/NextJS Apps
+## React/NextJS Apps
 
 {% include "./code-snippets/auth_react_install.md" %}
 
-### Wagmi/RainbowKit Apps
+## Wagmi/RainbowKit Apps
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
-### Web3-React Apps
+## Web3-React Apps
 
 {% include "./code-snippets/auth_web3_react_install.md" %}
 
-### Mobile Apps
+## Mobile Apps
 
-#### Flutter
+### Flutter
 
 {% include "./code-snippets/auth_flutter_install.md" %}
 
-#### React-Native
+### React-Native
 
 {% include "./code-snippets/auth_react_native_install.md" %}
 
