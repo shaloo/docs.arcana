@@ -22,4 +22,4 @@ arcana:
 
 !!! info "Passwordless Login"
 
-          By default, passwordless login is always available for any application that integrates with the {{config.extra.arcana.sdk_name}}.  Unlike social providers, passwordless option is enabled by default and requires no configuration. 
+      By default, passwordless login is always available for any application that integrates with the {{config.extra.arcana.sdk_name}}.  Unlike social providers, passwordless option is enabled by default and requires no configuration. 

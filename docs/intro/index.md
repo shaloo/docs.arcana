@@ -14,12 +14,13 @@ arcana:
 
 *Accelerate user journey into the world of decentralized applications with* **Arcana Auth!**
 
+==}
+
 Use **{{config.extra.arcana.product_name }}** to:
 
 * Quickly **onboard** users in Web3 apps (No keys, wallets, app-specific accounts needed to onboard Web3 apps)
 * Allow authenticated users to instantly **sign blockchain transactions**
 
-==}
 
 !!! note "Already using {{config.extra.arcana.product_name}}?"
 
