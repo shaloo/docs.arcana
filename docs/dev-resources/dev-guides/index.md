@@ -14,6 +14,10 @@ arcana:
 
 [{{config.extra.arcana.sdk_name}} Reference Guide :octicons-cross-reference-16:](https://authsdk-ref-guide.netlify.app/){ .md-button }
 
+[[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide :material-function-variant:]]{ .md-button }
+
+[{{config.extra.arcana.auth_core_sdk_name}} Reference Guide :octicons-cross-reference-16:](https://auth-core-sdk-ref-guide.netlify.app/)
+
 [[troubleshooting| Troubleshooting :material-auto-fix:]]{ .md-button }
 
 [[web-auth-error-msg|Handling Auth Errors :material-arrow-right-box:]]{ .md-button }
