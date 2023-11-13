@@ -20,7 +20,7 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
 
 Just a single line of code!
 
-## Step 1: Call `loginWithBearer` function
+### Call `loginWithBearer` function
 
 Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with both the Firebase SDK as well as the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via Firebase.
 
