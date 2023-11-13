@@ -16,7 +16,7 @@ arcana:
 
 [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide :material-function-variant:]]{ .md-button }
 
-[{{config.extra.arcana.auth_core_sdk_name}} Reference Guide :octicons-cross-reference-16:](https://auth-core-sdk-ref-guide.netlify.app/)
+[{{config.extra.arcana.auth_core_sdk_name}} Reference Guide :octicons-cross-reference-16:](https://auth-core-sdk-ref-guide.netlify.app/){.md-button}
 
 [[troubleshooting| Troubleshooting :material-auto-fix:]]{ .md-button }
 
