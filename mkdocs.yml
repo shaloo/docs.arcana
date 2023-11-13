@@ -488,7 +488,8 @@ markdown_extensions:
       generic: true
   - tables
   - toc:
-      title: On this page
+      title: "On this page"
+      toc_depth: 2
 
 validation:
   nav:
