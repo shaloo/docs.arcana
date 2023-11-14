@@ -7,7 +7,7 @@ arcana:
   app_type: "'RainbowKit'"
   app_example_submodule: "'`sample-auth-rainbowkit`,`sample-auth-rainbow-viem`'"
   social_provider: "'google'"
-  ustom_login_ui_tag: "onboard-rainbow-app-custom-ui"
+  custom_login_ui_tag: "onboard-rainbow-app-custom-ui"
 ---
 
 # Quick Start: RainbowKit Apps
