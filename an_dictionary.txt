@@ -1,6 +1,3 @@
-Url
-app_example_submodule
-Auth-Web3-React
 .dmg
 .json
 .md-button
@@ -49,6 +46,7 @@ Arcana_Testnet
 Auth
 Auth-Core
 Auth-React
+Auth-Web3-React
 Auth0
 AuthAddNetworkText
 AuthDKGStepsText
@@ -447,6 +445,7 @@ Upgradable
 UploadSignMsgText
 UploadStepsText
 Uploader
+Url
 UserInfo
 Utils
 V1
@@ -508,6 +507,7 @@ ansmartcupgrade
 appAddress
 appAddress=Addr1
 appMode
+app_example_submodule
 arcana
 arcana-auth-usage
 arcana-coming-soon
@@ -643,6 +643,7 @@ cryptographic
 cryptographically
 css
 custom-wallet-ui
+custom_login_ui_tag
 customizable
 customizations
 cybersecurity
@@ -712,6 +713,7 @@ faq_storage
 faq_validator
 fb
 fedidmauth
+firebase_custom_ui_tag
 fontawesome-brands-aws
 fontawesome-brands-discord
 fontawesome-brands-github
@@ -1256,6 +1258,7 @@ validators
 verifiability
 verifier
 verifiers
+video-tutorials-gasless
 viewpvtnft
 vite
 vue-build-iam-cognito-auth
