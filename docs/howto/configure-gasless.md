@@ -20,6 +20,8 @@ To enable [[concept-gasless-transactions|gasless transactions]] in an app, befor
 
 {% include "./text-snippets/db_prerequisites.md" %}
 
+{% include "./text-snippets/gasless_prerequisites.md" %}
+
 ## Steps
 
 Login to the {{config.extra.arcana.dashboard_name}} and follow these three steps:
