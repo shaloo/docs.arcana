@@ -73,8 +73,8 @@ import { AuthProvider, CURVE } from '@arcana/auth-core';
 
 The {{config.extra.arcana.auth_core_sdk_name}} offers two kinds of flows:
 
-* Pop-up UI
-* Redirect UI
+* Redirect Flow:  Use this when using [[concept-keyspace-type|the default app-specific keys option]]
+* Global Keys Flow: Use this if [[concept-keyspace-type|global keys option is configured for the app]]
 
 The `AuthProvider` can be initialized for a UI flow that uses a pop-up modal within the current app context or redirects to a different app page after login. For more details, see [[auth-core-usage-guide#flow-modes|here]].
 
@@ -82,7 +82,6 @@ The `AuthProvider` can be initialized for a UI flow that uses a pop-up modal wit
 const clientId = "xar_test_d24f70cd300823953dfa2a7f5b7c7c113356b1ad"; // obtained after app registration via dashboard
 const auth = new AuthProvider({
    curve: CURVE.ED25519, // defaults to CURVE.SECP256K1
-   flow: 'redirect', /* can be 'popup' or 'redirect' */
    appId: clientId,
    redirectUri: ''   /* can be ignored for redirect flow if same as login page */ 
 });
@@ -133,7 +132,7 @@ const loggedIn = auth.isLoggedIn(); /* boolean response */
 
 ### Get User Info
 
-After successful login, the user information is saved in memory. Before the page unload event, the user information gets stored in session-storage. After a successful page reload, it is fetched again to memory and removed from the session-storage.
+After successful login, the user information is saved in memory. Before the page unload event, the user information gets stored in session storage. After a successful page reload, it is fetched again to memory and removed from the session storage.
 
 ```js
 const userInfo = auth.getUserInfo();
@@ -171,7 +170,7 @@ See [[auth-core-usage-guide#exported-enums|Exported Enums]] for details on Socia
 await auth.logout();
 ```
 
-Refer to the sample code for using Arcana Auth-Core SDK [here](https://github.com/arcana-network/auth-examples) for details on how to add a pop-up UI user onboarding flow or a redirect flow in the app.
+Refer to the sample code for using Arcana Auth-Core SDK [here](https://github.com/arcana-network/auth-examples) for details on how to onboard users via a redirect flow in the app or global keys flow.
 
 ## Step 5: Sign Transactions
 
@@ -186,7 +185,6 @@ import { ethers } from 'ethers'
 const auth = await AuthProvider.init({
    appId: `${clientId}`, /* obtained after registering the app with the Arcana Developer Dashboard */
    curve: CURVE.ED25519, // defaults to CURVE.SECP256K1
-   flow: 'redirect', /* can be 'popup' or 'redirect' */
    redirectUri:'SPECIFY_URI'    /* can be ignored for redirect flow if same as login page */
 });
 
