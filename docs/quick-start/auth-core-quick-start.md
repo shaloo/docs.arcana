@@ -4,20 +4,19 @@ title: 'Auth-Core Quick Start'
 description: 'Get Started quickly with using the Auth-Core SDK and enable social login in Web3 apps. Understand the difference between Auth-Core and Auth SDK features, usage model the security and privacy implications when integrating an app with the Auth-Core SDK. Follow these step-by-step instructions to register the app, obtain a ClientID and then integrate the app with the Arcana Auth-Core SDK.'
 arcana:
   root_rel_path: ..
+  app_example_submodule: "'`sample-auth-core`'"
 ---
 
 # Quick Start: Auth-Core
 
-Use this guide to integrate apps with the {{config.extra.arcana.auth_core_sdk_name}} for:
-
-* onboarding users via social login by configuring one or more [authentication mechanisms]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md#supported-authentication-mechanisms)
-* allowing authenticated users to sign blockchain transactions, manage crypto assets, and more
-* Using app-specific custom UI for user login as well as custom UI (or **no UI at all**) for Web3 wallet operations.
+!!! note "Already using {{config.extra.arcana.sdk_name}}?"
+  
+      {% include "./text-snippets/warn_latest_auth_core_sdk_version.md" %}
 
 
-!!! note 
+!!! caution "Whitelabeled Auth SDK usage" 
 
-      With the {{config.extra.arcana.auth_core_sdk_name}}, developers get a stripped-down version of the {{config.extra.arcana.product_name}} product. It **does not provide any built-in {{config.extra.arcana.product_name}} login UI**. There is **no {{config.extra.arcana.wallet_name}} functionality for Web3 operations**. 
+      The {{config.extra.arcana.auth_core_sdk_name}} is meant for whitelabled Auth usage. Developers get a stripped-down version of the {{config.extra.arcana.product_name}} product. It **does not provide any built-in {{config.extra.arcana.product_name}} login UI**. There is **no {{config.extra.arcana.wallet_name}} functionality for Web3 operations**. 
       
       When using the {{config.extra.arcana.auth_core_sdk_name}}, only app-specific keys are allowed. The 'Global Keys' option is **not available**. 
       
@@ -25,30 +24,20 @@ Use this guide to integrate apps with the {{config.extra.arcana.auth_core_sdk_na
 
 ## Overview
 
-To integrate a Web3 app with the {{config.extra.arcana.auth_core_sdk_name}}, developers must:
+To implement the whitelabeled {{config.extra.arcana.product_name}} solution, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.auth_core_sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. Add code to facilitate user onboarding. Finally, deploy your app on the Testnet or Mainnet. Authenticated users can instantly access the built-in, non-custodial, embedded {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
-* Register the app using the {{config.extra.arcana.dashboard_name}}.
-* Configure {{config.extra.arcana.auth_core_sdk_name}} usage by setting up blockchain configurations, and social login options using the {{config.extra.arcana.dashboard_name}}.
-* Install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}`.
-* Integrate the app code by creating an `AuthProvider` with requisite parameters and initialize the {{config.extra.arcana.auth_core_sdk_name}}.
-* Implement user login UI and add code to call {{config.extra.arcana.auth_core_sdk_name}} functions to onboard users.
-* Implement the app logic, add UI code to allow authenticated users to perform Web3 wallet operations such as sending tokens, interacting with contracts, etc. Add notification UI code (optional) to allow users to review, reject or approve blockchain transactions.
-* Secure authenticated user's cryptographic assets including keys.
+<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
-## Register & Configure
+!!! warning "Key security"
+ 
+      When using the whitelabled auth solution developers must secure authenticated user's cryptographic assets including keys.
 
-[[configure-auth|Register and configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.sdk_name}}.
+## Step 1: Register & Configure App
 
-After registering the app, developers can configure the Auth usage settings specific to the app using the {{config.extra.arcana.dashboard_name}}. For e.g.,
+{% include "./text-snippets/quick-start-reg-config.md" %}
 
-* Fine-tune or edit the list of default blockchains that are accessible to the app users. 
-* Set up [[index-configure-auth|one or more user onboarding options]] such as social login or password-less.
-
-!!! info "User Onboarding Options"
-        
-      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
-
-## Install SDK
+## Step 2: Install SDK
 
 After registering the app and configuring Auth usage for the app using the {{config.extra.arcana.dashboard_name}}, developers can install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}` package using one of these options:
 
@@ -74,14 +63,12 @@ yarn add @arcana/auth-core
 <script src="https://unpkg.com/@arcana/auth-core"></script>
 ```
 
-## Integrate App
-
-After installing the `{{config.extra.arcana.auth_core_sdk_pkg_name}}` package, add code in the app to create and initialize the `AuthProvider`:
+## Step 3: Integrate App
 
 ```js
-const { AuthProvider, SocialLoginType } = window.arcana.auth_core;
+const { AuthProvider, SocialLoginType, CURVE } = window.arcana.auth_core;
 // or
-import { AuthProvider, SocialLoginType } from '@arcana/auth-core';
+import { AuthProvider, CURVE } from '@arcana/auth-core';
 ```
 
 The {{config.extra.arcana.auth_core_sdk_name}} offers two kinds of flows:
@@ -93,14 +80,15 @@ The `AuthProvider` can be initialized for a UI flow that uses a pop-up modal wit
 
 ```js
 const clientId = "xar_test_d24f70cd300823953dfa2a7f5b7c7c113356b1ad"; // obtained after app registration via dashboard
-const auth = await AuthProvider.init({
-   appId: clientId, /* obtained after registering the app with the Arcana Developer Dashboard */
+const auth = new AuthProvider({
+   curve: CURVE.ED25519, // defaults to CURVE.SECP256K1
    flow: 'redirect', /* can be 'popup' or 'redirect' */
-   redirectUri:''    /* can be ignored for redirect flow if same as login page */
+   appId: clientId,
+   redirectUri: ''   /* can be ignored for redirect flow if same as login page */ 
 });
 ```
 
-## Onboard Users
+## Step 4: Onboard Users
 
 Before adding code in the app for using the {{config.extra.arcana.auth_core_sdk_name}} user onboarding functions, make sure you have configured those properly as instructed [[index-configure-auth| here]]. More than one user onboarding mechanism can be enabled in the app:
 
@@ -113,32 +101,91 @@ Before adding code in the app for using the {{config.extra.arcana.auth_core_sdk_
 await auth.loginWithSocial(SocialLoginType.google);
 ```
 
-### Passwordless
+### Passwordless Login
+
+First **initiate** passwordless login:
 
 ```js
-const result = await auth.loginWithOtp(`${emailAddress}`, PasswordlessOptions);
+const result = await auth.loginWithPasswordlessStart({
+  email: 'abc@example.com'
+});
 ```
 
+Then, on the redirect page, **handle passwordless login** as follows:
+
+```js
+await auth.handleRedirect();
+```
+<!--
 #### PasswordlessOptions:
 
 - `{ withUI: true }` - the user is redirected to `email-sent` or `error` page
 - `{ withUI: false }` - the Social / Passwordless login API returns  a `json` response back with no redirection
 - defaults to `{ withUI: true }`
 
+--->
+
+### Login Status
+
+```js
+const loggedIn = auth.isLoggedIn(); /* boolean response */
+```
+
+### Get User Info
+
+After successful login, the user information is saved in memory. Before the page unload event, the user information gets stored in session-storage. After a successful page reload, it is fetched again to memory and removed from the session-storage.
+
+```js
+const userInfo = auth.getUserInfo();
+
+/* 
+  UserInfo: {
+    loginType: 'google',
+    userInfo: {
+      id: 'abc@example.com',
+      name: 'ABC DEF',
+      email: '',
+      picture: ''
+    },
+    privateKey: ''
+  }
+*/
+
+```
+For userInfo type details, see [[auth-core-usage-guide#exported-types|Exported Types]].
+
+### Get Public Key
+
+```js
+const publicKey = await auth.getPublicKey({
+  verifier: SocialLoginType.google,
+  id: `abc@example.com`,
+}); 
+```
+
+See [[auth-core-usage-guide#exported-enums|Exported Enums]] for details on SocialLoginType, .
+
+### Clear Login Session
+
+```js
+await auth.logout();
+```
+
 Refer to the sample code for using Arcana Auth-Core SDK [here](https://github.com/arcana-network/auth-examples) for details on how to add a pop-up UI user onboarding flow or a redirect flow in the app.
 
-## Sign Transactions
+## Step 5: Sign Transactions
 
 Once the user has successfully onboarded the app, add code to perform Web3 operations such as signing messages, send transactions and more.
 
 The `AuthProvider` is a standard Ethereum EIP-1193 provider and can be used by the apps integrating with the {{config.extra.arcana.auth_core_sdk_name}} to allow authenticated users to sign blockchain transactions.
 
-```js
-import { AuthProvider, SocialLoginType } from '@arcana/auth-core';
+```ts
+import { AuthProvider, CURVE } from '@arcana/auth-core';
 import { ethers } from 'ethers'
 
 const auth = await AuthProvider.init({
    appId: `${clientId}`, /* obtained after registering the app with the Arcana Developer Dashboard */
+   curve: CURVE.ED25519, // defaults to CURVE.SECP256K1
    flow: 'redirect', /* can be 'popup' or 'redirect' */
    redirectUri:'SPECIFY_URI'    /* can be ignored for redirect flow if same as login page */
 });
@@ -176,7 +223,15 @@ That's all!!! :tada:
 
 You have successfully installed the  {{config.extra.arcana.auth_core_sdk_name}} and integrated the Web3 app to onboard users and enable them to sign blockchain transactions easily.
 
+## Examples
+
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
 ## See Also
 
 * [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide]]
 * {{config.extra.arcana.auth_core_sdk_name}} API Reference Guide
+
+{% include "./text-snippets/prod_version_info.md" %}
+
+

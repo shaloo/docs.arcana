@@ -11,16 +11,31 @@ Note, from here the content is a pure markdown file with no mkdocs related tags 
 of the file in the `auth-core` repo: https://github.com/arcana-network/auth/blob/main/usage.md
 -->
 
+# Auth-Core SDK
+
+Auth-Core SDK enables basic functionality for onboarding users to Web3 apps via social login. It uses the Arcana Keystore APIs to interact with the distributed key generation subsystem in the Arcana Network.
+
+The [Arcana Auth product](https://github.com/arcana-network/auth) is built using the Auth-Core SDK and the [Arcana wallet UI](https://github.com/arcana-network/wallet-ui). It ensures that only authenticated users have access to the private keys for signing blockchain transactions. With Arcana Auth, the app developers cannot access the user's private keys.
+
+Web3 apps that choose to integrate directly with the Auth-Core SDK instead of using Arcana Auth must implement some of the functionality related to handling user authentication via social login. In addition, developers must ensure the security and privacy of the user's keys. See the [Usage section](#usage) below for details.
+
+Note that the 'Global Keys' and enhanced wallet security 'MFA' features available via Arcana Auth are **not** available through the Auth-Core SDK.
+
 ## Installation
 
-### Using NPM/Yarn
+### npm
 
 ```sh
 npm install --save @arcana/auth-core
+```
+
+### yarn
+
+```sh
 yarn add @arcana/auth-core
 ```
 
-### Using CDN
+### CDN
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@arcana/auth-core"></script>
@@ -35,48 +50,42 @@ yarn add @arcana/auth-core
 ### Import
 
 ```js
-const { AuthProvider, SocialLoginType } = window.arcana.auth;
+const { AuthProvider, SocialLoginType, CURVE } = window.arcana.auth_core;
 // or
-import { AuthProvider } from '@arcana/auth-core';
+import { AuthProvider, CURVE } from '@arcana/auth-core';
 ```
 
-### Initialize
+### Initialize `AuthProvider`
 
 ```js
-const auth = await AuthProvider.init({
+const auth = new AuthProvider({
+   curve: CURVE.ED25519, // defaults to CURVE.SECP256K1
    appId: `${appId}`,
-   flow: 'redirect', /* can be 'popup' or 'redirect' */
-   redirectUri:''    /* can be ignored for redirect flow if same as login page */
+   redirectUri: ''    
 });
 ```
 
-### Initiate social login
+### Initiate Social Login
 
 ```js
 await auth.loginWithSocial(SocialLoginType.google);
 ```
 
-### Initiate passwordless login
+### Initiate Passwordless Login
 
 ```js
-const result = await auth.loginWithOtp(`${emailAddress}`, PasswordlessOptions);
+const result = await auth.loginWithPasswordlessStart(`${emailAddress}`, PasswordlessOptions);
 ```
 
-PasswordlessOptions:
-
-- `{ withUI: true }` - the user is redirected to `email-sent` or `error` page
-- `{ withUI: false }` - gets a `json` response back with no redirection
-- defaults to `{ withUI: true }`
-
-### Get login status
+### Get Login Status
 
 ```js
 const loggedIn = auth.isLoggedIn(); /* boolean response */
 ```
 
-The user info is saved in memory after successful login, before `unload` event of the page it gets stored in `session-storage` and is refetched to memory and removed from `session-storage` after successful page reload.
+### Get User Info
 
-### Get user info
+After successful login, the user information is saved in memory. Before the page `unload` event, the user information gets stored in `session-storage`. After a successful page reload, it is fetched again to memory and removed from the `session-storage`.
 
 ```js
 const userInfo = auth.getUserInfo();
@@ -94,40 +103,30 @@ const userInfo = auth.getUserInfo();
 */
 ```
 
-### Get public key
+For userInfo type details, see [Exported Types](#exported-types).
+
+### Get Public Key
 
 ```js
 const publicKey = await auth.getPublicKey({
   verifier: SocialLoginType.google,
-  id: `${email}`,
-}, PublickeyOutput); 
+  id: `abc@example.com`,
+}); 
 ```
 
-PublickeyOutput:
+For details regarding `SocialLoginType`, see [Exported Enums](#exported-enums).
 
-- value can be 'point', 'compressed' or 'uncompressed'
-- `point` output will be an object with `{ x: string, y: string }`
-- `compressed` output will be a `string` like `0x03...`
-- `uncompressed` output will be a `string` like `0x04...`
-- defaults to `uncompressed`
-
-### Clear login session
+### Clear Login Session
 
 ```js
 await auth.logout();
 ```
 
-## Typescript Usage
+## TypeScript Usage
 
-### Exported enums
+### Exported Enums
 
 ```ts
-
-enum PublicKeyOutput {
-  point = 'point',
-  compressed = 'compressed',
-  uncompressed = 'uncompressed',
-}
 
 enum SocialLoginType {
   google = 'google',
@@ -140,7 +139,7 @@ enum SocialLoginType {
 
 ```
 
-### Exported types
+### Exported Types
 
 ```ts
 
@@ -150,10 +149,28 @@ interface KeystoreInput {
 }
 
 interface InitParams {
+  // arcana app id with network hint, ex xar_dev_xyz - xyz is the appId
   appId: string;
-  network?: 'dev' | 'testnet'; /* defaults to testnet  */
-  flow?: 'popup' | 'redirect'; /* defaults to redirect */
-  debug?: boolean;             /* defaults to false    */
+  network?: 'dev' | 'testnet'| 'mainnet'; /* defaults to testnet  */
+  /**
+   * autoRedirect: is redirected via SDK, instead of `loginWithSocial`
+   * output being `{ url }`
+  */
+  autoRedirect: boolean                   /* defaults to true     */
+  /** 
+   * shouldVerifyState: state is compared internally, the state is stored
+   * to local storage on login init
+  */
+  shouldVerifyState: boolean              /* defaults to true     */ 
+  /**
+   * revokeTokenPostLogin: Some tokens need to be revoked to get new tokens
+   * on subsequent login or to prevent misuse, SDK does this internally. If
+   * set to `false` there is a cleanup function that is output of the func
+   * `auth.handleRedirectMode()` which should be called after token is used 
+   * for secondary purpose
+   */
+  revokeTokenPostLogin: boolean           /* defaults to true     */
+  debug?: boolean;                        /* defaults to false    */
 }
 
 interface GetInfoOutput {
@@ -167,23 +184,19 @@ interface GetInfoOutput {
   privateKey: string;
 }
 
-interface PasswordlessOptions {
-  withUI?: boolean;
-}
 
 ```
 
-## Flow modes
+## Flow Modes
 
-### **Redirect**
+### Redirect
 
 `login.js`
 
 ```js
 window.onload = async () => {
-  const auth = await AuthProvider.init({
+  const auth = new AuthProvider({
     appId: `${appId}`,
-    flow: 'redirect',
     redirectUri:'path/to/redirect' 
   });
 
@@ -197,71 +210,19 @@ window.onload = async () => {
 
 ```js
 window.onload = async () => {
-  const auth = await AuthProvider.init({
+  const auth = new AuthProvider({
     appId: `${appId}`,
-    flow: 'redirect',
     redirectUri:'path/to/redirect' 
   });
 
-  
+  await auth.handleRedirect();
+
   if(auth.isLoggedIn()) {
     const info = auth.getUserInfo();
   }
 }
 ```
 
-- Skip `redirectUri` in params if the it is same as login page. For example:
-  
-  `index.js`
-
-  ```js
-  window.onload = async () => {
-    const auth = await AuthProvider.init({
-      appId: `${appId}`,
-      flow: 'redirect',
-    });
-
-    if(auth.isLoggedIn()) {
-      /* already logged in, get user info and use */
-      const info = auth.getUserInfo();
-    } else {
-      /* add handler to handle login function */
-      googleLoginBtn.addEventListener('click', async () => {
-        await auth.loginWithSocial(SocialLoginType.google);
-      });
-    }
-  }
-  ```
-
-### **Popup**
-
-`login.js`
-
-```js
-window.onload = async () => {
-  const auth = await AuthProvider.init({
-    appId: `${appId}`,
-    redirectUri:'path/to/redirect' 
-  });
-
-  googleLoginBtn.addEventListener('click', async () => {
-    await auth.loginWithSocial(SocialLoginType.google);
-    if(auth.isLoggedIn()) {
-      const info = auth.getUserInfo();
-      // Store info and redirect accordingly
-    }
-  });
-}
-```
-
-`redirect.js`
-
-```js
-window.onload = async () => {
-  AuthProvider.handleRedirectPage(<origin>);
-};
-```
-
 ### Variables
 
-- `origin` - Base url of your app.
+- `origin` - Base URL of the app.
