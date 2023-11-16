@@ -14,7 +14,7 @@ arcana:
       {% include "./text-snippets/warn_latest_auth_core_sdk_version.md" %}
 
 
-!!! caution "Auth-Core SDK usage" 
+!!! caution "Auth-Core SDK usage"
 
       The {{config.extra.arcana.auth_core_sdk_name}} is meant for apps that require access to private keys. If you do not require private key access then please DO NOT use this SDK. Developers get a stripped-down version of the {{config.extra.arcana.product_name}} product. It **does not provide any built-in {{config.extra.arcana.product_name}} login UI**. There is **no {{config.extra.arcana.wallet_name}} functionality for Web3 operations**. 
       
@@ -24,14 +24,14 @@ arcana:
 
 ## Overview
 
-To implement the white labeled {{config.extra.arcana.product_name}} solution, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.auth_core_sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. Add code to facilitate user onboarding. Finally, deploy your app on the Testnet or Mainnet. 
+To implement a {{config.extra.arcana.product_name}} solution where developers have secure access to the **private keys**, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.auth_core_sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. Add code to facilitate user onboarding by handling the redirect flow after user authentication. Also, add support for Web3 wallet operations. Finally, deploy your app on the Testnet or Mainnet.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
 !!! warning "Key security"
  
-      When using the whitelabled auth solution developers must secure authenticated user's cryptographic assets including keys.
+      When using the {{config.extra.arcana.auth_core_sdk_name}} based auth solution developers must secure authenticated user's cryptographic assets including keys.
 
 ## Step 1: Register & Configure App
 
@@ -217,17 +217,16 @@ try {
 
 ```
 
-That's all!!! :tada:
+That's all!!! :material-party-popper:
 
 You have successfully installed the  {{config.extra.arcana.auth_core_sdk_name}} and integrated the Web3 app to onboard users and enable them to sign blockchain transactions easily.
 
 ## Examples
 
-{% include "./text-snippets/quick-start-common-examples.md" %}
+For a sample demonstrating an app that integrates with the {{config.extra.arcana.auth_coresdk_name}}, refer to {{page.meta.arcana.app_example_submodule}} in the GitHub repo: [Auth Examples](https://github.com/arcana-network/auth-examples).
+
 
 ## See Also
 
 * [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide]]
 * {{config.extra.arcana.auth_core_sdk_name}} API Reference Guide
-
-{% include "./text-snippets/prod_version_info.md" %}
