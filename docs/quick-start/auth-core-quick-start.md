@@ -16,7 +16,7 @@ arcana:
 
 !!! caution "Auth-Core SDK usage" 
 
-      The {{config.extra.arcana.auth_core_sdk_name}} is meant for white labeled Auth usage. Developers get a stripped-down version of the {{config.extra.arcana.product_name}} product. It **does not provide any built-in {{config.extra.arcana.product_name}} login UI**. There is **no {{config.extra.arcana.wallet_name}} functionality for Web3 operations**. 
+      The {{config.extra.arcana.auth_core_sdk_name}} is meant for apps that require access to private keys. If you do not require private key access then please DO NOT use this SDK. Developers get a stripped-down version of the {{config.extra.arcana.product_name}} product. It **does not provide any built-in {{config.extra.arcana.product_name}} login UI**. There is **no {{config.extra.arcana.wallet_name}} functionality for Web3 operations**. 
       
       When using the {{config.extra.arcana.auth_core_sdk_name}}, only app-specific keys are allowed. The 'Global Keys' option is **not available**. 
       
