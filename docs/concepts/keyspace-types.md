@@ -48,6 +48,14 @@ Once the application is approved for global keys, it can be deployed on Mainnet,
 
       Deploying the app on Mainnet with the 'app-specific' keys option before global keys approval results in **two** key/wallet address changes for users. The first change occurs during the transition from Testnet to Mainnet deployment using app-specific keys. The second change happens after the request is approved, thereby changing the app's keyspace type from 'app-specific' to 'global keys'.
 
+## Global Keys: Wallet User Experience
+
+When the global keys option is set for an application using the {{config.extra.arcana.sdk_name}}, it alters the user experience of the default {{config.extra.arcana.wallet_name}}.
+
+For instance, in the scenario of a personal sign transaction, with the default app-specific key setup, initiating a personal sign message request prompts the {{config.extra.arcana.wallet_name}} to display a pop-up within the same app context as the visible wallet. However, when configured with global keys, the personal sign message appears in a new browser tab. Users can take necessary actions in this tab and subsequently close it.
+
+TBD: Screenshot comparing app specific and global key configured personal sign experience. 
+
 ## Global Keys Limitations
 
 The 'Global Keys' option is exclusive to apps configured for 'Mainnet' usage. These apps are integrated with {{config.extra.arcana.company_name}} product using the 'Mainnet' {{config.extra.arcana.app_address}} and deployed on the Mainnet. Here are some limitations related to the use of global keys:
