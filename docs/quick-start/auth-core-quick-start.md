@@ -24,7 +24,7 @@ arcana:
 
 ## Overview
 
-To implement the white labeled {{config.extra.arcana.product_name}} solution, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.auth_core_sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. Add code to facilitate user onboarding. Finally, deploy your app on the Testnet or Mainnet. Authenticated users can instantly access the built-in, non-custodial, embedded {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
+To implement the white labeled {{config.extra.arcana.product_name}} solution, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.auth_core_sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. Add code to facilitate user onboarding. Finally, deploy your app on the Testnet or Mainnet. 
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
