@@ -14,7 +14,7 @@ arcana:
       {% include "./text-snippets/warn_latest_auth_core_sdk_version.md" %}
 
 
-!!! caution "White labeled Auth SDK usage" 
+!!! caution "Auth-Core SDK usage" 
 
       The {{config.extra.arcana.auth_core_sdk_name}} is meant for white labeled Auth usage. Developers get a stripped-down version of the {{config.extra.arcana.product_name}} product. It **does not provide any built-in {{config.extra.arcana.product_name}} login UI**. There is **no {{config.extra.arcana.wallet_name}} functionality for Web3 operations**. 
       
