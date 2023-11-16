@@ -1,0 +1,45 @@
+---
+alias: concept-non-evm-chains
+title: 'Non-EVM Chains'
+description: 'Blockchain networks supported by Arcana Auth that are not EVM-compatible.'
+arcana:
+  root_rel_path: ..
+---
+
+# Non-EVM Chains
+
+The {{config.extra.arcana.product_name}} product supports all EVM-compatible chains. In addition, it also supports chains that are not EVM-compatible. 
+
+At present, Solana is the **only supported** non-EVM chain.
+
+!!! note "Other Non-EVM Chains"
+
+      Besides Solana, the following chains will be supported in the future:
+
+      * TON
+      * Near
+      * Cosmos
+
+!!! warning "Mixing of Chain Types"
+
+      In the initial release, if a developer uses the {{config.extra.arcana.dashboard_name}} and configures non-EVM blockchain networks such as Solana for the app, then other EVM-compatible blockchain networks cannot be supported in the same app.
+
+!!! info "Solana: Web3 Wallet Ops"
+
+      {% include "./text-snippets/solana-web3-ops.md" %}
+
+## Adding Chains
+
+When using non-EVM chains such as Solana, the developers and users cannot arbitrarily add any of the supported non-EVM chains in the {{config.extra.arcana.wallet_name}}. This is because, unlike the EVM-compatible chains, there is **no no uniform standard across non-EVM chains**.
+
+For details on how to add Solana and other non-EVM chains, refer to the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User's Guide]].
+
+## Keyspace Support
+
+Developers can tailor the user's wallet experience by using the [[concept-keyspace-type|default app-specific keys or configure global keys]] for the app via the {{config.extra.arcana.dashboard_name}}. 
+
+When using global keys, app users will see the same wallet address or key-pair assigned to them for all the apps that are configured to use global keys. In the case of app-specific keyspace configuration, users will have unique keys assigned for every app.
+
+## Non-EVM Key Cryptography
+
+When using non-EVM chains such as Solana, note that the keys assigned to authenticated users are based on [ED 25519 curve](https://en.wikipedia.org/wiki/Curve25519). See [how EVM-compatible chains have different cryptographic keys than Solana](https://chainstack.com/how-do-ethereum-and-solana-generate-public-and-private-keys/) for details.

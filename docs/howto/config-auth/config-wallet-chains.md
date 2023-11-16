@@ -72,4 +72,5 @@ Besides managing the pre-configured list of chains via the {{config.extra.arcana
 
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
+* [[solana-dashboard-user-guide| Configure Solana Chains]]
 * {% include "./text-snippets/authsdkref_url.md" %}

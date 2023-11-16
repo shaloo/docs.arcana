@@ -8,7 +8,7 @@ arcana:
 
 # {{config.extra.arcana.dashboard_name}} Users Guide
 
-The {{config.extra.arcana.dashboard_name}} allows Web3 app developers to configure user onboarding settings and tailor the blockchain signing experience for an app that integrates with the {{config.extra.arcana.sdk_name}}. 
+The {{config.extra.arcana.dashboard_name}} allows Web3 app developers to configure user onboarding settings and tailor the blockchain signing experience for an app that integrates with the {{config.extra.arcana.sdk_name}}.
 
 Developers must first register the app by using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and obtain a unique **{{config.extra.arcana.app_address}}** that is required to integrate the app with the {{config.extra.arcana.sdk_name}}.
 
@@ -239,6 +239,15 @@ To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' 
 ![Pay Dues](/img/an_db_billing_dues.png)
 
 -->
+
+### Non-EVM Chains
+
+Use the dashboard to enable chains that are not EVM-compatible.
+
+* [[solana-dashboard-user-guide|Solana]]
+* TON *(Coming Soon!)*
+* Near *(Coming Soon!)*
+* Cosmos *(Coming Soon!)*
 
 ### Delete Application
 

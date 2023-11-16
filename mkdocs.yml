@@ -173,6 +173,7 @@ nav:
               - Sign Transactions: howto/arcana-wallet/sign.md
               - Show Wallet: howto/arcana-wallet/show.md
               - Watch Assets: howto/arcana-wallet/watchasset.md
+              - Solana Web3 Wallet Ops: howto/arcana-wallet/solana-wallet-ops.md
           - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Mobile apps:
         - howto/mobile/index.md
@@ -190,6 +191,7 @@ nav:
     - Developer Guides:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
+      - Solana Configuration Guide: db/config-dApp-with-db-for-Solana.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Troubleshooting Guide: troubleshooting.md
@@ -204,6 +206,7 @@ nav:
       - Dashboard: faq/faq-db.md
       - Auth SDK: faq/faq-auth.md
       - Gasless: faq/faq-gasless.md
+      - Solana: faq/faq-solana.md
     - Changelog:
       - changelog/index.md
       - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4
@@ -318,6 +321,7 @@ nav:
       - Key Space Type: concepts/keyspace-types.md
       - Manage Chains: concepts/manage-chains.md
       - MFA: concepts/mfa.md
+      - Non-EVM Chains: concepts/non-evm-chains.md
       - Plug and Play Auth: concepts/plug-and-play-auth.md
       - Private Key: concepts/private-key.md
       - Smart Contracts:
@@ -489,7 +493,7 @@ markdown_extensions:
   - tables
   - toc:
       title: "On this page"
-      toc_depth: 2
+      toc_depth: 3
 
 validation:
   nav:
@@ -627,7 +631,7 @@ plugins:
         'docs/category/store-data/index.md': 'support.md'
         'docs/conceptnftviewer/index.md': 'support.md'
         'docs/category/using-arcana-wallet/index.md': 'support.md'
-        'docs/quick-start/web-apps-quick-start.md': 'docs/quick-start/web/index.md'
+        'docs/quick-start/web-apps-quick-start.md': 'quick-start/web/index.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

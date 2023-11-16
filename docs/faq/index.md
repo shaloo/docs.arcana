@@ -15,3 +15,5 @@ arcana:
 [[faq-auth| {{config.extra.arcana.sdk_name}} Usage Queries]]{ .md-button }
 
 [[faq-gasless| Gasless Transaction Queries]]{ .md-button }
+
+[[faq-solana| Solana: Non-EVM Chain]]{ .md-button }

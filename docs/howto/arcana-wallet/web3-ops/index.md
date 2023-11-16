@@ -21,3 +21,5 @@ The {{config.extra.arcana.wallet_name}}  supports [standard Ethereum JSON-RPC sp
 [[show-wallet|Show Wallet :material-wallet-plus:]]{ .md-button }
 
 [[watch-assets|Watch Assets :fontawesome-solid-magnifying-glass-dollar:]]{ .md-button }
+
+[[solana-wallet-ops| Solana Web3 Wallet Ops :chains:]]{ .md-button }
