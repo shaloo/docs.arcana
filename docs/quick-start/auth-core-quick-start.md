@@ -9,7 +9,7 @@ arcana:
 
 # Quick Start: Auth-Core
 
-!!! note "Already using {{config.extra.arcana.sdk_name}}?"
+!!! note "Already using {{config.extra.arcana.auth_core_sdk_name}}?"
   
       {% include "./text-snippets/warn_latest_auth_core_sdk_version.md" %}
 
@@ -36,6 +36,12 @@ To implement a {{config.extra.arcana.product_name}} solution where developers ha
 ## Step 1: Register & Configure App
 
 {% include "./text-snippets/quick-start-reg-config.md" %}
+
+??? abstract "Wallet UI Mode: Only Custom UI"
+
+      The *Wallet UI Mode* configuration setting selected by the developer during app registration is ignored if the app is integrated with the {{config.extra.arcana.auth_core_sdk_name}}. When choosing the {{config.extra.arcana.auth_core_sdk_name}}, developers must implement custom wallet UI. There is **no default {{config.extra.arcana.wallet_name}} or built-in login UI** that is supported by the {{config.extra.arcana.auth_core_sdk_name}}.
+
+      <img class="an-screenshots" src="/img/an_wallet_ui_mode_ignored.gif" alt="Wallet UI Mode Ignored"/>
 
 ## Step 2: Install SDK
 
