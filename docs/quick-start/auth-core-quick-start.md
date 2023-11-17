@@ -77,10 +77,6 @@ const { AuthProvider, SocialLoginType, CURVE } = window.arcana.auth_core;
 import { AuthProvider, CURVE } from '@arcana/auth-core';
 ```
 
-!!! warning "No Global Keys"
-
-      The {{config.extra.arcana.auth_core_sdk_name}} allows developers to only use the **default** [[concept-keyspace-type|app-specific keys option]]. Global keyspace is not supported.
-
 The `AuthProvider` is instantiated and initialized for a UI flow that redirects the user to a different app page after login. For more details, see [[auth-core-usage-guide#flow-modes|here]].
 
 ```js
