@@ -32,4 +32,4 @@ When using global keys, app users will see the same wallet address or key-pair a
 
 ## Non-EVM Key Cryptography
 
-When using non-EVM chains such as Solana, note that the keys assigned to authenticated users are based on [ED 25519 curve](https://en.wikipedia.org/wiki/Curve25519). See [how EVM-compatible chains have different cryptographic keys than Solana](https://chainstack.com/how-do-ethereum-and-solana-generate-public-and-private-keys/) for details.
+When using non-EVM chains such as Solana, note that the keys assigned to authenticated users are based on [ED 25519 curve](https://en.wikipedia.org/wiki/EdDSA#Ed25519).
