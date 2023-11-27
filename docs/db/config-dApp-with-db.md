@@ -242,12 +242,10 @@ To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' 
 
 ### Non-EVM Chains
 
-Use the dashboard to enable chains that are not EVM-compatible.
+Use the dashboard to enable [[concept-non-evm-chains|non-EVM chains]] in your Web3 apps. 
 
 * [[solana-dashboard-user-guide|Solana]]
-* TON *(Coming Soon!)*
-* Near *(Coming Soon!)*
-* Cosmos *(Coming Soon!)*
+* Other non-EVM chains *(Coming Soon!)*
 
 ### Delete Application
 
