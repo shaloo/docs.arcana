@@ -8,17 +8,7 @@ arcana:
 
 # Non-EVM Chains
 
-The {{config.extra.arcana.product_name}} product supports all EVM-compatible chains. In addition, it also supports chains that are not EVM-compatible. 
-
-At present, Solana is the **only supported** non-EVM chain.
-
-!!! note "Other Non-EVM Chains"
-
-      Besides Solana, the following chains will be supported in the future:
-
-      * TON
-      * Near
-      * Cosmos
+{{config.extra.arcana.product_name}} supports EVM-compatible chains and Solana, a non-EVM chain, with plans to add more non-EVM chains later. Some, like Solana, are part of the [[state-of-the-arcana-auth#supported-blockchains|pre-configured]] ones among the supported chains.
 
 !!! warning "Mixing of Chain Types"
 
