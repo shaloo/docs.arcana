@@ -12,7 +12,7 @@ arcana:
 
 !!! warning "Mixing of Chain Types"
 
-      In the initial release, if a developer uses the {{config.extra.arcana.dashboard_name}} and configures non-EVM blockchain networks such as Solana for the app, then other EVM-compatible blockchain networks cannot be supported in the same app.
+      Currently, if a developer uses the {{config.extra.arcana.dashboard_name}} and configures non-EVM blockchain networks such as Solana for the app, then other EVM-compatible blockchain networks cannot be supported in the same app.
 
 !!! info "Solana: Web3 Wallet Ops"
 
