@@ -13,20 +13,21 @@ arcana:
 ## Get Public Key
 
 ```js
-const publicKey = auth.solana.publicKey // It's a BN format
+const publicKey = await auth.solana.request({ 
+  method: 'getAccounts', params: [""]
+}); 
 ```
 
-!!! note "To be updated"
-
-      In this example, the publicKey is sent as a string. Shrinath will fix it to the correct format during the SDK release.
+The `publicKey` is returned as a string: ["your-public-key-in-string-format"].
 
 ## SignMessage
 
 ```js
   const encodedMessage = new TextEncoder().encode(message);
-  // To get a proper signature, the second parameter in signMessage call can be either "hex" or "utf8", 
-  // depending on what kind of message we are signing. 
-  // For plaintext, use "utf8"; for hex message, use "hex"
+  // To get a proper signature, the second parameter in signMessage call 
+  // can be either "hex" or "utf8", depending on what kind of message we are signing. 
+  // For plaintext, use "utf8"; 
+  // For hex message, use "hex"
   const signature = await auth.solana.signMessage(encodedMessage, "utf8");
 ```
 
@@ -34,8 +35,10 @@ const publicKey = auth.solana.publicKey // It's a BN format
 
 ```js
   {
-    signature: Uint8Array // Encode it by using `bs58.encode(signature)` to get the string format. See npm library: bs58 
-    publicKey: BN // Use `new SolanaWeb3.PublicKey(publicKey)` to get the 'BN' string format. See npm library: @solana/web3.js
+    signature: Uint8Array // Encode it by using `bs58.encode(signature)` 
+                          // to get the string format. See npm library: bs58 
+    publicKey: BN // Use `new SolanaWeb3.PublicKey(publicKey)` 
+                  // to get the 'BN' string format. See npm library: @solana/web3.js
   }
 ```
 
@@ -139,7 +142,8 @@ const signatures = await payer.signAllTransactions([
   transaction,
   transaction,
   transaction,
-]); // Should/can send multiple different transactions, right now sending 1 transaction multiple times for example
+]); // Should/can send multiple different transactions, 
+    // right now sending 1 transaction multiple times for example
 ```
 
 The signature format here is same as above with a minor difference:
@@ -187,6 +191,8 @@ const txHash = await payer.signAndSendTransaction(transaction);
 ```js
 {
   publicKey: BN,
-  signature: Uint8Array // This is the transaction hash itself and we can verify this in solana explorer, need to convert it to string first using `bs58.encode(signature)`
+  signature: Uint8Array // This is the transaction hash itself
+                        // we can verify this in solana explorer, 
+                        // need to convert it to string first using `bs58.encode(signature)`
 }
 ```

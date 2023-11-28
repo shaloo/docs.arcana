@@ -25,4 +25,4 @@ toc_depth: 2
 
 ??? an-faq "Why are the Solana keys different from EVM-compatible chains?"
 
-      The cryptographic keys used by Solana are based on [ED 25519 curve](https://en.wikipedia.org/wiki/Curve25519). This is different from the [secp256k1](https://www.secg.org/sec2-v2.pdf) curve used for EVM-compatible chains.
+      The cryptographic keys used by Solana are based on [ED 25519 curve](https://en.wikipedia.org/wiki/EdDSA#Ed25519). This is different from the [secp256k1](https://www.secg.org/sec2-v2.pdf) curve used for EVM-compatible chains.
