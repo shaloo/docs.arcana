@@ -10,7 +10,7 @@ arcana:
 
 [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide :material-monitor-dashboard:]]{ .md-button }
 
-[[solana-dashboard-user-guide| Configure Solana Chains :material-monitor-dashboard:]]{ .md-button }
+[[solana-dashboard-user-guide| Solana Configuration Guide :material-monitor-dashboard:]]{ .md-button }
 
 [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide :material-function-variant:]]{ .md-button }
 

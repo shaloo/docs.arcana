@@ -1,4 +1,4 @@
-Only the following operations are supported via the {{config.extra.arcana.wallet_name}} for Solana:
+The {{config.extra.arcana.wallet_name}} supports only the following Web3 wallet operations for Solana:
 
   * `signMessage`
   * `signTransaction`
