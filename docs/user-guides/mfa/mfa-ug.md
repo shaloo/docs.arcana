@@ -36,7 +36,7 @@ The MFA setup also requires the user to provide a 6-digit alphanumeric PIN which
 
 <img src="/img/an_mfa_pin.png" alt="MFA PIN" class="an-screenshots-noeffects" width="30%"/>
 
-That is all! :tada:
+That is all! :material-party-popper:
 
 Users can easily configure MFA to enable enhanced wallet security.
 
