@@ -37,7 +37,7 @@ arcana:
     
     Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} for each app. Developers **must** use this {{config.extra.arcana.app_address}} to integrate the app with the {{config.extra.arcana.sdk_name}}. 
 
-    ![Dashboard lots of apps](/img/an_db_all_app_card.png){ .width_85pc }
+    ![Dashboard lots of apps](/img/an_db_all_app_card.png){ .width_85pc .an-screenshots}
 
     [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
 
@@ -47,7 +47,7 @@ arcana:
 
     With {{config.extra.arcana.wallet_name}}, users don't need to create or handle cryptographic keys or remember passphrases. Their assets are secured through advanced asynchronous distributed key generation, giving them full wallet control while simplifying the complexity of cryptography.
     
-    ![Arcana wallet Token Tab](/img/an_wallet_home.png){ .width_35pc }
+    ![Arcana wallet Token Tab](/img/an_wallet_home.png){ .width_35pc .an-screenshots}
 
     [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
 
@@ -155,7 +155,6 @@ arcana:
 ## Features
 
 <div class="grid card_container" markdown>
-  < class="cards" markdown>
   <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Rapid onboarding for diverse Web3 apps: vanilla HTML/CSS/JS, React, NextJS, Vue, Wagmi, RainbowKit, Web3-React, and more.</li><li>Quick user authentication with minimal code.</li><li>Customizable onboarding: Web2 social, custom IAM, or passwordless options.</li></ul></p></div>
   <div class="card" markdown><h4><b>:fontawesome-brands-ethereum: Web3 Wallet Transactions</b></h4><hr><p><ul><li>Instant embedded wallet access, within the app's context, for authenticated users to sign blockchain transactions.</li><li>Easy customization of wallet UI for developers to manage user experience for the <a href="{{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.html#supported-blockchains">supported blockchain networks</a>.</li><li>User-friendly Web3 wallet operations: send/receive tokens, manage NFTs, deploy/interact with contracts, etc.</li></ul></p></div>
   <div class="card" markdown><h4><b>:simple-letsencrypt: Secure</b></h4><hr><p><ul><li>Authenticated Web3 app users can securely sign blockchain transactions with ease.</li><li>Powered by state-of-the-art asynchronous distributed key generation for robust, scalable, and private key access security.</li></ul></p></div>
