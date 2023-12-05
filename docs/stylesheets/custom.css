@@ -192,10 +192,14 @@
             mask-image: var(--md-admonition-icon--an-trbs);
 }
 
+.md-typeset pre>code {
+  border-radius: 5px;
+}
+
 .an-screenshots {
   border-radius: 5px;
   display: block;
-  width: 75%;
+  width: 80%;
   /* Use these to centre all screenshots (if required )
   margin-left: auto;
   margin-right: auto;

@@ -36,7 +36,7 @@ The chain configuration UI is displayed:
 
 The same list appears in {{config.extra.arcana.wallet_name}} UI for users of Web3 apps integrated with {{config.extra.arcana.sdk_name}}. The **Ethereum Mainnet** set as the default chain.
 
-<img src="/img/an_db_default_subset_wallet_chains.gif" width="30%" alt="Default subset of chains in wallet UI"/>
+<img class="width_35pc" src="/img/an_db_default_subset_wallet_chains.gif" alt="Default subset of chains in wallet UI"/>
 
 ### Step 2: Edit Default Chain
 
