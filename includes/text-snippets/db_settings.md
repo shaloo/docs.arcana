@@ -9,7 +9,7 @@ Click **Configure** in the LHS navigation of the app configuration screen in the
 
 Use the defaults or provide inputs for various settings as per your application use case. These settings control {{config.extra.arcana.sdk_name}} usage, user onboarding, and blockchain transaction signing experience.
 
-<img class="an-screenshots-noeffects" src="/img/an_db_configure_details.png" alt="config details" width="15%"/>
+<img class="an-screenshots" src="/img/an_db_configure_details.png" alt="config details"/>
 
 **Click** on the tabs below to see the various configuration settings in each category.
 

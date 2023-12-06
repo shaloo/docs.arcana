@@ -24,7 +24,7 @@ arcana:
 
 To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_type}} app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.web3_react_sdk_name}}, integrate the app, and initialize the `AuthProvider`. You'll need to add code to initialize the `ArcanaConnector` and specify the `AuthProvider`. Next, use appropriate React hooks and call {{config.extra.arcana.sdk_name}} function to onboard users and allow authenticated users to sign blockchain transactions. Finally, deploy your app on the Testnet or Mainnet.
 
-<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
+<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="Auth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
 ## Step 1: Register & Configure App

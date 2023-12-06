@@ -42,6 +42,6 @@
 
     ![Gasless Errors 6](/img/an_debug_tenderly_real_reason_error.png){.an-screenshots}
 
-*That is all!* :tada: 
+*That is all!* :material-party-popper:
 
 You can ask the Web3 app user to retry the transaction with sufficient funds using the app and the gasless transaction will go through!

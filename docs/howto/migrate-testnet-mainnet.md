@@ -58,7 +58,7 @@ Bring up the app. When a user authenticates, they will be assigned a new wallet 
 
 If there is no Testnet warning displayed on the {{config.extra.arcana.wallet_name}}, then the app is successfully deployed on Arcana Mainnet.
 
-That is all!!! :tada:
+That is all!!! :material-party-popper:
 
 ## See Also
 

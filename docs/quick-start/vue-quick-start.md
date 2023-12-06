@@ -49,6 +49,7 @@ For sample code and details on how to onboard users in a {{page.meta.arcana.app_
       {% include "./text-snippets/jwt_token.md" %}
 
 **That's all!!!** :material-party-popper:
+
 Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
 
 Authenticated users can log in and instantly access a Web3 wallet from within the app's context.

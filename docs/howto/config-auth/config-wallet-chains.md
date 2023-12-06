@@ -44,7 +44,7 @@ If you select EVM chain type, there are multiple blockchain network options that
 
 The preconfigured list can be updated by the app developer. It governs the list of chains that are available out of the box and displayed in {{config.extra.arcana.wallet_name}} UI for authenticated app users. By default, for non-EVM chain type, **Ethereum** is set as the active chain by default.
 
-<img src="/img/an_db_default_subset_wallet_chains.gif" width="30%" alt="Default subset of chains in wallet UI"/>
+<img class="width_35pc" src="/img/an_db_default_subset_wallet_chains.gif" alt="Default subset of chains in wallet UI"/>
 
 **Non-EVM**
 
