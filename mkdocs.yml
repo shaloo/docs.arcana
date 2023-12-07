@@ -364,6 +364,7 @@ extra:
     wallet_name: Arcana wallet
     app_address: Client ID
     date_release_tag: !ENV [DATE_RELEASE_TAG,'Oct12-23-gasless']
+    version_release_tag: !ENV [VERSION_RELEASE_TAG,'1.0.9']
     previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.7']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
     latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9']

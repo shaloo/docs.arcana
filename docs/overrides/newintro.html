@@ -4,8 +4,8 @@
 {{ super() }}
 
 {% block announce %}
-<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v{{config.extra.arcana.date_release_tag}}.html">Release v{{ config.extra.arcana.date_release_tag }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
-{% endblock %}
+        <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v{{config.extra.arcana.version_release_tag}}.html">Release v{{ config.extra.arcana.version_release_tag }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
+  {% endblock %}
 {% block content %}
 
 <style>
@@ -316,6 +316,7 @@
 
 
 <section class="md-grid md-typeset">
+
 <div class="top-hr">
     <div class="hr">
         <h1 style="text-align: left">Explore Auth SDKs</h1>
@@ -323,7 +324,6 @@
 </div>
 
 <div class="top-hr md-an-marquee">
-
     <div class="feature-item">
         <a href="./quick-start/web/index.html">
             <div class="a-link-color">
@@ -353,6 +353,7 @@
             </div>
         </a>
     </div>
+
     <div class="feature-item">
         <a href="./arcana-coming-soon.html">
             <div class="a-link-color">

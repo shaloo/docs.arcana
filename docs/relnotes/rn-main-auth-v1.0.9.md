@@ -30,60 +30,19 @@ The {{config.extra.arcana.product_name}} product consists of the following compo
 
 * [{{config.extra.arcana.wallet_name}} UI](https://github.com/arcana-network/wallet-ui)
 
+In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{config.extra.arcana.auth_core_sdk_name}} for higher customizability and custom wallet UI support.
+
 * [{{config.extra.arcana.auth_core_sdk_name}}](https://www.npmjs.com/package/@arcana/auth-core)
 
 ==}
 
 ## What has changed?
 
-This is a minor release with enhancements and bug fixes only.
+This is a major release that supports non-EVM blockchains (Solana). There are several enhancements including security fixes and bug fixes. There is no usage change.
 
-### Enhancements
-
-**Arcana JWT Token**
-
-The {{config.extra.arcana.sdk_name}} now returns an [[concept-arcana-jwt-token|Arcana JWT Token]] to the app after successful user login.
-
-**Compact Login UI**
-
-Developers can choose to select a more compact built-in login UI modal that displays all the available, configured login mechanisms for the user to choose from. Set `compact: true` as the `connectOptions` while creating a new `AuthProvider` as shown in the code snippet below:
-
-```js hl_lines="13-15"
-import { AuthProvider, CHAIN } from '@arcana/auth'
-
-interface ChainConfig {
-  chainId: CHAIN
-  rpcUrl?: string
-}
-
-const auth = new AuthProvider(`${clientId}`, {
-  position: 'left',        // default - right
-  theme: 'light',          // default - dark
-  alwaysVisible: false,    // default - true
-  setWindowProvider: true, // default - false
-  connectOptions: {
-    compact: true // default - false
-  },
-  chainConfig: {
-    chainId: CHAIN.POLYGON_MAINNET,
-    rpcUrl: '',
-  },
-})
-
-await auth.init()
-```
-
-<img src="/img/relnote_1.0.8_compact_login.png" alt="Compact UI login mode" class="an-screenshots-noeffects" width="85%"/>
-
-For more details, see [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
-
-### Bug Fixes
-
-**Email Validation**
-
-The email entered by the user in the built-in login UI modal is now validated before initiating a user log in.
-
----
+* Non-EVM Chain Support: Solana
+* New SDK: {{config.extra.arcana.auth_core_sdk_name}}
+* Security enhancements and bug fixes.
 
 ## Get Started
 
@@ -103,7 +62,7 @@ Check out the [sample dApp integration examples](https://github.com/arcana-netwo
 
 ---
 
-If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can choose to either continue to use it with the latest {{config.extra.arcana.product_name}} product release.
+If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can continue to use it with the latest {{config.extra.arcana.product_name}} product release.
 
 Please note, in case are using an older version of the {{config.extra.arcana.sdk_name}} prior to v{{config.extra.arcana.previous_version}} then refer to the appropriate [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
 
