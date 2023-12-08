@@ -33,7 +33,7 @@ Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open anothe
 
 Go to the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2Fdev%2Fapikey). Login to your account. 
 
-![Steam Community Site](/img/an_steam_login.png){.an-screenshots .width_35pc}
+![Steam Community Site](/img/an_steam_login.png){.an-screenshots .width_50pc}
 
 !!! caution "Access Steam API Key"
 
@@ -41,17 +41,17 @@ Go to the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2F
 
 Register for a new Steam Web API Key. Provide the app domain name as input to access your API Key.
 
-![Steam Domain Settings](/img/an_steam_domain.png){.an-screenshots .width_35pc}
+![Steam Domain Settings](/img/an_steam_domain.png){.an-screenshots .width_50pc}
 
 Copy the **Steam API Key** for your app domain. It will be required in the next step while completing the app configuration using the {{config.extra.arcana.dashboard_name}}.
 
-![Steam Domain Settings](/img/an_steam_apikey.png){.an-screenshots .width_35pc}
+![Steam Domain Settings](/img/an_steam_apikey.png){.an-screenshots .width_50pc}
 
 ## Step 3: Update {{config.extra.arcana.dashboard_name}}
 
 Revisit the {{config.extra.arcana.dashboard_name}} app configuration screen. Click **Configure > Social Auth** section in the LHS navigation bar. Paste the **Steam API Key** obtained in the previous step in the "Steam*" field. 
 
-![Steam Config Dashboard](/img/an_dApp_steam_config.png){.an-screenshots .width_35pc}
+![Steam Config Dashboard](/img/an_dApp_steam_config.png){.an-screenshots}
 
 Save the settings. {{config.extra.arcana.company_name}} assigns a unique **{{config.extra.arcana.app_address}}** to every registered app. Save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
 
