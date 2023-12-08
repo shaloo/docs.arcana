@@ -36,7 +36,7 @@ The chain configuration UI is displayed:
 
 The same list appears in {{config.extra.arcana.wallet_name}} UI for users of Web3 apps integrated with {{config.extra.arcana.sdk_name}}. The **Ethereum Mainnet** set as the default chain.
 
-<img class="width_35pc" src="/img/an_db_default_subset_wallet_chains.gif" alt="Default subset of chains in wallet UI"/>
+<img class="width_35pc an-screenshots" src="/img/an_db_default_subset_wallet_chains.gif" alt="Default subset of chains in wallet UI"/>
 
 ### Step 2: Edit Default Chain
 
@@ -46,7 +46,7 @@ To switch the default chain from Ethereum to another one in the list simply sele
 
 ### Step 3: Add Chain
 
-Click **Add Chain** button on the top right of the 'Chain Management' dashboard screen. Any newly added chain is automatically set as the default chain displayed in the wallet UI.
+Click the **Add Chain** button on the top right of the 'Chain Management' dashboard screen. Any newly added chain is automatically set as the default chain displayed in the wallet UI.
 
 {% include "./text-snippets/add_chain_specs.md" %}
 
@@ -60,7 +60,7 @@ Once you click **Save**, the newly added chain will be displayed in the dashboar
 
 ![Updated chain list](/img/an_db_view_updated_chain_list_polygon.png){.an-screenshots}
 
-![Display new chain in wallet](/img/an_db_config_new_chain_show_wallet.gif){ .width_35pc}
+![Display new chain in wallet](/img/an_db_config_new_chain_show_wallet.gif){ .width_35pc .an-screenshots}
 
 **That's all!** :material-party-popper:
 
