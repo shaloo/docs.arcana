@@ -44,7 +44,7 @@ If you select EVM chain type, there are multiple blockchain network options that
 
 The preconfigured list can be updated by the app developer. It governs the list of chains that are available out of the box and displayed in {{config.extra.arcana.wallet_name}} UI for authenticated app users. By default, for non-EVM chain type, **Ethereum** is set as the active chain by default.
 
-<img class="width_35pc" src="/img/an_db_default_subset_wallet_chains.gif" alt="Default subset of chains in wallet UI"/>
+<img class="width_35pc an-screenshots" src="/img/an_db_default_subset_wallet_chains.gif" alt="Default subset of chains in wallet UI"/>
 
 **Non-EVM**
 
@@ -60,7 +60,7 @@ To switch the default active chain simply select the new chain in the {{config.e
 
 ### Step 3: Add Chain
 
-Click **Add Chain** button on the top right of the 'Chain Management' dashboard screen. Any newly added chain is automatically set as the default chain displayed in the wallet UI.
+Click the **Add Chain** button on the top right of the 'Chain Management' dashboard screen. Any newly added chain is automatically set as the default chain displayed in the wallet UI.
 
 {% include "./text-snippets/add_chain_specs.md" %}
 
@@ -70,7 +70,7 @@ Once you click **Save**, the newly added chain will be displayed in the dashboar
 
 ![Updated chain list](/img/an_db_view_updated_chain_list_polygon.png){.an-screenshots}
 
-![Display new chain in wallet](/img/an_db_config_new_chain_show_wallet.gif){ .width_35pc}
+![Display new chain in wallet](/img/an_db_config_new_chain_show_wallet.gif){ .width_35pc .an-screenshots}
 
 !!! caution "Modifying Preconfigured List"
 

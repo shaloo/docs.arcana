@@ -231,7 +231,11 @@
 }
 
 .width_35pc {
-  width: 25%;
+  width: 35%;
+}
+
+.width_50pc {
+  width: 50%;
 }
 
 .width_85pc {
