@@ -154,7 +154,7 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
       If you have deployed your Flutter app on Arcana Testnet and are looking to migrate it on the Mainnet, see [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
 
-That is all! :tada:
+That is all! :material-party-popper:
 
 The Flutter mobile app is now ready to onboard users.
 

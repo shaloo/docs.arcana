@@ -10,6 +10,6 @@ arcana:
 #
 
 <!--
-Do not add any content here.
+Do not add any content here. Do not remove the # above.
 The default landing page is overridden.
 -->

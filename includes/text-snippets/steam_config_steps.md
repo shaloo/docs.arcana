@@ -29,11 +29,11 @@ Go to the app configuration screen on the {{config.extra.arcana.dashboard_name}}
 
 Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and browse Steam Community Site and obtain the API Key in the next step. Then come back to the {{config.extra.arcana.dashboard_name}} tab and complete the app configuration settings.
 
-## Step 2: Get Steam OAuth API Key
+## Step 2: Steam: Get OAuth API Key
 
 Go to the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2Fdev%2Fapikey). Login to your account. 
 
-![Steam Community Site](/img/an_steam_login.png){ width="50%"}
+![Steam Community Site](/img/an_steam_login.png){.an-screenshots .width_50pc}
 
 !!! caution "Access Steam API Key"
 
@@ -41,20 +41,20 @@ Go to the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2F
 
 Register for a new Steam Web API Key. Provide the app domain name as input to access your API Key.
 
-![Steam Domain Settings](/img/an_steam_domain.png){ width="50%"}
+![Steam Domain Settings](/img/an_steam_domain.png){.an-screenshots .width_50pc}
 
 Copy the **Steam API Key** for your app domain. It will be required in the next step while completing the app configuration using the {{config.extra.arcana.dashboard_name}}.
 
-![Steam Domain Settings](/img/an_steam_apikey.png){ width="50%"}
+![Steam Domain Settings](/img/an_steam_apikey.png){.an-screenshots .width_50pc}
 
 ## Step 3: Update {{config.extra.arcana.dashboard_name}}
 
 Revisit the {{config.extra.arcana.dashboard_name}} app configuration screen. Click **Configure > Social Auth** section in the LHS navigation bar. Paste the **Steam API Key** obtained in the previous step in the "Steam*" field. 
 
-![Steam Config Dashboard](/img/an_dApp_steam_config.png){an-screenshots}
+![Steam Config Dashboard](/img/an_dApp_steam_config.png){.an-screenshots}
 
 Save the settings. {{config.extra.arcana.company_name}} assigns a unique **{{config.extra.arcana.app_address}}** to every registered app. Save this **{{config.extra.arcana.app_address}}** and use it while integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-![Client ID](/img/an_db_app_address.png){an-screenshots}
+![Client ID](/img/an_db_app_address.png){.an-screenshots}
 
 *You are all set with the Steam configuration. Next, [[index-integrate-app|integrate the Web3 app]] with the {{config.extra.arcana.sdk_name}} and enable the authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. See [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.*

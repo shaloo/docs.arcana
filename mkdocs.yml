@@ -37,6 +37,9 @@ nav:
         - quick-start/mobile/index.md
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
+      - Auth-Core: quick-start/auth-core-quick-start.md
+      - Solana Apps: quick-start/solana-quick-start.md
+    - New to Web3:  an-academy/new-to-web3.md
     - References:
       - quick-links/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
@@ -173,6 +176,7 @@ nav:
               - Sign Transactions: howto/arcana-wallet/sign.md
               - Show Wallet: howto/arcana-wallet/show.md
               - Watch Assets: howto/arcana-wallet/watchasset.md
+              - Solana Web3 Wallet Ops: howto/arcana-wallet/solana-wallet-ops.md
           - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Mobile apps:
         - howto/mobile/index.md
@@ -184,14 +188,17 @@ nav:
       - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md
-    - Release Notes: relnotes/rn-main-auth-vOct12-23-gasless.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.9.md
     - Installation Guide: sdk-installation.md
-    - SDK Migration Guide: migration/main-auth-vOct12-23-gasless-migration.md
+    - SDK Migration Guide: migration/main-auth-v1.0.9-migration.md
     - Developer Guides:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
+      - Solana Configuration Guide: db/config-dApp-with-db-for-Solana.md
       - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
+      - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
+      - Auth-Core SDK Reference Guide: 'https://auth-core-sdk-ref-guide.netlify.app/'
       - Troubleshooting Guide: troubleshooting.md
       - Error Handling: 
         - Web SDK: 
@@ -204,6 +211,7 @@ nav:
       - Dashboard: faq/faq-db.md
       - Auth SDK: faq/faq-auth.md
       - Gasless: faq/faq-gasless.md
+      - Solana: faq/faq-solana.md
     - Changelog:
       - changelog/index.md
       - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.4
@@ -212,6 +220,7 @@ nav:
       - archives/index.md
       - Release Notes:
         - relnotes/archives/index.md
+        - Auth 1.0.9 : relnotes/rn-main-auth-v1.0.9.md
         - Auth Oct12-23-gasless: relnotes/rn-main-auth-vOct12-23-gasless.md
         - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
         - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
@@ -226,6 +235,7 @@ nav:
         - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
       - SDK Migration:
         - migration/archives/index.md
+        - vOct12-23-gasless -> v1.0.9: migration/main-auth-v1.0.9-migration.md
         - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
         - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
         - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
@@ -318,6 +328,7 @@ nav:
       - Key Space Type: concepts/keyspace-types.md
       - Manage Chains: concepts/manage-chains.md
       - MFA: concepts/mfa.md
+      - Non-EVM Chains: concepts/non-evm-chains.md
       - Plug and Play Auth: concepts/plug-and-play-auth.md
       - Private Key: concepts/private-key.md
       - Smart Contracts:
@@ -354,9 +365,10 @@ extra:
     wallet_name: Arcana wallet
     app_address: Client ID
     date_release_tag: !ENV [DATE_RELEASE_TAG,'Oct12-23-gasless']
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.7']
+    version_release_tag: !ENV [VERSION_RELEASE_TAG,'1.0.9']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.8']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.8']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.5']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']
     latest_auth_web3_react_sdk_version: !ENV [AUTH_WEB3_REACT_SDK_VERSION, '0.0.1']
@@ -364,6 +376,7 @@ extra:
     latest_auth_flutter_sdk_version: !ENV [AUTH_FLUTTER_SDK_VERSION, '0.0.6']
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, 'Beta-0.3']
+    latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
     react_sdk_pkg_name: auth-react
@@ -489,7 +502,7 @@ markdown_extensions:
   - tables
   - toc:
       title: "On this page"
-      toc_depth: 2
+      toc_depth: 3
 
 validation:
   nav:
@@ -627,7 +640,7 @@ plugins:
         'docs/category/store-data/index.md': 'support.md'
         'docs/conceptnftviewer/index.md': 'support.md'
         'docs/category/using-arcana-wallet/index.md': 'support.md'
-        'docs/quick-start/web-apps-quick-start.md': 'docs/quick-start/web/index.md'
+        'docs/quick-start/web-apps-quick-start.md': 'quick-start/web/index.md'
   - git-authors:
       show_email_address: false
   - git-revision-date-localized

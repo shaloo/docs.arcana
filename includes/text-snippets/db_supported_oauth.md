@@ -1,4 +1,4 @@
 * Google
-* Discord
-* Twitter
 * GitHub
+* Twitch
+* Discord
