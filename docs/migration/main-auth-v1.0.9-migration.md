@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Arcana Auth SDK v{{config.extra.arcana.previous_version}} -> v1.0.9 Migration
+# Arcana Auth SDK v{{config.extra.arcana.previous_version}} -> v1.0.9-beta.2 Migration
 
 This guide is meant for developers who have already integrated apps with v{{config.extra.arcana.previous_version}} release of the {{config.extra.arcana.sdk_name}} and deploy them using {{config.extra.arcana.company_name}} Testnet or Mainnet.
 
@@ -31,13 +31,13 @@ This is a major release of the {{config.extra.arcana.product_name}} product sinc
 
 * New {{config.extra.arcana.auth_core_sdk_pkg_name}} SDK allows greater customization flexibility with custom Wallet UI
 
-For details, see [[rn-main-auth-v1.0.9|{{config.extra.arcana.product_name}} v1.0.9 release notes]].
+For details, see [[rn-main-auth-v1.0.9|{{config.extra.arcana.product_name}} v1.0.9-beta.2 release notes]].
 
-## How to Migrate to v1.0.9?
+## How to Migrate to v1.0.9-beta.2?
 
-We highly recommend that Web3 apps that are integrated with v{{config.extra.arcana.previous_version}} of the product migrate to the latest {{config.extra.arcana.sdk_name}} v1.0.9 release.
+We highly recommend that Web3 apps that are integrated with v{{config.extra.arcana.previous_version}} of the product migrate to the latest {{config.extra.arcana.sdk_name}} v1.0.9-beta.2 release.
 
-Install the latest {{config.extra.arcana.sdk_name}} v1.0.9 and upgrade your app. No other integration code changes are required.
+Install the latest {{config.extra.arcana.sdk_name}} v1.0.9-beta.2 and upgrade your app. No other integration code changes are required.
 
 Apps using older versions of the {{config.extra.arcana.sdk_name}} must refer to the [[index-migration-guides|migration guides]] and upgrade to the latest release if they wish to enable Steam of Firebase user onboarding.
 
@@ -51,4 +51,4 @@ If the app developer selects [[concept-keyspace-type| global keys]] while config
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
-See [[rn-main-auth-v1.0.9|{{config.extra.arcana.product_name}} v1.0.9 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+See [[rn-main-auth-v1.0.9|{{config.extra.arcana.product_name}} v1.0.9-beta.2 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
