@@ -56,7 +56,7 @@ Authenticated users can log in and instantly access a Web3 wallet from within th
 
 ## Next Steps
 
-After adding code to onboard users, you can optionally use the standard JSON RPC Web3 wallet operations supported by the `AuthProvider`. See [[solana-wallet-ops|how to enable Web3 operations in Solana Apps]] for details. 
+After adding code to onboard users, you can optionally use the standard JSON RPC Web3 wallet operations supported by the `AuthProvider`. See [[solana-wallet-ops|how to enable Web3 operations in Solana Apps]] for more insights.
 
 Manage the user experience for signing blockchain transactions by selecting the default, built-in {{config.extra.arcana.wallet_name}} UI and tinkering with the [[configure-wallet-visibility|wallet visibility]] or [[custom-wallet-ui|replacing the built-in wallet with a custom wallet UI]]. See [[faq-solana|Integrating Solana App FAQ]] for details.
 
