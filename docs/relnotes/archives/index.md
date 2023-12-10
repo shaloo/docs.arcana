@@ -8,7 +8,7 @@ arcana:
 
 # Release Notes
 
-[[rn-main-auth-v1.0.9|Auth v1.0.9 :material-note-text:]]{ .md-button }
+[[rn-main-auth-v1.0.9-beta.2|Auth v1.0.9 :material-note-text:]]{ .md-button }
 
 [[rn-main-auth-vOct12-23-gasless|Auth vOct12-23-gasless Release :material-note-text:]]{ .md-button }
 

@@ -1,5 +1,5 @@
 ---
-alias: migration-guide-v1.0.9
+alias: migration-guide-v1.0.9-beta.2
 title: 'Arcana Auth SDK vOct12-23-gasless -> v1.0.9 Migration'
 description: 'How to migrate to Arcana Auth Web SDK v1.0.9'
 arcana:
@@ -31,7 +31,7 @@ This is a major release of the {{config.extra.arcana.product_name}} product sinc
 
 * New {{config.extra.arcana.auth_core_sdk_pkg_name}} SDK allows greater customization flexibility with custom Wallet UI
 
-For details, see [[rn-main-auth-v1.0.9|{{config.extra.arcana.product_name}} v1.0.9-beta.2 release notes]].
+For details, see [[rn-main-auth-v1.0.9-beta.2|{{config.extra.arcana.product_name}} v1.0.9-beta.2 release notes]].
 
 ## How to Migrate to v1.0.9-beta.2?
 
@@ -51,4 +51,4 @@ If the app developer selects [[concept-keyspace-type| global keys]] while config
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
-See [[rn-main-auth-v1.0.9|{{config.extra.arcana.product_name}} v1.0.9-beta.2 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+See [[rn-main-auth-v1.0.9-beta.2|{{config.extra.arcana.product_name}} v1.0.9-beta.2 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
