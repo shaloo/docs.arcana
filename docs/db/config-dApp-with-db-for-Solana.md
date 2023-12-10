@@ -34,11 +34,11 @@ In the *Manage Apps* screen select the requisite configuration profile to bring 
 
 You will see the available Solana chains that will be displayed when a user logs in and accesses the {{config.extra.arcana.wallet_name}}.
 
-## Default Chain
+### Default Chain
 
 You can select one of the Solana networks and set it as the default chain. The default chain is shown as the selected chain in the {{config.extra.arcana.wallet_name}} displayed in the app's context.
 
-## Edit Chain
+### Edit Chain
 
 To edit a Solana chain's RPC URL or the blockchain explorer URL, select the chain, click **edit** and update the required fields.
 
@@ -59,7 +59,10 @@ Note, at a time, developers can only enable either EVM-compatible chains or the 
 
 -->
 
-# See Also
-
 For more details on using the dashboard to delete an app, switch between different applications, change configuration profile, monitor usage, etc., see [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User's Guide]]. You can also refer to the sample code for performing Web3 wallet operations using the Solana network [here]().
+
+## See Also
+
+* [[solana-wallet-ops|Web3 Wallet Operations for Solana]]
+* [[faq-solana|Integrating Solana App FAQ]]
 

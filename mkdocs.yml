@@ -38,6 +38,7 @@ nav:
         - Flutter Apps: quick-start/flutter-quick-start.md
         - React-Native Apps: quick-start/react-native-quick-start.md
       - Auth-Core: quick-start/auth-core-quick-start.md
+      - Solana Apps: quick-start/solana-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
     - References:
       - quick-links/index.md
@@ -365,7 +366,7 @@ extra:
     app_address: Client ID
     date_release_tag: !ENV [DATE_RELEASE_TAG,'Oct12-23-gasless']
     version_release_tag: !ENV [VERSION_RELEASE_TAG,'1.0.9']
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.7']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.8']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
     latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.5']
