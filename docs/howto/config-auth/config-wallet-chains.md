@@ -48,9 +48,11 @@ The preconfigured list can be updated by the app developer. It governs the list 
 
 **Non-EVM**
 
-If you select [[concept-non-evm-chains|non-EVM chain type]] when registering the app, Solana is the only option displayed in the pre-configured list and app users can only sign using Solana blockchain networks. 
+If you select [[concept-non-evm-chains|non-EVM chain type]] when registering the app, Solana is the only option displayed in the pre-configured list and app users can only sign using Solana blockchain networks.
 
 ![Chain Management Solana non EVM](/img/an_db_non_evm_solana_only_preconfigured_list.png){.an-screenshots}
+
+See [[solana-dashboard-user-guide|how to setup Solana]] and [[solana-quick-start|Solana Quick Start Guide]] for more details.
 
 ### Step 2: Edit Default Active Chain
 
