@@ -59,10 +59,15 @@ Note, at a time, developers can only enable either EVM-compatible chains or the 
 
 -->
 
-For more details on using the dashboard to delete an app, switch between different applications, change configuration profile, monitor usage, etc., see [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User's Guide]]. You can also refer to the sample code for performing Web3 wallet operations using the Solana network [here]().
+For more details on using the dashboard to delete an app, switch between different applications, change configuration profile, monitor usage, etc., see [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User's Guide]]. 
+
+## Next Steps
+
+After setting up Solana chains using the {{config.extra.arcana.dashboard_name}}, you can begin integrating Solana app with the {{config.extra.arcana.sdk_name}}. See [[solana-quick-start|Solana Quick Start Guide]] for instructions on how to install and integrate the {{config.extra.arcana.sdk_name}} with your app. Once integrated, you can add code to onboard users and initiate Web3 wallet operations using the Solana network. Refer to the sample code [here](solana-wallet-ops).
 
 ## See Also
 
+* [[solana-quick-start|Solana Quick Start Guide]]
 * [[solana-wallet-ops|Web3 Wallet Operations for Solana]]
 * [[faq-solana|Integrating Solana App FAQ]]
-
+* [Solana App Integration Example](https://github.com/arcana-network/auth-examples)
