@@ -192,10 +192,14 @@
             mask-image: var(--md-admonition-icon--an-trbs);
 }
 
+.md-typeset pre>code {
+  border-radius: 5px;
+}
+
 .an-screenshots {
   border-radius: 5px;
   display: block;
-  width: 75%;
+  width: 80%;
   /* Use these to centre all screenshots (if required )
   margin-left: auto;
   margin-right: auto;
@@ -212,17 +216,30 @@
   animation: blinker 2s linear infinite;
   color: var(--md-primary-an-banner-text-color);
 }
+.blink_me_small {
+  animation: blinker 2s linear infinite;
+  background-color: yellow;
+  font-size: 0.60rem;
+  font-weight: 800;
+  border-radius: 0.5px;
+  vertical-align: super;
+  color: black;
+}
 
 @keyframes blinker {  
   50% { opacity: 0; }
 }
 
 .width_35pc {
-  width: 25%;
+  width: 35%;
+}
+
+.width_50pc {
+  width: 50%;
 }
 
 .width_85pc {
-  width: 25%;
+  width: 85%;
 }
 
 .an-marker-text-highlight {

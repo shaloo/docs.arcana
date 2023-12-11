@@ -22,11 +22,11 @@ arcana:
 
       Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
 
-??? abstract "Try Arcana Communities"
+??? abstract "Schedule a Demo"
 
-      Use the social coordinates and reach out to our dev evangelists, community enthusiasts.
+      Choose a convenient time slot and [schedule a demo](https://calendly.com/arcana-network/arcana-demo-walkthrough) with the Arcana Team.
 
-## Social Coordinates
+## Community
 
 | GitHub | Discord | Telegram | Twitter |
 | :---: | :---: | :---: | :---: |
@@ -34,5 +34,5 @@ arcana:
 
 ## Report Bugs
 
-* [{{config.extra.arcana.dashboard_name}} Bugs](https://github.com/arcana-network/developer-dashboard/issues)
-* [{{config.extra.arcana.sdk_name}} Bugs](https://github.com/arcana-network/auth/issues)
+* [{{config.extra.arcana.dashboard_name}} Issues](https://github.com/arcana-network/developer-dashboard/issues)
+* [{{config.extra.arcana.sdk_name}} Issues](https://github.com/arcana-network/auth/issues)

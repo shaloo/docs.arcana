@@ -6,15 +6,13 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Manage Chains
+# Manage Chains 
 
-The {{config.extra.arcana.product_name}} product supports EVM-compatible blockchain networks. A set of [[state-of-the-arcana-auth#supported-blockchains|pre-configured chains]] is available by default and displayed in the {{config.extra.arcana.dashboard_name}} and the {{config.extra.arcana.wallet_name}} UI. Ethereum is selected as the default chain.
+This guide will show you how to handle the list of chains that your app users can use to sign blockchain transactions.
 
-This default pre-configured list of displayed chains can be updated by the developers via the {{config.extra.arcana.dashboard_name}} or programmatically. Authenticated users have limited capability to update this list only for the current login session.
+{{config.extra.arcana.product_name}} works with all EVM-compatible blockchain networks and Solana, a [[concept-non-evm-chains|non-EVM chain]]. A subset of these supported chains including Solana is available as the default [[state-of-the-arcana-auth#supported-blockchains|pre-configured list]]. It is visible in the {{config.extra.arcana.dashboard_name}} and governs what chains are available in the {{config.extra.arcana.wallet_name}} UI. Ethereum is selected as the active chain in the list by default.
 
-!!! caution "User Chain Settings"
-
-      Authenticated Web3 app users can access {{config.extra.arcana.wallet_name}} in the app. The built-in UI allows users to modify the default chain setting or add a new one. User-made changes to the blockchain list only last for the current session; they don't persist after logout. However, any extra chains added by the app developer remain across user logins.
+Developers can update this pre-configured list via the {{config.extra.arcana.dashboard_name}} or programmatically. Authenticated users can add other supported blockchain networks displayed in the {{config.extra.arcana.wallet_name}} UI. User-made changes to the blockchain list only last for the current session; they don't persist after logout. However, any extra chains added by the app developer remain across user logins. 
 
 ## Prerequisites
 
@@ -34,42 +32,61 @@ The chain configuration UI is displayed:
 
 ![Chain Management Settings](/img/an_db_chain_mngt_options.png){.an-screenshots}
 
-The same list appears in {{config.extra.arcana.wallet_name}} UI for users of Web3 apps integrated with {{config.extra.arcana.sdk_name}}. The **Ethereum Mainnet** set as the default chain.
+### Step 1: Review Chains
 
-<img src="/img/an_db_default_subset_wallet_chains.gif" width="30%" alt="Default subset of chains in wallet UI"/>
+Developers can enable either EVM chains or non-EVM chains in the context of a Web3 app integrated with {{config.extra.arcana.product_name}}. This chain type is a one time setting during app registration and cannot be reconfigured later. While reviewing chains, you can see whether the app is configured to use EVM chains or only the non-EVM chains.
 
-### Step 2: Edit Default Chain
+**EVM**
 
-To switch the default chain from Ethereum to another one in the list simply select the new chain in the {{config.extra.arcana.dashboard_name}}, click "..." ellipses and select the chain as the default. The figure below illustrates Polygon as the default chain instead of Ethereum.
+If you select EVM chain type, there are multiple blockchain network options that can be enabled for app users. 
+
+![Chain Management EVM](/img/an_db_evm_only_preconfigured_list.gif){.an-screenshots}
+
+The preconfigured list can be updated by the app developer. It governs the list of chains that are available out of the box and displayed in {{config.extra.arcana.wallet_name}} UI for authenticated app users. By default, for non-EVM chain type, **Ethereum** is set as the active chain by default.
+
+<img class="width_35pc an-screenshots" src="/img/an_db_default_subset_wallet_chains.gif" alt="Default subset of chains in wallet UI"/>
+
+**Non-EVM**
+
+If you select [[concept-non-evm-chains|non-EVM chain type]] when registering the app, Solana is the only option displayed in the pre-configured list and app users can only sign using Solana blockchain networks. 
+
+![Chain Management Solana non EVM](/img/an_db_non_evm_solana_only_preconfigured_list.png){.an-screenshots}
+
+### Step 2: Edit Default Active Chain
+
+To switch the default active chain simply select the new chain in the {{config.extra.arcana.dashboard_name}} preconfigured list, click "..." ellipses and select 'set as default' option. The figure below illustrates Polygon as the default active chain instead of Ethereum.
 
 ![Change default chain](/img/an_db_set_default_chain.gif){.an-screenshots}
 
 ### Step 3: Add Chain
 
-Click **Add Chain** button on the top right of the 'Chain Management' dashboard screen. Any newly added chain is automatically set as the default chain displayed in the wallet UI.
+Click the **Add Chain** button on the top right of the 'Chain Management' dashboard screen. Any newly added chain is automatically set as the default chain displayed in the wallet UI.
 
 {% include "./text-snippets/add_chain_specs.md" %}
 
 ![Configure new chain](/img/an_db_configure_new_chain.gif){.an-screenshots}
 
-!!! caution "Supported Chains"
-
-      Only EVM-compatible chains can be added by the developers in the [[state-of-the-arcana-auth#supported-blockchains|pre-configured list]] of displayed blockchain networks. To learn more, see [[state-of-the-arcana-auth#supported-blockchains|supported blockchains]].
-
 Once you click **Save**, the newly added chain will be displayed in the dashboard and also shown in the wallet UI once a user logs into the app.
 
 ![Updated chain list](/img/an_db_view_updated_chain_list_polygon.png){.an-screenshots}
 
-![Display new chain in wallet](/img/an_db_config_new_chain_show_wallet.gif){ .width_35pc}
+![Display new chain in wallet](/img/an_db_config_new_chain_show_wallet.gif){ .width_35pc .an-screenshots}
+
+!!! caution "Modifying Preconfigured List"
+
+      Developers can update EVM-compatible chains **only** in the pre-configured list of chains. Some selected non-EVM chains are also supported but those cannot be arbitrarily added in the preconfigured list by the developers. To learn more on the list of supported chains, see [[state-of-the-arcana-auth#supported-blockchains|supported blockchains]].
 
 **That's all!** :material-party-popper:
 
 ## What's Next?
 
-Besides managing the pre-configured list of chains via the {{config.extra.arcana.dashboard_name}} configuration settings, a developer can also add new chains programmatically to the wallet via the `wallet_addEthereumChain` method. To do that, the app must be integrated with the {{config.extra.arcana.sdk_name}} and the `AuthProvider` initialized before calling any of the SDK functions. For details refer to the [[web-auth-usage-guide#wallet_addethereumchain|{{config.extra.arcana.sdk_name}} Usage Guide]].
+Besides managing the pre-configured list of chains via the {{config.extra.arcana.dashboard_name}} configuration settings, a developer can also add other supported EVM-compatible chains programmatically to the wallet via the `wallet_addEthereumChain` method. To do that, the app must be integrated with the {{config.extra.arcana.sdk_name}} and the `AuthProvider` initialized before calling any of the SDK functions. 
+
+For details refer to the [[web-auth-usage-guide#wallet_addethereumchain|{{config.extra.arcana.sdk_name}} Usage Guide]].
 
 ## See also
 
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
+* [[solana-dashboard-user-guide| Configure Solana Chains]]
 * {% include "./text-snippets/authsdkref_url.md" %}

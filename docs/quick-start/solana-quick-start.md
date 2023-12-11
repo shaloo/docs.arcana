@@ -1,16 +1,16 @@
 ---
-alias: vue-quick-start
-title: 'Quick Start: Vue Apps'
-description: 'Get Started quickly with Arcana Auth product for Vue apps by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID and then use the client ID to integrate the app with the Arcana Auth SDK.'
+alias: solana-quick-start
+title: 'Quick Start: Solana Apps'
+description: 'Get Started quickly with Arcana Auth product for Solana apps by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID and then use the client ID to integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
-  app_type: "'Vue'"
-  app_example_submodule: "'`sample-auth-vue`'"
+  app_type: "'Solana'"
+  app_example_submodule: "'`sample-auth-solana`'"
   custom_login_ui_tag: "index-custom-ui-onboard-users"
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Quick Start: Vue Apps
+# Quick Start: Solana Apps
 
 !!! note "Already using {{config.extra.arcana.sdk_name}}?"
   
@@ -22,7 +22,7 @@ arcana:
 
 ## Step 1: Register & Configure App
 
-{% include "./text-snippets/quick-start-reg-config.md" %}
+Follow the instructions in the [[solana-dashboard-user-guide|Solana Configuration Guide]] and register your app, configure social login and chains and obtain a unique {{config.extra.arcana.app_address}}. Then proceed to installing the {{config.extra.arcana.sdk_name}} and use this {{config.extra.arcana.app_address}} to integrate the Solana app.
 
 ## Step 2: Install SDK
 
@@ -56,7 +56,11 @@ Authenticated users can log in and instantly access a Web3 wallet from within th
 
 ## Next Steps
 
-{% include "./text-snippets/quick-start-next-steps.md" %}
+After adding code to onboard users, you can optionally use the standard JSON RPC Web3 wallet operations supported by the `AuthProvider`. See [[solana-wallet-ops|how to enable Web3 operations in Solana Apps]] for more insights.
+
+Manage the user experience for signing blockchain transactions by selecting the default, built-in {{config.extra.arcana.wallet_name}} UI and tinkering with the [[configure-wallet-visibility|wallet visibility]] or [[custom-wallet-ui|replacing the built-in wallet with a custom wallet UI]]. See [[faq-solana|Integrating Solana App FAQ]] for details.
+
+To learn how to deploy the app on Testnet/Mainnet, see [[deploy-app|App Deployment Guide]].
 
 ## Examples
 

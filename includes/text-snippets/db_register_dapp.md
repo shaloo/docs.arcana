@@ -4,11 +4,11 @@ After logging in, the *Manage Apps* dashboard screen is displayed.
 
 Each app registered for a developer account is represented by a card in the *Manage Apps* screen of the {{config.extra.arcana.dashboard_name}}.
 
-![New app card](/img/an_db_new_app_card.png){.an-screenshots}
+![Manage Apps Screen](/img/an_db_mulitiple_apps.png){.an-screenshots}
 
 **Initiate App Registration**
 
-In the 'Manage Apps' dashboard, click *Create New App* wizard to register a new app. <img class="an-screenshots-noeffects" src="/img/icons/dashboard_newappwizard.png" alt="create new app wizard icon" width="10%"/> 
+In the 'Manage Apps' dashboard, click *Create New App* wizard to register a new app. <img class="an-screenshots" src="/img/dashboard_newappwizard.png" alt="Wizard: Register App" width="10%"/> 
 
 **Registration Settings**
 

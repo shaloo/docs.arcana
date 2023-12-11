@@ -4,8 +4,8 @@
 {{ super() }}
 
 {% block announce %}
-<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v{{config.extra.arcana.date_release_tag}}.html">Release v{{ config.extra.arcana.date_release_tag }} </a><span class="blink_me"> live on Mainnet now!</span> ⚡⚡⚡ </p>
-{% endblock %}
+        <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v{{config.extra.arcana.version_release_tag}}.html">Release v{{ config.extra.arcana.version_release_tag }} </a><span class="blink_me"> is now live! (Testnet)</span> ⚡⚡⚡ </p>
+  {% endblock %}
 {% block content %}
 
 <style>
@@ -123,15 +123,17 @@
         border-color: var(--md-an-secondary-button-bg-color);       
     }
     
-
     .feature-item {
         font-family: 'Inter', sans-serif;
         font-weight: 300;
         box-sizing: border-box;
-        padding: 0 0.5rem;
+        padding: 1.5rem;
         word-break: break-word;
-        padding: 1rem 1.5rem;
-        border: 3px solid var( --md-primary-bg-color);
+        margin: 2rem;
+        border-top: 2px solid var(--md-an-color-light-purple);
+        border-radius: 5px;
+        width: 80%;
+        box-shadow: 0px 30px 40px -20px var(--md-an-color-light-purple);
     }
 
     .feature-item-2 {
@@ -142,7 +144,7 @@
         border-radius: 5px;
         margin: 0.5rem;
         word-break: break-word;
-        box-shadow: 0 1px 2px 0 var(--md-an-color-light-purple);
+        /*box-shadow: 0 1px 2px 0 var(--md-an-color-light-purple);*/
     }
 
     .feature-item-3 {
@@ -183,8 +185,17 @@
        border-bottom: 1px solid var(--md-an-color-h2-bottom-rule);
     }
 
+    .top-hr {
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            padding: 0.1rem;
+            border-radius: 5px;
+    }
+
     .md-an-marquee {
-        background-color: var(--md-an-color-light-purple);
+        padding: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     @media screen and (max-width:30em) {
@@ -231,7 +242,8 @@
             max-width: 61rem;
             margin-right: auto;
             margin-left: auto;
-            padding: 0.2rem;
+            padding: 0.1rem;
+            border-radius: 5px;
         }
 
         .bottom-hr {
@@ -314,8 +326,8 @@
 
 </style>
 
-
 <section class="md-grid md-typeset">
+
 <div class="top-hr">
     <div class="hr">
         <h1 style="text-align: left">Explore Auth SDKs</h1>
@@ -326,7 +338,8 @@
     <div class="feature-item">
         <a href="./quick-start/web/index.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_web_app_dark.png#only-dark" width="10%"/><img src="./img/icons/i_web_app_light.png#only-light" width="10%"/> Web Apps</h3>
+                <img src="./img/icons/i_web_app_dark.png#only-dark" width="10%"/><img src="./img/icons/i_web_app_light.png#only-light" width="10%"/>
+                <h3 class="h3-color">Web Apps</h3>
                 <p>Supported App Types:</p>
                 <ul>
                     <li>Vanilla HTML/CSS/JS</li>
@@ -337,11 +350,11 @@
             </div>
         </a>
     </div>
-
     <div class="feature-item">
         <a href="./quick-start/mobile/index.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/mobile-icon-dark.png#only-dark" width="10%"/><img src="./img/icons/mobile-icon-light.png#only-light" width="10%"/> Mobile Apps</h3>
+                <img src="./img/icons/mobile-icon-dark.png#only-dark" width="10%"/><img src="./img/icons/mobile-icon-light.png#only-light" width="10%"/>
+                <h3 class="h3-color">Mobile Apps</h3>
                 <p>Supported OS/Frameworks:</p>
                 <ul>
                     <li>iOs</li>
@@ -352,21 +365,36 @@
             </div>
         </a>
     </div>
+</div>
+
+<div class="top-hr md-an-marquee">   
+    <div class="feature-item">
+        <a href="./quick-start/solana-quick-start.html">
+            <div class="a-link-color">
+                <img src="./img/icons/i_solana_dark.png#only-dark" width="10%"/><img src="./img/icons/i_solana_light.png#only-light" width="10%"/>
+                <h3 class="h3-color">Solana Apps<span class="blink_me_small">New!</span></h3>
+                <p>Features:</p>
+                <ul>
+                    <li>Enable social login in non-EVM chains</li>
+                    <li>Web3 wallet operations</li>
+                </ul>
+            </div>
+        </a>
+    </div>
     <div class="feature-item">
         <a href="./arcana-coming-soon.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/gaming-icon-dark.png#only-dark" width="10%"/> <img src="./img/icons/gaming-icon-light.png#only-light" width="10%"/> Gaming Apps</h3>
+                <img src="./img/icons/gaming-icon-dark.png#only-dark" width="10%"/> <img src="./img/icons/gaming-icon-light.png#only-light" width="10%"/>
+                <h3 class="h3-color">Gaming Apps<span class="blink_me_small"><i>Coming soon!</i></span></h3>
                 <p>Supported platforms:</p>
                 <ul>
                     <li>Unity</li>
-                    <li>Unreal</li>
+                    <!--<li>Unreal</li>-->
                 </ul>
-                <p><mark><b>Coming soon!!!</b></mark></p>
             </div>
         </a> 
     </div>
 </div>
-</section>
 
 <div class="top-hr">
     <div class="hr">
@@ -540,6 +568,7 @@
     </div>
 </div>
 
+<!---
 <div class="top-hr">
     <div class="hr">
         <h2 style="text-align: left">Need help?</h2>
@@ -560,6 +589,8 @@
       <a href="mailto:support@arcana.network"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">Contact Us</div></a> 
     </div>
 </div>
+
+--->
 
 {% include "partials/content.html" %}
 
