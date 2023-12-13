@@ -39,6 +39,7 @@ nav:
         - React-Native Apps: quick-start/react-native-quick-start.md
       - Auth-Core: quick-start/auth-core-quick-start.md
       - Solana Apps: quick-start/solana-quick-start.md
+      - Gasless Apps: quick-start/gasless-quick-start.md
     - New to Web3:  an-academy/new-to-web3.md
     - References:
       - quick-links/index.md
@@ -199,6 +200,7 @@ nav:
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
       - Auth-Core SDK Reference Guide: 'https://auth-core-sdk-ref-guide.netlify.app/'
+      - Gasless SDK Usage Guide: gasless-sdk/gasless-sdk-usage.md
       - Troubleshooting Guide: troubleshooting.md
       - Error Handling: 
         - Web SDK: 
