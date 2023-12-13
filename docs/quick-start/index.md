@@ -18,4 +18,4 @@ Select the suitable {{config.extra.arcana.sdk_name}} Quick Start Guide based on 
 
 [[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
 
-[[gasless-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
+[[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }

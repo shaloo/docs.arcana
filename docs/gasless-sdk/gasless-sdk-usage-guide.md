@@ -19,16 +19,16 @@ of the file in the `auth` repo: https://github.com/arcana-network/auth/blob/main
 2. [Usage](#usage)
     - [Initialize](#initialize)
     - [Perform Gasless Transaction](#perform-gasless-transaction)
-3. [Functions]
+3. [Functions](#functions)
     - [`getSCWAddress()`](#getscwaddress)
-    -[`doTx()`](#dotx)
+    - [`doTx()`](#dotx)
 
 ---
 
 ## Installation
 
 ```
-npm i @arcana/scw@0.0.1
+npm i @arcana/scw@0.0.22
 ```
 
 ## Usage

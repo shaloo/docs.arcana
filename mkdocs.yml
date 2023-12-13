@@ -200,7 +200,7 @@ nav:
       - SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
       - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
       - Auth-Core SDK Reference Guide: 'https://auth-core-sdk-ref-guide.netlify.app/'
-      - Gasless SDK Usage Guide: gasless-sdk/gasless-sdk-usage.md
+      - Gasless SDK Usage Guide: gasless-sdk/gasless-sdk-usage-guide.md
       - Troubleshooting Guide: troubleshooting.md
       - Error Handling: 
         - Web SDK: 
@@ -360,6 +360,7 @@ extra:
     wagmi_sdk_name: Arcana Auth Wagmi SDK
     web3_react_sdk_name: Arcana Auth Web3 React SDK
     auth_core_sdk_name: Arcana Auth-Core SDK
+    gasless_sdk_name: Arcana Gasless (Standalone) SDK
     gaming_sdk_name: Arcana Auth Gaming SDK
     flutter_sdk_name: Arcana Auth Flutter SDK
     react_native_sdk_name: Arcana Auth React-Native SDK
@@ -379,8 +380,10 @@ extra:
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, 'Beta-0.3']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
+    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.22']
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
+    gasless_sdk_pkg_name: scw
     react_sdk_pkg_name: auth-react
     wagmi_sdk_pkg_name: auth-wagmi
     web3_react_sdk_pkg_name: auth-web3-react
