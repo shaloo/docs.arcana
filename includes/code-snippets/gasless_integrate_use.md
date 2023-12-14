@@ -10,7 +10,7 @@ During initialization, the gasless SDK creates an SCW account associated with th
 import { scw } from @arcana/scw;
 
 const scw = new arcana.scw.SCW();
-await scw.init("<app_id>", window.ethereum, "<gateway_url>");
+await scw.init("<app_id>", window.ethereum);
 ```
 
 After initializing the {{config.extra.arcana.gasless_sdk_name}}, you can perform transactions using the `doTx()` method.
@@ -18,8 +18,9 @@ After initializing the {{config.extra.arcana.gasless_sdk_name}}, you can perform
 ```js
   const erc20abi = [...];
   let amount = 0.1;
-  const erc20Address = "0xfDB2aA382866bb31704558a0c439dA91353651a9";
-  const toAddress = "0xA9E78cef5e6c0081b68AdA2554c04198DfF17C69";
+
+  const erc20Address = "0x2d7aC0907961c7.......45f981Ed8373b5dF86";
+  const toAddress = "0x723455665060698....87689dA78E25";
   const Erc20Interface = new ethers.utils.Interface(erc20abi);
 
   const encodedData = Erc20Interface.encodeFunctionData("transfer", [
