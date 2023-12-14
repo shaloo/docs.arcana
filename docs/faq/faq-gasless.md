@@ -117,4 +117,35 @@ toc_depth: 2
 
       The user's keys are always associated with EoA, whether the gasless feature is enabled or not.
 
+## Gasless Standalone SDK
+
+---
+
+??? an-faq "What are the high-level steps for using the {{config.extra.arcana.gasless_sdk_name}}?"
+
+      A. Use the  {{config.extra.arcana.dashboard_name}} to register the app and obtain a unique app identifier or **{{config.extra.arcana.app_address}}**. 
+
+      B. Install and integrate with the {{config.extra.arcana.gasless_sdk_name}}. During SDK initialization, provide the unique app identifier, standard EIP-1193 Ethereum provider exposed by the third-party browser-based wallet.
+
+      For details, refer to the `sample-gasless-standalone` code in the [Auth Examples](https://github.com/arcana-network/auth-examples) GitHub repo.
+
+??? an-faq "Does gasless transaction require developers to integrate the Web3 app with {{config.extra.arcana.gasless_sdk_name}} and the appropriate {{config.extra.arcana.sdk_name}} plus companion SDKs depending upon the app type?"
+
+      Not all use cases require installing and integrating with the {{config.extra.arcana.gasless_sdk_name}}. 
       
+      1. Apps that require user onboarding and/or the {{config.extra.arcana.wallet_name}} functionality in the app must install and integrate with the [[sdk-installation|appropriate {{config.extra.arcana.sdk_name}} plus companion SDKs only]]. They do not need to install the {{config.extra.arcana.gasless_sdk_name}} because the gasless feature is built-in the {{config.extra.arcana.sdk_name}}. 
+
+      2. Apps that **do not** require user onboarding **and** the {{config.extra.arcana.wallet_name}} functionality, but wish to enable gasless feature in third-party browser-based wallets, are required to install and integrate with **only** the {{config.extra.arcana.gasless_sdk_name}}.
+
+      3. Multi-wallet apps that require user onboarding and/or {{config.extra.arcana.wallet_name}} functionality in addition to enabling gasless for third-party wallets, must **first** install and integrate with the [[sdk-installation|appropriate {{config.extra.arcana.sdk_name}} plus companion SDKs]]. This will enable gasless for the {{config.extra.arcana.wallet_name}} and allow user onboarding via the {{config.extra.arcana.sdk_name}}. **Next,** they must install and integrate the app with the {{config.extra.arcana.gasless_sdk_name}} to enable gasless transactions in other third-party browser-based wallets such as MetaMask.
+
+??? an-faq "Apps can directly install and integrate with the {{config.extra.arcana.gasless_sdk_name}} without having to use the dashboard to configure gasless transactions?" 
+
+    No.
+
+    It is mandatory to configure gas tanks, deposit gas and whitelist app operations.  This is required before gasless transactions can be enabled for the app user. If gas tanks are set up by the developer but not funded with crypto assets, then the gas fees will be paid directly via the user's SCW smart account. If there are insufficient funds to pay the gas fees in the SCW account, the transaction will fail.
+
+??? an-faq "Can multi-wallet apps integrating with the {{config.extra.arcana.sdk_name}} for accessing the embedded {{config.extra.arcana.wallet_name}} configure gasless feature via the dashboard and then directly use the built-in gasless feature to enable gasless transactions across all supported wallets including third-party wallets?"
+    No.
+
+    Multi-wallet apps can configure the gasless feature via the dashboard, then install and integrate with the [[sdk-installation|appropriate {{config.extra.arcana.sdk_name}} plus companion SDKs]]. This will **only** enable gasless transactions for the {{config.extra.arcana.wallet_name}} but not for the third-party browser-based wallets such as MetaMask. To enable that, developers must **also** install and integrate the app with the {{config.extra.arcana.gasless_sdk_name}}. For details, refer to the [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]
