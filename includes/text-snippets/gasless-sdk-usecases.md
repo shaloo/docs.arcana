@@ -1,6 +1,8 @@
 !!! tip "Arcana Gasless SDK Use Cases"  
 
-      The standalone {{config.extra.arcana.gasless_sdk_name}} addresses the following use cases:
+      The {{config.extra.arcana.sdk_name}} has built-in gasless transactions feature. Apps that are 
+      
+      standalone {{config.extra.arcana.gasless_sdk_name}} addresses the following use cases:
 
       Depending upon the use case, installation and integration of one or more SDKs may be required.
    
