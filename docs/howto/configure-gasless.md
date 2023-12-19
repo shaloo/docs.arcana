@@ -10,11 +10,22 @@ arcana:
 
 The {{config.extra.arcana.sdk_name}} provides built-in gasless transactions feature accessible via the {{config.extra.arcana.wallet_name}} that must be enabled first using the {{config.extra.arcana.dashboard_name}} before integrating with the SDK.
 
-The gasless feature is also available as the standalone {{config.extra.arcana.gasless_sdk_name}}. The latter is meant for use by the multi-wallet apps that support other wallets such as MetaMask, besides the {{config.extra.arcana.wallet_name}}, and wish to enable gasless transactions in the third-party browser-based wallets. Apps that **do not** require user onboarding or the embedded, non-custodial {{config.extra.arcana.wallet_name}} but only need to enable gasless transactions for third-party browser-based wallets can directly integrate with the {{config.extra.arcana.gasless_sdk_name}}.
+{% if config.extra.arcana.exclude_content_tag %}
+
+To enable [[concept-gasless-transactions|gasless transactions]] in the {{config.extra.arcana.wallet_name}}, developers must first use the {{config.extra.arcana.dashboard_name}} to set up gas tanks and specify the whitelisted gasless app operations for the supported blockchain networks.
+
+In this guide, you will learn how to configure gasless transactions when integrating your app with the {{config.extra.arcana.sdk_name}} and using the {{config.extra.arcana.wallet_name}} for blockchain transactions.
+
+{% else %}
+
+The gasless feature is also available as the standalone {{config.extra.arcana.gasless_sdk_name}}. The latter is meant for use by the multi-wallet apps that support other wallets such as MetaMask, besides the {{config.extra.arcana.wallet_name}}, and wish to enable gasless transactions in the third-party browser-based wallets. Apps that **do not** require user onboarding or the embedded, non-custodial {{config.extra.arcana.wallet_name}} but only need to enable gasless transactions for third-party browser-based wallets that can directly integrate with the {{config.extra.arcana.gasless_sdk_name}}.
 
 In all these cases, to enable [[concept-gasless-transactions|gasless transactions]] in the {{config.extra.arcana.wallet_name}}, or a third-party wallet, developers must use the {{config.extra.arcana.dashboard_name}} and set up gas tanks, whitelist gasless app operations for the supported blockchain networks.
 
 In this guide, you will learn how to configure gasless transactions irrespective of whether you wish to use only the standalone {{config.extra.arcana.gasless_sdk_name}} or use the built-in gasless feature in the {{config.extra.arcana.sdk_name}}.
+
+{% endif %}
+
 
 !!! danger "Disabling Gasless" 
 
