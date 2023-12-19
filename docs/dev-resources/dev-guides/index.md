@@ -20,7 +20,13 @@ arcana:
 
 [{{config.extra.arcana.auth_core_sdk_name}} Reference Guide :octicons-cross-reference-16:](https://auth-core-sdk-ref-guide.netlify.app/){.md-button}
 
-[[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Gasless SDK (Standalone) Usage Guide :material-function-variant:]]{ .md-button }
+{% if config.extra.arcana.exclude_content_tag %}
+
+{% else %}
+[[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Gasless SDK (Standalone) Usage Guide 
+:material-function-variant:]]{ .md-button }
+
+{% endif %}
 
 [[troubleshooting| Troubleshooting :material-auto-fix:]]{ .md-button }
 

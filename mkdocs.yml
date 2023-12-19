@@ -390,6 +390,7 @@ extra:
     mobile_flutter_sdk_pkg_name: arcana_auth_flutter
     mobile_react_native_sdk_pkg_name: auth-react-native
     gaming_sdk_pkg_name: ArcanaSDK Unity Assets
+    exclude_content_tag: exclude
   homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
@@ -511,9 +512,9 @@ markdown_extensions:
 
 validation:
   nav:
-    omitted_files: info
+    omitted_files: warn
     not_found: warn
-    absolute_links: info
+    absolute_links: warn
   links:
     not_found: warn
     absolute_links: ignore
