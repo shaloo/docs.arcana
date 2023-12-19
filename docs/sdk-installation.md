@@ -43,3 +43,7 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 #### Unity Framework
 
 {% include "./code-snippets/auth_unity_install.md" %}
+
+## Gasless Apps (Standalone)
+
+{% include "./code-snippets/gasless_sdk_install.md" %}

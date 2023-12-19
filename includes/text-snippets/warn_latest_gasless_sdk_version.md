@@ -1,0 +1,1 @@
+*Use the latest {{config.extra.arcana.gasless_sdk_name}} release:* [**v{{config.extra.arcana.latest_gasless_sdk_version}}**](https://www.npmjs.com/package/@arcana/scw).

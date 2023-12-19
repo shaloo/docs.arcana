@@ -7,4 +7,4 @@ Save the unique **{{config.extra.arcana.app_address}}** assigned to the app afte
 
 See [[configure-auth|how to register and configure app]] using the {{config.extra.arcana.dashboard_name}} for details.
 
-After registering and configuring the app, install the {{config.extra.arcana.sdk_name}}.
+After registering and configuring the app, install the requisite {{config.extra.arcana.company_name}} SDKs as per the [[sdk-installation|app-type and use case]].
