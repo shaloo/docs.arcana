@@ -193,8 +193,24 @@
             border-radius: 5px;
     }
 
-    .md-an-marquee {
+    .card-container {
+        display: flex;
+        justify-content: start;
+        justify-items: stretch;
+    }
+
+    .card-cell-left {
         padding: 1rem;
+        border-right: 0.5px solid var(--md-an-color-h2-bottom-rule);
+        line-height: 80%;
+    }
+
+    .card-cell-right {
+        padding: 1rem;
+    }
+
+    .md-an-marquee {
+        padding: 0.5rem;
         margin-bottom: 0.5rem;
     }
 
@@ -337,38 +353,77 @@
 <div class="top-hr md-an-marquee">
     <div class="feature-item">
         <a href="./quick-start/web/index.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_web_app_dark.png#only-dark" width="15%"/><img src="./img/icons/i_web_app_light.png#only-light" width="15%"/> Web Apps</h3>
-                <ul>
-                    <li>Vanilla HTML/CSS/JS</li>
-                    <li>React/NextJS</li>
-                    <li>Vue</li>
-                    <li>Wallet connectors: Wagmi, RainbowKit, Web3-React</li>
-                </ul>
+            <div class="card-container">
+                <div class="a-link-color card-cell-left">
+                    <img src="./img/icons/i_web_app_dark.png#only-dark" width="50%"/>
+                    <img src="./img/icons/i_web_app_light.png#only-light" width="50%"/>
+                    <h3 class="h3-color">Web</h3>
+                </div>
+                <div class="card-cell-right">
+                    <ul>
+                        <li>Vanilla HTML/CSS/JS</li>
+                        <li>React/NextJS</li>
+                        <li>Wallet connectors: Wagmi, RainbowKit, Web3-React</li>
+                        <li>Vue</li>
+                    </ul>                
+                </div>
             </div>
         </a>
     </div>
     <div class="feature-item">
-        <a href="./quick-start/mobile/index.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/mobile-icon-dark.png#only-dark" width="15%"/><img src="./img/icons/mobile-icon-light.png#only-light" width="15%"/> Mobile Apps</h3>
-                <ul>
-                    <li>iOs</li>
-                    <li>Android</li>
-                    <li>Flutter</li>
-                    <li>React-Native</li>
-                </ul>
+      <a href="./quick-start/mobile/index.html">
+            <div class="card-container">
+                <div class="a-link-color card-cell-left">
+                    <img src="./img/icons/mobile-icon-dark.png#only-dark" width="50%"/>
+                    <img src="./img/icons/mobile-icon-light.png#only-light" width="50%"/>
+                    <h3 class="h3-color">Mobile</h3>
+                </div>
+                <div class="card-cell-right">
+                    <ul>
+                        <li>iOs</li>
+                        <li>Android</li>
+                        <li>Flutter</li>
+                        <li>React-Native</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="top-hr md-an-marquee">
+    <div class="feature-item">
+        <a href="./quick-start/gasless-quick-start.html">
+            <div class="card-container">
+                <div class="a-link-color card-cell-left">
+                    <img src="./img/icons/i_an_gastank_dark.png#only-dark"/>
+                    <img src="./img/icons/i_an_gastank_light.png#only-light"/>
+                    <h3 class="h3-color">Gasless</h3>
+                </div>
+                <div class="card-cell-right">
+                    <ul>
+                        <li>Auth SDK built-in feature</li>
+                        <li>Set up Gas Tanks and whitelist app operations</li>
+                        <li>Allow gasless transactions for app users</li>
+                    </ul>
+                </div>
             </div>
         </a>
     </div>
     <div class="feature-item">
         <a href="./quick-start/solana-quick-start.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_solana_dark.png#only-dark" width="20%"/><img src="./img/icons/i_solana_light.png#only-light" width="20%"/> Solana Apps<span class="blink_me_small">New!</span></h3>
-                <ul>
-                    <li>Enable social login in non-EVM chains</li>
-                    <li>Web3 wallet operations</li>
-                </ul>
+            <div class="card-container">
+                <div class="a-link-color card-cell-left">
+                    <img src="./img/icons/i_solana_dark.png#only-dark" width="50%"/>
+                    <img src="./img/icons/i_solana_light.png#only-light" width="50%"/>
+                    <h3 class="h3-color">Solana</h3>
+                </div>
+                <div class="card-cell-right">
+                    <ul>
+                        <li>Social login for non-EVM chains<span class="blink_me_small">New!</span></li>
+                        <li>Supports Solana Apps</li>
+                        <li>Web3 wallet operations</li>
+                    </ul>
+                </div>
             </div>
         </a>
     </div>
@@ -377,24 +432,37 @@
 <div class="top-hr md-an-marquee">
     <div class="feature-item">
         <a href="./quick-start/web/index.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_an_gastank_dark.png#only-dark" width="10%"/><img src="./img/icons/i_an_gastank_light.png#only-light" width="10%"/> Gasless (Standalone) SDK<span class="blink_me_small">Coming Soon!</span></h3>
-                <ul>
-                    <li>Third-party wallet apps</li>
-                    <li>Multi-wallet apps including Arcana Wallet</li>
-                    <li>Gasless apps (No authentication needs)</li>
-                </ul>
+            <div class="card-container">
+                <div class="a-link-color card-cell-left">
+                    <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
+                    <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
+                    <h3 class="h3-color">Gasless SDK</h3>
+                </div>
+                <div class="card-cell-right">
+                    <ul>
+                        <li>Standalone SDK <span class="blink_me_small">Coming Soon!</span></li>
+                        <li>Enable gasless in third-party wallet apps</li>
+                        <li>Supports multi-wallet apps</li>
+                        <li>Gasless apps (No authentication)</li>
+                    </ul>
+                </div>
             </div>
         </a>
     </div>
     <div class="feature-item">
         <a href="./arcana-coming-soon.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/gaming-icon-dark.png#only-dark" width="10%"/> <img src="./img/icons/gaming-icon-light.png#only-light" width="10%"/> Gaming Apps<span class="blink_me_small"><i>Coming soon!</i></span></h3>
-                <ul>
-                    <li>Unity Apps</li>
-                    <!--<li>Unreal</li>-->
-                </ul>
+            <div class="card-container">
+                <div class="a-link-color card-cell-left">
+                    <img src="./img/icons/gaming-icon-dark.png#only-dark" width="50%"/>
+                    <img src="./img/icons/gaming-icon-light.png#only-light" width="50%"/>
+                    <h3 class="h3-color">Gaming Apps</h3>
+                </div>
+                <div class="card-cell-right">
+                    <ul>
+                        <li>Unity Apps<span class="blink_me_small"><i>Coming soon!</i></span></li>
+                        <!--<li>Unreal</li>-->
+                    </ul>
+                </div>
             </div>
         </a> 
     </div>
