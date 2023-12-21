@@ -127,13 +127,14 @@
         font-family: 'Inter', sans-serif;
         font-weight: 300;
         box-sizing: border-box;
-        padding: 1.5rem;
+        /*padding: 1rem;*/
         word-break: break-word;
-        margin: 2rem;
+        margin: 0.2rem;
         border-top: 2px solid var(--md-an-color-light-purple);
         border-radius: 5px;
-        width: 80%;
-        box-shadow: 0px 30px 40px -20px var(--md-an-color-light-purple);
+        /*width: 80%;*/
+        box-shadow: 0px 15px 20px -10px var(--md-an-color-light-purple);
+        flex: 0 1 32%;
     }
 
     .feature-item-2 {
@@ -188,30 +189,33 @@
     .top-hr {
             width: 100%;
             display: flex;
-            max-width: 61rem;
+            flex-wrap: wrap;
+            justify-content: space-between;
             padding: 0.1rem;
             border-radius: 5px;
     }
 
     .card-container {
         display: flex;
-        justify-content: start;
-        justify-items: stretch;
+        justify-content: space-between;
+        justify-items: start;
     }
 
     .card-cell-left {
         padding: 1rem;
-        border-right: 0.5px solid var(--md-an-color-h2-bottom-rule);
-        line-height: 80%;
+        /*border-right: 0.5px solid var(--md-an-color-h2-bottom-rule);
+        line-height: 80%;*/
+        word-break: keep-all;
     }
 
     .card-cell-right {
         padding: 1rem;
+        color: var(--md-default-fg-color);
     }
 
     .md-an-marquee {
-        padding: 0.5rem;
-        margin-bottom: 0.5rem;
+        padding: 0.1rem;
+        margin-bottom: 0.1rem;
     }
 
     @media screen and (max-width:30em) {
@@ -219,6 +223,30 @@
             font-size: 1.4rem;
             color: var(--md-an-hero-content-color);
             font-style: bold;
+        }
+        .ribbon {
+            position: relative;
+            width: 5%;
+            left: 65%;
+        }
+
+        .top-hr {
+            display: block;
+        }
+
+        .feature-item {
+            display: block;
+            cursor: pointer;
+        }
+
+        .card-container {
+            display: block;
+            cursor: pointer;
+        }
+
+        .card-cell-left, .card-cell-right {
+            max-width: 100%; 
+            display: block;
         }
     }
 
@@ -241,6 +269,16 @@
             margin-right: 4.0rem;
             align-items: center;
             color: var(--md-an-hero-content-color);
+        }
+        .feature-item {
+            display: block;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card-container {
+            flex: 0 1 calc(25% - 1em);
+            cursor: pointer;
         }
     }
 
@@ -273,8 +311,14 @@
         }
 
         .feature-item {
-            flex: 1;
-            min-width: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .card-container {
+            flex: 0 1 calc(25% - 1em);
             cursor: pointer;
         }
 
@@ -293,6 +337,12 @@
         .feature-item-2:hover {
             background-color: var(--md-an-card-color-hover);
             border-radius: 3px;
+        }
+
+        .card-container {
+            flex: 1;
+            min-width: 0;
+            cursor: pointer;
         }
     }
 
@@ -340,6 +390,37 @@
         color: var(--md-primary-fg-color);
     }
 
+    .ribbon-container {
+        position: relative;
+        /*background-color: #f0f0f0;*/ /* Adjust background color as desired */
+    }
+
+    .ribbon {
+        position: relative; 
+        left: 10%;
+        top: 50% /* Adjust ribbon overhang */
+        width: 65%; /* Adjust ribbon width */
+        background-color: #960018; /* Adjust ribbon color */
+        transform: rotate(-25deg);
+        color: #fff; /* Adjust text color */
+        padding: 10px 0; /* Adjust text padding */
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); /* Optional shadow */
+          /* Postal stamp edge styling */
+        text-align: center;
+        clip-path: polygon(
+            0 0,
+            calc(100% - 5px) 0,
+            calc(100% - 10px) 15%, 
+            calc(100% - 15px) 30%,
+            calc(100% - 20px) 45%, 
+            calc(100% - 15px) 60%, 
+            calc(100% - 10px) 75%, 
+            calc(100% - 5px) 100%,
+            4px 100%,
+            0% 85%
+        );
+    }
+
 </style>
 
 <section class="md-grid md-typeset">
@@ -355,8 +436,10 @@
         <a href="./quick-start/web/index.html">
             <div class="card-container">
                 <div class="a-link-color card-cell-left">
-                    <img src="./img/icons/i_web_app_dark.png#only-dark" width="50%"/>
-                    <img src="./img/icons/i_web_app_light.png#only-light" width="50%"/>
+                    <div>
+                        <img src="./img/icons/i_web_app_dark.png#only-dark" width="50%"/>
+                        <img src="./img/icons/i_web_app_light.png#only-light" width="50%"/>
+                    </div>
                     <h3 class="h3-color">Web</h3>
                 </div>
                 <div class="card-cell-right">
@@ -374,8 +457,10 @@
       <a href="./quick-start/mobile/index.html">
             <div class="card-container">
                 <div class="a-link-color card-cell-left">
-                    <img src="./img/icons/mobile-icon-dark.png#only-dark" width="50%"/>
-                    <img src="./img/icons/mobile-icon-light.png#only-light" width="50%"/>
+                    <div>
+                        <img src="./img/icons/mobile-icon-dark.png#only-dark" width="50%"/>
+                        <img src="./img/icons/mobile-icon-light.png#only-light" width="50%"/>
+                    </div>
                     <h3 class="h3-color">Mobile</h3>
                 </div>
                 <div class="card-cell-right">
@@ -389,14 +474,15 @@
             </div>
         </a>
     </div>
-</div>
-<div class="top-hr md-an-marquee">
+
     <div class="feature-item">
         <a href="./quick-start/gasless-quick-start.html">
             <div class="card-container">
                 <div class="a-link-color card-cell-left">
-                    <img src="./img/icons/i_an_gastank_dark.png#only-dark"/>
-                    <img src="./img/icons/i_an_gastank_light.png#only-light"/>
+                    <div>
+                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
+                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
+                    </div>
                     <h3 class="h3-color">Gasless</h3>
                 </div>
                 <div class="card-cell-right">
@@ -413,34 +499,38 @@
         <a href="./quick-start/solana-quick-start.html">
             <div class="card-container">
                 <div class="a-link-color card-cell-left">
-                    <img src="./img/icons/i_solana_dark.png#only-dark" width="50%"/>
-                    <img src="./img/icons/i_solana_light.png#only-light" width="50%"/>
+                    <div>
+                        <img src="./img/icons/i_solana_dark.png#only-dark" width="50%"/>
+                        <img src="./img/icons/i_solana_light.png#only-light" width="50%"/>
+                    </div>
                     <h3 class="h3-color">Solana</h3>
+                    <div class="ribbon"><b>New!</b></div>
                 </div>
-                <div class="card-cell-right">
+                <div class="card-cell-right ribbon-container">
                     <ul>
-                        <li>Social login for non-EVM chains<span class="blink_me_small">New!</span></li>
-                        <li>Supports Solana Apps</li>
+                        <li>Social login for non-EVM chains</li>
+                        <li>Easily onboard users on Solana</li>
                         <li>Web3 wallet operations</li>
                     </ul>
                 </div>
             </div>
         </a>
     </div>
-</div>
 
-<div class="top-hr md-an-marquee">
     <div class="feature-item">
         <a href="./quick-start/web/index.html">
             <div class="card-container">
                 <div class="a-link-color card-cell-left">
-                    <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
-                    <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
+                    <div>
+                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
+                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
+                    </div>
                     <h3 class="h3-color">Gasless SDK</h3>
+                    <p><span class="blink_me_small">Coming Soon!</span></p>
                 </div>
                 <div class="card-cell-right">
                     <ul>
-                        <li>Standalone SDK <span class="blink_me_small">Coming Soon!</span></li>
+                        <li>Standalone SDK</li>
                         <li>Enable gasless in third-party wallet apps</li>
                         <li>Supports multi-wallet apps</li>
                         <li>Gasless apps (No authentication)</li>
@@ -453,13 +543,16 @@
         <a href="./arcana-coming-soon.html">
             <div class="card-container">
                 <div class="a-link-color card-cell-left">
-                    <img src="./img/icons/gaming-icon-dark.png#only-dark" width="50%"/>
-                    <img src="./img/icons/gaming-icon-light.png#only-light" width="50%"/>
-                    <h3 class="h3-color">Gaming Apps</h3>
+                    <div>
+                        <img src="./img/icons/gaming-icon-dark.png#only-dark" width="50%"/>
+                        <img src="./img/icons/gaming-icon-light.png#only-light" width="50%"/>
+                    </div>
+                    <h3 class="h3-color">Gaming</h3>
+                    <p><span class="blink_me_small"><i>Coming soon!</i></span></p>
                 </div>
                 <div class="card-cell-right">
                     <ul>
-                        <li>Unity Apps<span class="blink_me_small"><i>Coming soon!</i></span></li>
+                        <li>Unity Apps</li>
                         <!--<li>Unreal</li>-->
                     </ul>
                 </div>
