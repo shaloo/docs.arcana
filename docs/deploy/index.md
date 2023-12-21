@@ -8,6 +8,6 @@ arcana:
 
 #  Deploy Apps
 
-[[deploy-app|Deploy on Arcana Testnet/Mainnet :material-transfer:]]{ .md-button }
+[[deploy-app|Testnet/Mainnet :material-transfer:]]{ .md-button }
 
-[[migrate-app-testnet-mainnet|Migrating apps deployed on Testnet to Mainnet :material-play-network:]]{ .md-button }
+[[migrate-app-testnet-mainnet|Testnet to Mainnet Migration:material-play-network:]]{ .md-button }

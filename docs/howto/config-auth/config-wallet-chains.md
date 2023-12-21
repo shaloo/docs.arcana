@@ -82,7 +82,7 @@ Once you click **Save**, the newly added chain will be displayed in the dashboar
 
 ### Non-EVM Chains
 
-In the current release, only some selected non-EVM chains, Solana blockchains, are supported. Support for other non-EVM chains will be added in the upcoming releases. Developers cannot arbitrarily add non-EVM chains to the preconfigured list in the dashboard. 
+In the current release, only some selected non-EVM chains, [[solana-dashboard-user-guide|Solana blockchains, are supported]]. Support for other non-EVM chains will be added in the upcoming releases. Developers cannot arbitrarily add non-EVM chains to the preconfigured list in the dashboard.
 
 To learn more about the list of supported chains, see [[state-of-the-arcana-auth#supported-blockchains|supported blockchains]].
 

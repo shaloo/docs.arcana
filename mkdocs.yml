@@ -41,13 +41,12 @@ nav:
       - Auth-Core: quick-start/auth-core-quick-start.md
       - Solana Apps: quick-start/solana-quick-start.md
       - Gasless Apps: quick-start/gasless-quick-start.md
-    - New to Web3:  an-academy/new-to-web3.md
     - References:
       - quick-links/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
       - Coming Soon...: arcana-coming-soon.md
       - Dev Resources: dev-resources/index.md
-      - New to Web3:  an-academy/new-to-web3.md
+      - New to Web3: an-academy/new-to-web3.md
       - Audit Reports: 
         - audit/index.md
         - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
@@ -186,7 +185,7 @@ nav:
         - React-Native Apps: howto/mobile/react-native-get-started.md
     - Deploy:
       - deploy/index.md
-      - Deploy on Testnet/Mainnet: howto/deploy-app.md
+      - Testnet/Mainnet: howto/deploy-app.md
       - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md

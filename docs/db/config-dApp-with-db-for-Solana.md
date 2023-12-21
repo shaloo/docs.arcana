@@ -20,7 +20,7 @@ Use the {{config.extra.arcana.dashboard_name}} to first configure user onboardin
 
 ## Register App
 
-To register an app that uses Solana network, create a new app and select the **Non-EVM** chain option. Choose one of the Solana networks as the default. You can change the default Solana chain later via the dashboard. Other options such as selecting the **Wallet UI** for the default built-in {{config.extra.arcana.wallet_name}} or custom wallet UI, cannot be changed later.
+To register an app that uses the Solana network, create a new app and select the **Non-EVM** chain option. Choose one of the Solana networks as the default. You can change the default Solana chain later via the dashboard. Other options such as selecting the **Wallet UI** for the default built-in {{config.extra.arcana.wallet_name}} or custom wallet UI, cannot be changed later.
 
 ![Solana App config card](/img/an_db_new_solana_app_card.gif){.an-screenshots}
 

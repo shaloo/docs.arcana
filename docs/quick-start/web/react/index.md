@@ -10,8 +10,8 @@ arcana:
 
 [[react-nextjs-quick-start|React Apps :material-react::fontawesome-brands-js:]]{ .md-button }
 
-[[wagmi-quick-start|Wagmi Apps :material-transit-connection-variant:]]{ .md-button }
+[[wagmi-quick-start|Wagmi Apps :material-wallet-plus:]]{ .md-button }
 
-[[rainbowkit-quick-start|RainbowKit Apps :material-transit-connection-variant:]]{ .md-button }
+[[rainbowkit-quick-start|RainbowKit Apps :material-wallet-outline:]]{ .md-button }
 
 [[web3-react-quick-start|Web3-React Apps :material-transit-connection-variant:]]{ .md-button }

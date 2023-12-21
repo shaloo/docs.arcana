@@ -8,17 +8,23 @@ arcana:
 
 # Get Started
 
-To use the {{config.extra.arcana.product_name}} product simply configure usage through the {{config.extra.arcana.dashboard_name}}, install the {{config.extra.arcana.sdk_name}} depending upon your app type, integrate the app with the SDK and finally deploy app on the {{config.extra.arcana.company_name}} Testnet/Mainnet. 
+1. **Register** the app and **configure** {{config.extra.arcana.product_name}} usage through the {{config.extra.arcana.dashboard_name}}.
+2. **Install** the required SDKs as per the app type and **integrate the app**.
+3. **Deploy the app** on the {{config.extra.arcana.company_name}} Testnet/Mainnet and allow users to onboard via configured social login options.
 
 === "Register & Configure"
 
-    ## Get Client ID
+    ## Register & Configure
 
     [[index-reg-config|Register & Configure :material-tools:]]{ .md-button }
 
+    [[configure-gasless|Setup gasless transactions :material-gas-station-off:]]{ .md-button }
+
+    [[solana-dashboard-user-guide|Configure non-EVM Solana Chain :chains:]]{ .md-button }
+
 === "Integrate Auth"
 
-    ## App Type
+    ## Integrate Auth
 
     ??? abstract "Desktop/Web Apps"
 
@@ -36,12 +42,18 @@ To use the {{config.extra.arcana.product_name}} product simply configure usage t
 
         [[react-native-quick-start|React-Native Apps :simple-react:]]{ .md-button }
 
-    <!--- TBD Gasless, Auth core, Unity etc. --->
+    ??? abstract "Gasless Apps"
+
+        [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }
+
+    ??? abstract "Solana Apps"
+
+        [[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
 
 === "Deploy App"
 
-    ## Deploy on Testnet / Mainnet
+    ## Deploy App
 
-    [[deploy-app#configure-testnet|Deploy App: Testnet :simple-hive_blockchain:]]{ .md-button }
+    [[deploy-app#configure-testnet|Testnet :simple-hive_blockchain:]]{ .md-button }
 
-    [[deploy-app#configure-mainnet|Deploy App: Mainnet :simple-hive_blockchain:]]{ .md-button }
+    [[deploy-app#configure-mainnet|Mainnet :simple-hive_blockchain:]]{ .md-button }
