@@ -19,6 +19,15 @@ Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} pack
     * Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
     * Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi)
     * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+    * Auth-core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
+
+    {% if config.extra.arcana.exclude_content_tag %}
+
+    {% else %}
+
+     * Apps that need to enable gasless in third-party wallets such as MetaMask or need a standalone gasless SDK with no social login or {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.gasless_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/scw)
+
+    {% endif %}
 
 === "Mobile Apps"
     * Flutter apps: {{config.extra.arcana.flutter_sdk_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
@@ -135,17 +144,19 @@ By default, it enables a *pre-configured list* of chains. App developers can add
 
       To include a new EVM-compatible chain in {{config.extra.arcana.product_name}}'s default pre-configured list, {{config.extra.arcana.company_name}} collaborates strategically with the chain's team/community. While we can add any such chain, our approach aims to increase the {{config.extra.arcana.product_name}} adoption and maximize our reach and engagement within the chain's development community.
 
-!!! info "Non-EVM chain support (Coming soon!)"
+!!! info "Non-EVM chain support"
 
-      We are working on supporting other chains that are not EVM-compatible in the upcoming releases. For e.g., Cosmos, Solana, Near, TON, and Algorand.
+      We are working on supporting other non-EVM chains besides **Solana** in the upcoming releases. For e.g., Cosmos, Near, TON, and Algorand.
 
 #### Gasless Networks
 
-Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/). 
+Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/) in case of apps using the {{config.extra.arcana.wallet_name}}. 
 
-{{config.extra.arcana.product_name}} gasless feature is powered by the Biconomy Gasless SDK. 
+{{config.extra.arcana.product_name}} gasless feature is powered by the Biconomy Gasless SDK.
 
 For more details, see [[configure-gasless|how to configure gasless transactions]]
+
+We are working on providing a standalone gasless SDK soon! This will allow gasless transactions in apps that do not need social login and the {{config.extra.arcana.wallet_name}} or multi-wallet apps that use third-party browser-based wallets such as MetaMask besides the {{config.extra.arcana.wallet_name}}.
 
 ## {{config.extra.arcana.dashboard_name}} 
 

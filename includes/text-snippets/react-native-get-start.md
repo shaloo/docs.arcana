@@ -16,7 +16,7 @@ These are the high level steps to get started with {{config.extra.arcana.product
 
 ## Steps 
 
-### Register & Configure
+### Step 1: Register & Configure
 
 First, [[configure-auth|register and then configure]] the app using the {{config.extra.arcana.dashboard_name}}. As part of the app registration, a unique value, **{{config.extra.arcana.app_address}}**, is assigned to each app. This is required for integrating the app with the {{config.extra.arcana.react_native_sdk_name}}.
 
@@ -26,7 +26,7 @@ During app configuration, developers can [[index-configure-auth|configure one or
 
       If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
 
-### Install Auth SDK
+### Step 2: Install Auth SDK
 
 You need to install the [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native) package to integrate the app with the {{config.extra.arcana.react_native_sdk_name}}.
 
@@ -34,7 +34,7 @@ You need to install the [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name
 
 **Note:** You are **not required** to manually link this module as it supports React Native auto-linking.
 
-### Integrate  {{config.extra.arcana.react_native_sdk_name}}
+### Step 3: Integrate  {{config.extra.arcana.react_native_sdk_name}}
 
 ```jsx
 import React, { useState } from "react";
@@ -205,7 +205,7 @@ Make sure that you specify the unique client ID assigned to the app during regis
 
 After integrating the React-Native app with the {{config.extra.arcana.react_native_sdk_name}} and adding code to onboard users via 'Google', you can deploy the app.  Depending upon the environment selected during the Auth SDK initialization earlier, the app will be deployed on the Arcana Testnet or Mainnet.
 
-### Deploy App
+### Step 4: Deploy App
 
 An app integrated with the {{config.extra.arcana.react_native_sdk_name}} can be deployed for use only **after** the developer has completed these steps:
 
@@ -224,7 +224,11 @@ By default, when an app is registered, a 'Testnet' configuration profile is asso
 
 That is all! :material-party-popper:
 
-The React-Native mobile app is now ready to onboard users. 
+{==
+
+The React-Native mobile app is now ready to onboard users.
+
+==}
 
 After logging in, users instantly access the {{config.extra.arcana.wallet_name}} for Web3 wallet operations through the UI. Developers can also programmatically invoke wallet functions in the React-Native mobile app using supported [Web3 operations](#web3-operations). When a user action or programmatically invoked operation triggers a blockchain transaction, a notification will appear in the React-Native mobile app, prompting the user to review and approve or decline the transaction.
 

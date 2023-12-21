@@ -33,7 +33,9 @@ To implement a {{config.extra.arcana.product_name}} solution where developers ha
  
       When using the {{config.extra.arcana.auth_core_sdk_name}} based auth solution developers must secure authenticated user's cryptographic assets including keys.
 
-## Step 1: Register & Configure App
+## Steps
+
+### Step 1: Register & Configure App
 
 {% include "./text-snippets/quick-start-reg-config.md" %}
 
@@ -43,23 +45,23 @@ To implement a {{config.extra.arcana.product_name}} solution where developers ha
 
       <img class="an-screenshots" src="/img/an_wallet_ui_mode_ignored.gif" alt="Wallet UI Mode Ignored"/>
 
-## Step 2: Install SDK
+### Step 2: Install SDK
 
 After registering the app and configuring Auth usage for the app using the {{config.extra.arcana.dashboard_name}}, developers can install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}` package using one of these options:
 
-### npm
+#### npm
 
 ```sh
 npm install --save @arcana/auth-core
 ```
 
-### yarn
+#### yarn
 
 ```sh
 yarn add @arcana/auth-core
 ```
 
-### CDN
+#### CDN
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@arcana/auth-core"></script>
@@ -69,7 +71,7 @@ yarn add @arcana/auth-core
 <script src="https://unpkg.com/@arcana/auth-core"></script>
 ```
 
-## Step 3: Integrate App
+### Step 3: Integrate App
 
 ```js
 const { AuthProvider, SocialLoginType, CURVE } = window.arcana.auth_core;
@@ -88,20 +90,20 @@ const auth = new AuthProvider({
 });
 ```
 
-## Step 4: Onboard Users
+### Step 4: Onboard Users
 
 Before adding code in the app for using the {{config.extra.arcana.auth_core_sdk_name}} user onboarding functions, make sure you have configured those properly as instructed [[index-configure-auth| here]]. More than one user onboarding mechanism can be enabled in the app:
 
 * Social Login
 * Passwordless
 
-### Social Login
+#### Social Login
 
 ```js
 await auth.loginWithSocial(SocialLoginType.google);
 ```
 
-### Passwordless Login
+#### Passwordless Login
 
 First **initiate** passwordless login:
 
@@ -125,13 +127,13 @@ await auth.handleRedirect();
 
 --->
 
-### Login Status
+#### Login Status
 
 ```js
 const loggedIn = auth.isLoggedIn(); /* boolean response */
 ```
 
-### Get User Info
+#### Get User Info
 
 After successful login, the user information is saved in memory. Before the page unload event, the user information gets stored in session storage. After a successful page reload, it is fetched again to memory and removed from the session storage.
 
@@ -155,7 +157,7 @@ const userInfo = auth.getUserInfo();
 
 For userInfo type details, see [[auth-core-usage-guide#exported-types|Exported Types]].
 
-### Get Public Key
+#### Get Public Key
 
 ```js
 const publicKey = await auth.getPublicKey({
@@ -166,7 +168,7 @@ const publicKey = await auth.getPublicKey({
 
 See [[auth-core-usage-guide#exported-enums|Exported Enums]] for details on SocialLoginType, .
 
-### Logout
+#### Logout
 
 ```js
 await auth.logout();
@@ -174,7 +176,7 @@ await auth.logout();
 
 Refer to the sample code for using Arcana Auth-Core SDK [here](https://github.com/arcana-network/auth-examples) for details on how to onboard users in an app.
 
-## Step 5: Sign Transactions
+### Step 5: Sign Transactions
 
 Once the user has successfully logged into the app, add code to perform Web3 operations such as sign messages, use blockchain send transaction and more.
 
@@ -221,7 +223,11 @@ try {
 
 That's all!!! :material-party-popper:
 
-You have successfully installed the  {{config.extra.arcana.auth_core_sdk_name}} and integrated the Web3 app to onboard users and enable them to sign blockchain transactions easily.
+{==
+
+You have successfully installed and integrated {{config.extra.arcana.auth_core_sdk_name}} with your Web3 app to easily onboard users and enable them to sign blockchain transactions easily.
+
+==}
 
 ## Examples
 

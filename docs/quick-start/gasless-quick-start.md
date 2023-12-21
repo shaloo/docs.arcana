@@ -140,7 +140,11 @@ Finally, [[deploy-app|deploy the app]] on the Testnet/Mainnet to let the users l
 
 **That's all!!!** :material-party-popper:
 
-Your app is now powered by {{config.extra.arcana.product_name}} product to enable gasless transactions.
+{==
+
+Your app is now powered by {{config.extra.arcana.product_name}} gasless transactions.
+
+==}
 
 ## Examples
 
