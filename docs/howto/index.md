@@ -8,7 +8,9 @@ arcana:
 
 # Get Started
 
-To use the {{config.extra.arcana.product_name}} product simply configure usage through the {{config.extra.arcana.dashboard_name}}, install the {{config.extra.arcana.sdk_name}} depending upon your app type, integrate the app with the SDK and finally deploy app on the {{config.extra.arcana.company_name}} Testnet/Mainnet. 
+1. **Register** the app and **configure** {{config.extra.arcana.product_name}} usage through the {{config.extra.arcana.dashboard_name}}.
+2. **Install** the required SDKs as per the app type and **integrate the app**.
+3. **Deploy the app** on the {{config.extra.arcana.company_name}} Testnet/Mainnet and allow users to onboard via configured social login options.
 
 === "Register & Configure"
 
@@ -29,6 +31,10 @@ To use the {{config.extra.arcana.product_name}} product simply configure usage t
         [[handle-provider-events|Handle Events :material-bell-cog:]]{ .md-button }
 
         [[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+
+        [[configure-gasless|Setup gasless transactions :material-gas-station-off:]]{ .md-button }
+
+        [[solana-dashboard-user-guide|Configure non-EVM Solana Chain :chains:]]
 
     ??? abstract "Mobile Apps"
 
