@@ -27,7 +27,7 @@ arcana:
     * Web Apps: _Vanilla JS app_, _React, NextJS_, _Vue_
     * Wallet Connector Framework Apps: _Wagmi_, _RainbowKit_, and _Web3-React_
     * Mobile Apps: _Flutter_, _React-Native_
-    * Gaming Apps: _Unity, Unreal_ (<span class="an-marker-text-highlight">Coming soon!</span>) 
+    * Gaming Apps: _Unity_ (<span class="an-marker-text-highlight">Coming soon!</span>) 
     
     [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
 
@@ -65,6 +65,7 @@ arcana:
     - Quick integration of {{config.extra.arcana.wallet_name}} UI or custom wallet UI for app users.
     - Easy blockchain network integration for authenticated users to sign Web3 operations: send, receive, NFTs, etc.
     - Total control over the blockchain signing experience: display wallet UI during transactions or continuously within the app.
+    - Incentivize user onboarding by enabling gasless transactions in Web3 apps.
 
     **Usage**
 
@@ -142,11 +143,12 @@ arcana:
 
     **Benefits**
 
-    - Easy Web3 app onboarding with the with familiar Web2-like login
+    - Easy Web3 app onboarding via familiar Web2-like login
     - Instant access to Web3 wallet post-login
     - Full ownership and control of private key
-    - Self-recovery for device switches
+    - Self-recovery when switching login device
     - Secure access to owned wallet and assets
+    - Lower transaction costs via gasless operations
 
     **Usage**
 
@@ -158,8 +160,9 @@ arcana:
   <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Rapid onboarding for diverse Web3 apps: vanilla HTML/CSS/JS, React, NextJS, Vue, Wagmi, RainbowKit, Web3-React, and more.</li><li>Quick user authentication with minimal code.</li><li>Customizable onboarding: Web2 social, custom IAM, or passwordless options.</li></ul></p></div>
   <div class="card" markdown><h4><b>:fontawesome-brands-ethereum: Web3 Wallet Transactions</b></h4><hr><p><ul><li>Instant embedded wallet access, within the app's context, for authenticated users to sign blockchain transactions.</li><li>Easy customization of wallet UI for developers to manage user experience for the <a href="{{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.html#supported-blockchains">supported blockchain networks</a>.</li><li>User-friendly Web3 wallet operations: send/receive tokens, manage NFTs, deploy/interact with contracts, etc.</li></ul></p></div>
   <div class="card" markdown><h4><b>:simple-letsencrypt: Secure</b></h4><hr><p><ul><li>Authenticated Web3 app users can securely sign blockchain transactions with ease.</li><li>Powered by state-of-the-art asynchronous distributed key generation for robust, scalable, and private key access security.</li></ul></p></div>
-  <div class="card" markdown><h4><b>:material-gas-station: Gasless Transactions</b></h4><hr><p><ul><li>Developers can specify which app operations are gasless.</li><li>Easy to set up gas tanks and deposit gas fees.</li><li>Users don't pay gas fees for gasless transactions; third party sponsors or app developers pay gas fees.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:material-gas-station: Gasless Transactions</b></h4><hr><p><ul><li>Developers can specify which app operations are gasless.</li><li>Easy to set up gas tanks and deposit gas fees.</li><li>Users don't pay gas fees for gasless transactions; third-party sponsors or app developers pay gas fees.</li></ul></p></div>
   <div class="card" markdown><h4><b>:material-gesture-tap-button: Easy to Use</b></h4><hr><p><ul><li>Embedded, non-custodial wallet displayed within the app context.</li><li>No browser extensions are required to use the wallet.<li>No seed phrases required, no key management complexity to enable users to sign transactions.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:chains: Solana</b></h4><hr><p><ul><li>Supports non-EVM compatible chains such as Solana.</li><li>Easily onboard users in Solana app.<li>Enable Web3 wallet operations supported by Solana blockchain.</li></ul></p></div>
 </div>
 
 <!--

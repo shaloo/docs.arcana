@@ -8,8 +8,6 @@ arcana:
 
 # Quick Start
 
-Select the suitable {{config.extra.arcana.sdk_name}} Quick Start Guide based on your application's type.
-
 [[web-apps-quick-start|Desktop/Web Apps :fontawesome-solid-desktop:]]{ .md-button }
 
 [[mobile-quick-start|Mobile Apps :fontawesome-solid-mobile-screen:]]{ .md-button }
