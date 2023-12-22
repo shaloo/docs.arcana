@@ -42,7 +42,7 @@ If you select EVM chain type, there are multiple blockchain network options that
 
 ![Chain Management EVM](/img/an_db_evm_only_preconfigured_list.gif){.an-screenshots}
 
-The preconfigured list can be updated by the app developer. It governs the list of chains that are available out of the box and displayed in {{config.extra.arcana.wallet_name}} UI for authenticated app users. By default, for non-EVM chain type, **Ethereum** is set as the active chain by default.
+The out-of-the-box list can be updated by the app developer. It governs the list of chains that are available out of the box and displayed in {{config.extra.arcana.wallet_name}} UI for authenticated app users. By default, for non-EVM chain type, **Ethereum** is set as the active chain by default.
 
 <img class="width_35pc an-screenshots" src="/img/an_db_default_subset_wallet_chains.gif" alt="Default subset of chains in wallet UI"/>
 
@@ -56,7 +56,7 @@ See [[solana-dashboard-user-guide|how to setup Solana]] and [[solana-quick-start
 
 ## Step 3: Edit Default Active Chain
 
-To switch the default active chain simply select the new chain in the {{config.extra.arcana.dashboard_name}} preconfigured list, click "..." ellipses and select the 'set as default' option. The figure below illustrates Polygon as the default active chain instead of Ethereum.
+To switch the default active chain simply select the new chain in the {{config.extra.arcana.dashboard_name}} out-of-the-box list, click "..." ellipses and select the 'set as default' option. The figure below illustrates Polygon as the default active chain instead of Ethereum.
 
 ![Change default chain](/img/an_db_set_default_chain.gif){.an-screenshots}
 
@@ -82,7 +82,7 @@ Once you click **Save**, the newly added chain will be displayed in the dashboar
 
 ### Non-EVM Chains
 
-In the current release, only some selected non-EVM chains, [[solana-dashboard-user-guide|Solana blockchains, are supported]]. Support for other non-EVM chains will be added in the upcoming releases. Developers cannot arbitrarily add non-EVM chains to the preconfigured list in the dashboard.
+In the current release, only some selected non-EVM chains, [[solana-dashboard-user-guide|Solana blockchains, are supported]]. Support for other non-EVM chains will be added in the upcoming releases. Developers cannot arbitrarily add non-EVM chains to the out-of-the-box list in the dashboard.
 
 To learn more about the list of supported chains, see [[state-of-the-arcana-auth#supported-blockchains|supported blockchains]].
 

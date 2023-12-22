@@ -1,8 +1,11 @@
+.an-screenshots
 .dmg
 .json
 .md-button
 .pdf
 .png
+.width_35pc
+.width_50pc
 0x5ff137d4b0fdcd49dca30c7cf57e578a026d2789
 2MB
 2a
@@ -188,6 +191,7 @@ EVM
 EVM-compatible
 EmailID
 EntryPoint
+Enums
 EoA
 Ethereum
 Ethereum-compatible
@@ -212,6 +216,7 @@ Golang
 GoogleStep1Text
 GoogleStep2Text
 GoogleStep3Text
+Grafana
 HD
 HDWallet
 HTML
@@ -277,6 +282,7 @@ Non-EVM
 Nopending
 OAuth
 OAuth2
+OAuth2.0
 OTP
 Okta
 Onboarding
@@ -354,6 +360,7 @@ SignStgMsgMetaTxText
 SignStgMsgTxGenText
 SocialLoginType
 SocialOAuthStep1SkipText
+Solana
 Staking
 StarterAppTutLinkText
 StarterKitAppLinkText
@@ -494,6 +501,7 @@ aggregatelogin
 al.
 already_in_UI_mode
 an-faq
+an-screenshots-noeffects
 an-trbs
 an_academyindex
 anacademy
@@ -563,6 +571,7 @@ checksums
 chunkSize
 ciphertext
 cleartext
+clickjacking
 clientID
 clientId
 cognito
@@ -593,6 +602,7 @@ concept-index-custom-auth
 concept-jwt-token-validation
 concept-keyspace-type
 concept-mfa
+concept-non-evm-chains
 concept-plug-and-play-auth
 concept-pwdless-auth
 concept-social-auth
@@ -681,6 +691,7 @@ dropdown
 enabledelegate
 encryptfilewallet
 encrytion-and-kms
+endif
 enum
 enums
 et
@@ -699,10 +710,12 @@ ethers
 example-new-mainnet-authprovider
 executables
 explainer
+exported-enums
 faq-auth
 faq-db
 faq-gasless
 faq-gen
+faq-solana
 faq-validator
 faq_auth
 faq_db
@@ -751,6 +764,9 @@ frictionless
 gRPC
 gasless
 gasless-enabled
+gasless-quick-start
+gasless-sdk
+gasless-sdk-usage-guide
 generatedelegatekey
 getAvailableLogins
 getPublicKey
@@ -1006,6 +1022,7 @@ index-react-nextjs-build-social-providers
 index-react-nextjs-custom-ui-onboard-users
 index-react-nextjs-onboard-users
 index-reg-config
+index-sdk-ref
 index-validators
 index-vue-build-iam-providers
 index-vue-build-social-providers
@@ -1081,6 +1098,7 @@ nextjscodesample
 no-UI
 non-Arcana
 non-EVM
+non-evm-chains
 npm
 octicons-checkbox-16
 octicons-cross-reference-16
@@ -1191,7 +1209,11 @@ signup
 simple-bookstack
 simple-hive_blockchain
 simple-nextdotjs
+site-url
 socialauth
+solana-dashboard-user-guide
+solana-quick-start
+solana-wallet-ops
 stackoverflow
 staking
 state-of-the-arcana-auth
@@ -1218,6 +1240,7 @@ twitteroauth
 tx
 ui
 uitemplates
+ulimit
 un-delegate
 understandingan
 unstake
@@ -1240,6 +1263,9 @@ user0p
 userInfo
 usingminter
 usingreactconn
+v0.2.x
+v0.3.0
+v1.0
 v1.0.0
 v1.0.1
 v1.0.2
@@ -1249,7 +1275,9 @@ v1.0.5
 v1.0.6
 v1.0.7
 v1.0.8
+v1.0.9-beta.2
 v2
+v2.0
 vOct12-23-gasless
 validator
 validator_nodes

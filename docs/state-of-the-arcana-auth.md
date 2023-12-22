@@ -19,7 +19,7 @@ Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} pack
     * Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
     * Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi)
     * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
-    * Auth-core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
+    * Auth-Core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
 
     {% if config.extra.arcana.exclude_content_tag %}
 
@@ -150,7 +150,7 @@ By default, it enables a *pre-configured list* of chains. App developers can add
 
 #### Gasless Networks
 
-Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/) in case of apps using the {{config.extra.arcana.wallet_name}}. 
+Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/supportedchains/) in case of apps using the {{config.extra.arcana.wallet_name}}. 
 
 {{config.extra.arcana.product_name}} gasless feature is powered by the Biconomy Gasless SDK.
 

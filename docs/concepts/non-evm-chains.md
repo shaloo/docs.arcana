@@ -20,7 +20,7 @@ arcana:
 
 ## Adding Chains
 
-When using non-EVM chains such as Solana, the developers and users cannot arbitrarily add any of the supported non-EVM chains in the {{config.extra.arcana.wallet_name}}. This is because, unlike the EVM-compatible chains, there is **no no uniform standard across non-EVM chains**.
+When using non-EVM chains such as Solana, the developers and users cannot arbitrarily add any of the supported non-EVM chains in the {{config.extra.arcana.wallet_name}}. This is because, unlike the EVM-compatible chains, there is **no uniform standard across non-EVM chains**.
 
 For details on how to add Solana and other non-EVM chains, refer to the [[dashboard-user-guide#non-evm-chains|'Non-EVM chains' section in the]] {{config.extra.arcana.dashboard_name}} User's Guide.
 

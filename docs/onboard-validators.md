@@ -53,7 +53,7 @@ Preferably deploy Ubuntu Linux v20.04.4 LTS or higher.
 * [Install Golang](https://go.dev/doc/install) v1.17
 --->
 
-**Ulimit Settings**
+**`ulimit` Settings**
 
 Use the following command to check the `ulimit` settings for open file descriptors (default):
 

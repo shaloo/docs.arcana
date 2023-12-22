@@ -46,7 +46,7 @@ The wallet displays a 'Preview' button to allow for user confirmation before the
 
 ## Receive Tokens
 
-To receive tokens, the app does not need to call any JSON RPC calls. Simply share the user's wallet address or OR code with the sender.
+To receive tokens, the app does not need to call any JSON RPC calls. Simply share the user's wallet address or QR code with the sender.
 
 **That is all!**  :material-party-popper:
 *The app is all set to programmatically send tokens using the {{config.extra.arcana.wallet_name}}.*

@@ -166,7 +166,7 @@ After logging in, users instantly access the {{config.extra.arcana.wallet_name}}
 
 ## See also
 
-* [Auth-Flutter SDK Usage Guide](https://pub.dev/packages/arcana_auth_flutter)
+* [Auth Flutter SDK Usage Guide](https://pub.dev/packages/arcana_auth_flutter)
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
 * [[index-video-tutorials|Video Tutorials]]
 * [Flutter app integration example](https://github.com/arcana-network/auth-examples)

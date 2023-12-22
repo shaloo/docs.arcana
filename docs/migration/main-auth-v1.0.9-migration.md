@@ -27,7 +27,7 @@ This is a major release of the {{config.extra.arcana.product_name}} product sinc
 * {{config.extra.arcana.sdk_name}}
   - Global Keys feature does not require setting up social logins via the social provider's console
   - Enhanced security to block clickjacking
-  - New API _arcana_getPublicKey
+  - New API `_arcana_getPublicKey`
 
 * New {{config.extra.arcana.auth_core_sdk_pkg_name}} SDK allows greater customization flexibility with custom Wallet UI
 
