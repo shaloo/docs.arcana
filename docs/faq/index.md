@@ -16,4 +16,4 @@ arcana:
 
 [[faq-gasless| Gasless Transactions]]{ .md-button }
 
-[[faq-solana| Using Solana]]{ .md-button }
+[[faq-solana| Solana]]{ .md-button }

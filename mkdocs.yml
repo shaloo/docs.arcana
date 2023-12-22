@@ -14,6 +14,7 @@ site_description: >-
   
 exclude_docs: |
   /integrations/*
+  gasless-sdk/gasless-sdk-usage-guide.md
 
 nav: 
   - Arcana Auth:
@@ -217,9 +218,9 @@ nav:
           - Gasless Errors: web-sdk/gasless-error-msg.md
     - Changelog:
       - changelog/index.md
-      - Auth SDK Changelog: https://github.com/arcana-network/auth/releases/tag/v1.0.8
-      - Dashboard Changelog: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.6
-      - Wallet Changelog: https://github.com/arcana-network/wallet-ui/releases/tag/1.0.6
+      - Auth SDK: https://github.com/arcana-network/auth/releases/tag/v1.0.8
+      - Dashboard: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.6
+      - Wallet-UI: https://github.com/arcana-network/wallet-ui/releases/tag/1.0.6
     - Archives: 
       - archives/index.md
       - Release Notes:
