@@ -8,12 +8,12 @@ arcana:
 
 # FAQ
 
-[[faq-gen|General Queries]]{ .md-button }
+[[faq-gen|General]]{ .md-button }
 
-[[faq-db| {{config.extra.arcana.dashboard_name}} Queries]]{ .md-button }
+[[faq-db| {{config.extra.arcana.dashboard_name}}]]{ .md-button }
 
-[[faq-auth| {{config.extra.arcana.sdk_name}} Usage Queries]]{ .md-button }
+[[faq-auth| {{config.extra.arcana.sdk_name}}]]{ .md-button }
 
-[[faq-gasless| Gasless Transaction Queries]]{ .md-button }
+[[faq-gasless| Gasless Transactions]]{ .md-button }
 
-[[faq-solana| Solana: Non-EVM Chain]]{ .md-button }
+[[faq-solana| Solana]]{ .md-button }
