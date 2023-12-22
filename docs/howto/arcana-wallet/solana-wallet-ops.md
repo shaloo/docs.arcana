@@ -20,7 +20,7 @@ const publicKey = await auth.solana.request({
 
 The `publicKey` is returned as a string: ["your-public-key-in-string-format"].
 
-## SignMessage
+## `SignMessage` Operation
 
 ```js
   const encodedMessage = new TextEncoder().encode(message);
@@ -42,7 +42,7 @@ The `publicKey` is returned as a string: ["your-public-key-in-string-format"].
   }
 ```
 
-## SignTransaction
+## `SignTransaction` Operation
 
 ```js
   const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey)
@@ -107,7 +107,7 @@ message: {
 }
 ```
 
-## SignAllTransactions
+## `SignAllTransactions` Operation
 
 ```js
 const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey);
@@ -152,7 +152,7 @@ The signature format here is same as above with a minor difference:
 [Signature0, Signature1, Signature2, and so on]
 ```
 
-## SignAndSendTransaction
+## `SignAndSendTransaction` Operation
 
 ```js
 onst pk = new SolanaWeb3.PublicKey(auth.solana.publicKey);

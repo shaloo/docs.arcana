@@ -30,7 +30,7 @@ The {{config.extra.arcana.product_name}} product consists of the following compo
 
 * [{{config.extra.arcana.wallet_name}} UI](https://github.com/arcana-network/wallet-ui)
 
-In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{config.extra.arcana.auth_core_sdk_name}} for higher customizability and custom wallet UI support.
+In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{config.extra.arcana.auth_core_sdk_name}} for greater flexibility in using authentication features and custom wallet UI support.
 
 * [{{config.extra.arcana.auth_core_sdk_name}}](https://www.npmjs.com/package/@arcana/auth-core)
 

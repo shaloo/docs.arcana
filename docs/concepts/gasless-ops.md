@@ -25,7 +25,7 @@ Once gas tanks are configured, developers can seamlessly integrate their app wit
 
 ### Supported Chains
 
-The {{config.extra.arcana.product_name}} product gasless feature is powered by [Biconomy Gasless SDK v2](https://docs.biconomy.io/docs/overview). Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable gasless operations in the app for one or more of the [supported chains](https://docs.biconomy.io/docs/supportedchains/).
+The {{config.extra.arcana.product_name}} product gasless feature is powered by [Biconomy Gasless SDK v2](https://docs.biconomy.io/). Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable gasless operations in the app for one or more of the [supported chains](https://docs.biconomy.io/supportedchains/).
 
 ### Gas Tank Owner
 
