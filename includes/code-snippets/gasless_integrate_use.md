@@ -2,7 +2,7 @@ Install the {{config.extra.arcana.gasless_sdk_name}}:
 
 {% include "./code-snippets/gasless_sdk_install.md" %}
 
-Initialize the {{config.extra.arcana.gasless_sdk_name}} using the unique app identifier obtained via the {{config.extra.arcana.dashboard_name}} after registering the app. You need to also provide the browser-based wallet ERC-1193 Ethereum provider for enabling gasless operations in that wallet.
+Initialize the {{config.extra.arcana.gasless_sdk_name}} using the unique app identifier obtained via the {{config.extra.arcana.dashboard_name}} after registering the app. You need to also provide the browser-based wallet EIP-1193 Ethereum provider for enabling gasless operations in that wallet.
 
 During initialization, the gasless SDK creates an SCW account associated with the EoA account corresponding to the provider `window.ethereum`. All gasless transactions use this SCW account address.
 

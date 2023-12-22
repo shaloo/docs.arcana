@@ -8,7 +8,7 @@ arcana:
 
 # Solana: {{config.extra.arcana.dashboard_name}} Setup
 
-This guide explains how to activate Solana, a [[concept-non-evm-chains|non-EVM-compatible blockchain]] in a Web3 app and allow users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
+This guide explains how to activate Solana, a [[concept-non-evm-chains|non-EVM blockchain]] in a Web3 app and allow users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
 
 Use the {{config.extra.arcana.dashboard_name}} to first configure user onboarding settings, select Solana and tailor the blockchain signing experience for an app and then integrate the app with the {{config.extra.arcana.sdk_name}}. 
 

@@ -53,7 +53,7 @@ Make sure you add *Cognito User Pool* in the **Identity Provider** section of th
 
 For the **OAuth 2.0 Grant Type** setting, make sure you specify *Authorization Code Grant* and *Implicit Grant* values as shown in the figure below:
 
-![Cognito Oauth2.0 Grant Type](/img/an_dApp_cognito_app_client_oauth2_grant.png){.an-screenshots}
+![Cognito OAuth2.0 Grant Type](/img/an_dApp_cognito_app_client_oauth2_grant.png){.an-screenshots}
 
 In the **Custom Scope** section, ensure that the attribute **EmailID** has read access. This is used by {{config.extra.arcana.sdk_name}} to enable the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature.
 

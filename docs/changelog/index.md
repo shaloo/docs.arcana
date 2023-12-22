@@ -12,4 +12,4 @@ arcana:
 
 [Dashboard Changelog :material-plus-minus-box:](https://github.com/arcana-network/developer-dashboard/releases/tag/v{{config.extra.arcana.latest_version_dashboard}}){ .md-button }
 
-[Wallet-UI Changelog :material-wallet-plus-outline:](https://github.com/arcana-network/wallet-ui/releases/tag/{{config.extra.arcana.latest_version_wallet_ui}}){ .md-button }
+[Wallet UI Changelog :material-wallet-plus-outline:](https://github.com/arcana-network/wallet-ui/releases/tag/{{config.extra.arcana.latest_version_wallet_ui}}){ .md-button }
