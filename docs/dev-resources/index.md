@@ -16,8 +16,6 @@ arcana:
 
 [[index-dev-guides| Developer Guides :simple-bookstack:]]{ .md-button }
 
-[[index-faq| FAQ :material-head-question:]]{ .md-button }
-
 [[index-changelog| Changelog :material-vector-difference:]]{ .md-button }
 
 [[index-archives| Archives :material-archive-settings:]]{ .md-button }
