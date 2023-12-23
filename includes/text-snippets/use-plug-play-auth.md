@@ -24,7 +24,7 @@ After successfully integrating the app with the {{config.extra.arcana.sdk_name}}
 
 The `connect()` function will bring up the plug-and-play pop-up modal in the app context and display the available options for user onboarding. Only those options are displayed that were earlier configured by the developer using the {{config.extra.arcana.dashboard_name}}.
 
-The figure below shows the plug-and-play login UI screen for a test app. All the authentication providers configured by the developer are available as the onboarding options. The passwordless login option is enabled by default.
+The figure below shows the built-in, plug-and-play login UI screen for a test app. All the authentication providers configured by the developer are displayed as the onboarding options in this login UI. Passwordless login option is automatically enabled and requires no dashboard set up.
 
 ![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
 
