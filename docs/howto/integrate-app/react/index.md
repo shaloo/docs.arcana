@@ -12,9 +12,9 @@ arcana:
 
 Select **one of the options below** as per your application type.
 
-[[integrate-react-nextjs-app|Integrate React/NextJS  :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button } 
+[[integrate-react-nextjs-app|React/NextJS  :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button } 
 
-[[integrate-wagmi-app|Integrate Wagmi Connector :material-card-account-mail:]]{ .md-button } 
+[[integrate-wagmi-app|Wagmi Connector :material-card-account-mail:]]{ .md-button } 
 
 [[integrate-rainbow-app|RainbowKit Connector :material-card-account-mail:]]{ .md-button }
 

@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ../../..
 ---
 
-# Web3-React App: Plug-and-Play Auth 
+# Plug-and-Play Login UI 
 
 With [Web3-React](https://www.npmjs.com/package/web3-react) wallet connector framework, developers can allow app users to easily switch between multiple wallets within a single application. The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Web3-React connector that enables the {{config.extra.arcana.wallet_name}} in apps using Web3-React.
 

@@ -9,10 +9,10 @@ arcana:
 
 # Custom Login UI
 
-[[build-password-less-auth|Enable Passwordless Auth :material-email-open-outline:]]{ .md-button }
+[[build-password-less-auth|Passwordless Auth :material-email-open-outline:]]{ .md-button }
 
-[[index-build-social-providers|Enable Social Auth :fontawesome-solid-users:]]{ .md-button } 
+[[index-build-social-providers|Social Auth :fontawesome-solid-users:]]{ .md-button } 
 
-[[index-build-iam-providers|Enable Custom IAM Auth :fontawesome-brands-aws:]]{ .md-button }
+[[index-build-iam-providers|Custom IAM Auth :fontawesome-brands-aws:]]{ .md-button }
 
 Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for sample applications that use custom login UI to onboard users.

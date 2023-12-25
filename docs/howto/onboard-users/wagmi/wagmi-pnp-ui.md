@@ -1,12 +1,12 @@
 ---
 alias: onboard-wagmi-app-pnp-ui
-title: 'Wagmi App: Plug-and-Play Auth'
+title: 'Plug-and-Play Auth'
 description: 'Onboard Users via Plug-and-Play Auth in Web3 Wagmi apps integrated with the Arcana Auth and Arcana Auth Wagmi SDKs using the instructions listed here.'
 arcana:
   root_rel_path: ../../../..
 ---
 
-# Wagmi App: Plug-and-Play Auth 
+# Plug-and-Play Login UI 
 
 With Wagmi wallet connectors, Web3 developers can allow app users to easily switch between multiple wallets within a single application. Wagmi apps can use the custom connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}}.
 

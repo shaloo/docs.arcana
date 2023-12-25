@@ -97,7 +97,7 @@ nav:
           - howto/onboard-users/index.md
           - Vanilla JS Apps:
             - howto/onboard-users/vanilla/index.md
-            - Plug-and-Play Auth: howto/onboard-users/vanilla/use-plug-play-auth.md
+            - Plug-and-Play Login UI: howto/onboard-users/vanilla/use-plug-play-auth.md
             - Custom Login UI:
               - howto/onboard-users/vanilla/custom-ui/index.md
               - Passwordless Auth: howto/onboard-users/vanilla/custom-ui/build-pwdless-auth.md
@@ -117,11 +117,11 @@ nav:
             - howto/onboard-users/react/index.md
             - React/NextJS Apps: 
               - howto/onboard-users/react-nextjs/index.md
-              - Plug-and-Play Auth: howto/onboard-users/react-nextjs/use-plug-play-auth.md
+              - Plug-and-Play Login UI: howto/onboard-users/react-nextjs/use-plug-play-auth.md
               - Custom Login UI:
                 - howto/onboard-users/react-nextjs/custom-ui/index.md
-                - Build Passwordless Auth: howto/onboard-users/react-nextjs/custom-ui/build-pwdless-auth.md
-                - Build Social Auth: 
+                - Passwordless Auth: howto/onboard-users/react-nextjs/custom-ui/build-pwdless-auth.md
+                - Social Auth: 
                   - howto/onboard-users/react-nextjs/custom-ui/build-social/index.md
                   - Discord: howto/onboard-users/react-nextjs/custom-ui/build-social/discord-oauth.md
                   - GitHub: howto/onboard-users/react-nextjs/custom-ui/build-social/github-oauth.md
@@ -129,29 +129,29 @@ nav:
                   - Steam: howto/onboard-users/react-nextjs/custom-ui/build-social/steam-oauth.md
                   - Twitch: howto/onboard-users/react-nextjs/custom-ui/build-social/twitch-oauth.md
                   - Twitter: howto/onboard-users/react-nextjs/custom-ui/build-social/twitter-oauth.md
-                - Build Custom Auth:
+                - Custom Auth:
                   - howto/onboard-users/react-nextjs/custom-ui/build-idm/index.md
                   - Cognito: howto/onboard-users/react-nextjs/custom-ui/build-idm/cognito-oauth.md
                   - Firebase: howto/onboard-users/react-nextjs/custom-ui/build-idm/firebase-login.md
             - Wagmi Apps: 
               - howto/onboard-users/wagmi/index.md
-              - Plug-and-Play Auth: howto/onboard-users/wagmi/wagmi-pnp-ui.md
+              - Plug-and-Play Login UI: howto/onboard-users/wagmi/wagmi-pnp-ui.md
               - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
             - RainbowKit Apps: 
               - howto/onboard-users/rainbow/index.md
-              - Plug-and-Play Auth: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
+              - Plug-and-Play Login UI: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
               - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
             - Web3-React Apps:
               - howto/onboard-users/web3-react/index.md
-              - Plug-and-Play Auth: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
+              - Plug-and-Play Login UI: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
               - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
           - Vue Apps: 
               - howto/onboard-users/vue/index.md
-              - Plug-and-Play Auth: howto/onboard-users/vue/use-plug-play-auth.md
+              - Plug-and-Play Login UI: howto/onboard-users/vue/use-plug-play-auth.md
               - Custom Login UI:
                 - howto/onboard-users/vue/custom-ui/index.md
-                - Build Passwordless Auth: howto/onboard-users/vue/custom-ui/build-pwdless-auth.md
-                - Build Social Auth: 
+                - Passwordless Auth: howto/onboard-users/vue/custom-ui/build-pwdless-auth.md
+                - Social Auth: 
                   - howto/onboard-users/vue/custom-ui/build-social/index.md
                   - Discord: howto/onboard-users/vue/custom-ui/build-social/discord-oauth.md
                   - GitHub: howto/onboard-users/vue/custom-ui/build-social/github-oauth.md
@@ -159,7 +159,7 @@ nav:
                   - Steam: howto/onboard-users/vue/custom-ui/build-social/steam-oauth.md
                   - Twitch: howto/onboard-users/vue/custom-ui/build-social/twitch-oauth.md
                   - Twitter: howto/onboard-users/vue/custom-ui/build-social/twitter-oauth.md
-                - Build Custom Auth:
+                - Custom Auth:
                   - howto/onboard-users/vue/custom-ui/build-idm/index.md
                   - Cognito: howto/onboard-users/vue/custom-ui/build-idm/cognito-oauth.md
                   - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
@@ -334,7 +334,7 @@ nav:
       - Manage Chains: concepts/manage-chains.md
       - MFA: concepts/mfa.md
       - Non-EVM Chains: concepts/non-evm-chains.md
-      - Plug and Play Auth: concepts/plug-and-play-auth.md
+      - Plug-and-Play Auth: concepts/plug-and-play-auth.md
       - Private Key: concepts/private-key.md
       - Smart Contracts:
         - concepts/ansmartc/index.md

@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ../..
 ---
 
-# RainbowKit App: Custom Login UI
+# Custom Login UI
 
 [RainbowKit](https://www.rainbowkit.com/) works with [Wagmi](https://wagmi.sh/) wallet connector that allows Web3 app users to easily switch between multiple wallets within a single application. RainbowKit apps can use the custom connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}} in the app's context.
 
