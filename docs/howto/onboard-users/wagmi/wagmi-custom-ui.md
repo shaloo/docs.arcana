@@ -1,12 +1,12 @@
 ---
 alias: onboard-wagmi-app-custom-ui
-title: 'Wagmi App: Custom Login UI'
+title: 'Custom Login UI'
 description: 'Onboard Users via custom login UI in Web3 Wagmi apps integrated with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../../../..
 ---
 
-# Wagmi App: Custom Login UI
+# Custom Login UI
 
 With Wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. Wagmi apps can use the custom connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}}.
 

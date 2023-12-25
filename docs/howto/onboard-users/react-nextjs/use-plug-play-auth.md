@@ -7,7 +7,7 @@ arcana:
   app_type: "'React/NextJS'"
 ---
 
-# Plug-and-Play Auth
+# Plug-and-Play Login UI
 
 In this guide, you will learn how {{page.meta.arcana.app_type}} Web3 apps can integrate with the {{config.extra.arcana.product_name}} product and onboard users through the built-in, [[concept-plug-and-play-auth|plug-and-play ]] login UI. 
 
