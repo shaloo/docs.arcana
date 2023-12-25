@@ -1,15 +1,15 @@
 ---
 alias: index-integrate-app-type
-title: 'Integrate Web App type'
+title: 'Integrate Web Apps'
 description: 'Integrate Web3 apps of various types with the Arcana Auth SDK using the instructions specific for the app type.'
 arcana:
   root_rel_path: ../../..
 ---
 
-# Web App Type
+# Integrate Web Apps
 
-[[integrate-vanilla-app|Integrate Vanilla JS App :material-language-javascript:]]{ .md-button }
+[[integrate-vanilla-app|Vanilla JS App :material-language-javascript:]]{ .md-button }
 
-[[index-integrate-react-app|Integrate React App :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button }
+[[index-integrate-react-app|React App :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button }
 
-[[integrate-vue-app|Integrate Vue App :material-vuejs:]]{ .md-button }
+[[integrate-vue-app|Vue App :material-vuejs:]]{ .md-button }

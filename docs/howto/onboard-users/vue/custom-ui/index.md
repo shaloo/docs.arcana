@@ -9,8 +9,8 @@ arcana:
 
 # Custom Login UI
 
-[[vue-build-password-less-auth|Enable Passwordless Auth :material-email-open-outline:]]{ .md-button }
+[[vue-build-password-less-auth|Passwordless Auth :material-email-open-outline:]]{ .md-button }
 
-[[index-vue-build-social-providers|Enable Social Auth :fontawesome-solid-users:]]{ .md-button } 
+[[index-vue-build-social-providers|Social Auth :fontawesome-solid-users:]]{ .md-button } 
 
-[[index-vue-build-iam-providers|Enable Custom IAM Auth :fontawesome-brands-aws:]]{ .md-button }
+[[index-vue-build-iam-providers|Custom IAM Auth :fontawesome-brands-aws:]]{ .md-button }

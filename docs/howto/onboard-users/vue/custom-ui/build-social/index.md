@@ -1,13 +1,13 @@
 ---
 alias: index-vue-build-social-providers
-title: 'Build Social Auth'
+title: 'Build Custom Social Auth'
 description: 'List of Social Authentication Providers supported by Arcana Auth. Learn how developers can onboard app users with a custom login UI and enable social authentication in apps integrated with the Arcana SDK.'
 arcana:
   root_rel_path: ../../../../..
   app_type: "Vue"
 ---
 
-# Build Social Auth
+# Build Custom Social Auth
 
 Developers can choose to **not** use the plug-and-play login UI and instead build a custom login UI to onboard users. 
 

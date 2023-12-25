@@ -20,6 +20,8 @@ Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} pack
     * Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi)
     * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
     * Auth-Core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
+    * Gasless Transactions with {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
+    * Solana Apps: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
 
     {% if config.extra.arcana.exclude_content_tag %}
 
