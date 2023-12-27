@@ -83,5 +83,6 @@ See [[index-wagmi-onboard-users|for details.]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
+* {% include "./text-snippets/wagmi_authsdkref_url.md" %}
 * [`{{config.extra.arcana.wagmi_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-react/blob/main/README.md)
 

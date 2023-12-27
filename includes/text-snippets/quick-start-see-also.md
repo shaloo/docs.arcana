@@ -10,6 +10,7 @@
     * [[web-auth-error-msg|Handling {{config.extra.arcana.sdk_name}} error messages]]
     * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
     * {% include "./text-snippets/authsdkref_url.md" %}
+    * {% include "./text-snippets/wagmi_authsdkref_url.md" %}
 
 === "User Guides"
 
