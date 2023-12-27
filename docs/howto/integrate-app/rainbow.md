@@ -81,3 +81,4 @@ After integrating with a Web3 RainbowKit app with the {{config.extra.arcana.sdk_
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
+* {% include "./text-snippets/wagmi_authsdkref_url.md" %}

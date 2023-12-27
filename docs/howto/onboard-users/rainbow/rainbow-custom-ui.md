@@ -91,3 +91,4 @@ After integrating and onboarding users in the Web3 app developers can add code p
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}
+* {% include "./text-snippets/wagmi_authsdkref_url.md" %}
