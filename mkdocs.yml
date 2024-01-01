@@ -225,7 +225,7 @@ nav:
       - archives/index.md
       - Release Notes:
         - relnotes/archives/index.md
-        - Auth 1.0.9-beta.2 : relnotes/rn-main-auth-v1.0.9.md
+        - Auth 1.0.9-beta.3 : relnotes/rn-main-auth-v1.0.9.md
         - Auth Oct12-23-gasless: relnotes/rn-main-auth-vOct12-23-gasless.md
         - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
         - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
@@ -240,7 +240,7 @@ nav:
         - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
       - SDK Migration:
         - migration/archives/index.md
-        - vOct12-23-gasless -> v1.0.9-beta.2: migration/main-auth-v1.0.9-migration.md
+        - vOct12-23-gasless -> v1.0.9-beta.3: migration/main-auth-v1.0.9-migration.md
         - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
         - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
         - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
@@ -371,10 +371,10 @@ extra:
     wallet_name: Arcana wallet
     app_address: Client ID
     date_release_tag: !ENV [DATE_RELEASE_TAG,'Oct12-23-gasless']
-    version_release_tag: !ENV [VERSION_RELEASE_TAG,'1.0.9-beta.2']
+    version_release_tag: !ENV [VERSION_RELEASE_TAG,'1.0.9-beta.3']
     previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.8']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9-beta.2']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.8']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.6']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.6']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']

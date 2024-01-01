@@ -4,6 +4,7 @@ title: 'Auth-Core Quick Start'
 description: 'Get Started quickly with using the Auth-Core SDK and enable social login in Web3 apps. Understand the difference between Auth-Core and Auth SDK features, usage model the security and privacy implications when integrating an app with the Auth-Core SDK. Follow these step-by-step instructions to register the app, obtain a ClientID and then integrate the app with the Arcana Auth-Core SDK.'
 arcana:
   root_rel_path: ..
+  app_type: "'Auth-Core'"
   app_example_submodule: "'`sample-auth-core`'"
 ---
 

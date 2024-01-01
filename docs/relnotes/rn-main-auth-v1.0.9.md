@@ -1,7 +1,7 @@
 ---
-alias: rn-main-auth-v1.0.9-beta.2
+alias: rn-main-auth-v1.0.9-beta.3
 title: 'Arcana Auth: Release Notes'
-description: 'Arcana Auth Release Notes (v1.0.9-beta.2 Latest)'
+description: 'Arcana Auth Release Notes (v1.0.9-beta.3 Latest)'
 arcana:
   root_rel_path: ..
 ---
