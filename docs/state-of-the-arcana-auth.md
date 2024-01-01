@@ -8,7 +8,7 @@ arcana:
   
 # State of the {{config.extra.arcana.product_name}}
 
-## Latest Release v{{config.extra.arcana.version_release_tag}}
+## Latest Release v{{config.extra.arcana.product_release_tag}}
 
 Developers can use the {{config.extra.arcana.dashboard_name}} to register and configure Auth usage: {% include "./text-snippets/db_portal_url.md" %}
 
