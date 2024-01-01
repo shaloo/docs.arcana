@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Migrating to v{{config.extra.arcana.date_release_tag}}
+# Migrating to vOct12-23-gasless
 
 This guide is meant for developers who have already integrated apps with v{{config.extra.arcana.latest_version}} of the {{config.extra.arcana.sdk_name}} and deploy them using {{config.extra.arcana.company_name}} Testnet or Mainnet.
 
@@ -18,7 +18,7 @@ The latest release of the {{config.extra.arcana.product_name}} product **does no
 
 ### Same Wallet Address
 
-Apps using {{config.extra.arcana.product_name}} v{{config.extra.arcana.latest_version}} should see **no change** in the user wallet address irrespective of whether they continue to use the previous version on the upgrade to the latest product release v{{config.extra.arcana.date_release_tag}}. This is true for all types of apps and supported frameworks, including those using global or app-specific keys.
+Apps using {{config.extra.arcana.product_name}} v{{config.extra.arcana.latest_version}} should see **no change** in the user wallet address irrespective of whether they continue to use the previous version on the upgrade to the latest product release vOct12-23-gasless. This is true for all types of apps and supported frameworks, including those using global or app-specific keys.
 
 ## New Release: What has Changed?
 
@@ -30,9 +30,9 @@ With the latest release, developers can now choose to use the gasless feature or
 
 Gasless enabled apps will not require users to pay any gas fees for any of the whitelisted blockchain operations. Besides zero gas fees, the app users will see a change in their wallet address when gasless is enabled for an app.
 
-Earlier, there was only a single EoA wallet address associated with each authenticated app user. Apps with gasless feature will require to configure gas tank for one or more blockchain networks. For such apps the app user account will be associated with two types of wallet addresses: an EoA address and a SCW address. By default, all gasless transactions happen via the SCW account. Users can switch between EoA and SCW accounts using the wallet UI. For details, see [[rn-main-auth-v{{config.extra.arcana.date_release_tag}}|{{config.extra.arcana.product_name}} v{{config.extra.arcana.date_release_tag}} release notes]].
+Earlier, there was only a single EoA wallet address associated with each authenticated app user. Apps with gasless feature will require to configure gas tank for one or more blockchain networks. For such apps the app user account will be associated with two types of wallet addresses: an EoA address and a SCW address. By default, all gasless transactions happen via the SCW account. Users can switch between EoA and SCW accounts using the wallet UI. For details, see [[rn-main-auth-vOct12-23-gasless|{{config.extra.arcana.product_name}} vOct12-23-gasless release notes]].
 
-## How to Migrate to v{{config.extra.arcana.date_release_tag}}?
+## How to Migrate to vOct12-23-gasless?
 
 Apps using older versions of the {{config.extra.arcana.sdk_name}} prior to v{{config.extra.arcana.latest_version}} must refer to the [[index-migration-guides|migration guides]] and upgrade to the latest release.
 
@@ -54,4 +54,4 @@ To enable gasless transactions, use the {{config.extra.arcana.dashboard_name}} t
 
 ## Release Details
 
-See [[rn-main-auth-v{{config.extra.arcana.date_release_tag}}|{{config.extra.arcana.product_name}} v{{config.extra.arcana.date_release_tag}} release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+See [[rn-main-auth-vOct12-23-gasless|{{config.extra.arcana.product_name}} vOct12-23-gasless release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].

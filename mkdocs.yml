@@ -1,9 +1,9 @@
 site_name: Documentation
 # For dev
-#site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
-site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
+#site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 use_directory_urls: false
 # up to here
@@ -370,11 +370,10 @@ extra:
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
-    date_release_tag: !ENV [DATE_RELEASE_TAG,'Oct12-23-gasless']
-    version_release_tag: !ENV [VERSION_RELEASE_TAG,'1.0.9-beta.3']
+    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.9-beta.3']
     previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.8']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.8']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9-beta.3']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.6']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.6']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']
