@@ -1,24 +1,26 @@
 ---
 alias: product-details
-title: 'Product Details'
+title: 'Products'
 description: 'Introducing Arcana Auth, different components that makeup Arcana Auth, how to use it, Arcana Auth product features.'
 arcana:
   root_rel_path: .
 ---
 
-# Product Details
+# Products
 
 {==
 
-{{config.extra.arcana.product_name}} product consists of:
+{{config.extra.arcana.company_name}} offers the following products:
 
 * [{{config.extra.arcana.sdk_name}}](https://www.npmjs.com/package/@arcana/auth)
-* [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network)
-* {{config.extra.arcana.wallet_name}} (*embedded in the SDK, displayed in the app's context*)
+* {{config.extra.arcana.wallet_name}} (*embedded in the {{config.extra.arcana.sdk_name}}, displayed in the app's context*)
+* [{{config.extra.arcana.gasless_sdk_name}}](https://www.npmjs.com/package/@arcana/scw)
+
+Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network) to configure {{config.extra.arcana.company_name}}  SDK usage.
 
 ==}
 
-## Components
+## Products
 
 === "{{config.extra.arcana.sdk_name}}"
 
@@ -31,15 +33,20 @@ arcana:
     
     [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
 
-=== "{{config.extra.arcana.dashboard_name}}"
+=== "{{config.extra.arcana.gasless_sdk_name}}"
 
-    {{config.extra.arcana.dashboard_name}} helps to register and configure Web3 apps before integrating them with the {{config.extra.arcana.sdk_name}}.
+    {{config.extra.arcana.gasless_sdk_name}} is a client-side library for enabling gasless transactions in third-party browser-based wallets. Different types of Web3 apps are supported by this SDK:
     
-    Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} for each app. Developers **must** use this {{config.extra.arcana.app_address}} to integrate the app with the {{config.extra.arcana.sdk_name}}. 
+    * Web Apps: _Vanilla JS app_, _React, NextJS_, _Vue_
+    * Wallet Connector Framework Apps: _Wagmi_, _RainbowKit_, and _Web3-React_
+    * Mobile Apps: _Flutter_, _React-Native_
+    * Gaming Apps: _Unity_ (<span class="an-marker-text-highlight">Coming soon!</span>) 
 
-    ![Dashboard lots of apps](/img/an_db_all_app_card.png){ .width_85pc .an-screenshots}
+    [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
 
-    [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
+    !!! note "Built-in Gasless vs Standalone Gasless Feature"
+
+          Apps that do not require user onboarding and only use third-party wallets can directly integrate with the {{config.extra.arcana.gasless_sdk_name}}. Multi-wallet apps that require to support third-party wallets as well as the {{config.extra.arcana.wallet_name}} and enable gasless transactions must integrate with both the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.gasless_sdk_name}}.
 
 === "{{config.extra.arcana.wallet_name}}"
 
@@ -50,6 +57,16 @@ arcana:
     ![Arcana wallet Token Tab](/img/an_wallet_home.png){ .width_35pc .an-screenshots}
 
     [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
+
+=== "{{config.extra.arcana.dashboard_name}}"
+
+    {{config.extra.arcana.dashboard_name}} helps to register and configure Web3 apps before integrating them with the {{config.extra.arcana.sdk_name}}.
+    
+    Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} for each app. Developers **must** use this {{config.extra.arcana.app_address}} to integrate the app with the {{config.extra.arcana.sdk_name}}. 
+
+    ![Dashboard lots of apps](/img/an_db_all_app_card.png){ .width_85pc .an-screenshots}
+
+    [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
 
 ## Benefits & Usage
 

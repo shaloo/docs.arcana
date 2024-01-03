@@ -21,7 +21,7 @@ nav:
     - index.md
     - Introduction: 
       - intro/index.md
-      - Product Details: auth-overview.md
+      - Products: auth-overview.md
     - Quick Start: 
       - quick-start/index.md
       - Web Apps: 
@@ -187,7 +187,8 @@ nav:
       - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md
-    - Release Notes: relnotes/rn-main-auth-v1.0.8.md
+    - Gasless Standalone SDK Release Notes: relnotes/rn-main-scw-v0.0.23.md
+    - Auth SDK Release Notes: relnotes/rn-main-auth-v1.0.8.md
     - Installation Guide: sdk-installation.md
     - SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
     - Developer Guides:
@@ -221,6 +222,7 @@ nav:
       - archives/index.md
       - Release Notes:
         - relnotes/archives/index.md
+        - Gasless Standalone SDK: relnotes/rn-main-scw-v0.0.23.md
         - Auth Oct12-23-gasless: relnotes/rn-main-auth-vOct12-23-gasless.md
         - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
         - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md

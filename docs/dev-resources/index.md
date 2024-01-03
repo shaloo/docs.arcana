@@ -8,7 +8,9 @@ arcana:
 
 # Developer Resources
 
-[[rn-main-auth-v{{config.extra.arcana.product_release_tag}}|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
+[[rn-main-gasless-v{{config.extra.arcana.latest_gasless_sdk_version}}|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
+
+[[rn-main-auth-v{{config.extra.arcana.product_release_tag}}|{{config.extra.arcana.product_name}} Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
 
 [[sdk-installation|Installation Guide :material-elevation-rise:]]{ .md-button }
 
