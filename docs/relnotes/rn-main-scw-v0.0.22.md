@@ -1,0 +1,54 @@
+---
+alias: rn-main-gasless-v0.0.23
+title: 'Release Notes Arcana Gasless (Standalone SDK) Version v0.0.23'
+description: 'Arcana Gasless SDK release details for version v0.0.23. New features and more.'
+arcana:
+  root_rel_path: ..
+---
+
+# Release Notes Arcana Gasless (Mainnet)
+
+{==
+
+**Version: v0.0.23**
+
+**Release Date: January 3th, 2024**
+
+==}
+
+This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+
+* [{{config.extra.arcana.sdk_name}} v1.0.8](https://www.npmjs.com/package/@arcana/auth/v/1.0.8)
+* {{config.extra.arcana.dashboard_name}}
+* {{config.extra.arcana.wallet_name}} UI
+* {{config.extra.arcana.gasless_sdk_name}}
+
+## What's New?
+
+---
+
+This release contains a brand new SDK, the {{config.extra.arcana.gasless_sdk_name}}.
+
+Earlier, Web3 app developers could only use the built-in gasless feature offered in the {{config.extra.arcana.sdk_name}} while signing blockchain transactions through the {{config.extra.arcana.wallet_name}}. The standalone {{config.extra.arcana.gasless_sdk_name}} allows third-party browser-based wallets to leverage gasless transactions.
+
+---
+
+## Get Started
+
+---
+
+{==
+
+*Ready to dive in?*
+
+==}
+
+See [[gasless-quick-start|{{config.extra.arcana.gasless_sdk_name}} Quick Start Guide]] for details.
+
+Check out the sample dApp integration examples for apps using [[ gasless-quick-start#examples|{{config.extra.arcana.wallet_name}} only]], [[gasless-quick-start#examples|multi-wallet apps ]], and [[gasless-quick-start#examples|apps using only third-party browser based wallets]].
+
+## Questions? 
+
+---
+
+Refer to the [[faq-gasless| Gasless FAQ]], [[gasless-sdk-usage-guide|Gasless Usage Guide]] or contact [{{config.extra.arcana.company_name}} Support]({{page.meta.arcana.root_rel_path}}/support.md).
