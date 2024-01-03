@@ -20,7 +20,7 @@ Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboar
 
 ==}
 
-## Products
+## Overview
 
 === "{{config.extra.arcana.sdk_name}}"
 
