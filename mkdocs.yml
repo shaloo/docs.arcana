@@ -9,7 +9,7 @@ use_directory_urls: false
 # up to here
 
 site_description: >-
-  Web3 auth made easy with Arcana Auth. Provide instant, non-custodial wallets in your app.
+  Web3 app chains - onboarding made easy with Arcana SDKs: Auth, Gasless. Provide instant, non-custodial wallets in your app.
   Remove the friction of wallet installation, key backup, & crypto on-ramp.
   
 exclude_docs: |
@@ -17,7 +17,7 @@ exclude_docs: |
   gasless-sdk/gasless-sdk-usage-guide.md
 
 nav: 
-  - Arcana Auth:
+  - Arcana SDKs:
     - index.md
     - Introduction: 
       - intro/index.md
@@ -199,7 +199,7 @@ nav:
         - Auth SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
         - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
         - Auth-Core SDK Reference Guide: 'https://auth-core-sdk-ref-guide.netlify.app/'
-        #- Gasless SDK Usage Guide: gasless-sdk/gasless-sdk-usage-guide.md
+        - Gasless SDK Usage Guide: gasless-sdk/gasless-sdk-usage-guide.md
       - FAQ:
         - faq/index.md
         - General: faq/faq-gen.md

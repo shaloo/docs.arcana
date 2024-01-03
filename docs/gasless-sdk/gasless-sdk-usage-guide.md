@@ -1,7 +1,5 @@
 ---
 alias: gasless-sdk-usage-guide
-search:
-  exclude: true
 title: 'Arcana Gasless SDK (Standalone) Usage Guide'
 description: 'How to install and use the Arcana Gasless SDK (Standalone) with sample code and references.'
 arcana:

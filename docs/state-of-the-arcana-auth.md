@@ -21,14 +21,7 @@ Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} pack
     * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
     * Auth-Core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
     * Gasless Transactions with {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
-
-    {% if config.extra.arcana.exclude_content_tag %}
-
-    {% else %}
-
-     * Apps that need to enable gasless in third-party wallets such as MetaMask or need a standalone gasless SDK with no social login or {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.gasless_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/scw)
-
-    {% endif %}
+    * Apps that need to enable gasless in third-party wallets such as MetaMask or need a standalone gasless SDK with no social login or {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.gasless_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/scw)
 
 === "Mobile Apps"
     * Flutter apps: {{config.extra.arcana.flutter_sdk_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
@@ -147,15 +140,15 @@ By default, it enables a *pre-configured list* of chains. App developers can add
 
 #### Gasless Networks
 
-Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/supportedchains/) in case of apps using the {{config.extra.arcana.wallet_name}}. 
+Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the [supported chains](https://docs.biconomy.io/supportedchains/) in case of apps using the {{config.extra.arcana.wallet_name}}.
 
 {{config.extra.arcana.product_name}} gasless feature is powered by the Biconomy Gasless SDK.
 
 For more details, see [[configure-gasless|how to configure gasless transactions]]
 
-We are working on providing a standalone gasless SDK soon! This will allow gasless transactions in apps that do not need social login and the {{config.extra.arcana.wallet_name}} or multi-wallet apps that use third-party browser-based wallets such as MetaMask besides the {{config.extra.arcana.wallet_name}}.
+In addition to the {{config.extra.arcana.sdk_name}} built-in gasless feature, the {{config.extra.arcana.gasless_sdk_name}} is also available for use in third-party wallet apps. This standalone SDK allows gasless transactions in apps that do not need social login and the {{config.extra.arcana.wallet_name}} or multi-wallet apps that use third-party browser-based wallets such as MetaMask besides the {{config.extra.arcana.wallet_name}}.
 
-## {{config.extra.arcana.dashboard_name}} 
+## {{config.extra.arcana.dashboard_name}}
 
 ### Login Options
 

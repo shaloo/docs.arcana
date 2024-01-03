@@ -42,12 +42,7 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 
 {% include "./code-snippets/auth_react_native_install.md" %}
 
-{% if config.extra.arcana.exclude_content_tag %}
-
-{% else %}
-
 ## Gasless SDK (Standalone)
 
 {% include "./code-snippets/gasless_sdk_install.md" %}
 
-{% endif %}
