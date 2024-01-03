@@ -45,7 +45,7 @@ Earlier, Web3 app developers could only use the built-in gasless feature offered
 
 See [[gasless-quick-start|{{config.extra.arcana.gasless_sdk_name}} Quick Start Guide]] for details.
 
-Check out the sample dApp integration examples for apps using [[ gasless-quick-start#examples| {{config.extra.arcana.wallet_name}} only]], [[gasless-quick-start#examples|multi-wallet apps ]], and [[gasless-quick-start#examples|apps using only third-party browser based wallets]].
+Check out the sample dApp integration examples for [[gasless-quick-start#examples|apps using only {{config.extra.arcana.wallet_name}}]], [[gasless-quick-start#examples|multi-wallet apps ]], and [[gasless-quick-start#examples|apps using only third-party browser based wallets]].
 
 ## Questions? 
 
