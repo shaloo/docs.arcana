@@ -23,22 +23,25 @@ nav:
       - Products: auth-overview.md
     - Quick Start: 
       - quick-start/index.md
-      - Web Apps: 
-        - quick-start/web/index.md
-        - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
-        - React:
-          - quick-start/web/react/index.md
-          - React/NextJS: quick-start/react-nextjs-quick-start.md
-          - Wagmi: quick-start/wagmi-quick-start.md
-          - RainbowKit: quick-start/rainbowkit-quick-start.md
-          - Web3-React: quick-start/web3-react-quick-start.md
-        - Vue: quick-start/vue-quick-start.md
-      - Mobile: 
-        - quick-start/mobile/index.md
-        - Flutter Apps: quick-start/flutter-quick-start.md
-        - React-Native Apps: quick-start/react-native-quick-start.md
-      - Auth-Core: quick-start/auth-core-quick-start.md
-      - Gasless Apps: quick-start/gasless-quick-start.md
+      - Auth SDK:
+        - quick-start/auth-sdk/index.md
+        - Web Apps: 
+          - quick-start/web/index.md
+          - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
+          - React:
+            - quick-start/web/react/index.md
+            - React/NextJS: quick-start/react-nextjs-quick-start.md
+            - Wagmi: quick-start/wagmi-quick-start.md
+            - RainbowKit: quick-start/rainbowkit-quick-start.md
+            - Web3-React: quick-start/web3-react-quick-start.md
+          - Vue: quick-start/vue-quick-start.md
+        - Mobile: 
+          - quick-start/mobile/index.md
+          - Flutter Apps: quick-start/flutter-quick-start.md
+          - React-Native Apps: quick-start/react-native-quick-start.md
+        - Gasless Apps: quick-start/gasless-quick-start.md
+      - Auth-Core SDK: quick-start/auth-core-quick-start.md
+      - Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - References:
       - quick-links/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
