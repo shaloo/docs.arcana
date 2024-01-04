@@ -12,4 +12,4 @@ arcana:
 
 [[auth-core-quick-start|Auth-Core SDK :material-atom-variant:]]{ .md-button }
 
-[[gasless-standalone-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }
+[[gasless-standalone-quick-start|Gasless SDK :material-gas-station-off:]]{ .md-button }

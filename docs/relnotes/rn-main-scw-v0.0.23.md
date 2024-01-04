@@ -1,5 +1,5 @@
 ---
-alias: rn-main-gasless-v0.0.23
+alias: rn-main-scw-v0.0.23
 title: 'Release Notes Arcana Gasless (Standalone SDK) Version v0.0.23'
 description: 'Arcana Gasless SDK release details for version v0.0.23. New features and more.'
 arcana:
