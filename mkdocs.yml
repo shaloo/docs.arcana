@@ -192,7 +192,7 @@ nav:
     - Gasless Standalone SDK Release Notes: relnotes/rn-main-scw-v0.0.23.md
     - Auth SDK Release Notes: relnotes/rn-main-auth-v1.0.8.md
     - Installation Guide: sdk-installation.md
-    - SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
+    - Auth SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
     - Developer Guides:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
@@ -237,7 +237,7 @@ nav:
         - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
         - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
         - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
-      - SDK Migration:
+      - Auth SDK Migration:
         - migration/archives/index.md
         - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
         - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md

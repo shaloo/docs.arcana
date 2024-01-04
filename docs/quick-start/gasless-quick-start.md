@@ -93,7 +93,7 @@ Finally, [[deploy-app|deploy the app]] on the Testnet/Mainnet to let the users l
 
 {==
 
-Your app is now powered by {{config.extra.arcana.product_name}} gasless transactions.
+Your app is now powered by gasless transactions built using the {{config.extra.arcana.company_name}} SDKs.
 
 ==}
 

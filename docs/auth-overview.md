@@ -183,7 +183,7 @@ Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboar
 
 <!--
 
-[[auth-quick-start|Let's begin! ++enter++]]{ .md-button .md-button--primary}
+[[quick-start|Let's begin! ++enter++]]{ .md-button .md-button--primary}
 
 Git: {{ git.short_commit}}
 

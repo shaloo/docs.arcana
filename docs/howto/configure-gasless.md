@@ -106,8 +106,9 @@ After configuring gasless, developers can refer to other app configuration setti
 
 ## See Also
 
-* [[configure-wallet-visibility|Configure wallet visibility mode]]
 * [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|Managing Testnet and Mainnet Configurations]]
-* [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] 
+* [[gasless-standalone-quick-start|{{config.extra.arcana.gasless_sdk_name}} Quick Start Guide]]
+* [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]
+* [[auth-quick-start|{{config.extra.arcana.sdk_name}} Quick Start Guide]] 
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

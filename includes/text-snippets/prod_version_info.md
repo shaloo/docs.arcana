@@ -6,4 +6,4 @@
 
     {{config.extra.arcana.gasless_sdk_name}}
 
-    See the [[rn-main-scw-v{{config.extra.arcana.latest_gasless_sdk_version}}|latest {{config.extra.arcana.gasless_sdk_name}} release notes]], refer to the [GitHub Repo changelog]((https://github.com/arcana-network/scw/releases)) and [download the {{config.extra.arcana.gasless_sdk_name}}](https://www.npmjs.com/package/@arcana/scw).
+    See the [[rn-main-scw-v{{config.extra.arcana.latest_gasless_sdk_version}}|latest {{config.extra.arcana.gasless_sdk_name}} release notes]], refer to the [GitHub Repo changelog](https://github.com/arcana-network/scw/releases) and [download the {{config.extra.arcana.gasless_sdk_name}}](https://www.npmjs.com/package/@arcana/scw).

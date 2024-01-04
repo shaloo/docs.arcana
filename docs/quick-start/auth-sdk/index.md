@@ -12,6 +12,4 @@ arcana:
 
 [[mobile-quick-start|Mobile Apps :fontawesome-solid-mobile-screen:]]{ .md-button }
 
-[[auth-core-quick-start|Auth-Core SDK :material-atom-variant:]]{ .md-button }
-
 [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }

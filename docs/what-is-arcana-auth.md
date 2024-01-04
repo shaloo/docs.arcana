@@ -16,30 +16,31 @@ arcana:
 
 The {{config.extra.arcana.product_name}} product consists of two key components:
 
-* {{config.extra.arcana.dashboard_name}}
 * {{config.extra.arcana.sdk_name}}
+* {{config.extra.arcana.dashboard_name}}
 
-[[auth-quick-start|Get Started :fontawesome-solid-paper-plane:]]{ .md-button }
 
-## Platform Components
+[[quick-start|Get Started :fontawesome-solid-paper-plane:]]{ .md-button }
 
-=== "{{config.extra.arcana.dashboard_name}}"
+## {{config.extra.arcana.product_name}} Components
 
-       <p>
-       <ul><p>🖥️ Use the <a href="{{page.meta.arcana.root_rel_path}}/concepts/dashboard.html">{{config.extra.arcana.dashboard_name}}</a> to register and configure an app before integrating it with the {{config.extra.arcana.sdk_name}}.</p><p> </p><p>🖥️ Select the user onboarding experience and the blockchain signing experience as per the use case.</p><p> </p></ul>
-       </p>
-   
 === "{{config.extra.arcana.sdk_name}}"
 
        <p>
        <ul><p>🔐 Address Web3 user onboarding, data privacy challenges faced by Web3 apps by integrating with the {{config.extra.arcana.sdk_name}}.</p><p> </p><p>🔐 Enable frictionless, familiar Web2 user onboarding experience via several supported authentication providers, and passwordless login.</p><p> </p><p> </p><p>🔐 Let app users securely sign blockchain transactions with the embedded, non-custodial <a href="./concepts/anwallet/">{{config.extra.arcana.wallet_name}}</a> and manage wallet visibility setting, for a seamless user experience.</p></ul> <blockquote><p>Developers can use the secure standard Ethereum provider interface exposed by the {{config.extra.arcana.wallet_name}} in the context of authenticated users to programmatically call Web3 wallet operations.</p></blockquote>
        </p>
 
+=== "{{config.extra.arcana.dashboard_name}}"
+
+       <p>
+       <ul><p>🖥️ Use the <a href="{{page.meta.arcana.root_rel_path}}/concepts/dashboard.html">{{config.extra.arcana.dashboard_name}}</a> to register and configure an app before integrating it with the {{config.extra.arcana.sdk_name}}.</p><p> </p><p>🖥️ Select the user onboarding experience and the blockchain signing experience as per the use case.</p><p> </p></ul>
+       </p>
+
 ## How is this documentation organized?
 
 The primary audience for this documentation is Web3 application developers.
 
-Seasoned Web3 developers can jump right in with the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]], [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and {% include "./text-snippets/authsdkref_url.md" %}.
+Seasoned Web3 developers can jump right in with the [[quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]], [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and {% include "./text-snippets/authsdkref_url.md" %}.
 
 Developers can refer to the [[index-howto-guides|How To Guides]] to learn more about how to register and configure the Web3 applications before they can be integrated with the {{config.extra.arcana.wallet_name}}.
 

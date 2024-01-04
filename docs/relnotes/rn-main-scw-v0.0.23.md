@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Release Notes Arcana Gasless (Mainnet)
+# Arcana Gasless (Standalone) SDK Release Notes 
 
 {==
 
@@ -16,12 +16,12 @@ arcana:
 
 ==}
 
-This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+This release of {{config.extra.arcana.company_name}} SDKs consist of the following components:
 
+* [{{config.extra.arcana.gasless_sdk_name}} v0.0.23](https://www.npmjs.com/package/@arcana/scw/v/0.0.23)
 * [{{config.extra.arcana.sdk_name}} v1.0.8](https://www.npmjs.com/package/@arcana/auth/v/1.0.8)
 * {{config.extra.arcana.dashboard_name}}
 * {{config.extra.arcana.wallet_name}} UI
-* {{config.extra.arcana.gasless_sdk_name}}
 
 ## What's New?
 

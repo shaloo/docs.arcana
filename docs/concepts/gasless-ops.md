@@ -10,7 +10,7 @@ arcana:
 
 In Web3 apps, when a user initiates a blockchain transaction, like sending ERC20 tokens or buying crypto assets, they typically incur a 'gas fee' charged by the blockchain network. However, gasless transactions eliminate the need for users to pay these fees, as developers or third-party sponsors cover the costs.
 
-By leveraging {{config.extra.arcana.product_name}} gasless transaction feature, developers can streamline user onboarding, lower the barrier of entry associated with Web3 gas fees, and boost app adoption.
+By leveraging the gasless transaction feature offered by the {{config.extra.arcana.company_name}} SDKs, developers can streamline user onboarding, lower the barrier of entry associated with Web3 gas fees, and boost app adoption.
 
 ## Gasless Configuration
 
@@ -25,7 +25,7 @@ Once gas tanks are configured, developers can seamlessly integrate their app wit
 
 ### Supported Chains
 
-The {{config.extra.arcana.product_name}} product gasless feature is powered by [Biconomy Gasless SDK v2](https://docs.biconomy.io/). Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable gasless operations in the app for one or more of the [supported chains](https://docs.biconomy.io/supportedchains/).
+The gasless transaction offered by the {{config.extra.arcana.company_name}} SDKs is powered by [Biconomy Gasless SDK v2](https://docs.biconomy.io/). Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable gasless operations in the app for one or more of the [supported chains](https://docs.biconomy.io/supportedchains/).
 
 ### Gas Tank Owner
 

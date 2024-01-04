@@ -8,7 +8,7 @@ arcana:
 
 # Introduction
 
-**{{config.extra.arcana.company_name}}** products to bring higher conversion for Web3 app developers through [[concept-social-login|social login]] and gasless transactions:
+**{{config.extra.arcana.company_name}}** products bring higher conversion for Web3 app developers through [[concept-social-login|social login]] and gasless transactions:
 
 * {{config.extra.arcana.sdk_name}}
 * {{config.extra.arcana.gasless_sdk_name}}
@@ -29,7 +29,7 @@ Developers can integrate Web3 apps with these SDKs to:
 
     Using advanced cryptography and asynchronous distributed key generation, the {{config.extra.arcana.sdk_name}} provides user identity control with privacy, eliminating key management complexities. Integration is effortless, customization is a breeze, and it supports diverse [[sdk-installation|Web3 app types]].
 
-    The gasless feature is built-in the {{config.extra.arcana.product_name}} product. Devs need to simply configure gasless usage via the {{config.extra.arcana.dashboard_name}} to allow gasless transactions for authenticated users.
+    Gasless transaction is a built-in feature on the {{config.extra.arcana.sdk_name}} that allows users to pay **no** gas transaction fees when signing blockchain transactions via the {{config.extra.arcana.wallet_name}}. Developers need to simply configure gasless usage via the {{config.extra.arcana.dashboard_name}} to allow gasless transactions for authenticated app users.
 
 === "{{config.extra.arcana.gasless_sdk_name}}"
 

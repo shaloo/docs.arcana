@@ -8,7 +8,7 @@ arcana:
 
 # Concepts
 
-These are the building blocks to help you learn about various {{config.extra.arcana.product_name}} terms and usage.
+These are the building blocks to help you learn about various terms and usage in the context of {{config.extra.arcana.company_name}} SDKs.
 
 [[concept-aggregate-login|Aggregate Login :material-login:]]{ .md-button }
 
