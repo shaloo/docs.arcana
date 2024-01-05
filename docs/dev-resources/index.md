@@ -8,11 +8,11 @@ arcana:
 
 # Developer Resources
 
-[[rn-main-auth-v{{config.extra.arcana.version_release_tag}}|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
+[[rn-main-auth-v{{config.extra.arcana.product_release_tag}}|Release Notes :material-order-alphabetical-ascending:]]{ .md-button }
 
 [[sdk-installation|Installation Guide :material-elevation-rise:]]{ .md-button }
 
-[[migration-guide-v{{config.extra.arcana.version_release_tag}}| SDK Migration Guide :material-arrow-up:]]{ .md-button }
+[[migration-guide-v{{config.extra.arcana.product_release_tag}}| SDK Migration Guide :material-arrow-up:]]{ .md-button }
 
 [[index-dev-guides| Developer Guides :simple-bookstack:]]{ .md-button }
 

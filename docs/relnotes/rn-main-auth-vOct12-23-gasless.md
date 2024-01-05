@@ -12,7 +12,7 @@ arcana:
 
 **Release Date: Oct 12, 2023**  
 
-Version: **{{config.extra.arcana.date_release_tag}}**
+Version: **vOct12-23-gasless**
 
 The {{config.extra.arcana.product_name}} product consists of the following components:
 
@@ -76,7 +76,7 @@ See [integration examples](https://github.com/arcana-network/auth-examples) for 
 
 ---
 
-If you already using the previous version of the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.latest_version}}, you can continue to use the latest release of the product v{{config.extra.arcana.date_release_tag}}. There are no updates to the {{config.extra.arcana.sdk_name}} package.
+If you already using the previous version of the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.latest_version}}, you can continue to use the latest release of the product vOct12-23-gasless. There are no updates to the {{config.extra.arcana.sdk_name}} package.
 
 Please note, in case are using an older version of the {{config.extra.arcana.sdk_name}} prior to v{{config.extra.arcana.previous_version}} then refer to the appropriate [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
 
