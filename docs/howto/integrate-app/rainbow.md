@@ -54,7 +54,7 @@ Use the `connectors` configured with `ArcanaRainbowConnector` in the `App.js` fi
 
 !!! tip "Wagmi `createClient` and `configClient`"
 
-      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and [Wagmi 1.x.y Migration Guide](https://wagmi.sh/react/migration-guide). Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
+      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}. Also, refer to [RainbowKit documentation](https://www.rainbowkit.com/docs/introduction).
 
 ### Step 3: RainbowKit Context Provider
 

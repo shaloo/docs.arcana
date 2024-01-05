@@ -66,7 +66,7 @@ Next, import the `ArcanaConnector` from the `{{config.extra.arcana.wagmi_sdk_pkg
 
 !!! tip "Wagmi `createClient` and `configClient`"
 
-      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and [Wagmi 1.x.y Migration Guide](https://wagmi.sh/react/migration-guide).
+      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
 <!--
 See [`ArcanaConnector` constructor parameters](https://auth-wagmi-sdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
@@ -80,7 +80,7 @@ For onboarding users via the built-in, plug-and-play login UI (default), simply 
 
 !!! tip "Wagmi `createClient` and `configClient`"
 
-      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and [Wagmi 1.x.y Migration Guide](https://wagmi.sh/react/migration-guide).
+      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
