@@ -4,8 +4,9 @@
 {{ super() }}
 
 {% block announce %}
-        <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v1.0.9.html">Release v{{ config.extra.arcana.version_release_tag }} </a><span class="blink_me"> is now live! (Testnet)</span> ⚡⚡⚡ </p>
-  {% endblock %}
+<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="https://docs.arcana.network/relnotes/rn-main-auth-v{{ config.extra.arcana.product_release_tag }}.html">{{ config.extra.arcana.product_name }} Release v{{ config.extra.arcana.product_release_tag }} with {{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }}</a><span class="blink_me"> is now live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try Auth SDK v1.09-beta.3 on Testnet.</a></i></p>
+{% endblock %}
+
 {% block content %}
 
 <style>
@@ -491,27 +492,6 @@
                         <li>Auth SDK built-in feature</li>
                         <li>Set up Gas Tanks and whitelist app operations</li>
                         <li>Allow gasless transactions for app users</li>
-                    </ul>
-                </div>
-            </div>
-        </a>
-    </div>
-    <div class="feature-item">
-        <a href="./quick-start/solana-quick-start.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
-                    <div>
-                        <img src="./img/icons/i_solana_dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/i_solana_light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Solana</h3>
-                    <div class="ribbon"><b>New!</b></div>
-                </div>
-                <div class="card-cell-right ribbon-container">
-                    <ul>
-                        <li>Social login for non-EVM chains</li>
-                        <li>Easily onboard users on Solana</li>
-                        <li>Web3 wallet operations</li>
                     </ul>
                 </div>
             </div>
