@@ -27,7 +27,7 @@ In every use case above, the developers must first use the  {{config.extra.arcan
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="Auth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
-In this guide, we will cover only the **last use case**. The first two use cases enable gasless transactions in apps using {{config.extra.arcana.wallet_name}} and third-party wallets as well. For details, see [[gasless-quick-start|how to enable gasless transactions in apps that use {{config.extra.arcana.wallet_name}} and third-party browser-based wallets]].
+In this guide, we will cover only the **last use case**. The first two use cases enable gasless transactions in apps using {{config.extra.arcana.wallet_name}} and third-party wallets as well. For details on the first two use cases, see [[gasless-quick-start|here]].
 
 ## Step 1: Register & Configure App
 
