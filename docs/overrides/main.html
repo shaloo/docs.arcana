@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block announce %}
-<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v1.0.8.html">Release v{{ config.extra.arcana.product_release_tag }} </a><span class="blink_me"> is now live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/"> Try v1.09-beta.3 on Testnet.</a></i></p>
+<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="https://docs.dev.arcana.network/relnotes/rn-main-auth-v{{ config.extra.arcana.product_release_tag }}.html">{{ config.extra.arcana.product_name }} Release v{{ config.extra.arcana.product_release_tag }} with Auth SDK v{{ config.extra.arcana.latest_version }} </a><span class="blink_me"> is now live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/"> Try Auth SDK v1.09-beta.3 on Testnet.</a></i></p>
 {% endblock %}
 
 {% block extrahead %}
