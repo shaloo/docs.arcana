@@ -14,6 +14,4 @@ arcana:
 
 [[auth-core-quick-start|Auth-Core SDK :material-atom-variant:]]{ .md-button }
 
-[[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
-
 [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }

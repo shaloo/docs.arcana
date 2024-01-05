@@ -12,7 +12,7 @@ arcana:
 
 **Release Date: Oct 12, 2023**  
 
-Version: **Oct12-23-gasless**
+Version: **vOct12-23-gasless**
 
 The {{config.extra.arcana.product_name}} product consists of the following components:
 

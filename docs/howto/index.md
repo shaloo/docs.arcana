@@ -20,8 +20,6 @@ arcana:
 
     [[configure-gasless|Setup gasless transactions :material-gas-station-off:]]{ .md-button }
 
-    [[solana-dashboard-user-guide|Configure non-EVM Solana Chain :chains:]]{ .md-button }
-
 === "Integrate Auth"
 
     ## Integrate Auth
@@ -45,10 +43,6 @@ arcana:
     ??? abstract "Gasless Apps"
 
         [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }
-
-    ??? abstract "Solana Apps"
-
-        [[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
 
 === "Deploy App"
 
