@@ -17,29 +17,32 @@ exclude_docs: |
   gasless-sdk/gasless-sdk-usage-guide.md
 
 nav: 
-  - Arcana Auth:
+  - Arcana SDKs:
     - index.md
     - Introduction: 
       - intro/index.md
       - Product Details: auth-overview.md
     - Quick Start: 
       - quick-start/index.md
-      - Web Apps: 
-        - quick-start/web/index.md
-        - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
-        - React:
-          - quick-start/web/react/index.md
-          - React/NextJS: quick-start/react-nextjs-quick-start.md
-          - Wagmi: quick-start/wagmi-quick-start.md
-          - RainbowKit: quick-start/rainbowkit-quick-start.md
-          - Web3-React: quick-start/web3-react-quick-start.md
-        - Vue: quick-start/vue-quick-start.md
-      - Mobile: 
-        - quick-start/mobile/index.md
-        - Flutter Apps: quick-start/flutter-quick-start.md
-        - React-Native Apps: quick-start/react-native-quick-start.md
-      - Auth-Core: quick-start/auth-core-quick-start.md
-      - Gasless Apps: quick-start/gasless-quick-start.md
+      - Auth SDK:
+        - quick-start/auth-sdk/index.md
+        - Web Apps: 
+          - quick-start/web/index.md
+          - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
+          - React:
+            - quick-start/web/react/index.md
+            - React/NextJS: quick-start/react-nextjs-quick-start.md
+            - Wagmi: quick-start/wagmi-quick-start.md
+            - RainbowKit: quick-start/rainbowkit-quick-start.md
+            - Web3-React: quick-start/web3-react-quick-start.md
+          - Vue: quick-start/vue-quick-start.md
+        - Mobile: 
+          - quick-start/mobile/index.md
+          - Flutter Apps: quick-start/flutter-quick-start.md
+          - React-Native Apps: quick-start/react-native-quick-start.md
+        - Solana Apps: quick-start/solana-quick-start.md
+        - Gasless Apps: quick-start/gasless-quick-start.md
+      - Auth-Core SDK: quick-start/auth-core-quick-start.md
     - References:
       - quick-links/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
@@ -176,6 +179,7 @@ nav:
               - Sign Transactions: howto/arcana-wallet/sign.md
               - Show Wallet: howto/arcana-wallet/show.md
               - Watch Assets: howto/arcana-wallet/watchasset.md
+              - Solana Web3 Wallet Ops: howto/arcana-wallet/solana-wallet-ops.md
           - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
       - Mobile apps:
         - howto/mobile/index.md
@@ -187,12 +191,13 @@ nav:
       - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md
-    - Release Notes: relnotes/rn-main-auth-v1.0.8.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.9.md
     - Installation Guide: sdk-installation.md
-    - SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
+    - SDK Migration Guide: migration/main-auth-v1.0.9-migration.md
     - Developer Guides:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
+      - Solana Configuration Guide: db/config-dApp-with-db-for-Solana.md
       - SDK Reference Guides:
         - dev-resources/sdk-ref/index.md
         - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
@@ -206,6 +211,7 @@ nav:
         - Dashboard: faq/faq-db.md
         - Auth SDK: faq/faq-auth.md
         - Gasless: faq/faq-gasless.md
+        - Solana: faq/faq-solana.md
       - Troubleshooting Guide: troubleshooting.md
       - Error Handling: 
         - Web SDK: 
@@ -329,6 +335,7 @@ nav:
       - Key Space Type: concepts/keyspace-types.md
       - Manage Chains: concepts/manage-chains.md
       - MFA: concepts/mfa.md
+      - Non-EVM Chains: concepts/non-evm-chains.md
       - Plug-and-Play Auth: concepts/plug-and-play-auth.md
       - Private Key: concepts/private-key.md
       - Smart Contracts:

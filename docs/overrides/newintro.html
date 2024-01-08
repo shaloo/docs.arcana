@@ -4,7 +4,7 @@
 {{ super() }}
 
 {% block announce %}
-        <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v1.0.9.html">Release v{{ config.extra.arcana.product_release_tag }} </a><span class="blink_me"> is now live onTestnet!</span> ⚡⚡⚡ <i><a style="color: gray;">Mainnet is on v1.0.8 Release.</a></i></p>
+        <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="./relnotes/rn-main-auth-v1.0.9.html">Release v{{ config.extra.arcana.product_release_tag }} </a><span class="blink_me"> is now live on Testnet!</span> ⚡⚡⚡ <i><a href="https://docs.arcana.network/relnotes/rn-main-auth-v1.0.8.html" style="color: gray;">Mainnet is on v1.0.8 Release.</a></i></p>
 {% endblock %}
 
 {% block content %}
@@ -429,7 +429,13 @@
 
 <div class="top-hr">
     <div class="hr">
-        <h1 style="text-align: left">Arcana Network SDKs</h1>
+        <h1 style="text-align: left">Arcana SDKs</h1>
+    </div>
+</div>
+
+<div class="top-hr">
+    <div class="hr">
+        <h2 style="text-align: left">Auth</h2>
     </div>
 </div>
 
@@ -446,11 +452,11 @@
                 </div>
                 <div class="card-cell-right">
                     <ul>
-                        <li>Vanilla HTML/CSS/JS</li>
-                        <li>React/NextJS</li>
-                        <li>Wallet connectors: Wagmi, RainbowKit, Web3-React</li>
-                        <li>Vue</li>
-                    </ul>                
+                        <li>Supports Web3 app types: Vanilla HTML/CSS/JS, React/NextJS, Vue</li>
+                        <li>Supports wallet connector apps: Wagmi, RainbowKit, Web3-React</li>
+                        <li>Built-in Gasless feature for Arcana wallet</li>
+                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana<span class="blink_me_small"><i>New!</i></span></li>
+                    </ul>              
                 </div>
             </div>
         </a>
@@ -467,59 +473,15 @@
                 </div>
                 <div class="card-cell-right">
                     <ul>
-                        <li>iOs</li>
-                        <li>Android</li>
-                        <li>Flutter</li>
-                        <li>React-Native</li>
+                        <li>Supports mobile app types: iOS, Android, Flutter, React Native</li>
+                        <li>Built-in Gasless feature for Arcana wallet</li>
+                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana<span class="blink_me_small"><i>New!</i></span></li>
                     </ul>
                 </div>
             </div>
         </a>
     </div>
 
-    <div class="feature-item">
-        <a href="./quick-start/gasless-quick-start.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
-                    <div>
-                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Gasless</h3>
-                </div>
-                <div class="card-cell-right">
-                    <ul>
-                        <li>Auth SDK built-in feature</li>
-                        <li>Set up Gas Tanks and whitelist app operations</li>
-                        <li>Allow gasless transactions for app users</li>
-                    </ul>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <div class="feature-item">
-        <a href="./quick-start/web/index.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
-                    <div>
-                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Gasless SDK</h3>
-                    <p><span class="blink_me_small">Coming Soon!</span></p>
-                </div>
-                <div class="card-cell-right">
-                    <ul>
-                        <li>Standalone SDK</li>
-                        <li>Enable gasless in third-party wallet apps</li>
-                        <li>Supports multi-wallet apps</li>
-                        <li>Gasless apps (No authentication)</li>
-                    </ul>
-                </div>
-            </div>
-        </a>
-    </div>
     <div class="feature-item">
         <a href="./arcana-coming-soon.html">
             <div class="an-card-container">
@@ -541,6 +503,38 @@
         </a> 
     </div>
 </div>
+
+<div class="top-hr">
+    <div class="hr">
+        <h2 style="text-align: left">Gasless</h2>
+    </div>
+</div>
+
+<div class="top-hr md-an-marquee">
+    <div class="feature-item">
+        <a href="./quick-start/web/index.html">
+            <div class="an-card-container">
+                <div class="a-link-color card-cell-left">
+                    <div>
+                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
+                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
+                    </div>
+                    <h3 class="h3-color">Gasless SDK</h3>
+                    <p><span class="blink_me_small">Coming Soon!</span></p>
+                </div>
+                <div class="card-cell-right">
+                    <ul>
+                        <li>Standalone SDK (No social login)</li>
+                        <li>Set up Gas Tanks and whitelist app operations</li>
+                        <li>Enable gasless in third-party wallet apps</li>
+                        <li>Supports multi-wallet apps</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
 </section>
 
 <div class="top-hr">
