@@ -21,6 +21,7 @@ of the file in the `auth` repo: https://github.com/arcana-network/auth/blob/main
     - [Perform Gasless Transaction](#perform-gasless-transaction)
 3. [Functions](#functions)
     - [`getSCWAddress()`](#getscwaddress)
+    - [`getPaymasterBalance()`](#getpaymasterbalance)
     - [`doTx()`](#dotx)
 
 ---
@@ -73,6 +74,10 @@ await scw.init("<app_id>", window.ethereum, "<gateway_url>");
 ### `getSCWAddress()`
 
 Returns the Smart Address as per ERC-4337, the SCW address, associated with the current user's EoA address.
+
+### `getPaymasterBalance()`
+
+Returns the balance available in the gas tank that can be utilized via the current user's SCW address.
 
 ### `doTx()`
 
