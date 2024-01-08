@@ -33,7 +33,7 @@ Developers can integrate Web3 apps with these SDKs to:
 
 === "{{config.extra.arcana.gasless_sdk_name}}"
 
-    The {{config.extra.arcana.gasless_sdk_name}} enables gasless transactions in third-party browser-based wallets. It is meant for Web3 apps that do not wish to use the social login feature but only the gasless feature. Before integrating with the {{config.extra.arcana.gasless_sdk_name}} developers must configure gasless usage, set up gas tanks and whitelist operations using the {{config.extra.arcana.dashboard_name}}.
+    The {{config.extra.arcana.gasless_sdk_name}} enables gasless transactions in third-party browser-based wallets. It is meant for Web3 apps that do not wish to use the social login feature but only the gasless feature. Before integrating with the {{config.extra.arcana.gasless_sdk_name}} developers must configure gasless usage, set up gas tanks, and whitelist operations using the {{config.extra.arcana.dashboard_name}}.
 
 !!! note "Already using {{config.extra.arcana.company_name}} SDKs?"
 
