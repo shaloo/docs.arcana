@@ -195,7 +195,7 @@ nav:
     - dev-resources/index.md
     - Gasless SDK Release Notes: relnotes/rn-main-scw-v0.0.24.md
     - Auth SDK Release Notes: relnotes/rn-main-auth-v1.0.9.md
-    - Oct12-23-Gasless Release Notes: relnotes/rn-main-auth-Oct12-23-gasless.md
+    - Oct12-23-Gasless Release Notes: relnotes/rn-main-auth-vOct12-23-gasless.md
     - Installation Guide: sdk-installation.md
     - Auth SDK Migration Guide: migration/main-auth-v1.0.9-migration.md
     - Developer Guides:
