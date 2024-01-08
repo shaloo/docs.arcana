@@ -83,7 +83,9 @@ After installing the requisite SDKs as per the use case and the app type, add co
 
     **Gasless via third-party wallets**
 
-    For third-party wallets, enabling gasless transactions requires adding code to call the `doTx()` method of the  {{config.extra.arcana.gasless_sdk_name}} once the user is authenticated. Refer to the code snippet listed earlier. This will allow third-party wallets to support the gasless transaction.
+    For third-party wallets, enabling gasless transactions requires adding code to call the `doTx()` method of the  {{config.extra.arcana.gasless_sdk_name}} once the user is authenticated. This will allow third-party wallets to support the gasless transaction. For details, see code snippet below:
+
+    {% include "./code-snippets/gasless_integrate_doTx.md" %}
 
 ## Step 5: Deploy App
 

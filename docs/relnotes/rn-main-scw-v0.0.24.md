@@ -1,7 +1,7 @@
 ---
-alias: rn-main-scw-v0.0.23
-title: 'Release Notes Arcana Gasless (Standalone SDK) Version v0.0.23'
-description: 'Arcana Gasless SDK release details for version v0.0.23. New features and more.'
+alias: rn-main-scw-v0.0.24
+title: 'Release Notes Arcana Gasless (Standalone SDK) Version v0.0.24'
+description: 'Arcana Gasless SDK latest release details.'
 arcana:
   root_rel_path: ..
 ---
@@ -10,15 +10,15 @@ arcana:
 
 {==
 
-**Version: v0.0.23**
+**Version: v0.0.24**
 
-**Release Date: January 3rd, 2024**
+**Release Date: January 11, 2024**
 
 ==}
 
 This release of {{config.extra.arcana.company_name}} SDKs consist of the following components:
 
-* [{{config.extra.arcana.gasless_sdk_name}} v0.0.23](https://www.npmjs.com/package/@arcana/scw/v/0.0.23)
+* [{{config.extra.arcana.gasless_sdk_name}} v1.0.24](https://www.npmjs.com/package/@arcana/scw/v/0.0.24)
 * [{{config.extra.arcana.sdk_name}} v1.0.8](https://www.npmjs.com/package/@arcana/auth/v/1.0.8)
 * {{config.extra.arcana.dashboard_name}}
 * {{config.extra.arcana.wallet_name}} UI

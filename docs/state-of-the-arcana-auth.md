@@ -43,8 +43,8 @@ See [[quick-start| here]] to learn more about how to enable [[concept-gasless-tr
 <!--
 === "Gaming Apps"
 
-    * Unity apps: (Coming Soon!)
-    * Unreal apps: (Coming Soon!)
+    * Unity apps
+    * Unreal apps (Coming Soon!)
 -->
 
 ## What's New?

@@ -22,7 +22,7 @@ Web3 app developers can easily enable zero gas fees for app users by using {{con
 2. **Multi-wallet Apps**: Multi-wallet apps are those that support {{config.extra.arcana.wallet_name}} and third-party browser-based wallets as well. They need to enable gasless transactions in both, the {{config.extra.arcana.wallet_name}} and any third-party browser-based wallet. 
 3. **Only Third-party Wallet Apps**: This use case refers to apps that only need to enable gasless transactions for other third-party, browser-based wallets. Such apps do not require any user onboarding functionality or the embedded, non-custodial {{config.extra.arcana.wallet_name}} offered by the {{config.extra.arcana.sdk_name}}.
 
-In every use case above, the developers must first use the  {{config.extra.arcana.dashboard_name}} and register the app, obtain a unique identifier for the app and configure gasless settings. Then they need to install one or more {{config.extra.arcana.sdk_name}} SDKs and integrate with them using the unique app identifier.
+In every use case above, the developers must first use the  {{config.extra.arcana.dashboard_name}} and register the app, obtain a unique identifier for the app and configure gasless settings. After gasless configuration is complete, developers can proceed to install the requisite SDKs as per the use case and begin app integration.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="Auth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
@@ -41,15 +41,17 @@ Follow the instructions [[configure-gasless|here to configure gasless feature us
 
 Make sure the gasless configuration is completed via the {{config.extra.arcana.dashboard_name}} before this step.
 
-Apps that only need to enable gasless transactions for some third-party, browser-based wallets can simply install and integrate with the {{config.extra.arcana.gasless_sdk_name}}. Refer to the code snippets below for details:
+Apps that only need to enable gasless transactions for some third-party, browser-based wallets can simply install and integrate with the {{config.extra.arcana.gasless_sdk_name}}. For details, see the code snippets below:
 
-    {% include "./code-snippets/gasless_integrate_use.md" %}
+{% include "./code-snippets/gasless_integrate_use.md" %}
 
 Next, add code to onboard users.
 
 ## Step 4: Onboard Users
 
-After installing and integrating with the {{config.extra.arcana.gasless_sdk_name}}, developers need to add custom code to onboard users. After authenticating users, enable gasless transactions for third-party wallets by calling `doTx()` method of the {{config.extra.arcana.gasless_sdk_name}}.
+After installing and integrating with the {{config.extra.arcana.gasless_sdk_name}}, developers need to add custom code to onboard users. After authenticating users, enable gasless transactions for third-party wallets by calling the `doTx()` method of the {{config.extra.arcana.gasless_sdk_name}}.
+
+{% include "./code-snippets/gasless_integrate_doTx.md" %}
 
 ## Step 5: Deploy App
 
