@@ -767,6 +767,7 @@ gasless-enabled
 gasless-quick-start
 gasless-sdk
 gasless-sdk-usage-guide
+gasless-user-onboarding
 generatedelegatekey
 getAvailableLogins
 getPublicKey
@@ -1040,6 +1041,7 @@ indexwalletdev
 indexweb3walletops
 init
 instantiation
+integrate-gasless-app
 integrate-react-nextjs-app
 integrate-shardeum
 integrate-vue-app

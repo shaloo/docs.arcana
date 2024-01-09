@@ -80,7 +80,7 @@ nav:
         - Gasless: howto/configure-gasless.md
     - Integrate Auth:
       - howto/integrate/index.md
-      - Web apps:
+      - Web Apps:
         - howto/integrate-app/index.md
         - Integrate:
           - howto/integrate-app/app-type/index.md
@@ -92,9 +92,10 @@ nav:
             - RainbowKit App: howto/integrate-app/rainbow.md
             - Web3-React App: howto/integrate-app/web3-react.md
           - Vue App: howto/integrate-app/vue.md
+          - Gasless App: howto/integrate-app/gasless.md
         - Onboard Users: 
           - howto/onboard-users/index.md
-          - Vanilla JS Apps:
+          - Vanilla JS App:
             - howto/onboard-users/vanilla/index.md
             - Plug-and-Play Login UI: howto/onboard-users/vanilla/use-plug-play-auth.md
             - Custom Login UI:
@@ -112,7 +113,7 @@ nav:
                 - howto/onboard-users/vanilla/custom-ui/build-idm/index.md
                 - Cognito: howto/onboard-users/vanilla/custom-ui/build-idm/cognito-oauth.md
                 - Firebase: howto/onboard-users/vanilla/custom-ui/build-idm/firebase-login.md
-          - React Apps:
+          - React App:
             - howto/onboard-users/react/index.md
             - React/NextJS Apps: 
               - howto/onboard-users/react-nextjs/index.md
@@ -132,19 +133,19 @@ nav:
                   - howto/onboard-users/react-nextjs/custom-ui/build-idm/index.md
                   - Cognito: howto/onboard-users/react-nextjs/custom-ui/build-idm/cognito-oauth.md
                   - Firebase: howto/onboard-users/react-nextjs/custom-ui/build-idm/firebase-login.md
-            - Wagmi Apps: 
+            - Wagmi App: 
               - howto/onboard-users/wagmi/index.md
               - Plug-and-Play Login UI: howto/onboard-users/wagmi/wagmi-pnp-ui.md
               - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
-            - RainbowKit Apps: 
+            - RainbowKit App: 
               - howto/onboard-users/rainbow/index.md
               - Plug-and-Play Login UI: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
               - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
-            - Web3-React Apps:
+            - Web3-React App:
               - howto/onboard-users/web3-react/index.md
               - Plug-and-Play Login UI: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
               - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
-          - Vue Apps: 
+          - Vue App: 
               - howto/onboard-users/vue/index.md
               - Plug-and-Play Login UI: howto/onboard-users/vue/use-plug-play-auth.md
               - Custom Login UI:
@@ -162,22 +163,23 @@ nav:
                   - howto/onboard-users/vue/custom-ui/build-idm/index.md
                   - Cognito: howto/onboard-users/vue/custom-ui/build-idm/cognito-oauth.md
                   - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
+          - Gasless App: howto/onboard-users/gasless.md
         - Handle Events: howto/handle-provider-events.md
         - Wallet Ops:
           - wallet-ops/index.md
           - Enable Arcana Wallet:
             - howto/arcana-wallet/index.md
             - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
-            - Web3 Wallet Ops:
-              - howto/arcana-wallet/web3-ops/index.md
-              - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
-              - Check Wallet Balance: howto/arcana-wallet/balance.md
-              - Send Tokens: howto/arcana-wallet/send.md
-              - Sign Transactions: howto/arcana-wallet/sign.md
-              - Show Wallet: howto/arcana-wallet/show.md
-              - Watch Assets: howto/arcana-wallet/watchasset.md
+          - Web3 Wallet Ops:
+            - howto/arcana-wallet/web3-ops/index.md
+            - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
+            - Check Wallet Balance: howto/arcana-wallet/balance.md
+            - Send Tokens: howto/arcana-wallet/send.md
+            - Sign Transactions: howto/arcana-wallet/sign.md
+            - Show Wallet: howto/arcana-wallet/show.md
+            - Watch Assets: howto/arcana-wallet/watchasset.md
           - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
-      - Mobile apps:
+      - Mobile Apps:
         - howto/mobile/index.md
         - Flutter Apps: howto/mobile/flutter-get-started.md
         - React-Native Apps: howto/mobile/react-native-get-started.md

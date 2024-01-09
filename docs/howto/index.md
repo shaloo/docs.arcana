@@ -40,10 +40,6 @@ arcana:
 
         [[react-native-quick-start|React-Native Apps :simple-react:]]{ .md-button }
 
-    ??? abstract "Gasless Apps"
-
-        [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }
-
 === "Deploy App"
 
     ## Deploy App
