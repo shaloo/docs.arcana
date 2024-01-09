@@ -39,17 +39,17 @@ The {{config.extra.arcana.product_name}} product consists of two key components:
 
 The primary audience for this documentation is Web3 application developers.
 
-Seasoned Web3 developers can jump right in with the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]], [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and {% include "./text-snippets/authsdkref_url.md" %}.
+Seasoned developers can jump into the [[quick-start|quick start guides]] to enable social login and gasless transactions for the app users. Refer to the [[|index-dev-resources|'Developer Resources' section]] for SDK reference and usage guides.
 
-Developers can refer to the [[index-howto-guides|How To Guides]] to learn more about how to register and configure the Web3 applications before they can be integrated with the {{config.extra.arcana.wallet_name}}.
+See [[index-howto-guides|'Get Started']] section for step-by-step instructions on how to register and configure the social login and gasless usage before starting with the installation of the SDKs and integrating apps to enable {{config.extra.arcana.wallet_name}} for authenticated app users and allow gasless transactions.
 
-If you are new to the Web3 ecosystem, we recommend that you check out the [[index-arcana-academy|{{config.extra.arcana.company_name}} Academy]] section first before jumping into the [[index-tutorials| Tutorials]] and [[index-code-samples|code samples]]. 
+For those new to the Web3 ecosystem, we recommend the [[index-arcana-academy|'{{config.extra.arcana.company_name}} Academy']] section followed by the [[index-tutorials| 'Tutorials']] and [[index-code-samples|' Code Samples']] sections.
 
-Web3 application users can learn more about how to use the {{config.extra.arcana.wallet_name}} for performing Web3 operations by referring to the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
+The {{config.extra.arcana.wallet_name}} users can check out the wallet UX, setting up multi-factor security and available features in the [[index-wallet-user-guide|'User Guide']] section.
 
-Learn about new product features in the [[rn-main-auth-v1.0.4|Release Notes]]. You can see the detailed changelog for the [{{config.extra.arcana.sdk_name}}](https://github.com/arcana-network/auth/compare/v{{config.extra.arcana.previous_version}}...v{{config.extra.arcana.latest_version}}) and [{{config.extra.arcana.dashboard_name}}](https://github.com/arcana-network/developer-dashboard/compare/v{{config.extra.arcana.previous_version_dashboard}}...v{{config.extra.arcana.latest_version_dashboard}}) to figure out what has changed.
+The {{config.extra.arcana.company_name}} SDKs are rapidly evolving. Stay tuned to the [[index-release-notes|Release Notes]] for details. Detailed changelog for the [{{config.extra.arcana.sdk_name}}](https://github.com/arcana-network/auth/compare/v{{config.extra.arcana.previous_version}}...v{{config.extra.arcana.latest_version}}) and [{{config.extra.arcana.dashboard_name}}](https://github.com/arcana-network/developer-dashboard/compare/v{{config.extra.arcana.previous_version_dashboard}}...v{{config.extra.arcana.latest_version_dashboard}}) has the full change history.
 
-If you do not find answers to your questions in our [[index-faq| FAQ]], drop us an [email](mailto://support@arcana.network) or contact us through the [support channels](#support--feedback).
+If you do not find answers to your questions in our [[index-faq| FAQ]], or the [[troubleshooting|troubleshooting guide]], drop us an [email](mailto://support@arcana.network) or contact us through the [support channels](#support--feedback).
 
 ## Support & Feedback
 
