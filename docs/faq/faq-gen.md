@@ -54,7 +54,7 @@ toc_depth: 2
 
 ??? an-faq "Is there a passwordless login option to onboard the users?"
 
-      You can enable passwordless login to onboard app users by first registering the app with Arcana Network, then integrating it with the {{config.extra.arcana.sdk_name}} and then simply calling the [`loginWithLink` function](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) in the app code to onboard users. For details, see [[build-password-less-auth|how to enable passwordless login]].
+      The passwordless login option to onboard app users is enabled once the app registers through the {{config.extra.arcana.dashboard_name}} and then integrates with the {{config.extra.arcana.sdk_name}}. Initialize the SDK and use the `connect` method to bring up the built-in, plug-and-play login UI that allows passwordless login. Alternatively, add custom login UI and call the [`loginWithLink` method](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) to onboard users via the passwordless option. See [[build-password-less-auth|how to enable passwordless login]] for details.
 
 ## Deployment
 
@@ -84,7 +84,7 @@ toc_depth: 2
 
       There is no such warning displayed in the {{config.extra.arcana.wallet_name}} UI when the app is deployed on the Mainnet.
 
-      Also, the 'Global Keys' feature is available only for the apps deployed on the Arcana Mainnet.  What this means is that for all the apps that are integrated with the {{config.extra.arcana.sdk_name}} and have selected the 'Global Keys' feature, the authenticated user will see the same key/wallet address across all such apps when logging in using the same social login or passwordless mechanism.
+      Also, the 'Global Keys' feature is available only for the apps deployed on the Arcana Mainnet.  What this means is that for all the apps that are integrated with the {{config.extra.arcana.sdk_name}} and have selected the 'Global Keys' feature, the authenticated user will see the same key/wallet address across all such apps when logging in using the same social login or passwordless option.
 
 ??? an-faq "How does a developer migrate an app deployed on the Arcana Testnet to Mainnet?"
 

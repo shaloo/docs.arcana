@@ -157,7 +157,7 @@ Social login
 const provider = await auth.loginWithSocial(`${loginType}`)
 ```
 
-Passwordless login via an email verification link
+Passwordless login via an email verification OTP
 
 ```js
 const provider = await auth.loginWithLink(`${email}`)

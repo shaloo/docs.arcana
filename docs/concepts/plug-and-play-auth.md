@@ -8,13 +8,13 @@ arcana:
 
 # Plug & Play Auth
 
-In earlier beta releases, developers had to integrate the {{config.extra.arcana.sdk_name}} and create a custom login UI for user onboarding. For instance, supporting Google required coding a custom login UI and calling the `loginWithSocial('google')` function. Passwordless login needed an email input field and calling `loginWithLink` in the SDK.
+In earlier beta releases, apps were required to integrate with the {{config.extra.arcana.sdk_name}} in order to onboard users with custom login UI. For instance, to onboard users via Google, the custom login UI code was required to call the `loginWithSocial('google')` method. Similarly, the passwordless login option was required to provision an email input field and call `loginWithLink` in the SDK.
 
-Now, the latest Arcana Auth SDK offers a 'plug-and-play' feature, with a built-in login UI, eliminating the need for custom UI code unless preferred. This feature is referred to as plug and play auth. 
+Now, the latest Arcana Auth SDK offers a 'plug-and-play' feature, with a built-in login UI, eliminating the need for custom UI code, unless preferred. This feature is referred to as 'plug-and-play auth'. 
 
-Developers can use the [`connect`](https://authsdk-ref-guide.netlify.app/classes/authprovider#connect) function to enable it, displaying [[configure-auth|configured onboarding options]] from the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md).
+Developers can now choose to use the [`connect`](https://authsdk-ref-guide.netlify.app/classes/authprovider#connect) method to bring up the built-in login UI, displaying [[configure-auth|configured onboarding options]] as setup using the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md).
 
-After successful authentication, users instantly access the {{config.extra.arcana.wallet_name}} for blockchain transactions. Developers can opt for the `connect` function or stick with `loginWithSocial` and `loginWithLink` functions, building their custom UI.
+After successful authentication, users instantly access the {{config.extra.arcana.wallet_name}} for blockchain transactions. 
 
 ## Compact Plug & Play UI
 
