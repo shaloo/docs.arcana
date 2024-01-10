@@ -65,23 +65,25 @@ nav:
     - Register & Configure:
       - howto/reg-config/index.md
       - Register App: howto/configure-auth.md
-      - Configure Auth: 
-        - howto/config-auth/index.md
-        - Manage Chains: howto/config-auth/config-wallet-chains.md
-        - Social Providers: 
-          - howto/config-social/index.md
-          - Discord Setup: howto/config-social/discord-oauth.md
-          - GitHub Setup: howto/config-social/github-oauth.md
-          - Google Setup: howto/config-social/google-oauth.md
-          - Steam: howto/config-social/steam-oauth.md
-          - Twitch Setup: howto/config-social/twitch-oauth.md
-          - Twitter Setup: howto/config-social/twitter-oauth.md
-        - Custom IAM Providers:
-          - howto/config-idm/index.md
-          - Cognito: howto/config-idm/cognito-oauth.md
-          - Firebase: howto/config-idm/firebase-auth.md
+      - Configure: 
+        - howto/config/index.md
+        - Auth:
+          - howto/config-auth/index.md
+          - Manage Chains: howto/config-auth/config-wallet-chains.md
+          - Social Providers: 
+            - howto/config-social/index.md
+            - Discord Setup: howto/config-social/discord-oauth.md
+            - GitHub Setup: howto/config-social/github-oauth.md
+            - Google Setup: howto/config-social/google-oauth.md
+            - Steam: howto/config-social/steam-oauth.md
+            - Twitch Setup: howto/config-social/twitch-oauth.md
+            - Twitter Setup: howto/config-social/twitter-oauth.md
+          - Custom IAM Providers:
+            - howto/config-idm/index.md
+            - Cognito: howto/config-idm/cognito-oauth.md
+            - Firebase: howto/config-idm/firebase-auth.md
         - Gasless: howto/configure-gasless.md
-    - Integrate Auth:
+    - Integrate Auth SDK:
       - howto/integrate/index.md
       - Web App:
         - howto/integrate-app/index.md
@@ -96,6 +98,7 @@ nav:
             - Web3-React App: howto/integrate-app/web3-react.md
           - Vue App: howto/integrate-app/vue.md
           - Gasless App: howto/integrate-app/gasless.md
+          - Solana App: howto/integrate-app/solana.md
         - Onboard Users: 
           - howto/onboard-users/index.md
           - Vanilla JS App:
@@ -167,6 +170,7 @@ nav:
                   - Cognito: howto/onboard-users/vue/custom-ui/build-idm/cognito-oauth.md
                   - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
           - Gasless App: howto/onboard-users/gasless.md
+          - Solana App: howto/onboard-users/solana.md
         - Handle Events: howto/handle-provider-events.md
         - Wallet Ops:
           - wallet-ops/index.md
@@ -189,6 +193,7 @@ nav:
         - howto/mobile/index.md
         - Flutter Apps: howto/mobile/flutter-get-started.md
         - React-Native Apps: howto/mobile/react-native-get-started.md
+    - Integrate Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - Deploy:
       - deploy/index.md
       - Testnet/Mainnet: howto/deploy-app.md
