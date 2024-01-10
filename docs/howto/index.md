@@ -22,9 +22,9 @@ arcana:
 
     [[solana-dashboard-user-guide|Configure non-EVM Solana Chain :chains:]]{ .md-button }
 
-=== "Integrate Auth"
+=== "Integrate SDKs"
 
-    ## Integrate Auth
+    ## Auth
 
     ??? abstract "Desktop/Web Apps"
 
@@ -35,6 +35,8 @@ arcana:
         [[handle-provider-events|Handle Events :material-bell-cog:]]{ .md-button }
 
         [[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+
+        [[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet-plus-outline:]]{ .md-button }
 
     ??? abstract "Mobile Apps"
 
@@ -49,6 +51,10 @@ arcana:
     ??? abstract "Solana Apps"
 
         [[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
+
+    ## Gasless 
+
+    [[gasless-standalone-quick-start|Gasless Apps (Third-party wallets) :material-gas-station-off:]]{ .md-button }
 
 === "Deploy App"
 

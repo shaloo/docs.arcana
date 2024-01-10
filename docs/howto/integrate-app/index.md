@@ -35,6 +35,8 @@ After installing the SDK, follow the detailed step-by-step integration instructi
 
 [[integrate-vue-app|Integrate Vue App :material-vuejs:]]{ .md-button }
 
+[[integrate-gasless-app|Gasless App :material-gas-station-off:]]{ .md-button }
+
 ## Onboard Users
 
 After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug and play auth UI or custom login UI.
@@ -45,6 +47,8 @@ After integration, the Web3 apps can add code to onboard users via the configure
 
 [[index-vue-onboard-users| Vue Apps :material-card-account-mail:]]{ .md-button }
 
+[[gasless-user-onboarding|Gasless App :material-gas-station-off:]]{ .md-button }
+
 ## Handle Events
 
 [[handle-provider-events|Handle Events :material-bell-cog:]]{ .md-button }
@@ -52,6 +56,8 @@ After integration, the Web3 apps can add code to onboard users via the configure
 ## Wallet Ops
 
 [[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
+
+[[index-web3-wallet-ops|Enabling Web3 Wallet Ops :material-wallet:]]{ .md-button }
 
 [[custom-wallet-ui| Custom wallet UI :fontawesome-solid-gears:]]{ .md-button }
 

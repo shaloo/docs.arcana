@@ -8,10 +8,10 @@ arcana:
 
 # React Apps
 
-[[index-react-nextjs-onboard-users|React/NextJS Apps :fontawesome-brands-react:]]{ .md-button }
+[[index-react-nextjs-onboard-users|React/NextJS App :fontawesome-brands-react:]]{ .md-button }
 
-[[index-wagmi-onboard-users| Wagmi Apps :material-card-account-mail:]]{ .md-button }
+[[index-wagmi-onboard-users| Wagmi App :material-card-account-mail:]]{ .md-button }
 
-[[index-rainbow-onboard-users| RainbowKit Apps :material-card-account-mail:]]{ .md-button }
+[[index-rainbow-onboard-users| RainbowKit App :material-card-account-mail:]]{ .md-button }
 
-[[index-web3-react-onboard-users| Web3-React Apps :material-card-account-mail:]]{ .md-button }
+[[index-web3-react-onboard-users| Web3-React App :material-card-account-mail:]]{ .md-button }
