@@ -237,4 +237,4 @@ For a sample demonstrating an app that integrates with the {{config.extra.arcana
 ## See Also
 
 * [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide]]
-* {{config.extra.arcana.auth_core_sdk_name}} API Reference Guide
+* {% include "./text-snippets/auth_core_sdkref_url.md" %}
