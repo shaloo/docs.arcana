@@ -8,7 +8,7 @@ arcana:
 
 # Developer Guides
 
-[[dashboard-user-guide|Dashboard User Guide :material-monitor-dashboard:]]{ .md-button }
+[[dashboard-user-guide| Dashboard User Guide :material-monitor-dashboard:]]{ .md-button }
 
 [[solana-dashboard-user-guide| Solana Configuration Guide :material-monitor-dashboard:]]{ .md-button }
 
@@ -18,4 +18,4 @@ arcana:
 
 [[troubleshooting| Troubleshooting :material-auto-fix:]]{ .md-button }
 
-[[web-auth-error-msg|Error Handling :material-arrow-right-box:]]{ .md-button }
+[[web-auth-error-msg| Error Handling :material-arrow-right-box:]]{ .md-button }
