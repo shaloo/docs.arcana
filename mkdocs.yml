@@ -366,6 +366,7 @@ extra:
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
+    site_status: !ENV [SITE_STATUS,'draft']
     sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK
     wagmi_sdk_name: Arcana Auth Wagmi SDK
