@@ -8,30 +8,35 @@ arcana:
 
 # Solana Web3 Wallet Operations
 
-{% include "./text-snippets/solana-web3-ops.md" %}
+Solana chain is a bit different from typical EVM chians in how it supports Web3 wallet operations and [[solana-json-rpc-ops|JSON-RPC calls]]. 
 
-## Get Public Key
+Developers can use the `auth.solana` provider for issuing the supported Web3 wallet operations listed below in the context of the authenticated user. 
 
-```js
-const publicKey = await auth.solana.request({ 
-  method: 'getAccounts', params: [""]
-}); 
-```
+Before issuing the Web3 wallet operations, make sure you have installed the {{config.extra.arcana.sdk_name}}, [[integrate-solana-app|integrated the Solana app]] with the SDK and initialized the solana provider. Only the following Web3 wallet operations are supported:
 
-The `publicKey` is returned as a string: ["your-public-key-in-string-format"].
+{% include "./text-snippets/solana_web3_ops.md" %}
 
-## `SignMessage` Operation
+## Supported Web3 Operations
+
+### `SignMessage`
 
 ```js
+  const message = `Sign below to authenticate with CryptoCorgis to avoid digital dognappers`;
   const encodedMessage = new TextEncoder().encode(message);
   // To get a proper signature, the second parameter in signMessage call 
   // can be either "hex" or "utf8", depending on what kind of message we are signing. 
   // For plaintext, use "utf8"; 
   // For hex message, use "hex"
-  const signature = await auth.solana.signMessage(encodedMessage, "utf8");
+  try {
+    const signature = await solanaP.signMessage(encodedMessage, "hex");
+    window.solanaSig = signature;
+    console.log(signature);
+  } catch (e) {
+    console.error(e);
+  }
 ```
 
-### Signature Format
+#### Signature Format
 
 ```js
   {
@@ -42,9 +47,10 @@ The `publicKey` is returned as a string: ["your-public-key-in-string-format"].
   }
 ```
 
-## `SignTransaction` Operation
+### `SignTransaction`
 
 ```js
+try {
   const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey)
   const connection = new SolanaWeb3.Connection(
     SolanaWeb3.clusterApiUrl("testnet") // can be "devnet", "testnet" or "mainnet-beta"
@@ -75,9 +81,12 @@ The `publicKey` is returned as a string: ["your-public-key-in-string-format"].
 
   // sign your transaction with the required `Signers`
   const signature = await payer.signTransaction(transaction);
+} catch (e) {
+    console.error(e);
+}
 ```
 
-### Signature Format
+#### Signature Format
 
 ```js
 {
@@ -107,43 +116,48 @@ message: {
 }
 ```
 
-## `SignAllTransactions` Operation
+### `SignAllTransactions`
 
 ```js
-const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey);
-const connection = new SolanaWeb3.Connection(
-  window.solanaWeb3.clusterApiUrl("testnet")
-);
+try {
+  const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey);
+  const connection = new SolanaWeb3.Connection(
+    window.solanaWeb3.clusterApiUrl("testnet")
+  );
 
-const minRent = await connection.getMinimumBalanceForRentExemption(0);
+  const minRent = await connection.getMinimumBalanceForRentExemption(0);
 
-const blockhash = await connection.getLatestBlockhash().then((res) => res.blockhash);
+  const blockhash = await connection.getLatestBlockhash().then((res) => res.blockhash);
 
-const payer = auth.solana;
+  const payer = auth.solana;
 
-const instructions = [
-  SolanaWeb3.SystemProgram.transfer({
-    fromPubkey: pk,
-    toPubkey: pk,
-    lamports: minRent,
-  }),
-];
+  const instructions = [
+    SolanaWeb3.SystemProgram.transfer({
+      fromPubkey: pk,
+      toPubkey: pk,
+      lamports: minRent,
+    }),
+  ];
 
-const messageV0 = new SolanaWeb3.TransactionMessage({
-  payerKey: pk,
-  recentBlockhash: blockhash,
-  instructions,
-}).compileToV0Message();
+  const messageV0 = new SolanaWeb3.TransactionMessage({
+    payerKey: pk,
+    recentBlockhash: blockhash,
+    instructions,
+  }).compileToV0Message();
 
-const transaction = new SolanaWeb3.VersionedTransaction(messageV0);
+  const transaction = new SolanaWeb3.VersionedTransaction(messageV0);
 
-// sign your transaction with the required `Signers`
-const signatures = await payer.signAllTransactions([
-  transaction,
-  transaction,
-  transaction,
-]); // Should/can send multiple different transactions, 
-    // right now sending 1 transaction multiple times for example
+  // sign your transaction with the required `Signers`
+  const signatures = await payer.signAllTransactions([
+    transaction,
+    transaction,
+    transaction,
+  ]); // Should/can send multiple different transactions, 
+      // right now sending 1 transaction multiple times just as an example
+
+} catch (e) {
+    console.error(e);
+}
 ```
 
 The signature format here is same as above with a minor difference:
@@ -152,41 +166,45 @@ The signature format here is same as above with a minor difference:
 [Signature0, Signature1, Signature2, and so on]
 ```
 
-## `SignAndSendTransaction` Operation
+### `SignAndSendTransaction`
 
 ```js
-onst pk = new SolanaWeb3.PublicKey(auth.solana.publicKey);
-const connection = new SolanaWeb3.Connection(
-  SolanaWeb3.clusterApiUrl("testnet")
-);
+try {
+  const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey);
+  const connection = new SolanaWeb3.Connection(
+    SolanaWeb3.clusterApiUrl("testnet")
+  );
 
-const minRent = await connection.getMinimumBalanceForRentExemption(0);
+  const minRent = await connection.getMinimumBalanceForRentExemption(0);
 
-const blockhash = await connection.getLatestBlockhash().then((res) => res.blockhash);
+  const blockhash = await connection.getLatestBlockhash().then((res) => res.blockhash);
 
-const payer = auth.solana; // Arcana Solana API
+  const payer = auth.solana; // Arcana Solana API
 
-const instructions = [
-  SolanaWeb3.SystemProgram.transfer({
-    fromPubkey: pk,
-    toPubkey: pk,
-    lamports: minRent,
-  }),
-];
+  const instructions = [
+    SolanaWeb3.SystemProgram.transfer({
+      fromPubkey: pk,
+      toPubkey: pk,
+      lamports: minRent,
+    }),
+  ];
 
-const messageV0 = new SolanaWeb3.TransactionMessage({
-  payerKey: pk,
-  recentBlockhash: blockhash,
-  instructions,
-}).compileToV0Message();
+  const messageV0 = new SolanaWeb3.TransactionMessage({
+    payerKey: pk,
+    recentBlockhash: blockhash,
+    instructions,
+  }).compileToV0Message();
 
-const transaction = new SolanaWeb3.VersionedTransaction(messageV0);
+  const transaction = new SolanaWeb3.VersionedTransaction(messageV0);
 
-// sign your transaction with the required `Signers`
-const txHash = await payer.signAndSendTransaction(transaction);
+  // sign your transaction with the required `Signers`
+  const txHash = await payer.signAndSendTransaction(transaction);
+}  catch (e) {
+    console.error(e);
+}
 ```
 
-### Response Format
+#### Response Format
 
 ```js
 {

@@ -189,7 +189,10 @@ nav:
                   - Sign Transactions: howto/arcana-wallet/sign.md
                   - Show Wallet: howto/arcana-wallet/show.md
                   - Watch Assets: howto/arcana-wallet/watchasset.md
-                - Solana: howto/arcana-wallet/solana-wallet-ops.md
+                - Solana: 
+                  - howto/arcana-wallet/web3-ops/solana/index.md
+                  - JSON-RPC Ops: howto/arcana-wallet/solana-json-rpc-ops.md
+                  - Web3 Wallet Ops: howto/arcana-wallet/solana-wallet-ops.md
             - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
         - Mobile App:
           - howto/mobile/index.md

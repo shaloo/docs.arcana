@@ -16,7 +16,7 @@ arcana:
 
 !!! info "Solana: Web3 Wallet Ops"
 
-      {% include "./text-snippets/solana-web3-ops.md" %}
+      {% include "./text-snippets/solana_web3_ops.md" %}
 
 ## Adding Chains
 
