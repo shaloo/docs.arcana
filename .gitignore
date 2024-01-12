@@ -1,4 +1,4 @@
-libcairo.2.dylib
+libcairo*
 site
 **/.DS_Store
 .env*

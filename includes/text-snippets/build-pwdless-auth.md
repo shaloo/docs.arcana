@@ -1,6 +1,6 @@
 # Build Custom Passwordless Auth
 
-In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrates with the {{config.extra.arcana.sdk_name}} can easily onboard users via custom login UI that enables passwordless login.
+In this guide, you will learn how to integrate {{page.meta.arcana.app_type}} app with the {{config.extra.arcana.sdk_name}} and then onboard users through custom login UI and passwordless login option.
 
 ## Prerequisites
 

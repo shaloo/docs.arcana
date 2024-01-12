@@ -4,6 +4,7 @@ title: 'Auth-Core Quick Start'
 description: 'Get Started quickly with using the Auth-Core SDK and enable social login in Web3 apps. Understand the difference between Auth-Core and Auth SDK features, usage model the security and privacy implications when integrating an app with the Auth-Core SDK. Follow these step-by-step instructions to register the app, obtain a ClientID and then integrate the app with the Arcana Auth-Core SDK.'
 arcana:
   root_rel_path: ..
+  app_type: "'Auth-Core'"
   app_example_submodule: "'`sample-auth-core`'"
 ---
 
@@ -24,7 +25,9 @@ arcana:
 
 ## Overview
 
-To implement a {{config.extra.arcana.product_name}} solution where developers have secure access to the **private keys**, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.auth_core_sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. Add code to facilitate user onboarding by handling the redirect flow after user authentication. Also, add support for Web3 wallet operations. Finally, deploy your app on the Testnet or Mainnet.
+The {{config.extra.arcana.auth_core_sdk_name}} is meant for implementing Web3 app solutions where developers need to securely assign blockchain access keys, the **private keys** to every authenticated user, and build a custom wallet UI instead of using the one built-in the {{config.extra.arcana.sdk_name}}.
+
+Start by registering the app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.auth_core_sdk_name}}, integrate it with your app, and initialize the `AuthProvider`. Add code to facilitate user onboarding by handling the redirect flow after user authentication. Also, add custom code for wallet UI to enable Web3 wallet and blockchain operations. Finally, deploy your app on the Testnet or Mainnet.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
@@ -127,6 +130,12 @@ await auth.handleRedirect();
 
 --->
 
+!!! warning "Cognito & Firebase"
+
+      Web3 apps that do not wish to use the user onboarding features offered by the {{config.extra.arcana.auth_core_sdk_name}} but only need to assign cryptographic keys to the authenticated users (for e.g., apps using Cognito and Firebase) are not supported in the current release.
+
+      For more information, contact our [[support|support team]].
+
 #### Login Status
 
 ```js
@@ -221,11 +230,15 @@ try {
 
 ```
 
+### Step 6: Add Custom Wallet UI
+
+After adding code to onboard users via the {{config.extra.arcana.auth_core_sdk_name}} you can add custom wallet UI and wire it to perform Web3 wallet and blockchain operations for the chains supported by your app. Note that the {{config.extra.arcana.auth_core_sdk_name}} does not have built-in {{config.extra.arcana.wallet_name}} unlike the {{config.extra.arcana.dk_name}}. 
+
 That's all!!! :material-party-popper:
 
 {==
 
-You have successfully installed and integrated {{config.extra.arcana.auth_core_sdk_name}} with your Web3 app to easily onboard users and enable them to sign blockchain transactions easily.
+You've connected {{config.extra.arcana.auth_core_sdk_name}} to your Web3 app for smooth user onboarding. Just add your custom code for wallet actions, and users can effortlessly sign blockchain transactions.
 
 ==}
 
@@ -237,4 +250,4 @@ For a sample demonstrating an app that integrates with the {{config.extra.arcana
 ## See Also
 
 * [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide]]
-* {{config.extra.arcana.auth_core_sdk_name}} API Reference Guide
+* {% include "./text-snippets/auth_core_sdkref_url.md" %}

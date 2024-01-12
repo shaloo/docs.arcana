@@ -4,6 +4,8 @@ title: 'Quick Start: Gasless Apps'
 description: 'Get Started quickly with Arcana Auth product for apps that require social login and gasless feature by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID, configure gasless operations and then use the client ID to integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
+  app_type: "'Gasless'"
+  app_example_submodule: "'`sample-gasless-arcana-only`'"
 ---
 
 # Quick Start: Gasless Apps

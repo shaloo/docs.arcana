@@ -13,3 +13,5 @@ arcana:
 [[index-integrate-react-app|React App :fontawesome-brands-react: :simple-nextdotjs:]]{ .md-button }
 
 [[integrate-vue-app|Vue App :material-vuejs:]]{ .md-button }
+
+[[integrate-gasless-app|Gasless App :material-gas-station-off:]]{ .md-button }
