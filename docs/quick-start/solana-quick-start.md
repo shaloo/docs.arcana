@@ -48,15 +48,17 @@ For sample code and details on how to onboard users in a {{page.meta.arcana.app_
 
       {% include "./text-snippets/jwt_token.md" %}
 
+Next, add code to enable Web3 operations in the app through the {{config.extra.arcana.wallet_name}}.
+
+## Step 5: Web3 Operations
+
+After adding code to onboard users, developers can enable Web3 wallet operations in the Solana app. For details, see [[solana-json-rpc-ops|how to issue Solana JSON-RPC calls]] and [[solana-wallet-ops|how to issue Web3 wallet operations]] in a Solana app.
+
 **That's all!!!** :material-party-popper:
 
-Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
-
-Authenticated users can log in and instantly access a Web3 wallet from within the app's context.
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} within the app context and start signing blockchain transactions on Solana. 
 
 ## Next Steps
-
-After adding code to onboard users, you can optionally use the Web3 wallet operations supported by the `AuthProvider` for Solana chain. Note that not all the standard JSON RPC wallet operations that work in EVM-compatible chains work for Solana. For a list of supported Web3 wallet operations with Solana, see [[solana-wallet-ops|how to enable Web3 operations in Solana Apps]].
 
 Manage the user experience for signing blockchain transactions by selecting the default, built-in {{config.extra.arcana.wallet_name}} UI and tinkering with the [[configure-wallet-visibility|wallet visibility]] or [[custom-wallet-ui|replacing the built-in wallet with a custom wallet UI]]. 
 
@@ -65,6 +67,8 @@ To learn how to deploy the app on Testnet/Mainnet, see [[deploy-app|App Deployme
 ## Examples
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
+
+{% include "./text-snippets/demo/auth_sdk_solana_demo.md" %}
 
 ## See Also
 

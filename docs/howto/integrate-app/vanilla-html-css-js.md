@@ -10,9 +10,7 @@ arcana:
 
 In this guide, you will learn how to integrate a vanilla HTML/CSS/JS app with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md).
 
-<!-- 
-[Try Auth Example :material-rocket-launch:](https://9mt0h4.csb.app/){ .md-button .md-button--primary}
--->
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}
 
 ## Prerequisites
 
