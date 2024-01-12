@@ -52,7 +52,7 @@ Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvi
 
 {% include "./code-snippets/import_auth.md" %}
 
-{% include "./code-snippets/new_auth.md" %}
+{% include "./code-snippets/new_auth_solana.md" %}
 
 Initialize the newly instantiated `AuthProvider`. 
 

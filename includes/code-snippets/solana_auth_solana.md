@@ -13,9 +13,10 @@ const auth = new AuthProvider(
     connectOptions: {
       compact: true           // default: false, regular plug-and-play login UI
     },
-    chainConfig: {
-      chainId: '137',                    // defaults to Ethereum
-      rpcUrl: 'https://polygon-rpc.com', // defaults to 'https://rpc.ankr.com/eth'
+    chainConfig: { // Note: These values override dashboard settings during app registration
+      chainId: '1',                    // defaults to Solana Mainnet, use '2' for Testnet, '3' Devnet
+      rpcUrl: 'https://api.mainnet-beta.solana.com', // defaults to 'https://api.mainnet-beta.solana.com'
+      // Use 'https://api.testnet.solana.com' and https://api.devnet.solana.com' for Testnet, Devnet
     },
 })
 

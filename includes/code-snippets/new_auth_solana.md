@@ -1,8 +1,4 @@
-```js hl_lines="27"
-const { AuthProvider } = window.arcana.auth // From CDN
-//or
-import { AuthProvider } from '@arcana/auth' //From npm
-
+```js hl_lines="2"
 const auth = new AuthProvider(
   "xar_live_445007f942xxxxxxxxxxxxxxxxxx484cAfd2", // App client ID
   { 
@@ -19,12 +15,4 @@ const auth = new AuthProvider(
       // Use 'https://api.testnet.solana.com' and https://api.devnet.solana.com' for Testnet, Devnet
     },
 })
-
-try {
-  await auth.init()
-} catch (e) {
-  // Handle exception case
-}
-
-const provider = auth.provider;
 ```
