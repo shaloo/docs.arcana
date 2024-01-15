@@ -197,7 +197,7 @@ nav:
       - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md
-    - Gasless SDK Release Notes: relnotes/rn-main-scw-v0.0.24.md
+    - Gasless SDK Release Notes: relnotes/rn-main-scw-v0.0.25.md
     - Auth SDK Release Notes: relnotes/rn-main-auth-vOct12-23-gasless.md
     - Installation Guide: sdk-installation.md
     - Auth SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
@@ -232,7 +232,7 @@ nav:
       - archives/index.md
       - Release Notes:
         - relnotes/archives/index.md
-        - Gasless SDK: relnotes/rn-main-scw-v0.0.24.md
+        - Gasless SDK: relnotes/rn-main-scw-v0.0.25.md
         - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
         - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
         - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
@@ -258,7 +258,7 @@ nav:
         - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
         - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
         - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
-      - Gasless SDK Migration: migration/main-scw-v0.0.24-migration.md
+      - Gasless SDK Migration: migration/main-scw-v0.0.25-migration.md
 
   - Tutorials: 
     - tutorials/index.md
@@ -390,7 +390,7 @@ extra:
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, 'Beta-0.3']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
-    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.24']
+    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.25']
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
     gasless_sdk_pkg_name: scw
@@ -649,7 +649,7 @@ plugins:
         'concepts/ansmartc/an_smartc_details.md': 'concepts/ansmartc/an-smartc-deployed.md'
         'concepts/ansmartc/an_smartc_flows.md': 'concepts/ansmartc/an-smartc-deployed.md'
         'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smart-contracts.md'
-        'relnotes/latest.md': 'relnotes/rn-main-scw-v0.0.24.md'
+        'relnotes/latest.md': 'relnotes/rn-main-scw-v0.0.25.md'
         #website deprecated links go to contacts page
         'docs/accesscontrol/index.md': 'support.md'
         'docs/category/data-access-control/index.md': 'support.md'

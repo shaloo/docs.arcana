@@ -1,7 +1,7 @@
 ---
-alias: rn-main-scw-v0.0.24
+alias: rn-main-scw-v0.0.25
 title: 'Arcana: Gasless SDK Release Notes'
-description: 'Arcana Gasless SDKs Release Notes (v0.0.24 Latest)'
+description: 'Arcana Gasless SDKs Release Notes (v0.0.25 Latest)'
 arcana:
   root_rel_path: ..
 ---

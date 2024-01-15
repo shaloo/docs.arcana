@@ -1,12 +1,12 @@
 ---
-alias: migration-guide-v0.0.24
+alias: migration-guide-v0.0.25
 title: 'Gasless SDK Migration Guide'
 description: 'How to migrate to Arcana Gasless Standalone SDK'
 arcana:
   root_rel_path: ..
 ---
 
-# Migrating to v0.0.24
+# Migrating to v0.0.25
 
 This is the very first release of the {{config.extra.arcana.gasless_sdk_name}}.
 
@@ -16,4 +16,4 @@ Apps that require to enable gasless transactions in third-party, browser-based w
 
 ## Release Details
 
-Refer to the  [[rn-main-scw-v0.0.24|{{config.extra.arcana.gasless_sdk_name}} v0.0.24 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+Refer to the  [[rn-main-scw-v0.0.25|{{config.extra.arcana.gasless_sdk_name}} v0.0.25 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
