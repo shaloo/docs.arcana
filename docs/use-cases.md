@@ -18,9 +18,9 @@ Web3 developers can integrate apps with the {{config.extra.arcana.sdk_name}} to 
 
 ## User Authentication
 
-* **Plug-and-Play Auth**: Onboard users with a single line of code via `connect` method and enable popular Web2 social providers or passwordless login.
+* **Plug-and-Play Auth**: Onboard users with a single line of code. Call `connect` method to bring up plug-and-play login UI that displays the configured Web2 social providers and passwordless login options.
 
-* **Build-your-own-Auth-UI**: Create your own login UX and simply use `loginWithSocial` and `loginWithLink` methods to enable popular Web2 social providers or passwordless login to onboard users.
+* **Build-your-own-Auth-UI**: Create your own login UX and call `loginWithSocial` method to enable authentication via popular Web2 social providers. Use `loginWithLink` method for onboarding users via passwordless option.
 
 * **Customize Onboarding**: Choose which providers/login options are visible to the user at the time of logging into the Web3 application.
 

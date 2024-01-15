@@ -64,13 +64,11 @@ Initialize the newly instantiated `AuthProvider`.
 
     The app must wait until the `init` call is complete before invoking any of the other {{config.extra.arcana.sdk_name}} functions such as onboarding users by triggering user login, obtaining the standard Ethereum provider, adding/switching networks in the wallet, etc.
 
-After successful initialization, you can use any `AuthProvider` functions in the app code. 
-
-{% include "./code-snippets/provider.md" %}
+After initializing the `AuthProvider`, you can call any of its exported functions. See {% include "./text-snippets/authsdkref_url.md" %} for details.
 
 That is all! :material-party-popper:
 
-The vanilla HTML/CSS/JS app is now successfully integrated with the {{config.extra.arcana.sdk_name}}. 
+The vanilla HTML/CSS/JS app is now successfully integrated with the {{config.extra.arcana.sdk_name}}.
 
 !!! tip 'Zero Gas Fees'
 

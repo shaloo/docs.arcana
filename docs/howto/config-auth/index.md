@@ -1,12 +1,12 @@
 ---
 alias: index-configure-auth
-title: 'Configure Auth'
+title: 'Configure Auth Usage'
 description: 'Web3 app developers can enable various social authentication providers or custom IAM providers to onboard users in the app.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Configure Auth
+# Configure Auth Usage
 
 Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) and configure the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) usage as per your app requirements.
 

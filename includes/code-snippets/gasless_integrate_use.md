@@ -1,5 +1,3 @@
-Install the {{config.extra.arcana.gasless_sdk_name}}:
-
 {% include "./code-snippets/gasless_sdk_install.md" %}
 
 Initialize the {{config.extra.arcana.gasless_sdk_name}} using the unique app identifier obtained via the {{config.extra.arcana.dashboard_name}} after registering the app. You need to also provide the browser-based wallet EIP-1193 Ethereum provider for enabling gasless operations in that wallet.
@@ -13,7 +11,7 @@ const scw = new arcana.scw.SCW();
 await scw.init("<app_id>", window.ethereum);
 ```
 
-After initializing the {{config.extra.arcana.gasless_sdk_name}}, you can perform transactions using the `doTx()` method.
+After the `init` call, you can all other methods of the SCW object. Use the `getSCWAddress` to get the logged-in user's smart contract address (SCW Address).  Use `getPaymasterBalance` to check if the gas tank that is supposed to pay the gas fees for the logged-in user's transactions, is adequately funded.
 
 ```js
   const erc20abi = [...];
@@ -28,14 +26,10 @@ After initializing the {{config.extra.arcana.gasless_sdk_name}}, you can perform
     ethers.utils.parseEther(amount + ""),
   ]);
 
-  // You need to create transaction objects of the following interface
-  const tx1 = {
-    from: scw.getSCWAddress(),
-    to: erc20Address, // destination smart contract address
-    data: encodedData,
-  };
+  console.log("Address: " + scw.getSCWAddress());
 
-  let tx = await scw.doTx(tx1);
-  await tx.wait();
-  console.log(`Transfer done ${tx.userOpHash}`)
+  // Check balance
+  // Use scw.getPaymaster() to check whether gas tanks are adequately funded before issuing a transaction
+
+  console.log("Paymaster Balance: " + (await scw.getPaymasterBalance()) / 1e18);
 ```

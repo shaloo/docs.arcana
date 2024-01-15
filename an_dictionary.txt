@@ -765,6 +765,7 @@ gRPC
 gasless
 gasless-enabled
 gasless-quick-start
+gasless-standalone-quick-start
 gasless-sdk
 gasless-sdk-usage-guide
 gasless-user-onboarding
@@ -1227,6 +1228,7 @@ stgsdk_qs
 stgsdk_usage
 stgsdkdelete
 stgsdkmetrics
+submodule
 supported-blockchains
 testnet
 toc_depth
