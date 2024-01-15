@@ -206,9 +206,9 @@ nav:
       - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md
-    - Gasless SDK Release Notes: relnotes/rn-main-scw-v0.0.24.md
-    - Auth SDK Release Notes: relnotes/rn-main-auth-v1.0.9.md
-    - Installation Guide: sdk-installation.md
+    - Release Notes: relnotes/rn-main-auth-v1.0.9.md
+    - Gasless SDK Release Notes: relnotes/rn-main-scw-v0.0.25.md
+    - Auth Installation Guide: sdk-installation.md
     - Auth SDK Migration Guide: migration/main-auth-v1.0.9-migration.md
     - Developer Guides:
       - dev-resources/dev-guides/index.md
@@ -243,9 +243,9 @@ nav:
       - archives/index.md
       - Release Notes:
         - relnotes/archives/index.md
-        - Gasless SDK: relnotes/rn-main-scw-v0.0.24.md
-        - Auth SDK 1.0.9-beta.3 : relnotes/rn-main-auth-v1.0.9.md
-        - Auth Oct12-23-gasless: relnotes/rn-main-auth-vOct12-23-gasless.md
+        - Auth 1.0.9-beta.3 : relnotes/rn-main-auth-v1.0.9.md
+        - Gasless SDK: relnotes/rn-main-scw-v0.0.25.md
+        - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
         - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
         - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
         - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md

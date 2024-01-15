@@ -10,7 +10,7 @@ arcana:
 
 [[rn-main-scw-v{{config.extra.arcana.latest_gasless_sdk_version}}| {{config.extra.arcana.gasless_sdk_name}} v{{config.extra.arcana.latest_gasless_sdk_version}} :material-note-text:]]{ .md-button }
 
-[[rn-main-auth-v{{config.extra.arcana.product_release_tag}}|{{config.extra.arcana.product_name}}  v{{config.extra.arcana.product_release_tag}} Release :material-note-text:]]{ .md-button }
+[[rn-main-auth-v1.0.9-beta.3|Auth v1.0.9-beta.3 :material-note-text:]]{ .md-button }
 
 [[rn-main-auth-vOct12-23-gasless|Auth vOct12-23-gasless Release :material-note-text:]]{ .md-button }
 

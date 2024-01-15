@@ -23,7 +23,6 @@ Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} pack
     * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
     * Auth-Core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
     * Gasless Transactions with {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
-    * Apps that need to enable gasless in third-party wallets such as MetaMask or need a standalone gasless SDK with no social login or {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.gasless_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/scw)
     * Solana Apps: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
 
     {% if config.extra.arcana.exclude_content_tag %}
