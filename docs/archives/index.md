@@ -4,8 +4,8 @@ title: 'Arcana Auth Archives'
 description: 'List of past Auth Version Resources:  Release Notes and Migration Guides'
 ---
 
-# Past Auth Versions
+# Previous Versions
 
 [[index-release-notes|Release Notes :material-note-text:]]{ .md-button }
 
-[[index-migration-guides|SDK Migration :material-camera-enhance:]]{ .md-button }
+[[index-migration-guides|Auth SDK Migration :material-camera-enhance:]]{ .md-button }

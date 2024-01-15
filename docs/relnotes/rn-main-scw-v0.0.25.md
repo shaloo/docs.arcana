@@ -12,15 +12,17 @@ arcana:
 
 **Release Date: Jan 15, 2024**  
 
-Version: **vJan15-24-gasless-sdk**
+Gasless SDK Version: **v0.0.25**
 
-The {{config.extra.arcana.company_name}} offers the following SDKs:
+{{config.extra.arcana.company_name}} offers the following SDKs:
 
 * {{config.extra.arcana.sdk_name}}
 * {{config.extra.arcana.auth_core_sdk_name}}
 * {{config.extra.arcana.gasless_sdk_name}}
 
-There is no new update for the {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.auth_core_sdk_name}} in this release. Only an additional SDK, the {{config.extra.arcana.gasless_sdk_name}} is part of this release.
+{{config.extra.arcana.gasless_sdk_name}} is the newest addition to our offerings. 
+
+In this release, there are no new update for the {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.auth_core_sdk_name}}. 
 
 To configure authentication providers for user onboarding and to set up gas tanks for gasless transactions, developers need to use the {{config.extra.arcana.dashboard_name}}:
 
@@ -32,21 +34,21 @@ To configure authentication providers for user onboarding and to set up gas tank
 
 ---
 
-This is a major release that supports a brand new SDK - the {{config.extra.arcana.gasless_sdk_name}}. It allows apps using third-party browser based wallets to enable gasless transactions. This is a standalone SDK and does not depend on the {{config.extra.arcana.sdk_name}}. 
+This release of {{config.extra.arcana.company_name}} SDKs offers the brand new {{config.extra.arcana.gasless_sdk_name}}. With this SDK, develoeprs can enable gasless transactions in third-party, browser-based wallets. This is a standalone SDK and does not depend on the {{config.extra.arcana.sdk_name}}. 
 
 ## What has changed?
 
 ---
 
-Only a new standalone SDK has been added to the  {{config.extra.arcana.company_name}} offerings.
+A new SDK has been added to the  {{config.extra.arcana.company_name}} offerings.
 
-There are no usage changes, no need to migrate existing apps using the {{config.extra.arcana.sdk_name}}. 
+There are no usage changes, or updates to the {{config.extra.arcana.sdk_name}}.
 
-Earlier, Web3 app developers could only use the built-in gasless feature offered in the {{config.extra.arcana.sdk_name}} while signing blockchain transactions through the {{config.extra.arcana.wallet_name}}. The new standalone {{config.extra.arcana.gasless_sdk_name}} allows third-party browser-based wallets to leverage gasless transactions.
+Earlier, Web3 app developers could only use the built-in gasless feature offered in the {{config.extra.arcana.sdk_name}} and enable gasless transactions through the {{config.extra.arcana.wallet_name}}. The new standalone {{config.extra.arcana.gasless_sdk_name}} now allows third-party browser-based wallets to leverage gasless transactions.
 
 Apps that are already integrated with the {{config.extra.arcana.sdk_name}} and using the built-in gasless transactions in the  {{config.extra.arcana.wallet_name}} may choose to start using this new gasless standalone SDK for enabling gasless transactions in third-party browser-based wallets such as Metamask. 
 
-There are no changes for apps that do not use the built-in gasless feature of the  {{config.extra.arcana.sdk_name}} or do not wish to add gasless transactions to third-party wallets.
+There are no changes for apps that do not use the built-in gasless feature of the {{config.extra.arcana.sdk_name}} or do not wish to add gasless transactions to third-party wallets.
 
 ## Get Started
 
