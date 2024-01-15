@@ -66,7 +66,7 @@ toc_depth: 2
 
 ??? an-faq "What is the difference between Testnet and Mainnet?"
 
-      Arcana Testnet and Mainnet are two **different** blockchain networks. The {{config.extra.arcana.product_name}} product features available on Testnet may be different from the ones available on the Mainnet.  
+      Arcana Testnet and Mainnet are two **different** blockchain networks. The features offered by the {{config.extra.arcana.company_name}} SDKs available on Testnet may be different from the ones available on the Mainnet.  
 
       Following are the key differences between Arcana Testnet and Mainnet:
 

@@ -9,37 +9,39 @@ use_directory_urls: false
 # up to here
 
 site_description: >-
-  Web3 auth made easy with Arcana Auth. Provide instant, non-custodial wallets in your app.
+  Web3 app chains - onboarding made easy with Arcana SDKs: Auth, Gasless. Provide instant, non-custodial wallets in your app.
   Remove the friction of wallet installation, key backup, & crypto on-ramp.
   
 exclude_docs: |
   /integrations/*
-  gasless-sdk/gasless-sdk-usage-guide.md
 
 nav: 
-  - Arcana Auth:
+  - Arcana SDKs:
     - index.md
     - Introduction: 
       - intro/index.md
-      - Product Details: auth-overview.md
+      - Products: auth-overview.md
     - Quick Start: 
       - quick-start/index.md
-      - Web Apps: 
-        - quick-start/web/index.md
-        - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
-        - React:
-          - quick-start/web/react/index.md
-          - React/NextJS: quick-start/react-nextjs-quick-start.md
-          - Wagmi: quick-start/wagmi-quick-start.md
-          - RainbowKit: quick-start/rainbowkit-quick-start.md
-          - Web3-React: quick-start/web3-react-quick-start.md
-        - Vue: quick-start/vue-quick-start.md
-      - Mobile: 
-        - quick-start/mobile/index.md
-        - Flutter Apps: quick-start/flutter-quick-start.md
-        - React-Native Apps: quick-start/react-native-quick-start.md
-      - Auth-Core: quick-start/auth-core-quick-start.md
-      - Gasless Apps: quick-start/gasless-quick-start.md
+      - Auth SDK:
+        - quick-start/auth-sdk/index.md
+        - Web Apps: 
+          - quick-start/web/index.md
+          - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
+          - React:
+            - quick-start/web/react/index.md
+            - React/NextJS: quick-start/react-nextjs-quick-start.md
+            - Wagmi: quick-start/wagmi-quick-start.md
+            - RainbowKit: quick-start/rainbowkit-quick-start.md
+            - Web3-React: quick-start/web3-react-quick-start.md
+          - Vue: quick-start/vue-quick-start.md
+        - Mobile: 
+          - quick-start/mobile/index.md
+          - Flutter Apps: quick-start/flutter-quick-start.md
+          - React-Native Apps: quick-start/react-native-quick-start.md
+        - Gasless Apps: quick-start/gasless-quick-start.md
+      - Auth-Core SDK: quick-start/auth-core-quick-start.md
+      - Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - References:
       - quick-links/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
@@ -62,134 +64,143 @@ nav:
     - Register & Configure:
       - howto/reg-config/index.md
       - Register App: howto/configure-auth.md
-      - Configure Auth: 
-        - howto/config-auth/index.md
-        - Manage Chains: howto/config-auth/config-wallet-chains.md
-        - Social Providers: 
-          - howto/config-social/index.md
-          - Discord Setup: howto/config-social/discord-oauth.md
-          - GitHub Setup: howto/config-social/github-oauth.md
-          - Google Setup: howto/config-social/google-oauth.md
-          - Steam: howto/config-social/steam-oauth.md
-          - Twitch Setup: howto/config-social/twitch-oauth.md
-          - Twitter Setup: howto/config-social/twitter-oauth.md
-        - Custom IAM Providers:
-          - howto/config-idm/index.md
-          - Cognito: howto/config-idm/cognito-oauth.md
-          - Firebase: howto/config-idm/firebase-auth.md
+      - Configure: 
+        - howto/config/index.md
+        - Auth:
+          - howto/config-auth/index.md
+          - Manage Chains: howto/config-auth/config-wallet-chains.md
+          - Social Providers: 
+            - howto/config-social/index.md
+            - Discord Setup: howto/config-social/discord-oauth.md
+            - GitHub Setup: howto/config-social/github-oauth.md
+            - Google Setup: howto/config-social/google-oauth.md
+            - Steam: howto/config-social/steam-oauth.md
+            - Twitch Setup: howto/config-social/twitch-oauth.md
+            - Twitter Setup: howto/config-social/twitter-oauth.md
+          - Custom IAM Providers:
+            - howto/config-idm/index.md
+            - Cognito: howto/config-idm/cognito-oauth.md
+            - Firebase: howto/config-idm/firebase-auth.md
         - Gasless: howto/configure-gasless.md
-    - Integrate Auth:
-      - howto/integrate/index.md
-      - Web apps:
-        - howto/integrate-app/index.md
-        - Integrate:
-          - howto/integrate-app/app-type/index.md
-          - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
-          - React App: 
-            - howto/integrate-app/react/index.md
-            - React/NextJS App: howto/integrate-app/react-nextjs.md
-            - Wagmi App: howto/integrate-app/wagmi.md
-            - RainbowKit App: howto/integrate-app/rainbow.md
-            - Web3-React App: howto/integrate-app/web3-react.md
-          - Vue App: howto/integrate-app/vue.md
-        - Onboard Users: 
-          - howto/onboard-users/index.md
-          - Vanilla JS Apps:
-            - howto/onboard-users/vanilla/index.md
-            - Plug-and-Play Login UI: howto/onboard-users/vanilla/use-plug-play-auth.md
-            - Custom Login UI:
-              - howto/onboard-users/vanilla/custom-ui/index.md
-              - Passwordless Auth: howto/onboard-users/vanilla/custom-ui/build-pwdless-auth.md
-              - Social Auth: 
-                - howto/onboard-users/vanilla/custom-ui/build-social/index.md
-                - Discord: howto/onboard-users/vanilla/custom-ui/build-social/discord-oauth.md
-                - GitHub: howto/onboard-users/vanilla/custom-ui/build-social/github-oauth.md
-                - Google: howto/onboard-users/vanilla/custom-ui/build-social/google-oauth.md
-                - Steam: howto/onboard-users/vanilla/custom-ui/build-social/steam-oauth.md
-                - Twitch: howto/onboard-users/vanilla/custom-ui/build-social/twitch-oauth.md
-                - Twitter: howto/onboard-users/vanilla/custom-ui/build-social/twitter-oauth.md
-              - Custom IAM Auth:
-                - howto/onboard-users/vanilla/custom-ui/build-idm/index.md
-                - Cognito: howto/onboard-users/vanilla/custom-ui/build-idm/cognito-oauth.md
-                - Firebase: howto/onboard-users/vanilla/custom-ui/build-idm/firebase-login.md
-          - React Apps:
-            - howto/onboard-users/react/index.md
-            - React/NextJS Apps: 
-              - howto/onboard-users/react-nextjs/index.md
-              - Plug-and-Play Login UI: howto/onboard-users/react-nextjs/use-plug-play-auth.md
+    - Integrate SDKs:
+      - howto/sdks/index.md
+      - Auth:
+        - howto/integrate/index.md
+        - Web apps:
+          - howto/integrate-app/index.md
+          - Integrate:
+            - howto/integrate-app/app-type/index.md
+            - Vanilla JS App: howto/integrate-app/vanilla-html-css-js.md
+            - React App: 
+              - howto/integrate-app/react/index.md
+              - React/NextJS App: howto/integrate-app/react-nextjs.md
+              - Wagmi App: howto/integrate-app/wagmi.md
+              - RainbowKit App: howto/integrate-app/rainbow.md
+              - Web3-React App: howto/integrate-app/web3-react.md
+            - Vue App: howto/integrate-app/vue.md
+            - Gasless App: howto/integrate-app/gasless.md
+          - Onboard Users: 
+            - howto/onboard-users/index.md
+            - Vanilla JS Apps:
+              - howto/onboard-users/vanilla/index.md
+              - Plug-and-Play Login UI: howto/onboard-users/vanilla/use-plug-play-auth.md
               - Custom Login UI:
-                - howto/onboard-users/react-nextjs/custom-ui/index.md
-                - Passwordless Auth: howto/onboard-users/react-nextjs/custom-ui/build-pwdless-auth.md
+                - howto/onboard-users/vanilla/custom-ui/index.md
+                - Passwordless Auth: howto/onboard-users/vanilla/custom-ui/build-pwdless-auth.md
                 - Social Auth: 
-                  - howto/onboard-users/react-nextjs/custom-ui/build-social/index.md
-                  - Discord: howto/onboard-users/react-nextjs/custom-ui/build-social/discord-oauth.md
-                  - GitHub: howto/onboard-users/react-nextjs/custom-ui/build-social/github-oauth.md
-                  - Google: howto/onboard-users/react-nextjs/custom-ui/build-social/google-oauth.md
-                  - Steam: howto/onboard-users/react-nextjs/custom-ui/build-social/steam-oauth.md
-                  - Twitch: howto/onboard-users/react-nextjs/custom-ui/build-social/twitch-oauth.md
-                  - Twitter: howto/onboard-users/react-nextjs/custom-ui/build-social/twitter-oauth.md
-                - Custom Auth:
-                  - howto/onboard-users/react-nextjs/custom-ui/build-idm/index.md
-                  - Cognito: howto/onboard-users/react-nextjs/custom-ui/build-idm/cognito-oauth.md
-                  - Firebase: howto/onboard-users/react-nextjs/custom-ui/build-idm/firebase-login.md
-            - Wagmi Apps: 
-              - howto/onboard-users/wagmi/index.md
-              - Plug-and-Play Login UI: howto/onboard-users/wagmi/wagmi-pnp-ui.md
-              - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
-            - RainbowKit Apps: 
-              - howto/onboard-users/rainbow/index.md
-              - Plug-and-Play Login UI: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
-              - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
-            - Web3-React Apps:
-              - howto/onboard-users/web3-react/index.md
-              - Plug-and-Play Login UI: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
-              - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
-          - Vue Apps: 
-              - howto/onboard-users/vue/index.md
-              - Plug-and-Play Login UI: howto/onboard-users/vue/use-plug-play-auth.md
-              - Custom Login UI:
-                - howto/onboard-users/vue/custom-ui/index.md
-                - Passwordless Auth: howto/onboard-users/vue/custom-ui/build-pwdless-auth.md
-                - Social Auth: 
-                  - howto/onboard-users/vue/custom-ui/build-social/index.md
-                  - Discord: howto/onboard-users/vue/custom-ui/build-social/discord-oauth.md
-                  - GitHub: howto/onboard-users/vue/custom-ui/build-social/github-oauth.md
-                  - Google: howto/onboard-users/vue/custom-ui/build-social/google-oauth.md
-                  - Steam: howto/onboard-users/vue/custom-ui/build-social/steam-oauth.md
-                  - Twitch: howto/onboard-users/vue/custom-ui/build-social/twitch-oauth.md
-                  - Twitter: howto/onboard-users/vue/custom-ui/build-social/twitter-oauth.md
-                - Custom Auth:
-                  - howto/onboard-users/vue/custom-ui/build-idm/index.md
-                  - Cognito: howto/onboard-users/vue/custom-ui/build-idm/cognito-oauth.md
-                  - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
-        - Handle Events: howto/handle-provider-events.md
-        - Wallet Ops:
-          - wallet-ops/index.md
-          - Enable Arcana Wallet:
-            - howto/arcana-wallet/index.md
-            - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
-            - Web3 Wallet Ops:
-              - howto/arcana-wallet/web3-ops/index.md
-              - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
-              - Check Wallet Balance: howto/arcana-wallet/balance.md
-              - Send Tokens: howto/arcana-wallet/send.md
-              - Sign Transactions: howto/arcana-wallet/sign.md
-              - Show Wallet: howto/arcana-wallet/show.md
-              - Watch Assets: howto/arcana-wallet/watchasset.md
-          - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
-      - Mobile apps:
+                  - howto/onboard-users/vanilla/custom-ui/build-social/index.md
+                  - Discord: howto/onboard-users/vanilla/custom-ui/build-social/discord-oauth.md
+                  - GitHub: howto/onboard-users/vanilla/custom-ui/build-social/github-oauth.md
+                  - Google: howto/onboard-users/vanilla/custom-ui/build-social/google-oauth.md
+                  - Steam: howto/onboard-users/vanilla/custom-ui/build-social/steam-oauth.md
+                  - Twitch: howto/onboard-users/vanilla/custom-ui/build-social/twitch-oauth.md
+                  - Twitter: howto/onboard-users/vanilla/custom-ui/build-social/twitter-oauth.md
+                - Custom IAM Auth:
+                  - howto/onboard-users/vanilla/custom-ui/build-idm/index.md
+                  - Cognito: howto/onboard-users/vanilla/custom-ui/build-idm/cognito-oauth.md
+                  - Firebase: howto/onboard-users/vanilla/custom-ui/build-idm/firebase-login.md
+            - React Apps:
+              - howto/onboard-users/react/index.md
+              - React/NextJS Apps: 
+                - howto/onboard-users/react-nextjs/index.md
+                - Plug-and-Play Login UI: howto/onboard-users/react-nextjs/use-plug-play-auth.md
+                - Custom Login UI:
+                  - howto/onboard-users/react-nextjs/custom-ui/index.md
+                  - Passwordless Auth: howto/onboard-users/react-nextjs/custom-ui/build-pwdless-auth.md
+                  - Social Auth: 
+                    - howto/onboard-users/react-nextjs/custom-ui/build-social/index.md
+                    - Discord: howto/onboard-users/react-nextjs/custom-ui/build-social/discord-oauth.md
+                    - GitHub: howto/onboard-users/react-nextjs/custom-ui/build-social/github-oauth.md
+                    - Google: howto/onboard-users/react-nextjs/custom-ui/build-social/google-oauth.md
+                    - Steam: howto/onboard-users/react-nextjs/custom-ui/build-social/steam-oauth.md
+                    - Twitch: howto/onboard-users/react-nextjs/custom-ui/build-social/twitch-oauth.md
+                    - Twitter: howto/onboard-users/react-nextjs/custom-ui/build-social/twitter-oauth.md
+                  - Custom Auth:
+                    - howto/onboard-users/react-nextjs/custom-ui/build-idm/index.md
+                    - Cognito: howto/onboard-users/react-nextjs/custom-ui/build-idm/cognito-oauth.md
+                    - Firebase: howto/onboard-users/react-nextjs/custom-ui/build-idm/firebase-login.md
+              - Wagmi Apps: 
+                - howto/onboard-users/wagmi/index.md
+                - Plug-and-Play Login UI: howto/onboard-users/wagmi/wagmi-pnp-ui.md
+                - Custom Login UI: howto/onboard-users/wagmi/wagmi-custom-ui.md
+              - RainbowKit Apps: 
+                - howto/onboard-users/rainbow/index.md
+                - Plug-and-Play Login UI: howto/onboard-users/rainbow/rainbow-pnp-ui.md 
+                - Custom Login UI: howto/onboard-users/rainbow/rainbow-custom-ui.md
+              - Web3-React Apps:
+                - howto/onboard-users/web3-react/index.md
+                - Plug-and-Play Login UI: howto/onboard-users/web3-react/web3-react-pnp-ui.md 
+                - Custom Login UI: howto/onboard-users/web3-react/web3-react-custom-ui.md
+            - Vue Apps: 
+                - howto/onboard-users/vue/index.md
+                - Plug-and-Play Login UI: howto/onboard-users/vue/use-plug-play-auth.md
+                - Custom Login UI:
+                  - howto/onboard-users/vue/custom-ui/index.md
+                  - Passwordless Auth: howto/onboard-users/vue/custom-ui/build-pwdless-auth.md
+                  - Social Auth: 
+                    - howto/onboard-users/vue/custom-ui/build-social/index.md
+                    - Discord: howto/onboard-users/vue/custom-ui/build-social/discord-oauth.md
+                    - GitHub: howto/onboard-users/vue/custom-ui/build-social/github-oauth.md
+                    - Google: howto/onboard-users/vue/custom-ui/build-social/google-oauth.md
+                    - Steam: howto/onboard-users/vue/custom-ui/build-social/steam-oauth.md
+                    - Twitch: howto/onboard-users/vue/custom-ui/build-social/twitch-oauth.md
+                    - Twitter: howto/onboard-users/vue/custom-ui/build-social/twitter-oauth.md
+                  - Custom Auth:
+                    - howto/onboard-users/vue/custom-ui/build-idm/index.md
+                    - Cognito: howto/onboard-users/vue/custom-ui/build-idm/cognito-oauth.md
+                    - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
+            - Gasless App: howto/onboard-users/gasless.md
+          - Handle Events: howto/handle-provider-events.md
+          - Wallet Ops:
+            - wallet-ops/index.md
+            - Enable Arcana Wallet:
+              - howto/arcana-wallet/index.md
+              - Configure Wallet Visibility: howto/arcana-wallet/config-wallet-visibility.md
+              - Web3 Wallet Ops:
+                - howto/arcana-wallet/web3-ops/index.md
+                - Add / Switch Network: howto/arcana-wallet/add-switch-ntwk.md
+                - Check Wallet Balance: howto/arcana-wallet/balance.md
+                - Send Tokens: howto/arcana-wallet/send.md
+                - Sign Transactions: howto/arcana-wallet/sign.md
+                - Show Wallet: howto/arcana-wallet/show.md
+                - Watch Assets: howto/arcana-wallet/watchasset.md
+            - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
+      - Mobile SDK:
         - howto/mobile/index.md
         - Flutter Apps: howto/mobile/flutter-get-started.md
         - React-Native Apps: howto/mobile/react-native-get-started.md
+      - Auth-Core SDK: quick-start/auth-core-quick-start.md
+      - Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - Deploy:
       - deploy/index.md
       - Testnet/Mainnet: howto/deploy-app.md
       - Testnet > Mainnet Migration: howto/migrate-testnet-mainnet.md
   - Developer Resources:
     - dev-resources/index.md
-    - Release Notes: relnotes/rn-main-auth-v1.0.8.md
+    - Gasless SDK Release Notes: relnotes/rn-main-scw-v0.0.25.md
+    - Auth SDK Release Notes: relnotes/rn-main-auth-vOct12-23-gasless.md
     - Installation Guide: sdk-installation.md
-    - SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
+    - Auth SDK Migration Guide: migration/main-auth-v1.0.8-migration.md
     - Developer Guides:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
@@ -199,7 +210,7 @@ nav:
         - Auth SDK Reference Guide: 'https://authsdk-ref-guide.netlify.app/'
         - Auth-Core SDK Usage Guide: auth-core-sdk/auth-core-usage-guide.md
         - Auth-Core SDK Reference Guide: 'https://auth-core-sdk-ref-guide.netlify.app/'
-        #- Gasless SDK Usage Guide: gasless-sdk/gasless-sdk-usage-guide.md
+        - Gasless SDK Usage Guide: gasless-sdk/gasless-sdk-usage-guide.md
       - FAQ:
         - faq/index.md
         - General: faq/faq-gen.md
@@ -221,19 +232,20 @@ nav:
       - archives/index.md
       - Release Notes:
         - relnotes/archives/index.md
-        - Auth Oct12-23-gasless: relnotes/rn-main-auth-vOct12-23-gasless.md
+        - Gasless SDK: relnotes/rn-main-scw-v0.0.25.md
+        - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
         - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
         - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
         - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
         - Auth 1.0.5 : relnotes/rn-main-auth-v1.0.5.md
         - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
-        - Release May3-2023: relnotes/rn-main-auth-May3-23.md
+        - Auth May3-2023: relnotes/rn-main-auth-May3-23.md
         - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
         - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
         - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
         - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
         - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
-      - SDK Migration:
+      - Auth SDK Migration:
         - migration/archives/index.md
         - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
         - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
@@ -246,6 +258,8 @@ nav:
         - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
         - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
         - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
+      - Gasless SDK Migration: migration/main-scw-v0.0.25-migration.md
+
   - Tutorials: 
     - tutorials/index.md
     - App Integration: 
@@ -376,7 +390,7 @@ extra:
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, 'Beta-0.3']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
-    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.22']
+    latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.25']
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
     gasless_sdk_pkg_name: scw
@@ -635,7 +649,7 @@ plugins:
         'concepts/ansmartc/an_smartc_details.md': 'concepts/ansmartc/an-smartc-deployed.md'
         'concepts/ansmartc/an_smartc_flows.md': 'concepts/ansmartc/an-smartc-deployed.md'
         'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smart-contracts.md'
-        'relnotes/latest.md': 'relnotes/rn-main-auth-vOct12-23-gasless.md'
+        'relnotes/latest.md': 'relnotes/rn-main-scw-v0.0.25.md'
         #website deprecated links go to contacts page
         'docs/accesscontrol/index.md': 'support.md'
         'docs/category/data-access-control/index.md': 'support.md'

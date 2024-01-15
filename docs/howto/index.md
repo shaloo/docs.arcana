@@ -20,9 +20,9 @@ arcana:
 
     [[configure-gasless|Setup gasless transactions :material-gas-station-off:]]{ .md-button }
 
-=== "Integrate Auth"
+=== "Integrate SDKs"
 
-    ## Integrate Auth
+    ## Auth
 
     ??? abstract "Desktop/Web Apps"
 
@@ -34,15 +34,13 @@ arcana:
 
         [[index-arcana-wallet|Enable {{config.extra.arcana.wallet_name}} :material-wallet-plus-outline:]]{ .md-button }
 
+        [[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet-plus-outline:]]{ .md-button }
+
     ??? abstract "Mobile Apps"
 
         [[flutter-quick-start|Flutter Apps :simple-flutter:]]{ .md-button }
 
         [[react-native-quick-start|React-Native Apps :simple-react:]]{ .md-button }
-
-    ??? abstract "Gasless Apps"
-
-        [[gasless-quick-start|Gasless Apps :material-gas-station-off:]]{ .md-button }
 
 === "Deploy App"
 

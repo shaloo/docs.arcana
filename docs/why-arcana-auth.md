@@ -6,7 +6,7 @@ arcana:
   root_rel_path: .
 ---
 
-# Why {{config.extra.arcana.product_name}}?
+# Why {{config.extra.arcana.company_name}} SDKs?
 
 {% include "./text-snippets/prod_version_info.md" %}
 
@@ -18,7 +18,7 @@ This is totally unlike Web2, where user data is owned by the applications and co
 
 ## Privacy-Preserving Applications
 
-If you are building Web3 apps that require complete data privacy, and security, the {{config.extra.arcana.product_name}} does the heavy lifting for you to onboard users using popular authentication providers and passwordless options. It allows authenticated users to sign blockchain transactions, manage tokens, and more without having to bother about the Web3 secret and key management complexities.
+If you are building Web3 apps that require complete data privacy, and security, the {{config.extra.arcana.company_name}} SDKs does the heavy lifting for you to onboard users using popular authentication providers and passwordless options. It allows authenticated users to sign blockchain transactions, manage tokens, and more without having to bother about the Web3 secret and key management complexities.
 
 At {{config.extra.arcana.company_name}}, we take security, privacy, and ownership seriously. We are actively working towards tracking and plugging in any vulnerabilities in our solution.
 
@@ -26,7 +26,7 @@ Take a quick look at the overview of the [[auth-architecture|architecture and ke
 
 !!! tip
 
-     If you prefer to immediately jump into integrating your app with the {{config.extra.arcana.sdk_name}} right away, see the [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]]. :material-rocket-launch:
+     If you prefer to immediately jump into integrating your app with the {{config.extra.arcana.sdk_name}} right away, see the [[quick-start|Quick Start Guides]]. :material-rocket-launch:
 
 ## Build Web3 Apps Faster
 
@@ -47,6 +47,12 @@ Before you can integrate an app with the {{config.extra.arcana.sdk_name}}, devel
 Allow authenticated Web3 application users to securely sign blockchain operations without bothering about managing secrets and keys. No centralized authority manages user keys in the {{config.extra.arcana.product_name}} DKG subsystem. Use the embedded, non-custodial {{config.extra.arcana.wallet_name}} provided by the {{config.extra.arcana.sdk_name}} to let the authenticated users easily review and sign blockchain transactions. 
 
 Read more about the [{{config.extra.arcana.wallet_name}} features]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md) and [[index-arcana-wallet|how to programmatically use the {{config.extra.arcana.wallet_name}} in Web3 applications]]. Check out the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] to learn more about various Web3 wallet operations that can be accessed by the application users.
+
+### 3. Enable Gasless Transactions
+
+The {{config.extra.arcana.sdk_name}} has built-in gasless transaction feature supported for the {{config.extra.arcana.wallet_name}}. See [[gasless-quick-start|enabling gasless transactions]] for details.
+
+Apps that use only third-party browser-based wallets and do not wish to use the social login feature can directly integrate with the {{config.extra.arcana.gasless_sdk_name}} to enable gasless transactions in third-party wallets such as MetaMask. See [[gasless-standalone-quick-start|Gasless (Standalone) Quick Start Guide]] for details.
 
 ## Flexibility & Choice
 
