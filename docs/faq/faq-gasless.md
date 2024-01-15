@@ -117,9 +117,13 @@ toc_depth: 2
 
       The user's keys are always associated with EoA, whether the gasless feature is enabled or not.
 
+<!--
 {% if config.extra.arcana.exclude_content_tag %}
 
 {% else %}
+
+{% endif %}
+-->
 
 ## Gasless Standalone SDK
 
@@ -153,5 +157,3 @@ toc_depth: 2
     No.
 
     Multi-wallet apps can configure the gasless feature via the dashboard, then install and integrate with the [[sdk-installation|appropriate {{config.extra.arcana.sdk_name}} plus companion SDKs]]. This will **only** enable gasless transactions for the {{config.extra.arcana.wallet_name}} but not for the third-party browser-based wallets such as MetaMask. To enable that, developers must **also** install and integrate the app with the {{config.extra.arcana.gasless_sdk_name}}. For details, refer to the [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]
-
-{% endif %}

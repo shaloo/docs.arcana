@@ -10,4 +10,6 @@ arcana:
 
 [[auth-quick-start|Auth SDK :fontawesome-solid-desktop:]]{ .md-button }
 
-[[auth-core-quick-start|Auth-Core SDK:material-atom-variant:]]{ .md-button }
+[[auth-core-quick-start|Auth-Core SDK :material-atom-variant:]]{ .md-button }
+
+[[gasless-standalone-quick-start|Gasless SDK :material-gas-station-off:]]{ .md-button }
