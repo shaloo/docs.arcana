@@ -8,16 +8,28 @@ arcana:
 
 # Developer Resources
 
-[[rn-main-scw-v{{config.extra.arcana.latest_gasless_sdk_version}}|{{config.extra.arcana.gasless_sdk_name}} Release Notes v{{config.extra.arcana.latest_gasless_sdk_version}} :material-order-alphabetical-ascending:]]{ .md-button }
+=== "Release Notes"
 
-[[rn-main-auth-v{{config.extra.arcana.product_release_tag}}| {{config.extra.arcana.product_name}} Release Notes v{{config.extra.arcana.product_release_tag}} :material-order-alphabetical-ascending:]]{ .md-button }
+    [[rn-main-scw-v{{config.extra.arcana.latest_gasless_sdk_version}}|{{config.extra.arcana.gasless_sdk_name}} Release Notes v{{config.extra.arcana.latest_gasless_sdk_version}} :material-order-alphabetical-ascending:]]{ .md-button }
 
-[[sdk-installation|Installation Guide :material-elevation-rise:]]{ .md-button }
+    [[rn-main-auth-v{{config.extra.arcana.product_release_tag}}| {{config.extra.arcana.product_name}} Release Notes v{{config.extra.arcana.product_release_tag}} :material-order-alphabetical-ascending:]]{ .md-button }
 
-[[migration-guide-v{{config.extra.arcana.product_release_tag}}| SDK Migration Guide :material-arrow-up:]]{ .md-button }
+=== "Auth"
 
-[[index-dev-guides| Developer Guides :simple-bookstack:]]{ .md-button }
+    [[sdk-installation|Installation Guide :material-elevation-rise:]]{ .md-button }
 
-[[index-changelog| Changelog :material-vector-difference:]]{ .md-button }
+    [[migration-guide-v{{config.extra.arcana.product_release_tag}}| Migration Guide :material-arrow-up:]]{ .md-button }
 
-[[index-archives| Archives :material-archive-settings:]]{ .md-button }
+=== "Gasless"
+
+    [[configure-gasless| Configure Gasless Transactions :material-gas-station-off:]]{ .md-button }
+
+    [[gasless-sdk-usage-guide|Gasless SDK Usage Guide :material-gas-station-off:]]{ .md-button }
+
+=== "References"
+
+    [[index-dev-guides| Developer Guides :simple-bookstack:]]{ .md-button }
+
+    [[index-changelog| Changelog :material-vector-difference:]]{ .md-button }
+
+    [[index-archives| Archives :material-archive-settings:]]{ .md-button }
