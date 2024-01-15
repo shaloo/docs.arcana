@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block announce %}
-    <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="{{config.site_url}}//relnotes/rn-main-auth-v1.0.9.html">Release v{{ config.extra.arcana.product_release_tag }} </a><span class="blink_me"> is now live on Testnet!</span> ⚡⚡⚡ <i><a href="https://docs.arcana.network/relnotes/rn-main-auth-vOct12-23-gasless.html" style="color: gray;">Mainnet is on release vOct12-23gasless (Auth SDK v1.0.8).</a></i></p>
+    <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="{{config.site_url}}//relnotes/rn-main-auth-v1.0.9.html">Release v{{ config.extra.arcana.product_release_tag }} </a><span class="blink_me"> is now live on Testnet!</span> ⚡⚡⚡ <i><a href="https://docs.arcana.network/relnotes/rn-main-auth-vOct12-23-gasless.html" style="color: gray;">Mainnet is on vJan15-24-gasless ({{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }}; {{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}).</a></i></p>
 {% endblock %}
 
 {% block extrahead %}

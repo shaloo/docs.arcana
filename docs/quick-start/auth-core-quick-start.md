@@ -230,9 +230,9 @@ try {
 
 ```
 
-### Step 5: Add Custom Wallet 
+### Step 6: Add Custom Wallet UI
 
-After adding code to onboard users via the {{config.extra.arcana.auth_core_sdk_name}} you can add custom wallet UI and wire it to perform Web3 wallet and blockchain operations for the chains supported by your app. Note that the {{config.extra.arcana.auth_core_sdk_name}} does not have built-in  {{config.extra.arcana.wallet_name}} unlike the {{config.extra.arcana.dk_name}}. 
+After adding code to onboard users via the {{config.extra.arcana.auth_core_sdk_name}} you can add custom wallet UI and wire it to perform Web3 wallet and blockchain operations for the chains supported by your app. Note that the {{config.extra.arcana.auth_core_sdk_name}} does not have built-in {{config.extra.arcana.wallet_name}} unlike the {{config.extra.arcana.dk_name}}. 
 
 That's all!!! :material-party-popper:
 

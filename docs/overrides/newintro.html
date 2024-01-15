@@ -4,7 +4,7 @@
 {{ super() }}
 
 {% block announce %}
-    <p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="{{config.site_url}}/relnotes/rn-main-auth-v1.0.9.html">Release v{{ config.extra.arcana.product_release_tag }} </a><span class="blink_me"> is now live on Testnet!</span> ⚡⚡⚡ <i><a href="https://docs.arcana.network/relnotes/rn-main-auth-vOct12-23-gasless.html" style="color: gray;">Mainnet is on release vOct12-23gasless (Auth SDK v1.0.8).</a></i></p>
+<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="https://docs.arcana.network/relnotes/rn-main-auth-v{{ config.extra.arcana.product_release_tag }}.html">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }}; {{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a><span class="blink_me"> is live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try Auth SDK v1.09-beta.3 on Testnet.</a></i></p>
 {% endblock %}
 
 {% block content %}
@@ -398,26 +398,30 @@
     }
 
     .ribbon {
+        opacity: 0.5;
         position: relative; 
+        font-size: small;
         left: 5%;
-        top: 5%; /* Adjust ribbon overhang */
-        width: 75%; /* Adjust ribbon width */
+        top: 1%; /* Adjust ribbon overhang */
+        width: 85%; /* Adjust ribbon width */
         background-color: #960018; /* Adjust ribbon color */
-        transform: rotate(-25deg);
+        transform: rotate(-45deg);
         color: #fff; /* Adjust text color */
-        padding: 10px 0; /* Adjust text padding */
+        padding: 0.75rem; /* Adjust text padding */
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); /* Optional shadow */
           /* Postal stamp edge styling */
         text-align: center;
         clip-path: polygon(
             0 0,
-            calc(100% - 5px) 0,
-            calc(100% - 10px) 15%, 
-            calc(100% - 15px) 30%,
-            calc(100% - 20px) 45%, 
-            calc(100% - 15px) 60%, 
-            calc(100% - 10px) 75%, 
-            calc(100% - 5px) 100%,
+            calc(100% - 2px) 0,
+            calc(100% - 4px) 10%, 
+            calc(100% - 6px) 20%,
+            calc(100% - 8px) 30%, 
+            calc(100% - 10px) 50%, 
+            calc(100% - 8px) 70%, 
+            calc(100% - 6px) 80%, 
+            calc(100% - 4px) 90%, 
+            calc(100% - 2px) 100%,
             4px 100%,
             0% 85%
         );
@@ -517,12 +521,13 @@
     <div class="feature-item">
         <a href="./quick-start/web/index.html">
             <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
+                <div class="a-link-color card-cell-left ribbon-container">
                     <div>
                         <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
                         <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
                     </div>
                     <h3 class="h3-color">Gasless</h3>
+                    <div><span class="ribbon"><i>New!</i></span></div>
                 </div>
                 <div class="card-cell-right">
                     <ul>

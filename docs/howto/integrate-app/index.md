@@ -27,7 +27,7 @@ Depending upon the type of the Web3 app, developers may need to install one or m
 
 ## Integrate App
 
-After installing the SDK, follow the detailed step-by-step integration instructions, as per the app type: 
+After installing the SDK, follow the detailed step-by-step integration instructions, as per the app type:
 
 [[integrate-vanilla-app|Integrate Vanilla JS App :material-language-javascript:]]{ .md-button }
 
@@ -41,7 +41,7 @@ After installing the SDK, follow the detailed step-by-step integration instructi
 
 ## Onboard Users
 
-After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug and play auth UI or custom login UI.
+After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug-and-play auth UI or custom login UI.
 
 [[index-vanilla-onboard-users|Vanilla HTML/CSS/JS Apps :fontawesome-solid-plug:]]{ .md-button }
 

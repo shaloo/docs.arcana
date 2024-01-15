@@ -17,3 +17,5 @@ After creating, make sure you initialize the newly instantiated `AuthProvider`.
 {% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
 After initializing the `AuthProvider`, you can call any of its exported functions. See {% include "./text-snippets/authsdkref_url.md" %} for details.
+
+Next, add code to facilitate user onboarding in the app.
