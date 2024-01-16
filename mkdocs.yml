@@ -12,6 +12,9 @@ site_description: >-
   Web3 app chains - onboarding made easy with Arcana SDKs: Auth, Gasless. Provide instant, non-custodial wallets in your app.
   Remove the friction of wallet installation, key backup, & crypto on-ramp.
   
+# Check for broken links, etc.
+strict: true 
+
 exclude_docs: |
   /integrations/*
 
@@ -432,8 +435,8 @@ extra:
             Thanks for your feedback! 
 
 copyright: Copyright &copy; 2022 - 2023 Arcana Network
-repo_url: https://github.com/arcana-network/auth
-repo_name: arcana-network/auth
+repo_url: https://github.com/arcana-network/
+repo_name: arcana-network/
 edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
 theme:

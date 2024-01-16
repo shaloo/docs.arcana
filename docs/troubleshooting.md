@@ -303,6 +303,10 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       The {{config.extra.arcana.sdk_name}} leverages Biconomy Gasless SDK under the covers and is limited by the errors reported by the same. In case of generic errors such as *'user0p execution failed'*, or others that do not point to any actionable reason for failure, the app developers must use Tenderly to pin-point the exact cause of failure and then take corrective action. [[web-gasless-error-msg|Learn more...]]
 
+??? an-trbs "Cannot set up a gas tank for the chain my app supports?"
+
+      Gas tanks are supported only for a selected bunch of chains. The {{config.extra.arcana.company_name}} SDKs are powered by Biconomy and limited to the networks supported by the same. See {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} for details.
+
 ??? an-trbs "Gasless is enabled for the chain, transactions are successful but gas fees are charged, why is that?"
 
       There can be multiple reasons for the same:

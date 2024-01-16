@@ -54,7 +54,9 @@ Get a firm grip on the topics listed under the prerequisites section. These will
 
 * Blockchain advanced topics:
 
-    - [Gasless transactions](https://docs-gasless.biconomy.io/products/enable-gasless-transactions)
+    - [[concept-gasless-transactions|Gasless transactions]]
+    - [[gasless-quick-start|Enabling Gasless in {{config.extra.arcana.wallet_name}}]]
+    - [[gasless-standalone-quick-start|Enabling Gasless in third-party, browser-based wallets]]
 
 * Basic cryptography
 
