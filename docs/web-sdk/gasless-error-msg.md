@@ -19,11 +19,11 @@ This guide contains a list of common errors encountered during gasless app opera
 | user0p execution failed | Insufficient funds in the wallet address |
 | user0p execution failed | Contract execution error |
 
-Refer to [Biconomy Errors](https://docs.biconomy.io/troubleshooting/commonerrors) for a complete list of errors.
+Refer to {% include "./text-snippets/biconomy/biconomy_sdk_errors.md" %} for a complete list of errors.
 
 ## Debugging Gasless Errors
 
-Arcana Network's gasless feature leverages the Biconomy SDK under the covers. The error handling for gasless transactions in the {{config.extra.arcana.sdk_name}} is [limited by the error handling offered by the Biconomy SDK](https://docs.biconomy.io/category/troubleshooting). 
+Arcana Network's gasless feature leverages the Biconomy SDK under the covers. The error handling for gasless transactions in the {{config.extra.arcana.sdk_name}} leverages the error handling offered by the Biconomy SDK. See {% include "./text-snippets/biconomy/biconomy_sdk_trbs.md" %} for details.
 
 For example, you may see the following error for a gasless transaction:
 
