@@ -1,52 +1,32 @@
 ---
-alias: product-details
-title: 'Products'
+alias: auth-overview
+title: 'Arcana Auth'
 description: 'Introducing Arcana Auth, different components that makeup Arcana Auth, how to use it, Arcana Auth product features.'
 arcana:
   root_rel_path: .
 ---
 
-# Products
+# Arcana Auth
 
-{==
+Web3 app developers can accelerate the user journey into the world of decentralized applications with Arcana Auth.
 
-{{config.extra.arcana.company_name}} offers the following products:
+{{config.extra.arcana.sdk_name}} provides easy user onboarding via social login. It offers built-in, embedded, non-custodial {{config.extra.arcana.wallet_name}} that is accessible to authenticated users within the app context. It also has built-in gasless transactions for {{config.extra.arcana.wallet_name}}  users. Before installing and integrating with the SDK, developers must configure authentication providers and usage through the {{config.extra.arcana.dashboard_name}}. 
 
-* [{{config.extra.arcana.sdk_name}}](https://www.npmjs.com/package/@arcana/auth)
-* {{config.extra.arcana.wallet_name}} (*embedded in the {{config.extra.arcana.sdk_name}}, displayed in the app's context*)
-* [{{config.extra.arcana.gasless_sdk_name}}](https://www.npmjs.com/package/@arcana/scw)
+## Enabling Auth
 
-Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network) to configure {{config.extra.arcana.company_name}}  SDK usage.
-
-==}
-
-## Overview
+Developers must use the {{config.extra.arcana.dashboard_name}} to first configure Auth usage. After that, install the {{config.extra.arcana.sdk_name}} and integrate the Web3 app to enable user onboarding via social login and allow authenticated users to sign blockchain transactions through the {{config.extra.arcana.wallet_name}}.
 
 === "{{config.extra.arcana.sdk_name}}"
 
-    {{config.extra.arcana.sdk_name}} is a client-side library that can be integrated with different types of Web3 apps:
+    {{config.extra.arcana.sdk_name}} is a [client-side library](https://www.npmjs.com/package/@arcana/auth) that can be integrated with different types of Web3 apps:
     
     * Web Apps: _Vanilla JS app_, _React, NextJS_, _Vue_
     * Wallet Connector Framework Apps: _Wagmi_, _RainbowKit_, and _Web3-React_
     * Mobile Apps: _Flutter_, _React-Native_
+    * Gasless Apps: Gasless transactions with {{config.extra.arcana.wallet_name}}
     * Gaming Apps: _Unity_ (<span class="an-marker-text-highlight">Coming soon!</span>) 
     
     [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md)
-
-=== "{{config.extra.arcana.gasless_sdk_name}}"
-
-    {{config.extra.arcana.gasless_sdk_name}} is a client-side library for enabling gasless transactions in third-party browser-based wallets. Different types of Web3 apps are supported by this SDK:
-    
-    * Web Apps: _Vanilla JS app_, _React, NextJS_, _Vue_
-    * Wallet Connector Framework Apps: _Wagmi_, _RainbowKit_, and _Web3-React_
-    * Mobile Apps: _Flutter_, _React-Native_
-    * Gaming Apps: _Unity_ (<span class="an-marker-text-highlight">Coming soon!</span>) 
-
-    [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
-
-    !!! note "Built-in Gasless vs Standalone Gasless Feature"
-
-          Apps that do not require user onboarding and only use third-party wallets can directly integrate with the {{config.extra.arcana.gasless_sdk_name}}. Multi-wallet apps that require to support third-party wallets as well as the {{config.extra.arcana.wallet_name}} and enable gasless transactions must integrate with both the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.gasless_sdk_name}}.
 
 === "{{config.extra.arcana.wallet_name}}"
 
@@ -60,7 +40,7 @@ Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboar
 
 === "{{config.extra.arcana.dashboard_name}}"
 
-    {{config.extra.arcana.dashboard_name}} helps to register and configure Web3 apps before integrating them with the {{config.extra.arcana.sdk_name}}.
+    [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network) helps to register and configure Web3 apps before integrating them with the {{config.extra.arcana.sdk_name}}.
     
     Registering the app with {{config.extra.arcana.company_name}} associates a unique {{config.extra.arcana.app_address}} for each app. Developers **must** use this {{config.extra.arcana.app_address}} to integrate the app with the {{config.extra.arcana.sdk_name}}. 
 
@@ -68,9 +48,19 @@ Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboar
 
     [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md)
 
+## Key Features
+
+<div class="grid card_container" markdown>
+  <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Rapid onboarding for diverse Web3 apps: vanilla HTML/CSS/JS, React, NextJS, Vue, Wagmi, RainbowKit, Web3-React, and more.</li><li>Quick user authentication with minimal code.</li><li>Customizable onboarding: Web2 social, custom IAM, or passwordless options.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:fontawesome-brands-ethereum: Web3 Wallet Transactions</b></h4><hr><p><ul><li>Instant embedded wallet access, within the app's context, for authenticated users to sign blockchain transactions.</li><li>Easy customization of wallet UI for developers to manage user experience for the <a href="{{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.html#supported-blockchains">supported blockchain networks</a>.</li><li>User-friendly Web3 wallet operations: send/receive tokens, manage NFTs, deploy/interact with contracts, etc.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:simple-letsencrypt: Secure</b></h4><hr><p><ul><li>Authenticated Web3 app users can securely sign blockchain transactions with ease.</li><li>Powered by state-of-the-art asynchronous distributed key generation for robust, scalable, and private key access security.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:material-gas-station: Gasless Transactions</b></h4><hr><p><ul><li>Developers can specify which app operations are gasless.</li><li>Easy to set up gas tanks and deposit gas fees.</li><li>Users don't pay gas fees for gasless transactions; third-party sponsors or app developers pay gas fees.</li></ul></p></div>
+  <div class="card" markdown><h4><b>:material-gesture-tap-button: Easy to Use</b></h4><hr><p><ul><li>Embedded, non-custodial wallet displayed within the app context.</li><li>No browser extensions are required to use the wallet.<li>No seed phrases required, no key management complexity to enable users to sign transactions.</li></ul></p></div>
+</div>
+
 ## Benefits & Usage
 
-  With Arcana Auth integrated apps, developers can accelerate app building, while users seamlessly take control of their identity.
+  With Arcana Auth integrated apps, developers can accelerate app building, while users seamlessly take control of their identity. Easily onboard users and incentivize them to transact with gasless operations.
 
 === "**Developers**"
     
@@ -90,7 +80,7 @@ Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboar
 
     ??? abstract "1. Register & Configure App"
 
-          Use {{config.extra.arcana.dashboard_name}} to [[configure-auth|register the app, configure the user onboarding settings, and tailor the wallet user experience]]. Save the unique app identifier called the **{{config.extra.arcana.app_address}}** displayed in the dashboard after the app is registered. {{config.extra.arcana.app_address}} is required to integrate the app with the {{config.extra.arcana.sdk_name}}.
+          Use {{config.extra.arcana.dashboard_name}} to [[configure-auth|register the app, configure the user onboarding settings, gasless settings and tailor the wallet user experience]]. Save the unique app identifier called the **{{config.extra.arcana.app_address}}** displayed in the dashboard after the app is registered. {{config.extra.arcana.app_address}} is required to integrate the app with the {{config.extra.arcana.sdk_name}}.
 
     ??? abstract "2. Install SDK & Integrate App"
 
@@ -136,14 +126,20 @@ Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboar
                   
           For more details, see [[index-integrate-app|how to integrate with the {{config.extra.arcana.sdk_name}}]] and select the instructions for the app type. Also, refer to the [[index-tutorials|tutorials]] section.
 
+          **Gasless apps:**
+
+          - use the dashboard to configure gasless settings, set up gas tanks, fund the tank and specify which app operations are gasless (whitelist)
+          - simply follow the app integration instructions as per the app type
+
     ??? abstract "3. Onboard Users & Enable Wallet"
 
           After integrating with the requisite {{config.extra.arcana.sdk_name}} packages, add code to onboard users. Pick one of the options:
             
-          - Use the built-in plug-and-play login UI to display the configured authentication providers
-          - Alternately, build a custom UI and wire it to call the {{config.extra.arcana.sdk_name}} functions for the configured authentication providers
+          - use the built-in plug-and-play login UI to display the configured authentication providers
+          - or, build a custom UI and wire it to call the {{config.extra.arcana.sdk_name}} functions for the configured authentication providers
+          - if gasless is configured, the wallet will be enabled for gasless transactions
             
-          For details, see [[index-onboard-users|how to onboard users]].
+          For details, see [[index-onboard-users|how to onboard users]] and [[gasless-quick-start|enable gasless transactions in {{config.extra.arcana.wallet_name}}]].
 
     ??? abstract "4. Deploy Apps"
 
@@ -154,7 +150,7 @@ Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboar
           1. [[deploy-app#deploying-app-testnet-configuration|deploy the app]] on the Arcana Testnet and validate
           2. create a Mainnet configuration profile and [[deploy-app#deploying-app-mainnet-configuration|deploy the app]] on the Arcana Mainnet
 
-          Once deployed, users can easily onboard and sign blockchain transactions. See [[index-web3-wallet-ops|how to enable Web3 wallet operations]] for details.
+          Once deployed, users can easily onboard and sign blockchain transactions. If gasless is configured through the dashboard, users can enjoy gasless transactions. See [[index-web3-wallet-ops|how to enable Web3 wallet operations]] for details.
 
 === "**Users**"
 
@@ -170,16 +166,6 @@ Developers can use the [{{config.extra.arcana.dashboard_name}}](https://dashboar
     **Usage**
 
     Users need to simply log in and use the Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}. They get immediate access to the wallet and can sign blockchain transactions.
-
-## Features
-
-<div class="grid card_container" markdown>
-  <div class="card" markdown><h4><b>:fontawesome-solid-users-line: Onboard Users</b></h4><hr><p ><ul><li>Rapid onboarding for diverse Web3 apps: vanilla HTML/CSS/JS, React, NextJS, Vue, Wagmi, RainbowKit, Web3-React, and more.</li><li>Quick user authentication with minimal code.</li><li>Customizable onboarding: Web2 social, custom IAM, or passwordless options.</li></ul></p></div>
-  <div class="card" markdown><h4><b>:fontawesome-brands-ethereum: Web3 Wallet Transactions</b></h4><hr><p><ul><li>Instant embedded wallet access, within the app's context, for authenticated users to sign blockchain transactions.</li><li>Easy customization of wallet UI for developers to manage user experience for the <a href="{{page.meta.arcana.root_rel_path}}/state_of_the_ntwk.html#supported-blockchains">supported blockchain networks</a>.</li><li>User-friendly Web3 wallet operations: send/receive tokens, manage NFTs, deploy/interact with contracts, etc.</li></ul></p></div>
-  <div class="card" markdown><h4><b>:simple-letsencrypt: Secure</b></h4><hr><p><ul><li>Authenticated Web3 app users can securely sign blockchain transactions with ease.</li><li>Powered by state-of-the-art asynchronous distributed key generation for robust, scalable, and private key access security.</li></ul></p></div>
-  <div class="card" markdown><h4><b>:material-gas-station: Gasless Transactions</b></h4><hr><p><ul><li>Developers can specify which app operations are gasless.</li><li>Easy to set up gas tanks and deposit gas fees.</li><li>Users don't pay gas fees for gasless transactions; third-party sponsors or app developers pay gas fees.</li></ul></p></div>
-  <div class="card" markdown><h4><b>:material-gesture-tap-button: Easy to Use</b></h4><hr><p><ul><li>Embedded, non-custodial wallet displayed within the app context.</li><li>No browser extensions are required to use the wallet.<li>No seed phrases required, no key management complexity to enable users to sign transactions.</li></ul></p></div>
-</div>
 
 <!--
 
