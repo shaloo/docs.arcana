@@ -1,16 +1,14 @@
 ---
 alias: state-of-the-arcana-auth
-title: 'State of the Arcana Auth'
+title: 'State of the Arcana SDKs'
 description: 'The current status of the Web3 Auth, Arcana Auth and the blockchain network, Arcana Network roadmap, what is cooking, who are the decentralization partners and more.'
 arcana:
   root_rel_path: .
 ---
   
-# State of the {{config.extra.arcana.company_name}} Products
+# State of the {{config.extra.arcana.company_name}} SDKs
 
-## {{config.extra.arcana.company_name}} SDKs
-
-Earlier, we offered various flavors of the {{config.extra.arcana.product_name}} product for web and mobile apps that required to scale up user onboarding in Web3 apps.
+Earlier, we offered various flavors of the {{config.extra.arcana.product_name}} product for web and mobile apps to help scale up user onboarding in Web3 apps.
 
 The {{config.extra.arcana.product_name}} product had built-in gasless feature for the {{config.extra.arcana.wallet_name}}.
 
@@ -23,55 +21,29 @@ Now we also support gasless for third-party browser-based wallets through the st
 
 ## What's New?
 
-=== "Gasless Transactions"
+### Gasless Transactions
 
-    {{config.extra.arcana.company_name}} SDKs gasless feature is powered by the Biconomy Gasless SDK. Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} in case of apps using the {{config.extra.arcana.wallet_name}}.
+{{config.extra.arcana.company_name}} SDKs gasless feature is powered by the Biconomy Gasless SDK. Web3 app developers can set up gas tanks using the {{config.extra.arcana.dashboard_name}} and enable [[concept-gasless-transactions|gasless transactions in the app]] for one or more of the {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} in case of apps using the {{config.extra.arcana.wallet_name}}.
 
-    For more details, see [[configure-gasless|how to configure gasless transactions]]
+For more details, see [[configure-gasless|how to configure gasless transactions]]
 
-    In addition to the {{config.extra.arcana.sdk_name}} built-in gasless feature, the {{config.extra.arcana.gasless_sdk_name}} v{{config.extra.arcana.latest_gasless_sdk_version}} enables gasless transactions in third-party wallets. This standalone SDK does not use the {{config.extra.arcana.sdk_name}}. See [[quick-start| here]] to learn more about how to enable [[concept-gasless-transactions|gasless transactions]] in apps.
+In addition to the {{config.extra.arcana.sdk_name}} built-in gasless feature, the {{config.extra.arcana.gasless_sdk_name}} v{{config.extra.arcana.latest_gasless_sdk_version}} enables gasless transactions in third-party wallets. This standalone SDK does not use the {{config.extra.arcana.sdk_name}}. See [[quick-start| here]] to learn more about how to enable [[concept-gasless-transactions|gasless transactions]] in apps.
 
-=== "User Onboarding"
+## What's Changed?  
 
-    There are **no changes to the {{config.extra.arcana.sdk_name}}** and you can continue to use the latest release version: v{{config.extra.arcana.latest_version}}
+### User Onboarding
 
-    See [[rn-main-auth-v{{config.extra.arcana.product_release_tag}}|{{config.extra.arcana.product_name}} Release Notes]] for details.
+There are **no changes** to the {{config.extra.arcana.sdk_name}} and you can continue to use the latest release version: v{{config.extra.arcana.latest_version}}.
 
-=== "SDK Usage"
+See [[rn-main-auth-v{{config.extra.arcana.product_release_tag}}|{{config.extra.arcana.product_name}} Release Notes]] for details.
 
-    ### Configure
+### Gasless Transactions
 
-    Developers can use the {{config.extra.arcana.dashboard_name}} to register and configure Auth usage: {% include "./text-snippets/db_portal_url.md" %}
+Apps that are already integrated with the {{config.extra.arcana.sdk_name}} and [[gasless-quick-start|using the built-in gasless feature]] for enabling gasless transactions using the {{config.extra.arcana.wallet_name}} do not need to make any changes. 
 
-    ### Install
+However, if the same apps would **also** like to enable gasless transactions in any third-party, browser-based wallets, then they need to also install and integrate with the {{config.extra.arcana.gasless_sdk_name}}. 
 
-    Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} packages as per the Web3 application type:
-
-    === "Web3/Desktop Apps"
-        * All app types: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
-        * Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
-        * Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi)
-        * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
-        * Auth-Core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
-        * Gasless Transactions with {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
-
-    === "Mobile Apps"
-        * Flutter apps: {{config.extra.arcana.flutter_sdk_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
-        * React-Native apps: {{config.extra.arcana.react_native_sdk_name}} [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native)
-
-    === "Gasless Apps"
-        * Apps that need to enable gasless in third-party wallets such as MetaMask or need a standalone gasless SDK with no social login or {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.gasless_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/scw)
-
-    <!--
-    === "Gaming Apps"
-
-        * Unity apps
-        * Unreal apps (Coming Soon!)
-    -->
-
-    ### Integrate & Deploy Apps
-
-    Once SDK usage is configured via the dashboard and the appropriate SDKs are installed, developers can easily integrate the app and deploy it on the {{config.extra.arcana.company_name}} Testnet/Mainnet. See [[index-howto-guides|'Get Started']] section for more details.
+Also, apps that do not wish to use the authentication feature but only wish to enable gasless transactions in third-party wallets must use the {{config.extra.arcana.gasless_sdk_name}}. For details, see [[gasless-standalone-quick-start|{{config.extra.arcana.gasless_sdk_name}} Quick Start Guide]]
 
 ## Mainnet Roadmap
 
@@ -134,7 +106,7 @@ At Arcana, we take the security and privacy of applications seriously and believ
 
 ## Supported Auth Providers
 
-### {{config.extra.arcana.dashboard_name}} Login
+### Dashboard Login
 
 The Web3 app developers can log into the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) via one of these social providers or use passwordless login:
 
@@ -144,11 +116,11 @@ The Web3 app developers can log into the [{{config.extra.arcana.dashboard_name}}
 
 The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] allows Web3 apps to integrate and onboard users via one or more of the supported user authentication mechanisms:
 
-**Social Providers**
+#### Social Providers
 
 {% include "./text-snippets/socialauth_supported.md" %}
 
-**Custom IAM Providers**
+#### Custom IAM Providers
 
 {% include "./text-snippets/custom_idm_supported.md" %}
 
@@ -165,7 +137,7 @@ The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] allows Web3 apps to in
 
     Besides social authentication, a passwordless login option is also available to onboard app users.
 
-## Supported Blockchain Networks
+## Supported Blockchains
 
 ### {{config.extra.arcana.sdk_name}}
 
@@ -182,3 +154,33 @@ By default, it enables a *pre-configured list* of chains. App developers can add
 ### {{config.extra.arcana.gasless_sdk_name}}
 
  The {{config.extra.arcana.company_name}} SDKs are powered by Biconomy support the same blockchain networks as Biconomy. See {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} for details. Note that these networks may be a subset of the ones supported by the {{config.extra.arcana.wallet_name}} and the {{config.extra.arcana.sdk_name}}.
+
+## SDK Usage
+
+### Configure
+
+Developers can use the {{config.extra.arcana.dashboard_name}} to register and configure Auth usage: {% include "./text-snippets/db_portal_url.md" %}
+
+### Install
+
+Install and integrate with the appropriate {{config.extra.arcana.sdk_name}} packages as per the Web3 application type:
+
+=== "Web3/Desktop Apps"
+    * All app types: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
+    * Add on package for simple React apps: [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
+    * Add on package for Wagmi/RainbowKit apps: [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi)
+    * Add on package for Web3-React apps: [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
+    * Auth-Core SDK for Web3 apps that need secure access to user's private keys while building custom login, wallet operations UX: [`{{config.extra.arcana.auth_core_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-core)
+    * Gasless Transactions with {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
+
+=== "Mobile Apps"
+    * Flutter apps: {{config.extra.arcana.flutter_sdk_name}} [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
+    * React-Native apps: {{config.extra.arcana.react_native_sdk_name}} [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native)
+
+=== "Gasless Apps"
+    * Apps that need to enable gasless in third-party wallets such as MetaMask or need a standalone gasless SDK with no social login or {{config.extra.arcana.wallet_name}}: [`{{config.extra.arcana.gasless_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/scw)
+
+
+###  Integrate & Deploy Apps
+
+Once SDK usage is configured via the dashboard and the appropriate SDKs are installed, developers can easily integrate the app and deploy it on the {{config.extra.arcana.company_name}} Testnet/Mainnet. See [[index-howto-guides|'Get Started']] section for more details.
