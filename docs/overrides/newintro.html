@@ -4,7 +4,7 @@
 {{ super() }}
 
 {% block announce %}
-<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="{{ config.site_url }}/relnotes/.html">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }}; {{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a><span class="blink_me"> is live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i></p>
+<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="{{ config.site_url }}/relnotes/latest.html">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }}; {{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a><span class="blink_me"> is live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i></p>
 {% endblock %}
 
 {% block content %}
