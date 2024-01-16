@@ -10,11 +10,13 @@ arcana:
 
 # Quick Start: Gasless Apps
 
-!!! note "Already using {{config.extra.arcana.product_name}} SDKs?"
-  
-      {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
-  
+!!! note "Already using {{config.extra.arcana.sdk_name}}?"
+
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
+
+!!! note "Already using {{config.extra.arcana.gasless_sdk_name}}?"
+
+      {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
 
 ## Overview
 

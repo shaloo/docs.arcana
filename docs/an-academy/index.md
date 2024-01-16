@@ -8,6 +8,8 @@ arcana:
 
 # {{config.extra.arcana.company_name }} Academy
 
+[[new-to-web3| New to Web3 :material-new-box:]]{ .md-button }
+
 [[index-about-auth| About {{config.extra.arcana.product_name}} :material-bookshelf:]]{ .md-button }
 
 [[auth-architecture| Architecture :fontawesome-solid-users-gear:]]{ .md-button }
@@ -15,5 +17,3 @@ arcana:
 [[index-user-flows|Usage Flows :material-clipboard-flow-outline:]]{ .md-button }
 
 [Concepts :fontawesome-solid-puzzle-piece:](../concepts/index.md){ .md-button }
-
-[[new-to-web3| New to Web3 :material-new-box:]]{ .md-button }

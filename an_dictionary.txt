@@ -260,6 +260,7 @@ MetaMask
 MinIO
 MissionTutLinkText
 Mkdocs
+MultiversX
 NFT
 NFT's
 NFTDocWalkthruTutLinkText
@@ -532,6 +533,7 @@ auth-architecture
 auth-core-quick-start
 auth-core-usage-guide
 auth-mkdocs
+auth-overview
 auth-quick-start
 auth_chlog
 auth_err
@@ -764,10 +766,11 @@ frictionless
 gRPC
 gasless
 gasless-enabled
+gasless-overview
 gasless-quick-start
-gasless-standalone-quick-start
 gasless-sdk
 gasless-sdk-usage-guide
+gasless-standalone-quick-start
 gasless-user-onboarding
 generatedelegatekey
 getAvailableLogins
@@ -1017,6 +1020,7 @@ index-dev-resources
 index-dkg
 index-faq
 index-howto-guides
+index-howto-sdks
 index-integrate-shardeum
 index-may3-23-release-note
 index-react-nextjs-build-iam-providers
@@ -1205,6 +1209,7 @@ setupwalletreact
 setupwalletvue
 setupwidgetwallet
 sharded
+sharding
 sharefile
 showWallet
 signingtx
@@ -1229,6 +1234,7 @@ stgsdk_usage
 stgsdkdelete
 stgsdkmetrics
 submodule
+submodules
 supported-blockchains
 testnet
 toc_depth
@@ -1267,6 +1273,7 @@ user0p
 userInfo
 usingminter
 usingreactconn
+v0.0.25
 v0.2.x
 v0.3.0
 v1.0

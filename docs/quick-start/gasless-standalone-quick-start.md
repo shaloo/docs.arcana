@@ -8,7 +8,7 @@ arcana:
 
 # Quick Start: Gasless Apps (Third-party Wallets)
 
-!!! note "Already using {{config.extra.arcana.product_name}} SDKs?"
+!!! note "Already using {{config.extra.arcana.gasless_sdk_name}}?"
   
       {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
   

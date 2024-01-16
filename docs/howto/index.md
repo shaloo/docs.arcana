@@ -52,9 +52,13 @@ arcana:
 
         [[solana-quick-start|Solana Apps :material-atom-variant:]]{ .md-button }
 
-    ## Gasless 
+    ## Gasless
 
-    [[gasless-standalone-quick-start|Gasless Apps (Third-party wallets) :material-gas-station-off:]]{ .md-button }
+    ??? abstract "Third-party wallets"
+
+        [[configure-gasless|Setup gasless transactions :material-gas-station-off:]]{ .md-button }
+
+        [[gasless-standalone-quick-start|Gasless transactions ({{config.extra.arcana.wallet_name}})  :material-gas-station-off:]]{ .md-button }
 
 === "Deploy App"
 
