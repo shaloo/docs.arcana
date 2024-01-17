@@ -21,9 +21,10 @@ exclude_docs: |
 nav: 
   - Arcana SDKs:
     - index.md
-    - Introduction: 
+    - Overview: 
       - intro/index.md
-      - Products: auth-overview.md
+      - Auth: auth-overview.md
+      - Gasless: gasless-overview.md 
     - Quick Start: 
       - quick-start/index.md
       - Auth SDK:
@@ -49,8 +50,8 @@ nav:
       - quick-links/index.md
       - State of the Arcana Auth: state-of-the-arcana-auth.md
       - Coming Soon...: arcana-coming-soon.md
-      - Dev Resources: dev-resources/index.md
-      - New to Web3: an-academy/new-to-web3.md
+      #- Dev Resources: dev-resources/index.md
+      #- New to Web3: an-academy/new-to-web3.md
       - Audit Reports: 
         - audit/index.md
         - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf

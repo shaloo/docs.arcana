@@ -1,29 +1,14 @@
 ---
 alias: introducing-arcana-auth
-title: 'Introduction'
+title: 'Overview'
 description: 'Introducing Arcana Auth Product.'
 arcana:
   root_rel_path: ..
 ---
 
-# Introduction
+# Overview
 
-**{{config.extra.arcana.company_name}}** products bring higher conversion for Web3 app developers through [[concept-social-login|social login]] and gasless transactions:
-
-* {{config.extra.arcana.sdk_name}}
-* {{config.extra.arcana.gasless_sdk_name}}
-
-{==
-
-*Accelerate the user journey into the world of decentralized applications with* **Arcana SDKs!**
-
-==}
-
-Developers can integrate Web3 apps with these SDKs to:
-
-* Quickly **onboard** users in Web3 apps (No keys, wallets, or app-specific accounts needed to onboard Web3 apps)
-* Allow authenticated users to instantly **sign blockchain transactions**
-* Scale up user onboarding with gasless transaction support in Web3 apps
+**{{config.extra.arcana.company_name}}** SDKs bring higher conversion for Web3 app developers through [[concept-social-login|social login]] and gasless transactions.
 
 === "{{config.extra.arcana.sdk_name}}"
 
@@ -31,15 +16,16 @@ Developers can integrate Web3 apps with these SDKs to:
 
     Gasless transaction is a built-in feature on the {{config.extra.arcana.sdk_name}} that allows users to pay **no** gas transaction fees when signing blockchain transactions via the {{config.extra.arcana.wallet_name}}. Developers need to simply configure gasless usage via the {{config.extra.arcana.dashboard_name}} to allow gasless transactions for authenticated app users.
 
+    !!! note "Already using {{config.extra.arcana.sdk_name}}?"
+
+          {% include "./text-snippets/warn_latest_sdk_version.md" %}
+
 === "{{config.extra.arcana.gasless_sdk_name}}"
 
     The {{config.extra.arcana.gasless_sdk_name}} enables gasless transactions in third-party browser-based wallets. It is meant for Web3 apps that do not wish to use the social login feature but only the gasless feature. Before integrating with the {{config.extra.arcana.gasless_sdk_name}} developers must configure gasless usage, set up gas tanks, and whitelist operations using the {{config.extra.arcana.dashboard_name}}.
 
-!!! note "Already using {{config.extra.arcana.company_name}} SDKs?"
+    !!! note "Already using {{config.extra.arcana.gasless_sdk_name}}?"
 
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
-
-      {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
-
+          {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
 
 [[quick-start|Quick Start :fontawesome-solid-paper-plane:]]{.md-button}

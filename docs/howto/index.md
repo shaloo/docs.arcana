@@ -36,11 +36,22 @@ arcana:
 
         [[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet-plus-outline:]]{ .md-button }
 
+        [[gasless-quick-start|Gasless transactions ({{config.extra.arcana.wallet_name}})  :material-gas-station-off:]]{ .md-button }
+
+
     ??? abstract "Mobile Apps"
 
         [[flutter-quick-start|Flutter Apps :simple-flutter:]]{ .md-button }
 
         [[react-native-quick-start|React-Native Apps :simple-react:]]{ .md-button }
+
+    ## Gasless
+
+    ??? abstract "Third-party wallets"
+
+        [[configure-gasless|Setup gasless transactions :material-gas-station-off:]]{ .md-button }
+
+        [[gasless-standalone-quick-start|Gasless transactions ({{config.extra.arcana.wallet_name}})  :material-gas-station-off:]]{ .md-button }
 
 === "Deploy App"
 
