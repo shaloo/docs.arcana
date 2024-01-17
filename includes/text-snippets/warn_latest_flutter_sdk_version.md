@@ -1,1 +1,1 @@
-Make sure you are using the latest **{{config.extra.arcana.flutter_sdk_name}} v{{config.extra.arcana.latest_auth_flutter_sdk_version}}** available at [pub.dev](https://pub.dev/packages/arcana_auth_flutter).
+Make sure you are using the latest release **v{{config.extra.arcana.latest_auth_flutter_sdk_version}}** available at [pub.dev](https://pub.dev/packages/arcana_auth_flutter).
