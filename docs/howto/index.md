@@ -38,6 +38,9 @@ arcana:
 
         [[index-web3-wallet-ops|Web3 Wallet Ops :material-wallet-plus-outline:]]{ .md-button }
 
+        [[gasless-quick-start|Gasless transactions ({{config.extra.arcana.wallet_name}})  :material-gas-station-off:]]{ .md-button }
+
+
     ??? abstract "Mobile Apps"
 
         [[flutter-quick-start|Flutter Apps :simple-flutter:]]{ .md-button }
