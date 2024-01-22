@@ -8,7 +8,7 @@ arcana:
 
 # Solana Web3 Wallet Operations
 
-Solana chain is a bit different from typical EVM chians in how it supports Web3 wallet operations and [[solana-json-rpc-ops|JSON-RPC calls]]. 
+Solana chain is a bit different from typical EVM chains in how it supports Web3 wallet operations and [[solana-json-rpc-ops|JSON-RPC calls]]. 
 
 Developers can use the `auth.solana` provider for issuing the supported Web3 wallet operations listed below in the context of the authenticated user. 
 

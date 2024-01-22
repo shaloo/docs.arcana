@@ -1,7 +1,7 @@
 ---
-alias: rn-main-auth-v1.0.9-beta.3
+alias: rn-main-auth-v1.0.9-rc.1
 title: 'Arcana Auth: Release Notes'
-description: 'Arcana Auth Release Notes (v1.0.9-beta.3 Latest)'
+description: 'Arcana Auth Release Notes (v1.0.9-rc.1 Latest)'
 arcana:
   root_rel_path: ..
 ---
@@ -10,7 +10,7 @@ arcana:
 
 {==
 
-**Release Date: Dec 9, 2023**  
+**Release Date: Jan 22, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
 
