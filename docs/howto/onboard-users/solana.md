@@ -1,7 +1,7 @@
 ---
 alias: solana-user-onboarding
 title: 'Solana App: Onboard Users'
-description: 'Learn how to onboard users in a vanilla HTML/CSS/JS app that integrates with the Arcana Auth SDK through plug-and-play login UI and allow authenticated users to perfom Solana blockchain operations using the Arcana wallet.'
+description: 'Learn how to onboard users in a vanilla HTML/CSS/JS app that integrates with the Arcana Auth SDK through plug-and-play login UI and allow authenticated users to perform Solana blockchain operations using the Arcana wallet.'
 arcana:
   root_rel_path: ../..
   app_type: "'Vanilla HTML/CSS/JS'"
