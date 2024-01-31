@@ -5,16 +5,17 @@
 * Arbitrum  *(Gasless)*
 * Arbitrum Goerli *(Gasless)*
 * Avalanche *(Gasless)*
+* Berachain Artio
 * Binance Smart Chain *(Gasless)*
 * BSC Testnet *(Gasless)*
 * Caduceus
 * Ethereum *(Gasless)*
 * IoTeX
-* Optimism *(Gasless)*
-* Optimism Goerli *(Gasless)*
-* Polygon *(Gasless)*
-* Polygon Mumbai *(Gasless)*
-* Polygon zkEVM Testnet *(Gasless)*
+* Optimism 
+* Optimism Goerli
+* Polygon 
+* Polygon Mumbai 
+* Polygon zkEVM Testnet
 * Sepolia
 * Shardeum Sphinx 1.x
 
