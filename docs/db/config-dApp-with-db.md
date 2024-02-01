@@ -30,9 +30,30 @@ This guide will walk you through the various configuration options available on 
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
-### Configure Application
+### Configure Auth Usage
 
 {% include "./text-snippets/db_settings.md" %}
+
+#### Configure Keyspace 
+
+There are two keyspace options: [[concept-keyspace-type|App-specific and Global Keys]].
+
+You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
+
+![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
+
+Select **Global Keyspace** and click **Verify**. This will bring up a verification form. Fill out the verification form, and click **Submit**. 
+
+<img class="an-screenshots-noeffects" alt="Global Keyspace Verify" src="/img/an_db_global_keys_verify.png" width="25%" />
+
+You can check the status of **Global Keyspace** verification by using the **Keyspace** screen. After submitting the form, you will see the status as **In Review**.
+
+![Mainnet Global keyspace in review](/img/an_db_global_keys_inreview.png){.an-screenshots}
+
+The status will change to **Approved** once verification is complete. You can integrate your application with the {{config.extra.arcana.sdk_name}} but do not deploy it until the verification is complete. Otherwise, users that log in before verification is complete may see different wallet addresses after the process is complete.
+
+![Mainnet Global keyspace approved](/img/an_db_global_keys_approved.png){.an-screenshots}
+
 
 !!! caution "Configuring the {{config.extra.arcana.wallet_name}}"
 
@@ -93,36 +114,6 @@ After the selection is made and the developer confirms, the 'Mainnet' profile is
       The figure below shows how the 'redirect URI' is updated in a scenario where Google and Twitch were configured for the 'Testnet' configuration profile and that profile was copied to create a 'Mainnet' profile.
 
       ![Update redirect URI](/img/an_db_example_add_mainnet_redirect_uri.png){.an-screenshots}
-
-'Mainnet' configuration requires an additional setting which is not available for the 'Testnet' configuration profile. This additional setting, **Keyspace**, is used to allow Web3 application users to share the same wallet address across multiple applications that are deployed on the {{config.extra.arcana.company_name}} Mainnet.
-
-#### Configure Mainnet Keyspace 
-
-To deploy an application on the {{config.extra.arcana.company_name}} Mainnet, developers need to create a 'Mainnet' profile and configure the keyspace option. Setting up keyspace is mandatory irrespective of whether the developer chooses to copy the 'Testnet' profile as the 'Mainnet' configuration or creates a new one.
-
-There are two keyspace options: [[concept-keyspace-type|App-specific and Global Keys]].
-
-You can either use the default, highly secure **App-specific** keyspace option or **Global** keyspace depending upon the desired level of security and user experience required for the application. 
-
-![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
-
-Use global keyspace if you want to enable the kind of Web3 user experience whereby the same wallet address is assigned to the user across different application logins in the {{config.extra.arcana.company_name}} ecosystem. It is less secure than the default **App-specific** keyspace option whereby a user will see different wallet addresses across the different applications.
-
-Select **Global Keyspace** and click **Verify**. This will bring up a verification form. Fill out the verification form, and click **Submit**. 
-
-<img class="an-screenshots-noeffects" alt="Global Keyspace Verify" src="/img/an_db_global_keys_verify.png" width="25%" />
-
-You can check the status of **Global Keyspace** verification by using the **Keyspace** screen. After submitting the form, you will see the status as **In Review**.
-
-![Mainnet Global keyspace in review](/img/an_db_global_keys_inreview.png){.an-screenshots}
-
-The status will change to **Approved** once verification is complete. You can integrate your application with the {{config.extra.arcana.sdk_name}} but do not deploy it until the verification is complete. Otherwise, users that log in before verification is complete may see different wallet addresses after the process is complete.
-
-![Mainnet Global keyspace approved](/img/an_db_global_keys_approved.png){.an-screenshots}
-
-Now your application is configured to use the {{config.extra.arcana.company_name}} Mainnet. You can further edit configuration settings for Mainnet by using the LHS navigation pane and selecting **Configure**.  
-
-![Mainnet Profile entry](/img/an_db_mainnet_profile.png){.an-screenshots}
 
 #### Switch Profiles
 

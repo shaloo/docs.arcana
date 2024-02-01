@@ -2,7 +2,7 @@
 
     * [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]]
     * [[configure-wallet-visibility|Configuring {{config.extra.arcana.wallet_name}} visibility]]
-    * [[dashboard-user-guide#configure-mainnet-keyspace|Using Global vs. Local Keys]]
+    * [[dashboard-user-guide#configure-keyspace|Using Global vs. Local Keys]]
     * [[configure-gasless|Enabling Gasless Operations in an App]]
     * [[index-video-tutorials|Video Tutorials]]
     * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)

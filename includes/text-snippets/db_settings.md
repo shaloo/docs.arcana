@@ -4,7 +4,7 @@ Click **Configure** in the LHS navigation of the app configuration screen in the
 * Social Auth 
 * Chain Management
 * Arcana Wallet
-* Keyspace (Available only after the 'Mainnet' profile is created)
+* Keyspace
 * Gasless
 
 Use the defaults or provide inputs for various settings as per your application use case. These settings control {{config.extra.arcana.sdk_name}} usage, user onboarding, and blockchain transaction signing experience.
@@ -59,15 +59,9 @@ Use the defaults or provide inputs for various settings as per your application 
 
 === "Keyspace"
 
-    Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to use the [[dashboard-user-guide#configure-mainnet-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.
+    Use the **Keyspace** section to select the **App-specific** (default) or **Global Keys** feature. Global keys are less secure as compared to app-specific keys but allow app users to have the same wallet address across different applications in the {{config.extra.arcana.company_name}} ecosystem. Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to use the [[dashboard-user-guide#configure-keyspace|{{config.extra.arcana.dashboard_name}}User Guide]] to configure keyspace.
 
-    ![Mainnet Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
-
-    !!! caution "Keyspace Settings: Available for 'Mainnet'"
-
-           The 'Keyspace' tab is visible only if a developer chooses to create a 'Mainnet' configuration profile for the app. 
-
-           There are certain limitations when the 'Global Keys' option is selected by developers for an app integrating with the {{config.extra.arcana.product_name}} product. Make sure you understand these [[concept-keyspace-type|limitations]] related to feature restriction, switching between app-specific and global keys, security and other implications associated with the 'Global Keys' usage. 
+    ![Keyspace options](/img/an_db_keyspace_options.png){.an-screenshots}
 
 === "Gasless"
 
