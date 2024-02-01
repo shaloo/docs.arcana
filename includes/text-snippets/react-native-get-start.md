@@ -22,7 +22,7 @@ First, [[configure-auth|register and then configure]] the app using the {{config
 
 During app configuration, developers can [[index-configure-auth|configure one or more authentication providers]] to onboard app users.
 
-!!! info "Password-less Option"
+!!! info "Passwordless Option"
 
       When an app is registered using the dashboard, and no authentication providers are set up for onboarding, only the passwordless login option is available by default.
 

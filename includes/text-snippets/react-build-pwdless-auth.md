@@ -1,5 +1,5 @@
 # Build Passwordless Auth
-.
+
 In this guide, you will learn how {{page.meta.arcana.app_type}} app can use the {{config.extra.arcana.product_name}} product to easily onboard users through the passwordless login option in a custom login UI.
 
 ## Prerequisites

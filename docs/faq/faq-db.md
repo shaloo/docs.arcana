@@ -71,14 +71,14 @@ toc_depth: 2
 ??? an-faq "Is it mandatory to specify all configurations in the {{config.extra.arcana.dashboard_name}} *Configure* section?"
 
       No.
+
+      If no authentication provider is configured via the {{config.extra.arcana.dashboard_name}}, the app users can log in through the default passwordless option that requires no configuration. Developers can use the `connect` method to bring up plug-and-play login UI or build a custom login UI. When using the custom login UI, call the `loginWithLink` method to onboard users. 
       
-      If you do not configure any authentication providers in your 'Testnet' or 'Mainnet' configuration profile settings in the {{config.extra.arcana.dashboard_name}}d, then your app can only onboard users via the passwordless option that is enabled by default. You can use the plug-and-play UI via the `connect` method or build your own auth UI and use the `loginWithLink` method to onboard users via the passwordless login option.
-      
-      To enable any authentication providers for app onboarding you must configure them using the {{config.extra.arcana.dashboard_name}}. See the [[index-config-social-providers|how to configure authentication providers]] guide for more details.
+      Besides the default passwordless login option, developers can choose to enable one or more authentication providers as the onboarding options for users. That requries configuring authentication providers through the {{config.extra.arcana.dashboard_name}}. For details, check out [[index-config-social-providers|how to configure authentication providers]].
 
 ??? an-faq "Can an application enable more than one authentication provider to onboard users?"  
 
-      Yes. The application developer can enable one or more authentication providers and passwordless login. The application users can choose any one of the supported authentication mechanisms to log in easily, similar to Web2 app onboarding.
+      Yes. Developers can configure one or more authentication providers as additional onboarding options besides the default passwordless login option. Users can choose any one of the supported authentication mechanisms to onboard the app.
 
 
 ## Wallet Settings

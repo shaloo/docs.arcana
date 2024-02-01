@@ -22,7 +22,7 @@ Make sure that all the prerequisites listed above are met. The app should be suc
 
 ### Step 1: Call User Onboarding Function: `loginWithLink`
 
-After integrating the app, add the code to use `loginWithLink` function of the {{config.extra.arcana.sdk_name}} and trigger passwordless login to onboard the users. App users are required to supply an email ID as input for passwordless login.
+After integrating the app, add the code to use `loginWithLink` function of the {{config.extra.arcana.sdk_name}} and trigger passwordless login to onboard the users. App users are required to supply an email ID as input for passwordless login. An OTP is sent to the specified email ID. When the user provides the same OTP in the app context, authentication is complete and a wallet address is assigned to the user.
 
 {% include "./code-snippets/auth_pwdless.md" %}
 
