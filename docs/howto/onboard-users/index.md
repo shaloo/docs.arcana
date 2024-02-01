@@ -9,13 +9,17 @@ arcana:
 
 User onboarding requires developers to first register their applications and configure the authentication providers using the {{config.extra.arcana.dashboard_name}}. Next, install and integrate the app with the {{config.extra.arcana.sdk_name}}.
 
-After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug and play auth UI or custom login UI.
+After integration, the Web3 apps can add code to onboard users via the configured authentication providers and passwordless by using built-in plug-and-play auth UI or custom login UI.
 
-[[index-vanilla-onboard-users|Vanilla HTML/CSS/JS Apps :fontawesome-solid-plug:]]{ .md-button }
+[[index-vanilla-onboard-users|Vanilla HTML/CSS/JS App :fontawesome-solid-plug:]]{ .md-button }
 
-[[index-react-onboard-users| React Apps :material-card-account-mail:]]{ .md-button }
+[[index-react-onboard-users| React App :material-card-account-mail:]]{ .md-button }
 
-[[index-vue-onboard-users| Vue Apps :material-card-account-mail:]]{ .md-button }
+[[index-vue-onboard-users| Vue App :material-card-account-mail:]]{ .md-button }
+
+[[gasless-user-onboarding|Gasless App :material-gas-station-off:]]{ .md-button }
+
+[[solana-user-onboarding|Solana App :simple-bookstack:]]{ .md-button }
 
 !!! tip  "Auto-Reconnect Enhancement"
 

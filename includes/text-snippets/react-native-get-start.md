@@ -22,9 +22,9 @@ First, [[configure-auth|register and then configure]] the app using the {{config
 
 During app configuration, developers can [[index-configure-auth|configure one or more authentication providers]] to onboard app users.
 
-!!! info "Password-less Option"
+!!! info "Passwordless Option"
 
-      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
+      When an app is registered using the dashboard, and no authentication providers are set up for onboarding, only the passwordless login option is available by default.
 
 ### Step 2: Install Auth SDK
 
@@ -66,7 +66,7 @@ Make sure that you specify the unique client ID assigned to the app during regis
     // For logging in
     const loginWithGoogle = () => {
       if(authRef !== null){
-        authRef.current.loginWithSocial().then(() => {
+        authRef.current.loginWithSocial("google").then(() => {
           // logged in
         }).catch(err => {
           // already logged in
@@ -75,6 +75,10 @@ Make sure that you specify the unique client ID assigned to the app during regis
       }
     }
     ```
+
+    !!! tip "Arcana JWT Token"
+
+          {% include "./text-snippets/jwt_token.md" %}
 
     **Logout**
 

@@ -29,7 +29,7 @@ toc_depth: 2
       
       *For this feature to work, the user* **must** *have the same email ID registered with the different authentication providers.*
       
-      {{config.extra.arcana.sdk_name}} uses the email ID to uniquely identify the user even if the user uses different social providers or a passwordless email option to log in to a Web3 app. It associates a single key for such a user which results in the user seeing the same wallet address. If the user has different email IDs associated with different social providers then each login is treated as a unique, different user and the same user will see a different wallet address when logging into the same Web3 app.
+      {{config.extra.arcana.sdk_name}} uses the email ID to uniquely identify the user even if the user uses different social providers or the passwordless email option to log in to a Web3 app. It associates a single key for such a user which results in the user seeing the same wallet address. If the user has different email IDs associated with different social providers then each login is treated as a unique, different user and the same user will see a different wallet address when logging into the same Web3 app.
 
 ??? an-faq "Does the authenticated user see the same wallet address across multiple Web3 applications that integrate with the {{config.extra.arcana.sdk_name}}?"
 
@@ -110,7 +110,7 @@ toc_depth: 2
 
 ??? an-faq "How does the {{config.extra.arcana.sdk_name}} ensure that the key shares are fetched by the correct user only?"
 
-      A user can log in only after the social provider authenticates or if the user clicks the verify link in passwordless, Auth can identify the correct user. Providers share JWT/other-identifiers with Auth after successful login for the authenticated login session. So unless user gives away their social ID / verify link to someone else, only a valid user/correct user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
+      A user can log in only after the social provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other-identifiers with {{config.extra.arcana.product_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
 
 ??? an-faq "Can a malicious entity reconstruct the user's private key if they get all the requisite key shares?"
 

@@ -30,8 +30,7 @@ Use the defaults or provide inputs for various settings as per your application 
 
     ??? example "Password-less Onboarding"
 
-          By default, passwordless login is always enabled in the {{config.extra.arcana.sdk_name}}. If the app is registered and no authentication provider is configured through the dashboard, users can only log into the app via the passwordless login by specifying an email and clicking on the the verification link.
-
+          All apps using {{config.extra.arcana.sdk_name}} automatically have passwordless login. No need to set it up on the dashboard. If an app is registered without an authentication provider, users get only the passwordless login option. They can onboard the app by entering the OTP sent to their email.
         
     * **Redirect URI:** Displays the URL auto-generated for each registered app by {{config.extra.arcana.company_name}}. This is required to complete **OAuth** verification via the selected authentication providers.
     * **Social Auth:** Select and [[index-configure-auth|configure authentication providers]] for onboarding app users. <br></br><img class="an-screenshots" alt="Social OAuth" src="/img/an_db_configure_social.png"></img>

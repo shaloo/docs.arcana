@@ -6,39 +6,39 @@ arcana:
   root_rel_path: .
 ---
 
-# Installing {{config.extra.arcana.product_name}} SDKs
+# Installing {{config.extra.arcana.company_name}} SDKs
+
+## {{config.extra.arcana.sdk_name}}
 
 Developers must install the appropriate {{config.extra.arcana.sdk_name}} package as per their application type and then integrate the app.
 
-## {{config.extra.arcana.company_name}} SDK Flavors
-
 {% include "./text-snippets/auth_sdk_flavors.md" %}
 
-## Web SDKs
+### Web SDKs
 
-### Vanilla HTML/CSS/JS Apps
+#### Vanilla HTML/CSS/JS Apps
 
 {% include "./code-snippets/auth_install.md" %}
 
-### React/NextJS Apps
+#### React/NextJS Apps
 
 {% include "./code-snippets/auth_react_install.md" %}
 
-### Wagmi/RainbowKit Apps
+#### Wagmi/RainbowKit Apps
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
-### Web3-React Apps
+#### Web3-React Apps
 
 {% include "./code-snippets/auth_web3_react_install.md" %}
 
-## Mobile SDKs
+### Mobile SDKs
 
-### Flutter Apps
+#### Flutter Apps
 
 {% include "./code-snippets/auth_flutter_install.md" %}
 
-### React-Native Apps
+#### React-Native Apps
 
 {% include "./code-snippets/auth_react_native_install.md" %}
 
@@ -48,12 +48,6 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 
 {% include "./code-snippets/auth_unity_install.md" %}
 
-{% if config.extra.arcana.exclude_content_tag %}
-
-{% else %}
-
-## Gasless SDK (Standalone)
+## {{config.extra.arcana.gasless_sdk_name}}
 
 {% include "./code-snippets/gasless_sdk_install.md" %}
-
-{% endif %}

@@ -24,7 +24,7 @@ During app configuration, developers can enable [[index-configure-auth|one or mo
 
 !!! info "Password-less Option"
 
-      If the app is registered but none of the supported authentication providers are enabled and configured for user onboarding, then by default, only the passwordless login option is available.
+      When an app is registered, and no authentication providers are set up for onboarding, only the passwordless login option is available by default.
 
 ### Step 2: Install {{config.extra.arcana.flutter_sdk_name}}
 
@@ -66,6 +66,10 @@ Once initialized, you can call the `AuthProvider` functions for onboarding users
       // On login Success
     }).catchError(...);
     ```
+
+    !!! tip "Arcana JWT Token"
+
+          {% include "./text-snippets/jwt_token.md" %}
 
     **Logout**
 

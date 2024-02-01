@@ -4,7 +4,7 @@
 {{ super() }}
 
 {% block announce %}
-<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="https://docs.arcana.network/relnotes/rn-main-auth-v{{ config.extra.arcana.product_release_tag }}.html">{{ config.extra.arcana.product_name }} Release v{{ config.extra.arcana.product_release_tag }} with {{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }}</a><span class="blink_me"> is now live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try Auth SDK v1.09-beta.3 on Testnet.</a></i></p>
+<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="{{ config.site_url }}/relnotes/latest.html">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }}; {{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a><span class="blink_me"> is live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i></p>
 {% endblock %}
 
 {% block content %}
@@ -398,26 +398,30 @@
     }
 
     .ribbon {
+        opacity: 0.5;
         position: relative; 
+        font-size: small;
         left: 5%;
-        top: 5%; /* Adjust ribbon overhang */
-        width: 75%; /* Adjust ribbon width */
+        top: 1%; /* Adjust ribbon overhang */
+        width: 85%; /* Adjust ribbon width */
         background-color: #960018; /* Adjust ribbon color */
-        transform: rotate(-25deg);
+        transform: rotate(-45deg);
         color: #fff; /* Adjust text color */
-        padding: 10px 0; /* Adjust text padding */
+        padding: 0.75rem; /* Adjust text padding */
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); /* Optional shadow */
           /* Postal stamp edge styling */
         text-align: center;
         clip-path: polygon(
             0 0,
-            calc(100% - 5px) 0,
-            calc(100% - 10px) 15%, 
-            calc(100% - 15px) 30%,
-            calc(100% - 20px) 45%, 
-            calc(100% - 15px) 60%, 
-            calc(100% - 10px) 75%, 
-            calc(100% - 5px) 100%,
+            calc(100% - 2px) 0,
+            calc(100% - 4px) 10%, 
+            calc(100% - 6px) 20%,
+            calc(100% - 8px) 30%, 
+            calc(100% - 10px) 50%, 
+            calc(100% - 8px) 70%, 
+            calc(100% - 6px) 80%, 
+            calc(100% - 4px) 90%, 
+            calc(100% - 2px) 100%,
             4px 100%,
             0% 85%
         );
@@ -425,11 +429,19 @@
 
 </style>
 
+<div class="watermark">{{config.extra.arcana.site_status}}</div>
+
 <section class="md-grid md-typeset">
 
 <div class="top-hr">
     <div class="hr">
-        <h1 style="text-align: left">Arcana Network SDKs</h1>
+        <h1 style="text-align: left">Arcana SDKs</h1>
+    </div>
+</div>
+
+<div class="top-hr">
+    <div class="hr">
+        <h2 style="text-align: left">Auth</h2>
     </div>
 </div>
 
@@ -446,11 +458,11 @@
                 </div>
                 <div class="card-cell-right">
                     <ul>
-                        <li>Vanilla HTML/CSS/JS</li>
-                        <li>React/NextJS</li>
-                        <li>Wallet connectors: Wagmi, RainbowKit, Web3-React</li>
-                        <li>Vue</li>
-                    </ul>                
+                        <li>Supports Web3 app types: Vanilla HTML/CSS/JS, React/NextJS, Vue</li>
+                        <li>Supports wallet connector apps: Wagmi, RainbowKit, Web3-React</li>
+                        <li>Built-in Gasless feature for Arcana wallet</li>
+                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana<span class="blink_me_small"><i>New!</i></span></li>
+                    </ul>              
                 </div>
             </div>
         </a>
@@ -467,59 +479,15 @@
                 </div>
                 <div class="card-cell-right">
                     <ul>
-                        <li>iOs</li>
-                        <li>Android</li>
-                        <li>Flutter</li>
-                        <li>React-Native</li>
+                        <li>Supports mobile app types: iOS, Android, Flutter, React Native</li>
+                        <li>Built-in Gasless feature for Arcana wallet</li>
+                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana<span class="blink_me_small"><i>New!</i></span></li>
                     </ul>
                 </div>
             </div>
         </a>
     </div>
 
-    <div class="feature-item">
-        <a href="./quick-start/gasless-quick-start.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
-                    <div>
-                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Gasless</h3>
-                </div>
-                <div class="card-cell-right">
-                    <ul>
-                        <li>Auth SDK built-in feature</li>
-                        <li>Set up Gas Tanks and whitelist app operations</li>
-                        <li>Allow gasless transactions for app users</li>
-                    </ul>
-                </div>
-            </div>
-        </a>
-    </div>
-
-    <div class="feature-item">
-        <a href="./quick-start/web/index.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
-                    <div>
-                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Gasless SDK</h3>
-                    <p><span class="blink_me_small">Coming Soon!</span></p>
-                </div>
-                <div class="card-cell-right">
-                    <ul>
-                        <li>Standalone SDK</li>
-                        <li>Enable gasless in third-party wallet apps</li>
-                        <li>Supports multi-wallet apps</li>
-                        <li>Gasless apps (No authentication)</li>
-                    </ul>
-                </div>
-            </div>
-        </a>
-    </div>
     <div class="feature-item">
         <a href="./arcana-coming-soon.html">
             <div class="an-card-container">
@@ -532,6 +500,7 @@
                     <p><span class="blink_me_small"><i>Coming soon!</i></span></p>
                 </div>
                 <div class="card-cell-right">
+                    <p>Enable social login in gaming apps:</p>
                     <ul>
                         <li>Unity Apps</li>
                         <!--<li>Unreal</li>-->
@@ -541,6 +510,38 @@
         </a> 
     </div>
 </div>
+
+<div class="top-hr">
+    <div class="hr">
+        <h2 style="text-align: left">Gasless</h2>
+    </div>
+</div>
+
+<div class="top-hr md-an-marquee">
+    <div class="feature-item">
+        <a href="./quick-start/gasless-standalone-quick-start.html">
+            <div class="an-card-container">
+                <div class="a-link-color card-cell-left ribbon-container">
+                    <div>
+                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
+                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
+                    </div>
+                    <h3 class="h3-color">Gasless</h3>
+                    <div><span class="ribbon"><i>New!</i></span></div>
+                </div>
+                <div class="card-cell-right">
+                    <ul>
+                        <li>Operates independently of Arcana Auth</li>
+                        <li>Easily set up Gas Tanks and whitelist app operations</li>
+                        <li>Enable gasless in third-party wallet apps</li>
+                        <li>Supports multi-wallet apps</li>
+                    </ul>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
 </section>
 
 <div class="top-hr">
@@ -566,24 +567,21 @@
     </div>
 
     <div class="feature-item-2">
-        <a href="./howto/index.html#integrate-with-arcana-auth">
+        <a href="./howto/sdks/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_build_custom_auth_dark.png#only-dark" width="10%"/><img src="./img/icons/i_build_custom_auth_light.png#only-light" width="10%"/>  Integrate App</h3>
                 <p>Select and install relevant Arcana SDKs:</p>
                 <ul>
-                    <li>Auth SDK</li>
-                    <li>Auth React SDK</li>
-                    <li>Auth Wagmi SDK</li>
-                    <li>Auth Web3-React SDK</li>
-                    <li>Auth Flutter SDK</li>
-                    <li>Auth React-Native</li>
+                    <li>Web: Auth SDK, React SDK, Wagmi SDK,Web3-React SDK</li>
+                    <li>Mobile: Flutter SDK, React-Native SDK</li>
+                    <li>Gasless SDK</li>
                 </ul>
             </div>
         </a>
     </div>
 
     <div class="feature-item-2">
-        <a href="./howto/deploy-app.html">
+        <a href="./deploy/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i_deploy_app_dark.png#only-dark" width="10%"/><img src="./img/icons/i_deploy_app_light.png#only-light" width="10%"/>  Deploy App</h3>
                 <ul>
@@ -677,17 +675,17 @@
     <div class="feature-item-2">
         <a href="./dev-resources/dev-guides/index.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="10%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="10%"/>  Dev Resources</h3>
-                <p>Refer to Release Notes, Installation Guide, SDK Migration Guide, Arcana Developer Dashboard User Guide, FAQ, Troubleshooting and error handling.</p>
+                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="10%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="10%"/>  Dev Guides</h3>
+                <p>See Arcana Developer Dashboard User Guide, Release Notes, Installation Guides, Migration Guides, FAQ, Troubleshooting and error handling.</p>
             </div>
         </a>
     </div>
     
     <div class="feature-item-2">
-        <a href="https://authsdk-ref-guide.netlify.app/">
+        <a href="./dev-resources/sdk-ref/index.html">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="10%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="10%"/>  Auth SDK Reference</h3>
-                <p>Check out AuthProvider functions, usage and more.</p>
+                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="10%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="10%"/>  SDK Reference Guides</h3>
+                <p>Learn about SDK functions, data types and more.</p>
             </div>
         </a>
     </div>
@@ -700,7 +698,7 @@
         <a href="./user-guides/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/an_wallet_profile_icon_dark.png#only-dark" width="10%"/><img src="./img/icons/an_wallet_profile_icon_light.png#only-light" width="10%"/>  User Guides</h3>
-                <p>Check Arcana Wallet User Guide and Multi-Factor Auth User Guide for enhanced wallet security setup.</p>
+                <p>Check Arcana Wallet User Guide and MFA User Guide for enhanced wallet security setup.</p>
             </div>
         </a>
     </div>
@@ -709,7 +707,7 @@
         <a href="./concepts/index.html">
             <div class="a-link-color">
                 <h3 class="h3-color"><img src="./img/icons/i-user-guide-dark.png#only-dark" width="10%"/><img src="./img/icons/i-user-guide-light.png#only-light" width="10%"/>  Concepts</h3>
-                <p>Learn the basics and important ideas of Arcana Auth, including its main concepts and essential elements.</p>
+                <p>Learn the basics and important ideas of Arcana Auth, Gasless transactions and other essentials.</p>
             </div>
         </a>
     </div>

@@ -8,6 +8,10 @@ arcana:
 
 # Release Notes
 
+[[rn-main-scw-v0.0.25|{{config.extra.arcana.gasless_sdk_name}} v0.0.25 :material-note-text:]]{ .md-button }
+
+[[rn-main-auth-v1.0.9-rc.1|Auth v1.0.9-rc.1 :material-note-text:]]{ .md-button }
+
 [[rn-main-auth-vOct12-23-gasless|Auth vOct12-23-gasless Release :material-note-text:]]{ .md-button }
 
 [[rn-main-auth-v1.0.8|Auth v1.0.8 :material-note-text:]]{ .md-button }
