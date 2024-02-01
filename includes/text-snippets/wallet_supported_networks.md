@@ -28,10 +28,4 @@
     * Sepolia
     * Shardeum Sphinx 1.x
 
-=== "Non-EVM (Coming Soon)*
-
-    * Solana
-    * Solana Testnet
-    * Solana Dev
-
 <img src="/img/an_wallet_default_chain_list.png" alt="Supported Blockchains Pre-configured list" width="50%" class="an-screenshots"/>
