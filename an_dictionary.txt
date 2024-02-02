@@ -1071,7 +1071,8 @@ linkNFT
 localhost
 localhost:3000
 loginType
-loginWithOtp
+loginWithOTPComplete
+loginWithOTPStart
 loginWithSocial
 mainnet
 makeMetaDataURL

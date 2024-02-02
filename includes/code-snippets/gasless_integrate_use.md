@@ -29,7 +29,6 @@ After the `init` call, you can all other methods of the SCW object. Use the `get
   console.log("Address: " + scw.getSCWAddress());
 
   // Check balance
-  // Use scw.getPaymaster() to check whether gas tanks are adequately funded before issuing a transaction
 
   console.log("Paymaster Balance: " + (await scw.getPaymasterBalance()) / 1e18);
 ```
