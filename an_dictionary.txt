@@ -647,7 +647,7 @@ configmetamask
 configs
 configure-auth
 configure-gasless
-configure-mainnet-keyspace
+configure-keyspace
 configwalletconnect
 configwalletmodes
 crypto

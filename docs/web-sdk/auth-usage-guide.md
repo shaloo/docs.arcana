@@ -118,24 +118,18 @@ import { AuthProvider } from '@arcana/auth' // From npm
 ```ts
 import { AuthProvider } from '@arcana/auth'
 
-interface ChainConfig {
-  chainId: 'number', // Example: Polygon Mumbai Testnet specify '80001'
-  rpcUrl?: 'string'
-}
-
-const auth = new AuthProvider(`${clientId}`, {  //Arcana Unique App Identifier via Dashboard
-  position: 'left', // optional, defaults to right
-  theme: 'light', // optional, defaults to dark theme
-  alwaysVisible: false, // optional, defaults to true
-  network: 'mainnet', // optional, network can be testnet or mainnet - defaults to testnet
-  setWindowProvider: true, //optional, defaults to false
-  chainConfig: {
-    chainId: '80001', //Polygon Mumbai Testnet ChainId
-    rpcUrl: 'https://rpc.ankr.com/polygon_mumbai', 
+const auth = new AuthProvider(`${clientId}`, {
+  position: 'left', // default - right
+  theme: 'light', // default - dark
+  alwaysVisible: false, // default - true
+  setWindowProvider: true, // default - false
+  connectOptions: {
+    compact: true, // default - false
   },
 })
 
-await auth.init()  // Note: Initialize Auth SDK before calling any other Auth APIs
+await auth.init()
+
 ```
 
 See [Get Started with Auth SDK](https://docs.arcana.network/auth-quick-start.html) for more Auth SDK usage insights.
@@ -148,7 +142,7 @@ See [Get Started with Auth SDK](https://docs.arcana.network/auth-quick-start.htm
 const provider = await auth.connect()
 ```
 
-#### Login
+#### Custom Login
 
 Social login
 
@@ -159,9 +153,7 @@ const provider = await auth.loginWithSocial(`${loginType}`)
 
 Passwordless login via an email verification OTP
 
-```js
-const provider = await auth.loginWithLink(`${email}`)
-```
+{% include "./code-snippets/auth_pwdless.md" %}
 
 Check if a user is logged in
 
@@ -169,7 +161,7 @@ Check if a user is logged in
 const isloggedIn = await auth.isLoggedIn() // boolean
 ```
 
-Check and reconnect, if required
+Check and reconnect, if required, within a 30-minute window after logout.
 
 ```js
 const canReconnect = await auth.canReconnect()
@@ -231,7 +223,7 @@ const encrypted = await EthCrypto.encryptWithPublicKey(
 
 ---
 
-## Web3 Wallet Operations
+## Arcana Wallet Operations
 
 Arcana wallet is an embedded Web3 wallet offered via the Auth SDK. It uses [Ethereum JSON-RPC](https://ethereum.github.io/execution-apis/api-documentation/) to interact with the blockchains.
 

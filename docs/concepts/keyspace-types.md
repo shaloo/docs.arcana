@@ -30,7 +30,7 @@ When the global keys option is set for an application using the {{config.extra.a
 
 * If the app was earlier using app-specific keys, app users would have accessed wallet address already. Once developer switches to global keys, users will see a different wallet address for the same app.
 
-* The blockchain transaction signing experience will change for the user. Earelier, using the default app-specific key setup, initiating a personal sign message request prompts the {{config.extra.arcana.wallet_name}} to display a pop-up within the same app context where user needs to take action. After switching to global keys, the same personal sign message will appear in a new browser tab. Users can take necessary actions in this tab and subsequently close it.
+* The blockchain transaction signing experience will change for the user. Earlier, using the default app-specific key setup, initiating a personal sign message request prompts the {{config.extra.arcana.wallet_name}} to display a pop-up within the same app context where user needs to take action. After switching to global keys, the same personal sign message will appear in a new browser tab. Users can take necessary actions in this tab and subsequently close it.
 
 <img src="/img/an_wallet_no_clickjacking.gif" alt="Previous wallet behavior (No clickjacking fix)" class="an-screenshots-noeffects" width="50%"/><img src="/img/an_wallet_clickjacking.gif" alt="Wallet usage with clickjacking fix" class="an-screenshots-noeffects" width="50%"/>
 

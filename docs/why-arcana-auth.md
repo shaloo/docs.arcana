@@ -36,7 +36,7 @@ As a Web3 app developer, you can focus on core application logic while delegatin
 
 Developers can easily plug in the popular Web2 sign-up/login mechanisms in the Web3 apps and lower the barrier to entry for Web3 users. 
 
-To onboard users in a Web3 app, the {{config.extra.arcana.sdk_name}} allows developers to select and configure user authentication providers for the app. Developers can choose the default, built-in plug-and-play user authentication UI via `connect` function of the {{config.extra.arcana.sdk_name}}. Or, they can customize and build a custom user authentication UI, and simply add code to call `loginWithSocial` and `loginWithLink` functions to easily onboard users.
+To onboard users in a Web3 app, the {{config.extra.arcana.sdk_name}} allows developers to select and configure user authentication providers for the app. Developers can choose the default, built-in plug-and-play user authentication UI via `connect` function of the {{config.extra.arcana.sdk_name}}. Or, they can customize and build a custom user authentication UI, and simply add code to call `loginWithSocial`, `loginWithLink`(deprecated), `loginWithOTPStart` and `loginWithOTPComplete` functions to easily onboard users.
 
 Read more about the [[concept-plug-and-play-auth|plug-and-play feature]], and [[index-onboard-users|how to onboard users]] via the built-in, plug-and-play login UI or custom login UI.
 

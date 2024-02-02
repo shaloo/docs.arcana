@@ -63,7 +63,7 @@ The Web3-React app is successfully integrated with the {{config.extra.arcana.sdk
 After integrating with a Web3-React app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. The example above shows the built-in plug-and-play login UI method. There are [[index-web3-react-onboard-users|two ways to onboard users]]: 
 
 * Use built-in [[onboard-web3-react-app-pnp-ui|plug-and-play login UI]] with a single function call that displays all the configured authentication providers
-* Use [[onboard-web3-react-app-custom-ui|custom login UI to onboard users]] and wire it to the {{config.extra.arcana.sdk_name}} functions `loginWithLink` or `loginWithSocial` for calling the configured authentication providers.
+* Use [[onboard-web3-react-app-custom-ui|custom login UI to onboard users]] and wire it to the {{config.extra.arcana.sdk_name}} passworldless onboarding functions `loginWithLink`(deprecated), `loginWithOTPStart`, `loginWithOTPComplete` or the social onboarding function `loginWithSocial` for calling the configured authentication providers.
 
 {{config.extra.arcana.wallet_name}} can also be used in applications that integrate with other wallet connectors such as [Wagmi](https://wagmi.sh) and [Rainbow Kit](https://www.rainbowkit.com/). See [[index-integrate-react-app|how to enable {{config.extra.arcana.wallet_name}} for apps using Wagmi and Rainbow Kit]].
 

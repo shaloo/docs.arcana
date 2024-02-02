@@ -67,7 +67,7 @@ toc_depth: 2
 
 ??? an-faq "Is there a passwordless login option to onboard the users?"
 
-      The passwordless login option to onboard app users is enabled once the app registers through the {{config.extra.arcana.dashboard_name}} and then integrates with the {{config.extra.arcana.sdk_name}}. Initialize the SDK and use the `connect` method to bring up the built-in, plug-and-play login UI that allows passwordless login. Alternatively, add custom login UI and call the [`loginWithLink` method](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) to onboard users via the passwordless option. See [[build-password-less-auth|how to enable passwordless login]] for details.
+      The passwordless login option to onboard app users is enabled once the app registers through the {{config.extra.arcana.dashboard_name}} and then integrates with the {{config.extra.arcana.sdk_name}}. Initialize the SDK and use the `connect` method to bring up the built-in, plug-and-play login UI that allows passwordless login. Alternatively, add custom login UI and call the [`loginWithOTPStart`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPStart) and [`loginWithOTPComplete`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPComplete) methods to onboard users via the passwordless option. See [[build-password-less-auth|how to enable passwordless login]] for details.
 
 ## Deployment
 
