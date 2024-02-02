@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Arcana SDKs: Release Notes
+# Arcana Gasless: Release Notes
 
 {==
 
@@ -67,7 +67,7 @@ Check out the [gasless integration sample submodules](https://github.com/arcana-
 
 ## Previous Releases
 
-See the [[index-release-notes| release notes archive]] for details.
+None.
 
 ## Questions? 
 
