@@ -30,6 +30,7 @@
 
 === "Non-EVM"
 
+    * MultiVersX
     * Solana
     * Solana Testnet
     * Solana Dev
