@@ -18,9 +18,9 @@ In this guide, you will learn how {{page.meta.arcana.app_type}} app can use the 
 
 Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via the passwordless login option.
 
-### Step 1: Use `loginWithLink`
+### Step 1: Onboard Users
 
-After integrating the app, add the code to use `loginWithLink` through the `useAuth` hook offered by the {{config.extra.arcana.react_sdk_name}} and trigger passwordless login to onboard the users. App users are required to supply an email ID as input for passwordless login.
+After integrating the app, add the code to onboard users in a passwordless manner. Use `loginWithLink` (deprecated) `loginWithOTPStart` and `loginWithOTPComplete` through the `useAuth` hook offered by the {{config.extra.arcana.react_sdk_name}} and trigger passwordless login to onboard the users. App users are required to supply an email ID as input for passwordless login.
 
 {% include "./code-snippets/auth_react_useauth_pwdless.md" %}
 

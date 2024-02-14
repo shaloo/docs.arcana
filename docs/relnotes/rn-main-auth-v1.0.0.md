@@ -54,8 +54,7 @@ See [[dashboard-user-guide#manage-testnet-and-mainnet-configurations|how to mana
 
 ### App-specific and Global Keys
 
-- Mainnet configuration settings require [[dashboard-user-guide#configure-mainnet-keyspace|configuring keyspace type]]
-- App-specific keys are the default
+- App-specific keys are the default, developers can configure it to [[dashboard-user-guide#configure-keyspace|global keyspace type]]
 - Developers must submit a verification form and seek approval for enabling global keys 
 - Global keys enable a simpler user experience whereby users see the same wallet address across when they log into any app in the {{config.extra.arcana.company_name}} ecosystem. Users must ensure that they do not sign any malicious transactions of any fraudulent app. To mitigate this risk, {{config.extra.arcana.company_name}} requires developers to submit a verification form before the global keys feature is enabled for an app.
 

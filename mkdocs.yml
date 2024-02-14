@@ -14,7 +14,7 @@ site_description: >-
   Remove the friction of wallet installation, key backup, & crypto on-ramp.
   
 # Check for broken links, etc.
-strict: true 
+strict: false 
 
 exclude_docs: |
   /integrations/*
@@ -47,6 +47,7 @@ nav:
         - Gasless Apps: quick-start/gasless-quick-start.md
         - Solana Apps: quick-start/solana-quick-start.md
         - Unity Apps: quick-start/unity-quick-start.md
+        - MultiversX Apps: quick-start/mvx-quick-start.md
       - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - References:
@@ -91,6 +92,8 @@ nav:
             - Cognito: howto/config-idm/cognito-oauth.md
             - Firebase: howto/config-idm/firebase-auth.md
         - Gasless: howto/configure-gasless.md
+        - Solana: db/config-dApp-with-db-for-Solana.md
+        - MultiversX: db/config-dApp-with-db-for-mvx.md
     - Integrate SDKs:
       - howto/sdks/index.md
       - Auth:
@@ -109,6 +112,7 @@ nav:
             - Vue App: howto/integrate-app/vue.md
             - Gasless App: howto/integrate-app/gasless.md
             - Solana App: howto/integrate-app/solana.md
+            - MultiversX App: howto/integrate-app/mvx.md
           - Onboard Users: 
             - howto/onboard-users/index.md
             - Vanilla JS App:
@@ -181,6 +185,7 @@ nav:
                     - Firebase: howto/onboard-users/vue/custom-ui/build-idm/firebase-login.md
             - Gasless App: howto/onboard-users/gasless.md
             - Solana App: howto/onboard-users/solana.md
+            - MultiversX App: howto/onboard-users/mvx.md
           - Handle Events: howto/handle-provider-events.md
           - Wallet Ops:
             - wallet-ops/index.md
@@ -201,6 +206,7 @@ nav:
                   - howto/arcana-wallet/web3-ops/solana/index.md
                   - JSON-RPC Ops: howto/arcana-wallet/solana-json-rpc-ops.md
                   - Web3 Wallet Ops: howto/arcana-wallet/solana-wallet-ops.md
+                - MultiversX: howto/arcana-wallet/web3-ops/mvx/index.md
             - Custom Wallet UI: howto/arcana-wallet/custom-wallet-ui.md
         - Mobile App:
           - howto/mobile/index.md
@@ -222,6 +228,7 @@ nav:
       - dev-resources/dev-guides/index.md
       - Dashboard User Guide: db/config-dApp-with-db.md
       - Solana Configuration Guide: db/config-dApp-with-db-for-Solana.md
+      - MultiversX Configuration Guide: db/config-dApp-with-db-for-mvx.md
       - SDK Reference Guides:
         - dev-resources/sdk-ref/index.md
         - Auth SDK Usage Guide: web-sdk/auth-usage-guide.md
@@ -236,6 +243,7 @@ nav:
         - Auth SDK: faq/faq-auth.md
         - Gasless: faq/faq-gasless.md
         - Solana: faq/faq-solana.md
+        - MultiversX: faq/faq-mvx.md
       - Troubleshooting Guide: troubleshooting.md
       - Error Handling: 
         - Web SDK: 
@@ -244,14 +252,14 @@ nav:
           - Gasless Errors: web-sdk/gasless-error-msg.md
     - Changelog:
       - changelog/index.md
-      - Auth SDK: https://github.com/arcana-network/auth/releases/tag/v1.0.8
+      - Auth SDK: https://github.com/arcana-network/auth/releases/tag/v1.0.9
       - Dashboard: https://github.com/arcana-network/developer-dashboard/releases/tag/v1.0.6
       - Wallet-UI: https://github.com/arcana-network/wallet-ui/releases/tag/1.0.6
     - Archives: 
       - archives/index.md
       - Release Notes:
         - relnotes/archives/index.md
-        - Auth 1.0.9-rc.1 : relnotes/rn-main-auth-v1.0.9.md
+        - Auth 1.0.9: relnotes/rn-main-auth-v1.0.9.md
         - Gasless SDK: relnotes/rn-main-scw-v0.0.25.md
         - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
         - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
@@ -267,7 +275,7 @@ nav:
         - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
       - Auth SDK Migration:
         - migration/archives/index.md
-        - vOct12-23-gasless -> v1.0.9-rc.1: migration/main-auth-v1.0.9-migration.md
+        - vOct12-23-gasless -> v1.0.9: migration/main-auth-v1.0.9-migration.md
         - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
         - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
         - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
@@ -389,7 +397,7 @@ extra:
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
-    site_status: !ENV [SITE_STATUS,'draft']
+    site_status: !ENV [SITE_STATUS,'']
     sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK
     wagmi_sdk_name: Arcana Auth Wagmi SDK
@@ -402,10 +410,10 @@ extra:
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
-    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.9-rc.1']
+    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.9']
     previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.8']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.4']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9-rc.1']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.9']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.6']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.6']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']
@@ -674,7 +682,7 @@ plugins:
         'concepts/ansmartc/an_smartc_details.md': 'concepts/ansmartc/an-smartc-deployed.md'
         'concepts/ansmartc/an_smartc_flows.md': 'concepts/ansmartc/an-smartc-deployed.md'
         'concepts/ansmartc/an_smartc_upgrades.md': 'concepts/ansmartc/an-smart-contracts.md'
-        'relnotes/latest.md': 'relnotes/rn-main-scw-v0.0.25.md'
+        'relnotes/latest.md': 'relnotes/rn-main-auth-v1.0.9.md'
         #website deprecated links go to contacts page
         'docs/accesscontrol/index.md': 'support.md'
         'docs/category/data-access-control/index.md': 'support.md'

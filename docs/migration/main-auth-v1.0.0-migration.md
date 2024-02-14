@@ -39,7 +39,7 @@ Earlier, by default, each registered application was associated with a 'Testnet'
 
 #### Keyspace in Mainnet Deployments
 
-* The 'Mainnet' configuration profile for the app has an additional setting meant for selecting the **Keyspace** type. Developers can choose between the default **App-specific Keys** or **Global Keys**. [[concept-keyspace-type|Global Keyspace]] enables a better user experience whereby the user is assigned the same wallet address across applications in the Arcana ecosystem in a secure manner. Enabling the global keys feature requires developer verification and whitelisting. This offers higher security than the global keys option. For details, see [[dashboard-user-guide#configure-mainnet-keyspace|'How to Configure Keyspace']] section in the Dashboard User Guide.
+* The 'Mainnet' configuration profile for the app has an additional setting meant for selecting the **Keyspace** type. Developers can choose between the default **App-specific Keys** or **Global Keys**. [[concept-keyspace-type|Global Keyspace]] enables a better user experience whereby the user is assigned the same wallet address across applications in the Arcana ecosystem in a secure manner. Enabling the global keys feature requires developer verification and whitelisting. This offers higher security than the global keys option. For details, see [[dashboard-user-guide#configure-keyspace|'How to Configure Keyspace']] section in the Dashboard User Guide.
 
 #### Usage Tracking
 

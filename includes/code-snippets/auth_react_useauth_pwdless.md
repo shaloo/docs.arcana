@@ -12,6 +12,16 @@ function App() {
   const onConnectClick = async () => {
     try {
       await loginWithLink(`${userEmail}`); 
+      // loginWithLink is deprecated 
+      // use loginWithOTPStart, loginWithOTPComplete
+      // const login = await auth.loginWithOTPStart(`${email}`)
+      // await login.begin()
+
+      // if(login.isCompleteRequired) {
+        // await loginWithOTPComplete(`${otp}`, onMFARequired() => {
+          // Hide overlay(if used) so that user can recover device share via wallet ui
+        //})
+      //}
     } catch (err) {
       console.log({ err });
       // Handle error

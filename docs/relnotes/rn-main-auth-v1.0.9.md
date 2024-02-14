@@ -1,7 +1,7 @@
 ---
-alias: rn-main-auth-v1.0.9-rc.1
+alias: rn-main-auth-v1.0.9
 title: 'Arcana Auth: Release Notes'
-description: 'Arcana Auth Release Notes (v1.0.9-rc.1 Latest)'
+description: 'Arcana Auth Release Notes (v1.0.9 Latest)'
 arcana:
   root_rel_path: ..
 ---
@@ -10,11 +10,9 @@ arcana:
 
 {==
 
-**Release Date: Jan 22, 2024**  
+**Release Date: Feb 5, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
-
-The {{config.extra.arcana.product_name}} product consists of the following components:
 
 * {{config.extra.arcana.sdk_name}} 
       - Web Apps 
@@ -37,12 +35,14 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 ==}
 
 ## What is New?
+<img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
 ---
 
 This is a major release that supports non-EVM blockchains (Solana). New product features include a brand new SDK that offers maximum customization. Also, there are some enhancements related to security besides bug fixes.
 
 * Non-EVM Chain Support: Solana - See [[solana-quick-start|Solana Apps Quick Start Guide]].
+* Passwordless Login with OTP: Use [`loginWithOTPStart`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPStart), and [`loginWithOTPComplete`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPComplete) instead of [`loginWithLink`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) (deprecated)
 * New SDK: {{config.extra.arcana.auth_core_sdk_name}} - See [[auth-core-quick-start|Auth Core SDK Quick Start Guide]].
 * Security enhancements and bug fixes. See [[index-changelog|changelog]].
 
@@ -54,7 +54,9 @@ This is a major release that supports non-EVM blockchains (Solana). New product 
 
 There are no usage changes for applications that use app-specific keys (default). 
 
-If the app developer selects [[concept-keyspace-type| global keys]] while configuring the app via the {{config.extra.arcana.dashboard_name}}, the social auth settings for enabling the social login providers are **no longer** required**.
+If the app developer selects [[concept-keyspace-type| global keys]] while configuring the app via the {{config.extra.arcana.dashboard_name}}, the social auth settings for enabling the social login providers are **no longer** required.
+
+Apps can choose to enable global keys on Testnet as well as the Mainnet.
 
 ### New User Orientation
 
@@ -76,17 +78,11 @@ See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
 
 Check out the [sample dApp integration examples](https://github.com/arcana-network/auth-examples) for various dApp types, wallet connectors and frameworks.
 
-## Upgrade to the Latest {{config.extra.arcana.sdk_name}} 
-
----
-
-If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can continue to use it with the latest {{config.extra.arcana.product_name}} product release.
-
-Please note, in case are using an older version of the {{config.extra.arcana.sdk_name}} prior to v{{config.extra.arcana.previous_version}} then refer to the appropriate [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
-
 ## Previous Releases
 
-See the [[index-release-notes| release notes archive]] for details.
+Using an older version of the {{config.extra.arcana.sdk_name}}?
+
+Refer to the [[index-release-notes| release notes archive]] and [[index-migration-guides|Migration Guides]]. Upgrade to the latest version.
 
 ## Questions? 
 

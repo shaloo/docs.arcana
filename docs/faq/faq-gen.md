@@ -21,11 +21,18 @@ toc_depth: 2
 
       First, [[configure-auth|register the app and configure the app settings]] using the {{config.extra.arcana.dashboard_name}}. Use the unique {{config.extra.arcana.app_address}} assigned by Arcana Network to [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[index-onboard-users|onboard users]]. The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[configure-wallet-visibility|wallet visibility settings]]. The wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display wallet as per the application logic using the `showWallet()` function.
 
-??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the Auth SDK is integrated with the Web3 app?
+??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the Auth SDK is integrated with the Web3 app?"
 
-      In case of EVM chains, developers can access the EIP-1193 provider once an `AuthProvider` object is created and `init` function is successful. See code snippets below for details:
+      In case of EVM chains, developers can access the EIP-1193 provider once an `AuthProvider` object is created and `init` function is successful. See code snippets below for details: 
 
-      {% include "./code-snippets/provider.md" %}
+      ```js
+      // ethers
+      const provider = new ethers.providers.Web3Provider(auth.provider)
+
+      // web3js
+      const provider = new Web3(auth.provider)
+            
+      ```
 
 ## Application Frameworks
 
@@ -60,7 +67,7 @@ toc_depth: 2
 
 ??? an-faq "Is there a passwordless login option to onboard the users?"
 
-      The passwordless login option to onboard app users is enabled once the app registers through the {{config.extra.arcana.dashboard_name}} and then integrates with the {{config.extra.arcana.sdk_name}}. Initialize the SDK and use the `connect` method to bring up the built-in, plug-and-play login UI that allows passwordless login. Alternatively, add custom login UI and call the [`loginWithLink` method](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) to onboard users via the passwordless option. See [[build-password-less-auth|how to enable passwordless login]] for details.
+      The passwordless login option to onboard app users is enabled once the app registers through the {{config.extra.arcana.dashboard_name}} and then integrates with the {{config.extra.arcana.sdk_name}}. Initialize the SDK and use the `connect` method to bring up the built-in, plug-and-play login UI that allows passwordless login. Alternatively, add custom login UI and call the [`loginWithOTPStart`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPStart) and [`loginWithOTPComplete`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPComplete) methods to onboard users via the passwordless option. See [[build-password-less-auth|how to enable passwordless login]] for details.
 
 ## Deployment
 
@@ -106,4 +113,6 @@ toc_depth: 2
 
       **Update {{config.extra.arcana.app_address}}**: The {{config.extra.arcana.app_address}} specified as the input parameter while integrating the app with the {{config.extra.arcana.sdk_name}} is the one assigned to the default Arcana Testnet profile. This works fine when the app is deployed on the Testnet. For deploying the app on the Mainnet, the developer must create the Mainnet configuration profile and carefully copy the newly assigned Mainnet {{config.extra.arcana.app_address}}. Use the Mainnet {{config.extra.arcana.app_address}} as the input parameter while integrating the app with the {{config.extra.arcana.sdk_name}}. This will ensure that the app gets deployed on the Mainnet and not on the Testnet. For details, see [[migrate-app-testnet-mainnet|how to migrate an app deployed on the Testnet to the Mainnet.]]
 
+      <!---
       **Global Keys**: (Optional) The Mainnet configuration profile has additional settings to allow the developers to choose the 'Global Keys' feature. This setting is not available when an app is deployed on the Testnet. When the developer creates the Mainnet configuration profile, either by copying the Testnet profile or creating a fresh one, they are presented with an option to either continue to use the 'app-specific' keys which are the default setting in the Testnet profile.  Or they can choose to enable the 'Global Keys'. Enabling this feature may take some time as it requires a manual, online request/approval process. The developer must submit the 'enable global keys' form when prompted and wait for approval from the {{config.extra.arcana.company_name}}. The status of the request is displayed in the {{config.extra.arcana.dashboard_name}} 'Keyspace' tab. Once the request is approved, the app can be deployed on the Mainnet and use the 'Global Keys' feature. To learn more about the 'Global Keys' feature,[[concept-keyspace-type| see here]].
+      --->        

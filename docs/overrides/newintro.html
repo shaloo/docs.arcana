@@ -4,7 +4,10 @@
 {{ super() }}
 
 {% block announce %}
-<p> 🎉🎉🎉 <a style="color: var(--md-an-blink-me-link-color);" href="{{ config.site_url }}/relnotes/latest.html">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }}; {{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a><span class="blink_me"> is live on Mainnet!</span> ⚡⚡⚡ <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i></p>
+<p> 🎉🎉🎉 <span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-an-blink-me-link-color);" href="{{ config.site_url }}/relnotes/latest.html">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-an-blink-me-link-color);" href="{{ config.site_url }}/relnotes/rn-main-scw-v0.0.25.html">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a> ⚡⚡⚡</p>
+<!---
+    <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i>
+-->
 {% endblock %}
 
 {% block content %}
@@ -428,9 +431,9 @@
     }
 
 </style>
-
+<!--
 <div class="watermark">{{config.extra.arcana.site_status}}</div>
-
+-->
 <section class="md-grid md-typeset">
 
 <div class="top-hr">
@@ -461,7 +464,7 @@
                         <li>Supports Web3 app types: Vanilla HTML/CSS/JS, React/NextJS, Vue</li>
                         <li>Supports wallet connector apps: Wagmi, RainbowKit, Web3-React</li>
                         <li>Built-in Gasless feature for Arcana wallet</li>
-                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana<span class="blink_me_small"><i>New!</i></span></li>
+                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana, MultiversX<span class="blink_me_small"><i>New!</i></span></li>
                     </ul>              
                 </div>
             </div>
@@ -481,7 +484,7 @@
                     <ul>
                         <li>Supports mobile app types: iOS, Android, Flutter, React Native</li>
                         <li>Built-in Gasless feature for Arcana wallet</li>
-                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana<span class="blink_me_small"><i>New!</i></span></li>
+                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana, MultiversX<span class="blink_me_small"><i>New!</i></span></li>
                     </ul>
                 </div>
             </div>
