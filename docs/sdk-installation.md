@@ -20,7 +20,7 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 
 {% include "./code-snippets/auth_install.md" %}
 
-#### React/NextJS Apps
+#### React/Next.js Apps
 
 {% include "./code-snippets/auth_react_install.md" %}
 
