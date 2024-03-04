@@ -12,39 +12,42 @@ arcana:
 
 The latest {{config.extra.arcana.gaming_sdk_name}} version is: {{config.extra.arcana.latest_auth_unity_sdk_version}}. 
 
-Integrate Web3 gaming app that uses the Unity framework with the {{config.extra.arcana.gaming_sdk_name}} to onboard users and allow authenticated users to access the Arcana wallet instantly to sign blockchain transactions.
-
+Web3 Unity gaming app can integrate with the {{config.extra.arcana.gaming_sdk_name}} and onboard users via social login. The authenticated users can access the Arcana wallet instantly within the app context and sign blockchain transactions.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="Auth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
 ## Register & Configure
 
-Begin by [[configure-auth|registering and configuring]] the {{config.extra.arcana.gaming_sdk_name}} usage via the {{config.extra.arcana.dashboard_name}}. Note the unique value, **{{config.extra.arcana.app_address}}**, assigned to the app. It will required later during integration.
+Begin by [[configure-auth|registering and configuring]] the {{config.extra.arcana.gaming_sdk_name}} usage via the {{config.extra.arcana.dashboard_name}}. Note the unique value, **{{config.extra.arcana.app_address}}**, assigned to the app. It is used later for app integration.
 
 See [[index-configure-auth|how to configure user onboarding and gasless transaction settings {{config.extra.arcana.gaming_sdk_name}}]].
 
 ## Integrate Unity App
 
-Follow these steps to integrate the Unity app with the {{config.extra.arcana.gaming_sdk_name}}:
+Make sure you have registered the app and obtained an {{config.extra.arcana.app_address}} for integrating the app with the {{config.extra.arcana.gaming_sdk_name}}:
 
-### Step 1: Set up Project Assets
+### Step 1: Set up Unity, Install Auth SDK
 
-- **Arcana Auth Gaming SDK Code Folder:** In the Unity project, copy the code from the [Arcana Auth Gaming SDK repo](https://github.com/arcana-network/auth-unity/tree/main/Assets/ArcanaSDK) and copy them at the location `/Assets/ArcanaSDK`.
-- **Dependency Library:** Copy the library dependencies. The `/Assets/Libs/Newtonsoft.Json.dll` library handles JSON processing. It's under the MIT license and free for commercial use.
-- **Vuplex WebView:** Purchase Vuplex WebView separately from [https://developer.vuplex.com/webview/overview](https://developer.vuplex.com/webview/overview) and incorporate it into your project at the `/Assets/Vuplex` path.
+{% include "./text-snippets/auth_unity_settings.md" %}
 
-### Step 2: Configure `ArcanaSDK` object
+### Step 2: Initialize Auth SDK
 
-- Add the `/Assets/ArcanaSDK/Prefab/ArcanaSDK` prefab to your scene.
-- Set up the required parameters ({{config.extra.arcana.app_address}} and environment) in the `ArcanaSDK` object in the inspector.
+{% include "./code-snippets/auth_unity_init.md" %}
 
-### Step 3: Use Arcana Auth APIs
+### Step 3: Onboard Users
 
-- First, call `LoginWithSocial` to onboard the user. Choose one of the [[state-of-the-arcana-auth#user-onboarding-options|supported user onboarding options]] such as Google, Steam, etc. 
-- Next, call `Request` or `RequestAsync` to make Web3 Wallet operation requests. These methods are similar; choose the one that suits your needs best.
+First, call `LoginWithSocial` or `LoginWithOTP` to onboard the user. Choose one of the [[state-of-the-arcana-auth#user-onboarding-options|supported user onboarding options]] such as Google, Steam, etc. 
 
-After integrating the Unity app with the {{config.extra.arcana.gaming_sdk_name}} and adding the required code to onboard users via the configured social logins, you are ready to deploy the gaming app. 
+{% include "./code-snippets/auth_unity_onboard.md" %}
+
+### Step 4: Enable Web3 Wallet Operations
+
+Next, call `Request` to make Web3 Wallet operation requests from within the app context. 
+
+{% include "./code-snippets/auth_unity_web3_wallet_ops.md" %}
+
+After integrating the Unity app with the {{config.extra.arcana.gaming_sdk_name}}, adding the required code to onboard users and allowing Web3 wallet operations, the app is ready to deploy on Testnet. 
 
 ## Deploy App
 
@@ -54,7 +57,7 @@ An app integrated with the {{config.extra.arcana.gaming_sdk_name}} can be deploy
 * Integrate the app with the {{config.extra.arcana.gaming_sdk_name}} 
 * Add code to onboard users and call Web3 wallet operations that require signing the blockchain transactions
 
-Developers can deploy one instance of the app (say, under active development) on the {{config.extra.arcana.company_name}} Testnet while simultaneously deploying a stable version of their app (say, one validated on Testnet and ready for users) on the {{config.extra.arcana.company_name}} Mainnet. See [[deploy-app|how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet]] for details.
+Developers can deploy an app instance under active development on the {{config.extra.arcana.company_name}} Testnet. They can simultaneously deploy a tested and stable app instance on the {{config.extra.arcana.company_name}} Mainnet. See [[deploy-app|how to deploy your app on the {{config.extra.arcana.company_name}} Testnet / Mainnet]] for details.
 
 !!! caution "Testnet/Mainnet Configuration Settings"
 
@@ -68,11 +71,10 @@ Developers can deploy one instance of the app (say, under active development) on
 
 That is all!
 
-The Unity app is now ready to onboard users via 'Google'. Once the user logs in, the {{config.extra.arcana.wallet_name}} will be instantly accessible for Web3 wallet operations through the UI. Developers can also add code in the Unity app and call wallet functions programmatically via `Request` or `RequestAsync` methods. When a blockchain transaction is triggered programmatically from the app or via user action, a transaction notification is displayed in the Unity app context along with the transaction details. The user can review the transaction details and choose to accept or reject it.
-
+The Unity app is now ready to onboard users via the specified login method. Once the user logs in, the {{config.extra.arcana.wallet_name}} will be instantly accessible for Web3 wallet operations through the UI. 
 
 ## See also
 
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
-* [[index-video-tutorials|Video Tutorials]]
+* [[unity-code-sample|Sample Unity App Integration]]
 * [Sample Unity App Integration](https://github.com/arcana-network/auth-examples)
