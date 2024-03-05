@@ -18,7 +18,7 @@
 
       - **Linux**: `dev.voltstro.unitywebbrowser.engine.cef.linux.x64`
 
-      - **Mac**: `dev.voltstro.unitywebbrowser.engine.cef.macos.x64`
+      - **MacOS**: `dev.voltstro.unitywebbrowser.engine.cef.macos.x64`
 
 * {% include "./code-snippets/auth_unity_install.md" %}
 

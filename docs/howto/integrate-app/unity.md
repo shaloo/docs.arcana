@@ -52,7 +52,7 @@ The Unity Web3 gaming app is now successfully integrated with the {{config.extra
 
 After integrating an app with the {{config.extra.arcana.gaming_sdk_name}}, developers can add code to [[unity-user-onboarding|onboard users]] and [[unity-web3-wallet-ops|enable Web3 wallet operations]] for authenticated users to sign transactions.
 
-## See als
+## See also
 
 * [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
 * [[unity-code-sample|Sample Unity App Integration]]
