@@ -88,7 +88,7 @@ const loggedIn = auth.isLoggedIn(); /* boolean response */
 After successful login, the user information is saved in memory. Before the page `unload` event, the user information gets stored in `session-storage`. After a successful page reload, it is fetched again to memory and removed from the `session-storage`.
 
 ```js
-const userInfo = auth.getUser();
+const userInfo = auth.getUserInfo();
 /* 
   UserInfo: {
     loginType: 'google',
@@ -218,7 +218,7 @@ window.onload = async () => {
   await auth.handleRedirect();
 
   if(auth.isLoggedIn()) {
-    const info = auth.getUser();
+    const info = auth.getUserInfo();
   }
 }
 ```

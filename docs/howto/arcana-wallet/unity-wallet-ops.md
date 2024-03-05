@@ -10,19 +10,17 @@ arcana:
 
 In this guide, you will learn how a Unity Web3 gaming app integrated with the {{config.extra.arcana.gaming_sdk_name}} can plug in Web3 wallet operations and allow authenticated users to sign blockchain transactions.
 
-## Prerequisites
+Before issuing the Web3 wallet operations, the Unity Web3 gaming App must be [[integrate-unity-app|integrated with the {{config.extra.arcana.gaming_sdk_name}}]]. Developers must [[unity-user-onboarding|add code to onboard users]] before enabling Web3 wallet operations for gaming users.
 
-* The Unity Web3 gaming App must be [[integrate-unity-app|integrated with the {{config.extra.arcana.gaming_sdk_name}}]]. Developers must [[unity-user-onboarding|add code to onboard users]] before enabling Web3 wallet operations for gaming users.
+## Supported Web3 Operations
 
-## Use `Request` Method
-
-Simply call `Request` to make Web3 Wallet operation requests from within the app context. 
+Call `Request` to make Web3 Wallet operation requests from within the app context. Provide the 'method' parameter for any supported Web3 wallet operations.
 
 {% include "./code-snippets/auth_unity_web3_wallet_ops.md" %}
 
-See the [[index-web3-wallet-ops|supported JSON/RPC Web3 operations]] for a list of methods that can be invoked via the `Request` method of the {{config.extra.arcana.gaming_sdk_name}}.
-
 That is all! :material-party-popper:
+
+The supported methods in the `Request` function may vary depending on the selected blockchain network, EVM chains, or non-EVM chains, such as Solana or MultiversX. See the [[index-web3-wallet-ops|supported JSON/RPC Web3 operations]] for a list of chain-specific methods supported via the `Request` call of the {{config.extra.arcana.gaming_sdk_name}}.
 
 ## What's Next?
 

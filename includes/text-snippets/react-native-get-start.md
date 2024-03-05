@@ -126,7 +126,7 @@ Make sure that you specify the unique client ID assigned to the app during regis
     // For getting logged in user info
     const getUserInfo = async () => {
       if(authRef !== null){
-        return authRef.current.getUser();
+        return authRef.current.getUserInfo();
       }
     };
 
