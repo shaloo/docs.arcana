@@ -15,9 +15,9 @@ toc_depth: 2
 
 ??? an-faq "Is Solana the only non-EVM chain supported by the {{config.extra.arcana.product_name}} product?"
 
-            No.
-      
-            Refer to the [[state-of-the-arcana-auth#supported-blockchains|list of supported chains - EVM and non-EVM]] for details.
+      No.
+
+      Refer to the [[web3-stack-chains|list of supported chains - EVM and non-EVM]] for details.
 
 ??? an-faq "Can a developer choose to use some EVM-compatible chains along with Solana in an app?"
 

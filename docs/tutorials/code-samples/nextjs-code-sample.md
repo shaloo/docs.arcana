@@ -1,22 +1,22 @@
 ---
 alias: nextjs-code-sample
-title: 'NextJS Code Sample'
-description: 'Sample code to help developers that are building NextJS-based apps to quickly integrate with the Arcana Auth SDK.'
+title: 'Next.js Code Sample'
+description: 'Sample code to help developers that are building NextJ.js-based apps to quickly integrate with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---
 
-# NextJS App Code Sample
+# Next.js App Code Sample
 
-You need to first [[configure-auth#step-2-register-application|register the app]] using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [[configure-auth#step-3-configure-application|configure authentication providers]] for onboarding users. After that, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages and integrate the NextJS app.
+You need to first [[register-app-auth|register the app]] using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [[index-configure-auth|configure authentication providers]] for onboarding users. After that, install the `{{config.extra.arcana.auth_sdk_pkg_name}}` and the `{{config.extra.arcana.react_sdk_pkg_name}}` packages and integrate the Next.js app.
 
-See [sample NextJS app source](https://github.com/arcana-network/auth-next-js) at GitHub. This is a very basic NextJS app that is created using the [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) template. It integrates with the {{config.extra.arcana.sdk_name}} and uses the built-in, [[concept-plug-and-play-auth| plug-and-play]] login UI to onboard users and allow them to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. 
+See [sample Next.js app source](https://github.com/arcana-network/auth-next-js) at GitHub. This is a very basic Next.js app that is created using the [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) template. It integrates with the {{config.extra.arcana.sdk_name}} and uses the built-in, [[concept-plug-and-play-auth| plug-and-play]] login UI to onboard users and allow them to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. 
 
 ## Registration & Configuration
 
-The following {{config.extra.arcana.dashboard_name}} screen shows the 'Testnet' configuration settings for the NextJS app such that users can onboard it via Google, Twitch, and passwordless login. See [[configure-auth|how to configure app]] for details.
+The following {{config.extra.arcana.dashboard_name}} screen shows the 'Testnet' configuration settings for the Next.js app such that users can onboard it via Google, Twitch, and passwordless login. See [[index-configure-auth|configuration settings]] for details.
 
-![NextJS App config](/img/nextjs_app_db_setup_google_twitch.png){.an-screenshots}
+![Dashboard Screenshot App Config Google, Twitch](/img/nextjs_app_db_setup_google_twitch.png){.an-screenshots}
 
 After configuring the app, copy and use the **{{config.extra.arcana.app_address}}** assigned to the app and displayed in the dashboard on the top right of the {{config.extra.arcana.dashboard_name}} screen. It will be used during the app integration with the {{config.extra.arcana.sdk_name}}.
 
@@ -36,11 +36,11 @@ const getAuth = () => {
 };
 ```
 
-## Update NextJS App Context
+## Update Next.js App Context
 
 ### `pages/app.js` 
 
-After integrating the {{config.extra.arcana.sdk_name}} and instantiating the `AuthProvider`, update `_app.js` to plug in the `AuthProvider` context `ProvideAuth` into the NextJS app. 
+After integrating the {{config.extra.arcana.sdk_name}} and instantiating the `AuthProvider`, update `_app.js` to plug in the `AuthProvider` context `ProvideAuth` into the Next.js app. 
 
 ```js title="pages/_app.js" hl_lines="1 2 8 12 16"
 import { getAuth } from "../auth/getArcanaAuth";
@@ -111,26 +111,26 @@ export default function IndexPage() {
 
 ## Deploy Sample App
 
-After registering, configuring, integrating the app with the {{config.extra.arcana.sdk_name}}, and adding code to onboard users, it is time to run the sample NextJS app. Here is what you will see when you run the NextJS sample app:
+After registering, configuring, integrating the app with the {{config.extra.arcana.sdk_name}}, and adding code to onboard users, it is time to run the sample Next.js app. Here is what you will see when you run the Next.js sample app:
 
-![NextJS App UI Connect](/img/nextjs_connectauth.png){.an-screenshots}
+![Next.js App UI Connect](/img/nextjs_connectauth.png){.an-screenshots}
 
-On clicking connect, the NextJS sample app user will see the plug-and-play login screen with options to use Google and Twitch and log into the app. Passwordless authentication is enabled by default. 
+On clicking connect, the Next.js sample app user will see the plug-and-play login screen with options to use Google and Twitch and log into the app. Passwordless authentication is enabled by default. 
 
 !!! note
 
-      In the NextJS sample app, the login options displayed in the "plug-and-play pop-up UI" will only be the ones that have been set up by the developer through the {{config.extra.arcana.dashboard_name}}.
+      In the Next.js sample app, the login options displayed in the "plug-and-play pop-up UI" will only be the ones that have been set up by the developer through the {{config.extra.arcana.dashboard_name}}.
 
 ![App login plug and play](/img/nextjs_applogin.png){.an-screenshots}
 
 After successful authentication, an app user will see the wallet in its minimized state. On clicking the minimized wallet, the maximized {{config.extra.arcana.wallet_name}} is displayed. The logo displayed on the maximized wallet can be customized by the app developer through the Arcana dashboard.
 
-![Wallet Display NextJS App](/img/nextjs_wallet_display.png){.an-screenshots}
+![Wallet Display Next.js App](/img/nextjs_wallet_display.png){.an-screenshots}
 
 See [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]], [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]], and the [[dashboard-user-guide|{{config.extra.arcana.dashboard_name}} User Guide]] for more details.
 
 !!! caution "Use the latest {{config.extra.arcana.sdk_name}}"
 
-      Check the package.json file in the sample NextJS sources and ensure that you are using the latest {{config.extra.arcana.sdk_name}} npm release.
+      Check the package.json file in the sample Next.js sources and ensure that you are using the latest {{config.extra.arcana.sdk_name}} npm release.
 
       The current {{config.extra.arcana.sdk_name}} release is: v{{config.extra.arcana.latest_version}}

@@ -43,4 +43,4 @@ Simply upgrade the {{config.extra.arcana.sdk_name}} to the latest package v1.0.2
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" />
 
-See [[rn-main-auth-v1.0.2|{{config.extra.arcana.product_name}} v1.0.2 release notes]].
+See [[rn-main-auth-v1.0.2|{{config.extra.arcana.product_name}} v1.0.2 release notes]] for details.

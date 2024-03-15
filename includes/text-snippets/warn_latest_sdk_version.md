@@ -1,3 +1,3 @@
-*Use the latest release:* [**v{{config.extra.arcana.latest_version}}**](https://www.npmjs.com/package/@arcana/auth).
-  
-    To upgrade **{{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} -> v{{config.extra.arcana.latest_version}}**, see the [[migration-guide-v{{config.extra.arcana.latest_version}}|Migration Guide]]. For versions older than {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}}, be aware of potential breaking changes that may require app reconfiguration and code updates. Check the [[index-migration-guides|Migration Guides]] and [[index-release-notes|Release Notes]] for specifics.
+*Use the latest {{config.extra.arcana.sdk_name}} release:* [**v{{config.extra.arcana.latest_version}}**](https://www.npmjs.com/package/@arcana/auth). [[migration-guide-v{{config.extra.arcana.latest_version}}|Migrate]] from **{{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} -> v{{config.extra.arcana.latest_version}}**. 
+    
+    Versions older than {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} may encounter potential breaking changes that require app reconfiguration, integration code updates, and redeployment. Refer to the [[index-migration-guides|Migration Guides]] and [[index-release-notes|Release Notes]].

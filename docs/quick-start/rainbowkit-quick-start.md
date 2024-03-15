@@ -5,33 +5,33 @@ description: 'Get Started quickly using these step-by-step instructions for usin
 arcana:
   root_rel_path: ..
   app_type: "'RainbowKit'"
-  app_example_submodule: "'`sample-auth-rainbowkit`,`sample-auth-rainbow-viem`'"
+  app_example_submodule: "`sample-auth-rainbowkit`,`sample-auth-rainbow-viem`"
   social_provider: "'google'"
   custom_login_ui_tag: "onboard-rainbow-app-custom-ui"
 ---
 
 # Quick Start: RainbowKit Apps
 
-!!! note "Already using {{config.extra.arcana.sdk_name}}?"
-  
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+Web3 apps using {{page.meta.arcana.app_type}} can easily onboard users via social login by integrating with the {{config.extra.arcana.wagmi_sdk_name}}!
 
-!!! warning "RainbowKit Apps"
-
-      {% include "./text-snippets/warn_latest_wagmi_sdk_version.md" %}
-
+<!----
 ## Overview
 
 To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_type}} app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.wagmi_sdk_name}}, integrate the app, and initialize the `AuthProvider`. You'll need to add code to create an `ArcanaConnector` and specify the `AuthProvider`. Use the appropriate configuration in the `ArcanaConnector` constructor and specify the type of user onboarding. Finally, add code to enable authenticated users to sign blockchain transactions and deploy your app on the Testnet or Mainnet.
 
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
+-->
 
-## Step 1: Register & Configure App
+## Prerequisites
 
-{% include "./text-snippets/quick-start-reg-config.md" %}
+* RainbowKit [v1.3.0](https://github.com/rainbow-me/rainbowkit/releases/tag/%40rainbow-me%2Frainbowkit%401.3.0) or higher
 
-## Step 2: Install SDKs
+## 1. Register & Configure
+
+{% include "./text-snippets/quick-start-reg-config-auth.md" %}
+
+## 2. Install SDKs
 
 For {{page.meta.arcana.app_type}} app, install the following packages:
 
@@ -40,15 +40,15 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
-{% include "./text-snippets/watch_auth_github_repo.md" %}
+!!! note "Use latest SDKs"
+  
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-{% include "./text-snippets/watch_wagmi_github_repo.md" %}
+      {% include "./text-snippets/warn_latest_wagmi_sdk_version.md" %}
 
-Next, integrate the app with the installed SDKs.
+## 3. Integrate
 
-## Step 3: Integrate App
-
-Begin app integration by importing `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
+Import `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
 
 {% include "./code-snippets/import_auth.md" %}
 
@@ -64,31 +64,25 @@ Next, import the `ArcanaConnector` from the `{{config.extra.arcana.wagmi_sdk_pkg
 
 {% include "./code-snippets/auth_wagmi_create_client_pnp.md" %}
 
-!!! tip "Wagmi `createClient` and `configClient`"
+!!! tip "`createClient` vs. `creatConfig` usage"
 
-      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
+      See [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
 <!--
 See [`ArcanaConnector` constructor parameters](https://auth-wagmi-sdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
 -->
 
-## Step 4: Onboard Users
+### Onboard Users
 
-For onboarding users via the built-in, plug-and-play login UI (default), simply provide the newly instantiated and configured `ArcanaConnector` to set up Wagmi. You can set up Wagmi connector configuration before onboarding users by using `createClient` or `createConfig` depending upon whether you are using Wagmi version before v2.0 or later.
+Use `ArcanaConnector` to set up Wagmi and onboard users via the built-in plug-and-play login UI (default). Set up Wagmi connector configuration through `createClient` or `createConfig` depending upon whether you are using the Wagmi version before v2.0 or later.
 
 {% include "./code-snippets/auth_rainbow_connector.md" %}
 
-!!! tip "Wagmi `createClient` and `configClient`"
-
-      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
-
 {% include "./code-snippets/auth_rainbow_create_client.md" %}
 
-Now use `WagmiConfig` and `RainbowKitProvider` components to bring up the built-in login UI when the user chooses Arcana wallet connector in the app.
+Use `WagmiConfig` and `RainbowKitProvider` components to bring up the built-in login UI and enable social login through the configured providers.
 
 {% include "./code-snippets/auth_rainbow_use.md" %}
-
-For sample code and details, see how to enable configured authentication providers and [[onboard-rainbow-app-pnp-ui|onboard users via the built-in, plug-and-play login UI]], in a {{page.meta.arcana.app_type}} app.
 
 {% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
@@ -96,24 +90,27 @@ For sample code and details, see how to enable configured authentication provide
 
       {% include "./text-snippets/jwt_token.md" %}
 
-**That's all!!!** :material-party-popper:
+### Sign Transactions
+
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
+
+## 4. Deploy
+
+{% include "./text-snippets/quick-start-deploy.md" %}
 
 {==
 
-Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.wagmi_sdk_name}} to onboard users and allow authenticated users to sign blockchain transactions using  {{config.extra.arcana.wallet_name}}.
 
 ==}
 
-## Next Steps
+!!! tip "Wagmi `createClient` and `configClient`"
 
-{% include "./text-snippets/quick-start-next-steps.md" %}
-
-## Examples
-
-{% include "./text-snippets/quick-start-common-examples.md" %}
+      For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
 ## See Also
 
 {% include "./text-snippets/quick-start-see-also.md" %}
 
-{% include "./text-snippets/prod_version_info.md" %}
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+{% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}

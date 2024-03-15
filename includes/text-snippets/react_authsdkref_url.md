@@ -1,0 +1,1 @@
+<span><a href="https://auth-react-sdk-ref-guide.netlify.app/" target="_blank">{{config.extra.arcana.react_sdk_name}} Reference Guide</a></span>

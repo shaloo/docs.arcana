@@ -10,19 +10,19 @@ arcana:
 
 # Quick Start: Auth-Core
 
-!!! note "Already using {{config.extra.arcana.auth_core_sdk_name}}?"
-  
-      {% include "./text-snippets/warn_latest_auth_core_sdk_version.md" %}
+{{config.extra.arcana.auth_core_sdk_name}} offers limited {{config.extra.arcana.sdk_name}} functionality with additional flexibility in user onboarding customization!
 
-!!! warning "Auth-Core SDK usage"
+Developers can use this SDK to assign keys to authenticated users to sign blockchain transactions securely. 
 
-      The {{config.extra.arcana.auth_core_sdk_name}} is meant for apps that require access to private keys. If you do not require private key access then please DO NOT use this SDK. Developers get a stripped-down version of the {{config.extra.arcana.product_name}} product. It **does not provide any built-in {{config.extra.arcana.product_name}} login UI**. There is **no {{config.extra.arcana.wallet_name}} functionality for Web3 operations**. 
-      
-      When using the {{config.extra.arcana.auth_core_sdk_name}}, only app-specific keys are allowed. The 'Global Keys' option is **not available**. 
-      
-      There is **no enhanced wallet security  (MFA)** or key recovery when the user switches devices.
+!!! warning "Limited Auth Capabilities"
 
-Follow these steps to begin using the {{config.extra.arcana.product_name}} product:
+      * **No** built-in [[concept-plug-and-play-auth|plug-and-play login UI]] feature 
+      * **No** built-in {{config.extra.arcana.wallet_name}} UI
+      * **No** support for [[concept-keyspace-type|Global keys, only app-specific keys]] (default) allowed. 
+      * **No** [[concept-mfa|enhanced wallet security via MFA]] or key recovery is supported when the user switches devices.
+
+<!---
+## Overview
 
 The {{config.extra.arcana.auth_core_sdk_name}} is meant for implementing Web3 app solutions where developers need to securely assign blockchain access keys, the **private keys** to every authenticated user, and build a custom wallet UI instead of using the one built-in the {{config.extra.arcana.sdk_name}}.
 
@@ -34,46 +34,52 @@ Start by registering the app and configuring usage settings through {{config.ext
 !!! warning "Key security"
  
       When using the {{config.extra.arcana.auth_core_sdk_name}} based auth solution developers must secure authenticated user's cryptographic assets including keys.
+-->
+## Prerequisites
 
-## Steps
+!!! note "Use latest SDKs"
+  
+      {% include "./text-snippets/warn_latest_auth_core_sdk_version.md" %}
 
-### Step 1: Register & Configure App
+## 1. Register & Configure
 
-{% include "./text-snippets/quick-start-reg-config.md" %}
+{% include "./text-snippets/quick-start-reg-config-auth.md" %}
 
-??? abstract "Wallet UI Mode: Only Custom UI"
+??? abstract "Wallet UI Mode Setting"
 
-      The *Wallet UI Mode* configuration setting selected by the developer during app registration is ignored if the app is integrated with the {{config.extra.arcana.auth_core_sdk_name}}. When choosing the {{config.extra.arcana.auth_core_sdk_name}}, developers must implement custom wallet UI. There is **no default {{config.extra.arcana.wallet_name}} or built-in login UI** that is supported by the {{config.extra.arcana.auth_core_sdk_name}}.
+      The *Wallet UI Mode* {{config.extra.arcana.dashboard_name}} configuration setting chosen by the developer during app registration **is ignored** for apps integrated with the {{config.extra.arcana.auth_core_sdk_name}}. 
+      
+      To use the {{config.extra.arcana.auth_core_sdk_name}}, developers must implement a custom wallet UI.
 
       <img class="an-screenshots" src="/img/an_wallet_ui_mode_ignored.gif" alt="Wallet UI Mode Ignored"/>
 
-### Step 2: Install SDK
+## 2. Install SDK
 
-After registering the app and configuring Auth usage for the app using the {{config.extra.arcana.dashboard_name}}, developers can install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}` package using one of these options:
+Install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}` package:
 
-#### npm
+=== "npm"
 
-```sh
-npm install --save @arcana/auth-core
-```
+    ```sh
+    npm install --save @arcana/auth-core
+    ```
 
-#### yarn
+=== "yarn"
 
-```sh
-yarn add @arcana/auth-core
-```
+    ```sh
+    yarn add @arcana/auth-core
+    ```
 
-#### CDN
+=== "CDN"
 
-```html
-<script src="https://cdn.jsdelivr.net/npm/@arcana/auth-core"></script>
-```
+    ```html
+    <script src="https://cdn.jsdelivr.net/npm/@arcana/auth-core"></script>
+    ```
 
-```html
-<script src="https://unpkg.com/@arcana/auth-core"></script>
-```
+    ```html
+    <script src="https://unpkg.com/@arcana/auth-core"></script>
+    ```
 
-### Step 3: Integrate App
+## 3. Integrate
 
 ```js
 const { AuthProvider, SocialLoginType, CURVE } = window.arcana.auth_core;
@@ -81,7 +87,7 @@ const { AuthProvider, SocialLoginType, CURVE } = window.arcana.auth_core;
 import { AuthProvider, CURVE } from '@arcana/auth-core';
 ```
 
-The `AuthProvider` is instantiated and initialized for a UI flow that redirects the user to a different app page after login. For more details, see [[auth-core-usage-guide#flow-modes|here]].
+The `AuthProvider` is instantiated and initialized for a [[auth-core-usage-guide#flow-modes|UI flow]] that redirects the user to a different app page after login.
 
 ```js
 const clientId = "xar_test_d24f70cd300823953dfa2a7f5b7c7c113356b1ad"; // obtained after app registration via dashboard
@@ -92,18 +98,17 @@ const auth = new AuthProvider({
 });
 ```
 
-### Step 4: Onboard Users
+### Onboard Users
 
-Before adding code in the app for using the {{config.extra.arcana.auth_core_sdk_name}} user onboarding functions, make sure you have configured those properly as instructed [[index-configure-auth| here]]. More than one user onboarding mechanism can be enabled in the app:
-
-* Social Login
-* Passwordless
+Use custom login UI and call social login and passwordless user onboarding functions provided by the {{config.extra.arcana.auth_core_sdk_name}}. Specify the providers [[index-configure-auth| configured]] through the dashboard in the `SocialLoginType`. 
 
 #### Social Login
 
 ```js
 await auth.loginWithSocial(SocialLoginType.google);
 ```
+
+Check `SocialLoginType` details in the [[auth-core-usage-guide#exported-enums|Exported Enums]] section.
 
 #### Passwordless Login
 
@@ -129,11 +134,11 @@ await auth.handleRedirect();
 
 --->
 
-!!! warning "Cognito & Firebase"
+!!! warning "Onboarding via Cognito, Firebase"
 
-      Web3 apps that do not wish to use the user onboarding features offered by the {{config.extra.arcana.auth_core_sdk_name}} but only need to assign cryptographic keys to the authenticated users (for e.g., apps using Cognito and Firebase) are not supported in the current release.
+      Web3 apps that use Cognito or Firebase for onboarding users and require {{config.extra.arcana.auth_core_sdk_name}} to only assign cryptographic keys to the authenticated users are **not supported** in the current release.
 
-      For more information, contact our [[support|support team]].
+      Contact our [[support|support team]] if you need this feature.
 
 #### Login Status
 
@@ -143,7 +148,7 @@ const loggedIn = auth.isLoggedIn(); /* boolean response */
 
 #### Get User Info
 
-After successful login, the user information is saved in memory. Before the page unload event, the user information gets stored in session storage. After a successful page reload, it is fetched again to memory and removed from the session storage.
+After successful authentication, the user information is saved in memory. It gets copied in the current session storage before the *page unload* event. User information is fetched again to memory and removed from the session storage after a successful page reload.
 
 ```js
 const userInfo = auth.getUserInfo();
@@ -174,21 +179,19 @@ const publicKey = await auth.getPublicKey({
 }); 
 ```
 
-See [[auth-core-usage-guide#exported-enums|Exported Enums]] for details on SocialLoginType, .
-
 #### Logout
 
 ```js
 await auth.logout();
 ```
 
-Refer to the sample code for using Arcana Auth-Core SDK [here](https://github.com/arcana-network/auth-examples) for details on how to onboard users in an app.
+### Sign Transactions
 
-### Step 5: Sign Transactions
+The `AuthProvider` is a standard Ethereum EIP-1193 provider. Apps integrated with the {{config.extra.arcana.auth_core_sdk_name}} can use this provider to allow authenticated users to sign blockchain transactions.
 
-Once the user has successfully logged into the app, add code to perform Web3 operations such as sign messages, use blockchain send transaction and more.
+Add code to perform Web3 operations and sign blockchain transactions in the context of an authenticated user. 
 
-The `AuthProvider` is a standard Ethereum EIP-1193 provider and can be used by the apps integrating with the {{config.extra.arcana.auth_core_sdk_name}} to allow authenticated users to sign blockchain transactions.
+Developers must add a custom wallet UI and wire it to perform Web3 wallet and blockchain operations for the chains supported by the app. Note that the {{config.extra.arcana.auth_core_sdk_name}} does not provide any built-in login UI or {{config.extra.arcana.wallet_name}} UI, unlike the {{config.extra.arcana.sdk_name}}.    
 
 ```ts
 import { AuthProvider, CURVE } from '@arcana/auth-core';
@@ -229,24 +232,21 @@ try {
 
 ```
 
-### Step 6: Add Custom Wallet UI
+## 4. Deploy
 
-After adding code to onboard users via the {{config.extra.arcana.auth_core_sdk_name}} you can add custom wallet UI and wire it to perform Web3 wallet and blockchain operations for the chains supported by your app. Note that the {{config.extra.arcana.auth_core_sdk_name}} does not have built-in {{config.extra.arcana.wallet_name}} unlike the {{config.extra.arcana.dk_name}}. 
-
-That's all!!! :material-party-popper:
+{% include "./text-snippets/quick-start-deploy.md" %}
 
 {==
 
-You've connected {{config.extra.arcana.auth_core_sdk_name}} to your Web3 app for smooth user onboarding. Just add your custom code for wallet actions, and users can effortlessly sign blockchain transactions.
+You've successfully integrated a Web3 app with the {{config.extra.arcana.auth_core_sdk_name}}. 
 
 ==}
-
-## Examples
-
-For a sample demonstrating an app that integrates with the {{config.extra.arcana.auth_coresdk_name}}, refer to {{page.meta.arcana.app_example_submodule}} in the GitHub repo: [Auth Examples](https://github.com/arcana-network/auth-examples).
 
 
 ## See Also
 
+* `sample-auth-core` submodule in [Auth Examples](https://github.com/arcana-network/auth-examples)
 * [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide]]
 * {% include "./text-snippets/auth_core_sdkref_url.md" %}
+
+{% include "./text-snippets/auth_core_sdk_quicklinks.md" %}

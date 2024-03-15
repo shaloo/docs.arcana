@@ -72,7 +72,7 @@ toc_depth: 2
 
       No.
 
-      If no authentication provider is configured via the {{config.extra.arcana.dashboard_name}}, the app users can log in through the default passwordless option that requires no configuration. Developers can use the `connect` method to bring up plug-and-play login UI or build a custom login UI. When using the custom login UI, call the `loginWithOTPStart` and `loginWithOTPComplete` methods to onboard users. 
+      If no authentication provider is configured via the {{config.extra.arcana.dashboard_name}}, the app users can log in through the default passwordless option that requires no configuration. Developers can use the `connect` method to bring up plug-and-play login UI or build a custom login UI. When using the custom login UI, call the `loginWithLink` method (deprecated), `loginWithOTPStart` and `loginWithOTPComplete` methods to onboard users. 
       
       Besides the default passwordless login option, developers can choose to enable one or more authentication providers as the onboarding options for users. That requires configuring authentication providers through the {{config.extra.arcana.dashboard_name}}. For details, check out [[index-config-social-providers|how to configure authentication providers]].
 

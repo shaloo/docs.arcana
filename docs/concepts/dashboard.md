@@ -17,7 +17,7 @@ The {{config.extra.arcana.dashboard_name}} lets you register apps with {{config.
 
 !!! important
 
-    Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [[configure-auth|registered and configured]] using the {{config.extra.arcana.dashboard_name}}.
+    Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [[register-app-auth|registered]] and [[index-configure-auth|configured for user onboarding]] through the {{config.extra.arcana.dashboard_name}}.
 
 ## Key Functions
 

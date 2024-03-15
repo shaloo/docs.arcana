@@ -19,16 +19,15 @@ toc_depth: 2
       
 ??? an-faq "How can developers enable {{config.extra.arcana.wallet_name}} in the context of their Web3 applications?"
 
-      First, [[configure-auth|register the app and configure the app settings]] using the {{config.extra.arcana.dashboard_name}}. Use the unique {{config.extra.arcana.app_address}} assigned by Arcana Network to [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[index-onboard-users|onboard users]]. The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[configure-wallet-visibility|wallet visibility settings]]. The wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display wallet as per the application logic using the `showWallet()` function.
+      First, [[register-app-auth|register the app]] and [[index-configure-auth|configure the app settings]] using the {{config.extra.arcana.dashboard_name}}. Use the unique {{config.extra.arcana.app_address}} assigned by Arcana Network to [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}}. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[index-onboard-users|onboard users]]. The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[configure-wallet-visibility|wallet visibility settings]]. The wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display the wallet as per the application logic using the `showWallet()` function.
 
-??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the Auth SDK is integrated with the Web3 app?"
+??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the Auth SDK is integrated with the Web3 app?
 
-      In case of EVM chains, developers can access the EIP-1193 provider once an `AuthProvider` object is created and `init` function is successful. See code snippets below for details: 
+      In the case of EVM chains, developers can access the EIP-1193 provider once an `AuthProvider` object is created and the `init` function is successful. See code snippets below for details:
 
       ```js
       // ethers
       const provider = new ethers.providers.Web3Provider(auth.provider)
-
       // web3js
       const provider = new Web3(auth.provider)
             
@@ -38,9 +37,9 @@ toc_depth: 2
 
 ---
 
-??? an-faq "Does the {{config.extra.arcana.sdk_name}} support Web3 application frameworks such as React, NextJS, Vue?"
+??? an-faq "Does the {{config.extra.arcana.sdk_name}} support Web3 application frameworks such as React, Next.js, Vue?"
 
-      Yes. You can integrate the {{config.extra.arcana.sdk_name}} with any vanilla HTML/CSS/JS app or an app that uses React, NextJS, and Vue frameworks. See [[index-integrate-app|how to integrate app with the {{config.extra.arcana.sdk_name}}]].
+      Yes. You can integrate the {{config.extra.arcana.sdk_name}} with any vanilla HTML/CSS/JS app or an app that uses React, Next.js, and Vue frameworks. See [[index-integrate|how to integrate app with the {{config.extra.arcana.sdk_name}}]].
 
 ## Wallet Connectors
 
@@ -67,7 +66,9 @@ toc_depth: 2
 
 ??? an-faq "Is there a passwordless login option to onboard the users?"
 
-      The passwordless login option to onboard app users is enabled once the app registers through the {{config.extra.arcana.dashboard_name}} and then integrates with the {{config.extra.arcana.sdk_name}}. Initialize the SDK and use the `connect` method to bring up the built-in, plug-and-play login UI that allows passwordless login. Alternatively, add custom login UI and call the [`loginWithOTPStart`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPStart) and [`loginWithOTPComplete`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPComplete) methods to onboard users via the passwordless option. See [[build-password-less-auth|how to enable passwordless login]] for details.
+      The passwordless login option to onboard app users is enabled once the app registers through the {{config.extra.arcana.dashboard_name}} and then integrates with the {{config.extra.arcana.sdk_name}}. 
+      
+      Initialize the SDK and use the `connect` method to bring up the built-in, [[use-plug-play-auth|plug-and-play login UI]] that allows passwordless login. Alternatively, add custom login UI and call the SDK methods for passwordless login. See [[build-password-less-auth|how to enable passwordless login]] for details.
 
 ## Deployment
 
@@ -87,7 +88,9 @@ toc_depth: 2
 
       * **Key/Wallet Address**: The authenticated user is assigned a unique key/wallet address for Testnet app deployment. The same user is assigned a different key/wallet address when this app is deployed on the Mainnet.
 
+      <!---
       * **Global Keys**: The 'Global Keys' feature is available only when the app is deployed on the Arcana Mainnet.
+      --->
 
       * **Billing**: App usage is tracked for both the Arcana Testnet as well as the Mainnet.  However, only Mainnet usage is billed.
 
@@ -96,8 +99,10 @@ toc_depth: 2
       If a user logs into the app that is integrated with the {{config.extra.arcana.sdk_name}} and deployed on the Arcana Testnet, they will see a warning on the main 'Token Assets' tab of the built-in {{config.extra.arcana.wallet_name}} UI. The warning indicates that the app is deployed on the Testnet.
 
       There is no such warning displayed in the {{config.extra.arcana.wallet_name}} UI when the app is deployed on the Mainnet.
-
+ 
+      <!---
       Also, the 'Global Keys' feature is available only for the apps deployed on the Arcana Mainnet.  What this means is that for all the apps that are integrated with the {{config.extra.arcana.sdk_name}} and have selected the 'Global Keys' feature, the authenticated user will see the same key/wallet address across all such apps when logging in using the same social login or passwordless option.
+      -->
 
 ??? an-faq "How does a developer migrate an app deployed on the Arcana Testnet to Mainnet?"
 
@@ -115,4 +120,4 @@ toc_depth: 2
 
       <!---
       **Global Keys**: (Optional) The Mainnet configuration profile has additional settings to allow the developers to choose the 'Global Keys' feature. This setting is not available when an app is deployed on the Testnet. When the developer creates the Mainnet configuration profile, either by copying the Testnet profile or creating a fresh one, they are presented with an option to either continue to use the 'app-specific' keys which are the default setting in the Testnet profile.  Or they can choose to enable the 'Global Keys'. Enabling this feature may take some time as it requires a manual, online request/approval process. The developer must submit the 'enable global keys' form when prompted and wait for approval from the {{config.extra.arcana.company_name}}. The status of the request is displayed in the {{config.extra.arcana.dashboard_name}} 'Keyspace' tab. Once the request is approved, the app can be deployed on the Mainnet and use the 'Global Keys' feature. To learn more about the 'Global Keys' feature,[[concept-keyspace-type| see here]].
-      --->        
+      --->

@@ -8,7 +8,9 @@ arcana:
 
 # Gasless Transactions
 
-Developers can use the {{config.extra.arcana.dashboard_name}} to [[configure-auth|register and configure app]] and set up gasless transactions. The {{config.extra.arcana.sdk_name}} supports gasless transactions that allow app users to perform blockchain transactions with zero gas fees on the supported EVM-compatible chains.
+Use the {{config.extra.arcana.dashboard_name}} to [[register-app-auth|register the app]], [[configure-gasless|Configure gasless transactions ({{config.extra.arcana.sdk_name}})]] before [[index-integrate|integrating the app with the {{config.extra.arcana.sdk_name}}]].
+
+Enable gasless transactions in third-party wallets by [[web-gasless-integrate|integrating the app with {{config.extra.arcana.gasless_sdk_name}}]].
 
 {% include "./text-snippets/tut_gasless_url.md" %}
 

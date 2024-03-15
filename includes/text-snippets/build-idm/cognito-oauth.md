@@ -6,11 +6,11 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 
-* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[configure-auth|register the app]] and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
+* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[register-app-auth|register the app]] and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 * Carefully [[config-auth-cognito|follow the instructions to configure AWS Cognito]] as the authentication provider.
   
-* Use the appropriate integration method as per the app type and [[index-integrate-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
+* Use the appropriate integration method as per the app type and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
     
 ## Steps
 
@@ -54,6 +54,6 @@ To know more about how to use Web3 wallet operations programmatically in your ap
 ## See also
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [[index-integrate-app|How to integrate with the {{config.extra.arcana.sdk_name}}]]
+* [[index-integrate|How to integrate with the {{config.extra.arcana.sdk_name}}]]
 * [[web-auth-error-msg|Handing authentication errors]]
 * [Auth Examples](https://github.com/arcana-network/auth-examples)

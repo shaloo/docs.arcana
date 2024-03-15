@@ -36,11 +36,11 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 ## How to Migrate to v0.3.0
 
-1. You need to re-register your app using the {{config.extra.arcana.dashboard_name}}. This is required to obtain a fresh **{{config.extra.arcana.app_address}}** and use that for integrating with the {{config.extra.arcana.sdk_name}}. The older **{{config.extra.arcana.app_address}}** will **NOT WORK** with the latest {{config.extra.arcana.sdk_name}} v0.3.0 release. Follow the instructions in the [[configure-auth|How to Configure App Guide]] to re-register and configure your app.
+1. You need to re-register your app using the {{config.extra.arcana.dashboard_name}}. This is required to obtain a fresh **{{config.extra.arcana.app_address}}** and use that for integrating with the {{config.extra.arcana.sdk_name}}. The older **{{config.extra.arcana.app_address}}** will **NOT WORK** with the latest {{config.extra.arcana.sdk_name}} v0.3.0 release. Follow the instructions in the [[register-app-auth|Registration Guide]] to re-register and re-configure your app.
 
 2. If you were using the {{config.extra.arcana.company_name}} Storage SDK, that is no longer supported. You need to stop using Storage SDK in your app for the time being until we begin supporting Storage SDK in a future release.
 
-3. You need to [[index-integrate-app|re-integrate your app with the {{config.extra.arcana.sdk_name}}]] by providing the new **{{config.extra.arcana.app_address}}** after re-registering and configuring your application using the developer dashboard.
+3. You need to [[index-integrate|re-integrate your app with the {{config.extra.arcana.sdk_name}}]] by providing the new **{{config.extra.arcana.app_address}}** after re-registering and configuring your application using the developer dashboard.
 
 4. If you had enabled the **{{config.extra.arcana.company_name}}  Testnet** blockchain network in Web3 wallet operations, you will need to remove this network altogether as it no longer exists.  Also, the {{config.extra.arcana.company_name}} Testnet Blockchain Explorer is no longer available.  {{config.extra.arcana.company_name}}  smart contracts are deployed on Polygon now. In this release, the {{config.extra.arcana.wallet_name}} supports all EVM-compatible chains besides the default ones that show in the drop-down.  Use the [[arcana-wallet-user-guide|Wallet User Guide]] and the [[index-arcana-wallet|Wallet Developer Guide]] to add and switch networks using the wallet UI or programmatically.
 

@@ -12,7 +12,7 @@ function App() {
   const onConnectClick = async () => {
     try {
       await loginWithLink(`${userEmail}`); 
-      // loginWithLink is deprecated 
+      // CAUTION: loginWithLink is deprecated 
       // use loginWithOTPStart, loginWithOTPComplete
       // const login = await auth.loginWithOTPStart(`${email}`)
       // await login.begin()

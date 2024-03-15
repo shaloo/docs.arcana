@@ -17,7 +17,7 @@ toc_depth: 2
 
       No.
 
-      Refer to the [[state-of-the-arcana-auth#supported-blockchains|list of supported chains - EVM and non-EVM]] for details.
+      Refer to the [[web3-stack-chains|list of pre-configured, supported chains - EVM and non-EVM]] for details.
 
 ??? an-faq "Can a developer choose to use some EVM-compatible chains along with MultiversX in an app?"
 

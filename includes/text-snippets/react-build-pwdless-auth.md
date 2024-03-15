@@ -1,11 +1,11 @@
 # Build Passwordless Auth
-
+.
 In this guide, you will learn how {{page.meta.arcana.app_type}} app can use the {{config.extra.arcana.product_name}} product to easily onboard users through the passwordless login option in a custom login UI.
 
 ## Prerequisites
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
-* The app must be [[configure-auth|registered using the {{config.extra.arcana.dashboard_name}}]] and a unique {{config.extra.arcana.app_address}} must be already assigned to it. This {{config.extra.arcana.app_address}} is essential for integrating the app with the {{config.extra.arcana.sdk_name}}
+* The app must be [[register-app-auth|registered using the {{config.extra.arcana.dashboard_name}}]] and a unique {{config.extra.arcana.app_address}} must be already assigned to it. This {{config.extra.arcana.app_address}} is essential for integrating the app with the {{config.extra.arcana.sdk_name}}
 * Follow the instructions to [[integrate-react-nextjs-app|integrate the React app]] with the {{config.extra.arcana.product_name}} product.
 
 !!! info "Configuring App"

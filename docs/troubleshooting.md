@@ -1,7 +1,7 @@
 ---
 alias: troubleshooting
-title: 'Troubleshooting Arcana Auth'
-description: 'If you are facing any issues while installing, integrating with the Arcana Auth SDK or during app deployment on Arcana Testnet/Mainnet, check this out.'
+title: 'Troubleshooting Guide'
+description: 'If you are facing any issues while installing, integrating with the Arcana Auth SDK or Gasless SDK during app deployment on Arcana Testnet/Mainnet, check this out.'
 arcana:
   root_rel_path: .
 toc_depth: 2
@@ -294,6 +294,7 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       To fix this issue, the user needs to clear the local storage used by the {{config.extra.arcana.wallet_name}} on their device by clearing the browser cache and then attempting another login from a fresh browser window.
 
+
 ## Gasless Errors
 
 ---
@@ -319,3 +320,5 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 ??? an-trbs "Gasless is enabled for the chain, gas tank has sufficient funds, user has funds in the wallet but the transaction, say sending 10 native tokens to another wallet, fails, why?"
 
       Check the wallet address that is being used to make this transaction of sending 10 native tokens. Gasless operations use SCW wallet address. If the user's EoA address has sufficient funds but the SCW wallet has zero or insufficient funds, less than 10 tokens, the transaction will fail. This is because for chains where gasless is enabled, SCW address is used to perform wallet operations and smart contract functions.
+
+      

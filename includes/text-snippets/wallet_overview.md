@@ -32,7 +32,7 @@ Developers can select the built-in {{config.extra.arcana.wallet_name}} UI (defau
 
 **Adding Networks**
 
-The {{config.extra.arcana.sdk_name}} supports EVM-compatible blockchains. It comes pre-configured with some of the popular blockchain networks such as Ethereum and Polygon. See [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]] for the complete list. In addition to the networks in the pre-configured list, new networks can be added programmatically to the wallet by application developers. Also, authenticated users can add new networks via the wallet UI if the developer has configured the wallet to be always visible in the app context.
+The {{config.extra.arcana.sdk_name}} supports EVM-compatible blockchains. It comes pre-configured with some of the popular blockchain networks such as Ethereum and Polygon. See [[web3-stack-chains|supported blockchain networks]] for the complete list. In addition to the networks in the pre-configured list, new networks can be added programmatically to the wallet by application developers. Also, authenticated users can add new networks via the wallet UI if the developer has configured the wallet to be always visible in the app context.
         
 Only the developer configured additional network settings are stored and retained across user login sessions. For more details, see [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility modes]] and [[concept-wallet-switch-mode|network switching behavior]].
 

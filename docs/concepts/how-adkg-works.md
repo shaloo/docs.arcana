@@ -39,4 +39,4 @@ There are four key phases in the ADKG protocol:
 3. Asynchronous Binary Agreement (ABA)
 4. Key Derivation Phase
 
-For more details on each of these ADKG phases, see [here](https://www.notion.so/arcananetwork/ADKG-Implementation-Note-c3ea5a7dd16a451e927dbc0c38707ec2?pvs=4)
+For more details on each of these ADKG phases, see [[security-adkg|here]].

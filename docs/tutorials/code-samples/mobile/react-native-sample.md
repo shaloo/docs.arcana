@@ -12,9 +12,9 @@ Before integrating a React-Native Web3 app with the {{config.extra.arcana.sdk_na
 
 ## Prerequisites
 
-* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [[configure-auth|register and configure the required user onboarding options]]. For details, see [[configure-auth|how to configure authentication providers]].
+* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. Then [[register-app-auth|register and configure the required user onboarding options]]. For details, see [[index-configure-auth|how to configure authentication providers]].
 
-<img class="an-screenshots-noeffects" alt="NextJS App config" src="/img/nextjs_app_db_setup_google_twitch.png"/>
+<img class="an-screenshots-noeffects" alt="Dashboard Screenshot App Config Google, Twitch" src="/img/nextjs_app_db_setup_google_twitch.png"/>
 
 * By default, a Testnet configuration profile is created after the app is registered. A unique **{{config.extra.arcana.app_address}}** is assigned to the React-Native app. Note this value, it will be required later during app integration.
 

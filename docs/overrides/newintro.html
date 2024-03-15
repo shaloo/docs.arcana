@@ -4,7 +4,7 @@
 {{ super() }}
 
 {% block announce %}
-<p> 🎉🎉🎉 <span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-an-blink-me-link-color);" href="{{ config.site_url }}/relnotes/latest.html">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-an-blink-me-link-color);" href="{{ config.site_url }}/relnotes/rn-main-scw-v0.0.25.html">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a> ⚡⚡⚡</p>
+<p> 🎉🎉🎉 <span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-primary-bg-color); font-size: 0.50rem;" href="{{ config.site_url }}/relnotes/latest-auth-release-note/">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-primary-bg-color);font-size: 0.50rem;" href="{{ config.site_url }}/relnotes/latest-gasless-release-note/">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a> ⚡⚡⚡</p>
 <!---
     <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i>
 -->
@@ -21,20 +21,29 @@
         --md-default-bg-color--lighter: #acacac;
         --md-primary-bg-color: #fcfcfc;
         --md-primary-an-heading-color: var(--md-primary-fg-color);
+        --md-an-card-color: var(--md-primary-bg-color);
         --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
-        --md-an-hero-content-color: rgba(247, 246, 245, 0.9);
+        --md-an-hero-content-color: rgba(6, 6, 5, 0.9);
         --md-an-hero-button-bg-color: #070707;
         --md-an-secondary-button-bg-color: #2a2a2a;
         --md-an-color-h2-bottom-rule: var(--md-an-color-light-purple);
+        --md-an-feature-item-2-border: #F6F6F6;
+        --md-feature-item-2-box-shadow: rgba(0,0,0,0.2);
+        --md-an-card-hero-header-color: rgba(0,0,0,0.9);
     }
 
     :root > [data-md-color-scheme="slate"]{
+        --md-primary-fg-color:        #f6f6f6;
         --md-primary-fg-color--light: #929292;
         --md-primary-fg-color--lighter: #c2c2c2;
-        --md-an-card-color-hover: var(--md-primary-fg-color--dark);
+        --md-an-card-color: rgba(31,33,40,0.8);
+        --md-an-card-color-hover: #212123;
         --md-an-hero-button-bg-color: #070707;
         --md-an-secondary-button-bg-color: #d0d0d0;
         --md-an-color-h2-bottom-rule: var(--md-an-banner-color-purple);
+        --md-an-feature-item-2-border: #212123;
+        --md-feature-item-2-box-shadow: rgba(0,0,0,0.2);
+        --md-an-card-hero-header-color: #f7f7f7;
     }
 
     .md-sidebar--secondary {
@@ -71,12 +80,55 @@
     }
 
     .tx-hero-container {
-        display: flex;
-        align-content: space-around;
+       display: flex;
+       justify-content: space-around;
+       gap: 0.75rem;
+       margin-bottom: 0.5rem;
     }
 
     .tx-hero {
-        justify-content: center;
+        margin: 1rem;
+    }
+
+    .tx-hero-card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);
+        border-radius: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+    .tx-hero-header {
+        background-color: var(--md-an-card-hero-header-color);
+        border-top-right-radius: 0.6rem;
+        border-top-left-radius: 0.6rem;
+        align-items: center;
+        height: 12rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .tx-hero-content {
+        text-align: left;
+        margin: 1rem;
+        color: var(--md-primary-fg-color);
+    }
+
+    .tx-hero-content h4 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .tx-hero-content h3 {
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    .tx-hero-content p {
+        font-size: 0.6rem;
     }
 
     .tx-hero__content > h1 {
@@ -145,34 +197,44 @@
         font-family: 'Inter', sans-serif;
         font-weight: 300;
         box-sizing: border-box;
+        border: 1px solid var(--md-an-feature-item-2-border);
         padding: 0.75rem 1rem;
-        border-radius: 5px;
+        border-radius: 10px;
         margin: 0.5rem;
         word-break: break-word;
-        /*box-shadow: 0 1px 2px 0 var(--md-an-color-light-purple);*/
+        box-shadow: 0 0 9px 0px var(--md-feature-item-2-box-shadow);
+        width: 30%;
+        background-color: var(--md-an-card-color);
     }
 
     .feature-item-3 {
-        font-family: 'Inter', sans-serif;
-        font-weight: 600;
-        box-sizing: border-box;
-        padding: 0 15px;
-        background-color: #eaeaea;
-        border-radius: 5px;
-        margin: 0.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);
         text-align: center;
-        word-break: break-word
+        width: 30%;
+        gap: 0.5rem;
     }
 
-    .feature-item h2, .feature-item-2 h2 {
-        font-weight: 300;
-        font-size: 25px;
+    .md-typeset h3{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-item-3 h3 {
+        font-weight: 400;
+        font-size: 0.85rem;      
+    }
+
+    .feature-item h2, .feature-item-2 h3 {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        font-weight: 500;
+        font-size: 0.85rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: normal;
-        margin-top: 0.25rem;
-        margin-bottom: 0.25rem;
         font-family: inherit;
     }
 
@@ -253,6 +315,17 @@
             max-width: 100%; 
             display: block;
         }
+    
+        .feature-item-2 {
+            flex: 1;
+            min-width: 0;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .feature-item-2:hover, .feature-item-3:hover{
+            background-color: var(--md-an-card-color-hover);
+        }
     }
 
     @media screen and (min-width:60em) {
@@ -285,6 +358,17 @@
             flex: 0 1 calc(25% - 1em);
             cursor: pointer;
         }
+
+        .feature-item-2 {
+            flex: 1;
+            min-width: 0;
+            cursor: pointer;
+        }
+
+        .feature-item-2:hover, .feature-item-3:hover{
+            background-color: var(--md-an-card-color-hover);
+        }
+
     }
 
     @media screen and (min-width:76.25em) {
@@ -339,9 +423,8 @@
             cursor: pointer;
         }
 
-        .feature-item-2:hover {
+        .feature-item-2:hover, .feature-item-3:hover{
             background-color: var(--md-an-card-color-hover);
-            border-radius: 3px;
         }
 
         .an-card-container {
@@ -373,7 +456,7 @@
     }
 
     .a-link-color {
-        color: var(--md-default-fg-color);
+        color: var(--md-primary-fg-color);
     }
 
     .help-bg-color {
@@ -387,7 +470,15 @@
     }
 
     .h3-color {
-        margin-top: 1rem;   
+        /*margin-top: 1rem;*/   
+        color: var(--md-primary-fg-color);
+    }
+
+    .h3-center {
+        margin: auto;
+        /*width: 30%;*/
+        padding: 0.5rem;
+        text-align: center;
     }
 
     .an-hero-footer {
@@ -431,120 +522,40 @@
     }
 
 </style>
+
+<section class="md-grid md-typeset">
 <!--
 <div class="watermark">{{config.extra.arcana.site_status}}</div>
 -->
-<section class="md-grid md-typeset">
-
 <div class="top-hr">
     <div class="hr">
-        <h1 style="text-align: left">Arcana SDKs</h1>
+        <h1 style="text-align: left">Welcome</h1>
     </div>
 </div>
-
-<div class="top-hr">
-    <div class="hr">
-        <h2 style="text-align: left">Auth</h2>
-    </div>
-</div>
-
-<div class="top-hr md-an-marquee">
-    <div class="feature-item">
-        <a href="./quick-start/web/index.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
-                    <div>
-                        <img src="./img/icons/i_web_app_dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/i_web_app_light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Web</h3>
-                </div>
-                <div class="card-cell-right">
-                    <ul>
-                        <li>Supports Web3 app types: Vanilla HTML/CSS/JS, React/NextJS, Vue</li>
-                        <li>Supports wallet connector apps: Wagmi, RainbowKit, Web3-React</li>
-                        <li>Built-in Gasless feature for Arcana wallet</li>
-                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana, MultiversX<span class="blink_me_small"><i>New!</i></span></li>
-                    </ul>              
-                </div>
+<div class="tx-hero-container">
+    <div class="tx-hero-card">
+        <a href="{{ config.site_url }}/quick-start/wagmi-quick-start/">
+            <div class="tx-hero-header">
+                <img src="./img/auth_logo.png" width="30%"/>
+            </div>
+            <div class="tx-hero-content">
+                <h4>Auth SDK</h4>
+                <p>Onboard users via social login, allow authenticated users to access the in-app, non-custodial Arcana wallet instantly to sign blockchain transactions, incentivize users with gasless transactions through the Arcana wallet.</p>
             </div>
         </a>
     </div>
-    <div class="feature-item">
-      <a href="./quick-start/mobile/index.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
-                    <div>
-                        <img src="./img/icons/mobile-icon-dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/mobile-icon-light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Mobile</h3>
-                </div>
-                <div class="card-cell-right">
-                    <ul>
-                        <li>Supports mobile app types: iOS, Android, Flutter, React Native</li>
-                        <li>Built-in Gasless feature for Arcana wallet</li>
-                        <li>Web3 wallet operations for EVM & non-EVM chains: Solana, MultiversX<span class="blink_me_small"><i>New!</i></span></li>
-                    </ul>
-                </div>
+    <div class="tx-hero-card">
+        <a href="{{ config.site_url }}/quick-start/gasless-standalone-quick-start/">
+            <div class="tx-hero-header">
+                <img src="./img/gasless_logo.png" width="35%"/>
             </div>
-        </a>
-    </div>
-
-    <div class="feature-item">
-        <a href="./arcana-coming-soon.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left">
-                    <div>
-                        <img src="./img/icons/gaming-icon-dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/gaming-icon-light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Gaming</h3>
-                    <p><span class="blink_me_small"><i>Coming soon!</i></span></p>
-                </div>
-                <div class="card-cell-right">
-                    <p>Enable social login in gaming apps:</p>
-                    <ul>
-                        <li>Unity Apps</li>
-                        <!--<li>Unreal</li>-->
-                    </ul>
-                </div>
-            </div>
-        </a> 
-    </div>
-</div>
-
-<div class="top-hr">
-    <div class="hr">
-        <h2 style="text-align: left">Gasless</h2>
-    </div>
-</div>
-
-<div class="top-hr md-an-marquee">
-    <div class="feature-item">
-        <a href="./quick-start/gasless-standalone-quick-start.html">
-            <div class="an-card-container">
-                <div class="a-link-color card-cell-left ribbon-container">
-                    <div>
-                        <img src="./img/icons/i_an_gastank_dark.png#only-dark" width="50%"/>
-                        <img src="./img/icons/i_an_gastank_light.png#only-light" width="50%"/>
-                    </div>
-                    <h3 class="h3-color">Gasless</h3>
-                    <div><span class="ribbon"><i>New!</i></span></div>
-                </div>
-                <div class="card-cell-right">
-                    <ul>
-                        <li>Operates independently of Arcana Auth</li>
-                        <li>Easily set up Gas Tanks and whitelist app operations</li>
-                        <li>Enable gasless in third-party wallet apps</li>
-                        <li>Supports multi-wallet apps</li>
-                    </ul>
-                </div>
+            <div class="tx-hero-content">
+                <h4>Gasless SDK</h4>
+                <p>Enable gasless transactions in third-party browser based wallets. Standalone SDK, works independently of the Auth SDK.</p>
             </div>
         </a>
     </div>
 </div>
-
 </section>
 
 <div class="top-hr">
@@ -553,49 +564,112 @@
     </div>
 </div>
 
-<div class="top-hr">
-    <div class="feature-item-2">
-        <a href="./howto/configure-auth.html">
+<div class="tx-hero-container">
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/wagmi-quick-start/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_config_dapp_dark.png#only-dark" width="10%"/><img src="./img/icons/i_config_dapp_light.png#only-light" width="10%"/>  Register & Configure</h3>
-                <p>Use Arcana Developer Dashboard to:</p>
-                <ul>
-                    <li>register app</li>
-                    <li>get clientId </li>
-                    <li>enable user onboarding options</li>
-                    <li>customize blockchain transaction signing experience</li>
-                </ul>
+            <h3 class="h3-color">Wagmi</h3>
             </div>
         </a>
     </div>
 
-    <div class="feature-item-2">
-        <a href="./howto/sdks/index.html">
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/rainbowkit-quick-start/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_build_custom_auth_dark.png#only-dark" width="10%"/><img src="./img/icons/i_build_custom_auth_light.png#only-light" width="10%"/>  Integrate App</h3>
-                <p>Select and install relevant Arcana SDKs:</p>
-                <ul>
-                    <li>Web: Auth SDK, React SDK, Wagmi SDK,Web3-React SDK</li>
-                    <li>Mobile: Flutter SDK, React-Native SDK</li>
-                    <li>Gasless SDK</li>
-                </ul>
+            <h3 class="h3-color">RainbowKit</h3>
             </div>
         </a>
     </div>
 
-    <div class="feature-item-2">
-        <a href="./deploy/index.html">
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/web3-react-quick-start/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_deploy_app_dark.png#only-dark" width="10%"/><img src="./img/icons/i_deploy_app_light.png#only-light" width="10%"/>  Deploy App</h3>
-                <ul>
-                  <li>Arcana Testnet</li>
-                  <li>Validate Apps</li>
-                  <li>Configure Mainnet Profile</li>
-                  <li>Deploy on Mainnet</li>
-                </ul>
+            <h3 class="h3-color">Web3-React</h3>
             </div>
         </a>
     </div>
+</div>
+
+<div class="tx-hero-container">
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/vanilla-web-apps-quick-start/">
+            <div class="a-link-color">
+            <h3 class="h3-color">HTML/CSS/JS</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/vue-quick-start/">
+            <div class="a-link-color">
+            <h3 class="h3-color">Vue</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/react-nextjs-quick-start/">
+            <div class="a-link-color">
+            <h3 class="h3-color">React/Next.js</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="tx-hero-container">
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/mobile/">
+            <div class="a-link-color">
+                <h3 class="h3-color">Mobile</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/gasless-quick-start/">
+            <div class="a-link-color">
+                <h3 class="h3-color">Gasless (Arcana Wallet)</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/gasless-standalone-quick-start/">
+            <div class="a-link-color">
+                <h3 class="h3-color">Gasless (Third-party Wallets)</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="tx-hero-container">
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/solana-quick-start/">
+            <div class="a-link-color">
+                <h3 class="h3-color">Solana</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/mvx-quick-start/">
+            <div class="a-link-color">
+                <h3 class="h3-color">MultiversX</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/quick-start/unity-quick-start/">
+            <div class="a-link-color">
+                <h3 class="h3-color">Unity</h3>
+            </div>
+        </a>
+    </div>
+
 </div>
 
 <div class="top-hr">
@@ -607,41 +681,42 @@
 <div class="top-hr">
 
     <div class="feature-item-2">
-        <a href="./howto/configure-gasless.html">
+        <a href="{{ config.site_url }}/auth/onboard/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_an_gastank_dark.png#only-dark" width="10%"/><img src="./img/icons/i_an_gastank_light.png#only-light" width="10%"/> Go Gasless!</h3>
-                <p>Boost user engagement and adoption via the Arcana Auth SDK built-in Gasless transactions feature. Allow users to sign blockchain transactions through the Arcana Wallet and pay <b>zero</b> gas fees.</p>
+                <h3 class="h3-color"><img src="./img/icons/i_plug_and_play_dark.png#only-dark" width="10%" /><img src="./img/icons/i_plug_and_play_light.png#only-light" width="10%" /> Onboard Users</h3>
+                <ul>
+                    <li>Built-in Plug & Play login UI / Custom login UI</li>
+                    <li>Onboard via social login, passwordless</li>
+                    <li>Customizable pre-configured wallet chains</li>
+                    <li>Built-in wallet UI / Custom wallet UI</li>
+                  </ul>              
             </div>
         </a>
     </div>
 
     <div class="feature-item-2">
-        <a href="./howto/arcana-wallet/index.html">
+        <a href="{{ config.site_url }}/auth/web3-ops/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_an_wallet_dark.png#only-dark" width="10%"/><img src="./img/icons/i_an_wallet_light.png#only-light" width="10%"/>  Web3 Wallet Ops</h3>
-                <p>Enable developers to use supported wallet ops to issue blockchain transaction requests programmatically, while authenticated users can review and approve them or directly initiate and sign transactions via the wallet UI.</p>
-            </div>
-        </a>
-    </div>
-
-</div>
-
-<div class="top-hr">
-
-    <div class="feature-item-2">
-        <a href="./howto/onboard-users/index.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_plug_and_play_dark.png#only-dark" width="10%"/><img src="./img/icons/i_plug_and_play_light.png#only-light" width="10%"/> Plug & Play Login</h3>
-                <p>Effortlessly onboard users with our Plug & Play Login UI! Choose authentication providers and follow integration instructions for your app type.</p>
+                <h3 class="h3-color"><img src="./img/icons/i_an_wallet_dark.png#only-dark" width="10%" /><img src="./img/icons/i_an_wallet_light.png#only-light" width="10%" />  Web3 Wallet Ops</h3>
+                <ul>
+                    <li>Built-in, non-custodial, in-app Arcana Wallet for authenticated users</li>
+                    <li>No browser extension required to access Arcana Wallet</li>
+                    <li>Make JSON/RPC calls, Web3 wallet operations</li>
+                    <li>Check balance, send/receive tokens, NFTs and more</li>
+                </ul>  
             </div>
         </a>
     </div>
 
     <div class="feature-item-2">
-        <a href="./howto/onboard-users/index.html">
+        <a href="{{ config.site_url }}/quick-start/gasless-quick-start/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_build_custom_auth_dark.png#only-dark" width="10%"/><img src="./img/icons/i_build_custom_auth_light.png#only-light" width="10%"/> Custom Login</h3>
-                <p>Onboard users with a custom login UI. St up authentication providers, and follow integration instructions for your Web3 app type.</p>
+                <h3 class="h3-color"><img src="./img/icons/i_an_gastank_dark.png#only-dark" width="10%" /><img src="./img/icons/i_an_gastank_light.png#only-light" width="10%" /> Go Gasless!</h3>
+                <ul>
+                    <li>Boost user engagement and adoption</li>
+                    <li>Configure Arcana Auth SDK built-in gasless feature for Arcana Wallet</li>
+                    <li>Use standalone Gasless SDK for third-party wallets</li>
+                </ul>
             </div>
         </a>
     </div>
@@ -650,95 +725,62 @@
 
 <div class="top-hr">
     <div class="hr">
-        <h2 style="text-align: left">Examples & Guides</h2>
+        <h2 style="text-align: left">Popular Guides</h2>
     </div>
 </div>
 
-<div class="top-hr">
-    <div class="feature-item-2">
-        <a href="./tutorials/index.html">
+<div class="tx-hero-container">
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/setup/config-auth/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i-code-sample-light.png#only-light" width="10%"/><img src="./img/icons/i-code-sample-dark.png#only-dark" width="10%"/>  Tutorials</h3>
-                <p>Check out working source code that shows how to integrate Arcana Auth into different types of Web3 apps for user onboarding and blockchain transaction signing.</p>
+                <h3>Configure Auth</h3>
             </div>
         </a>
     </div>
 
-    <div class="feature-item-2">
-        <a href="./howto/index.html">
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/setup/configure-standalone-gasless/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i-howto-guide-dark.png#only-dark" width="10%"/><img src="./img/icons/i-howto-guide-light.png#only-light" width="10%"/>  How-To ...</h3>
-                <p>Step-by-step instructions to register your app, configure authentication, integrate with Auth SDK, onboard users, deploy apps, and more.</p>
-            </div>
-        </a>
-    </div>
-</div>
-
-<div class="top-hr">
-    <div class="feature-item-2">
-        <a href="./dev-resources/dev-guides/index.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="10%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="10%"/>  Dev Guides</h3>
-                <p>See Arcana Developer Dashboard User Guide, Release Notes, Installation Guides, Migration Guides, FAQ, Troubleshooting and error handling.</p>
-            </div>
-        </a>
-    </div>
-    
-    <div class="feature-item-2">
-        <a href="./dev-resources/sdk-ref/index.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i_icon_dev_guide_dark.png#only-dark" width="10%"/><img src="./img/icons/i_icon_dev_guide_light.png#only-light" width="10%"/>  SDK Reference Guides</h3>
-                <p>Learn about SDK functions, data types and more.</p>
+                <h3>Configure Gasless</h3>
             </div>
         </a>
     </div>
 
-</div>
-
-<div class="top-hr">
-
-    <div class="feature-item-2">
-        <a href="./user-guides/index.html">
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/tutorials/">
             <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/an_wallet_profile_icon_dark.png#only-dark" width="10%"/><img src="./img/icons/an_wallet_profile_icon_light.png#only-light" width="10%"/>  User Guides</h3>
-                <p>Check Arcana Wallet User Guide and MFA User Guide for enhanced wallet security setup.</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="feature-item-2">
-        <a href="./concepts/index.html">
-            <div class="a-link-color">
-                <h3 class="h3-color"><img src="./img/icons/i-user-guide-dark.png#only-dark" width="10%"/><img src="./img/icons/i-user-guide-light.png#only-light" width="10%"/>  Concepts</h3>
-                <p>Learn the basics and important ideas of Arcana Auth, Gasless transactions and other essentials.</p>
+                <h3>Tutorials</h3>
             </div>
         </a>
     </div>
 </div>
 
-<!---
-<div class="top-hr">
-    <div class="hr">
-        <h2 style="text-align: left">Need help?</h2>
+<div class="tx-hero-container">
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/guides/dev/sdk-ref/">
+            <div class="a-link-color">
+                <h3>SDK Reference Guides</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/guides/user/">
+            <div class="a-link-color">
+                <h3>Wallet User Guides</h3>
+            </div>
+        </a>
+    </div>
+
+    <div class="feature-item-3">
+        <a href="{{ config.site_url }}/concepts/">
+            <div class="a-link-color">
+                <h3>Concepts</h3>
+            </div>
+        </a>
     </div>
 </div>
-
-<div class="tx-hero">
-    <div class="feature-item-3 help-bg-color">
-      <a href="https://calendly.com/arcana-network/arcana-demo-walkthrough"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">Schedule a Demo</div></a>
-    </div>
-    <div class="feature-item-3 help-bg-color">
-      <a href="https://github.com/orgs/arcana-network/discussions"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">GitHub Discussions</div></a>  
-    </div>
-    <div class="feature-item-3 help-bg-color">
-      <a href="https://discord.gg/6g7fQvEpdy"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">Arcana Community Discord</div></a> 
-    </div>
-    <div class="feature-item-3 help-bg-color">
-      <a href="mailto:support@arcana.network"><div class="a-link-color" style="padding: 0.5rem 0.5rem;">Contact Us</div></a> 
-    </div>
-</div>
-
---->
 
 {% include "partials/content.html" %}
 

@@ -12,58 +12,59 @@ arcana:
 
 # Quick Start: Vue Apps
 
-!!! note "Already using {{config.extra.arcana.sdk_name}}?"
-  
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+Web3 apps built using {{page.meta.arcana.app_type}} can easily onboard users via social login by integrating with the {{config.extra.arcana.sdk_name}}!
 
+<!---
 ## Overview
 
 {% include "./text-snippets/quick-start-overview.md" %}
+-->
+## Prerequisites
 
-## Step 1: Register & Configure App
+* Vue [v3.3](https://www.npmjs.com/package/vue) or higher
 
-{% include "./text-snippets/quick-start-reg-config.md" %}
+## 1. Register & Configure
 
-## Step 2: Install SDK
+{% include "./text-snippets/quick-start-reg-config-auth.md" %}
 
-For {{page.meta.arcana.app_type}} app, install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) package.
+## 2. Install SDK
+
+Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) package.
 
 {% include "./code-snippets/auth_install.md" %}
 
-{% include "./text-snippets/watch_auth_github_repo.md" %}
+!!! note "Use latest SDKs"
+  
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiating and calling the requisite `AuthProvider` functions.
-
-## Step 3: Integrate App
+## 3. Integrate
 
 {% include "./text-snippets/quick-start-int-auth-evm.md" %}
 
-## Step 4: Onboard Users
+### Onboard Users
 
 {% include "./text-snippets/quick-start-auth-onboard.md" %}
-
-For sample code and details on how to onboard users in a {{page.meta.arcana.app_type}} app via a custom login UI, see [[index-vue-custom-ui-onboard-users|how to enable configured providers when using a custom login UI]].
 
 !!! tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 
-**That's all!!!** :material-party-popper:
+### Sign Transactions
 
-Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
 
-Authenticated users can log in and instantly access a Web3 wallet from within the app's context.
+## 4. Deploy
 
-## Next Steps
+{% include "./text-snippets/quick-start-deploy.md" %}
 
-{% include "./text-snippets/quick-start-next-steps.md" %}
+{==
 
-## Examples
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}} to onboard users via social login.
 
-{% include "./text-snippets/quick-start-common-examples.md" %}
+==}
 
 ## See Also
 
 {% include "./text-snippets/quick-start-see-also.md" %}
 
-{% include "./text-snippets/prod_version_info.md" %}
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}

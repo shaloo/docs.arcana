@@ -5,21 +5,16 @@ description: 'Get Started quickly using these step-by-step instructions for usin
 arcana:
   root_rel_path: ..
   app_type: "'Web3-React'"
-  app_example_submodule: "'`sample-auth-web3-react`'"
+  app_example_submodule: "`sample-auth-web3-react`"
   social_provider: "'google'"
   custom_login_ui_tag: "onboard-web3-react-app-custom-ui"
 ---
 
 # Quick Start: Web3-React Apps
 
-!!! note "Already using {{config.extra.arcana.sdk_name}}?"
-  
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+Web3 apps using {{page.meta.arcana.app_type}} framework can easily onboard users via social login by integrating with the {{config.extra.arcana.web3_react_sdk_name}}!
 
-!!! warning "Web3-React Apps"
-
-      {% include "./text-snippets/warn_latest_web3_react_sdk_version.md" %}
-
+<!---
 ## Overview
 
 To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_type}} app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.web3_react_sdk_name}}, integrate the app, and initialize the `AuthProvider`. You'll need to add code to initialize the `ArcanaConnector` and specify the `AuthProvider`. Next, use appropriate React hooks and call {{config.extra.arcana.sdk_name}} function to onboard users and allow authenticated users to sign blockchain transactions. Finally, deploy your app on the Testnet or Mainnet.
@@ -27,11 +22,16 @@ To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_ty
 <img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="Auth Usage Overview"/>
 <img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
 
-## Step 1: Register & Configure App
+-->
+## Prerequisites
 
-{% include "./text-snippets/quick-start-reg-config.md" %}
+* Web3-react [v8.2.0](https://www.npmjs.com/package/@web3-react/core/v/8.2.0) or higher
 
-## Step 2: Install SDKs
+## 1. Register & Configure
+
+{% include "./text-snippets/quick-start-reg-config-auth.md" %}
+
+## 2. Install SDKs
 
 For {{page.meta.arcana.app_type}} app, install the following packages:
 
@@ -40,15 +40,15 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 {% include "./code-snippets/auth_web3_react_install.md" %}
 
-{% include "./text-snippets/watch_auth_github_repo.md" %}
+!!! note "Use latest SDKs"
+  
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-{% include "./text-snippets/watch_web3_react_github_repo.md" %}
+      {% include "./text-snippets/warn_latest_web3_react_sdk_version.md" %}
 
-Next, integrate the app with the installed SDKs.
+## 3. Integrate
 
-## Step 3: Integrate App
-
-Begin app integration by importing `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
+Import `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
 
 {% include "./code-snippets/import_auth.md" %}
 
@@ -64,19 +64,13 @@ Initialize the `ArcanaConnector` by specifying the `AuthProvider` created earlie
 
 {% include "./code-snippets/auth_web3_react_configure_pnp.md" %}
 
-The app is now integrated with the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.web3_react_sdk_name}}. Next, add code to onboard users. You will need to use React hooks to enable `AuthProvider` functions via the `ArcanaConnector`.
+The app is now integrated with the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.web3_react_sdk_name}}. Use React hooks to enable `AuthProvider` functions via the `ArcanaConnector`.
 
 {% include "./code-snippets/auth_web3_react_use.md" %}
 
-## Step 4: Onboard Users
+### Onboard Users
 
 {% include "./code-snippets/auth_web3_react_configure_pnp.md" %}
-
-<!--
-For usage details, see [Auth Web3 React SDK Reference Guide](https://auth-react-sdk-ref-guide.netlify.app/).
--->
-
-See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example) for details.
 
 {% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
@@ -84,24 +78,23 @@ See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tr
 
       {% include "./text-snippets/jwt_token.md" %}
 
-**That's all!!!** :material-party-popper:
+### Sign Transactions
+
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
+
+## 4. Deploy
+
+{% include "./text-snippets/quick-start-deploy.md" %}
 
 {==
 
-Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}.
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.sdk_name}} and  {{config.extra.arcana.web3_react_sdk_name}} to onboard users via social login and sign blockchain transactions using  {{config.extra.arcana.wallet_name}}.
 
 ==}
-
-## Next Steps
-
-{% include "./text-snippets/quick-start-next-steps.md" %}
-
-## Examples
-
-{% include "./text-snippets/quick-start-common-examples.md" %}
 
 ## See Also
 
 {% include "./text-snippets/quick-start-see-also.md" %}
 
-{% include "./text-snippets/prod_version_info.md" %}
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+{% include "./text-snippets/auth_web3_react_sdk_quicklinks.md" %}

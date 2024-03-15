@@ -38,7 +38,7 @@ Apps using older versions of the {{config.extra.arcana.sdk_name}} must refer to 
 
 ### Same Wallet Address
 
-Apps migrating to the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} should see **no change** in the user wallet address irrespective of whether they continue to use the older version or upgrade to this latest release. This is true for all types of apps and supported frameworks, irrespective of whether they are using the global or app-specific keys. Apps deployed earlier will continue to work on the Arcana Testnet and Mainnet. 
+Apps migrating to the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} should see **no change** in the user wallet address, irrespective of whether they continue to use the older version or upgrade to this latest release. This is true for all types of apps and supported frameworks, irrespective of whether they are using the global or app-specific keys. Apps deployed earlier will continue to work on the Arcana Testnet and Mainnet. 
 
 ## How to Migrate to v1.0.9?
 

@@ -39,7 +39,7 @@ Earlier, by default, each registered application was associated with a 'Testnet'
 
 #### Keyspace in Mainnet Deployments
 
-* The 'Mainnet' configuration profile for the app has an additional setting meant for selecting the **Keyspace** type. Developers can choose between the default **App-specific Keys** or **Global Keys**. [[concept-keyspace-type|Global Keyspace]] enables a better user experience whereby the user is assigned the same wallet address across applications in the Arcana ecosystem in a secure manner. Enabling the global keys feature requires developer verification and whitelisting. This offers higher security than the global keys option. For details, see [[dashboard-user-guide#configure-keyspace|'How to Configure Keyspace']] section in the Dashboard User Guide.
+* The 'Mainnet' configuration profile for the app has an additional setting meant for selecting the **Keyspace** type. Developers can choose between the default **App-specific Keys** or **Global Keys**. [[concept-keyspace-type|Global Keyspace]] enables a better user experience whereby the user is assigned the same wallet address across applications in the Arcana ecosystem in a secure manner. Enabling the global keys feature requires developer verification and whitelisting. For details, see [[dashboard-user-guide#configure-keyspace|'How to Configure Keyspace']] section in the Dashboard User Guide.
 
 #### Usage Tracking
 
@@ -105,4 +105,4 @@ Once a user authenticates, the following wallet UI is displayed when the app is 
 
 Besides Testnet/Mainnet and Global Keyspace features, the {{config.extra.arcana.sdk_name}} v1.0.0 uses a new, improved asynchronous distributed key generation (ADKG) subsystem. In addition to the DKG nodes operated by Arcana, two nodes are run and managed by Comdex and LugaNodes. 
 
-For more details, see [[rn-main-auth-v1.0.0|{{config.extra.arcana.product_name}} v1.0.0 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+For more details, see [[rn-main-auth-v1.0.0|{{config.extra.arcana.product_name}} v1.0.0 release notes]] for details.

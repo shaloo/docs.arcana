@@ -8,10 +8,13 @@ arcana:
 
 # Quick Start: Gasless Apps (Third-party Wallets)
 
-!!! note "Already using {{config.extra.arcana.gasless_sdk_name}}?"
+Web3 apps can easily enable gasless transactions through third-party wallets by integrating with the {{config.extra.arcana.gasless_sdk_name}}! 
+
+!!! tip "{{config.extra.arcana.wallet_name}}"
+
+      Developers can enable gasless transactions in {{config.extra.arcana.wallet_name}} by integrating the app with the {{config.extra.arcana.sdk_name}} and using the built-in gasless feature. See [[gasless-quick-start|Gasless Quick Start Guide]] for details.
   
-      {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
-  
+<!----
 ## Overview
 
 Web3 app developers can easily enable zero gas fees for app users by using {{config.extra.arcana.company_name}} SDKs. The process may vary depending on the app use case:
@@ -29,48 +32,46 @@ In every use case above, the developers must first use the  {{config.extra.arcan
 
 In this guide, we will cover only the **last use case**. For details on the first two use cases, see [[gasless-quick-start|here]].
 
-## Step 1: Register & Configure App
+--->
 
-{% include "./text-snippets/quick-start-reg-config.md" %}
+{{config.extra.arcana.gasless_sdk_name}} allows gasless transactions in Web3 apps using third-party wallets easily!
 
-## Step 2: Configure Gasless
+## 1. Register App
 
-Follow the instructions [[configure-gasless|here to configure gasless feature usage]] as per your app requirements. You will be required to set up gas tanks for your app, deposit gas fees and provide smart contract ABI details to whitelist one or more app operations that should happen in a gasless manner.
+{% include "./text-snippets/quick-start-reg-gasless.md" %}
 
-## Step 3: Install Required SDKs
+## 2. Configure Gasless
 
-Make sure the gasless configuration is completed via the {{config.extra.arcana.dashboard_name}} before this step.
+[[configure-gasless|Configure gasless transactions]] for the registered app through the {{config.extra.arcana.dashboard_name}}. Gasless configuration involves setting up gas tanks on one or more supported chains, funding gas tanks, and providing smart contract ABI details to whitelist one or more app operations.
 
-Apps that only need to enable gasless transactions for some third-party, browser-based wallets can simply install and integrate with the {{config.extra.arcana.gasless_sdk_name}}. For details, see the code snippets below:
+## 3. Install SDK
 
 {% include "./code-snippets/gasless_integrate_use.md" %}
 
-Next, add code to onboard users.
+!!! note "Use latest SDKs"
+  
+      {% include "./text-snippets/warn_latest_gasless_sdk_version.md" %}
 
-## Step 4: Onboard Users
+## 4. Add Gasless Transaction
 
-After installing and integrating with the {{config.extra.arcana.gasless_sdk_name}}, developers need to add custom code to onboard users. After authenticating users, enable gasless transactions for third-party wallets by calling the `doTx()` method of the {{config.extra.arcana.gasless_sdk_name}}.
+Enable gasless transactions for third-party wallets by calling the `doTx()` method of the {{config.extra.arcana.gasless_sdk_name}} in the authenticated user's context. 
+
+**Assumption:**  The Web3 app is already enabled for user onboarding and integrated with third-party wallets.
 
 {% include "./code-snippets/gasless_integrate_doTx.md" %}
 
-## Step 5: Deploy App
+## 5. Deploy 
 
-Finally, [[deploy-app|deploy the app]] on the Testnet/Mainnet to let the users log into the app to use gasless transactions.
-
-**That's all!!!** :material-party-popper:
+{% include "./text-snippets/quick-start-deploy.md" %}
 
 {==
 
-Your app is now powered by gasless transactions built using {{config.extra.arcana.gasless_sdk_name}}.
+The app is now powered by gasless transactions built using the {{config.extra.arcana.gasless_sdk_name}}.
 
 ==}
 
-## Examples
-
-   See `sample-gasless-metamask-only` submodule in the [Auth Examples](https://github.com/arcana-network/auth-examples) GitHub repo for a sample app that uses MetaMask (or any third-party browser-based wallet) and needs to enable gasless transactions for third-party wallet via the standalone {{config.extra.arcana.gasless_sdk_name}}.
-
 ## See Also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+{% include "./text-snippets/quick-start-see-also-gasless.md" %}
 
-{% include "./text-snippets/prod_version_info.md" %}
+{% include "./text-snippets/gasless_sdk_quicklinks.md" %}

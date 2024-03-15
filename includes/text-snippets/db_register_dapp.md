@@ -12,7 +12,7 @@ In the 'Manage Apps' dashboard, click *Create New App* wizard to register a new 
 
 **Registration Settings**
 
-To register a new app, the developer needs to provide the following settings:
+To register a new app, the developer needs to provide the following settings: 
 
 * App name
 * Chain Type: EVM, Solana, MultiversX
@@ -57,13 +57,13 @@ After providing all the required inputs, click **Create** to register the app.
 
 ![Register dApp](/img/an_db_create_newapp_anim.gif){.an-screenshots}
 
-A newly registered app is assigned a default Testnet configuration profile, displaying these Testnet settings in the dashboard. A unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. The developer can deploy the app on the {{config.extra.arcana.company_name}} Testnet once SDK usage is configured in the dashboard and the app is integrated with the SDK.
+A newly registered app dashboard displays Testnet configuration settings. A unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. Developer can deploy the app on the {{config.extra.arcana.company_name}} once SDK usage is configured in the dashboard and app is integrated with the SDK.
 
 ![New app dashboard](/img/an_db_new_app_screen.png){.an-screenshots}
 
-!!! tip "Mainnet Deployment"
+!!! tip "Mainnet Deployment" 
 
-      To deploy the app on the {{config.extra.arcana.company_name}} Mainnet, developers need to create a Mainnet configuration profile and obtain a different {{config.extra.arcana.app_address}}. Update the integration code with this Mainnet {{config.extra.arcana.app_address}}. This step is necessary to deploying the app on the {{config.extra.arcana.company_name}} Mainnet. 
+      To deploy the app on the {{config.extra.arcana.company_name}} Mainnet, developers need to create a Mainnet configuration profile and obtain a different {{config.extra.arcana.app_address}}. Update the integration code with this Mainnet {{config.extra.arcana.app_address}}. This step is necessary to deploy the app on the {{config.extra.arcana.company_name}} Mainnet. 
       
       For more information, refer to the [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
 

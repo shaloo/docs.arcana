@@ -73,10 +73,10 @@ For Wagmi or RainbowKit Apps, see how to onboard users in Web3 apps using [[inte
 
 ### Apps using `chainConfig` setting in `AuthProvider`
 
-Apps using the `chainConfig` setting to set the default chain in the {{config.extra.arcana.wallet_name}} dropdown list must ensure that it is included in the list of configured blockchains in the {{config.extra.arcana.dashboard_name}}. The `chainConfig` parameter in the `AuthProvider` setting will only work if the chain is part of the configured chains in the {{config.extra.arcana.dashboard_name}}. Otherwise, the wallet user may see a different default chain according to the {{config.extra.arcana.dashboard_name}} settings. To ensure the `chainConfig` setting takes effect, the specified chain can be manually added through the {{config.extra.arcana.dashboard_name}} interface. For details, see the chain management section above and refer to the [[state-of-the-arcana-auth#supported-blockchains|list of supported chains for the wallet]].
+Apps using the `chainConfig` setting to set the default chain in the {{config.extra.arcana.wallet_name}} dropdown list must ensure that it is included in the list of configured blockchains in the {{config.extra.arcana.dashboard_name}}. The `chainConfig` parameter in the `AuthProvider` setting will only work if the chain is part of the configured chains in the {{config.extra.arcana.dashboard_name}}. Otherwise, the wallet user may see a different default chain according to the {{config.extra.arcana.dashboard_name}} settings. To ensure the `chainConfig` setting takes effect, the specified chain can be manually added through the {{config.extra.arcana.dashboard_name}} interface. For details, see the chain management section above and refer to the [[web3-stack-chains|list of supported chains for the wallet]].
 
 ## What's New?
 
 <img src="/img/icon_new_light.png#only-light" alt="New icon" width="3%" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="3%" />
 
-See [[rn-main-auth-v1.0.4|{{config.extra.arcana.product_name}} v1.0.4 release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+See [[rn-main-auth-v1.0.4|{{config.extra.arcana.product_name}} v1.0.4 release notes]] for details.

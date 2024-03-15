@@ -54,4 +54,4 @@ To enable gasless transactions, use the {{config.extra.arcana.dashboard_name}} t
 
 ## Release Details
 
-See [[rn-main-auth-vOct12-23-gasless|{{config.extra.arcana.product_name}} vOct12-23-gasless release notes]] and [[state-of-the-arcana-auth|State of the {{config.extra.arcana.product_name}}]].
+See [[rn-main-auth-vOct12-23-gasless|{{config.extra.arcana.product_name}} vOct12-23-gasless release notes]] for details.

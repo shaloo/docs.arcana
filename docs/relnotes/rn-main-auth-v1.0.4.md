@@ -64,9 +64,9 @@ For details, see [[index-onboard-users| how to onboard users]], select the app t
 
 Now developers can configure the blockchains as per the app requirements and set one of them as the default chain using the {{config.extra.arcana.dashboard_name}}. Once a user authenticates, the wallet is displayed and it shows these app developer-configured chains in the drop-down list with one of them set as the default. 
 
-Previously, the {{config.extra.arcana.sdk_name}} supported a hardcoded set of chains with one of them set as the default chain. The developer could only add and switch chains programmatically [[state-of-the-arcana-auth#supported-blockchains|as long as it was a supported chain]]. The `wallet_addEthereumChain` and `wallet_switchEthereumChain` JSON-RPC calls could be used by devs to add and switch chains. They could change the default chain through the `chainConfig` option in the `AuthProvider`. In the latest release of the {{config.extra.arcana.sdk_name}}, app developers have more flexibility in specifying the list of chains that are supported for a Web3 app and also set one of them as the default. This can be achieved programmatically and also through the {{config.extra.arcana.dashboard_name}} settings. 
+Previously, the {{config.extra.arcana.sdk_name}} supported a hardcoded set of chains with one of them set as the default chain. The developer could only add and switch chains programmatically [[web3-stack-chains|as long as it was a supported chain]]. The `wallet_addEthereumChain` and `wallet_switchEthereumChain` JSON-RPC calls could be used by devs to add and switch chains. They could change the default chain through the `chainConfig` option in the `AuthProvider`. In the latest release of the {{config.extra.arcana.sdk_name}}, app developers have more flexibility in specifying the list of chains that are supported for a Web3 app and also set one of them as the default. This can be achieved programmatically and also through the {{config.extra.arcana.dashboard_name}} settings. 
 
-The wallet user can also add any new [[state-of-the-arcana-auth#supported-blockchains|supported chain]] through the {{config.extra.arcana.wallet_name}} UI. Only the chains configured by the app developer persist across the user login sessions.
+The wallet user can also add any new [[web3-stack-chains|supported chain]] through the {{config.extra.arcana.wallet_name}} UI. Only the chains configured by the app developer persist across the user login sessions.
 
 {% include "./text-snippets/specify_default_chain_example.md" %}
 
@@ -105,7 +105,7 @@ The {{config.extra.arcana.wallet_name}} allows users to buy cryptocurrency. In t
 
 See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] in the Getting Started section. 
 
-Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|NextJS ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
+Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|Next.js ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
 
 ## Upgrade to the Latest {{config.extra.arcana.sdk_name}} 
@@ -122,5 +122,5 @@ Please note, in case are using an older version of the {{config.extra.arcana.sdk
 
 ---
 
-Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
 

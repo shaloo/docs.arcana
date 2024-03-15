@@ -1,4 +1,4 @@
-First import `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
+Import `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
 
 {% include "./code-snippets/import_auth.md" %}
 
@@ -6,7 +6,7 @@ Create a new `AuthProvider`, specify the unique **{{config.extra.arcana.app_addr
 
 {% include "./code-snippets/new_auth_solana.md" %}
 
-After creating, make sure you initialize the newly instantiated `AuthProvider`.
+Initialize the newly instantiated `AuthProvider`.
 
 {% include "./code-snippets/init_auth.md" %}
 
@@ -18,6 +18,6 @@ After creating, make sure you initialize the newly instantiated `AuthProvider`.
 
 After initializing the `AuthProvider`, you can call any of its exported functions. See {% include "./text-snippets/authsdkref_url.md" %} for details.
 
-**Initialize Solana Providers**
+**Initialize Providers**
 
 {% include "./text-snippets/init_solana_providers.md" %}

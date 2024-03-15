@@ -5,6 +5,7 @@ description: 'Get Started quickly with mobile apps built with React-Native by fo
 arcana:
   root_rel_path: ..
   app_type: "'React-Native'"
+  app_example_submodule: "`sample-auth-react-native`"
 ---
 
 # Quick Start: React-Native Apps

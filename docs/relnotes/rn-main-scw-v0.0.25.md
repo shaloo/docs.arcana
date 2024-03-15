@@ -1,7 +1,7 @@
 ---
 alias: rn-main-scw-v0.0.25
 title: 'Arcana: Gasless SDK Release Notes'
-description: 'Arcana Gasless SDKs Release Notes (v0.0.25 Latest)'
+description: 'Arcana Gasless SDKs Release Notes (v0.0.25)'
 arcana:
   root_rel_path: ..
 ---
@@ -73,4 +73,4 @@ None.
 
 ---
 
-Refer to the [[faq-gasless| Arcana Gasless FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+Refer to the [[faq-gasless| Arcana Gasless FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).

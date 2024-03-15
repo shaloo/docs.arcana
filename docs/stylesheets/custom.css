@@ -28,7 +28,7 @@
      --md-an-header-color-purple: rgb(24,21,59); 
      --md-an-color-light-purple: rgb(192, 188, 223);
      --md-an-blink-me-link-color: blue;
-     --md-an-banner-bg: rgb(111, 215,145);
+     --md-an-banner-bg: #23A26D
     }
 
 [data-md-color-scheme="black"] {
@@ -37,6 +37,7 @@
 
 :root > [data-md-color-scheme="slate"]{
   --md-primary-fg-color--lighter: #929292;
+  --md-primary-fg-color--light: #5e5e5e;
   --md-an-card-color-hover: var(--md-primary-fg-color--dark);
   --md-typeset-mark-color: rgba(56, 59, 82, 0.95);
   --md-banner-color-yellow: rgba(247, 247, 163, 0.25);
@@ -47,6 +48,10 @@
 
 .critic .block {
   background-color: var(--md-typeset-mark-color);
+}
+
+.md-tabs {
+  background-color: #0d0d0e;
 }
 
 /* Highlight tabs when active */
@@ -77,14 +82,24 @@
   margin-right: 6%; /*To accommodate chatbase bot icon */
 }
 
+/* Highlight LHS Nav sections */
+
+.md-nav__link{
+  border-bottom: 0.0125rem ridge var(--md-primary-fg-color--light);
+}
+
 .md-button {
-    border-radius: 0.3rem !important;
+    border-radius: 0.9rem !important;
+    box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    border: 1px solid #F6F6F6;
 }
 
 .md-typeset .md-button {
+  border: 0.0025rem solid var(--md-default-fg-color--light);
   border-radius: 0.3rem !important;
-  border-color: var(--md-default-fg-color--light);
   color: var(--md-default-fg-color--light);
+  margin: 0.5rem;
 }
 
 .md-grid {
@@ -111,7 +126,7 @@
     overflow: hidden;
     text-align: center;
     height: 1.7rem;
-    margin-top: -0.5rem;
+    margin-top: -0.75rem;
   }
 
 .md-banner__inner {
@@ -192,8 +207,16 @@
             mask-image: var(--md-admonition-icon--an-trbs);
 }
 
+.md-typeset table:not([class]) {
+  border-radius: 0.5rem;
+}
+
 .md-typeset pre>code {
-  border-radius: 5px;
+  border-radius: 0.5rem;
+}
+
+.md-typeset .grid > .card {
+  border-radius: 0.5rem;
 }
 
 .an-screenshots {
@@ -214,8 +237,12 @@
 
 .blink_me {
   animation: blinker 2s linear infinite;
-  color: var(--md-primary-an-banner-text-color);
+  /*color: var(--md-primary-an-banner-text-color);*/
+  color: var(--md-primary-bg-color);
+  font-size: 0.50rem;
+  margin: auto;
 }
+
 .blink_me_small {
   animation: blinker 2s linear infinite;
   background-color: yellow;
@@ -258,13 +285,3 @@
   border: solid 0.2em transparent;
 }
 
-.watermark {
-  opacity: 0.1;
-  font-size: 100px;
-  position: absolute;
-  cursor: default;
-  user-select: none;
-  text-transform: uppercase;
-  transform-origin: center center;
-  transform: rotate(45deg);
-}

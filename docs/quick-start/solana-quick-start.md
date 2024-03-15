@@ -12,66 +12,60 @@ arcana:
 
 # Quick Start: Solana Apps
 
-!!! note "Already using {{config.extra.arcana.sdk_name}}?"
-  
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+{{page.meta.arcana.app_type}} Web3 apps can easily onboard users via social login by integrating with the {{config.extra.arcana.sdk_name}}!
+
+<!--
 
 ## Overview
 
 {% include "./text-snippets/quick-start-overview.md" %}
 
-## Step 1: Register & Configure App
+--->
 
-Follow the instructions in the [[solana-dashboard-user-guide|Solana Configuration Guide]] and register your app, configure social login and chains and obtain a unique {{config.extra.arcana.app_address}}. Then proceed to installing the {{config.extra.arcana.sdk_name}} and use this {{config.extra.arcana.app_address}} to integrate the Solana app.
+## 1. Register & Configure
 
-## Step 2: Install SDK
+Register the app as instructed in the [[solana-dashboard-user-guide|Solana Configuration Guide]] and obtain a unique {{config.extra.arcana.app_address}}. Configure social login provider to onboard users and customize the user experience for blockchain signing via the wallet settings. Solana chains are pre-configured and instantly accessible to authenticated users via the {{config.extra.arcana.wallet_name}}.
+
+## 2. Install SDK
 
 For {{page.meta.arcana.app_type}} app, install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) package.
 
 {% include "./code-snippets/auth_install.md" %}
 
-{% include "./text-snippets/watch_auth_github_repo.md" %}
+!!! note "Use latest SDKs"
+  
+      {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
-Next, integrate the app with the {{config.extra.arcana.sdk_name}} by instantiating and calling the requisite `AuthProvider` functions.
-
-## Step 3: Integrate App
+## 3. Integrate
 
 {% include "./text-snippets/quick-start-int-auth-solana.md" %}
 
-## Step 4: Onboard Users
+### Onboard Users
 
 {% include "./text-snippets/quick-start-auth-onboard.md" %}
-
-For sample code and details on how to onboard users in a {{page.meta.arcana.app_type}} app via a custom login UI, see [[index-vue-custom-ui-onboard-users|how to enable configured providers when using a custom login UI]].
 
 !!! tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 
-Next, add code to enable Web3 operations in the app through the {{config.extra.arcana.wallet_name}}.
+### Sign Transactions
 
-## Step 5: Web3 Operations
+Use the standard EIP-1193 provider, `auth.provider`, for [[solana-json-rpc-ops|issuing Solana JSON-RPC calls]] in the context of the authenticated user.  Use `auth.solana` Solana provider for [[solana-wallet-ops|issuing supported Web3 wallet operations]] on the Solana chain.
 
-After adding code to onboard users, developers can enable Web3 wallet operations in the Solana app. For details, see [[solana-json-rpc-ops|how to issue Solana JSON-RPC calls]] and [[solana-wallet-ops|how to issue Web3 wallet operations]] in a Solana app.
+## 4. Deploy
 
-**That's all!!!** :material-party-popper:
+{% include "./text-snippets/quick-start-deploy.md" %}
 
-Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} within the app context and start signing blockchain transactions on Solana. 
+{==
 
-## Next Steps
+Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.sdk_name}} to onboard users via social login and allow authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}. 
 
-Manage the user experience for signing blockchain transactions by selecting the default, built-in {{config.extra.arcana.wallet_name}} UI and tinkering with the [[configure-wallet-visibility|wallet visibility]] or [[custom-wallet-ui|replacing the built-in wallet with a custom wallet UI]]. 
-
-To learn how to deploy the app on Testnet/Mainnet, see [[deploy-app|App Deployment Guide]]. For other queries, refer to the [[faq-solana|Integrating Solana App FAQ]] or contact our [support|support team].
-
-## Examples
-
-{% include "./text-snippets/quick-start-common-examples.md" %}
-
-{% include "./text-snippets/demo/auth_sdk_solana_demo.md" %}
+==}
 
 ## See Also
 
 {% include "./text-snippets/quick-start-see-also.md" %}
 
-{% include "./text-snippets/prod_version_info.md" %}
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+
+{% include "./text-snippets/demo/auth_sdk_solana_demo.md" %}

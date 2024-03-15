@@ -1,1 +1,1 @@
-For a sample {{page.meta.arcana.app_type}} app that integrates with the {{config.extra.arcana.sdk_name}}, refer to {{page.meta.arcana.app_example_submodule}} in the GitHub repo: [Auth Examples](https://github.com/arcana-network/auth-examples).
+<span>{{page.meta.arcana.app_type}} integration example: `{{page.meta.arcana.app_example_submodule}}` submodule in<a href="https://github.com/arcana-network/auth-examples" target="_blank"> Auth Examples</a></span>

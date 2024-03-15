@@ -16,9 +16,9 @@ Before installing the `{{config.extra.arcana.gaming_sdk_pkg_name}}` package and 
 
 ### Step 1: Register & Configure
 
-Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. [[configure-auth|Register and configure user onboarding options]] for the app. Enable gasless, if required. For details, see how to use the dashboard and [[configure-auth#3-configure-auth-usage|configure {{config.extra.arcana.gaming_sdk_name}} usage]].
+Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. [[register-app-auth|Register]] and [[index-configure-auth|configure user onboarding options]] for the app. Configure [[configure-gasless|gasless transactions]] if required.
 
-<img class="an-screenshots-noeffects" alt="NextJS App config" src="/img/nextjs_app_db_setup_google_twitch.png"/>
+<img class="an-screenshots-noeffects" alt="Dashboard Screenshot App Config Google, Twitch" src="/img/nextjs_app_db_setup_google_twitch.png"/>
 
 By default, a Testnet configuration profile is associated with every registered app. The Testnet profile for the app has a unique **{{config.extra.arcana.app_address}}** that is used later during app integration.
 
@@ -41,7 +41,7 @@ By default, a Testnet configuration profile is associated with every registered 
 
 ### Step 3: Onboard Users
 
-First, call `LoginWithSocial` or `LoginWithOTP` to onboard the user. Choose one of the [[state-of-the-arcana-auth#user-onboarding-options|supported user onboarding options]] such as Google, Steam, etc. 
+First, call `LoginWithSocial` or `LoginWithOTP` to onboard the user. Choose one of the [[web3-stack-auth|supported user onboarding options]] such as Google, Steam, etc. 
 
 {% include "./code-snippets/auth_unity_onboard.md" %}
 
@@ -55,10 +55,9 @@ The app is ready to be deployed on the Testnet. Once a user authenticates, the b
 
 <img class="an-screenshots" alt="AuthProvider Unity app Login" src="/img/auth_ex_html_css_js_app2.png" width="50%"/>
 
-See [Unity Sample Integration App](https://github.com/NalikeTalha/arcana_unity_sdk/tree/main/UnitySampleProject).
-
-That's all!!! :tada:
+That's all! :tada:
 
 ## See Also
 
 * [[unity-quick-start|Unity Quick Start Guide]]
+* {% include "./text-snippets/unity_sample_url.md" %}

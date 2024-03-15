@@ -8,7 +8,7 @@ arcana:
 
 # Switching Networks
 
-Apps integrate with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) to quickly and securely enable user authentication and blockchain signing features for the [[state-of-the-arcana-auth#supported-networks|supported networks]]. After logging in, the authenticated user can access the embedded, non-custodial Web3 wallet - the **{{config.extra.arcana.wallet_name}}** instantly and can sign blockchain transactions for any supported networks.
+Apps integrate with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) to quickly and securely enable user authentication and blockchain signing features for the [[web3-stack-chains|supported networks]]. After logging in, the authenticated user can access the embedded, non-custodial Web3 wallet - the **{{config.extra.arcana.wallet_name}}** instantly and can sign blockchain transactions for any supported networks.
 
 ## Network Options
 

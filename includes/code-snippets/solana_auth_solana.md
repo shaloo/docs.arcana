@@ -1,4 +1,4 @@
-```js hl_lines="27"
+```js hl_lines="28"
 const { AuthProvider } = window.arcana.auth // From CDN
 //or
 import { AuthProvider } from '@arcana/auth' //From npm

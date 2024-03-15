@@ -10,7 +10,7 @@ arcana:
 
 The {{config.extra.arcana.product_name}} product supports all EVM-compatible blockchain networks. By default, the {{config.extra.arcana.sdk_name}} comes pre-configured with a set of EVM-compatible chains. These blockchain networks are displayed in the {{config.extra.arcana.wallet_name}} UI once a user logs in the app.
 
-See [[state-of-the-arcana-auth#supported-blockchains|supported blockchain networks]] for the current list.
+See [[web3-stack-chains|supported blockchain networks]] for the current list.
 
 App developers can use the chain management feature and add other EVM-compatible chains to this default, pre-configured set. They can also specify a different active chain in the wallet once the user logs in. App users have limited chain management capabilities. 
 

@@ -1,7 +1,7 @@
 ---
 alias: rn-main-auth-v1.0.9
 title: 'Arcana Auth: Release Notes'
-description: 'Arcana Auth Release Notes (v1.0.9 Latest)'
+description: 'Arcana Auth Release Notes (v1.0.9)'
 arcana:
   root_rel_path: ..
 ---
@@ -42,8 +42,11 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 This is a major release that supports non-EVM blockchains (Solana). New product features include a brand new SDK that offers maximum customization. Also, there are some enhancements related to security besides bug fixes.
 
 * Non-EVM Chain Support: Solana - See [[solana-quick-start|Solana Apps Quick Start Guide]].
+
 * Passwordless Login with OTP: Use [`loginWithOTPStart`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPStart), and [`loginWithOTPComplete`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPComplete) instead of [`loginWithLink`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) (deprecated)
+
 * New SDK: {{config.extra.arcana.auth_core_sdk_name}} - See [[auth-core-quick-start|Auth Core SDK Quick Start Guide]].
+
 * Security enhancements and bug fixes. See [[index-changelog|changelog]].
 
 ## What has changed?
@@ -56,7 +59,7 @@ There are no usage changes for applications that use app-specific keys (default)
 
 If the app developer selects [[concept-keyspace-type| global keys]] while configuring the app via the {{config.extra.arcana.dashboard_name}}, the social auth settings for enabling the social login providers are **no longer** required.
 
-Apps can choose to enable global keys on Testnet as well as the Mainnet.
+Apps can choose to enable global keys on the Testnet as well as the Mainnet.
 
 ### New User Orientation
 
@@ -88,4 +91,4 @@ Refer to the [[index-release-notes| release notes archive]] and [[index-migratio
 
 ---
 
-Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).

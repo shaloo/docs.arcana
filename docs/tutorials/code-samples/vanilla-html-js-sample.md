@@ -8,7 +8,7 @@ arcana:
 
 # HTML/CSS/JS App Code Sample
 
-First of all, before adding any code to the Web3 app, [[configure-auth|register the app and configure user onboarding options and other settings]] using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. 
+First of all, before adding any code to the Web3 app, [[register-app-auth|register the app and configure user onboarding options and other settings]] using the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}. 
 
 Next, install the `{{ config.extra.arcana.auth_sdk_pkg_name }}` package, [[integrate-vanilla-app|integrate the HTML/CSS/JS app]], and then add code in the app to [[index-onboard-users|onboard users]]. Only authenticated users can access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
@@ -16,9 +16,9 @@ Check out the code sandbox for the [sample vanilla HTML/CSS/JS app](https://code
 
 ## Registration & Configuration
 
-The following {{config.extra.arcana.dashboard_name}} screen shows the app 'Testnet' configuration set up to onboard users via multiple authentication providers: Google, Twitch, and passwordless login. For details, see [[configure-auth|how to configure authentication providers]].
+The following {{config.extra.arcana.dashboard_name}} screen shows the app 'Testnet' configuration set up to onboard users via multiple authentication providers: Google, Twitch, and passwordless login. For details, see [[index-configure-auth|how to configure authentication providers]].
 
-<img class="an-screenshots" alt="NextJS App config" src="/img/nextjs_app_db_setup_google_twitch.png"/>
+<img class="an-screenshots" alt="Dashboard App Config Google Twitch" src="/img/nextjs_app_db_setup_google_twitch.png"/>
 
 After configuring the app, copy the **{{config.extra.arcana.app_address}}** assigned to the app and displayed in the dashboard on the top right of the screen. It will be required during app integration with the {{config.extra.arcana.sdk_name}}.
 

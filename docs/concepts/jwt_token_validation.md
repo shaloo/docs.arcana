@@ -11,7 +11,7 @@ arcana:
 Apps integrating with the {{config.extra.arcana.sdk_name}} receive a unique JWT token. This token is generated upon successful user authentication via these `AuthProvider` methods:
 
 * Plug-and-play login UI: `connect()` 
-* Custom login UI:  `loginWithSocial()`, `loginWithLink()`(deprecated), `loginWithOTPStart`, `loginWithOTPComplete`, and `loginWithBearer()`
+* Custom login UI: `loginWithSocial()`, `loginWithLink()`(deprecated), `loginWithOTPStart`, `loginWithOTPComplete`, and `loginWithBearer()`
 
 The {{config.extra.arcana.company_name}} JWT token is generated with an asymmetric key. What this means is that after a successful user login, the app developers must use the public key in order to verify the received token. 
 

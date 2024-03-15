@@ -17,7 +17,7 @@ toc_depth: 2
 
       There is no way to selectively turn off the {{config.extra.arcana.wallet_name}} features.  However, if the application **does not perform any blockchain transactions**, the wallet feature can be disabled by setting the [[concept-wallet-visibility|wallet visibility mode]] to `false` while integrating the app with the {{config.extra.arcana.sdk_name}}. In this case, the {{config.extra.arcana.wallet_name}} will not be visible to the authenticated user as long as **no blockchain transaction is triggered**. 
 
-      If you need to completely disable the {{config.extra.arcana.wallet_name}} feature in the app, you can request a private build of the {{config.extra.arcana.wallet_name}} by [contacting {{config.extra.arcana.company_name}}]({{page.meta.arcana.root_rel_path}}/support.md) with the use case details.
+      If you need to completely disable the {{config.extra.arcana.wallet_name}} feature in the app, you can request a private build of the {{config.extra.arcana.wallet_name}} by [contacting {{config.extra.arcana.company_name}}]({{page.meta.arcana.root_rel_path}}/support/index.md) with the use case details.
 
 ??? an-faq "Will the Arcana Network's distributed key generation algorithm be affected if a node with a key share becomes temporarily inaccessible?"
 

@@ -8,7 +8,7 @@ arcana:
 
 # Sign Blockchain Transactions
 
-The {{config.extra.arcana.sdk_name}} enables the embedded, non-custodial {{config.extra.arcana.wallet_name}} for every authenticate user to sign blockchain transactions on any [[state-of-the-arcana-auth#supported-blockchains|supported blockchain network]]. 
+The {{config.extra.arcana.sdk_name}} enables the embedded, non-custodial {{config.extra.arcana.wallet_name}} for every authenticate user to sign blockchain transactions on any [[web3-stack-chains|supported blockchain network]]. 
 
 Check out this video to see the  {{config.extra.arcana.wallet_name}} in action for signing blockchain transactions, checking wallet balances, switching blockchain networks, and more.
 

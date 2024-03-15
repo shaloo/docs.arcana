@@ -10,7 +10,7 @@ arcana:
 
 {{config.extra.arcana.product_name}} supports both EVM-compatible chains as well as non-EVM chains such as Solana and MultiversX. Other non-EVM chains will be added in the future. 
 
-The {{config.extra.arcana.sdk_name}} offers a selection of EVM as well as non-EVM chains as the [[state-of-the-arcana-auth#supported-blockchains|pre-configured]] blockchain networks. Once users log into an app integrated with the {{config.extra.arcana.sdk_name}}, these pre-configured chains are available out of the box to the {{config.extra.arcana.wallet_name}} users.
+The {{config.extra.arcana.sdk_name}} offers a selection of EVM as well as non-EVM chains as the [[web3-stack-chains||pre-configured]] blockchain networks. Once users log into an app integrated with the {{config.extra.arcana.sdk_name}}, these pre-configured chains are available out of the box to the {{config.extra.arcana.wallet_name}} users.
 
 {% include "./text-snippets/non-evm-warning.md" %}
 

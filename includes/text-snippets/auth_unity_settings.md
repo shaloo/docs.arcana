@@ -6,19 +6,21 @@
 
 * Use the Unity Editor Project Settings window to edit package settings for your project. Click **Edit > Project Settings > Package Manager**.
 
-      - [Add a new scoped registry](https://docs.unity3d.com/Manual/class-PackageManager.html) with URL **http://3.95.15.12** and set the scope to `com.cysharp.unitask, dev.voltstro` ![Pkg Manager 1](/img/unity_pkg_mgr_1.png){ .an-screenshots }
+      - [Add a new scoped registry](https://docs.unity3d.com/Manual/class-PackageManager.html) with URL **https://npm-registry.arcana.network/** and set the scope to `com.cysharp.unitask, dev.voltstro` ![Pkg Manager 1](/img/unity_pkg_mgr_1.png){ .an-screenshots }
 
       - Add another new scoped registry with URL **https://unitynuget-registry.azurewebsites.net** and set the scope to `org.nuget`.  ![Pkg Manager 2](/img/unity_pkg_mgr_2.png){ .an-screenshots }
 
-* In the NuGet window, use the NuGet Toolbar at the top, click **Window > Package Manager > Add Package by Name**. ![NuGet Pkg](/img/unity_nuget_pkg_mgr.png){ .an-screenshots }
+* In the NuGet window, use the NuGet Toolbar at the top, click **Window > Package Manager > Add Package by Name**. ![NuGet Pkg](/img/unity_nuget_pkg_mgr.png){ .an-screenshots .width_35pc}
 
-* Add the following packages:
+* Add the following packages: `com.cysharp.unitask`, ``dev.voltstro.unitywebbrowser.engine.cef`
 
-      - **Windows**: `dev.voltstro.unitywebbrowser.engine.cef`, `dev.voltstro.unitywebbrowser.engine.cef.win.x64`
+      - **Windows**:  `dev.voltstro.unitywebbrowser.engine.cef.win.x64`
 
       - **Linux**: `dev.voltstro.unitywebbrowser.engine.cef.linux.x64`
 
       - **MacOS**: `dev.voltstro.unitywebbrowser.engine.cef.macos.x64`
+
+See [Unity Web Browser package list](https://projects.voltstro.dev/UnityWebBrowser/latest/articles/user/packages/#package-list) for details.
 
 * {% include "./code-snippets/auth_unity_install.md" %}
 

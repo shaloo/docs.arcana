@@ -51,7 +51,7 @@ Web3 applications that integrate with the {{config.extra.arcana.sdk_name}} can n
 Besides Cognito custom authentication, the {{config.extra.arcana.sdk_name}} now also allows apps to onboard users via Firebase. To enable Firebase, developers must:
 
 * [[config-auth-firebase|Configure Firebase settings]] in the {{config.extra.arcana.dashboard_name}}
-* [[index-integrate-app|Install and integrate the app]] with the {{config.extra.arcana.sdk_name}}
+* [[index-integrate|Install and integrate the app]] with the {{config.extra.arcana.sdk_name}}
 * Make sure that the app is also integrated with the Firebase SDKs and that the required Firebase services are configured. 
 * Use a custom login UI to initiate Firebase login and listen for user authentication success event from Firebase.
 * Pass on the Firebase token to the {{config.extra.arcana.sdk_name}} user onboarding function - `loginWithBearer` and allow authenticated users to sign blockchain transactions.
@@ -72,7 +72,7 @@ Refer to the [Firebase auth integration example](https://github.com/arcana-netwo
 
 See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] in the Getting Started section. 
 
-Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|NextJS ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
+Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|Next.js ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
 
 ## Upgrade to the Latest {{config.extra.arcana.sdk_name}} 
 
@@ -92,5 +92,5 @@ See the [[index-release-notes| release notes archive]] for details.
 
 ---
 
-Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support.md).
+Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
 

@@ -32,7 +32,7 @@
 
     * MultiversX 
     * MultiversX Testnet
-    * MultiversX Devnet
+    * MultiversX Devnet 
     * Solana
     * Solana Testnet
     * Solana Dev

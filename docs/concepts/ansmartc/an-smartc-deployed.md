@@ -73,7 +73,7 @@ The interactions between various {{config.extra.arcana.company_name}} smart cont
 
 * After receiving the address of the latest {{config.extra.arcana.company_name}} core system contract from the `ArcanaBeacon` contract,  the BeaconProxy delegates the forwarded call to the {{config.extra.arcana.company_name}} system contract.
 
-* {{config.extra.arcana.compay_name}} contract actually executes the transaction.
+* {{config.extra.arcana.company_name}} contract actually executes the transaction.
 
 ### New App Registration Flow
 

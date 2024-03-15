@@ -14,6 +14,10 @@ Learn about what the {{config.extra.arcana.product_name}} offers, why it is requ
 
 [[why-arcana-auth|Why {{config.extra.arcana.product_name}}? :octicons-question-16:]]{ .md-button }
 
+[[index-architecture| Architecture :fontawesome-solid-users-gear:]]{ .md-button }
+
+[[index-user-flows|Usage Flows :material-clipboard-flow-outline:]]{ .md-button }
+
 [[how-to-use-auth|How to use {{config.extra.arcana.product_name}}?]]{ .md-button }
 
 [[use-cases|{{config.extra.arcana.product_name}} Use Cases]]{ .md-button }
