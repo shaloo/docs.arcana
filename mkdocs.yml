@@ -275,6 +275,7 @@ plugins:
           'docs/conceptnftviewer/index.md': 'support/index.md'
           'docs/category/using-arcana-wallet/index.md': 'support/index.md'
           'docs/quick-start/web-apps-quick-start.md': 'quick-start/index.md'
+          'db/config-dApp-with-db-for-Solana.md': 'setup/config-dApp-with-db-for-Solana.md'
 
 markdown_extensions:
   - abbr
