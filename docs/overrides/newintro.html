@@ -782,6 +782,16 @@
     </div>
 </div>
 
+<div class="top-hr">
+    <div class="hr">
+        <h2 style="text-align: left">Try now!</h2>
+    </div>
+</div>
+
+<div id="mysandpack">
+    <hi>Test SandPack!</hi>
+</div>
+
 {% include "partials/content.html" %}
 
 {% endblock %}
@@ -805,6 +815,68 @@
   !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
   </script>
   --->
+
+  <!--
+  Sandpack PoC
+  -->
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react-dom": "https://esm.sh/react-dom@18.2.0",
+        "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0"
+      }
+    }
+  </script>
+
+  <script type="module">
+    import React from "react";
+    import { createRoot } from "react-dom/client";
+    import { Sandpack } from "@codesandbox/sandpack-react";
+
+    const mysandpack = createRoot(document.getElementById("mysandpack"));
+    /*
+    const watchMedia = window.matchMedia("(data-md-color-scheme: "slate")");
+    let themetype;
+
+    function getTheme(e) {
+        if (e.matches)
+            themetype = "dark";
+        else
+            themetype = "default";
+    }
+    watchMedia.addEventListener("change", getTheme);
+    */
+
+    /*
+    const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const themetype = prefersDarkMode ? "dark" : "light";
+    */
+
+    const themetype = "dark";
+    const sandpackComponent = React.createElement(
+      Sandpack, { 
+        template: "react" , 
+        theme: themetype,
+        options: {
+            showNavigator: true,
+            showTabs: true,
+            closableTabs: true,
+            showConsole: true,
+            showConsoleButton: true,
+        },
+        files: {
+          "/App.js": `export default function App() {
+                     return <h1>Hello Sandpack</h1>}
+                     `,
+        },
+      },
+      null
+    );
+    mysandpack.render(sandpackComponent);
+  </script>
+
 
   <!-- Chatbase bot script -->
   <script>
