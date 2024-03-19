@@ -28,7 +28,7 @@ theme:
     repo: fontawesome/brands/git-alt
     edit: material/pencil
     view: material/eye
-  favicon: img/favicon.png
+  favicon: img/favicon.ico
   custom_dir: docs/overrides
   features:
     - navigation.instant
