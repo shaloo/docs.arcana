@@ -120,7 +120,8 @@ extra:
     mobile_react_native_sdk_pkg_name: auth-react-native
     gaming_sdk_pkg_name: arcana-auth-sdk
     exclude_content_tag: exclude
-  homepage: https://arcana.network
+  # Allow top left logo to browse website
+  #homepage: https://arcana.network
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/arcananetwork
