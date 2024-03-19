@@ -190,7 +190,6 @@ plugins:
       caption_position: bottom
   - redirects:
         redirect_maps:
-          'introduction.md': 'introduction/index.md'
           'introducing-arcana-auth.md': 'introduction/index.md'
           'walletsdk/wallet_qs.md': 'quick-start/index.md'
           'auth-quick-start.md': 'quick-start/auth-sdk/index.md'
