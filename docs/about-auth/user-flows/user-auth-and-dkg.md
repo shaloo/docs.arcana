@@ -13,4 +13,4 @@ arcana:
 
 ## Control Flow
 
---8<-- "docs/user-flows/steps/_auth_dkg_steps.mdx"
+--8<-- "docs/about-auth/user-flows/steps/_auth_dkg_steps.mdx"
