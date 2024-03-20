@@ -862,119 +862,78 @@
     const themetype = prefersDarkMode ? "dark" : "light";
     */
 
-    const fileUrls = [
-            '../sandpack/auth/index.html',
-            '../sandpack/auth/index.js',
-            '../sandpack/auth/styles.css'
-            ];
-
-    const files = {}; // Initialize an empty object to store file content
-
-    // Fetch each file asynchronously
-    const filePromises = fileUrls.map(url => {
-    return fetch(url)
-        .then(response => {
-        if (!response.ok) {
-            throw new Error(`Failed to fetch ${url}`);
-        }
-        return response.text();
-        })
-        .then(data => {
-        // Store the file content in the files object
-        const fileName = url.substring(url.lastIndexOf('/') + 1); // Extract file name from URL
-        files[`/${fileName}`] = data;
+    function fetchAndStoreFiles(fileUrls, targetObject) {
+        const filePromises = fileUrls.map(url => {
+            return fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Failed to fetch ${url}`);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    const fileName = url.substring(url.lastIndexOf('/') + 1);
+                    targetObject[`/${fileName}`] = data;
+                });
         });
-    });
 
-    // Wait for all file fetches to complete
-    Promise.all(filePromises)
-    .then(() => {
-        // All files have been fetched and stored in the files object
-        console.log('Sandpack files:', files);
+        return Promise.all(filePromises);
+    }
 
-        // Now you can use the 'files' object as needed, such as passing it to a Sandpack component
-    
-        const themetype = "dark";
+    function renderSandpack(template, theme, files, sandpackInstance) {
         const sandpackComponent = React.createElement(
-        Sandpack, { 
-            template: "vanilla" , 
-            theme: themetype,
-            options: {
-                showNavigator: true,
-                showTabs: true,
-                closableTabs: true,
-                showConsole: true,
-                showConsoleButton: true,
+            Sandpack,
+            {
+                template,
+                theme,
+                options: {
+                    showNavigator: true,
+                    showTabs: true,
+                    closableTabs: true,
+                    showConsole: true,
+                    showConsoleButton: true,
+                },
+                files,
             },
-            files: files
-        },
-        null
+            null
         );
-        authsandpack.render(sandpackComponent);  
-    
-    })
-    .catch(error => {
-        console.error('Error loading sample files:', error);
-    });
+        sandpackInstance.render(sandpackComponent);
+    }
+
+    const fileUrls = [
+        '../sandpack/auth/index.html',
+        '../sandpack/auth/index.js',
+        '../sandpack/auth/styles.css',
+    ];
+
+    const files = {};
+    fetchAndStoreFiles(fileUrls, files)
+        .then(() => {
+            console.log('Sandpack files:', files);
+            renderSandpack('vanilla', 'dark', files, authsandpack);
+        })
+        .catch(error => {
+            console.error('Error loading sample files:', error);
+        });
 
     const gaslessFileUrls = [
-            '../sandpack/gl/index.html',
-            '../sandpack/gl/index.js',
-            '../sandpack/gl/styles.css',
-            '../sandpack/gl/myerc20.js',
-            ];
+        '../sandpack/gl/index.html',
+        '../sandpack/gl/index.js',
+        '../sandpack/gl/styles.css',
+        '../sandpack/gl/myerc20.js',
+    ];
 
-    const glFiles = {}; // Initialize an empty object to store file content
-
-    // Fetch each file asynchronously
-    const glFilePromises = gaslessFileUrls.map(url => {
-    return fetch(url)
-        .then(response => {
-        if (!response.ok) {
-            throw new Error(`Failed to fetch ${url}`);
-        }
-        return response.text();
+    const glFiles = {};
+    fetchAndStoreFiles(gaslessFileUrls, glFiles)
+        .then(() => {
+            console.log('Gasless Sandpack files:', glFiles);
+            renderSandpack('vanilla', 'dark', glFiles, gaslesssandpack);
         })
-        .then(data => {
-        // Store the file content in the glFiles object
-        const fileName = url.substring(url.lastIndexOf('/') + 1); // Extract file name from URL
-        glFiles[`/${fileName}`] = data;
-        });
-    });
-
-    // Wait for all file fetches to complete
-    Promise.all(glFilePromises)
-    .then(() => {
-        // All files have been fetched and stored in the glFiles object
-        console.log('Sandpack files:', glFiles);
-
-        // Now you can use the 'files' object as needed, such as passing it to a Sandpack component
-    
-        const themetype = "dark";
-        const glSandpackComponent = React.createElement(
-        Sandpack, { 
-            template: "vanilla" , 
-            theme: themetype,
-            options: {
-                showNavigator: true,
-                showTabs: true,
-                closableTabs: true,
-                showConsole: true,
-                showConsoleButton: true,
-            },
-            files: glFiles
-        },
-        null
-        );
-        gaslesssandpack.render(glSandpackComponent);  
-    
-    })
-    .catch(error => {
-        console.error('Error loading sample files:', error);
-    });
+        .catch(error => {
+            console.error('Error loading gasless sample files:', error);
+        });                 
 
   </script>
-
 
   <!-- Chatbase bot script -->
   <script>
