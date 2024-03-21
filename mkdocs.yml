@@ -53,6 +53,7 @@ theme:
   palette:
     # Auto Mode
     - media: "(prefers-color-scheme)"
+      scheme: auto
       toggle: 
         icon: material/brightness-auto
         name: Switch to Light Mode

@@ -844,6 +844,17 @@
     const authsandpack = createRoot(document.getElementById("authsandpack"));
     const gaslesssandpack = createRoot(document.getElementById("gaslesssandpack"));
 
+    let themeType;
+    let currentTheme;
+    let updateSP;
+
+    // Current Theme check
+    const startCurrentTheme = document.body.getAttribute("data-md-color-scheme");
+
+    if (startCurrentTheme === "slate") {
+        themeType = "dark";
+    }
+    //const {sPtheme, setsPTheme} = useState('light'); 
     /*
     const watchMedia = window.matchMedia("(data-md-color-scheme: "slate")");
     let themetype;
@@ -862,6 +873,56 @@
     const themetype = prefersDarkMode ? "dark" : "light";
     */
 
+    //Try Observer method
+
+    // Select the node that will be observed for mutations
+    const targetNode = document.body;
+
+    // Options for the observer (which mutations to observe)
+    const config = { attributes: true, childList: false, subtree: false };
+
+    // Callback function to execute when mutations are observed
+    const callback = (mutationList, observer) => {
+    for (const mutation of mutationList) {
+        if (mutation.type === "attributes" && mutation.attributeName === "data-md-color-scheme") {
+            console.log(`The ${mutation.attributeName} attribute was modified.`);
+            console.log("Mutation:", mutation);
+            
+            const currentTheme = document.body.getAttribute("data-md-color-scheme");
+            console.log("Current theme:", currentTheme);
+            
+            // Determine theme type based on current theme
+            if (currentTheme === "slate") {
+                themeType = "dark";
+            } else if (currentTheme === "default") {
+                themeType = "light";
+            }
+            console.log("Theme type:", themeType);
+            console.log("Current Theme:", currentTheme);
+/*
+            setSPtheme(themeType)
+            <Sandpack theme={sPtheme} />
+*/
+            updateSP = document.getElementsByTagName("Sandpack");
+            if(updateSP) {
+                console.log("updateSP:",updateSP)
+            }
+        }
+    }
+};
+
+    // Create an observer instance linked to the callback function
+    const observer = new MutationObserver(callback);
+
+    // Start observing the target node for configured mutations
+    observer.observe(targetNode, config);
+
+    window.onbeforeunload = function(){
+        // Later, you can stop observing
+        observer.disconnect();
+        return 'The observer is now disconnected!';
+    };
+
     function fetchAndStoreFiles(fileUrls, targetObject) {
         const filePromises = fileUrls.map(url => {
             return fetch(url)
@@ -872,7 +933,7 @@
                     return response.text();
                 })
                 .then(data => {
-                    const fileName = url.substring(url.lastIndexOf('/') + 1);
+                    const fileName = url.substring(url.lastIndexOf('main') + 1);
                     targetObject[`/${fileName}`] = data;
                 });
         });
@@ -901,16 +962,16 @@
     }
 
     const fileUrls = [
-        '../sandpack/auth/index.html',
-        '../sandpack/auth/index.js',
-        '../sandpack/auth/styles.css',
+        'https://raw.githubusercontent.com/shaloo/sample-auth-html-css-js/main/index.html',
+        'https://raw.githubusercontent.com/shaloo/sample-auth-html-css-js/main/src/index.js',
+        'https://raw.githubusercontent.com/shaloo/sample-auth-html-css-js/main/src/styles.css',
     ];
-
+//../sandpack/auth/index.html
     const files = {};
     fetchAndStoreFiles(fileUrls, files)
         .then(() => {
             console.log('Sandpack files:', files);
-            renderSandpack('vanilla', 'dark', files, authsandpack);
+            renderSandpack('vanilla', themeType, files, authsandpack);
         })
         .catch(error => {
             console.error('Error loading sample files:', error);
@@ -927,7 +988,7 @@
     fetchAndStoreFiles(gaslessFileUrls, glFiles)
         .then(() => {
             console.log('Gasless Sandpack files:', glFiles);
-            renderSandpack('vanilla', 'dark', glFiles, gaslesssandpack);
+            renderSandpack('vanilla', themeType, glFiles, gaslesssandpack);
         })
         .catch(error => {
             console.error('Error loading gasless sample files:', error);

@@ -1,4 +1,4 @@
-import { AuthProvider } from "@arcana/auth";
+import { AuthProvider } from "/arcana/auth";
 
 let provider;
 let from = ""; // get from eth_accounts call
