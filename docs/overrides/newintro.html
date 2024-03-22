@@ -898,15 +898,6 @@
                 themeType = "light";
             }
             console.log("Theme type:", themeType);
-            console.log("Current Theme:", currentTheme);
-/*
-            setSPtheme(themeType)
-            <Sandpack theme={sPtheme} />
-*/
-            updateSP = document.getElementsByTagName("Sandpack");
-            if(updateSP) {
-                console.log("updateSP:",updateSP)
-            }
         }
     }
 };
@@ -933,7 +924,7 @@
                     return response.text();
                 })
                 .then(data => {
-                    const fileName = url.substring(url.lastIndexOf('main') + 1);
+                    const fileName = url.substring(url.lastIndexOf('/') + 1);
                     targetObject[`/${fileName}`] = data;
                 });
         });
@@ -950,7 +941,6 @@
                 options: {
                     showNavigator: true,
                     showTabs: true,
-                    closableTabs: true,
                     showConsole: true,
                     showConsoleButton: true,
                 },
@@ -962,9 +952,9 @@
     }
 
     const fileUrls = [
-        'https://raw.githubusercontent.com/shaloo/sample-auth-html-css-js/main/index.html',
-        'https://raw.githubusercontent.com/shaloo/sample-auth-html-css-js/main/src/index.js',
-        'https://raw.githubusercontent.com/shaloo/sample-auth-html-css-js/main/src/styles.css',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.html',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.js',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/styles.css',
     ];
 //../sandpack/auth/index.html
     const files = {};
@@ -978,10 +968,10 @@
         });
 
     const gaslessFileUrls = [
-        '../sandpack/gl/index.html',
-        '../sandpack/gl/index.js',
-        '../sandpack/gl/styles.css',
-        '../sandpack/gl/myerc20.js',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.html',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.js',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/styles.css',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/myerc20.js',
     ];
 
     const glFiles = {};
