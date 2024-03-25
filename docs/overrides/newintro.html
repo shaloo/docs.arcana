@@ -937,12 +937,19 @@
             Sandpack,
             {
                 template,
+                customSetup: {
+                    dependencies: { 
+                        "dotenv": "^16.3.1",
+                        "parcel": "^2.9.3"
+                    }
+                },
                 theme,
                 options: {
                     showNavigator: true,
                     showTabs: true,
                     showConsole: true,
                     showConsoleButton: true,
+                    externalResources: ["https://cdn.jsdelivr.net/npm/@arcana/auth"],
                 },
                 files,
             },
@@ -955,6 +962,7 @@
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.html',
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.js',
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/styles.css',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/package.json',
     ];
 //../sandpack/auth/index.html
     const files = {};
@@ -966,7 +974,7 @@
         .catch(error => {
             console.error('Error loading sample files:', error);
         });
-
+/*
     const gaslessFileUrls = [
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.html',
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.js',
@@ -982,7 +990,9 @@
         })
         .catch(error => {
             console.error('Error loading gasless sample files:', error);
-        });                 
+        });  
+        
+    */
 
   </script>
 
