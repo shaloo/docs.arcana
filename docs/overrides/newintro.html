@@ -949,7 +949,11 @@
                     showTabs: true,
                     showConsole: true,
                     showConsoleButton: true,
-                    externalResources: ["https://cdn.jsdelivr.net/npm/@arcana/auth"],
+                    externalResources: ["https://cdn.jsdelivr.net/npm/@arcana/auth","https://cdn.jsdelivr.net/npm/@arcana/scw", "https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js"],
+                    editorHeight: '80vh',
+                    autoReload: true,
+                    initMode: "user-visible",
+                    resizablePanels: true,
                 },
                 files,
             },
@@ -962,7 +966,7 @@
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.html',
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.js',
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/styles.css',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/package.json',
+    //    'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/package.json',
     ];
 //../sandpack/auth/index.html
     const files = {};
@@ -974,7 +978,7 @@
         .catch(error => {
             console.error('Error loading sample files:', error);
         });
-/*
+
     const gaslessFileUrls = [
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.html',
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.js',
@@ -991,8 +995,6 @@
         .catch(error => {
             console.error('Error loading gasless sample files:', error);
         });  
-        
-    */
 
   </script>
 
