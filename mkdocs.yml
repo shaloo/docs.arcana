@@ -138,7 +138,7 @@ extra:
     provider: google
     property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
     feedback:
-      title: <hr>Is this information useful?
+      title: <i>Did you find what you were looking for today?</i>
       ratings:
         - icon: material/thumb-up-outline
           name: Yes, it was useful.
