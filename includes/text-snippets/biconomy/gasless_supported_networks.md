@@ -1,1 +1,1 @@
-<span><a href="https://docs.biconomy.io/supportedNetworks" target="_blank">supported networks</a></span>
+<span><a href="https://docs.biconomy.io/supportednetworks" target="_blank">supported networks</a></span>
