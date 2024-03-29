@@ -123,6 +123,9 @@ extra:
     exclude_content_tag: exclude
   # Allow top left logo to browse website
   #homepage: https://arcana.network
+    dashboard_sections:
+      social_auth: Social Auth
+      iam_providers: Identity Access Managers
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/arcananetwork
@@ -387,7 +390,7 @@ nav:
     #- Configure Auth: setup/configure-auth.md
     - Auth Settings:
       - setup/config-auth/index.md
-      - Social Login: 
+      - Social Providers: 
         - setup/config-social/index.md
         - Discord: setup/config-social/discord-oauth.md
         - GitHub: setup/config-social/github-oauth.md
@@ -395,7 +398,7 @@ nav:
         - Steam: setup/config-social/steam-oauth.md
         - Twitch: setup/config-social/twitch-oauth.md
         - Twitter: setup/config-social/twitter-oauth.md
-      - Custom IDM: 
+      - IAM Providers: 
         - setup/config-idm/index.md
         - Cognito: setup/config-idm/cognito-oauth.md
         - Firebase: setup/config-idm/firebase-auth.md
@@ -437,7 +440,7 @@ nav:
         - Custom Login: 
           - auth/onboard/vanilla/custom-ui/index.md
           - Passwordless: auth/onboard/vanilla/custom-ui/build-pwdless-auth.md
-          - Social Auth:
+          - Social Providers:
             - auth/onboard/vanilla/custom-ui/build-social/index.md
             - Discord: auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md
             - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
@@ -445,7 +448,7 @@ nav:
             - Steam: auth/onboard/vanilla/custom-ui/build-social/steam-oauth.md
             - Twitch: auth/onboard/vanilla/custom-ui/build-social/twitch-oauth.md
             - Twitter: auth/onboard/vanilla/custom-ui/build-social/twitter-oauth.md
-          - Custom IAM Auth:
+          - IAM Providers:
             - auth/onboard/vanilla/custom-ui/build-idm/index.md
             - Cognito: auth/onboard/vanilla/custom-ui/build-idm/cognito-oauth.md
             - Firebase: auth/onboard/vanilla/custom-ui/build-idm/firebase-login.md
@@ -455,7 +458,7 @@ nav:
         - Custom Login:
           - auth/onboard/vue/custom-ui/index.md
           - Passwordless: auth/onboard/vue/custom-ui/build-pwdless-auth.md
-          - Social Auth:
+          - Social Providers:
             - auth/onboard/vue/custom-ui/build-social/index.md
             - Discord: auth/onboard/vue/custom-ui/build-social/discord-oauth.md
             - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
@@ -463,7 +466,7 @@ nav:
             - Steam: auth/onboard/vue/custom-ui/build-social/steam-oauth.md
             - Twitch: auth/onboard/vue/custom-ui/build-social/twitch-oauth.md
             - Twitter: auth/onboard/vue/custom-ui/build-social/twitter-oauth.md
-          - Custom IAM Auth:
+          - IAM Providers:
             - auth/onboard/vue/custom-ui/build-idm/index.md
             - Cognito: auth/onboard/vue/custom-ui/build-idm/cognito-oauth.md
             - Firebase: auth/onboard/vue/custom-ui/build-idm/firebase-login.md      
@@ -485,7 +488,7 @@ nav:
         - Custom Login: 
           - auth/onboard/react-nextjs/custom-ui/index.md
           - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
-          - Social Auth:
+          - Social Providers:
             - auth/onboard/react-nextjs/custom-ui/build-social/index.md
             - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
             - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
@@ -493,7 +496,7 @@ nav:
             - Steam: auth/onboard/react-nextjs/custom-ui/build-social/steam-oauth.md
             - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
             - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
-          - Custom IAM Auth:
+          - IAM Providers:
             - auth/onboard/react-nextjs/custom-ui/build-idm/index.md
             - Cognito: auth/onboard/react-nextjs/custom-ui/build-idm/cognito-oauth.md
             - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
@@ -658,7 +661,7 @@ nav:
       - Auth Types:
         - concepts/authtype/index.md
         - Social Providers: concepts/authtype/socialauth.md
-        - Custom IAM Providers: concepts/authtype/customauth.md
+        - IAM Providers: concepts/authtype/customauth.md
         - Passwordless: concepts/authtype/pwdless.md
       - Usage & Billing: concepts/billing.md
       - Custom Login UI: concepts/custom-login-ui.md
