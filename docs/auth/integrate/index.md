@@ -37,3 +37,11 @@ arcana:
 [[flutter-get-started|Flutter Apps :simple-flutter:]]{ .md-button }
 
 [[react-native-get-started|React-Native Apps :simple-react:]]{ .md-button }
+
+## Custom OAuth
+
+[[integrate-custom-oauth|Custom OAuth :material-tools:]]{ .md-button }
+
+## Advanced
+
+[[index-arcana-wallet|Wallet Visibility :material-wallet:]]{ .md-button }

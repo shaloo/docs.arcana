@@ -399,6 +399,7 @@ nav:
         - setup/config-idm/index.md
         - Cognito: setup/config-idm/cognito-oauth.md
         - Firebase: setup/config-idm/firebase-auth.md
+      - Custom OAuth: setup/config-custom-oauth.md
       - Manage Chains: setup/config-wallet-chains.md
       - Wallet UX:
         - setup/config-wallet/index.md
@@ -426,6 +427,7 @@ nav:
         - auth/mobile/index.md
         - Flutter: auth/mobile/flutter-get-started.md
         - React-Native: auth/mobile/react-native-get-started.md
+      - Custom OAuth: auth/integrate/custom-oauth.md
       - Advanced:
         - auth/web3-ops/arcana-wallet-ui/index.md
         - Wallet Visibility: auth/web3-ops/arcana-wallet-ui/config-wallet-visibility.md
@@ -660,6 +662,7 @@ nav:
         - Social Providers: concepts/authtype/socialauth.md
         - Custom IAM Providers: concepts/authtype/customauth.md
         - Passwordless: concepts/authtype/pwdless.md
+        - Custom OAuth: concepts/authtype/custom-oauth.md
       - Usage & Billing: concepts/billing.md
       - Custom Login UI: concepts/custom-login-ui.md
       - Custom Wallet UI: concepts/custom-wallet-ui.md
