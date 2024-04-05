@@ -926,11 +926,13 @@
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
 
+    ///*
     window.onbeforeunload = function(){
         // Later, you can stop observing
         observer.disconnect();
         return 'The observer is now disconnected!';
     };
+    //*/
 
     function fetchAndStoreFiles(fileUrls, targetObject) {
         const filePromises = fileUrls.map(url => {

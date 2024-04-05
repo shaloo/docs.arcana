@@ -28,7 +28,8 @@
      --md-an-header-color-purple: rgb(24,21,59); 
      --md-an-color-light-purple: rgb(192, 188, 223);
      --md-an-blink-me-link-color: blue;
-     --md-an-banner-bg: #23A26D
+     /*--md-an-banner-bg: #23A26D; Green*/
+     --md-an-banner-bg: #FF4E9F;
     }
 
 [data-md-color-scheme="black"] {
