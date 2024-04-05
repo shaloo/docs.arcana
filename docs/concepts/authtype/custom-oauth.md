@@ -41,11 +41,58 @@ issuer: "abc"
 
 The purpose of the JWK usage is identified by the 'login' attribute and the usage context is identified by the 'keyUse' attribute. The audience claim identifies the intended JWT recipient. The issuer claim identifies the principal that issued the JWT. 
 
-## How does Custom OAuth Work?
+## How Does Custom OAuth Work?
 
-1. Developer adds code to the app for using custom OAuth server or a mix of custom authentication methods, and obtains a JWT after user authentication.
-2. Log in to the {{config.extra.arcana.dashboard_name}} and configure custom OAuth settings.
-3. Install {{config.extra.arcana.sdk_name}}, integrate app with the {{config.extra.arcana.sdk_name}}, initialize `AuthProvider` and then use the JWT obtained after custom OAuth to call `loginWithCustomVerifier()` method.
-4. {{config.extra.arcana.sdk_name}} verifies the JWT using claim information supplied during configuration and once verified it fetches the user's key shares from the {{config.extra.arcana.company_name}} backend. It generates the user key locally, with privacy, within the app context from the key shares. The Web3 key allows authenticated users to sign blockchain transactions securely.
+1. The developer adds code to the app for using a custom OAuth server or a mix of custom authentication methods and obtains a JWT after user authentication.
 
-Diagram TBD...
+    ```mermaid
+    graph LR
+        IAP{{Developer}}
+        MMM(Custom Authentication Service)
+        subgraph app[App]
+        direction LR
+        CL[Custom Login]
+        end
+        IAP --> CL -->  MMM --JWT Token --> CL
+
+    ```
+
+2. If the app is not already registered, the developer must log in to the {{config.extra.arcana.dashboard_name}} and register to get a ClientID. Then configure custom OAuth settings in the dashboard.
+
+    ```mermaid
+    graph TD
+        DFLA{{Developer}} --Login --> setup
+    
+        subgraph setup[Arcana Developer Dashboard]
+        direction LR  
+            SP1[1. Register App] --> CLID((Unique ClientID))
+            SP2[2. Configure App] --> SP3[Edit/Save Custom OAuth Settings]
+        end
+    ```
+
+3. Next, install {{config.extra.arcana.sdk_name}}, integrate app with the {{config.extra.arcana.sdk_name}}, initialize `AuthProvider` and then use the JWT obtained after custom OAuth to call `loginWithCustomVerifier()` method.
+
+    ```mermaid
+    graph TD
+        DFLA{{Developer}} --install --> authsdk
+        DFLA --ClientID -->AUTHP
+        DFLA --JWT Token -->COA
+        subgraph app[App]
+            AUTHP[Create/Init AuthProvider] --> authsdk
+            COA[Call loginWithCustomOAuth] --> authsdk
+            subgraph authsdk[Arcana Auth SDK]
+            direction TB 
+                SDK1[AuthProvider Interface] 
+            end
+        end
+        authsdk --Verify JWT Claims --> STD[Standard JWT/JWK Validation]
+        authsdk --Fetch Key Shares --> BEP[Arcana Auth Protocol] <--> BEK[DKG]
+    ```
+
+4. {{config.extra.arcana.sdk_name}} verifies the JWT using claim information supplied in the dashboard configuration. Once verified, it fetches the user's key shares from the {{config.extra.arcana.company_name}} backend. It generates the user key locally, with privacy, within the app context from the key shares. The Web3 key allows authenticated users to sign blockchain transactions securely.
+
+    ```mermaid
+    graph LR
+        BED[Arcana Developer Dashboard] --Custom OAuth Settings--> BEC{Gateway} 
+        BEC <--> BEA[Arcana Auth Protocol] <--> BEDKG[DKG]
+    ```
