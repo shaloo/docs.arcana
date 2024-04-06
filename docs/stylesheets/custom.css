@@ -6,6 +6,8 @@
 
 :root > * {
      --md-an-pink-color: #FF4E9F;
+     --md-an-blue-color: #2730FE;
+     --md-an-green-color: #0FB600;
      --md-primary-fg-color: #242424;
      --md-primary-fg-color--dark: #9a9a9a;
      --md-primary-fg-color--lighter: #5e5e5e;
@@ -105,7 +107,7 @@
 */
 
 .md-nav__link--active{
-  color: #2730FE;
+  color: var(--md-an-blue-color);
 }
 
 .md-button {
@@ -154,9 +156,12 @@
 }
 
 .md-nav__item--section {
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
+.md-nav__item {
+    padding:0.5rem;
+}
 .cards {
     max-width: "80%";
     margin: 0 auto;
