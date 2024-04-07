@@ -125,6 +125,9 @@ extra:
     mobile_react_native_sdk_pkg_name: auth-react-native
     gaming_sdk_pkg_name: arcana-auth-sdk
     exclude_content_tag: exclude
+    dashboard_sections:
+      social_auth: Social Auth
+      iam_providers: Identity Access Managers
   # Allow top left logo to browse website
   #homepage: https://arcana.network
     dashboard_sections:
@@ -394,7 +397,7 @@ nav:
     #- Configure Auth: setup/configure-auth.md
     - Auth Settings:
       - setup/config-auth/index.md
-      - Social OAuth Providers: 
+      - Social Login Providers: 
         - setup/config-social/index.md
         - Discord: setup/config-social/discord-oauth.md
         - GitHub: setup/config-social/github-oauth.md
@@ -444,7 +447,7 @@ nav:
         - Custom Login: 
           - auth/onboard/vanilla/custom-ui/index.md
           - Passwordless: auth/onboard/vanilla/custom-ui/build-pwdless-auth.md
-          - Social OAuth Providers:
+          - Social Login Providers:
             - auth/onboard/vanilla/custom-ui/build-social/index.md
             - Discord: auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md
             - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
@@ -462,7 +465,7 @@ nav:
         - Custom Login:
           - auth/onboard/vue/custom-ui/index.md
           - Passwordless: auth/onboard/vue/custom-ui/build-pwdless-auth.md
-          - Social OAuth Providers:
+          - Social Login Providers:
             - auth/onboard/vue/custom-ui/build-social/index.md
             - Discord: auth/onboard/vue/custom-ui/build-social/discord-oauth.md
             - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
@@ -492,7 +495,7 @@ nav:
         - Custom Login: 
           - auth/onboard/react-nextjs/custom-ui/index.md
           - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
-          - Social OAuth Providers:
+          - Social Login Providers:
             - auth/onboard/react-nextjs/custom-ui/build-social/index.md
             - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
             - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
@@ -668,7 +671,7 @@ nav:
       - Authentication: concepts/authtype/arcanaauth.md
       - Auth Types:
         - concepts/authtype/index.md
-        - Social OAuth Providers: concepts/authtype/socialauth.md
+        - Social Login Providers: concepts/authtype/socialauth.md
         - IAM Providers: concepts/authtype/customauth.md
         - Passwordless: concepts/authtype/pwdless.md
       - Usage & Billing: concepts/billing.md
