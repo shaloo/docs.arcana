@@ -110,11 +110,7 @@ toc_depth: 2
 
 ??? an-faq "How does the {{config.extra.arcana.sdk_name}} ensure that the key shares are fetched by the correct user only?"
 
-<<<<<<< HEAD
-      A user can log in only after the social OAuth provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other-identifiers with {{config.extra.arcana.product_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
-=======
       A user can log in only after the social login provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other identifiers with {{config.extra.arcana.product_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
->>>>>>> dev
 
 ??? an-faq "Can a malicious entity reconstruct the user's private key if they get all the requisite key shares?"
 
@@ -122,16 +118,7 @@ toc_depth: 2
       
       One of the methods is MFA. When the MFA feature is enabled, it further strengthens the security by using multiple factors to generate the private key besides the key shares. A local share is created for the user at the first login that lives on the user's device. This local key component stored on the user's device is required to get the actual private key. If a user changes the device, they are validated via PIN setup during MFA or security answers before the local share is re-created on the new device.
       
-<<<<<<< HEAD
-      Irrespective of whether MFA is enabled or not, the reconstruction of private key happens only after ensuring that:
-
-      * user is authenticated through one of the configured social OAuth providers,
-      * user is verified by DKG before sharing the key shares. 
-      
-      The verification token ID changes for every user session so a malicious entity cannot reuse it. Also note that the same set of key shares is not returned for every user session by the DKG nodes. Only a random subset of shares are needed to construct the private key. 
-=======
       Irrespective of whether MFA is enabled or not, the reconstruction of the private key happens only after ensuring that the user is:
->>>>>>> dev
 
       * authenticated through one of the configured social login providers,
       * verified by DKG before sharing the key shares. 
