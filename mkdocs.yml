@@ -7,6 +7,7 @@ site_name: '📖 Documentation'
 #site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 site_url: !ENV [DOCS_SITE_URL,"https://arcana-docs-pre-release.netlify.app"]
 
+
 # Check for broken links, etc.
 strict: true 
 
@@ -83,6 +84,8 @@ extra_css:
   - stylesheets/custom.css
 
 extra:
+  # Home page default is the landing
+  homepage: https://arcana.network
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
@@ -127,6 +130,9 @@ extra:
       iam_providers: Identity Access Managers
   # Allow top left logo to browse website
   #homepage: https://arcana.network
+    dashboard_sections:
+      social_auth: Social Auth
+      iam_providers: Identity Access Managers
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/arcananetwork
