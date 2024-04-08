@@ -8,6 +8,7 @@
         <div class="hr">
             <h2 style="text-align: left">Try Auth!</h2>
         </div>
+        <div><p style="color: var(--md-an-blue-color); font-size: 0.75rem"><i>If you don't see anything below, reload the page.</i></p></div>
     </div>
     
     <div style="margin-top: 1rem; margin-bottom: 1rem"id="authsandpack"></div>
@@ -155,8 +156,9 @@
                         //"https://cdn.jsdelivr.net/npm/@arcana/scw",
                     ],
                     editorHeight: '95vh',
+                    autoRun: true,
                     autoReload: true,
-                    initMode: "user-visible",
+                    initMode: "immediate", //"user-visible",
                     resizablePanels: true,
                 },
                 files,
@@ -182,7 +184,9 @@
         .catch(error => {
             console.error('Error loading sample files:', error);
         });
-
+    
   </script>
+
+  {% include "partials/content.html" %}
 
 {% endblock %}
