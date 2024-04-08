@@ -1,42 +1,13 @@
-
-{% extends "base.html" %}
-
-{% block content %}
-
-<section class="md-grid md-typeset">
-    <div class="top-hr">
-        <div class="hr">
-            <h2 style="text-align: left">Try Auth!</h2>
-        </div>
-        <div><p style="color: var(--md-an-blue-color); font-size: 0.75rem"><i>If you don't see anything below, reload the page.</i></p></div>
-    </div>
-    
-    <div style="margin-top: 1rem; margin-bottom: 1rem" id="authsandpack"></div>
-    
-</section>
-
-{% endblock %}
-
-{% block scripts %}
-  <!-- Add scripts that need to run before here -->
-  {{ super() }}
-
-<!--
-  Sandpack PoC
-  -->
-  <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@18.2.0",
-        "react-dom": "https://esm.sh/react-dom@18.2.0",
-        "react-dom/": "https://esm.sh/react-dom@18.2.0/",
-        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0"
-      }
+{
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom": "https://esm.sh/react-dom@18.2.0",
+      "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+      "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0"
     }
-  </script>
+  }
 
-  <script type="module">
-    import React from "react";
+  import React from "react";
     import { createRoot } from "react-dom/client";
     import { Sandpack } from "@codesandbox/sandpack-react";
 
@@ -52,24 +23,6 @@
     if (startCurrentTheme === "slate") {
         themeType = "dark";
     }
-    //const {sPtheme, setsPTheme} = useState('light'); 
-    /*
-    const watchMedia = window.matchMedia("(data-md-color-scheme: "slate")");
-    let themetype;
-
-    function getTheme(e) {
-        if (e.matches)
-            themetype = "dark";
-        else
-            themetype = "default";
-    }
-    watchMedia.addEventListener("change", getTheme);
-    */
-
-    /*
-    const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const themetype = prefersDarkMode ? "dark" : "light";
-    */
 
     //Try Observer method
 
@@ -105,14 +58,6 @@
 
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
-
-    /*
-    window.onbeforeunload = function(){
-        // Later, you can stop observing
-        observer.disconnect();
-        return 'The observer is now disconnected!';
-    };
-    */
 
     function fetchAndStoreFiles(fileUrls, targetObject) {
         const filePromises = fileUrls.map(url => {
@@ -150,7 +95,6 @@
                     showConsole: true,
                     showConsoleButton: true,
                     externalResources: [
-                        "https://cdn.jsdelivr.net/npm/@arcana/auth",
                         "https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js",
                         "https://unpkg.com/@arcana/scw@0.0.30/dist/standalone/scw.umd.js",
                         //"https://cdn.jsdelivr.net/npm/@arcana/scw",
@@ -168,23 +112,18 @@
         sandpackInstance.render(sandpackComponent);
     }
 
-    const fileUrls = [
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.html',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.js',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/styles.css',
-    //    'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/package.json',
+    const gaslessFileUrls = [
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.html',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.js',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/styles.css',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/myerc20.js',
     ];
-//../sandpack/auth/index.html
-    const files = {};
-    fetchAndStoreFiles(fileUrls, files)
-        .then(() => {
-            console.log('Sandpack files:', files);
-            renderSandpack('vanilla', themeType, files, authsandpack);
-        })
-        .catch(error => {
-            console.error('Error loading sample files:', error);
-        });
-    
-  </script>
 
-{% endblock %}
+    const glFiles = {};
+    fetchAndStoreFiles(gaslessFileUrls, glFiles).then(() => {
+            console.log('Gasless Sandpack files:', glFiles);
+            renderSandpack('vanilla', themeType, glFiles, gaslesssandpack);
+    }).catch(error => {
+            console.error('Error loading gasless sample files:', error);
+    });  
+
