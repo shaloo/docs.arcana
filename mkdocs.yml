@@ -16,7 +16,7 @@ use_directory_urls: true
 
 copyright: Copyright &copy; 2024 Arcana Network
 repo_url: https://github.com/arcana-network/
-repo_name: arcana-network/
+repo_name: arcana-network
 edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
 # theme customizations
@@ -76,6 +76,7 @@ theme:
 
 extra_javascript:
   - javascripts/mathjax.js
+  - javascripts/common.js
   # - javascripts/andropdown.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -85,7 +86,7 @@ extra_css:
 
 extra:
   # Home page default is the landing
-  homepage: https://arcana.network
+  # homepage: https://arcana.network
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
@@ -632,7 +633,6 @@ nav:
         - tutorials/try-now/index.md
         - Auth: tutorials/try-now/auth-try-now.md
         - Gasless: tutorials/try-now/gl-try-now.md
-        - New GL: tutorials/try-now/new-try-now-gl.md
       - Integration Examples:
         - tutorials/code-samples/index.md
         - Web:

@@ -156,7 +156,6 @@
                         //"https://cdn.jsdelivr.net/npm/@arcana/scw",
                     ],
                     editorHeight: '95vh',
-                    autoRun: true,
                     autoReload: true,
                     initMode: "immediate", //"user-visible",
                     resizablePanels: true,
@@ -178,7 +177,6 @@
         .then(() => {
             console.log('Sandpack files:', files);
             renderSandpack('vanilla', themeType, files, authsandpack);
-            location.reload();
         })
         .catch(error => {
             console.error('Error loading sample files:', error);
