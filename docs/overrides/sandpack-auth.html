@@ -172,19 +172,28 @@
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.html',
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.js',
         'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/styles.css',
-    //    'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/package.json',
     ];
-//../sandpack/auth/index.html
     const files = {};
     fetchAndStoreFiles(fileUrls, files)
         .then(() => {
             console.log('Sandpack files:', files);
             renderSandpack('vanilla', themeType, files, authsandpack);
+            location.reload();
         })
         .catch(error => {
             console.error('Error loading sample files:', error);
         });
-    
   </script>
 
+  <!-- Chatbase bot script -->
+  <script>
+    window.chatbaseConfig = {
+      chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
+    }
+  </script>
+  <script
+    src="https://www.chatbase.co/embed.min.js"
+    id="Fbi0FsddfX1zz_DWM5jwJ"
+    defer>
+  </script>
 {% endblock %}
