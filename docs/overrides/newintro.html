@@ -128,9 +128,8 @@
         margin: 1rem;
     }
 
-    .tx-hero-card, .tx-hero-card-auth, .tx-hero-card-gl{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+    .tx-hero-card, .tx-hero-card-auth, .tx-hero-card-gl {
+        margin: 1rem;
         box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);
         border-radius: 0.6rem;
         display: flex;
@@ -140,12 +139,12 @@
         font-size: 1.25rem;
     }
 
-    .tx-hero-card-auth:hover{
+    .tx-hero-content-auth:hover{
         background-color: var(--md-an-blue-color);
         opacity: 0.25;
     }
 
-    .tx-hero-card-gl:hover{
+    .tx-hero-content-gl:hover{
         background-color: var(--md-an-green-color);
         opacity: 0.25;
     }
@@ -160,9 +159,10 @@
         justify-content: center;
     }
 
-    .tx-hero-content {
+    .tx-hero-content, .tx-hero-content-auth, .tx-hero-content-gl {
         text-align: left;
-        margin: 1rem;
+        margin: 1.5rem;
+        padding: 1.5rem;
         color: var(--md-primary-fg-color);
         border-radius: 0.6rem;
     }
@@ -649,14 +649,15 @@
     <div class="tx-hero-card tx-hero-card-auth">
         <a href="{{ config.site_url }}/quick-start/wagmi-quick-start/">
             <div class="tx-hero-header tx-hero-header-auth">
-                <img style="padding: 1rem" src="./img/auth_logo.png" width="35%" height: auto/>
+                <img style="padding: 1rem" src="./img/auth_logo.png" width="28%" height: auto/>
                 <p style="font-family: system-ui; color: var(--md-an-blue-color); font-size: 2.5rem; font-weight:300">auth</p>
             </div>
-            <div class="tx-hero-content">
-                <p style="text-align: center;font-size: 1.5rem;">Seamless Wallet Integration</p>
-                <p style="text-align: center;padding: 1rem;">Onboard users with social login (Google, Twitter, Twitch, Discord, Github, Steam or Email), IAM providers (Firebase, Cognito) or custom OAuth. Enable authenticated users to instantly access the embedded, non-custodial, in-app Arcana wallet and sign transactions on any EVM chain.</p>
-            </div>
         </a>
+            <div class="tx-hero-conten tx-hero-content-auth">
+                <p style="text-align: center;font-size: 2rem; font-weight: 500;">Seamless</p>
+                <p style="text-align: center;font-size: 1.5rem;">Wallet Integration</p>
+                <p style="text-align: center; font-size: 1rem;">Onboard users with social login (Google, Twitter, Twitch, Discord, Github, Steam or Email), IAM providers (Firebase, Cognito) or custom OAuth. Enable instant access to a non-custodial, in-app Arcana wallet, and sign transactions on any EVM chain.</p>
+            </div>
     </div>
     <div class="tx-hero-card tx-hero-card-gl">
         <a href="{{ config.site_url }}/quick-start/gasless-standalone-quick-start/">
@@ -664,17 +665,18 @@
                 <img style="padding: 1rem" src="./img/gasless_logo.svg" width="35%" height: auto/>
                 <p style="font-family: system-ui; color: var(--md-an-green-color); font-size: 2.5rem;font-weight:300">gasless</p>
             </div>
-            <div class="tx-hero-content">
-                <p style="text-align: center; font-size: 1.5rem;">Frictionless Web3 Transactions</p>
-                <p style="text-align: center;padding: 1rem;">Extend Arcana wallet gasless feature for third-party wallets. Simply set up gas tanks, deposit funds to sponsor gas fees for app users, whitelist app operations and you are ready to go! Increase conversion and lower the user barrier to Web3 entry.</p>
-            </div>
         </a>
+            <div class="tx-hero-content tx-hero-content-gl">
+                <p style="text-align: center; font-size: 2rem; font-weight: 500;">Frictionless</p>
+                <p style="text-align: center; font-size: 1.5rem;">Web3 Transactions</p>
+                <p style="text-align: center; font-size: 1rem;">Extend Arcana wallet gasless feature for third-party wallets. Simply set up gas tanks, deposit funds to sponsor gas fees for app users, whitelist app operations and you are ready to go! Increase conversion and lower the user barrier to Web3 entry.</p>
+            </div>
     </div>
 </div>
 
-<div class="tx-try-now-container">
-    <a href="{{ config.site_url }}/auth/auth-try-now/"><div class="tx-try-now-button-blue a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3></div></a>
-    <a href="{{ config.site_url }}/gasless/gl-try-now/"><div class="tx-try-now-button-green a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3></div></a>
+<div class="tx-hero-container">
+    <div class="tx-hero-content"><a href="{{ config.site_url }}/auth/auth-try-now/"><div class="tx-try-now-button-blue a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3></div></a></div>
+    <div class="tx-hero-content"><a href="{{ config.site_url }}/gasless/gl-try-now/"><div class="tx-try-now-button-green a-link-items"><h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3></div></a></div>
 </div>
 
 </section>
