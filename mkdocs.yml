@@ -534,6 +534,7 @@ nav:
       - MultiversX: auth/web3-ops/mvx/index.md
       - Unity: auth/web3-ops/unity-wallet-ops.md
     - Event Handling: auth/handle-provider-events.md
+    - Try Now!: auth/auth-try-now.md
   - Gasless SDK: 
     - gasless/index.md
     - Register App: setup/config-gasless/register-app.md
@@ -541,6 +542,7 @@ nav:
     - Install: gasless/gasless-install.md
     - Integrate App: gasless/gasless-integrate.md
     - Transact: gasless/gasless-transact.md
+    - Try Now!: gasless/gl-try-now.md
   - Deploy App: 
     - deploy/index.md
     - Testnet/Mainnet: deploy/deploy-app.md
@@ -629,10 +631,6 @@ nav:
     - learn/index.md
     - Tutorials:
       - tutorials/index.md
-      - Try Now:
-        - tutorials/try-now/index.md
-        - Auth: tutorials/try-now/auth-try-now.md
-        - Gasless: tutorials/try-now/gl-try-now.md
       - Integration Examples:
         - tutorials/code-samples/index.md
         - Web:
