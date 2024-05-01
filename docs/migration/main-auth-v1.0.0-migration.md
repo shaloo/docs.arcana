@@ -18,7 +18,7 @@ When you migrate from using the {{config.extra.arcana.sdk_name}}  v0.3.0 to the 
 
 The following section lists changes between {{config.extra.arcana.sdk_name}} v0.3.0 and v1.0.0. 
 
-!!! caution 
+!!! an-caution 
 
       If you are using {{config.extra.arcana.sdk_name}} v0.2.2 or older, please see [[migration-guide-v0.3.0|How to migrate to {{config.extra.arcana.sdk_name}} v0.3.0]].
 
@@ -47,8 +47,8 @@ Earlier, by default, each registered application was associated with a 'Testnet'
 
 ### {{config.extra.arcana.sdk_name}} 
 
-<img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50" />
-<img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="50" />
 
 The {{config.extra.arcana.sdk_name}} v1.0.0 supports deploying apps on the {{config.extra.arcana.company_name}}  Mainnet. As there are breaking changes in the App database schema, you need to re-register your apps using the {{config.extra.arcana.dashboard_name}} and obtain a new **{{config.extra.arcana.app_address}}** before you can integrate the app with the {{config.extra.arcana.sdk_name}} .  This is required irrespective of whether you chose to deploy your app on the {{config.extra.arcana.company_name}}  Testnet or the Mainnet.
 
@@ -69,7 +69,7 @@ If you wish to deploy your app on {{config.extra.arcana.company_name}} Testnet, 
 
 2. **Mainnet Configuration**: To deploy your app on the {{config.extra.arcana.company_name}}  Mainnet, you must first create a 'Mainnet' configuration profile using the {{config.extra.arcana.dashboard_name}}. See instructions [[dashboard-user-guide#example-new-mainnet-authprovider| here]]. Once you have the 'Mainnet' configuration profile ready, copy the new **{{config.extra.arcana.app_address}}** assigned to the 'Mainnet' configuration profile. This will be required during {{config.extra.arcana.sdk_name}}  integration later. At the time of 'Mainnet' profile creation, you need to specify whether you would like to use the **App-specific Keys** (default) or use the **Global Keys** feature for your app. To enable the global keys feature, developers must submit a verification form and get approval. Wait to onboard users until you receive a response to your verification request. Otherwise, the wallet address assigned to your app users may change after the **Global Keys** feature takes effect. If you do not choose **Global Keys**, your 'Mainnet' profile is configured to use **App-specific** keys by default.  What this means is that your app users will see different wallet addresses across different apps in the Arcana ecosystem. For details, see [[concept-keyspace-type|Global Keys]].
 
-    !!! danger "Update Redirect URI for Mainnet"
+    !!! an-danger "Update Redirect URI for Mainnet"
   
           You must update the OAuth redirect URI values for all the social providers configured for your 'Mainnet' profile. Use the respective social provider console to update callback URL values for Mainnet. Simply copy the new **redirect URI** value from the application's 'Mainnet' configuration settings dashboard page and add it to the list of redirect URIs setup in the OAuth configuration settings for your provider.  You would have earlier added the redirect URI for the 'Testnet' configuration profile, now simply update the 'Mainnet' URI too. That's all.
 
@@ -83,9 +83,12 @@ Register your app using the {{config.extra.arcana.dashboard_name}}. By default, 
    
 {% include "./code-snippets/init_auth_testnet.md" %}
    
-Once a user authenticates, the following wallet UI is displayed when the app is deployed on the {{config.extra.arcana.company_name}}  Testnet.
-      
-<img alt="Testnet Wallet" src="/img/an_migration_testnet_wallet.png" width="40%"/>
+Once a user authenticates, the following wallet UI is displayed when the app is deployed on the {{config.extra.arcana.company_name}} Testnet.
+
+<figure markdown="span">
+  <img alt="Testnet Wallet" src="{{config.extra.arcana.img_dir}}/an_migration_testnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/>
+  <figcaption>Testnet Wallet</figcaption>
+</figure>
   
 ### Example: Deploy on Mainnet
 
@@ -97,11 +100,14 @@ To bring up your app on {{config.extra.arcana.company_name}}  Mainnet, in your i
    
 Once a user authenticates, the following wallet UI is displayed when the app is deployed on the Arcana Mainnet.
    
-<img alt="Mainnet Wallet" src="/img/an_migration_mainnet_wallet.png" width="40%"/>
+<figure markdown="span">
+  <img alt="Mainnet Wallet" src="{{config.extra.arcana.img_dir}}/an_migration_mainnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/>
+  <figcaption>Mainnet Wallet</figcaption>
+</figure>
 
 ## What's New?
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="50" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="50" />
 
 Besides Testnet/Mainnet and Global Keyspace features, the {{config.extra.arcana.sdk_name}} v1.0.0 uses a new, improved asynchronous distributed key generation (ADKG) subsystem. In addition to the DKG nodes operated by Arcana, two nodes are run and managed by Comdex and LugaNodes. 
 

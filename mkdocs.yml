@@ -1,12 +1,10 @@
 site_name: '📖 Documentation'
 
 # For dev
-#site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
 #site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
-site_url: !ENV [DOCS_SITE_URL,"https://arcana-docs-pre-release.netlify.app"]
-
 
 # Check for broken links, etc.
 strict: true 
@@ -15,9 +13,9 @@ strict: true
 use_directory_urls: true
 
 copyright: Copyright &copy; 2024 Arcana Network
-repo_url: https://github.com/arcana-network/
-repo_name: arcana-network/
-edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
+#repo_url: https://github.com/arcana-network/
+#repo_name: arcana-network
+#edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
 # theme customizations
 
@@ -25,17 +23,19 @@ theme:
   name: material
   language: en
   #logo: img/arcana-logo-white.svg
-  logo: img/arcana-logo-pink.png
+  logo: imgnew/arcana-logo-pink.png
   icon:
     repo: fontawesome/brands/git-alt
     edit: material/pencil
     view: material/eye
-  favicon: img/favicon-pink.png
+    admonition:
+      note: fontawesome/solid/note-sticky
+  favicon: /imgnew/favicon-pink.webp
   custom_dir: docs/overrides
   features:
     - navigation.instant
     - navigation.tracking
-    #- navigation.tabs
+    - navigation.tabs
     - navigation.tabs.sticky
     - navigation.prune
     - navigation.sections
@@ -76,6 +76,7 @@ theme:
 
 extra_javascript:
   - javascripts/mathjax.js
+  - javascripts/common.js
   # - javascripts/andropdown.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -85,7 +86,7 @@ extra_css:
 
 extra:
   # Home page default is the landing
-  homepage: https://arcana.network
+  # homepage: https://arcana.network
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
@@ -125,6 +126,10 @@ extra:
     mobile_react_native_sdk_pkg_name: auth-react-native
     gaming_sdk_pkg_name: arcana-auth-sdk
     exclude_content_tag: exclude
+    img_dir: /imgnew
+    img_png: webp
+    img_svg: webp
+    img_gif: gif
     dashboard_sections:
       social_auth: Social Auth
       iam_providers: Identity Access Managers
@@ -419,6 +424,7 @@ nav:
       - Manage Gasless: setup/configure-gasless.md
       - Solana Setup: setup/config-dApp-with-db-for-Solana.md
       - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
+      - Unity Setup: setup/config-dApp-with-db-for-Unity.md
     - Install: auth/sdk-installation.md
     - Integrate App:
       - auth/integrate/index.md
@@ -533,6 +539,7 @@ nav:
       - MultiversX: auth/web3-ops/mvx/index.md
       - Unity: auth/web3-ops/unity-wallet-ops.md
     - Event Handling: auth/handle-provider-events.md
+    - Try Now!: auth/auth-try-now.md
   - Gasless SDK: 
     - gasless/index.md
     - Register App: setup/config-gasless/register-app.md
@@ -540,6 +547,7 @@ nav:
     - Install: gasless/gasless-install.md
     - Integrate App: gasless/gasless-integrate.md
     - Transact: gasless/gasless-transact.md
+    - Try Now!: gasless/gl-try-now.md
   - Deploy App: 
     - deploy/index.md
     - Testnet/Mainnet: deploy/deploy-app.md
@@ -628,10 +636,6 @@ nav:
     - learn/index.md
     - Tutorials:
       - tutorials/index.md
-      - Try Now:
-        - tutorials/try-now/index.md
-        - Auth: tutorials/try-now/auth-try-now.md
-        - Gasless: tutorials/try-now/gl-try-now.md
       - Integration Examples:
         - tutorials/code-samples/index.md
         - Web:
@@ -680,7 +684,7 @@ nav:
       - Dashboard: concepts/dashboard.md
       - DKG:
         - concepts/dkg/index.md
-        - What is DKG?: concepts/dkg.md
+        - What is DKG?: concepts/what-is-dkg.md
         - How does DKG work?: concepts/how-dkg-works.md
         - What is ADKG?: concepts/adkg.md
         - How does ADKG work?: concepts/how-adkg-works.md

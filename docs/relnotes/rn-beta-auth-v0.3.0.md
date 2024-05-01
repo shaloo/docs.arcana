@@ -26,7 +26,7 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 ---
 
-<img src="/img/icon_new_light.png#only-light" alt="New icon" width="50" /><img src="/img/icon_new_dark.png#only-dark" alt="New icon" width="50" /><img src="/img/icons/i_an_authsdk_light.png#only-light" alt="Auth SDK icon" width="50"/><img src="/img/icons/i_an_authsdk_dark.png#only-dark" alt="Auth SDK icon" width="50" />
+<img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="50" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="50" /><img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="50"/><img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="50" />
 
 ### NFT Support
 
@@ -38,7 +38,10 @@ A new wallet tab is now available to manage and view details related to the NFTs
   
 Refer to the [[use-wallet-to-manage-nfts|documentation on managing NFT Assets]].
 
-<img src="/img/an_wallet_nft_asset_thumbnail.png" width="200"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_wallet_nft_asset_thumbnail.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc" alt="View NFT Assets"/>
+  <figcaption>View NFT Assets</figcaption>
+</figure>
 
 ### Combined notification UI
 
@@ -51,7 +54,10 @@ This release has a new UI for blockchain transaction notifications. This combine
 
 See the [[arcana-wallet-user-guide#view-transaction-summary-details|notifications tab]] for details.
 
-<img src="/img/an_wallet_combined_notify.png" width="200"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_wallet_combined_notify.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc" alt="Activity Tab"/>
+  <figcaption>Activity Tab</figcaption>
+</figure>
 
 #### Add Tokens Programmatically
 
@@ -71,7 +77,7 @@ See the [[arcana-wallet-user-guide#view-transaction-summary-details|notification
 
   - The logout issue related to the passwordless authentication has been fixed
 
-!!! tip
+!!! an-tip
 
       If you were using the {{config.extra.arcana.sdk_name}} v0.2.2 release or earlier, we highly recommend that you refer to the [[migration-guide-v0.3.0|{{config.extra.arcana.product_name}} 0.3.0 Migration Guide]].
 

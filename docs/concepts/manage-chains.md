@@ -22,7 +22,7 @@ There are multiple ways to add and automatically switch to newer chains:
 
 2. **`chainConfig` parameter**: During app integration, use the `chainConfig` input parameter of the `AuthProvider` constructor to specify the active chain and a different RPC url (optional). 
 
-    !!! note "`chainConfig` setting"
+    !!! an-note "`chainConfig` setting"
     
           The `chainConfig` value overrides the active chain configuration setting specified in the dashboard if the chain corresponding to the value is present in the pre-configured list. If not, the dashboard setting is used to show the 'active' chain in the user's wallet.
 
@@ -32,26 +32,29 @@ There are multiple ways to add and automatically switch to newer chains:
 
 **App Users**
 
-1. Use the {{config.extra.arcana.wallet_name}} UI to add a new blockchain network. The newly added network becomes 'active' network in the wallet.
+1. Use the {{config.extra.arcana.wallet_name}} UI to add a new blockchain network. The newly added network becomes the 'active' network in the wallet.
 
 2. Use the {{config.extra.arcana.wallet_name}} UI dropdown to select a different chain as the 'active' network.
 
-!!! caution "User Settings: Not Persistent"
+!!! an-caution "User Settings: Not Persistent"
 
-      Note that any chain addition or changes to the 'active' chain selection made by the app users does not persist across user login sessions.  Only the chain management configurations specified by the developers persist across user logins.
+      Note that any chain addition or changes to the 'active' chain selection made by the app users don't persist across user login sessions.  Only the chain management configurations specified by the developers persist across user logins.
 
-<img src="/img/diagrams/d_concept_manage_chains.png#only-light" width="80%" height="80%"/>
-<img src="/img/diagrams/d_concept_manage_chains.png#only-dark" width="80%" height="80%"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_manage_chains.{{config.extra.arcana.img_png}}#only-light" alt="Manage Chains" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_manage_chains.{{config.extra.arcana.img_png}}#only-dark" alt="Manage Chains" class="an-screenshots width_85pc"/>
+  <figcaption>Manage Chains</figcaption>
+</figure>
 
 Once configured and the app is deployed, developers can reconfigure the list of chains displayed in the wallet UI. 
 
 {% include "./text-snippets/specify_default_chain_example.md" %}
 
-!!! caution "Switching Chains"
+!!! an-caution "Switching Chains"
 
       **EVM-compatible Chains**: 
       
-      In most cases, switching the 'active' chain displayed in the wallet won't affect user's wallet address. However, if users log into a blockchain network that is not EVM-compatible but supported by {{config.extra.arcana.product_name}}, a new set of keys is assigned for such chains and the user will see a different wallet address as compared to the EVM-compatible chain.
+      In most cases, switching the 'active' chain displayed in the wallet won't affect the user's wallet address. However, if users log into a blockchain network that is not EVM-compatible but supported by {{config.extra.arcana.product_name}}, a new set of keys is assigned for such chains and the user will see a different wallet address as compared to the EVM-compatible chain.
 
       **Global/App-specific Keys**
 

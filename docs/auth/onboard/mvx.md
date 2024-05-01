@@ -42,13 +42,16 @@ The `connect()` function will bring up the plug-and-play pop-up modal in the app
 
 The figure below shows the plug-and-play login UI screen for a test app. All the authentication providers configured by the developer are available as the onboarding options. The passwordless login option is enabled by default.
 
-![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
+<figure markdown="span">
+  ![Plug-and-Play Login UI]({{config.extra.arcana.img_dir}}/an_plug_n_play_auth.{{config.extra.arcana.img_png}}){.an-screenshots-noeffects .width_35pc }
+  <figcaption>Plug-and-Play Login UI</figcaption>
+</figure>
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
      {% include "./text-snippets/jwt_token.md" %}
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 
@@ -62,7 +65,7 @@ Alternatively, developers can use [[index-custom-ui-onboard-users|custom login U
 
 That is all! :material-party-popper:
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 

@@ -1,7 +1,15 @@
 
 {% extends "base.html" %}
 
-{{ super() }}
+<!---
+    Note: Mkdocs returns {{ config.site_url }} with a terminating '/' 
+-->
+{% block announce %}
+<p><span class="blink_me">Live on Mainnet! </span><a style="color: var(--md-primary-bg-color); font-size: 0.6rem;" href="{{ config.site_url }}relnotes/latest-auth-release-note/">{{ config.extra.arcana.sdk_name }} v{{ config.extra.arcana.latest_version }},</a><a style="color: var(--md-primary-bg-color);font-size: 0.6rem;" href="{{ config.site_url }}relnotes/latest-gasless-release-note/">{{ config.extra.arcana.gasless_sdk_name }} v{{ config.extra.arcana.latest_gasless_sdk_version }}</a></p>
+<!---
+    <i><a style="color: rgb(46, 45, 45);" href="https://docs.dev.arcana.network/">Try beta SDKs on Testnet.</a></i>
+-->
+{% endblock %}
 
 {% block content %}
 
@@ -11,6 +19,7 @@
         <div class="hr">
             <h2 style="text-align: left">Try Gasless!</h2>
         </div>
+        <div><p style="color: var(--md-an-blue-color); font-size: 0.75rem"><i>If you don't see anything below, reload the page.</i></p></div>
     </div>
     
     <div style="margin-top: 1rem; margin-bottom: 1rem" id="gaslesssandpack"></div>
@@ -22,9 +31,44 @@
   <!-- Add scripts that need to run before here -->
   {{ super() }}
 
+  <!---
+  <script type="module">
+    import { createRoot } from "https://esm.sh/react-dom@18.2.0/client";
+    import { /*reloadClick,*/ getTheme, setObserver, fetchAndStoreFiles, renderSandpack } from '{{ config.site_url }}/javascripts/common.js';
+
+    const gaslesssandpack = createRoot(document.getElementById("gaslesssandpack"));
+
+    const targetNode = document.body;
+    setObserver(targetNode);
+
+    const exRes = [
+        "https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js",
+        "https://unpkg.com/@arcana/scw@0.0.30/dist/standalone/scw.umd.js",
+    ];
+
+    const gaslessFileUrls = [
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.html',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/index.js',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/styles.css',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/gl/myerc20.js',
+    ];
+
+    console.log("Using theme", getTheme());
+    const glFiles = {};
+    fetchAndStoreFiles(gaslessFileUrls, glFiles).then(() => {
+            console.log('Gasless Sandpack files:', glFiles);
+            renderSandpack('vanilla', getTheme(), glFiles, exRes, gaslesssandpack);
+            //reloadClick();
+    }).catch(error => {
+            console.error('Error loading gasless sample files:', error);
+    });  
+  </script>
+-->
 <!--
   Sandpack PoC
   -->
+
+
   <script type="importmap">
     {
       "imports": {
@@ -157,7 +201,7 @@
                     ],
                     editorHeight: '95vh',
                     autoReload: true,
-                    initMode: "user-visible",
+                    initMode: "immediate", //"user-visible",
                     resizablePanels: true,
                 },
                 files,
@@ -183,7 +227,17 @@
         .catch(error => {
             console.error('Error loading gasless sample files:', error);
         });  
-
   </script>
 
+  <!-- Chatbase bot script -->
+  <script>
+    window.chatbaseConfig = {
+      chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
+    }
+  </script>
+  <script
+    src="https://www.chatbase.co/embed.min.js"
+    id="Fbi0FsddfX1zz_DWM5jwJ"
+    defer>
+  </script>
 {% endblock %}

@@ -12,7 +12,7 @@ arcana:
 
 In this guide, you will learn how {{page.meta.arcana.app_type}} Web3 apps can integrate with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) onboard users and allow authenticated users to perform Solana blockchain transactions using the {{config.extra.arcana.wallet_name}}.
 
-Developers can choose to onboard users by either using the built-in plug-and-play login UI provided by the {{config.extra.arcana.sdk_name}} or a build a custom login UI. Once a user onboards the app, they can instantly access the {{config.extra.arcana.wallet_name}} within the app context. Developers must choose and configure Solana chain through the {{config.extra.arcana.dashboard_name}} prior to integrating the app with the {{config.extra.arcana.sdk_name}}.
+Developers can choose to onboard users by either using the built-in plug-and-play login UI provided by the {{config.extra.arcana.sdk_name}} or build a custom login UI. Once a user onboards the app, they can instantly access the {{config.extra.arcana.wallet_name}} within the app context. Developers must choose and configure the Solana chain through the {{config.extra.arcana.dashboard_name}} prior to integrating the app with the {{config.extra.arcana.sdk_name}}.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Developers can choose to onboard users by either using the built-in plug-and-pla
 
 * **Make sure you configure the required Solana chains through the dashboard.** See [[configure-wallet-chains#non-evm-chains|how to set up Solana]] blockchain transactions through the {{config.extra.arcana.wallet_name}} in apps that are integrated with the {{config.extra.arcana.sdk_name}}.
 
-!!! caution "Non-EVM Chains"
+!!! an-caution "Non-EVM Chains"
 
       The decision to select Solana (non-EVM chain) is made at the time of registering the app by creating an app entry through the dashboard. Once selected, it cannot be reconfigured or switched to any other non-EVM chain. However, the default chain can be changed later to say Solana Testnet or Solana Dev.
 
@@ -44,13 +44,16 @@ The `connect()` function will bring up the plug-and-play pop-up modal in the app
 
 The figure below shows the plug-and-play login UI screen for a test app. All the authentication providers configured by the developer are available as the onboarding options. The passwordless login option is enabled by default.
 
-![Plug-and-Play Login UI](/img/an_plug_n_play_auth.png){.an-screenshots-noeffects width="30%"}
+<figure markdown="span">
+  ![Plug-and-Play Login UI]({{config.extra.arcana.img_dir}}/an_plug_n_play_auth.{{config.extra.arcana.img_png}}){.an-screenshots-noeffects .width_35pc }
+  <figcaption>Plug-and-Play Login UI</figcaption>
+</figure>
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
      {% include "./text-snippets/jwt_token.md" %}
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 
@@ -66,7 +69,7 @@ That is all! :material-party-popper:
 
 When a user logs into the app that is registered and configured for using Solana, a non-EVM chain, they can instantly perform Solana blockchain operations through the {{config.extra.arcana.wallet_name}}.
 
-!!! warning "No plug-and-play support for Firebase authentication."
+!!! an-warning "No plug-and-play support for Firebase authentication."
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 

@@ -14,15 +14,6 @@ arcana:
 
 Web3 apps using {{page.meta.arcana.app_type}} can easily onboard users via social login by integrating with the {{config.extra.arcana.wagmi_sdk_name}}!
 
-<!----
-## Overview
-
-To implement {{config.extra.arcana.product_name}} in a {{page.meta.arcana.app_type}} app, start by registering your app and configuring usage settings through {{config.extra.arcana.dashboard_name}}. After that, install {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.wagmi_sdk_name}}, integrate the app, and initialize the `AuthProvider`. You'll need to add code to create an `ArcanaConnector` and specify the `AuthProvider`. Use the appropriate configuration in the `ArcanaConnector` constructor and specify the type of user onboarding. Finally, add code to enable authenticated users to sign blockchain transactions and deploy your app on the Testnet or Mainnet.
-
-<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="uth Usage Overview"/>
-<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
--->
-
 ## Prerequisites
 
 * RainbowKit [v1.3.0](https://github.com/rainbow-me/rainbowkit/releases/tag/%40rainbow-me%2Frainbowkit%401.3.0) or higher
@@ -40,7 +31,7 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
   
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 
@@ -64,7 +55,7 @@ Next, import the `ArcanaConnector` from the `{{config.extra.arcana.wagmi_sdk_pkg
 
 {% include "./code-snippets/auth_wagmi_create_client_pnp.md" %}
 
-!!! tip "`createClient` vs. `creatConfig` usage"
+!!! an-tip "`createClient` vs. `creatConfig` usage"
 
       See [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 
@@ -86,7 +77,7 @@ Use `WagmiConfig` and `RainbowKitProvider` components to bring up the built-in l
 
 {% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
-!!! tip "Arcana JWT Token"
+!!! an-tip "Arcana JWT Token"
 
       {% include "./text-snippets/jwt_token.md" %}
 
@@ -104,7 +95,7 @@ Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.s
 
 ==}
 
-!!! tip "Wagmi `createClient` and `configClient`"
+!!! an-tip "Wagmi `createClient` and `configClient`"
 
       For more details on the `createClient` and `configClient` functions of the Wagmi package, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
 

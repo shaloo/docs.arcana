@@ -18,7 +18,7 @@ In this guide, you will learn how to onboard users in Web3-React apps. It shows 
 
 * **Set up Authentication Providers**: Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
 
-    !!! tip "Configure Authentication Providers"
+    !!! an-tip "Configure Authentication Providers"
 
           You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
 
@@ -44,7 +44,7 @@ Next, call `initializeConnector` from the `web3-react/core` library and instanti
 
 {% include "./code-snippets/auth_web3_react_configure_pnp.md" %}
 
-!!! note "Compact Mode"
+!!! an-note "Compact Mode"
 
       While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
 
@@ -58,13 +58,16 @@ Now, you are all set to onboard users in the Web3-React app using the plug-and-p
 
 {% include "./code-snippets/auth_web3_react_homepage.md" %}
 
-![Web3-React App integrated with the Arcana Auth](/img/web3_react_example_an_wallet.png){.an-screenshot-noeffects}
+<figure markdown="span">
+  ![Web3-React App integrated with the Arcana Auth]({{config.extra.arcana.img_dir}}/web3_react_example_an_wallet.{{config.extra.arcana.img_png}}){ .an-screenshot-noeffects .width_50pc }
+  <figcaption>Web3-React App integrated with the Arcana Auth</figcaption>
+</figure>
 
 That is all! :material-party-popper:
 
 The Web3-React app can now onboard users using the plug-and-play login UI built-in the {{config.extra.arcana.sdk_name}}. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 
-!!! tip "Example: Sample Web3-React App"
+!!! an-tip "Example: Sample Web3-React App"
 
       See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example) for details.
       

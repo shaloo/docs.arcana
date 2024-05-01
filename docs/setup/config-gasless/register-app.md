@@ -26,13 +26,17 @@ In this tutorial, you will learn how to register a Web3 app and get a unique cli
 
 That is all! 🎉
 
-!!! info "Save {{config.extra.arcana.app_address}}"
+!!! an-info "Save {{config.extra.arcana.app_address}}"
 
     A unique **{{config.extra.arcana.app_address}}** assigned to the registered apps is displayed on the top right of the dashboard screen. 
     
     Use it to integrate the app with the {{config.extra.arcana.company_name}} SDKs.
 
-    ![App unique identifier](/img/an_db_app_address.png){.an-screenshots}
+    <figure markdown="span">
+      ![Arcana Client ID for Registered App]({{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+      <figcaption>Arcana Client ID for Registered App </figcaption>
+    </figure>
+    
 
 ## What's next?
 

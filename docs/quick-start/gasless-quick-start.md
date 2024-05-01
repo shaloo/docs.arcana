@@ -12,28 +12,9 @@ arcana:
 
 Web3 apps can easily onboard users via social login and enable gasless transactions through {{config.extra.arcana.wallet_name}} by integrating with the {{config.extra.arcana.sdk_name}}! 
 
-!!! tip "Third-party wallets"
+!!! an-tip "Third-party wallets"
 
       Developers can enable gasless transactions in third-party wallets by integrating the app with the {{config.extra.arcana.gasless_sdk_name}}. See [[gasless-standalone-quick-start|Gasless (Third-Party wallets) Quick Start Guide]] for details.
-
-<!---
-## Overview
-
-Web3 app developers can easily enable zero gas fees for app users by using {{config.extra.arcana.company_name}} SDKs. The process may vary depending on the app use case:
-
-### Use cases
-
-1. **Only {{config.extra.arcana.wallet_name}} Apps**: This use case refers to apps that need to enable gasless transactions **only** with the embedded, non-custodial {{config.extra.arcana.wallet_name}}.
-2. **Multi-wallet Apps**: Multi-wallet apps are those that support {{config.extra.arcana.wallet_name}} and third-party browser-based wallets as well. They need to enable gasless transactions in both, the {{config.extra.arcana.wallet_name}} and any third-party browser-based wallet. 
-3. **Only Third-party Wallet Apps**: This use case refers to apps that only need to enable gasless transactions for other third-party, browser-based wallets. Such apps do not require any user onboarding functionality or the embedded, non-custodial {{config.extra.arcana.wallet_name}} offered by the {{config.extra.arcana.sdk_name}}.
-
-In every use case above, the developers must first use the  {{config.extra.arcana.dashboard_name}} and register the app, obtain a unique identifier for the app and configure gasless settings. Then they need to install one or more {{config.extra.arcana.company_name}} SDKs and integrate with them using the unique app identifier.
-
-<img class="an-screenshots" src="/img/an_auth_usage_overview_light.png#only-light" alt="Auth Usage Overview"/>
-<img class="an-screenshots" src="/img/an_auth_usage_overview_dark.png#only-dark" alt="Auth Usage Overview"/>
-
-In this guide, we will cover only the **first two use cases**. The third use case requires {{config.extra.arcana.gasless_sdk_name}} only. For details, see [[gasless-standalone-quick-start|how to enable gasless transactions in apps that use only third-party browser-based wallets]].
--->
 
 ## 1. Register App
 
@@ -49,7 +30,7 @@ Install the {{config.extra.arcana.sdk_name}} and use the built-in gasless featur
 
 {% include "./code-snippets/auth_install.md" %}
 
-!!! note "Use latest SDKs"
+!!! an-note "Use latest SDKs"
 
       {% include "./text-snippets/warn_latest_sdk_version.md" %}
 

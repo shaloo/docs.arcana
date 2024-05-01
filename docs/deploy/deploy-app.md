@@ -10,11 +10,11 @@ arcana:
 
 In this guide, you will learn how developers can deploy apps integrated with the {{config.extra.arcana.sdk_name}} and deploy it on the Arcana Testnet/Mainnet. 
 
-!!! caution "Already using {{config.extra.arcana.sdk_name}}?"
+!!! an-caution "Already using {{config.extra.arcana.sdk_name}}?"
 
       Before deploying on the Mainnet, make sure that the app is integrated with the latest version of the SDK, v{{config.extra.arcana.latest_version}}, and tested on Arcana Testnet. If not,  use the appropriate [[index-migration-guides|Migration Guide]] to upgrade. 
 
-Developers can choose to configure and deploy one instance of the app under active development on the Testnet. Once it is validated and ready for onboarding users, they can deploy it on Mainnet. It is also possible to simultaneously deploy one instance on Testnet and a stable one on the Mainnet.
+Developers can choose to configure and deploy one instance of the app under active development on the Testnet. Once it is validated and ready for onboarding users, they can deploy it on Mainnet. It is also possible to simultaneously deploy one instance on the Testnet and a stable one on the Mainnet.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Developers can choose to configure and deploy one instance of the app under acti
 
 * Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi, RainbowKit or Web3-React wallet connector frameworks. Follow the instructions in the respective [[index-integrate|integration guides]] and choose carefully depending on the app type. 
 
-    !!! caution "Before Installing the SDK"
+    !!! an-caution "Before Installing the SDK"
 
           Integrating an app may require installing the {{config.extra.arcana.sdk_name}} via say only the Arcana `{{config.extra.arcana.auth_sdk_pkg_name}}` package, both `{{config.extra.arcana.auth_sdk_pkg_name}}` and app type package such as `{{config.extra.arcana.react_sdk_pkg_name}}`, `{{config.extra.arcana.wagmi_sdk_pkg_name}}` or `{{config.extra.arcana.web3_react_sdk_pkg_name}}`. After installing, the developer must instantiate the appropriate `AuthProvider`, the React component `ProvideAuth`, or the Wagmi/Web3-React `ArcanaConnector`, as the case may be.
 
@@ -38,7 +38,10 @@ For example, the code below uses the {{config.extra.arcana.app_address}} assigne
 
 {% include "./code-snippets/init_auth_testnet.md" %}
 
-<img alt="Testnet client Id" src="/img/an_deploy_testnet_dashboard.png" width="85%"/>
+<figure markdown="span">
+  <img alt="Testnet Client ID" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+  <figcaption>Testnet Client ID</figcaption>
+</figure>
 
 Next, call the `init` function to initialize the newly created `AuthProvider` before calling any other SDK functions.  
 
@@ -50,19 +53,25 @@ If you have integrated the app using the Testnet {{config.extra.arcana.app_addre
 
 After registering the app and integrating it using the correct Testnet {{config.extra.arcana.app_address}}, you are all set to deploy and test your app on the Arcana Testnet. Simply Bring up the app. When users log in, the app will automatically use the Arcana Testnet. The wallet address assigned to authenticated the user will correspond to Arcana Testnet.
 
-<img alt="Testnet Wallet" src="/img/an_deploy_testnet_wallet.png" width="35%"/>  
+<figure markdown="span">
+  <img alt="Testnet Wallet Address" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots width_35pc"/>
+  <figcaption>Testnet Wallet Address</figcaption>
+</figure>
 
 ### Monitor Testnet Usage
 
 Visit the app dashboard screen in the {{config.extra.arcana.dashboard_name}} to view the 'Testnet' configuration profile and monitor Arcana Testnet usage. The figure below shows one new user for the test app.
 
-<img alt="Testnet App Identifier" src="/img/an_deploy_testnet_usage.png" width="70%"/>
+<figure markdown="span">
+  <img alt="Monitor Testnet Usage" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_usage.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+  <figcaption>Monitor Testnet Usage</figcaption>
+</figure>
 
 ## Configure Mainnet
 
 Before deploying the app on the Arcana Mainnet, make sure that there exists a 'Mainnet' configuration profile for the app. By default, when you register an app, only the 'Testnet' configuration profile is created. See [[dashboard-user-guide#manage-configurations|how to create the 'Mainnet' configuration profile]] section in the {{config.extra.arcana.dashboard_name}} User Guide.
 
-!!! tip "Check Mainnet Configuration Profile"
+!!! an-tip "Check Mainnet Configuration Profile"
 
       You can check if a 'Mainnet' configuration profile is already created for your app by visiting the **Manage Apps** screen on the {{config.extra.arcana.dashboard_name}}. Refer to the app card. Each card displays Testnet and Mainnet buttons. If the Mainnet button is disabled it means you have not created a 'Mainnet' profile for your app yet.
 
@@ -72,7 +81,10 @@ For example,
 
 {% include "./code-snippets/init_auth_mainnet.md" %}
 
-<img alt="Testnet client Id" src="/img/an_deploy_mainnet_dashboard.png" width="85%"/>
+<figure markdown="span">
+  <img alt="Mainnet Client ID" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+  <figcaption>Mainnet Client ID</figcaption>
+</figure>
 
 Next, call the `init` function to initialize the newly created `AuthProvider` before calling any other SDK functions.  
 
@@ -84,15 +96,21 @@ If you have integrated the app using the Mainnet {{config.extra.arcana.app_addre
 
 After registering the app, configuring it for the 'Mainnet' configuration profile, integrating the app with the {{config.extra.arcana.sdk_name}} by using the 'Mainnet' **{{config.extra.arcana.app_address}}**, and optionally adding code to onboard users, other business logic, your app is ready to be deployed on the Mainnet. Simply Bring up the app. When users log in, the app will automatically use the Arcana Mainnet. The wallet address assigned to authenticated the user will correspond to Arcana Mainnet.
       
-<img alt="Testnet Wallet" src="/img/an_deploy_mainnet_wallet.png" width="35%"/>  
+<figure markdown="span">
+  <img alt="Mainnet Wallet Address" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots width_35pc"/>
+  <figcaption>Mainnet Wallet Address</figcaption>
+</figure>  
 
 ### Monitor Mainnet Usage
 
 Visit the app dashboard screen to view the 'Mainnet' configuration profile and monitor Arcana Mainnet usage. Note that Arcana Mainnet usage is tracked in terms of MAU and billed. The figure below shows one new user for the test app deployed on Mainnet.
 
-<img alt="Mainnet App Usage" src="/img/an_deploy_mainnet_usage.png" width="70%"/>
+<figure markdown="span">
+  <img alt="Monitor Mainnet Usage" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_usage.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+  <figcaption>Monitor Mainnet Usage</figcaption>
+</figure>
 
-!!! caution "Different Wallet Address"
+!!! an-caution "Different Wallet Address"
 
       Note that the assigned keys/wallet addresses change across Testnet/Mainnet deployments. 
       
@@ -100,7 +118,7 @@ Visit the app dashboard screen to view the 'Mainnet' configuration profile and m
       
       In the case of apps using the 'Global Keys' feature, the user will see the same wallet address across apps integrated with the {{config.extra.arcana.product_name}} product on the Arcana Mainnet. However, even with 'Global Keys' enabled, users will see different keys/wallet addresses for the same app deployed on Testnet/Mainnet.
 
-That is all! :material-party-popper:
+That is all! :material-party-popper:{ .icon-color }
 
 ## See Also
 

@@ -9,20 +9,22 @@ arcana:
 # Support
 
 
-???+ abstract "Need answers?"
+???+ an-abstract "Need answers?"
 
       Use Arcabot for instant answers!
 
       Get instant answers to your queries by starting a conversation 💬 with `Arcabot`. Simply click the circular bot icon on the bottom right of this page. 
       
-???+ abstract "Email Us"
+???+ an-abstract "Email Us"
 
       Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
 
-???+ abstract "Meet Online"
+???+ an-abstract "Meet Online"
 
       Choose a convenient time slot and [set up a meeting/demo](https://calendly.com/arcana-network/arcana-demo-walkthrough) with the Arcana Team.
 
 ---
 
-![Support](/img/support.png)
+<!--- No caption for the following visual--->
+
+![Support]({{config.extra.arcana.img_dir}}/support.{{config.extra.arcana.img_png}})

@@ -14,7 +14,7 @@ Use the [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.networ
 
 ---
 
-This release of {{config.extra.arcana.gasless_sdk_name}} uses the latest version of third-party gasless provider ([Biconomy v3](https://docs.biconomy.io/3.0)).  
+This release of {{config.extra.arcana.gasless_sdk_name}} uses the latest version of the third-party gasless provider ([Biconomy v3](https://docs.biconomy.io/3.0)).  
 
 ## What has changed?
 

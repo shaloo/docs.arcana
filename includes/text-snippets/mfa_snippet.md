@@ -6,21 +6,24 @@ MFA enhances user verification, making it resilient even if an attacker gains ac
 
 ## How does MFA work?
 
-MFA is automatically enabled for all {{config.extra.arcana.sdk_name}} integrated apps, requiring no developer configuration. Users can choose to enable or disable MFA for their wallet.
+MFA is automatically enabled for all {{config.extra.arcana.sdk_name}} integrated apps, requiring no developer configuration. Users can choose to enable or disable MFA for their wallets.
 
 The figure below provides a high-level overview of the {{config.extra.arcana.company_name}} MFA in the user login process.
 
-![Concept MFA](/img/concept_mfa_light.png#only-light){.an-screenshots}
-![Concept MFA](/img/concept_mfa_dark.png#only-dark){.an-screenshots}
+<figure markdown="span">
+  ![Concept MFA]({{config.extra.arcana.img_dir}}/concept_mfa_light.{{config.extra.arcana.img_png}}#only-light){ .an-screenshots }
+  ![Concept MFA]({{config.extra.arcana.img_dir}}/concept_mfa_dark.{{config.extra.arcana.img_png}}#only-dark){ .an-screenshots }
+  <figcaption>MFA: Under the Hood</figcaption>
+</figure>
 
 ### Security Questions
 
-At the initial login, users are asked to establish MFA. The first step involves configuring the first recovery method: security questions. Users select 5 security questions from the provided options or create custom questions. These questions and answers together serve as a seed to generate a share of the user's private key.
+At the initial login, users are asked to optionally set up MFA. The first step involves configuring the first recovery method: security questions. Users select 5 security questions from the provided options or create custom questions. These questions and answers together serve as a seed to generate a share of the user's private key.
 
 
 ### Recovery Pin
 
-The last step in MFA setup involves the user creating a 6-digit or longer alphanumeric PIN. This PIN encrypts and stores one of the multiple verification factors used by MFA. It serves as a backup, stored securely with {{config.extra.arcana.company_name}}, in case the user changes devices or loses the locally stored encrypted component in their browser's cache.
+The last step in the MFA setup involves the user creating a 6-digit or longer alphanumeric PIN. This PIN encrypts and stores one of the multiple verification factors used by MFA. It serves as a backup, stored securely with {{config.extra.arcana.company_name}}, in case the user changes devices or loses the locally stored encrypted component in their browser's cache.
 
 ## MFA Configuration Options
 
@@ -31,7 +34,7 @@ Users have two options:
 
 Web3 app developers cannot control MFA activation for an app integrated with {{config.extra.arcana.sdk_name}}. Users decide to enable or disable it at their first login. If they skip configuration initially, they will be prompted every third login to set up MFA. Users can also enable MFA later using the {{config.extra.arcana.wallet_name}} UI. Selecting 'Don't Ask Again' will disable future prompts on that device
 
-!!! caution "Cannot disable MFA once enabled"
+!!! an-caution "Cannot disable MFA once enabled"
 
       Once enabled, MFA cannot be disabled for security reasons.
 

@@ -53,23 +53,29 @@ After provisioning gas tanks, developers can use the **Gasless** configuration s
 
 Developers set up gas tanks and deposit crypto assets specific to the blockchain for which the tank is set up. One or more app functions can be marked for gasless transactions by whitelisting. These app functions can be related to one or more smart contracts that are part of the app. When users call app functions that are whitelisted, they do not need to pay any gas fees.
 
-<img src="/img/an_gasless_howitworks_light.png#only-light" alt="Set up Gas Tanks Light Theme" class="an-screenshots"/>
-<img src="/img/an_gasless_howitworks_dark.png#only-dark" alt="Set up Gas Tanks" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gasless_howitworks_light.{{config.extra.arcana.img_png}}#only-light" alt="Gas Tanks Enabled" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gasless_howitworks_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Gas Tanks Enabled" class="an-screenshots width_85pc"/>
+  <figcaption>Gas Tanks Enabled</figcaption>
+</figure>
 
 ### Gas Not Available
 
-Waiving gas fees for app operations does not happen when:
+Waiving gas fees for app operations does not happen for a transaction in the following cases:
 
-* App developer does not set up any gas tanks for any blockchain network
+* No gas tanks are set up for any blockchain network
 * Gas tanks are set up and funded but disabled by the developer
 * Gas tanks are set up but no funds are deposited to pay for the gas fees
-* Gas tanks are depleted and all the funds spent, are not refueled
-* Gas tank owner withdraws the deposited funds depleting the tanks
+* Gas tanks are depleted, funds spent, not refueled
+* The gas tank owner withdraws the deposited funds, thereby depleting the tanks
 
 In such situations, even if the app functions are whitelisted, gas tanks are not effective or available, so users have to bear the gas fees.
 
-<img src="/img/an_gasless_howitworks_empty_light.png#only-light" alt="Set up Gas Tanks Light Theme" class="an-screenshots"/>
-<img src="/img/an_gasless_howitworks_empty_dark.png#only-dark" alt="Set up Gas Tanks Light Theme" class="an-screenshots"/>
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_gasless_howitworks_empty_light.{{config.extra.arcana.img_png}}#only-light" alt="Gas Tanks Empty" class="an-screenshots"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gasless_howitworks_empty_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Gas Tanks Empty" class="an-screenshots"/>
+  <figcaption>Gas Tanks Empty</figcaption>
+</figure>
 
 ## User Experience
 
@@ -87,7 +93,7 @@ By default, gasless apps will have the SCW address active in the {{config.extra.
 
 If the gas tank is depleted, empty or paused then by default the EoA wallet address becomes active for the user and is displayed in the wallet. If the user switches it to the SCW address then that is used for any blockchain transactions. In this case, since the gas tank is not available, the user will have to bear the gas fees via the SCW wallet address. So the user needs to make sure that the SCW account has sufficient funds.
 
-!!! caution "Disabling Gasless Capability"
+!!! an-caution "Disabling Gasless Capability"
 
       Once a developer provisions a gas tank for any supported blockchain, the gasless feature becomes permanently active within {{config.extra.arcana.sdk_name}} for that blockchain. While the gas tank can be paused and resumed, the two-address gasless user accounts system, comprising EoA and SCW addresses, remains in effect.
       
