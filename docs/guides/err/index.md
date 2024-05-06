@@ -13,3 +13,5 @@ arcana:
 [[web-gasless-error-msg| :fontawesome-solid-bug-slash:{ .icon-color } Handling Gasless Errors]]{ .md-button }
 
 [[db-error-msg| :fontawesome-solid-bug-slash:{ .icon-color } Dashboard Usage Errors]]{ .md-button }
+
+[[walletui-error-msg| :fontawesome-solid-bug-slash:{ .icon-color } Wallet UI Usage Errors]]{ .md-button }
