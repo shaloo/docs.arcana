@@ -30,7 +30,7 @@ The JWK ID parameter is used to match a specific key in the JWK Key Set. Specify
 
 ### JWT Attributes/Claims
 
-These are key, value pairs that are used to validate the JWT provided by the developer post custom user authentication to the {{config.extra.arcana.sdk_name}} via the `loginWithCustomVerifier()` method. 
+These are key, value pairs that are used to validate the JWT provided by the developer post custom user authentication to the {{config.extra.arcana.sdk_name}} via the `loginWithCustomProvider()` method. 
 
 Examples:
 
@@ -70,7 +70,7 @@ The purpose of the JWK usage is identified by the 'login' attribute and the usag
         end
     ```
 
-3. Next, install {{config.extra.arcana.sdk_name}}, integrate app with the {{config.extra.arcana.sdk_name}}, initialize `AuthProvider` and then use the JWT obtained after custom OAuth to call `loginWithCustomVerifier()` method.
+3. Next, install {{config.extra.arcana.sdk_name}}, integrate app with the {{config.extra.arcana.sdk_name}}, initialize `AuthProvider` and then use the JWT obtained after the custom OAuth processing to call the `loginWithCustomProvider()` method.
 
     ```mermaid
     graph TD

@@ -32,18 +32,39 @@ After installing the SDK, add code to import `{{config.extra.arcana.auth_sdk_pkg
 
 * Call `AuthProvider.init()` method to initialize the SDK
 
-## Step 3: Call `loginWithCustomVerifier`
+```
+import { AuthProvider } from "@arcana/auth";
+
+let auth: AuthProvider | null = null;
+
+if (!auth) {
+  auth = new AuthProvider("Enter your app's Client Id");
+}
+await auth.init();
+```
+
+## Step 3: Call `loginWithCustomProvider`
 
 After the user logs in successfully via custom OAuth, get the JWT and provide it as input to the {{config.extra.arcana.sdk_name}} method below:
 
 ```js
-auth.loginWithCustomVerifier(JWT)
+           await auth.loginWithCustomProvider({
+              token: params.token, //JWT Token
+              userID: params.userID,  // Email or ID as configured in the Dashboard settings
+              provider: "provider-id-name", //Custom OAuth Provider identifier
+            });
 
 ```
 
-This will ensure that the authenticated user's key shares are fetched locally and the user key is generated within the app/user context securely, with full privacy. Use the provider to allow the authenticated user to sign in blockchain transactions. 
+Upon success, `loginWithCustomProvider` will ensure that the authenticated user's key shares are fetched locally and the user key is generated within the app/user context securely, with full privacy.  
 
-If you specify the `alwaysVisible` flag as `true` when creating the `AuthProvider` in the integration code above, the embedded {{config.extra.arcana.wallet_name}} UI is displayed instantly within the app's context after JWT claim verification.
+If you specify the `alwaysVisible` flag as `true` when creating the `AuthProvider` in the integration code above, the embedded {{config.extra.arcana.wallet_name}} UI is displayed instantly within the app's context after JWT claim verification via the `loginWithCustomProvider` method.
+
+Next, developers can use the provider initialized earlier to allow authenticated users to sign the blockchain transactions via the wallet UI or via JSON/RPC calls added in the integrated app code. 
+
+!!! an-tip "Sample Code"
+
+       Refer to [Custom OAuth Frontend](https://github.com/arcana-network/custom-provider-fe-example) and [Custom OAuth Server](https://github.com/arcana-network/custom-provider-server-example) for details. These are examples of a custom OAuth login server and a frontend that uses the `loginWithCustomProvider` method for fetching authenticated user's keys to perform blockchain transactions.
 
 That is all! :material-party-popper:
 

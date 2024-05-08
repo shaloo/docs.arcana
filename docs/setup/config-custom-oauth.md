@@ -34,7 +34,7 @@ See [[concept-custom-oauth|custom OAuth settings]] for details.
 
 ## What's Next?
 
-After configuring the custom OAuth settings via the dashboard, you can install the {{config.extra.arcana.sdk_name}} and integrate your app. Make sure you have already added code for custom OAuth and enabled user login via the custom authentication server. Get a JWT for the authenticated user. During app integration with the {{config.extra.arcana.sdk_name}}, initialize the SDK first and then call `loginWithCustomVerifier` with the JWT token as the parameter to fetch user key shares securely. See [[integrate-custom-oauth]] for details.
+After configuring the custom OAuth settings via the dashboard, you can install the {{config.extra.arcana.sdk_name}} and integrate your app. Make sure you have already added code for custom OAuth and enabled user login via the custom authentication server. Get a JWT for the authenticated user. During app integration with the {{config.extra.arcana.sdk_name}}, initialize the SDK first and then call `loginWithCustomProvider` with the JWT token as the parameter to fetch user key shares securely. See [[integrate-custom-oauth|how to integrate apps using custom OAuth]] for details.
 
 ## See Also
 
