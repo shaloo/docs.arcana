@@ -8,7 +8,7 @@ arcana:
 
 # Custom OAuth Setup
 
-This guide shows how to configure {{config.extra.arcana.sdk_name}} for apps using [[concept-custom-oauth|custom OAuth]] and allow the authenticated users to sign blockchain transactions.
+This guide shows how to configure {{config.extra.arcana.sdk_name}} for apps using [[concept-custom-oauth|custom OAuth]] and allow authenticated users to sign blockchain transactions.
 
 ## Prerequisites
 
@@ -20,8 +20,7 @@ This guide shows how to configure {{config.extra.arcana.sdk_name}} for apps usin
 
 Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Social Auth** and scroll down to the **Custom OAuth** section.
 
-Screenshot Placeholder to be replaced...
-![Custom OAuth Nav](/img/an_db_chains_mngt_nav.png){.an-screenshots}
+![Custom OAuth Nav]({{config.extra.arcana.img_dir}}/an_db_custom_oauth_setup.gif){.an-screenshots}
 
 ## Step 2: Configure JWK Settings
 
