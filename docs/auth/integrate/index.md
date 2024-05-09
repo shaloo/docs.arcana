@@ -27,3 +27,7 @@ arcana:
 
 [[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
 [[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }
+
+## Custom OAuth
+
+[[integrate-custom-oauth| :material-tools:{ .icon-color } Custom OAuth]]{ .md-button }

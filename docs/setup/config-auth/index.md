@@ -16,6 +16,8 @@ Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_pat
 
 [[index-config-iam-providers|:material-identifier:{ .icon-color } IAM Providers]]{ .md-button }
 
+[[config-custom-oauth]]| :material-tools:{ .icon-color }Custom OAuth]]{.md-button}
+
 [[configure-wallet-chains| :simple-hive_blockchain:{ .icon-color } Manage Chains]]{ .md-button }
 
 [[index-setup-wallet| :simple-hive_blockchain:{ .icon-color } Manage Wallet UX ]]{ .md-button }

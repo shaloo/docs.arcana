@@ -32,6 +32,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
     * Social Auth
     * Identity Access Managers
+    * Custom OAuth
 
     Developers can enable one or more providers for app login. Passwordless login is automatically enabled for all registered apps.
 

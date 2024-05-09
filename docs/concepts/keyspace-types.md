@@ -12,6 +12,8 @@ In Web2 applications, users often employ the same password for multiple applicat
 
 Global keys offer a streamlined user experience akin to Web2 applications by providing the same user keys/wallet address across Web3 apps. However, global keys also introduce a security risk, especially if there are financial implications in the app. If a malicious actor breaches one such app and gains access to a user's global keys, they could potentially access the user's digital assets across all other applications using global keys.
 
+Based on the app-specific requirements for privacy, security, and ease of use, developers can change the default keyspace setting from app-specific to global keys using the {{config.extra.arcana.dashboard_name}}. 
+
 ```mermaid
 flowchart LR 
     subgraph D [ ]
@@ -89,6 +91,10 @@ The reason for this restriction is to reduce a potential [[concept-keyspace-type
 ### Switching Keyspace
 
 Initially, apps are set up to use app-specific keys by default. Developers have the option to later adjust the keyspace and transition to using global keys in the registered app. Switching the keyspace will lead to a modification in the app user's wallet address.
+
+### Custom OAuth Not Supported
+
+Apps that choose to use global keys cannot use the [[concept-custom-oauth|custom OAuth]] feature.
 
 ### Security
 
