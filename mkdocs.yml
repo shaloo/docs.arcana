@@ -589,6 +589,7 @@ nav:
         - Auth: auth/auth-error-msg.md
         - Gasless: gasless/gasless-error-msg.md
         - Dashboard: setup/db-err-messages.md
+        - Wallet UI: auth/walletui-error-msg.md
       - FAQ:
         - faq/index.md
         - General: faq/faq-gen.md
