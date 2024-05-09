@@ -35,7 +35,7 @@ The {{config.extra.arcana.wallet_name}} users may encounter the following run-ti
 | W-112: Amount cannot be greater than the maximum available balance. | The amount of tokens specified should be less than or equal to the balance available in the current account. |
 | NFT Added. | - |
 | NFT already added. | This NFT is already added to the wallet, cannot add an NFT more than once. |
-| W-112: Unsupported NFT. | Cannot add NFT as its type is not supported. |
+| W-112: Unsupported NFT. | The wallet supports only these NFT types: ERC-721, ERC-1155. |
 | W-113: You don't have ownership for this NFT. | Cannot add NFT to the current wallet as this wallet address does not own the specified NFT. |
 | NFT Deleted. | - |
 | W-114: Insufficient NFTs. At most, you can send <available nnn> NFTs. | The quantity of NFTs specified in the transaction is more than available NFTs, fix and resubmit the transaction. |
