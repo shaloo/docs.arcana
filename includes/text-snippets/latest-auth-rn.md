@@ -1,6 +1,6 @@
 {==
 
-**Release Date: Mar 15, 2024**  
+**Release Date: May 9, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
 
@@ -30,18 +30,18 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 ## What is New?
 
 ---
+ 
+* Support for [[concept-custom-oauth|custom OAuth]]. See [[config-custom-oauth|how to configure custom OAuth settings in the {{config.extra.arcana.dashboard_name}}]] and [[integrate-custom-oauth|how to integrate an app that uses a custom authentication server]] but requires assigning keys to authenticated users for signing blockchain transactions.
 
-* Support for MultiversX chain. It is available as a pre-configured chain in the {{config.extra.arcana.wallet_name}}
+* New **off-ramping** feature in the {{config.extra.arcana.wallet_name}} allows users to sell crypto or convert blockchain assets to Fiat via selected supported off-ramping providers. See [[dashboard-user-guide#buysell-crypto|how to buy/sell crypto through Fiat]] for details.
 
-* New SDK: {{config.extra.arcana.gaming_sdk_name}} - See [[unity-quick-start|Auth Unity SDK Quick Start Guide]].
-
-* Minor enhancements and bug fixes. See [[index-changelog|changelog]].
+* Minor enhancements and bug fixes in {{config.extra.arcana.gasless_sdk_name}}. See [[index-changelog|changelog]].
 
 ## What has changed?
 
 ---
 
-There are **no usage changes** in this release. To migrate to the latest release, re-install the SDK.
+There are **no usage changes** in this release. To migrate to the latest release, re-install and upgrade to the latest SDKs.
 
 ## Get Started
 

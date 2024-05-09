@@ -12,7 +12,9 @@ arcana:
 
     [[rn-main-auth-v{{config.extra.arcana.product_release_tag}}| :material-note-text:{ .icon-color } {{config.extra.arcana.product_name}}  v{{config.extra.arcana.product_release_tag}} Release]]{ .md-button }
 
-    [[rn-main-auth-v1.0.8| :material-note-text:{ .icon-color } Auth v1.0.9]]{ .md-button }
+    [[rn-main-auth-v1.0.10| :material-note-text:{ .icon-color } Auth v1.0.10]]{ .md-button }
+
+    [[rn-main-auth-v1.0.9| :material-note-text:{ .icon-color } Auth v1.0.9]]{ .md-button }
 
     [[rn-main-auth-vOct12-23-gasless| :material-note-text:{ .icon-color } Auth vOct12-23-gasless Release]]{ .md-button }
 

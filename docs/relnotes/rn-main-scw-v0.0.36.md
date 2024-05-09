@@ -1,6 +1,16 @@
+---
+alias: rn-main-scw-v0.0.36
+title: 'Arcana: Gasless SDK Release Notes'
+description: 'Arcana Gasless SDKs Release Notes (v0.0.35 Latest)'
+arcana:
+  root_rel_path: ..
+---
+
+# Arcana Gasless: Release Notes
+
 {==
 
-**Release Date: May 9, 2024**  
+**Release Date: March 28, 2024**  
 
 Gasless SDK Version: **v0.0.36**
 
@@ -14,7 +24,7 @@ Use the [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.networ
 
 ---
 
-This release of {{config.extra.arcana.gasless_sdk_name}} has some minor enhancements and bug fixes related to capping overall gas fee sponsorship per user. It uses the latest version of third-party gasless provider ([Biconomy v4](https://docs.biconomy.io)).  
+This release of {{config.extra.arcana.gasless_sdk_name}} uses the latest version of third-party gasless provider ([Biconomy v4](https://docs.biconomy.io)).  
 
 ## What has changed?
 
@@ -46,3 +56,4 @@ See [[index-release-notes| Release Archives]]
 ---
 
 Refer to the [[faq-gasless| Arcana Gasless FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
+
