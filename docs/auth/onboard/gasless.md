@@ -28,7 +28,7 @@ Developers can choose to onboard users by either using the built-in plug-and-pla
 
       The {{config.extra.arcana.sdk_name}} has a built-in gasless feature that can be used to enable gasless transactions in the {{config.extra.arcana.wallet_name}} for apps that integrate with the SDK.
 
-      If you are looking at **only** enabling gasless transactions in third-party browser-based wallets and do not require social login, Gasless Standalone SDK (Coming soon!).
+      If you are looking at **only** enabling gasless transactions in third-party browser-based wallets and do not require social login, {{config.extra.arcana.gasless_sdk_name}}.
 
 ## Steps
 

@@ -10,19 +10,6 @@ arcana:
 
 <div class="grid cards" markdown>
 
-<!---
-
--    :fontawesome-solid-gamepad:{.lg .middle } **Gaming** 
-
-     ---
-   
-     *Increase user conversion in Web3 gaming apps with the Arcana Auth Gaming SDK!*
-
-     
-     Soon, Web3 gaming apps can onboard users effortlessly through social, third-party IAM providers, or passwordless login. Authenticated users can instantly access a fully functional, embedded, non-custodial Web3 wallet within the app context.
-
---->
-
 -    :material-button-pointer:{.lg .middle } **MFA Enhancements** 
 
      ---
@@ -45,15 +32,12 @@ arcana:
      Apps using [Radix](https://www.radixdlt.com//) will soon be able to enable social login by integrating with the  {{config.extra.arcana.sdk_name}} and allow authenticated users to sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}.
 --->
 
--    :simple-hive_blockchain:{.lg .middle } **Wallet Off-Ramp** 
+-    :simple-hive_blockchain:{.lg .middle } **Near** 
 
      ---
   
-     *Support for off-ramping crypto!* 
+     *Support for newer blockchain networks!* 
      
-     
-     The {{config.extra.arcana.wallet_name}} users can already use the [[arcana-wallet-user-guide#fiat-on-ramp|on-ramp feature]] and load the wallet using fiat and supported cryptocurrencies. Soon, users will have the off-ramp feature to exchange cryptocurrencies for fiat.
-
-
+     Users of {{config.extra.arcana.wallet_name}} can quickly make transactions using the Near chain once this feature is available. Developers can select this chain as the active chain while registering, configuring and integrating the app with {{config.extra.arcana.sdk_name}}. Once the users log into such an app, they can instantly access the wallet with the Near chain displayed as the active chain.
 
 </div>

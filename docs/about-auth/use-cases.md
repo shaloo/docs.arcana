@@ -58,11 +58,13 @@ Gaming, DeFi and other Web3 apps that deal with user's crypto assets, NFTs can f
 
 ## Enable Gasless Transactions
 
-With the [[concept-gasless-transactions|gasless transactions]] feature, Web3 apps can improve adoption by  exempting them from paying gas fees for blockchain transactions. Developers can set up gas tanks that are equipped with requisite crypto assets to pay gas fees for a specific blockchain network. Sponsors bear the gas fees while users only pay for whatever transaction they carry out such as transferring ERC20 tokens to another user. Users can have a Web2-like app onboarding experience and not pay the gas fees.
+With the [[concept-gasless-transactions|gasless transactions]] feature, Web3 apps can improve adoption by exempting them from paying gas fees for blockchain transactions. Developers can set up gas tanks that are equipped with requisite crypto assets to pay gas fees for a specific blockchain network. Sponsors bear the gas fees while users only pay for whatever transaction they carry out such as transferring ERC20 tokens to another user. Users can have a Web2-like app onboarding experience and not pay the gas fees.
 
 ## Upcoming Features
 
-* Non-EVM Chain Support
-* Wallet UI enhancements such as speeding up pending transactions, improved wallet design, etc.
+* Support for newer chains, for example, Near
+* Custom OAuth
+* Rebranding of {{config.extra.arcana.dashboard_name}} UI
+* Other enhancements and bug fixes in {{config.extra.arcana.wallet_name}} UI, DKG, etc.
 
 See [[arcana-coming-soon|coming soon]] section for details.

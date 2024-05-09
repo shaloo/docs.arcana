@@ -75,4 +75,4 @@ Developers interact with the {{config.extra.arcana.dashboard_name}} to register 
 
 ## Securing Gasless Usage
 
-To enable gasless transactions, developers set up gas tanks on one or more of the supported blockchains. The funds deposited in the gas tanks can only be withdrawn by the owner of the gas tanks. Only whitelisted app operations, as configured by the developer are allowed to use funds from the gas tanks to pay gas fees. In the upcoming release, there will be options for developers to cap the amount of gas fees they'd like to sponsor per app user to limit malicious usage of gas tank funds.
+To enable gasless transactions, developers set up gas tanks on one or more of the supported blockchains. The funds deposited in the gas tanks can only be withdrawn by the owner of the gas tanks. Only whitelisted app operations, as configured by the developer are allowed to use funds from the gas tanks to pay gas fees. In the upcoming releases, there will be options for developers to cap the amount of gas fees they'd like to sponsor per app user to limit malicious usage of gas tank funds.

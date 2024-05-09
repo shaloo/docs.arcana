@@ -10,7 +10,7 @@ arcana:
 
 You can enable [[concept-social-login|social login]] and onboard users in Web3 apps by configuring one or more supported authentication providers and integrating the app with the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]].  
 
-App users can simply pick one of the log in options configured by the app developers to authenticate. After authentication, app users can instantly access the {{config.extra.arcana.wallet_name}} from within the app context and sign blockchain transactions.
+App users can simply pick one of the login options configured by the app developers to authenticate. After authentication, app users can instantly access the {{config.extra.arcana.wallet_name}} from within the app context and sign blockchain transactions.
 
 ## Social Login Providers
 
@@ -20,14 +20,9 @@ App users can simply pick one of the log in options configured by the app develo
 
 {% include "./text-snippets/custom_idm_supported.md" %}
 
-!!! an-abstract "Coming soon!" 
+## Custom Auth
 
-      We are working on supporting additional authentication providers in the upcoming {{config.extra.arcana.sdk_name}} releases:
-
-      - Telegram
-      - LINE
-      - Wechat
-      - Kakaotalk
+For advanced usage where developers want to use custom OAuth services and enable {{config.extra.arcana.wallet_name}} in the dapp or enable custom authenticated users to sign blockchain transactions, they can use the custom OAuth feature. This can be used to integrate Epic, Relative gaming user authentication mechanisms.
 
 !!! an-info "Passwordless Login"
 

@@ -38,8 +38,8 @@ Developers must use the {{config.extra.arcana.dashboard_name}} to first configur
 
 * Web Apps: _Vanilla JS app_, _React, Next.js_, _Vue_
 * Wallet Connector Framework Apps: _Wagmi_, _RainbowKit_, and _Web3-React_
-* Mobile Apps: _Flutter_, _React-Native_ (<span class="an-marker-text-highlight">Coming soon!</span>)
-* Gaming Apps: _Unity_ (<span class="an-marker-text-highlight">Coming soon!</span>) 
+* Mobile Apps: _Flutter_, _React-Native_ 
+* Gaming Apps: _Unity_
 
 [Learn more...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
 
