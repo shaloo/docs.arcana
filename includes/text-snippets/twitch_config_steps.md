@@ -4,7 +4,7 @@
 
 Follow these steps to configure the **Social Auth** settings and enable user onboarding via Twitch. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Twitch Developer Dashboard](https://dev.twitch.tv/login).
 
-### Step 1: Get Redirect URI  
+## Step 1: Get Redirect URI  
 
 Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Twitch in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 

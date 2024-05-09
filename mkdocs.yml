@@ -400,7 +400,7 @@ nav:
         - ADKG: security/adkg.md
         - MFA: security/mfa.md
       - Coming Soon!: arcana-coming-soon.md
-    - Arcana on Partner Chains:
+    - Docs Collaboration Partners:
       - partner-docs/index.md
       - Alchemy Account Kit: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
       - Alchemy Auth Signer: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
@@ -440,7 +440,7 @@ nav:
       - Solana Setup: setup/config-dApp-with-db-for-Solana.md
       - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
       - Unity Setup: setup/config-dApp-with-db-for-Unity.md
-    - Install: auth/sdk-installation.md
+    - Install SDK: auth/sdk-installation.md
     - Integrate App:
       - auth/integrate/index.md
       - Wagmi: auth/integrate/wagmi.md
