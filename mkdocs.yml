@@ -1,10 +1,10 @@
 site_name: '📖 Documentation'
 
 # For dev
-#site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 
 # For main
-site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
+#site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 # Check for broken links, etc.
 strict: true 
@@ -103,7 +103,7 @@ extra:
     wallet_name: Arcana wallet
     app_address: Client ID
     product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.11']
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.9']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.10']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.6']
     latest_version: !ENV [AUTH_SDK_VERSION,'1.0.11']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.9']
@@ -400,7 +400,7 @@ nav:
         - ADKG: security/adkg.md
         - MFA: security/mfa.md
       - Coming Soon!: arcana-coming-soon.md
-    - Arcana on Partner Chains:
+    - Docs Collaboration Partners:
       - partner-docs/index.md
       - Alchemy Account Kit: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
       - Alchemy Auth Signer: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
@@ -440,7 +440,7 @@ nav:
       - Solana Setup: setup/config-dApp-with-db-for-Solana.md
       - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
       - Unity Setup: setup/config-dApp-with-db-for-Unity.md
-    - Install: auth/sdk-installation.md
+    - Install SDK: auth/sdk-installation.md
     - Integrate App:
       - auth/integrate/index.md
       - Wagmi: auth/integrate/wagmi.md

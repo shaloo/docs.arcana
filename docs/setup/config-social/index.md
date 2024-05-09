@@ -1,12 +1,12 @@
 ---
 alias: index-config-social-providers
-title: 'Configure Social Login Providers'
+title: 'Social Login Setup'
 description: 'List of social login providers that are supported by Arcana Auth for onboarding Web3 app users in apps integrated with the Arcana SDK.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Social Login Providers      
+# Social Login Setup      
 
 [[config-auth-discord|:fontawesome-brands-discord:{ .icon-color} Discord]]{ .md-button }
 [[config-auth-github|:fontawesome-brands-github:{ .icon-color} GitHub]]{ .md-button }

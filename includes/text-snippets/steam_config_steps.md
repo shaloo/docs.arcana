@@ -4,7 +4,7 @@
 
 Follow these steps to configure the **Social Auth** settings and enable user onboarding via Steam. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2Fdev%2Fapikey).
 
-### Step 1: Get Redirect URI  
+## Step 1: Get Redirect URI  
       
 Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Steam in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
