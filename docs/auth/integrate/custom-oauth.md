@@ -60,7 +60,7 @@ Upon success, `loginWithCustomProvider` will ensure that the authenticated user'
 
 If you specify the `alwaysVisible` flag as `true` when creating the `AuthProvider` in the integration code above, the embedded {{config.extra.arcana.wallet_name}} UI is displayed instantly within the app's context after JWT claim verification via the `loginWithCustomProvider` method.
 
-Next, developers can use the provider initialized earlier to allow authenticated users to sign the blockchain transactions via the wallet UI or via JSON/RPC calls added in the integrated app code. 
+Next, developers can use the provider initialized earlier to allow authenticated users to sign the blockchain transactions via the wallet UI or JSON/RPC calls added in the integrated app code. 
 
 !!! an-tip "Sample Code"
 
