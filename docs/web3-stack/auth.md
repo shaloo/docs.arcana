@@ -22,7 +22,7 @@ App users can simply pick one of the login options configured by the app develop
 
 ## Custom Auth
 
-For advanced usage where developers want to use custom OAuth services and enable {{config.extra.arcana.wallet_name}} in the dapp or enable custom authenticated users to sign blockchain transactions, they can use the custom OAuth feature. This can be used to integrate Epic, Relative gaming user authentication mechanisms.
+This feature is meant for advanced usage where developers want to manage custom OAuth services and enable {{config.extra.arcana.wallet_name}} in the app or enable custom authenticated users to sign blockchain transactions. For example, you can use [[concept-custom-oauth|custom OAuth feature]] to integrate Epic user authentication or Relative gaming user authentication mechanisms.
 
 !!! an-info "Passwordless Login"
 
