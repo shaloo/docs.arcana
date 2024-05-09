@@ -103,7 +103,7 @@ extra:
     wallet_name: Arcana wallet
     app_address: Client ID
     product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.11']
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.9']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.10']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.6']
     latest_version: !ENV [AUTH_SDK_VERSION,'1.0.11']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.9']
