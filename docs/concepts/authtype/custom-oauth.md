@@ -17,13 +17,13 @@ The Custom OAuth feature empowers developers to manage user authentication and i
 
 Before using custom OAuth feature, developer must use the {{config.extra.arcana.dashboard_name}} to update these settings:
 
-* JWKS URL
+* JWKS Endpoint
 * User Identifier String
 * JWT Validation via Attributes/Claims
 
-### JWKS URL
+### JWKS Endpoint
 
-A JWK URL is a read-only URL exposed by the custom OAuth server or any other server that manages the cryptographic keys or JSON Web Keys (JWK) as per the [IETF RFC7517](https://datatracker.ietf.org/doc/html/rfc7517) standard. JWKs are used to validate the integrity of a JWT and the encoded data by the {{config.extra.arcana.sdk_name}}.
+A JWK Endpoint is a read-only URL exposed by the custom OAuth server or any other server that manages the cryptographic keys or JSON Web Keys (JWK) as per the [IETF RFC7517](https://datatracker.ietf.org/doc/html/rfc7517) standard. JWKs are used to validate the integrity of a JWT and the encoded data by the {{config.extra.arcana.sdk_name}}.
 
 ### User Identifier String
 
