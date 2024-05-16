@@ -102,6 +102,7 @@ BSC
 BYOK
 BeaconProxy
 Biconomy
+Biconomy's
 Binance
 Blockchain
 Blockchains
@@ -507,6 +508,7 @@ Whitepaper
 XAR
 XARs
 ZK-SNARK
+about-auth
 accesscontrol
 accountsChanged
 addselect-a-network
@@ -645,6 +647,7 @@ config-auth-google
 config-auth-steam
 config-auth-twitch
 config-auth-twitter
+config-custom-oauth
 config.extra.arcana.date_release_tag
 config3pwallet
 config_cognito
@@ -1040,6 +1043,7 @@ index-dev-guides
 index-dev-resources
 index-dkg
 index-err-ms
+index-err-msg
 index-evm-web3-wallet-ops
 index-faq
 index-howto-guides
@@ -1062,6 +1066,7 @@ index-wagmi-onboard-users
 index-wallet-ux
 index-web-sdk-err
 index-web3-react-onboard-users
+index-web3-stack
 index-web3-wallet-ops
 index_config_auth
 indexintegrate
@@ -1143,12 +1148,15 @@ non-EVM
 non-evm-chains
 npm
 octicons-book-16
+octicons-browser-16
 octicons-checkbox-16
 octicons-cross-reference-16
 octicons-file-code-16
 octicons-key-24
 octicons-link-16
+octicons-people-16
 octicons-question-16
+octicons-stack-16
 onboard-rainbow-app-custom-ui
 onboard-rainbow-app-pnp-ui
 onboard-validators
@@ -1343,8 +1351,13 @@ v1.0.6
 v1.0.7
 v1.0.8
 v1.0.9
+v1.x
 v2
 v2.0
+v2.x
+v3
+v3.3
+v4
 vOct12-23-gasless
 validator
 validator_nodes
@@ -1399,7 +1412,12 @@ web-gasless-integrate
 web-gasless-transact
 web3-react-quick-start
 web3-stack-apps
+web3-stack-auth
+web3-stack-browsers
 web3-stack-chains
+web3-stack-protocol
+web3-stack-validators
+web3-stack-wallets
 what-is-arcana-auth
 whatisan
 why-arcana-auth
