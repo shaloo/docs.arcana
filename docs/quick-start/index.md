@@ -22,7 +22,7 @@ arcana:
 [[solana-quick-start|:material-atom-variant:{ .icon-color } Solana Apps]]{ .md-button }
 [[mvx-quick-start|:simple-xrp:{ .icon-color } MultiversX Apps ]]{ .md-button }
 [[unity-quick-start|:simple-unity:{ .icon-color } Unity Apps]]{ .md-button }
-[[mobile-quick-start|:fontawesome-solid-mobile-screen:{ .icon-color } Mobile Apps:]]{ .md-button }
+[[mobile-quick-start|:fontawesome-solid-mobile-screen:{ .icon-color } Mobile Apps]]{ .md-button }
 
 ## Gasless SDK
 
