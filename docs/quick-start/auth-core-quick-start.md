@@ -127,7 +127,7 @@ await auth.handleRedirect();
 
       Web3 apps that use Cognito or Firebase for onboarding users and require {{config.extra.arcana.auth_core_sdk_name}} to only assign cryptographic keys to the authenticated users are **not supported** in the current release.
 
-      Contact our [[support|support team]] if you need this feature.
+      Contact our [[index-support|{{config.extra.arcana.company_name}}  support]] if you need this feature.
 
 #### Login Status
 

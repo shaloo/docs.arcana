@@ -83,10 +83,8 @@ Registering the app with {{config.extra.arcana.company_name}} associates a uniqu
   <div class="card" markdown><h4><b>:material-gas-station:{ .icon-color } Gasless Transactions</b></h4><hr><p><ul><li>Developers can specify which app operations are gasless.</li><li>Easy to set up gas tanks and deposit gas fees.</li><li>Users don't pay gas fees for gasless transactions; third-party sponsors or app developers pay gas fees.</li></ul></p></div>
 </div>
 
-<!--
+[[try-now-gl|Let's get started! ++enter++]]{ .md-button .md-button--primary}
 
-[[quick-start|Let's begin! ++enter++]]{ .md-button .md-button--primary}
-
+<!-----
 Git: {{ git.short_commit}}
-
 -->

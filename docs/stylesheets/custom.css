@@ -1,8 +1,62 @@
+
 /*
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400&display=block");
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Onest:wght@100..900&display=swap');
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Onest:wght@100..900&display=swap');
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url('./fonts/Inter/inter-latin-100-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url('./fonts/Inter/inter-latin-200-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/Inter/inter-latin-300-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Inter/inter-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Inter/inter-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/Inter/inter-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/Inter/inter-latin-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/Inter/inter-latin-800-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/Inter/inter-latin-900-normal.woff2') format('woff2');
+}
 
 :root > * {
      --md-an-pink-color: #FF4E9F;
@@ -30,7 +84,7 @@
      --md-accent-fg-color--transparent:   hsla(190, 5%, 49%, 0.1);
      --md-accent-bg-color:                hsla(0, 0%, 100%, 1);
      --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
-     --md-text-font: "Onest";
+     --md-text-font: 'Inter';
      --md-admonition-icon--an-faq: url('/imgnew/icons/icons8-question-mark-48.webp');
      --md-admonition-icon--an-trbs: url('/imgnew/icons/exclamation.webp');
      --md-primary-an-heading-color:   var(--md-primary-fg-color--lighter);
@@ -47,7 +101,7 @@
      --md-an-blink-me-link-color: blue;
      /*--md-an-banner-bg: #23A26D; Green*/
      --md-an-banner-bg: var(--md-an-pink-color);
-     --md-text-font-family: "Onest";
+     --md-text-font-family: 'Inter';
      --md-mermaid-node-bg-color: var(--md-default-bg-color);
     }
 
@@ -184,7 +238,7 @@ button.sp-icon-standalone, button.sp-icon{
       var(--md-accent-bg-color--light) 4%,
       var(--md-banner-color-2) 2%) !important;
     */
-    font-family: "Onest", sans-serif;
+    font-family: 'Inter';
     font-weight: bold;
     color: var(--md-primary-an-banner-text-color);
     overflow: hidden;
@@ -199,6 +253,12 @@ button.sp-icon-standalone, button.sp-icon{
 
 .md-nav__item--section {
     padding: 0.75rem;
+}
+
+/* EXPT */
+
+.md-nav__item.md-nav__item--section.md-nav__item--nested{
+  font-weight: 200;
 }
 
 /*

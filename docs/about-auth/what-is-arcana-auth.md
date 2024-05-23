@@ -20,7 +20,7 @@ The {{config.extra.arcana.product_name}} product consists of two key components:
 * {{config.extra.arcana.dashboard_name}}
 
 
-[[quick-start|Get Started :fontawesome-solid-paper-plane:]]{ .md-button }
+[[try-now-auth|Try Auth :fontawesome-solid-paper-plane:]]{ .md-button } [[try-now-gl|Try Gasless :fontawesome-solid-paper-plane:]]{ .md-button }
 
 ## {{config.extra.arcana.product_name}} Components
 

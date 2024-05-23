@@ -10,7 +10,7 @@ arcana:
 
 {{config.extra.arcana.sdk_name}} offers built-in gasless transaction feature for {{config.extra.arcana.wallet_name}}. This feature works only for a subset of supported chains. 
 
-Developers must configure the following gasless settings via the {{config.extra.arcana.dashboard_name}} and then [[quick-start|integrate the app]] with the {{config.extra.arcana.sdk_name}} to enable gasless transactions in the {{config.extra.arcana.wallet_name}}. 
+Developers must configure the following gasless settings via the {{config.extra.arcana.dashboard_name}} and then [[integrate-gasless-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} to enable gasless transactions in the {{config.extra.arcana.wallet_name}}. 
 
 * Set up gas tanks on one or more chains supported by the app
 * Deposit funds in the gas tank to pay for the gas fees

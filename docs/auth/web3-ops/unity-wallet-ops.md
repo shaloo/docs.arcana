@@ -18,9 +18,9 @@ Call `Request` to make Web3 Wallet operation requests from within the app contex
 
 {% include "./code-snippets/auth_unity_web3_wallet_ops.md" %}
 
-That is all! :material-party-popper:
+!!! an-note "Supported Wallet Operations"
 
-The supported methods in the `Request` function may vary depending on the selected blockchain network, EVM chains, or non-EVM chains, such as Solana or MultiversX. See the [[index-wallet-ux|supported JSON/RPC Web3 operations]] for a list of chain-specific methods supported via the `Request` call of the {{config.extra.arcana.gaming_sdk_name}}.
+      The supported methods in the `Request` function may vary depending on the selected blockchain network, EVM chains, or non-EVM chains, such as Solana or MultiversX. See the [[index-wallet-ux|supported JSON/RPC Web3 operations]] for a list of chain-specific methods supported via the `Request` call of the {{config.extra.arcana.gaming_sdk_name}}.
 
 ## What's Next?
 

@@ -191,7 +191,7 @@ See [billing and pricing]({{page.meta.arcana.root_rel_path}}/concepts/billing.md
 
 To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't need to update the profile details including the billing information. Once the apps consume the free tier of {{config.extra.arcana.company_name}} Mainnet usage, the developer must provide the billing details via the profile section of the {{config.extra.arcana.dashboard_name}}. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any app that is registered using the developer account.
 
-For details on current pricing and free tier limits, contact our [[support|support team]].
+For details on current pricing and free tier limits, contact our [[index-support|{{config.extra.arcana.company_name}} support]].
 
 ### Payment Method Setup
 

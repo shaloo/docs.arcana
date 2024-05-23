@@ -1,6 +1,6 @@
 ---
 alias: introduction
-title: 'Introduction'
+title: 'Overview'
 description: 'Introducing Arcana SDKs - Auth and Gasless.'
 arcana:
   root_rel_path: ..

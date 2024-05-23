@@ -1,22 +1,26 @@
 ---
 alias: index-partner-docs
-title: 'Arcana on Partner Chains'
+title: 'Docs @Partners'
 description: 'Arcana SDKs - Auth, Gasless feature on partner chains that are pre-configured in Arcana wallet. Check out Arcana documentation on partner chain docs sites.'
 arcana:
   root_rel_path: ..
 ---
 
-# Arcana on Partner Chains
+# Arcana Docs @Partners
 
-[:simple-alchemy:{ .icon-color } Alchemy Account Kit](https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html){ .md-button }
+=== "Alchemy"
 
-[:simple-alchemy:{ .icon-color } Alchemy Auth Signer](https://accountkit.alchemy.com/signers/guides/arcana-auth.html){ .md-button }
+    [:simple-alchemy:{ .icon-color } Arcana Auth Signer](https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html){ .md-button } [:simple-alchemy:{ .icon-color } Arcana Auth Integration ](https://accountkit.alchemy.com/signers/guides/arcana-auth.html){ .md-button }
 
-[:material-file-document-check:{ .icon-color } Caduceus Auth](https://docs.caduceus.foundation/auth){ .md-button }
+=== "Caduceus"
 
-[:material-file-document-check:{ .icon-color } Linea Social Login]( https://docs.linea.build/build-on-linea/tooling/social-login/arcana){ .md-button }
+    [:material-file-document-check:{ .icon-color } Social Login with Arcana](https://docs.caduceus.foundation/auth){ .md-button }
 
-[:material-file-document-check:{ .icon-color } Linea Account Abstraction](https://docs.linea.build/build-on-linea/tooling/account-abstraction/arcana){ .md-button }
+=== "Linea"
 
-[:fontawesome-solid-infinity:{ .icon-color } MultiversX Auth](hhttps://multiversx.com/ecosystem/project/arcana){ .md-button }
+    [:material-file-document-check:{ .icon-color } Social Login with Arcana]( https://docs.linea.build/developers/tooling/social-login/arcana){ .md-button } [:material-file-document-check:{ .icon-color } Account Abstraction with Arcana](https://docs.linea.build/developers/tooling/account-abstraction/arcana){ .md-button }
+
+=== "MultiversX"
+
+    [:fontawesome-solid-infinity:{ .icon-color } Arcana Auth on MultiversX](https://multiversx.com/ecosystem/project/arcana){ .md-button }
 

@@ -22,9 +22,7 @@ At {{config.extra.arcana.company_name}}, we take security, privacy, and ownershi
 
 Take a quick look at the overview of the [[auth-architecture|architecture and key components]] of the {{config.extra.arcana.product_name}} and see [{{config.extra.arcana.company_name}} Network Technical White Paper v1.0](https://www.notion.so/arcananetwork/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for implementation details.
 
-!!! an-tip "Quick Start Guides"
-
-     Ready to jump into integrating your app with the {{config.extra.arcana.sdk_name}} right away? See [[quick-start|Quick Start Guides]]. :material-rocket-launch: {.icon-color }
+[[try-now-auth|Try Auth :fontawesome-solid-paper-plane:]]{ .md-button } [[try-now-gl|Try Gasless :fontawesome-solid-paper-plane:]]{ .md-button }
 
 ## Build Web3 Apps Faster
 

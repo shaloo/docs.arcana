@@ -47,9 +47,9 @@ arcana:
   <div class="card" markdown><h4><b>:material-gesture-tap-button:{ .icon-color } Easy to Use</b></h4><hr><p><ul><li>In-app, non-custodial wallet available instantly after a user logs in.</li><li>Users don't need to install any browser extensions.<li>Requires no seed phrase.</li><li>Global keyspace option allows wallet sharing across apps integrated with the SDK.</li><li>Wallet is pre-configured with a subset of supported chains.</li></ul></p></div>
 </div>
 
-<!--
+[[try-now-auth|Let's get started! ++enter++]]{ .md-button .md-button--primary}
 
-[[quick-start|Let's begin! ++enter++]]{ .md-button .md-button--primary}
+<!--
 
 Git: {{ git.short_commit}}
 

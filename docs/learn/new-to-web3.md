@@ -90,7 +90,7 @@ Now that you are familiar with the basics, let us take a look at what {{config.e
 
 **Wallet Ops**: Use the built-in {{config.extra.arcana.wallet_name}} UI or build a custom wallet UI. The embedded, non-custodial {{config.extra.arcana.wallet_name}} is instantly available to authenticated users to sign blockchain transactions. For details, see [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] and [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
 
-**Deploy App**: Begin by deploying the integrated app on the Testnet. A default Testnet configuration profile associated with all the registered apps. Then create a Mainnet configuration profile to deploy on the Mainnet. For details, see [[deploy-app|Deployment Guide]] and [[migrate-app-testnet-mainnet|how to migrate an app deployed on the Testnet to the Mainnet]].
+**Deploy App**: Begin by deploying the integrated app on the Testnet. A default Testnet configuration profile is associated with all the registered apps. Then create a Mainnet configuration profile to deploy on the Mainnet. For details, see [[deploy-app|Deployment Guide]] and [[migrate-app-testnet-mainnet|how to migrate an app deployed on the Testnet to the Mainnet]].
 
 ## Step 3: Example Code
 
