@@ -7,7 +7,7 @@ site_name: '📖 Docs'
 site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 # Check for broken links, etc.
-strict: false  #For reorg changing it to false
+strict: true  #For reorg changing it to false
 
 # For canonical/URL ending with a '/' make sure this is true and offline plugin is disabled
 use_directory_urls: true
@@ -38,9 +38,9 @@ theme:
     - navigation.tabs.sticky
     - navigation.prune
     - navigation.top
-    - navigation.expand
+    #- navigation.expand
     #- navigation.path #paid feature enables breadcrumbs
-    - navigation.indexes
+    #- navigation.indexes
     - navigation.sections
     - navigation.footer
     - search.highlight
@@ -354,13 +354,22 @@ validation:
     absolute_links: ignore
     unrecognized_links: info
 
+not_in_nav: |
+  quick-start/index.md
+  quick-start/auth-sdk/index.md
+  quick-start/mobile/index.md
+  auth/index.md
+  auth/integrate/index.md
+  auth/mobile/index.md
+  auth/onboard/index.md
+
 nav:
   - Products: 
     - index.md
     - Quick Start:
-      - quick-start/index.md
+      #- quick-start/index.md
       - Auth:
-        - quick-start/auth-sdk/index.md
+        #- quick-start/auth-sdk/index.md
         - Web:
           - Wagmi: quick-start/wagmi-quick-start.md
           - RainbowKit: quick-start/rainbowkit-quick-start.md
@@ -370,7 +379,7 @@ nav:
           - Vue: quick-start/vue-quick-start.md
           - Gasless Apps: quick-start/gasless-quick-start.md
         - Mobile: 
-          - quick-start/mobile/index.md
+          #- quick-start/mobile/index.md
           - Flutter Apps: quick-start/flutter-quick-start.md
           - React-Native Apps: quick-start/react-native-quick-start.md
         - Solana Apps: quick-start/solana-quick-start.md
@@ -381,11 +390,11 @@ nav:
     - Usage:
       - introduction/index.md
       - Auth: 
-        - auth/index.md
+        #- auth/index.md
         - Register App: setup/config-auth/register-app.md 
         - Install SDK: auth/sdk-installation.md
         - Integrate App:
-          - auth/integrate/index.md
+          #- auth/integrate/index.md
           - Wagmi: auth/integrate/wagmi.md
           - RainbowKit: auth/integrate/rainbow.md
           - Web3-React: auth/integrate/web3-react.md
@@ -397,7 +406,7 @@ nav:
           - MultiversX App: auth/integrate/mvx.md
           - Unity App: auth/integrate/unity.md
           - Mobile:
-            - auth/mobile/index.md
+            #- auth/mobile/index.md
             - Flutter: auth/mobile/flutter-get-started.md
             - React-Native: auth/mobile/react-native-get-started.md
           - Custom OAuth: auth/integrate/custom-oauth.md
@@ -405,7 +414,7 @@ nav:
             - auth/web3-ops/arcana-wallet-ui/index.md
             - Wallet Visibility: auth/web3-ops/arcana-wallet-ui/config-wallet-visibility.md
         - Onboard Users: 
-          - auth/onboard/index.md
+          #- auth/onboard/index.md
           - HTML/CSS/JS: 
             - auth/onboard/vanilla/index.md
             - Plug-and-Play Login: auth/onboard/vanilla/use-plug-play-auth.md

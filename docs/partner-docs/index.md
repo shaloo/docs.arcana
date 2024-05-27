@@ -18,7 +18,7 @@ arcana:
 
 === "Linea"
 
-    [:material-file-document-check:{ .icon-color } Social Login with Arcana]( https://docs.linea.build/developers/tooling/social-login/arcana){ .md-button } [:material-file-document-check:{ .icon-color } Account Abstraction with Arcana](https://docs.linea.build/developers/tooling/account-abstraction/arcana){ .md-button }
+    [:material-file-document-check:{ .icon-color } Social Login with Arcana](https://docs.linea.build/developers/tooling/social-login/arcana){ .md-button } [:material-file-document-check:{ .icon-color } Account Abstraction with Arcana](https://docs.linea.build/developers/tooling/account-abstraction/arcana){ .md-button }
 
 === "MultiversX"
 
