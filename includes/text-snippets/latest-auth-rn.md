@@ -35,7 +35,7 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 * New updated [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) now supports the latest Wagmi 2.x.y SDK.
 
-* New **off-ramping** feature in the {{config.extra.arcana.wallet_name}} allows users to sell crypto or convert blockchain assets to Fiat via selected supported off-ramping providers. See [[dashboard-user-guide#buysell-crypto|how to buy/sell crypto through Fiat]] for details.
+* New **off-ramping** feature in the {{config.extra.arcana.wallet_name}} allows users to sell crypto or convert blockchain assets to Fiat via selected supported off-ramping providers. See [[arcana-wallet-user-guide#buysell-crypto|how to buy/sell crypto through Fiat]] for details.
 
 ## What has changed?
 
