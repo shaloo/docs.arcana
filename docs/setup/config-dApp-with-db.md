@@ -68,7 +68,7 @@ In the social authentication settings screen, refer to the dropdown on the top r
 When 'Mainnet' is selected from the dropdown, a new 'Mainnet' profile creation wizard gets activated and displays a pop-up screen asking the developer to choose one of the options to create the 'Mainnet' configuration. You can either copy the exact 'Testnet' configuration or create a new blank configuration for 'Mainnet' settings. 
 
 <figure markdown="span">
-  ![Switch to Mainnet Settings]({{config.extra.arcana.img_dir}}/an_db_new_mainnet_config_anim.gif){ .an-screenshots .width_85pc }
+  ![Switch to Mainnet Settings]({{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif){ .an-screenshots .width_85pc }
   <figcaption>Switch to Mainnet Settings</figcaption>
 </figure>
 
@@ -239,7 +239,7 @@ On the **Invoices** page, you will see the details of the current pending dues, 
 
 ### View Billing Notifications
 
-Click the bell icon to view all notifications for the developer account. Check the [billing notifications]({{page.meta.arcana.root_rel_path}}/concepts/billing.md#notifications) list for details.
+Click the bell icon to view all notifications for the developer account. Check the [billing notifications]({{page.meta.arcana.root_rel_path}}/concepts/billing.md#billing-notifications) list for details.
 
 <figure markdown="span">
   ![Billing Notifications]({{config.extra.arcana.img_dir}}/an_db_notifications_nav.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
