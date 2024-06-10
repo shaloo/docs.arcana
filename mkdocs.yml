@@ -180,18 +180,29 @@ plugins:
   - git-authors:
       show_email_address: false
   - git-revision-date-localized
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: fade
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - an-screenshots-noeffects
+      auto_caption: true
+      caption_position: bottom
   - redirects:
         redirect_maps:
           # Linea docs backlinks
           'howto/index.md': 'quick-start/index.md'
-          'howto/index.md': 'index.md'
           'sdk-installation.md': 'auth/sdk-installation.md'
           'web-sdk/auth-usage-guide.md': 'auth/auth-usage-guide.md'
           'state-of-the-arcana-auth.md': 'web3-stack/index.md'
           'dev-resources/sdk-ref/index.md': 'guides/dev/sdk-ref/index.md'
           'introducing-arcana-auth.md': 'introduction/index.md'
           'walletsdk/wallet_qs.md': 'quick-start/index.md'
-          'walletsdk/wallet_qs.md': 'index.md'
           'auth-quick-start.md': 'quick-start/auth-sdk/index.md'
           'walletsdk/wallet_err.md': 'auth/auth-error-msg.md'
           'walletsdk/wallet_usage.md': 'auth/auth-usage-guide.md'
@@ -284,7 +295,6 @@ plugins:
           'docs/conceptnftviewer/index.md': 'support/index.md'
           'docs/category/using-arcana-wallet/index.md': 'support/index.md'
           'docs/quick-start/web-apps-quick-start.md': 'quick-start/index.md'
-          'docs/quick-start/web-apps-quick-start.md': 'index.md'
           'db/config-dApp-with-db-for-Solana.md': 'setup/config-dApp-with-db-for-Solana.md'
 
 markdown_extensions:
