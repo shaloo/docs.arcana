@@ -17,12 +17,10 @@ copyright: Copyright &copy; 2024 Arcana Network
 #repo_name: arcana-network
 #edit_uri: https://github.com/arcana-network/auth-mkdocs/blob/main/docs
 
-# theme customizations
-
 theme:
   name: material
   language: en
-  logo: imgnew/arcana-logo-pink.png
+  logo: img/arcana-logo-pink.png
   icon:
     repo: fontawesome/brands/git-alt
     edit: material/pencil
@@ -71,13 +69,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to System Mode
-
-extra_javascript:
-  - javascripts/mathjax.js
-  - javascripts/common.js
-  # - javascripts/andropdown.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
   - stylesheets/custom.css
@@ -171,19 +162,6 @@ plugins:
   - search:
       lang: en
   - open-in-new-tab
-  - glightbox:
-      touchNavigation: true
-      loop: false
-      effect: zoom
-      slide_effect: fade
-      width: 100%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - an-screenshots-noeffects
-      auto_caption: true
-      caption_position: bottom
   - alias
   - meta-descriptions:
       export_csv: false
@@ -781,5 +759,6 @@ nav:
     - Contact Us: support/contactus.md
     - Join Arcana Community: support/community.md
     - Report Bugs: support/reportbugs.md
+
 
 
