@@ -57,6 +57,7 @@
   --md-an-admonition-danger: #fadbe156;
   --md-an-admonition-example: #f6e3f865;
   --md-an-admonition-abstract: #e9f2f663;
+  --md-an-header-shadow-color: #eaeaea;
 }
 
 :root > [data-md-color-scheme="slate"]{
@@ -82,9 +83,27 @@
   --md-an-admonition-danger: #3f141c;
   --md-an-admonition-example: #2e1431;
   --md-an-admonition-abstract: #0e232b;
+  --md-an-header-shadow-color: #eaeaea33;
+}
+
+/* Top Header: Arcana Styling */
+
+.md-header--shadow {
+  box-shadow: 0 0.0125rem var(--md-an-header-shadow-color);
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-header__inner {
+  border-bottom: 0.025rem solid var(--md-an-header-shadow-color);
 }
 
 /* Top Tabs: Arcana Styling */
+
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
 
 .md-tabs__item {
   border: 1px 1px 1px 0 solid gray;
@@ -126,6 +145,13 @@
 }
 
 /* Adjust Chatbase icon overlap on footer social icons */
+
+/* Footer: Arcana Styling */
+
+.md-footer {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
 
 .md-social {
   margin-right: 6%; /*To accommodate chatbase bot icon */
