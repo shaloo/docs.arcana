@@ -180,12 +180,15 @@ const info = await auth.getUser()
 
 /*
 interface UserInfo {
-  id: string
-  email?: string
-  name?: string
-  picture?: string
-  address: string
-  publicKey: string
+    address: string;
+    email?: string;
+    id: string;
+    userDIDToken: string;
+    loginToken: string;
+    loginType: Logins | "passwordless";
+    name?: string;
+    picture?: string;
+    publicKey: string;
 }
 */
 ```

@@ -22,10 +22,26 @@ Developers can use `getUser()` method to access the JWT token via the [`UserInfo
       or 
       with custom login UI loginWithSocial, loginWithLink (deprecated), `loginWithOTPStart` and `loginWithOTPComplete`, loginWithBearer calls
 */
+import { ethers } from "ethers";
+
 try {
   const userInfo = await auth.getUser();
   const jwtToken = userInfo.loginToken;
   console.log("Arcana JWT Token: ", jwtToken);
+
+  //Verify the loginToken via standard JWT validation
+  // See how to verify the token returned by Arcana link above
+
+  const didToken = userInfo.userDIDToken;
+    console.log("Arcana DID Token: ", didToken);
+
+  /* Verify the DID token / address */
+
+  const data = JSON.parse(window.atob(didToken));
+  const [sig, claims] = data;
+  const addr = ethers.verifyMessage(claims, sig);
+
+  console.log("Address: ", {addr});
 } catch (e) {
   console.log(e);
 }
