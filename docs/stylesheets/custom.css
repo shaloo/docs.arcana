@@ -167,8 +167,8 @@
 
 .md-nav__link--active{
   /*background-color: #f4c3d9e6;*/
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  /*padding-top: 0.25rem;
+  padding-bottom: 0.25rem;*/
   border-radius: 5px;
   background-color: var(--md-nav-bg-active-color);  /*background-color: #f4c3d9e6;*/
   color: var(--md-an-pink-color); !important
@@ -187,9 +187,9 @@ li.md-nav__item, a.md-nav__link {
 }
 
 .md-nav__link:hover {
-  padding-top: 0.25rem;
+  /*padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 0.25rem;*/
   background-color: var(--md-nav-bg-hover-color);  /*background-color: #f4c3d9e6;*/
   border-radius: 5px;
 }
