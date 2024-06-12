@@ -396,8 +396,9 @@ nav:
           - Vue: auth/integrate/vue.md
           - Gasless: auth/integrate/gasless.md
           - Solana: auth/integrate/solana.md
-          - MultiversX App: auth/integrate/mvx.md
-          - Unity App: auth/integrate/unity.md
+          - MultiversX: auth/integrate/mvx.md
+          - Near: auth/integrate/near.md
+          - Unity: auth/integrate/unity.md
           - Mobile:
             #- auth/mobile/index.md
             - Flutter: auth/mobile/flutter-get-started.md
@@ -476,8 +477,9 @@ nav:
                 - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
           - Gasless: auth/onboard/gasless.md
           - Solana: auth/onboard/solana.md
-          - MultiversX App: auth/onboard/mvx.md
-          - Unity App: auth/onboard/unity.md
+          - MultiversX: auth/onboard/mvx.md
+          - Near: auth/onboard/near.md
+          - Unity: auth/onboard/unity.md
           - Mobile:
             - auth/mobile/index.md
             - Flutter: auth/mobile/flutter-get-started.md
@@ -498,6 +500,7 @@ nav:
             - JSON/RPC: auth/web3-ops/solana/solana-json-rpc-ops.md
             - Web3 Ops: auth/web3-ops/solana/solana-wallet-ops.md
           - MultiversX: auth/web3-ops/mvx/index.md
+          - Near: auth/web3-ops/near/index.md
           - Unity: auth/web3-ops/unity-wallet-ops.md
         - Event Handling: auth/handle-provider-events.md
         - Try Now!: auth/auth-try-now.md
@@ -534,6 +537,7 @@ nav:
           - Manage Gasless: setup/configure-gasless.md
           - Solana Setup: setup/config-dApp-with-db-for-Solana.md
           - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
+          - Near Setup: setup/config-dApp-with-db-for-near.md
           - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
         - Gasless SDK Settings:
           - Register App: setup/config-gasless/register-app.md
