@@ -68,6 +68,8 @@ This documentation contains everything you need to get started using {{config.ex
 
 <h2>Quick Start</h2>
 
+<br/><br/>
+
 {==
 
 **TL;DR**
@@ -75,6 +77,8 @@ This documentation contains everything you need to get started using {{config.ex
 Select your app type and get started with integrating social login and gasless transactions right away!
 
 ==}
+
+<br/><br/>
 
 === "Web Apps"
 
