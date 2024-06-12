@@ -376,6 +376,7 @@ nav:
           - React-Native Apps: quick-start/react-native-quick-start.md
         - Solana Apps: quick-start/solana-quick-start.md
         - MultiversX Apps: quick-start/mvx-quick-start.md
+        - Near Apps: quick-start/near-quick-start.md
         - Unity Apps: quick-start/unity-quick-start.md
       - Gasless: quick-start/gasless-standalone-quick-start.md
       - Auth-Core: quick-start/auth-core-quick-start.md
@@ -583,6 +584,7 @@ nav:
         - Gasless: faq/faq-gasless.md
         - Solana: faq/faq-solana.md
         - MultiversX: faq/faq-mvx.md
+        - Near: faq/faq-near.md
       - Troubleshooting: troubleshooting.md
       - Release Note Archives: 
         - relnotes/archives/index.md
