@@ -8,7 +8,7 @@ arcana:
 
 # MultiversX Wallet Ops
 
-The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification APIs](https://docs.solana.com/api/http) and Web3 wallet operations.
+The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) and Web3 wallet operations.
 
 ## Web3 Wallet Operations
 
@@ -25,7 +25,6 @@ Developers can call `provider.request` and specify the *method* parameter as one
 Before issuing the Web3 wallet operations, make sure you have installed the {{config.extra.arcana.sdk_name}}, [[index-integrate|integrated the app]] with the SDK and initialized it.
 
 ## Supported Web3 Operations
-
 
 ### `getAccounts`
 
