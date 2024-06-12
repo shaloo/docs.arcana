@@ -4,7 +4,7 @@ const auth = new AuthProvider(
   { 
     position: 'left',         // default: right
     theme: 'light',           // default: dark
-d   setWindowProvider: true,  // default: false, window.ethereum not set
+    setWindowProvider: true,  // default: false, window.ethereum not set
     connectOptions: {
       compact: true           // default: false, regular plug-and-play login UI
     },
