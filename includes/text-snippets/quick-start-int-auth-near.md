@@ -4,7 +4,7 @@ Import `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` packa
 
 Create a new `AuthProvider` and specify the unique **{{config.extra.arcana.app_address}}** obtained earlier during app registration.
 
-{% include "./code-snippets/new_auth.md" %}
+{% include "./code-snippets/new_auth_near.md" %}
 
 Initialize the newly instantiated `AuthProvider`.
 
@@ -17,3 +17,5 @@ Initialize the newly instantiated `AuthProvider`.
 {% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
 After initializing the `AuthProvider`, you can call any of its exported functions. See {% include "./text-snippets/authsdkref_url.md" %} for details.
+
+Next, add code to facilitate user onboarding in the app.
