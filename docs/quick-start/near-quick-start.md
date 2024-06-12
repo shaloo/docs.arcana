@@ -36,7 +36,7 @@ Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/
 
 ## 3. Integrate
 
-{% include "./text-snippets/quick-start-int-auth-evm.md" %}
+{% include "./text-snippets/quick-start-int-auth-near.md" %}
 
 ### Onboard Users
 
