@@ -6,7 +6,7 @@ const provider = new AuthProvider(
   // network: 'testnet',  // optional
   chainConfig: {
     chainId: '137',      // selected chain in the wallet network dropdown UI
-    rpcUrl: 'https://rpc-mumbai.maticcvigil.com',  // RPC URL of the selected chain in the wallet network dropdown UI
+    rpcUrl: 'https://rpc.ankr.com/polygon_amoy',  // RPC URL of the selected chain in the wallet network dropdown UI
   },
   alwaysVisible: true,
   setWindowProvider: true,
