@@ -10,7 +10,8 @@
     * Base Mainnet
     * Base Testnet (Goerli)
     * Base Testnet (Sepolia)
-    * Berachain Artio
+    * Berachain bArtio Testnet V1
+    * Berachain bArtio Testnet V2
     * Bitlayer Testnet
     * Bitlayer Mainnet
     * BNB Smart Chain (BSC)
@@ -29,7 +30,7 @@
     * Optimism 
     * Optimism Goerli
     * Polygon 
-    * Polygon Mumbai 
+    * Polygon Amoy 
     * Polygon zkEVM Testnet
     * Scroll Mainnet
     * Scroll Testnet (Sepolia)
