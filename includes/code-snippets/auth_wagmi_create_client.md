@@ -47,13 +47,13 @@
     import { configureChains, createConfig, WagmiConfig } from "wagmi";
     import { publicProvider } from "wagmi/providers/public";
     import { ArcanaConnector } from "@arcana/auth-wagmi";
-    import { polygon, polygonMumbai } from "wagmi/chains";
+    import { polygon, polygonAmoy } from "wagmi/chains";
     import { newAuthProvider } from "./utils/newArcanaAuth";
     import { useAccount, useConnect, useDisconnect, useBalance } from 'wagmi'
     import "../styles/globals.css";
 
     const { chains, provider, webSocketProvider } = configureChains(
-      [mainnet, polygon, polygonMumbai],
+      [mainnet, polygon, polygonAmoy],
       [publicProvider()],
       { targetQuorum: 1 }
     );
@@ -71,7 +71,7 @@
     };
 
     const { chains, publicClient } = configureChains(
-      [polygon, polygonMumbai],
+      [polygon, polygonAmoy],
       [publicProvider()]
     );
 
@@ -90,7 +90,7 @@
     // wagmi versions 0.x.y and auth-wagmi 1.a.b
 
     import { WagmiConfig, configureChains, createClient, Chain } from "wagmi";
-    import { goerli, mainnet, polygon, polygonMumbai } from "wagmi/chains";
+    import { goerli, mainnet, polygon, polygonAmoy } from "wagmi/chains";
     import { InjectedConnector } from "wagmi/connectors/injected";
     import { publicProvider } from "wagmi/providers/public";
     import { ArcanaConnector } from "@arcana/auth-wagmi";
@@ -100,7 +100,7 @@
     import type { AppProps } from "next/app";
 
     const { chains, provider, webSocketProvider } = configureChains(
-      [mainnet, goerli, polygon, polygonMumbai],
+      [mainnet, goerli, polygon, polygonAmoy],
       [publicProvider()],
       { targetQuorum: 1 }
     );
