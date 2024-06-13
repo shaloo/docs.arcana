@@ -29,7 +29,7 @@
     * Optimism 
     * Optimism Goerli
     * Polygon 
-    * Polygon Mumbai 
+    * Polygon Amoy 
     * Polygon zkEVM Testnet
     * Scroll Mainnet
     * Scroll Testnet (Sepolia)
