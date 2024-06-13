@@ -2,7 +2,7 @@
 
 import { AuthProvider } from "@arcana/auth";
 import { ArcanaConnector } from "@arcana/auth-wagmi";
-import { polygon, polygonMumbai } from "wagmi/chains";
+import { polygon, polygonAmoy } from "wagmi/chains";
 import { configureChains, createClient, Chain } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 
