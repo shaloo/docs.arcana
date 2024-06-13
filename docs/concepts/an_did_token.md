@@ -30,7 +30,7 @@ The {{config.extra.arcana.sdk_name}} returns `userDIDToken` once an app user log
 
 Developers can use `getUser()` method to access the user's DID token via the [`UserInfo`](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) return value. 
 
-### Verify UserDID Token
+### Verify DID Token
 
 === "EVM"
 
