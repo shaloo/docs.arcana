@@ -108,7 +108,7 @@ To add or select a network, click the dropdown next to the blockchain network ic
 You can either choose one of the available networks to switch or add a new one.
 
 <figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_add_network_button.{{config.extra.arcana.img_png}}" alt="Add Network"/>
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_add_network_button.{{config.extra.arcana.img_gif}}" alt="Add Network"/>
   <figcaption>Add Network</figcaption>
 </figure> 
 
