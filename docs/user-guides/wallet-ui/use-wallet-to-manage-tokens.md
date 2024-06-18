@@ -100,7 +100,7 @@ Choose the appropriate token that you wish to send from the dropdown list, enter
 Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab at the bottom left of the wallet to receive tokens from another wallet address. Click the QR icon <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_qr_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_qr_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> on the top right of the wallet and copy the QR code or the wallet address. Share it with the sender to receive tokens in your account.  
 
 <figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_receive_qr.{{config.extra.arcana.img_png}}" alt="Receive Tokens"/><
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_receive_qr.{{config.extra.arcana.img_gif}}" alt="Receive Tokens"/><
   <figcaption>Receive Tokens</figcaption>
 </figure>
 
