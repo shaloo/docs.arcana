@@ -35,8 +35,8 @@ If an application requires to switch to a specific network programmatically, a s
 ## Send Transaction
 
 <figure markdown="span">
-  <img alt="send tx" src="{{config.extra.arcana.img_dir}}/an_wallet_signtx_send.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/>
-  <img alt="send tx" src="{{config.extra.arcana.img_dir}}/an_wallet_signtx_send_2.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/>
+  <img alt="send tx" src="{{config.extra.arcana.img_dir}}/an_wallet_signtx_send.{{config.extra.arcana.img_gif}}" class="an-screenshots-noeffects width_35pc"/>
+  <img alt="send tx" src="{{config.extra.arcana.img_dir}}/an_wallet_signtx_send_2.{{config.extra.arcana.img_gif}}" class="an-screenshots-noeffects width_35pc"/>
   <figcaption>Send Transaction</figcaption>
 </figure>
 
