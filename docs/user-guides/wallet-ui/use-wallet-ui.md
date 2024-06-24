@@ -52,6 +52,7 @@ Authenticated users can perform the following Web3 wallet operations through the
 * Sign (approve, reject) blockchain transactions
 * Add and configure network settings
 * Switch networks
+* Switch Account Type (EoA/SCW)
 * Manage token assets (native and custom)
     - Check account balance
     - List token assets
@@ -136,8 +137,26 @@ To switch the existing network using the wallet UI, click on the dropdown next t
 You will see a list of pre-configured blockchain networks available in the current application's context. Simply click one of the available networks to switch networks.
 
 <figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_switch_ntwk.gif" alt="Switch Network"/>
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_switch_ntwk.{{config.extra.arcana.img_gif}}" alt="Switch Network"/>
   <figcaption>Switch Network</figcaption>
+</figure> 
+
+### View/Switch Account Type
+
+If the current active blockchain in the wallet supports gasless transactions then the user account is associated with two addresses, EoA and SCW. 
+
+[[concept-wallet-switch-account-type|Account Type]] is listed below the wallet address in the wallet UI.
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_scw_account_type.{{config.extra.arcana.img_png}}" alt="View Account Type"/>
+  <figcaption>View Account Type</figcaption>
+</figure> 
+
+To switch the account type, click on the arrow next to the wallet address and select EoA/SCW. If the default active chain does not support gasless transactions then there is only EoA address associated with the user's wallet. In this case user cannot switch to SCW or smart wallet account.
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_switch_account_type.{{config.extra.arcana.img_gif}}" alt="Switch Account Type"/>
+  <figcaption>Switch Account Type</figcaption>
 </figure> 
 
 ### Buy/Sell Crypto

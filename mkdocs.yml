@@ -136,6 +136,9 @@ extra:
       link: https://discord.gg/9vrxze3JRR
     - icon: material/chat
       link: https://github.com/orgs/arcana-network/discussions
+    - icon: material/book
+      link: https://www.webfx.com/tools/read-able/referer.php
+
   # Removes made with Material notice in the footer   
   generator: false
   analytics:
@@ -617,6 +620,16 @@ nav:
     - Auth-Core:
       - Usage: auth/auth-core-usage-guide.md
       - SDK Reference: https://auth-core-sdk-ref-guide.netlify.app/
+    - Docs Collaboration Partners:
+      - partner-docs/index.md
+      - Alchemy Account Kit: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
+      - Alchemy Auth Signer: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
+      - Caduceus Auth: https://docs.caduceus.foundation/auth
+      - Linea Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
+      - Linea Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
+      - MultiversX Auth: https://multiversx.com/ecosystem/project/arcana
+    - Privacy: legal/PRIVACY.pdf
+    - Terms of Use: legal/TERMS.pdf
   - Resources:
     #- guides/index.md
     - Developers:
@@ -828,6 +841,5 @@ nav:
     - Contact Us: support/contactus.md
     - Join Arcana Community: support/community.md
     - Report Bugs: support/reportbugs.md
-
 
 
