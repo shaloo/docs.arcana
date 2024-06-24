@@ -77,6 +77,10 @@ In such situations, even if the app functions are whitelisted, gas tanks are not
   <figcaption>Gas Tanks Empty</figcaption>
 </figure>
 
+### Managing Account Type
+
+Developers must check the current active account type in the wallet before issuing blockchain transactions programmatically as the user can potentially use the wallet UI and switch account type between EoA and SCW accounts. Use `_arcana_getAccountType()` and `_arcana_switchAccountType(accountType)` methods to check and switch between account types before issuing transactions. 
+
 ## User Experience
 
 Apps using the {{config.extra.arcana.sdk_name}} provide seamless gasless operations. Gas tanks are configured and funded to cover gas fees, sparing users these costs unless operations aren't whitelisted or tanks are inactive. Users, on supported blockchain networks with gas tanks, are assigned gasless accounts. Each gasless account is associated with two **wallet addresses**.
@@ -85,11 +89,11 @@ Apps using the {{config.extra.arcana.sdk_name}} provide seamless gasless operati
 
 Gasless user accounts aren't just regular 'Externally Owned Accounts' (EoA). When developers add a gas tank for a blockchain network, each user is also given a 'Smart Contract Wallet' (SCW) address. Users can switch between EoA and SCW accounts using {{config.extra.arcana.wallet_name}} UI. Without a gas tank, users see only the EoA account, but once developers provision a gas tank, both EoA and SCW accounts appear in the {{config.extra.arcana.wallet_name}} UI.
 
-This two address gasless user account model aligns with the Ethereum account abstraction smart contract specification [ERC-4337](https://www.erc4337.io/docs).
+This two-address gasless user account model aligns with the Ethereum account abstraction smart contract specification [ERC-4337](https://www.erc4337.io/docs).
 
-### Managing EoA and SCW Addresses
+### Switching EoA and SCW Addresses
 
-By default, gasless apps will have the SCW address active in the {{config.extra.arcana.wallet_name}} UI. Users can switch it back to the EoA address. Only the active wallet address is used to perform the blockchain transactions. Note that the gasless capability is associated only with the SCW address. If a user switches the wallet to EoA, then the EoA wallet address is used to perform the blockchain transaction. This will result in gas fees charged via the user's EoA wallet even if the gas tanks are set up and available for that blockchain network.
+By default, gasless apps will have the SCW address active in the {{config.extra.arcana.wallet_name}} UI. Users can switch it back to the EoA address via the wallet UI. Only the active wallet address is used to perform the blockchain transactions. Note that the gasless capability is associated only with the SCW address. If a user switches the wallet to EoA, then the EoA wallet address is used to perform the blockchain transaction. This will result in gas fees charged via the user's EoA wallet even if the gas tanks are set up and available for that blockchain network.
 
 If the gas tank is depleted, empty or paused then by default the EoA wallet address becomes active for the user and is displayed in the wallet. If the user switches it to the SCW address then that is used for any blockchain transactions. In this case, since the gas tank is not available, the user will have to bear the gas fees via the SCW wallet address. So the user needs to make sure that the SCW account has sufficient funds.
 
