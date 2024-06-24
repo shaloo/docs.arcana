@@ -38,7 +38,7 @@ theme:
     - navigation.top
     #- navigation.expand
     #- navigation.path #paid feature enables breadcrumbs
-    #- navigation.indexes
+    #- navigation.indexes #section index pages
     - navigation.sections
     - navigation.footer
     - search.highlight
@@ -47,7 +47,7 @@ theme:
     - toc.follow
     - content.code.copy
     - content.tabs.link
-    #- header.autohide 
+    - header.autohide 
   palette:
     # Auto Mode
     - media: "(prefers-color-scheme)"
@@ -346,6 +346,7 @@ validation:
     unrecognized_links: info
 
 not_in_nav: |
+  work-in-progress.md
   quick-start/index.md
   quick-start/auth-sdk/index.md
   quick-start/mobile/index.md
@@ -382,6 +383,7 @@ not_in_nav: |
   guides/dev/index.md
   guides/err/index.md
   guides/user/index.md
+  guides/dev/sdk-ref/index.md
   user-guides/wallet-ui/index.md
   guides/validators/index.md
   faq/index.md
@@ -546,6 +548,7 @@ nav:
             #- auth/web3-ops/evm/index.md
             - Add/Switch Network: auth/web3-ops/evm/add-switch-ntwk.md
             - Check Balance: auth/web3-ops/evm/balance.md
+            - Get/Switch Account Type: auth/web3-ops/evm/get-switch-account.md
             - Send Tokens: auth/web3-ops/evm/send.md
             - Show/Hide Wallet: auth/web3-ops/evm/show.md
             - Sign Message: auth/web3-ops/evm/sign.md
@@ -610,26 +613,10 @@ nav:
       - Terms of Use: legal/TERMS.pdf
       - Coming Soon!: arcana-coming-soon.md
   - APIs: 
-    - guides/dev/sdk-ref/index.md
-    - Auth:
-      - Usage: auth/auth-usage-guide.md
-      - SDK Reference: https://authsdk-ref-guide.netlify.app/
-    - Gasless:
-      - Usage: gasless/gasless-sdk-usage-guide.md
-      - SDK Reference: work-in-progress.md
-    - Auth-Core:
-      - Usage: auth/auth-core-usage-guide.md
-      - SDK Reference: https://auth-core-sdk-ref-guide.netlify.app/
-    - Docs Collaboration Partners:
-      - partner-docs/index.md
-      - Alchemy Account Kit: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
-      - Alchemy Auth Signer: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
-      - Caduceus Auth: https://docs.caduceus.foundation/auth
-      - Linea Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
-      - Linea Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
-      - MultiversX Auth: https://multiversx.com/ecosystem/project/arcana
-    - Privacy: legal/PRIVACY.pdf
-    - Terms of Use: legal/TERMS.pdf
+    #- guides/dev/sdk-ref/index.md
+    - Auth: auth/auth-usage-guide.md
+    - Gasless: gasless/gasless-sdk-usage-guide.md
+    - Auth-Core: auth/auth-core-usage-guide.md
   - Resources:
     #- guides/index.md
     - Developers:
@@ -747,6 +734,7 @@ nav:
           #- concepts/anwallet/index.md
           - Overview: concepts/anwallet/wallet-overview.md
           - Wallet UI Modes: concepts/anwallet/walletuimodes.md
+          - Wallet Account Types: concepts/anwallet/switch-account-type.md
           - Wallet Visibility: concepts/anwallet/walletvisibility.md
           - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
           - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md

@@ -189,20 +189,23 @@
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.25rem;
+  margin: auto;
 }
 
-li.md-nav__item, a.md-nav__link {
+li.md-nav__item, a.md-nav__link, .md-nav__link {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.25rem;
+  margin: auto;
 }
 
 .md-nav__link:hover {
-  /*padding-top: 0.25rem;
+  padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  padding-left: 0.25rem;*/
+  padding-left: 0.25rem;
   background-color: var(--md-nav-bg-hover-color);  /*background-color: #f4c3d9e6;*/
   border-radius: 5px;
+  margin: auto;
 }
 
 /* Button: Arcana Styling */

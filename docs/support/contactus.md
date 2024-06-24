@@ -1,15 +1,24 @@
 ---
 alias: contact-us
+template: newintro.html
 title: 'Contact Us'
 description: 'Contact our support team.'
 ---
 
 # Contact Us
-      
-???+ an-abstract "Email Us"
 
-      Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
+<div class="grid cards" markdown>
 
-???+ an-abstract "Meet Online"
+-   :material-email-edit:{ .lg .middle .icon-color} __Email Us__
 
-      Choose a convenient time slot and [set up a meeting/demo](https://calendly.com/arcana-network/arcana-demo-walkthrough) with the Arcana Team.
+    ---
+
+    Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
+
+-   :material-account-group:{ .lg .middle .icon-color} __Meet Online__
+
+    ---
+
+    Choose a convenient time slot and [set up a meeting/demo](https://calendly.com/arcana-network/arcana-demo-walkthrough) with the Arcana Team.
+
+</div>
