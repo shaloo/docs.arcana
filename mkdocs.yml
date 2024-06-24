@@ -137,6 +137,9 @@ extra:
       link: https://discord.gg/9vrxze3JRR
     - icon: material/chat
       link: https://github.com/orgs/arcana-network/discussions
+    - icon: material/book
+      link: https://www.webfx.com/tools/read-able/referer.php
+
   # Removes made with Material notice in the footer   
   generator: false
   analytics:
