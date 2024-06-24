@@ -137,6 +137,9 @@ extra:
       link: https://discord.gg/9vrxze3JRR
     - icon: material/chat
       link: https://github.com/orgs/arcana-network/discussions
+    - icon: material/book
+      link: https://www.webfx.com/tools/read-able/referer.php
+
   # Removes made with Material notice in the footer   
   generator: false
   analytics:
@@ -543,6 +546,7 @@ nav:
         - auth/web3-ops/evm/index.md
         - Add/Switch Network: auth/web3-ops/evm/add-switch-ntwk.md
         - Check Balance: auth/web3-ops/evm/balance.md
+        - Get/Switch Account Type: auth/web3-ops/evm/get-switch-account.md
         - Send Tokens: auth/web3-ops/evm/send.md
         - Show/Hide Wallet: auth/web3-ops/evm/show.md
         - Sign Message: auth/web3-ops/evm/sign.md
@@ -695,6 +699,7 @@ nav:
         - Wallet UI Modes: concepts/anwallet/walletuimodes.md
         - Wallet Visibility: concepts/anwallet/walletvisibility.md
         - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
+        - Wallet Account Types: concepts/anwallet/switch-account-type.md
         - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
         - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
       - Auth SDK: concepts/authsdk.md
