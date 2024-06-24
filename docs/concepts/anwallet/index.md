@@ -14,6 +14,8 @@ The {{config.extra.arcana.sdk_name}} provides an embedded Web3 wallet - the {{co
 
 [[concept-wallet-uimodes|Wallet UI Modes :material-folder-text:]]{ .md-button }
 
+[[concept-wallet-switch-account-type|Wallet Account Types :material-folder-text:]]{ .md-button }
+
 [[concept-wallet-visibility|Wallet Visibility :material-folder-text:]]{ .md-button }
 
 [[concept-wallet-switch-mode|Switching Networks :material-folder-text:]]{ .md-button }
