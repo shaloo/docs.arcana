@@ -1,7 +1,7 @@
 ---
 alias: sdk-installation
 title: 'Install Auth SDK'
-description: 'Multiple flavors of the Arcana Auth SDK depending upon the app type. Use the correct SDK package for installation. Choose from the basic Auth package to the wrapper SDK for React Apps, Wagmi, RainbowKit, Web3-react apps, Unity apps.'
+description: 'Multiple flavors of the Arcana Auth SDK depending upon the app type. Use the correct SDK package for installation. Choose from the basic Auth package to the wrapper SDK for React Apps, Wagmi, RainbowKit, WalletConnect, Web3-react apps, Unity apps.'
 arcana:
   root_rel_path: ..
 ---
@@ -14,7 +14,7 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 
 ## Web SDKs
 
-### Vanilla HTML/CSS/JS Apps
+### HTML/CSS/JS Apps
 
 {% include "./code-snippets/auth_install.md" %}
 
@@ -22,7 +22,7 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 
 {% include "./code-snippets/auth_react_install.md" %}
 
-### Wagmi/RainbowKit Apps
+### Wagmi/RainbowKit/WalletConnect Apps
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
