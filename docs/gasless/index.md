@@ -37,7 +37,7 @@ Developers must use the {{config.extra.arcana.dashboard_name}} to first configur
 {{config.extra.arcana.gasless_sdk_name}} is a [client-side library](https://www.npmjs.com/package/@arcana/scw) for enabling gasless transactions in third-party browser-based wallets. Different types of Web3 apps are supported by this SDK:
 
 * Web Apps: _Vanilla JS app_, _React, Next.js_, _Vue_
-* Wallet Connector Framework Apps: _Wagmi_, _RainbowKit_, and _Web3-React_
+* Wallet Connector Framework Apps: _Wagmi_, _RainbowKit_, _WalletConnect_ and _Web3-React_
 * Mobile Apps: _Flutter_, _React-Native_ 
 * Gaming Apps: _Unity_
 

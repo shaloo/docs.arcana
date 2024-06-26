@@ -22,7 +22,7 @@ Developers can choose to configure and deploy one instance of the app under acti
 
 * After successful app registration, a unique **{{config.extra.arcana.app_address}}** is assigned to the app. Save and use it for integrating the app with the SDK. A default 'Testnet' configuration profile is associated with every newly registered app. Before deploying on Arcana Mainnet, the developer must use the {{config.extra.arcana.dashboard_name}} and copy or reconfigure the SDK usage settings to create a Mainnet settings profile.
 
-* Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi, RainbowKit or Web3-React wallet connector frameworks. Follow the instructions in the respective [[index-integrate|integration guides]] and choose carefully depending on the app type. 
+* Integrating an app with the {{config.extra.arcana.sdk_name}} may vary slightly depending on the app type, whether it is a vanilla HTML/CSS/JS app, a React app, or a React app using wallet connectors such as Wagmi, RainbowKit, WalletConnect or Web3-React wallet connector frameworks. Follow the instructions in the respective [[index-integrate|integration guides]] and choose carefully depending on the app type. 
 
     !!! an-caution "Before Installing the SDK"
 
