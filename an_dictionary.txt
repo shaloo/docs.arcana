@@ -575,6 +575,7 @@ build-iam-steam-auth
 build-password-less-auth
 bundler
 bundlers
+buysell-crypto
 byok
 cairo
 cancelled
@@ -666,8 +667,10 @@ configure-auth
 configure-gasless
 configure-keyspace
 configure-standalone-gasless
+configure-wallet-keyspace
 configwalletconnect
 configwalletmodes
+createConfig
 crypto
 cryptographic
 cryptographically
@@ -737,6 +740,7 @@ faq-db
 faq-gasless
 faq-gen
 faq-mvx
+faq-near
 faq-solana
 faq-validator
 faq_auth
@@ -761,6 +765,7 @@ fontawesome-brands-twitter
 fontawesome-brands-unity
 fontawesome-brands-vuejs
 fontawesome-regular-message
+fontawesome-solid-address-card
 fontawesome-solid-bug-slash
 fontawesome-solid-caret-down
 fontawesome-solid-coins
@@ -810,6 +815,7 @@ grey
 handle0psCallData
 handleRedirectPage
 hardcoded
+hl_lines
 hotfix
 how-to-use-auth
 howdkgworks
@@ -1064,6 +1070,7 @@ index-vue-custom-ui-onboard-users
 index-vue-onboard-users
 index-wagmi-onboard-users
 index-wallet-ux
+index-walletconnect-onboard-users
 index-web-sdk-err
 index-web3-react-onboard-users
 index-web3-stack
@@ -1084,6 +1091,7 @@ integrate-shardeum
 integrate-solana-app
 integrate-vue-app
 integrate-wagmi-app
+integrate-walletconnect-app
 integrate-web3-react-app
 interchain
 introducing-arcana-auth
@@ -1138,6 +1146,8 @@ mvx-dashboard-user-guide
 mvx-quick-start
 mvx-user-onboarding
 mvx-web3-wallet-ops
+near-user-onboarding
+near-web3-wallet-ops
 new-to-web3
 newdevweb3
 nextjs-code-sample
@@ -1162,6 +1172,8 @@ onboard-rainbow-app-pnp-ui
 onboard-validators
 onboard-wagmi-app-custom-ui
 onboard-wagmi-app-pnp-ui
+onboard-walletconnect-app-custom-ui
+onboard-walletconnect-app-pnp-ui
 onboard-web3-react-app-custom-ui
 onboard-web3-react-app-pnp-ui
 onboarded
@@ -1222,6 +1234,7 @@ repo
 revokefile
 rn-latest-auth
 rn-latest-gasless
+rn-main-auth-May27-24
 rn-main-auth-vOct12-23-gasless
 rn_alpha
 rn_beta
@@ -1242,6 +1255,9 @@ rnbeta1_1
 roadmap
 rpc
 rpcUrl
+sample-auth-wagmi-2
+sample-auth-walletconnect
+sample-auth-web3-react
 scalable
 sdk-demo
 sdk-installation
@@ -1387,6 +1403,7 @@ wallet_addEthereumChain
 wallet_switchEthereumChain
 walletaddswitchntwk
 walletbalance
+walletconnect-quick-start
 walletconnector
 walletexportkey
 walletmanagenft
@@ -1410,6 +1427,7 @@ web-gasless-error-msg
 web-gasless-install
 web-gasless-integrate
 web-gasless-transact
+web3-ops-gasless
 web3-react-quick-start
 web3-stack-apps
 web3-stack-auth
