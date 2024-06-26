@@ -8,11 +8,13 @@ arcana:
 
 # Web App Integration
 
-[:material-wallet-plus-outline:{ .icon-color } Wagmi App](https://github.com/arcana-network/auth-wagmi-example){ .md-button }
+[:material-wallet-plus-outline:{ .icon-color } `sample-auth-wagmi-2``](https://github.com/arcana-network/auth-wagmi-example){ .md-button }
 
-[:material-wallet-plus-outline:{ .icon-color } RainbowKit App](https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration){ .md-button }
+[:material-wallet-plus-outline:{ .icon-color } `sample-auth-rainbowkit`](https://github.com/arcana-network/auth-examples){ .md-button }
 
-[:material-wallet-plus-outline:{ .icon-color } Web3-React App](https://github.com/arcana-network/auth-web3-react/tree/main/example){ .md-button }
+[:material-wallet-plus-outline:{ .icon-color } `sample-auth-walletconnect``](https://github.com/arcana-network/auth-examples){ .md-button }
+
+[:material-wallet-plus-outline:{ .icon-color } `sample-auth-web3-react``](https://github.com/arcana-network/auth-examples){ .md-button }
 
 [[react-code-sample| :fontawesome-brands-react:{ .icon-color } React App]]{ .md-button }
 

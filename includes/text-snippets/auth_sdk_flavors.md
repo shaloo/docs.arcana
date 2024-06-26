@@ -6,7 +6,7 @@
       |   :---     | :---    |  :---   |  :--- | 
       | {{config.extra.arcana.sdk_name}}  | Basic SDK for user onboarding in Vanilla HTML/CSS/JS Apps, Vue Apps; Gasless transactions in {{config.extra.arcana.wallet_name}} | `{{config.extra.arcana.auth_sdk_pkg_name}}` | None |
       | {{config.extra.arcana.react_sdk_name}} | React Apps | `{{config.extra.arcana.react_sdk_pkg_name}}` | `{{config.extra.arcana.auth_sdk_pkg_name}}` |
-      | {{config.extra.arcana.wagmi_sdk_name}} | Apps using wallet connectors such as Wagmi, RainbowKit | `{{config.extra.arcana.wagmi_sdk_pkg_name}}` | `{{config.extra.arcana.auth_sdk_pkg_name}}` |
+      | {{config.extra.arcana.wagmi_sdk_name}} | Apps using wallet connectors such as Wagmi, RainbowKit, WalletConnect | `{{config.extra.arcana.wagmi_sdk_pkg_name}}` | `{{config.extra.arcana.auth_sdk_pkg_name}}` |
       | {{config.extra.arcana.web3_react_sdk_name}} | Apps using Web3-React wallet connector | `{{config.extra.arcana.web3_react_sdk_pkg_name}}` | `{{config.extra.arcana.auth_sdk_pkg_name}}` |
       | {{config.extra.arcana.flutter_sdk_name}} | Mobile apps built using Flutter | `{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` | None |
       | {{config.extra.arcana.react_native_sdk_name}} | Mobile apps built using React Native | `{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}` | None |
