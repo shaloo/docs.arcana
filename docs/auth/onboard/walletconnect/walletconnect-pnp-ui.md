@@ -8,7 +8,7 @@ arcana:
 
 #  Plug-and-Play Login UI
 
-[[WalletConnect](https://walletconnect.com/) allows Web3 app users to seamlessly switch between multiple connected wallets within a dApp. 
+[WalletConnect](https://walletconnect.com/) allows Web3 app users to seamlessly switch between multiple connected wallets within a dApp. 
 
 In this guide, you will learn how to enable the in-app {{config.extra.arcana.wallet_name}} in a dApp via WalletConnect by using the `ArcanaConnector`.
 
