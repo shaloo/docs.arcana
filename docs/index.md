@@ -58,9 +58,9 @@ This documentation contains everything you need to get started using {{config.ex
 
     ---
 
-    Get up and running quickly with these sample integrations for various supported Web3 apps!
+    Get up and running quickly with these integration examples for various supported Web3 apps!
 
-    [:octicons-arrow-right-24: Sample Integrations](https://github.com/arcana-network/auth-examples)
+    [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
 
 </div>
 

@@ -30,6 +30,7 @@ In some scenarios, apps may be required to integrate with multiple SDKs to facil
 
 * Wagmi
 * RainbowKit
+* WalletConnect
 * Web3-React
 
 ## SDK Flavors
