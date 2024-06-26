@@ -38,29 +38,29 @@ Follow these three steps:
 
 ### Step 2: Use `AuthProvider` & `ArcanaConnector`
 
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create `AuthProvider` by specifying the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[register-app-auth|registering]] it using the {{config.extra.arcana.dashboard_name}}. 
+Use the unique **{{config.extra.arcana.app_address}}** obtained after [[register-app-auth|registering]] the app and create a new `AuthProvider` instance.
 
 {% include "./code-snippets/auth_walletconnect_configure_pnp.md" %}
 
-Then import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, create a new `ArcanaConnector` and set up Wagmi Config.
+Use the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create a new `ArcanaConnector`. Specify the ArcanaConnector in Wagmi Config.
 
 {% include "./code-snippets/auth_walletconnect_connector.md" %}
 
 ### Step 3: Set up `WagmiProvider`
 
-Next, use the Wagmi Provider with this specified Wagmi config:
+Use the Wagmi config with `ArcanaConnector` when creating the `WagmiProvider` component.
 
 {% include "./code-snippets/auth_walletconnect_create_client.md" %}
 
 That is all! :material-party-popper:
 
-The Web3 app using WalletConnect is successfully integrated with the {{config.extra.arcana.sdk_name}}.
+The WalletConnect dApp is now integrated with the {{config.extra.arcana.sdk_name}}.
 
 ## What's Next?
 
-After integrating with a Web3 WalletConnect app with the {{config.extra.arcana.sdk_name}}, the developers can add code to onboard users. In the example above, plug-and-play login UI is specified in the way `AuthProvider` is initialized. There are [[index-walletconnect-onboard-users|two ways to onboard users]]: 
+After integrating the WalletConnect dApp with the {{config.extra.arcana.sdk_name}}, you can add code to onboard users. There are [[index-walletconnect-onboard-users|two ways to onboard users]]: 
 
-* Use built-in plug-and-play login UI with a single function call that displays all the configured authentication providers
+* Use [[onboard-walletconnect-app-pnp-ui|built-in plug-and-play login UI]] with a single function call that displays all the configured authentication providers. In the example above, plug-and-play login UI (default) is enabled when `AuthProvider` is initialized. 
 * Use [[onboard-walletconnect-app-custom-ui|custom login UI to onboard users]] and wire it to the {{config.extra.arcana.sdk_name}} functions for calling the configured authentication providers.
 
 ## See also

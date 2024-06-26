@@ -40,19 +40,13 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 ## 3. Integrate
 
-Import `AuthProvider` from the `{{config.extra.arcana.auth_sdk_pkg_name}}` package.
-
-{% include "./code-snippets/import_auth.md" %}
-
-Create a new `AuthProvider` instance. Specify the unique **{{config.extra.arcana.app_address}}** obtained during the app registration. 
+Use the unique **{{config.extra.arcana.app_address}}** obtained after registering the app and create a new `AuthProvider` instance.
 
 {% include "./code-snippets/auth_walletconnect_configure_pnp.md" %}
 
-You can optionally customize the following settings in the `AuthProvider` constructor:
-
 {% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
-Next, import the `ArcanaConnector` from the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package. Create a new `ArcanaConnector` and specify the `AuthProvider` instantiated earlier.
+Use the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, specify the `AuthProvider` instance and create a new `ArcanaConnector`.
 
 {% include "./code-snippets/auth_walletconnect_connector.md" %}
 
