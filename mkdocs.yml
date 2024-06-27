@@ -423,6 +423,7 @@ nav:
         - Web:
           - Wagmi: quick-start/wagmi-quick-start.md
           - RainbowKit: quick-start/rainbowkit-quick-start.md
+          - WalletConnect: quick-start/walletconnect-quick-start.md
           - Web3-React: quick-start/web3-react-quick-start.md
           - React/Next.js: quick-start/react-nextjs-quick-start.md
           - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
@@ -448,6 +449,7 @@ nav:
           #- auth/integrate/index.md
           - Wagmi: auth/integrate/wagmi.md
           - RainbowKit: auth/integrate/rainbow.md
+          - WalletConnect: auth/integrate/walletconnect.md
           - Web3-React: auth/integrate/web3-react.md
           - React/Next.js: auth/integrate/react-nextjs.md
           - HTML/CSS/JS: auth/integrate/vanilla-html-css-js.md
@@ -511,6 +513,10 @@ nav:
             #- auth/onboard/rainbow/index.md
             - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
             - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
+          - WalletConnect:
+            - auth/onboard/walletconnect/index.md
+            - Plug-and-Play Login: auth/onboard/walletconnect/walletconnect-pnp-ui.md
+            - Custom Login: auth/onboard/walletconnect/walletconnect-custom-ui.md
           - Web3-React: 
             #- auth/onboard/web3-react/index.md
             - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
