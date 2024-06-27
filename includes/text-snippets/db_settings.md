@@ -26,7 +26,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
       <figcaption>Branding Settings</figcaption>
     </figure>
 
-=== "Social Auth"
+=== "Social"
 
     The **Social Auth** settings manage the user onboarding experience and control which social login providers are available for app login. 
 
@@ -47,7 +47,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
       <figcaption>Social Auth Settings</figcaption>
     </figure>         
 
-=== "Chain Management"
+=== "Chains"
 
     The **Chain Management** settings control which chains will be displayed as the default active chain in the wallet from the list of pre-configured chains available out of the box for apps that integrate with the {{config.extra.arcana.sdk_name}}.
 
@@ -67,7 +67,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
     For details, see [[configure-wallet-chains|how to manage chains]].
 
-=== "{{config.extra.arcana.wallet_name}}"
+=== "Wallet"
 
     The **{{config.extra.arcana.wallet_name}}** settings display whether the app is registered using the built-in, default wallet UI or a custom UI. It also allows for domain restriction whereby the {{config.extra.arcana.wallet_name}} can be loaded successfully within an app's context.
 
@@ -78,6 +78,18 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
       <img alt="Social Login" src="{{config.extra.arcana.img_dir}}/an_db_configure_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
       <figcaption>Wallet Settings</figcaption>
     </figure>
+
+=== "Session"
+
+    The login session management settings display whether the app is configured to use [[concept-session-type|persistent or non-persistent session]] (default) type. 
+    
+    For the persistent session, the developers can view and update the specified time for which the authenticated user login session is persisted (in minutes). Once a user closes the browser and reopens within this specified period, the user is automatically logged in.
+    
+    <figure markdown="span">
+      <img alt="Session Management" src="{{config.extra.arcana.img_dir}}/an_db_session_mngt.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+      <figcaption>Session Management</figcaption>
+    </figure>
+
 
 === "Keyspace"
 

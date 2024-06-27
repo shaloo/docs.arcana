@@ -735,6 +735,7 @@ nav:
       - Non-EVM Chains: concepts/non-evm-chains.md
       - Plug-and-Play Auth: concepts/plug-and-play-auth.md
       - Private Key: concepts/private-key.md
+      - Session Type: concepts/session_type.md
       - Smart Contracts:
         - concepts/ansmartc/index.md
         - Overview: concepts/ansmartc/an-smart-contracts.md
