@@ -40,7 +40,7 @@ For {{page.meta.arcana.app_type}} app, install the following packages:
 
 ## 3. Integrate
 
-Use the unique **{{config.extra.arcana.app_address}}** obtained after registering the app and create a new `AuthProvider` instance.
+Use the unique **{{config.extra.arcana.app_address}}** obtained after registering the app and creating a new `AuthProvider` instance.
 
 {% include "./code-snippets/auth_walletconnect_configure_pnp.md" %}
 
