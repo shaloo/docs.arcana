@@ -15,7 +15,7 @@ Upon successful authentication, {{config.extra.arcana.sdk_name}} returns a uniqu
 
 !!! an-note "User validation"
 
-      After user authentication via the selected social login provider a JWT token is receivedd by the {{config.extra.arcana.sdk_name}}. It uses this JWT token to verify the user. After verifying it creates the Arcana JWT token and returns it to the app.
+      After the user authenticates through the chosen social login provider, the {{config.extra.arcana.sdk_name}} receives the JWT token. It verifies the user with this token, and then creates and returns an Arcana JWT token to the app.
 
 Developers can use `getUser()` method to access the JWT token via the [`UserInfo`](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) return value. This token expires after 3 minutes. 
 
