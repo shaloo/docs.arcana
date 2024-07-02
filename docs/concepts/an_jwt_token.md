@@ -13,7 +13,15 @@ Upon successful authentication, {{config.extra.arcana.sdk_name}} returns a uniqu
 * Plug-and-play login `connect()` 
 * Custom login UI methods such as `loginWithSocial()`, `loginWithLink()` (deprecated), `loginWithOTPStart`,`loginWithOTPComplete` and `loginWithBearer()`
 
-Developers can use `getUser()` method to access the JWT token via the [`UserInfo`](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) return value. This token expires after 3 minutes. The app developer must first [[concept-jwt-token-validation|verify the token returned by Arcana]] and then post-verification, create newer app-specific JWT token, if required, and use them for subsequent calls.
+!!! an-note "User validation"
+
+      After user authentication via the selected social login provider a JWT token is receivedd by the {{config.extra.arcana.sdk_name}}. It uses this JWT token to verify the user. After verifying it creates the Arcana JWT token and returns it to the app.
+
+Developers can use `getUser()` method to access the JWT token via the [`UserInfo`](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) return value. This token expires after 3 minutes. 
+
+!!! an-tip "JWT Token"
+
+      It is recommended that the app developer must first [[concept-jwt-token-validation|verify the token returned by Arcana]]. After verification, developers must create another app-specific JWT token, if required, and use the subsequent token in the app.
 
 ```js
 /* Make sure
@@ -30,7 +38,3 @@ try {
   console.log(e);
 }
 ```
-
-!!! an-note "User validation"
-
-      Note that the {{config.extra.arcana.sdk_name}} uses the JWT token returned by the social login provider, after user authentication, to verify the user internally before creating its own Arcana JWT token and returning it to the app.
