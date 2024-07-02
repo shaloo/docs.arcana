@@ -61,6 +61,7 @@ The WalletConnect dApp is now integrated with the {{config.extra.arcana.sdk_name
 After integrating the WalletConnect dApp with the {{config.extra.arcana.sdk_name}}, you can add code to onboard users. There are [[index-walletconnect-onboard-users|two ways to onboard users]]: 
 
 * Use [[onboard-walletconnect-app-pnp-ui|built-in plug-and-play login UI]] with a single function call that displays all the configured authentication providers. In the example above, plug-and-play login UI (default) is enabled when `AuthProvider` is initialized. 
+
 * Use [[onboard-walletconnect-app-custom-ui|custom login UI to onboard users]] and wire it to the {{config.extra.arcana.sdk_name}} functions for calling the configured authentication providers.
 
 ## See also

@@ -19,9 +19,9 @@ Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashbo
 
 !!! an-caution "Twitter Elevated Access Required"
 
-      Developers must have a [Twitter Developer Account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) and [Twitter Elevated Access](https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api#v2-access-level). This is required to configure and use the Twitter Developer Portal for generating Twitter OAuth credentials. 
+      Developers must have a [Twitter Developer Account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) and [Twitter Elevated Access (not Free account)](https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api#v2-access-level). This is required to configure and use the Twitter Developer Portal for generating Twitter OAuth credentials. 
 
-Go to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/projects-and-apps) and create a new app entry for setting up the OAuth credentials for the app.
+Go to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/projects-and-apps) and create a new [Twitter App](https://developer.x.com/en/docs/apps/overview) for setting up the OAuth credentials for the app. Note that if you would like to use Twitter API v2, you must add your Twitter App to a [Project](https://developer.x.com/en/docs/projects/overview).
 
 <figure markdown="span">
   ![Twitter Developer Console]({{config.extra.arcana.img_dir}}/an_dApp_twitter_dev_console.{{config.extra.arcana.img_png}}){ .an-screenshots .width_50pc }
@@ -35,7 +35,7 @@ Select an appropriate environment and create a new name for the app on the Twitt
   <figcaption>Create Twitter App Entry</figcaption>
 </figure>
 
-In the **Keys and Tokens** tab, the **API Key** and **API Key Secret** values are generated automatically for your newly created app entry. Make sure you copy both of these as they will be needed later for setting up Twitter in the {{config.extra.arcana.dashboard_name}}. 
+In the **Keys and Tokens** tab, the **API Key** and **API Key Secret** (also known as the [Consumer Key and Secret](https://developer.x.com/en/docs/authentication/oauth-1-0a/api-key-and-secret)) values are generated automatically for your newly created app entry. Make sure you copy both of these as they will be needed later for setting up Twitter in the {{config.extra.arcana.dashboard_name}}. 
  
 <figure markdown="span">
   ![Twitter Keys and Secret]({{config.extra.arcana.img_dir}}/twitter_new_app_keys_secret.{{config.extra.arcana.img_png}}){ .an-screenshots .width_50pc }
