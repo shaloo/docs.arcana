@@ -21,7 +21,7 @@ The DID token is encoded as a Base64 JSON string tuple representing [proof, clai
 * **Proof:** A digitally signed string that is used to prove the validity of a given claim.
 * **Claim:** Data representing the user's access assertion.
 
-## Arcana UserDID Token
+## Arcana `userDIDToken`
 
 The {{config.extra.arcana.sdk_name}} returns `userDIDToken` once an app user logs in successfully via the configured social login provider. This token is generated upon successful authentication via any of the supported methods of the `AuthProvider`:
 
