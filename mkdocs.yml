@@ -765,6 +765,7 @@ nav:
         - Custom Login UI: concepts/custom-login-ui.md
         - Custom Wallet UI: concepts/custom-wallet-ui.md
         - Dashboard: concepts/dashboard.md
+        - DID Token: concepts/an_did_token.md
         - DKG:
           #- concepts/dkg/index.md
           - What is DKG?: concepts/what-is-dkg.md
