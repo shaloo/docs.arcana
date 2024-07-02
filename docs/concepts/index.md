@@ -19,6 +19,7 @@ These are the building blocks to help you learn about various terms and usage in
 [[concept-custom-login-ui| :material-login:{ .icon-color } Custom Login UI]]{ .md-button }
 [[concept-custom-wallet-ui| :material-wallet-bifold:{ .icon-color } Custom Wallet UI]]{ .md-button }
 [[concept-arcana-dashboard| :material-monitor-dashboard:{ .icon-color } Dashboard]]{ .md-button }
+[[concept-did-token|:simple-jsonwebtokens:{ .icon-color } Arcana DID Token]]{ .md-button}
 [[index-dkg| :material-key-plus:{ .icon-color } Distributed Key Generation]]{ .md-button }
 [[concept-gasless-transactions| :material-gas-station-off:{ .icon-color } Gasless Transactions]]{ .md-button }
 [[concept-gateway-node| :fontawesome-solid-torii-gate:{ .icon-color } Gateway]]{ .md-button }
