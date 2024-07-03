@@ -6,6 +6,6 @@
 
       This setting is selected at the time of [[register-app-auth| app registration]] and cannot be changed later. See [[custom-wallet-ui|how to enable custom wallet UI]] for details.
 
-!!! an-tip "Other Customizations"
+!!! an-tip "Other Customization"
 
       There are other {{config.extra.arcana.dashboard_name}} settings in the branding tab that control the {{config.extra.arcana.wallet_name}} theme and logos. Also, during app integration with the {{config.extra.arcana.sdk_name}}, developers can customize the built-in {{config.extra.arcana.wallet_name}} by specifying `position` (string: *left*|*r*ight*), `theme` (string: *light*|*dark*), and `alwaysVisible` (boolean) parameters. See {% include "./text-snippets/authsdkref_url.md" %}  for details.

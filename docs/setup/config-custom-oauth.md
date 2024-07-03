@@ -51,4 +51,4 @@ After configuring the custom OAuth settings via the dashboard, you can install t
 ## See Also
 
 * [[dashboard-user-guide| Dashboard User's Guide]]
-* [[concept-custom-oauth|custom OAuth| How does custom OAuth work?]]xs
+* [[concept-custom-oauth|custom OAuth| How does custom OAuth work?]]
