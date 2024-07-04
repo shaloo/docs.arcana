@@ -117,6 +117,10 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
       Depending upon whether the 'Testnet' **{{config.extra.arcana.app_address}}** value or the 'Mainnet' **{{config.extra.arcana.app_address}}** value is used to integrate an application with the {{config.extra.arcana.sdk_name}}, deployment of the app happens on the respective {{config.extra.arcana.company_name}} Network. "Testnet" usage is not billed but if an application chooses 'Mainnet' while integrating with the {{config.extra.arcana.sdk_name}}, it will be billed in the forthcoming releases.
 
+## Configure Session Type 
+
+{% include "./text-snippets/db_session_type.md" %}
+
 ## Configure Keyspace 
 
 {% include "./text-snippets/db_keyspace.md" %}

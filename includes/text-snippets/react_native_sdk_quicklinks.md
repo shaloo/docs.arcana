@@ -1,4 +1,4 @@
-!!! an-info "{{config.extra.arcana.react_native_sdk_name}} Quicklinks"
+!!! an-info "{{config.extra.arcana.react_native_sdk_name}} Quick Links"
 
     * [[rn-latest-auth|Release notes]]
     * [Changelog](https://github.com/arcana-network/auth-react-native/releases)

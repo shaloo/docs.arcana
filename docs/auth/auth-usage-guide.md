@@ -163,7 +163,7 @@ const canReconnect = await auth.canReconnect()
 await auth.reconnect()
 ```
 
-Get user information. The loginToken is a JWT Token that can be verified by using the public JWT Key. In future this will be deprecated. Refer to userDIDToken. It is base64 encoded data
+Get user information. The loginToken is a JWT Token that can be verified by using the public JWT Key. In the future this will be deprecated. Refer to userDIDToken. It is base64 encoded data
 
 ```base64(JSON.stringify([sig, claims]))```
 

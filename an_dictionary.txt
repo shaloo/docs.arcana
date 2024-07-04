@@ -45,6 +45,7 @@ Arcana's
 Arcana-Wagmi
 ArcanaBeacon
 ArcanaConnector
+ArcanaSDK
 Arcana_Dev
 Arcana_Testnet
 Auth
@@ -100,6 +101,7 @@ AuthWatchAssetText
 BLS
 BSC
 BYOK
+Base64
 BeaconProxy
 Biconomy
 Biconomy's
@@ -132,6 +134,7 @@ Crypto
 Cryptosystems
 DAO's
 DAppToolingIssuesText
+DApps
 DIDExplorerPortalText
 DIDExplorerPrivateURLText
 DIDExplorerPublicURLText
@@ -242,6 +245,7 @@ JSON
 JSON-RPC
 JWK
 JWKS
+JWKs
 JWT
 JavaScriptOriginText
 Jira
@@ -290,6 +294,8 @@ NoUI
 NodeVersionText
 Non-EVM
 Nopending
+NuGet
+NuGetForUnity
 OAuth
 OAuth2
 OAuth2.0
@@ -332,6 +338,7 @@ RainbowKit
 RainbowKit.
 Ramp
 Rarible
+Rebrand
 Reddit
 RedirectURIText
 Roadmap
@@ -483,6 +490,7 @@ Vuplex
 Wagmi
 Wagmi.
 WagmiConfig
+WagmiProvider
 WalletConfigWarningText
 WalletConnect
 WalletConnectProvider
@@ -566,6 +574,7 @@ authsdkref
 autoRedirect
 backend
 backends
+base64
 blockchain
 blockchain-powered
 blockchains
@@ -594,6 +603,7 @@ clientID
 clientId
 cognito
 cognitooauth
+coinbaseWallet
 compact-plug-play-ui
 composable
 concept-adkg
@@ -1100,6 +1110,7 @@ issues
 js
 json
 keccak256
+keyUse
 keyspace
 keystore
 kvsetup
@@ -1109,6 +1120,7 @@ libp2p
 linkNFT
 localhost
 localhost:3000
+loginToken
 loginType
 loginWithOTPComplete
 loginWithOTPStart
@@ -1157,6 +1169,7 @@ non-Arcana
 non-EVM
 non-evm-chains
 npm
+npm-registry
 octicons-book-16
 octicons-browser-16
 octicons-checkbox-16
@@ -1195,10 +1208,13 @@ polyfill
 polyfilling
 polyfills
 pre-built
+pre-configure
 pre-configured
 pre-decided
+pre-defined
 pre-deployed
 pre-requisites
+pre-selected
 priori
 privateKey
 privatekey
@@ -1267,6 +1283,7 @@ secp256r1
 security-adkg
 security-mfa
 sellable
+sepolia
 setupauthsdk
 setuprainbow
 setupstgsdk
@@ -1347,6 +1364,7 @@ user-auth-dkg-flow
 user-onboarding-options
 user0
 user0p
+userDIDToken
 userInfo
 usingminter
 usingreactconn
@@ -1354,6 +1372,7 @@ v0.0.25
 v0.0.30
 v0.0.35
 v0.0.36
+v0.0.37
 v0.2.x
 v0.3.0
 v1.0
@@ -1381,6 +1400,7 @@ validatoronboarding
 validators
 verifiability
 verifier
+verifier-based
 verifiers
 video-tutorials-gasless
 viewpvtnft
@@ -1399,6 +1419,7 @@ vue-use-plug-play-auth
 wagmi
 wagmi-quick-start
 wallet-add-shardeum
+walletConnect
 wallet_addEthereumChain
 wallet_switchEthereumChain
 walletaddswitchntwk
@@ -1442,3 +1463,5 @@ why-arcana-auth
 whyan
 wireframe
 zkEVM
+κ
+κn

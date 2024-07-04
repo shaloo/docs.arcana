@@ -1,7 +1,7 @@
 ---
 alias: web3-stack-auth
 title: 'Auth Providers'
-description: 'Learn about the user authentication providers that are supported by the the Arcana Auth SDK for user onboarding.'
+description: 'Learn about the user authentication providers that are supported by the Arcana Auth SDK for user onboarding.'
 arcana:
   root_rel_path: ..
 ---

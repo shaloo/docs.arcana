@@ -17,7 +17,14 @@ arcana:
 
 <h2>Welcome!</h2>>
 
-Onboard Web3 app users effortlessly via [[concept-social-login|social login]]. Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]]. Enable [[concept-gasless-transactions|account abstraction]] to sponsor gas fees and incentivize users.
+Onboard Web3 app users effortlessly via [[concept-social-login|social login]].
+
+Enable [[concept-gasless-transactions|account abstraction]] to sponsor gas fees and incentivize users.
+
+Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]]. 
+
+<br/>
+<br/>
 
 {==
 
@@ -68,8 +75,6 @@ This documentation contains everything you need to get started using {{config.ex
 
 <h2>Quick Start</h2>
 
-<br/><br/>
-
 {==
 
 **TL;DR**
@@ -77,8 +82,6 @@ This documentation contains everything you need to get started using {{config.ex
 Select your app type and get started with integrating social login and gasless transactions right away!
 
 ==}
-
-<br/><br/>
 
 === "Web Apps"
 
@@ -99,9 +102,6 @@ Select your app type and get started with integrating social login and gasless t
 <h2>Auth Playground</h2>>
 
 <div class="tx-hero-container">
-    <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
-</div>
-<div class="tx-hero-container">
     <div class="tx-hero-content">
         <a href="/auth/auth-try-now/">
         <div class="tx-try-now-button-blue a-link-items">
@@ -116,6 +116,10 @@ Select your app type and get started with integrating social login and gasless t
             </div>
         </a>
     </div>
+</div>
+
+<div class="tx-hero-container">
+    <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
 </div>
 
 <h2>Need Help?</h2>>
