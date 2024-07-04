@@ -24,12 +24,13 @@ These are the building blocks to help you learn about various terms and usage in
 [[concept-gasless-transactions| :material-gas-station-off:{ .icon-color } Gasless Transactions]]{ .md-button }
 [[concept-gateway-node| :fontawesome-solid-torii-gate:{ .icon-color } Gateway]]{ .md-button }
 [[concept-arcana-jwt-token| :simple-jsonwebtokens:{ .icon-color } Arcana JWT Token]]{ .md-button}
-[[concept-keyspace-type| :material-key:{ .icon-color } Keyspace Type: App-specific vs. Global Keys :material-key:{ .icon-color }]]{ .md-button }
+[[concept-keyspace-type| :material-key:{ .icon-color } Keyspace :material-key:{ .icon-color }]]{ .md-button }
 [[concept-manage-chains| :material-list-box:{ .icon-color } Manage Chains]]{ .md-button}
 [[concept-mfa| :material-two-factor-authentication:{ .icon-color } MFA]]{ .md-button }
 [[concept-non-evm-chains| :material-list-box:{ .icon-color } Non-EVM Chains]]{ .md-button }
 [[concept-plug-and-play-auth| :material-lock:{ .icon-color } :fontawesome-solid-plug:{ .icon-color } Plug-and-Play Auth]]{ .md-button }
 [[concept-private-key| :material-key:{ .icon-color } Private Key]]{ .md-button }
+[[concept-session-type| :material-key:{ .icon-color } Session Type]]{ .md-button }
 [[concept-index-ansc|  :material-list-box:{ .icon-color } Smart Contracts]]{ .md-button }
 [[concept-social-login|  :fontawesome-solid-users:{ .icon-color } Social Login]]{ .md-button }
 [[concept-usage-metrics| :material-monitor-eye:{ .icon-color } Usage Metrics]]{ .md-button }
