@@ -1,6 +1,6 @@
 {==
 
-**Release Date: May 27, 2024**  
+**Release Date: July 3, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
 
@@ -31,21 +31,19 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 ---
  
-* No change to the {{config.extra.arcana.sdk_name}}. See [[rn-main-auth-v1.0.10| previous Release notes]] for details.
+* Added support for apps that authenticate users via [[concept-custom-oauth|custom OAuth]]. Learn [[config-custom-oauth|how to configure custom OAuth settings]] in the {{config.extra.arcana.dashboard_name}}. Assign keys to authenticated users for signing blockchain transactions in apps that use custom authentication servers by following these [[integrate-custom-oauth|step-by-step instructions]].
 
-* New updated [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) now supports the latest Wagmi 2.x.y SDK.
+* New **Login Session Management** feature in the {{config.extra.arcana.dashboard_name}} allows developers to specify whether a user session persists if the browser is closed. This enhances user experience and makes session security configurable. Learn more about [[concept-session-type|supported session types]] and [[dashboard-user-guide#configure-session-type|configuration settings]].
 
-* New **off-ramping** feature in the {{config.extra.arcana.wallet_name}} allows users to sell crypto or convert blockchain assets to Fiat via selected supported off-ramping providers. See [[arcana-wallet-user-guide#buysell-crypto|how to buy/sell crypto through Fiat]] for details.
+* The [`UserInfo`structure](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) now provides a [[concept-did-token|DID identifier]] for user verification. The `loginToken` will be deprecated in a future release.
+
+* Bug fixes and performance enhancements related to user login.
 
 ## What has changed?
 
 ---
 
-There are **no usage changes** in this release for the {{config.extra.arcana.sdk_name}}. 
-
-To use the latest {{config.extra.arcana.wallet_name}} off-ramp feature, users can simply refresh the wallet or re-login to the app. 
-
-Apps using the Wagmi SDK need to migrate to the latest {{config.extra.arcana.wagmi_sdk_name}} release. Simply re-install and upgrade the [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) package and update the integration code to use the new config settings for the `WagmiProvider`. See [[wagmi-quick-start|Wagmi Quick Start Guide]] for details.
+There are **no usage changes** in this release. To migrate to the latest release, re-install and upgrade to the latest SDKs.
 
 ## Get Started
 
@@ -59,10 +57,9 @@ Apps using the Wagmi SDK need to migrate to the latest {{config.extra.arcana.wag
 
 Check out:
 
-* [[wagmi-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
+* [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
 * {% include "./text-snippets/unity_sample_url.md" %} 
-* [`sample-auth-wagmi-2` integration example](https://github.com/arcana-network/auth-examples)
-* [Other integration examples](https://github.com/arcana-network/auth-examples)
+* [Integration examples](https://github.com/arcana-network/auth-examples)
 
 ## Previous Releases
 
@@ -74,4 +71,4 @@ Refer to the [[index-release-notes| release notes archive]] and [[index-migratio
 
 ---
 
-See [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
+Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).

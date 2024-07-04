@@ -103,7 +103,7 @@ See [[near-dashboard-user-guide|how to set up Near]] and [[near-quick-start|Near
 
 ## Step 3: Edit Default Active Chain
 
-To switch the default active chain simply select the new chain in the {{config.extra.arcana.dashboard_name}}, click "..." ellipses and select the 'set as default' option. The figure below illustrates Polygon as the default active chain instead of Ethereum.
+To switch the default active chain simply select the new chain in the {{config.extra.arcana.dashboard_name}}, click "..." ellipses and select the 'set as default' option. The figure below illustrates Polygon as the default active chain.
 
 <figure markdown="span">
   ![Set Polygon as the Active Chain]({{config.extra.arcana.img_dir}}/an_db_set_default_chain.gif){ .an-screenshots .width_85pc}
@@ -162,6 +162,6 @@ For details refer to the [[web-auth-usage-guide#wallet_addethereumchain|{{config
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * [[solana-dashboard-user-guide| Configure Solana Chains]]
-* [[mvx-dashboard-user-guide| Configure MultiverX Chains]]
+* [[mvx-dashboard-user-guide| Configure MultiversX Chains]]
 * [[near-dashboard-user-guide| Configure Near Chains]]
 * {% include "./text-snippets/authsdkref_url.md" %}
