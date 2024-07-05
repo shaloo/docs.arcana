@@ -1,6 +1,6 @@
 !!! an-info "{{config.extra.arcana.wagmi_sdk_name}} Quick Links"
 
-    * [[rn-latest-auth|{{config.extra.arcana.sdk_name}} Release notes]]
-    * [GitHub Repo changelog](https://github.com/arcana-network/auth-wagmi/releases)
-    * [{{config.extra.arcana.wagmi_sdk_name}} Reference](https://wagmi-authsdk-ref-guide.netlify.app/)
-    * [Download {{config.extra.arcana.wagmi_sdk_name}}](https://www.npmjs.com/package/@arcana/auth-wagmi)
+    * {% include "./text-snippets/wagmi_authsdkref_url.md" %}
+    * [[rn-latest-auth|Release notes]]
+    * [Changelog](https://github.com/arcana-network/auth-wagmi/releases)
+    * [Download SDK](https://www.npmjs.com/package/@arcana/auth-wagmi)

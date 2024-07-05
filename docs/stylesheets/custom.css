@@ -266,6 +266,12 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   box-shadow: 1rem 0 0 0 var(--md-an-pink-color);
 }
 
+/* Highlight: Quote */
+
+.admonition.quote {
+  border: 1px solid var(--md-default-bg-color);
+}
+
 /* Admonition: Arcana Styling */
 
 :root {
@@ -324,19 +330,19 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
 /* Admonition Details: Common styling */
 
 .md-typeset .admonition,
-.md-typeset details  {
+.md-typeset details:not([open])>summary  {
     border-radius: 9px;
-    /*padding-top: 1rem;
-    padding-bottom: 1rem;
-    border: 0.5rem solid var(--md-default-bg-color);*/
+    border: none;
+} 
+
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 9px;
+    border: none;
 } 
 
 .md-typeset .admonition:focus-within, .md-typeset details:focus-within {
   box-shadow: 0 0 0 0 var(--md-default-bg-color);
-}
-
-.admonition.quote {
-  border: 1px solid var(--md-default-bg-color);
 }
 
 /* Admonition: Note */
@@ -367,6 +373,16 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
           mask-image: var(--md-admonition-icon--an-note);
 }
 
+details.an-note summary {
+  background-color: var(--md-an-admonition-note);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-note {
+  border: 0.075rem solid var(--md-an-admonition-note);
+}
+
 /* Admonition: Info */
 
 .admonition.an-info {
@@ -384,6 +400,16 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   background-color: var(--md-an-cyan-color);
   -webkit-mask-image: var(--md-admonition-icon--an-info);
           mask-image: var(--md-admonition-icon--an-info);
+}
+
+details.an-info summary {
+  background-color: var(--md-an-admonition-info);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-info {
+  border: 0.075rem solid var(--md-an-admonition-info);
 }
 
 /* Admonition: Tip */
@@ -405,6 +431,16 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
           mask-image: var(--md-admonition-icon--an-tip);
 }
 
+details.an-tip summary {
+  background-color: var(--md-an-admonition-tip);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-tip {
+  border: 0.075rem solid var(--md-an-admonition-tip);
+}
+
 /* Admonition: Caution */
 
 .admonition.an-caution {
@@ -422,6 +458,16 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   background-color: var(--md-an-yellow-color);
   -webkit-mask-image: var(--md-admonition-icon--an-caution);
           mask-image: var(--md-admonition-icon--an-caution);
+}
+
+details.an-caution summary {
+  background-color: var(--md-an-admonition-caution);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-caution {
+  border: 0.075rem solid var(--md-an-admonition-caution);
 }
 
 /* Admonition: Warning */
@@ -443,6 +489,16 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
           mask-image: var(--md-admonition-icon--an-warning);
 }
 
+details.an-warning summary {
+  background-color: var(--md-an-admonition-warning);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-warning {
+  border: 0.075rem solid var(--md-an-admonition-warning);
+}
+
 /* Admonition: Danger */
 
 .admonition.an-danger {
@@ -460,6 +516,16 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   background-color: var(--md-an-red-color);
   -webkit-mask-image: var(--md-admonition-icon--an-danger);
           mask-image: var(--md-admonition-icon--an-danger);
+}
+
+details.an-danger summary {
+  background-color: var(--md-an-admonition-danger);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-danger {
+  border: 0.075rem solid var(--md-an-admonition-danger);
 }
 
 /* Admonition: Example */
@@ -481,6 +547,16 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
           mask-image: var(--md-admonition-icon--an-example);
 }
 
+details.an-example summary {
+  background-color: var(--md-an-admonition-example);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-example {
+  border: 0.075rem solid var(--md-an-admonition-example);
+}
+
 /* Admonition: Abstract */
 
 .admonition.an-abstract {
@@ -498,6 +574,16 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   background-color: var(--md-an-black-color);
   -webkit-mask-image: var(--md-admonition-icon--an-abstract);
           mask-image: var(--md-admonition-icon--an-abstract);
+}
+
+details.an-abstract summary {
+  background-color: var(--md-an-admonition-abstract);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-abstract {
+  border: 0.075rem solid var(--md-an-admonition-abstract);
 }
 
 /* Custom Admonitions: Arcana Styling */
