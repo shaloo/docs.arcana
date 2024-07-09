@@ -26,6 +26,8 @@ Developers can choose to onboard users by either using the built-in plug-and-pla
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
+{% include "./text-snippets/mvx_shard.md" %}
+
 ## Steps
 
 *Onboarding users and enabling MultiversX blockchain transactions through the {{config.extra.arcana.wallet_name}} is simple!*

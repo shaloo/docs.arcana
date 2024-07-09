@@ -34,6 +34,8 @@ In this guide, you will learn how to integrate a vanilla HTML/CSS/JS app with th
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
+{% include "./text-snippets/mvx_shard.md" %}
+
 ## Steps
 
 *Integrating a vanilla HTML/CSS/JS app with the {{config.extra.arcana.sdk_name}} to enable MultiversX blockchain transactions through the {{config.extra.arcana.wallet_name}} is simple!*
