@@ -36,6 +36,8 @@
     * Scroll Testnet (Sepolia)
     * Sepolia
     * Shardeum Sphinx 1.x
+    * Vanar Mainnet
+    * Vanar Testnet (Vanguard)
     * zkSync Era Mainnet
     * zkSync Era Testnet (ETH)
 
