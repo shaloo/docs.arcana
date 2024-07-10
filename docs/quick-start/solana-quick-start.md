@@ -1,7 +1,7 @@
 ---
 alias: solana-quick-start
 title: 'Quick Start: Solana Apps'
-description: 'Get Started quickly with Arcana Auth product for Solana apps by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID and then use the client ID to integrate the app with the Arcana Auth SDK.'
+description: 'Integrate Arcana Auth in Solana apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'Solana'"

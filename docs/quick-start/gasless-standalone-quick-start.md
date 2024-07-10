@@ -1,7 +1,7 @@
 ---
 alias: gasless-standalone-quick-start
 title: 'Quick Start: Gasless Apps (Third-party wallets)'
-description: 'Get Started quickly with Arcana Gasless Standalone SDK for apps by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID, configure gasless operations and then use the client ID to integrate the app with the Arcana Gasless SDK.'
+description: 'Integrate Arcana Auth in web apps. Sponsor gas fees for whitelisted app operations. Onboard users via social login and use third-party wallets. Enable gasless transactions with zero gas fees for users.'
 arcana:
   root_rel_path: ..
   app_type: "'Gasless'"

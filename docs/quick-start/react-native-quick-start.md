@@ -1,7 +1,7 @@
 ---
 alias: react-native-quick-start
 title: 'Quick Start: React-Native Apps '
-description: 'Get Started quickly with mobile apps built with React-Native by following these step-by-step instructions. Register the app, obtain a ClientID and then integrate the app with the Arcana Auth SDK.'
+description: 'Integrate Arcana Auth in React-Native apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'React-Native'"

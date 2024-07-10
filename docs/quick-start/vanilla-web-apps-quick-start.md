@@ -1,7 +1,7 @@
 ---
 alias: vanilla-web-apps-quick-start
-title: 'Quick Start: HTML/CSS/JS Apps'
-description: 'Get Started quickly with the Arcana Auth product by using these step-by-step instructions for vanilla HTML/CSS/JS apps. Use Arcana Developer Dashboard to register the app, get a client ID and use this client ID to integrate the app with the Arcana Auth SDK.'
+title: 'Get Started: HTML/CSS/JS Apps'
+description: 'Integrate Arcana Auth in Web3 apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'HTML/CSS/JS'"
@@ -10,9 +10,9 @@ arcana:
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Quick Start: HTML/CSS/JS Apps
+# Get Started: HTML/CSS/JS Apps
 
-Web3 apps built using {{page.meta.arcana.app_type}} can easily onboard users via social login by integrating with the {{config.extra.arcana.sdk_name}}!
+Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
 ## 1. Register & Configure
 

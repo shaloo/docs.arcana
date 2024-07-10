@@ -1,7 +1,7 @@
 ---
 alias: walletconnect-quick-start
 title: 'Quick Start: WalletConnect Apps'
-description: 'Get Started quickly using these step-by-step instructions for enabling Arcana wallet in apps using WalletConnect. Use Arcana Developer dashboard to first register the app, get a client ID and use this client ID to integrate the app with the Arcana Auth SDK.'
+description: 'Integrate Arcana Auth in WalletConnect apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'WalletConnect'"

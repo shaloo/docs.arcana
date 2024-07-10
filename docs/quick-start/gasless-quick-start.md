@@ -1,7 +1,7 @@
 ---
 alias: gasless-quick-start
 title: 'Quick Start: Gasless Apps'
-description: 'Get Started with onboarding users via social login and enabling the gasless feature by integrating with the Arcana Auth SDK. Use the Arcana Developer Dashboard to register the app, get a client ID, configure gasless settings, and use the client ID to integrate the app with the Arcana Auth SDK.'
+description: 'Integrate Arcana Auth in web apps. Sponsor gas fees for whitelisted app operations. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions with zero gas fees.'
 arcana:
   root_rel_path: ..
   app_type: "'Gasless'"

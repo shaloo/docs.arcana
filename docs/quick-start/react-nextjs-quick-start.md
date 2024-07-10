@@ -1,7 +1,7 @@
 ---
 alias: react-nextjs-quick-start
 title: 'Quick Start: React/Next.js Apps'
-description: 'Get Started quickly using these step-by-step instructions for using the Arcana Auth product in React/Next.js apps. Use Arcana Developer dashboard to first register the app, get a client ID and use this client ID to integrate the app with the Arcana Auth SDK.'
+description: 'Integrate Arcana Auth in React/NextJS apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'React/Next.js'"

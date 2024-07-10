@@ -1,4 +1,4 @@
-```tsx title="example/components/connectorCards/ArcanaConnectCard.tsx" hl_lines="4 9-16 30-35 39"
+```tsx hl_lines="4 9-16 30-35 39"
 import { useEffect, useState } from "react";
 
 import { MAINNET_CHAINS } from "../../chains";

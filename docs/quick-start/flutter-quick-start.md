@@ -1,7 +1,7 @@
 ---
 alias: flutter-quick-start
 title: 'Quick Start: Flutter Apps'
-description: 'Get Started quickly with mobile apps built with Flutter by following these step-by-step instructions. Register the app, obtain a ClientID and then integrate the app with the Arcana Auth SDK.'
+description: 'Integrate Arcana Auth in Flutter based mobile apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'Flutter'"

@@ -1,7 +1,7 @@
 ---
 alias: wagmi-quick-start
-title: 'Quick Start: Wagmi Apps'
-description: 'Learn how Web3 apps using Wagmi for connecting multiple standalone wallets can onboard users via social login, enable an in-app Arcana wallet, and allow users to sign transactions.'
+title: 'Get Started: Wagmi Apps'
+description: 'Integrate Arcana Auth in Wagmi apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'Wagmi'"
@@ -10,9 +10,11 @@ arcana:
   custom_login_ui_tag: "onboard-wagmi-app-custom-ui"
 ---
 
-# Wagmi Apps
+# Get Started: Wagmi Apps
 
-[Wagmi](https://wagmi.sh/) is a React Hooks library for Ethereum that simplifies connecting Web3 apps to multiple wallets and chains. Follow these instructions to onboard users via [[concept-social-login|social login]] and enable them to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
+[Wagmi](https://wagmi.sh/) is a React Hooks library for Ethereum that simplifies connecting Web3 apps to multiple wallets and chains. 
+
+Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
 ## Prerequisites
 
