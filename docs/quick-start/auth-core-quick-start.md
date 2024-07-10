@@ -5,7 +5,7 @@ description: 'Integrate Arcana Auth-Core SDK in apps that require higher flexibi
 arcana:
   root_rel_path: ..
   app_type: "'Auth-Core'"
-  app_example_submodule: "'`sample-auth-core`'"
+  app_example_submodule: "`sample-auth-core`"
 ---
 
 # Quick Start: Auth-Core
@@ -207,5 +207,7 @@ try {
       ```
 
 ## See Also
+
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_core_sdk_quicklinks.md" %}

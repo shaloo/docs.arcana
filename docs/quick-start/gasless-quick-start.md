@@ -1,67 +1,67 @@
 ---
 alias: gasless-quick-start
-title: 'Quick Start: Gasless Apps'
-description: 'Integrate Arcana Auth in web apps. Sponsor gas fees for whitelisted app operations. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions with zero gas fees.'
+title: 'Get Started: Gasless Apps'
+description: 'Integrate Arcana Auth in web apps. Sponsor gas fees for whitelisted app operations. Onboard users via social login. Provide instant access to the in-app Arcana wallet and sign transactions with zero gas fees.'
 arcana:
   root_rel_path: ..
   app_type: "'Gasless'"
   app_example_submodule: "`sample-gasless-arcana-only`"
 ---
 
-# Quick Start: Gasless Apps
+# Get Started: Gasless Apps
 
-Web3 apps can easily onboard users via social login and enable gasless transactions through {{config.extra.arcana.wallet_name}} by integrating with the {{config.extra.arcana.sdk_name}}! 
+Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]]. Enable gasless transactions by setting up gas tanks and sponsoring gas fees for users.
 
 !!! an-tip "Third-party wallets"
 
-      Developers can enable gasless transactions in third-party wallets by integrating the app with the {{config.extra.arcana.gasless_sdk_name}}. See [[gasless-standalone-quick-start|Gasless (Third-Party wallets) Quick Start Guide]] for details.
+      Allow gasless transactions in third-party wallets by integrating Web3 apps with the {{config.extra.arcana.gasless_sdk_name}}. [[gasless-standalone-quick-start|Learn more...]]
 
-## 1. Register App
+## Prerequisites
 
 {% include "./text-snippets/quick-start-reg-gasless.md" %}
 
-## 2. Configure Gasless
+## 1. Configure Gasless
 
-Follow the instructions [[configure-gasless|here to configure gasless feature usage]] as per your app requirements. You will be required to set up gas tanks for your app, deposit gas fees, and provide smart contract ABI details to whitelist one or more app operations that should happen in a gasless manner.
+[[configure-gasless|Configure gasless settings]] before integrating the app. Set up gas tanks for the required chains, deposit gas fees, and provide smart contract ABI details to whitelist one or more app operations. When a user triggers a whitelisted app operation, zero gas fees are charged.
 
-## 3. Install SDK
-
-Install the {{config.extra.arcana.sdk_name}} and use the built-in gasless feature to enable gasless transactions via the {{config.extra.arcana.wallet_name}}.
+## 2. Install SDK
 
 {% include "./code-snippets/auth_install.md" %}
 
-!!! an-note "Use latest SDKs"
+## 3. Integrate
 
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+Here is how a simple HTML/CSS/JS app integrates with the {{config.extra.arcana.wallet_name}}. Refer to the *Integrate* section in the respective Quick Start Guides for other app types.
 
-## 4. Integrate
-
-Developers can enable gasless transactions through the {{config.extra.arcana.wallet_name}} by integrating with the {{config.extra.arcana.sdk_name}}. Follow the [[index-integrate|instructions on how to integrate with the {{config.extra.arcana.sdk_name}}]] for details.
+{% include "./text-snippets/quick-start-int-auth-evm.md" %}
 
 ### Onboard Users
+ 
+Here is how a simple HTML/CSS/JS app can onboard user via social login. Refer to the *Onboard* section in the respective Quick Start Guides for other app types.
 
-Web3 apps can enable gasless transactions for authenticated users. 
-
-To enable the {{config.extra.arcana.wallet_name}}, developers have to install the {{config.extra.arcana.sdk_name}} and integrate with it. The developers have a choice to use the [[index-onboard-users|social login]] user onboarding feature offered by the {{config.extra.arcana.sdk_name}} and select the built-in plug-and-play login UI or a custom login UI option to onboard users.
+{% include "./text-snippets/quick-start-auth-onboard.md" %}
 
 ### Sign Transactions
 
-Developers can add Web3 wallet operations programmatically in the context of authenticated users and allow them to sign transactions. The gas tanks set up by the app developer are used to pay the gas fees for whitelisted app operations.
+There are no special functions or additional input parameters in Web3 wallet operations for enabling gasless transactions via the {{config.extra.arcana.wallet_name}}. The SDK automatically checks the gasless configuration settings. Only the whitelisted app operations issued via the user's SCW account incur zero gas fees for the user.
 
-There are no special functions for enabling gasless transactions via the {{config.extra.arcana.wallet_name}}. Simply add code for the supported [[index-wallet-ux|Web3 wallet operations]] and use the standard EIP-1193 JSON/RPC calls for signing blockchain transactions. The SDK automatically checks the gasless configuration settings and ensures that only the whitelisted app operations do not incur any gas fees from the user's SCW account.
-
-## 5. Deploy App
+{% include "./text-snippets/index-web3-wallet-ops.md" %}
 
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-{==
+## 4. Advanced Usage
 
-Your app is now powered by the {{config.extra.arcana.sdk_name}} to support gasless transactions via the {{config.extra.arcana.wallet_name}}.
+{% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
-==}
+{% include "./text-snippets/adv_wallet_customization.md" %}
+
+{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
+
+{% include "./text-snippets/adv_pnp_compact_ui.md" %}
+
+{% include "./text-snippets/jwt_token.md" %}
 
 ## See Also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}

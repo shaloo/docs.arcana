@@ -412,9 +412,10 @@ not_in_nav: |
 nav:
   - Products: 
     - index.md
+    - Arcana SDKs: introduction/index.md
     - Quick Start:
       #- quick-start/index.md
-      - Auth:
+      - Auth SDK:
         #- quick-start/auth-sdk/index.md
         - Web:
           - Wagmi: quick-start/wagmi-quick-start.md
@@ -424,188 +425,182 @@ nav:
           - React/Next.js: quick-start/react-nextjs-quick-start.md
           - HTML/CSS/JS: quick-start/vanilla-web-apps-quick-start.md
           - Vue: quick-start/vue-quick-start.md
-          - Gasless Apps: quick-start/gasless-quick-start.md
+          - Gasless: quick-start/gasless-quick-start.md
         - Mobile: 
           #- quick-start/mobile/index.md
-          - Flutter Apps: quick-start/flutter-quick-start.md
-          - React-Native Apps: quick-start/react-native-quick-start.md
-        - Solana Apps: quick-start/solana-quick-start.md
-        - MultiversX Apps: quick-start/mvx-quick-start.md
-        - Near Apps: quick-start/near-quick-start.md
-        - Unity Apps: quick-start/unity-quick-start.md
-      - Gasless: quick-start/gasless-standalone-quick-start.md
-      - Auth-Core: quick-start/auth-core-quick-start.md
-    - Usage:
-      - introduction/index.md
-      - Auth: 
-        #- auth/index.md
-        - Register App: setup/config-auth/register-app.md 
-        - Install SDK: auth/sdk-installation.md
-        - Integrate App:
-          #- auth/integrate/index.md
-          - Wagmi: auth/integrate/wagmi.md
-          - RainbowKit: auth/integrate/rainbow.md
-          - WalletConnect: auth/integrate/walletconnect.md
-          - Web3-React: auth/integrate/web3-react.md
-          - React/Next.js: auth/integrate/react-nextjs.md
-          - HTML/CSS/JS: auth/integrate/vanilla-html-css-js.md
-          - Vue: auth/integrate/vue.md
-          - Gasless: auth/integrate/gasless.md
-          - Solana: auth/integrate/solana.md
-          - MultiversX: auth/integrate/mvx.md
-          - Near: auth/integrate/near.md
-          - Unity: auth/integrate/unity.md
-          - Mobile:
-            #- auth/mobile/index.md
-            - Flutter: auth/mobile/flutter-get-started.md
-            - React-Native: auth/mobile/react-native-get-started.md
-          - Custom OAuth: auth/integrate/custom-oauth.md
-          - Advanced:
-            - auth/web3-ops/arcana-wallet-ui/index.md
-            - Wallet Visibility: auth/web3-ops/arcana-wallet-ui/config-wallet-visibility.md
-        - Onboard Users: 
-          #- auth/onboard/index.md
-          - HTML/CSS/JS: 
-            #- auth/onboard/vanilla/index.md
-            - Plug-and-Play Login: auth/onboard/vanilla/use-plug-play-auth.md
-            - Custom Login: 
-              #- auth/onboard/vanilla/custom-ui/index.md
-              - Passwordless: auth/onboard/vanilla/custom-ui/build-pwdless-auth.md
-              - Social Login Providers:
-                #- auth/onboard/vanilla/custom-ui/build-social/index.md
-                - Discord: auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md
-                - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
-                - Google: auth/onboard/vanilla/custom-ui/build-social/google-oauth.md
-                - Steam: auth/onboard/vanilla/custom-ui/build-social/steam-oauth.md
-                - Twitch: auth/onboard/vanilla/custom-ui/build-social/twitch-oauth.md
-                - Twitter: auth/onboard/vanilla/custom-ui/build-social/twitter-oauth.md
-              - IAM Providers:
-                #- auth/onboard/vanilla/custom-ui/build-idm/index.md
-                - Cognito: auth/onboard/vanilla/custom-ui/build-idm/cognito-oauth.md
-                - Firebase: auth/onboard/vanilla/custom-ui/build-idm/firebase-login.md
-          - Vue:
-            #- auth/onboard/vue/index.md
-            - Plug-and-Play Login: auth/onboard/vue/use-plug-play-auth.md
-            - Custom Login:
-              #- auth/onboard/vue/custom-ui/index.md
-              - Passwordless: auth/onboard/vue/custom-ui/build-pwdless-auth.md
-              - Social Login Providers:
-                #- auth/onboard/vue/custom-ui/build-social/index.md
-                - Discord: auth/onboard/vue/custom-ui/build-social/discord-oauth.md
-                - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
-                - Google: auth/onboard/vue/custom-ui/build-social/google-oauth.md
-                - Steam: auth/onboard/vue/custom-ui/build-social/steam-oauth.md
-                - Twitch: auth/onboard/vue/custom-ui/build-social/twitch-oauth.md
-                - Twitter: auth/onboard/vue/custom-ui/build-social/twitter-oauth.md
-              - IAM Providers:
-                #- auth/onboard/vue/custom-ui/build-idm/index.md
-                - Cognito: auth/onboard/vue/custom-ui/build-idm/cognito-oauth.md
-                - Firebase: auth/onboard/vue/custom-ui/build-idm/firebase-login.md      
-          - Wagmi: 
-            #- auth/onboard/wagmi/index.md
-            - Plug-and-Play Login: auth/onboard/wagmi/wagmi-pnp-ui.md
-            - Custom Login: auth/onboard/wagmi/wagmi-custom-ui.md
-          - RainbowKit:
-            #- auth/onboard/rainbow/index.md
-            - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
-            - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
-          - WalletConnect:
-            - auth/onboard/walletconnect/index.md
-            - Plug-and-Play Login: auth/onboard/walletconnect/walletconnect-pnp-ui.md
-            - Custom Login: auth/onboard/walletconnect/walletconnect-custom-ui.md
-          - Web3-React: 
-            #- auth/onboard/web3-react/index.md
-            - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
-            - Custom Login: auth/onboard/web3-react/web3-react-custom-ui.md
-          - React/Next.js: 
-            #- auth/onboard/react-nextjs/index.md
-            - Plug-and-Play Login: auth/onboard/react-nextjs/use-plug-play-auth.md
-            - Custom Login: 
-              #- auth/onboard/react-nextjs/custom-ui/index.md
-              - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
-              - Social Login Providers:
-                #- auth/onboard/react-nextjs/custom-ui/build-social/index.md
-                - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
-                - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
-                - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
-                - Steam: auth/onboard/react-nextjs/custom-ui/build-social/steam-oauth.md
-                - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
-                - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
-              - IAM Providers:
-                #- auth/onboard/react-nextjs/custom-ui/build-idm/index.md
-                - Cognito: auth/onboard/react-nextjs/custom-ui/build-idm/cognito-oauth.md
-                - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
-          - Gasless: auth/onboard/gasless.md
-          - Solana: auth/onboard/solana.md
-          - MultiversX: auth/onboard/mvx.md
-          - Near: auth/onboard/near.md
-          - Unity: auth/onboard/unity.md
-          - Mobile:
-            #- auth/mobile/index.md
-            - Flutter: auth/mobile/flutter-get-started.md
-            - React-Native: auth/mobile/react-native-get-started.md
-        - Wallet Ops: 
-          #- auth/web3-ops/index.md
-          - EVM Chains: 
-            #- auth/web3-ops/evm/index.md
-            - Add/Switch Network: auth/web3-ops/evm/add-switch-ntwk.md
-            - Check Balance: auth/web3-ops/evm/balance.md
-            - Get/Switch Account Type: auth/web3-ops/evm/get-switch-account.md
-            - Send Tokens: auth/web3-ops/evm/send.md
-            - Show/Hide Wallet: auth/web3-ops/evm/show.md
-            - Sign Message: auth/web3-ops/evm/sign.md
-            - Watch Asset: auth/web3-ops/evm/watchasset.md
-          - Gasless Txn: auth/web3-ops/gasless.md
-          - Solana: 
-            #- auth/web3-ops/solana/index.md
-            - JSON/RPC: auth/web3-ops/solana/solana-json-rpc-ops.md
-            - Web3 Ops: auth/web3-ops/solana/solana-wallet-ops.md
-          - MultiversX: auth/web3-ops/mvx/index.md
-          - Near: auth/web3-ops/near/index.md
-          - Unity: auth/web3-ops/unity-wallet-ops.md
-        - Event Handling: auth/handle-provider-events.md
-        - Try Now!: auth/auth-try-now.md
-      - Gasless: 
-        #- gasless/index.md
-        - Install: gasless/gasless-install.md
-        - Integrate App: gasless/gasless-integrate.md
-        - Transact: gasless/gasless-transact.md
-        - Try Now!: gasless/gl-try-now.md
-      - Setup:
-        - Auth SDK Settings:
-          #- setup/config-auth/index.md
-          - Register App: setup/config-auth/register-app.md 
-          - Social Login Providers: 
-            #- setup/config-social/index.md
-            - Discord: setup/config-social/discord-oauth.md
-            - GitHub: setup/config-social/github-oauth.md
-            - Google: setup/config-social/google-oauth.md
-            - Steam: setup/config-social/steam-oauth.md
-            - Twitch: setup/config-social/twitch-oauth.md
-            - Twitter: setup/config-social/twitter-oauth.md
+          - Flutter: quick-start/flutter-quick-start.md
+          - React-Native: quick-start/react-native-quick-start.md
+        - Solana: quick-start/solana-quick-start.md
+        - MultiversX: quick-start/mvx-quick-start.md
+        - Near: quick-start/near-quick-start.md
+        - Unity: quick-start/unity-quick-start.md
+    - Gasless SDK: quick-start/gasless-standalone-quick-start.md
+    - Auth-Core SDK: quick-start/auth-core-quick-start.md
+    - Auth SDK: 
+      #- auth/index.md
+      - Register App: setup/config-auth/register-app.md
+      - Configure Auth:
+        - Social Login:
+          #- setup/config-social/index.md
+          - Discord: setup/config-social/discord-oauth.md
+          - GitHub: setup/config-social/github-oauth.md
+          - Google: setup/config-social/google-oauth.md
+          - Steam: setup/config-social/steam-oauth.md
+          - Twitch: setup/config-social/twitch-oauth.md
+          - Twitter: setup/config-social/twitter-oauth.md
           - IAM Providers: 
             #- setup/config-idm/index.md
             - Cognito: setup/config-idm/cognito-oauth.md
             - Firebase: setup/config-idm/firebase-auth.md
           - Custom OAuth: setup/config-custom-oauth.md
-          - Manage Chains: setup/config-wallet-chains.md
-          - Wallet UX:
-            #- setup/config-wallet/index.md
-            - Branding: setup/config-wallet/config-wallet-branding.md
-            - Keyspace: setup/config-wallet/config-wallet-keyspace.md
-            - Wallet Security: setup/config-wallet/config-wallet-settings.md
-            - Custom Wallet UI: setup/config-wallet/custom-wallet-ui.md
-          - Manage Gasless: setup/configure-gasless.md
-          - Solana Setup: setup/config-dApp-with-db-for-Solana.md
-          - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
-          - Near Setup: setup/config-dApp-with-db-for-near.md
-          - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
-        - Gasless SDK Settings:
-          - Register App: setup/config-gasless/register-app.md
-          - Gasless Settings: setup/configure-standalone-gasless.md
-        - Testnet/Mainnet Profiles: 
+        - Manage Chains: setup/config-wallet-chains.md
+        - Wallet UX:
+          #- setup/config-wallet/index.md
+          - Branding: setup/config-wallet/config-wallet-branding.md
+          - Keyspace: setup/config-wallet/config-wallet-keyspace.md
+          - Wallet Security: setup/config-wallet/config-wallet-settings.md
+          - Custom Wallet UI: setup/config-wallet/custom-wallet-ui.md
+        - Solana Setup: setup/config-dApp-with-db-for-Solana.md
+        - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
+        - Near Setup: setup/config-dApp-with-db-for-near.md
+        - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
+        - Manage Gasless: setup/configure-gasless.md
+      - Install SDK: auth/sdk-installation.md
+      - Integrate App:
+        #- auth/integrate/index.md
+        - Wagmi: auth/integrate/wagmi.md
+        - RainbowKit: auth/integrate/rainbow.md
+        - WalletConnect: auth/integrate/walletconnect.md
+        - Web3-React: auth/integrate/web3-react.md
+        - React/Next.js: auth/integrate/react-nextjs.md
+        - HTML/CSS/JS: auth/integrate/vanilla-html-css-js.md
+        - Vue: auth/integrate/vue.md
+        - Gasless: auth/integrate/gasless.md
+        - Solana: auth/integrate/solana.md
+        - MultiversX: auth/integrate/mvx.md
+        - Near: auth/integrate/near.md
+        - Unity: auth/integrate/unity.md
+        - Mobile:
+          #- auth/mobile/index.md
+          - Flutter: auth/mobile/flutter-get-started.md
+          - React-Native: auth/mobile/react-native-get-started.md
+        - Custom OAuth: auth/integrate/custom-oauth.md
+        - Advanced:
+          - auth/web3-ops/arcana-wallet-ui/index.md
+          - Wallet Visibility: auth/web3-ops/arcana-wallet-ui/config-wallet-visibility.md
+      - Onboard Users: 
+        #- auth/onboard/index.md
+        - HTML/CSS/JS: 
+          #- auth/onboard/vanilla/index.md
+          - Plug-and-Play Login: auth/onboard/vanilla/use-plug-play-auth.md
+          - Custom Login: 
+            #- auth/onboard/vanilla/custom-ui/index.md
+            - Passwordless: auth/onboard/vanilla/custom-ui/build-pwdless-auth.md
+            - Social Login Providers:
+              #- auth/onboard/vanilla/custom-ui/build-social/index.md
+              - Discord: auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md
+              - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
+              - Google: auth/onboard/vanilla/custom-ui/build-social/google-oauth.md
+              - Steam: auth/onboard/vanilla/custom-ui/build-social/steam-oauth.md
+              - Twitch: auth/onboard/vanilla/custom-ui/build-social/twitch-oauth.md
+              - Twitter: auth/onboard/vanilla/custom-ui/build-social/twitter-oauth.md
+            - IAM Providers:
+              #- auth/onboard/vanilla/custom-ui/build-idm/index.md
+              - Cognito: auth/onboard/vanilla/custom-ui/build-idm/cognito-oauth.md
+              - Firebase: auth/onboard/vanilla/custom-ui/build-idm/firebase-login.md
+        - Vue:
+          #- auth/onboard/vue/index.md
+          - Plug-and-Play Login: auth/onboard/vue/use-plug-play-auth.md
+          - Custom Login:
+            #- auth/onboard/vue/custom-ui/index.md
+            - Passwordless: auth/onboard/vue/custom-ui/build-pwdless-auth.md
+            - Social Login Providers:
+              #- auth/onboard/vue/custom-ui/build-social/index.md
+              - Discord: auth/onboard/vue/custom-ui/build-social/discord-oauth.md
+              - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
+              - Google: auth/onboard/vue/custom-ui/build-social/google-oauth.md
+              - Steam: auth/onboard/vue/custom-ui/build-social/steam-oauth.md
+              - Twitch: auth/onboard/vue/custom-ui/build-social/twitch-oauth.md
+              - Twitter: auth/onboard/vue/custom-ui/build-social/twitter-oauth.md
+            - IAM Providers:
+              #- auth/onboard/vue/custom-ui/build-idm/index.md
+              - Cognito: auth/onboard/vue/custom-ui/build-idm/cognito-oauth.md
+              - Firebase: auth/onboard/vue/custom-ui/build-idm/firebase-login.md      
+        - Wagmi: 
+          #- auth/onboard/wagmi/index.md
+          - Plug-and-Play Login: auth/onboard/wagmi/wagmi-pnp-ui.md
+          - Custom Login: auth/onboard/wagmi/wagmi-custom-ui.md
+        - RainbowKit:
+          #- auth/onboard/rainbow/index.md
+          - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
+          - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
+        - WalletConnect:
+          - auth/onboard/walletconnect/index.md
+          - Plug-and-Play Login: auth/onboard/walletconnect/walletconnect-pnp-ui.md
+          - Custom Login: auth/onboard/walletconnect/walletconnect-custom-ui.md
+        - Web3-React: 
+          #- auth/onboard/web3-react/index.md
+          - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
+          - Custom Login: auth/onboard/web3-react/web3-react-custom-ui.md
+        - React/Next.js: 
+          #- auth/onboard/react-nextjs/index.md
+          - Plug-and-Play Login: auth/onboard/react-nextjs/use-plug-play-auth.md
+          - Custom Login: 
+            #- auth/onboard/react-nextjs/custom-ui/index.md
+            - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
+            - Social Login Providers:
+              #- auth/onboard/react-nextjs/custom-ui/build-social/index.md
+              - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
+              - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
+              - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
+              - Steam: auth/onboard/react-nextjs/custom-ui/build-social/steam-oauth.md
+              - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
+              - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
+            - IAM Providers:
+              #- auth/onboard/react-nextjs/custom-ui/build-idm/index.md
+              - Cognito: auth/onboard/react-nextjs/custom-ui/build-idm/cognito-oauth.md
+              - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
+        - Gasless: auth/onboard/gasless.md
+        - Solana: auth/onboard/solana.md
+        - MultiversX: auth/onboard/mvx.md
+        - Near: auth/onboard/near.md
+        - Unity: auth/onboard/unity.md
+        - Mobile:
+          #- auth/mobile/index.md
+          - Flutter: auth/mobile/flutter-get-started.md
+          - React-Native: auth/mobile/react-native-get-started.md
+      - Wallet Ops: 
+        #- auth/web3-ops/index.md
+        - EVM Chains: 
+          #- auth/web3-ops/evm/index.md
+          - Add/Switch Network: auth/web3-ops/evm/add-switch-ntwk.md
+          - Check Balance: auth/web3-ops/evm/balance.md
+          - Get/Switch Account Type: auth/web3-ops/evm/get-switch-account.md
+          - Send Tokens: auth/web3-ops/evm/send.md
+          - Show/Hide Wallet: auth/web3-ops/evm/show.md
+          - Sign Message: auth/web3-ops/evm/sign.md
+          - Watch Asset: auth/web3-ops/evm/watchasset.md
+        - Gasless Txn: auth/web3-ops/gasless.md
+        - Solana: 
+          #- auth/web3-ops/solana/index.md
+          - JSON/RPC: auth/web3-ops/solana/solana-json-rpc-ops.md
+          - Web3 Ops: auth/web3-ops/solana/solana-wallet-ops.md
+        - MultiversX: auth/web3-ops/mvx/index.md
+        - Near: auth/web3-ops/near/index.md
+        - Unity: auth/web3-ops/unity-wallet-ops.md
+      - Event Handling: auth/handle-provider-events.md
+      - Try Now!: auth/auth-try-now.md
+    - Gasless SDK: 
+      #- gasless/index.md
+      - Register App: setup/config-gasless/register-app.md
+      - Configure Gasless: setup/configure-standalone-gasless.md
+      - Install: gasless/gasless-install.md
+      - Integrate: gasless/gasless-integrate.md
+      - Transact: gasless/gasless-transact.md
+      - Try Now!: gasless/gl-try-now.md
+    - Testnet/Mainnet Configuration:
           #- deploy/index.md
-          - Testnet/Mainnet: deploy/deploy-app.md
+          - Deploymet: deploy/deploy-app.md
           - Migrate to Mainnet: deploy/migrate-testnet-mainnet.md
     - Quick Links:
       - Changelog: changelog/index.md  

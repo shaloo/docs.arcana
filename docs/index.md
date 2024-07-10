@@ -24,15 +24,13 @@ Enable [[concept-gasless-transactions|account abstraction]] to sponsor gas fees 
 Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]]. 
 
 <br/>
-<br/>
 
 {==
 
-This documentation contains everything you need to get started using {{config.extra.arcana.company_name}} SDKs.
+This documentation contains everything you need to get started using [[introduction|{{config.extra.arcana.company_name}} SDKs]].
 
 ==}
 
-<br/>
 <br/>
 
 <div class="grid cards" markdown>

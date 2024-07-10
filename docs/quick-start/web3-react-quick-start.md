@@ -12,8 +12,6 @@ arcana:
 
 # Get Started: Web3-React Apps
 
-Web3 apps using {{page.meta.arcana.app_type}} framework can easily onboard users via social login by integrating with the {{config.extra.arcana.web3_react_sdk_name}}!
-
 [Web3-React](https://www.npmjs.com/package/web3-react) is a React framework for Ethereum that connects Web3 apps to multiple wallets and chains. 
 
 Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
@@ -54,5 +52,8 @@ Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via 
 
 ## See Also
 
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
+
 {% include "./text-snippets/auth_web3_react_sdk_quicklinks.md" %}

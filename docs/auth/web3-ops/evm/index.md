@@ -8,8 +8,8 @@ arcana:
 
 # Web3 Wallet Operations
 
-The {{config.extra.arcana.wallet_name}}  supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.github.io/execution-apis/api-documentation/) and the following Web3 operations:
-
+{{config.extra.arcana.wallet_name}} supports the standard Web3 wallet operations for EVM chains via [JSON/RPC calls](https://ethereum.github.io/execution-apis/api-documentation/). The supported wallet operations may vary for non-EVM chains.
+      
 [[add-switch-network| :material-wifi-cog:{ .icon-color } Add/Switch Networks]]{ .md-button }
 [[check-balance| :material-wallet:{ .icon-color } Check Wallet Balance]]{ .md-button }
 [[get-switch-account| :material-wifi-cog:{ .icon-color } Get/Switch Account Type]]{ .md-button }

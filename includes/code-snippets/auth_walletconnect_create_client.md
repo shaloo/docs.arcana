@@ -1,26 +1,28 @@
-```js title="src/main.ts" hl_lines="8 18 22"
-//Use "`auth-wagmi` version > v2.0.0"
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { Buffer } from 'buffer'
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { WagmiProvider } from 'wagmi'
-import App from './App.tsx'
-import { config } from './wagmi.ts'
+=== "`main.ts`"
 
-import './index.css'
+    ```js hl_lines="8 18 22"
+    //Use "`auth-wagmi` version > v2.0.0"
+    import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+    import { Buffer } from 'buffer'
+    import React from 'react'
+    import ReactDOM from 'react-dom/client'
+    import { WagmiProvider } from 'wagmi'
+    import App from './App.tsx'
+    import { config } from './wagmi.ts'
 
-globalThis.Buffer = Buffer
+    import './index.css'
 
-const queryClient = new QueryClient()
+    globalThis.Buffer = Buffer
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}>
-        <App />
-      </QueryClientProvider>
-    </WagmiProvider>
-  </React.StrictMode>,
-)
-```
+    const queryClient = new QueryClient()
+
+    ReactDOM.createRoot(document.getElementById('root')!).render(
+      <React.StrictMode>
+        <WagmiProvider config={config}>
+          <QueryClientProvider client={queryClient}>
+            <App />
+          </QueryClientProvider>
+        </WagmiProvider>
+      </React.StrictMode>,
+    )
+    ```

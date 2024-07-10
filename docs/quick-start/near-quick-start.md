@@ -68,7 +68,7 @@ Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.p
 
 ## See Also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
 

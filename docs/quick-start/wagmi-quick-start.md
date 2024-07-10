@@ -14,7 +14,7 @@ arcana:
 
 [Wagmi](https://wagmi.sh/) is a React Hooks library for Ethereum that simplifies connecting Web3 apps to multiple wallets and chains. 
 
-Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
+Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via 
 
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-## Advanced Usage
+## 3. Advanced Usage
 
 {% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
@@ -52,5 +52,8 @@ Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via 
 
 ## See Also
 
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
+
 {% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}

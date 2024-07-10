@@ -54,6 +54,6 @@ The app is now powered by gasless transactions built using the {{config.extra.ar
 
 ## See Also
 
-{% include "./text-snippets/quick-start-see-also-gasless.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/gasless_sdk_quicklinks.md" %}

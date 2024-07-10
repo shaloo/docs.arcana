@@ -1,6 +1,6 @@
 ---
 alias: walletconnect-quick-start
-title: 'Quick Start: WalletConnect Apps'
+title: 'Get Started: WalletConnect Apps'
 description: 'Integrate Arcana Auth in WalletConnect apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
@@ -10,75 +10,53 @@ arcana:
   custom_login_ui_tag: "onboard-walletconnect-app-custom-ui"
 ---
 
-# Quick Start: WalletConnect Apps
+# Get Started: WalletConnect Apps
 
-Web3 apps using {{page.meta.arcana.app_type}} can easily onboard users via social login by integrating with the {{config.extra.arcana.wagmi_sdk_name}}!
+[WalletConnect](https://walletconnect.com/) is a Web3 framework to connect an app with various wallet options.  
+
+Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
 ## Prerequisites
 
-* [WalletConnect](https://walletconnect.com/)
-* [Wagmi v2.0](https://wagmi.sh/)
-
-## 1. Register & Configure
-
 {% include "./text-snippets/quick-start-reg-config-auth.md" %}
 
-## 2. Install SDKs
+!!! an-note "Supported WalletConnect, Wagmi Versions"
 
-For {{page.meta.arcana.app_type}} app, install the following packages:
+      * [WalletConnect 1.7.8](https://walletconnect.com/)
+      * [Wagmi v2.0](https://wagmi.sh/) or higher
 
-* [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth)
-* [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi)
+## 1. Install
 
 {% include "./code-snippets/auth_wagmi_install.md" %}
 
-!!! an-note "Use latest SDKs"
-  
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
-
-      {% include "./text-snippets/warn_latest_wagmi_sdk_version.md" %}
-
-## 3. Integrate
-
-Use the unique **{{config.extra.arcana.app_address}}** obtained after registering the app and creating a new `AuthProvider` instance.
+## 2. Integrate
 
 {% include "./code-snippets/auth_walletconnect_configure_pnp.md" %}
-
-{% include "./text-snippets/quick-start-authprovider-optional.md" %}
-
-Use the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package, specify the `AuthProvider` instance and create a new `ArcanaConnector`.
 
 {% include "./code-snippets/auth_walletconnect_connector.md" %}
 
 ### Onboard Users
 
-Set up Wagmi configuration and onboard users via the built-in plug-and-play login UI (default). 
-
 {% include "./code-snippets/auth_walletconnect_create_client.md" %}
-
-{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
-
-!!! an-tip "Arcana JWT Token"
-
-      {% include "./text-snippets/jwt_token.md" %}
 
 ### Sign Transactions
 
 {% include "./text-snippets/quick-start-sign-transactions.md" %}
 
-## 4. Deploy
-
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-{==
+## 3. Advanced Usage
 
-Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.wagmi_sdk_name}} to onboard users and allow authenticated users to sign blockchain transactions using  {{config.extra.arcana.wallet_name}}.
+{% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
-==}
+{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
+
+{% include "./text-snippets/jwt_token.md" %}
 
 ## See Also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
+
 {% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}
