@@ -437,10 +437,10 @@ nav:
         - Near: quick-start/near-quick-start.md
         - Unity: quick-start/unity-quick-start.md
       - Gasless SDK: quick-start/gasless-standalone-quick-start.md
-    - Mainnet Setup:
+    - Configuration Profiles:
           #- deploy/index.md
-          - Deployment: deploy/deploy-app.md
-          - Migrate to Mainnet: deploy/migrate-testnet-mainnet.md
+          - Testnet: deploy/deploy-app.md
+          - Mainnet: deploy/migrate-testnet-mainnet.md
     - Auth SDK: 
       #- auth/index.md
       - Register App: setup/config-auth/register-app.md
@@ -760,6 +760,7 @@ nav:
           - Passwordless: concepts/authtype/pwdless.md
           - Custom OAuth: concepts/authtype/custom-oauth.md
         - Usage & Billing: concepts/billing.md
+        - Configuration Profiles: concepts/config-profiles.md
         - Custom Login UI: concepts/custom-login-ui.md
         - Custom Wallet UI: concepts/custom-wallet-ui.md
         - Dashboard: concepts/dashboard.md

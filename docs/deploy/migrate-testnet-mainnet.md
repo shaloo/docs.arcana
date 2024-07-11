@@ -1,33 +1,33 @@
 ---
 alias: migrate-app-testnet-mainnet
-title: 'Migrate App Deployment: Testnet -> Mainnet'
+title: 'Testnet -> Mainnet App Deployment'
 description: 'Learn how developers can deploy the apps integrated with the Arcana Auth on the Arcana Testnet/Mainnet.'
 arcana:
   root_rel_path: ..
 ---
 
-# Migrate App Deployment: Testnet -> Mainnet
+# Testnet -> Mainnet App Deployment
 
-In this guide, you will learn how developers can migrate the apps deployed on Arcana Testnet to Arcana Mainnet.
+In this guide, you will learn how developers can migrate the apps deployed on {{config.extra.arcana.company_name}} Testnet to Mainnet.
 
 ## Prerequisites
 
-* The app must be [[deploy-app|deployed on Arcana Testnet already]].
+* Apps must be registered via the {{config.extra.arcana.dashboard_name}}. A default Testnet [[concept-config-profile|configuration profile]] is assigned to each registered app. You cannot register an app directly for Mainnet use.
 
-## Steps
+## Step 1: Create Mainnet Profile
 
-### Step 1: Configure Mainnet Profile
+Visit the 'Manage Apps' page on the {{config.extra.arcana.dashboard_name}}. Click the registered app card. Each app is associated with a Testnet profile by default, and the 'Mainnet' configuration button is disabled.
 
-Browse the 'Manage Apps' page on the {{config.extra.arcana.dashboard_name}}. Select the app that you wish to deploy on Mainnet. By default, the 'Mainnet' configuration button is disabled. Click on the 'Testnet' configuration profile.
+Click on the 'Testnet' configuration profile.
 
-In the app configuration dashboard, refer to the 'Testnet' dropdown on the top right. Click and choose the 'Mainnet' option. You can either copy the Testnet profile as Mainnet or create a fresh one. 
+You will see the Testnet configuration settings home page for the app. Refer to the 'Testnet' dropdown on the top right. Click and choose 'Mainnet'. You will see options to either copy the Testnet profile to Mainnet or create a new one.
 
 <figure markdown="span">
   <img alt="Create Mainnet Configuration Profile" src="{{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif" class="an-screenshots width_85pc"/>
   <figcaption>Create Mainnet Configuration Profile</figcaption>
 </figure>
 
-In both cases, the Mainnet configuration profile is created and has a **new** {{config.extra.arcana.app_address}} assigned to it. After the Mainnet profile is created successfully, you will see 'Mainnet' selected in the top RHS dropdown.
+The Mainnet configuration profile is assigned a **new** {{config.extra.arcana.app_address}}. 
 
  <figure markdown="span">
    <img alt="Select Mainnet Profile" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
@@ -36,42 +36,25 @@ In both cases, the Mainnet configuration profile is created and has a **new** {{
 
 Copy the newly assigned {{config.extra.arcana.app_address}} in the Mainnet settings. It will be of the format `xar_live_nnnnnnnnnnn...nnn`.
 
-!!! an-caution "Copying Testnet Profile"
+!!! an-caution "Mainnet: Redirect URIs change"
 
       {% include "./text-snippets/warn_copy_testnet_profile.md" %}
 
-### Step 2: Update Integration Code
+## Step 2: Update `AuthProvider`
 
-Refer to the app integration code where you created a new `AuthProvider`. Replace the Testnet {{config.extra.arcana.app_address}} with the newly created Mainnet one with `xar_live_nnnnn` format and recompile the app. The app is ready to be deployed on Arcana Mainnet.
+Refer to the app integration code where you created a new `AuthProvider`. Replace the Testnet {{config.extra.arcana.app_address}} with the newly created Mainnet one with `xar_live_nnnnn` format and recompile the app. The app is ready to be deployed on Mainnet.
 
 Refer to the example below:
 
 {% include "./code-snippets/init_auth_mainnet.md" %}
 
-Next, call the `init` function to initialize the newly created `AuthProvider` before calling any other SDK functions.  
+That is all! :material-party-popper:{ .icon-color }
 
-{% include "./code-snippets/init_auth.md" %}
+!!! an-tip "Wallet banner displaying Testnet Use"
 
-### Step 3: Deploy on Mainnet
-
-Bring up the app. When a user authenticates, they will be assigned a new wallet address corresponding to the Arcana Mainnet.
-
-??? example "Verify Testnet/Mainnet Deployment"
-
-      If you miss updating the {{config.extra.arcana.app_address}} in the integration code for Mainnet deployment, the app will get deployed on Arcana Testnet. The authenticated users will see a warning informing them that the app is deployed on Testnet.
+      When the users log into an app on Testnet, they will see a banner in the {{config.extra.arcana.wallet_name}} indicating the app is on Testnet.
 
       <figure markdown="span">
         <img alt="Testnet Wallet Address" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/> 
         <figcaption>Testnet Wallet Address</figcaption>
       </figure>
-
-If there is no Testnet warning displayed on the {{config.extra.arcana.wallet_name}}, then the app is successfully deployed on Arcana Mainnet.
-
-That is all! :material-party-popper:{ .icon-color }
-
-## See Also
-
-* [[deploy-app| How to deploy on Testnet/Mainnet]]
-* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
