@@ -36,7 +36,7 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 
 !!! an-caution "Unity Settings"
 
-      Developers must update the Unity Project settings in addition to installing the {{config.extra.arcana.gaming_sdk_name}}. This is required to enable SDK usage in Unity Apps. See [[unity-quick-start#2-unity-setup-auth-sdk-install| Unity Setup]].
+      Developers must update the Unity Project settings in addition to installing the {{config.extra.arcana.gaming_sdk_name}}. This is required to enable SDK usage in Unity Apps. See [[unity-quick-start#1-unity-setup-auth-install| Unity Setup]].
 
 ## Mobile SDKs
 

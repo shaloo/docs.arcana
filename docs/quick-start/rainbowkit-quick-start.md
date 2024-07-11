@@ -67,3 +67,5 @@ Use `WagmiConfig` and `RainbowKitProvider` components in the app to enable socia
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
 
 {% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}
+
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

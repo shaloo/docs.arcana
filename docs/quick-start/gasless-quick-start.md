@@ -65,3 +65,5 @@ There are no special functions or additional input parameters in Web3 wallet ope
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
+
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

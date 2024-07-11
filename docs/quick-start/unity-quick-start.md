@@ -1,63 +1,53 @@
 ---
 alias: unity-quick-start
-title: 'Quick Start: Unity Apps'
-description: 'Get Started quickly with Unity gaming apps using these step-by-step instructions. Register the Unity app, obtain a ClientID, and then integrate the app with the Arcana Auth SDK.'
+title: 'Get Started: Unity Apps'
+description: 'Integrate Arcana Auth in Unity apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'Unity'"
   app_example_submodule: "`sample-auth-unity`"
 ---
 
-# Quick Start: Unity Apps
+# Get Started: Unity Apps
 
 {% include "./text-snippets/warn_early_preview_rel.md" %}
 
-Web3 {{page.meta.arcana.app_type}} gaming apps can integrate with the {{config.extra.arcana.gaming_sdk_name}} and onboard users via social login. The authenticated users can access the {{config.extra.arcana.wallet_name}} instantly within the app context and sign blockchain transactions.
+Integrate Web3 {{page.meta.arcana.app_type}} gaming apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
-## 1. Register & Configure
+## Prerequisites
 
-Begin by [[register-app-auth|registering the app]] and [[index-configure-auth|configuring auth settings]] the {{config.extra.arcana.gaming_sdk_name}} usage via the {{config.extra.arcana.dashboard_name}}. Note the unique value, **{{config.extra.arcana.app_address}}**, assigned to the app. It is used later for app integration.
+* [[register-app-auth|Register the app]] and configure auth usage settings via the {{config.extra.arcana.dashboard_name}}. Get a unique {{config.extra.arcana.app_address}} before integrating the app.
 
-See [[index-configure-auth|how to configure user onboarding and gasless transaction settings {{config.extra.arcana.gaming_sdk_name}}]].
+* [[index-configure-auth|Configure social login providers]] to onboard users and customize the user experience for blockchain signing via the wallet settings. 
 
-## 2. Unity Setup, Auth SDK Install
+* Optionally enable gasless transactions [[configure-gasless|Learn more...]].
+
+## 1. Unity Setup, Auth Install
 
 {% include "./text-snippets/auth_unity_settings.md" %}
 
-## 3. Integrate
-
-Initialize the {{config.extra.arcana.gaming_sdk_name}} by specifying the unique {{config.extra.arcana.app_address}} assigned to the app after registration.
+## 2. Integrate
 
 {% include "./code-snippets/auth_unity_init.md" %}
 
-!!! an-note "Use latest SDKs"
-  
-      {% include "./text-snippets/warn_latest_unity_sdk_version.md" %}
-
 ### Onboard Users
-
-Call `LoginWithSocial` or `LoginWithOTP` to onboard the user. Choose one of the [[web3-stack-auth|supported user onboarding options]] such as Google, Steam, etc. 
 
 {% include "./code-snippets/auth_unity_onboard.md" %}
 
 ### Sign Transactions
 
-Add code in authenticated user's context to call `Request` method and make Web3 Wallet operation requests. 
+Use `Request` method to initiate Web3 Wallet operation requests. 
 
 {% include "./code-snippets/auth_unity_web3_wallet_ops.md" %}
 
-## 4. Deploy
-
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-{==
+## 3. Advanced Usage
 
-The Unity app is now ready to onboard users via the specified login method. Once the user logs in, the {{config.extra.arcana.wallet_name}} will be instantly accessible for Web3 wallet operations within the app context. 
+{% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
-==}
+{% include "./text-snippets/jwt_token.md" %}
 
 ## See also
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
-
-* {% include "./text-snippets/unity_sample_url.md" %}

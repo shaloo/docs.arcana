@@ -1,6 +1,6 @@
 ---
 alias: auth-core-quick-start
-title: 'Quick Start: Auth-Core'
+title: 'Get Started: Auth-Core'
 description: 'Integrate Arcana Auth-Core SDK in apps that require higher flexibility and customization. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
@@ -8,7 +8,7 @@ arcana:
   app_example_submodule: "`sample-auth-core`"
 ---
 
-# Quick Start: Auth-Core
+# Get Started: Auth-Core
 
 Integrate Web3 apps with {{config.extra.arcana.auth_core_sdk_name}} and assign keys to authenticated users. Build custom in-app wallet UI and allow users to sign blockchain transactions securely.
 

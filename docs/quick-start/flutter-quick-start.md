@@ -75,3 +75,5 @@ The `AuthProvider` supports the JSON-RPC requests for the following Web3 operati
 
 {% include "./text-snippets/flutter_sdk_quicklinks.md" %}
 
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}
+

@@ -57,3 +57,5 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
+
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}
