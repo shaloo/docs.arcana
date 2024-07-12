@@ -78,9 +78,7 @@ After the selection is made and the developer confirms, the 'Mainnet' profile is
 
       The newly created 'Mainnet' configuration profile is associated with a brand new unique **{{config.extra.arcana.app_address}}**. Developers must specify this new {{config.extra.arcana.app_address}} while integrating the application with the {{config.extra.arcana.sdk_name}} and deploying it on {{config.extra.arcana.company_name}} 'Mainnet'.
 
-!!! an-caution "Copying Testnet Profile"
-
-      {% include "./text-snippets/warn_copy_testnet_profile.md" %}
+{% include "./text-snippets/warn_update_redirect_uri.md" %}
 
 ??? an-example "Example: Copying Google Profile"
       

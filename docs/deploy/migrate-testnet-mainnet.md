@@ -6,9 +6,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Testnet -> Mainnet App Deployment
-
-In this guide, you will learn how developers can migrate the apps deployed on {{config.extra.arcana.company_name}} Testnet to Mainnet.
+# App Deployment: Mainnet
 
 ## Prerequisites
 
@@ -16,45 +14,51 @@ In this guide, you will learn how developers can migrate the apps deployed on {{
 
 ## Step 1: Create Mainnet Profile
 
-Visit the 'Manage Apps' page on the {{config.extra.arcana.dashboard_name}}. Click the registered app card. Each app is associated with a Testnet profile by default, and the 'Mainnet' configuration button is disabled.
+Visit the 'Manage Apps' page on the {{config.extra.arcana.dashboard_name}}. Each app is associated with a Testnet profile by default, and the 'Mainnet' configuration is disabled. Click the registered app card to view the Testnet configuration settings home page for the app. 
 
-Click on the 'Testnet' configuration profile.
+Choose 'Mainnet' from the  'Testnet' dropdown on the top right. You will see options to create the Mainnet profile:
 
-You will see the Testnet configuration settings home page for the app. Refer to the 'Testnet' dropdown on the top right. Click and choose 'Mainnet'. You will see options to either copy the Testnet profile to Mainnet or create a new one.
+* Copy the Testnet profile to Mainnet 
+* Create a fresh Mainnet profile
 
 <figure markdown="span">
   <img alt="Create Mainnet Configuration Profile" src="{{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif" class="an-screenshots width_85pc"/>
   <figcaption>Create Mainnet Configuration Profile</figcaption>
 </figure>
 
-The Mainnet configuration profile is assigned a **new** {{config.extra.arcana.app_address}}. 
+Note down the brand new Mainnet configuration profile {{config.extra.arcana.app_address}} of the format `xar_live_nnnnnnnnnnn...nnn` displayed in the dashboard.
 
  <figure markdown="span">
    <img alt="Select Mainnet Profile" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
    <figcaption>Select Mainnet Profile</figcaption>
 </figure>
 
-Copy the newly assigned {{config.extra.arcana.app_address}} in the Mainnet settings. It will be of the format `xar_live_nnnnnnnnnnn...nnn`.
+!!! an-note "Mainnet Status"
 
-!!! an-caution "Mainnet: Redirect URIs change"
+      The *Manage Apps* dashboard screen displays cards for all registered apps. Once a Mainnet profile is created, you will see it enabled on the app card.
 
-      {% include "./text-snippets/warn_copy_testnet_profile.md" %}
+      <figure markdown="span">
+        <img alt="Mainnet Configuration Profile Available" src="{{config.extra.arcana.img_dir}}/an_mainnet_config_profile_avl.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+        <figcaption>Mainnet Configuration Profile Available</figcaption>
+      </figure>
+
+
+
+{% include "./text-snippets/warn_update_redirect_uri.md" %}
 
 ## Step 2: Update `AuthProvider`
 
-Refer to the app integration code where you created a new `AuthProvider`. Replace the Testnet {{config.extra.arcana.app_address}} with the newly created Mainnet one with `xar_live_nnnnn` format and recompile the app. The app is ready to be deployed on Mainnet.
-
-Refer to the example below:
+In the app integration code, replace the Testnet {{config.extra.arcana.app_address}} with the newly assigned Mainnet  {{config.extra.arcana.app_address}} and recompile the app. 
 
 {% include "./code-snippets/init_auth_mainnet.md" %}
 
 That is all! :material-party-popper:{ .icon-color }
 
-!!! an-tip "Wallet banner displaying Testnet Use"
+!!! an-note "Wallet Address Change"
 
-      When the users log into an app on Testnet, they will see a banner in the {{config.extra.arcana.wallet_name}} indicating the app is on Testnet.
-
+      The user's wallet address will differ when the app is migrated from Testnet to Mainnet.
+            
       <figure markdown="span">
-        <img alt="Testnet Wallet Address" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/> 
-        <figcaption>Testnet Wallet Address</figcaption>
+        <img alt="Mainnet Wallet Address" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots width_35pc"/>
+        <figcaption>Mainnet Wallet Address</figcaption>
       </figure>
