@@ -158,6 +158,9 @@ extra:
           note: >-
             Thanks for your feedback!
 plugins:
+  - timetoread:
+      wpm: 190
+      allPages: True
   - offline:
       enabled: !ENV [OFFLINE, false] #should not be true for production build
   - macros:
