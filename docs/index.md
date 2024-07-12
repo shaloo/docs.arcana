@@ -75,6 +75,9 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 </div>
 
 <h2>Auth Playground</h2>>
+<div class="tx-hero-container">
+    <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
+</div>
 
 <div class="tx-hero-container">
     <div class="tx-hero-content">
@@ -91,10 +94,6 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
             </div>
         </a>
     </div>
-</div>
-
-<div class="tx-hero-container">
-    <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
 </div>
 
 <h2>Quick Start</h2>
@@ -117,8 +116,12 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 
 <h2>Need Help?</h2>>
 
+</br>
+</br>
+
 Contact [Arcana Support](mailto:support@arcana.network). 
 
 Join [Arcana communities]({{config.site_url}}support/community/) and stay informed!
 
-<br/><br/><br/><br/>
+</br>
+</br>

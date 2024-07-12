@@ -8,45 +8,28 @@ arcana:
 
 # Custom Login UI
 
-With Wagmi, Web3 developers can allow app users to easily switch between multiple wallets within a single application. Wagmi apps can use the custom connector offered by the [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] to enable the {{config.extra.arcana.wallet_name}}.
+There are two options to onboard users in a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}}:
 
-In this guide, you will learn how to onboard users via a custom login UI in Wagmi apps integrated with the {{config.extra.arcana.product_name}} SDK.
+* Built-in [[onboard-wagmi-app-pnp-ui|plug-and-play login UI modal]]
+* Custom login UI
+
+Follow these instructions for onboarding users via a custom login UI.
 
 ## Prerequisites
 
-* **Register Web3 Application**: Log into the {{config.extra.arcana.dashboard_name}} {% include "./text-snippets/db_portal_url.md" %} to register and configure the app before they can use the {{config.extra.arcana.sdk_name}} and enable the {{config.extra.arcana.wallet_name}} for authenticated app users.
+* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* **Set up Authentication Providers**: Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
+* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
 
-    !!! an-tip "Configure Authentication Providers"
-
-          You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
-
-          For details, see [[index-configure-auth|how to configure authentication providers]].
-
-* Save the **{{config.extra.arcana.app_address}}** assigned to the app and displayed in the {{config.extra.arcana.dashboard_name}}. It is required later during integrating with the {{config.extra.arcana.sdk_name}}.
+* [[integrate-wagmi-app|Integrate]] {{page.meta.arcana.app_type}} app and create `AuthProvider`, `ArcanaConnector`.
 
 ## Steps
 
-*Onboarding users in Web3 Wagmi apps via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
+### 1. Configure `ArcanaConnector`
 
-Follow these three steps:
+During integration, `ArcanaConnector` is created. It needs to be configured differently when using a custom login UI for onboarding users via authentication providers, and the passwordless options.
 
-### Step 1: Install {{config.extra.arcana.sdk_name}} packages
-
-{% include "./code-snippets/auth_wagmi_install.md" %}
-
-### Step 2: Create `AuthProvider` and `ArcanaConnector`
-
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and `{{config.extra.arcana.wagmi_sdk_pkg_name}}` packages. First create an `AuthProvider` by specifying the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[register-app-auth|registering]] it through the {{config.extra.arcana.dashboard_name}}. 
-
-Next, create the `ArcanaConnector` and specify the `AuthProvider`.
-
-If the custom login UI is configured such that it allows a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the authentication provider and later call the `setLogin` function for the selected provider, in response to the user's onboarding choice.
-
-!!! an-note "Configure Authentication Providers before `ArcanaConnector` creation"
-
-      To build a custom login UI, developers can choose from the list of [[web3-stack-auth|supported authentication providers]] or use passwordless. Wire the UI buttons for onboarding via different options to the `setLogin` function of the `ArcanaConnector`.
+Add code in the custom UI for onboarding via different providers by using the `setLogin` function of the `ArcanaConnector`. 
 
 _Enable Authentication Provider_
 
@@ -56,43 +39,40 @@ _Enable Passwordless Login_
 
 {% include "./code-snippets/auth_wagmi_configure_custom_ui_pwdless.md" %}
 
-### Step 3: Set up WagmiConfig
+!!! an-tip "Single Provider Optimization"
 
-Next, provide the newly instantiated and configured `ArcanaConnector` to set up Wagmi: 
+      If the custom login UI is configured to use only a single authentication provider for user onboarding, specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI must support multiple configured authentication providers then create `ArcanaConnector` without specifying the authentication provider. Later based on which provider user selects to onboard the app, add code to use the `setLogin` function for the selected provider.
+
+### 2. Set up WagmiConfig
+
+Use the `ArcanaConnector` created during app integration to set up [Wagmi config](https://wagmi.sh/react/getting-started).
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
-!!! an-tip "`WagmiProvider`/`WagmiConfig`, `createClient`/`configClient`"
-
-      `createClient`, `configClient`, `WagmiConfig` were part of older Wagmi libraries. 
-      
-      For details, see [Wagmi Getting Started Guide](https://wagmi.sh/react/getting-started) and {% include "./text-snippets/wagmi_migration_guide_ref.md" %}.
-
-Now you can use the `WagmiProvider`/`WagmiConfig` component in the `_app.js` file as per the Wagmi library version used.
+### 3. Initialize Wagmi Components
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 
-Here is an example of how you can layout the `wagmiClient` with the {{config.extra.arcana.wallet_name}} configured as the wallet option on the app page. Note that in this example, the `setLogin` function is used after creating the wallet connector when the user chooses the configured provider:
-
-{% include "./code-snippets/auth_wagmi_use_index.md" %}
-
 That is all! :material-party-popper:
-
-The Web3 Wagmi app can now onboard users using the custom login UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
-
-!!! an-tip "Example: Sample Wagmi App"
-
-       See [sample Wagmi app](https://github.com/arcana-network/auth-wagmi-example) for details.
 
 ## What's Next?
 
-After integrating and onboarding users in the Web3 app developers can add code programmatically and [[index-arcana-wallet|enable Web3 wallet operations]] in the authenticated user's context.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context.
+
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
 
 ## See also
 
-* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
-* {% include "./text-snippets/wagmi_authsdkref_url.md" %}
-* [`{{config.extra.arcana.wagmi_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-react/blob/main/README.md)
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
+* [[index-faq| FAQ]]
+
+* [[troubleshooting| Troubleshooting Guide]]
+
+* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+
+* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
+
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+{% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

@@ -1,26 +1,18 @@
 ---
 alias: index-wallet-ux
-title: 'Arcana Wallet'
-description: 'Learn how to manage Arcana Wallet visibility, enable users to use the Wallet UI and perform Web3 blockchain operations or add code to enable JSON/RPC and Web3 wallet operations programmatically in an app integrated with the Auth SDK.'
+title: 'Overview'
+description: 'Supported EIP-1193 JSON/RPC functions and other wallet operations for EVM and non-EVM chains, gasless transactions.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Arcana Wallet
+# Overview
 
-In this guide, you will learn about how to use Web3 operations in apps that are integrated with the Auth SDK.
+The {{config.extra.arcana.sdk_name}} supports blockchain transactions via the standard EIP-1193 Ethereum provider. Use the `AuthProvider` to issue [JSON/RPC calls](https://ethereum.github.io/execution-apis/api-documentation/) and other wallet operations. 
 
-Web3 operations refers to JSON-RPC calls and the Web3 wallet operations. Web3 wallet operations can be initiated by the authenticated user through the wallet UI such as Arcana wallet UI or programmatically by the developer.
-
-Developers can add code that invokes blockchain functions in response to user actions or app operations only after integrating the app with the Auth SDK and enabling social login to onboard users.
-
-!!! an-caution 
-
-      Web3 operations supported by the EVM-compatible blockchains may not be the same as the ones supported by non-EVM chains such as Solana.
+Note that the Web3 operations supported for the EVM-compatible blockchains may vary from the non-EVM chains such as Solana.
 
 === "EVM"
-
-    {{config.extra.arcana.wallet_name}} supports the standard Web3 wallet operations for EVM chains via [JSON/RPC calls](https://ethereum.github.io/execution-apis/api-documentation/). The supported wallet operations may vary for non-EVM chains.
       
     [[add-switch-network| :material-wifi-cog:{ .icon-color } Add/Switch Networks]]{ .md-button }
     [[check-balance| :material-wallet:{ .icon-color } Check Wallet Balance]]{ .md-button }
@@ -46,10 +38,8 @@ Developers can add code that invokes blockchain functions in response to user ac
 
     [[unity-web3-wallet-ops| :material-wallet-outline:{ .icon-color} Unity: Web3 Wallet Ops]]{ .md-button }
 
-!!! an-tip "Built-in Gasless Transactions"
+!!! an-tip "Gasless Transactions"
 
-      If developers choose to configure the built-in gasless feature, set up gas tanks, and whitelist app operations, then the gas fees for those selected blockchain operations is not charged to the user. The built-in gasless feature works only for the {{config.extra.arcana.wallet_name}}.
+      Use the built-in gasless feature and [[web3-ops-gasless|enable gasless transactions]] via the {{config.extra.arcana.wallet_name}}. Configure gasless transactions via the {{config.extra.arcana.dashboard_name}} by setting up gas tanks for selected chains, funding gas tanks and whitelisting app operations.
 
-      To enable gasless transactions in third-party, browser-based wallets, you need to install and integrate with the {{config.extra.arcana.gasless_sdk_name}}.
-
-[[web3-ops-gasless| :material-wallet:{ .icon-color} Gasless Transactions]]{ .md-button }
+      To enable gasless transactions in third-party, browser-based wallets, install and integrate the app with the {{config.extra.arcana.gasless_sdk_name}}. [[web-gasless-transact|Learn more...]]
