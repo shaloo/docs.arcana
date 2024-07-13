@@ -8,9 +8,15 @@ arcana:
 
 # Overview
 
-The {{config.extra.arcana.sdk_name}} supports blockchain transactions via the standard EIP-1193 Ethereum provider. Use the `AuthProvider` to issue [JSON/RPC calls](https://ethereum.github.io/execution-apis/api-documentation/) and other wallet operations. 
+The {{config.extra.arcana.sdk_name}} supports blockchain transactions via `AuthProvider`, the standard EIP-1193 Ethereum provider. Use the `AuthProvider` to issue [JSON/RPC calls](https://ethereum.github.io/execution-apis/api-documentation/) and other Web3 wallet operations in different blockchains. 
 
 Note that the Web3 operations supported for the EVM-compatible blockchains may vary from the non-EVM chains such as Solana.
+
+## Prerequisites
+
+* [[register-app-auth|Register]] the app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+
+* Install the [[sdk-installation|required SDK packages]], integrate the SDK with the app and create `AuthProvider`. 
 
 === "EVM"
       

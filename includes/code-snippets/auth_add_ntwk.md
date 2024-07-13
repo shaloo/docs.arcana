@@ -1,3 +1,7 @@
+!!! an-caution "Only EVM Chains"
+
+      Apps can programmatically add only the EVM-compatible chains to the preconfigured chain list if not already present.
+
 The `wallet_addEthereumChain` method is specified by [EIP-3085](https://eips.ethereum.org/EIPS/eip-3085).
 
 ```ts
