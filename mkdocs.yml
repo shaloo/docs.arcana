@@ -579,9 +579,9 @@ nav:
           - auth/web3-ops/index.md
           - EVM Chains: 
             #- auth/web3-ops/evm/index.md
-            - Add/Switch Network: auth/web3-ops/evm/add-switch-ntwk.md
             - Check Balance: auth/web3-ops/evm/balance.md
-            - Get/Switch Account Type: auth/web3-ops/evm/get-switch-account.md
+            - Add/Switch Network: auth/web3-ops/evm/add-switch-ntwk.md
+            - Switch EoA/SCW: auth/web3-ops/evm/get-switch-account.md
             - Send Tokens: auth/web3-ops/evm/send.md
             - Show/Hide Wallet: auth/web3-ops/evm/show.md
             - Sign Message: auth/web3-ops/evm/sign.md

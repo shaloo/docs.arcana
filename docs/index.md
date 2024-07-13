@@ -22,7 +22,7 @@ timetoread: False
 
       ==}
 
-<h2>Welcome!</h2>>
+## Welcome!
 
 Onboard Web3 app users effortlessly via [[concept-social-login|social login]].
 
@@ -74,7 +74,8 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 
 </div>
 
-<h2>Auth Playground</h2>>
+## Auth Playground
+
 <div class="tx-hero-container">
     <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
 </div>
@@ -96,7 +97,7 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
     </div>
 </div>
 
-<h2>Quick Start</h2>
+## Quick Start
 
 === "Web Apps"
 
@@ -114,7 +115,7 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 
     [[unity-quick-start| Unity ]]{ .md-button }
 
-<h2>Need Help?</h2>>
+## Need Help?
 
 </br>
 </br>
