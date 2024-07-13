@@ -267,12 +267,12 @@ plugins:
           'howto/arcana_wallet/index.md': 'auth/web3-ops/index.md'
           'howto/arcana_wallet/config_walletvisibility.md': 'auth/web3-ops/arcana-wallet-ui/config-wallet-visibility.md'
           'howto/arcana_wallet/web3ops/index.md': 'auth/web3-ops/index.md'
-          'howto/arcana_wallet/wallet_add_switch_ntwk.md': 'auth/web3-ops/evm/add-switch-ntwk.md'
-          'howto/arcana_wallet/wallet_balance.md': 'auth/web3-ops/evm/balance.md'
-          'howto/arcana_wallet/wallet_send.md': 'auth/web3-ops/evm/send.md'
-          'howto/arcana_wallet/wallet_sign.md': 'auth/web3-ops/evm/sign.md'
-          'howto/arcana_wallet/wallet_show.md': 'auth/web3-ops/evm/show.md'
-          'howto/arcana_wallet/wallet_watchasset.md': 'auth/web3-ops/evm/watchasset.md'
+          'howto/arcana_wallet/wallet_add_switch_ntwk.md': 'auth/web3-ops/evm.md'
+          'howto/arcana_wallet/wallet_balance.md': 'auth/web3-ops/evm.md'
+          'howto/arcana_wallet/wallet_send.md': 'auth/web3-ops/evm.md'
+          'howto/arcana_wallet/wallet_sign.md': 'auth/web3-ops/evm.md'
+          'howto/arcana_wallet/wallet_show.md': 'auth/web3-ops/evm.md'
+          'howto/arcana_wallet/wallet_watchasset.md': 'auth/web3-ops/evm.md'
           'howto/config_social/index.md': 'setup/config-social/index.md'
           'howto/config_social/discord_oauth.md': 'setup/config-social/discord-oauth.md'
           'howto/config_social/github_oauth.md': 'setup/config-social/github-oauth.md'
@@ -373,7 +373,6 @@ not_in_nav: |
   auth/onboard/react-nextjs/custom-ui/build-social/index.md
   auth/onboard/react-nextjs/custom-ui/build-idm/index.md
   auth/mobile/index.md
-  auth/web3-ops/evm/index.md
   auth/web3-ops/solana/index.md
   gasless/index.md
   setup/config-auth/index.md
@@ -491,11 +490,42 @@ nav:
             - Flutter: auth/mobile/flutter-get-started.md
             - React-Native: auth/mobile/react-native-get-started.md
           - Custom OAuth: auth/integrate/custom-oauth.md
-          - Advanced:
-            - auth/web3-ops/arcana-wallet-ui/index.md
-            - Wallet Visibility: auth/web3-ops/arcana-wallet-ui/config-wallet-visibility.md
         - Onboard Users: 
           #- auth/onboard/index.md
+          - Wagmi: 
+            #- auth/onboard/wagmi/index.md
+            - Plug-and-Play Login: auth/onboard/wagmi/wagmi-pnp-ui.md
+            - Custom Login: auth/onboard/wagmi/wagmi-custom-ui.md
+          - RainbowKit:
+            #- auth/onboard/rainbow/index.md
+            - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
+            - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
+          - WalletConnect:
+            - auth/onboard/walletconnect/index.md
+            - Plug-and-Play Login: auth/onboard/walletconnect/walletconnect-pnp-ui.md
+            - Custom Login: auth/onboard/walletconnect/walletconnect-custom-ui.md
+          - Web3-React: 
+            #- auth/onboard/web3-react/index.md
+            - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
+            - Custom Login: auth/onboard/web3-react/web3-react-custom-ui.md
+          - React/Next.js: 
+            #- auth/onboard/react-nextjs/index.md
+            - Plug-and-Play Login: auth/onboard/react-nextjs/use-plug-play-auth.md
+            - Custom Login: 
+              #- auth/onboard/react-nextjs/custom-ui/index.md
+              - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
+              - Social Login Providers:
+                #- auth/onboard/react-nextjs/custom-ui/build-social/index.md
+                - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
+                - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
+                - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
+                - Steam: auth/onboard/react-nextjs/custom-ui/build-social/steam-oauth.md
+                - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
+                - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
+              - IAM Providers:
+                #- auth/onboard/react-nextjs/custom-ui/build-idm/index.md
+                - Cognito: auth/onboard/react-nextjs/custom-ui/build-idm/cognito-oauth.md
+                - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
           - HTML/CSS/JS: 
             #- auth/onboard/vanilla/index.md
             - Plug-and-Play Login: auth/onboard/vanilla/use-plug-play-auth.md
@@ -532,40 +562,6 @@ nav:
                 #- auth/onboard/vue/custom-ui/build-idm/index.md
                 - Cognito: auth/onboard/vue/custom-ui/build-idm/cognito-oauth.md
                 - Firebase: auth/onboard/vue/custom-ui/build-idm/firebase-login.md      
-          - Wagmi: 
-            #- auth/onboard/wagmi/index.md
-            - Plug-and-Play Login: auth/onboard/wagmi/wagmi-pnp-ui.md
-            - Custom Login: auth/onboard/wagmi/wagmi-custom-ui.md
-          - RainbowKit:
-            #- auth/onboard/rainbow/index.md
-            - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
-            - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
-          - WalletConnect:
-            - auth/onboard/walletconnect/index.md
-            - Plug-and-Play Login: auth/onboard/walletconnect/walletconnect-pnp-ui.md
-            - Custom Login: auth/onboard/walletconnect/walletconnect-custom-ui.md
-          - Web3-React: 
-            #- auth/onboard/web3-react/index.md
-            - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
-            - Custom Login: auth/onboard/web3-react/web3-react-custom-ui.md
-          - React/Next.js: 
-            #- auth/onboard/react-nextjs/index.md
-            - Plug-and-Play Login: auth/onboard/react-nextjs/use-plug-play-auth.md
-            - Custom Login: 
-              #- auth/onboard/react-nextjs/custom-ui/index.md
-              - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
-              - Social Login Providers:
-                #- auth/onboard/react-nextjs/custom-ui/build-social/index.md
-                - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
-                - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
-                - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
-                - Steam: auth/onboard/react-nextjs/custom-ui/build-social/steam-oauth.md
-                - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
-                - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
-              - IAM Providers:
-                #- auth/onboard/react-nextjs/custom-ui/build-idm/index.md
-                - Cognito: auth/onboard/react-nextjs/custom-ui/build-idm/cognito-oauth.md
-                - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
           - Gasless: auth/onboard/gasless.md
           - Solana: auth/onboard/solana.md
           - MultiversX: auth/onboard/mvx.md
@@ -578,19 +574,9 @@ nav:
         - Wallet Ops: 
           - auth/web3-ops/index.md
           - EVM Chains: 
-            #- auth/web3-ops/evm/index.md
-            - Check Balance: auth/web3-ops/evm/balance.md
-            - Add/Switch Network: auth/web3-ops/evm/add-switch-ntwk.md
-            - Switch EoA/SCW: auth/web3-ops/evm/get-switch-account.md
-            - Send Tokens: auth/web3-ops/evm/send.md
-            - Show/Hide Wallet: auth/web3-ops/evm/show.md
-            - Sign Message: auth/web3-ops/evm/sign.md
-            - Watch Asset: auth/web3-ops/evm/watchasset.md
+            - auth/web3-ops/evm.md
           - Gasless Txn: auth/web3-ops/gasless.md
-          - Solana: 
-            #- auth/web3-ops/solana/index.md
-            - JSON/RPC: auth/web3-ops/solana/solana-json-rpc-ops.md
-            - Web3 Ops: auth/web3-ops/solana/solana-wallet-ops.md
+          - Solana: auth/web3-ops/solana.md
           - MultiversX: auth/web3-ops/mvx/index.md
           - Near: auth/web3-ops/near/index.md
           - Unity: auth/web3-ops/unity-wallet-ops.md

@@ -1,0 +1,9 @@
+* `eth_getBalance`
+* `eth_accounts`
+* `eth_signTransaction`
+* `eth_sendTransaction`
+* `wallet_addEthereumChain`
+* `wallet_switchEthereumChain`
+* `wallet_watchAsset`
+* `_arcana_getAccountType`
+* `_arcana_switchAccountType`

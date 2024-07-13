@@ -29,7 +29,7 @@ Follow these instructions for onboarding users via the plug-and-play login modal
 
 ## Steps
 
-### 1: Setup Wagmi Config
+### 1. Setup Wagmi Config
 
 Use the `ArcanaConnector` created during app integration to set up [Wagmi config](https://wagmi.sh/react/getting-started).
 

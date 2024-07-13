@@ -4,7 +4,7 @@ This method is specified by [EIP-3326](https://eips.ethereum.org/EIPS/eip-3326).
 
       Apps can programmatically switch to another chain as long as it is of the same chain type. If an app is configured to use EVM chains, you cannot switch to a non-EVM chain and vice-versa.
 
-```ts
+```ts hl_lines="3"
 try {
   await provider.request({
     method: 'wallet_switchEthereumChain',

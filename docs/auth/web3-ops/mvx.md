@@ -8,27 +8,23 @@ arcana:
 
 # MultiversX Wallet Ops
 
-The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) and Web3 wallet operations.
+Use `AuthProvider`, the standard EIP-1193 Ethereum provider offered by the {{config.extra.arcana.sdk_name}}, for issuing Web3 wallet operations via the {{config.extra.arcana.wallet_name}}.
 
-## Web3 Wallet Operations
+## Prerequisites
 
-Developers can use the `auth.provider`, the standard EIP-1193 provider, for issuing Web3 wallet operations in the authenticated user's context.
+* [[register-app-auth|Register]] the app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-For the MultiversX chain, the following methods are supported:
+* Install the [[sdk-installation|required SDK packages]], integrate the SDK with the app and create `AuthProvider`. 
+
+## Supported Web3 Operations
 
 {% include "./text-snippets/mvx_web3_ops.md" %}
 
 Other MultiversX wallet connect JSON RPC methods listed [here](https://docs.multiversx.com/integrators/walletconnect-json-rpc-methods/) are not supported at the moment.
 
-Developers can call `provider.request` and specify the *method* parameter as one of the supported wallet operations listed above.
-
-Before issuing the Web3 wallet operations, make sure you have installed the {{config.extra.arcana.sdk_name}}, [[index-integrate|integrated the app]] with the SDK and initialized it.
-
-## Supported Web3 Operations
-
 ### `getAccounts`
 
-```js
+```js hl_lines="9 19"
 
 // Integrate App with the Auth SDK
 
@@ -59,7 +55,7 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
 
 ### `getPublicKey`
 
-```js
+```js hl_lines="9 18"
 
 // Integrate App with the Auth SDK
 
@@ -89,7 +85,8 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
 
 ### `SignMessage`
 
-```js 
+```js hl_lines="9 39"
+
   // Integrate App with the Auth SDK
 
   const { AuthProvider } = window.arcana.auth
@@ -205,7 +202,8 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
 
 ### `SignTransactions`
 
-```js
+```js hl_lines="9 55"
+
   // Integrate App with the Auth SDK
 
   const { AuthProvider } = window.arcana.auth

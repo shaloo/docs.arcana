@@ -1,26 +1,56 @@
 ---
-alias: solana-wallet-ops
-title: 'Solana Web3 Wallet Ops'
-description: 'Apps that integrate with the Arcana Auth SDK and use Solana chains can perform only the following Web3 wallet operations.'
+alias: solana-web3-wallet-ops
+title: 'Solana Wallet Operations'
+description: 'List of all the supported JSON-RPC and Web3 wallet operations by the Arcana wallet for Solana blockchain.'
 arcana:
   root_rel_path: ../../..
 ---
 
-# Solana Web3 Wallet Operations
+# Solana Web3 Ops
 
-Solana chain is a bit different from typical EVM chains in how it supports Web3 wallet operations and [[solana-json-rpc-ops|JSON-RPC calls]]. 
+Solana chain is a bit different from typical EVM chains in how it [supports Solana JSON-RPC calls](https://docs.solana.com/api/http) and Web3 wallet operations.
 
-Developers can use the `auth.solana` provider for issuing the supported Web3 wallet operations listed below in the context of the authenticated user. 
+## Prerequisites
 
-Before issuing the Web3 wallet operations, developers must install the {{config.extra.arcana.sdk_name}}, [[integrate-solana-app|integrate the Solana app]] with the SDK and initialize the Solana provider. Only the following Web3 wallet operations are supported:
+* [[register-app-auth|Register]] the Solana app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+
+* Install the [[sdk-installation|required SDK packages]], integrate the SDK with the Solana app and create `AuthProvider`. Make sure you also initialize the `Solana Provider`.
+
+{% include "./code-snippets/import_auth.md" %}
+
+{% include "./code-snippets/new_auth_solana.md" %}
+
+{% include "./code-snippets/init_auth.md" %}
+
+{% include "./text-snippets/init_solana_providers.md" %}
+
+## Supported Functions
 
 {% include "./text-snippets/solana_web3_ops.md" %}
 
-## Supported Web3 Operations
+### Get Public Key
+
+```js hl_lines="3 10"
+import SolanaWeb3 from "@solana/web3.js";
+
+const provider = auth.provider;
+
+const accounts = await auth.provider.request({
+  method: "getAccounts",
+  params: [],
+});
+
+const publicKey = new SolanaWeb3.PublicKey(accounts[0])
+
+console.log(publicKey);
+```
+
+The `publicKey` is returned as a string: ["your-public-key-in-string-format"].
 
 ### `SignMessage`
 
-```js
+```js hl_lines="8"
+
   const message = `Sign below to authenticate with CryptoCorgis to avoid digital dognappers`;
   const encodedMessage = new TextEncoder().encode(message);
   // To get a proper signature, the second parameter in signMessage call 
@@ -49,7 +79,8 @@ Before issuing the Web3 wallet operations, developers must install the {{config.
 
 ### `SignTransaction`
 
-```js
+```js hl_lines="11 32"
+
 try {
   const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey)
   const connection = new SolanaWeb3.Connection(
@@ -118,7 +149,8 @@ message: {
 
 ### `SignAllTransactions`
 
-```js
+```js hl_lines="11 30"
+
 try {
   const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey);
   const connection = new SolanaWeb3.Connection(
@@ -168,7 +200,8 @@ The signature format here is same as above with a minor difference:
 
 ### `SignAndSendTransaction`
 
-```js
+```js hl_lines="11 30"
+
 try {
   const pk = new SolanaWeb3.PublicKey(auth.solana.publicKey);
   const connection = new SolanaWeb3.Connection(

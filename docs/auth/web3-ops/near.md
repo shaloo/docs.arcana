@@ -8,25 +8,21 @@ arcana:
 
 # Near Wallet Ops
 
-The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) and Web3 wallet operations.
+The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) via the `AuthProvider`.
 
-## Web3 Wallet Operations
+## Prerequisites
 
-Developers can use the `auth.provider`, the standard EIP-1193 provider, for issuing Web3 wallet operations in the authenticated user's context.
+* [[register-app-auth|Register]] the Near app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-For the Near chain, the following methods are supported:
-
-{% include "./text-snippets/near_web3_ops.md" %}
-
-Developers can call the `provider.request` function and specify the *method* parameter as one of the supported wallet operations listed above.
-
-Before issuing the Web3 wallet operations, make sure you have installed the {{config.extra.arcana.sdk_name}}, [[index-integrate|integrated the app]] with the SDK and initialized it.
+* Install the [[sdk-installation|required SDK packages]], integrate the SDK with the app and create `AuthProvider`. 
 
 ## Supported Web3 Operations
 
+{% include "./text-snippets/near_web3_ops.md" %}
+
 ### `getAccounts`
 
-```js
+```js hl_lines="9 21"
 
 // Integrate App with the Auth SDK
 
@@ -57,7 +53,8 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
 
 ### `SignMessage`
 
-```js 
+```js hl_lines="9 39"
+
   // Integrate App with the Auth SDK
 
   const { AuthProvider } = window.arcana.auth
@@ -106,7 +103,8 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
 
 ### `SignAndSendTransaction`
 
-```js
+```js hl_lines="9 66"
+
   // Integrate App with the Auth SDK
 
   const { AuthProvider } = window.arcana.auth
@@ -141,7 +139,6 @@ Before issuing the Web3 wallet operations, make sure you have installed the {{co
   } catch (e) {
     console.log({ e })
   }
-
 
   // Get Receiver Account address
   // Read from app user interface

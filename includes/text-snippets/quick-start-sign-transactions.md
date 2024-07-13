@@ -1,1 +1,1 @@
-For EVM chains, use the [[index-web3-wallet-ops|standard JSON RPC Web3 wallet operations]] supported by the `AuthProvider`. For other chains, see [[index-wallet-ux|Web3 Wallet Operations]].
+The [JSON/RPC functions](https://ethereum.org/en/developers/docs/apis/json-rpc/) and Web3 wallet operations supported by the `AuthProvider` may [[index-wallet-ux|vary for EVM and non-EVM chains]].

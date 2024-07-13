@@ -4,7 +4,7 @@
 
 The `wallet_addEthereumChain` method is specified by [EIP-3085](https://eips.ethereum.org/EIPS/eip-3085).
 
-```ts
+```ts hl_lines="3"
 try {
   await provider.request({
     method: 'wallet_addEthereumChain',

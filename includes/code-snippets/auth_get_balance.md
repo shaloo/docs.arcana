@@ -1,4 +1,4 @@
-```ts
+```ts hl_lines="6"
 let balance = ''
 
 async function getBalance() {
