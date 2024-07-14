@@ -27,9 +27,9 @@ Storage Region can be configured for any application using the dashboard just on
 
       The {{config.extra.arcana.product_name}} allows developers to manage the user experience for signing blockchain transactions by controlling when the wallet UI shows up.
       
-      To manage [[concept-wallet-visibility|visibility mode]], integrate the app with the SDK, and create `AuthProvider` with the `alwaysVisible` parameter set to `false`. Use the `showWallet() function to display the wallet when required.
+      To manage [[concept-wallet-visibility|visibility mode]], integrate the app with the SDK, and create `AuthProvider` with the `alwaysVisible` parameter set to `false`. Use the `showWallet` function to display the wallet when required.
 
-      {% "./code-snippets/auth_wallet_visibility.md" %}
+      {% include "./code-snippets/auth_wallet_visibility.md" %}
 
 ??? an-trbs "Registered app does not show up in the {{config.extra.arcana.dashboard_name}} 'Manage Apps' screen."
 

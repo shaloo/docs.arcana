@@ -8,13 +8,11 @@ arcana:
 
 # Basic Wallet Operations
 
-This guide explains the Web3 operations of the {{config.extra.arcana.wallet_name}} and how users can access different functions through its UI. Developers looking to enable these operations programmatically in their apps can refer to the [[index-web3-wallet-ops| {{config.extra.arcana.wallet_name}} Developer Guides]].
+Learn about the Web3 operations supported by the {{config.extra.arcana.wallet_name}} UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions. 
 
-## Prerequisites
+!!! an-tip "Accessing {{config.extra.arcana.wallet_name}}"
 
-* To use the {{config.extra.arcana.wallet_name}}, users must log in to a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}. 
-
-* Depending on the [[configure-wallet-visibility|type of blockchain signing experience]] set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in.
+      Only the authenticated users of apps integrated with the {{config.extra.arcana.sdk_name}} can access the in-app {{config.extra.arcana.wallet_name}}.
 
 ## Wallet Display
 
@@ -429,4 +427,4 @@ Besides the basic Web3 wallet operations, the authenticated users can use the {{
 ## See also
 
 * [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
-* [[configure-wallet-visibility|Configure the {{config.extra.arcana.wallet_name}}]]
+* [[concept-wallet-visibility|Managing{{config.extra.arcana.wallet_name}} in-app visibility]]

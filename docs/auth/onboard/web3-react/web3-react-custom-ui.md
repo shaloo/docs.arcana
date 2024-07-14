@@ -81,7 +81,7 @@ The Web3-React app can now onboard users using the custom login UI. Authenticate
       
 ## What's Next?
 
-After integrating and onboarding users in the Web3-React app developers can add code programmatically and [[index-arcana-wallet|enable Web3 wallet operations]] in the authenticated user's context.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context.
 
 ## See also
 

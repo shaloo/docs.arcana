@@ -75,7 +75,7 @@ That is all! :material-party-popper:
 
 ## What's Next?
 
-You can add [[index-arcana-wallet|enable Web3 wallet operations]] for authenticated users to sign blockchain transactions.
+Use the `AuthProvider` EIP-1193 standard Ethereum provider to issue JSON/RPC functions and Web3 wallet operations. [[evm-web3-wallet-ops|Learn more...]]
 
 ## See also
 

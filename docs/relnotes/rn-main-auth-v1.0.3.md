@@ -32,7 +32,7 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 ### New API: showWallet()
 
-Developers can use the newly added `showWallet()` function in the {{config.extra.arcana.sdk_name}} to display the in-built Arcana wallet UI. The `showWallet()` function can be called in the application context after the `AuthProvider` is created and initialized using the `init` function. Once the app is deployed and the user logs in, the `showWallet` function call displays the wallet UI. For details, see [[index-arcana-wallet|Arcana Wallet Developer's Guide]].
+Developers can use the newly added `showWallet()` function in the {{config.extra.arcana.sdk_name}} to display the in-built Arcana wallet UI. The `showWallet()` function can be called in the application context after the `AuthProvider` is created and initialized using the `init` function. Once the app is deployed and the user logs in, the `showWallet` function call displays the wallet UI.
 
 ## Product Enhancements
 

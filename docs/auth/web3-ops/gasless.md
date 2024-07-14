@@ -19,9 +19,9 @@ To enable the gasless feature, [[configure-gasless|configure gasless settings]] 
 
 Then [[integrate-gasless-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} and issue blockchain transactions via the standard EIP-1193 Ethereum provider, `AuthProvider`. 
 
-!!! an-note "Gasless Web3 Wallet Ops"
+!!! an-note "Issuing Gasless Ops"
 
-      There are no special functions or additional input parameters in [[index-wallet-ux|Web3 wallet operations]] for enabling gasless transactions via the {{config.extra.arcana.wallet_name}}. The SDK automatically checks the gasless configuration settings. Only the whitelisted app operations issued via the user's **SCW account** incur zero gas fees for the user.
+      There are no special functions or additional input parameters for enabling gasless transactions via the {{config.extra.arcana.wallet_name}} UI or programmatically in the app. The SDK automatically checks the gasless configuration settings. Only the whitelisted app operations issued via the user's **SCW account** incur zero gas fees.
 
 !!! an-tip "Use SCW Account for Gasless" 
       

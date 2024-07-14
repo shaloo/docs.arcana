@@ -44,7 +44,7 @@ Here is how a simple HTML/CSS/JS app can onboard user via social login. Refer to
 
 There are no special functions or additional input parameters in Web3 wallet operations for enabling gasless transactions via the {{config.extra.arcana.wallet_name}}. The SDK automatically checks the gasless configuration settings. Only the whitelisted app operations issued via the user's SCW account incur zero gas fees for the user.
 
-{% include "./text-snippets/index-web3-wallet-ops.md" %}
+Use `AuthProvider` for issuing supported JSON/RPC functions and Web3 wallet operations. The list of supported functions may differ for EVM chains and non-EVM chains. [[evm-web3-wallet-ops|Learn more...]]
 
 {% include "./text-snippets/quick-start-deploy.md" %}
 

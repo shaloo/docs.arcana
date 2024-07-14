@@ -175,7 +175,7 @@ Call `Auth` functions and onboard users through the configured authentication pr
 
 ### Sign Transactions
 
-The Arcana wallet supports various [[index-web3-wallet-ops|Web3 operations]] via JSON-RPC calls and EIP-1193 requests. Use `authRef` created during integration earlier to call Web3 wallet operations.
+Use `authRef` EIP-1193 provider to call JSON-RPC functions and Web3 wallet operations.
 
 ```js
 

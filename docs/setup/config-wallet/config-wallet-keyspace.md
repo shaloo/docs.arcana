@@ -46,9 +46,9 @@ Use the **Keyspace** section to select the **App-specific** (default) or **Globa
 
 ## What's Next?
 
-Besides managing the keyspace for the {{config.extra.arcana.dashboard_name}} you can also [[configure-wallet-chains|configure the list of pre-defined chains displayed in the wallet]], manage user experience and wallet look and feel via the [[configure-wallet-branding|branding setting]], manage [[configure-wallet-visibility|wallet visibility]], choose a [[concept-custom-wallet-ui|custom wallet UI]] instead of the built-in wallet UI, etc.
+Besides managing the keyspace for the {{config.extra.arcana.dashboard_name}} you can also [[configure-wallet-chains|configure the list of pre-defined chains displayed in the wallet]], manage user experience and wallet look and feel via the [[configure-wallet-branding|branding setting]], manage [[concept-wallet-visibility|wallet visibility]], choose a [[concept-custom-wallet-ui|custom wallet UI]] instead of the built-in wallet UI, etc.
 
 ## See also
 
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-* [[configure-wallet-visibility|Configure wallet visibility mode]]
+* [[concept-wallet-visibility|Configure wallet visibility mode]]

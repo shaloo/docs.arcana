@@ -76,8 +76,6 @@ Now that you are familiar with the basics, let us take a look at what {{config.e
 
 * [[why-arcana-auth|Why should you use {{config.extra.arcana.sdk_name}}?]]
 
-* [[how-to-use-auth|How to use the {{config.extra.arcana.sdk_name}} in Web3 apps?]]
-
 * [[use-cases|Auth Use Cases]]
 
 ## Step 2: Getting Started with the {{config.extra.arcana.sdk_name}}
@@ -88,7 +86,7 @@ Now that you are familiar with the basics, let us take a look at what {{config.e
 
 **Onboard Users**: Use the built-in plug-and-play login UI or build a custom login UI to onboard users. Onboarding users with [[concept-plug-and-play-auth|{{config.extra.arcana.sdk_name}} plug-and-play feature]] requires a single line of code! For details, see [[index-onboard-users|how to onboard users]]. 
 
-**Wallet Ops**: Use the built-in {{config.extra.arcana.wallet_name}} UI or build a custom wallet UI. The embedded, non-custodial {{config.extra.arcana.wallet_name}} is instantly available to authenticated users to sign blockchain transactions. For details, see [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] and [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]].
+**Wallet Ops**: Use the built-in {{config.extra.arcana.wallet_name}} UI or build a custom wallet UI. The embedded, non-custodial {{config.extra.arcana.wallet_name}} is instantly available to authenticated users to sign blockchain transactions. See [[evm-web3-wallet-ops|calling JSON/RPC and Web3 wallet operations]] in the app. Refer to the [[index-wallet-user-guide|{{config.extra.arcana.wallet_name}} User Guide]] for wallet UI features.
 
 **Deploy App**: Begin by deploying the integrated app on the Testnet. A default Testnet configuration profile is associated with all the registered apps. Then create a Mainnet configuration profile to deploy on the Mainnet. For details, see [[deploy-app|Deployment Guide]] and [[migrate-app-testnet-mainnet|how to migrate an app deployed on the Testnet to the Mainnet]].
 

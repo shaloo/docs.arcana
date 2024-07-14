@@ -63,7 +63,7 @@ The React/Next.js app is now successfully integrated with the {{config.extra.arc
 
 ## What's Next?
 
-After integrating an app developers can add code to [[index-onboard-users|onboard users]] and [[index-arcana-wallet|enable Web3 wallet operations]] for authenticated users to sign blockchain transactions.
+Onboard users via the [[react-nextjs-use-plug-play-auth|built-in plug-and-play login UI]] or a [[index-react-nextjs-custom-ui-onboard-users|custom login UI]].
 
 ## See also
 

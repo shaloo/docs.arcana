@@ -140,8 +140,6 @@ async function sendTransaction() {
 ...
 ```
 
-Developers can also add code for other supported [[index-web3-wallet-ops|Web3 wallet operations]] as required by the app.
-
 !!! an-tip "Getting Private Key with Custom Wallet UI"
 
       {% include "./code-snippets/custom-wallet-ui-pvt-key.md" %}
@@ -160,6 +158,5 @@ For a complete list of other JSON RPC calls supported by the {{config.extra.arca
 
 * [[send-transaction|Send transactions]]
 * [[check-balance|Check the wallet account balance]]
-* [[watch-assets|Watch crypto assets]]
 * [[web-auth-usage-guide| {{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

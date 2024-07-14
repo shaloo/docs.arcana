@@ -127,7 +127,7 @@ There are multiple ways to switch an application from using Testnet to Mainnet.
 
       {{config.extra.arcana.sdk_name}} allows developers to manage the app user experience for signing blockchain transactions with {{config.extra.arcana.wallet_name}}. 
       
-      The user experience with the {{config.extra.arcana.wallet_name}} is configured programmatically through the `alwaysVisible` option. Install the {{config.extra.arcana.sdk_name}} and as part of the integration, add code in the app to create a new `AuthProvider` instance. Specify the appropriate wallet visibility mode via the `alwaysVisible` option. See the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
+      The user experience with the {{config.extra.arcana.wallet_name}} is configured programmatically through the `alwaysVisible` option. Install the {{config.extra.arcana.sdk_name}} and as part of the integration, add code in the app to create a new `AuthProvider` instance. Specify the appropriate wallet visibility mode via the `alwaysVisible` option. See the [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
 
 !!! an-info "{{config.extra.arcana.app_address}}"
 

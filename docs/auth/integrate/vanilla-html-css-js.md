@@ -62,7 +62,7 @@ The vanilla HTML/CSS/JS app is now successfully integrated with the {{config.ext
 
 ## What's Next?
 
-After integrating an app with the {{config.extra.arcana.sdk_name}}, developers can add code to [[index-onboard-users|onboard users]] and [[index-arcana-wallet|enable Web3 wallet operations]] for authenticated users to sign blockchain transactions.
+Onboard users via the [[use-plug-play-auth|built-in plug-and-play login UI]] or a [[index-custom-ui-onboard-users|custom login UI]].
 
 ## See also
 

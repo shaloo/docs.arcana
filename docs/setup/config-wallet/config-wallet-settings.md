@@ -46,9 +46,9 @@ Click **Configure** in the LHS navigation area. Select **Arcana Wallet** to conf
 
 ## What's Next?
 
-Besides these wallet settings in the {{config.extra.arcana.dashboard_name}} you can also [[configure-wallet-chains|manage the user experience of the wallet by tweaking the list of pre-defined chains displayed in the wallet]], manage the user experience of having same wallet address across multiple apps integrated with the {{config.extra.arcana.dashboard_name}} via the [[configure-wallet-keyspace|keyspace setting]], manage [[configure-wallet-visibility|wallet visibility]], or optionally change the [[configure-wallet-branding|wallet branding]] settings.
+Besides these wallet settings in the {{config.extra.arcana.dashboard_name}} you can also [[configure-wallet-chains|manage the user experience of the wallet by tweaking the list of pre-defined chains displayed in the wallet]], manage the user experience of having same wallet address across multiple apps integrated with the {{config.extra.arcana.dashboard_name}} via the [[configure-wallet-keyspace|keyspace setting]], manage [[concept-wallet-visibility|wallet visibility]], or optionally change the [[configure-wallet-branding|wallet branding]] settings.
 
 ## See also
 
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-* [[configure-wallet-visibility|Configure wallet visibility mode]]
+* [[concept-wallet-visibility|Configure wallet visibility mode]]

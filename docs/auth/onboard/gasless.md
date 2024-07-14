@@ -77,7 +77,7 @@ When a user logs into the app with established gas tanks, whitelisted app operat
 
 ## What's Next?
 
-After onboarding users in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and add supported Web3 wallet operations for authenticated users. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]], [[index-arcana-wallet|how to enable the {{config.extra.arcana.wallet_name}}]] for details.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context.
 
 ## See also
 

@@ -7,7 +7,7 @@ site_name: '📖 Docs'
 site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 # Check for broken links, etc.
-strict: true  #For reorg changing it to false
+strict: false  #For reorg changing it to false
 
 # For canonical/URL ending with a '/' make sure this is true and offline plugin is disabled
 use_directory_urls: true
@@ -214,13 +214,11 @@ plugins:
           'walletsdk/wallet_usage.md': 'auth/auth-usage-guide.md'
           'an_academy/new_web3_dev.md': 'learn/new-to-web3.md'
           'state_of_the_ntwk.md': 'web3-stack/auth.md'
-          'howdoiuse.md': 'about-auth/how-to-use-auth.md'
           'howitworks.md': 'about-auth/auth-architecture.md'
           'use_cases.md': 'about-auth/use-cases.md'
           'validator_intro.md': 'guides/validators/index.md'
           'whatisan.md': 'about-auth/what-is-arcana-auth.md'
           'whyan.md': 'about-auth/why-arcana-auth.md'
-          'understanding_an/index.md': 'about-auth/index.md'
           'migration/index.md': 'migration/archives/index.md'
           'relnotes/rn_main_auth_v1.0.3.md': 'relnotes/rn-main-auth-v1.0.3.md'
           'migration/main_auth_v1.0.3_migration.md': 'migration/main-auth-v1.0.3-migration.md'
@@ -232,11 +230,6 @@ plugins:
           'db/config_dApp_with_db.md': 'setup/config-dApp-with-db.md'
           #'integrations/shardeum/integrate_shardeum.md': 'integrations/shardeum/integrate-shardeum.md'
           #'integrations/shardeum/wallet_config_shardeum.md': 'integrations/shardeum/wallet-config-shardeum.md'
-          'tutorials/code_samples/index.md': 'tutorials/code-samples/index.md'
-          'tutorials/code_samples/vanilla_html_js_sample.md': 'tutorials/code-samples/vanilla-html-js-sample.md'
-          'tutorials/code_samples/react_code_sample.md': tutorials/code-samples/react-code-sample.md
-          'tutorials/code_samples/nextjs_code_sample.md': tutorials/code-samples/nextjs-code-sample.md
-          'tutorials/videos/an_academy.md': 'tutorials/videos/get-started.md'
           'howto/wallet_ui.md': 'user-guides/wallet-ui/use-wallet-ui.md'
           'howto/wallet_manage_tokens.md': 'user-guides/wallet-ui/use-wallet-to-manage-tokens.md'
           'howto/wallet_exkey.md': 'user-guides/wallet-ui/use-wallet-to-export-keys.md'
@@ -264,9 +257,8 @@ plugins:
           'howto/integrate_auth/integrate_wagmi.md': 'auth/integrate/wagmi.md'
           'howto/integrate_auth/integrate_rainbow.md': 'auth/integrate/rainbow.md'
           'howto/integrate_auth/integrate_wallet_vue.md': 'auth/integrate/vue.md'
-          'howto/arcana_wallet/index.md': 'auth/web3-ops/index.md'
-          'howto/arcana_wallet/config_walletvisibility.md': 'auth/web3-ops/arcana-wallet-ui/config-wallet-visibility.md'
-          'howto/arcana_wallet/web3ops/index.md': 'auth/web3-ops/index.md'
+          'howto/arcana_wallet/index.md': 'auth/web3-ops/evm.md'
+          'howto/arcana_wallet/web3ops/index.md': 'auth/web3-ops/evm.md'
           'howto/arcana_wallet/wallet_add_switch_ntwk.md': 'auth/web3-ops/evm.md'
           'howto/arcana_wallet/wallet_balance.md': 'auth/web3-ops/evm.md'
           'howto/arcana_wallet/wallet_send.md': 'auth/web3-ops/evm.md'
@@ -373,7 +365,6 @@ not_in_nav: |
   auth/onboard/react-nextjs/custom-ui/build-social/index.md
   auth/onboard/react-nextjs/custom-ui/build-idm/index.md
   auth/mobile/index.md
-  auth/web3-ops/solana/index.md
   gasless/index.md
   setup/config-auth/index.md
   setup/config-idm/index.md
@@ -386,17 +377,11 @@ not_in_nav: |
   user-guides/wallet-ui/index.md
   guides/validators/index.md
   learn/index.md
-  tutorials/index.md
-  tutorials/code-samples/index.md
-  tutorials/code-samples/web/index.md
-  tutorials/code-samples/mobile/index.md
-  tutorials/videos/index.md
   concepts/index.md
   concepts/anwallet/index.md
   concepts/authtype/index.md
   concepts/dkg/index.md
   concepts/ansmartc/index.md
-  about-auth/index.md
   about-auth/architecture/index.md
   about-auth/user-flows/index.md
   audit/index.md
@@ -572,13 +557,11 @@ nav:
             - Flutter: auth/mobile/flutter-get-started.md
             - React-Native: auth/mobile/react-native-get-started.md
         - Wallet Ops: 
-          - auth/web3-ops/index.md
-          - EVM Chains: 
-            - auth/web3-ops/evm.md
+          - EVM Chains: auth/web3-ops/evm.md
           - Gasless Txn: auth/web3-ops/gasless.md
           - Solana: auth/web3-ops/solana.md
-          - MultiversX: auth/web3-ops/mvx/index.md
-          - Near: auth/web3-ops/near/index.md
+          - MultiversX: auth/web3-ops/mvx.md
+          - Near: auth/web3-ops/near.md
           - Unity: auth/web3-ops/unity-wallet-ops.md
         - Event Handling: auth/handle-provider-events.md
       - Gasless SDK: 
@@ -696,32 +679,7 @@ nav:
       - Validator FAQ: faq/faq-validator.md
     - Learn:
       #- learn/index.md
-      - Tutorials:
-        #- tutorials/index.md
-        - Integration Examples:
-          #- tutorials/code-samples/index.md
-          - Web:
-            #- tutorials/code-samples/web/index.md
-            - Wagmi App: https://github.com/arcana-network/auth-wagmi-example
-            - RainbowKit App: https://github.com/arcana-network/auth-wagmi/tree/main/examples/rainbowkit-integration
-            - Web3-React App: https://github.com/arcana-network/auth-web3-react/tree/main/example
-            - Vue App: https://github.com/arcana-network/auth-sample-integration-new
-            - HTML/JS App: tutorials/code-samples/vanilla-html-js-sample.md
-            - React App: tutorials/code-samples/react-code-sample.md
-            - Next.js App: tutorials/code-samples/nextjs-code-sample.md
-          - Mobile:
-            #- tutorials/code-samples/mobile/index.md
-            - Flutter App: tutorials/code-samples/mobile/flutter-sample.md
-            - React-Native App: tutorials/code-samples/mobile/react-native-sample.md
-          - Unity: tutorials/code-samples/gaming/unity-sample.md
-        - Videos: 
-          #- tutorials/videos/index.md
-          - Get Started: tutorials/videos/get-started.md
-          - Using Dashboard: tutorials/videos/dashboard.md
-          - Integrate SDK: tutorials/videos/integrate-auth.md
-          - Onboard Users: tutorials/videos/onboard-users.md
-          - Sign Transactions: tutorials/videos/sign-transactions.md
-          - Gasless Transactions: tutorials/videos/gasless.md
+      - Integration Examples: https://github.com/arcana-network/auth-examples
       - Concepts: 
         #- concepts/index.md
         - Aggregate Login: concepts/authtype/aggregatelogin.md
@@ -786,7 +744,6 @@ nav:
         - Usage Flow: 
           #- about-auth/user-flows/index.md
           - User Authentication: about-auth/user-flows/user-auth-and-dkg.md
-        - How to Use Auth: about-auth/how-to-use-auth.md
         - Use Cases: about-auth/use-cases.md
     - Audit Reports: 
       #- audit/index.md

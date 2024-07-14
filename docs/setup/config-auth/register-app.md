@@ -16,7 +16,7 @@ In this tutorial, you will learn how to register a Web3 app and get a unique cli
 
 ## Steps
 
-### 1. Log into Dashboard
+### 1. Dashboard Login
 
 {% include "./text-snippets/db_login.md" %}
 
@@ -45,7 +45,6 @@ After registering the app, [[index-configure-auth| configure the user onboarding
 
 ## See Also
 
-* [[configure-wallet-visibility|Configure wallet visibility mode]]
 * [[dashboard-user-guide#delete-application|Deleting Application Entry]]
 * [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] 

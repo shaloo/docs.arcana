@@ -25,7 +25,7 @@
 
 **Wallet Configuration**
 
-Developers can select the built-in {{config.extra.arcana.wallet_name}} UI (default) or a custom wallet UI via the {{config.extra.arcana.dashboard_name}} at the time of registering the app with the {{config.extra.arcana.company_name}}. Later, during app integration, when creating a new `AuthProvider`, the developer can choose one of the available wallet user experiences for signing blockchain transactions through the `alwaysVisible` input parameter. See [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] and the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
+Developers can select the built-in {{config.extra.arcana.wallet_name}} UI (default) or a custom wallet UI via the {{config.extra.arcana.dashboard_name}} at the time of registering the app with the {{config.extra.arcana.company_name}}. Later, during app integration, when creating a new `AuthProvider`, the developer can choose one of the available wallet user experiences for signing blockchain transactions through the `alwaysVisible` input parameter. See [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] for details.
 
 {% include "./text-snippets/wallet_ntwk_switch_warning.md" %}
 

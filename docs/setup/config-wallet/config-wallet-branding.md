@@ -54,9 +54,9 @@ You will see **Branding** as one of the configuration options. When you select b
 
 ## What's Next?
 
-Besides managing the branding for the {{config.extra.arcana.dashboard_name}} you can also [[configure-wallet-chains|configure the list of pre-defined chains displayed in the wallet]], manage the user experience of having the same wallet address across multiple apps integrated with the {{config.extra.arcana.dashboard_name}} via the [[configure-wallet-keyspace|keyspace setting]], manage [[configure-wallet-visibility|wallet visibility]], choose a [[concept-custom-wallet-ui|custom wallet UI]] instead of the built-in wallet UI, etc.
+Besides managing the branding for the {{config.extra.arcana.dashboard_name}} you can also [[configure-wallet-chains|configure the list of pre-defined chains displayed in the wallet]], manage the user experience of having the same wallet address across multiple apps integrated with the {{config.extra.arcana.dashboard_name}} via the [[configure-wallet-keyspace|keyspace setting]], manage [[concept-wallet-visibility|wallet visibility]], choose a [[concept-custom-wallet-ui|custom wallet UI]] instead of the built-in wallet UI, etc.
 
 ## See also
 
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-* [[configure-wallet-visibility|Configure wallet visibility mode]]
+* [[concept-wallet-visibility|Configure wallet visibility mode]]

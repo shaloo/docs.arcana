@@ -18,7 +18,7 @@ arcana:
 
 * To use the {{config.extra.arcana.wallet_name}} UI for exporting the key, users must log in to a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}.
 
-* Depending on the [[configure-wallet-visibility|type of blockchain signing experience]] set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in. Upon login, the wallet is displayed in its minimized state. Click the wallet to view it in a maximized state in order to export the key via the 'Profile' tab.
+* Depending on the [[concept-wallet-visibility|type of blockchain signing experience]] set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in. Upon login, the wallet is displayed in its minimized state. Click the wallet to view it in a maximized state in order to export the key via the 'Profile' tab.
 
 ## Steps 
 

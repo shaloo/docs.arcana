@@ -62,7 +62,7 @@ The Web3 app using WalletConnect is successfully integrated to onboard users via
 
 ## What's Next?
 
-After integrating and onboarding users in the Web3 app developers can add code to programmatically [[index-arcana-wallet|issue Web3 wallet operations]] in the authenticated user's context.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context.
 
 ## See also
 

@@ -72,7 +72,7 @@ Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) fo
 
 ## What's Next?
 
-After integrating an app with the {{config.extra.arcana.sdk_name}}, developers need to add code to [[index-onboard-users|onboard users]] and [[index-arcana-wallet|enable Web3 wallet operations]] for authenticated users to sign transactions on the Near blockchain.
+Onboard users via the built-in plug-and-play login UI or via custom login UI. [[near-user-onboarding|Learn more...]]
 
 ## See also
 

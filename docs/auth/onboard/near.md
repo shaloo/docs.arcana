@@ -32,7 +32,7 @@ Developers can choose to onboard users by either using the built-in plug-and-pla
 
 Just a single line of code!
 
-### Option 1: Onboarding via plug-and-Play Login UI
+### Option 1: Onboarding via plug-and-play Login UI
 
 After successfully integrating the app with the {{config.extra.arcana.sdk_name}}, make sure the `AuthProvider` is successfully initialized. Then simply add a single line of code, call to the `connect` function of the {{config.extra.arcana.sdk_name}} and enable the built-in plug-and-play login UI in the app when a user clicks a button to log in:
 
@@ -71,7 +71,7 @@ That is all! :material-party-popper:
 
 ## What's Next?
 
-After onboarding users in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and [[near-web3-wallet-ops|add supported Web3 wallet operations for the Near blockchain]]. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]], [[index-arcana-wallet|how to enable the {{config.extra.arcana.wallet_name}}]] for details.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other [[near-web3-wallet-ops|supported web3 wallet operations on Near]] in the authenticated user's context.
 
 ## See also
 
