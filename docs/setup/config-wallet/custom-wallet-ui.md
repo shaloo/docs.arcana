@@ -150,13 +150,11 @@ async function sendTransaction() {
 
 ## What's Next?
 
-After registering the app, configuring authentication providers, integrating the {{config.extra.arcana.sdk_name}} with the app and onboarding users, developers can further add code in the app to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and more.
+Use JSON/RPC functions and Web3 wallet operations [[evm-web3-wallet-ops|supported by the `AuthProvider` for EVM]] and non-EVM chains in the authenticated user's context.
 
 For a complete list of other JSON RPC calls supported by the {{config.extra.arcana.wallet_name}}, see [JSON-RPC Specifications](https://ethereum.github.io/execution-apis/api-documentation/).
 
 ## See also
 
-* [[send-transaction|Send transactions]]
-* [[check-balance|Check the wallet account balance]]
 * [[web-auth-usage-guide| {{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

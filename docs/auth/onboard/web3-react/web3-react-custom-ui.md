@@ -48,11 +48,11 @@ If the custom login UI is configured such that it allows a single authentication
 
       To build a custom login UI, developers can choose from the list of [[web3-stack-auth|supported authentication providers]] or use passwordless. Wire the UI buttons for onboarding via different options to the `setLogin` function of the `ArcanaConnector`.
 
-_Enable Authentication Provider_
+#### Social Login
 
 {% include "./code-snippets/auth_web3_react_configure_custom_ui.md" %}
 
-_Enable Passwordless Login_
+#### Passwordless Login
 
 {% include "./code-snippets/auth_web3_react_configure_custom_ui_pwdless.md" %}
 
@@ -81,7 +81,7 @@ The Web3-React app can now onboard users using the custom login UI. Authenticate
       
 ## What's Next?
 
-Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context. [[evm-web3-wallet-ops|Learn more...]]
 
 ## See also
 

@@ -10,6 +10,8 @@ arcana:
 
 The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) via the `AuthProvider`.
 
+{% include "./text-snippets/note_other_chain_wallet_ops.md" %}
+
 ## Prerequisites
 
 * [[register-app-auth|Register]] the Near app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].

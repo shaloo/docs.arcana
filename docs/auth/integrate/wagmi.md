@@ -7,6 +7,7 @@ arcana:
   app_type: "'Wagmi'"
   app_example_submodule: "`sample-auth-wagmi-2`, `sample-auth-wagmi-viem`, `sample-auth-wagmi`"
   social_provider: "'google'"
+  pnp_login_ui_tag: "onboard-wagmi-app-pnp-ui"
   custom_login_ui_tag: "onboard-wagmi-app-custom-ui"
 ---
 
@@ -24,9 +25,9 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
 ## Steps
 
-### 1. Create `AuthProvider`
+### 1. Create `AuthProvider` & `ArcanaConnector`
 
-Specify the **{{config.extra.arcana.app_address}}** assigned to the registered app to create the `AuthProvider`.
+Specify the **{{config.extra.arcana.app_address}}** assigned to the registered app to create the `AuthProvider`. Then use the `AuthProvider` to create `ArcanaConnector`.
 
 {% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
 
@@ -36,7 +37,7 @@ Specify the **{{config.extra.arcana.app_address}}** assigned to the registered a
 
       While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
 
-### 2. Create `ArcanaConnector`
+### 2. Setup `WagmiConfig`
 
 Create Wagmi config and specify the `ArcanaConnector`. 
 
@@ -46,11 +47,11 @@ Initialize Wagmi components in the app using this Wagmi config.
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 
-That is all! :material-party-popper:
-
 ## What's Next?
 
-Onboard users via the [[onboard-wagmi-app-pnp-ui|built-in plug-and-play login UI]] or a [[onboard-wagmi-app-custom-ui|custom login UI]].
+{% include "./text-snippets/next-steps-onboard-users.md" %}
+
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
 
 ## See also
 

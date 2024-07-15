@@ -73,7 +73,7 @@ The Web3-React app can now onboard users using the plug-and-play login UI built-
       
 ## What's Next?
 
-Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context. [[evm-web3-wallet-ops|Learn more...]]
 
 ## See also
 
