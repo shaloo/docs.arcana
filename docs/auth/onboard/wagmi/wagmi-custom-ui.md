@@ -12,7 +12,7 @@ arcana:
 
 Onboard users in a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} through a custom login UI.
 
-{% include "./text-snippets/quick-start-auth-onboard-pnp-login.md" %}
+{% include "./text-snippets/info-alternative-onboard-pnp-login.md" %}
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ _Enable Passwordless Login_
 
 !!! an-tip "Single Provider Optimization"
 
-      For a single social login provider, specify it when creating ArcanaConnector to optimize onboarding. There's no need to use setLogin later in the custom login UI code.
+      When using a single social login provider, specify it when creating ArcanaConnector to optimize onboarding. There's no need to use setLogin later in the custom login UI code.
 
       For multiple social login providers, create ArcanaConnector without specifying a provider. Use the setLogin function later based on the user's choice.
 
@@ -50,7 +50,7 @@ Use the `ArcanaConnector` and set up [Wagmi config](https://wagmi.sh/react/getti
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
-### 3. Initialize Wagmi Components
+### 3. Initialize Wagmi App Components
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 

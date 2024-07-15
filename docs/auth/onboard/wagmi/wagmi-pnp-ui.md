@@ -12,7 +12,7 @@ arcana:
 
 # Plug-and-Play Login UI 
 
-Use the built-in, plug-and-play login UI modal to quickly onboard users in a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.wagmi_sdk_name}}. 
+Use the built-in, [[concept-plug-and-play-auth|plug-and-play login UI modal]] to quickly onboard users in a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.wagmi_sdk_name}}. 
 
 {% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
@@ -32,9 +32,9 @@ Use the `ArcanaConnector` created during app integration to set up [Wagmi config
 
 {% include "./code-snippets/auth_wagmi_create_client_pnp.md" %}
 
-### 2. Initialize Wagmi Components
+### 2. Initialize `WagmiProvider`
 
-Use the Wagmi config to initialize the Wagmi App components.
+Use the Wagmi config to initialize the `WagmiProvider`.
 
 {% include "./code-snippets/auth_wagmi_use_app.md" %}
 

@@ -43,10 +43,6 @@ Create Wagmi config and specify the `ArcanaConnector`.
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
 
-Initialize Wagmi components in the app using this Wagmi config.
-
-{% include "./code-snippets/auth_wagmi_use_app.md" %}
-
 ## What's Next?
 
 {% include "./text-snippets/next-steps-onboard-users.md" %}

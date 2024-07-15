@@ -359,7 +359,6 @@ not_in_nav: |
   auth/onboard/vue/custom-ui/build-idm/index.md
   auth/onboard/wagmi/index.md
   auth/onboard/rainbow/index.md
-  auth/onboard/web3-react/index.md
   auth/onboard/react-nextjs/index.md
   auth/onboard/react-nextjs/custom-ui/index.md
   auth/onboard/react-nextjs/custom-ui/build-social/index.md
@@ -486,11 +485,9 @@ nav:
             - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
             - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
           - WalletConnect:
-            - auth/onboard/walletconnect/index.md
             - Plug-and-Play Login: auth/onboard/walletconnect/walletconnect-pnp-ui.md
             - Custom Login: auth/onboard/walletconnect/walletconnect-custom-ui.md
           - Web3-React: 
-            #- auth/onboard/web3-react/index.md
             - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
             - Custom Login: auth/onboard/web3-react/web3-react-custom-ui.md
           - React/Next.js: 
