@@ -19,13 +19,17 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[register-app-auth|Register]] the {{page.meta.arcana.app_type}} app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+{% include "./text-snippets/non-evm-warning.md" %}
 
 ## Steps
 
-### 1. Create `AuthProvider` & `ArcanaConnector`
+### 1. Install
+
+Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+
+### 2. Create `AuthProvider` & `ArcanaConnector`
 
 Specify the **{{config.extra.arcana.app_address}}** assigned to the registered app to create the `AuthProvider`. Then use the `AuthProvider` to create `ArcanaConnector`.
 
@@ -37,11 +41,17 @@ Specify the **{{config.extra.arcana.app_address}}** assigned to the registered a
 
       While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
 
-### 2. Setup `WagmiConfig`
+### 3. Setup `WagmiConfig`
 
 Create Wagmi config and specify the `ArcanaConnector`. 
 
 {% include "./code-snippets/auth_wagmi_create_client.md" %}
+
+{==
+
+The {{page.meta.arcana.app_type}} Web3 app is now **integrated** with the {{config.extra.arcana.sdk_name}}.
+
+==}
 
 ## What's Next?
 

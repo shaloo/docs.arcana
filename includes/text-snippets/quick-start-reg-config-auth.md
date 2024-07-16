@@ -1,1 +1,3 @@
 * [[register-app-auth|Register]] app through the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %} and optionally [[index-configure-auth|configure]] social login, gasless transaction settings as required.
+
+{% include "./text-snippets/non-evm-warning.md" %}

@@ -28,15 +28,7 @@ Solana chains are pre-configured and instantly accessible to authenticated users
 
 ## 2. Integrate
 
-{% include "./code-snippets/import_auth.md" %}
-
-{% include "./code-snippets/new_auth_solana.md" %}
-
-{% include "./code-snippets/init_auth.md" %}
-
-!!! an-caution "Initialize First!"
-
-    The app must use `await` until the `init()` call is complete, before invoking any of the other {{config.extra.arcana.sdk_name}} functions. See {% include "./text-snippets/authsdkref_url.md" %} for details.
+{% include "./text-snippets/quick-start-int-auth.md" %}
 
 {% include "./text-snippets/init_solana_providers.md" %}
 

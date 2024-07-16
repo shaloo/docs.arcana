@@ -1,6 +1,6 @@
 {% include "./code-snippets/import_auth.md" %}
 
-{% include "./code-snippets/new_auth_near.md" %}
+{% include "./code-snippets/new_auth.md" %}
 
 {% include "./code-snippets/init_auth.md" %}
 

@@ -28,7 +28,7 @@ Near chains are pre-configured and instantly accessible to authenticated users v
 
 ## 3. Integrate
 
-{% include "./text-snippets/quick-start-int-auth-near.md" %}
+{% include "./text-snippets/quick-start-int-auth.md" %}
 
 ### Onboard Users
 

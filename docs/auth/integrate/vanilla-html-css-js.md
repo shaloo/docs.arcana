@@ -17,7 +17,9 @@ Integrate {{page.meta.arcana.app_type}} apps with[{{config.extra.arcana.sdk_name
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[register-app-auth|Register]] the {{page.meta.arcana.app_type}} app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+
+{% include "./text-snippets/non-evm-warning.md" %}
 
 ## Steps
 

@@ -12,13 +12,13 @@ Solana chain is a bit different from typical EVM chains in how it [supports Sola
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the Solana app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[solana-dashboard-user-guide|Register]] the Solana app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Install the [[sdk-installation|required SDK packages]], integrate the SDK with the Solana app and create `AuthProvider`. Make sure you also initialize the `Solana Provider`.
+* Install the [[sdk-installation|required SDK packages]] as per the app type, [[integrate-solana-app|integrate the SDK]] and create `AuthProvider`. Make sure you also initialize the `Solana Provider`.
 
 {% include "./code-snippets/import_auth.md" %}
 
-{% include "./code-snippets/new_auth_solana.md" %}
+{% include "./code-snippets/new_auth.md" %}
 
 {% include "./code-snippets/init_auth.md" %}
 

@@ -1,31 +1,22 @@
 ---
 alias: integrate-react-nextjs-app
 title: 'Integrate React/Next.js App'
-description: 'Integrate Web3 apps built using the React/Next.js frameworks with the Arcana Auth SDK using the instructions listed here.'
+description: 'Integrate Web3 apps built using React/NextJS with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../..
-  app_example_submodule: "`sample-auth-react-native`"
+  app_type: "'HTML/CSS/JS'"
+  app_example_submodule: "`sample-auth-react`"
 ---
 
 # Integrate React/Next.js App
 
-In this guide, discover how to integrate a React/Next.js app with the {{config.extra.arcana.product_name}} product. Use the Auth React wrapper that provides React Hooks to set Auth component props with necessary initialization values for configuring the {{config.extra.arcana.sdk_name}} and the Arcana wallet.
+Integrate {{page.meta.arcana.app_type}} apps with[{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
 ## Prerequisites
 
-* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+* [[register-app-auth|Register]] the {{page.meta.arcana.app_type}} app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Use the {{config.extra.arcana.dashboard_name}} to [[register-app-auth|register the app]] before configuring and integrating it with the {{config.extra.arcana.sdk_name}}. 
-
-* Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
-
-    !!! an-tip "Configure Authentication Providers"
-
-          You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
-
-          For details, see [[index-configure-auth|how to configure authentication providers]].
-
-* Save the **{{config.extra.arcana.app_address}}** assigned to the app displayed in the {{config.extra.arcana.dashboard_name}}. It is required while integrating the app with the {{config.extra.arcana.sdk_name}} and creating the `AuthProvider`.
+{% include "./text-snippets/non-evm-warning.md" %}
 
 ## Steps
 

@@ -20,8 +20,8 @@ This guide shows how apps using [[concept-custom-oauth|custom OAuth]] for signin
 
 * You will require the following to integrate the app with the SDK:
 
-  - Unique *{{config.extra.arcana.app_address}}* assigned to the app after registration.
-  - *Provider identifier* value displayed in the registered app settings in the dashboard **after configuring and saving** the custom OAuth settings.
+    - Unique *{{config.extra.arcana.app_address}}* assigned to the app after registration.
+    - *Provider identifier* value displayed in the registered app settings in the dashboard **after configuring and saving** the custom OAuth settings.
 
 ### Step 1: Install `{{config.extra.arcana.auth_sdk_pkg_name}}` package
 

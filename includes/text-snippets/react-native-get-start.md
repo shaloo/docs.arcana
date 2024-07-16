@@ -49,9 +49,7 @@ export default function App() {
 
 Call `Auth` functions and onboard users through the configured authentication providers.
 
-!!! an-tip "Arcana JWT Token"
-
-      {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}
 
 === "Login"
 

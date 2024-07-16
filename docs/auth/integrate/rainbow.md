@@ -19,13 +19,17 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[register-app-auth|Register]] the {{page.meta.arcana.app_type}} app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+{% include "./text-snippets/non-evm-warning.md" %}
 
 ## Steps
 
-### 1. Create `AuthProvider` &  `ArcanaConnector`
+### 1. Install
+
+Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+
+### 2. Create `AuthProvider` &  `ArcanaConnector`
 
 {% include "./code-snippets/auth_wagmi_configure_pnp.md" %}
 
@@ -35,7 +39,7 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
       While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
 
-### 2. Create `ArcanaRainbowConnector` 
+### 3. Create `ArcanaRainbowConnector` 
 
 Initialize the `connectorsForWallets` in the RainbowKit with the `ArcanaRainbowConnector`.
 
@@ -48,6 +52,12 @@ Use the  `ArcanaRainbowConnector` and set up `WagmiConfig`.
 Use the `WagmiConfig` to initialize the `RainbowKitProvider` components in the app.
 
 {% include "./code-snippets/auth_rainbow_use.md" %}
+
+{==
+
+The {{page.meta.arcana.app_type}} Web3 app is now **integrated** with the {{config.extra.arcana.sdk_name}}.
+
+==}
 
 ## What's Next?
 

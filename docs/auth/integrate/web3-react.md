@@ -19,17 +19,21 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[register-app-auth|Register]] the Wa{{page.meta.arcana.app_type}}gmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+{% include "./text-snippets/non-evm-warning.md" %}
 
 ## Steps
 
-### 1. Create `AuthProvider` and `ArcanaConnector`
+### 1. Install
+
+Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+
+### 2. Create `AuthProvider` and `ArcanaConnector`
 
 {% include "./code-snippets/auth_web3_react_configure_pnp.md" %}
 
-### 2. `ArcanaConnectCard` Component
+### 3. `ArcanaConnectCard` Component
 
 In the Web3-React app, use the `ArcanaConnector` and React hooks to connect `ArcanaConnector` with the Web3-React ecosystem via `ArcanaConnectCard`.
 
@@ -38,6 +42,12 @@ In the Web3-React app, use the `ArcanaConnector` and React hooks to connect `Arc
 Now, you are all set to onboard users in the Web3-React app using the plug-and-play login UI and enable {{config.extra.arcana.wallet_name}} for the authenticated users.
 
 {% include "./code-snippets/auth_web3_react_homepage.md" %}
+
+{==
+
+The {{page.meta.arcana.app_type}} Web3 app is now **integrated** with the {{config.extra.arcana.sdk_name}}.
+
+==}
 
 ## What's Next?
 

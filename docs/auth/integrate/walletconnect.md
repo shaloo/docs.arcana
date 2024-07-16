@@ -19,13 +19,17 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[register-app-auth|Register]] the {{page.meta.arcana.app_type}} app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+{% include "./text-snippets/non-evm-warning.md" %}
 
 ## Steps
 
-### 1. Create `AuthProvider` & `ArcanaConnector`
+### 1. Install
+
+Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+
+### 2. Create `AuthProvider` & `ArcanaConnector`
 
 {% include "./code-snippets/auth_walletconnect_configure_pnp.md" %}
 
@@ -37,7 +41,7 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
 {% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
-### 2. Set up `WagmiProvider`
+### 3. Set up `WagmiProvider`
 
 Create Wagmi config and specify the `ArcanaConnector`. 
 

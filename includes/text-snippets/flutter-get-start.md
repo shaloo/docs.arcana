@@ -37,9 +37,7 @@ Next, add code to onboard users and allow authenticated users to sign blockchain
 
 Add code to onboard users through one of the configured social login providers or via OTP login option. 
 
-!!! an-tip "Arcana JWT Token"
-
-      {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}
 
 === "Login"
 

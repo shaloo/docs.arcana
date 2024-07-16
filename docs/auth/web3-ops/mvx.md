@@ -12,9 +12,9 @@ Use `AuthProvider`, the standard EIP-1193 Ethereum provider offered by the {{con
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[mvx-dashboard-user-guide|Register]] the app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Install the [[sdk-installation|required SDK packages]], integrate the SDK with the app and create `AuthProvider`. 
+* Install the [[sdk-installation|required SDK packages]] as per the app type, [[integrate-mvx-app|integrate the SDK]] and create `AuthProvider`. 
 
 ## Supported Web3 Operations
 

@@ -28,7 +28,7 @@ MultiversX chains are pre-configured and instantly accessible to authenticated u
 
 ## 2. Integrate
 
-{% include "./text-snippets/quick-start-int-auth-mvx.md" %}
+{% include "./text-snippets/quick-start-int-auth.md" %}
 
 ### Onboard Users
 
