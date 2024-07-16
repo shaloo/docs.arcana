@@ -14,7 +14,7 @@ arcana:
 
 ## Web SDKs
 
-### HTML/CSS/JS Apps
+### HTML/CSS/JS, Vue Apps
 
 {% include "./code-snippets/auth_install.md" %}
 

@@ -342,27 +342,9 @@ validation:
 
 not_in_nav: |
   work-in-progress.md
-  quick-start/index.md
-  quick-start/auth-sdk/index.md
   quick-start/mobile/index.md
-  auth/index.md
-  auth/integrate/index.md
   auth/mobile/index.md
   auth/onboard/index.md
-  auth/onboard/vanilla/index.md
-  auth/onboard/vanilla/custom-ui/index.md
-  auth/onboard/vanilla/custom-ui/build-social/index.md
-  auth/onboard/vanilla/custom-ui/build-idm/index.md
-  auth/onboard/vue/index.md
-  auth/onboard/vue/custom-ui/index.md
-  auth/onboard/vue/custom-ui/build-social/index.md
-  auth/onboard/vue/custom-ui/build-idm/index.md
-  auth/onboard/wagmi/index.md
-  auth/onboard/rainbow/index.md
-  auth/onboard/react-nextjs/index.md
-  auth/onboard/react-nextjs/custom-ui/index.md
-  auth/onboard/react-nextjs/custom-ui/build-social/index.md
-  auth/onboard/react-nextjs/custom-ui/build-idm/index.md
   auth/mobile/index.md
   gasless/index.md
   setup/config-auth/index.md
@@ -395,9 +377,7 @@ nav:
     - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
     - Service Status: https://status-dev.arcana.network/
     - Quick Start:
-      #- quick-start/index.md
       - Auth SDK:
-        #- quick-start/auth-sdk/index.md
         - Web:
           - Wagmi: quick-start/wagmi-quick-start.md
           - RainbowKit: quick-start/rainbowkit-quick-start.md
@@ -453,10 +433,8 @@ nav:
         - Gasless Settings: setup/configure-standalone-gasless.md
     - Usage:
       - Auth SDK: 
-        #- auth/index.md
         - Install SDK: auth/sdk-installation.md
         - Integrate App:
-          #- auth/integrate/index.md
           - Wagmi: auth/integrate/wagmi.md
           - RainbowKit: auth/integrate/rainbow.md
           - WalletConnect: auth/integrate/walletconnect.md
@@ -475,13 +453,10 @@ nav:
             - React-Native: auth/mobile/react-native-get-started.md
           - Custom OAuth: auth/integrate/custom-oauth.md
         - Onboard Users: 
-          #- auth/onboard/index.md
           - Wagmi: 
-            #- auth/onboard/wagmi/index.md
             - Plug-and-Play Login: auth/onboard/wagmi/wagmi-pnp-ui.md
             - Custom Login: auth/onboard/wagmi/wagmi-custom-ui.md
           - RainbowKit:
-            #- auth/onboard/rainbow/index.md
             - Plug-and-Play Login: auth/onboard/rainbow/rainbow-pnp-ui.md
             - Custom Login: auth/onboard/rainbow/rainbow-custom-ui.md
           - WalletConnect:
@@ -491,13 +466,12 @@ nav:
             - Plug-and-Play Login: auth/onboard/web3-react/web3-react-pnp-ui.md
             - Custom Login: auth/onboard/web3-react/web3-react-custom-ui.md
           - React/Next.js: 
-            #- auth/onboard/react-nextjs/index.md
             - Plug-and-Play Login: auth/onboard/react-nextjs/use-plug-play-auth.md
             - Custom Login: 
-              #- auth/onboard/react-nextjs/custom-ui/index.md
+              - auth/onboard/react-nextjs/custom-ui/index.md
               - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
               - Social Login Providers:
-                #- auth/onboard/react-nextjs/custom-ui/build-social/index.md
+                - auth/onboard/react-nextjs/custom-ui/build-social/index.md
                 - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
                 - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
@@ -505,17 +479,16 @@ nav:
                 - Twitch: auth/onboard/react-nextjs/custom-ui/build-social/twitch-oauth.md
                 - Twitter: auth/onboard/react-nextjs/custom-ui/build-social/twitter-oauth.md
               - IAM Providers:
-                #- auth/onboard/react-nextjs/custom-ui/build-idm/index.md
+                - auth/onboard/react-nextjs/custom-ui/build-idm/index.md
                 - Cognito: auth/onboard/react-nextjs/custom-ui/build-idm/cognito-oauth.md
                 - Firebase: auth/onboard/react-nextjs/custom-ui/build-idm/firebase-login.md 
           - HTML/CSS/JS: 
-            #- auth/onboard/vanilla/index.md
             - Plug-and-Play Login: auth/onboard/vanilla/use-plug-play-auth.md
             - Custom Login: 
-              #- auth/onboard/vanilla/custom-ui/index.md
+              - auth/onboard/vanilla/custom-ui/index.md
               - Passwordless: auth/onboard/vanilla/custom-ui/build-pwdless-auth.md
               - Social Login Providers:
-                #- auth/onboard/vanilla/custom-ui/build-social/index.md
+                - auth/onboard/vanilla/custom-ui/build-social/index.md
                 - Discord: auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md
                 - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/vanilla/custom-ui/build-social/google-oauth.md
@@ -523,17 +496,16 @@ nav:
                 - Twitch: auth/onboard/vanilla/custom-ui/build-social/twitch-oauth.md
                 - Twitter: auth/onboard/vanilla/custom-ui/build-social/twitter-oauth.md
               - IAM Providers:
-                #- auth/onboard/vanilla/custom-ui/build-idm/index.md
+                - auth/onboard/vanilla/custom-ui/build-idm/index.md
                 - Cognito: auth/onboard/vanilla/custom-ui/build-idm/cognito-oauth.md
                 - Firebase: auth/onboard/vanilla/custom-ui/build-idm/firebase-login.md
           - Vue:
-            #- auth/onboard/vue/index.md
             - Plug-and-Play Login: auth/onboard/vue/use-plug-play-auth.md
             - Custom Login:
-              #- auth/onboard/vue/custom-ui/index.md
+              - auth/onboard/vue/custom-ui/index.md
               - Passwordless: auth/onboard/vue/custom-ui/build-pwdless-auth.md
               - Social Login Providers:
-                #- auth/onboard/vue/custom-ui/build-social/index.md
+                - auth/onboard/vue/custom-ui/build-social/index.md
                 - Discord: auth/onboard/vue/custom-ui/build-social/discord-oauth.md
                 - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/vue/custom-ui/build-social/google-oauth.md
@@ -541,7 +513,7 @@ nav:
                 - Twitch: auth/onboard/vue/custom-ui/build-social/twitch-oauth.md
                 - Twitter: auth/onboard/vue/custom-ui/build-social/twitter-oauth.md
               - IAM Providers:
-                #- auth/onboard/vue/custom-ui/build-idm/index.md
+                - auth/onboard/vue/custom-ui/build-idm/index.md
                 - Cognito: auth/onboard/vue/custom-ui/build-idm/cognito-oauth.md
                 - Firebase: auth/onboard/vue/custom-ui/build-idm/firebase-login.md      
           - Gasless: auth/onboard/gasless.md

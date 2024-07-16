@@ -24,7 +24,7 @@ Integrate {{page.meta.arcana.app_type}} apps with[{{config.extra.arcana.sdk_name
 
 ### 1. Install
 
-Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+{% include "./code-snippets/auth_install.md" %}
 
 ### 2. Initialize `AuthProvider`
 

@@ -20,9 +20,15 @@ Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_nam
 
 ## Steps
 
-### Step 1: Setup Unity, Install Auth SDK
+### Step 1: Setup 
+
+#### Setup Unity
 
 {% include "./text-snippets/auth_unity_settings.md" %}
+
+#### Install Auth SDK
+
+{% include "./code-snippets/auth_install.md" %}
 
 ### Step 2: Initialize Auth SDK
 
