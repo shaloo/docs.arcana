@@ -4,49 +4,33 @@ title: 'Web3-React App: Custom Login UI'
 description: 'Onboard Users via custom login UI in Web3-React apps integrated with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../../..
+  app_type: "'Web3-React'"
+  app_example_submodule: "`sample-auth-web3-react`"
+  social_provider: "'google'"
+  pnp_login_ui_tag: "onboard-web3-react-app-pnp-ui"
 ---
 
 # Custom Login UI 
 
-With [Web3-React](https://www.npmjs.com/package/web3-react) wallet connector framework, developers can allow app users to easily switch between multiple wallets within a single application. The [[concept-authsdk| {{config.extra.arcana.sdk_name}}]] offers a custom Web3-React connector that enables the {{config.extra.arcana.wallet_name}} in apps using Web3-React.
+Onboard users in a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} through a custom login UI.
 
-In this guide, you will learn how to onboard users in Web3-React apps. It shows how the developers can integrate apps with the {{config.extra.arcana.product_name}} SDKs and then use custom login UI to onboard users easily.
+{% include "./text-snippets/info-alternative-onboard-pnp-login.md" %}
 
 ## Prerequisites
 
-* **Register Web3 Application**: Log into the {{config.extra.arcana.dashboard_name}} {% include "./text-snippets/db_portal_url.md" %} to register and configure the app before they can use the {{config.extra.arcana.sdk_name}} and enable the {{config.extra.arcana.wallet_name}} for authenticated app users.
+* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* **Set up Authentication Providers**: Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
+* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
 
-    !!! an-tip "Configure Authentication Providers"
-
-          You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
-
-          For details, see [[index-configure-auth|how to configure authentication providers]].
-
-* Save the **{{config.extra.arcana.app_address}}** assigned to the app and displayed in the {{config.extra.arcana.dashboard_name}}. It is required later during integrating with the {{config.extra.arcana.sdk_name}}.
+* [[integrate-wagmi-app|Integrate]] {{page.meta.arcana.app_type}} app and create `AuthProvider`, `ArcanaConnector`.
 
 ## Steps
 
-*Onboarding users in Web3-React apps via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
+### 1. Configure `ArcanaConnector`
 
-Follow these three steps:
+`ArcanaConnector` is created earlier as part of SDK integration. When using a custom login UI to onboard users, configure `ArcanaConnector` differently.
 
-### Step 1: Install {{config.extra.arcana.sdk_name}} packages
-
-{% include "./code-snippets/auth_web3_react_install.md" %}
-
-### Step 2: Create `AuthProvider` and `ArcanaConnector`
-
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and `{{config.extra.arcana.web3_react_sdk_pkg_name}}` packages. First, create `AuthProvider` and specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[register-app-auth| registering]] through the {{config.extra.arcana.dashboard_name}}. 
-
-Next, call `initializeConnector` from the `web3-react/core` library and instantiate the `ArcanaConnector` by specifying the `AuthProvider` as shown in the sample code below.
-
-If the custom login UI is configured such that it allows a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the authentication provider as input and later call the `setLogin` function for the selected provider, in response to the user's onboarding choice.
-
-!!! an-note "Configure Authentication Providers before `ArcanaConnector` creation"
-
-      To build a custom login UI, developers can choose from the list of [[web3-stack-auth|supported authentication providers]] or use passwordless. Wire the UI buttons for onboarding via different options to the `setLogin` function of the `ArcanaConnector`.
+Add code in the custom UI for onboarding via social login and passwordless options by using the `setLogin` function. 
 
 #### Social Login
 
@@ -56,7 +40,13 @@ If the custom login UI is configured such that it allows a single authentication
 
 {% include "./code-snippets/auth_web3_react_configure_custom_ui_pwdless.md" %}
 
-### Step 3: Use ArcanaConnector
+!!! an-tip "Single Provider Optimization"
+
+      When using a single social login provider, specify it when creating ArcanaConnector to optimize onboarding. There's no need to use setLogin later in the custom login UI code.
+
+      For multiple social login providers, create ArcanaConnector without specifying a provider. Use the setLogin function later based on the user's choice.
+
+### 2. Use `ArcanaConnector`
 
 In the Web3-React app, use the `ArcanaConnector` created earlier and set up the required hooks:
 
@@ -70,23 +60,24 @@ Now, you are all set to onboard users in the Web3-React app using the custom log
   ![Web3-React App integrated with the Arcana Auth]({{config.extra.arcana.img_dir}}/web3_react_example_an_wallet.{{config.extra.arcana.img_png}}){ .an-screenshot-noeffects .width_50pc }
   <figcaption>Web3-React App integrated with the Arcana Auth</figcaption>
 </figure>
-
-That is all! :material-party-popper:
-
-The Web3-React app can now onboard users using the custom login UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
-
-!!! an-tip "Example: Sample Web3-React App"
-
-      See [sample Web3-React app](https://github.com/arcana-network/auth-web3-react/tree/main/example) for details.
       
 ## What's Next?
 
-Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other supported web3 wallet operations in the authenticated user's context. [[evm-web3-wallet-ops|Learn more...]]
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
 
 ## See also
 
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
+* [[index-faq| FAQ]]
+
+* [[troubleshooting| Troubleshooting Guide]]
+
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
-* [`{{config.extra.arcana.web3_react_sdk_pkg_name}}` README](https://github.com/arcana-network/auth-web3-react/blob/main/readme.md)
+
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+{% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}
 

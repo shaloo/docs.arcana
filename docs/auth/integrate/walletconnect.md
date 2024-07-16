@@ -29,17 +29,25 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
 {% include "./code-snippets/auth_walletconnect_configure_pnp.md" %}
 
+{% include "./text-snippets/warn_initialize_first.md" %}
+
+{% include "./code-snippets/init_auth.md" %}
+
 {% include "./code-snippets/auth_walletconnect_connector.md" %}
 
-!!! an-note "Compact Mode"
-
-      While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
+{% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
 ### 2. Set up `WagmiProvider`
 
 Create Wagmi config and specify the `ArcanaConnector`. 
 
 {% include "./code-snippets/auth_walletconnect_create_client.md" %}
+
+{==
+
+The {{page.meta.arcana.app_type}} Web3 app is now **integrated** with the {{config.extra.arcana.sdk_name}}.
+
+==}
 
 ## What's Next?
 
