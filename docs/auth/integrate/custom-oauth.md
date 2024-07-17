@@ -1,7 +1,7 @@
 ---
 alias: integrate-custom-oauth
 title: 'Integrate Custom OAuth App'
-description: 'Integrate Web3 apps that use custom OAuth to onboard users and then assign users.'
+description: 'Integrate Web3 apps that use custom user authentication. Securely assign keys to authenticated users via the Arcana Auth SDK and allow them to sign blockchain transactions.'
 arcana:
   root_rel_path: ../..
   app_type: "'Custom-OAuth'"
@@ -14,7 +14,7 @@ Integrate [[concept-custom-oauth|{{page.meta.arcana.app_type}}]] apps with [{{co
 
 ## Prerequisites
 
-* Make sure you have [[config-custom-oauthregistered the app and configured the custom OAuth settings]] using the {{config.extra.arcana.dashboard_name}}.
+* Make sure you have [[config-custom-oauth|registered the app and configured the custom OAuth settings]] using the {{config.extra.arcana.dashboard_name}}.
 
 * You will require the following to integrate the app with the SDK:
 
@@ -23,7 +23,7 @@ Integrate [[concept-custom-oauth|{{page.meta.arcana.app_type}}]] apps with [{{co
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
-Following are the install and integration instructions for a simple HTML/CSS/JS app that uses custom user authentication and not the social login offered by the {{config.extra.arcana.sdk_name}}.
+Following are the integration instructions for a simple HTML/CSS/JS app that uses custom user authentication and not the social login offered by the {{config.extra.arcana.sdk_name}}.
      
 Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another.
 

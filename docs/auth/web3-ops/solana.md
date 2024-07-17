@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ../../..
 ---
 
-# Solana Web3 Ops
+# Solana Wallet Ops
 
 Solana chain is a bit different from typical EVM chains in how it [supports Solana JSON-RPC calls](https://docs.solana.com/api/http) and Web3 wallet operations.
 
@@ -24,9 +24,7 @@ Solana chain is a bit different from typical EVM chains in how it [supports Sola
 
 {% include "./text-snippets/init_solana_providers.md" %}
 
-## Supported Functions
-
-{% include "./text-snippets/solana_web3_ops.md" %}
+## Supported Web3 Wallet Operations
 
 ### Get Public Key
 
@@ -46,6 +44,10 @@ console.log(publicKey);
 ```
 
 The `publicKey` is returned as a string: ["your-public-key-in-string-format"].
+
+## Supported JSON/RPC Functions
+
+{% include "./text-snippets/solana_web3_ops.md" %}
 
 ### `SignMessage`
 

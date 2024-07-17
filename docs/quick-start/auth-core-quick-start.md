@@ -84,7 +84,7 @@ const userInfo = auth.getUserInfo();
 
 ### Sign Transactions
 
-Use `AuthProvider`, a standard Ethereum EIP-1193 provider, and allow authenticated users to sign blockchain transactions. Build a custom wallet UI and wire it to appropriate [[index-wallet-ux|Web3 wallet operations]] on [[configure-wallet-chains|configured chains]].
+Use `AuthProvider`, a standard Ethereum EIP-1193 provider, and allow authenticated users to sign blockchain transactions. Build a custom wallet UI and wire it to appropriate [[evm-web3-wallet-ops|Web3 wallet operations]] on [[configure-wallet-chains|configured chains]].
 
 ```ts
 import { AuthProvider, CURVE } from '@arcana/auth-core';

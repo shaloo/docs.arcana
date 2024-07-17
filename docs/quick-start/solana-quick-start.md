@@ -38,7 +38,7 @@ Solana chains are pre-configured and instantly accessible to authenticated users
 
 ### Sign Transactions
 
-Use the standard EIP-1193 provider, `auth.provider`, for [[solana-json-rpc-ops|issuing Solana JSON-RPC calls]] in the context of the authenticated user.  Use `auth.solana` Solana provider for [[solana-wallet-ops|issuing supported Web3 wallet operations]] on the Solana chain.
+Use the standard EIP-1193 provider, `auth.provider`, for [[solana-web3-wallet-ops#supported-json-rpc-functions|issuing Solana JSON-RPC calls]] in the context of the authenticated user.  Use `auth.solana` Solana provider for [[solana-web3-wallet-ops#web3-wallet-operations|issuing supported Web3 wallet operations]] on the Solana chain.
 
 ```js hl_lines="8"
   const message = `Sign below to authenticate with CryptoCorgis to avoid digital dognappers`;
@@ -60,7 +60,7 @@ For Solana, the following Web3 wallet operations are supported:
 
 {% include "./text-snippets/solana_web3_ops.md" %}
 
-Refer to [[solana-wallet-ops|other supported Web3 wallet operations]] for details.
+Refer to [[solana-web3-wallet-ops|other supported Web3 wallet operations]] for details.
 
 {% include "./text-snippets/quick-start-deploy.md" %}
 

@@ -100,5 +100,3 @@ arcana:
 ## See Also
 
 * [[index-wallet-user-guide|Wallet User Guide]]
-* [[index-tutorials|Tutorials]]
-* [[new-to-web3|New to Web3]]

@@ -8,7 +8,7 @@ arcana:
 
 # Register App
 
-In this tutorial, you will learn how to register a Web3 app and get a unique client identifier required for integrating with the {{config.extra.arcana.sdk_name}}.
+Learn how to register a Web3 app and get a unique client identifier required for integrating with the {{config.extra.arcana.sdk_name}}.
 
 ## Prerequisites
 
@@ -24,29 +24,17 @@ In this tutorial, you will learn how to register a Web3 app and get a unique cli
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
-That is all! 🎉
-
-!!! an-info "Save {{config.extra.arcana.app_address}}"
-
-    A unique **{{config.extra.arcana.app_address}}** is assigned to every registered app. It is displayed on the top right of the dashboard screen. Copy and use it to integrate the app with the {{config.extra.arcana.company_name}} SDKs.
-
-    <figure markdown="span">
-      ![Arcana Client ID for Registered App]({{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
-      <figcaption>Arcana Client ID for Registered App</figcaption>
-    </figure>
+{% include "./text-snippets/save_app_address.md" %}
 
 ## What's next?
 
-After registering the app, [[index-configure-auth| configure the user onboarding settings]] first. Optionally, you can also [[configure-gasless|configure gasless settings]]. After configurations, install the SDK and [[index-integrate|integrate the app]].
+After registering the app, [[index-configure-auth| configure the user onboarding]] settings, [[configure-gasless|configure gasless settings]](optional) and [[integrate-vanilla-app|integrate the app]] to onboard users and allow them to sign blockchain transactions via the {{config.extra.arcana.wallet_name}}.
 
-!!! an-note "Enabling gasless transactions in third-party wallets"
-
-      The {{config.extra.arcana.sdk_name}} has a built-in gasless feature for the in-app {{config.extra.arcana.wallet_name}}. Developers must install and [[web-gasless-integrate|integrate with the {{config.extra.arcana.gasless_sdk_name}}]] to enable gasless transactions in third-party wallets.
+{% include "./text-snippets/note-gasless-3p-wallets.md" %}
 
 ## See Also
 
 * [[dashboard-user-guide#delete-application|Deleting Application Entry]]
 * [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
-* [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] 
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

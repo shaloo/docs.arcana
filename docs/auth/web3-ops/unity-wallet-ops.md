@@ -16,6 +16,6 @@ Call `Request` to make Web3 Wallet operation requests from within the app contex
 
 !!! an-note "Supported Wallet Operations"
 
-      The supported methods in the `Request` function may vary depending on the selected blockchain network, EVM chains, or non-EVM chains, such as Solana or MultiversX. See the [[index-wallet-ux|supported JSON/RPC Web3 operations]] for a list of chain-specific methods supported via the `Request` call of the {{config.extra.arcana.gaming_sdk_name}}.
+      The supported methods in the `Request` function may vary depending on the selected blockchain network, EVM chains, or non-EVM chains, such as Solana or MultiversX. See the [[evm-web3-wallet-ops|supported JSON/RPC Web3 operations]] for a list of chain-specific methods supported via the `Request` call of the {{config.extra.arcana.gaming_sdk_name}}.
 
 {% include "./code-snippets/auth_unity_web3_wallet_ops.md" %}

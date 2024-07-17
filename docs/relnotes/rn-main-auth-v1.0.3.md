@@ -64,7 +64,7 @@ In the earlier releases, the built-in Arcana wallet UI **did not** utilize the e
 
 See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [how-to guides]({{page.meta.arcana.root_rel_path}}/auth/index.md) for details. 
 
-Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|Next.js ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
+Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
 
 ## Migrate to v1.0.3

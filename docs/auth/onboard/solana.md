@@ -75,7 +75,7 @@ When a user logs into the app that is registered and configured for using Solana
 
 ## What's Next?
 
-Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other [[solana-wallet-ops|supported web3 wallet operations for Solana]] in the authenticated user's context.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other [[solana-web3-wallet-ops|supported web3 wallet operations for Solana]] in the authenticated user's context.
 
 ## See also
 

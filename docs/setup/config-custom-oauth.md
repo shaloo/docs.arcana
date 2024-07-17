@@ -8,7 +8,7 @@ arcana:
 
 # Custom OAuth Setup
 
-This guide shows how to configure {{config.extra.arcana.sdk_name}} for apps using [[concept-custom-oauth|custom OAuth]] and allow authenticated users to sign blockchain transactions.
+Learn how to configure [[concept-custom-oauth|custom OAuth]] for using the {{config.extra.arcana.sdk_name}} in apps that use custom user authentication and allow authenticated users to sign blockchain transactions.
 
 ## Prerequisites
 
@@ -16,11 +16,11 @@ This guide shows how to configure {{config.extra.arcana.sdk_name}} for apps usin
 
 {% include "./text-snippets/db_login.md" %}
 
-## Register App
+## 1. Register App
 
 Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create a new app. Jump to the next section if the app is already registered.
 
-## Configure Custom OAuth 
+## 2. Configure Custom OAuth 
 
 In the 'Manage Apps' screen, click **Configure** in the LHS navigation. Select **Social Auth** and scroll down to the section **Custom OAuth**.
 
@@ -36,21 +36,15 @@ Provide inputs for the custom OAuth settings:
 
 Click **Save** after specifying the custom OAuth settings in the dashboard. 
 
-## Step3: Get Custom Provider ID
+## 3. Get Custom Provider ID
 
-In addition to the {{config.extra.arcana.app_address}} , every registered app configured for using custom OAuth is also allocated a unique **custom provider identifier**. It is displayeed in the dashboard once the custom OAuth settings are updated. Make a note of the custom provider identifier.
+In addition to the {{config.extra.arcana.app_address}}, every registered app configured for using custom OAuth is also allocated a unique **custom provider identifier**. It is displayed in the dashboard once the custom OAuth settings are updated. Make a note of the custom provider identifier.
 
 Both, the {{config.extra.arcana.app_address}} assigned to the app after registration and the custom provider identifier is required later for [[integrate-custom-oauth|integrating the app using custom OAuth with the {{config.extra.arcana.sdk_name}}]].
 
-**That's all!** :material-party-popper:
-
 ## What's Next?
 
-After configuring the custom OAuth settings via the dashboard, you can install the {{config.extra.arcana.sdk_name}} and integrate your app.
-
- Make sure you have already added code for custom OAuth and enabled user login via the custom authentication server. Get a JWT for the authenticated user. 
- 
- During app integration with the {{config.extra.arcana.sdk_name}}, initialize the SDK first and then call `loginWithCustomProvider` with the JWT token and the custom provider identifier as input parameters along with user identifier string. This function will fetch the authenticated user key shares securely. See [[integrate-custom-oauth|how to integrate apps using custom OAuth]] for details.
+After configuring, [[integrate-custom-oauth|integrate the Web3 app using custom OAuth]] with the Auth SDK, use `loginWithCustomProvider` to assign keys to authenticated users securely. Then use the `AuthProvider` to issue JSON/RPC functions and Web3 wallet operations from within the app context.
 
 ## See Also
 

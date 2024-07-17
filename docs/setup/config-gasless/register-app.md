@@ -8,7 +8,7 @@ arcana:
 
 # Register App
 
-In this tutorial, you will learn how to register a Web3 app and get a unique client identifier required for integrating with the {{config.extra.arcana.gasless_sdk_name}}.
+Learn how to register a Web3 app and get a **unique client identifier** required for integrating with the {{config.extra.arcana.gasless_sdk_name}}.
 
 ## Prerequisites
 
@@ -24,23 +24,11 @@ In this tutorial, you will learn how to register a Web3 app and get a unique cli
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
-That is all! 🎉
-
-!!! an-info "Save {{config.extra.arcana.app_address}}"
-
-    A unique **{{config.extra.arcana.app_address}}** assigned to the registered apps is displayed on the top right of the dashboard screen. 
+{% include "./text-snippets/save_app_address.md" %}
     
-    Use it to integrate the app with the {{config.extra.arcana.company_name}} SDKs.
-
-    <figure markdown="span">
-      ![Arcana Client ID for Registered App]({{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
-      <figcaption>Arcana Client ID for Registered App </figcaption>
-    </figure>
-    
-
 ## What's next?
 
-After registering the app, [[configure-gasless|configure gasless settings]] first. Then install the {{config.extra.arcana.gasless_sdk_name}} and [[web-gasless-integrate|integrate the app]].
+After registering the app, first [[configure-gasless|configure gasless settings]] and then [[web-gasless-integrate|integrate the Web3 app]] with the SDK to enable gasless transactions via third-party browser-based wallets.
 
 ## See Also
 
