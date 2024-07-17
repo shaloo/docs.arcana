@@ -12,17 +12,21 @@ This guide shows how to configure {{config.extra.arcana.sdk_name}} for apps usin
 
 ## Prerequisites
 
-* Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+{% include "./text-snippets/db_prerequisites.md" %}
 
-* The [[register-app-auth| app must be registered]] using the [[concept-arcana-dashboard| {{config.extra.arcana.dashboard_name}}]]. Make a note of the unique {{config.extra.arcana.app_address}} after registration. It will be required during SDK integration.
+{% include "./text-snippets/db_login.md" %}
 
-## Step 1: Dashboard Log-in
+## Register App
 
-Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Social Auth** and scroll down to the **Custom OAuth** section.
+Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create a new app. Jump to the next section if the app is already registered.
+
+## Configure Custom OAuth 
+
+In the 'Manage Apps' screen, click **Configure** in the LHS navigation. Select **Social Auth** and scroll down to the section **Custom OAuth**.
 
 ![Custom OAuth Nav]({{config.extra.arcana.img_dir}}/an_db_custom_oauth_setup.gif){.an-screenshots}
 
-## Step 2: Configure JWK Settings
+Provide inputs for the custom OAuth settings:
 
 * **JWKS Endpoint**: This is a read-only URL exposed by the custom OAuth server or any other server that manages the cryptographic keys or JSON Web Keys (JWK) as per the [IETF RFC7517](https://datatracker.ietf.org/doc/html/rfc7517) standard.
 * **User Identifier String**: Select the type of user identifier that the developer will share while integrating the app with the {{config.extra.arcana.sdk_name}}, as part of input parameters `CustomProviderParams` in the `loginWithCustomProvider()` function call. Choose one of the `sub`, `email` or a `custom` string.
@@ -30,11 +34,11 @@ Log in to the {{config.extra.arcana.dashboard_name}} and click your registered a
 * **Audience**: A string identifier representing the recipient that the JWT is intended for.
 * **JWT Validation (Optional)**: Specify one or more key, value pairs of attributes/claims that can be used to verify the JWT provided as the input parameter `CustomProviderParams` in the `loginWithCustomProvider()` function call. 
 
-See [[concept-custom-oauth|custom OAuth settings]] for details.
+Click **Save** after specifying the custom OAuth settings in the dashboard. 
 
 ## Step3: Get Custom Provider ID
 
-Click **Save** after specifying the custom OAuth settings in the dashboard. Each application intending to utilize custom OAuth is allocated a unique **custom provider identifier**, visible within the dashboard interface once the custom OAuth settings are updated. Make a note of the custom provider identifier.
+In addition to the {{config.extra.arcana.app_address}} , every registered app configured for using custom OAuth is also allocated a unique **custom provider identifier**. It is displayeed in the dashboard once the custom OAuth settings are updated. Make a note of the custom provider identifier.
 
 Both, the {{config.extra.arcana.app_address}} assigned to the app after registration and the custom provider identifier is required later for [[integrate-custom-oauth|integrating the app using custom OAuth with the {{config.extra.arcana.sdk_name}}]].
 
