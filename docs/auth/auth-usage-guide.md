@@ -122,7 +122,7 @@ await auth.init()
 
 ```
 
-See [Get Started with Auth SDK](https://docs.arcana.network/auth-quick-start.html) for more Auth SDK usage insights.
+See [Get Started with Auth SDK](https://docs.arcana.network/vanilla-web-apps-quick-start.html) for more Auth SDK usage insights.
 
 ### Auth APIs
 

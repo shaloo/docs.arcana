@@ -1,4 +1,4 @@
-New to Arcana Network? Visit [[auth-quick-start|{{config.extra.arcana.sdk_name}} Quick Start Guide]] to get started. 
+New to Arcana Network? Get started with the {{config.extra.arcana.sdk_name}} Quick Start Guides. 
 
 Using an older version and want to migrate? Read on...
 

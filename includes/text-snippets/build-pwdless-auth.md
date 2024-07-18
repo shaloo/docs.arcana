@@ -6,7 +6,7 @@ In this guide, you will learn how to integrate {{page.meta.arcana.app_type}} app
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 * The app must be [[register-app-auth|registered using the {{config.extra.arcana.dashboard_name}}]]. A unique {{config.extra.arcana.app_address}} is assigned after app registration. It is required for integrating the app with the {{config.extra.arcana.sdk_name}}
-* Follow the instructions as per the app type and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}}.
+* Follow the instructions as per the app type and [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}.
 
 !!! an-info "Configuring App"
 

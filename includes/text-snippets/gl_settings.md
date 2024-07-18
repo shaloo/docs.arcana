@@ -115,6 +115,5 @@ After configuring gasless, integrate the app with the {{config.extra.arcana.sdk_
 * [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[gasless-standalone-quick-start|{{config.extra.arcana.gasless_sdk_name}} Quick Start Guide]]
 * [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]
-* [[auth-quick-start|{{config.extra.arcana.sdk_name}} Quick Start Guide]] 
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

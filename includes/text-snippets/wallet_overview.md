@@ -35,4 +35,4 @@ The {{config.extra.arcana.sdk_name}} supports EVM-compatible blockchains. It com
         
 Only the developer configured additional network settings are stored and retained across user login sessions. For more details, see [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility modes]] and [[concept-wallet-switch-mode|network switching behavior]].
 
-{% include "./text-snippets/add_wallet_config_warning.md" %}
+{% include "./text-snippets/warn-wallet-chain-edit-persistence.md" %}

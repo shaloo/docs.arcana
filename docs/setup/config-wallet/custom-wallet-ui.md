@@ -54,11 +54,11 @@ Follow the instructions to [[index-configure-auth|configure authentication provi
 
 ## Step 4: Integrate App
 
-Use the appropriate integration method as per the app type and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}}.
+Use the appropriate integration method as per the app type and [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}.
 
 ## Step 5: Onboard Users
 
-Apps that are integrated with the {{config.extra.arcana.sdk_name}} can choose the built-in [[concept-plug-and-play-auth|plug-and-play login UI]] or use custom login ui to onboard users. For details, see [[index-onboard-users|onboarding users documentation]]. 
+Apps that are integrated with the {{config.extra.arcana.sdk_name}} can choose the built-in [[concept-plug-and-play-auth|plug-and-play login UI]] or use custom login ui to onboard users. [[use-plug-play-auth|Learn more...]] 
 
 ## Step 6: Plug in Custom Wallet UI
 

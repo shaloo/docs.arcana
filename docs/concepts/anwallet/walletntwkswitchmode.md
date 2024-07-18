@@ -38,4 +38,4 @@ In this case, the {{config.extra.arcana.wallet_name}} UI does not show up automa
 
 App developers can programmatically **initiate** a network switch blockchain request. The actual network switch occurs only when the user approves this blockchain request.
 
-{% include "./text-snippets/add_wallet_config_warning.md" %}
+{% include "./text-snippets/warn-wallet-chain-edit-persistence.md" %}

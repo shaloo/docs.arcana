@@ -12,7 +12,7 @@ This guide lists the standard EIP-1193 events raised by the `AuthProvider` in th
 
 ## Prerequisites
 
-* To receive and handle the `AuthProvider` events, the app should be [[register-app-auth|registered]], [[index-configure-auth| configured]], and [[index-integrate|integrated]] with the {{config.extra.arcana.sdk_name}}.
+* To receive and handle the `AuthProvider` events, register the app, configure social login and wallet settings and integrate the app with the SDK.
 
 ## Events
 

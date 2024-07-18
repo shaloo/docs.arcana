@@ -10,7 +10,7 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
 
 * Carefully [[config-auth-twitter|follow the instructions to configure Twitter]] as the authentication provider.
   
-* Use the appropriate integration method as per the app type and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
+* Use the appropriate integration method as per the app type and [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
     
 ## Steps
 
@@ -49,6 +49,5 @@ Authenticated users can instantly access the in-app {{config.extra.arcana.wallet
 ## See also
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [[index-integrate|How to integrate with the {{config.extra.arcana.sdk_name}}]]
 * [[web-auth-error-msg|Handling authentication errors]]
 * [Auth Examples](https://github.com/arcana-network/auth-examples)

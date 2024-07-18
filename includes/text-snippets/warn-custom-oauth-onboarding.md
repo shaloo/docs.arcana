@@ -1,0 +1,3 @@
+??? an-caution "Use Custom OAuth Solutions"
+
+      Web3 apps that use custom user authentication solutions and require authenticated users to sign blockchain transactions can also integrate with the {{config.extra.arcana.sdk_name}}. These apps can skip the social onboarding feature and use `loginWithCustomProvider` function of the `AuthProvider` to assign keys securely. [[integrate-custom-oauth|Learn more...]]

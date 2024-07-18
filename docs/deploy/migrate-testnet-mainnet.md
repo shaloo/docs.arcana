@@ -42,8 +42,6 @@ Note down the brand new Mainnet configuration profile {{config.extra.arcana.app_
         <figcaption>Mainnet Configuration Profile Available</figcaption>
       </figure>
 
-
-
 {% include "./text-snippets/warn_update_redirect_uri.md" %}
 
 ## Step 2: Update `AuthProvider`

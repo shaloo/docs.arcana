@@ -56,7 +56,7 @@ In addition to the plug-and-play authentication feature that allows developers t
 
 Web3 app developers now have more flexibility in how they authenticate and onboard users into their apps. In the {{config.extra.arcana.sdk_name}}, developers can now build a custom login UI instead of using the default, built-in plug-and-play login UI. This allows app developers to design a login interface that matches their app's style and branding. The custom login UI can be used to call the authentication providers set up in the {{config.extra.arcana.dashboard_name}}, making it easy to onboard users through the app's custom login process. 
 
-For details, see [[index-onboard-users| how to onboard users]], select the app type and refer to the instructions for enabling custom login UI.
+Select the app type and refer to the instructions for enabling [[index-custom-ui-onboard-users|custom login UI to onboard users]].
 
 ---
 
@@ -103,7 +103,7 @@ The {{config.extra.arcana.wallet_name}} allows users to buy cryptocurrency. In t
 
 ==}
 
-See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] in the Getting Started section. 
+See {{config.extra.arcana.product_name}} Quick Start Guides. 
 
 Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 

@@ -41,6 +41,10 @@ Select your {{page.meta.arcana.app_type}} app type and follow the integration in
 
     [[integrate-custom-oauth| :material-tools:{ .icon-color } Custom OAuth]]{ .md-button }
 
+## What's Next?
+
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
+
 ## See also
 
 {% include "./text-snippets/quick-start-common-examples.md" %}

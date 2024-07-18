@@ -22,11 +22,11 @@ Integrate Web3 apps with [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.r
 
 {% include "./text-snippets/note-gasless-3p-wallets.md" %}
 
-Following are the integration instructions for a simple HTML/CSS/JS app to enable gasless transactions.
-     
-Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another.
-
 ## Steps
+
+Following are the integration steps for a simple HTML/CSS/JS app to enable gasless transactions.
+     
+Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another. Go to the [Select App Types](#select-app-types) section and follow integration instructions.
 
 ### Step 1: Install
 
@@ -65,6 +65,29 @@ The Web3 app is now **integrated** with the {{config.extra.arcana.sdk_name}}. Al
 {% include "./text-snippets/next-steps-onboard-users.md" %}
 
 {% include "./text-snippets/quick-start-sign-transactions.md" %}
+
+## Select App Types
+
+Select your app type and follow the integration instructions.
+
+=== "Web Apps"
+
+    [[integrate-vanilla-app| :material-language-javascript:{ .icon-color } HTML/CSS/JS App]]{ .md-button }
+    [[integrate-react-nextjs-app| :fontawesome-brands-react:{ .icon-color } :simple-nextdotjs:{ .icon-color } React/Next.js App]]{ .md-button } 
+    [[integrate-wagmi-app| :material-card-account-mail:{ .icon-color } Wagmi App]]{ .md-button } 
+    [[integrate-walletconnect-app| :material-card-account-mail:{ .icon-color } WalletConnect App ]]{ .md-button }
+    [[integrate-rainbow-app| :material-card-account-mail:{ .icon-color } RainbowKit App ]]{ .md-button }
+    [[integrate-web3-react-app| :material-card-account-mail:{ .icon-color } Web3-React App]]{ .md-button }
+    [[integrate-unity-app| :simple-unity:{ .icon-color } Unity App]]{ .md-button }
+
+=== "Mobile Apps"
+
+    [[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
+    [[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }
+
+=== "Custom OAuth Apps"
+
+    [[integrate-custom-oauth| :material-tools:{ .icon-color } Custom OAuth]]{ .md-button }
 
 ## See also
 

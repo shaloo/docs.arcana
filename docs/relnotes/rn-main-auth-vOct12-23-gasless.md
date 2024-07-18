@@ -68,7 +68,7 @@ In addition to configuring the social provider and customizing wallet experience
 
 ==}
 
-Use [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] to start using {{config.extra.arcana.product_name}}.
+Use Quick Start Guides to start using {{config.extra.arcana.product_name}}.
 
 See [integration examples](https://github.com/arcana-network/auth-examples) for various dApp types, wallet connectors and frameworks.
 

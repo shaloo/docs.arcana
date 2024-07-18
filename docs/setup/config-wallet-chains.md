@@ -122,7 +122,14 @@ To switch the default active chain simply select the new chain in the {{config.e
 
 Click the **Add Chain** button on the top right of the 'Chain Management' dashboard screen. Any newly added chain is automatically set as the default chain displayed in the wallet UI.
 
-{% include "./text-snippets/add_chain_specs.md" %}
+To add a blockchain, specify the following details and click **Save**.
+
+* Network Name
+* Chain Id
+* Currency Symbol
+* RPC URL
+* Block Explorer URL
+* Testnet/Mainnet Chain Type
 
 <figure markdown="span">
   ![Configure new chain]({{config.extra.arcana.img_dir}}/an_db_configure_new_chain.gif){ .an-screenshots .width_85pc }

@@ -26,7 +26,7 @@ The following services are active on Testnet as well as the Mainnet
 * Gasless Transactions (Third-party wallets) via the {{config.extra.arcana.gasless_sdk_name}} v{{config.extra.arcana.latest_gasless_sdk_version}}\
 * Asynchronous Distributed Key Generation that powers the {{config.extra.arcana.sdk_name}} and helps onboard users to Web3
 
-We are actively working towards adding newer features and capabilities. For details, check out the [[arcana-coming-soon| coming soon section]].
+We are actively working towards adding newer features and capabilities to the SDKs. Watch out for our upcoming Chain Abstraction solution!
 
 ## Infrastructure Providers
 
