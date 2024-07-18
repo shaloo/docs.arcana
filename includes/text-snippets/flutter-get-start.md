@@ -141,6 +141,6 @@ The {{page.meta.arcana.app_type}} mobile Web3 app is now powered by the {{config
 
 ## See also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+* {% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/flutter_sdk_quicklinks.md" %}

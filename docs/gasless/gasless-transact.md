@@ -34,4 +34,8 @@ After adding code for gasless transactions with the help of the {{config.extra.a
 
 ## See also
 
-{% include "./text-snippets/quick-start-see-also-gasless.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
+* [[faq-gasless|Gasless FAQ]]
+
+{% include "./text-snippets/gasless_sdk_quicklinks.md" %}

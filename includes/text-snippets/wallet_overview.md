@@ -15,24 +15,20 @@
 * Export private key and use it to import {{config.extra.arcana.wallet_name}} account to a third-party Web3 provider
 * Enable MFA for enhanced security
 
-!!! an-note "User Profile Data"
-
-    In the future, the {{config.extra.arcana.wallet_name}} may also allow application users to permit application developers and see their profile data such as email ID, profile picture, and user name.
-
 !!! an-caution "**Not Supported**"
 
     The {{config.extra.arcana.wallet_name}} does not allow an app user to import any blockchain account created using a third-party wallet provider. 
 
+!!! an-note "User Profile Data"
+
+    In the future, the {{config.extra.arcana.wallet_name}} may also allow application users to permit application developers and see their profile data such as email ID, profile picture, and user name.
+
 **Wallet Configuration**
 
-Developers can select the built-in {{config.extra.arcana.wallet_name}} UI (default) or a custom wallet UI via the {{config.extra.arcana.dashboard_name}} at the time of registering the app with the {{config.extra.arcana.company_name}}. Later, during app integration, when creating a new `AuthProvider`, the developer can choose one of the available wallet user experiences for signing blockchain transactions through the `alwaysVisible` input parameter. See [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] for details.
-
-{% include "./text-snippets/wallet_ntwk_switch_warning.md" %}
+Wallet user experience can be configured at the time of registering the app via the dashboard.  The dashboard setting allows developers to specify whether they will use the built-in default wallet UI or use a custom wallet UI. Later, during app integration, developers can specify `alwaysVisible` to manage [[concept-wallet-visibility|wallet visibility]], wallet `position` parameters in `AuthProvider` and further fine tune the user experience.
 
 **Adding Networks**
 
-The {{config.extra.arcana.sdk_name}} supports EVM-compatible blockchains. It comes pre-configured with some of the popular blockchain networks such as Ethereum and Polygon. See [[web3-stack-chains|supported blockchain networks]] for the complete list. In addition to the networks in the pre-configured list, new networks can be added programmatically to the wallet by application developers. Also, authenticated users can add new networks via the wallet UI if the developer has configured the wallet to be always visible in the app context.
-        
-Only the developer configured additional network settings are stored and retained across user login sessions. For more details, see [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility modes]] and [[concept-wallet-switch-mode|network switching behavior]].
+The in-app {{config.extra.arcana.wallet_name}} comes pre-configured with a subset of the [[web3-stack-chains|supported blockchain networks]]. This pre-configured list can be updated with other supported networks programmatically or via the wallet UI.
 
 {% include "./text-snippets/warn-wallet-chain-edit-persistence.md" %}

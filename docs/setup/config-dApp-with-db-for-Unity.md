@@ -41,4 +41,5 @@ After integrating an app with the {{config.extra.arcana.gaming_sdk_name}}, devel
 ## See Also
 
 * {% include "./text-snippets/unity_sample_url.md" %}
-{% include "./text-snippets/quick-start-see-also.md" %}
+
+* {% include "./text-snippets/auth_unity_sdk_quicklinks.md" %}
