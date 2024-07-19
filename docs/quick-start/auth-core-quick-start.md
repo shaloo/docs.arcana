@@ -17,7 +17,7 @@ Integrate Web3 apps with {{config.extra.arcana.auth_core_sdk_name}} and assign k
       * **No** built-in [[concept-plug-and-play-auth|plug-and-play login UI]] feature 
       * **No** built-in {{config.extra.arcana.wallet_name}} UI
       * **No** support for [[concept-keyspace-type|Global keys, only app-specific keys]] (default) allowed. 
-      * **No** [[concept-mfa|enhanced wallet security via MFA]] or key recovery is supported when the user switches devices.
+      * **No** support for [[concept-mfa|enhanced wallet security]] via MFA.
 
 ## Prerequisites
 
