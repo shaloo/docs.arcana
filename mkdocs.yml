@@ -576,6 +576,7 @@ nav:
     - Install: gasless/gasless-install.md
     - Integrate App: gasless/gasless-integrate.md
     - Transact: gasless/gasless-transact.md
+    - Session Keys: gasless/gasless-session-keys.md
     - Try Now!: gasless/gl-try-now.md
   - Deploy App: 
     - deploy/index.md
@@ -730,6 +731,7 @@ nav:
         - What is ADKG?: concepts/adkg.md
         - How does ADKG work?: concepts/how-adkg-works.md
       - Gasless Transactions: concepts/gasless-ops.md
+      - Session Keys: concepts/scw-session-keys.md 
       - Gateway: concepts/gateway-node.md
       - JWT Token: concepts/an_jwt_token.md
       - Key Space Type: concepts/keyspace-types.md
