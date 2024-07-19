@@ -19,7 +19,7 @@ Developers can use this SDK to assign keys to authenticated users to sign blockc
       * **No** built-in [[concept-plug-and-play-auth|plug-and-play login UI]] feature 
       * **No** built-in {{config.extra.arcana.wallet_name}} UI
       * **No** support for [[concept-keyspace-type|Global keys, only app-specific keys]] (default) allowed. 
-      * **No** [[concept-mfa|enhanced wallet security via MFA]] or key recovery is supported when the user switches devices.
+      * **No** support for [[concept-mfa|enhanced wallet security]] via MFA.
 
 ## Prerequisites
 
