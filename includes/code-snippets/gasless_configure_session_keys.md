@@ -28,7 +28,7 @@
     valueLimit: 10,   //maximum 10 GWEI transaction is pre approved
   };
 
-  await scWallet.createSession(config);
+  await scWallet.createSession(config);  //wait for user approval via the UI pop up accept/reject notification
 
   ...
 

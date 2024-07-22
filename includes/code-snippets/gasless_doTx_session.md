@@ -18,7 +18,7 @@
 
     /// Session txn
     let tx = await scWallet.doTx(tx1, {
-      session: true,
+      session: true, //default is false, provide session id to be specific
     });
     tx = await tx.wait();  //If this transaction is within specified limits, it will not require user confirmation
     console.log(`Transfer done ${tx.userOpHash}`);

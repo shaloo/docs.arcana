@@ -10,9 +10,7 @@ arcana:
 
 # Quick Start: Auth-Core
 
-{{config.extra.arcana.auth_core_sdk_name}} offers limited {{config.extra.arcana.sdk_name}} functionality with additional flexibility in user onboarding customization!
-
-Developers can use this SDK to assign keys to authenticated users to sign blockchain transactions securely. 
+Use the [[concept-authcore|{{config.extra.arcana.auth_core_sdk_name}}]] to securely assign keys to authenticated users and allow them to sign blockchain transactions.
 
 !!! an-warning "Limited Auth Capabilities"
 

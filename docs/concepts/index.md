@@ -30,6 +30,7 @@ These are the building blocks to help you learn about various terms and usage in
 [[concept-non-evm-chains| :material-list-box:{ .icon-color } Non-EVM Chains]]{ .md-button }
 [[concept-plug-and-play-auth| :material-lock:{ .icon-color } :fontawesome-solid-plug:{ .icon-color } Plug-and-Play Auth]]{ .md-button }
 [[concept-private-key| :material-key:{ .icon-color } Private Key]]{ .md-button }
+[[concept-gl-session-keys| :material-key:{ .icon-color } Session Keys]]{ .md-button }
 [[concept-session-type| :material-key:{ .icon-color } Session Type]]{ .md-button }
 [[concept-index-ansc|  :material-list-box:{ .icon-color } Smart Contracts]]{ .md-button }
 [[concept-social-login|  :fontawesome-solid-users:{ .icon-color } Social Login]]{ .md-button }
