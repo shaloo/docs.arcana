@@ -19,6 +19,6 @@ In Web3, users' private keys enable authentication and full control over transac
 Session keys can be created by specifying the pre-approval policy in terms of these parameters:
 
 * **Time:** Set an allowed period for a pre-approved session or use 0 for an indefinitely approved session.
-* **Maximum Value:** Limit the maximum value transferable in a single transaction via the smart wallet address.
+* **Maximum Value:** Limit the maximum native token value transferable in a single transaction via the smart wallet address.s.
 * **Contract Address:** The address of the contract in the policy.
 * **Function:** Specify the contract functions allowed for pre-approval.
