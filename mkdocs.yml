@@ -711,6 +711,7 @@ nav:
         - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
         - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
       - Auth SDK: concepts/authsdk.md
+      - Auth-Core SDK: concepts/auth-core-sdk.md
       - Authentication: concepts/authtype/arcanaauth.md
       - Auth Types:
         - concepts/authtype/index.md
