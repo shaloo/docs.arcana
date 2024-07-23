@@ -22,31 +22,23 @@ Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_nam
 
 Select your {{page.meta.arcana.app_type}} app type and follow the integration instructions. Solana apps will require to initialize and use **Solana Provider** in addition to the `AuthProvider`.
 
-### 1. Integrate App
+## 1. Install 
+     
+Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another. 
 
-=== "Web Apps"
+### 2. Integrate App
 
-    [[integrate-vanilla-app| :material-language-javascript:{ .icon-color } HTML/CSS/JS App]]{ .md-button }
-    [[integrate-react-nextjs-app| :fontawesome-brands-react:{ .icon-color } :simple-nextdotjs:{ .icon-color } React/Next.js App]]{ .md-button } 
-    [[integrate-wagmi-app| :material-card-account-mail:{ .icon-color } Wagmi App]]{ .md-button } 
-    [[integrate-walletconnect-app| :material-card-account-mail:{ .icon-color } WalletConnect App ]]{ .md-button }
-    [[integrate-rainbow-app| :material-card-account-mail:{ .icon-color } RainbowKit App ]]{ .md-button }
-    [[integrate-web3-react-app| :material-card-account-mail:{ .icon-color } Web3-React App]]{ .md-button }
-    [[integrate-unity-app| :simple-unity:{ .icon-color } Unity App]]{ .md-button }
+Select your {{page.meta.arcana.app_type}} app type and follow the integration instructions.
 
-=== "Mobile Apps"
+{% include "./text-snippets/select_app_type_integrate.md" %}
 
-    [[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
-    [[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }
-
-=== "Custom OAuth Apps"
-
-    [[integrate-custom-oauth| :material-tools:{ .icon-color } Custom OAuth]]{ .md-button }
-
-
-## 2. Initialize Solana Provider
+## 3. Initialize Solana Provider
 
 {% include "./text-snippets/init_solana_providers.md" %}
+
+## What's Next?
+
+Add code to [[solana-user-onboarding|onboard users]]. Use `AuthProvider`, the standard EIP-1193 Web3 provider to call support JSON/RPC functions and Web3 wallet operations. [[solana-web3-wallet-ops|Learn more...]]
 
 ## See also
 

@@ -1,32 +1,25 @@
 {% include "./text-snippets/note-onboarding-considerations.md" %}
 
-### Plug-and-Play Login UI
+=== "Built-in Login UI"
 
-{% include "./code-snippets/auth_plugnplay.md" %}
+    [[onboard-wagmi-app-pnp-ui| :material-wallet-plus:{ .icon-color} Wagmi Apps]]{ .md-button }
+    [[onboard-rainbow-app-pnp-ui| :material-wallet-outline:{ .icon-color} RainbowKit Apps ]]{ .md-button }
+    [[onboard-walletconnect-app-pnp-ui| :material-wallet-outline:{ .icon-color} WalletConnect Apps ]]{ .md-button }
+    [[onboard-web3-react-app-pnp-ui| :material-transit-connection-variant:{ .icon-color} Web3-React Apps]]{ .md-button }
+    [[react-nextjs-use-plug-play-auth| :material-react:{ .icon-color} :fontawesome-brands-js:{ .icon-color} React/Next.js Apps]]{ .md-button }
+    [[use-plug-play-auth| :fontawesome-solid-plug:{ .icon-color} Vanilla HTML/CSS/JS App]]{ .md-button }
+    [[vue-use-plug-play-auth| :material-card-account-mail:{ .icon-color} Vue App]]{ .md-button }
+    [[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
+    [[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }
 
-<figure markdown="span">
-  ![Plug-and-Play Login UI]({{config.extra.arcana.img_dir}}/an_plug_n_play_auth.{{config.extra.arcana.img_png}}){.an-screenshots-noeffects .width_35pc }
-  <figcaption>Plug-and-Play Login UI</figcaption>
-</figure>
+=== "Custom Login UI"
 
-!!! an-warning "No plug-and-play support for Firebase authentication."
-
-      {% include "./text-snippets/warn_firebase_no_pnp.md" %}
-
-### Custom Login UI
-
-#### Social Provider
-
-The example below shows how to onboard users in a custom login UI via {{page.meta.arcana.social_provider}}:
-
-{% include "./code-snippets/auth_social_login.md" %}
-
-#### Passwordless
-
-**Login with link**
-
-{% include "./code-snippets/auth_pwdless.md" %}
-
-**Login with OTP**
-
-{% include "./code-snippets/auth_pwdless_otp.md" %}
+    [[onboard-wagmi-app-custom-ui| :material-wallet-plus:{ .icon-color} Wagmi Apps]]{ .md-button }
+    [[onboard-rainbow-app-custom-ui| :material-wallet-outline:{ .icon-color} RainbowKit Apps ]]{ .md-button }
+    [[onboard-walletconnect-app-custom-ui| :material-wallet-outline:{ .icon-color} WalletConnect Apps ]]{ .md-button }
+    [[onboard-web3-react-app-custom-ui| :material-transit-connection-variant:{ .icon-color} Web3-React Apps]]{ .md-button }
+    [[index-react-nextjs-custom-ui-onboard-users| :material-react:{ .icon-color} :fontawesome-brands-js:{ .icon-color} React/Next.js Apps]]{ .md-button }
+    [[index-custom-ui-onboard-users| :fontawesome-solid-plug:{ .icon-color} Vanilla HTML/CSS/JS App]]{ .md-button }
+    [[index-vue-custom-ui-onboard-users| :material-card-account-mail:{ .icon-color} Vue App]]{ .md-button }
+    [[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
+    [[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }

@@ -20,7 +20,7 @@ Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_nam
 
 ## Steps
 
-### Step 1: Setup 
+### 1. Setup 
 
 #### Setup Unity
 
@@ -30,7 +30,7 @@ Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_nam
 
 {% include "./code-snippets/auth_install.md" %}
 
-### Step 2: Initialize Auth SDK
+### 2. Initialize Auth SDK
 
 {% include "./code-snippets/auth_unity_init.md" %}
 

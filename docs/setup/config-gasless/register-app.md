@@ -8,19 +8,17 @@ arcana:
 
 # Register App
 
-Learn how to register a Web3 app and get a **unique client identifier** required for integrating with the {{config.extra.arcana.gasless_sdk_name}}.
+Learn how to register the Web3 app through the [[concept-arcana-dashboard|{{config.extra.arcana.dashboard_name}}]] before using  {{config.extra.arcana.gasless_sdk_name}} to enable gasless transactions in third-party browser-based wallets.
 
 ## Prerequisites
 
 {% include "./text-snippets/db_prerequisites.md" %}
 
-## Steps
-
-### 1. Log into Dashboard
+## 1. Dashboard Login
 
 {% include "./text-snippets/db_login.md" %}
 
-### 2. Register App
+## 2. Create a New App
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
@@ -28,10 +26,13 @@ Learn how to register a Web3 app and get a **unique client identifier** required
     
 ## What's next?
 
-After registering the app, first [[configure-gasless|configure gasless settings]] and then [[web-gasless-integrate|integrate the Web3 app]] with the SDK to enable gasless transactions via third-party browser-based wallets.
+After registering the app, first [[configure-gasless|configure gasless settings]]. Then, [[web-gasless-integrate|integrate the Web3 app]] with the SDK and [[web-gasless-transact|enable gasless transactions]] via third-party browser-based wallets.
 
 ## See Also
 
 * [[dashboard-user-guide#delete-application|Deleting Application Entry]]
 * [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]
+* [[faq-gasless| Gasless FAQ]]
+
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

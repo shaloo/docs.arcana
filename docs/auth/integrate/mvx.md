@@ -6,6 +6,9 @@ arcana:
   root_rel_path: ../..
   app_type: "'MultiversX'"
   app_example_submodule: "`sample-auth-multiversx`"
+  pnp_login_ui_tag: "use-plug-play-auth"
+  custom_login_ui_tag: "index-custom-ui-onboard-users"
+  firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
 # Integrate MultiversX App
@@ -18,32 +21,19 @@ Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_nam
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
-## Select App Type
+## 1. Install 
+     
+Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another. 
+
+## 2. Integrate App
 
 Select your {{page.meta.arcana.app_type}} app type and follow the integration instructions.
 
-=== "Web Apps"
-
-    [[integrate-vanilla-app| :material-language-javascript:{ .icon-color } HTML/CSS/JS App]]{ .md-button }
-    [[integrate-react-nextjs-app| :fontawesome-brands-react:{ .icon-color } :simple-nextdotjs:{ .icon-color } React/Next.js App]]{ .md-button } 
-    [[integrate-wagmi-app| :material-card-account-mail:{ .icon-color } Wagmi App]]{ .md-button } 
-    [[integrate-walletconnect-app| :material-card-account-mail:{ .icon-color } WalletConnect App ]]{ .md-button }
-    [[integrate-rainbow-app| :material-card-account-mail:{ .icon-color } RainbowKit App ]]{ .md-button }
-    [[integrate-web3-react-app| :material-card-account-mail:{ .icon-color } Web3-React App]]{ .md-button }
-    [[integrate-unity-app| :simple-unity:{ .icon-color } Unity App]]{ .md-button }
-
-=== "Mobile Apps"
-
-    [[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
-    [[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }
-
-=== "Custom OAuth Apps"
-
-    [[integrate-custom-oauth| :material-tools:{ .icon-color } Custom OAuth]]{ .md-button }
+{% include "./text-snippets/select_app_type_integrate.md" %}
 
 ## What's Next?
 
-{% include "./text-snippets/quick-start-sign-transactions.md" %}
+Add code to [[mvx-user-onboarding|onboard users]]. Use `AuthProvider`, the standard EIP-1193 Web3 provider to call support JSON/RPC functions and Web3 wallet operations. [[mvx-web3-wallet-ops|Learn more...]]
 
 ## See also
 

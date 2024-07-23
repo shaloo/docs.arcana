@@ -1,6 +1,6 @@
 ---
 alias: gasless-standalone-quick-start
-title: 'Get Started: Gasless Apps (Third-party wallets)'
+title: 'Get Started: Gasless (3rd-party wallets)'
 description: 'Integrate Arcana Auth in web apps. Sponsor gas fees for whitelisted app operations. Onboard users via social login and use third-party wallets. Enable gasless transactions with zero gas fees for users.'
 arcana:
   root_rel_path: ..
@@ -8,17 +8,11 @@ arcana:
   app_example_submodule: "`sample-gasless-metamask-only`"
 ---
 
-# Get Started: Gasless Apps (Third-party Wallets)
+# Get Started: Gasless (3rd-party Wallets)
 
-Web3 apps can easily enable gasless transactions through third-party wallets by integrating with the {{config.extra.arcana.gasless_sdk_name}}! 
+Integrate Web3 apps with {{config.extra.arcana.gasless_sdk_name}} and enable third-party browser-based wallet users to sign blockchain transactions with zero gas fees.
 
-Integrate Web3 apps with {{config.extra.arcana.gasless_sdk_name}} and enable gasless transactions via third-party wallets.
-
-!!! an-tip "Only for Gasless in Third-party Wallets"
-
-      The {{config.extra.arcana.gasless_sdk_name}} is **not** meant to enable gasless transactions via the {{config.extra.arcana.wallet_name}}. 
-      
-      To enable gasless transactions via the in-app  {{config.extra.arcana.wallet_name}}, integrate the app with the {{config.extra.arcana.sdk_name}} and use the built-in gasless feature. See [[gasless-quick-start|Gasless Quick Start Guide]] for details.
+{% include "./text-snippets/warn_third_party_wallets_only.md" %}
 
 ## Prerequisites
 

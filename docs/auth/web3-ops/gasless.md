@@ -26,3 +26,9 @@ Then [[integrate-gasless-app|integrate the app]] with the {{config.extra.arcana.
 !!! an-tip "Use SCW Account for Gasless" 
       
       Users pay no gas fees for whitelisted app operations if the gas tanks are enabled on the blockchain network and have sufficient funds. The SCW account handles gasless transactions. If the EoA account is selected for a whitelisted operation, the user will incur gas fees.
+
+!!! an-caution "Supported Chains"
+
+      Not all supported chains allow gasless transactions. Refer to the {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} for gasless transactions. 
+      
+      Also, the JSON/RPC and Web3 wallet operations supported via different chains may vary. [[evm-web3-wallet-ops|Learn more...]]

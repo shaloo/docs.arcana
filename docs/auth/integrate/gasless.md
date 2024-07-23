@@ -4,10 +4,8 @@ title: 'Integrate Gasless App'
 description: 'Integrate Web3 apps with the Arcana Auth SDK to enable gasless transactions via the Arcana wallet.'
 arcana:
   root_rel_path: ../..
-  app_type: "'HTML/CSS/JS'"
+  app_type: "'Gasless'"
   app_example_submodule: "`sample-auth-html-css-js`"
-  pnp_login_ui_tag: "use-plug-play-auth"
-  custom_login_ui_tag: "index-custom-ui-onboard-users"
 ---
 
 # Integrate Gasless App
@@ -16,7 +14,7 @@ Integrate Web3 apps with [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.r
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the {{page.meta.arcana.app_type}} app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[register-app-auth|Register]] the app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
 * [[configure-gasless|Configure gasless]], set up gas tanks and deposit funds for gasless transactions.
 
@@ -24,82 +22,35 @@ Integrate Web3 apps with [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.r
 
 ## Steps
 
-Following are the integration steps for a simple HTML/CSS/JS app to enable gasless transactions.
+## 1. Install 
      
-Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another. Go to the [Select App Types](#select-app-types) section and follow integration instructions.
+Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another. 
 
-### Step 1: Install
+## 2. Integrate App
 
-{% include "./code-snippets/auth_install.md" %}
+Select your {{page.meta.arcana.app_type}} app type and follow the integration instructions.
 
-### 2. Initialize `AuthProvider`
+{% include "./text-snippets/select_app_type_integrate.md" %}
 
-{% include "./code-snippets/import_auth.md" %}
+??? an-tip "Conditions for Zero Gas Fees"
 
-{% include "./code-snippets/new_auth.md" %}
-
-{% include "./text-snippets/warn_initialize_first.md" %}
-
-{% include "./code-snippets/init_auth.md" %}
-
-{% include "./text-snippets/quick-start-authprovider-optional.md" %}
-
-{==
-
-The Web3 app is now **integrated** with the {{config.extra.arcana.sdk_name}}. All the whitelisted app operations via the {{config.extra.arcana.wallet_name}} occur in a gasless manner. There is no additional user action or code required to issue gasless transactions.
-
-==}
-
-!!! an-tip "Conditions for Zero Gas Fees"
-
-      **Authenticated Users**: Only authenticated users have instant access to the in-app {{config.extra.arcana.wallet_name}} for gasless transactions. 
+      **Authenticated Users**: Only authenticated users have instant access to gasless transactions via the in-app {{config.extra.arcana.wallet_name}}. 
       
-      **Gas Tank Setup**: If the developer has correctly set up the gas tanks, whitelisted gasless operations and deposited funds in the gas tanks, then the user will not have to pay any gas fees for whitelisted app operations.
+      **Gas Tank Setup**: If the developer has correctly set up the gas tanks, whitelisted gasless operations and deposited funds in the gas tanks, then the user will incur zero gas fees only for the whitelisted app operations.
 
-      When gas tanks run out of funds, the gas fees are charged to the user's SCW account. If there is insufficient balance in the user's SCW account when gas tanks run out of funds, the transaction will fail. 
+      **SCW Balance**: When gas tanks run out of funds, the gas fees are charged to the user's SCW account. If there is insufficient balance in the user's SCW account when gas tanks run out of funds, the transaction will fail. 
 
       For more details, see [[concept-gasless-transactions|how gasless transactions work]] and the [[faq-gasless|Gasless Transactions FAQ]].
 
 ## What's Next?
 
-{% include "./text-snippets/next-steps-onboard-users.md" %}
-
-{% include "./text-snippets/quick-start-sign-transactions.md" %}
-
-## Select App Types
-
-Select your app type and follow the integration instructions.
-
-=== "Web Apps"
-
-    [[integrate-vanilla-app| :material-language-javascript:{ .icon-color } HTML/CSS/JS App]]{ .md-button }
-    [[integrate-react-nextjs-app| :fontawesome-brands-react:{ .icon-color } :simple-nextdotjs:{ .icon-color } React/Next.js App]]{ .md-button } 
-    [[integrate-wagmi-app| :material-card-account-mail:{ .icon-color } Wagmi App]]{ .md-button } 
-    [[integrate-walletconnect-app| :material-card-account-mail:{ .icon-color } WalletConnect App ]]{ .md-button }
-    [[integrate-rainbow-app| :material-card-account-mail:{ .icon-color } RainbowKit App ]]{ .md-button }
-    [[integrate-web3-react-app| :material-card-account-mail:{ .icon-color } Web3-React App]]{ .md-button }
-    [[integrate-unity-app| :simple-unity:{ .icon-color } Unity App]]{ .md-button }
-
-=== "Mobile Apps"
-
-    [[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
-    [[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }
-
-=== "Custom OAuth Apps"
-
-    [[integrate-custom-oauth| :material-tools:{ .icon-color } Custom OAuth]]{ .md-button }
+Add code to [[gasless-user-onboarding|onboard users]]. Use `AuthProvider`, the standard EIP-1193 Web3 provider to call support JSON/RPC functions and Web3 wallet operations. [[web3-ops-gasless|Learn more...]]
 
 ## See also
 
-{% include "./text-snippets/quick-start-common-examples.md" %}
 
-* [[index-faq| FAQ]]
+* [[faq-gasless| Gasless FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 
-* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-
-* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-
-{% include "./text-snippets/auth_sdk_quicklinks.md" %}
 {% include "./text-snippets/demo/auth_sdk_demo.md" %}

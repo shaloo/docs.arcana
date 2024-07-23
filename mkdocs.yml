@@ -407,7 +407,6 @@ nav:
           - Branding: setup/config-wallet/config-wallet-branding.md
           - Keyspace: setup/config-wallet/config-wallet-keyspace.md
           - Wallet Security: setup/config-wallet/config-wallet-settings.md
-          - Custom Wallet UI: setup/config-wallet/custom-wallet-ui.md
         - Solana Setup: setup/config-dApp-with-db-for-Solana.md
         - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
         - Near Setup: setup/config-dApp-with-db-for-near.md
@@ -436,7 +435,6 @@ nav:
             #- auth/mobile/index.md
             - Flutter: auth/mobile/flutter-get-started.md
             - React-Native: auth/mobile/react-native-get-started.md
-          - Custom OAuth: auth/integrate/custom-oauth.md
         - Onboard Users: 
           - Wagmi: 
             - Plug-and-Play Login: auth/onboard/wagmi/wagmi-pnp-ui.md
@@ -518,6 +516,9 @@ nav:
           - Near: auth/web3-ops/near.md
           - Unity: auth/web3-ops/unity-wallet-ops.md
         - Event Handling: auth/handle-provider-events.md
+        - Advanced:
+          - Custom Wallet UI: auth/custom-wallet-ui.md
+          - Custom OAuth: auth/integrate/custom-oauth.md
       - Gasless SDK: 
         #- gasless/index.md
         - Install: gasless/gasless-install.md

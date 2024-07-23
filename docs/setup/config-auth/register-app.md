@@ -8,7 +8,7 @@ arcana:
 
 # Register App
 
-Learn how to register a Web3 app and get a unique client identifier required for integrating with the {{config.extra.arcana.sdk_name}}.
+Learn how to register a Web3 app through the [[concept-arcana-dashboard|{{config.extra.arcana.dashboard_name}}]] before using the {{config.extra.arcana.sdk_name}} to enable social login and allow users to sign blockchain transactions via the {{config.extra.arcana.wallet_name}}.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ Learn how to register a Web3 app and get a unique client identifier required for
 
 {% include "./text-snippets/db_login.md" %}
 
-### 2. Register App
+### 2. Create a New App
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
@@ -37,4 +37,5 @@ After registering the app, [[index-configure-auth| configure the user onboarding
 * [[dashboard-user-guide#delete-application|Deleting Application Entry]]
 * [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
+* [[index-faq| FAQ]]
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

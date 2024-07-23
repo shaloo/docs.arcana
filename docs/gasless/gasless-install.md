@@ -1,7 +1,7 @@
 ---
 alias: web-gasless-install
 title: 'Install Gasless SDK'
-description: 'How to install gasless SDK in order to integrate an app with it and enable gasless transactions for third-party wallets.'
+description: 'How to install gasless SDK and integrate an app to enable gasless transactions for third-party wallets.'
 arcana:
   root_rel_path: ..
   app_type: "Gasless"
@@ -10,15 +10,13 @@ arcana:
 
 # Install Gasless SDK
 
-!!! an-caution "Only for Third-party wallets"
-
-      The {{config.extra.arcana.gasless_sdk_name}} is meant for use only in case where an app requires to enable gasless transactions in third-party browser based wallets. To enable gasless transactions in the {{config.extra.arcana.wallet_name}}, you must [[gasless-quick-start|install and integrate with the {{config.extra.arcana.sdk_name}}]] and use its built-in gasless feature.
+{% include "./text-snippets/warn_third_party_wallets_only.md" %}
 
 ## Prerequisites
 
-* Make sure the app is [[register-app-gasless| registered]] and a unique {{config.extra.arcana.app_address}} assigned to it.
+* [[register-app-gasless| Register the app]] and obtain the unique {{config.extra.arcana.app_address}} assigned to registered apps used during the SDK integration.
 
-* Set up gas tanks on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported networks]] and deposit funds. 
+* [[configure-gasless|Configure gas tanks]] on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported blockchain networks]] and deposit funds to sponsor gas fees.
 
 ## Install
 
@@ -26,7 +24,7 @@ arcana:
 
 ## What's Next?
 
-After installing the {{config.extra.arcana.gasless_sdk_name}}, add code to [[web-gasless-integrate|integrate your app]] with the SDK and then allow authenticated users to [[web-gasless-transact|perform gasless transactions]] via the third-party wallets. 
+Add code to [[web-gasless-integrate|integrate your app]] with the SDK and then allow authenticated users to [[web-gasless-transact|perform gasless transactions]] via the third-party wallets. 
 
 ## See also
 

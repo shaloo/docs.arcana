@@ -4,7 +4,7 @@ title: 'Gasless App: Onboard Users'
 description: 'Learn how to enable gasless transactions in a vanilla HTML/CSS/JS app that integrates with the Arcana Auth SDK and uses plug-and-play feature to onboard users.'
 arcana:
   root_rel_path: ../..
-  app_type: "'HTML/CSS/JS'"
+  app_type: "'Gasless'"
   app_example_submodule: "`sample-gasless-arcana-only`"
   social_provider: "'google'"
   firebase_custom_ui_tag: "build-iam-firebase-auth"
@@ -32,7 +32,7 @@ Learn how to onboard users in a {{page.meta.arcana.app_type}} app that is config
 
 ## What's Next?
 
-Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other [[evm-web3-wallet-ops|supported web3 wallet operations on MultiversX]] in the authenticated user's context.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other [[evm-web3-wallet-ops|supported web3 wallet operations]] in the authenticated user's context.
 
 {% include "./text-snippets/note_other_chain_wallet_ops.md" %}
 
