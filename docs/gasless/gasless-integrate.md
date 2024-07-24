@@ -14,11 +14,11 @@ arcana:
 
 ## Prerequisites
 
-* [[register-app-gasless| Register the app]] and obtain the unique {{config.extra.arcana.app_address}} assigned to registered apps used during the SDK integration.
+* The app must be [[register-app-gasless| registered]]. The unique {{config.extra.arcana.app_address}} assigned to the registered app will be required for SDK integration.
 
-* [[configure-gasless|Configure gas tanks]] on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported blockchain networks]] and deposit funds to sponsor gas fees.
+* [[configure-gasless|Gas tanks must be configured]] on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported blockchain networks]]. Some funds must be deposited there to sponsor gas fees. App operations need to be whitelisted for sponsoring gas fees.
 
-* The [[web-gasless-install|{{config.extra.arcana.gasless_sdk_name}} is installed]].
+* The [[web-gasless-install|{{config.extra.arcana.gasless_sdk_name}} should be installed]].
 
 ## Integrate
 
