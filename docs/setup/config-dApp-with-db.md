@@ -1,15 +1,15 @@
 ---
 alias: dashboard-user-guide
-title: 'Arcana Developer Dashboard User Guide'
+title: 'Dashboard User Guide'
 description: 'Web3 app developers can use the Arcana Developer Dashboard to register and configure the apps before integration with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
   social_provider: "supported social login and IAM providers"
 ---
 
-# {{config.extra.arcana.dashboard_name}} Users Guide
+# Dashboard Users Guide
 
-Use the {{config.extra.arcana.dashboard_name}} to configure social login and tailor user experience for signing blockchain transaction in Web3 apps before integrating them with the {{config.extra.arcana.sdk_name}}.
+Before integrating a Web3 app with the {{config.extra.arcana.sdk_name}}, developers must use the {{config.extra.arcana.dashboard_name}} to configure [[concept-social-login|social login]] and tailor the wallet user experience for signing blockchain transactions.
 
 ## Prerequisites
 

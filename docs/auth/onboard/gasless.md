@@ -12,7 +12,7 @@ arcana:
 
 # Gasless App: Onboard Users
 
-Learn how to onboard users in a {{page.meta.arcana.app_type}} app that is configured for using gasless transactions. For other app types, go to [Select App Types](#select-app-types) section and follow the instructions. 
+Learn how to onboard users in a Web3 app that is configured for using gasless transactions.
 
 ## Prerequisites
 
