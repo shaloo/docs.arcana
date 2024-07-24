@@ -18,7 +18,7 @@ arcana:
 
 * [[configure-gasless|Gas tanks must be configured]] on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported blockchain networks]]. Some funds must be deposited there to sponsor gas fees. App operations need to be whitelisted for sponsoring gas fees.
 
-* The [[web-gasless-install|{{config.extra.arcana.gasless_sdk_name}} should be installed]].
+* The {{config.extra.arcana.gasless_sdk_name}} [[web-gasless-install|should be installed]].
 
 ## Integrate
 

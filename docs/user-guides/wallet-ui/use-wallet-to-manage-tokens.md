@@ -8,28 +8,26 @@ arcana:
 
 # Manage Token Assets
 
-In this guide, Web3 app users can learn how to manage token assets through the {{config.extra.arcana.wallet_name}} UI.
+Learn to use the {{config.extra.arcana.wallet_name}} UI to manage your token assets.
 
 ## Prerequisites
 
-* To use the {{config.extra.arcana.wallet_name}}, users must log in to a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}. 
-
-* Depending on the [[concept-wallet-visibility|type of blockchain signing experience]] set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in.
+* Log in to the app integrated with the {{config.extra.arcana.sdk_name}} to access the {{config.extra.arcana.wallet_name}} UI and manage NFT assets.
 
 ## Token Operations
 
 {{config.extra.arcana.wallet_name}} supports the following Web3 token operations for both native as well as custom ERC-20 tokens:
 
-* Check the native token balance in the account
+* Check balance
 * Add custom tokens
 * Send and receive native and custom tokens
-* Monitor token asset transaction activities
+* View Token Transactions 
 
 ## Check Balance
 
-Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab at the bottom left of the {{config.extra.arcana.wallet_name}} UI. The account balance is displayed for the native tokens of the current active blockchain network. It also shows a list of custom token assets associated with the wallet account for the active blockchain network and their amounts.
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab at the bottom left of the {{config.extra.arcana.wallet_name}} UI. The account balance is displayed for the native tokens of the current active blockchain network. It also shows a list of custom token assets associated with the wallet account for the active blockchain network and the respective balance amounts.
 
-Click **Refresh** to fetch the latest account balance. If you use the {{config.extra.arcana.wallet_name}} UI to send native or custom tokens, the account balance gets automatically updated once the transfer is processed.
+Click **Refresh** to fetch the latest account balance. 
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_home.{{config.extra.arcana.img_png}}" alt="Account Balance"/>
@@ -59,7 +57,7 @@ Click **Save** to add the custom token. The newly added custom token will show u
 </figure>
   
 
-## Select Native/Custom Token
+## Select Token
 
 Before sending tokens, users can specify whether they intend to transfer native or custom tokens.  To select a custom token, it should already be [added to the {{config.extra.arcana.wallet_name}}](#add-custom-tokens).
 
@@ -111,21 +109,16 @@ Click **Refresh** to see the updated account balance after the sender transactio
   <figcaption>View Tokens</figcaption>
 </figure>
 
-## Monitor Token Activity
+## View Token Activity
 
 Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Activity' tab on the bottom right of the {{config.extra.arcana.wallet_name}} to see wallet transaction activity and pending request notifications.
 
-The wallet notification screen displays a list of various blockchain transactions initiated by the app or the user for the current user login session.
-
-- Send transactions for native or custom tokens
-- Contract Deployment transactions
+You can see the token 'Send' transactions carried out by the wallet address. Only the activity for the current user login session is displayed. Click on an entry to view activity details.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_combined_notify.{{config.extra.arcana.img_png}}" alt="Monitor Token Send Activity"/>
   <figcaption>Monitor Token Send Activity</figcaption>
 </figure>
-
-To see details of a send transaction, click on the arrow to expand the view.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_combined_notification_details_send_token.{{config.extra.arcana.img_png}}" alt="Send Transaction Details" />
@@ -135,17 +128,3 @@ To see details of a send transaction, click on the arrow to expand the view.
 !!! an-tip "Custom Tokens"
 
       The app user must [add the custom tokens](#add-custom-tokens) manually to the {{config.extra.arcana.wallet_name}} UI before the activity related to tokens can be viewed in the **Activity** tab.
-
-**That is all!**  :material-party-popper:{ .icon-color }
-
-*You are all set to send and receive tokens using the {{config.extra.arcana.wallet_name}}.*
-
-## What's Next?
-
-You can use {{config.extra.arcana.wallet_name}} UI to sign blockchain transactions, send and receive native, transact and view NFTs and [[index-wallet-user-guide| more]].
-
-## See also
-
-* [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
-* [[index-wallet-user-guide|Using Web3 wallet operations]]
-* [[use-wallet-to-manage-nfts|Managing NFTs]]

@@ -8,17 +8,13 @@ arcana:
 
 # Manage NFT Assets
 
-In this guide, Web3 app users can learn how to use the {{config.extra.arcana.wallet_name}} UI and manage NFT assets.
+Learn to use the {{config.extra.arcana.wallet_name}} UI to manage your NFT assets.
 
 ## Prerequisites
 
-* To use the {{config.extra.arcana.wallet_name}}, users must log in to a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}. 
-
-* Depending on the [[concept-wallet-visibility|type of blockchain signing experience]] set up by the app developer, the {{config.extra.arcana.wallet_name}} may appear only when a blockchain transaction is triggered, or it may be visible at all times once the user logs in.
+* Log in to the app integrated with the {{config.extra.arcana.sdk_name}} to access the {{config.extra.arcana.wallet_name}} UI and manage NFT assets.
 
 ## NFT Operations
-
-The {{config.extra.arcana.wallet_name}} allows users to view, transact and manage both types of NFT assets: image and video type.
 
 The following NFT operations are supported:
 
@@ -26,9 +22,7 @@ The following NFT operations are supported:
 
 ## List NFTs
 
-To view the **NFT Assets** associated with the wallet address and the selected blockchain network, click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'NFT' tab at the bottom of the {{config.extra.arcana.wallet_name}}.
-
-Scroll down to browse through the NFTs. You can see a list of NFT thumbnails for each NFT that is associated with the wallet address on the current active blockchain network.
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'NFT' tab at the bottom of the {{config.extra.arcana.wallet_name}} UI. View thumbnails of NFTs linked to the active wallet address and blockchain network.
       
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_asset_thumbnail.gif" alt="View NFTs"/>
@@ -37,11 +31,11 @@ Scroll down to browse through the NFTs. You can see a list of NFT thumbnails for
 
 !!! an-tip "Auto-fetching of NFTs"
 
-      The {{config.extra.arcana.wallet_name}} automatically fetches the NFTs associated with the wallet address and displays them as thumbnails in the **NFT Assets** tab. This feature is supported via [Ankr APIs](https://www.ankr.com/docs/advanced-api/overview/) and works only for the NFTs minted on the blockchains supported by Ankr. {% include "./text-snippets/supported_nft_autofetch_chains.md" %}
+      The {{config.extra.arcana.wallet_name}} automatically fetches NFTs linked to the wallet address and active chain. NFT thumbnails appear in the wallet's NFT tab. This feature uses Ankr APIs and supports only NFTs minted on blockchains backed by Ankr. {% include "./text-snippets/supported_nft_autofetch_chains.md" %}
 
 ## View NFT Details
 
-In the **NFT** tab, browse and select the NFT thumbnail to view its details. All the NFT metadata including its description and attributes can be viewed in the details.
+In the NFT tab, browse and select an NFT thumbnail to view its details. You can see all metadata, including description and attributes.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_details.gif" alt="NFT Metadata"/>
@@ -50,22 +44,11 @@ In the **NFT** tab, browse and select the NFT thumbnail to view its details. All
 
 ## Send NFTs
 
-You can transfer NFTs to a different wallet address. Browse and click the NFT thumbnail. IN the NFT details section, click the :fontawesome-solid-paper-plane:{ .icon-color } icon and initiate the 'Send NFT' workflow. Specify the receiver's address, and the gas fee details before clicking **Preview**.
+To transfer NFTs, click the NFT thumbnail. In the details section, click :fontawesome-solid-paper-plane:{ .icon-color } icon to start the 'Send NFT' workflow. Enter the receiver's address and gas fee details, then click Preview.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_send.gif" alt="Send NFT"/>
   <figcaption>Send NFT</figcaption>
-</figure>
-
-After clicking **Preview**, the user can view the NFT send request transaction details, use the back button to edit the gas or the other details and finally either reject or confirm the send transaction.
-
-## Search NFT
-
-If you don't see the NFT you wish to view or transfer in the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> NFT Assets tab of the wallet, you can either scroll down or search for it using the search bar.
-
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_search.{{config.extra.arcana.img_png}}" alt="Search NFT"/>
-  <figcaption>Search NFT</figcaption>
 </figure>
 
 ## Receive NFTs
@@ -77,83 +60,71 @@ In the **Token Assets** tab click the QR code icon <img src="{{config.extra.arca
   <figcaption>Receive NFTs</figcaption>
 </figure>
 
+## Search NFT
+
+If you don't see the NFT you wish to view or transfer in the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> NFT Assets tab of the wallet, you can either scroll down or search for it using the search bar.
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_search.{{config.extra.arcana.img_png}}" alt="Search NFT"/>
+  <figcaption>Search NFT</figcaption>
+</figure>
+
 ## Manage NFTs
 
-The {{config.extra.arcana.wallet_name}} automatically fetches the NFTs associated with the wallet address for the chains that are supported by Ankr.  For non-supported chains, users can manually add the NFTs to the wallet through the **Manage NFT** feature.
-
-To manually add the NFT, use the 'NFT' tab in the wallet and click **Manage**.
+The {{config.extra.arcana.wallet_name}} automatically fetches the NFTs associated with the wallet address for the chains that are supported by Ankr. For non-supported chains, manually add the NFTs by clicking **Manage**.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_manage_nav.gif" alt="Manage NFT"/>
   <figcaption>Manage NFT</figcaption>
 </figure>
 
-The **Manage NFT** wallet UI is displayed.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_manage.{{config.extra.arcana.img_png}}" alt="Add/Update NFT"/>
   <figcaption>Add/Update NFT</figcaption>
 </figure>
 
-You can add, edit and update the NFT details. Note that the NFT collection name is automatically fetched and displayed once the correct collection contract address is entered. The NFT owner should have the same wallet address otherwise it cannot be manually added to the {{config.extra.arcana.wallet_name}}.
+You can add, edit, and update NFT details. The NFT collection name appears automatically once the correct contract address is entered. The wallet address must match the NFT owner for manual addition to {{config.extra.arcana.wallet_name}}.
 
-The NFT owner can delete an NFT. Only the manually added NFTs can be deleted from the wallet UI. Deleting the NFT simply removes it from the wallet, it does not destroy it. A user can always add it back as long as the ownership resides with the user.
+NFT owners can delete NFTs, but only those manually added. Deleting an NFT removes it from the wallet but doesn’t destroy it. You can re-add it if you still own it.
 
-### Add NFT Entry
+### Add NFT
 
-Click **New** in the **Manage NFTs** wallet UI view to add an NFT. Provide requisite inputs and click **Save**.
+Click **Manage** in the NFT tab of the wallet and select **New** to add an NFT. Provide requisite inputs and click **Save**.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_add_nft.gif" alt="Add NFT"/>
   <figcaption>Add NFT</figcaption>
 </figure>
 
-The newly added NFT is displayed in the **Manage NFTs** screen.
+### Modify NFT
 
-### Modify NFT Entry
+To edit or delete a manually added NFT, go to the NFT wallet UI tab. Click **Manage** and select the NFT thumbnail to access the pen icon next to the NFT name. Click the pen to edit the details, or delete the NFT, and then click **Save**.
 
-To edit or delete a manually added NFT, use the **Manage NFTs** wallet UI, and click the NFT to see a pen icon next to the selected entry.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_entry.{{config.extra.arcana.img_png}}" alt="Modify NFT Metadata"/>
   <figcaption>Modify NFT Metadata</figcaption>
 </figure>
 
-Click the pen to edit the NFT details. You can also delete the NFT and click **Save**.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_entry_modify.{{config.extra.arcana.img_png}}" alt="Save NFT updates"/>
   <figcaption>Save NFT updates</figcaption>
 </figure>
 
-## Monitor NFT Send Transaction
+## View NFT Activity
 
-Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> tab on the bottom right of the {{config.extra.arcana.wallet_name}} to see wallet transaction activity and notifications.
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> Activity tab on the bottom right of the {{config.extra.arcana.wallet_name}} UI to view wallet transaction activity and pending transactions.
 
-The wallet notification screen displays a list of different blockchain transaction activities that were initiated by the app or the user. You can see the NFT 'Send' transactions carried out by the wallet address. Only the activity for the current user login session is displayed.
+You can see the NFT 'Send' transactions carried out by the wallet address. Only the activity for the current user login session is displayed. Click on an entry to view activity details.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_send_activity.{{config.extra.arcana.img_png}}" alt="Monitor NFT Send Activity"/>
   <figcaption>Monitor NFT Send Activity</figcaption>
 </figure>
 
-Once the send NFT transaction is confirmed, it is processed. Select the NFT send transaction and click the downward arrow :fontawesome-solid-caret-down:{ .icon-color } to view its details.
-
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_combined_notification_details_send_nft.{{config.extra.arcana.img_png}}" alt="NFT Send Details"/>
   <figcaption>NFT Send Details</figcaption>
 </figure>
-
-**That is all!**  :material-party-popper:
-
-*You are all set to manage your NFTs using the {{config.extra.arcana.wallet_name}}.*
-
-## What's Next?
-
-You can use {{config.extra.arcana.wallet_name}} UI to sign blockchain transactions, send and receive native, ERC20, or custom tokens, and [[index-wallet-user-guide| more]].
-
-## See also
-
-* [{{config.extra.arcana.wallet_name}} capabilities]({{page.meta.arcana.root_rel_path}}/concepts/anwallet/index.md)
-* [[index-wallet-user-guide|Using Web3 wallet operations]]
-* [[use-wallet-ui-to-manage-tokens|Managing tokens with Arcana wallet]]

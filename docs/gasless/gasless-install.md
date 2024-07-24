@@ -12,14 +12,6 @@ arcana:
 
 {% include "./text-snippets/warn_third_party_wallets_only.md" %}
 
-## Prerequisites
-
-* [[register-app-gasless| Register the app]] and obtain the unique {{config.extra.arcana.app_address}} assigned to registered apps used during the SDK integration.
-
-* [[configure-gasless|Configure gas tanks]] on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported blockchain networks]] and deposit funds to sponsor gas fees.
-
-## Install
-
 {% include "./code-snippets/gasless_sdk_install.md" %}
 
 ## What's Next?

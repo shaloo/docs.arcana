@@ -18,9 +18,9 @@ arcana:
 
 * [[configure-gasless|Configure gas tanks]] on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported blockchain networks]] and deposit funds to sponsor gas fees.
 
-* The [[web-gasless-install|{{config.extra.arcana.gasless_sdk_name}} is installed]] and the [[web-gasless-integrate|app is integrated]].
+* The {{config.extra.arcana.gasless_sdk_name}} is [[web-gasless-install|installed]] and the [[web-gasless-integrate|app is integrated]] with the SDK.
 
-* While adding code for gasless transactions, ensure that only the authenticated users are can access gasless transactions.
+* While adding code for gasless transactions, ensure that only the authenticated users can access gasless transactions.
 
 ## Add Gasless Transactions
 
