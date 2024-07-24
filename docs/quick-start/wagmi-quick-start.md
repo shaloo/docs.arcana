@@ -12,6 +12,10 @@ arcana:
 
 # Get Started: Wagmi Apps
 
+[Wagmi](https://www.wagmi.sh/) is an open-source collection of React Hooks that enables developers to interact with the Ethereum blockchain.
+
+Integrate [{{page.meta.arcana.app_type}} apps](https://www.wagmi.sh/) with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
+
 ## Prerequisites
 
 {% include "./text-snippets/quick-start-reg-config-auth.md" %}

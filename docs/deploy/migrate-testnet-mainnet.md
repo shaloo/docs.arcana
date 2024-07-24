@@ -10,9 +10,9 @@ arcana:
 
 ## Prerequisites
 
-* Apps must be registered via the {{config.extra.arcana.dashboard_name}}. A default Testnet [[concept-config-profile|configuration profile]] is assigned to each registered app. You cannot register an app directly for Mainnet use.
+* Apps must be registered. A default Testnet [[concept-config-profile|configuration profile]] is assigned to each registered app. There is no default Mainnet configuration profile.
 
-## Step 1: Create Mainnet Profile
+## 1. Create Mainnet Profile
 
 Visit the 'Manage Apps' page on the {{config.extra.arcana.dashboard_name}}. Each app is associated with a Testnet profile by default, and the 'Mainnet' configuration is disabled. Click the registered app card to view the Testnet configuration settings home page for the app. 
 
@@ -33,7 +33,7 @@ Note down the brand new Mainnet configuration profile {{config.extra.arcana.app_
    <figcaption>Select Mainnet Profile</figcaption>
 </figure>
 
-!!! an-note "Mainnet Status"
+??? an-note "Mainnet Profile Status"
 
       The *Manage Apps* dashboard screen displays cards for all registered apps. Once a Mainnet profile is created, you will see it enabled on the app card.
 
@@ -42,17 +42,19 @@ Note down the brand new Mainnet configuration profile {{config.extra.arcana.app_
         <figcaption>Mainnet Configuration Profile Available</figcaption>
       </figure>
 
+## 2. Update Redirect URI
+
+The redirect URI setting displayed in the dashboard for the Mainnet configuration profile must **also be updated** for all the social login providers that are enabled for the app. Use the respective social login provider's console and update the OAuth settings with the new redirect URI value. 
+
 {% include "./text-snippets/warn_update_redirect_uri.md" %}
 
-## Step 2: Update `AuthProvider`
+## 3. Update `AuthProvider`
 
-In the app integration code, replace the Testnet {{config.extra.arcana.app_address}} with the newly assigned Mainnet  {{config.extra.arcana.app_address}} and recompile the app. 
+In the app integration code, replace the Testnet {{config.extra.arcana.app_address}} with the newly assigned Mainnet {{config.extra.arcana.app_address}} and recompile the app. 
 
 {% include "./code-snippets/init_auth_mainnet.md" %}
 
-That is all! :material-party-popper:{ .icon-color }
-
-!!! an-note "Wallet Address Change"
+??? an-warning "Wallet Address Change"
 
       The user's wallet address will differ when the app is migrated from Testnet to Mainnet.
             

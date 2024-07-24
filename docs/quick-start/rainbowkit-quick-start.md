@@ -14,7 +14,7 @@ arcana:
 
 [RainbowKit](https://www.rainbowkit.com/) is a React Hooks library for Ethereum for connecting Web3 apps to multiple wallets and chains. 
 
-Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
+Integrate [{{page.meta.arcana.app_type}} apps](ttps://www.rainbowkit.com/) with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
 ## Prerequisites
 

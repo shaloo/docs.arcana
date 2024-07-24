@@ -3,7 +3,7 @@ alias: integrate-custom-oauth
 title: 'Integrate Custom OAuth App'
 description: 'Integrate Web3 apps that use custom user authentication. Securely assign keys to authenticated users via the Arcana Auth SDK and allow them to sign blockchain transactions.'
 arcana:
-  root_rel_path: ../..
+  root_rel_path: ..
   app_type: "'Custom-OAuth'"
   app_example_submodule: "`sample-auth-custom-oauth`"
 ---
@@ -14,38 +14,30 @@ Integrate [[concept-custom-oauth|{{page.meta.arcana.app_type}}]] apps with [{{co
 
 ## Prerequisites
 
-* Make sure you have [[config-custom-oauth|registered the app and configured the custom OAuth settings]] using the {{config.extra.arcana.dashboard_name}}.
+* The app should be [[config-custom-oauth|registered and configured for using custom OAuth]] using the {{config.extra.arcana.dashboard_name}}.
 
 * You will require the following to integrate the app with the SDK:
 
     - Unique *{{config.extra.arcana.app_address}}* assigned to the app after registration.
     - *Provider identifier* value displayed in the registered app settings in the dashboard **after configuring and saving** the custom OAuth settings.
 
-{% include "./text-snippets/non-evm-warning.md" %}
+## 1. Install
 
-Following are the integration instructions for a simple HTML/CSS/JS app that uses custom user authentication and not the social login offered by the {{config.extra.arcana.sdk_name}}.
-     
 Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another.
-
-### 1. Install
-
-{% include "./code-snippets/auth_install.md" %}
       
-### 2. Initialize `AuthProvider`
+## 2. Integrate App
 
-{% include "./code-snippets/import_auth.md" %}
+Select the app type and follow the instructions to integrate the app with the SDK.
 
-{% include "./code-snippets/new_auth.md" %}
+{% include "./text-snippets/select_app_type_integrate.md" %}
 
-{% include "./text-snippets/warn_initialize_first.md" %}
+!!! an-caution "No user onboarding"
 
-{% include "./code-snippets/init_auth.md" %}
-
-{% include "./text-snippets/quick-start-authprovider-optional.md" %}
+      When using custom authentication, apps **do not onboard users** via the social login feature of the {{config.extra.arcana.sdk_name}}. Simply integrate with the SDK, access `AuthProvider` and call `loginWithCustomProvider` to provision the user's keys for signing blockchain transactions.
 
 ## 3. Call `loginWithCustomProvider`
 
-After the user logs in successfully via custom OAuth, get the JWT and provide it as input to the {{config.extra.arcana.sdk_name}} method below:
+After the user logs in successfully via custom authentication solutions, get the JWT and provide it as input to the {{config.extra.arcana.sdk_name}} method below:
 
 ```js
 await auth.loginWithCustomProvider({
