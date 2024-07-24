@@ -10,7 +10,11 @@ arcana:
 
 # Get Started: Auth-Core
 
+<<<<<<< HEAD
 Integrate Web3 apps with [[concept-authcore|{{config.extra.arcana.auth_core_sdk_name}}]] and assign keys to authenticated users. Build custom login UI to onboard users. Add code for a custom, in-app wallet UI and allow authenticated users to sign blockchain transactions securely.
+=======
+Use the [[concept-authcore|{{config.extra.arcana.auth_core_sdk_name}}]] to securely assign keys to authenticated users and allow them to sign blockchain transactions.
+>>>>>>> main
 
 !!! an-warning "Limited Auth Capabilities"
 
