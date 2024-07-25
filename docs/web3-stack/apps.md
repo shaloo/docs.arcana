@@ -8,32 +8,28 @@ arcana:
 
 # Apps
 
-{{config.extra.arcana.company_name}} SDKs allows Web3 apps built using various frameworks and wallet connectors to enable social login and gasless transactions.
+{{config.extra.arcana.company_name}} SDKs can be used by different types of Web3 apps for enabling [[concept-social-login|social login]] and allowing users to sign blockchain transactions.
 
-In some scenarios, apps may be required to integrate with multiple SDKs to facilitate user onboarding and gasless transactions. For instance, an app utilizing the `wagmi` wallet connector necessitates integration with both, the {{config.extra.arcana.sdk_name}} as well as the {{config.extra.arcana.wagmi_sdk_name}}. Similarly, for enabling gasless transactions, apps supporting third-party wallets alongside the {{config.extra.arcana.wallet_name}}, must install and integrate with both the {{config.extra.arcana.sdk_name}} as well as {{config.extra.arcana.gasless_sdk_name}}.
+=== "App Frameworks"
 
-## Supported App Frameworks
+    * Web
+        - Vanilla HTML/CSS/JS
+        - Vue
+        - React/Next.js
 
-* Web
-    - Vanilla HTML/CSS/JS
-    - Vue
-    - React/Next.js
+    * Mobile
+        - Flutter
+        - React-Native
 
-* Mobile
-    - Flutter
-    - React-Native
+    * Gaming
+        - Unity
 
-* Gaming
-    - Unity
+=== "Wallet Connectors"
 
-## Wallet Connectors
+    * Wagmi
+    * RainbowKit
+    * WalletConnect
+    * Web3-React
 
-* Wagmi
-* RainbowKit
-* WalletConnect
-* Web3-React
-
-## SDK Flavors
 
 {% include "./text-snippets/auth_sdk_flavors.md" %}
-

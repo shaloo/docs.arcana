@@ -47,7 +47,7 @@ This is a major release that supports non-EVM blockchains (Solana). New product 
 
 * New SDK: {{config.extra.arcana.auth_core_sdk_name}} - See [[auth-core-quick-start|Auth Core SDK Quick Start Guide]].
 
-* Security enhancements and bug fixes. See [[index-changelog|changelog]].
+* Security enhancements and bug fixes. See [changelog](https://github.com/arcana-network/auth/releases/tag/v{{config.extra.arcana.latest_version}}).
 
 ## What has changed?
 
