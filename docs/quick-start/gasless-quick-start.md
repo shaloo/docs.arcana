@@ -30,15 +30,19 @@ Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via 
 
 ## 3. Integrate
 
-Here is how a simple HTML/CSS/JS app integrates with the {{config.extra.arcana.wallet_name}}. Depending upon your app type, the integration instructions may vary. [[integrate-gasless-app#integrate-app|Learn more...]]
+Here is how a simple HTML/CSS/JS app integrates with the {{config.extra.arcana.wallet_name}}. 
 
 {% include "./text-snippets/quick-start-int-auth-evm.md" %}
 
+Depending upon your app type, the integration instructions may vary. [[integrate-gasless-app|Learn more...]]
+
 ### Onboard Users
  
-Here is how a simple HTML/CSS/JS app can onboard the user via social login. Depending upon your app type, the user onboarding instructions may vary. [[gasless-user-onboarding#onboard-users|Learn more...]]
+Here is how a simple HTML/CSS/JS app can onboard the user via social login. 
 
 {% include "./text-snippets/quick-start-auth-onboard.md" %}
+
+Depending upon your app type, the user onboarding instructions may vary. [[gasless-user-onboarding#onboard-users|Learn more...]]
 
 ### Sign Transactions
 

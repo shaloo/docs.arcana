@@ -44,7 +44,7 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 4. If you had enabled the **{{config.extra.arcana.company_name}}  Testnet** blockchain network in Web3 wallet operations, you will need to remove this network altogether as it no longer exists.  Also, the {{config.extra.arcana.company_name}} Testnet Blockchain Explorer is no longer available.  {{config.extra.arcana.company_name}}  smart contracts are deployed on Polygon now. In this release, the {{config.extra.arcana.wallet_name}} supports all EVM-compatible chains besides the default ones that show in the drop-down.  See [[arcana-wallet-user-guide|Wallet User Guide]].
 
-5. The wallet activity tab on the wallet token asset tab is gone. A new 'notification' tab is available in the wallet. You can see the list of all activities in the [[arcana-wallet-user-guide#wallet-notifications|notification tab]]. It lists send tokens, contract deployment, and contract interaction transactions performed by the wallet user.
+5. The wallet activity tab on the wallet token asset tab is gone. A new 'notification' tab is available in the wallet. You can see the list of all activities in the [[arcana-wallet-user-guide#transaction-activity|activity tab]]. It lists send tokens, contract deployment, and contract interaction transactions performed by the wallet user.
 
 ## What's New?
 

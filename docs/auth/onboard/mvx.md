@@ -12,7 +12,7 @@ arcana:
 
 # MultiversX App: Onboard Users
 
-Learn how to onboard users in a {{page.meta.arcana.app_type}} app built using HTML/CSS?JS. For other app types, go to [Select App Types](#select-app-types) section and follow the instructions. 
+Learn how to onboard users through the configured [[concept-social-login|social login]] providers in a {{page.meta.arcana.app_type}} app. 
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ Learn how to onboard users in a {{page.meta.arcana.app_type}} app built using HT
 
 * Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
 
-* [[integrate-mvx-app|Integrate]] {{page.meta.arcana.app_type}} app and create `AuthProvider`, `ArcanaConnector` as per the app type.
+* [[integrate-mvx-app|Integrate]] {{page.meta.arcana.app_type}} app and obtain an `AuthProvider` for blockchain transactions.
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
