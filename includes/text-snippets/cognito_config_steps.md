@@ -58,7 +58,7 @@ For the **OAuth 2.0 Grant Type** setting, make sure you specify *Authorization C
   <figcaption>Cognito OAuth2.0 Grant Type</figcaption>
 </figure>
 
-In the **Custom Scope** section, ensure that the attribute **EmailID** has read access. This is used by {{config.extra.arcana.sdk_name}} to enable the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature.
+In the **Custom Scope** section, ensure that the attribute **EmailID** has read access. This is used by {{config.extra.arcana.sdk_name}} to enable the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature.
 
 Save the new client app settings.  You will see the new client app entry in the user pool page under the **App Client List** section. 
 

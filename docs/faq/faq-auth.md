@@ -25,7 +25,7 @@ toc_depth: 2
 
 ??? an-faq "Does the authenticated user see the same wallet address if they use different authentication providers to log into a Web3 app integrated with the {{config.extra.arcana.wallet_name}}?"
 
-      Yes. This is made possible by the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature of the {{config.extra.arcana.sdk_name}}. 
+      Yes. This is made possible by the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature of the {{config.extra.arcana.sdk_name}}. 
       
       *For this feature to work, the user* **must** *have the same email ID registered with the different authentication providers.*
       
