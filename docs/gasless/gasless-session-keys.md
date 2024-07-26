@@ -40,4 +40,8 @@ After adding code for enabling session keys via third-party wallets in apps inte
 
 ## See also
 
-{% include "./text-snippets/quick-start-see-also-gasless.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
+* [[faq-gasless|Gasless FAQ]]
+
+{% include "./text-snippets/gasless_sdk_quicklinks.md" %}
