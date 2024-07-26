@@ -28,7 +28,7 @@ arcana:
 
 ## What's Next?
 
-The app is successfully integrated with the {{config.extra.arcana.gasless_sdk_name}}. Deploy the app on the Testnet. [[index-deploy|Learn more...]] 
+The app is successfully integrated with the {{config.extra.arcana.gasless_sdk_name}} and ready to deploy on the Testnet. [[deploy-app|Learn more...]] 
 
 ## See also
 

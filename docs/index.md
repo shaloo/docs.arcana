@@ -120,9 +120,9 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 </br>
 </br>
 
-Contact [Arcana Support](mailto:support@arcana.network). 
+Contact us at 📨 [Arcana Support](mailto:support@arcana.network). 
 
-Join [Arcana communities]({{config.site_url}}support/community/) and stay informed!
+Be a part of [[index-support|Arcana communities]] and stay informed!
 
 </br>
 </br>
