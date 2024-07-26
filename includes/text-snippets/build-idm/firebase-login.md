@@ -12,7 +12,7 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
 
 * Install the Firebase SDK and integrate the app as explained in the Firebase documentation for [iOS apps](https://firebase.google.com/docs/ios/setup), [Android apps](https://firebase.google.com/docs/android/setup) and [web apps](https://firebase.google.com/docs/web/setup). Use [Firebase authentication](https://firebase.google.com/docs/auth) as per the Web3 app type, mobile or web app. Once a user is authenticated by Firebase, the developer must obtain the token and user identifier and provide it as input to the `loginWithBearer` function of the {{config.extra.arcana.sdk_name}} for onboarding users to Web3.
   
-* Install the {{config.extra.arcana.sdk_name}} and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}} by using the appropriate integration method as per the app type. After that follow the steps listed below and add code to onboard users to Web3 and enable them to sign blockchain transactions.
+* Install the {{config.extra.arcana.sdk_name}} and [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} by using the appropriate integration method as per the app type. After that follow the steps listed below and add code to onboard users to Web3 and enable them to sign blockchain transactions.
     
 ## Steps
 
@@ -42,12 +42,11 @@ Your app is all set for authenticating users via Firebase. Authenticated users c
      
 ## What's Next?
 
-To know more about how to use Web3 wallet operations programmatically in your app, see [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]]. Refer to the [[arcana-wallet-user-guide|{{config.extra.arcana.wallet_name}} User's Guide]] for more information on how authenticated app users can access the wallet UI.
+Authenticated users can instantly access the in-app {{config.extra.arcana.wallet_name}} UI for signing blockchain transactions. Use the `AuthProvider` EIP-1193 standard Ethereum provider to call JSON/RPC functions and Web3 wallet operations in the app. [[evm-web3-wallet-ops|Learn more...]]
 
 ## See also
 
 * [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [[index-integrate|How to integrate with the {{config.extra.arcana.sdk_name}}]]
 * [[web-auth-error-msg|Handing authentication errors]]
 * [Get Firebase User token](https://firebase.google.com/docs/reference/js/auth.user.md#usergetidtoken)
 * [Using Firebase Auth](https://firebase.google.com/docs/auth)

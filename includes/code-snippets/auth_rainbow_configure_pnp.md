@@ -1,4 +1,4 @@
-```js title="utils/getArcanaAuth.js" hl_lines="3 9-11"
+```js hl_lines="3 9-11"
 // Set up Arcana Auth 
 
 import { AuthProvider } from "@arcana/auth";

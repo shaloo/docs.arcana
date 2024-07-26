@@ -51,7 +51,7 @@ This is a minor release with enhancements and bug fixes only.
 
 ==}
 
-See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] in the Getting Started section. 
+See {{config.extra.arcana.product_name}} Quick Start Guides. 
 
 Check out the [sample dApp integration examples](https://github.com/arcana-network/auth-examples) for various dApp types, wallet connectors and frameworks.
 

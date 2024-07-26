@@ -1,20 +1,56 @@
 ---
 alias: index-support
-title: 'Contact Us'
+title: 'Need Help'
+template: newintro.html
 description: 'Need help? Contact Arcana support team for any questions. We are happy to help!'
 arcana:
   root_rel_path: ..
 ---
 
-# Contact Us
+# Need Help?
 
-**Cannot find what you are looking for?**
+???+ an-abstract "Click Arcabot!"
 
-*We are happy to help!*
+      Get **instant answers to your Arcana queries** by starting a conversation 💬 with `Arcabot`. Click the circular bot icon on the bottom right of this page. 
 
+=== "Contact Us" 
 
-[[support| :material-help:{ .icon-color } Arcana Support]]{ .md-button }
+    * Write to us at 📨 [support@arcana.network](mailto:support@arcana.network). 
+    * Schedule 🗓️ Calendly 🤝 meeting/demo 🖥️ with the [Arcana Team](https://calendly.com/arcana-network/arcana-demo-walkthrough).
 
-[[community| :material-hexagon-multiple:{ .icon-color } Community]]{ .md-button }
+=== "Arcana Community"
 
-[[report-bugs| :material-bug:{ .icon-color } Report Issues ]]{ .md-button }
+    <div class="grid cards" markdown>
+
+    -   :fontawesome-brands-github:{ .lg .middle .icon-color} __GitHub__
+
+        ---
+
+        Browse [GitHub](https://github.com/orgs/arcana-network/discussions) discussion topics. 
+
+    -   :fontawesome-brands-discord:{ .lg .middle .icon-color} __Discord__
+
+        ---
+
+        Join the Arcana [Discord](https://discord.gg/6g7fQvEpdy) community.
+
+    -   :fontawesome-brands-telegram:{ .lg .middle .icon-color} __Telegram__
+
+        ---
+
+        Check out Arcana [Telegram](https://t.me/ArcanaNetwork).
+
+    -   :fontawesome-brands-twitter:{ .lg .middle .icon-color} __Twitter__
+
+        ---
+
+        Stay informed via Arcana [Twitter](https://twitter.com/arcananetwork) feed.
+
+    </div>
+
+=== "Report Issue"
+
+    * [Report Dashboard Bug](https://github.com/arcana-network/developer-dashboard/issues/new)
+    * [Report Auth SDK Bug](https://github.com/arcana-network/auth/issues/new)
+    * [Report Gasless SDK Bug](https://github.com/arcana-network/scw/issues/new)
+    * [Report Arcana Wallet Bug](https://github.com/arcana-network/wallet-ui/issues/new)

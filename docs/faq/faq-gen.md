@@ -19,7 +19,7 @@ toc_depth: 2
       
 ??? an-faq "How can developers enable {{config.extra.arcana.wallet_name}} in the context of their Web3 applications?"
 
-      First, [[register-app-auth|register the app]] and [[index-configure-auth|configure the app settings]] using the {{config.extra.arcana.dashboard_name}}. Use the unique {{config.extra.arcana.app_address}} assigned by Arcana Network to [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}}. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[index-onboard-users|onboard users]]. The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[configure-wallet-visibility|wallet visibility settings]]. The wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display the wallet as per the application logic using the `showWallet()` function.
+      First, [[register-app-auth|register the app]] and [[index-configure-auth|configure the app settings]] using the {{config.extra.arcana.dashboard_name}}. Use the unique {{config.extra.arcana.app_address}} assigned by Arcana Network to [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[use-plug-play-auth|onboard users]]. The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[concept-wallet-visibility|wallet visibility]] specification. The wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display the wallet as per the application logic using the `showWallet()` function.
 
 ??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the Auth SDK is integrated with the Web3 app?"
 
@@ -38,7 +38,7 @@ toc_depth: 2
 
 ??? an-faq "Does the {{config.extra.arcana.sdk_name}} support Web3 application frameworks such as React, Next.js, Vue?"
 
-      Yes. You can integrate the {{config.extra.arcana.sdk_name}} with any vanilla HTML/CSS/JS app or an app that uses React, Next.js, and Vue frameworks. See [[index-integrate|how to integrate app with the {{config.extra.arcana.sdk_name}}]].
+      Yes. You can integrate the {{config.extra.arcana.sdk_name}} with any vanilla HTML/CSS/JS app or an app that uses React, Next.js, and Vue frameworks. [[integrate-vanilla-app|Learn more...]]
 
 ## Wallet Connectors
 
@@ -113,7 +113,7 @@ toc_depth: 2
       
       **Create a Mainnet Configuration Profile**: To deploy the app on Mainnet, developers need to first create a Mainnet configuration profile by either copying the Testnet profile or creating a fresh one from scratch.
 
-      {% include "./text-snippets/warn_copy_testnet_profile.md" %}
+      {% include "./text-snippets/warn_update_redirect_uri.md" %}
 
       **Update {{config.extra.arcana.app_address}}**: The {{config.extra.arcana.app_address}} specified as the input parameter while integrating the app with the {{config.extra.arcana.sdk_name}} is the one assigned to the default Arcana Testnet profile. This works fine when the app is deployed on the Testnet. For deploying the app on the Mainnet, the developer must create the Mainnet configuration profile and carefully copy the newly assigned Mainnet {{config.extra.arcana.app_address}}. Use the Mainnet {{config.extra.arcana.app_address}} as the input parameter while integrating the app with the {{config.extra.arcana.sdk_name}}. This will ensure that the app gets deployed on the Mainnet and not on the Testnet. For details, see [[migrate-app-testnet-mainnet|how to migrate an app deployed on the Testnet to the Mainnet.]]
 

@@ -1,43 +1,33 @@
 # Plug-and-Play Login UI
 
-In this guide, you will learn how {{page.meta.arcana.app_type}} Web3 apps can integrate with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and use the [[concept-plug-and-play-auth|plug-and-play ]] feature to onboard users with the built-in login UI.
+Use the built-in, [[concept-plug-and-play-auth|plug-and-play login UI modal]] to quickly onboard users in a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.wagmi_sdk_name}}. 
+
+{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
 ## Prerequisites
 
-* Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[index-configure-auth|register and configure the app]]. The plug-and-play pop-up UI screen will display only those authentication providers that are configured using the {{config.extra.arcana.dashboard_name}}.  If no authentication providers are configured in the {{config.extra.arcana.dashboard_name}}, then users can only onboard the app via the passwordless login option. See [[index-configure-auth|how to configure authentication providers]] for details.
-  
-* Follow the instructions as per the app type and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing user onboarding functions of the {{config.extra.arcana.sdk_name}}. During integration, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
+* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+
+* [[integrate-wagmi-app|Integrate]] {{page.meta.arcana.app_type}} app, create and initialize the `AuthProvider`.
 
 ## Steps
 
-*Using the plug-and-play authentication feature is simple!*
+### 1. `connect`
 
-Just a single line of code!
-
-### Step 1: Call User Onboarding Function: `connect`
-
-After successfully integrating the app with the {{config.extra.arcana.sdk_name}}, make sure the `AuthProvider` is successfully initialized. Then simply add a single line of code, call to the `connect` function of the {{config.extra.arcana.sdk_name}} and enable the built-in plug-and-play login UI in the app when a user clicks a button to log in:
+Use the `connect()` function to bring up the plug-and-play pop-up modal in the app context and display the available options for user onboarding. Only those options are displayed that were earlier configured by the developer using the {{config.extra.arcana.dashboard_name}}. The passwordless login option is enabled by default.
 
 {% include "./code-snippets/auth_plugnplay.md" %}
-
-The `connect()` function will bring up the plug-and-play pop-up modal in the app context and display the available options for user onboarding. Only those options are displayed that were earlier configured by the developer using the {{config.extra.arcana.dashboard_name}}.
-
-The figure below shows the built-in, plug-and-play login UI screen for a test app. All the authentication providers configured by the developer are displayed as the onboarding options in this login UI. The passwordless login option is automatically enabled and requires no dashboard setup.
 
 <figure markdown="span">
   <img class="an-screenshots-noeffects width_35pc" style="margin: auto" src="{{config.extra.arcana.img_dir}}/an_plug_n_play_auth.{{config.extra.arcana.img_png}}" alt="Plug-and-Play Login UI" />
   <figcaption>Plug-and-Play Login UI</figcaption>
 </figure>
 
-!!! an-tip "Arcana JWT Token"
+{% include "./text-snippets/pnp-compact-mode.md" %}
 
-     {% include "./text-snippets/jwt_token.md" %}
-
-That is all! :material-party-popper:{ .icon-color }
-
-The plug-and-play user onboarding feature is successfully enabled in an app integrated with the {{config.extra.arcana.sdk_name}}.
+{% include "./text-snippets/jwt_token.md" %}.
 
 !!! an-warning "No plug-and-play support for Firebase authentication."
 
@@ -45,12 +35,18 @@ The plug-and-play user onboarding feature is successfully enabled in an app inte
 
 ## What's Next?
 
-After enabling the plug-and-play user onboarding feature in the app, developers can use other {{config.extra.arcana.sdk_name}} functions and enable Web3 wallet operations for authenticated users. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]], [[index-arcana-wallet|how to enable the {{config.extra.arcana.wallet_name}}]] for details.
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
 
 ## See also
 
-* [[index-configure-auth|Configure authentication providers]]
-* [[index-build-social-providers|Build custom login UI]]
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
+* [[index-faq| FAQ]]
+
+* [[troubleshooting| Troubleshooting Guide]]
+
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
+
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}
+

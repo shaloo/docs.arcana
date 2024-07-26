@@ -1,86 +1,46 @@
 ---
 alias: integrate-mvx-app
-title: 'Enable MultiversX in a Vanilla HTML/CSS/JavaScript App'
-description: 'Integrate Web3 apps built using HTML/CSS/JavaScript with the Arcana Auth SDK. Follow these instructions to use MultiversX blockchain for transactions via the Arcana wallet.'
+title: 'Integrate MultiversX App'
+description: 'Learn how to integrate MultiversX apps with the Arcana Auth SDK, onboard users and allow them to use the Near blockchain and sign transactions via Arcana wallet.'
 arcana:
   root_rel_path: ../..
+  app_type: "'MultiversX'"
+  app_example_submodule: "`sample-auth-multiversx`"
+  pnp_login_ui_tag: "use-plug-play-auth"
+  custom_login_ui_tag: "index-custom-ui-onboard-users"
+  firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
 # Integrate MultiversX App
 
-In this guide, you will learn how to integrate a vanilla HTML/CSS/JS app with the [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and perform transactions through the {{config.extra.arcana.wallet_name}} on MultiversX blockchain.
-
-<!-- 
-[Try Auth Example :material-rocket-launch:](https://9mt0h4.csb.app/){ .md-button .md-button--primary}
--->
+Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/authsdk.md) and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
 ## Prerequisites
 
-* Log in to the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
-
-* Use the {{config.extra.arcana.dashboard_name}} to [[register-app-auth|register the app]] before configuring and integrating with the {{config.extra.arcana.sdk_name}}. 
-
-* Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
-
-    !!! an-tip "Configure Authentication Providers"
-
-          You may be required to configure additional provider details for different authentication providers. In the case of Google, the developer must use Google Developer Console to set up the app and generate a Google assigned [[config-auth-google|client ID for Google OAuth]]. This Google ClientID will be configured in the {{config.extra.arcana.dashboard_name}} **Social Auth** settings before integrating the app.
-
-          For details, see [[index-configure-auth|how to configure authentication providers]].
-
-* Save the **{{config.extra.arcana.app_address}}** assigned to the app displayed in the {{config.extra.arcana.dashboard_name}}. It is required while integrating the app with the {{config.extra.arcana.sdk_name}} and creating the `AuthProvider`.
-
-* **Make sure you configure the required MultiversX chains through the dashboard.** See [[configure-wallet-chains#non-evm-chains|how to set up MultiversX]] blockchain transactions through the {{config.extra.arcana.wallet_name}} in apps that are integrated with the {{config.extra.arcana.sdk_name}}.
+* [[mvx-dashboard-user-guide|Register]] the {{page.meta.arcana.app_type}} app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
 {% include "./text-snippets/mvx_shard.md" %}
 
-## Steps
+## 1. Install 
+     
+Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another. 
 
-*Integrating a vanilla HTML/CSS/JS app with the {{config.extra.arcana.sdk_name}} to enable MultiversX blockchain transactions through the {{config.extra.arcana.wallet_name}} is simple!*
+## 2. Integrate App
 
-Follow these two steps:
+Select your {{page.meta.arcana.app_type}} app type and follow the integration instructions.
 
-### Step 1: Install `{{config.extra.arcana.auth_sdk_pkg_name}}` package
-
-{% include "./code-snippets/auth_install.md" %}
-
-### Step 2: Initialize the {{config.extra.arcana.sdk_name}}
-
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` and create a 'new' `AuthProvider`. During instantiation of the `AuthProvider`, specify the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[register-app-auth|registering]] through the {{config.extra.arcana.dashboard_name}} earlier. Also, specify the [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] via the `alwaysVisible` parameter to manage the wallet user experience.
-
-{% include "./code-snippets/import_auth.md" %}
-
-{% include "./code-snippets/new_auth.md" %}
-
-Initialize the newly instantiated `AuthProvider`. 
-
-{% include "./code-snippets/init_auth.md" %}
-
-!!! an-caution "Initialize First!"
-
-    The app must wait until the `init` call is complete before invoking any of the other {{config.extra.arcana.sdk_name}} functions such as onboarding users by triggering user login, obtaining the standard Ethereum provider, adding/switching networks in the wallet, etc.
-
-After initializing the `AuthProvider`, you can call any of its exported functions. See {% include "./text-snippets/authsdkref_url.md" %} for details.
-
-{% include "./code-snippets/init_auth.md" %}
-
-That is all! :material-party-popper:
-
-The vanilla HTML/CSS/JS app is now successfully integrated with the {{config.extra.arcana.sdk_name}} for enabling MultiversX blockchain transactions through the {{config.extra.arcana.wallet_name}}, after the user is onboarded in the app.
-
-Refer to the [Auth Examples](https://github.com/arcana-network/auth-examples) for MultiversX integration examples.
+{% include "./text-snippets/select_app_type_integrate.md" %}
 
 ## What's Next?
 
-After integrating an app with the {{config.extra.arcana.sdk_name}}, developers need to add code to [[index-onboard-users|onboard users]] and [[index-arcana-wallet|enable Web3 wallet operations]] for authenticated users to sign transactions on the MultiversX blockchain.
+Add code to [[mvx-user-onboarding|onboard users]]. Use `AuthProvider`, the standard EIP-1193 Web3 provider to call support JSON/RPC functions and Web3 wallet operations. [[mvx-web3-wallet-ops|Learn more...]]
 
 ## See also
 
-* Access Ethereum providers [[web-auth-usage-guide#quick-start-with-ethersjs| `web3.js`, `ethers.js`]]
-* [[index-onboard-users|Onboard users]]
-* [[web-auth-error-msg| {{config.extra.arcana.sdk_name}} Errors]]
-* [[web-auth-usage-guide| {{config.extra.arcana.sdk_name}} Usage Guide]]
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
 * [[faq-mvx|MultiversX FAQ]]
-* {% include "./text-snippets/authsdkref_url.md" %}
+
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

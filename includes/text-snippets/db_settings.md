@@ -1,18 +1,9 @@
-Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the following configuration categories:
-
-* Branding
-* Social Auth 
-* Chain Management
-* Arcana Wallet
-* Keyspace
-* Gasless
+Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dashboard_name}} to view the following configuration categories:
 
 <figure markdown="span">
   <img class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_db_configure_details.{{config.extra.arcana.img_png}}" alt="config details"/>
   <figcaption>Auth Settings</figcaption>
 </figure>
-
-**Click** on the tabs below to see the various configuration settings in each category.
 
 === "Branding"
 
@@ -20,6 +11,8 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
     * Upload Logo
     * Wallet Theme
+
+    See [[configure-wallet-branding|how to configure branding]] for details.
     
     <figure markdown="span">
       <img alt="Branding" class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_db_configure_branding.{{config.extra.arcana.img_png}}"/>
@@ -34,9 +27,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
     * Identity Access Managers
     * Custom OAuth
 
-    Developers can enable one or more providers for app login. Passwordless login is automatically enabled for all registered apps.
-
-    See [[index-configure-auth|how to configure authentication providers]], for details.
+    Developers can enable one or more providers for app login. Passwordless login is automatically enabled for all registered apps. See [[index-configure-auth|how to configure authentication providers]], for details.
 
     !!! an-note "Redirect URI"
            
@@ -73,6 +64,8 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
     * Wallet Domain
     * Wallet UI
+
+    See [[configure-wallet-settings|wallet UI configuration]] for details.
     
     <figure markdown="span">
       <img alt="Social Login" src="{{config.extra.arcana.img_dir}}/an_db_configure_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
@@ -83,7 +76,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
     The login session management settings display whether the app is configured to use [[concept-session-type|persistent or non-persistent session]] (default) type. 
     
-    For the persistent session, the developers can view and update the specified time for which the authenticated user login session is persisted (in minutes). Once a user closes the browser and reopens within this specified period, the user is automatically logged in.
+    For the persistent session, the developers can view and update the specified time for which the authenticated user login session is persisted (in minutes). Once a user closes the browser and reopens within this specified period, the user is automatically logged in. [[dashboard-user-guide#configure-session-type|Learn more...]]
     
     <figure markdown="span">
       <img alt="Session Management" src="{{config.extra.arcana.img_dir}}/an_db_session_mngt.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
@@ -92,6 +85,10 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
 
 === "Keyspace"
+
+    !!! an-warning "Not available for Custom Wallet UI"
+
+          Apps that are registered with the *Custom Wallet UI* option are not allowed to configure keyspace settings. By default, such apps can only use the app-specific keys. 
 
     The following **Keyspace** settings control whether the wallet address for the user remains the same across all the apps that are integrated with the {{config.extra.arcana.sdk_name}} or are unique for each app. 
 
@@ -107,7 +104,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
 === "Gasless"
 
-    The following **Gasless** settings control the establishment of gas tanks for selected blockchain networks, allocating funds in the gas tanks, whitelisting app operations for enabling [[concept-gasless-transactions|gasless transactions]] through the {{config.extra.arcana.wallet_name}} or third-party wallets.  
+    Enable [[concept-gasless-transactions|gasless transactions]] through the {{config.extra.arcana.wallet_name}} or third-party wallets through the following gasless configuration settings.  
 
     * Add Gas Tank
     * Deposit/Withdraw Gas Tank Funds
@@ -118,7 +115,7 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
           Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-user-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
     
-    Developers must explicitly set up gas tanks per blockchain network to enable paymasters to bear gas fees for sponsored transactions for that specific chain. The gas tanks should have sufficient crypto assets deposited to fund the app user's transactions. Also, developers must whitelist one or more app operations for gasless transactions.  Only the gas fees for the whitelisted operations will be paid via the gas tank as long as there is sufficient credit in the gas tank. For all the non-whitelisted app operations, or in case the gas tank assets run out, the transaction gas fees will have to be paid by through the user's smart contract wallet. For details, see [[configure-gasless|how to configure gasless transactions]] in apps integrating with the {{config.extra.arcana.sdk_name}}.
+    See [[configure-gasless|how to configure gasless transactions]] for details.
 
     <figure markdown="span">
       <img src="{{config.extra.arcana.img_dir}}/an_gl_db_new_config.{{config.extra.arcana.img_png}}" alt="Set up Gas Tanks" class="an-screenshots width_85pc"/>
@@ -129,5 +126,5 @@ Clicking **Configure** in the {{config.extra.arcana.dashboard_name}} shows the f
 
 <figure markdown="span">
   <img src="{{config.extra.arcana.img_dir}}/an_db_save_config_settings.{{config.extra.arcana.img_png}}" alt="Save Config Settings" class="an-screenshots width_85pc"/>
-  <figcaption>Gasless Settings</figcaption>
+  <figcaption>Save Configuration Updates</figcaption>
 </figure>

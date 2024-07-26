@@ -1,20 +1,22 @@
 ---
 alias: sdk-installation
-title: 'Install Auth SDK'
+title: 'Install SDK'
 description: 'Multiple flavors of the Arcana Auth SDK depending upon the app type. Use the correct SDK package for installation. Choose from the basic Auth package to the wrapper SDK for React Apps, Wagmi, RainbowKit, WalletConnect, Web3-react apps, Unity apps.'
 arcana:
   root_rel_path: ..
 ---
 
-# Installing {{config.extra.arcana.sdk_name}}
+# Install SDK
 
-Developers must install the appropriate {{config.extra.arcana.sdk_name}} package as per their application type and then integrate the app. Refer to the table below:
+{{config.extra.arcana.sdk_name}} supports various [[web3-stack-apps|app types]]. You may be required to install one or more SDKs depending upon the app type.
+
+For example, Vue apps, HTML/CSS/JS apps only require installation of the `{{config.extra.arcana.auth_sdk_pkg_name}}` package. For other app types, you may need to install app-type-specific packages along with the companion `{{config.extra.arcana.auth_sdk_pkg_name}}` package.  See table for more details:
 
 {% include "./text-snippets/auth_sdk_flavors.md" %}
 
 ## Web SDKs
 
-### HTML/CSS/JS Apps
+### HTML/CSS/JS, Vue Apps
 
 {% include "./code-snippets/auth_install.md" %}
 
@@ -36,7 +38,7 @@ Developers must install the appropriate {{config.extra.arcana.sdk_name}} package
 
 !!! an-caution "Unity Settings"
 
-      Developers must update the Unity Project settings in addition to installing the {{config.extra.arcana.gaming_sdk_name}}. This is required to enable SDK usage in Unity Apps. See [[unity-quick-start#2-unity-setup-auth-sdk-install| Unity Setup]].
+      Developers must update the Unity Project settings in addition to installing the {{config.extra.arcana.gaming_sdk_name}}. This is required to enable SDK usage in Unity Apps. See [[unity-quick-start#1-unity-setup-auth-install| Unity Setup]].
 
 ## Mobile SDKs
 

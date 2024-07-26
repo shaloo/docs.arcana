@@ -1,22 +1,41 @@
 ---
 alias: index-partner-docs
-title: 'Arcana on Partner Chains'
+title: 'Docs @Partners'
+template: newintro.html
 description: 'Arcana SDKs - Auth, Gasless feature on partner chains that are pre-configured in Arcana wallet. Check out Arcana documentation on partner chain docs sites.'
 arcana:
   root_rel_path: ..
 ---
 
-# Arcana on Partner Chains
+# Arcana Docs @Partners
 
-[:simple-alchemy:{ .icon-color } Alchemy Account Kit](https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html){ .md-button }
+<div class="grid cards" markdown>
 
-[:simple-alchemy:{ .icon-color } Alchemy Auth Signer](https://accountkit.alchemy.com/signers/guides/arcana-auth.html){ .md-button }
+-   :simple-alchemy:{ .lg .middle .icon-color} __Alchemy__
 
-[:material-file-document-check:{ .icon-color } Caduceus Auth](https://docs.caduceus.foundation/auth){ .md-button }
+    ---
 
-[:material-file-document-check:{ .icon-color } Linea Social Login](https://docs.linea.build/developers/tooling/social-login/arcana){ .md-button }
+    * [Arcana Auth Signer](https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html)
+    * [Arcana Auth Integration ](https://accountkit.alchemy.com/signers/guides/arcana-auth.html)
 
-[:material-file-document-check:{ .icon-color } Linea Account Abstraction](https://docs.linea.build/developers/tooling/account-abstraction/arcana){ .md-button }
+-   :material-file-document-check:{ .lg .middle .icon-color} __Caduceus__
 
-[:fontawesome-solid-infinity:{ .icon-color } MultiversX Auth](https://multiversx.com/ecosystem/project/arcana){ .md-button }
+    ---   
+
+    * [Social Login with Arcana](https://docs.caduceus.foundation/auth)
+
+-   :material-file-document-check:{ .lg .middle .icon-color} __Linea__
+
+    ---   
+
+    * [Social Login with Arcana](https://docs.linea.build/developers/tooling/social-login/arcana)
+    * [Account Abstraction with Arcana](https://docs.linea.build/developers/tooling/account-abstraction/arcana)
+
+-   :fontawesome-solid-infinity:{ .lg .middle .icon-color} __MultiversX__
+
+    ---   
+
+    * [Arcana Auth on MultiversX](https://multiversx.com/ecosystem/project/arcana)
+
+</div>
 

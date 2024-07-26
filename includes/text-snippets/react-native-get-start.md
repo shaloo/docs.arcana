@@ -49,9 +49,7 @@ export default function App() {
 
 Call `Auth` functions and onboard users through the configured authentication providers.
 
-!!! an-tip "Arcana JWT Token"
-
-      {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}
 
 === "Login"
 
@@ -175,7 +173,7 @@ Call `Auth` functions and onboard users through the configured authentication pr
 
 ### Sign Transactions
 
-The Arcana wallet supports various [[index-web3-wallet-ops|Web3 operations]] via JSON-RPC calls and EIP-1193 requests. Use `authRef` created during integration earlier to call Web3 wallet operations.
+Use `authRef` EIP-1193 provider to call JSON-RPC functions and Web3 wallet operations.
 
 ```js
 
@@ -213,6 +211,6 @@ The {{page.meta.arcana.app_type}} mobile Web3 app is now powered by the {{config
 
 ## See also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+* {% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/react_native_sdk_quicklinks.md" %}

@@ -37,9 +37,7 @@ Next, add code to onboard users and allow authenticated users to sign blockchain
 
 Add code to onboard users through one of the configured social login providers or via OTP login option. 
 
-!!! an-tip "Arcana JWT Token"
-
-      {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}
 
 === "Login"
 
@@ -143,6 +141,6 @@ The {{page.meta.arcana.app_type}} mobile Web3 app is now powered by the {{config
 
 ## See also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+* {% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/flutter_sdk_quicklinks.md" %}

@@ -23,13 +23,13 @@ Storage Region can be configured for any application using the dashboard just on
 
 --->
 
-??? an-trbs "Cannot stop the {{config.extra.arcana.wallet_name}} from being displayed in the app's context."
+??? an-trbs "Is it possible to stop the {{config.extra.arcana.wallet_name}} UI from being displayed in the app's context."
 
-      The {{config.extra.arcana.product_name}} allows developers to manage the user experience for signing blockchain transactions. In effect, developers can integrate with the {{config.extra.arcana.sdk_name}} and control whether the {{config.extra.arcana.wallet_name}} is always displayed once the user is authenticated in the app's context. Or they can choose to hide and show the wallet as per the app's business logic. 
+      The {{config.extra.arcana.product_name}} allows developers to manage the user experience for signing blockchain transactions by controlling when the wallet UI shows up.
       
-      After installing the {{config.extra.arcana.sdk_name}}, during integration with the app, create a new `AuthProvider` instance and specify the wallet [[concept-wallet-visibility|visibility mode]] as `false`. This ensures that the wallet does not display by default once the user is authenticated. With the `alwaysVisible` set to `false, the developer can call the `showWallet() function to display the wallet when required. Irrespective of whether the wallet is visible or not, any blockchain transaction will result in a transaction notification. The user can view the notification in the app context and take appropriate action to dismiss the notification.
-      
-      See the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
+      To manage [[concept-wallet-visibility|visibility mode]], integrate the app with the SDK, and create `AuthProvider` with the `alwaysVisible` parameter set to `false`. Use the `showWallet` function to display the wallet when required.
+
+      {% include "./code-snippets/auth_wallet_visibility.md" %}
 
 ??? an-trbs "Registered app does not show up in the {{config.extra.arcana.dashboard_name}} 'Manage Apps' screen."
 
@@ -293,8 +293,6 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
       2. Next, create an `AuthProvider` instance. 
 
       3. Lastly, initialize the `AuthProvider` by calling the `init()` function. This is important as it initializes the embedded {{config.extra.arcana.wallet_name}}. Only after a successful login, the {{config.extra.arcana.wallet_name}} is visible in the context of an application. 
-      
-      See [[html-js-code-sample|integration code sample]] for more details.
 
 ??? an-trbs "User could log in to the Web3 app but subsequent login fails after a developer enables the 'global keys' feature in the app."
 

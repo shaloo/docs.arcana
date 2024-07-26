@@ -11,21 +11,11 @@ Note, this is a pure markdown file with no mkdocs related tags or keywords. It i
 of the file in the `auth` repo: https://github.com/arcana-network/auth/blob/main/usage.md
 -->
 
-# Usage Guide
+# {{config.extra.arcana.sdk_name}} Usage
 
-## Authentication & Arcana Web3 wallet
+Use the {{config.extra.arcana.sdk_name}} to onboard users via social login, allow users to access the in-app {{config.extra.arcana.wallet_name}} and sign blockchain transactions. Developers can also leverage the built-in gasless feature to further boost app adoption.
 
-**Contents**
-
-1. [Installation](#installation)
-2. [Quick Start with `ethers.js`](#quick-start-with-ethersjs)
-3. [Quick Start with `web3.js`](#quick-start-with-web3js)
-4. [Usage](#usage)
-    - [AuthProvider](#authprovider)
-    - [Auth APIs](#auth-apis)
-    - [Web3 Wallet Operations](#arcana-wallet-operations)
-
----
+[:octicons-cross-reference-16:{ .icon-color } SDK Reference ](https://authsdk-ref-guide.netlify.app/){ .md-button }
 
 ## Installation
 
@@ -132,7 +122,7 @@ await auth.init()
 
 ```
 
-See [Get Started with Auth SDK](https://docs.arcana.network/auth-quick-start.html) for more Auth SDK usage insights.
+See [Get Started with Auth SDK](https://docs.arcana.network/vanilla-web-apps-quick-start.html) for more Auth SDK usage insights.
 
 ### Auth APIs
 

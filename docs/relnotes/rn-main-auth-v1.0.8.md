@@ -96,7 +96,7 @@ The email entered by the user in the built-in login UI modal is now validated be
 
 ==}
 
-See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] in the Getting Started section. 
+See{{config.extra.arcana.product_name}} Quick Start Guides. 
 
 Check out the [sample dApp integration examples](https://github.com/arcana-network/auth-examples) for various dApp types, wallet connectors and frameworks.
 

@@ -1,1 +1,0 @@
-<span><a href="https://wagmi.sh/core/guides/migrate-from-v1-to-v2" target="_blank">Wagmi 1.x.y Migration Guide</a></span>

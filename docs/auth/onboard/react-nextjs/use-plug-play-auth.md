@@ -13,34 +13,52 @@ arcana:
 
 # Plug-and-Play Login UI
 
-In this guide, you will learn how {{page.meta.arcana.app_type}} Web3 apps can integrate with the {{config.extra.arcana.product_name}} product and onboard users through the built-in, [[concept-plug-and-play-auth|plug-and-play ]] login UI. 
+Use the built-in, [[concept-plug-and-play-auth|plug-and-play login UI modal]] to quickly onboard users in a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.wagmi_sdk_name}}. 
+
+{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
 
 ## Prerequisites
 
-* Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
+* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[index-configure-auth|register and configure the app]]. The plug-and-play pop-up UI screen will display only those authentication providers that are configured using the {{config.extra.arcana.dashboard_name}}. If no authentication providers are configured in the {{config.extra.arcana.dashboard_name}}, then users can only onboard the app via the passwordless login option. See [[index-configure-auth|how to configure authentication providers]] for details.
-  
-* Follow the instructions as per the app type and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.react_sdk_name}}. During integration, add code for the built-in login UI or the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional) login UI]].
+* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
+
+* [[integrate-react-nextjs-app|Integrate]] {{page.meta.arcana.app_type}} app, create and initialize the `AuthProvider`.
 
 ## Steps
 
-{% include "./text-snippets/use-react-pnp-auth.md" %}
+{% include "./code-snippets/auth_react_auth.md" %}
 
-For `auth-react` SDK usage details, see [{{config.extra.arcana.react_sdk_name}} Reference Guide](https://dev--auth-react-sdk-ref-guide.netlify.app/).
+{% include "./code-snippets/auth_react_useauth.md" %}
 
-That is all! :material-party-popper:
+The figure below shows the built-in login UI plug-and-play pop-up authentication screen for a test app.
 
-The plug-and-play user onboarding feature is successfully enabled in the {{page.meta.arcana.app_type}} Web3 app.
+<figure markdown="span">
+  ![Plug-and-Play Login UI]({{config.extra.arcana.img_dir}}/an_plug_n_play_auth.{{config.extra.arcana.img_png}}){.an-screenshots .width_35pc}
+  <figcaption>Plug-and-play Login UI</figcaption>
+</figure>
+
+{% include "./text-snippets/pnp-compact-mode.md" %}
+
+!!! an-warning "No plug-and-play support for Firebase authentication."
+
+      {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 
 ## What's Next?
 
-After enabling the plug-and-play user onboarding feature in the app, developers can use other {{config.extra.arcana.product_name}} product features and enable Web3 wallet operations for authenticated users. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]], [[index-arcana-wallet|how to enable the {{config.extra.arcana.wallet_name}}]] for details.
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
 
 ## See also
 
-* [[index-configure-auth|Configure authentication providers]]
-* [[index-build-social-providers|Build custom login UI]]
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
+* [[index-faq| FAQ]]
+
+* [[troubleshooting| Troubleshooting Guide]]
+
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
+
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+{% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}
+

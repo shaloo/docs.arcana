@@ -4,11 +4,18 @@ title: 'Custom OAuth'
 description: 'Custom verifier-based user authentication.'
 arcana:
   root_rel_path: ../..
+  app_type: "'Custom OAuth'"
+  app_example_submodule: "`sample-auth-custom-oauth`"
+  pnp_login_ui_tag: "use-plug-play-auth"
+  custom_login_ui_tag: "index-custom-ui-onboard-users"
+  firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
 # Custom OAuth
 
-The Custom OAuth feature empowers developers to manage user authentication and integrate Web3 apps with {{config.extra.arcana.sdk_name}}. This enables the secure assignment of keys to authenticated users for signing blockchain transactions. Developers can use any custom authentication server to issue signed-in tokens ([JSON Web Tokens or JWT](https://datatracker.ietf.org/doc/html/rfc7519)) when users log in. The {{config.extra.arcana.sdk_name}} uses these tokens to verify users and fetches Web3 key shares locally. This ensures secure key generation for users to sign blockchain transactions.
+The custom OAuth feature is for Web3 apps using a custom user authentication server. These apps can integrate with {{config.extra.arcana.sdk_name}} to securely assign keys to authenticated users for signing blockchain transactions. 
+
+Use any custom authentication server to authenticate users and issue signed-in tokens (JSON Web Tokens or JWT). Provide these tokens to {{config.extra.arcana.sdk_name}}. The SDK verifies users and fetches Web3 key shares locally. It combines them to create the user's private key, allowing them to sign blockchain transactions.
 
 {% include "./text-snippets/warn_custom_oauth_appkeys_only.md" %}
 

@@ -1,4 +1,4 @@
-```ts
+```ts hl_lines="7"
 // get from eth_accounts
 let from = ''
 

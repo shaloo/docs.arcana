@@ -6,7 +6,9 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Social Login Setup      
+# Social Login Setup  
+
+## Social Providers   
 
 [[config-auth-discord|:fontawesome-brands-discord:{ .icon-color} Discord]]{ .md-button }
 [[config-auth-github|:fontawesome-brands-github:{ .icon-color} GitHub]]{ .md-button }
@@ -14,6 +16,13 @@ arcana:
 [[config-auth-steam|:material-steam:{ .icon-color} Steam]]{ .md-button }
 [[config-auth-twitch|:fontawesome-brands-twitch:{ .icon-color} Twitch ]]{ .md-button }
 [[config-auth-twitter|:fontawesome-brands-twitter:{ .icon-color} Twitter]]{ .md-button }
+
+## IAM Providers 
+
+[[config-auth-cognito|:fontawesome-brands-aws:{ .icon-color } Cognito ]]{ .md-button }
+[[config-auth-firebase|:material-firebase:{ .icon-color } Firebase ]]{ .md-button }
+
+{% include "./text-snippets/warn_cognito_social_provider_setup.md" %}   
 
 !!! an-info "Passwordless Login"
 

@@ -13,6 +13,7 @@ These are the building blocks to help you learn about various terms and usage in
 [[concept-aggregate-login| :material-login:{ .icon-color } Aggregate Login]]{ .md-button }
 [[concept-index-arcana-wallet| :material-wallet:{ .icon-color } {{config.extra.arcana.wallet_name}}]]{ .md-button }
 [[concept-authsdk| :material-lock:{ .icon-color } :fontawesome-solid-file-signature:{ .icon-color } {{config.extra.arcana.sdk_name}}]]{ .md-button }
+[[concept-authcore| :material-lock:{ .icon-color } :fontawesome-solid-file-signature:{ .icon-color } {{config.extra.arcana.sdk_name}}]]{ .md-button }
 [[concept-arcana-auth| :material-lock-check:{ .icon-color }Authentication]]{ .md-button }
 [[concept-index-auth-type| :material-clipboard-text-search-outline:{ .icon-color } Auth Types]]{ .md-button }
 [[concept-usage-billing| :fontawesome-solid-money-check-dollar:{ .icon-color } Billing]]{ .md-button }

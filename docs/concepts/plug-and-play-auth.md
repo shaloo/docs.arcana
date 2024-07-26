@@ -52,6 +52,4 @@ When using the built-in plug-and-play login UI, developers can choose to use the
   <figcaption>Login UI Types</figcaption>
 </figure>
 
-!!! an-tip "Arcana JWT Token"
-
-     {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}

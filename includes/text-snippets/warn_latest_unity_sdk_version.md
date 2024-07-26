@@ -1,1 +1,0 @@
-Use the latest {{config.extra.arcana.gaming_sdk_name}} release **v{{config.extra.arcana.latest_auth_unity_sdk_version}}** available at [npm-registry](https://npm-registry.arcana.network/-/web/detail/arcana-auth-sdk).

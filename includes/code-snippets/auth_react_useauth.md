@@ -1,4 +1,4 @@
-```js title="App.js" hl_lines="1 4 8 18-24"
+```js hl_lines="1 4 8 18-24"
 import { useAuth } from "@arcana/auth-react";
 
 function App() {

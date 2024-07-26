@@ -1,77 +1,64 @@
 ---
 alias: migrate-app-testnet-mainnet
-title: 'Migrate App Deployment: Testnet -> Mainnet'
+title: 'Testnet -> Mainnet App Deployment'
 description: 'Learn how developers can deploy the apps integrated with the Arcana Auth on the Arcana Testnet/Mainnet.'
 arcana:
   root_rel_path: ..
 ---
 
-# Migrate App Deployment: Testnet -> Mainnet
-
-In this guide, you will learn how developers can migrate the apps deployed on Arcana Testnet to Arcana Mainnet.
+# App Deployment: Mainnet
 
 ## Prerequisites
 
-* The app must be [[deploy-app|deployed on Arcana Testnet already]].
+* Apps must be registered. A default Testnet [[concept-config-profile|configuration profile]] is assigned to each registered app. There is no default Mainnet configuration profile.
 
-## Steps
+## 1. Create Mainnet Profile
 
-### Step 1: Configure Mainnet Profile
+Visit the 'Manage Apps' page on the {{config.extra.arcana.dashboard_name}}. Each app is associated with a Testnet profile by default, and the 'Mainnet' configuration is disabled. Click the registered app card to view the Testnet configuration settings home page for the app. 
 
-Browse the 'Manage Apps' page on the {{config.extra.arcana.dashboard_name}}. Select the app that you wish to deploy on Mainnet. By default, the 'Mainnet' configuration button is disabled. Click on the 'Testnet' configuration profile.
+Choose 'Mainnet' from the  'Testnet' dropdown on the top right. You will see options to create the Mainnet profile:
 
-In the app configuration dashboard, refer to the 'Testnet' dropdown on the top right. Click and choose the 'Mainnet' option. You can either copy the Testnet profile as Mainnet or create a fresh one. 
+* Copy the Testnet profile to Mainnet 
+* Create a fresh Mainnet profile
 
 <figure markdown="span">
   <img alt="Create Mainnet Configuration Profile" src="{{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif" class="an-screenshots width_85pc"/>
   <figcaption>Create Mainnet Configuration Profile</figcaption>
 </figure>
 
-In both cases, the Mainnet configuration profile is created and has a **new** {{config.extra.arcana.app_address}} assigned to it. After the Mainnet profile is created successfully, you will see 'Mainnet' selected in the top RHS dropdown.
+Note down the brand new Mainnet configuration profile {{config.extra.arcana.app_address}} of the format `xar_live_nnnnnnnnnnn...nnn` displayed in the dashboard.
 
  <figure markdown="span">
    <img alt="Select Mainnet Profile" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
    <figcaption>Select Mainnet Profile</figcaption>
 </figure>
 
-Copy the newly assigned {{config.extra.arcana.app_address}} in the Mainnet settings. It will be of the format `xar_live_nnnnnnnnnnn...nnn`.
+??? an-note "Mainnet Profile Status"
 
-!!! an-caution "Copying Testnet Profile"
+      The *Manage Apps* dashboard screen displays cards for all registered apps. Once a Mainnet profile is created, you will see it enabled on the app card.
 
-      {% include "./text-snippets/warn_copy_testnet_profile.md" %}
+      <figure markdown="span">
+        <img alt="Mainnet Configuration Profile Available" src="{{config.extra.arcana.img_dir}}/an_mainnet_config_profile_avl.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+        <figcaption>Mainnet Configuration Profile Available</figcaption>
+      </figure>
 
-### Step 2: Update Integration Code
+## 2. Update Redirect URI
 
-Refer to the app integration code where you created a new `AuthProvider`. Replace the Testnet {{config.extra.arcana.app_address}} with the newly created Mainnet one with `xar_live_nnnnn` format and recompile the app. The app is ready to be deployed on Arcana Mainnet.
+The redirect URI setting displayed in the dashboard for the Mainnet configuration profile must **also be updated** for all the social login providers that are enabled for the app. Use the respective social login provider's console and update the OAuth settings with the new redirect URI value. 
 
-Refer to the example below:
+{% include "./text-snippets/warn_update_redirect_uri.md" %}
+
+## 3. Update `AuthProvider`
+
+In the app integration code, replace the Testnet {{config.extra.arcana.app_address}} with the newly assigned Mainnet {{config.extra.arcana.app_address}} and recompile the app. 
 
 {% include "./code-snippets/init_auth_mainnet.md" %}
 
-Next, call the `init` function to initialize the newly created `AuthProvider` before calling any other SDK functions.  
+??? an-warning "Wallet Address Change"
 
-{% include "./code-snippets/init_auth.md" %}
-
-### Step 3: Deploy on Mainnet
-
-Bring up the app. When a user authenticates, they will be assigned a new wallet address corresponding to the Arcana Mainnet.
-
-??? example "Verify Testnet/Mainnet Deployment"
-
-      If you miss updating the {{config.extra.arcana.app_address}} in the integration code for Mainnet deployment, the app will get deployed on Arcana Testnet. The authenticated users will see a warning informing them that the app is deployed on Testnet.
-
+      The user's wallet address will differ when the app is migrated from Testnet to Mainnet.
+            
       <figure markdown="span">
-        <img alt="Testnet Wallet Address" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc"/> 
-        <figcaption>Testnet Wallet Address</figcaption>
+        <img alt="Mainnet Wallet Address" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots width_35pc"/>
+        <figcaption>Mainnet Wallet Address</figcaption>
       </figure>
-
-If there is no Testnet warning displayed on the {{config.extra.arcana.wallet_name}}, then the app is successfully deployed on Arcana Mainnet.
-
-That is all! :material-party-popper:{ .icon-color }
-
-## See Also
-
-* [[deploy-app| How to deploy on Testnet/Mainnet]]
-* [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
-* [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}

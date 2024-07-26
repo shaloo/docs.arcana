@@ -1,21 +1,27 @@
 === "npm"
 
+    **Wagmi 2.0**
+
     ```bash
-    npm install --save @arcana/auth-wagmi @arcana/auth
+    npm install --save @arcana/auth-wagmi@{{config.extra.arcana.latest_auth_wagmi_sdk_version}} @arcana/auth@{{config.extra.arcana.latest_version}}
+    ```
+
+    **Wagmi 1.0**
+
+    ```bash
+    npm install --save @arcana/auth-wagmi@2.0.0 @arcana/auth
     ```
 
 === "yarn"
 
-    ```bash
-    yarn add @arcana/auth-wagmi @arcana/auth
-    ```
-<!---
-=== "CDN"
+    **Wagmi 2.0**
 
     ```bash
-    <script src="https://cdn.jsdelivr.net/npm/@arcana/auth"></script>
-    <script src="https://unpkg.com/@arcana/auth"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@arcana/auth-wagmi"></script>
-    <script src="https://unpkg.com/@arcana/auth-wagmi"></script>
+    yarn add @arcana/auth-wagmi@{{config.extra.arcana.latest_auth_wagmi_sdk_version}} @arcana/auth@{{config.extra.arcana.latest_version}}
     ```
---->
+
+    **Wagmi 1.0**
+
+    ```bash
+    yarn add @arcana/auth-wagmi@2.0.0 @arcana/auth
+    ```

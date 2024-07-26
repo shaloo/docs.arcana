@@ -52,7 +52,7 @@ This release has a new UI for blockchain transaction notifications. This combine
   - Smart contract deployment
   - Smart contract interaction
 
-See the [[arcana-wallet-user-guide#view-transaction-summary-details|notifications tab]] for details.
+See the [[arcana-wallet-user-guide|notifications tab]] for details.
 
 <figure markdown="span">
   <img src="{{config.extra.arcana.img_dir}}/an_wallet_combined_notify.{{config.extra.arcana.img_png}}" class="an-screenshots-noeffects width_35pc" alt="Activity Tab"/>
@@ -93,9 +93,9 @@ See the [[arcana-wallet-user-guide#view-transaction-summary-details|notification
 
 ==}
 
-See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [how-to guides]({{page.meta.arcana.root_rel_path}}/auth/index.md) for details. 
+See {{config.extra.arcana.product_name}} Quick Start Guides for details. 
 
-Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|Next.js ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
+Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
 ---
 

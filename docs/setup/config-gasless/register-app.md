@@ -8,42 +8,31 @@ arcana:
 
 # Register App
 
-In this tutorial, you will learn how to register a Web3 app and get a unique client identifier required for integrating with the {{config.extra.arcana.gasless_sdk_name}}.
+Learn how to register the Web3 app through the [[concept-arcana-dashboard|{{config.extra.arcana.dashboard_name}}]] before using  {{config.extra.arcana.gasless_sdk_name}} to enable gasless transactions in third-party browser-based wallets.
 
 ## Prerequisites
 
 {% include "./text-snippets/db_prerequisites.md" %}
 
-## Steps
-
-### 1. Log into Dashboard
+## 1. Dashboard Login
 
 {% include "./text-snippets/db_login.md" %}
 
-### 2. Register App
+## 2. Create a New App
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
-That is all! 🎉
-
-!!! an-info "Save {{config.extra.arcana.app_address}}"
-
-    A unique **{{config.extra.arcana.app_address}}** assigned to the registered apps is displayed on the top right of the dashboard screen. 
+{% include "./text-snippets/save_app_address.md" %}
     
-    Use it to integrate the app with the {{config.extra.arcana.company_name}} SDKs.
-
-    <figure markdown="span">
-      ![Arcana Client ID for Registered App]({{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
-      <figcaption>Arcana Client ID for Registered App </figcaption>
-    </figure>
-    
-
 ## What's next?
 
-After registering the app, [[configure-gasless|configure gasless settings]] first. Then install the {{config.extra.arcana.gasless_sdk_name}} and [[web-gasless-integrate|integrate the app]].
+After registering the app, first [[configure-gasless|configure gasless settings]]. Then, [[web-gasless-integrate|integrate the Web3 app]] with the SDK and [[web-gasless-transact|enable gasless transactions]] via third-party browser-based wallets.
 
 ## See Also
 
 * [[dashboard-user-guide#delete-application|Deleting Application Entry]]
 * [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]
+* [[faq-gasless| Gasless FAQ]]
+
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

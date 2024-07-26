@@ -8,7 +8,14 @@
 
       **`theme`:** wallet theme - `light`|`dark`
 
-      **`connectOptions`:** built-in login UI compact mode - `true`|`false`
+      **`connectOptions`:** [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode]] for the built-in plug-and-play login UI - `true`|`false`
+
+      ```js
+
+      connectOptions: {
+            compact: true // default - false
+      },
+      ```
 
       ---
 
@@ -20,4 +27,5 @@
       **`alwaysVisible`:** [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility mode]] - always visible in the app context or only if a blockchain transaction is triggered by the app
 
       **`chainConfig`:**  use `chainId` to specify the chain identifier for the active chain in the wallet and `rpcUrl` for specifying the RPC Url for that chain identifier
----->
+
+---->  

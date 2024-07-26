@@ -1,18 +1,16 @@
 ---
 alias: auth-core-quick-start
-title: 'Auth-Core Quick Start'
-description: 'Get Started quickly with using the Auth-Core SDK and enable social login in Web3 apps. Understand the difference between Auth-Core and Auth SDK features, usage model the security and privacy implications when integrating an app with the Auth-Core SDK. Follow these step-by-step instructions to register the app, obtain a ClientID and then integrate the app with the Arcana Auth-Core SDK.'
+title: 'Get Started: Auth-Core'
+description: 'Integrate Arcana Auth-Core SDK in apps that require higher flexibility and customization. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'Auth-Core'"
-  app_example_submodule: "'`sample-auth-core`'"
+  app_example_submodule: "`sample-auth-core`"
 ---
 
-# Quick Start: Auth-Core
+# Get Started: Auth-Core
 
-{{config.extra.arcana.auth_core_sdk_name}} offers limited {{config.extra.arcana.sdk_name}} functionality with additional flexibility in user onboarding customization!
-
-Developers can use this SDK to assign keys to authenticated users to sign blockchain transactions securely. 
+Integrate Web3 apps with [[concept-authcore|{{config.extra.arcana.auth_core_sdk_name}}]] and assign keys to authenticated users. Build custom login UI to onboard users. Add code for a custom, in-app wallet UI and allow authenticated users to sign blockchain transactions securely.
 
 !!! an-warning "Limited Auth Capabilities"
 
@@ -23,28 +21,20 @@ Developers can use this SDK to assign keys to authenticated users to sign blockc
 
 ## Prerequisites
 
-!!! an-note "Use latest SDKs"
-  
-      {% include "./text-snippets/warn_latest_auth_core_sdk_version.md" %}
-
-## 1. Register & Configure
-
 {% include "./text-snippets/quick-start-reg-config-auth.md" %}
 
-??? abstract "Wallet UI Mode Setting"
+??? caution "Wallet UI Mode Setting"
+      
+      To use the {{config.extra.arcana.auth_core_sdk_name}}, developers must implement a [[concept-custom-wallet-ui|]]custom wallet UI.
 
       The *Wallet UI Mode* {{config.extra.arcana.dashboard_name}} configuration setting chosen by the developer during app registration **is ignored** for apps integrated with the {{config.extra.arcana.auth_core_sdk_name}}. 
-      
-      To use the {{config.extra.arcana.auth_core_sdk_name}}, developers must implement a custom wallet UI.
 
       <figure markdown="span">
         <img alt="Wallet UI Mode" class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_wallet_ui_mode_ignored.gif" alt="Wallet UI Mode Ignored"/>
         <figcaption>Wallet UI Mode</figcaption>
       </figure>
 
-## 2. Install SDK
-
-Install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}` package:
+## 1. Install SDK
 
 === "npm"
 
@@ -58,25 +48,13 @@ Install the `{{config.extra.arcana.auth_core_sdk_pkg_name}}` package:
     yarn add @arcana/auth-core
     ```
 
-=== "CDN"
-
-    ```html
-    <script src="https://cdn.jsdelivr.net/npm/@arcana/auth-core"></script>
-    ```
-
-    ```html
-    <script src="https://unpkg.com/@arcana/auth-core"></script>
-    ```
-
-## 3. Integrate
+## 2. Integrate
 
 ```js
 const { AuthProvider, SocialLoginType, CURVE } = window.arcana.auth_core;
 // or
 import { AuthProvider, CURVE } from '@arcana/auth-core';
 ```
-
-The `AuthProvider` is instantiated and initialized for a [[auth-core-usage-guide#flow-modes|UI flow]] that redirects the user to a different app page after login.
 
 ```js
 const clientId = "xar_test_d24f70cd300823953dfa2a7f5b7c7c113356b1ad"; // obtained after app registration via dashboard
@@ -89,98 +67,24 @@ const auth = new AuthProvider({
 
 ### Onboard Users
 
-Use custom login UI and call social login and passwordless user onboarding functions provided by the {{config.extra.arcana.auth_core_sdk_name}}. Specify the providers [[index-configure-auth| configured]] through the dashboard in the `SocialLoginType`. 
-
 #### Social Login
 
 ```js
 await auth.loginWithSocial(SocialLoginType.google);
-```
-
-Check `SocialLoginType` details in the [[auth-core-usage-guide#exported-enums|Exported Enums]] section.
-
-#### Passwordless Login
-
-First **initiate** passwordless login:
-
-```js
-const result = await auth.loginWithPasswordlessStart({
-  email: 'abc@example.com'
-});
-```
-
-Then, on the redirect page, **handle passwordless login** as follows:
-
-```js
-await auth.handleRedirect();
-```
-<!--
-#### PasswordlessOptions:
-
-- `{ withUI: true }` - the user is redirected to `email-sent` or `error` page
-- `{ withUI: false }` - the Social / Passwordless login API returns  a `json` response back with no redirection
-- defaults to `{ withUI: true }`
-
---->
-
-!!! an-warning "Onboarding via Cognito, Firebase"
-
-      Web3 apps that use Cognito or Firebase for onboarding users and require {{config.extra.arcana.auth_core_sdk_name}} to only assign cryptographic keys to the authenticated users are **not supported** in the current release.
-
-      Contact our [[support|support team]] if you need this feature.
-
-#### Login Status
-
-```js
-const loggedIn = auth.isLoggedIn(); /* boolean response */
-```
-
-#### Get User Info
-
-After successful authentication, the user information is saved in memory. It gets copied in the current session storage before the *page unload* event. User information is fetched again to memory and removed from the session storage after a successful page reload.
-
-```js
+// Check if a user is logged in
+const loggedIn = auth.isLoggedIn();
+// Get User Account Details
 const userInfo = auth.getUserInfo();
-
-/* 
-  UserInfo: {
-    loginType: 'google',
-    userInfo: {
-      id: 'abc@example.com',
-      name: 'ABC DEF',
-      email: '',
-      picture: ''
-    },
-    privateKey: ''
-  }
-*/
-
+...
 ```
 
-For userInfo type details, see [[auth-core-usage-guide#exported-types|Exported Types]].
-
-#### Get Public Key
-
-```js
-const publicKey = await auth.getPublicKey({
-  verifier: SocialLoginType.google,
-  id: `abc@example.com`,
-}); 
-```
-
-#### Logout
-
-```js
-await auth.logout();
-```
+!!! an-caution "Configure Social Login"
+      
+      The login providers specified in [[auth-core-usage-guide#exported-enums|`SocialLoginType`]] parameter must be [[index-configure-auth| configured]] via the dashboard.
 
 ### Sign Transactions
 
-The `AuthProvider` is a standard Ethereum EIP-1193 provider. Apps integrated with the {{config.extra.arcana.auth_core_sdk_name}} can use this provider to allow authenticated users to sign blockchain transactions.
-
-Add code to perform Web3 operations and sign blockchain transactions in the context of an authenticated user. 
-
-Developers must add a custom wallet UI and wire it to perform Web3 wallet and blockchain operations for the chains supported by the app. Note that the {{config.extra.arcana.auth_core_sdk_name}} does not provide any built-in login UI or {{config.extra.arcana.wallet_name}} UI, unlike the {{config.extra.arcana.sdk_name}}.    
+Use `AuthProvider`, a standard Ethereum EIP-1193 provider, and allow authenticated users to sign blockchain transactions. Build a custom wallet UI and wire it to appropriate [[evm-web3-wallet-ops|Web3 wallet operations]] on [[configure-wallet-chains|configured chains]].
 
 ```ts
 import { AuthProvider, CURVE } from '@arcana/auth-core';
@@ -221,21 +125,89 @@ try {
 
 ```
 
-## 4. Deploy
+## Advanced Usage
 
-{% include "./text-snippets/quick-start-deploy.md" %}
+??? an-tip "UI Flow Mode"
 
-{==
+    When instantiating the `AuthProvider` you can configure it to use appropriate [[auth-core-usage-guide#flow-modes|UI flow]] such that the authenticated user is redirected to a different app page after login, if required.
 
-You've successfully integrated a Web3 app with the {{config.extra.arcana.auth_core_sdk_name}}. 
+??? an-abstract " Passwordless Onboarding"
 
-==}
+      In addition to [social login](#social-login), onboard users via passwordless option.
 
+      ```js
+      const result = await auth.loginWithPasswordlessStart({
+        email: 'abc@example.com'
+      });
+      ```
+
+      Then on the redirect page, **handle passwordless login** as follows:
+
+      ```js
+      await auth.handleRedirect();
+      ```
+  <!---
+  #### PasswordlessOptions:
+
+  - `{ withUI: true }` - the user is redirected to `email-sent` or `error` page
+  - `{ withUI: false }` - the Social / Passwordless login API returns  a `json` response back with no redirection
+  - defaults to `{ withUI: true }`
+
+  --->
+
+??? an-warning "Onboarding via Cognito, Firebase"
+
+      Web3 apps integrating with {{config.extra.arcana.auth_core_sdk_name}} cannot use Cognito or Firebase for onboarding users. These providers are **not supported** in the current release.
+
+      Contact our [[index-support|{{config.extra.arcana.company_name}}  support]] if you need this feature.
+
+??? an-note "Status and User Information"
+
+      **Check Login Status**
+
+      ```js
+      const loggedIn = auth.isLoggedIn(); /* boolean response */
+      ```
+
+      **Get User Info**
+
+      After successful authentication, the [[auth-core-usage-guide#exported-types|user information]] is saved in memory. It gets copied in the current session storage before the *page unload* event. User information is fetched again to memory and removed from the session storage after a successful page reload.
+
+      ```js
+      const userInfo = auth.getUserInfo();
+
+      /* 
+        UserInfo: {
+          loginType: 'google',
+          userInfo: {
+            id: 'abc@example.com',
+            name: 'ABC DEF',
+            email: '',
+            picture: ''
+          },
+          privateKey: ''
+        }
+      */
+
+      ```
+
+      **Get Public Key**
+
+      ```js
+      const publicKey = await auth.getPublicKey({
+        verifier: SocialLoginType.google,
+        id: `abc@example.com`,
+      }); 
+      ```
+
+      **Logout**
+
+      ```js
+      await auth.logout();
+      ```
 
 ## See Also
 
-* `sample-auth-core` submodule in [Auth Examples](https://github.com/arcana-network/auth-examples)
-* [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide]]
-* {% include "./text-snippets/auth_core_sdkref_url.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_core_sdk_quicklinks.md" %}

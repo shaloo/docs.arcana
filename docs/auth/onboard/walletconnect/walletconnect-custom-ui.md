@@ -4,55 +4,33 @@ title: 'WalletConnect App: Build Custom Login UI'
 description: 'Onboard Users via Custom Login UI in Web3 WalletConnect apps integrated with the Arcana Auth SDK using the instructions listed here.'
 arcana:
   root_rel_path: ../..
+  app_type: "'WalletConnect'"
+  app_example_submodule: "`sample-auth-walletconnect`"
+  social_provider: "'google'"
+  pnp_login_ui_tag: "onboard-walletconnect-app-pnp-ui"
 ---
 
 # Custom Login UI
 
-[WalletConnect](https://walletconnect.com/) allows Web3 app users to seamlessly switch between multiple connected wallets within a dApp. 
+Onboard users in a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} through a custom login UI.
 
-In this guide, you will learn how to enable the in-app {{config.extra.arcana.wallet_name}} via WalletConnect by using the `ArcanaConnector` and a custom login UI to onboard users instead of the built-in one offered by the {{config.extra.arcana.sdk_name}}
+{% include "./text-snippets/info-alternative-onboard-pnp-login.md" %}
 
 ## Prerequisites
 
-* **Register Web3 Application**: Log into the {{config.extra.arcana.dashboard_name}} {% include "./text-snippets/db_portal_url.md" %}. Register the app and save the {{config.extra.arcana.app_address}} for integrating with the SDKs later.
+* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
-* **Set up Authentication Providers**: Click on the *Social Auth* tab in the {{config.extra.arcana.dashboard_name}}. Configure and select one or more [[web3-stack-auth|supported authentication providers]] for onboarding the app users.
+* Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
 
-    !!! an-tip "Authentication Provider Settings"
-
-          You may be required to configure additional details for the selected authentication providers when using the default app-specific [[concept-keyspace-type|keyspace type]] settings. 
-          
-          For example, to enable Google, the developer must use Google Developer Console to set up the app and generate a [[config-auth-google|Google Oauth clientID]]. Before integrating with the SDKs, this Google ClientID must be specified in the **Social Auth** settings of the {{config.extra.arcana.dashboard_name}}.
-
-          For details, see [[index-configure-auth|how to configure authentication providers]].
+* [[integrate-wagmi-app|Integrate]] {{page.meta.arcana.app_type}} app and create `AuthProvider`, `ArcanaConnector`.
 
 ## Steps
 
-*Onboarding users in Web3 WalletConnect apps via custom login UI powered by the {{config.extra.arcana.sdk_name}} is simple!*
+### 1. Configure `ArcanaConnector`
 
-Follow these three steps:
+`ArcanaConnector` is created earlier as part of SDK integration. When using a custom login UI to onboard users, configure `ArcanaConnector` differently.
 
-### Step 1: Install {{config.extra.arcana.sdk_name}} packages
-
-{% include "./code-snippets/auth_wagmi_install.md" %}
-
-### Step 2: Use `AuthProvider` & `ArcanaConnector`
-
-Import `{{config.extra.arcana.auth_sdk_pkg_name}}` package and create `AuthProvider` by specifying the unique **{{config.extra.arcana.app_address}}** value assigned to the app after [[register-app-auth|registering]] it using the {{config.extra.arcana.dashboard_name}}. 
-
-{% include "./code-snippets/auth_walletconnect_configure_pnp.md" %}
-
-Next, import `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package and create an `ArcanaConnector`.
-
-!!! an-tip "Custom Login UI"
-
-      Web3 app developers can choose to either use the built-in plug-and-play login UI in the {{config.extra.arcana.sdk_name}} or they can build their own custom login UI. The process of creation and configuration of the `ArcanaConnector` varies in each case.
-
-      To build a custom login UI, developers can choose from the list of [[web3-stack-auth|supported authentication providers]] or use passwordless. Wire the UI buttons for onboarding via different options to the `setLogin` function of the `ArcanaConnector`.
-
-      If the custom login UI is configured such that it allows a single authentication provider to onboard users, developers can specify the provider as an additional parameter while creating the `ArcanaConnector`. Otherwise, if the custom login UI offers multiple authentication provider options then developers can create a single `ArcanaConnector` without specifying the provider and later call the `setLogin` function for the selected provider, in response to the user's selection.
-
-{% include "./code-snippets/auth_walletconnect_connector.md" %}
+Add code in the custom UI for onboarding via social login and passwordless options by using the `setLogin` function. 
 
 _Enable Authentication Provider_
 
@@ -62,24 +40,38 @@ _Enable Passwordless Login_
 
 {% include "./code-snippets/auth_wagmi_configure_custom_ui_pwdless.md" %}
 
-### Step 3: Use `WagmiProvider`
+!!! an-tip "Single Provider Optimization"
 
-Once a user authenticates, use WagmiProvider with the specified Wagmi config and onboard users.
+      When using a single social login provider, specify it when creating ArcanaConnector to optimize onboarding. There's no need to use setLogin later in the custom login UI code.
+
+      For multiple social login providers, create ArcanaConnector without specifying a provider. Use the setLogin function later based on the user's choice.
+
+### 2. Set up `WagmiConfig`
+
+Use the `ArcanaConnector` and set up [Wagmi config](https://wagmi.sh/react/getting-started).
 
 {% include "./code-snippets/auth_walletconnect_create_client.md" %}
 
-That is all! :material-party-popper:
+### 3. Initialize WalletConnect App Component
 
-The app can now onboard users using the custom login UI. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
+{% include "./code-snippets/auth_wagmi_use_app.md" %}
 
 ## What's Next?
 
-After integrating and onboarding users in the Web3 app developers can programmatically [[index-arcana-wallet|issue Web3 wallet operations]] in the authenticated user's context.
+{% include "./text-snippets/quick-start-sign-transactions.md" %}
 
 ## See also
 
-* [Sample WalletConnect app: `sample-auth-walletconnect`](https://github.com/arcana-network/auth-examples)
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
+* [[index-faq| FAQ]]
+
+* [[troubleshooting| Troubleshooting Guide]]
+
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
+
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
-* {% include "./text-snippets/authsdkref_url.md" %}
-* {% include "./text-snippets/wagmi_authsdkref_url.md" %}
+
+{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+{% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

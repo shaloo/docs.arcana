@@ -1,7 +1,3 @@
-Initialize the {{config.extra.arcana.gasless_sdk_name}} using the unique app identifier obtained via the {{config.extra.arcana.dashboard_name}} after registering the app. You need to also provide the browser-based wallet EIP-1193 Ethereum provider for enabling gasless operations in that wallet.
-
-During initialization, the gasless SDK creates an SCW account associated with the EoA account corresponding to the provider `window.ethereum`. All gasless transactions use this SCW account address.
-
 ```js
 import { scw } from @arcana/scw;
 
@@ -9,7 +5,11 @@ const scw = new arcana.scw.SCW();
 await scw.init("<app_id>", window.ethereum);
 ```
 
-After the `init` call, you can all other methods of the SCW object. Use the `getSCWAddress` to get the logged-in user's smart contract address (SCW Address).  Use `getPaymasterBalance` to check if the gas tank that is supposed to pay the gas fees for the logged-in user's transactions, is adequately funded.
+The `init` method is used to initialize the {{config.extra.arcana.gasless_sdk_name}} with the unique app identifier obtained via the {{config.extra.arcana.dashboard_name}} after registering the app. After `init` you can call other methods of the `scw` object.
+
+During initialization, an SCW account is associated with the EoA account. All gasless transactions must use this SCW account address.
+
+Use the `getSCWAddress` to get the logged-in user's smart contract address (SCW Address). Call `getPaymasterBalance` to check if the gas tank is adequately funded.
 
 ```js
   const erc20abi = [...];

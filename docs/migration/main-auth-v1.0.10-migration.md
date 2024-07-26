@@ -8,7 +8,7 @@ arcana:
 
 # Arcana Auth SDK v{{config.extra.arcana.previous_version}} -> v1.0.10 Migration
 
-New to Arcana Network? Visit [[auth-quick-start|{{config.extra.arcana.sdk_name}} Quick Start Guide]] to get started. 
+New to Arcana Network? Visit see {{config.extra.arcana.product_name}} Quick Start Guides to get started. 
 
 Using an older version and want to migrate? Read on...
 
