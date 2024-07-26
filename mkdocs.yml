@@ -557,58 +557,57 @@ nav:
     - Learn:
       - Integration Examples: https://github.com/arcana-network/auth-examples
       - Concepts: 
-        - concepts/index.md
-        - Aggregate Login: concepts/aggregatelogin.md
-        - Arcana Web3 Wallet: 
-          - concepts/anwallet/index.md
-          - Overview: concepts/anwallet/wallet-overview.md
-          - Wallet UI Modes: concepts/anwallet/walletuimodes.md
-          - Wallet Account Types: concepts/anwallet/switch-account-type.md
-          - Wallet Visibility: concepts/anwallet/walletvisibility.md
-          - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
-          - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
-          - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
-        - Auth SDK: concepts/authsdk.md
-        - Auth-Core SDK: concepts/auth-core-sdk.md
-        - Authentication: concepts/authtype/arcanaauth.md
-        - Auth Types:
-          - concepts/authtype/index.md
-          - Authentication Providers: concepts/authtype/socialauth.md
-          - Custom OAuth: concepts/authtype/custom-oauth.md
-          - Passwordless: concepts/authtype/pwdless.md
-        - Usage & Billing: concepts/billing.md
-        - Configuration Profiles: concepts/config-profiles.md
-        - Custom Login UI: concepts/custom-login-ui.md
-        - Custom Wallet UI: concepts/custom-wallet-ui.md
-        - Dashboard: concepts/dashboard.md
-        - DID Token: concepts/an_did_token.md
-        - DKG:
-          - concepts/dkg/index.md
-          - What is DKG?: concepts/what-is-dkg.md
-          - How does DKG work?: concepts/how-dkg-works.md
-          - What is ADKG?: concepts/adkg.md
-          - How does ADKG work?: concepts/how-adkg-works.md
-        - Gasless Transactions: concepts/gasless-ops.md
-        - Gateway: concepts/gateway-node.md
-        - JWT Token: concepts/an_jwt_token.md
-        - Key Space Type: concepts/keyspace-types.md
-        - Manage Chains: concepts/manage-chains.md
-        - MFA: concepts/mfa.md
-        - Non-EVM Chains: concepts/non-evm-chains.md
-        - Plug-and-Play Auth: concepts/plug-and-play-auth.md
-        - Private Key: concepts/private-key.md
-        - Session Keys: concepts/scw-session-keys.md
-        - Session Type: concepts/session_type.md
-        - Smart Contracts:
-          - concepts/ansmartc/index.md
-          - Overview: concepts/ansmartc/an-smart-contracts.md
-          - Types of Contracts: concepts/ansmartc/an-smartc-types.md
-          - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
-        - Social Login: concepts/social-login.md
-        - Usage Metrics: concepts/usage-metrics.md
-        - Validator Nodes: concepts/validator-nodes.md
-        - Verify JWT Token: concepts/jwt_token_validation.md
-        - Whitelabeled Auth: concepts/white-labeled-auth.md
+        - Auth:
+          - Web3 Authentication: concepts/authtype/arcanaauth.md
+          - Auth Types:
+            - concepts/authtype/index.md
+            - Authentication Providers: concepts/authtype/socialauth.md
+            - Custom OAuth: concepts/authtype/custom-oauth.md
+            - Passwordless: concepts/authtype/pwdless.md
+          - Aggregate Login: concepts/aggregatelogin.md
+          - Auth SDK: concepts/authsdk.md
+          - Arcana Web3 Wallet: 
+            - concepts/anwallet/index.md
+            - Overview: concepts/anwallet/wallet-overview.md
+            - Wallet UI Modes: concepts/anwallet/walletuimodes.md
+            - Wallet Account Types: concepts/anwallet/switch-account-type.md
+            - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
+            - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
+            - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
+            - Wallet Visibility: concepts/anwallet/walletvisibility.md
+          - Dashboard: concepts/dashboard.md
+          - Configuration Profiles: concepts/config-profiles.md
+          - Custom Wallet UI: concepts/custom-wallet-ui.md
+          - DID Token: concepts/an_did_token.md
+          - Verify JWT Token: concepts/jwt_token_validation.md
+          - DKG:
+            - What is DKG?: concepts/what-is-dkg.md
+            - How does DKG work?: concepts/how-dkg-works.md
+            - What is ADKG?: concepts/adkg.md
+            - How does ADKG work?: concepts/how-adkg-works.md
+          - Gateway: concepts/gateway-node.md
+          - JWT Token: concepts/an_jwt_token.md
+          - Key Space Type: concepts/keyspace-types.md
+          - Manage Chains: concepts/manage-chains.md
+          - MFA: concepts/mfa.md
+          - Non-EVM Chains: concepts/non-evm-chains.md
+          - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
+          - Custom Login UI: concepts/custom-login-ui.md
+          - Private Key: concepts/private-key.md
+          - Social Login: concepts/social-login.md
+          - User Session Type: concepts/session_type.md
+        - Gasless:
+          - Gasless Transactions: concepts/gasless-ops.md
+          - Session Keys: concepts/scw-session-keys.md
+        - Miscellaneous:
+          - Arcana Smart Contracts:
+            - Overview: concepts/ansmartc/an-smart-contracts.md
+            - Types of Contracts: concepts/ansmartc/an-smartc-types.md
+            - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
+          - Auth-Core SDK: concepts/auth-core-sdk.md
+          - Billing: concepts/billing.md
+          - Usage Metrics: concepts/usage-metrics.md
+          - Validator Nodes: concepts/validator-nodes.md
       - Tech Stack: 
         - App Types: web3-stack/apps.md
         - Auth Providers: web3-stack/auth.md
