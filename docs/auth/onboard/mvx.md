@@ -24,6 +24,8 @@ Learn how to onboard users through the configured [[concept-social-login|social 
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
+{% include "./text-snippets/mvx_shard.md" %}
+
 ## Onboard Users
 
 {% include "./text-snippets/non-evm-common-onboard-steps.md" %}

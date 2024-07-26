@@ -21,6 +21,8 @@ Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_nam
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
+{% include "./text-snippets/mvx_shard.md" %}
+
 ## 1. Install 
      
 Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another. 
