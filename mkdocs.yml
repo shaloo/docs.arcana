@@ -573,11 +573,10 @@ nav:
         - Auth Types:
           - concepts/authtype/index.md
           - Authentication Providers: concepts/authtype/socialauth.md
-          - IAM Providers: concepts/authtype/customauth.md
+          - Custom OAuth: concepts/authtype/custom-oauth.md
           - Passwordless: concepts/authtype/pwdless.md
         - Usage & Billing: concepts/billing.md
         - Configuration Profiles: concepts/config-profiles.md
-        - Custom OAuth: concepts/custom-oauth.md
         - Custom Login UI: concepts/custom-login-ui.md
         - Custom Wallet UI: concepts/custom-wallet-ui.md
         - Dashboard: concepts/dashboard.md

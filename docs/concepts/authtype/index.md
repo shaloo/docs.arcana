@@ -10,9 +10,7 @@ arcana:
 
 The {{config.extra.arcana.sdk_name}} supports the following authentication mechanisms:
 
-[Social Providers :fontawesome-solid-users-gear:](./socialauth.md){ .md-button }
-
-[Custom IAM Providers :fontawesome-solid-users-gear:](./customauth.md){ .md-button }
+[Authentication Providers :fontawesome-solid-users-gear:](./socialauth.md){ .md-button }
 
 [Passwordless Login :material-card-account-mail:](./pwdless.md){ .md-button }
 
