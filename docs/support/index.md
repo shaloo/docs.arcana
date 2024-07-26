@@ -9,9 +9,10 @@ arcana:
 
 # Need Help?
 
-???+ an-abstract "Click Arcabot!"
+???+ an-abstract "Try Arcabot!"
 
-      Get **instant answers to your Arcana queries** by starting a conversation 💬 with `Arcabot`. Click the circular bot icon on the bottom right of this page. 
+       Start a conversation 💬 with `Arcabot` for instant answers to Arcana queries!
+       *(Click on the icon on the bottom right of this page.)*
 
 === "Contact Us" 
 
