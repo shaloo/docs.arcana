@@ -20,9 +20,15 @@
 
   const contractAddress = "0xFeCD581c539f8858c556Ab8FEf681975a6A25ACa";
   const functionSelector = "deposit()";
+  const rules = [{
+      offset: 0,
+      condition: 0,
+      referenceValue: "0x7a8713E21e7434dC5441Fb666D252D13F380a97d",
+    }]
   const config: CreateSessionParam = {
     contractAddress: getUsdcContract(scWallet.chain_id), //Specify your contract, this example uses some value
     functionSelector: "transfer(address,uint256)",  //specify function in the contract listed above
+    rules: rules, // Specify rules for the session policy
     validUntil: 0,  //no end time, infinite always allow
     validAfter: 0,   //no start time, infinite always allow
     valueLimit: 10,   //maximum 10 GWEI transaction is pre approved

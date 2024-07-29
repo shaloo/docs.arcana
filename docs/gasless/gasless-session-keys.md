@@ -14,7 +14,9 @@ Learn how to use the [[concept-gl-session-keys|Session Keys]] feature and pre-ap
 
 !!! an-caution "Only for Third-party wallets"
 
-      The {{config.extra.arcana.gasless_sdk_name}} can be used for apps that require the session keys feature enabled for transactions via any supported third-party browser-based wallets. We are working on enabling this feature via the {{config.extra.arcana.wallet_name}}.
+      The {{config.extra.arcana.gasless_sdk_name}} can be used for apps that require the session keys feature enabled for transactions via any supported third-party browser-based wallets. 
+      
+      To enable session keys feature in the {{config.extra.arcana.wallet_name}}, integrate the app with the {{config.extra.arcana.sdk_name}} and the {{config.extra.arcana.gasless_sdk_name}}.
 
 ## Prerequisites
 
