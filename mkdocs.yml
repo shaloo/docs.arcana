@@ -268,7 +268,7 @@ plugins:
           'concepts/plugnplayauth.md': 'concepts/plug-and-play-auth.md'
           'concepts/how_dkg_works.md': 'concepts/how-dkg-works.md'
           'concepts/gateway_nodes.md': 'concepts/gateway-node.md'
-          'concepts/anwallet/arcanawallet_oview.md': 'concepts/anwallet/wallet-overview.md'
+          'concepts/anwallet/arcanawallet_oview.md': 'concepts/anwallet/index.md'
           'concepts/ansmartc/an_smart_contracts.md': 'concepts/ansmartc/an-smart-contracts.md'
           'concepts/ansmartc/an_smartc_types.md': 'concepts/ansmartc/an-smartc-types.md'
           'concepts/ansmartc/an_smartc_deployed.md': 'concepts/ansmartc/an-smartc-deployed.md'
@@ -566,14 +566,12 @@ nav:
             - Passwordless: concepts/authtype/pwdless.md
           - Aggregate Login: concepts/aggregatelogin.md
           - Auth SDK: concepts/authsdk.md
-          - Arcana Web3 Wallet: 
+          - Arcana Wallet: 
             - concepts/anwallet/index.md
-            - Overview: concepts/anwallet/wallet-overview.md
-            - Wallet UI Modes: concepts/anwallet/walletuimodes.md
-            - Wallet Account Types: concepts/anwallet/switch-account-type.md
-            - Sign Transaction Messages: concepts/anwallet/walletstgsigntx.md
-            - Switching Networks: concepts/anwallet/walletntwkswitchmode.md
-            - Using Web3 Wallet vs. Key: concepts/anwallet/walletorkey.md
+            - UI Modes: concepts/anwallet/walletuimodes.md
+            - Account Types: concepts/anwallet/switch-account-type.md
+            - Transaction Types: concepts/anwallet/walletstgsigntx.md
+            - Network Switching: concepts/anwallet/walletntwkswitchmode.md
             - Wallet Visibility: concepts/anwallet/walletvisibility.md
           - Dashboard: concepts/dashboard.md
           - Configuration Profiles: concepts/config-profiles.md

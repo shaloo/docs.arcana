@@ -1,12 +1,12 @@
 ---
 alias: concept-wallet-transaction-messages
-title: 'Blockchain Sign Transaction Messages'
+title: 'Transaction Types'
 description: 'Various types of user sign approval messages that are displayed via the Arcana wallet.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Blockchain Sign Transaction Messages
+# Transaction Types
 
 In this guide, you will learn about the different types of blockchain sign transaction messages that are displayed by the {{config.extra.arcana.wallet_name}} when a Web3 wallet operation is triggered.  
 

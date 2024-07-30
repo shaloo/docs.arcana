@@ -1,12 +1,12 @@
 ---
 alias: concept-wallet-uimodes
-title: 'Wallet UI Modes'
+title: 'UI Modes'
 description: 'Arcana Auth SDK allows Web3 apps devs to either choose the built-in Arcana Wallet UI or build their own custom wallet UI. The Wallet UI Mode setting allows developers to choose custom or Arcana Wallet UI.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Wallet UI Modes
+# UI Modes
 
 The [[concept-index-arcana-wallet| {{config.extra.arcana.wallet_name}}]] is an embedded, non-custodial Web3 wallet that is enabled for every user that logs into an app integrated with the {{config.extra.arcana.sdk_name}}. App developers can manage the wallet user experience by choosing the built-in {{config.extra.arcana.wallet_name}} UI or building a custom wallet UI and enabling authenticated users to sign blockchain transactions with the configured wallet UI.
 

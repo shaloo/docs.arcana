@@ -1,25 +1,36 @@
 ---
 alias: concept-index-arcana-wallet
-title: 'Arcana Wallet Topics'
-description: 'Learn about the Arcana wallet features and what kind of wallet it is, what operations are supported and more.'
+title: 'Overview'
+description: 'Learn about the Arcana wallet features, customizations and supported chains and Web3 wallet operations.'
 arcana:
   root_rel_path: ../..
 ---
 
-# {{config.extra.arcana.wallet_name}} 
+# Overview
 
-The {{config.extra.arcana.sdk_name}} provides an embedded Web3 wallet - the {{config.extra.arcana.wallet_name}}. It allows configuring the user's blockchain signing experience and enables authenticated users to perform various Web3 wallet operations like sending transactions, switching networks, and managing tokens and NFTs.
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_wallet_light.{{config.extra.arcana.img_png}}#only-light" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_an_wallet_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
-[[concept-arcana-wallet-overview|Overview :material-folder-text:]]{ .md-button }
+{{config.extra.arcana.wallet_name}} is an in-app, non-custodial wallet embedded in Web3 apps that use {{config.extra.arcana.sdk_name}}. No browser extension is needed. Authenticated users get instant, secure access to the wallet for blockchain transactions. Keys are generated locally via the asynchronous distributed key generation system, ensuring full control over key privacy without complex cryptography.
 
-[[concept-wallet-uimodes|Wallet UI Modes :material-folder-text:]]{ .md-button }
+## Wallet Features
 
-[[concept-wallet-switch-account-type|Wallet Account Types :material-folder-text:]]{ .md-button }
+{% include "./text-snippets/wallet_features.md" %}
 
-[[concept-wallet-visibility|Wallet Visibility :material-folder-text:]]{ .md-button }
+!!! an-caution "**Not Supported**"
 
-[[concept-wallet-switch-mode|Switching Networks :material-folder-text:]]{ .md-button }
+    The {{config.extra.arcana.wallet_name}} does not allow an app user to import any blockchain account created using a third-party wallet provider. 
 
-[[concept-wallet-or-key|Using Web3 Wallet vs. Key :material-folder-text:]]{ .md-button }
+## Wallet Customization
 
-[[concept-wallet-transaction-messages|Sign Transactions :material-folder-text:]]{ .md-button }
+{{config.extra.arcana.wallet_name}} offers great flexibility and customization options as per the app requirements. 
+
+* **UX:** Developers can manage the users' blockchain signing experience by [[dashboard-user-guide#settings-overview|customizing branding, theme]], [wallet positioning](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) in the app, selecting the default active chain, [[arcana-wallet-user-guide#addselect-a-network|modifying pre-configured networks]], and using [[concept-wallet-visibility|visibility]] options.
+* **Custom Wallet UI:** Replace the built-in, default wallet UI with a [[concept-custom-wallet-ui|custom wallet UI]].
+* **Autonomous Signing:** Use [[concept-gl-session-keys|sessions keys feature]] to set up policies and enable users to permit autonomous signing in highly interactive applications 
+
+## Supported Chains
+
+{{config.extra.arcana.wallet_name}} comes pre-configured with a subset of the [[web3-stack-chains|supported blockchain networks]]. This pre-configured list can be updated with other supported networks [[evm-web3-wallet-ops#add-network|programmatically]] or via the [[arcana-wallet-user-guide|wallet UI]].
+
+[[index-wallet-user-guide|Learn more...]]
