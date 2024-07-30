@@ -1,1 +1,0 @@
-Web3 developers can effortlessly provide instant, in-app, non-custodial wallets to users through the {{config.extra.arcana.sdk_name}}, eliminating the need for separate wallet installations or key management. User keys are powered by an advanced asynchronous, distributed key generation protocol, giving users full wallet control while abstracting cryptography complexities.

@@ -1,18 +1,18 @@
 ---
 alias: arcana-wallet-user-guide
-title: 'Arcana Wallet User Guide'
+title: 'Arcana Wallet Features'
 description: 'Arcana Wallet UI Usage Guide. Learn how to use the wallet for signing blockchain transactions, switching chains and more.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Basic Wallet Operations
+# Using the Wallet
 
-Learn about the Web3 operations supported by the {{config.extra.arcana.wallet_name}} UI. Only authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions. 
+Learn about the basic Web3 operations supported by the {{config.extra.arcana.wallet_name}} UI.
 
 ## View Wallet
 
-The {{config.extra.arcana.wallet_name}} is an in-app, embedded wallet available only in apps that integrate with the {{config.extra.arcana.sdk_name}}. To view the wallet, log into the app and click on the wallet icon on the bottom right or left depending upon where the developer has configured.
+To view the  {{config.extra.arcana.wallet_name}} , log into the app and click on the wallet icon to maximize the wallet screen. Only authenticated users can access the wallet and sign blockchain transactions. 
 
 <figure markdown="span">
   <img class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_wallet_min_light_vanilla.gif#only-dark" alt="Arcana Wallet"/><img class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_wallet_min_dark_vanilla.gif#only-light" alt="In-app Arcana Wallet"/>
@@ -26,7 +26,7 @@ The {{config.extra.arcana.wallet_name}} is an in-app, embedded wallet available 
 
 ## Key Features
 
-Use the following tabs located at the bottom of the wallet to access various wallet functions:
+Access various wallet features through the following tabs in the wallet UI:
 
 **Tabs**
 
@@ -35,28 +35,9 @@ Use the following tabs located at the bottom of the wallet to access various wal
 * <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> User Profile Tab
 * <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> Activity Tab
 
-**Actions**
+**Tab Actions**
 
-* Sign (approve, reject) blockchain transactions
-* Add and configure network settings
-* Switch networks
-* Manage token assets (native and custom)
-    - Check account balance
-    - List token assets
-    - Add custom tokens (ERC-20)
-    - Send and receive tokens 
-    - Buy/Sell cryptocurrency
-* Manage NFTs
-    - List NFT assets
-    - View NFT details
-    - Send NFTs (ERC-721, ERC-1155)
-    - Add NFTs
-    - Modify (edit, delete) NFTs
-* View user profile details
-* Monitor blockchain transaction activity
-* Export private key
-* Switch between EoA/SCW account types (Gasless)
-* Logout
+{% include "./text-snippets/wallet_features.md" %}
 
 <!---
 ## Starter Tips
