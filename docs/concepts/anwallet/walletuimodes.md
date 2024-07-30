@@ -1,38 +1,26 @@
 ---
 alias: concept-wallet-uimodes
 title: 'UI Modes'
-description: 'Arcana Auth SDK allows Web3 apps devs to either choose the built-in Arcana Wallet UI or build their own custom wallet UI. The Wallet UI Mode setting allows developers to choose custom or Arcana Wallet UI.'
+description: 'Learn about the two UI modes for customizing the Arcana wallet, built-in wallet UI or custom wallet UI mode.'
 arcana:
   root_rel_path: ../..
 ---
 
 # UI Modes
 
-The [[concept-index-arcana-wallet| {{config.extra.arcana.wallet_name}}]] is an embedded, non-custodial Web3 wallet that is enabled for every user that logs into an app integrated with the {{config.extra.arcana.sdk_name}}. App developers can manage the wallet user experience by choosing the built-in {{config.extra.arcana.wallet_name}} UI or building a custom wallet UI and enabling authenticated users to sign blockchain transactions with the configured wallet UI.
+The [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]] can be customized by Web3 app developers through the {{config.extra.arcana.dashboard_name}}. When registering the app via the dashboard, developers must choose one of the wallet UI modes:
 
-## Built-in {{config.extra.arcana.wallet_name}} UI
+* Built-in {{config.extra.arcana.company_name}} wallet UI (default)
+* Custom wallet UI.
 
-To use the built-in {{config.extra.arcana.wallet_name}} UI, developers can keep the default 'Arcana Wallet UI' setting while creating a new app using the {{config.extra.arcana.dashboard_name}}. This is a one-time setting and cannot be reverted once the app is registered with the {{config.extra.arcana.company_name}}, configured and deployed on the Testnet or the Mainnet.
-
-## Custom Wallet UI
-
-To use a custom wallet UI, developers must choose the 'Custom UI' setting while creating a new app using the {{config.extra.arcana.dashboard_name}}. This is a one-time setting and cannot be reverted once the app is registered with the {{config.extra.arcana.company_name}}, configured and deployed on the Testnet or the Mainnet.
+To use a custom wallet UI, developers should select the UI mode as 'Custom UI' during app creation on the {{config.extra.arcana.dashboard_name}}. This choice is final and cannot be changed later.
 
 !!! an-caution "AuthProvider: `appMode` and `alwaysVisible` flags"
 
-      Developers can control two key aspects of the user experience related to the wallet. 
+      Developers can control the wallet UI mode and when the wallet UI is displayed in the app context through the following customizations:
 
-      1. **App UI Mode**: Manage whether the user experiences the {{config.extra.arcana.wallet_name}} UI or a custom wallet UI.
-      2. **Always Visible**: Manage whether the authenticated user can access the wallet that shows up at all times in the app context or shows up only when a blockchain transaction is triggered.
+      1. **UI Mode**: Choose between the {{config.extra.arcana.wallet_name}} UI or a custom wallet UI. Set this in the dashboard's Wallet UI Mode when creating and registering a new app.
 
-      These user experiences are managed by the `appMode` and the `alwaysVisible` flags in the `AuthProvider` constructor.
-
-      **appMode:**  This can only be set via the dashboard **Wallet UI Mode** setting that is configured at the time of creating a new app entry and registering the app. It is used to choose a custom wallet UI or the {{config.extra.arcana.wallet_name}} UI experience for the app users. The `appMode` flag is ignored when the {{config.extra.arcana.wallet_name}} UI selected.
-      
-      **alwaysVisible:** If the developer chooses to use the built-in {{config.extra.arcana.wallet_name}} UI via the **Wallet UI Mode** setting in the dashboard while creating and registering the app, then the `alwaysVisible` flag can be used to manage **when** the {{config.extra.arcana.wallet_name}} UI is visible in the app's context. By default, it is set to true so the {{config.extra.arcana.wallet_name}} UI is always visible in the app's context as a minimized widget. When set to `false`, the {{config.extra.arcana.wallet_name}} UI shows up only when a blockchain transaction is triggered or if the developer calls `showWallet` method of the `AuthProvider`. The `alwaysVisible` flag is ignored when custom UI is selected via the **Wallet UI Mode** setting in the dashboard.
-
-!!! an-info "showWallet()"
-
-      App developers can choose to use the  [`showWallet()`](https://authsdk-ref-guide.netlify.app/classes/authprovider#showWallet) method of the `AuthProvider` to display the wallet programmatically. This is useful when using the `alwaysVisible=false` configuration.
+      2. **Always Visible**: Decide if the wallet is always accessible in the app or only visible when a blockchain transaction is triggered. If using the {{config.extra.arcana.wallet_name}} UI, the alwaysVisible flag controls the UI's visibility. By default, the UI is always visible as a minimized widget. When set to false, the UI only appears during a blockchain transaction or when the developer calls the [`showWallet()`](https://authsdk-ref-guide.netlify.app/classes/authprovider#showWallet) method of the AuthProvider. The `alwaysVisible` flag is ignored if a custom UI is selected in the dashboard's Wallet UI Mode.
 
       
