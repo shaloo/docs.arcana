@@ -266,7 +266,7 @@ plugins:
           'concepts/sharedkeys.md': 'concepts/keyspace-types.md'
           'concepts/privatekey.md': 'concepts/private-key.md'
           'concepts/plugnplayauth.md': 'concepts/plug-and-play-auth.md'
-          'concepts/how_dkg_works.md': 'concepts/how-dkg-works.md'
+          'concepts/how_dkg_works.md': 'concepts/adkg.md'
           'concepts/gateway_nodes.md': 'concepts/gateway-node.md'
           'concepts/anwallet/arcanawallet_oview.md': 'concepts/anwallet/index.md'
           'concepts/ansmartc/an_smart_contracts.md': 'concepts/ansmartc/an-smart-contracts.md'
@@ -557,13 +557,8 @@ nav:
     - Learn:
       - Integration Examples: https://github.com/arcana-network/auth-examples
       - Concepts: 
-        - Authentication: 
-          - concepts/authtype/index.md
-          - Auth Providers: concepts/authtype/socialauth.md
-          - Custom OAuth: concepts/authtype/custom-oauth.md
+        - ADKG: concepts/adkg.md
         - Aggregate Login: concepts/aggregatelogin.md
-        - Auth SDK: concepts/authsdk.md
-        - Auth-Core SDK: concepts/auth-core-sdk.md
         - Arcana Wallet: 
           - concepts/anwallet/index.md
           - UI Modes: concepts/anwallet/walletuimodes.md
@@ -572,16 +567,17 @@ nav:
           - Network Switching: concepts/anwallet/walletntwkswitchmode.md
           - Wallet Visibility: concepts/anwallet/walletvisibility.md
         - Arcana JWT Token: concepts/an_jwt_token.md
+        - Authentication: 
+          - concepts/authtype/index.md
+          - Auth Providers: concepts/authtype/socialauth.md
+          - Custom OAuth: concepts/authtype/custom-oauth.md
+        - Auth SDK: concepts/authsdk.md
+        - Auth-Core SDK: concepts/auth-core-sdk.md
         - Configuration Profiles: concepts/config-profiles.md
         - Custom Login UI: concepts/custom-login-ui.md
         - Custom Wallet UI: concepts/custom-wallet-ui.md
         - Dashboard: concepts/dashboard.md
         - DID Token: concepts/an_did_token.md
-        - DKG:
-          - What is DKG?: concepts/what-is-dkg.md
-          - How does DKG work?: concepts/how-dkg-works.md
-          - What is ADKG?: concepts/adkg.md
-          - How does ADKG work?: concepts/how-adkg-works.md
         - Gateway: concepts/gateway-node.md
         - Key Space Type: concepts/keyspace-types.md
         - Manage Chains: concepts/manage-chains.md

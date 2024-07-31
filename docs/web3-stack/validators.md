@@ -8,7 +8,7 @@ arcana:
   
 # Validators
 
-The core of the {{config.extra.arcana.company_name}} protocol is the [[concept-dkg|asynchronous distributed key generation (ADKG)]] subsystem, which generates key shares. These key shares are assembled on the client side within the app, never at the ADKG nodes, to form the authenticated user's private key.
+The core of the {{config.extra.arcana.company_name}} protocol is the [[concept-adkg|asynchronous distributed key generation (ADKG)]] subsystem, which generates key shares. These key shares are assembled on the client side within the app, never at the ADKG nodes, to form the authenticated user's private key.
 
 To support decentralization, the ADKG subsystem consists of multiple nodes, including some operated by trusted third-party entities known as validators.
 

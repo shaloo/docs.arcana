@@ -11,33 +11,16 @@ arcana:
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_dashboard_light.{{config.extra.arcana.img_png}}#only-light" width="50"/>
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_dashboard_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
-Access the {{config.extra.arcana.dashboard_name}} at: {% include "./text-snippets/db_portal_url.md" %}
+The {{config.extra.arcana.dashboard_name}} can be accessed at: {% include "./text-snippets/db_portal_url.md" %}
 
-The {{config.extra.arcana.dashboard_name}} lets you register apps with {{config.extra.arcana.company_name}} and tailor them to your use cases and user onboarding preferences. It works alongside the {{config.extra.arcana.company_name}} Gateway for app configuration and usage tracking. The dashboard provides insights, such as monthly and daily active users (MAU) per app.
-
-!!! an-caution
-
-    Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [[register-app-auth|registered]] and [[index-configure-auth|configured for user onboarding]] through the {{config.extra.arcana.dashboard_name}}.
-
-## Key Functions
-
-### Register App
-
-Before integrating the {{config.extra.arcana.sdk_name}}, developers must use the dashboard to register apps with {{config.extra.arcana.company_name}} and get a unique {{config.extra.arcana.app_address}}. Later, during integration, use {{config.extra.arcana.app_address}} to create a new `AuthProvider` instance for onboarding users and signing blockchain transactions.
-
-### Configure Auth Usage
-
-Use the dashboard to customize {{config.extra.arcana.sdk_name}} usage:
-
-- **Wallet UI**: select built-in {{config.extra.arcana.sdk_name}} UI or custom wallet UI
-- **Branding**: customize the look and feel of the {{config.extra.arcana.sdk_name}} UI
-- **Authentication**: enable authentication providers for onboarding users
-- **Chain Management**: add more chains to the default pre-configured list of supported chains
-- **Global/App-Specific Keys**: select if app users see same wallet address across all apps deployed on {{config.extra.arcana.company_name}} ecosystem or app-specific unique addresses
-- **Gasless**: enable gasless transactions for app users
+It lets Web3 developers register apps with {{config.extra.arcana.company_name}} and set SDK preferences. The dashboard manages app settings and usage through the Gateway node. It provides insights on {{config.extra.arcana.company_name}} protocol usage, including monthly and daily active users (MAU) per app. [[dashboard-user-guide|Learn more...]]
 
 <figure markdown="span">
   <img src="{{config.extra.arcana.img_dir}}/diagrams/d_an_dashboard_light.{{config.extra.arcana.img_png}}#only-light" alt="Developer Dashboard" class="an-screenshots width_85pc"/>
   <img src="{{config.extra.arcana.img_dir}}/diagrams/d_an_dashboard_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Developer Dashboard" class="an-screenshots width_85pc"/>
   <figcaption>Developer Dashboard</figcaption>
 </figure>
+
+!!! an-caution
+
+    Before integrating any application with the {{config.extra.arcana.sdk_name}}, it must be [[register-app-auth|registered]] and [[index-configure-auth|configured for user onboarding]] through the {{config.extra.arcana.dashboard_name}}.

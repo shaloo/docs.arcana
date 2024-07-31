@@ -12,7 +12,7 @@ arcana:
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
 
-{{config.extra.arcana.sdk_name}} enables swift user onboarding in Web3 apps. It embeds an embedded, non-custodial Web3 wallet displayed in the app's context for secure blockchain transaction signing.
+{{config.extra.arcana.sdk_name}} streamlines user onboarding in Web3 apps with an embedded, non-custodial wallet for secure blockchain transactions.
 
 Developers start by [[register-app-auth|registering the app]] and [[index-configure-auth|configuring auth settings]] through the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Each registered app gets a unique **{{config.extra.arcana.app_address}}** essential for integrating with the {{config.extra.arcana.sdk_name}}. 
 
@@ -23,18 +23,24 @@ Developers start by [[register-app-auth|registering the app]] and [[index-config
 
 **User Authentication**
 
-  * Developers customize user onboarding with Web2 login via authentication providers and passwordless access.
-  * Developers can choose between plug-and-play or custom login UI for authentication.
-  * Seamless user login without key management hassles.
+  * Customize onboarding with Web2 [[concept-social-login|social login]] and passwordless access.
+  * Choose between built-in, [[concept-plug-and-play-auth|plug-and-play]] or [[concept-custom-login-ui|custom login UI]].
+  * Secure, self-custodial keys without key management complexities.
 
 **Web3 Wallet Operations**
 
   * Developers can customize the blockchain transaction signing experience for users with [[concept-wallet-visibility|{{config.extra.arcana.wallet_name}} visibility]] settings.
-  * Authenticated users can securely sign transactions on [[web3-stack-chains|supported blockchain networks]]
+  * Authenticated users can securely sign transactions for [[web3-stack-apps|supported Web3 apps and frameworks]]
   * Supports Web3 wallet operations and standard Ethereum JSON-RPC calls, including:
     - Configure and switch networks and accounts.
     - Sign blockchain transactions.
     - Send and receive tokens and NFTs.
     - Manage NFTs and preview NFT details using the wallet.
 
-{% include "./text-snippets/auth_sdk_flavors.md" %}
+  * Customize transaction signing with {{config.extra.arcana.wallet_name}} visibility settings.
+  * Supports [[web3-stack-chains|EVM and non-EVM blockchain networks]].
+  * Supports Web3 wallet operations and Ethereum JSON-RPC calls, including:
+    - Network and account management.
+    - Signing transactions.
+    - Sending and receiving tokens and NFTs.
+    - Managing and previewing NFTs.
