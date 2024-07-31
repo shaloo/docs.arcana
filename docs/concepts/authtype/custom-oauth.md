@@ -13,28 +13,13 @@ arcana:
 
 # Custom OAuth
 
-The custom OAuth feature allows Web3 apps using a custom authentication service to use the {{config.extra.arcana.sdk_name}} for secure key assignment. Authenticate users with any custom authentication service and issue signed tokens (JWT). Send these tokens to the {{config.extra.arcana.sdk_name}}. The SDK verifies users, retrieves key shares, and generates the private key on the client for blockchain transactions.
+The custom OAuth feature enables Web3 apps to use the {{config.extra.arcana.sdk_name}} for secure key assignment. Authenticate users with a custom OAuth service, issue JWT tokens, and send them to the SDK. The SDK verifies users, retrieves key shares, and generates the private key for blockchain transactions on the client side.
 
 {% include "./text-snippets/warn_custom_oauth_appkeys_only.md" %}
 
 ## Authentication Flow
 
-1. The developer adds code to the app for using a custom OAuth server or a mix of custom authentication methods and obtains a JWT after user authentication.
-
-    ```mermaid
-    graph LR
-        IAP{{Developer}}
-        MMM(Custom Authentication Service)
-        subgraph app[App]
-        direction LR
-        CL[Custom Login]
-        end
-        IAP --> CL -->  MMM --->|JWT Token| CL
-
-        linkStyle 2 stroke: deeppink;
-    ```
-
-2. If the app is not already registered, the developer must log in to the {{config.extra.arcana.dashboard_name}} and register to get a ClientID. Then configure custom OAuth settings in the dashboard.
+1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then [configure custom OAuth settings](#custom-oauth-settings]) in the dashboard.
 
     ```mermaid
     graph TD
@@ -50,7 +35,22 @@ The custom OAuth feature allows Web3 apps using a custom authentication service 
 
     ```
 
-3. Next, install {{config.extra.arcana.sdk_name}}, integrate app with the {{config.extra.arcana.sdk_name}}, initialize `AuthProvider` and then use the JWT obtained after the custom OAuth processing to call the `loginWithCustomProvider()` method.
+2. Add code in the app for using a custom OAuth service and obtains a JWT after user authentication.
+
+    ```mermaid
+    graph LR
+        IAP{{Developer}}
+        MMM(Custom Authentication Service)
+        subgraph app[App]
+        direction LR
+        CL[Custom Login]
+        end
+        IAP --> CL -->  MMM --->|JWT Token| CL
+
+        linkStyle 2 stroke: deeppink;
+    ```
+
+3. Next, install {{config.extra.arcana.sdk_name}}, integrate app with the SDK, initialize `AuthProvider` and then use the JWT obtained after the custom OAuth processing to call the `loginWithCustomProvider()` method.
 
     ```mermaid
     graph TD
@@ -70,7 +70,7 @@ The custom OAuth feature allows Web3 apps using a custom authentication service 
         authsdk --Fetch Key Shares --> BEP[Arcana Auth Protocol] <--> BEK[DKG]
     ```
 
-4. {{config.extra.arcana.sdk_name}} verifies the JWT using claim information supplied in the dashboard configuration. Once verified, it fetches the user's key shares from the {{config.extra.arcana.company_name}} backend. It generates the user key locally, with privacy, within the app context from the key shares. The Web3 key allows authenticated users to sign blockchain transactions securely.
+4. The {{config.extra.arcana.sdk_name}} checks the JWT using dashboard settings. After verification, it gets the user's key shares from the {{config.extra.arcana.company_name}} backend and generates the key locally in the app. This key lets users securely sign blockchain transactions.
 
     ```mermaid
     graph LR
@@ -78,13 +78,9 @@ The custom OAuth feature allows Web3 apps using a custom authentication service 
         BEC <--> BEA[Arcana Auth Protocol] <--> BEDKG[DKG]
     ```
 
-## Dashboard Settings
+## Custom OAuth Settings
 
-Use the {{config.extra.arcana.dashboard_name}} to configure custom OAuth settings:
-
-* JWKS Endpoint
-* User Identifier String
-* JWT Validation via Attributes/Claims
+The following custom OAuth settings can be specified via the {{config.extra.arcana.dashboard_name}}. 
 
 ### JWKS Endpoint
 

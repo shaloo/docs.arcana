@@ -580,7 +580,6 @@ nav:
         - DID Token: concepts/an_did_token.md
         - Gateway: concepts/gateway-node.md
         - Key Space Type: concepts/keyspace-types.md
-        - Manage Chains: concepts/manage-chains.md
         - MFA: concepts/mfa.md
         - Non-EVM Chains: concepts/non-evm-chains.md
         - Plug-and-Play Login UI: concepts/plug-and-play-auth.md

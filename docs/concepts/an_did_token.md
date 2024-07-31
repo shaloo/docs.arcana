@@ -8,11 +8,11 @@ arcana:
 
 # Decentralized Identifier (DID)
 
-Decentralized identifiers are a way to identify Web3 app users without using a central authority or a company. 
+[Decentralized identifiers (DIDs)](https://www.w3.org/TR/did-core/) let Web3 app users be identified without a central authority.
 
-A [decentralized Identifier (DID)](https://www.w3.org/TR/did-core/) is a globally unique identifier for user verification. It is built using a privacy-preserving user identity management system that leverages blockchain technology, cryptography, and decentralized networks. It does not require centralized identity dispensing and verification systems such as centralized registries, identity providers, and certificate authorities. The DID is fully under the control of the user.
+A DID is a unique, privacy-preserving identifier built with blockchain technology, cryptography, and decentralized networks. It eliminates the need for centralized registries and identity providers, giving users full control.
 
-{{config.extra.arcana.sdk_name}} uses the DID protocol, Ethereum blockchain and [elliptic curve cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) to generate verifiable proofs for user identity authorization by Web3 apps. These proofs can be used to authenticate and authorize resource access by app users.
+{{config.extra.arcana.sdk_name}} uses the DID protocol, Ethereum blockchain, and [elliptic curve cryptography](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) to create verifiable proofs for user authentication and authorization.
 
 ## DID Token Structure
 
@@ -21,9 +21,9 @@ The DID token is encoded as a Base64 JSON string tuple representing [proof, clai
 * **Proof:** A digitally signed string that is used to prove the validity of a given claim.
 * **Claim:** Data representing the user's access assertion.
 
-## Arcana `userDIDToken`
+###`userDIDToken`
 
-The {{config.extra.arcana.sdk_name}} returns `userDIDToken` once an app user logs in successfully via the configured social login provider. This token is generated upon successful authentication via any of the supported methods of the `AuthProvider`:
+The {{config.extra.arcana.sdk_name}} returns `userDIDToken` once an app user logs in successfully via the configured social login provider by using any of the supported methods of the `AuthProvider`:
 
 * Plug-and-play login `connect()` 
 * Custom login UI methods such as `loginWithSocial()`, `loginWithLink()` (deprecated), `loginWithOTPStart`,`loginWithOTPComplete` and `loginWithBearer()`

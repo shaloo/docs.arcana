@@ -15,3 +15,8 @@ Web3 app developers can programmatically modify the pre-configured network list 
 The `wallet_switchEthereumChain` method switches the active chain only after the user approves the network switch transaction.
 
 {% include "./text-snippets/warn-wallet-chain-edit-persistence.md" %}
+
+!!! an-caution "Switching Blockchain Networks"
+      
+      Switching chains in the wallet typically doesn’t change the wallet address when switching to another EVM-compatible chain. However, switching to a non-EVM-compatible blockchain supported by {{config.extra.arcana.sdk_name}} will assign a new set of keys and a different wallet address.
+

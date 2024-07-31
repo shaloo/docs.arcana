@@ -103,7 +103,7 @@ When both Testnet and Mainnet configuration profiles are associated with the reg
 
 ## Switch Application
 
-To switch viewing configuration settings from one application configuration profile screen to another, click on the dropdown next to the application name in the LHS navigation. You will see other registered applications in your account. Select another appliation to switch to viewing its configuration settings.
+To switch viewing configuration settings from one application configuration profile screen to another, click on the dropdown next to the application name in the LHS navigation. You will see other registered applications in your account. Select another app name in the dropdown to switch to viewing its configuration settings.
 
 The last entry in the dropdown is 'Manage Apps'. You can click it to browse the 'Manage Apps' landing page with app cards layout view. Switch to another app by clicking on the app card.
 

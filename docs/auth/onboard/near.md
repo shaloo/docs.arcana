@@ -32,7 +32,7 @@ Learn how to onboard users through the configured [[concept-social-login|social 
 
 ## What's Next?
 
-Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other [[near-web3-wallet-ops|supported web3 wallet operations on Near]] in the authenticated user's context.
+Use the EIP-1193 provider offered by the SDK to call JSON/RPC functions and other [[near-web3-wallet-ops|supported Web3 wallet operations on Near]] in the authenticated user's context.
 
 ## See also
 

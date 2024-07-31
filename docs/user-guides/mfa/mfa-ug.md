@@ -8,7 +8,7 @@ arcana:
 
 # MFA Setup
 
-Learn how Web3 apps integrated with the {{config.extra.arcana.sdk_name}} can enable **enchanced wallet security** by setting up [Multi-Factor Authentication (MFA)]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md).
+Learn how Web3 apps integrated with the {{config.extra.arcana.sdk_name}} can enable **enhanced wallet security** by setting up [Multi-Factor Authentication (MFA)]({{page.meta.arcana.root_rel_path}}/concepts/mfa.md).
 
 ??? an-note "MFA Selection: User's Choice"
 
