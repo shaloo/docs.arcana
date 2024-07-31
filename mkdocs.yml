@@ -197,7 +197,7 @@ plugins:
       auto_caption: true
       caption_position: bottom
   - timetoread:
-      wpm: 300
+      wpm: 350
       allPages: True
   - redirects:
         redirect_maps:
