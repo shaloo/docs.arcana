@@ -37,7 +37,7 @@ Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name
 
 !!! an-note "Compact Mode"
 
-      While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
+      While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-modal|compact mode (optional)]] for the plug-and-play login UI.
 
 ### 3. Create `ArcanaRainbowConnector` 
 

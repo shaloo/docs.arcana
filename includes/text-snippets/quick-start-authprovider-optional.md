@@ -8,7 +8,7 @@
 
       **`theme`:** wallet theme - `light`|`dark`
 
-      **`connectOptions`:** [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode]] for the built-in plug-and-play login UI - `true`|`false`
+      **`connectOptions`:** [[concept-plug-and-play-auth#compact-modal|compact mode]] for the built-in plug-and-play login UI - `true`|`false`
 
       ```js
 

@@ -32,7 +32,7 @@ Use the built-in, [[concept-plug-and-play-auth|plug-and-play login UI modal]] to
 
 !!! an-note "Compact Mode"
 
-      While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-plug-play-ui|compact mode (optional)]] for the plug-and-play login UI.
+      While creating the `AuthProvider`, you can choose the [[concept-plug-and-play-auth#compact-modal|compact mode (optional)]] for the plug-and-play login UI.
 
 ### 2. Use `ArcanaConnector`
 
