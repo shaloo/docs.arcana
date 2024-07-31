@@ -36,5 +36,5 @@ After adding code to onboard users in a Unity Web3 gaming app, developers can ad
 
 ## See also
 
-* [User Authentication]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md)
+* [Authentication Types]({{page.meta.arcana.root_rel_path}}/concepts/authtype/index.md)
 * [[unity-quick-start|Unity Quick Start Guide]]

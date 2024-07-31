@@ -50,6 +50,6 @@ Authenticated users can instantly access the in-app {{config.extra.arcana.wallet
 
 ## See also
 
-* [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
+* [Authentication Types]({{page.meta.arcana.root_rel_path}}/concepts/authtype/index.md)
 * [[web-auth-error-msg|Handing authentication errors]]
 * [Auth Examples](https://github.com/arcana-network/auth-examples)

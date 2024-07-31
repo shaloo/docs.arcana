@@ -34,7 +34,7 @@ Authenticated users can instantly access the in-app {{config.extra.arcana.wallet
 
 ## See also
 
-* [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
+* [Authentication Types]({{page.meta.arcana.root_rel_path}}/concepts/authtype/index.md).
 * [{{config.extra.arcana.react_sdk_name}} Reference Guide](https://auth-react-sdk-ref-guide.netlify.app/)
 * [[web-auth-error-msg|Handling authentication errors]]
 * [Auth Examples](https://github.com/arcana-network/auth-examples)

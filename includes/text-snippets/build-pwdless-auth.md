@@ -52,7 +52,7 @@ Authenticated users can instantly access the in-app {{config.extra.arcana.wallet
 
 ## See also
 
-* [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
+* [Authentication Types]({{page.meta.arcana.root_rel_path}}/concepts/authtype/index.md)
 * [[index-config-social-providers|Configure Social Providers]]
 * [[web-auth-error-msg|{{config.extra.arcana.sdk_name}} Errors]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]

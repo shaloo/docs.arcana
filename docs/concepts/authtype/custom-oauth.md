@@ -13,54 +13,11 @@ arcana:
 
 # Custom OAuth
 
-The custom OAuth feature is for Web3 apps using a custom user authentication server. These apps can integrate with {{config.extra.arcana.sdk_name}} to securely assign keys to authenticated users for signing blockchain transactions. 
-
-Use any custom authentication server to authenticate users and issue signed-in tokens (JSON Web Tokens or JWT). Provide these tokens to {{config.extra.arcana.sdk_name}}. The SDK verifies users and fetches Web3 key shares locally. It combines them to create the user's private key, allowing them to sign blockchain transactions.
+The custom OAuth feature allows Web3 apps using a custom authentication service to use the {{config.extra.arcana.sdk_name}} for secure key assignment. Authenticate users with any custom authentication service and issue signed tokens (JWT). Send these tokens to the {{config.extra.arcana.sdk_name}}. The SDK verifies users, retrieves key shares, and generates the private key on the client for blockchain transactions.
 
 {% include "./text-snippets/warn_custom_oauth_appkeys_only.md" %}
 
-## Setup
-
-Before using custom OAuth feature, developer must use the {{config.extra.arcana.dashboard_name}} to update these settings:
-
-* JWKS Endpoint
-* User Identifier String
-* JWT Validation via Attributes/Claims
-
-### JWKS Endpoint
-
-A JWK Endpoint is a read-only URL exposed by the custom OAuth server or any other server that manages the cryptographic keys or JSON Web Keys (JWK) as per the [IETF RFC7517](https://datatracker.ietf.org/doc/html/rfc7517) and [IETF RFC7519](https://datatracker.ietf.org/doc/html/rfc7519) standards. JWKs are used to validate the integrity of a JWT and the encoded data by the {{config.extra.arcana.sdk_name}}.
-
-### User Identifier String
-
-The 'User Identifier String' is used to associate a unique string identifier with the authenticated user's key. Developers can configure this setting by choosing one of the options:
-
-* Sub: The user identifier string identifies the principal that is the subject of the JWT.
-* Email: JWT Token claim email identifier for the user
-* Custom: A custom string used for JWT Token claim.
-
-### Issuer
-
-The issuer claim identifies the principal that issued the JWT.  For example, it could be the app identifier or deployed app URL. For example,
-
-Issuer: "https://myapp.example.com"
-
-### Audience
-
-The audience claim identifies the recipients that the JWT is intended for. For example,
-
-Audience: "arcana-login-nnnnnn"
-
-### JWK Validation (Optional)
-
-Claims are pieces of information asserted about a subject or user. A JWT can contain a claim called name that asserts that the name of the user authenticating is "John Doe". JWT Validation entities specified by the developer via the  {{config.extra.arcana.dashboard_name}} are key, value pairs. These are used to validate the JWT provided by the developer to the {{config.extra.arcana.sdk_name}} via the `loginWithCustomProvider()` method for authenticated users. 
-
-Examples:
-
-purpose: 'login'
-keyUse: 'arcana'
-
-## How Does Custom OAuth Work?
+## Authentication Flow
 
 1. The developer adds code to the app for using a custom OAuth server or a mix of custom authentication methods and obtains a JWT after user authentication.
 
@@ -120,3 +77,44 @@ keyUse: 'arcana'
         BED[Arcana Developer Dashboard] --Custom OAuth Settings--> BEC{Gateway} 
         BEC <--> BEA[Arcana Auth Protocol] <--> BEDKG[DKG]
     ```
+
+## Dashboard Settings
+
+Use the {{config.extra.arcana.dashboard_name}} to configure custom OAuth settings:
+
+* JWKS Endpoint
+* User Identifier String
+* JWT Validation via Attributes/Claims
+
+### JWKS Endpoint
+
+A JWKS Endpoint is a read-only URL exposed by the custom OAuth server or any other server that manages the cryptographic keys or JSON Web Keys (JWK) as per the [IETF RFC7517](https://datatracker.ietf.org/doc/html/rfc7517) and [IETF RFC7519](https://datatracker.ietf.org/doc/html/rfc7519) standards. JWKs are used to validate the integrity of a JWT and the encoded data by the {{config.extra.arcana.sdk_name}}.
+
+### User Identifier String
+
+The 'User Identifier String' links a unique identifier with the user's key. Developers can choose the string from one of the options:
+
+* Sub: The user identifier string identifies the principal that is the subject of the JWT.
+* Email: JWT Token claim email identifier for the user
+* Custom: A custom string used for JWT Token claim.
+
+### Issuer
+
+The issuer claim identifies the principal that issued the JWT.  For example, it could be the app identifier or deployed app URL. For example,
+
+Issuer: "https://myapp.example.com"
+
+### Audience
+
+The audience claim identifies the recipients that the JWT is intended for. For example,
+
+Audience: "arcana-login-nnnnnn"
+
+### JWK Validation (Optional)
+
+Claims are pieces of information asserted about a subject or user. A JWT can contain a claim called name that asserts that the name of the user authenticating is "John Doe". JWT Validation entities specified by the developer via the  {{config.extra.arcana.dashboard_name}} are key, value pairs. These are used to validate the JWT provided by the developer to the {{config.extra.arcana.sdk_name}} via the `loginWithCustomProvider()` method for authenticated users. 
+
+Examples:
+
+purpose: 'login'
+keyUse: 'arcana'
