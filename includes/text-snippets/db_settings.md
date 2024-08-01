@@ -113,7 +113,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
 
     !!! an-tip "Account Abstraction: SCW Account"
 
-          Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-user-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
+          Gasless transactions require enabling **SCW** user accounts or [[concept-gasless-transactions#gasless-accounts|'gasless accounts']] that are different from the typical **EOA** user accounts.
     
     See [[configure-gasless|how to configure gasless transactions]] for details.
 

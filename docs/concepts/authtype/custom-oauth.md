@@ -19,7 +19,7 @@ The custom OAuth feature enables Web3 apps to use the {{config.extra.arcana.sdk_
 
 ## Authentication Flow
 
-1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then [configure custom OAuth settings](#custom-oauth-settings]) in the dashboard.
+1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then [configure custom OAuth settings](#custom-oauth-settings) in the dashboard.
 
     ```mermaid
     graph TD

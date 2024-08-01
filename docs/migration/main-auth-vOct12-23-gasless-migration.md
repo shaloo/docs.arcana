@@ -50,7 +50,7 @@ To enable gasless transactions, use the {{config.extra.arcana.dashboard_name}} t
       
       2. Redeployment of app is not required to enable gasless transactions after configuring the gas tanks via the dashboard.
       
-      3. Make sure before issuing the gasless blockchain operations in the app that the blockchain network is the same as the one where gas tank is set up. Also, make sure the SCW wallet address is used for the blockchain transaction. There are two addresses associated with the [[concept-gasless-transactions#gasless-user-accounts|gasless user accounts]] - EoA and SCW. Only SCW transactions qualify as gasless. See [[faq-gasless|gasless FAQ for more usage insights.]]
+      3. Make sure before issuing the gasless blockchain operations in the app that the blockchain network is the same as the one where gas tank is set up. Also, make sure the SCW wallet address is used for the blockchain transaction. There are two addresses associated with the [[concept-gasless-transactions#gasless-accounts|gasless user accounts]] - EoA and SCW. Only SCW transactions qualify as gasless. See [[faq-gasless|gasless FAQ for more usage insights.]]
 
 ## Release Details
 
