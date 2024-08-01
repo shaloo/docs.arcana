@@ -41,7 +41,7 @@ Use the `connect()` function to bring up the plug-and-play pop-up modal in the a
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
-* [[index-faq| FAQ]]
+* [[faq-gen| FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 

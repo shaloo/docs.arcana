@@ -62,7 +62,7 @@ Upon success, `loginWithCustomProvider` will ensure that the authenticated user'
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
-* [[index-faq| FAQ]]
+* [[faq-gen| FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 

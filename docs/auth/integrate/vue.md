@@ -48,7 +48,7 @@ The {{page.meta.arcana.app_type}} Web3 app is now **integrated** with the {{conf
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
-* [[index-faq| FAQ]]
+* [[faq-gen| FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 

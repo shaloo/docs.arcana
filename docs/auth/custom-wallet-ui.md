@@ -137,7 +137,7 @@ Add code to use the `AuthProvider` and issue blockchain transactions in the cont
 
 ## See also
 
-* [[index-faq| FAQ]]
+* [[faq-gen| FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 

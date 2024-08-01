@@ -4,11 +4,7 @@ When enabling [[concept-gasless-transactions|gasless transactions]] in the {{con
 
 In this guide, you will learn how to configure gasless transactions irrespective of whether you wish to use only the standalone {{config.extra.arcana.gasless_sdk_name}} or use the built-in gasless feature in the {{config.extra.arcana.sdk_name}}.
 
-!!! an-danger "Disabling Gasless" 
-
-      When you create a gas tank for a blockchain, it turns on the gasless feature. At the same time, the user account changes into a dual address [[concept-gasless-transactions#gasless-accounts|gasless account]], which links to both an Externally Owned Account (EOA) and a Smart Contract Wallet (SCW) address.
-
-      Developers cannot delete a gas tank once set up. But they can stop or deactivate gas tanks if needed. The gasless feature works only when gas tanks have funds and are active, but once the user account transforms into a gasless one, you can't undo it.
+{% include "./text-snippets/warn_disable_gasless.md" %}
 
 ## Prerequisites
 

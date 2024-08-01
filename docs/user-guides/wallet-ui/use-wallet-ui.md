@@ -159,15 +159,22 @@ Clicking will open the provider interface in a new tab. {{config.extra.arcana.wa
   <figcaption>Confirm Buy Transaction</figcaption>
 </figure> 
 
-??? an-example "On-Ramp Usage example"
+??? an-example "On-Ramp Provider Usage"
 
       Fiat on-ramp providers may require users to follow country-specific KYC procedures and list only the available cryptocurrencies for the selected chain. Minimum purchase amounts can vary by country and provider.
 
-      {% include "./text-snippets/fiat_on_ramp_providers_ui_example.md" %}
+      For example, Transak requires each user to complete KYC by submitting country-specific identification documents. Once the verification is complete, the user can purchase the cryptocurrency with Transak.  This verification is a one-time thing and subsequent purchases will not require this additional step. The figure below shows an example of a purchase transaction using Transak.
+      
+      <figure markdown="span">
+        <img alt="Using Transak" class="an-screenshots-noeffects width_50pc" src="{{config.extra.arcana.img_dir}}/an_wallet_fiat_transak.gif"/>
+        <figcaption>Using Transak</figcaption>
+      </figure>
 
-      {% include "./text-snippets/fiat_on_ramp_providers_ug.md" %}
+      Refer to the provider documentation for details regarding usage and coverage:
+      
+      * [Transak User Guide](https://support.transak.com/en/articles/7846055-buying-cryptocurrency-for-beginners)
 
-      {% include "./text-snippets/fiat_on_ramp_providers_coverage.md" %}
+      * [Transak coverage](https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits)
 
 ??? an-caution "Buy Limitations"
 
@@ -202,15 +209,21 @@ Clicking opens the provider interface in a new tab. Complete the sale there. {{c
   <figcaption>Confirm Sell Transaction</figcaption>
 </figure>
 
-??? an-example "Off-ramp Usage Example"
+??? an-example "Off-ramp Provider Usage"
 
       Fiat off-ramp providers may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Note that the basic maximum sell amount for a country or cryptocurrency may vary across countries and providers.
 
-      {% include "./text-snippets/fiat_off_ramp_providers_ui_example.md" %}
+      Transak requires each user to complete KYC by submitting country-specific identification documents. Once the verification is complete, the user can sell cryptocurrency via Transak.  This verification is a one-time thing; subsequent purchases will not require this additional step. The figure below shows an example of a sell transaction using Transak.
 
-      {% include "./text-snippets/fiat_off_ramp_providers_ug.md" %}
+      <figure markdown="span">
+        <img alt="Using Transak" class="an-screenshots-noeffects width_50pc" src="{{config.extra.arcana.img_dir}}/an_wallet_fiat_transak_sell.{{config.extra.arcana.img_png}}"/>
+          <figcaption>Using Transak</figcaption>
+      </figure>
 
-      {% include "./text-snippets/fiat_off_ramp_providers_coverage.md" %}
+      Refer to provider documentation for more details on usage and coverage.
+
+      * [Transak User Guide](https://support.transak.com/en/articles/7846055-buying-cryptocurrency-for-beginners)
+      * [Transak coverage](https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits)
 
 The activity tab in the {{config.extra.arcana.wallet_name}} UI displays details of the 'sell' transaction issued from the wallet.
 

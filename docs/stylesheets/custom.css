@@ -255,16 +255,28 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
 
 /* Code: Arcana Styling */
 
+
+
 /*.md-typeset .tabbed-block>.highlight:first-child {*/
   .md-typeset .tabbed-set>input:target {
    font-size: 0.5rem;
    color: var(--md-an-pink-color);
 }
 
+.md-typeset .tabbed-block>.highlight:first-child>pre>code, .md-typeset .tabbed-block>pre:first-child>code {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.md-typeset .tabbed-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .md-typeset pre>code {
   border-radius: 9px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .highlight .hll {

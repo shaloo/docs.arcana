@@ -6,6 +6,8 @@ description: 'Fast, secure social login and gasless transactions in Web3 apps.'
 arcana:
   root_rel_path: .
 timetoread: False
+hide: 
+    - toc
 ---
 
 # Web3 Made Effortless

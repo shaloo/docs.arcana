@@ -203,12 +203,6 @@ const request = async (method, params) => {
 
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-{==
-
-The {{page.meta.arcana.app_type}} mobile Web3 app is now powered by the {{config.extra.arcana.react_native_sdk_name}} to onboard users via social login and allow authenticated users to sign blockchain transactions using the {{config.extra.arcana.wallet_name}}.
-
-==}
-
 ## See also
 
 * {% include "./text-snippets/quick-start-common-examples.md" %}

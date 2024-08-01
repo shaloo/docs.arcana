@@ -52,7 +52,7 @@ The figure below shows the built-in login UI plug-and-play pop-up authentication
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
-* [[index-faq| FAQ]]
+* [[faq-gen| FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 

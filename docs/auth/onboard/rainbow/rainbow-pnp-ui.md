@@ -46,7 +46,7 @@ Specify Wagmi config to initialize `WagmiConfig` component in the app before usi
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
-* [[index-faq| FAQ]]
+* [[faq-gen| FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 

@@ -46,7 +46,7 @@ Integrate {{page.meta.arcana.app_type}} apps with[{{config.extra.arcana.sdk_name
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
-* [[index-faq| FAQ]]
+* [[faq-gen| FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 

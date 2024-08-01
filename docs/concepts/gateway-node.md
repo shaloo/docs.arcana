@@ -8,5 +8,5 @@ arcana:
 
 # Gateway Node
 
-The gateway node is a vital part of the {{config.extra.arcana.company_name}} protocol. It manages interactions with the protocol via the {{config.extra.arcana.dashboard_name}}, overseeing SDK usage and app configuration settings. It handles the blockchain transactions and contract interactions issued by the Web3 apps.
+The gateway node is a vital part of the {{config.extra.arcana.company_name}} protocol. The {{config.extra.arcana.dashboard_name}} interacts with the gateway for registering the apps and managing app configuration data, app usage data, and developer account billing, payment details.
 

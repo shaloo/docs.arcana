@@ -38,7 +38,7 @@ Use the `AuthProvider` EIP-1193 standard Ethereum provider to call JSON/RPC func
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
-* [[index-faq| FAQ]]
+* [[faq-gen| FAQ]]
 
 * [[troubleshooting| Troubleshooting Guide]]
 
