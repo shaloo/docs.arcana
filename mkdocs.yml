@@ -576,6 +576,7 @@ nav:
     - Install: gasless/gasless-install.md
     - Integrate App: gasless/gasless-integrate.md
     - Transact: gasless/gasless-transact.md
+    - Session Keys: gasless/gasless-session-keys.md
     - Try Now!: gasless/gl-try-now.md
   - Deploy App: 
     - deploy/index.md
@@ -739,6 +740,7 @@ nav:
       - Non-EVM Chains: concepts/non-evm-chains.md
       - Plug-and-Play Auth: concepts/plug-and-play-auth.md
       - Private Key: concepts/private-key.md
+      - Session Keys: concepts/scw-session-keys.md 
       - Session Type: concepts/session_type.md
       - Smart Contracts:
         - concepts/ansmartc/index.md

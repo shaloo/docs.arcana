@@ -1,4 +1,3 @@
-After initializing the {{config.extra.arcana.gasless_sdk_name}}, you can perform transactions using the `doTx()` method.
 
 ```js
   const erc20abi = [...];
