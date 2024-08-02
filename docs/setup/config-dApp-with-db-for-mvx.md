@@ -22,6 +22,8 @@ Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create 
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
+{% include "./text-snippets/mvx_shard.md" %}
+
 <figure markdown="span">
   ![Register MultiversX App]({{config.extra.arcana.img_dir}}/an_db_new_mvx_app_card.gif){ .an-screenshots .width_85pc }
   <figcaption>Register MultiversX App</figcaption>
