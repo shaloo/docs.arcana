@@ -285,9 +285,13 @@ plugins:
           'docs/quick-start/web-apps-quick-start.md': 'quick-start/wagmi-quick-start.md'
           'db/config-dApp-with-db-for-Solana.md': 'setup/config-dApp-with-db-for-Solana.md'
           #redirects for new docs restructure content
-          'https://docs.arcana.network/tutorials/code-samples/web/index.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/web/index.md': 'https://github.com/arcana-network/auth-examples'
           'dev-resources/sdk-ref/index.md': 'http://localhost:8000/auth/auth-usage-guide.md'
-          'https://docs.arcana.network/quick-start/auth-sdk/index.md': 'quick-start/wagmi-quick-start.md'
+          'quick-start/auth-sdk/index.md': 'quick-start/wagmi-quick-start.md'
+          'howto/configure-auth/index.md': 'setup/config-auth/register-app.md'
+          'howto/onboard-users/index.md': 'setup/auth/onboard/wagmi.md'
+          'https://docs.arcana.network/wallet-ops/index.md': 'auth/web3-ops/evm.md'
+          'howto/deploy-app/index.md': 'deploy/deploy-app.md'
 
 markdown_extensions:
   - abbr
