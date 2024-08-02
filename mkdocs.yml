@@ -284,6 +284,14 @@ plugins:
           'docs/category/using-arcana-wallet/index.md': 'support/index.md'
           'docs/quick-start/web-apps-quick-start.md': 'quick-start/wagmi-quick-start.md'
           'db/config-dApp-with-db-for-Solana.md': 'setup/config-dApp-with-db-for-Solana.md'
+          #redirects for new docs restructure content
+          'tutorials/code-samples/web/index.md': 'https://github.com/arcana-network/auth-examples'
+          'dev-resources/sdk-ref/index.md': 'http://localhost:8000/auth/auth-usage-guide.md'
+          'quick-start/auth-sdk/index.md': 'quick-start/wagmi-quick-start.md'
+          'howto/configure-auth/index.md': 'setup/config-auth/register-app.md'
+          'howto/onboard-users/index.md': 'setup/auth/onboard/wagmi.md'
+          'https://docs.arcana.network/wallet-ops/index.md': 'auth/web3-ops/evm.md'
+          'howto/deploy-app/index.md': 'deploy/deploy-app.md'
 
 markdown_extensions:
   - abbr
@@ -487,7 +495,6 @@ nav:
           - Near: auth/onboard/near.md
           - Unity: auth/onboard/unity.md
           - Mobile:
-            #- auth/mobile/index.md
             - Flutter: auth/mobile/flutter-get-started.md
             - React-Native: auth/mobile/react-native-get-started.md
         - Wallet Ops: 
