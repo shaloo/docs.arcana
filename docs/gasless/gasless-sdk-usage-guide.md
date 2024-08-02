@@ -15,7 +15,7 @@ of the file in the `auth` repo: https://github.com/arcana-network/auth/blob/main
 
 Use the {{config.extra.arcana.gasless_sdk_name}} to enable gasless transactions in third-party browser-based wallets. Gasless transactions are a built-in feature of the {{config.extra.arcana.wallet_name}} and don't require installation of the {{config.extra.arcana.gasless_sdk_name}}.
 
-[[arcana-wip|:octicons-cross-reference-16:{ .icon-color } SDK Reference]]{ .md-button }
+[:octicons-cross-reference-16:{ .icon-color } SDK Reference ](https://gasless-sdk-ref-guide.netlify.app/){ .md-button }
 
 ## Installation
 
