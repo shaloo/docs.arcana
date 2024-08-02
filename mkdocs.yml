@@ -290,8 +290,9 @@ plugins:
           'quick-start/auth-sdk/index.md': 'quick-start/wagmi-quick-start.md'
           'howto/configure-auth/index.md': 'setup/config-auth/register-app.md'
           'howto/onboard-users/index.md': 'auth/onboard/wagmi/wagmi-pnp-ui.md'
-          'https://docs.arcana.network/wallet-ops/index.md': 'auth/web3-ops/evm.md'
+          'wallet-ops/index.md': 'auth/web3-ops/evm.md'
           'howto/deploy-app/index.md': 'deploy/deploy-app.md'
+          'howto/config-auth/': 'concepts/social-login.md'
 
 markdown_extensions:
   - abbr
