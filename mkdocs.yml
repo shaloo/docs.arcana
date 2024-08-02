@@ -286,7 +286,7 @@ plugins:
           'db/config-dApp-with-db-for-Solana.md': 'setup/config-dApp-with-db-for-Solana.md'
           #redirects for new docs restructure content
           'tutorials/code-samples/web/index.md': 'https://github.com/arcana-network/auth-examples'
-          'dev-resources/sdk-ref/index.md': 'http://localhost:8000/auth/auth-usage-guide.md'
+          'dev-resources/sdk-ref/index.md': 'auth/auth-usage-guide.md'
           'quick-start/auth-sdk/index.md': 'quick-start/wagmi-quick-start.md'
           'howto/configure-auth/index.md': 'setup/config-auth/register-app.md'
           'howto/onboard-users/index.md': 'auth/onboard/wagmi/wagmi-pnp-ui.md'
