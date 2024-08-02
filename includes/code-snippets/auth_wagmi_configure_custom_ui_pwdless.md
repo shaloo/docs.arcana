@@ -1,4 +1,4 @@
-```js title="auth-wagmi-example/utils/wagmi_client.ts" hl_lines="1-2 7-20 36-39"
+```js hl_lines="1-2 7-20 36-39"
 
 import { AuthProvider } from "@arcana/auth";
 import { ArcanaConnector } from "@arcana/auth-wagmi";

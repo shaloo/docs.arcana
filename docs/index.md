@@ -1,10 +1,13 @@
 ---
 alias: index-docs
 template: newintro.html
-title: 'Arcana SDKs'
+title: 'Welcome'
 description: 'Fast, secure social login and gasless transactions in Web3 apps.'
 arcana:
   root_rel_path: .
+timetoread: False
+hide: 
+    - toc
 ---
 
 # Web3 Made Effortless
@@ -15,7 +18,13 @@ arcana:
 
       -- Douglas Adams (The Hitchhiker's Guide to the Galaxy)
 
-<h2>Welcome!</h2>>
+      {==
+
+      This documentation contains everything you need to get started using [[introduction|{{config.extra.arcana.company_name}} SDKs]].
+
+      ==}
+
+## Welcome!
 
 Onboard Web3 app users effortlessly via [[concept-social-login|social login]].
 
@@ -23,17 +32,13 @@ Enable [[concept-gasless-transactions|account abstraction]] to sponsor gas fees 
 
 Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]]. 
 
-<br/>
-<br/>
-
 {==
 
-This documentation contains everything you need to get started using {{config.extra.arcana.company_name}} SDKs.
+**TL;DR**
+
+Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) sections!
 
 ==}
-
-<br/>
-<br/>
 
 <div class="grid cards" markdown>
 
@@ -71,35 +76,11 @@ This documentation contains everything you need to get started using {{config.ex
 
 </div>
 
-<br/>
+## Auth Playground
 
-<h2>Quick Start</h2>
-
-{==
-
-**TL;DR**
-
-Select your app type and get started with integrating social login and gasless transactions right away!
-
-==}
-
-=== "Web Apps"
-
-    [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[wagmi-quick-start| Wagmi ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button }  [[gasless-quick-start| Gasless ]]{ .md-button } [[gasless-standalone-quick-start| Gasless(3rd Party Wallets) ]]{ .md-button }
-
-=== "Non-EVM Apps"
-
-    [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
-
-=== "Mobile Apps"
-
-     [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
-
-=== "Gaming Apps"
-
-    [[unity-quick-start| Unity ]]{ .md-button }
-
-<h2>Auth Playground</h2>>
+<div class="tx-hero-container">
+    <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
+</div>
 
 <div class="tx-hero-container">
     <div class="tx-hero-content">
@@ -118,14 +99,32 @@ Select your app type and get started with integrating social login and gasless t
     </div>
 </div>
 
-<div class="tx-hero-container">
-    <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
-</div>
+## Quick Start
 
-<h2>Need Help?</h2>>
+=== "Web Apps"
 
-Contact [Arcana Support](mailto:support@arcana.network). 
+    [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[wagmi-quick-start| Wagmi ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button }  [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[gasless-quick-start| Gasless ]]{ .md-button } [[gasless-standalone-quick-start| Gasless(3rd Party Wallets) ]]{ .md-button }
 
-Join [Arcana communities]({{config.site_url}}support/community/) and stay informed!
+=== "Non-EVM Apps"
 
-<br/><br/><br/><br/>
+    [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
+
+=== "Mobile Apps"
+
+     [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
+
+=== "Gaming Apps"
+
+    [[unity-quick-start| Unity ]]{ .md-button }
+
+## Need Help?
+
+</br>
+</br>
+
+Contact us at 📨 [Arcana Support](mailto:support@arcana.network). 
+
+Be a part of [[index-support|Arcana communities]] and stay informed!
+
+</br>
+</br>

@@ -13,13 +13,11 @@ of the file in the `auth-core` repo: https://github.com/arcana-network/auth/blob
 
 # Auth-Core SDK
 
-Auth-Core SDK enables basic functionality for onboarding users to Web3 apps via social login. It uses the Arcana Keystore APIs to interact with the distributed key generation subsystem in the Arcana Network.
+{% include "./text-snippets/auth-core-sdk.md" %}
 
-The [Arcana Auth product](https://github.com/arcana-network/auth) is built using the Auth-Core SDK and the [Arcana wallet UI](https://github.com/arcana-network/wallet-ui). It ensures that only authenticated users have access to the private keys for signing blockchain transactions. With Arcana Auth, the app developers cannot access the user's private keys.
+Contact [support](mailto:support@arcana.network) to access the latest release. 
 
-Web3 apps that choose to integrate directly with the Auth-Core SDK instead of using Arcana Auth must implement some of the functionality related to handling user authentication via social login. In addition, developers must ensure the security and privacy of the user's keys. See the [Usage section](#usage) below for details.
-
-Note that the 'Global Keys' and enhanced wallet security 'MFA' features available via Arcana Auth are **not** available through the Auth-Core SDK.
+[:octicons-cross-reference-16:{ .icon-color } SDK Reference ](https://auth-core-sdk-ref-guide.netlify.app/){ .md-button }
 
 ## Installation
 

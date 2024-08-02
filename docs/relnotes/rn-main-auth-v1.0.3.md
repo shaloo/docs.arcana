@@ -32,7 +32,7 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 ### New API: showWallet()
 
-Developers can use the newly added `showWallet()` function in the {{config.extra.arcana.sdk_name}} to display the in-built Arcana wallet UI. The `showWallet()` function can be called in the application context after the `AuthProvider` is created and initialized using the `init` function. Once the app is deployed and the user logs in, the `showWallet` function call displays the wallet UI. For details, see [[index-arcana-wallet|Arcana Wallet Developer's Guide]].
+Developers can use the newly added `showWallet()` function in the {{config.extra.arcana.sdk_name}} to display the in-built Arcana wallet UI. The `showWallet()` function can be called in the application context after the `AuthProvider` is created and initialized using the `init` function. Once the app is deployed and the user logs in, the `showWallet` function call displays the wallet UI.
 
 ## Product Enhancements
 
@@ -62,9 +62,9 @@ In the earlier releases, the built-in Arcana wallet UI **did not** utilize the e
 
 ==}
 
-See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] and the [how-to guides]({{page.meta.arcana.root_rel_path}}/auth/index.md) for details. 
+See {{config.extra.arcana.product_name}} Quick Start Guides for details. 
 
-Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|Next.js ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
+Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
 
 ## Migrate to v1.0.3

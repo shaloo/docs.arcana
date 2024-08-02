@@ -1,1 +1,0 @@
-To integrate the {{config.extra.arcana.sdk_name}} with a Web3 app that uses [Web3-React]() wallet connector framework, developers must install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package as well as the `{{config.extra.arcana.web3_react_pkg_name}}` package.

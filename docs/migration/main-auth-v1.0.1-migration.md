@@ -10,7 +10,7 @@ arcana:
 
 This guide is meant for developers who have already integrated apps with {{config.extra.arcana.sdk_name}} v1.0.0 and run them using {{config.extra.arcana.company_name}} Testnet. 
 
-If you are new to Arcana Network, please visit [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] to get started.
+If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick Start Guides to get started.
 
 ## What has Changed?
 

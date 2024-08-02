@@ -1,6 +1,6 @@
-=== "`auth-wagmi` >= v3.0.0"
+=== "Wagmi 2.0"
 
-    ```js title="auth-examples/sample-auth-wagmi-2/src/main.tsx" hl_lines="21-25"
+    ```js hl_lines="21-25"
     //
     // For apps using Wagmi versions v2.a.b and auth-wagmi v3.x.y
     //
@@ -30,9 +30,9 @@
     )
     ```
 
-=== "`auth-wagmi` >= v2.0.0"
+=== "Wagmi 1.0"
 
-    ```js title="auth-examples/sample-auth-wagmi-viem/app.js" hl_lines="6 8"
+    ```js hl_lines="6 8"
     //
     // For apps using Wagmi versions v1.a.b and auth-wagmi v2.x.y
     //
@@ -44,19 +44,3 @@
       );
     }
     ```
-    
-=== "`auth-wagmi` >= v1.0.0"
-
-    ```js title="auth-examples/sample-auth-wagmi/pages/_app.tsx" hl_lines="6 8"
-    //
-    // For apps using Wagmi versions v0.a.b and auth-wagmi v1.x.y
-    //
-    function App({ Component, pageProps }: AppProps) {
-      return (
-        <WagmiConfig client={wagmiEntity}>
-          <Component {...pageProps} />
-        </WagmiConfig>
-      );
-    }
-    ```
-

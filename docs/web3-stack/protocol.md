@@ -26,7 +26,7 @@ The following services are active on Testnet as well as the Mainnet
 * Gasless Transactions (Third-party wallets) via the {{config.extra.arcana.gasless_sdk_name}} v{{config.extra.arcana.latest_gasless_sdk_version}}\
 * Asynchronous Distributed Key Generation that powers the {{config.extra.arcana.sdk_name}} and helps onboard users to Web3
 
-We are actively working towards adding newer features and capabilities. For details, check out the [[arcana-coming-soon| coming soon section]].
+We are actively working towards adding newer features and capabilities to the SDKs. Watch out for our upcoming Chain Abstraction solution!
 
 ## Infrastructure Providers
 
@@ -46,12 +46,12 @@ At {{config.extra.arcana.company_name}}, we take the security and privacy of app
 
 ## ADKG Subsystem
 
-{{config.extra.arcana.company_name}} has come a long way since the alpha release of SDKs. Those  offered a distributed DKG subsystem to securely generate key shares. It had some shortcomings regarding trusted dealer, robustness of the subsystem, key share generation efficiency and protection from malicious entities, etc. Those have been resolved in the latest state-of-the-art **asynchronous distributed key generation** algorithm that is now part of the {{config.extra.arcana.company_name}}  protocol. 
+{{config.extra.arcana.company_name}} has made great strides since our alpha SDK release. Our new [[concept-adkg|asynchronous distributed key generation (ADKG)]] algorithm is now part of the {{config.extra.arcana.company_name}} protocol, offering improved security and efficiency in key share generation.
 
-This new, improved ADKG powers the latest release of the {{config.extra.arcana.company_name}} SDKs. We have collaborated with some of the leading cryptography experts and researchers to fold recent advances in **asynchronous DKG** technology in {{config.extra.arcana.product_name}}. Refer to the [{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for more details on ADKG.
+Refer to the [{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for more details on ADKG.
 
 ## Decentralization
 
-The {{config.extra.arcana.company_name}} ADKG subsystem is implemented using multiple nodes and some of the nodes are operated by trusted {{config.extra.arcana.company_name}} partners or [[web3-stack-validators| validators]]. We are working towards complete decentralization of all aspects of the {{config.extra.arcana.company_name}} protocol in the upcoming releases.
+The {{config.extra.arcana.company_name}} ADKG subsystem uses multiple nodes, including some operated by trusted {{config.extra.arcana.company_name}} partners called [[web3-stack-validators| validators]]. We plan to fully decentralize the protocol in future releases.
 
 

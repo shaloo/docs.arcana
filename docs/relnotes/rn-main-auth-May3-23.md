@@ -93,9 +93,9 @@ The {{config.extra.arcana.wallet_name}} UI now displays the wallet balance numer
 
 ==}
 
-See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] in the Getting Started section. 
+See {{config.extra.arcana.product_name}} Quick Start Guides. 
 
-Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|Next.js ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
+Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
 
 ## Use Latest {{config.extra.arcana.sdk_name}} 

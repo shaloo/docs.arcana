@@ -545,6 +545,7 @@ arcana-coming-soon
 arcana-gasless-standalone-sdk
 arcana-wallet
 arcana-wallet-user-guide
+arcana-wip
 arcanaauth
 arcanawallet
 arcanawalletindex
@@ -616,12 +617,16 @@ concept-arcana-dashboard
 concept-arcana-jwt-token
 concept-arcana-smart-contract
 concept-arcana-wallet-overview
+concept-authcore
 concept-authsdk
+concept-config-profil
+concept-config-profile
 concept-custom-login-ui
 concept-custom-oauth
 concept-custom-wallet-ui
 concept-dkg
 concept-gasless-transactions
+concept-gl-session-keys
 concept-how-adkg-works
 concept-how-dkg-works
 concept-index-ansc
@@ -659,6 +664,7 @@ config-auth-steam
 config-auth-twitch
 config-auth-twitter
 config-custom-oauth
+config-custom-wallet-ui
 config.extra.arcana.date_release_tag
 config3pwallet
 config_cognito
@@ -741,6 +747,7 @@ eth_signTypedData_v4
 eth_watchAsset
 ethereum
 ethers
+evm-web3-wallet-ops
 example-new-mainnet-authprovider
 executables
 explainer
@@ -1204,9 +1211,14 @@ permissioned-data
 ph
 pluggable
 plugnplayauth
+pnp_login_ui_tag
 polyfill
 polyfilling
 polyfills
+pre-approval
+pre-approve
+pre-approved
+pre-approving
 pre-built
 pre-configure
 pre-configured
@@ -1271,6 +1283,7 @@ rnbeta1_1
 roadmap
 rpc
 rpcUrl
+sample-auth-rainbowkit
 sample-auth-wagmi-2
 sample-auth-walletconnect
 sample-auth-web3-react
@@ -1312,6 +1325,7 @@ solana-json-rpc-ops
 solana-quick-start
 solana-user-onboarding
 solana-wallet-ops
+solana-web3-wallet-ops
 stackoverflow
 staking
 state-of-the-arcana-auth
@@ -1323,10 +1337,14 @@ stgsdk_qs
 stgsdk_usage
 stgsdkdelete
 stgsdkmetrics
+subgraph
 submodule
 submodules
 supported-blockchains
+supported-jsonrpc-functions
+supported-web3-wallet-operations
 testnet
+timetoread
 toc_depth
 tokenID
 toolchains
@@ -1447,6 +1465,8 @@ web-auth-usage-guide
 web-gasless-error-msg
 web-gasless-install
 web-gasless-integrate
+web-gasless-sessio
+web-gasless-session
 web-gasless-transact
 web3-ops-gasless
 web3-react-quick-start

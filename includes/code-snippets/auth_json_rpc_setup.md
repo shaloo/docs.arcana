@@ -1,4 +1,4 @@
-```js
+```js hl_lines="3 13 18 22"
 // Assuming Auth SDK is integrated and initialized
 try {
   provider = auth.provider

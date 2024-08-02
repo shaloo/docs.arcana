@@ -4,11 +4,7 @@ When enabling [[concept-gasless-transactions|gasless transactions]] in the {{con
 
 In this guide, you will learn how to configure gasless transactions irrespective of whether you wish to use only the standalone {{config.extra.arcana.gasless_sdk_name}} or use the built-in gasless feature in the {{config.extra.arcana.sdk_name}}.
 
-!!! an-danger "Disabling Gasless" 
-
-      When you create a gas tank for a blockchain, it turns on the gasless feature. At the same time, the user account changes into a dual address [[concept-gasless-transactions#gasless-user-accounts|gasless account]], which links to both an Externally Owned Account (EOA) and a Smart Contract Wallet (SCW) address.
-
-      Developers cannot delete a gas tank once set up. But they can stop or deactivate gas tanks if needed. The gasless feature works only when gas tanks have funds and are active, but once the user account transforms into a gasless one, you can't undo it.
+{% include "./text-snippets/warn_disable_gasless.md" %}
 
 ## Prerequisites
 
@@ -107,15 +103,13 @@ You have successfully configured gasless operation for the application users.
 
 ## What's next?
 
-For more details, see [[faq-gasless|FAQ - Gasless Transactions]].
-
-After configuring gasless, developers can refer to other app configuration settings in the {{config.extra.arcana.dashboard_name}} and then integrate the app with the {{config.extra.arcana.sdk_name}}. If not already done, add code to onboard users and configure the [[index-arcana-wallet| embedded {{config.extra.arcana.wallet_name}} usage]] and allow authenticated users to sign blockchain transactions.
+After configuring gasless, integrate the app with the {{config.extra.arcana.sdk_name}}. Add code to onboard users and allow authenticated users to sign blockchain transactions.
 
 ## See Also
 
+* [[faq-gasless|FAQ - Gasless Transactions]]
 * [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[gasless-standalone-quick-start|{{config.extra.arcana.gasless_sdk_name}} Quick Start Guide]]
 * [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]
-* [[auth-quick-start|{{config.extra.arcana.sdk_name}} Quick Start Guide]] 
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * {% include "./text-snippets/authsdkref_url.md" %}

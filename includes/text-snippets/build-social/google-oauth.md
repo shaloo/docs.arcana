@@ -10,7 +10,7 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
 
 * Carefully [[config-auth-google|follow the instructions to configure Google]] as the authentication provider.
   
-* Use the appropriate integration method as per the app type and [[index-integrate|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
+* Use the appropriate integration method as per the app type and [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
     
 ## Steps
 
@@ -42,11 +42,10 @@ The Web3 app is all set for onboarding users via Google.
      
 ## What's Next?
 
-After onboarding app users via Google, you can allow authenticated users to access the {{config.extra.arcana.wallet_name}} for signing blockchain transactions on any [[web3-stack-chains|supported blockchain network]]. Plug in other {{config.extra.arcana.sdk_name}} functions in the app code such as getting the authenticated user's account details, performing Web3 wallet operations, etc. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] and [[index-arcana-wallet|{{config.extra.arcana.wallet_name}} Developer's Guide]] for details.
+Authenticated users can instantly access the in-app {{config.extra.arcana.wallet_name}} UI for signing blockchain transactions. Use the `AuthProvider` EIP-1193 standard Ethereum provider to call JSON/RPC functions and Web3 wallet operations in the app. [[evm-web3-wallet-ops|Learn more...]]
 
 ## See also
 
-* [{{config.extra.arcana.company_name}} authentication concepts]({{page.meta.arcana.root_rel_path}}/concepts/authtype/arcanaauth.md).
-* [[index-integrate|How to integrate with the {{config.extra.arcana.sdk_name}}]]
+* [Authentication Types]({{page.meta.arcana.root_rel_path}}/concepts/authtype/index.md)
 * [[web-auth-error-msg|Handling authentication errors]]
 * [Auth Examples](https://github.com/arcana-network/auth-examples)

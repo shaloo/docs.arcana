@@ -10,17 +10,15 @@ arcana:
 
 # Integrate Gasless SDK
 
-!!! an-caution "Only for Third-party wallets"
-
-      The {{config.extra.arcana.gasless_sdk_name}} is meant for use only in case where an app requires to enable gasless transactions in third-party browser based wallets. To enable gasless transactions in the {{config.extra.arcana.wallet_name}}, you must [[gasless-quick-start|install and integrate with the {{config.extra.arcana.sdk_name}}]] and use its built-in gasless feature.
+{% include "./text-snippets/warn_third_party_wallets_only.md" %}
 
 ## Prerequisites
 
-* Make sure the app is [[register-app-gasless| registered]] and a unique {{config.extra.arcana.app_address}} assigned to it.
+* The app must be [[register-app-gasless| registered]]. The unique {{config.extra.arcana.app_address}} assigned to the registered app will be required for SDK integration.
 
-* Set up gas tanks on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported networks]] and deposit funds. 
+* [[configure-gasless|Gas tanks must be configured]] on one or more [[web3-stack-chains#arcana-gasless-standalone-sdk|supported blockchain networks]]. Some funds must be deposited there to sponsor gas fees. App operations need to be whitelisted for sponsoring gas fees.
 
-* The [[web-gasless-install|{{config.extra.arcana.gasless_sdk_name}} is installed]].
+* The {{config.extra.arcana.gasless_sdk_name}} [[web-gasless-install|should be installed]].
 
 ## Integrate
 
@@ -28,8 +26,12 @@ arcana:
 
 ## What's Next?
 
-After integrating the {{config.extra.arcana.gasless_sdk_name}}, add code to allow authenticated users to [[web-gasless-transact|perform gasless transactions]] via the third-party wallets. 
+Add code in the authenticated user's context to [[web-gasless-transact|perform gasless transactions]] via the third-party wallets. 
 
 ## See also
 
-{% include "./text-snippets/quick-start-see-also-gasless.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
+
+* [[faq-gasless|Gasless FAQ]]
+
+{% include "./text-snippets/gasless_sdk_quicklinks.md" %}

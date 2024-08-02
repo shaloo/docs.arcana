@@ -1,6 +1,6 @@
 ---
 alias: concept-wallet-switch-account-type
-title: 'Switching Account Type'
+title: 'Account Types'
 description: 'Web3 app developers can programmatically determine the wallet address type in use and switch between EoA/SCW type in the apps that integrate with the Auth SDK.'
 arcana:
   root_rel_path: ../..
@@ -13,15 +13,12 @@ There are two types of Web3 wallet accounts:
 * Externally Owned Accounts (EoA)
 * Smart Contract Wallet (SCW)
 
-EoA is the default account type. SCW accounts are only available for blockchains that support gasless transactions. All gasless transactions happen via the SCW address.
+EoA is the default account type. SCW accounts are used on blockchains that support gasless transactions. All [[concept-gasless-transactions|gasless transactions]] occur via the SCW address. When gasless transactions are enabled for an app on one or more blockchains, the default user account is set to the 'Smart Contract Wallet (SCW)' address.
 
-# Switching Account Type
+## Switching Account Types
 
-Each authenticated user in a Web3 app integrated with the {{config.extra.arcana.sdk_name}} is associated with a wallet account. Typically the default wallet account type is 'Externally Owned Account (EoA)'. 
+Account types can be switched via the wallet UI by the user or programmatically by the app developer.
 
-When gasless transactions are enabled for an app for one or more blockchains then the user account is automatically associated with an EoA plus a 'Smart Contract Wallet (SCW)' address. If the current active chain in the wallet has a gas tank set up, then the user can view and switch between these account types via the wallet. 
+Wallet UI displays the current selected account type below the wallet address. Users can click on the dropdown arrow next to the address to switch account types. 
 
 Developers can use `_arcana_getAccountType()` and `_arcana_switchAccountType(accountType)` methods to programmatically check and switch between user account types before issuing transactions.  
-
-See [[concept-gasless-transactions|Gasless Transactions]] section for more details.
-

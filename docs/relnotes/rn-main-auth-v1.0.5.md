@@ -44,14 +44,14 @@ The new white-labeled auth feature allows Web3 app developers to configure the {
 
 ### Steam OAuth Support
 
-Web3 applications that integrate with the {{config.extra.arcana.sdk_name}} can now onboard users via [Steam OAuth](https://partner.steamgames.com/doc/webapi_overview/oauth). See [[config-auth-steam|how to configure Steam as an onboarding option]] section for more details. After configuring one or more authentication providers through the {{config.extra.arcana.dashboard_name}}, applications can onboard users with a single line of code using `loginWithSocial` call. Developers can use the built-in plug-and-play login UI feature of the {{config.extra.arcana.sdk_name}} or use a custom login UI and allow users to onboard the app using Steam. See [[index-onboard-users|how to onboard users]] section and choose the app type for instructions on how to onboard users with Steam.
+Web3 applications that integrate with the {{config.extra.arcana.sdk_name}} can now onboard users via [Steam OAuth](https://partner.steamgames.com/doc/webapi_overview/oauth). See [[config-auth-steam|how to configure Steam as an onboarding option]] section for more details. After configuring one or more authentication providers through the {{config.extra.arcana.dashboard_name}}, applications can onboard users with a single line of code using `loginWithSocial` call. Developers can use the built-in plug-and-play login UI feature of the {{config.extra.arcana.sdk_name}} or use a custom login UI and allow users to onboard the app using Steam. Select the app type for instructions on how to onboard users with Steam.
 
 ### Firebase Auth Support
 
 Besides Cognito custom authentication, the {{config.extra.arcana.sdk_name}} now also allows apps to onboard users via Firebase. To enable Firebase, developers must:
 
 * [[config-auth-firebase|Configure Firebase settings]] in the {{config.extra.arcana.dashboard_name}}
-* [[index-integrate|Install and integrate the app]] with the {{config.extra.arcana.sdk_name}}
+* [[integrate-vanilla-app|Install and integrate the app]] with the {{config.extra.arcana.sdk_name}}
 * Make sure that the app is also integrated with the Firebase SDKs and that the required Firebase services are configured. 
 * Use a custom login UI to initiate Firebase login and listen for user authentication success event from Firebase.
 * Pass on the Firebase token to the {{config.extra.arcana.sdk_name}} user onboarding function - `loginWithBearer` and allow authenticated users to sign blockchain transactions.
@@ -70,9 +70,9 @@ Refer to the [Firebase auth integration example](https://github.com/arcana-netwo
 
 ==}
 
-See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] in the Getting Started section. 
+See {{config.extra.arcana.product_name}} Quick Start Guides. 
 
-Check out the sample dApp integration example for apps using [[react-code-sample|React ]], [[nextjs-code-sample|Next.js ]], and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks.
+Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
 ## Upgrade to the Latest {{config.extra.arcana.sdk_name}} 
 

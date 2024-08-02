@@ -1,29 +1,34 @@
 ---
 alias: web3-ops-gasless
 title: 'Gasless Transactions'
-description: 'Learn how to enable gasless Web3 blockchain operations and Web3 wallet operations when using the Arcana Auth SDK.'
+description: 'Learn how to enable gasless transactions through the Arcana wallet by using the built-in gasless feature of the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---
 
 # Gasless Transactions
 
-{{config.extra.arcana.sdk_name}} offers built-in gasless transaction feature for {{config.extra.arcana.wallet_name}}. This feature works only for a subset of supported chains. 
+{{config.extra.arcana.sdk_name}} offers a built-in gasless transaction feature that allows gasless transactions on supported chains through the {{config.extra.arcana.wallet_name}}. 
 
-Developers must configure the following gasless settings via the {{config.extra.arcana.dashboard_name}} and then [[quick-start|integrate the app]] with the {{config.extra.arcana.sdk_name}} to enable gasless transactions in the {{config.extra.arcana.wallet_name}}. 
+To enable the gasless feature, [[configure-gasless|configure gasless settings]] via the {{config.extra.arcana.dashboard_name}}. 
 
 * Set up gas tanks on one or more chains supported by the app
 * Deposit funds in the gas tank to pay for the gas fees
 * Whitelist app operations 
 * Enable gas tanks
 
-!!! an-tip "Zero Gas Fee" 
+Then [[integrate-gasless-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} and issue blockchain transactions via the standard EIP-1193 Ethereum provider, `AuthProvider`. 
 
-      Developers can sponsor gas fees for blockchain transactions. But the users need to ensure that they have sufficient funds in their wallets for the blockchain transaction itself. 
+!!! an-note "Issuing Gasless Ops"
+
+      There are no special functions or additional input parameters for enabling gasless transactions via the {{config.extra.arcana.wallet_name}} UI or programmatically in the app. The SDK automatically checks the gasless configuration settings. Only the whitelisted app operations issued via the user's **SCW account** incur zero gas fees.
+
+!!! an-tip "Use SCW Account for Gasless" 
       
-      Users pay zero gas fees for all whitelisted app operations as long as the gas tanks are enabled on the blockchain network and there are sufficient funds in the gas tank to sponsor user's gas fees.
+      Users pay no gas fees for whitelisted app operations if the gas tanks are enabled on the blockchain network and have sufficient funds. The SCW account handles gasless transactions. If the EoA account is selected for a whitelisted operation, the user will incur gas fees.
 
-[[configure-gasless| Setup: Gasless Transactions :material-wallet:]]{ .md-button }
+!!! an-caution "Supported Chains"
 
-[[gasless-quick-start| Gasless Quick Start Guide :material-wallet:]]{ .md-button }
-
+      Not all supported chains allow gasless transactions. Refer to the {% include "./text-snippets/biconomy/gasless_supported_networks.md" %} for gasless transactions. 
+      
+      Also, the JSON/RPC and Web3 wallet operations supported via different chains may vary. [[evm-web3-wallet-ops|Learn more...]]

@@ -47,7 +47,7 @@ This is a major release that supports non-EVM blockchains (Solana). New product 
 
 * New SDK: {{config.extra.arcana.auth_core_sdk_name}} - See [[auth-core-quick-start|Auth Core SDK Quick Start Guide]].
 
-* Security enhancements and bug fixes. See [[index-changelog|changelog]].
+* Security enhancements and bug fixes. See [changelog](https://github.com/arcana-network/auth/releases/tag/v{{config.extra.arcana.latest_version}}).
 
 ## What has changed?
 
@@ -80,7 +80,7 @@ Earlier, when a user logged into the Web3 app integrated with the {{config.extra
 
 ==}
 
-See [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]] in the Getting Started section.
+See{{config.extra.arcana.product_name}} Quick Start Guides.
 
 Check out the [sample dApp integration examples](https://github.com/arcana-network/auth-examples) for various dApp types, wallet connectors and frameworks.
 

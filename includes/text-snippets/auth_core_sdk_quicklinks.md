@@ -1,5 +1,10 @@
 !!! an-info "{{config.extra.arcana.auth_core_sdk_name}} Quick Links"
 
-    * [[rn-latest-auth|Release notes]]
+    * [[auth-core-usage-guide|{{config.extra.arcana.auth_core_sdk_name}} Usage Guide]]
+    * {% include "./text-snippets/auth_core_sdkref_url.md" %}
     * [Changelog](https://github.com/arcana-network/auth-core/releases)
-    * [Download {{config.extra.arcana.auth_core_sdk_pkg_name}}](https://www.npmjs.com/package/@arcana/auth-core)
+    * [Download SDK](https://www.npmjs.com/package/@arcana/auth-core) *Private, Limited Access*
+
+<!---
+* [[rn-latest-auth|Release notes]]
+--->

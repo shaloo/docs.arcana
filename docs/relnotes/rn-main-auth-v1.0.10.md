@@ -45,7 +45,7 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 * New SDK: {{config.extra.arcana.gaming_sdk_name}} - See [[unity-quick-start|Auth Unity SDK Quick Start Guide]].
 
-* Minor enhancements and bug fixes. See [[index-changelog|changelog]].
+* Minor enhancements and bug fixes. See [changelog](https://github.com/arcana-network/auth/releases/tag/v{{config.extra.arcana.latest_version}}).
 
 ## What has changed?
 
@@ -65,7 +65,7 @@ There are **no usage changes** in this release. To migrate to the latest release
 
 Check out:
 
-* [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
+* Quick Start Guides
 * {% include "./text-snippets/unity_sample_url.md" %} 
 * [Integration examples](https://github.com/arcana-network/auth-examples)
 

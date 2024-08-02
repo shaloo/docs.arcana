@@ -56,11 +56,11 @@ For more details on using the dashboard to delete an app, switch between differe
 
 ## Next Steps
 
-After setting up Solana chains using the {{config.extra.arcana.dashboard_name}}, you can begin integrating Solana app with the {{config.extra.arcana.sdk_name}}. See [[solana-quick-start|Solana Quick Start Guide]] for instructions on how to install and integrate the {{config.extra.arcana.sdk_name}} with your app. Once integrated, you can add code to onboard users and initiate Web3 wallet operations using the Solana network. Refer to the sample code [[solana-wallet-ops|here]].
+After setting up Solana chains using the {{config.extra.arcana.dashboard_name}}, you can begin integrating Solana app with the {{config.extra.arcana.sdk_name}}. See [[solana-quick-start|Solana Quick Start Guide]] for instructions on how to install and integrate the {{config.extra.arcana.sdk_name}} with your app. Once integrated, you can add code to onboard users and initiate Web3 wallet operations using the Solana network. Refer to the sample code [[solana-web3-wallet-ops|here]].
 
 ## See Also
 
 * [[solana-quick-start|Solana Quick Start Guide]]
-* [[solana-wallet-ops|Web3 Wallet Operations for Solana]]
+* [[solana-web3-wallet-ops|Web3 Wallet Operations for Solana]]
 * [[faq-solana|Integrating Solana App FAQ]]
 * [Solana App Integration Example](https://github.com/arcana-network/auth-examples)

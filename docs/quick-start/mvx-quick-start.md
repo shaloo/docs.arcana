@@ -1,7 +1,7 @@
 ---
 alias: mvx-quick-start
-title: 'Quick Start: MultiversX Apps'
-description: 'Get Started quickly with Arcana Auth product for MultiversX apps by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID and then use the client ID to integrate the app with the Arcana Auth SDK.'
+title: 'Get Started: MultiversX Apps'
+description: 'Integrate Arcana Auth in MultiversX apps. Onboard users via social login. Provide instant access to the in-app Arcana wallet for signing transactions.'
 arcana:
   root_rel_path: ..
   app_type: "'MultiversX'"
@@ -10,66 +10,70 @@ arcana:
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Quick Start: MultiversX Apps
+# Get Started: MultiversX Apps
 
-{{page.meta.arcana.app_type}} Web3 apps can easily onboard users via social login by integrating with the {{config.extra.arcana.sdk_name}}!
+Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
-<!---
-## Overview
+MultiversX chains are pre-configured and instantly accessible to authenticated users via the {{config.extra.arcana.wallet_name}}.
 
-{% include "./text-snippets/quick-start-overview.md" %}
--->
+## Prerequisites
 
-## 1. Register & Configure
+* Register the MultiversX app as instructed in the [[mvx-dashboard-user-guide|MultiversX Configuration Guide]]. Get a unique {{config.extra.arcana.app_address}} and use it for app integration.
 
-Follow the instructions in the [[mvx-dashboard-user-guide|MultiversX Configuration Guide]] and register your app, configure social login and chains and obtain a unique {{config.extra.arcana.app_address}}. Then proceed to install the {{config.extra.arcana.sdk_name}} and use this {{config.extra.arcana.app_address}} to integrate the MultiversX app.
+* Configure social login providers to onboard users and customize the user experience for blockchain signing via the wallet settings. 
 
-## 2. Install SDK
-
-Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) package.
+## 1. Install
 
 {% include "./code-snippets/auth_install.md" %}
 
-!!! an-note "Use latest SDK"
-  
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
+## 2. Integrate
 
-## 3. Integrate
-
-{% include "./text-snippets/quick-start-int-auth-mvx.md" %}
+{% include "./text-snippets/quick-start-int-auth.md" %}
 
 ### Onboard Users
 
 {% include "./text-snippets/quick-start-auth-onboard.md" %}
 
-Instead of the built-in login UI offered by the {{config.extra.arcana.sdk_name}}, developers can also [[mvx-user-onboarding|onboard users via a custom login UI]] in a {{page.meta.arcana.app_type}} app.
-
-!!! an-tip "Arcana JWT Token"
-
-      {% include "./text-snippets/jwt_token.md" %}
-
-Next, add code to enable Web3 operations in the app through the {{config.extra.arcana.wallet_name}}.
-
 ### Sign Transactions
 
-Add code to enable Web3 wallet operations in the MultiversX app. For details, see [[mvx-web3-wallet-ops|how to issue Web3 wallet operations in a MultiversX app]].
+```js
+  // For authenticated users, add code for signing message
 
-Manage the user experience for signing blockchain transactions by selecting the default, built-in {{config.extra.arcana.wallet_name}} UI and tinkering with the [[configure-wallet-visibility|wallet visibility]] or [[custom-wallet-ui|replacing the built-in wallet with a custom wallet UI]]. 
+  const personalSign = await provider.request({
+    method: 'mvx_signMessage',
+    params: {
+      message: 'SignMessage to test MultiversX signmessage',
+      address: from,
+    },
+  })
 
-## 4. Deploy App
+  // Returns signature object
+  // {signature: "some-sig"}
+
+```
+
+For the MultiversX chain, the following methods are supported:
+
+{% include "./text-snippets/mvx_web3_ops.md" %}
+
+Refer to [[mvx-web3-wallet-ops|other supported Web3 wallet operations]] for details.
 
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-{==
+## 3. Advanced Usage
 
-Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}}. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} within the app context and start signing blockchain transactions on MultiversX. 
+{% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
-==}
+{% include "./text-snippets/adv_wallet_customization.md" %}
+
+{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
+
+{% include "./text-snippets/jwt_token.md" %}
 
 ## See Also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
 
-{% include "./text-snippets/demo/auth_sdk_mvx_demo.md" %}
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

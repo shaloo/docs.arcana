@@ -35,7 +35,7 @@ toc_depth: 2
 
 ??? an-faq "Does the user wallet address get impacted when the gasless feature is enabled?"
 
-      Yes.  If the gasless feature is not enabled, each user account is only associated with the traditional EoA address. When gasless transactions are enabled for a blockchain, the user accounts are associated with an EoA and a SCW address. [[concept-gasless-transactions#gasless-user-accounts|Learn more...]]
+      Yes.  If the gasless feature is not enabled, each user account is only associated with the traditional EoA address. When gasless transactions are enabled for a blockchain, the user accounts are associated with an EoA and a SCW address. [[concept-gasless-transactions#gasless-accounts|Learn more...]]
 
 ??? an-faq "Do the user as well as the app developer need to be aware of both the EoA address and SCW address for blockchain networks that have gasless enabled?"
 
@@ -43,7 +43,7 @@ toc_depth: 2
       
       For whitelisted operations, the SCW address is used to sign the blockchain transactions. The gas fees are covered via the SCW account through the gas tank. Non-whitelisted functions require users to pay gas fees through the active account in {{config.extra.arcana.wallet_name}} UI. Gasless-enabled apps default to the active SCW address, but users can switch between EoA and SCW addresses. If a user selects the EoA address while gas tanks are active, the transaction occurs via EoA, and the user covers the gas fee.
 
-      Developers need to ensure that they use the SCW address when issuing blockchain requests for app operations that are whitelisted. Also, developers must ensure that they use the EoA address for creating blockchain requests related to signing personal messages or exporting the private key. See [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337) and [EIP-1291](https://eips.ethereum.org/EIPS/eip-1271) and [[concept-gasless-transactions#user-experience|user experience]]for details.
+      Developers need to ensure that they use the SCW address when issuing blockchain requests for app operations that are whitelisted. Also, developers must ensure that they use the EoA address for creating blockchain requests related to signing personal messages or exporting the private key. See [EIP-4337](https://eips.ethereum.org/EIPS/eip-4337) and [EIP-1291](https://eips.ethereum.org/EIPS/eip-1271) and [[concept-gasless-transactions#user-keys|user keys]]for details.
 
 ??? an-faq "Which of the two addresses, EoA or SCW, is displayed in the {{config.extra.arcana.wallet_name}} UI in the case of gasless transactions?"
 

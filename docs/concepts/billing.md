@@ -21,7 +21,7 @@ Each developer account enjoys a promotional free usage tier. Beyond this free ti
 <!---Refer to [{{config.extra.arcana.company_name}} Pricing](https://www.arcana.network/pricing) 
 --->
 
-For more details on the current billing rates and free tier limits contact our [[support|support team]].
+For more details on the current billing rates and free tier limits contact [[index-support|{{config.extra.arcana.company_name}} support]].
 
 ## Billing Metrics
 

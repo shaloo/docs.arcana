@@ -8,9 +8,12 @@ arcana:
 
 # ADKG
 
-Asynchronous Distributed Key Generation (ADKG) is a cryptographic protocol that enables multiple parties to cooperatively generate a public-private key pair without requiring a trusted third party or any form of synchronization between the parties.
+<img src="{{config.extra.arcana.img_dir}}/icons/i_dkg_light.{{config.extra.arcana.img_png}}#only-light" width="50"/>
+<img src="{{config.extra.arcana.img_dir}}/icons/i_dkg_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
-In ADKG, each party generates a partial private key and broadcasts it to the other parties, who use these partial private keys to collaboratively derive the final private key. The final private key is then used to generate a public key, which can be used for secure communication.
+Asynchronous Distributed Key Generation (ADKG) is a cryptographic protocol that allows multiple parties to generate a public-private key pair cooperatively, without needing a trusted third party or synchronization.
+
+Each party creates a partial private key and shares it with the others. Together, they use these partial keys to derive the final private key used for securing blockchain transactions in Web3 apps.
 
 <figure markdown="span">
   <img alt="ADKG concept" src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_adkg_light.{{config.extra.arcana.img_png}}#only-light" class="an-screenshots-noeffects width_50pc"/>
@@ -20,14 +23,43 @@ In ADKG, each party generates a partial private key and broadcasts it to the oth
 
 *[Reference: ADKG Paper](https://eprint.iacr.org/2022/1389.pdf)*
 
-The main benefit of ADKG over traditional key generation methods is that it allows multiple parties to securely and collaboratively generate a shared key without the need for a trusted third party or a synchronized communication channel. This can be particularly useful in scenarios where the parties involved are geographically dispersed or have limited connectivity, making traditional key generation methods impractical. Additionally, because ADKG relies on distributed trust, it can be more resistant to attacks and compromise than traditional methods that rely on a single centralized authority.
+ADKG is ideal for geographically dispersed or poorly connected parties where traditional methods are impractical. ADKG's distributed trust also makes it more resistant to attacks compared to methods relying on a single central authority.
 
-## Using ADKG for Web3 Keys
+## ADKG for Web3 Keys
 
-Web3 blockchain transactions need user signing or approval before they can be processed. To sign transactions, users need cryptographic secrets or keys. This is where ADKG is applied. 
+Web3 blockchain transactions require user approval through cryptographic keys.
 
-The {{config.extra.arcana.product_name}} implements an asynchronous distributed key generation subsystem for efficiently and securely generating key shares for authenticated Web3 app users. The {{config.extra.arcana.sdk_name}} allows authenticated users to access key shares and generate their keys securely on the client side in the context of the Web3 app. Users do not need to bother about the security and privacy of their key shares and they can easily sign blockchain transactions using the embedded, non-custodial {{config.extra.arcana.wallet_name}}. 
+The {{config.extra.arcana.sdk_name}} uses ADKG to securely generate key shares for Web3 users. It allows users to securely access and generate their keys on the client side, handling security and privacy concerns. Users can easily sign transactions with the non-custodial {{config.extra.arcana.wallet_name}}.
 
-The key shares generated through ADKG are ECDSA keys on the [secp256k1](https://www.secg.org/sec2-v2.pdf) curve and are compatible with all EVM-compatible chains. In a future release, {{config.extra.arcana.company_name}} will also support other curves and blockchains that are not EVM-compatible. Also, key regeneration and repair algorithms will be supported in the upcoming releases.
+ADKG generates ECDSA keys on the [secp256k1](https://www.secg.org/sec2-v2.pdf) curve, compatible with all EVM chains. Future updates will support other curves, blockchains, and key regeneration.
 
-See [[concept-how-adkg-works|how the {{config.extra.arcana.product_name}} ADKG works]] for implementation details. 
+## Why ADKG?
+
+Our ADKG implementation uses the [Practical Asynchronous Distributed Key Generation](https://eprint.iacr.org/2021/1591.pdf) protocol. It improves on the previous DKG by removing the need for a trusted dealer, reducing key exposure, and automating share regeneration. ADKG is resilient to attacks and works well in asynchronous networks. It ensures security by preventing any single node from accessing a user's key.
+
+!!! an-caution "ADKG Assumptions"
+
+      The ADKG protocol works under the assumption that in an asynchronous network of `n ≥ 3t + 1` nodes, where at most `t` nodes could be malicious.
+
+      The protocol can achieve an expected communication cost of O(`κ`n$^3$ ) and terminates in expected O(log n) rounds. Here `κ` is the security parameter. For example, if a collision-resistant hash function is used, in that case, `κ` denotes the size of the hash function's output.
+
+## Implementation Notes
+
+ADKG requires a set of at least 4 connected nodes at a minimum for accommodating a maximum of 1 malicious node.
+
+At a very high level, the protocol requires each node to **independently generate secrets** and then share a part of that secret with the other nodes. Each node then **shares a proposed set of key shares** with other nodes. Asynchronous Binary Agreement (ABA) **voting** is done by the nodes for each proposed set. Only the accepted and agreed-upon set is used to derive the key shares and then those key shares are combined to **arrive at the final key pair**. None of the nodes have full access to the secret key.
+
+<figure markdown="span">
+  <img alt="How does ADKG work?" src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_how_adkg_works_light.{{config.extra.arcana.img_png}}#only-light" class="an-screenshots with_50pc"/>
+  <img alt="How does ADKG work?" src="{{config.extra.arcana.img_dir}}/diagrams/d_concept_how_adkg_works_dark.{{config.extra.arcana.img_png}}#only-dark" class="an-screenshots with_50pc"/>
+  <figcaption>How does ADKG work?</figcaption>
+</figure>
+
+There are four key phases in the ADKG protocol:
+
+1. Asynchronous Complete Secret Sharing (ACSS)
+2. Keyset Proposal Broadcast Phase
+3. Asynchronous Binary Agreement (ABA)
+4. Key Derivation Phase
+
+For more details on each of these ADKG phases, see [[security-adkg|here]].

@@ -1,5 +1,2 @@
-Use the [[index-web3-wallet-ops|standard JSON RPC Web3 wallet operations]] supported by the `AuthProvider`. See [[index-wallet-ux|Web3 Wallet Operations]] for details.
 
-??? an-tip "Wallet Customization"
-
-      Besides theme and branding, developers can manage the user experience for signing blockchain transactions by choosing the default, built-in {{config.extra.arcana.wallet_name}} UI and tinkering with the [[configure-wallet-visibility|wallet visibility]] or selecting a[[custom-wallet-ui| custom wallet UI]].
+Use  `AuthProvider`, the EIP-1193 provider offered by the SDK, to call [JSON/RPC functions](https://ethereum.org/en/developers/docs/apis/json-rpc/) and other [[evm-web3-wallet-ops|supported Web3 wallet operations]] in the authenticated user's context.

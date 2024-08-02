@@ -23,19 +23,25 @@ Storage Region can be configured for any application using the dashboard just on
 
 --->
 
-??? an-trbs "Cannot stop the {{config.extra.arcana.wallet_name}} from being displayed in the app's context."
+??? an-trbs "Is it possible to stop the {{config.extra.arcana.wallet_name}} UI from being displayed in the app's context."
 
-      The {{config.extra.arcana.product_name}} allows developers to manage the user experience for signing blockchain transactions. In effect, developers can integrate with the {{config.extra.arcana.sdk_name}} and control whether the {{config.extra.arcana.wallet_name}} is always displayed once the user is authenticated in the app's context. Or they can choose to hide and show the wallet as per the app's business logic. 
-      
-      After installing the {{config.extra.arcana.sdk_name}}, during integration with the app, create a new `AuthProvider` instance and specify the wallet [[concept-wallet-visibility|visibility mode]] as `false`. This ensures that the wallet does not display by default once the user is authenticated. With the `alwaysVisible` set to `false, the developer can call the `showWallet() function to display the wallet when required. Irrespective of whether the wallet is visible or not, any blockchain transaction will result in a transaction notification. The user can view the notification in the app context and take appropriate action to dismiss the notification.
-      
-      See the [[configure-wallet-visibility|{{config.extra.arcana.wallet_name}} configuration guide]] for details.
+      The {{config.extra.arcana.product_name}} allows developers to manage the user experience for signing blockchain transactions by controlling when the wallet UI shows up. To manage [[concept-wallet-visibility|visibility mode]], integrate the app with the SDK, and create `AuthProvider` with the `alwaysVisible` parameter set to `false`. Use the `showWallet` function to display the wallet when required.
+
+      ```js hl_lines="6"
+      const auth = new AuthProvider(
+        "xar_test_445007f942xxxxxxxxxxxxxxxxxx484cAfd2", // App client ID
+        { 
+          position: 'left',         // default: right
+          theme: 'light',           // default: dark
+          alwaysVisible: false,     // default: true, wallet always visible
+      })
+      ```
 
 ??? an-trbs "Registered app does not show up in the {{config.extra.arcana.dashboard_name}} 'Manage Apps' screen."
 
       After logging into the {{config.extra.arcana.dashboard_name}}, the developer can view all the apps that were registered earlier displayed as cards in the 'Manage Apps' screen.  There is one card per registered application.
 
-      If you do not see your registered application card, check if you used a different social login provider or email ID to log into the {{config.extra.arcana.dashboard_name}}. {{config.extra.arcana.product_name}} supports [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature whereby if a developer uses different social login providers to log into the {{config.extra.arcana.dashboard_name}} in subsequent logins, both logins will be recognized as a single developer. This feature works if the **same** email ID is used by the developer across social login providers.
+      If you do not see your registered application card, check if you used a different social login provider or email ID to log into the {{config.extra.arcana.dashboard_name}}. {{config.extra.arcana.product_name}} supports [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature whereby if a developer uses different social login providers to log into the {{config.extra.arcana.dashboard_name}} in subsequent logins, both logins will be recognized as a single developer. This feature works if the **same** email ID is used by the developer across social login providers.
 
       **Note:** If you are migrating to the latest {{config.extra.arcana.sdk_name}} release from versions older than v1.0.0, you will not see your pre-registered apps in the {{config.extra.arcana.dashboard_name}} due to some breaking changes. You need to re-register your apps again.
 
@@ -53,7 +59,7 @@ Storage Region can be configured for any application using the dashboard just on
 
       **Solution**
 
-      The [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature of {{config.extra.arcana.product_name}} allows an application developer to login into the {{config.extra.arcana.dashboard_name}} using any supported authentication providers to register and configure the application.
+      The [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature of {{config.extra.arcana.product_name}} allows an application developer to login into the {{config.extra.arcana.dashboard_name}} using any supported authentication providers to register and configure the application.
 
       With GitHub, the behavior is different, only if the GitHub user settings are not in place.  To ensure the same behavior as other social authentication providers, in the case of GitHub, make sure that you specify the following details in GitHub Settings:
 
@@ -293,8 +299,6 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
       2. Next, create an `AuthProvider` instance. 
 
       3. Lastly, initialize the `AuthProvider` by calling the `init()` function. This is important as it initializes the embedded {{config.extra.arcana.wallet_name}}. Only after a successful login, the {{config.extra.arcana.wallet_name}} is visible in the context of an application. 
-      
-      See [[html-js-code-sample|integration code sample]] for more details.
 
 ??? an-trbs "User could log in to the Web3 app but subsequent login fails after a developer enables the 'global keys' feature in the app."
 

@@ -1,6 +1,6 @@
 ---
 alias: vue-quick-start
-title: 'Quick Start: Vue Apps'
+title: 'Get Started: Vue Apps'
 description: 'Get Started quickly with Arcana Auth product for Vue apps by using these step-by-step instructions. Use the Arcana Developer Dashboard to register the app, get a client ID and then use the client ID to integrate the app with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
@@ -10,29 +10,23 @@ arcana:
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Quick Start: Vue Apps
+# Get Started: Vue Apps
 
-Web3 apps built using {{page.meta.arcana.app_type}} can easily onboard users via social login by integrating with the {{config.extra.arcana.sdk_name}}!
+Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
 
 ## Prerequisites
 
-* Vue [v3.3](https://www.npmjs.com/package/vue) or higher
-
-## 1. Register & Configure
-
 {% include "./text-snippets/quick-start-reg-config-auth.md" %}
 
-## 2. Install SDK
+!!! an-note "Supported Vue Version"
 
-Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) package.
+      We support apps using Vue [v3.3](https://www.npmjs.com/package/vue) or higher.
+
+## 1. Install
 
 {% include "./code-snippets/auth_install.md" %}
 
-!!! an-note "Use latest SDKs"
-  
-      {% include "./text-snippets/warn_latest_sdk_version.md" %}
-
-## 3. Integrate
+## 2. Integrate
 
 {% include "./text-snippets/quick-start-int-auth-evm.md" %}
 
@@ -40,26 +34,28 @@ Install the [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/
 
 {% include "./text-snippets/quick-start-auth-onboard.md" %}
 
-!!! an-tip "Arcana JWT Token"
-
-      {% include "./text-snippets/jwt_token.md" %}
-
 ### Sign Transactions
 
 {% include "./text-snippets/quick-start-sign-transactions.md" %}
 
-## 4. Deploy
-
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-{==
+## 3. Advanced Usage
 
-Your {{page.meta.arcana.app_type}} app is now powered by {{config.extra.arcana.product_name}} to onboard users via social login.
+{% include "./text-snippets/quick-start-authprovider-optional.md" %}
 
-==}
+{% include "./text-snippets/adv_wallet_customization.md" %}
+
+{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
+
+{% include "./text-snippets/adv_pnp_compact_ui.md" %}
+
+{% include "./text-snippets/jwt_token.md" %}
 
 ## See Also
 
-{% include "./text-snippets/quick-start-see-also.md" %}
+{% include "./text-snippets/quick-start-common-examples.md" %}
 
 {% include "./text-snippets/auth_sdk_quicklinks.md" %}
+
+{% include "./text-snippets/demo/auth_sdk_demo.md" %}

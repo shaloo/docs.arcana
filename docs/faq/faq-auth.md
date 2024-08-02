@@ -21,11 +21,11 @@ toc_depth: 2
 
 ??? an-faq "Will the Arcana Network's distributed key generation algorithm be affected if a node with a key share becomes temporarily inaccessible?"
 
-      No, Arcana's [ADKG]({{page.meta.arcana.root_rel_path}}/concepts/dkg/index.md) algorithm can still generate the key using the key shares from the other nodes that are accessible. The algorithm is designed to tolerate a certain number of nodes being inaccessible, depending on the total number of participating nodes. For more details, see [Arcana's Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08).
+      No, Arcana's [ADKG]({{page.meta.arcana.root_rel_path}}/concepts/adkg.md) algorithm can still generate the key using the key shares from the other nodes that are accessible. The algorithm is designed to tolerate a certain number of nodes being inaccessible, depending on the total number of participating nodes. For more details, see [Arcana's Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08).
 
 ??? an-faq "Does the authenticated user see the same wallet address if they use different authentication providers to log into a Web3 app integrated with the {{config.extra.arcana.wallet_name}}?"
 
-      Yes. This is made possible by the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/authtype/aggregatelogin.md) feature of the {{config.extra.arcana.sdk_name}}. 
+      Yes. This is made possible by the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature of the {{config.extra.arcana.sdk_name}}. 
       
       *For this feature to work, the user* **must** *have the same email ID registered with the different authentication providers.*
       

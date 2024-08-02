@@ -10,7 +10,7 @@ arcana:
 
 This guide is meant for developers who have already integrated apps with an older version of the {{config.extra.arcana.sdk_name}} and run them using Arcana Network Testnet. 
 
-If you are new to Arcana Network, please visit [[auth-quick-start|{{config.extra.arcana.product_name}} Quick Start Guide]] to get started.
+If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick Start Guides to get started.
 
 When you migrate from using the {{config.extra.arcana.sdk_name}}  v0.3.0 to the v1.0.0 release, please note that there are a few breaking changes that require you to use {{config.extra.arcana.dashboard_name}}  and re-register, re-configure the app settings as per the {{config.extra.arcana.sdk_name}} configuration setting requirements, and obtain a new **{{config.extra.arcana.app_address}}**. Only then you can re-integrate the app successfully with the {{config.extra.arcana.sdk_name}} . 
 

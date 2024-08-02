@@ -1,18 +1,20 @@
-```js title="src/ArcanaConnector.ts" hl_lines="3 9-11 16"
-// Set up Arcana Auth 
+=== "`ArcanaConnector.ts`"
 
-import { AuthProvider } from "@arcana/auth";
+    ```js hl_lines="3 9-11 16"
+    // Set up Arcana Auth 
 
-let auth: AuthProvider | null;
+    import { AuthProvider } from "@arcana/auth";
 
-const getAuthProvider = () => {
-  if (!auth) {
-    auth = new AuthProvider(
-      "xar_test_b2dde12aad64eb35d72b2c80926338e178b1fa3f"
-    );
-  }
-  return auth;
-};
+    let auth: AuthProvider | null;
 
-export { getAuthProvider };
-```
+    const getAuthProvider = () => {
+      if (!auth) {
+        auth = new AuthProvider(
+          "xar_test_b2dde12aad64eb35d72b2c80926338e178b1fa3f"
+        );
+      }
+      return auth;
+    };
+
+    export { getAuthProvider };
+    ```

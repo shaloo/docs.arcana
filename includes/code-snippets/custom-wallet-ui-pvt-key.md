@@ -1,6 +1,6 @@
-When utilizing the default {{config.extra.arcana.wallet_name}} UI, authenticated users can securely access and copy their private key if needed.
+When using the default, built-in {{config.extra.arcana.wallet_name}} UI, authenticated users can securely access and copy the private key via the user profile tab of the wallet.
 
-    For custom wallet UIs, developers have the freedom to create a similar feature for authenticated users. To enable users to view their private key, developers can use the `_arcana_getPrivateKey` call to safely retrieve the authenticated user's key share and display the locally generated private key within the app's context.
+    Apps that choose to use a custom wallet UI, can build this feature in the UI and enable authenticated users to securely access the private key via the `_arcana_getPrivateKey` function issued in the authenticated user's context to fetch the key locally.
 
     ```js
 

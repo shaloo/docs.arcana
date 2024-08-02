@@ -1,66 +1,65 @@
-After logging in, the *Manage Apps* dashboard screen is displayed. 
-
-**List Registered Apps**
-
-Each app registered for a developer account is represented by a card in the *Manage Apps* screen of the {{config.extra.arcana.dashboard_name}}.
+After logging into the dashboard, you’ll see the *Manage Apps* screen. Each registered app appears as a card.
 
 <figure markdown="span">
   ![Manage Apps]({{config.extra.arcana.img_dir}}/an_db_mulitiple_apps.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
   <figcaption>Manage Apps</figcaption>
 </figure>
 
-**Initiate App Registration**
-
-In the 'Manage Apps' dashboard, click *Create New App* wizard to register a new app.
+To register the app, create a new app entry by clicking on the *Create New App* wizard.
 
 <figure markdown="span">
   <img class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/dashboard_newappwizard.{{config.extra.arcana.img_png}}" alt="Register by Creating New App"/> 
   <figcaption>Register by Creating New App</figcaption>
 </figure>
 
-**Registration Settings**
-
-To register a new app, the developer needs to provide the following settings: 
+Provide the following inputs to register the app:
 
 * App name
 * Chain Type: EVM, Solana, MultiversX, Near
 * Default Blockchain
 * Wallet UI Mode
 
-**App Name**
+=== "App Name"
 
-Add a unique name for the app. It can be edited later. After registration, a unique {{config.extra.arcana.app_address}} is associated with each app name. This {{config.extra.arcana.app_address}} is never changed, even if the app name is altered.
+    Add a unique name for the app. It can be edited later. After registration, a unique {{config.extra.arcana.app_address}} is associated with each app name. This {{config.extra.arcana.app_address}} does not change if the app name is edited later.
 
-All emails related to a registered app billing or user login will mention the latest app name as displayed in the dashboard. Once an app is deleted, the {{config.extra.arcana.app_address}} is no longer valid. Creating a new app with the same name and registering it with {{config.extra.arcana.company_name}} will result in a new {{config.extra.arcana.app_address}} associated with the same name.
+    All emails related to a registered app billing or user login will mention the latest app name as displayed in the dashboard. Once an app is deleted, the {{config.extra.arcana.app_address}} is no longer valid. Creating a new app with the same name and registering it with {{config.extra.arcana.company_name}} will result in a new {{config.extra.arcana.app_address}} associated with the app.
 
-!!! an-tip "Edit App Name"
+    !!! an-tip "Edit App Name"
 
-      To edit the name of a registered app entry, use the pen icon. Click ++enter++ in the editable text field to save the changes.
+        Click on the pen icon next to the app name. Click ++enter++ in the editable text field to save the changes.
 
-**Chain Type**
+=== "Chain Type"
 
-Developers need to decide at the time of registration whether the app will use the EVM chains or one of the non-EVM chains supported by the {{config.extra.arcana.sdk_name}}.
+    During registration, developers must choose between EVM chains or non-EVM chains supported by the app. The pre-configured chain list in the {{config.extra.arcana.wallet_name}} will display only the configured chains.
 
-{% include "./text-snippets/non-evm-warning.md" %}
+    {% include "./text-snippets/non-evm-warning.md" %}
 
-**Default Blockchain**
+=== "Default Chain"
 
-The chain marked as default is the one that is selected and displayed in the wallet once the user logs into an app that is integrated with the {{config.extra.arcana.product_name}}.
+    Based on your chain type selection, you will see a list of supported chains. Choose one as the default. This default chain will appear as the current, active chain in the {{config.extra.arcana.wallet_name}} when the user logs into the app integrated with the {{config.extra.arcana.sdk_name}}.
 
-The default chain can be changed programmatically via the app developer once the user approves switching of the chain. Also, the user can change the default chain anytime by using the wallet UI. Chains can be switched to any one of the ones displayed in the pre-configured list in the wallet UI or in the app chain settings displayed in the dashboard.
+=== "Wallet UI Mode"
 
-**Wallet UI Mode**
+    The [[concept-wallet-uimodes|wallet UI mode]] setting allows the developers to choose whether they want to use the default, built-in {{config.extra.arcana.wallet_name}} UI or build a custom wallet UI for the app users. 
 
-The [[concept-wallet-uimodes|wallet UI mode]] setting allows the developers to choose whether they want to enable the built-in {{config.extra.arcana.wallet_name}} UI in the context of their app or build a custom wallet UI for the app users. Note, this is a **one-time** setting at the time of registering the app.
+    ??? an-danger "One Time Setting"
 
-By default, {{config.extra.arcana.wallet_name}} UI is enabled for all registered apps. Selecting **Custom Wallet UI** option disables the built-in {{config.extra.arcana.wallet_name}} UI altogether.
+          The **Custom Wallet UI** option selected during app registration is a **one-time setting**. Once selected, the app cannot use the built-in {{config.extra.arcana.wallet_name}} UI at all. Developers must create a custom wallet UI and plug in the requisite Web3 wallet operations.
 
-!!! an-danger "Custom Wallet UI"
+    ??? an-caution "Global Keyspace Not Supported"
 
-      This is a **one-time setting**. It cannot be changed again later once the app is registered. When selecting the custom wallet UI option, developers must build a custom wallet UI and programmatically wire it to the appropriate JSON-RPC Web3 wallet operations. Also, there are no notifications generated by the {{config.extra.arcana.sdk_name}} when a custom wallet UI is selected. The developers must add requisite logic and code to get the user approvals for blockchain operations.
+          If the **Custom Wallet UI** option is selected during app registration, the app is assigned app-specific keys by default. The app configuration does not have the option to configure global [[concept-keyspace-type|keyspace]].
 
-**Confirm Registration**
+    ??? an-tip "View Wallet UI Mode"
 
+          Once specified during app-registration, the Wallet UI mode setting can be viewed later via the **Configure > Arcana Wallet** settings section in the app configuration profile. 
+
+          <figure markdown="span">
+            ![Wallet UI Mode Setting Ref]({{config.extra.arcana.img_dir}}/an_db_refer_wallet_ui_mode.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+            <figcaption>Wallet UI Mode Setting</figcaption>
+          </figure>
+      
 After providing all the required inputs, click **Create** to register the app.
 
 <figure markdown="span">
@@ -68,17 +67,9 @@ After providing all the required inputs, click **Create** to register the app.
   <figcaption>Register dApp</figcaption>
 </figure>
 
-A newly registered app dashboard displays Testnet configuration settings. A unique {{config.extra.arcana.app_address}} is assigned for the Testnet profile. Developers can deploy the app on the {{config.extra.arcana.company_name}} once SDK usage is configured in the dashboard and the app is integrated with the SDK.
+The app is registered, and a unique {{config.extra.arcana.app_address}} is assigned. By default, every newly registered app is associated with a [[concept-config-profile|Testnet configuration profile]]. 
 
 <figure markdown="span">
   ![New app dashboard]({{config.extra.arcana.img_dir}}/an_db_new_app_screen.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
   <figcaption>New App Dashboard</figcaption>
 </figure>
-
-!!! an-tip "Mainnet Deployment" 
-
-      To deploy the app on the {{config.extra.arcana.company_name}} Mainnet, developers need to create a Mainnet configuration profile and obtain a different {{config.extra.arcana.app_address}}. Update the integration code with this Mainnet {{config.extra.arcana.app_address}}. This step is necessary to deploy the app on the {{config.extra.arcana.company_name}} Mainnet. 
-      
-      For more information, refer to the [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
-
-Click **Configure** in the  LHS menu to view and edit the configuration settings.
