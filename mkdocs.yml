@@ -292,7 +292,8 @@ plugins:
           'howto/onboard-users/index.md': 'auth/onboard/wagmi/wagmi-pnp-ui.md'
           'wallet-ops/index.md': 'auth/web3-ops/evm.md'
           'howto/deploy-app/index.md': 'deploy/deploy-app.md'
-          'howto/config-auth/index.md': 'concepts/social-login.md'
+          'howto/config-auth/index.md': 'setup/config-auth/index.md'
+          'howto/config-auth/config-wallet-chains/index.md': 'setup/config-wallet-chains.md'
 
 markdown_extensions:
   - abbr
