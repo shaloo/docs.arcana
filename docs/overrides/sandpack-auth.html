@@ -28,6 +28,8 @@
 
 <!--
   Sandpack PoC
+          /*"@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0"*/
+
   -->
   <script type="importmap">
     {
@@ -35,7 +37,7 @@
         "react": "https://esm.sh/react@18.2.0",
         "react-dom": "https://esm.sh/react-dom@18.2.0",
         "react-dom/": "https://esm.sh/react-dom@18.2.0/",
-        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0"
+        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.9.0"
       }
     }
   </script>
@@ -57,24 +59,6 @@
     if (startCurrentTheme === "slate") {
         themeType = "dark";
     }
-    //const {sPtheme, setsPTheme} = useState('light'); 
-    /*
-    const watchMedia = window.matchMedia("(data-md-color-scheme: "slate")");
-    let themetype;
-
-    function getTheme(e) {
-        if (e.matches)
-            themetype = "dark";
-        else
-            themetype = "default";
-    }
-    watchMedia.addEventListener("change", getTheme);
-    */
-
-    /*
-    const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const themetype = prefersDarkMode ? "dark" : "light";
-    */
 
     //Try Observer method
 
