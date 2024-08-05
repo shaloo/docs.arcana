@@ -294,6 +294,91 @@ plugins:
           'howto/deploy-app/index.md': 'deploy/deploy-app.md'
           'howto/config-auth/index.md': 'setup/config-auth/index.md'
           'howto/config-auth/config-wallet-chains/index.md': 'setup/config-wallet-chains.md'
+          #seo link redirects
+          'arcana-coming-soon.md': 'index.md'
+          'about-auth/index.md': 'concepts/authsdk.md'
+          'about-auth/architecture/index.md': 'concepts/authsdk.md'
+          'about-auth/auth-architecture.md': 'concepts/authsdk.md'
+          'about-auth/gasless-architecture.md': 'concepts/authsdk.md'
+          'about-auth/how-to-use-auth.md': 'introduction/index.md'
+          'about-auth/user-flows/index.md': 'concepts/authsdk.md'
+          'about-auth/use-cases.md': 'concepts/authsdk.md'
+          'about-auth/user-flows/user-auth-and-dkg.md': 'introduction/index.md'
+          'about-auth/what-is-arcana-auth.md': 'concepts/authsdk.md'
+          'about-auth/why-arcana-auth.md': 'concepts/authsdk.md'
+          'auth/index.md': 'auth/sdk-installation.md'
+          'auth/integrate/index.md': 'auth/integrate/wagmi.md'
+          'auth/integrate/custom-oauth.md': 'auth/custom-oauth.md'
+          'auth/mobile/index.md': 'auth/mobile/flutter-get-started.md'
+          'auth/onboard/index.md': 'auth/onboard/wagmi/wagmi-pnp-ui.md'
+          'auth/onboard/rainbow/index.md': 'auth/onboard/rainbow/rainbow-pnp-ui.md'
+          'auth/onboard/wagmi/index.md': 'auth/onboard/wagmi/wagmi-pnp-ui.md'
+          'auth/onboard/walletconnect/index.md': 'auth/onboard/walletconnect/walletconnect-pnp-ui.md'
+          'auth/onboard/web3-react/index.md': 'auth/onboard/web3-react/web3-react-pnp-ui.md'
+          'auth/onboard/vanilla/index.md': 'auth/onboard/vanilla/use-plug-play-auth.md'
+          'auth/onboard/vue/index.md': 'auth/onboard/vue/use-plug-play-auth.md'
+          'auth/onboard/react-nextjs/index.md': 'auth/onboard/react-nextjs/use-plug-play-auth.md'
+          'auth/web3-ops/index.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/arcana-wallet-ui/index.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/evm/add-switch-ntwk.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/evm/get-switch-account.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/evm/balance.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/evm/send.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/evm/show.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/evm/sign.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/evm/watchasset.md': 'auth/web3-ops/evm.md'
+          'auth/web3-ops/solana/solana-json-rpc-ops.md': 'auth/web3-ops/solana.md'
+          'auth/web3-ops/solana/solana-wallet-ops.md': 'auth/web3-ops/solana.md'
+          'concepts/index.md': 'concepts/authsdk.md'
+          'concepts/ansmartc/index.md': 'concepts/ansmartc/an-smart-contracts.md'
+          'concepts/anwallet/walletorkey.md': 'concepts/anwallet/index.md'
+          'concepts/anwallet/wallet-overview.md': 'concepts/anwallet/index.md'
+          'concepts/authtype/aggregatelogin.md': 'concepts/aggregatelogin.md'
+          'concepts/authtype/customauth.md': 'concepts/authtype/custom-oauth.md'
+          'concepts/authtype/pwdless.md': 'concepts/authtype/index.md'
+          'concepts/dkg/index.md': 'concepts/adkg.md'
+          'concepts/dkg.md': 'concepts/adkg.md'
+          'concepts/white-labelled-auth.md': 'concepts/auth-core-sdk.md'
+          'concepts/what-is-dkg.md': 'concepts/adkg.md'
+          'concepts/how-dkg-works.md': 'concepts/adkg.md'
+          'concepts/how-adkg-works.md': 'concepts/adkg.md'
+          'concepts/manage-chains.md': 'concepts/non-evm-chains.md'
+          'deploy/index.md': 'deploy/deploy-app.md'
+          'faq/index.md': 'faq/faq-gen.md'
+          'gasless/index.md': 'gasless/gasless-install.md'
+          'guides/index.md': 'setup/config-dApp-with-db.md'
+          'guides/dev/index.md': 'setup/config-dApp-with-db.md'
+          'guides/err/index.md': 'auth/auth-error-msg.md'
+          'guide/dev/sdk-ref/index.md': 'auth/auth-usage-guide.md'
+          'guides/user/index.md': 'user-guides/wallet-ui/index.md'
+          'guides/validators/index.md': 'validators/onboard-validators.md'
+          'guides/validators/onboard-validators.md': 'validators/onboard-validators.md'
+          'learn/new-to-web3.md': 'concepts/authsdk.md'
+          'learn/index.md': 'concepts/authsdk.md'
+          'quick-start/index.md': 'quick-start/wagmi-quick-start.md'
+          'quick-start/mobile/index.md': 'quick-start/flutter-quick-start.md'
+          'security/index.md': 'security/overview.md'
+          'setup/config-wallet/custom-wallet-ui/index.md': 'auth/custom-wallet-ui.md'
+          'support/report-bugs/index.md': 'support/index.md'
+          'support/community.md': 'support/index.md'
+          'support/support.md': 'support/index.md'
+          'tech/index.md': 'web3-stack/apps.md'
+          'web3-stack/index.md': 'web3-stack/apps.md'
+          'tutorials/videos/index.md': 'https://www.youtube.com/@ArcanaNetwork/videos'
+          'tutorials/videos/dashboard.md': 'https://www.youtube.com/@ArcanaNetwork/videos'
+          'tutorials/videos/gasless.md': 'https://www.youtube.com/@ArcanaNetwork/videos'
+          'tutorials/videos/get-started.md': 'https://www.youtube.com/@ArcanaNetwork/videos'
+          'tutorials/videos/onboard-users.md': 'https://www.youtube.com/@ArcanaNetwork/videos'
+          'tutorials/videos/sign-transactions.md': 'https://www.youtube.com/@ArcanaNetwork/videos'
+          'tutorials/index.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/index.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/mobile/index.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/mobile/react-native-sample.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/mobile/flutter-sample.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/vanilla-html-js-sample.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/react-code-sample.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/nextjs-sample.md': 'https://github.com/arcana-network/auth-examples'
+          'tutorials/code-samples/gaming/unity-sample.md': 'https://github.com/arcana-network/auth-examples'
 
 markdown_extensions:
   - abbr
@@ -574,7 +659,7 @@ nav:
           - Transaction Types: concepts/anwallet/walletstgsigntx.md
           - Network Switching: concepts/anwallet/walletntwkswitchmode.md
           - Wallet Visibility: concepts/anwallet/walletvisibility.md
-        - Arcana JWT Token: concepts/an_jwt_token.md
+        - Arcana JWT Token: concepts/an-jwt-token.md
         - Authentication: 
           - concepts/authtype/index.md
           - Auth Providers: concepts/authtype/socialauth.md
@@ -585,7 +670,7 @@ nav:
         - Custom Login UI: concepts/custom-login-ui.md
         - Custom Wallet UI: concepts/custom-wallet-ui.md
         - Dashboard: concepts/dashboard.md
-        - DID Token: concepts/an_did_token.md
+        - DID Token: concepts/an-did-token.md
         - Gateway: concepts/gateway-node.md
         - Key Space Type: concepts/keyspace-types.md
         - MFA: concepts/mfa.md
@@ -603,7 +688,7 @@ nav:
         - Usage Billing: concepts/billing.md
         - Usage Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
-        - Verify JWT Token: concepts/jwt_token_validation.md
+        - Verify JWT Token: concepts/jwt-token-validation.md
       - Tech Stack: 
         - App Types: web3-stack/apps.md
         - Auth Providers: web3-stack/auth.md
