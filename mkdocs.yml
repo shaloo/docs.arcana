@@ -574,7 +574,7 @@ nav:
           - Transaction Types: concepts/anwallet/walletstgsigntx.md
           - Network Switching: concepts/anwallet/walletntwkswitchmode.md
           - Wallet Visibility: concepts/anwallet/walletvisibility.md
-        - Arcana JWT Token: concepts/an_jwt_token.md
+        - Arcana JWT Token: concepts/an-jwt-token.md
         - Authentication: 
           - concepts/authtype/index.md
           - Auth Providers: concepts/authtype/socialauth.md
@@ -585,7 +585,7 @@ nav:
         - Custom Login UI: concepts/custom-login-ui.md
         - Custom Wallet UI: concepts/custom-wallet-ui.md
         - Dashboard: concepts/dashboard.md
-        - DID Token: concepts/an_did_token.md
+        - DID Token: concepts/an-did-token.md
         - Gateway: concepts/gateway-node.md
         - Key Space Type: concepts/keyspace-types.md
         - MFA: concepts/mfa.md
@@ -603,7 +603,7 @@ nav:
         - Usage Billing: concepts/billing.md
         - Usage Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
-        - Verify JWT Token: concepts/jwt_token_validation.md
+        - Verify JWT Token: concepts/jwt-token-validation.md
       - Tech Stack: 
         - App Types: web3-stack/apps.md
         - Auth Providers: web3-stack/auth.md
