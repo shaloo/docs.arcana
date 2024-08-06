@@ -157,8 +157,8 @@
                     showConsoleButton: true,
                     externalResources: [
                         "https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js",
-                        "https://unpkg.com/@arcana/scw@0.0.30/dist/standalone/scw.umd.js",
-                        //"https://cdn.jsdelivr.net/npm/@arcana/scw",
+                        "https://unpkg.com/browse/@arcana/scw@0.0.30/dist/standalone/scw.umd.js"
+                        //"https://cdn.jsdelivr.net/npm/@arcana/scw"
                     ],
                     editorHeight: '95vh',
                     autoReload: true,
@@ -184,6 +184,7 @@
         .then(() => {
             console.log('Gasless Sandpack files:', glFiles);
             renderSandpack('vanilla', themeType, glFiles, gaslesssandpack);
+            console.log("GL Sandpack rendered!")
         })
         .catch(error => {
             console.error('Error loading gasless sample files:', error);
