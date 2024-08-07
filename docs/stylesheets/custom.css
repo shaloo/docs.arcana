@@ -254,6 +254,14 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   background-color: var(--md-nav-bg-active-color);
 }
 
+/* Fix tabbed overflow of background in mobile view*/
+
+@media screen and (max-width: 44.984375em) {
+  .md-content__inner>.tabbed-set .tabbed-labels {
+    margin: 0;
+    max-width: 92vw;
+  }
+}
 .tabbed-content {
   padding-left: 1rem;
   padding-right: 1rem;
