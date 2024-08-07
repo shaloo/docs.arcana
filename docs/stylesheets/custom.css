@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=block");
 
 :root > * {
+  --md-nav-padding: 0.05rem;
   --md-an-pink-color: #FF4E9F;
   --md-an-blue-color: #2730FE;
   --md-an-green-color: #0FB600;
@@ -83,6 +84,12 @@
   --md-an-admonition-example: #2e1431;
   --md-an-admonition-abstract: #0e232b;
   --md-an-header-shadow-color: #eaeaea33;
+}
+
+/* First page with no TOC had no margin*/
+
+.md-main {
+  margin-top: -2%;
 }
 
 /* Top Header: Arcana Styling */
@@ -186,8 +193,8 @@
 }
 
 .md-nav__item--section {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: var(--md-nav-padding);
+  padding-bottom: var(--md-nav-padding);
   padding-left: 0.25rem;
   margin: auto;
 }
@@ -198,16 +205,16 @@
 }
 
 li.md-nav__item, a.md-nav__link, .md-nav__link {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: var(--md-nav-padding);
+  padding-bottom: var(--md-nav-padding);
   padding-left: 0.25rem;
   /*margin: auto;*/
 }
 
 .md-nav__link:hover {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.25rem;
+  /*padding-top: var(--md-nav-padding);
+  padding-bottom: var(--md-nav-padding);
+  padding-left: 0.25rem;*/
   background-color: var(--md-nav-bg-hover-color);  /*background-color: #f4c3d9e6;*/
   border-radius: 5px;
   /*margin: auto;*/

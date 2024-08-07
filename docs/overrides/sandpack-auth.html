@@ -7,26 +7,33 @@
 
 {% block content %}
 
-<section class="md-grid md-typeset">
-    <div class="top-hr">
-        <div class="hr">
-            <h2 style="text-align: left">Try Auth!</h2>
-            <p>Here is a sample app integration Sandpack playground to demonstrate <a href="{{config.site_url}}concepts/social-login/">social login</a> with Arcana Auth.</p>
+    <section class="md-grid md-typeset">
+        <div class="top-hr">
+            <div class="hr">
+                <h1 style="text-align: left">Try Auth!</h1>
+                <p>Here is a sample app integration Sandpack playground to demonstrate <a href="{{config.site_url}}concepts/social-login/">social login</a> with Arcana Auth.</p>
+            </div>
+            <div><p style="color: var(--md-an-blue-color); font-size: 0.75rem"><i>If you don't see the Sandpack below, reload the page.</i></p></div>
         </div>
-        <div><p style="color: var(--md-an-blue-color); font-size: 0.75rem"><i>If you don't see the Sandpack below, reload the page.</i></p></div>
-    </div>
-    
-    <div style="margin-top: 1rem; margin-bottom: 1rem" id="authsandpack"></div>
-    
-</section>
+        
+        <div style="margin-top: 1rem; margin-bottom: 1rem" id="authsandpack"></div>
+        
+    </section>
 
+{% endblock %}
+
+{% block libs %}
+    {{ super() }}
+    <!--- Add common javascript libs here if needed for Sandpack
+    <script type="module" src="{{ base_url }}/javascripts/common.js"></script>
+    --->
 {% endblock %}
 
 {% block scripts %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}
 
-<!--
+  <!--
   Sandpack PoC
   -->
   <script type="importmap">
@@ -35,7 +42,7 @@
         "react": "https://esm.sh/react@18.2.0",
         "react-dom": "https://esm.sh/react-dom@18.2.0",
         "react-dom/": "https://esm.sh/react-dom@18.2.0/",
-        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0"
+        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.9.0"
       }
     }
   </script>
@@ -57,24 +64,6 @@
     if (startCurrentTheme === "slate") {
         themeType = "dark";
     }
-    //const {sPtheme, setsPTheme} = useState('light'); 
-    /*
-    const watchMedia = window.matchMedia("(data-md-color-scheme: "slate")");
-    let themetype;
-
-    function getTheme(e) {
-        if (e.matches)
-            themetype = "dark";
-        else
-            themetype = "default";
-    }
-    watchMedia.addEventListener("change", getTheme);
-    */
-
-    /*
-    const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const themetype = prefersDarkMode ? "dark" : "light";
-    */
 
     //Try Observer method
 
@@ -86,24 +75,24 @@
 
     // Callback function to execute when mutations are observed
     const callback = (mutationList, observer) => {
-    for (const mutation of mutationList) {
-        if (mutation.type === "attributes" && mutation.attributeName === "data-md-color-scheme") {
-            console.log(`The ${mutation.attributeName} attribute was modified.`);
-            console.log("Mutation:", mutation);
-            
-            const currentTheme = document.body.getAttribute("data-md-color-scheme");
-            console.log("Current theme:", currentTheme);
-            
-            // Determine theme type based on current theme
-            if (currentTheme === "slate") {
-                themeType = "dark";
-            } else if (currentTheme === "default") {
-                themeType = "light";
+        for (const mutation of mutationList) {
+            if (mutation.type === "attributes" && mutation.attributeName === "data-md-color-scheme") {
+                console.log(`The ${mutation.attributeName} attribute was modified.`);
+                console.log("Mutation:", mutation);
+                
+                const currentTheme = document.body.getAttribute("data-md-color-scheme");
+                console.log("Current theme:", currentTheme);
+                
+                // Determine theme type based on current theme
+                if (currentTheme === "slate") {
+                    themeType = "dark";
+                } else if (currentTheme === "default") {
+                    themeType = "light";
+                }
+                console.log("Theme type:", themeType);
             }
-            console.log("Theme type:", themeType);
         }
-    }
-};
+    };
 
     // Create an observer instance linked to the callback function
     const observer = new MutationObserver(callback);
@@ -156,8 +145,8 @@
                     showConsoleButton: true,
                     externalResources: [
                         "https://cdn.jsdelivr.net/npm/@arcana/auth",
-                        "https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js",
-                        "https://unpkg.com/@arcana/scw@0.0.30/dist/standalone/scw.umd.js",
+                        //"https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js",
+                        //"https://unpkg.com/@arcana/scw@0.0.30/dist/standalone/scw.umd.js",
                         //"https://cdn.jsdelivr.net/npm/@arcana/scw",
                     ],
                     editorHeight: '95vh',
@@ -182,6 +171,7 @@
         .then(() => {
             console.log('Sandpack files:', files);
             renderSandpack('vanilla', themeType, files, authsandpack);
+            console.log("Sandpack rendered!")
         })
         .catch(error => {
             console.error('Error loading sample files:', error);
