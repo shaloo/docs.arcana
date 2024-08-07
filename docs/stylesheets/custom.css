@@ -261,7 +261,19 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
     margin: 0;
     max-width: 92vw;
   }
+  /* code width reduce to 95% */
+
+  .md-typeset pre>code {
+    border-radius: 9px;
+    padding: 1rem;
+    max-width: 95vw;
+  }
+
+  .highlight .hll {
+    box-shadow: inset 0.075rem 0 0 0 var(--md-an-pink-color);
+  }
 }
+
 .tabbed-content {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -273,7 +285,12 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   border-top-left-radius: inherit;
 }
 
-/* Code: Arcana Styling */
+/* Tabbed Content: Arcana Styling */
+
+.md-typeset .tabbed-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 /*.md-typeset .tabbed-block>.highlight:first-child {*/
   .md-typeset .tabbed-set>input:target {
@@ -281,15 +298,14 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
    color: var(--md-an-pink-color);
 }
 
+/* Tabbed Code Content: Arcana Styling */
+
 .md-typeset .tabbed-block>.highlight:first-child>pre>code, .md-typeset .tabbed-block>pre:first-child>code {
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
 }
 
-.md-typeset .tabbed-content {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+/* Code: Arcana Styling */
 
 .md-typeset pre>code {
   border-radius: 9px;
@@ -298,7 +314,7 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
 }
 
 .highlight .hll {
-  box-shadow: 1rem 0 0 0 var(--md-an-pink-color);
+  box-shadow: inset 0.075rem 0 0 0 var(--md-an-pink-color);
 }
 
 /* Highlight: Quote */
