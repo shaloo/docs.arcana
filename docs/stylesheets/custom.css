@@ -85,6 +85,12 @@
   --md-an-header-shadow-color: #eaeaea33;
 }
 
+/* First page with no TOC had no margin*/
+
+.md-main {
+  margin-top: -2%;
+}
+
 /* Top Header: Arcana Styling */
 .md-header {
   background-color: var(--md-default-bg-color);
