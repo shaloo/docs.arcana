@@ -36,7 +36,8 @@
         "react": "https://esm.sh/react@18.2.0",
         "react-dom": "https://esm.sh/react-dom@18.2.0",
         "react-dom/": "https://esm.sh/react-dom@18.2.0/",
-        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0"
+        "@codesandbox/sandpack-react": "https://esm.sh/@codesandbox/sandpack-react@2.8.0",
+        "@arcana/scw": "https://unpkg.com/@arcana/scw@0.0.43/dist/standalone.mjs"
       }
     }
   </script>
@@ -145,8 +146,7 @@
                 template,
                 customSetup: {
                     dependencies: { 
-                        "dotenv": "^16.3.1",
-                        "parcel": "^2.9.3"
+                        "@arcana/scw": "0.0.43",
                     }
                 },
                 theme,
@@ -156,9 +156,7 @@
                     showConsole: true,
                     showConsoleButton: true,
                     externalResources: [
-                        "https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js",
-                        "https://unpkg.com/browse/@arcana/scw@0.0.30/dist/standalone/scw.umd.js"
-                        //"https://cdn.jsdelivr.net/npm/@arcana/scw"
+                        "https://unpkg.com/@arcana/scw@0.0.43/dist/standalone.mjs"
                     ],
                     editorHeight: '95vh',
                     autoReload: true,
