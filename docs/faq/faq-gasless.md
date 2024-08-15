@@ -89,6 +89,18 @@ toc_depth: 2
 
       No. EoA accounts on network N where the gas tank is set up and funded, will incur gas fees. Dev must use SCW accounts only to ensure gasless transactions.
 
+---
+
+## Gasless Transaction Mode
+
+??? an-faq "Does the {{config.extra.arcana.gasless_sdk_name}} `doTx()` method support gasless transactions for custom EVM tokens?"
+
+Yes, [`doTx()`](https://gasless-sdk-ref-guide.netlify.app/classes/scw#doTx) method supports gasless transactions for custom EVM tokens. Developers must use the {{config.extra.arcana.dashboard_name}} to configure gasless settings. Also, the custom EVM token contract and required functions such as `transferFrom`, `safeTransferFrom`, and `transfer` **must be whitelisted** via the gasless settings. After integrating with the SDK, while issuing the `doTx()` method, specify the [**mode**](https://gasless-sdk-ref-guide.netlify.app/enums/paymastermode) parameter as "BICONOMY".
+
+```js
+scw.doTx( tx, { mode: "BICONOMY"});
+```
+
 ## MFA
 
 ---

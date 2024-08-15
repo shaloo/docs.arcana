@@ -103,7 +103,7 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 
 === "Web Apps"
 
-    [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[wagmi-quick-start| Wagmi ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button }  [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[gasless-quick-start| Gasless ]]{ .md-button } [[gasless-standalone-quick-start| Gasless(3rd Party Wallets) ]]{ .md-button }
+    [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button }  [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[gasless-quick-start| Gasless ]]{ .md-button } [[gasless-standalone-quick-start| Gasless(3rd Party Wallets) ]]{ .md-button }
 
 === "Non-EVM Apps"
 
