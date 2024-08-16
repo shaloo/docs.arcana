@@ -74,7 +74,39 @@ For apps configured to use gas tanks, users have EoA and SCW addresses linked to
 
 Only authenticated users can export their private key via the {{config.extra.arcana.wallet_name}} UI. The exported private key is from the EoA account. There is no private key for the SCW address.
 
-## How do Gasless Transaction Work?
+## How to Issue a Gasless Transaction? 
+
+Gasless transactions are available only on [select blockchain networks](#supported-chains). 
+
+Apps can issue gasless transactions via the {{config.extra.arcana.wallet_name}} or third-party browser-based wallets. As a prerequisite, the apps must be registered and gasless usage must be configured before integrating the app with one or more {{config.extra.arcana.company_name}} SDK.
+
+### Prerequisites
+
+* Use the {{config.extra.arcana.dashboard_name}} to register the app.
+* Configure Gasless Settings
+  - Set up gas tanks
+  - Fund gas tanks
+  - Whitelist app operations by specifying contract ABI and selecting contract functions that will be executed as gasless transactions
+
+### Via {{config.extra.arcana.wallet_name}}
+
+To enable gasless transactions using the {{config.extra.arcana.wallet_name}}, integrate the app with the {{config.extra.arcana.sdk_name}}. Onboard users via [[concept-social-login|social login]] and use the supported Web3 wallet operations for the chosen chain. No additional method is required for gasless transactions. If an operation is whitelisted via gasless settings, users incur no gas fees. Ensure Web3 wallet operations use the SCW Wallet Address, not the EoA Address.
+
+### Via Third-party Wallets
+
+To enable gasless transactions using third-party browser-based wallets, integrate the app with the {{config.extra.arcana.gasless_sdk_name}}. Onboard users via [[concept-social-login|social login]] and call `doTx()` method to issue gasless transactions via the third-party wallet. Make sure that the transaction parameter of `doTx()` invokes a contract function that has already been whitelisted through the gasless configuration settings. 
+
+### Gasless Transaction for Custom Tokens
+
+To enable a gasless transaction for a custom token on an EVM chain, set the `mode` parameter to BICONOMY when using `doTx()`. The following modes are available for gasless transactions through third-party wallets:
+
+| Mode | Use Case |
+| --- | --- |
+| `SCW` | No gasless (default) |
+| `Arcana` | Reserved |
+| `BICONOMY` | Gasless Transaction |
+
+## How does Gasless Transaction Work?
 
 Once gasless is set up, not all whitelisted operations are guaranteed to be gasless for the user. It depends on gas availability at the time of the transaction.
 
