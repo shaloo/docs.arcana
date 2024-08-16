@@ -23,6 +23,12 @@ Storage Region can be configured for any application using the dashboard just on
 
 --->
 
+??? an-trbs "Twitter login failures caused by setup issues. What values need to be specified in client ID and secret in the dashboard settings?"
+
+      Often, during SDK usage configurations, developers fail to specify the correct values from the Twitter Developer console into the {{config.extra.arcana.dashboard_name}} resulting in Twitter login failures. Remember to copy the **Redirect URI** values from the {{config.extra.arcana.dashboard_name}} in the Twitter Developer console.
+
+      Also, ensure that you have specified the correct Twitter API Key and the API Key Secret values in the {{config.extra.arcana.dashboard_name}} **Configure > Social Auth > Twitter** settings. [[config-auth-twitter|Learn more...]]
+
 ??? an-trbs "Is it possible to stop the {{config.extra.arcana.wallet_name}} UI from being displayed in the app's context."
 
       The {{config.extra.arcana.product_name}} allows developers to manage the user experience for signing blockchain transactions by controlling when the wallet UI shows up. To manage [[concept-wallet-visibility|visibility mode]], integrate the app with the SDK, and create `AuthProvider` with the `alwaysVisible` parameter set to `false`. Use the `showWallet` function to display the wallet when required.

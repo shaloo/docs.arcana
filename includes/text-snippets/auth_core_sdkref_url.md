@@ -1,1 +1,1 @@
-<span><a href="https://auth-core-sdk-ref-guide.netlify.app/" target="_blank">{{config.extra.arcana.auth_core_sdk_name}} Reference Guide</a></span>
+<span><a href="https://auth-core-sdk-ref-guide.netlify.app/" target="_blank">{{config.extra.arcana.auth_core_sdk_name}} Reference</a></span>

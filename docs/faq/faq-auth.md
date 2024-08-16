@@ -13,6 +13,14 @@ toc_depth: 2
 
 ---
 
+??? an-faq "Can users log in using their existing Web3 wallets?"
+
+      Yes. 
+
+      Besides social login, {{config.extra.arcana.sdk_name}} allows Web3 app users to log in with third-party Web3 wallets. 
+      
+      Apps using wallet connectors, [[wagmi-quick-start|Wagmi]], and [[rainbowkit-quick-start|RainbowKit]], [[web3-react-quick-start|Web3-React]], and [[walletconnect-quick-start|WalletConnect]] SDKs can enable {{config.extra.arcana.wallet_name}} to sign blockchain transactions and support gasless transactions.
+      
 ??? an-faq "Can a Web3 app use the {{config.extra.arcana.sdk_name}} only for onboarding users and disable the {{config.extra.arcana.wallet_name}} feature altogether?"
 
       There is no way to selectively turn off the {{config.extra.arcana.wallet_name}} features.  However, if the application **does not perform any blockchain transactions**, the wallet feature can be disabled by setting the [[concept-wallet-visibility|wallet visibility mode]] to `false` while integrating the app with the {{config.extra.arcana.sdk_name}}. In this case, the {{config.extra.arcana.wallet_name}} will not be visible to the authenticated user as long as **no blockchain transaction is triggered**. 
@@ -68,11 +76,15 @@ toc_depth: 2
 
       Yes. See [[concept-index-auth-type|Arcana JWT Token]] for details.
 
+??? an-faq "How does the app access an authenticated user's information such as name, email, login token, the wallet address?"
+
+      Apps can use the [`getUser()`](https://authsdk-ref-guide.netlify.app/classes/authprovider#getUser) method to obtain the user's name, email, login token ([[concept-arcana-jwt-token|Arcana JWT Token]], [[concept-did-token|DID Token]]), wallet address, etc. See {% include "./text-snippets/authsdkref_url.md" %} for details.
+
 ??? an-faq "For Twitter, the `getUser()` function of the `AuthProvider` does not always return the user's email?"
 
       You can create a Twitter account using your phone number without needing to provide an email address. If you do this, the getUser() function won't give you the user's email address.
 
-      However, web3 app developers have the [option to configure settings on the Twitter developer dashboard](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials#:~:text=Request%20a%20User's%20Email%20Address,email%20address%20access%20to%20function) to request users' email addresses. If they do this, {{config.extra.arcana.sdk_name}} can access and retrieve the user's email through Twitter, and it will be included in the result when you use the getUser() function.
+      However, web3 app developers have the [option to configure settings on the Twitter developer dashboard](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials#:~:text=Request%20a%20User's%20Email%20Address,email%20address%20access%20to%20function) to request users' email addresses. If they do this, {{config.extra.arcana.sdk_name}} can access and retrieve the user's email through Twitter, and it will be included in the result when you use the getUser() function.     
 
 ## {{config.extra.arcana.wallet_name}}
 

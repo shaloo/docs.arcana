@@ -17,10 +17,6 @@ Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashbo
 
 ## Step 2: Get Twitter API Key
 
-!!! an-caution "Twitter Elevated Access Required"
-
-      Developers must have a [Twitter Developer Account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api) and [Twitter Elevated Access (not Free account)](https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api#v2-access-level). This is required to configure and use the Twitter Developer Portal for generating Twitter OAuth credentials. 
-
 Go to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/projects-and-apps) and create a new [Twitter App](https://developer.x.com/en/docs/apps/overview) for setting up the OAuth credentials for the app. Note that if you would like to use Twitter API v2, you must add your Twitter App to a [Project](https://developer.x.com/en/docs/projects/overview).
 
 <figure markdown="span">
@@ -44,6 +40,8 @@ In the **Keys and Tokens** tab, the **API Key** and **API Key Secret** (also kno
 
 After this, you need to select OAuth Setup as shown below and configure the **Redirect URI** and the app deployment website domain.
 
+{% include "./text-snippets/warn_redirect_uri_add.md" %}
+
 <figure markdown="span">
   ![Setup App OAuth]({{config.extra.arcana.img_dir}}/twitter_oauth_settings.{{config.extra.arcana.img_png}}){ .an-screenshots .width_50pc }
   <figcaption>Setup App OAuth</figcaption>
@@ -57,6 +55,10 @@ When you click **Setup**, you will see OAuth options.  For the *Type of App* fie
 </figure>
 
 In the **App Info** section, select the **Redirect URI** field. You need to specify the app [callback URL](https://developer.twitter.com/en/docs/apps/callback-urls) in the [Twitter settings](https://www.cozmoslabs.com/docs/profile-builder-2/add-ons/social-connect/create-twitter-app-social-connect/) as the redirect URI copied from the {{config.extra.arcana.dashboard_name}} in the previous step. 
+
+| {{config.extra.arcana.dashboard_name}}  -> | Twitter Developer Portal OAuth Settings|
+| --- | --- |
+| Redirect URI -> |*Callback URI/Redirect URLs*|
 
 <figure markdown="span">
   ![Set Twitter App Callback URL]({{config.extra.arcana.img_dir}}/twitter_callback_url_setting.{{config.extra.arcana.img_png}}){ .an-screenshots .width_50pc }
@@ -84,7 +86,12 @@ Make sure you save all the settings.
 
 ## Step 3: Update Twitter Social Auth Settings
 
-In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Twitter" setting. Paste the **API Key** assigned by Twitter, in the previous step. 
+In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth** and choose **Twitter** icon to view Twitter settings. The following Twitter developer portal values saved in the previous step must be copied to the {{config.extra.arcana.dashboard_name}} Twitter settings.
+
+| Twitter Developer Portal Settings -> | {{config.extra.arcana.dashboard_name}} Settings |
+| --- | --- |
+| Twitter API Key -> |*Client ID*|
+| Twitter API Key Secret ->|*Client Secret*|
 
 <figure markdown="span">
   ![Update Twitter API Key]({{config.extra.arcana.img_dir}}/an_dApp_twitter_config.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
