@@ -13,6 +13,14 @@ toc_depth: 2
 
 ---
 
+??? an-faq "Are gasless transactions supported only via the {{config.extra.arcana.wallet_name}}?"
+
+      No.
+
+      Apps that integrate with the {{config.extra.arcana.sdk_name}} can enable social login and gasless transactions via the {{config.extra.arcana.wallet_name}} after configuring the gasless settings through the dashboard. All whitelisted Web3 app operations that are issued via the {{config.extra.arcana.wallet_name}} using the SCW Address will be gasless.
+
+      To enable gasless transactions via third-party browser-based wallets, apps must integrate with the {{config.extra.arcana.gasless_sdk_name}}. They must configure gasless settings and whitelist app operations through the dashboard before using the `doTx()` method to issue gasless transactions.
+
 ??? an-faq "Can the developers enable gasless transactions for any blockchain?"
 
       The gasless feature is available only for selected blockchains. See the complete list of [[concept-gasless-transactions#supported-chains|supported blockchains]] for details.
@@ -21,19 +29,13 @@ toc_depth: 2
 
       There can only be a single gas tank configured per blockchain network for every registered app.
 
-??? an-faq "Can the developer add a gas tank for any EVM-compatible supported chain that is configured in the **Chain Management** app settings?"
-
-      No. 
-      
-      Refer to the [[concept-gasless-transactions#supported-chains|supported chains]] where gas tanks can be set up to enable gasless transactions.
-
 ??? an-faq "Can ERC20 tokens be used to deposit gas fees when setting up gas tanks?"
 
       **No.** 
       
       Only native cryptocurrency can be used to fuel gas tanks and deposit gas. In a future release, ERC20 tokens can also be used to set up and fill gas tanks for gasless operations in dApps.
 
-??? an-faq "Does the user wallet address get impacted when the gasless feature is enabled?"
+??? an-faq "Does the user wallet address change when the gasless feature is enabled?"
 
       Yes.  If the gasless feature is not enabled, each user account is only associated with the traditional EoA address. When gasless transactions are enabled for a blockchain, the user accounts are associated with an EoA and a SCW address. [[concept-gasless-transactions#gasless-accounts|Learn more...]]
 
@@ -61,7 +63,7 @@ toc_depth: 2
       
       Users must ensure the SCW wallet address has sufficient crypto assets for transactions like token transfers. Gas fees for token transfers are covered by the SCW address.
 
-??? an-faq "Is disabling gasless possible once enabled?"
+??? an-faq "Once enabled, can the gasless feature be disabled?"
 
       Once a gas tank is established on a blockchain network, the user account becomes a dual-address gasless account, featuring both EoA and SCW addresses. This change is irreversible. However, developers can deactivate the gas tanks or they may run out of gas funds, resulting in users incurring gas fees. Once added, gas tanks cannot be deleted.
 
@@ -81,25 +83,13 @@ toc_depth: 2
 
 ??? an-faq "If a developer sets up a gas tank on network N, uses SCW address and then issues the transaction on a different network with no gas tank, why does the transaction fail?"
 
-      This will not work and cause transaction errors. Only transactions issued using the SCW address on the network where gas tank is set up (network N in this case) will be gasless and successful if there are sufficient funds in the tank and the SCW wallet address.
+      This will not work and cause transaction errors. Only transactions issued using the SCW address on the network where the gas tank is set up (network N in this case) will be gasless and successful if there are sufficient funds in the tank and the SCW wallet address.
       
       If the developers set up a gas tank on network N and issue a transaction on Network G using the SCW address, they will see a transaction error due to a mismatch between the gasless network and the address. In this case, the network is wrong and SCW is not applicable for network G where a gas tank is not set up. User accounts on Network N will be gasless accounts with dual EoA and SCW addresses. For Network G only EoA is valid and hence you will see the blockchain transaction error. Transactions issued on the other network will not be gasless and can only use EoA addresses.
 
 ??? an-faq "Will the transaction be gasless if the dev sets up a gas tank on network N, and uses EoA for issuing the blockchain transaction associated with the whitelisted operations?"
 
       No. EoA accounts on network N where the gas tank is set up and funded, will incur gas fees. Dev must use SCW accounts only to ensure gasless transactions.
-
----
-
-## Gasless Transaction Mode
-
-??? an-faq "Does the {{config.extra.arcana.gasless_sdk_name}} `doTx()` method support gasless transactions for custom EVM tokens?"
-
-Yes, [`doTx()`](https://gasless-sdk-ref-guide.netlify.app/classes/scw#doTx) method supports gasless transactions for custom EVM tokens. Developers must use the {{config.extra.arcana.dashboard_name}} to configure gasless settings. Also, the custom EVM token contract and required functions such as `transferFrom`, `safeTransferFrom`, and `transfer` **must be whitelisted** via the gasless settings. After integrating with the SDK, while issuing the `doTx()` method, specify the [**mode**](https://gasless-sdk-ref-guide.netlify.app/enums/paymastermode) parameter as "BICONOMY".
-
-```js
-scw.doTx( tx, { mode: "BICONOMY"});
-```
 
 ## MFA
 
@@ -141,6 +131,12 @@ scw.doTx( tx, { mode: "BICONOMY"});
 
 ---
 
+??? an-faq "Do all Web3 apps require to integrate with both the {{config.extra.arcana.sdk_name}} and {{config.extra.arcana.gasless_sdk_name}} to enable gasless transactions?"
+
+      No. The {{config.extra.arcana.sdk_name}} can be used to enable social login in Web3 apps and allow gasless transactions via the {{config.extra.arcana.wallet_name}}. To extend gasless functionality to third-party browser-based wallet apps must integrate with the {{config.extra.arcana.gasless_sdk_name}}. 
+
+      Multi-wallet Web3 apps that use wallet connectors and support {{config.extra.arcana.wallet_name}} as well as third-party wallets must integrate with both the SDKs.
+
 ??? an-faq "What are the high-level steps for using the {{config.extra.arcana.gasless_sdk_name}}?"
 
       A. Use the  {{config.extra.arcana.dashboard_name}} to register the app and obtain a unique app identifier or **{{config.extra.arcana.app_address}}**. 
@@ -169,3 +165,17 @@ scw.doTx( tx, { mode: "BICONOMY"});
     No.
 
     Multi-wallet apps can configure the gasless feature via the dashboard, then install and integrate with the [[sdk-installation|appropriate {{config.extra.arcana.sdk_name}} plus companion SDKs]]. This will **only** enable gasless transactions for the {{config.extra.arcana.wallet_name}} but not for the third-party browser-based wallets such as MetaMask. To enable that, developers must **also** install and integrate the app with the {{config.extra.arcana.gasless_sdk_name}}. For details, refer to the [[gasless-sdk-usage-guide|{{config.extra.arcana.gasless_sdk_name}} Usage Guide]]
+
+### Gasless Transaction Mode
+
+---
+
+??? an-faq "Does the {{config.extra.arcana.gasless_sdk_name}} `doTx()` method support gasless transactions for custom EVM tokens?"
+
+      Yes, [`doTx()`](https://gasless-sdk-ref-guide.netlify.app/classes/scw#doTx) method supports gasless transactions for custom EVM tokens. Developers must use the {{config.extra.arcana.dashboard_name}} to configure gasless settings. Also, the custom EVM token contract and required functions such as `transferFrom`, `safeTransferFrom`, and `transfer` **must be whitelisted** via the gasless settings. After integrating with the SDK, while issuing the `doTx()` method, specify the [**mode**](https://gasless-sdk-ref-guide.netlify.app/enums/paymastermode) parameter as "BICONOMY".
+
+      ```js
+      scw.doTx( tx, { mode: "BICONOMY"});
+      ```
+
+      [[concept-gasless-transactions#gasless-transaction-for-custom-tokens|Learn more...]]
