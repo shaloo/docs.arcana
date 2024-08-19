@@ -7,7 +7,7 @@ site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
 #site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 # Check for broken links, etc.
-strict: false  #For reorg changing it to false
+strict: true  #For reorg changing it to false
 
 # For canonical/URL ending with a '/' make sure this is true and offline plugin is disabled
 use_directory_urls: true
