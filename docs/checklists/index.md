@@ -178,7 +178,7 @@ Quickly integrate the {{config.extra.arcana.company_name}} SDKs to enable [[conc
 
     - [ ] 6. [[integrate-unity-app|Integrate the Unity app]] with the SDK.
 
-    - [ ] 7. [[unity-user-onboarding|Onboard users via a single line of code]] using the [[plug-and-play login UI]].
+    - [ ] 7. [[unity-user-onboarding|Onboard users via a single line of code]] using the [[concept-plug-and-play-auth|plug-and-play login UI]].
 
     - [ ] 8. Add code to issue supported Web3 wallet operations, JSON/RPC functions via the {{config.extra.arcana.wallet_name}} in the authenticated user's context. Note that the supported Web3 wallet operations may vary depending upon the chain type, [[evm-web3-wallet-ops|EVM]] or non-EVM.
 
