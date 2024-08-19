@@ -61,6 +61,19 @@ A blockchain sign transaction notification can be triggered programmatically via
   <figcaption>Sign Transactions</figcaption>
 </figure> 
 
+### Speed Up Transaction
+
+For every blockchain transaction, users pay gas fees with the network’s native token. It is possible to speed up the transaction by paying higher gas fees. When issuing a send transaction through the {{config.extra.arcana.wallet_name}} UI, users have three options for gas fees selection:
+
+* **Normal**: Default network gas fees
+* **Fast**: Pay a premium for quicker transactions
+* **Custom**: Choose gas limits, priority fee and max gas fees setting and customize fees
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_speedup.{{config.extra.arcana.img_gif}}" alt="Speedup Transactions"/>
+  <figcaption>Speed up Transactions</figcaption>
+</figure> 
+
 ### Pending Transactions
 
 When a transaction notification appears, the user can click 'Do this later' to ignore it. Pending transactions are marked with a red dot in the 'Activity' tab and on the minimized wallet icon.
