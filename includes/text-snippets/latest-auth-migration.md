@@ -6,17 +6,17 @@ Using an older version and want to migrate? Read on...
 
 There are no usage changes in this release if you are already using the SDK. 
 
-This new release includes support for custom OAuth and wallet UI features for off-ramping crypto to fiat.
+This new release includes support for Custom Auth and wallet UI features for off-ramping crypto to fiat.
 
 ## How to Migrate to v1.0.11?
 
 Install and upgrade to the latest {{config.extra.arcana.sdk_name}} v1.0.11. No integration code updates are required for the features in the previous release.  
 
-If you plan on using the custom OAuth or wallet off-ramping feature, check out the following documentation updates:
+If you plan on using the Custom Auth or wallet off-ramping feature, check out the following documentation updates:
 
-* What is [[concept-custom-oauth|custom OAuth]]?
-* [[config-custom-oauth|How to configure]] custom OAuth feature usage via the {{config.extra.arcana.dashboard_name}}?
-* [[integrate-custom-oauth|How to integrate an app that uses custom user authentication]] and enable {{config.extra.arcana.sdk_name}} and signing of blockchain transactions for authenticated users?
+* What is [[concept-custom-auth|Custom Auth]]?
+* [[config-custom-auth|How to configure]] Custom Auth feature usage via the {{config.extra.arcana.dashboard_name}}?
+* [[integrate-custom-auth|How to integrate an app that uses custom user authentication]] and enable {{config.extra.arcana.sdk_name}} and signing of blockchain transactions for authenticated users?
 * [[arcana-wallet-user-guide#buysell-crypto|How to buy/sell crypto]] when using {{config.extra.arcana.wallet_name}}? 
 
 That's all!

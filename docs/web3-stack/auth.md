@@ -18,6 +18,6 @@ To enable [[concept-social-login|social login]] and onboard users in Web3 apps, 
 
 {% include "./text-snippets/custom_idm_supported.md" %}
 
-## Custom OAuth
+## Custom Auth
 
-Apps that use custom authentication (e.g., Epic user authentication, Relative gaming user authentication mechanism) and require enabling authenticated users to sign blockchain transactions can use the [[concept-custom-oauth|custom OAuth feature]].
+Apps that use custom authentication (e.g., Epic user authentication, Relative gaming user authentication mechanism) and require enabling authenticated users to sign blockchain transactions can use the [[concept-custom-auth|Custom Auth feature]].

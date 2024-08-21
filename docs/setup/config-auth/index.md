@@ -28,7 +28,7 @@ Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_pat
 
 ## Advanced
 
-[[config-custom-oauth|:material-tools:{ .icon-color }Custom OAuth]]{.md-button}
+[[config-custom-auth|:material-tools:{ .icon-color }Custom Auth]]{.md-button}
 [[config-custom-wallet-ui|:material-tools:{ .icon-color }Custom Wallet UI]]{.md-button}
 
 

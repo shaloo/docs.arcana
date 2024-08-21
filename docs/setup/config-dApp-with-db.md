@@ -279,5 +279,5 @@ Select the application you wish to de-register and click on the delete icon. Con
 * [[index-setup-wallet|Configure Wallet Settings]]
 * [[configure-wallet-chains| Manage Chains]]
 * [[configure-gasless|Configure Gasless Settings]]
-* [[config-custom-oauth| Configure Custom OAuth Settings]]
+* [[config-custom-auth| Configure Custom Auth Settings]]
 

@@ -1,25 +1,25 @@
 ---
-alias: concept-custom-oauth
-title: 'Custom OAuth'
+alias: concept-custom-auth
+title: 'Custom Auth'
 description: 'Custom verifier-based user authentication.'
 arcana:
   root_rel_path: ../..
-  app_type: "'Custom OAuth'"
-  app_example_submodule: "`sample-auth-custom-oauth`"
+  app_type: "'Custom Auth'"
+  app_example_submodule: "`sample-auth-custom-auth`"
   pnp_login_ui_tag: "use-plug-play-auth"
   custom_login_ui_tag: "index-custom-ui-onboard-users"
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Custom OAuth
+# Custom Auth
 
-The custom OAuth feature enables Web3 apps to use the {{config.extra.arcana.sdk_name}} for secure key assignment. Authenticate users with a custom OAuth service, issue JWT tokens, and send them to the SDK. The SDK verifies users, retrieves key shares, and generates the private key for blockchain transactions on the client side.
+The custom Auth feature enables Web3 apps to use the {{config.extra.arcana.sdk_name}} for secure key assignment. Authenticate users with a Custom Auth service, issue JWT tokens, and send them to the SDK. The SDK verifies users, retrieves key shares, and generates the private key for blockchain transactions on the client side.
 
-{% include "./text-snippets/warn_custom_oauth_appkeys_only.md" %}
+{% include "./text-snippets/warn_custom_auth_appkeys_only.md" %}
 
 ## Authentication Flow
 
-1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then [configure custom OAuth settings](#custom-oauth-settings) in the dashboard.
+1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then [configure Custom Auth settings](#custom-auth-settings) in the dashboard.
 
     ```mermaid
     graph TD
@@ -28,14 +28,14 @@ The custom OAuth feature enables Web3 apps to use the {{config.extra.arcana.sdk_
         subgraph setup[Arcana Developer Dashboard]
         direction LR  
             SP1[1. Register App] --> CLID((Unique ClientID))
-            SP2[2. Configure App] --> SP3[Edit/Save Custom OAuth Settings]
+            SP2[2. Configure App] --> SP3[Edit/Save Custom Auth Settings]
         end
         classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
         class CLID an-pink
 
     ```
 
-2. Add code in the app for using a custom OAuth service and obtains a JWT after user authentication.
+2. Add code in the app for using a Custom Auth service and obtains a JWT after user authentication.
 
     ```mermaid
     graph LR
@@ -50,7 +50,7 @@ The custom OAuth feature enables Web3 apps to use the {{config.extra.arcana.sdk_
         linkStyle 2 stroke: deeppink;
     ```
 
-3. Next, install {{config.extra.arcana.sdk_name}}, integrate app with the SDK, initialize `AuthProvider` and then use the JWT obtained after the custom OAuth processing to call the `loginWithCustomProvider()` method.
+3. Next, install {{config.extra.arcana.sdk_name}}, integrate app with the SDK, initialize `AuthProvider` and then use the JWT obtained after the Custom Auth processing to call the `loginWithCustomProvider()` method.
 
     ```mermaid
     graph TD
@@ -74,17 +74,17 @@ The custom OAuth feature enables Web3 apps to use the {{config.extra.arcana.sdk_
 
     ```mermaid
     graph LR
-        BED[Arcana Developer Dashboard] --Custom OAuth Settings--> BEC{Gateway} 
+        BED[Arcana Developer Dashboard] --Custom Auth Settings--> BEC{Gateway} 
         BEC <--> BEA[Arcana Auth Protocol] <--> BEDKG[DKG]
     ```
 
-## Custom OAuth Settings
+## Custom Auth Settings
 
-The following custom OAuth settings can be specified via the {{config.extra.arcana.dashboard_name}}. 
+The following Custom Auth settings can be specified via the {{config.extra.arcana.dashboard_name}}. 
 
 ### JWKS Endpoint
 
-A JWKS Endpoint is a read-only URL exposed by the custom OAuth server or any other server that manages the cryptographic keys or JSON Web Keys (JWK) as per the [IETF RFC7517](https://datatracker.ietf.org/doc/html/rfc7517) and [IETF RFC7519](https://datatracker.ietf.org/doc/html/rfc7519) standards. JWKs are used to validate the integrity of a JWT and the encoded data by the {{config.extra.arcana.sdk_name}}.
+A JWKS Endpoint is a read-only URL exposed by the Custom Auth server or any other server that manages the cryptographic keys or JSON Web Keys (JWK) as per the [IETF RFC7517](https://datatracker.ietf.org/doc/html/rfc7517) and [IETF RFC7519](https://datatracker.ietf.org/doc/html/rfc7519) standards. JWKs are used to validate the integrity of a JWT and the encoded data by the {{config.extra.arcana.sdk_name}}.
 
 ### User Identifier String
 

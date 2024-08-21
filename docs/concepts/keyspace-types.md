@@ -84,7 +84,7 @@ Note that Switching keyspace will change the user’s wallet address.
 
 * Apps that are configured to use the custom wallet UI option instead of using the default, built-in, {{config.extra.arcana.sdk_name}} UI **cannot** use global keys.
 
-* Apps that are configured to use [[concept-custom-oauth|custom OAuth]] feature **cannot** use global keys.
+* Apps that are configured to use [[concept-custom-auth|Custom Auth]] feature **cannot** use global keys.
 
 The reason for these restriction is to reduce a potential [[concept-keyspace-type#security|security vulnerability]]. 
 
