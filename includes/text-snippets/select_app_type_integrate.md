@@ -13,6 +13,6 @@
     [[flutter-get-started| :simple-flutter:{ .icon-color } Flutter Apps]]{ .md-button }
     [[react-native-get-started| :simple-react:{ .icon-color } React-Native Apps]]{ .md-button }
 
-=== "Custom OAuth Apps"
+=== "Custom Auth Apps"
 
-    [[integrate-custom-oauth| :material-tools:{ .icon-color } Custom OAuth]]{ .md-button }
+    [[integrate-custom-auth| :material-tools:{ .icon-color } Custom Auth]]{ .md-button }

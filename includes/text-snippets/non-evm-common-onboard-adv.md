@@ -8,4 +8,4 @@
 
 {% include "./text-snippets/note-reconnect.md" %}
 
-{% include "./text-snippets/warn-custom-oauth-onboarding.md" %}
+{% include "./text-snippets/warn-custom-auth-onboarding.md" %}

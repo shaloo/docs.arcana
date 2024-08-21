@@ -622,7 +622,7 @@ concept-authsdk
 concept-config-profil
 concept-config-profile
 concept-custom-login-ui
-concept-custom-oauth
+concept-custom-auth
 concept-custom-wallet-ui
 concept-dkg
 concept-gasless-transactions
@@ -663,7 +663,7 @@ config-auth-google
 config-auth-steam
 config-auth-twitch
 config-auth-twitter
-config-custom-oauth
+config-custom-auth
 config-custom-wallet-ui
 config.extra.arcana.date_release_tag
 config3pwallet
@@ -1100,7 +1100,7 @@ indexwalletdev
 indexweb3walletops
 init
 instantiation
-integrate-custom-oauth
+integrate-custom-auth
 integrate-gasless-app
 integrate-mvx-app
 integrate-react-nextjs-app

@@ -313,7 +313,7 @@ plugins:
           'about-auth/why-arcana-auth.md': 'concepts/authsdk.md'
           'auth/index.md': 'auth/sdk-installation.md'
           'auth/integrate/index.md': 'auth/integrate/wagmi.md'
-          'auth/integrate/custom-oauth.md': 'auth/custom-oauth.md'
+          'auth/integrate/custom-oauth.md': 'auth/custom-auth.md'
           'auth/mobile/index.md': 'auth/mobile/flutter-get-started.md'
           'auth/onboard/index.md': 'auth/onboard/wagmi/wagmi-pnp-ui.md'
           'auth/onboard/rainbow/index.md': 'auth/onboard/rainbow/rainbow-pnp-ui.md'
@@ -339,7 +339,7 @@ plugins:
           'concepts/anwallet/walletorkey.md': 'concepts/anwallet/index.md'
           'concepts/anwallet/wallet-overview.md': 'concepts/anwallet/index.md'
           'concepts/authtype/aggregatelogin.md': 'concepts/aggregatelogin.md'
-          'concepts/authtype/customauth.md': 'concepts/authtype/custom-oauth.md'
+          'concepts/authtype/customauth.md': 'concepts/authtype/custom-auth.md'
           'concepts/authtype/pwdless.md': 'concepts/authtype/index.md'
           'concepts/dkg/index.md': 'concepts/adkg.md'
           'concepts/dkg.md': 'concepts/adkg.md'
@@ -479,7 +479,7 @@ nav:
               - setup/config-idm/index.md
               - Cognito: setup/config-idm/cognito-oauth.md
               - Firebase: setup/config-idm/firebase-auth.md
-            - Custom OAuth: setup/config-custom-oauth.md
+            - Custom Auth: setup/config-custom-auth.md
           - Manage Gasless: setup/configure-gasless.md    
           - Manage Chains: 
             - setup/config-wallet-chains.md
@@ -494,7 +494,7 @@ nav:
           - Gaming:
             - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
           - Advanced:
-            - Custom OAuth: setup/config-custom-oauth.md
+            - Custom Auth: setup/config-custom-auth.md
             - Custom Wallet UI: setup/config-custom-wallet-ui.md
       - Gasless SDK: 
         - Register App: setup/config-gasless/register-app.md
@@ -600,7 +600,7 @@ nav:
         - Event Handling: auth/handle-provider-events.md
         - Advanced:
           - Custom Wallet UI: auth/custom-wallet-ui.md
-          - Custom OAuth: auth/custom-oauth.md
+          - Custom Auth: auth/custom-auth.md
       - Gasless SDK: 
         - Install: gasless/gasless-install.md
         - Integrate: gasless/gasless-integrate.md
@@ -670,7 +670,7 @@ nav:
         - Authentication: 
           - concepts/authtype/index.md
           - Auth Providers: concepts/authtype/socialauth.md
-          - Custom OAuth: concepts/authtype/custom-oauth.md
+          - Custom Auth: concepts/authtype/custom-auth.md
         - Auth SDK: concepts/authsdk.md
         - Auth-Core SDK: concepts/auth-core-sdk.md
         - Configuration Profiles: concepts/config-profiles.md

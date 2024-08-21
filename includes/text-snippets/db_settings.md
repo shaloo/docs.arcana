@@ -25,7 +25,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
 
     * Social Auth
     * Identity Access Managers
-    * Custom OAuth
+    * Custom Auth
 
     Developers can enable one or more providers for app login. Passwordless login is automatically enabled for all registered apps. See [[index-configure-auth|how to configure authentication providers]], for details.
 
