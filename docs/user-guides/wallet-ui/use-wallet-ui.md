@@ -276,7 +276,7 @@ Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon
 * View User name
 * View User Email ID
 * View / Copy Wallet Address
-* Export the private key
+* Export the private key / Save seed phrase for exporting MultiversX wallet 
 * Logout
 
 <figure markdown="span">
@@ -319,6 +319,8 @@ Click the Profile <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_prof
   <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_export_key.{{config.extra.arcana.img_png}}" alt="Export Private Key" />
   <figcaption>Export Private Key</figcaption>
 </figure>
+
+{% include "./text-snippets/warn_mvx_export_wallet.md" %}
 
 ### Minimize/Maximize UI 
 
