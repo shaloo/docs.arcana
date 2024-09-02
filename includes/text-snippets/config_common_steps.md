@@ -13,7 +13,7 @@ Configuring {{page.meta.arcana.social_provider}} for apps using **global keys** 
       A newly registered app can be deployed at the {{config.extra.arcana.company_name}} Testnet. Developers must create a Mainnet configuration profile to [[migrate-app-testnet-mainnet|deploy it on the Mainnet]]. A new, unique {{config.extra.arcana.app_address}} is assigned to the Mainnet profile. 
       
       <figure markdown="span">
-        ![App Identifier]({{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+        ![App Identifier]({{config.extra.arcana.img_dir}}/an_db_app_address.{{config.extra.arcana.img_png}}){ .an-screenshots }
         <figcaption>Unique App Identifier: ClientID</figcaption>
       </figure>
 

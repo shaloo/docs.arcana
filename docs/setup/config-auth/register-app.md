@@ -38,4 +38,5 @@ After registering the app, [[index-configure-auth| configure the user onboarding
 * [[dashboard-user-guide#manage-configuration-profiles|Managing Testnet and Mainnet Configurations]]
 * [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]]
 * [[faq-gen| FAQ]]
+
 {% include "./text-snippets/demo/auth_sdk_demo.md" %}

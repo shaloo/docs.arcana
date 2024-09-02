@@ -23,7 +23,7 @@ Visit the 'Manage Apps' page of the {{config.extra.arcana.dashboard_name}}. Choo
 Click *Configure* dropdown, and choose **Gasless** in the LHS navigation. A registered app has no gas tanks set up by default.  Select **Gas Tanks** to add or edit the gas tanks.
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_new_config.{{config.extra.arcana.img_png}}" alt="Set up Gas Tanks" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_new_config.{{config.extra.arcana.img_png}}" alt="Set up Gas Tanks" class="an-screenshots"/>
   <figcaption>Set up Gas Tanks</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Choose the **Add Gas Tank** control; provide a name for the gas tank and select 
 Note that you can only set up one gas tank per blockchain network. Once configured, the newly added gas tank is displayed the {{config.extra.arcana.dashboard_name}}.
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_add_gas_tank.gif" alt="Add Gas Tank" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_add_gas_tank.gif" alt="Add Gas Tank" class="an-screenshots"/>
   <figcaption>Add Gas Tank</figcaption>
 </figure>
 
@@ -52,14 +52,14 @@ Go to the dashboard page listing all the configured gas tanks. Click 'ellipsis' 
 * Manage Whitelist
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_gl_gas_tank_action.{{config.extra.arcana.img_png}}" alt="Gas Tank Actions" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_gas_tank_action.{{config.extra.arcana.img_png}}" alt="Gas Tank Actions" class="an-screenshots"/>
   <figcaption>Deposit Funds</figcaption>
 </figure>
 
 Add the amount you want to deposit, and confirm the transaction. Once it's done, you'll see your **Total Deposit** go up by that amount in the gas tank.
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_deposit.gif" alt="Gas Tank deposit update" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_deposit.gif" alt="Gas Tank deposit update" class="an-screenshots"/>
   <figcaption>View Gas Tank Funds</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ To withdraw funds, click 'ellipsis' and choose **Withdraw** from the menu list. 
 To take out money, click the 'ellipsis' and pick *Withdraw* from the menu. Enter the amount you want to withdraw. When it's done, the gas tank's Total Amount drops by what you withdrew, and the owner's wallet gets the money.
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_withdraw.gif" alt="withdraw from Gas Tank" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_db_withdraw.gif" alt="withdraw from Gas Tank" class="an-screenshots"/>
   <figcaption>Withdraw Funds</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ Developers can choose to enable/disable smart accounts. When the smart accounts 
 When smart accounts are disabled, users pay gas fees for whitelisted app operations. They can access both EoA as well as the smart account.
  
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_gl_gas_tank_pause.{{config.extra.arcana.img_gif}}" alt="Pause/Resume Gas Tanks" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_gl_gas_tank_pause.{{config.extra.arcana.img_gif}}" alt="Pause/Resume Gas Tanks" class="an-screenshots"/>
   <figcaption>Enable/Disable Smart Accounts</figcaption>
 </figure>
 

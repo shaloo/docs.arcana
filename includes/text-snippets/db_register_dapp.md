@@ -1,14 +1,14 @@
 After logging into the dashboard, you’ll see the *Manage Apps* screen. Each registered app appears as a card.
 
 <figure markdown="span">
-  ![Manage Apps]({{config.extra.arcana.img_dir}}/an_db_mulitiple_apps.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  ![Manage Apps]({{config.extra.arcana.img_dir}}/an_db_mulitiple_apps.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Manage Apps</figcaption>
 </figure>
 
 To register the app, create a new app entry by clicking on the *Create New App* wizard.
 
 <figure markdown="span">
-  <img class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/dashboard_newappwizard.{{config.extra.arcana.img_png}}" alt="Register by Creating New App"/> 
+  <img class="an-screenshots" src="{{config.extra.arcana.img_dir}}/dashboard_newappwizard.{{config.extra.arcana.img_png}}" alt="Register by Creating New App"/> 
   <figcaption>Register by Creating New App</figcaption>
 </figure>
 
@@ -56,20 +56,20 @@ Provide the following inputs to register the app:
           Once specified during app-registration, the Wallet UI mode setting can be viewed later via the **Configure > Arcana Wallet** settings section in the app configuration profile. 
 
           <figure markdown="span">
-            ![Wallet UI Mode Setting Ref]({{config.extra.arcana.img_dir}}/an_db_refer_wallet_ui_mode.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+            ![Wallet UI Mode Setting Ref]({{config.extra.arcana.img_dir}}/an_db_refer_wallet_ui_mode.{{config.extra.arcana.img_png}}){ .an-screenshots }
             <figcaption>Wallet UI Mode Setting</figcaption>
           </figure>
       
 After providing all the required inputs, click **Create** to register the app.
 
 <figure markdown="span">
-  ![Register dApp]({{config.extra.arcana.img_dir}}/an_db_create_newapp_anim.gif){ .an-screenshots .width_85pc }
+  ![Register dApp]({{config.extra.arcana.img_dir}}/an_db_create_newapp_anim.gif){ .an-screenshots }
   <figcaption>Register dApp</figcaption>
 </figure>
 
 The app is registered, and a unique {{config.extra.arcana.app_address}} is assigned. By default, every newly registered app is associated with a [[concept-config-profile|Testnet configuration profile]]. 
 
 <figure markdown="span">
-  ![New app dashboard]({{config.extra.arcana.img_dir}}/an_db_new_app_screen.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![New app dashboard]({{config.extra.arcana.img_dir}}/an_db_new_app_screen.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>New App Dashboard</figcaption>
 </figure>

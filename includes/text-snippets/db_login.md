@@ -1,7 +1,7 @@
 Visit {% include "./text-snippets/db_portal_url.md" %} and log in using one of the available options.
 
 <figure markdown="span">
-  ![Welcome screen]({{config.extra.arcana.img_dir}}/an_db_welcome.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Welcome screen]({{config.extra.arcana.img_dir}}/an_db_welcome.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Developer Dashboard Login Page</figcaption>
 </figure>
 

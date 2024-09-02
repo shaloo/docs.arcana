@@ -9,7 +9,7 @@ Follow these steps to configure the **Social Auth** settings and enable user onb
 Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Steam in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
 <figure markdown="span">
-  ![redirect_page]({{config.extra.arcana.img_dir}}/an_dApp_config_redirect_uri.{{config.extra.arcana.img_png}}){.an-screenshots .width_85pc}
+  ![redirect_page]({{config.extra.arcana.img_dir}}/an_dApp_config_redirect_uri.{{config.extra.arcana.img_png}}){.an-screenshots }
   <figcaption>Copy the Redirect URI</figcaption>
 </figure>
 
@@ -24,7 +24,7 @@ Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashbo
 Go to the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2Fdev%2Fapikey). Login to your account. 
 
 <figure markdown="span">
-  ![Steam Community Site]({{config.extra.arcana.img_dir}}/an_steam_login.{{config.extra.arcana.img_png}}){.an-screenshots .width_50pc}
+  ![Steam Community Site]({{config.extra.arcana.img_dir}}/an_steam_login.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
   <figcaption>Steam Login</figcaption>
 </figure>
 
@@ -35,14 +35,14 @@ Go to the [Steam Community Site](https://steamcommunity.com/login/home/?goto=%2F
 Register for a new Steam Web API Key. Provide the app domain name as input to access your API Key.
 
 <figure markdown="span">
-  ![Steam Domain Settings]({{config.extra.arcana.img_dir}}/an_steam_domain.{{config.extra.arcana.img_png}}){.an-screenshots .width_50pc}
+  ![Steam Domain Settings]({{config.extra.arcana.img_dir}}/an_steam_domain.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
   <figcaption>Access Steam API Key</figcaption>
 </figure>
 
 Copy the **Steam API Key** for your app domain. It will be required in the next step while completing the app configuration using the {{config.extra.arcana.dashboard_name}}.
 
 <figure markdown="span">
-  ![Steam Domain Settings]({{config.extra.arcana.img_dir}}/an_steam_apikey.{{config.extra.arcana.img_png}}){.an-screenshots .width_50pc}
+  ![Steam Domain Settings]({{config.extra.arcana.img_dir}}/an_steam_apikey.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
   <figcaption>Copy Steam API Key</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ Copy the **Steam API Key** for your app domain. It will be required in the next 
 In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Steam" setting. Paste the **Steam API Key** obtained in the previous step in the "Steam" field. 
 
 <figure markdown="span">
-  ![Steam Config Dashboard]({{config.extra.arcana.img_dir}}/an_dApp_steam_config.{{config.extra.arcana.img_png}}){.an-screenshots .width_85pc}
+  ![Steam Config Dashboard]({{config.extra.arcana.img_dir}}/an_dApp_steam_config.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Dashboard: Update Steam API Key</figcaption>
 </figure>
 

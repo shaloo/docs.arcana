@@ -29,14 +29,14 @@ Developers can programmatically add supported chains and issue blockchain transa
 Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Chain Management** to configure the default subset of supported chains.
 
 <figure markdown="span">
-  ![Dashboard: Chain Management]({{config.extra.arcana.img_dir}}/an_db_chains_mngt_nav.{{config.extra.arcana.img_gif}}){ .an-screenshots .width_85pc }
+  ![Dashboard: Chain Management]({{config.extra.arcana.img_dir}}/an_db_chains_mngt_nav.{{config.extra.arcana.img_gif}}){ .an-screenshots }
   <figcaption>Dashboard: Chain Management</figcaption>
 </figure>
 
 The chain configuration UI is displayed:
 
 <figure markdown="span">
-  ![Chain Management Settings]({{config.extra.arcana.img_dir}}/an_db_chain_mngt_options.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  ![Chain Management Settings]({{config.extra.arcana.img_dir}}/an_db_chain_mngt_options.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Chain Management Settings</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ Developers can enable either EVM chains or non-EVM chains in the context of a We
 Browse the EVM chains displayed in the pre-configured list of chains in the dashboard. Select the active chain. The chain marked active is displayed as the pre-selected chain in the wallet UI once the user logs in. 
 
 <figure markdown="span">
-  ![Pre-configured EVM chains]({{config.extra.arcana.img_dir}}/an_db_evm_only_preconfigured_list.gif){ .an-screenshots .width_85pc }
+  ![Pre-configured EVM chains]({{config.extra.arcana.img_dir}}/an_db_evm_only_preconfigured_list.gif){ .an-screenshots }
   <figcaption>Pre-configured EVM Chains</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ Once an app is registered for a non-EVM chain, the default active chain can be s
 ## Solana
 
 <figure markdown="span">
-  ![Solana Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_solana_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  ![Solana Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_solana_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Solana Pre-configured Chains</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ See [[solana-dashboard-user-guide|how to set up Solana]] and [[solana-quick-star
 ## MultiversX
 
 <figure markdown="span">
-  ![MultiversX Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_mvx_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  ![MultiversX Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_mvx_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>MultiversX Pre-configured Chains</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ See [[mvx-dashboard-user-guide|how to set up MultiversX]] and [[mvx-quick-start|
 ## Near
 
 <figure markdown="span">
-  ![Near Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_near_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  ![Near Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_near_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Near Pre-configured Chains</figcaption>
 </figure>
 
@@ -106,7 +106,7 @@ See [[near-dashboard-user-guide|how to set up Near]] and [[near-quick-start|Near
 To switch the default active chain simply select the new chain in the {{config.extra.arcana.dashboard_name}}, click "..." ellipses and select the 'set as default' option. The figure below illustrates Polygon as the default active chain.
 
 <figure markdown="span">
-  ![Set Polygon as the Active Chain]({{config.extra.arcana.img_dir}}/an_db_set_default_chain.gif){ .an-screenshots .width_85pc}
+  ![Set Polygon as the Active Chain]({{config.extra.arcana.img_dir}}/an_db_set_default_chain.gif){ .an-screenshots }
   <figcaption>Set Polygon as the Active Chain</figcaption>
 </figure>
 
@@ -132,14 +132,14 @@ To add a blockchain, specify the following details and click **Save**.
 * Testnet/Mainnet Chain Type
 
 <figure markdown="span">
-  ![Configure new chain]({{config.extra.arcana.img_dir}}/an_db_configure_new_chain.gif){ .an-screenshots .width_85pc }
+  ![Configure new chain]({{config.extra.arcana.img_dir}}/an_db_configure_new_chain.gif){ .an-screenshots }
   <figcaption>Add New Chain</figcaption>
 </figure>
 
 Once you click **Save**, the newly added chain will be displayed in the dashboard and also shown in the wallet UI once a user logs into the app.
 
 <figure markdown="span">
-  ![Updated chain list]({{config.extra.arcana.img_dir}}/an_db_view_updated_chain_list_fantom.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+  ![Updated chain list]({{config.extra.arcana.img_dir}}/an_db_view_updated_chain_list_fantom.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Dashboard: Newly Added Chain</figcaption>
 </figure>
 
