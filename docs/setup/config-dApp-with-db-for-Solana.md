@@ -25,7 +25,7 @@ To register an app that uses the Solana network, create a new app and select the
 {% include "./text-snippets/non-evm-warning.md" %}
 
 <figure markdown="span">
-  ![Register Solana App]({{config.extra.arcana.img_dir}}/an_db_new_solana_app_card.gif){ .an-screenshots .width_85pc }
+  ![Register Solana App]({{config.extra.arcana.img_dir}}/an_db_new_solana_app_card.gif){ .an-screenshots }
   <figcaption>Register Solana App</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ You can select one of the Solana networks and set it as the default chain. The d
 To edit a Solana chain's RPC URL or the blockchain explorer URL, select the chain, click **edit** and update the required fields.
 
 <figure markdown="span">
-  ![Edit Solana Chain Settings]({{config.extra.arcana.img_dir}}/an_db_new_solana_edit_chain.gif){ .an-screenshots .width_85pc }
+  ![Edit Solana Chain Settings]({{config.extra.arcana.img_dir}}/an_db_new_solana_edit_chain.gif){ .an-screenshots }
   <figcaption>Edit Solana Chain Settings</figcaption>
 </figure>
 

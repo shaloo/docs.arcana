@@ -22,14 +22,14 @@ Choose 'Mainnet' from the  'Testnet' dropdown on the top right. You will see opt
 * Create a fresh Mainnet profile
 
 <figure markdown="span">
-  <img alt="Create Mainnet Configuration Profile" src="{{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif" class="an-screenshots width_85pc"/>
+  <img alt="Create Mainnet Configuration Profile" src="{{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif" class="an-screenshots"/>
   <figcaption>Create Mainnet Configuration Profile</figcaption>
 </figure>
 
 Note down the brand new Mainnet configuration profile {{config.extra.arcana.app_address}} of the format `xar_live_nnnnnnnnnnn...nnn` displayed in the dashboard.
 
  <figure markdown="span">
-   <img alt="Select Mainnet Profile" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+   <img alt="Select Mainnet Profile" src="{{config.extra.arcana.img_dir}}/an_deploy_mainnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
    <figcaption>Select Mainnet Profile</figcaption>
 </figure>
 

@@ -9,7 +9,7 @@ Follow these steps to configure the **Social Auth** settings and enable user onb
 Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Google in the respective configuration profile.  Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
 <figure markdown="span">
-  ![Copy Redirect URI]({{config.extra.arcana.img_dir}}/an_dApp_config_redirect_uri.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Copy Redirect URI]({{config.extra.arcana.img_dir}}/an_dApp_config_redirect_uri.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Copy Redirect URI</figcaption>
 </figure>
 
@@ -20,14 +20,14 @@ Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashbo
 Go to the [Google Cloud Console](http://console.cloud.google.com/apis/credentials). Create a new OAuth 2.0 credential for your dApp.
 
 <figure markdown="span">
-  ![Set up Google OAuth 2.0]({{config.extra.arcana.img_dir}}/google_console_redirect.{{config.extra.arcana.img_png}}){ .an-screenshots .width_50pc }
+  ![Set up Google OAuth 2.0]({{config.extra.arcana.img_dir}}/google_console_redirect.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Set up Google OAuth 2.0</figcaption>
 </figure>
 
 In the Google Cloud Console, select the option to set up credentials for a web application. 
 
 <figure markdown="span">
-  ![Specify Redirect URI]({{config.extra.arcana.img_dir}}/an_google_clientID_create.{{config.extra.arcana.img_png}}){ .an-screenshots .width_50pc }
+  ![Specify Redirect URI]({{config.extra.arcana.img_dir}}/an_google_clientID_create.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Specify Redirect URI</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ Specify the **redirect URI** value to the one that you saved in the previous ste
 Complete the steps in Google Cloud Console for creating a new OAuth 2.0 credential. It will generate a unique **ClientID**.
 
 <figure markdown="span">
-  ![Copy Google ClientID]({{config.extra.arcana.img_dir}}/an_google_clientID_copy.{{config.extra.arcana.img_png}}){ .an-screenshots .width_50pc }
+  ![Copy Google ClientID]({{config.extra.arcana.img_dir}}/an_google_clientID_copy.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Copy Google ClientID</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ Save the **Client ID** assigned by Google. It will be required in the next step.
 In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Google" setting. Paste the Google **Client ID** copied in the previous step. 
 
 <figure markdown="span">
-  ![Specify Google Client ID]({{config.extra.arcana.img_dir}}/an_dApp_google_config.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Specify Google Client ID]({{config.extra.arcana.img_dir}}/an_dApp_google_config.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Specify Google ClientID</figcaption>
 </figure>
 

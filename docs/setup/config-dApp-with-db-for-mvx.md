@@ -25,7 +25,7 @@ Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create 
 {% include "./text-snippets/mvx_shard.md" %}
 
 <figure markdown="span">
-  ![Register MultiversX App]({{config.extra.arcana.img_dir}}/an_db_new_mvx_app_card.gif){ .an-screenshots .width_85pc }
+  ![Register MultiversX App]({{config.extra.arcana.img_dir}}/an_db_new_mvx_app_card.gif){ .an-screenshots }
   <figcaption>Register MultiversX App</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ By selecting a chain as the default, developers ensure that the same chain is au
 To edit a MultiversX chain's RPC URL or the blockchain explorer URL, select the chain, click '...' and select **edit** option to update the required fields.
 
 <figure markdown="span">
-  ![Edit MultiversX Chain Settings]({{config.extra.arcana.img_dir}}/an_db_new_mvx_edit_chain.gif){ .an-screenshots .width_85pc }
+  ![Edit MultiversX Chain Settings]({{config.extra.arcana.img_dir}}/an_db_new_mvx_edit_chain.gif){ .an-screenshots }
   <figcaption>Edit MultiversX Chain Settings</figcaption>
 </figure>
 
