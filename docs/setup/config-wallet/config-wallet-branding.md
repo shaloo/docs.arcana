@@ -23,7 +23,7 @@ Log in to the {{config.extra.arcana.dashboard_name}}. In the 'Manage Apps' scree
 Replace the default wallet branding by providing the following logo and theme inputs:
 
 * **Logo:** Upload light and dark theme branding/logo images that are displayed in the {{config.extra.arcana.wallet_name}} UI.
-* **Theme:** You can change the default 'dark' theme.<figure markdown="span"><img alt="Branding" class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_db_configure_branding.{{config.extra.arcana.img_png}}"/><figcaption>Branding Settings</figcaption>
+* **Theme:** You can change the default 'dark' theme.<figure markdown="span"><img alt="Branding" class="an-screenshots" src="{{config.extra.arcana.img_dir}}/an_db_configure_branding.{{config.extra.arcana.img_png}}"/><figcaption>Branding Settings</figcaption>
 </figure>
 
 ## What's Next?
