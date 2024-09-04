@@ -24,7 +24,10 @@ Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create 
 
 In the 'Manage Apps' screen, click **Configure** in the LHS navigation. Select **Social Auth** and scroll down to the section **Custom Auth**.
 
-![Custom Auth Nav]({{config.extra.arcana.img_dir}}/an_db_custom_auth_setup.gif){.an-screenshots}
+<figure markdown="span">
+  ![Custom Auth Nav]({{config.extra.arcana.img_dir}}/an_db_custom_auth_setup.gif){.an-screenshots}
+  <figcaption>Update Custom Auth Settings</figcaption>
+</figure>
 
 Provide inputs for the Custom Auth settings:
 

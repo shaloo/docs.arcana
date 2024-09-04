@@ -19,7 +19,7 @@ Learn how to specify the {{config.extra.arcana.wallet_name}} content security po
 Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. 
 
 <figure markdown="span">
-  ![Dashboard: Select Wallet UI]({{config.extra.arcana.img_dir}}/an_db_wallet_mngt_nav.gif){ .an-screenshots .width_85pc }
+  ![Dashboard: Select Wallet UI]({{config.extra.arcana.img_dir}}/an_db_wallet_mngt_nav.gif){ .an-screenshots }
   <figcaption>Dashboard: Select Wallet UI</figcaption>
 </figure>
 

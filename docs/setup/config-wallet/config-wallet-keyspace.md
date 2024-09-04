@@ -19,14 +19,14 @@ Learn how to manage the user experience of having the same wallet address or uni
 Log in to the {{config.extra.arcana.dashboard_name}}. In the 'Manage Apps' screen, click the registered app card. Then click **Configure** dropdown in the LHS navigation area.  Select **Keyspace** to choose the keyspace type.
 
 <figure markdown="span">
-  ![Dashboard: Select Keyspace]({{config.extra.arcana.img_dir}}/an_db_keyspace_nav.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Dashboard: Select Keyspace]({{config.extra.arcana.img_dir}}/an_db_keyspace_nav.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Dashboard: Select keyspace</figcaption>
 </figure>
 
 The Keyspace Configuration settings are displayed:
 
 <figure markdown="span">
-  ![Keyspace Settings]({{config.extra.arcana.img_dir}}/an_db_keyspace_settings.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Keyspace Settings]({{config.extra.arcana.img_dir}}/an_db_keyspace_settings.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Keyspace Settings</figcaption>
 </figure>
 
