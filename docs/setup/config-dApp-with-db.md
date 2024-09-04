@@ -34,7 +34,7 @@ Each registered app is displayed in the 'Manage Apps' dashboard. By default, a T
 Use the LHS navigation menu and click *Configure* to view the Testnet/Mainnet configuration settings for the app.
 
 <figure markdown="span">
-  ![App Configuration Settings]({{config.extra.arcana.img_dir}}/an_db_new_app_card.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![App Configuration Settings]({{config.extra.arcana.img_dir}}/an_db_new_app_card.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>App Configuration Settings</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ Use the LHS navigation menu and click *Configure* to view the Testnet/Mainnet co
 To view or edit the Testnet configuration settings, click on the application card displayed in the 'Manage Apps' dashboard screen and then select 'Testnet' in the dropdown on the top right of the application settings page. 
 
 <figure markdown="span">
-  <img alt="Testnet Client ID" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+  <img alt="Testnet Client ID" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
   <figcaption>Testnet Client ID</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ To view or edit the Testnet configuration settings, click on the application car
 Click on the app card displayed in the 'Manage Apps' screen to view the application usage metrics page. Refer to the dropdown on the top right. By default, it will display the Testnet configuration profile for the registered app. To create a 'Mainnet' configuration profile, choose 'Mainnet' in the dropdown.
 
 <figure markdown="span">
-  ![Select Testnet/Mainnet Settings]({{config.extra.arcana.img_dir}}/an_db_testnet_mainnet_select.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Select Testnet/Mainnet Settings]({{config.extra.arcana.img_dir}}/an_db_testnet_mainnet_select.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Select Testnet/Mainnet Settings</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ On selecting 'Mainnet' for the first time, a pop-up screen is displayed with two
 * Create a new Mainnet Profile. 
 
 <figure markdown="span">
-  ![Switch to Mainnet Settings]({{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif){ .an-screenshots .width_85pc }
+  ![Switch to Mainnet Settings]({{config.extra.arcana.img_dir}}/an_testnet_mainnet_config_create.gif){ .an-screenshots }
   <figcaption>Switch to Mainnet Settings</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ Use one of these options to create the 'Mainnet' profile. A new **{{config.extra
       The figure below shows how the 'redirect URI' is different from the Testnet Settings where Google and Twitch were configured and the 'Testnet' profile was copied to create a 'Mainnet' profile.
 
       <figure markdown="span">
-        ![Mainnet Redirect URI]({{config.extra.arcana.img_dir}}/an_db_example_add_mainnet_redirect_uri.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+        ![Mainnet Redirect URI]({{config.extra.arcana.img_dir}}/an_db_example_add_mainnet_redirect_uri.{{config.extra.arcana.img_png}}){ .an-screenshots }
         <figcaption>Mainnet Reddirect URI</figcaption>
       </figure>
 
@@ -88,7 +88,7 @@ Use one of these options to create the 'Mainnet' profile. A new **{{config.extra
 When both Testnet and Mainnet configuration profiles are associated with the registered app, you can switch profiles from the *Manage Apps* page of the dashboard or from within the app usage dashboard page.
 
 <figure markdown="span">
-  ![Switch to Testnet/Mainnet Profile]({{config.extra.arcana.img_dir}}/an_db_testnet_mainnet_select.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Switch to Testnet/Mainnet Profile]({{config.extra.arcana.img_dir}}/an_db_testnet_mainnet_select.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Switch to Testnet/Mainnet Profile</figcaption>
 </figure> 
 
@@ -97,7 +97,7 @@ When both Testnet and Mainnet configuration profiles are associated with the reg
 * **App Usage Page**: On the top right side, you will see a dropdown displaying Testnet/Mainnet profile. Click on the respective configuration profile to switch to it and view profile settings. 
 
 <figure markdown="span">
-  ![Switch to Testnet]({{config.extra.arcana.img_dir}}/an_db_all_app_card.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Switch to Testnet]({{config.extra.arcana.img_dir}}/an_db_all_app_card.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Switch to Testnet</figcaption>
 </figure> 
 
@@ -108,7 +108,7 @@ To switch viewing configuration settings from one application configuration prof
 The last entry in the dropdown is 'Manage Apps'. You can click it to browse the 'Manage Apps' landing page with app cards layout view. Switch to another app by clicking on the app card.
 
 <figure markdown="span">
-  ![Switch Application]({{config.extra.arcana.img_dir}}/an_db_switch_application_anim.gif){ .an-screenshots .width_85pc }
+  ![Switch Application]({{config.extra.arcana.img_dir}}/an_db_switch_application_anim.gif){ .an-screenshots }
   <figcaption>Switch Application</figcaption>
 </figure>
 
@@ -129,7 +129,7 @@ Developers can monitor their registered application usage statistics via the {{c
 The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a developer account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' is not billed and not included in the overall account usage statistic.
 
 <figure markdown="span">
-  ![App Usage Metrics]({{config.extra.arcana.img_dir}}/an_db_metrics.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![App Usage Metrics]({{config.extra.arcana.img_dir}}/an_db_metrics.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>App Usage Metrics</figcaption>
 </figure>
 
@@ -148,14 +148,14 @@ In the *Manage Apps* dashboard screen, all registered applications are listed as
 Use the 'Daily' and 'Monthly' tabs to see the respective usage statistics. 
 
 <figure markdown="span">
-  ![Daily/Monthly Usage]({{config.extra.arcana.img_dir}}/an_db_app_usage_metrics_testnet_anim.gif){ .an-screenshots .width_85pc }
+  ![Daily/Monthly Usage]({{config.extra.arcana.img_dir}}/an_db_app_usage_metrics_testnet_anim.gif){ .an-screenshots }
   <figcaption>Daily/Monthly Usage</figcaption>
 </figure>
 
 Use the dropdown in the top right of the application dashboard screen to select Testnet/Mainnet usage details.
 
 <figure markdown="span">
-  ![Testnet/Mainnet Usage Statistics]({{config.extra.arcana.img_dir}}/an_db_app_usage_metrics_mainnet_anim.gif){ .an-screenshots .width_85pc }
+  ![Testnet/Mainnet Usage Statistics]({{config.extra.arcana.img_dir}}/an_db_app_usage_metrics_mainnet_anim.gif){ .an-screenshots }
   <figcaption>Testnet/Mainnet Usage Statistics</figcaption>
 </figure>
 
@@ -176,7 +176,7 @@ For details on current pricing and free tier limits, contact our [[index-support
 Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Profile** in the dropdown. 
 
 <figure markdown="span">
-  ![Payment Method Setup]({{config.extra.arcana.img_dir}}/an_db_billing_nav.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Payment Method Setup]({{config.extra.arcana.img_dir}}/an_db_billing_nav.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Payment Method Setup</figcaption>
 </figure>
 
@@ -189,7 +189,7 @@ Developers are required to update the following profile details and then click *
 * Payment Method
 
 <figure markdown="span">
-  ![Billing Details]({{config.extra.arcana.img_dir}}/an_db_billing_profile.gif){ .an-screenshots .width_85pc }
+  ![Billing Details]({{config.extra.arcana.img_dir}}/an_db_billing_profile.gif){ .an-screenshots }
   <figcaption>Billing Details</figcaption>
 </figure>
 
@@ -202,14 +202,14 @@ Developers are required to update the following profile details and then click *
 Click on the user icon on the top right of the {{config.extra.arcana.dashboard_name}} screen. Select **Invoices** in the dropdown.
 
 <figure markdown="span">
-  ![View Invoices]({{config.extra.arcana.img_dir}}/an_db_invoices_nav.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![View Invoices]({{config.extra.arcana.img_dir}}/an_db_invoices_nav.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>View Invoices</figcaption>
 </figure>
 
 On the **Invoices** page, you will see the details of the current pending dues, followed by the billing history of previous invoices that can be downloaded for reference.
 
 <figure markdown="span">
-  ![Invoice Details]({{config.extra.arcana.img_dir}}/an_db_invoices_details.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Invoice Details]({{config.extra.arcana.img_dir}}/an_db_invoices_details.{{config.extra.arcana.img_gif}}){ .an-screenshots }
   <figcaption>Invoice Details</figcaption>
 </figure>
 
@@ -218,7 +218,7 @@ On the **Invoices** page, you will see the details of the current pending dues, 
 Click the bell icon to view all notifications for the developer account. Check the [billing notifications]({{page.meta.arcana.root_rel_path}}/concepts/billing.md#billing-notifications) list for details.
 
 <figure markdown="span">
-  ![Billing Notifications]({{config.extra.arcana.img_dir}}/an_db_notifications_nav.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Billing Notifications]({{config.extra.arcana.img_dir}}/an_db_notifications_nav.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Billing Notifications</figcaption>
 </figure>
 
@@ -262,14 +262,14 @@ Use the dashboard to enable [[concept-non-evm-chains|non-EVM chains]] in your We
 To de-register an application, delete the entry in the 'Manage Apps' screen of the {{config.extra.arcana.dashboard_name}}. 
 
 <figure markdown="span">
-  ![Dashboard: Manage Apps]({{config.extra.arcana.img_dir}}/an_db_manage_apps.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Dashboard: Manage Apps]({{config.extra.arcana.img_dir}}/an_db_manage_apps.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Dashboard: Manage Apps</figcaption>
 </figure>
 
 Select the application you wish to de-register and click on the delete icon. Confirm delete action.
 
 <figure markdown="span">
-  ![Delete/De-Register App]({{config.extra.arcana.img_dir}}/an_db_delete_app_anim.gif){ .an-screenshots .width_85pc }
+  ![Delete/De-Register App]({{config.extra.arcana.img_dir}}/an_db_delete_app_anim.gif){ .an-screenshots }
   <figcaption>Delete/De-register App</figcaption>
 </figure>
 

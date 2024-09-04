@@ -3,7 +3,7 @@ There are two keyspace options: [[concept-keyspace-type|App-specific and Global 
 **App-specific** keyspace is the default.
 
 <figure markdown="span">
-  ![Mainnet Keyspace Options]({{config.extra.arcana.img_dir}}/an_db_keyspace_options.{{config.extra.arcana.img_png}}){ .an-screenshots }
+  ![Mainnet Keyspace Options]({{config.extra.arcana.img_dir}}/an_db_keyspace_options_switch.{{config.extra.arcana.img_gif}}){ .an-screenshots }
   <figcaption>Keyspace Options</figcaption>
 </figure>
 
