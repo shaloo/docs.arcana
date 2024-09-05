@@ -7,6 +7,6 @@ arcana:
   social_provider: "Apple"
 ---
 
-# Google Setup
+# Apple Sign-In Setup
 
 {% include "./text-snippets/apple_config_steps.md" %}

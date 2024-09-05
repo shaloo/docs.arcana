@@ -4,7 +4,7 @@
 
 Follow these steps to configure the **Social Auth** settings and enable user onboarding via Twitter. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Twitter Developer Account](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api).
 
-## Step 1: Get Redirect URI  
+### 1. Get Redirect URI  
 
 Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Twitter in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
@@ -15,7 +15,7 @@ Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet
 
 Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashboard_name}}. Open another tab and set up Twitter OAuth.
 
-## Step 2: Get Twitter API Key
+### 2. Get Twitter API Key
 
 Go to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/projects-and-apps) and create a new [Twitter App](https://developer.x.com/en/docs/apps/overview) for setting up the OAuth credentials for the app. Note that if you would like to use Twitter API v2, you must add your Twitter App to a [Project](https://developer.x.com/en/docs/projects/overview).
 
@@ -84,7 +84,7 @@ Make sure you save all the settings.
 
       These details will be required in the next step while completing the app configuration using the {{config.extra.arcana.dashboard_name}}.
 
-## Step 3: Update Twitter Social Auth Settings
+### 3. Update Social Auth
 
 In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth** and choose **Twitter** icon to view Twitter settings. The following Twitter developer portal values saved in the previous step must be copied to the {{config.extra.arcana.dashboard_name}} Twitter settings.
 

@@ -8,19 +8,19 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
 
 * Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md) to [[register-app-auth|register the app]] and obtain a unique {{config.extra.arcana.app_address}} required for integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-* Carefully [[config-auth-google|follow the instructions to configure Google]] as the authentication provider.
+* [[config-auth-apple|Follow the instructions to configure Apple]] as the authentication provider.
   
 * Use the appropriate integration method as per the app type and [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}} before accessing the user onboarding function of the {{config.extra.arcana.sdk_name}}.
     
 ## Steps
 
-*Using Google to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
+*Using Apple to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
 
 Just a single line of code!
 
 ## Step 1: Call `loginWithSocial` function
 
-Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via Google.
+Make sure that all the prerequisites listed above are met. The app should be successfully registered, configured, and integrated with the {{config.extra.arcana.sdk_name}}, before adding code to onboard users via Apple.
 
 {% include "./code-snippets/auth_social_login.md" %}
 
@@ -34,7 +34,7 @@ Add code in the app to log out an authenticated user:
 
 **That is all!**  :material-party-popper:
 
-The Web3 app is all set for onboarding users via Google. 
+The Web3 app is all set for onboarding users via Apple. 
 
 !!! an-tip "Arcana JWT Token"
 

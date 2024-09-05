@@ -4,7 +4,7 @@
 
 Follow these steps to configure the **Social Auth** settings and enable user onboarding via Google. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Google Cloud Console](http://console.cloud.google.com/apis/credentials).
 
-### Step 1: Get Redirect URI 
+### 1. Get Redirect URI 
 
 Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Google in the respective configuration profile.  Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
@@ -15,7 +15,7 @@ Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet
 
 Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashboard_name}}. Open another tab to access the Google Cloud Console and configure Google OAuth. 
 
-### Step 2: Get Google ClientID
+### 2. Get Google ClientID
 
 Go to the [Google Cloud Console](http://console.cloud.google.com/apis/credentials). Create a new OAuth 2.0 credential for your dApp.
 
@@ -46,7 +46,7 @@ Complete the steps in Google Cloud Console for creating a new OAuth 2.0 credenti
 
 Save the **Client ID** assigned by Google. It will be required in the next step.
 
-### Step 3: Update Google Social Auth Settings
+### 3. Update Social Auth
 
 In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Google" setting. Paste the Google **Client ID** copied in the previous step. 
 
