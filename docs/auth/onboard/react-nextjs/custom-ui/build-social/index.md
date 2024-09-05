@@ -13,6 +13,8 @@ Developers can choose to **not** use the plug-and-play login UI and instead buil
 
 In this case, developers must build custom login UI themselves after configuring the social login providers in the {{config.extra.arcana.dashboard_name}}. This custom login UI must call appropriate user onboarding functions offered by the {{config.extra.arcana.sdk_name}} for configured social login providers.
 
+[[react-nextjs-apple-social-auth|Apple :material-apple:]]{ .md-button }
+
 [[react-nextjs-discord-social-auth|Discord :fontawesome-brands-discord:]]{ .md-button }
 
 [[react-nextjs-github-social-auth|GitHub :fontawesome-brands-github:]]{ .md-button }
