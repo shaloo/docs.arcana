@@ -6,7 +6,7 @@ Follow these steps to configure the **Social Auth** settings and enable user onb
 
 ### 1. Get Redirect URI  
 
-Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Twitch in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
+Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Apple in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
 !!! an-tip "Redirect URI for Apple Sign-In"
 

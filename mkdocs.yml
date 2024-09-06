@@ -648,13 +648,13 @@ nav:
       - Changelog: changelog/index.md
       - Checklists: checklists/index.md
     - Wallet Users: 
-      - MFA Setup: user-guides/mfa/mfa-ug.md
       - Wallet User Guide: 
         - user-guides/wallet-ui/index.md
         - Wallet Ops: user-guides/wallet-ui/use-wallet-ui.md
         - Export Key: user-guides/wallet-ui/use-wallet-to-export-keys.md
         - Manage NFTs: user-guides/wallet-ui/use-wallet-to-manage-nfts.md
         - Manage Tokens: user-guides/wallet-ui/use-wallet-to-manage-tokens.md
+      - MFA Setup: user-guides/mfa/mfa-ug.md
     - Validators:
       - Onboarding Guide: validators/onboard-validators.md
       - Validator FAQ: faq/faq-validator.md
@@ -683,6 +683,7 @@ nav:
         - Dashboard: concepts/dashboard.md
         - DID Token: concepts/an-did-token.md
         - Gateway: concepts/gateway-node.md
+        - Gasless SDK: concepts/glsdk.md
         - Key Space Type: concepts/keyspace-types.md
         - MFA: concepts/mfa.md
         - Non-EVM Chains: concepts/non-evm-chains.md

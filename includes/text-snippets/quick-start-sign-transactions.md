@@ -1,2 +1,2 @@
 
-Use  `AuthProvider`, the EIP-1193 provider offered by the SDK, to call [JSON/RPC functions](https://ethereum.org/en/developers/docs/apis/json-rpc/) and other [[evm-web3-wallet-ops|supported Web3 wallet operations]] in the authenticated user's context.
+Use  `AuthProvider`, the EIP-1193 provider offered by the SDK, to call supported JSON/RPC functions and [[evm-web3-wallet-ops| Web3 wallet operations]] in the authenticated user's context.
