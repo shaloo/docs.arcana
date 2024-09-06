@@ -679,6 +679,7 @@ nav:
         - Dashboard: concepts/dashboard.md
         - DID Token: concepts/an-did-token.md
         - Gateway: concepts/gateway-node.md
+        - Gasless SDK: concepts/glsdk.md
         - Key Space Type: concepts/keyspace-types.md
         - MFA: concepts/mfa.md
         - Non-EVM Chains: concepts/non-evm-chains.md
