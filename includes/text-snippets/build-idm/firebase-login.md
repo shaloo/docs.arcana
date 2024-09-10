@@ -36,9 +36,7 @@ Your app is all set for authenticating users via Firebase. Authenticated users c
 
 {% include "./text-snippets/aggrlogin-nofirebase-support.md" %}
 
-!!! an-tip "Arcana JWT Token"
-
-     {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}
      
 ## What's Next?
 
