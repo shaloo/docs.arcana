@@ -1,1 +1,1 @@
-<span><a href="https://docs.biconomy.io/troubleshooting/commonerrors" target="_blank">Biconomy Errors (v4)</a></span>
+<span><a href="https://docs.biconomy.io/troubleshooting/commonerrors#common-errors" target="_blank">Biconomy Errors (v4)</a></span>
