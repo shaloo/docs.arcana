@@ -15,7 +15,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
     See [[configure-wallet-branding|how to configure branding]] for details.
     
     <figure markdown="span">
-      <img alt="Branding" class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_db_configure_branding.{{config.extra.arcana.img_png}}"/>
+      <img alt="Branding" class="an-screenshots " src="{{config.extra.arcana.img_dir}}/an_db_configure_branding.{{config.extra.arcana.img_png}}"/>
       <figcaption>Branding Settings</figcaption>
     </figure>
 
@@ -34,7 +34,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
           The Redirect URI  field in the **Social Auth** section of the dashboard lists an auto-generated URL. This URL value is used as input when configuring the social login providers.
 
     <figure markdown="span">
-      <img alt="Social Auth" class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_db_configure_social.{{config.extra.arcana.img_png}}"/>
+      <img alt="Social Auth" class="an-screenshots" src="{{config.extra.arcana.img_dir}}/an_db_configure_social.{{config.extra.arcana.img_png}}"/>
       <figcaption>Social Auth Settings</figcaption>
     </figure>         
 
@@ -43,7 +43,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
     The **Chain Management** settings control which chains will be displayed as the default active chain in the wallet from the list of pre-configured chains available out of the box for apps that integrate with the {{config.extra.arcana.sdk_name}}.
 
     <figure markdown="span">
-      <img src="{{config.extra.arcana.img_dir}}/an_db_chain_mngt_options.{{config.extra.arcana.img_png}}" alt="Chain Management Settings" class="an-screenshots width_85pc"/>
+      <img src="{{config.extra.arcana.img_dir}}/an_db_chain_mngt_options.{{config.extra.arcana.img_png}}" alt="Chain Management Settings" class="an-screenshots"/>
       <figcaption>Chain Management Settings</figcaption>
     </figure>
 
@@ -52,7 +52,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
     * Set Default Chain
 
     <figure markdown="span">    
-      <img src="{{config.extra.arcana.img_dir}}/an_db_chains_default.gif" alt="Set Default Chain" class="an-screenshots width_85pc"/>
+      <img src="{{config.extra.arcana.img_dir}}/an_db_chains_default.gif" alt="Set Default Chain" class="an-screenshots"/>
       <figcaption>Set Default Chain</figcaption>
     </figure>
 
@@ -68,7 +68,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
     See [[configure-wallet-settings|wallet UI configuration]] for details.
     
     <figure markdown="span">
-      <img alt="Social Login" src="{{config.extra.arcana.img_dir}}/an_db_configure_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+      <img alt="Social Login" src="{{config.extra.arcana.img_dir}}/an_db_configure_wallet.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
       <figcaption>Wallet Settings</figcaption>
     </figure>
 
@@ -79,7 +79,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
     For the persistent session, the developers can view and update the specified time for which the authenticated user login session is persisted (in minutes). Once a user closes the browser and reopens within this specified period, the user is automatically logged in. [[dashboard-user-guide#configure-session-type|Learn more...]]
     
     <figure markdown="span">
-      <img alt="Session Management" src="{{config.extra.arcana.img_dir}}/an_db_session_mngt.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+      <img alt="Session Management" src="{{config.extra.arcana.img_dir}}/an_db_session_mngt.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
       <figcaption>Session Management</figcaption>
     </figure>
 
@@ -98,7 +98,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
     Learn more about [[concept-keyspace-type|App-specific and global keys]] and how to set up [[dashboard-user-guide#configure-keyspace|keyspace]].
 
     <figure markdown="span">
-      ![Keyspace options]({{config.extra.arcana.img_dir}}/an_db_keyspace_options.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
+      ![Keyspace options]({{config.extra.arcana.img_dir}}/an_db_keyspace_options.{{config.extra.arcana.img_png}}){ .an-screenshots}
       <figcaption>Keyspace: Global/App-Specific Keys</figcaption>
     </figure>
 
@@ -118,13 +118,13 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
     See [[configure-gasless|how to configure gasless transactions]] for details.
 
     <figure markdown="span">
-      <img src="{{config.extra.arcana.img_dir}}/an_gl_db_new_config.{{config.extra.arcana.img_png}}" alt="Set up Gas Tanks" class="an-screenshots width_85pc"/>
+      <img src="{{config.extra.arcana.img_dir}}/an_gl_db_new_config.{{config.extra.arcana.img_png}}" alt="Set up Gas Tanks" class="an-screenshots"/>
       <figcaption>Gasless Settings</figcaption>
     </figure>
 
 **Save** the configuration settings to make sure the setting changes take effect.
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_db_save_config_settings.{{config.extra.arcana.img_png}}" alt="Save Config Settings" class="an-screenshots width_85pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_db_save_config_settings.{{config.extra.arcana.img_png}}" alt="Save Config Settings" class="an-screenshots"/>
   <figcaption>Save Configuration Updates</figcaption>
 </figure>

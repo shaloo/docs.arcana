@@ -23,7 +23,7 @@ Learn how a Web3 app can use a custom wallet UI instead of the default, built-in
 Use the dashboard to create a new app entry and [[register-app-auth|register the app]]. While specifying the new app name and other details, specify the  **Wallet UI Mode** setting as 'Custom UI'. By default, it is set to use the built-in, {{config.extra.arcana.wallet_name}} UI. Then click the 'Create' button to confirm app registration. Once registered, you cannot change the  **Wallet UI Mode** setting.
 
 <figure markdown="span">
-  ![Choose Custom Wallet UI]({{config.extra.arcana.img_dir}}/an_db_select_custom_wallet_ui.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+  ![Choose Custom Wallet UI]({{config.extra.arcana.img_dir}}/an_db_select_custom_wallet_ui.{{config.extra.arcana.img_gif}}){ .an-screenshots .width_85pc }
   <figcaption>Choose Custom Wallet UI</figcaption>
 </figure>
 

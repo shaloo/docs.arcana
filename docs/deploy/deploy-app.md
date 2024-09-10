@@ -19,7 +19,7 @@ You can view or update the default Testnet configuration profile in the {{config
 {% include "./code-snippets/init_auth.md" %}
 
 <figure markdown="span">
-  <img alt="Testnet Client ID" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots width_85pc"/>
+  <img alt="Testnet Client ID" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
   <figcaption>Testnet Client ID</figcaption>
 </figure>
 
