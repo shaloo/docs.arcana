@@ -44,9 +44,7 @@ Your app is all set for authenticating users via AWS Cognito. Authenticated user
 
 {% include "./text-snippets/aggrlogin-nocognito-support.md" %}
 
-!!! an-tip "Arcana JWT Token"
-
-     {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}
      
 ## What's Next?
 
