@@ -38,9 +38,7 @@ The Web3 app is all set for onboarding users via Twitter.
 
 {% include "./text-snippets/aggrlogin-notwitter-support.md" %}
 
-!!! an-tip "Arcana JWT Token"
-
-     {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}
      
 ## What's Next?
 

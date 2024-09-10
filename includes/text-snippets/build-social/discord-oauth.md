@@ -36,9 +36,7 @@ Add code in the app to log out an authenticated user:
 
 The Web3 app is all set for onboarding users via Discord.
 
-!!! an-tip "Arcana JWT Token"
-
-     {% include "./text-snippets/jwt_token.md" %}
+{% include "./text-snippets/jwt_token.md" %}
 
 ## What's Next?
 
