@@ -24,8 +24,4 @@ See [Unity Web Browser package list](https://projects.voltstro.dev/UnityWebBrows
 
 * {% include "./code-snippets/auth_unity_install.md" %}
 
-<<<<<<< HEAD
-* Search for **ArcanaSDK** prefab in the 'Project Window' of the Unity Editor. Click **Assets > ArcanaSDK > Prefabs > ArcanaSDK**. Drag this prefab into the project 'Hierarchy' and configure the prefab as shown here: <figure markdown="span">![Configure Arcana Prefab]({{config.extra.arcana.img_dir}}/unity_configure_prefab.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }<figcaption>Configure Arcana Prefab</figcaption></figure>
-=======
 * Search for **ArcanaSDK** prefab in the 'Project Window' of the Unity Editor. Click **Assets > ArcanaSDK > Prefabs > ArcanaSDK**. Drag this prefab into the project 'Hierarchy' and configure the prefab as shown here: <figure markdown="span">![Configure Arcana Prefab]({{config.extra.arcana.img_dir}}/unity_configure_prefab.{{config.extra.arcana.img_png}}){ .an-screenshots }<figcaption>Configure Arcana Prefab</figcaption></figure>
->>>>>>> shaloo/AR-8432-rev
