@@ -1,4 +1,4 @@
-!!! info "No Aggregate Login with Cognito "
+??? info "No Aggregate Login with Cognito "
 
       The [[concept-aggregate-login|aggregate login feature]] does not work for the third-party IAM providers such as Cognito.
 

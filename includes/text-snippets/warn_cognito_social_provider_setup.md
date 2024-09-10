@@ -1,4 +1,4 @@
-!!! an-warning "Apps using IAM Providers"
+??? an-warning "Apps using IAM Providers"
 
       Apps usually use {{config.extra.arcana.sdk_name}} for user onboarding and blockchain transaction signing. Authentication providers must be set up in the {{config.extra.arcana.dashboard_name}} before integrating with the SDK.
 
