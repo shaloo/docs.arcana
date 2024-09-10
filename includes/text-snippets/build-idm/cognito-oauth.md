@@ -38,9 +38,7 @@ Add code in the application to log out an authenticated user:
 
 Your app is all set for authenticating users via AWS Cognito. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 
-!!! an-warning "Apps using Custom IAM Providers"
-
-      {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}
+{% include "./text-snippets/warn_cognito_social_provider_setup.md" %}
 
 {% include "./text-snippets/aggrlogin-nocognito-support.md" %}
 
