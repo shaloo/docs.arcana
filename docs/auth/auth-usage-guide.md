@@ -137,7 +137,7 @@ const provider = await auth.connect()
 Social login
 
 ```js
-// loginType - Google, Discord, Twitter, GitHub, Twitch
+// loginType - Google, Discord, Twitter, GitHub, Twitch, Apple
 const provider = await auth.loginWithSocial(`${loginType}`)
 ```
 

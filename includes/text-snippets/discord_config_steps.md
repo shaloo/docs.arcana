@@ -4,7 +4,7 @@
 
 Follow these steps to configure the **Social Auth** settings and enable user onboarding via Discord. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Discord Developer Portal](https://discord.com/developers/applications).
 
-### Step 1: Get Redirect URI  
+### 1. Get Redirect URI  
 
 Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Discord in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
@@ -15,7 +15,7 @@ Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet
 
 Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashboard_name}}. Open another tab to access the Discord Developer Console and configure Discord OAuth.
 
-### Step 2: Get Discord Application ID, Public Key
+### 2. Get Discord Application ID, Public Key
 
 Go to the [Discord Developer Portal](https://discord.com/developers/applications) and create a new application.
 
@@ -40,7 +40,7 @@ Refer to the **General Information** page in the Discord Developer Portal. Copy 
   <figcaption>Copy Application ID and Public Key</figcaption>
 </figure>
 
-### Step 3: Update Discord Social Auth Settings
+### 3. Update Social Auth
 
 In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Discord" setting. Paste the **Application ID** and **public key** obtained in the previous step as the `ClientID` and `secret`, respectively. 
 

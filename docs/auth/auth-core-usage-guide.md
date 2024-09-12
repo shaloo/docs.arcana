@@ -127,6 +127,7 @@ await auth.logout();
 ```ts
 
 enum SocialLoginType {
+  apple = 'apple',
   google = 'google',
   discord = 'discord',
   twitch = 'twitch',

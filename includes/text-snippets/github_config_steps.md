@@ -4,7 +4,7 @@
 
 Follow these steps to configure the **Social Auth** settings and enable user onboarding via GitHub. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [GitHub Developer Settings Dashboard](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app).
       
-### Step 1: Get Redirect URI
+### 1. Get Redirect URI
 
 Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure GitHub in the respective configuration profile Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
@@ -15,7 +15,7 @@ Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet
 
 Do not close the {{config.extra.arcana.dashboard_name}} browser tab. Open another tab and set up GitHub OAuth.
 
-### Step 2: Get GitHub ClientID, Secret
+### 2. Get GitHub ClientID, Secret
 
 Go to the [GitHub Developer Settings > OAuth Apps](https://github.com/settings/applications/new) and register the app as a new GitHub application.
 
@@ -44,7 +44,7 @@ Save the newly registered application in GitHub Developer Settings. GitHub will 
 
 Copy and save the **Client ID** and the **secret** assigned by GitHub for the newly registered app. It will be required in the next step while completing the {{config.extra.arcana.dashboard_name}} app configuration.
 
-### Step 3: Update GitHub Settings
+### 3. Update Social Auth
 
 Revisit the {{config.extra.arcana.dashboard_name}}. View the app configuration screen. Click **Configure > Social Auth** in the LHS navigation bar and refer to the "GitHub" field. Paste the **Client ID** and the **Secret** assigned by GitHub, in the previous step.
 

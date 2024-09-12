@@ -469,6 +469,7 @@ nav:
           - setup/config-auth/index.md
           - Social Login:
             - setup/config-social/index.md
+            - Apple: setup/config-social/apple-oauth.md
             - Discord: setup/config-social/discord-oauth.md
             - GitHub: setup/config-social/github-oauth.md
             - Google: setup/config-social/google-oauth.md
@@ -538,6 +539,7 @@ nav:
               - Passwordless: auth/onboard/react-nextjs/custom-ui/build-pwdless-auth.md
               - Social Login Providers:
                 - auth/onboard/react-nextjs/custom-ui/build-social/index.md
+                - Apple: auth/onboard/react-nextjs/custom-ui/build-social/apple-oauth.md
                 - Discord: auth/onboard/react-nextjs/custom-ui/build-social/discord-oauth.md
                 - GitHub: auth/onboard/react-nextjs/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/react-nextjs/custom-ui/build-social/google-oauth.md
@@ -555,6 +557,7 @@ nav:
               - Passwordless: auth/onboard/vanilla/custom-ui/build-pwdless-auth.md
               - Social Login Providers:
                 - auth/onboard/vanilla/custom-ui/build-social/index.md
+                - Apple: auth/onboard/vanilla/custom-ui/build-social/apple-oauth.md
                 - Discord: auth/onboard/vanilla/custom-ui/build-social/discord-oauth.md
                 - GitHub: auth/onboard/vanilla/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/vanilla/custom-ui/build-social/google-oauth.md
@@ -572,6 +575,7 @@ nav:
               - Passwordless: auth/onboard/vue/custom-ui/build-pwdless-auth.md
               - Social Login Providers:
                 - auth/onboard/vue/custom-ui/build-social/index.md
+                - Apple: auth/onboard/vue/custom-ui/build-social/apple-oauth.md
                 - Discord: auth/onboard/vue/custom-ui/build-social/discord-oauth.md
                 - GitHub: auth/onboard/vue/custom-ui/build-social/github-oauth.md
                 - Google: auth/onboard/vue/custom-ui/build-social/google-oauth.md

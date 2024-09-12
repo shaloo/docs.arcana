@@ -10,6 +10,7 @@ arcana:
 
 ## Social Providers   
 
+[[config-auth-apple|:material-apple:{ .icon-color} Apple]]{ .md-button }
 [[config-auth-discord|:fontawesome-brands-discord:{ .icon-color} Discord]]{ .md-button }
 [[config-auth-github|:fontawesome-brands-github:{ .icon-color} GitHub]]{ .md-button }
 [[config-auth-google|:fontawesome-brands-google:{ .icon-color} Google]]{ .md-button }

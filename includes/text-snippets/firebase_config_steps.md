@@ -4,7 +4,7 @@
 
 Follow these steps to configure the **Social Auth** settings and enable user onboarding via Firebase. It requires developers to use the {{config.extra.arcana.dashboard_name}} and the [Firebase Console](https://console.firebase.google.com/).
 
-### Step 1: Get Firebase Project ID
+### 1. Get Firebase Project ID
 
 Go to the [Firebase Console](https://console.firebase.google.com), and create a new project for the app that requires enabling Firebase login.
 
@@ -31,7 +31,7 @@ Follow the on-screen instructions to add and initialize the Firebase SDK in your
 
 You will be required to access the Firebase services such as authentication in your app. That requires you to install and configure the Firebase SDK before integrating the app with the {{config.extra.arcana.sdk_name}}.
 
-### Step 2: Update Firebase Social Auth Settings
+### 2. Update Social Auth
 
 Go to the {{config.extra.arcana.dashboard_name}}. Click **Configure > {{config.extra.arcana.dashboard_sections.social_auth}}** and refer to the {{config.extra.arcana.dashboard_sections.iam_providers}} section. Click **Firebase**. Paste the **Project ID** assigned by Firebase Console in the 'Project ID' field. 
 
