@@ -135,7 +135,7 @@ Make a note of the following values. These are required to configure the Apple s
 
 ### 3. Update Social Auth
 
-In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Apple" setting. Paste the **Service ID** obtained via the Apple Developer Account settings in the last step as the **ClientID**. Copy the **Team Identifier**, **Key Identifier** and the downloaded key value in the respective input fields.
+In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Apple" setting. Paste the **Service ID** obtained via the Apple Developer Account settings. Copy the **Team Identifier**, **Key Identifier** and the downloaded key value in the respective input fields.
 
 <figure markdown="span">
   ![Update Apple Sign-In Settings]({{config.extra.arcana.img_dir}}/an_dApp_apple_config.{{config.extra.arcana.img_png}}){ .an-screenshots }
