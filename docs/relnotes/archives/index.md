@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ../../../..
 ---
 
-# Release Notes Archives
+# Contents
 
 === "Auth SDK"
 

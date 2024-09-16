@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Migration Guide Archives
+# Contents
 
 We recommend that you use the most recent {{config.extra.arcana.company_name}} SDKs. Use the appropriate migration guide to learn how to migrate to the latest version.
 

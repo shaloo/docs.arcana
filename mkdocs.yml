@@ -720,47 +720,51 @@ nav:
     - Archives:
       - Release Note Archives: 
         - relnotes/archives/index.md
-        - Gasless 0.0.37: relnotes/rn-main-scw-v0.0.37.md
-        - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
-        - Auth May27-2024: relnotes/rn-main-auth-May27-24.md
-        - Gasless 0.0.35: relnotes/rn-main-scw-v0.0.35.md
-        - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
-        - Gasless 0.0.30: relnotes/rn-main-scw-v0.0.30.md
-        - Auth 1.0.9 : relnotes/rn-main-auth-v1.0.9.md
-        - Gasless SDK: relnotes/rn-main-scw-v0.0.25.md
-        - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
-        - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
-        - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
-        - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
-        - Auth 1.0.5 : relnotes/rn-main-auth-v1.0.5.md
-        - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
-        - Auth May3-2023: relnotes/rn-main-auth-May3-23.md
-        - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
-        - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
-        - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
-        - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
-        - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+        - Auth SDK:
+          - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
+          - Auth May27-2024: relnotes/rn-main-auth-May27-24.md
+          - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
+          - Auth 1.0.9 : relnotes/rn-main-auth-v1.0.9.md
+          - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
+          - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
+          - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
+          - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
+          - Auth 1.0.5 : relnotes/rn-main-auth-v1.0.5.md
+          - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
+          - Auth May3-2023: relnotes/rn-main-auth-May3-23.md
+          - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
+          - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
+          - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
+          - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
+          - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+        - Gasless SDK:
+          - Gasless 0.0.37: relnotes/rn-main-scw-v0.0.37.md
+          - Gasless 0.0.35: relnotes/rn-main-scw-v0.0.35.md
+          - Gasless 0.0.30: relnotes/rn-main-scw-v0.0.30.md
+          - Gasless 0.0.25: relnotes/rn-main-scw-v0.0.25.md
       - Migration Guide Archives: 
         - migration/archives/index.md
-        - Gasless v0.0.35 -> v0.0.37: migration/main-scw-v0.0.37-migration.md
-        - Auth v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md
-        - v0.0.30 -> v0.0.35: migration/main-scw-v0.0.35-migration.md
-        - Auth v1.0.9 -> v1.0.10: migration/main-auth-v1.0.10-migration.md
-        - v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md
-        - Auth v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md
-        - Gasless SDK -> v0.0.25: migration/main-scw-v0.0.25-migration.md
-        - vOct12-23-gasless -> v1.0.9: migration/main-auth-v1.0.9-migration.md
-        - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
-        - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
-        - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
-        - v1.0.5 -> v1.0.6: migration/main-auth-v1.0.6-migration.md
-        - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md                  
-        - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
-        - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
-        - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
-        - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
-        - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
-        - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
+        - Auth SDK:
+          - Auth v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md
+          - Auth v1.0.9 -> v1.0.10: migration/main-auth-v1.0.10-migration.md
+          - Auth v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md
+          - vOct12-23-gasless -> v1.0.9: migration/main-auth-v1.0.9-migration.md
+          - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
+          - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
+          - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
+          - v1.0.5 -> v1.0.6: migration/main-auth-v1.0.6-migration.md
+          - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md                  
+          - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
+          - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
+          - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
+          - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
+          - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
+          - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
+        - Gasless SDK:
+          - v0.0.35 -> v0.0.37: migration/main-scw-v0.0.37-migration.md
+          - v0.0.30 -> v0.0.35: migration/main-scw-v0.0.35-migration.md
+          - v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md
+          - Beta -> v0.0.25: migration/main-scw-v0.0.25-migration.md
     - Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Docs @Partners:
     - partner-docs/index.md
