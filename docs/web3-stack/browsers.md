@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ..
 ---
   
-# Browsers
+# Supported Browsers
 
 {{config.extra.arcana.company_name}} SDKs can be integrated with any Web3 apps that work with the following browsers:
 

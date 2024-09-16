@@ -605,6 +605,7 @@ nav:
         - Advanced:
           - Custom Wallet UI: auth/custom-wallet-ui.md
           - Custom Auth: auth/custom-auth.md
+          - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Gasless SDK: 
         - Install: gasless/gasless-install.md
         - Integrate: gasless/gasless-integrate.md
@@ -622,14 +623,14 @@ nav:
     - Auth-Core: auth/auth-core-usage-guide.md
   - Resources:
     - Overview: introduction/index.md
-    - Release Notes:
-      - Auth SDK: relnotes/latest-auth-release-note.md
-      - Gasless SDK: relnotes/latest-gasless-release-note.md
     - Developers:
-      - Dashboard User Guide: setup/config-dApp-with-db.md
+      - Release Notes:
+        - Auth SDK: relnotes/latest-auth-release-note.md
+        - Gasless SDK: relnotes/latest-gasless-release-note.md
       - Migration Guides:
         - Auth SDK: migration/latest-auth-migration-guide.md
         - Gasless SDK: migration/latest-gasless-migration-guide.md
+      - Dashboard User Guide: setup/config-dApp-with-db.md
       - Error Handling:
         - Auth: auth/auth-error-msg.md
         - Gasless: gasless/gasless-error-msg.md
@@ -644,9 +645,8 @@ nav:
         - MultiversX: faq/faq-mvx.md
         - Near: faq/faq-near.md
       - Troubleshooting: troubleshooting.md
-      - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Changelog: changelog/index.md
-      - Checklists: checklists/index.md
+      - Integration Checklists: checklists/index.md
     - Wallet Users: 
       - Wallet User Guide: 
         - user-guides/wallet-ui/index.md
@@ -670,37 +670,42 @@ nav:
           - Transaction Types: concepts/anwallet/walletstgsigntx.md
           - Network Switching: concepts/anwallet/walletntwkswitchmode.md
           - Wallet Visibility: concepts/anwallet/walletvisibility.md
-        - Arcana JWT Token: concepts/an-jwt-token.md
+          - Custom Wallet UI: concepts/custom-wallet-ui.md
         - Authentication: 
           - concepts/authtype/index.md
           - Auth Providers: concepts/authtype/socialauth.md
           - Custom Auth: concepts/authtype/custom-auth.md
-        - Auth SDK: concepts/authsdk.md
-        - Auth-Core SDK: concepts/auth-core-sdk.md
         - Configuration Profiles: concepts/config-profiles.md
-        - Custom Login UI: concepts/custom-login-ui.md
-        - Custom Wallet UI: concepts/custom-wallet-ui.md
         - Dashboard: concepts/dashboard.md
-        - DID Token: concepts/an-did-token.md
         - Gateway: concepts/gateway-node.md
-        - Gasless SDK: concepts/glsdk.md
+        - Gasless: 
+          - Gasless Transactions: concepts/gasless-ops.md
+          - Session Keys: concepts/scw-session-keys.md
         - Key Space Type: concepts/keyspace-types.md
+        - Login Token:
+          - Arcana JWT Token: concepts/an-jwt-token.md
+          - DID Token: concepts/an-did-token.md
+          - Verify JWT Token: concepts/jwt-token-validation.md
+        - Login UI:
+          - Custom Login UI: concepts/custom-login-ui.md
+          - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
+        - Login Session Type: concepts/session_type.md
         - MFA: concepts/mfa.md
         - Non-EVM Chains: concepts/non-evm-chains.md
-        - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
         - Private Key: concepts/private-key.md
+        - SDKs:
+          - Auth SDK: concepts/authsdk.md
+          - Auth-Core SDK: concepts/auth-core-sdk.md
+          - Gasless SDK: concepts/glsdk.md
         - Social Login: concepts/social-login.md
-        - Gasless Transactions: concepts/gasless-ops.md
-        - Session Keys: concepts/scw-session-keys.md
-        - Session Type: concepts/session_type.md
         - Smart Contracts:
           - Overview: concepts/ansmartc/an-smart-contracts.md
           - Types of Contracts: concepts/ansmartc/an-smartc-types.md
           - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
-        - Usage Billing: concepts/billing.md
-        - Usage Metrics: concepts/usage-metrics.md
+        - Usage: 
+          - Billing: concepts/billing.md
+          - Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
-        - Verify JWT Token: concepts/jwt-token-validation.md
       - Tech Stack: 
         - App Types: web3-stack/apps.md
         - Auth Providers: web3-stack/auth.md

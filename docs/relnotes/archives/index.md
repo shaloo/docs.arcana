@@ -1,12 +1,12 @@
 ---
 alias: index-release-notes
-title: 'Release Notes Archives'
+title: 'Contents'
 description: 'Release Notes for the past, older Arcana Auth Versions, only for reference. Note these are not supported anymore.'
 arcana:
   root_rel_path: ../../../..
 ---
 
-# Contents
+# Release Notes Archives
 
 === "Auth SDK"
 

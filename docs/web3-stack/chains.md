@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ..
 ---
   
-# Chains
+# CSupported Chains
 
 The {{config.extra.arcana.wallet_name}} supports transactions on both EVM and non-EVM chains. However, not all supported chains allow gasless transactions. See the {{config.extra.arcana.gasless_sdk_name}} section below for details.
 
