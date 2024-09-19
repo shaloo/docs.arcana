@@ -33,6 +33,10 @@ Use the `connect()` function to bring up the plug-and-play pop-up modal in the a
 
       {% include "./text-snippets/warn_firebase_no_pnp.md" %}
 
+!!! an-warning "No plug-and-play support for Telegram authentication."
+
+      {% include "./text-snippets/warn_telegram_no_pnp.md" %}
+
 ## What's Next?
 
 {% include "./text-snippets/quick-start-sign-transactions.md" %}
