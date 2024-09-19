@@ -11,7 +11,7 @@ Use Telegram app, go to [Telegram BotFather](https://telegram.me/BotFather). Use
 Use `/token` command to generate **Telegram token** for the selected bot. This token is used to access the HTTP API. Keep your token secure and store it safely, it can be used by anyone to control your bot.
 
 <figure markdown="span">
-  ![Add Bot Token]({{config.extra.arcana.img_dir}}/an_telegram_token.{{config.extra.arcana.img_png}}){ .an-screenshots }
+  ![Add Bot Token]({{config.extra.arcana.img_dir}}/an_telegram_token.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc}
   <figcaption>Add Bot Token</figcaption>
 </figure>
 
@@ -22,7 +22,7 @@ Note the token value, it will be required in the next step while completing the 
 Once you have chosen a bot, send the `/setdomain` command to @Botfather to link your website's domain to the bot. This is required for successful redirect to your app after the user logs in via Telegram. [Learn more...](https://core.telegram.org/widgets/login)
 
 <figure markdown="span">
-  ![Link App Domain]({{config.extra.arcana.img_dir}}/an_telegram_app_domain.{{config.extra.arcana.img_png}}){ .an-screenshots }
+  ![Link App Domain]({{config.extra.arcana.img_dir}}/an_telegram_app_domain.{{config.extra.arcana.img_png}}){ .an-screenshots .width_50pc}
   <figcaption>Link App Domain</figcaption>
 </figure>
 
