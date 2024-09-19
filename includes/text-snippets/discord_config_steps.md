@@ -33,7 +33,7 @@ Configure OAuth 2.0 credentials for the newly created app entry in the Discord D
 
 Save the app settings in the Discord Developer Portal. 
 
-Refer to the **General Information** page in the Discord Developer Portal. Copy the **Application ID** and the **public key**. It will be required in the next step while configuring Discord settings using the  {{config.extra.arcana.dashboard_name}}. 
+Refer to the **General Information** page in the Discord Developer Portal. Copy the **Application ID** and the **Public key**. It will be required in the next step while configuring Discord settings using the  {{config.extra.arcana.dashboard_name}}. 
 
 <figure markdown="span">
   ![Copy Application ID and Public Key]({{config.extra.arcana.img_dir}}/an_dApp_discord_clientID.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -42,7 +42,7 @@ Refer to the **General Information** page in the Discord Developer Portal. Copy 
 
 ### 3. Update Social Auth
 
-In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**. Refer to the empty fields next to the "Discord" setting. Paste the **Application ID** and **public key** obtained in the previous step as the `ClientID` and `secret`, respectively. 
+In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth > Discord**. Paste the **Application ID** and **Public key** obtained from Discord Developer Portal in the previous step.
 
 <figure markdown="span">
   ![Dashboard Update Application ID and Public Key]({{config.extra.arcana.img_dir}}/an_dApp_discord_config.{{config.extra.arcana.img_png}}){ .an-screenshots }

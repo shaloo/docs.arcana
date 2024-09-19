@@ -15,7 +15,7 @@ Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet
 
 Do not close the **Social Auth** browser tab in the {{config.extra.arcana.dashboard_name}}. Open another tab and set up Twitter OAuth.
 
-### 2. Get Twitter API Key
+### 2. Get Twitter API Key, Secret
 
 Go to the [Twitter Developer Portal](https://developer.twitter.com/en/portal/projects-and-apps) and create a new [Twitter App](https://developer.x.com/en/docs/apps/overview) for setting up the OAuth credentials for the app. Note that if you would like to use Twitter API v2, you must add your Twitter App to a [Project](https://developer.x.com/en/docs/projects/overview).
 
@@ -86,12 +86,7 @@ Make sure you save all the settings.
 
 ### 3. Update Social Auth
 
-In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth** and choose **Twitter** icon to view Twitter settings. The following Twitter developer portal values saved in the previous step must be copied to the {{config.extra.arcana.dashboard_name}} Twitter settings.
-
-| Twitter Developer Portal Settings -> | {{config.extra.arcana.dashboard_name}} Settings |
-| --- | --- |
-| Twitter API Key -> |*Client ID*|
-| Twitter API Key Secret ->|*Client Secret*|
+In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth** and choose **Twitter** icon to view Twitter settings. Use the **Twitter API Key** and the **Twitter API Secret** obtained from the Twitter Developer Portal and paste them into the {{config.extra.arcana.dashboard_name}} Twitter settings.
 
 <figure markdown="span">
   ![Update Twitter API Key]({{config.extra.arcana.img_dir}}/an_dApp_twitter_config.{{config.extra.arcana.img_png}}){ .an-screenshots }

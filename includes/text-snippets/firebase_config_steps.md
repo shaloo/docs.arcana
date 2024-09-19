@@ -33,7 +33,7 @@ You will be required to access the Firebase services such as authentication in y
 
 ### 2. Update Social Auth
 
-Go to the {{config.extra.arcana.dashboard_name}}. Click **Configure > {{config.extra.arcana.dashboard_sections.social_auth}}** and refer to the {{config.extra.arcana.dashboard_sections.iam_providers}} section. Click **Firebase**. Paste the **Project ID** assigned by Firebase Console in the 'Project ID' field. 
+Go to the {{config.extra.arcana.dashboard_name}}. Click **Configure > {{config.extra.arcana.dashboard_sections.social_auth}}** and refer to the {{config.extra.arcana.dashboard_sections.iam_providers}} section. Click **Firebase**. Paste the **Project ID** assigned by Firebase Console in the 'Project ID' field.
 
 <figure markdown="span">
   ![Update Firebase Project ID]({{config.extra.arcana.img_dir}}/an_dApp_firebase_config.{{config.extra.arcana.img_png}}){ .an-screenshots }
