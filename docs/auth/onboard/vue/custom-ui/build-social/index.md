@@ -23,6 +23,8 @@ In this case, developers must build custom login UI themselves after configuring
 
 [[vue-steam-social-auth|Steam :material-steam:]]{ .md-button }
 
+[[vue-telegram-social-auth|Telegram :simple-telegram:]]{ .md-button }
+
 [[vue-twitch-social-auth|Twitch :fontawesome-brands-twitch:]]{ .md-button }
 
 [[vue-twitter-social-auth|Twitter :fontawesome-brands-twitter:]]{ .md-button }

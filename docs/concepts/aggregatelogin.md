@@ -30,4 +30,5 @@ graph LR
       * Cognito
       * Firebase
       * Steam
+      * Telegram
       * Twitter

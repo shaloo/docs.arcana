@@ -23,6 +23,8 @@ In this case, developers must build custom login UI themselves after configuring
 
 [[react-nextjs-steam-social-auth|Steam :material-steam:]]{ .md-button }
 
+[[react-nextjs-telegram-social-auth|Telegram :simple-telegram:]]{ .md-button }
+
 [[react-nextjs-twitch-social-auth|Twitch :fontawesome-brands-twitch:]]{ .md-button }
 
 [[react-nextjs-twitter-social-auth|Twitter :fontawesome-brands-twitter:]]{ .md-button }
