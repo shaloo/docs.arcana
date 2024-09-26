@@ -1,12 +1,12 @@
 ---
 alias: index-config-social-providers
-title: 'Social Login Setup'
+title: 'Auth Options'
 description: 'List of social login providers that are supported by Arcana Auth for onboarding Web3 app users in apps integrated with the Arcana SDK.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Social Login Setup  
+# Auth Options  
 
 ## Social Providers   
 
@@ -25,6 +25,11 @@ arcana:
 [[config-auth-firebase|:material-firebase:{ .icon-color } Firebase ]]{ .md-button }
 
 {% include "./text-snippets/warn_cognito_social_provider_setup.md" %}   
+
+## Other Login Options
+
+[[config-auth-passkeys|:octicons-passkey-fill-24:{ .icon-color } Passkeys ]]{ .md-button }
+[[config-custom-auth|:material-tools:{ .icon-color }Custom Auth]]{.md-button}
 
 !!! an-info "Passwordless Login"
 

@@ -84,7 +84,23 @@ toc_depth: 2
 
       You can create a Twitter account using your phone number without needing to provide an email address. If you do this, the getUser() function won't give you the user's email address.
 
-      However, web3 app developers have the [option to configure settings on the Twitter developer dashboard](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials#:~:text=Request%20a%20User's%20Email%20Address,email%20address%20access%20to%20function) to request users' email addresses. If they do this, {{config.extra.arcana.sdk_name}} can access and retrieve the user's email through Twitter, and it will be included in the result when you use the getUser() function.     
+      However, web3 app developers have the [option to configure settings on the Twitter developer dashboard](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials#:~:text=Request%20a%20User's%20Email%20Address,email%20address%20access%20to%20function) to request users' email addresses. If they do this, {{config.extra.arcana.sdk_name}} can access and retrieve the user's email through Twitter, and it will be included in the result when you use the getUser() function.    
+
+??? an-faq "Does login via Passkey share any user or device information with the website or application?"
+
+      No. 
+
+      With passkeys, the user's biometric information, secrets, or private keys are never revealed to the website or the app where user is trying to sign in. User digital credentials do not leave the user's personal device. Also, the passkey protocols are carefully designed so that no information shared with sites can be used as a tracking vector.
+
+      [See FIDO standard](https://fidoalliance.org/how-fido-works/), [Apple Passkeys security](https://support.apple.com/en-in/102195), [Microsoft Passkey Support](https://support.microsoft.com/en-us/account-billing/signing-in-with-a-passkey-09a49a86-ca47-406c-8acc-ed0e3c852c6d), [Google Passkey Security](https://developers.google.com/identity/passkeys/faq) for details.
+
+??? an-faq "Is there any expiration limit on passkeys?"
+
+      No.
+
+      If required, users can delete passkeys associated with a website or application and create new ones.
+
+??? an-faq "
 
 ## {{config.extra.arcana.wallet_name}}
 

@@ -467,20 +467,22 @@ nav:
         - Register App: setup/config-auth/register-app.md
         - Auth Settings:
           - setup/config-auth/index.md
-          - Social Login:
-            - setup/config-social/index.md
-            - Apple: setup/config-social/apple-oauth.md
-            - Discord: setup/config-social/discord-oauth.md
-            - GitHub: setup/config-social/github-oauth.md
-            - Google: setup/config-social/google-oauth.md
-            - Steam: setup/config-social/steam-oauth.md
-            - Telegram: setup/config-social/telegram-oauth.md
-            - Twitch: setup/config-social/twitch-oauth.md
-            - Twitter: setup/config-social/twitter-oauth.md
+          - Social Auth:
+            - setup/index.md
+            - Social Login: 
+              - Apple: setup/config-social/apple-oauth.md
+              - Discord: setup/config-social/discord-oauth.md
+              - GitHub: setup/config-social/github-oauth.md
+              - Google: setup/config-social/google-oauth.md
+              - Steam: setup/config-social/steam-oauth.md
+              - Telegram: setup/config-social/telegram-oauth.md
+              - Twitch: setup/config-social/twitch-oauth.md
+              - Twitter: setup/config-social/twitter-oauth.md
             - IAM Providers: 
               - setup/config-idm/index.md
               - Cognito: setup/config-idm/cognito-oauth.md
               - Firebase: setup/config-idm/firebase-auth.md
+            - Passkeys Login: setup/config-auth-passkeys.md
             - Custom Auth: setup/config-custom-auth.md
           - Manage Gasless: setup/configure-gasless.md    
           - Manage Chains: 
@@ -696,6 +698,7 @@ nav:
         - Login Session Type: concepts/session_type.md
         - MFA: concepts/mfa.md
         - Non-EVM Chains: concepts/non-evm-chains.md
+        - Passkeys: concepts/authtype/auth-passkeys.md
         - Private Key: concepts/private-key.md
         - SDKs:
           - Auth SDK: concepts/authsdk.md
