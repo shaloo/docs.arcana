@@ -260,7 +260,7 @@ plugins:
           'howto/arcana_wallet/wallet_sign.md': 'auth/web3-ops/evm.md'
           'howto/arcana_wallet/wallet_show.md': 'auth/web3-ops/evm.md'
           'howto/arcana_wallet/wallet_watchasset.md': 'auth/web3-ops/evm.md'
-          'howto/config_social/index.md': 'setup/config-social/index.md'
+          'howto/config_social/index.md': 'setup/index.md'
           'howto/config_social/discord_oauth.md': 'setup/config-social/discord-oauth.md'
           'howto/config_social/github_oauth.md': 'setup/config-social/github-oauth.md'
           'howto/config_social/google_oauth.md': 'setup/config-social/google-oauth.md'
@@ -698,7 +698,7 @@ nav:
         - Login Session Type: concepts/session_type.md
         - MFA: concepts/mfa.md
         - Non-EVM Chains: concepts/non-evm-chains.md
-        - Passkeys: concepts/authtype/auth-passkeys.md
+        - Passkeys Login: concepts/authtype/auth-passkeys.md
         - Private Key: concepts/private-key.md
         - SDKs:
           - Auth SDK: concepts/authsdk.md

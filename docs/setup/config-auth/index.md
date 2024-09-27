@@ -14,7 +14,8 @@ Use the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_pat
 
 ## Auth Settings
 
-[[index-config-social-providers|:material-web:{ .icon-color } Social Providers]]{ .md-button } [[index-config-iam-providers|:material-identifier:{ .icon-color } IAM Providers]]{ .md-button } 
+[[index-config-social-providers|:material-web:{ .icon-color } Social Providers]]{ .md-button } [[index-config-iam-providers|:material-identifier:{ .icon-color } IAM Providers]]{ .md-button }
+[[config-auth-passkeys|:octicons-passkey-fill-24:{ .icon-color } Passkeys ]]{ .md-button }
 
 [[configure-gasless|:material-gas-station-off:{ .icon-color } Manage Gasless]]{ .md-button }
 

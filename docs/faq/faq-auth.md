@@ -90,7 +90,7 @@ toc_depth: 2
 
       No. 
 
-      With passkeys, the user's biometric information, secrets, or private keys are never revealed to the website or the app where user is trying to sign in. User digital credentials do not leave the user's personal device. Also, the passkey protocols are carefully designed so that no information shared with sites can be used as a tracking vector.
+      With [[concept-auth-passkeys|passkeys]], the user's biometric information, secrets, or private keys are never revealed to the website or the app where user is trying to sign in. User digital credentials do not leave the user's personal device. Also, the passkey protocols are carefully designed so that no information shared with sites can be used as a tracking vector.
 
       [See FIDO standard](https://fidoalliance.org/how-fido-works/), [Apple Passkeys security](https://support.apple.com/en-in/102195), [Microsoft Passkey Support](https://support.microsoft.com/en-us/account-billing/signing-in-with-a-passkey-09a49a86-ca47-406c-8acc-ed0e3c852c6d), [Google Passkey Security](https://developers.google.com/identity/passkeys/faq) for details.
 
@@ -100,7 +100,13 @@ toc_depth: 2
 
       If required, users can delete passkeys associated with a website or application and create new ones.
 
-??? an-faq "
+??? an-faq "Can users create accounts with passkeys on {{config.extra.arcana.sdk_name}}?"
+
+      No.
+
+      Web3 apps using {{config.extra.arcana.sdk_name}} don’t support passkey-based signups yet.
+      
+      For the first login, users need to go with legacy authentication. They can then create and link a passkey. After that, they can use the passkey for future logins to the app on the same device.
 
 ## {{config.extra.arcana.wallet_name}}
 
