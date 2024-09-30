@@ -1,4 +1,4 @@
-After logging into the dashboard, you’ll see the *Manage Apps* screen. Each registered app appears as a card.
+After logging into the dashboard, the *Manage Apps* screen is displayed. It contains one app card per registered app. The app card contains a summary of app usage statistics and buttons to view and edit the [[concept-config-profile|configuration profiles]] for Testnet and Mainnet settings.
 
 <figure markdown="span">
   ![Manage Apps]({{config.extra.arcana.img_dir}}/an_db_mulitiple_apps.{{config.extra.arcana.img_png}}){ .an-screenshots }

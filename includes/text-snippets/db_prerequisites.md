@@ -1,3 +1,3 @@
-Logging into {{config.extra.arcana.dashboard_name}} requires an account with a supported social login provider or an email for passwordless access.
+To log into the {{config.extra.arcana.dashboard_name}}, you’ll need an account with a supported social login or use email for passwordless access.
 
 {% include "./text-snippets/db_supported_oauth.md" %}
