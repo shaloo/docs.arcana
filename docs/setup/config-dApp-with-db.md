@@ -9,13 +9,44 @@ arcana:
 
 # Dashboard Users Guide
 
-Before integrating a Web3 app with the {{config.extra.arcana.sdk_name}}, developers must use the {{config.extra.arcana.dashboard_name}} to configure [[concept-social-login|social login]] and tailor the wallet user experience for signing blockchain transactions.
+The {{config.extra.arcana.dashboard_name}} helps Web3 developers set up the Arcana SDK.
+
+Log in, register your app, grab your unique {{config.extra.arcana.app_address}}, configure the {{config.extra.arcana.sdk_name}}, then install and integrate the SDKs into your app.
+
+<figure markdown="span">
+  <img alt="Arcana Dashboard" src="{{config.extra.arcana.img_dir}}/an_dashboard_login.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
+  <figcaption>{{config.extra.arcana.dashboard_name}}</figcaption>
+</figure>
+
+This guide covers how to:
+
+* Log into the dashboard
+* Register a Web3 app with {{config.extra.arcana.company_name}}
+* Get {{config.extra.arcana.app_address}}
+* Manage Configuration Profiles
+
+    - Testnet/Mainnet
+    - Switching configuration Profiles
+
+* Configure SDK Settings
+
+    - Branding
+    - Social Login Providers
+    - Chain Management
+    - Wallet Customization
+    - Login Session Management
+    - Keyspace Type
+    - Gasless Settings
+
+* Switch application
+* Monitor usage and billing
+* Delete a registered app
 
 ## Prerequisites
 
 {% include "./text-snippets/db_prerequisites.md" %}
 
-## Login
+## Dashboard Login
 
 {% include "./text-snippets/db_login.md" %}
 
@@ -23,15 +54,30 @@ Before integrating a Web3 app with the {{config.extra.arcana.sdk_name}}, develop
 
 {% include "./text-snippets/db_register_dapp.md" %}
 
-## Settings Overview
+## Get {{config.extra.arcana.app_address}}
 
-{% include "./text-snippets/db_settings.md" %}
+After successful registration, the default Testnet configuration profile settings are displayed in the dashboard. 
 
-## Manage Configuration Profiles
+The {{config.extra.arcana.app_address}} assigned to the app is displayed on the top right. Note that the {{config.extra.arcana.app_address}} differs in Testnet and Mainnet configuration profiles.
 
-Each registered app is displayed in the 'Manage Apps' dashboard. By default, a Testnet configuration profile is associated with each app. For Mainnet deployment, a new Mainnet profile must be created. Both Testnet and Mainnet configuration profiles are maintained separately. Each profile is associated with a unique **{{config.extra.arcana.app_address}}**. 
+To access the Mainnet {{config.extra.arcana.app_address}}, click dropdown on the top RHS and choose Mainnet. Copy the Mainnet {{config.extra.arcana.app_address}} displayed on the dashboard.
 
-Use the LHS navigation menu and click *Configure* to view the Testnet/Mainnet configuration settings for the app.
+When deploying an app on the {{config.extra.arcana.company_name}} Mainnet, use the {{config.extra.arcana.app_address}} associated with the Mainnet configuration profile.
+
+<figure markdown="span">
+  ![Get{{config.extra.arcana.app_address}} ]({{config.extra.arcana.img_dir}}/an_db_get_clientid.{{config.extra.arcana.img_gif}}){ .an-screenshots }
+  <figcaption>Get {{config.extra.arcana.app_address}}</figcaption>
+</figure>
+
+## Configuration Profiles
+
+Each registered app is displayed in the 'Manage Apps' dashboard. A [[concept-config-profile|Testnet configuration profile]] is associated with each app by default. The 'Mainnet' button is disabled for a newly registered app. For Mainnet deployment, the developer must create a new Mainnet profile. 
+
+!!! an-tip
+
+      Both Testnet and Mainnet configuration profiles are maintained separately. Each profile is associated with a unique **{{config.extra.arcana.app_address}}**. 
+
+To view Testnet configuration settings, click the 'Testnet' button on the app card in the 'Manage Apps' screen. The usage metrics page will open. A dropdown labeled 'Testnet' at the top right confirms you're viewing the app's Testnet settings.
 
 <figure markdown="span">
   ![App Configuration Settings]({{config.extra.arcana.img_dir}}/an_db_new_app_card.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -40,7 +86,7 @@ Use the LHS navigation menu and click *Configure* to view the Testnet/Mainnet co
 
 ### Testnet
 
-To view or edit the Testnet configuration settings, click on the application card displayed in the 'Manage Apps' dashboard screen and then select 'Testnet' in the dropdown on the top right of the application settings page. 
+To view or edit the Testnet configuration settings, browse the 'Manage Apps' screen, locate the app card and click 'Testnet'. 
 
 <figure markdown="span">
   <img alt="Testnet Client ID" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
@@ -49,14 +95,14 @@ To view or edit the Testnet configuration settings, click on the application car
 
 ### Mainnet
 
-Click on the app card displayed in the 'Manage Apps' screen to view the application usage metrics page. Refer to the dropdown on the top right. By default, it will display the Testnet configuration profile for the registered app. To create a 'Mainnet' configuration profile, choose 'Mainnet' in the dropdown.
+Browse the 'Manage Apps' screen to find your app card. If the 'Mainnet' configuration profile exists, the 'Mainnet' button will be enabled. Click 'Mainnet' to view the application usage metrics and the 'Mainnet' profile. If the button is disabled, the 'Mainnet' profile hasn't been created yet. To create it, first view the 'Testnet' profile by clicking the app card. On the usage metrics page, find the dropdown in the top right, click it, and select 'Mainnet' to create the configuration profile.
 
 <figure markdown="span">
   ![Select Testnet/Mainnet Settings]({{config.extra.arcana.img_dir}}/an_db_testnet_mainnet_select.{{config.extra.arcana.img_png}}){ .an-screenshots }
   <figcaption>Select Testnet/Mainnet Settings</figcaption>
 </figure>
 
-On selecting 'Mainnet' for the first time, a pop-up screen is displayed with two options to create the 'Mainnet' configuration profile:
+Selecting 'Mainnet' for the first time opens a pop-up with two options to create the 'Mainnet' configuration profile:
 
 * Copy Testnet Profile
 * Create a new Mainnet Profile. 
@@ -74,51 +120,116 @@ Use one of these options to create the 'Mainnet' profile. A new **{{config.extra
       
       If Google is enabled in your app's 'Testnet' profile, then during the configuration of the social login provider through the Google Developer console, the Testnet redirect URI was added.  Copy the 'Mainnet' profile redirect URI value from the {{config.extra.arcana.dashboard_name}} and update them in the Google Console OAuth settings. 
 
-      Make sure that you add the 'Mainnet' redirect URI value for the other social login providers that are enabled in the 'Testnet' profile. This is required for enabling your app to use the {{config.extra.arcana.company_name}} Mainnet. 
+      Ensure you add the 'Mainnet' redirect URI value for the other social login providers enabled in the 'Testnet' profile. This is required for enabling your app to use the {{config.extra.arcana.company_name}} Mainnet. 
       
-      The figure below shows how the 'redirect URI' is different from the Testnet Settings where Google and Twitch were configured and the 'Testnet' profile was copied to create a 'Mainnet' profile.
+      The figure below shows how the 'redirect URI' differs from the Testnet Settings where Google and Twitch were configured, and the 'Testnet' profile was copied to create a 'Mainnet' profile.
 
       <figure markdown="span">
         ![Mainnet Redirect URI]({{config.extra.arcana.img_dir}}/an_db_example_add_mainnet_redirect_uri.{{config.extra.arcana.img_png}}){ .an-screenshots }
         <figcaption>Mainnet Reddirect URI</figcaption>
       </figure>
 
-## Switch Profiles
+### Switch Profile
 
-When both Testnet and Mainnet configuration profiles are associated with the registered app, you can switch profiles from the *Manage Apps* page of the dashboard or from within the app usage dashboard page.
+When both Testnet and Mainnet profiles are linked to the app, switch profiles using one of the following options:
+
+* On the Manage Apps page, click Testnet or Mainnet to change the configuration profile view.
+* On the app settings page, use the dropdown in the top right to switch between Testnet and Mainnet.
+
+If the Mainnet profile isn’t created, use the dropdown on the 'Testnet' page to create it. After creation, the dashboard will automatically switch to the Mainnet settings.
 
 <figure markdown="span">
   ![Switch to Testnet/Mainnet Profile]({{config.extra.arcana.img_dir}}/an_db_testnet_mainnet_select.{{config.extra.arcana.img_png}}){ .an-screenshots }
-  <figcaption>Switch to Testnet/Mainnet Profile</figcaption>
+  <figcaption>App Settings: Switch to Testnet/Mainnet Profile</figcaption>
 </figure> 
-
-* **Manage Apps Page**: Select the app card and click on the Testnet or Mainnet buttons displayed on the app card to switch to the respective configuration profile.
-
-* **App Usage Page**: On the top right side, you will see a dropdown displaying Testnet/Mainnet profile. Click on the respective configuration profile to switch to it and view profile settings. 
 
 <figure markdown="span">
   ![Switch to Testnet]({{config.extra.arcana.img_dir}}/an_db_all_app_card.{{config.extra.arcana.img_png}}){ .an-screenshots }
-  <figcaption>Switch to Testnet</figcaption>
+  <figcaption>Manage Apps: Switch to Testnet/Mainnet Profile</figcaption>
 </figure> 
+
+## Configuration Settings
+
+To configure SDK usage settings, the app must be registered. Click on the registered app card in the 'Manage Apps' screen to view the configuration settings and edit them.
+
+### Settings Overview
+
+{% include "./text-snippets/db_settings.md" %}
+
+### Branding
+
+To view and edit the look and feel of the embedded {{config.extra.arcana.wallet_name}}, use **Manage Apps > App Card > Testnet/Mainnet Configuration** to view the app settings. In the LHS menu, click **Configure > Branding**.
+
+See [[configure-wallet-branding|how to configure branding]] for details.
+
+### Social Auth
+
+To view and edit the [[concept-social-login|social login]] provider's settings for a registered app, use **Manage Apps > App Card > Testnet/Mainnet Configuration** to view the app settings. In the LHS menu, click **Configure > Social Auth**.
+
+The dashboard screen will display all the user onboarding options and configuration settings to enable them. Note that each user onboarding option may have different settings. Select the onboarding option and provide the required configuration values.
+
+See [[index-config-social-providers|how to configure social login]] for details.
+
+!!! an-tip
+
+      Besides the social login providers, {{config.extra.arcana.sdk_name}} also supports [[index-config-iam-providers|IAM Providers]] and [[config-custom-auth|Custom Auth]] options to onboard users.
+
+### Chain Management
+
+{{config.extra.arcana.sdk_name}} provides a subset of supported blockchains out of the box, and these chains are displayed in the in-app {{config.extra.arcana.wallet_name}} by default. Developers can configure this list of supported, pre-configured chains in the {{config.extra.arcana.wallet_name}} and pick up one of the chains as the default active chain in the wallet.
+
+To view and edit the wallet chains, click **Manage Apps > App Card > Testnet/Mainnet Configuration** to bring up the app usage metrics page in the dashboard. In the LHS menu, click **Configure > Chain Management**.
+
+!!! an-note
+
+      {{config.extra.arcana.sdk_name}} supports both EVM and non-EVM chains. When registering the app using the dashboard, the decision to use EVM or non-EVM chains must be made. 
+      
+      If the EVM chain type is selected during app registration, then the pre-configured chain list will consist of only the EVM-compatible chains as available options. Similarly, if a non-EVM chain, Solana, is selected during app registration, the chain options displayed will be only those belonging to the Solana ecosystem. Developers can switch chains from among the ones that are displayed. Switching from an EVM chain to a non-EVM chain is impossible once an app is registered.
+
+For details, see [[configure-wallet-chains|how to manage chains]].
+
+#### Configure Non-EVM Chains
+
+Use the dashboard to enable [[concept-non-evm-chains|non-EVM chains]] in your Web3 apps. 
+
+* [[solana-dashboard-user-guide|Solana]]
+* [[mvx-dashboard-user-guide|MultiversX]]
+* [[near-dashboard-user-guide|Near]]
+
+### Arcana Wallet Customization
+
+To view and edit the wallet settings, click **Manage Apps > App Card > Testnet/Mainnet Configuration** and bring up the app usage metrics page in the dashboard. In the LHS menu, click **Configure > Arcana Wallet**.
+
+See [[configure-wallet-settings|how to configure wallet settings]] for details.
+
+### Login Session Management
+
+To view and edit the login session management settings, click **Manage Apps > App Card > Testnet/Mainnet Configuration** and bring up the app usage metrics page in the dashboard. In the LHS menu, click **Configure > Login Session Management**.
+
+{% include "./text-snippets/db_session_type.md" %}
+
+### Configure Keyspace
+
+To view and edit the keyspace settings for the app, click **Manage Apps > App Card > Testnet/Mainnet Configuration** and bring up the app usage metrics page in the dashboard. In the LHS menu, click **Configure > Keyspace**.
+
+{% include "./text-snippets/db_keyspace.md" %}
+
+### Gasless Settings
+
+To view and edit the gasless transaction settings for the app, click **Manage Apps > App Card > Testnet/Mainnet Configuration** and bring up the app usage metrics page in the dashboard. In the LHS menu, click **Configure > Gasless**.
+
+See [[configure-gasless|how to configure gasless]] for details.
 
 ## Switch Application
 
-To switch viewing configuration settings from one application configuration profile screen to another, click on the dropdown next to the application name in the LHS navigation. You will see other registered applications in your account. Select another app name in the dropdown to switch to viewing its configuration settings.
+To switch viewing configuration settings from one application configuration profile screen to another, click on the dropdown next to the application name in the LHS navigation. You will see other registered applications in your account. Select another app name in the dropdown to view its configuration settings.
 
-The last entry in the dropdown is 'Manage Apps'. You can click it to browse the 'Manage Apps' landing page with app cards layout view. Switch to another app by clicking on the app card.
+'Manage Apps' is the last entry in the dropdown. Click 'Manage Apps' to access the dashboard landing page with the app cards. Switch to another app by clicking on the app card.
 
 <figure markdown="span">
   ![Switch Application]({{config.extra.arcana.img_dir}}/an_db_switch_application_anim.gif){ .an-screenshots }
   <figcaption>Switch Application</figcaption>
 </figure>
-
-## Configure Session Type 
-
-{% include "./text-snippets/db_session_type.md" %}
-
-## Configure Keyspace 
-
-{% include "./text-snippets/db_keyspace.md" %}
 
 ## Monitor Usage
 
@@ -126,7 +237,7 @@ Developers can monitor their registered application usage statistics via the {{c
 
 ### Account Usage Metrics
 
-The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all the applications that are registered for a developer account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' is not billed and not included in the overall account usage statistic.
+The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer account. This is an aggregate score across all applications registered for a developer account and configured to use the {{config.extra.arcana.company_name}} Mainnet. Any application using the 'Testnet' is not billed or included in the overall account usage statistic.
 
 <figure markdown="span">
   ![App Usage Metrics]({{config.extra.arcana.img_dir}}/an_db_metrics.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -135,13 +246,13 @@ The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer a
 
 !!! an-caution
 
-      The billing data is only applicable for Mainnet usage and will be made available in the forthcoming releases.
+      The billing data only applies to Mainnet usage and will be available in the forthcoming releases.
 
 ### Usage per Application
 
-{{config.extra.arcana.company_name}} maintains per-application usage statistics separately for both the 'Testnet' and 'Mainnet' configuration profiles. 
+{{config.extra.arcana.company_name}} maintains per-application usage statistics separately for the 'Testnet' and 'Mainnet' configuration profiles. 
 
-In the *Manage Apps* dashboard screen, all registered applications are listed as cards. Each application card displays the 'Total Users' statistic. This refers to the total monthly active application users that are utilizing the {{config.extra.arcana.company_name}} Testnet/Mainnet. To view per application usage details, click on the app card and select 'Testnet' or 'Mainnet' profile to see the following statistics: 
+All registered applications are listed as cards in the *Manage Apps* dashboard screen. Each application card displays the 'Total Users' statistic. This refers to the monthly active application users utilizing the {{config.extra.arcana.company_name}} Testnet/Mainnet. To view per-application usage details, click on the app card and select 'Testnet' or 'Mainnet' profile to see the following statistics: 
 
 * Number of logged-in users 
 
@@ -167,7 +278,7 @@ Use the dropdown in the top right of the application dashboard screen to select 
 See [billing and pricing]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for details.
 -->
 
-To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't need to update the profile details including the billing information. Once the apps consume the free tier of {{config.extra.arcana.company_name}} Mainnet usage, the developer must provide the billing details via the profile section of the {{config.extra.arcana.dashboard_name}}. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any app that is registered using the developer account.
+To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't need to update the profile details, including the billing information. The developer must provide the billing details via the profile section of the {{config.extra.arcana.dashboard_name}} once the app uses up all the available free tiers of {{config.extra.arcana.company_name}} Mainnet usage. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any app that is registered using the developer account.
 
 For details on current pricing and free tier limits, contact our [[index-support|{{config.extra.arcana.company_name}} support]].
 
@@ -248,14 +359,6 @@ To pay the Arcana Network dues, developers can refer to the 'Estimated Charges' 
 </figure>
 
 -->
-
-## Configure Non-EVM Chains
-
-Use the dashboard to enable [[concept-non-evm-chains|non-EVM chains]] in your Web3 apps. 
-
-* [[solana-dashboard-user-guide|Solana]]
-* [[mvx-dashboard-user-guide|MultiversX]]
-* [[near-dashboard-user-guide|Near]]
 
 ## Delete Application
 
