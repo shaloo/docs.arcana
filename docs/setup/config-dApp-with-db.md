@@ -86,7 +86,7 @@ To view Testnet configuration settings, click the 'Testnet' button on the app ca
 
 ### Testnet
 
-To view or edit the Testnet configuration settings, browse the 'Manage Apps' screen, locate the app card and click 'Testnet'. 
+To view or edit the Testnet configuration settings, browse the 'Manage Apps' screen, locate the app card, and click 'Testnet.' 
 
 <figure markdown="span">
   <img alt="Testnet Client ID" src="{{config.extra.arcana.img_dir}}/an_deploy_testnet_dashboard.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
@@ -95,7 +95,7 @@ To view or edit the Testnet configuration settings, browse the 'Manage Apps' scr
 
 ### Mainnet
 
-Browse the 'Manage Apps' screen to find your app card. If the 'Mainnet' configuration profile exists, the 'Mainnet' button will be enabled. Click 'Mainnet' to view the application usage metrics and the 'Mainnet' profile. If the button is disabled, the 'Mainnet' profile hasn't been created yet. To create it, first view the 'Testnet' profile by clicking the app card. On the usage metrics page, find the dropdown in the top right, click it, and select 'Mainnet' to create the configuration profile.
+Browse the 'Manage Apps' screen to find your app card. If the 'Mainnet' configuration profile exists, the 'Mainnet' button will be enabled. Click 'Mainnet' to view the application usage metrics and the 'Mainnet' profile. If the button is disabled, the 'Mainnet' profile hasn't been created yet. To create it, view the 'Testnet' profile by clicking the app card. On the usage metrics page, find the dropdown in the top right, click it, and select 'Mainnet' to create the configuration profile.
 
 <figure markdown="span">
   ![Select Testnet/Mainnet Settings]({{config.extra.arcana.img_dir}}/an_db_testnet_mainnet_select.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -252,7 +252,7 @@ The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer a
 
 {{config.extra.arcana.company_name}} maintains per-application usage statistics separately for the 'Testnet' and 'Mainnet' configuration profiles. 
 
-All registered applications are listed as cards in the *Manage Apps* dashboard screen. Each application card displays the 'Total Users' statistic. This refers to the monthly active application users utilizing the {{config.extra.arcana.company_name}} Testnet/Mainnet. To view per-application usage details, click on the app card and select 'Testnet' or 'Mainnet' profile to see the following statistics: 
+The *Manage Apps* dashboard screen lists all registered applications as cards. Each application card displays the 'Total Users' statistic. This refers to the monthly active application users utilizing the {{config.extra.arcana.company_name}} Testnet/Mainnet. To view per-application usage details, click on the app card and select 'Testnet' or 'Mainnet' profile to see the following statistics: 
 
 * Number of logged-in users 
 
@@ -278,7 +278,7 @@ Use the dropdown in the top right of the application dashboard screen to select 
 See [billing and pricing]({{page.meta.arcana.root_rel_path}}/concepts/billing.md) for details.
 -->
 
-To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't need to update the profile details, including the billing information. The developer must provide the billing details via the profile section of the {{config.extra.arcana.dashboard_name}} once the app uses up all the available free tiers of {{config.extra.arcana.company_name}} Mainnet usage. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any app that is registered using the developer account.
+To begin using the {{config.extra.arcana.sdk_name}}, the app developers don't need to update the profile details, including the billing information. The developer must provide the billing details via the profile section of the {{config.extra.arcana.dashboard_name}} once the app uses up all the available free tiers of {{config.extra.arcana.company_name}} Mainnet usage. Otherwise, the registered apps will be suspended and users will not be allowed to log in to any registered app using the developer account.
 
 For details on current pricing and free tier limits, contact our [[index-support|{{config.extra.arcana.company_name}} support]].
 
@@ -293,7 +293,7 @@ Click on the user icon on the top right of the {{config.extra.arcana.dashboard_n
 
 You will see the developer's {{config.extra.arcana.company_name}} account profile details. The developer account **name** and **public identifier** (email) are automatically retrieved based on the account used to log into the {{config.extra.arcana.dashboard_name}}.
 
-Developers are required to update the following profile details and then click **Save**. 
+Developers must update the following profile details and then click **Save**. 
 
 * Organization
 * Billing Address Details
