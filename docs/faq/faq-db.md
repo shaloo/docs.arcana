@@ -51,7 +51,7 @@ toc_depth: 2
 
 ??? an-faq "How do I delete Mainnet configuration settings and run my application using {{config.extra.arcana.company_name}} Testnet only?"
 
-      Once you have enabled 'Mainnet' for an application, you cannot delete the 'Mainnet' configuration profile independently in the current release.  You can [[dashboard-user-guide#switch-profiles|switch your application from 'Mainnet' to 'Testnet']] by using the dropdown button in the application configuration screen to edit or modify it. 
+      Once you have enabled 'Mainnet' for an application, you cannot delete the 'Mainnet' configuration profile independently in the current release.  You can [[dashboard-user-guide#switch-profile|switch your application from 'Mainnet' to 'Testnet']] by using the dropdown button in the application configuration screen to edit or modify it. 
 
       The only way to delete Mainnet settings is to deregister the app and delete the app entry altogether.  This removes both Testnet and Mainnet configuration profiles. You will need to re-register the application.  This will create a new **{{config.extra.arcana.app_address}}** and you will be required to specify this new {{config.extra.arcana.app_address}} when integrating your application with the {{config.extra.arcana.sdk_name}}.  As a result, when you deploy your app and the users log in, they will see brand-new wallet addresses. 
       

@@ -69,7 +69,7 @@ When deploying an app on the {{config.extra.arcana.company_name}} Mainnet, use t
   <figcaption>Get {{config.extra.arcana.app_address}}</figcaption>
 </figure>
 
-## Configuration Profiles
+## Manage Configuration Profiles
 
 Each registered app is displayed in the 'Manage Apps' dashboard. A [[concept-config-profile|Testnet configuration profile]] is associated with each app by default. The 'Mainnet' button is disabled for a newly registered app. For Mainnet deployment, the developer must create a new Mainnet profile. 
 
