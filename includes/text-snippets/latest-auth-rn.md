@@ -33,7 +33,7 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
  
 * Added support for apps that authenticate users via [[concept-custom-auth|Custom Auth]]. Learn [[config-custom-auth|how to configure Custom Auth settings]] in the {{config.extra.arcana.dashboard_name}}. Assign keys to authenticated users for signing blockchain transactions in apps that use custom authentication servers by following these [[integrate-custom-auth|step-by-step instructions]].
 
-* New **Login Session Management** feature in the {{config.extra.arcana.dashboard_name}} allows developers to specify whether a user session persists if the browser is closed. This enhances user experience and makes session security configurable. Learn more about [[concept-session-type|supported session types]] and [[dashboard-user-guide#configure-session-type|configuration settings]].
+* New **Login Session Management** feature in the {{config.extra.arcana.dashboard_name}} allows developers to specify whether a user session persists if the browser is closed. This enhances user experience and makes session security configurable. Learn more about [[concept-session-type|supported session types]] and [[dashboard-user-guide#login-session-management|configuration settings]].
 
 * The [`UserInfo`structure](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) now provides a [[concept-did-token|DID identifier]] for user verification. The `loginToken` will be deprecated in a future release.
 

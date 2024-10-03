@@ -76,7 +76,7 @@ Click **Configure** in the LHS navigation pane of the {{config.extra.arcana.dash
 
     The login session management settings display whether the app is configured to use [[concept-session-type|persistent or non-persistent session]] (default) type. 
     
-    For the persistent session, the developers can view and update the specified time for which the authenticated user login session is persisted (in minutes). Once a user closes the browser and reopens within this specified period, the user is automatically logged in. [[dashboard-user-guide#configure-session-type|Learn more...]]
+    For the persistent session, the developers can view and update the specified time for which the authenticated user login session is persisted (in minutes). Once a user closes the browser and reopens within this specified period, the user is automatically logged in. [[dashboard-user-guide#login-session-management|Learn more...]]
     
     <figure markdown="span">
       <img alt="Session Management" src="{{config.extra.arcana.img_dir}}/an_db_session_mngt.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
