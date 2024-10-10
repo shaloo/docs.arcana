@@ -1,6 +1,6 @@
 # Login Users via Passkeys
 
-In this guide, you will learn how to integrate {{page.meta.arcana.app_type}} app with the {{config.extra.arcana.sdk_name}} and then onboard users via passkeys through custom login UI.
+In this guide, you will learn how to integrate a Web3 app with the {{config.extra.arcana.sdk_name}} and then onboard users via [[concept-auth-passkeys|passkeys]] option displayed in custom login UI.
 
 {% include "./text-snippets/warn-passkeys-no-signup.md" %}
 
