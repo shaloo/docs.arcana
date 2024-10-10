@@ -22,26 +22,14 @@ Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create 
 
 ## 2. Configure Passkeys
 
-In the 'Manage Apps' screen, click **Configure** in the LHS navigation. Select **???** and scroll down to the section **Passkeys**.
+In the 'Manage Apps' screen, click **Configure** in the LHS navigation. Select **Social Auth** and scroll down until you see the section **Passkeys** on the RHS.
 
 <figure markdown="span">
-  ![Custom Auth Nav]({{config.extra.arcana.img_dir}}/an_db_custom_auth_setup.gif){.an-screenshots}
-  <figcaption>Update Passkeys Settings(TO BE UPDATED)</figcaption>
+  ![Custom Auth Nav]({{config.extra.arcana.img_dir}}/an_db_passkey_setup.gif){.an-screenshots}
+  <figcaption>Update Passkeys Settings</figcaption>
 </figure>
 
-Provide inputs for the Passkeys settings:
-
-TO BE UPDATED once I have passkey setup details.
-
-
-* **xyz**: A string identifier representing the principal who issued the JWT.
-
-
-Click **Save** after specifying the Passkeys settings in the dashboard. 
-
-## 3. Any other Passkey specific step
-
-TBD
+Specify the **Domain** of the [[concept-auth-passkeys#passkey-usage-settings|relying party]]. **Save** the Passkeys settings in the dashboard. 
 
 ## What's Next?
 

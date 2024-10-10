@@ -1,6 +1,6 @@
 ---
 alias: concept-auth-passkeys
-title: 'Login with Passkeys'
+title: 'Login with Passkey'
 description: 'Custom verifier-based user authentication.'
 arcana:
   root_rel_path: ../..
@@ -11,7 +11,7 @@ arcana:
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Login with Passkeys
+# Login with Passkey
 
 The Passkeys Auth feature of the {{config.extra.arcana.sdk_name}} enables Web3 apps to onboard users through a biometric sensor (such as a fingerprint or facial recognition), a PIN, or a pattern supported by the OS or device where the app is running.
 
@@ -21,7 +21,7 @@ Passkeys use public key cryptography that reduces the threat from potential data
 
 ```mermaid
 graph LR
-  A\[[User]]--Create Passkeys--> D(Public/Private Key)--Store-->C>User Device/Browser];
+  A\[[User]]--Create Passkey--> D(Public/Private Key)--Store-->C>User Device/Browser];
 
 classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
 class C,D an-pink
@@ -31,21 +31,21 @@ class C,D an-pink
 
 Passkeys are intended to be used through operating system infrastructure that allows passkey managers to create, backup, and make passkeys available to the applications running on that operating system.
 
-Users aren't restricted to using the passkeys only on the device where they're available. The passkeys available on phones can be used when logging into a laptop, even if the passkey isn't synchronized to the laptop, as long as the phone is near the laptop and the user approves the sign-in on the phone.
+Users aren't restricted to using the passkey only on the device where they're available. The passkey available on phones can be used when logging into a laptop, even if the passkey isn't synchronized to the laptop, as long as the phone is near the laptop and the user approves the sign-in on the phone.
 
-Users must **create passkeys** in order to be able to log into Web3 apps using passkeys later. To create a passkey for a website or application, a user must **first** signup with that website or application and follow up steps to create a passkey for that website or application. The passkeys are linked or bound to the app or website.
+Users must **create passkey** in order to be able to log into Web3 apps using passkeys on subsequent logins. To create a passkey for a website or application, a user must **first** signup with that website or application and follow up steps to create a passkey for that website or application. Each passkey is linked or bound to the app or website.
 
 ```mermaid
 graph LR
 
   A\[[User on Device/Browser]]--1.App login--> K>App/Website];
-  A--2.Create/Link Passkeys-->D(Public Key)--Store-->K;
+  A--2.Create/Link Passkey-->D(Public Key)--Store-->K;
 
 classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
 class D an-pink
 ```
 
-After setting up passkeys for an account, on subsequent log in to the website or app, user can choose passkeys option to sign in. When signing in via passkeys, the browser or operating system will prompt them to select and use the right passkey. To validate and ensure that the rightful owner uses a passkey, the operating system will ask users to unlock their device before supplying the passkey for authentication.
+After setting up passkey for an account, on subsequent log in to the website or app, user can choose passkeys option to sign in. When signing in via passkeys, the browser or operating system will prompt them to select and use the right passkey. To validate and ensure that the rightful owner uses a passkey, the operating system will ask users to unlock their device before supplying the passkey for authentication.
 
 ```mermaid
 graph LR
@@ -65,7 +65,7 @@ Passkeys do not expire but they can be deleted and new ones created, if required
 
 ## Authentication Flow
 
-1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then configure [Passkeys Usage Settings](#custom-auth-settings) in the dashboard.
+1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then configure [Passkey Usage Settings](#passkey-usage-settings) in the dashboard.
 
     ```mermaid
     graph TD
@@ -108,8 +108,12 @@ Passkeys do not expire but they can be deleted and new ones created, if required
         BEC <--> BEA[Arcana Auth Protocol] <--> BEDKG[DKG]
     ```
 
-## Passkeys Usage Settings
+## Passkey Usage Settings
 
-The following Passkeys Usage Settings can be specified via the {{config.extra.arcana.dashboard_name}}. 
+To enable passkey login for an app, as part of configuration settings, the developer must use the {{config.extra.arcana.sdk_name}} and specify the **Domain** of the relying party. The domain is typically a CNAME or vanity URL.
 
-### TBD
+!!! an-tip "Relying Party"
+
+      The relying party is the website or Web3 app that allows user to create passkeys or authenticate with passkeys.
+
+When a user enrolls a passkey, it associates with the relying party domain. If the domain name changes at any time, all of the passkeys associated with the old domain become invalid.

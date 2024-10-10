@@ -1,5 +1,3 @@
-!!! an-caution
+!!! an-caution "Passkeys Login vs. Sign-up"
 
-        Apps using {{config.extra.arcana.sdk_name}} can let users log in with passkeys, but not sign up with them.
-
-        Apps must offer sign-up or login through traditional methods (social login, passwordless, etc.). After logging in, users can set up a passkey for future logins. Once that’s done, they can choose the "login via passkeys" option next time they log in.
+      Apps using {{config.extra.arcana.sdk_name}} can enable passkey logins, but only after a user logs in to the app and creates, links passkeys for the app. Users must first sign up or log in using traditional methods (social login, passwordless, etc.) since passkeys aren’t available for initial login. After setting up passkeys, they can use the "login via passkeys" option for future logins.
