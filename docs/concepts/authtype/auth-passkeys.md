@@ -13,15 +13,15 @@ arcana:
 
 # Passkey Auth
 
-The Passkeys Auth feature of the {{config.extra.arcana.sdk_name}} enables Web3 apps to onboard users through a biometric sensor (such as a fingerprint or facial recognition), a PIN, or a pattern supported by the OS or device where the app is running.
-
 Passkey is a digital credential that binds a user account with a website or application.
 
 Passkeys use public key cryptography that reduces the threat from potential data breaches. They are safer than passwords as they reduce the attack surface. Since passkeys are uniquely generated for every account by the user device and work only on the registered websites and apps, they are less vulnerable to phishing.
 
+The Passkeys Auth feature in the {{config.extra.arcana.sdk_name}} lets Web3 apps to onboard users through a biometric sensor (such as a fingerprint or facial recognition), a PIN, or a pattern supported by the OS or device where the app is running.
+
 ```mermaid
 graph LR
-  A\[[User]]--Create Passkey--> D(Public/Private Key)--Store-->C>User Device/Browser];
+  A\[[User]]--Create Passkey--> D(Public/Private Key)--Store-->C>Browser/User Device];
 
 classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
 class C,D an-pink
@@ -33,7 +33,7 @@ Passkeys are based on [FIDO standards](https://en.wikipedia.org/wiki/FIDO_Allian
 
 Note that when logging in to an app via a passkey, there is no biometric information or any sensitive information that is shared with the associated website for authentication. Also, passkeys by themselves do not allow tracking of users or devices across sites. Passkeys use public key cryptography. A public–private key pair is generated when a user creates a passkey for a site or application. This is generated on the user's device. Only the public key is stored by the site. Device based passkey managers protect passkeys from unauthorized access and use. 
 
-Passkeys do not expire but they can be deleted and new ones created, if required.
+Passkeys do not expire but they can be unlinked/deleted and new ones linked/created, if required.
 
 ## How do Passkeys Work?
 
@@ -65,11 +65,13 @@ Apps that support only passkey auth can go all-in on this option. Users can sign
 ```mermaid
 graph LR
 
-  A\[[User on Device/Browser]]--1.App Sign-up & login--> K>App/Website]--2.Create/Link Passkey-->D(Public Key)--Store-->K;
-  A--App Login-->Select Passkey-->K;
+  U\[[User on Device/Browser]] --1a.App Sign-up/Register Passkey--> K>App/Website];
+  U --1b.Create Passkey--> PK(Public/Private Key)-->U;
+  U --Store Public Key--> K
+  U --2.Login with Passkey--> K --> L((User Authenticated));
 
-classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-class D an-pink
+  classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
+  class L an-pink
 ```
 
 For subsequent app logins, the browser or operating system will prompt the user to select and use one of the passkeys linked with the app. To validate and ensure that the rightful owner uses a passkey, the operating system may ask users to unlock their device before supplying the passkey for authentication.
@@ -83,12 +85,13 @@ Users need to sign up and log in using a different method before they can enable
 ```mermaid
 graph LR
 
-  A\[[User on Device/Browser]]--1.App Login--> K>App/Website];
-  A--2.Create/Link Passkey-->D(Public Key)--Store-->K;
-  A--App Login-->Select Passkey-->K;
+  U\[[User on Device/Browser]]--1.App Login (non-passkey)-->K>App/Website];
+  U--2.Create/Link Passkey-->PK(Public/Private Key)-->U;
+  U--Store Public Key-->K
+  U--3.Login with Passkey-->K-->L((User Authenticated));
 
-classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-class D an-pink
+  classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
+  class L an-pink
 ```
 
 After setting up passkey for an account, on the subsequent log in attempt to the website or app, passkeys can be used. When signing in via passkeys, the browser or operating system will prompt the user to select one of the passkey associated with the app or website. To validate and ensure that the rightful owner uses a passkey, the operating system may ask users to unlock their device before supplying the passkeys list to choose from.
@@ -110,16 +113,17 @@ After setting up passkey for an account, on the subsequent log in attempt to the
         class CLID an-pink
 
     ```
-2. Install {{config.extra.arcana.sdk_name}}, integrate app with the SDK, initialize `AuthProvider` and then use `loginWithPasskeys()` method.
+2. Install {{config.extra.arcana.sdk_name}}, integrate it with your app, and initialize `AuthProvide`r. Choose the passkey onboarding option that fits your needs: use `registerWithPasskey()` for [[concept-auth-passkeys#sign-up-login|sign-up with passkey]] option or `linkPasskey()` for using passkey as an [[concept-auth-passkeys#alternate-login|alternate login]]. Then, log in users with   `loginWithPasskeys()`.
 
     ```mermaid
     graph TD
-        DFLA{{Developer}} --install --> authsdk
-        DFLA --ClientID -->AUTHP
-        DFLA -->COA
+        DFLA{{Developer}} --1. Install --> authsdk
+        DFLA --2. ClientID -->AUTHP
+        DFLA --3. Select Sign-up/Alternate Login Passkey Onboarding -->POP -->COA
         subgraph app[App]
             AUTHP[Create/Init AuthProvider] --> authsdk
-            COA[Call loginWithPasskeys] --> authsdk
+            COA[B. Call loginWithPasskeys] --> authsdk
+            POP[A. Call registerWithPasskey/linkPasskey]
             subgraph authsdk[Arcana Auth SDK]
             direction TB 
                 SDK1[AuthProvider Interface] 

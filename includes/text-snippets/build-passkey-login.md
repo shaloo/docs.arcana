@@ -1,6 +1,6 @@
 # Login Users via Passkeys
 
-In this guide, you will learn how a Web3 app integrated with the {{config.extra.arcana.sdk_name}} can let users set up [[concept-auth-passkeys|passkeys]] as an [[concept-auth-passkeys#passkey-usage-options|alternative login option]].
+In this guide, you will learn how a Web3 app integrated with the {{config.extra.arcana.sdk_name}} can let users set up [[concept-auth-passkeys|passkeys]] as an [[concept-auth-passkeys#alternate-login|alternative login option]].
 
 ## Prerequisites
 
