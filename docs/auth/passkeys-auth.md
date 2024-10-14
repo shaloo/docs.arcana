@@ -8,4 +8,11 @@ arcana:
   app_example_submodule: "`sample-auth-passkey-oauth`"
 ---
 
-{% include "./text-snippets/build-passkeys-auth.md" %}
+Apps using {{config.extra.arcana.sdk_name}} can either enable passkeys as an alternative login method or let new users sign up using passkeys.
+
+1. Sign-up: To sign up with passkeys, use registerWithPasskey(), followed by loginWithPasskey() to sign up and log in in one step. The user must provide a unique identifier—this could be a name, email, device ID, biometric data, PIN, or pattern. This sign-up flow is ideal for apps that only allow passkey onboarding.
+
+2. Log-in: To use passkeys as an alternative login, users first need to onboard through another method, like social login. Once logged in, they can set up a passkey for future logins. Use `linkPasskey()` to create and associate passkey with the app or website. Next time, when user chooses passkey option to log in, the app can call `loginWithPasskey()`, triggering the device or browser to display a UI where the user can choose the previously set passkey. This flow works best for apps that support multiple onboarding methods.
+
+[[onboard-passkey-signup| :material-note-text:{ .icon-color } Sign-up & Login]]{ .md-button }
+[[onboard-passkey-login| :material-note-text:{ .icon-color } Login with Passkey]]{ .md-button }

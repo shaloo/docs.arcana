@@ -1,8 +1,6 @@
 # Login Users via Passkeys
 
-In this guide, you will learn how to integrate a Web3 app with the {{config.extra.arcana.sdk_name}} and then onboard users via [[concept-auth-passkeys|passkeys]] option displayed in custom login UI.
-
-{% include "./text-snippets/warn-passkeys-no-signup.md" %}
+In this guide, you will learn how a Web3 app integrated with the {{config.extra.arcana.sdk_name}} can let users set up [[concept-auth-passkeys|passkeys]] as an [[concept-auth-passkeys#passkey-usage-options|alternative login option]].
 
 ## Prerequisites
 
@@ -13,7 +11,7 @@ In this guide, you will learn how to integrate a Web3 app with the {{config.extr
 
 ## Steps
 
-*Enabling login via passkeys in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} requires the user to first log in / sign-up via a non-passkeys option supported by the app. After the first log in, user must set up passkeys and bind them to the app, then log out. On subsequent app login, user can choose the passkey option to onboard the app!*
+*Enabling passkeys as an alternative login for users in a Web3 app integrated with the {{config.extra.arcana.sdk_name}} is siple!*
 
 ### 1. Authenticate User
 
@@ -33,25 +31,13 @@ After passkeys are set for the app, the `getMyPasskeys` can be called in the aut
 
 {% include "./code-snippets/auth_passkey_getlist.md" %}
 
-### EnablePasskey Login
+### Enable Passkey Login
 
 Once passkeys are set up by the user, enable a 'login with passkey' option in the custom login UI of the app. When a user chooses this option to log in, call `loginWithPasskey`. This will bring up the device specific UI to display a list of passkeys and let the user select one to onboard the app.
 
 {% include "./code-snippets/auth_passkey_login.md" %}
 
-### List Passkeys
-
-In the authenticated user's context, call `getMyPasskeys` to list all the user passkeys associated with the app.
-
-{% include "./code-snippets/auth_passkey_getlist.md" %}
-
-### Unlink Passkeys
-
-Apps can allow users to unlink the passkeys associated with an app. 
-
-To do this, call `getMyPasskeys`in the authenticated user's context. This will list all the passkeys associated with the app. Let the user select a passkey. Specify the id of the selected passkey and call `unlinkPasskey(id)`. This will ensure that on subsequent login attempts, user cannot onboard the app with the unlinked passkey.
-
-{% include "./code-snippets/auth_passkey_unlink.md" %}
+{% include "./text-snippets/passkey_others.md" %}
 
 **That is all!**  :material-party-popper:
 

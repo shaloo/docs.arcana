@@ -18,6 +18,7 @@ Web3 apps using the {{config.extra.arcana.sdk_name}} can authenticate users via 
 
 * [Social Login Providers]({{page.meta.arcana.root_rel_path}}/concepts/authtype/socialauth.md)
 * [Custom Auth]({{page.meta.arcana.root_rel_path}}/concepts/authtype/custom-auth.md)
+* [Passkey Auth]({{page.meta.arcana.root_rel_path}}/concepts/authtype/auth-passkeys.md)
 
 !!! an-note "User Key Security & Privacy"
 

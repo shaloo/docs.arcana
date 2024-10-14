@@ -482,7 +482,7 @@ nav:
               - setup/config-idm/index.md
               - Cognito: setup/config-idm/cognito-oauth.md
               - Firebase: setup/config-idm/firebase-auth.md
-            - Passkeys Login: setup/config-auth-passkeys.md
+            - Passkeys Auth: setup/config-auth-passkeys.md
             - Custom Auth: setup/config-custom-auth.md
           - Manage Gasless: setup/configure-gasless.md    
           - Manage Chains: 
@@ -611,7 +611,10 @@ nav:
         - Advanced:
           - Custom Wallet UI: auth/custom-wallet-ui.md
           - Custom Auth: auth/custom-auth.md
-          - Passkeys Login: auth/passkeys-auth.md
+          - Passkey Auth: 
+            - auth/passkeys-auth.md
+            - Sign-Up & Login: auth/onboard/passkey-auth/passkey-signup.md
+            - Login: auth/onboard/passkey-auth/passkey-login.md
           - Auth-Core SDK: quick-start/auth-core-quick-start.md
       - Gasless SDK: 
         - Install: gasless/gasless-install.md

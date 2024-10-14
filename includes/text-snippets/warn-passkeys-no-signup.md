@@ -1,3 +1,0 @@
-!!! an-caution "Passkeys Login vs. Sign-up"
-
-      Apps using {{config.extra.arcana.sdk_name}} can enable passkey logins, but only after a user logs in to the app and creates, links passkeys for the app. Users must first sign up or log in using traditional methods (social login, passwordless, etc.) since passkeys aren’t available for initial login. After setting up passkeys, they can use the "login via passkeys" option for future logins.

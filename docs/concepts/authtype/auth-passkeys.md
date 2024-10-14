@@ -1,7 +1,7 @@
 ---
 alias: concept-auth-passkeys
-title: 'Login with Passkey'
-description: 'Custom verifier-based user authentication.'
+title: 'Passkey Auth'
+description: 'Passkey based user authentication.'
 arcana:
   root_rel_path: ../..
   app_type: "'Custom Auth'"
@@ -11,7 +11,7 @@ arcana:
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Login with Passkey
+# Passkey Auth
 
 The Passkeys Auth feature of the {{config.extra.arcana.sdk_name}} enables Web3 apps to onboard users through a biometric sensor (such as a fingerprint or facial recognition), a PIN, or a pattern supported by the OS or device where the app is running.
 
@@ -27,25 +27,21 @@ classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
 class C,D an-pink
 ```
 
+## Security & Privacy
+
+Passkeys are based on [FIDO standards](https://en.wikipedia.org/wiki/FIDO_Alliance), they work on Android, Chrome, Microsoft Windows, Microsoft Edge, MacOS, iOS and Safari.
+
+Note that when logging in to an app via a passkey, there is no biometric information or any sensitive information that is shared with the associated website for authentication. Also, passkeys by themselves do not allow tracking of users or devices across sites. Passkeys use public key cryptography. A public–private key pair is generated when a user creates a passkey for a site or application. This is generated on the user's device. Only the public key is stored by the site. Device based passkey managers protect passkeys from unauthorized access and use. 
+
+Passkeys do not expire but they can be deleted and new ones created, if required.
+
 ## How do Passkeys Work?
 
 Passkeys are intended to be used through operating system infrastructure that allows passkey managers to create, backup, and make passkeys available to the applications running on that operating system.
 
+Each passkey is linked or bound to the app or website.
+
 Users aren't restricted to using the passkey only on the device where they're available. The passkey available on phones can be used when logging into a laptop, even if the passkey isn't synchronized to the laptop, as long as the phone is near the laptop and the user approves the sign-in on the phone.
-
-Users must **create passkey** in order to be able to log into Web3 apps using passkeys on subsequent logins. To create a passkey for a website or application, a user must **first** signup with that website or application and follow up steps to create a passkey for that website or application. Each passkey is linked or bound to the app or website.
-
-```mermaid
-graph LR
-
-  A\[[User on Device/Browser]]--1.App login--> K>App/Website];
-  A--2.Create/Link Passkey-->D(Public Key)--Store-->K;
-
-classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
-class D an-pink
-```
-
-After setting up passkey for an account, on subsequent log in to the website or app, user can choose passkeys option to sign in. When signing in via passkeys, the browser or operating system will prompt them to select and use the right passkey. To validate and ensure that the rightful owner uses a passkey, the operating system will ask users to unlock their device before supplying the passkey for authentication.
 
 ```mermaid
 graph LR
@@ -55,17 +51,51 @@ graph LR
     M -.-> V{Challenge Match}==Yes==>M--4.User Authenticated-->L
 ```
 
-## Security & Privacy
+## Passkey Usage Options
 
-Passkeys are based on [FIDO standards](https://en.wikipedia.org/wiki/FIDO_Alliance), they work on Android, Chrome, Microsoft Windows, Microsoft Edge, MacOS, iOS and Safari.
+Apps can enable passkey authentication for onboarding in two ways:
 
-Note that when signing in via a passkey, there is no biometric information or any sensitive information that is shared with the associated website for authentication. Also, passkeys by themselves do not allow tracking of users or devices across sites. Passkeys use public key cryptography. A public–private key pair is generated when a user creates a passkey for a site or application. This is generated on the user's device. Only the public key is stored by the site. Device based passkey managers protect passkeys from unauthorized access and use. 
+* Use passkeys for **sign-up & login**
+* Offer passkeys as an **alternate login** method
 
-Passkeys do not expire but they can be deleted and new ones created, if required.
+### Sign-up & Login
 
-## Authentication Flow
+Apps that support only passkey auth can go all-in on this option. Users can sign up, create an account, and set up passkey login all in one go—no need for any other login method.
 
-1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then configure [Passkey Usage Settings](#passkey-usage-settings) in the dashboard.
+```mermaid
+graph LR
+
+  A\[[User on Device/Browser]]--1.App Sign-up & login--> K>App/Website]--2.Create/Link Passkey-->D(Public Key)--Store-->K;
+  A--App Login-->Select Passkey-->K;
+
+classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
+class D an-pink
+```
+
+For subsequent app logins, the browser or operating system will prompt the user to select and use one of the passkeys linked with the app. To validate and ensure that the rightful owner uses a passkey, the operating system may ask users to unlock their device before supplying the passkey for authentication.
+
+### Alternate Login
+
+Apps with multiple onboarding options only let users log in with passkeys after they’ve first used another login method and set up passkeys for future use.
+
+Users need to sign up and log in using a different method before they can enable passkeys for future logins. Keep in mind, passkeys can’t be used for the initial sign-up.
+
+```mermaid
+graph LR
+
+  A\[[User on Device/Browser]]--1.App Login--> K>App/Website];
+  A--2.Create/Link Passkey-->D(Public Key)--Store-->K;
+  A--App Login-->Select Passkey-->K;
+
+classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
+class D an-pink
+```
+
+After setting up passkey for an account, on the subsequent log in attempt to the website or app, passkeys can be used. When signing in via passkeys, the browser or operating system will prompt the user to select one of the passkey associated with the app or website. To validate and ensure that the rightful owner uses a passkey, the operating system may ask users to unlock their device before supplying the passkeys list to choose from.
+
+## Passkey Configuration
+
+1. Log in to the {{config.extra.arcana.dashboard_name}} and register the app to get a unique  {{config.extra.arcana.app_address}}. Then configure [domain](#domain) setting in the dashboard.
 
     ```mermaid
     graph TD
@@ -108,7 +138,7 @@ Passkeys do not expire but they can be deleted and new ones created, if required
         BEC <--> BEA[Arcana Auth Protocol] <--> BEDKG[DKG]
     ```
 
-## Passkey Usage Settings
+### Domain
 
 To enable passkey login for an app, as part of configuration settings, the developer must use the {{config.extra.arcana.sdk_name}} and specify the **Domain** of the relying party. The domain is typically a CNAME or vanity URL.
 
