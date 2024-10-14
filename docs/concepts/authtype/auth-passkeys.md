@@ -113,16 +113,17 @@ After setting up passkey for an account, on the subsequent log in attempt to the
         class CLID an-pink
 
     ```
-2. Install {{config.extra.arcana.sdk_name}}, integrate it with your app, and initialize `AuthProvide`r. Choose the passkey onboarding option that fits your needs: use `registerWithPasskey()` for [[concept-auth-passkeys#sign-up-login|sign-up|sign-up with passkey]] option or `linkPasskey()` for using passkey as an [[concept-auth-passkeys#alternate-login|alternate login]]. Then, log in users with   `loginWithPasskeys()`.
+2. Install {{config.extra.arcana.sdk_name}}, integrate it with your app, and initialize `AuthProvide`r. Choose the passkey onboarding option that fits your needs: use `registerWithPasskey()` for [[concept-auth-passkeys#sign-up-login|sign-up with passkey]] option or `linkPasskey()` for using passkey as an [[concept-auth-passkeys#alternate-login|alternate login]]. Then, log in users with   `loginWithPasskeys()`.
 
     ```mermaid
     graph TD
-        DFLA{{Developer}} --install --> authsdk
-        DFLA --ClientID -->AUTHP
-        DFLA -->COA
+        DFLA{{Developer}} --1. Install --> authsdk
+        DFLA --2. ClientID -->AUTHP
+        DFLA --3. Select Sign-up/Alternate Login Passkey Onboarding -->POP -->COA
         subgraph app[App]
             AUTHP[Create/Init AuthProvider] --> authsdk
-            COA[Call loginWithPasskeys] --> authsdk
+            COA[B. Call loginWithPasskeys] --> authsdk
+            POP[A. Call registerWithPasskey/linkPasskey]
             subgraph authsdk[Arcana Auth SDK]
             direction TB 
                 SDK1[AuthProvider Interface] 

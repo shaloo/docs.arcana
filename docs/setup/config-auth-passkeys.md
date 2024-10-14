@@ -29,7 +29,7 @@ In the 'Manage Apps' screen, click **Configure** in the LHS navigation. Select *
   <figcaption>Update Passkeys Settings</figcaption>
 </figure>
 
-Specify the **Domain** of the [[concept-auth-passkeys#passkey-usage-settings|relying party]]. **Save** the Passkeys settings in the dashboard. 
+Specify the **Domain** of the [[concept-auth-passkeys#domain|relying party]]. **Save** the Passkeys settings in the dashboard. 
 
 ## What's Next?
 
