@@ -20,6 +20,12 @@ toc_depth: 2
       Besides social login, {{config.extra.arcana.sdk_name}} allows Web3 app users to log in with third-party Web3 wallets. 
       
       Apps using wallet connectors, [[wagmi-quick-start|Wagmi]], and [[rainbowkit-quick-start|RainbowKit]], [[web3-react-quick-start|Web3-React]], and [[walletconnect-quick-start|WalletConnect]] SDKs can enable {{config.extra.arcana.wallet_name}} to sign blockchain transactions and support gasless transactions.
+
+??? an-faq "Is social login Microsoft account or Hotmail supported?"
+
+      No.
+
+      {{config.extra.arcana.sdk_name}} does not support passwordless login through a Hotmail account. Also users cannot log in using Microsoft accounts.
       
 ??? an-faq "Can a Web3 app use the {{config.extra.arcana.sdk_name}} only for onboarding users and disable the {{config.extra.arcana.wallet_name}} feature altogether?"
 
