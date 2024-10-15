@@ -25,11 +25,16 @@ Log into the {{config.extra.arcana.dashboard_name}} to register the app. Create 
 In the 'Manage Apps' screen, click **Configure** in the LHS navigation. Select **Social Auth** and scroll down until you see the section **Passkeys** on the RHS.
 
 <figure markdown="span">
-  ![Custom Auth Nav]({{config.extra.arcana.img_dir}}/an_db_passkey_setup.gif){.an-screenshots}
-  <figcaption>Update Passkeys Settings</figcaption>
+  ![Passkey Auth Nav]({{config.extra.arcana.img_dir}}/an_db_passkey_setup.{{config.extra.arcana.img_gif}}){.an-screenshots}
+  <figcaption>Navigate to Passkey Auth Settings</figcaption>
 </figure>
 
 Specify the **Domain** of the [[concept-auth-passkeys#domain|relying party]]. **Save** the Passkeys settings in the dashboard. 
+
+<figure markdown="span">
+  ![Specify Domain]({{config.extra.arcana.img_dir}}/an_db_passkey_domain.{{config.extra.arcana.img_png}}){.an-screenshots}
+  <figcaption>Specify Domain</figcaption>
+</figure>
 
 ## What's Next?
 
