@@ -287,6 +287,12 @@ For a complete sample app that addresses polyfill issues - refer to [sources in 
 
       If you choose to specify the optional `network` parameter as 'testnet' while instantiating the `AuthProvider`, then make sure you specify the **{{config.extra.arcana.app_address}}** corresponding to the 'Testnet' configuration profile of the app as displayed in the {{config.extra.arcana.dashboard_name}}.
 
+??? an-trbs "User used Hotmail address for passwordless login. No email with OTP was received."
+
+    The {{config.extra.arcana.sdk_name}} does not support passwordless user login via Hotmail. Use other social login providers or Google email for passwordless authentication. 
+    
+    Also, user login via Microsoft accounts is not supported in the current release.
+
 ??? an-trbs "Error: Wallet is not initialized."
 
       **Issue**
