@@ -1,88 +1,111 @@
 ---
 alias: arcana-wallet-user-guide
-title: 'Arcana Wallet Features'
+title: 'Basic Wallet Operations'
 description: 'Arcana Wallet UI Usage Guide. Learn how to use the wallet for signing blockchain transactions, switching chains and more.'
 arcana:
   root_rel_path: ../..
 ---
 
-# Using the Wallet
+# Basic Wallet Operations
 
-Learn about the basic Web3 operations supported by the {{config.extra.arcana.wallet_name}} UI.
+This guide covers basic {{config.extra.arcana.wallet_name}} operations that are accessible through the user interface.
 
-## View Wallet
+!!! an-note "{{config.extra.arcana.wallet_name}} Access"
 
-To view the  {{config.extra.arcana.wallet_name}} , log into the app and click on the wallet icon to maximize the wallet screen. Only authenticated users can access the wallet and sign blockchain transactions. 
+      Users can access {{config.extra.arcana.wallet_name}} from within the app's browser context. The app must be integrated with the {{config.extra.arcana.sdk_name}} to enable {{config.extra.arcana.wallet_name}} for the user.
+
+## Minimize/Maximize UI 
+
+Right after a user authenticates, the wallet is displayed in its minimized state.
+
+<img class="an-screenshots-noeffects" src="{{config.extra.arcana.img_dir}}/an_wallet_min_light.{{config.extra.arcana.img_png}}#only-dark" width="15%"/><img class="an-screenshots-noeffects" src="{{config.extra.arcana.img_dir}}/an_wallet_min_dark.{{config.extra.arcana.img_png}}#only-light" width="15%"/>
+
+On clicking, it expands to display the wallet in its maximized state. It can be minimized again by clicking the '∨' icon on the top in the wallet UI. 
+
+<img class="an-screenshots-noeffects" src="{{config.extra.arcana.img_dir}}/an_wallet_max_light.{{config.extra.arcana.img_png}}#only-dark" width="35%"/><img class="an-screenshots-noeffects" src="{{config.extra.arcana.img_dir}}/an_wallet_max_dark.{{config.extra.arcana.img_png}}#only-light" width="35%"/>
+
+## Switch Wallet Tabs
+
+The following functions can be accessed from any of the wallet tabs:
+
+* View the dApp name, logo
+* View wallet address and type
+* View/Switch/Add Blockchain Network
+* Copy wallet address
+* Display QR code for the wallet
+
+Other wallet features can be accessed via specific tabs in the wallet UI:
+
+=== "Wallet Balance"
+
+    This is the default home tab of the {{config.extra.arcana.wallet_name}}: <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/>
+
+    It displays the wallet token balance across available chains. User can switch chains, send cryptocurrency and tokens, buy/sell cryptocurrency and manage ERC-20 tokens.  See [#view-wallet-balance]('View Wallet Balance') for details.
+
+    <figure markdown="span">
+      <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_home_tokens.{{config.extra.arcana.img_png}}" alt="Wallet Balance Home Tab"/>
+      <figcaption>Wallet Home: Token Balance</figcaption>
+    </figure>
+
+=== "NFT Assets"
+
+    Use this tab to view the NFT assets linked with your {{config.extra.arcana.wallet_name}} on the selected chain: <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/>
+
+    See [[use-wallet-to-manage-nfts| :material-image-multiple:{ .icon-color } how to manage NFTs]], for details.
+
+    <figure markdown="span">
+      <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_nft_assets.{{config.extra.arcana.img_png}}" alt="View NFT Assets"/>
+      <figcaption>View NFT Assets</figcaption>
+    </figure>
+
+=== "User Profile"
+
+    View your user profile details associated with the {{config.extra.arcana.wallet_name}} in this tab: <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/>
+
+    You can view wallet address, export private keys, check MFA status (or enable it) and log out of the wallet through this tab. 
+    
+    See [[use-wallet-to-export-keys| :material-key-chain:{ .icon-color } how to export private keys]] for details.
+
+    !!! an-tip "Multi-Factor Authentication (MFA)"
+    
+          MFA is a one-time setting. See [[mfa-user-guide| :material-key-chain:{ .icon-color } how to ensable MFA]], for details.
+
+    <figure markdown="span">
+      <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_profile_tab.{{config.extra.arcana.img_png}}" alt="View wallet User Profile"/>
+      <figcaption>View Wallet User Profile</figcaption>
+    </figure>
+
+=== "Activity"
+
+    Check your {{config.extra.arcana.wallet_name}} activities through the activity tab: <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/>
+
+    It shows the wallet activity, transactions processed in the current user login session. [[arcana-wallet-user-guide#transaction-activity|Learn more...]]
+
+    <figure markdown="span">
+      <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_activity.{{config.extra.arcana.img_gif}}" alt="View Wallet Activity"/>
+      <figcaption>View Wallet Activity</figcaption>
+    </figure>
+
+## View Wallet Balance
+
+### View/Switch Account Type
+
+By default, a traditional Externally Owned Account (EoA) type account is associated with the user's wallet.
+
+If the app developer has enabled gasless transactions for the current active chain in the wallet, then the user account is associated with two addresses, EoA and Smart Contract Wallet (SCW) address. 
+
+The wallet UI displays the [[concept-wallet-switch-account-type|account type]] next to the wallet address.
 
 <figure markdown="span">
-  <img class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_wallet_min_light_vanilla.gif#only-dark" alt="Arcana Wallet"/><img class="an-screenshots width_85pc" src="{{config.extra.arcana.img_dir}}/an_wallet_min_dark_vanilla.gif#only-light" alt="In-app Arcana Wallet"/>
-  <figcaption>In-app Arcana Wallet</figcaption>
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_scw_account_type.{{config.extra.arcana.img_png}}" alt="View Account Type"/>
+  <figcaption>View Account Type</figcaption>
 </figure> 
 
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_home.{{config.extra.arcana.img_png}}" alt="Arcana Wallet"/>
-  <figcaption>Arcana Wallet</figcaption>
-</figure> 
-
-## Key Features
-
-Access various wallet features through the following tabs in the wallet UI:
-
-**Tabs**
-
-* <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> Token Assets Tab 
-* <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_nft_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> NFT Assets Tab
-* <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> User Profile Tab
-* <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> Activity Tab
-
-**Tab Actions**
-
-{% include "./text-snippets/wallet_features.md" %}
-
-<!---
-## Starter Tips
-
-Upon first logging into the app integrated with the {{config.extra.arcana.sdk_name}}, the wallet starter tips activate automatically for each authenticated user.
-
-The starter tips showcase different wallet screens. It demonstrates various screen elements for accessing wallet features. Users can navigate the tips using the *Next* and *Previous* buttons at the bottom of the wallet screen. Users can access the wallet home screen by using the _Skip_ button at the top right.
+Click on the arrow next to the wallet address to switch the account type between EoA/SCW. Switching of account type is not possible for chains that do not support gasless transactions. 
 
 <figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_starter_tips.gif" alt="Wallet Starter Tips"/>
-  <figcaption>Wallet Starter Tips</figcaption>
-</figure> 
--->
-
-### Sign Transaction
-
-A blockchain sign transaction notification can be triggered programmatically via the app or in response to a user action in the {{config.extra.arcana.wallet_name}} UI. Users can scroll through the notification to view the details before selecting **Reject** or **Approve** option.
-
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_85pc" src="{{config.extra.arcana.img_dir}}/an_wallet_personalsign.{{config.extra.arcana.img_png}}" alt="Sign Transactions"/>
-  <figcaption>Sign Transactions</figcaption>
-</figure> 
-
-### Speed Up Transaction
-
-For every blockchain transaction, users pay gas fees with the network’s native token. It is possible to speed up the transaction by paying higher gas fees. When issuing a send transaction through the {{config.extra.arcana.wallet_name}} UI, users have three options for gas fees selection:
-
-* **Normal**: Default network gas fees
-* **Fast**: Pay a premium for quicker transactions
-* **Custom**: Choose gas limits, priority fee and max gas fees setting and customize fees
-
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_speedup.{{config.extra.arcana.img_gif}}" alt="Speedup Transactions"/>
-  <figcaption>Speed up Transactions</figcaption>
-</figure> 
-
-### Pending Transactions
-
-When a transaction notification appears, the user can click 'Do this later' to ignore it. Pending transactions are marked with a red dot in the 'Activity' tab and on the minimized wallet icon.
-
-Once the user addresses the notification, it disappears from the 'Activity' tab.
-
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_pending_sign_anim.gif" alt="Pending Transactions"/>
-  <figcaption>Pending Transactions</figcaption>
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_switch_account_type.{{config.extra.arcana.img_gif}}" alt="Switch Account Type"/>
+  <figcaption>Switch Account Type</figcaption>
 </figure> 
 
 ### Add/Select a Network
@@ -123,23 +146,77 @@ Choose one of the available networks in the pre-configured blockchain networks l
   <figcaption>Switch Network</figcaption>
 </figure> 
 
-### View/Switch Account Type
+### Sign Transaction
 
-If the current active blockchain in the wallet supports gasless transactions and the app developer has configured gasless transactions, then each user account is associated with two addresses, EoA and SCW. 
-
-The [[concept-wallet-switch-account-type|account type]] is mentioned under the wallet address.
+A blockchain sign transaction notification can be triggered programmatically via the app or in response to a user action in the {{config.extra.arcana.wallet_name}} UI. Users can scroll through the notification to view the details before selecting **Reject** or **Approve** option.
 
 <figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_scw_account_type.{{config.extra.arcana.img_png}}" alt="View Account Type"/>
-  <figcaption>View Account Type</figcaption>
+  <img class="an-screenshots-noeffects width_85pc" src="{{config.extra.arcana.img_dir}}/an_wallet_personalsign.{{config.extra.arcana.img_png}}" alt="Sign Transactions"/>
+  <figcaption>Sign Transactions</figcaption>
 </figure> 
 
-Click on the arrow next to the wallet address to switch the account type between EoA/SCW. Switching of account type is not possible for chains that do not support gasless transactions. 
+### Speed Up Transaction
+
+For every blockchain transaction, users pay gas fees with the network’s native token. It is possible to speed up the transaction by paying higher gas fees. When issuing a send transaction through the {{config.extra.arcana.wallet_name}} UI, users have three options for gas fees selection:
+
+* **Normal**: Default network gas fees
+* **Fast**: Pay a premium for quicker transactions
+* **Custom**: Choose gas limits, priority fee and max gas fees setting and customize fees
 
 <figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_switch_account_type.{{config.extra.arcana.img_gif}}" alt="Switch Account Type"/>
-  <figcaption>Switch Account Type</figcaption>
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_speedup.{{config.extra.arcana.img_gif}}" alt="Speedup Transactions"/>
+  <figcaption>Speed up Transactions</figcaption>
 </figure> 
+
+### Transaction Details
+
+If a blockchain transaction is triggered via the app that requires the user's approval, the user will see a transaction notification. If the wallet was in a minimized state at the time the request was generated, then the notification will show up with a summary of the transaction along with the buttons to approve or reject. 
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_smtx_sign_msg.{{config.extra.arcana.img_png}}" alt="Transaction Notification"/>
+  <figcaption>Transaction Notification</figcaption>
+</figure>
+
+The user can click on the top right arrow icon in the transaction notification to view its details. 
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_sign_msg.{{config.extra.arcana.img_png}}" alt="View Transaction Details"/>
+  <figcaption>Transaction Notification</figcaption>
+</figure>
+
+??? an-example "Transaction Notification Example"
+
+      Here is an example of how an `eth_sendTransaction` triggers a transaction notification and approval request for the user. The send transaction notification summary is displayed:
+
+      <figure markdown="span">
+        <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_smtx_send_tx.{{config.extra.arcana.img_png}}" alt="Example: Send Transaction Notification"/>
+        <figcaption>Example: Send Transaction Notification</figcaption>
+      </figure>
+
+      In the case of the send transaction request or sign transaction request, the notification details allow the user to edit the gas fees before approving the request. 
+
+      <figure markdown="span">
+        <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_send_tx.{{config.extra.arcana.img_png}}" alt="Send Transaction Details"/>
+        <figcaption>Example: Send Transaction Notification</figcaption>
+      </figure>
+
+      For other transactions that do not involve gas fees such as personal sign or signature requests, the notification details allow users to review transaction message details before taking an action to approve or reject.
+
+??? an-example "Signature Request Example"
+
+      Here is an example of a signature request notification summary:
+
+      <figure markdown="span">
+        <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_smtx_req_sign.{{config.extra.arcana.img_png}}" alt="Example: Signature Request Summary"/>
+        <figcaption>Example: Signature Request Summary</figcaption>
+      </figure>
+
+      On clicking the topmost arrow icon, the user can see the signature request transaction notification details view:
+
+      <figure markdown="span">
+        <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_req_sign.{{config.extra.arcana.img_png}}" alt="Example: Signature Request Details"/>
+        <figcaption>Example: Signature Request Details</figcaption>
+      </figure>
 
 ### Buy/Sell Crypto
 
@@ -240,23 +317,13 @@ Clicking opens the provider interface in a new tab. Complete the sale there. {{c
 
 The activity tab in the {{config.extra.arcana.wallet_name}} UI displays details of the 'sell' transaction issued from the wallet.
 
-### Manage Token Assets
+### Add Tokens
 
-Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab on the bottom left of the {{config.extra.arcana.wallet_name}} to bring up the token assets screen and perform these actions:
+Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_token_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Tokens' tab on the bottom left of the {{config.extra.arcana.wallet_name}} to bring up the token assets screen.
 
-* View, and copy the {{config.extra.arcana.wallet_name}} address
-* View wallet address details on the Block Explorer
-* Add/Select network
-* Refresh the wallet UI
-* View the total wallet balance in the native currency
-* List native and custom tokens in the wallet
-* Add new custom tokens
-* Send and receive native and custom tokens
-* Switch between EoA/SCW accounts (Gasless)
+You can add custom ERC-20 and ERC-1155 token assets to the {{config.extra.arcana.wallet_name}} UI by clicking **Manage**. [[use-wallet-ui-to-manage-tokens|Learn more...]]
 
-[[use-wallet-ui-to-manage-tokens|Learn more...]]
-
-### Manage NFT Assets
+## Manage NFT Assets
 
 Click the 'NFT' tab on the bottom of the {{config.extra.arcana.wallet_name}} UI to view and manage NFTs associated with the wallet address on the selected blockchain network and perform these actions:
 
@@ -269,7 +336,7 @@ Click the 'NFT' tab on the bottom of the {{config.extra.arcana.wallet_name}} UI 
 
 [[use-wallet-to-manage-nfts|Learn more...]]
 
-### User Profile
+## View User Profile
 
 Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Profile' tab on the bottom of the {{config.extra.arcana.wallet_name}} and perform these actions:
 
@@ -277,6 +344,7 @@ Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon
 * View User Email ID
 * View / Copy Wallet Address
 * Export the private key / Save seed phrase for exporting MultiversX wallet 
+* View MFA Status / Enable MFA
 * Logout
 
 <figure markdown="span">
@@ -284,7 +352,32 @@ Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon
   <figcaption>User Profile</figcaption>
 </figure>
 
-### Transaction Activity
+### Export Private Key
+
+Click the Profile <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to see the user profile screen and choose [[use-wallet-to-export-keys|export private key]] option.
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_export_key.{{config.extra.arcana.img_png}}" alt="Export Private Key" />
+  <figcaption>Export Private Key</figcaption>
+</figure>
+
+{% include "./text-snippets/warn_mvx_export_wallet.md" %}
+
+### View Status / Enable MFA
+
+In the profile tab of the wallet, users can check the current MFA status, whether it is enabled or not. MFA is a one-time setting for the user's wallet. Click **Set up MFA** to turn on MFA by setting up security questions and a PIN. You will need to enter either of them to authenticate when you login to a new device or browser. [[mfa-user-guide|Learn more...]]
+
+### Logout
+
+To log out of the app and the wallet, click the Profile <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> tab at the bottom of the {{config.extra.arcana.wallet_name}} UI and select **Logout**.
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_profile.{{config.extra.arcana.img_png}}" alt="Logout"/>
+  <figcaption>Logout</figcaption>
+</figure>
+
+
+## Transaction Activity
 
 Click the <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_notification_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> 'Activity' tab on the bottom right of the {{config.extra.arcana.wallet_name}} to view the activity screen. It lists any pending transactions and the status of the following user actions via the wallet:
 
@@ -311,82 +404,13 @@ Click on the red dot to see details of the pending transaction and take appropri
 </p>
 </details>
 
-### Export Private Key
+### Pending Transactions
 
-Click the Profile <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> tab on the bottom of the {{config.extra.arcana.wallet_name}} to see the user profile screen and choose [[use-wallet-to-export-keys|export private key]] option.
+When a transaction notification appears, the user can click 'Do this later' to ignore it. Pending transactions are marked with a red dot in the 'Activity' tab and on the minimized wallet icon.
 
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_export_key.{{config.extra.arcana.img_png}}" alt="Export Private Key" />
-  <figcaption>Export Private Key</figcaption>
-</figure>
-
-{% include "./text-snippets/warn_mvx_export_wallet.md" %}
-
-### Minimize/Maximize UI 
-
-Right after a user authenticates, the wallet is displayed in its minimized state.
-
-<img class="an-screenshots-noeffects" src="{{config.extra.arcana.img_dir}}/an_wallet_min_light.{{config.extra.arcana.img_png}}#only-dark" width="15%"/><img class="an-screenshots-noeffects" src="{{config.extra.arcana.img_dir}}/an_wallet_min_dark.{{config.extra.arcana.img_png}}#only-light" width="15%"/>
-
-On clicking, it expands to display the wallet in its maximized state. It can be minimized again by clicking the '∨' icon on the top in the wallet UI. 
-
-<img class="an-screenshots-noeffects" src="{{config.extra.arcana.img_dir}}/an_wallet_max_light.{{config.extra.arcana.img_png}}#only-dark" width="35%"/><img class="an-screenshots-noeffects" src="{{config.extra.arcana.img_dir}}/an_wallet_max_dark.{{config.extra.arcana.img_png}}#only-light" width="35%"/>
-
-### Transaction Details
-
-If a blockchain transaction is triggered via the app that requires the user's approval, the user will see a transaction notification. If the wallet was in a minimized state at the time the request was generated, then the notification will show up with a summary of the transaction along with the buttons to approve or reject. 
+Once the user addresses the notification, it disappears from the 'Activity' tab.
 
 <figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_smtx_sign_msg.{{config.extra.arcana.img_png}}" alt="Transaction Notification"/>
-  <figcaption>Transaction Notification</figcaption>
-</figure>
-
-The user can click on the top right arrow icon in the transaction notification to view its details. 
-
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_sign_msg.{{config.extra.arcana.img_png}}" alt="View Transaction Details"/>
-  <figcaption>Transaction Notification</figcaption>
-</figure>
-
-??? an-example "Transaction Notification Example"
-
-      Here is an example of how an `eth_sendTransaction` triggers a transaction notification and approval request for the user. The send transaction notification summary is displayed:
-
-      <figure markdown="span">
-        <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_smtx_send_tx.{{config.extra.arcana.img_png}}" alt="Example: Send Transaction Notification"/>
-        <figcaption>Example: Send Transaction Notification</figcaption>
-      </figure>
-
-      In the case of the send transaction request or sign transaction request, the notification details allow the user to edit the gas fees before approving the request. 
-
-      <figure markdown="span">
-        <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_send_tx.{{config.extra.arcana.img_png}}" alt="Send Transaction Details"/>
-        <figcaption>Example: Send Transaction Notification</figcaption>
-      </figure>
-
-      For other transactions that do not involve gas fees such as personal sign or signature requests, the notification details allow users to review transaction message details before taking an action to approve or reject.
-
-??? an-example "Signature Request Example"
-
-      Here is an example of a signature request notification summary:
-
-      <figure markdown="span">
-        <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_smtx_req_sign.{{config.extra.arcana.img_png}}" alt="Example: Signature Request Summary"/>
-        <figcaption>Example: Signature Request Summary</figcaption>
-      </figure>
-
-      On clicking the topmost arrow icon, the user can see the signature request transaction notification details view:
-
-      <figure markdown="span">
-        <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_req_sign.{{config.extra.arcana.img_png}}" alt="Example: Signature Request Details"/>
-        <figcaption>Example: Signature Request Details</figcaption>
-      </figure>
-
-### Logout
-
-To log out of the app and the wallet, click the Profile <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_light.{{config.extra.arcana.img_png}}#only-light" width="20"/><img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_profile_icon_dark.{{config.extra.arcana.img_png}}#only-dark" width="20"/> tab at the bottom of the {{config.extra.arcana.wallet_name}} UI and select **Logout**.
-
-<figure markdown="span">
-  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_profile.{{config.extra.arcana.img_png}}" alt="Logout"/>
-  <figcaption>Logout</figcaption>
-</figure>
+  <img class="an-screenshots-noeffects width_35pc" src="{{config.extra.arcana.img_dir}}/an_wallet_pending_sign_anim.gif" alt="Pending Transactions"/>
+  <figcaption>Pending Transactions</figcaption>
+</figure> 
