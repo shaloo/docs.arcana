@@ -21,3 +21,7 @@ To enable [[concept-social-login|social login]] and onboard users in Web3 apps, 
 ## Custom Auth
 
 Apps that use custom authentication (e.g., Epic user authentication, Relative gaming user authentication mechanism) and require enabling authenticated users to sign blockchain transactions can use the [[concept-custom-auth|Custom Auth feature]].
+
+## Passkeys
+
+You can also use [[concept-auth-passkeys|passkeys]] to sign up and onboard users in Web3 apps built with the {{config.extra.arcana.sdk_name}}. Passkeys can be used as an alternate login mechanism or the only option to onboard an app.
