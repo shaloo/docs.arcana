@@ -439,7 +439,7 @@ nav:
   - Products: 
     - index.md
     - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
-    - Service Status: https://status-dev.arcana.network/
+    - Service Status: https://status.arcana.network/
     - Quick Start:
       - Auth SDK:
         - Web:
