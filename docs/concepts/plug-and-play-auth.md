@@ -10,6 +10,11 @@ arcana:
 
 Plug & Play Auth is the default login UI in {{config.extra.arcana.sdk_name}}. Web3 apps can use the [`connect`](https://authsdk-ref-guide.netlify.app/classes/authprovider#connect) method to show this built-in UI with the configured onboarding options from [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md).  Developers can use this ready-made UI instead of creating a [[concept-custom-login-ui|custom login UI]].
 
+<figure markdown="span">
+  <img src="{{config.extra.arcana.img_dir}}/an_pnp_login.{{config.extra.arcana.img_png}}" alt="Plug and Play Login UI" class="an-screenshots-noeffects width_35pc"/>
+  <figcaption>Plug & Play Login UI</figcaption>
+</figure>
+
 ```mermaid
 flowchart LR 
     subgraph A [Plug & Play vs. Custom Login UI]
@@ -43,7 +48,7 @@ The built-in plug-and-play login UI includes a compact modal and a normal-sized 
 
 <figure markdown="span">
   <img src="{{config.extra.arcana.img_dir}}/relnote_1.0.8_compact_login.{{config.extra.arcana.img_png}}" alt="Login UI Types" class="an-screenshots-noeffects width_85pc"/>
-  <figcaption>Login UI Types</figcaption>
+  <figcaption>Plug & Play Login UI Types</figcaption>
 </figure>
 
 {% include "./text-snippets/jwt_token.md" %}
