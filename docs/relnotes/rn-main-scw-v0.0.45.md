@@ -1,5 +1,5 @@
 ---
-alias: rn-main-scw-v0.0.44
+alias: rn-main-scw-v0.0.45
 title: 'Arcana: Gasless SDK Release Notes'
 description: 'Arcana Gasless SDKs Release Notes (v0.0.44 Latest)'
 arcana:

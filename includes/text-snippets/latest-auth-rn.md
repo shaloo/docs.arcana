@@ -1,6 +1,6 @@
 {==
 
-**Release Date: Oct 21, 2024**  
+**Release Date: Oct 28, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
 
@@ -47,7 +47,10 @@ This release consists of:
 
 ---
 
-There are **no usage changes** in this release. To migrate to the latest release, re-install and upgrade to the latest SDKs.
+There are **no usage changes** in this release. To migrate to the latest release, re-install the SDK.
+If you're using the Gasless feature, ensure the gas tank has enough balance to cover ERC-20 token transfer fees. Otherwise, users may incur gas charges for whitelisted operations.
+
+{% include "./text-snippets/gl_limitations.md" %}
 
 ## Get Started
 
