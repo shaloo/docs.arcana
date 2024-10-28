@@ -1,8 +1,8 @@
 {==
 
-**Release Date: July 3, 2024**  
+**Release Date: October 28, 2024**  
 
-Gasless SDK Version: **v0.0.37**
+Gasless SDK Version: **v0.0.45**
 
 This SDK extends the gasless transaction feature offered by the {{config.extra.arcana.sdk_name}} for {{config.extra.arcana.wallet_name}} to third-party browser-based wallets. This standalone SDK does not depend on the {{config.extra.arcana.sdk_name}}. 
 
@@ -20,7 +20,11 @@ This release of {{config.extra.arcana.gasless_sdk_name}} has some minor enhancem
 
 ---
 
-No usage changes in the gasless SDK.
+{% include "./text-snippets/gl_limitations.md" %}
+
+When using the gasless feature offered as part of Auth SDK integration, there is no usage change.
+
+For those who that are integrating the app with the Gasless SDK to support third-party wallets, note that the [signature of SCW.init() method have changed](https://gasless-sdk-ref-guide.netlify.app/classes/scw#init). Please update the SDK integration code accordingly.
 
 ## Get Started
 

@@ -12,6 +12,8 @@ In this guide, you will learn how to configure gasless transactions irrespective
 
 {% include "./text-snippets/gasless_prerequisites.md" %}
 
+{% include "./text-snippets/gl_limitations.md" %}
+
 ## Steps
 
 Login to the {{config.extra.arcana.dashboard_name}} and follow these three steps:
@@ -44,6 +46,10 @@ To add crypto assets to a new gas tank, the developer needs to use a browser-bas
 !!! an-info "Browser-based wallet"
 
        You can use MetaMask or any other browser-based wallet to deposit credits in a gas tank. Make sure the browser-based wallet sets the `windows.ethereum` variable.
+
+!!! an-caution "Minimum Gas Tank Balance"
+
+       Ensure there is at least 0.1 ETH or native gas token balance in the gas tank for a successful ERC-20 token transaction.
 
 Go to the dashboard page listing all the configured gas tanks. Click 'ellipsis' in the gas tank entry and choose **Deposit** from the dropdown menu list:
 
