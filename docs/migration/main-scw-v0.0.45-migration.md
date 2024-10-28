@@ -1,5 +1,5 @@
 ---
-alias: migration-guide-v0.0.44
+alias: migration-guide-v0.0.45
 title: 'Gasless SDK Migration Guide'
 description: 'How to migrate to Arcana Gasless Standalone SDK'
 arcana:

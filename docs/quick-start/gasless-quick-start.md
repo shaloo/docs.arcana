@@ -25,6 +25,8 @@ Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and onboard users via 
 
 [[configure-gasless|Configure gasless settings]] before integrating the app. Set up gas tanks for the required chains, deposit gas fees, and provide smart contract ABI details to whitelist one or more app operations. When a user triggers a whitelisted app operation, zero gas fees are charged.
 
+{% include "./text-snippets/gl_limitations.md" %}
+
 ## 2. Install SDK
 
 {% include "./code-snippets/auth_install.md" %}

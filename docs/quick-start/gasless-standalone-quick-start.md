@@ -22,6 +22,8 @@ Integrate Web3 apps with {{config.extra.arcana.gasless_sdk_name}} and enable thi
 
 [[configure-gasless|Configure gasless transactions]] for the registered app through the {{config.extra.arcana.dashboard_name}}. Set up gas tanks for one or more supported chains. Fund gas tanks, and provide smart contract ABI details to whitelist selected app operations.
 
+{% include "./text-snippets/gl_limitations.md" %}
+
 ## 2. Install SDK
 
 {% include "./code-snippets/gasless_sdk_install.md" %}
