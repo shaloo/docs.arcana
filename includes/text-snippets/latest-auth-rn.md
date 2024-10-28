@@ -1,6 +1,6 @@
 {==
 
-**Release Date: Oct 21, 2024**  
+**Release Date: Oct 28, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
 
