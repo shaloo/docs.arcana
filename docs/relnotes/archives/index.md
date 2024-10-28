@@ -10,6 +10,8 @@ arcana:
 
 === "Auth SDK"
 
+    [[rn-main-auth-v1.0.12| :material-note-text:{ .icon-color } Auth v1.0.12]]{ .md-button }
+
     [[rn-main-auth-v1.0.11| :material-note-text:{ .icon-color } Auth v1.0.11]]{ .md-button }
 
     [[rn-main-auth-May27-24| :material-note-text:{ .icon-color } Release May 27th, 2024]]{ .md-button }
@@ -44,6 +46,8 @@ arcana:
 
 
 === "Gasless SDK"
+
+    [[rn-main-scw-v0.0.45| :material-note-text:{ .icon-color }{{config.extra.arcana.gasless_sdk_name}} v0.0.45]]{ .md-button }
 
     [[rn-main-scw-v0.0.37| :material-note-text:{ .icon-color }{{config.extra.arcana.gasless_sdk_name}} v0.0.37]]{ .md-button }
 
