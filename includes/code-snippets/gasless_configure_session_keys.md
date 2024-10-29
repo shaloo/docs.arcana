@@ -4,11 +4,18 @@
   let scWallet: SCW;  
 
   scWallet = new SCW();
-  await scWallet.init(arcana_app_id, window.arcana.provider, undefined, 0);
+  await scWallet.init({
+          arcana_key: arcana_app_id, 
+          provider: window.arcana.provider,
+          private_key: none,
+          rpc_url: none,
+          gateway_url: none,
+          sessionStorageType: StorageType.LOCAL_STORAGE });
+
   scwAddress = await scWallet.getSCWAddress();
   console.log("Address: " + scwAddress);
 
-  sess = scWallet.initSession(StorageType.LOCAL_STORAGE);
+  sess = scWallet.initSession(StorageType.LOCAL_STORAGE); // Options: LOCAL_STORAGE, MEMORY_STORAGE
 
   const contractAddress = "0xFeCD581c539f8858c556Ab8FEf681975a6A25ACa";
   const functionSelector = "deposit()";

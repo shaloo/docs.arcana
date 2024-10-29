@@ -32,6 +32,16 @@ Learn how to use the [[concept-gl-session-keys|Session Keys]] feature and pre-ap
 
 {% include "./code-snippets/gasless_configure_session_keys.md" %}
 
+!!! an-tip "StorageType"
+
+     
+    To initialize a session with initSession, choose either:
+
+    * StorageType.LOCAL_STORAGE
+    * StorageType.MEMORY_STORAGE
+    
+    Selecting MEMORY_STORAGE means the session keys won’t persist if you close and reopen the browser/tab or reboot the device.
+
 ## 2. Initiate Transactions
 
 {% include "./code-snippets/gasless_doTx_session.md" %}
