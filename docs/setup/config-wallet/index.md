@@ -14,4 +14,4 @@ arcana:
 
 [[configure-wallet-settings|:material-security:{ .icon-color} Wallet Mode ]]{ .md-button }
 
-[[custom-wallet-ui|:material-wallet-plus:{ .icon-color} Customize Wallet UI ]]{ .md-button }
+[[config-custom-wallet-ui|:material-wallet-plus:{ .icon-color} Custom Wallet UI ]]{ .md-button }

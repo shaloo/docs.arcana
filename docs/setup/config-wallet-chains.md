@@ -24,7 +24,7 @@ Developers can programmatically add supported chains and issue blockchain transa
 
 *Managing the displayed list of pre-configured chains for authenticated users in {{config.extra.arcana.wallet_name}} UI within the Web3 app is simple!*
 
-## Step 1: Dashboard Log-in
+## 1: Dashboard Log-in
 
 Log in to the {{config.extra.arcana.dashboard_name}} and click your registered app entry from the 'Manage Apps' screen. Click **Configure** in the LHS navigation area. Select **Chain Management** to configure the default subset of supported chains.
 
@@ -40,7 +40,7 @@ The chain configuration UI is displayed:
   <figcaption>Chain Management Settings</figcaption>
 </figure>
 
-## Step 2: Review Chains
+## 2: Review Chain Settings
 
 Developers can enable either EVM chains or non-EVM chains in the context of a Web3 app integrated with {{config.extra.arcana.product_name}}. The **chain type** selection is a one-time setting during app registration and cannot be reconfigured later. While reviewing chains, you can see whether the app is configured to use EVM chains or only the non-EVM chains.
 
@@ -74,7 +74,7 @@ The Testnet is selected as the default chain. Developers can change the default 
 
 Once an app is registered for a non-EVM chain, the default active chain can be switched to one of the networks available for that particular chain type. For example, if Solana is selected as the chain type, then only the following network options are available:  Solana, Solana Testnet, Solana Dev.
 
-## Solana
+#### Solana
 
 <figure markdown="span">
   ![Solana Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_solana_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -83,7 +83,7 @@ Once an app is registered for a non-EVM chain, the default active chain can be s
 
 See [[solana-dashboard-user-guide|how to set up Solana]] and [[solana-quick-start|Solana Quick Start Guide]] for more details.
 
-## MultiversX
+#### MultiversX
 
 <figure markdown="span">
   ![MultiversX Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_mvx_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -92,7 +92,7 @@ See [[solana-dashboard-user-guide|how to set up Solana]] and [[solana-quick-star
 
 See [[mvx-dashboard-user-guide|how to set up MultiversX]] and [[mvx-quick-start|MultiversX Quick Start Guide]] for more details.
 
-## Near
+#### Near
 
 <figure markdown="span">
   ![Near Pre-configured Chains]({{config.extra.arcana.img_dir}}/an_db_non_evm_near_only_preconfigured_list.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -101,9 +101,9 @@ See [[mvx-dashboard-user-guide|how to set up MultiversX]] and [[mvx-quick-start|
 
 See [[near-dashboard-user-guide|how to set up Near]] and [[near-quick-start|Near Quick Start Guide]] for more details.
 
-## Step 3: Edit Default Active Chain
+## 3: Default Active Chain
 
-To switch the default active chain simply select the new chain in the {{config.extra.arcana.dashboard_name}}, click "..." ellipses and select the 'set as default' option. The figure below illustrates Polygon as the default active chain.
+When a user logs into the wallet, the default active chain is selected. To switch to a different default chain, select the new chain in the {{config.extra.arcana.dashboard_name}}, click "..." ellipses and choose 'set as default' option. The figure below illustrates Polygon as the default active chain.
 
 <figure markdown="span">
   ![Set Polygon as the Active Chain]({{config.extra.arcana.img_dir}}/an_db_set_default_chain.gif){ .an-screenshots }
@@ -116,7 +116,7 @@ To switch the default active chain simply select the new chain in the {{config.e
       
       Once a non-EVM chain type is selected, developers can further choose one as the default active chain from amongst the network options displayed in the dashboard for that chain type.
 
-## Step 4: Add Chain
+## 4: Add Chain
 
 ### EVM Chains
 

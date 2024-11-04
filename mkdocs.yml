@@ -495,11 +495,9 @@ nav:
             - Branding: setup/config-wallet/config-wallet-branding.md
             - Keyspace: setup/config-wallet/config-wallet-keyspace.md
             - Wallet Security: setup/config-wallet/config-wallet-settings.md
+            - Custom Wallet UI: setup/config-custom-wallet-ui.md
           - Gaming:
             - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
-          - Advanced:
-            - Custom Auth: setup/config-custom-auth.md
-            - Custom Wallet UI: setup/config-custom-wallet-ui.md
       - Gasless SDK: 
         - Register App: setup/config-gasless/register-app.md
         - Gasless Settings: setup/configure-standalone-gasless.md
