@@ -662,7 +662,7 @@ nav:
         - Export Key: user-guides/wallet-ui/use-wallet-to-export-keys.md
         - Manage NFTs: user-guides/wallet-ui/use-wallet-to-manage-nfts.md
         - Manage Tokens: user-guides/wallet-ui/use-wallet-to-manage-tokens.md
-      - MFA Setup: user-guides/mfa/mfa-ug.md
+        - MFA Setup: user-guides/mfa/mfa-ug.md
     - Validators:
       - Onboarding Guide: validators/onboard-validators.md
       - Validator FAQ: faq/faq-validator.md
@@ -786,13 +786,13 @@ nav:
     - Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
   - Docs @Partners:
     - partner-docs/index.md
-    - Alchemy:
-      - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
-      - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
-    - Caduceus:
-      - Social Login: https://docs.caduceus.foundation/auth
+    - MultiversX:
+      - Auth: https://multiversx.com/ecosystem/project/arcana
     - Linea:
       - Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
       - Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
-    - MultiversX:
-      - Auth: https://multiversx.com/ecosystem/project/arcana
+    - Caduceus:
+      - Social Login: https://docs.caduceus.foundation/auth
+    - Alchemy:
+      - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
+      - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html

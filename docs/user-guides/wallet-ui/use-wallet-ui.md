@@ -365,7 +365,7 @@ Click the Profile <img src="{{config.extra.arcana.img_dir}}/icons/an_wallet_prof
 
 ### View Status / Enable MFA
 
-In the profile tab of the wallet, users can check the current MFA status, whether it is enabled or not. MFA is a one-time setting for the user's wallet. Click **Set up MFA** to turn on MFA by setting up security questions and a PIN. You will need to enter either of them to authenticate when you login to a new device or browser. [[mfa-user-guide|Learn more...]]
+In the profile tab of the wallet, users can check the current MFA status, whether it is enabled or not. [[concept-mfa|MFA]] is a one-time setting for the user's wallet. Click **Set up MFA** to turn on MFA by setting up security questions and a PIN. You will need to enter either of them to authenticate when you login to a new device or browser. [[mfa-user-guide|Learn more...]]
 
 ### Logout
 
