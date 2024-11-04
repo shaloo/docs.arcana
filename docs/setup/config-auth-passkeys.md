@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Passkeys Setup
+# Passkeys Auth Setup
 
 Learn how to configure user login via [[concept-auth-passkeys|Passkeys]] for apps that integrate with the {{config.extra.arcana.sdk_name}} and allow authenticated users to sign blockchain transactions.
 

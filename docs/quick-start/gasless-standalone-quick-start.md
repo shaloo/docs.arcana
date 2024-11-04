@@ -32,7 +32,7 @@ Integrate Web3 apps with {{config.extra.arcana.gasless_sdk_name}} and enable thi
 
 {% include "./code-snippets/gasless_integrate_use.md" %}
 
-## 3. Use `DoTx()`
+## 4. Use `DoTx()`
 
 Enable gasless transactions for third-party wallets by calling the `doTx()` method of the {{config.extra.arcana.gasless_sdk_name}} in the authenticated user's context. 
 
