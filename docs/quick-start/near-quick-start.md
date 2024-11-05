@@ -22,11 +22,11 @@ Near chains are pre-configured and instantly accessible to authenticated users v
 
 * Configure social login providers to onboard users and customize the user experience for blockchain signing via the wallet settings. 
 
-## 2. Install
+## 1. Install
 
 {% include "./code-snippets/auth_install.md" %}
 
-## 3. Integrate
+## 2. Integrate
 
 {% include "./text-snippets/quick-start-int-auth.md" %}
 
@@ -61,7 +61,7 @@ Refer to [[near-web3-wallet-ops|other supported Web3 wallet operations]] for det
 
 {% include "./text-snippets/quick-start-deploy.md" %}
 
-## 4. Advanced Usage
+## 3. Advanced Usage
 
 {% include "./text-snippets/quick-start-authprovider-optional.md" %}
 

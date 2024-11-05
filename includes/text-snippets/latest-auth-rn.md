@@ -1,28 +1,34 @@
 {==
 
-**Release Date: July 3, 2024**  
+**Release Date: Oct 28, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
 
-* {{config.extra.arcana.sdk_name}} 
-      - Web Apps 
+This release consists of:
+
+1. {{config.extra.arcana.sdk_name}} 
+  
+    === "Web Apps"
+
         - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
         - [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
         - [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
         - [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
-      - Mobile Apps
+
+    === "Mobile Apps"
+
         - [`{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}`](https://pub.dev/packages/arcana_auth_flutter)
         - [`{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react-native)
-      - Gaming Apps
+
+    === "Gaming Apps (Unity)"
+
         - [`{{config.extra.arcana.gaming_sdk_pkg_name}}`](https://npm-registry.arcana.network/)
 
-* [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network/)
+2. [{{config.extra.arcana.dashboard_name}}](https://dashboard.arcana.network/)
 
-* [{{config.extra.arcana.wallet_name}} UI](https://github.com/arcana-network/wallet-ui)
+3. [{{config.extra.arcana.wallet_name}} UI](https://github.com/arcana-network/wallet-ui)
 
-In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{config.extra.arcana.auth_core_sdk_name}} for greater flexibility in using authentication features and custom wallet UI support.
-
-* [{{config.extra.arcana.auth_core_sdk_name}}](https://www.npmjs.com/package/@arcana/auth-core)
+4. [{{config.extra.arcana.auth_core_sdk_name}}](https://www.npmjs.com/package/@arcana/auth-core)
 
 ==}
 
@@ -31,11 +37,9 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 ---
  
-* Added support for apps that authenticate users via [[concept-custom-auth|Custom Auth]]. Learn [[config-custom-auth|how to configure Custom Auth settings]] in the {{config.extra.arcana.dashboard_name}}. Assign keys to authenticated users for signing blockchain transactions in apps that use custom authentication servers by following these [[integrate-custom-auth|step-by-step instructions]].
+* **New Onboarding Options:** Apps integrating with the {{config.extra.arcana.sdk_name}} can now allow users to onboard via [[concept-auth-passkeys|Passkey]] or via new [[web3-stack-auth|supported social login providers]]: Telegram and Apple. See how to [[onboard-passkey-auth|onboard users via passkeys]] for details. Developers must first [[config-auth-passkeys|set up Passkeys]], and configure Telegram, Apple Settings through the dashboard before adding code in the app to onboard the user via these mechanisms. [[index-config-social-providers|Learn more...]]
 
-* New **Login Session Management** feature in the {{config.extra.arcana.dashboard_name}} allows developers to specify whether a user session persists if the browser is closed. This enhances user experience and makes session security configurable. Learn more about [[concept-session-type|supported session types]] and [[dashboard-user-guide#login-session-management|configuration settings]].
-
-* The [`UserInfo`structure](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) now provides a [[concept-did-token|DID identifier]] for user verification. The `loginToken` will be deprecated in a future release.
+* **More Rebranding Options:** Apps can now customize the wallet UI with more theme options. You can also rebrand the OTP email for passwordless onboarding. [[configure-wallet-branding|Learn more...]]
 
 * Bug fixes and performance enhancements related to user login.
 
@@ -43,21 +47,16 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 ---
 
-There are **no usage changes** in this release. To migrate to the latest release, re-install and upgrade to the latest SDKs.
+There are **no usage changes** in this release. To migrate to the latest release, re-install the SDK.
+If you're using the Gasless feature, ensure the gas tank has enough balance to cover ERC-20 token transfer fees. Otherwise, users may incur gas charges for whitelisted operations.
+
+{% include "./text-snippets/gl_limitations.md" %}
 
 ## Get Started
 
 ---
 
-{==
-
-*Ready to dive in?* 
-
-==}
-
-Check out:
-
-* {{config.extra.arcana.product_name}} Quick Start Guides
+* [[wagmi-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
 * {% include "./text-snippets/unity_sample_url.md" %} 
 * [Integration examples](https://github.com/arcana-network/auth-examples)
 
@@ -71,4 +70,6 @@ Refer to the [[index-release-notes| release notes archive]] and [[index-migratio
 
 ---
 
-Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources, or contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
+Refer to the [[faq-gen| Arcana Auth FAQ]], [Troubleshooting Guide]({{page.meta.arcana.root_rel_path}}/troubleshooting.md), and other developer resources.
+
+Can't find what you are looking for? Contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).

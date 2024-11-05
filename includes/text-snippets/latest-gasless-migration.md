@@ -2,6 +2,12 @@ Apps that are already using the built-in gasless feature of the {{config.extra.a
 
 Apps that are required to enable gasless transactions in third-party, browser-based wallets must install and integrate with the newly released {{config.extra.arcana.gasless_sdk_name}}. For details, see [[gasless-standalone-quick-start|how to enable gasless transactions in third-party wallets]]. See `sample-gasless-metamask-only` and `sample-gasless-multi-wallet` submodules in the GitHub repo [Auth Examples](https://github.com/arcana-network/auth-examples).
 
+## Changes
+
+Please note that the signature of SCW.init() method have changed. Refer to the [SDK Reference Guide](https://gasless-sdk-ref-guide.netlify.app/classes/scw#init) for details.
+
+{% include "./text-snippets/gl_limitations.md" %}
+
 ## Release Details
 
-Refer to the  [[rn-main-scw-v0.0.37|{{config.extra.arcana.gasless_sdk_name}} v0.0.37 release notes]] for details.
+Refer to the  [[rn-main-scw-v0.0.45|{{config.extra.arcana.gasless_sdk_name}} v0.0.45 release notes]] for details.

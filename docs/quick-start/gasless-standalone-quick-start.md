@@ -22,6 +22,8 @@ Integrate Web3 apps with {{config.extra.arcana.gasless_sdk_name}} and enable thi
 
 [[configure-gasless|Configure gasless transactions]] for the registered app through the {{config.extra.arcana.dashboard_name}}. Set up gas tanks for one or more supported chains. Fund gas tanks, and provide smart contract ABI details to whitelist selected app operations.
 
+{% include "./text-snippets/gl_limitations.md" %}
+
 ## 2. Install SDK
 
 {% include "./code-snippets/gasless_sdk_install.md" %}
@@ -30,7 +32,7 @@ Integrate Web3 apps with {{config.extra.arcana.gasless_sdk_name}} and enable thi
 
 {% include "./code-snippets/gasless_integrate_use.md" %}
 
-## 3. Use `DoTx()`
+## 4. Use `DoTx()`
 
 Enable gasless transactions for third-party wallets by calling the `doTx()` method of the {{config.extra.arcana.gasless_sdk_name}} in the authenticated user's context. 
 

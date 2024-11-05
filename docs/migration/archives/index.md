@@ -12,6 +12,8 @@ We recommend that you use the most recent {{config.extra.arcana.company_name}} S
 
 === "Auth SDK"
 
+    [[migration-guide-v1.0.12| :material-update:{ .icon-color } Auth SDK v1.0.11 -> v1.0.12]]{ .md-button }
+
     [[migration-guide-v1.0.11| :material-update:{ .icon-color } Auth SDK v1.0.10 -> v1.0.11]]{ .md-button }
 
     [[migration-guide-v1.0.10| :material-update:{ .icon-color } Auth SDK v1.0.9 -> v1.0.10]]{ .md-button }
@@ -41,6 +43,8 @@ We recommend that you use the most recent {{config.extra.arcana.company_name}} S
     [[migration-guide-v0.3.0| :material-update:{ .icon-color } Auth SDK v0.2.x -> v0.3.0]]{ .md-button }
 
 === "Gasless SDK"
+
+    [[migration-guide-v0.0.45| :material-update:{ .icon-color } Gasless SDK v0.0.45]]{ .md-button }
 
     [[migration-guide-v0.0.37| :material-update:{ .icon-color } Gasless SDK v0.0.37]]{ .md-button }
 

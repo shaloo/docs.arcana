@@ -8,15 +8,10 @@ There are no usage changes in this release if you are already using the SDK.
 
 This new release includes support for Custom Auth and wallet UI features for off-ramping crypto to fiat.
 
-## How to Migrate to v1.0.11?
+## How to Migrate to v1.0.12?
 
-Install and upgrade to the latest {{config.extra.arcana.sdk_name}} v1.0.11. No integration code updates are required for the features in the previous release.  
+Install and upgrade to the latest {{config.extra.arcana.sdk_name}} v1.0.12. No integration code updates are required for the features in the previous release.  
 
-If you plan on using the Custom Auth or wallet off-ramping feature, check out the following documentation updates:
-
-* What is [[concept-custom-auth|Custom Auth]]?
-* [[config-custom-auth|How to configure]] Custom Auth feature usage via the {{config.extra.arcana.dashboard_name}}?
-* [[integrate-custom-auth|How to integrate an app that uses custom user authentication]] and enable {{config.extra.arcana.sdk_name}} and signing of blockchain transactions for authenticated users?
-* [[arcana-wallet-user-guide#buysell-crypto|How to buy/sell crypto]] when using {{config.extra.arcana.wallet_name}}? 
+If you plan on using the Passkeys, check out the section about [[concept-auth-passkeys|Passkeys]] and [[onboard-passkey-auth|how to onboard users via passkeys]] in apps integrated with the {{config.extra.arcana.sdk_name}}. See how to set up user onboarding via [[index-config-social-providers|Telegram, Apple]] in the setup section of the documentation. Then refer to the usage section for [[sdk-installation|how to install the SDK, integrate app and onboard users]] depending upon the app type.
 
 That's all!

@@ -12,11 +12,13 @@ In this guide, you will learn how to configure gasless transactions irrespective
 
 {% include "./text-snippets/gasless_prerequisites.md" %}
 
+{% include "./text-snippets/gl_limitations.md" %}
+
 ## Steps
 
 Login to the {{config.extra.arcana.dashboard_name}} and follow these three steps:
 
-### Step 1. Provision Gas Tanks
+### 1. Provision Gas Tanks
 
 Visit the 'Manage Apps' page of the {{config.extra.arcana.dashboard_name}}. Choose the registered app for which you need to enable the gasless feature. If the app is not registered, create a new app entry by [[register-app-auth|registering it]] and then configure gasless settings to enable gasless transactions.
 
@@ -37,13 +39,17 @@ Note that you can only set up one gas tank per blockchain network. Once configur
 </figure>
 
 
-### Step 2. Deposit/Withdraw Gas Tank Credits
+### 2. Deposit/Withdraw Credits
 
 To add crypto assets to a new gas tank, the developer needs to use a browser-based wallet like MetaMask and choose an account with sufficient funds. This account is referred to as the [[concept-gasless-transactions#gas-tank-owner|owner's account]]. Anyone, including the developer or third-party sponsors, can contribute credits to the gas tank. However, credits can only be withdrawn into the owner's account.
 
 !!! an-info "Browser-based wallet"
 
        You can use MetaMask or any other browser-based wallet to deposit credits in a gas tank. Make sure the browser-based wallet sets the `windows.ethereum` variable.
+
+!!! an-caution "Minimum Gas Tank Balance"
+
+       Ensure there is at least 0.1 ETH or native gas token balance in the gas tank for a successful ERC-20 token transaction.
 
 Go to the dashboard page listing all the configured gas tanks. Click 'ellipsis' in the gas tank entry and choose **Deposit** from the dropdown menu list:
 
@@ -72,7 +78,7 @@ To take out money, click the 'ellipsis' and pick *Withdraw* from the menu. Enter
   <figcaption>Withdraw Funds</figcaption>
 </figure>
 
-### Step 3. Whitelist Gasless Operations
+### 3. Whitelist Operations
 
 To whitelist one or more app functions, choose **Manage Whitelist** and specify the following:
 

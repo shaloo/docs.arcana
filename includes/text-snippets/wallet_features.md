@@ -20,5 +20,5 @@
 * View pending transactions in the activity tab
 * Use the standard Ethereum 1193 provider interface to call [JSON/RPC functions](https://ethereum.github.io/execution-apis/api-documentation/) and supported Web3 wallet operations for the network
 * Export private key
-* Enable enhanced security via MFA
+* Enable [[mfa-user-guide|enhanced security via MFA]]
 * Logout
