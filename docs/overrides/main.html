@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block announce %}
+  <!-- Add Chain Abstraction wallet links here to avoid confusion with the built-in in-app wallet in the Auth SDK-->
+  <div>
+    <p><b>Note:</b> For <a href="https://arcana.network/chain-abstraction"> chain abstraction</a> use the <a href="https://arcana.network/wallet">standalone Arcana Wallet</a>; Auth SDK provides in-app, embedded Arcana wallet.</p>
+  </div>
+{% endblock %}
+
 {% block scripts %}
   <!-- Add scripts that need to run before here -->
   {{ super() }}
