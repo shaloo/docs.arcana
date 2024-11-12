@@ -86,6 +86,7 @@ extra:
     company_name: Arcana
     product_name: Arcana Auth
     sdk_name: Arcana Auth SDK
+    ca_sdk_name: Arcana CA SDK
     react_sdk_name: Arcana Auth React SDK
     wagmi_sdk_name: Arcana Auth Wagmi SDK
     web3_react_sdk_name: Arcana Auth Web3 React SDK
@@ -704,6 +705,7 @@ nav:
         - Passkeys Login: concepts/authtype/auth-passkeys.md
         - Private Key: concepts/private-key.md
         - SDKs:
+          - CA SDK: concepts/casdk.md
           - Auth SDK: concepts/authsdk.md
           - Auth-Core SDK: concepts/auth-core-sdk.md
           - Gasless SDK: concepts/glsdk.md
