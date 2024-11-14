@@ -27,8 +27,8 @@ The custom Auth feature enables Web3 apps to use the {{config.extra.arcana.sdk_n
     
         subgraph setup[Arcana Developer Dashboard]
         direction LR  
-            SP1[1. Register App] --> CLID((Unique ClientID))
-            SP2[2. Configure App] --> SP3[Edit/Save Custom Auth Settings]
+            SP1[1.Register App] --> CLID((Unique ClientID))
+            SP2[2.Configure App] --> SP3[Edit/Save Custom Auth Settings]
         end
         classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
         class CLID an-pink

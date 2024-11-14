@@ -106,8 +106,8 @@ After setting up passkey for an account, on the subsequent log in attempt to the
     
         subgraph setup[Arcana Developer Dashboard]
         direction LR  
-            SP1[1. Register App] --> CLID((Unique ClientID))
-            SP2[2. Configure App] --> SP3[Edit/Save Passkey Usage Settings]
+            SP1[1.Register App] --> CLID((Unique ClientID))
+            SP2[2.Configure App] --> SP3[Edit/Save Passkey Usage Settings]
         end
         classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem; 
         class CLID an-pink
@@ -117,9 +117,9 @@ After setting up passkey for an account, on the subsequent log in attempt to the
 
     ```mermaid
     graph TD
-        DFLA{{Developer}} --1. Install --> authsdk
-        DFLA --2. ClientID -->AUTHP
-        DFLA --3. Select Sign-up/Alternate Login Passkey Onboarding -->POP -->COA
+        DFLA{{Developer}} --1.Install --> authsdk
+        DFLA --2.ClientID -->AUTHP
+        DFLA --3.Select Sign-up/Alternate Login Passkey Onboarding -->POP -->COA
         subgraph app[App]
             AUTHP[Create/Init AuthProvider] --> authsdk
             COA[B. Call loginWithPasskeys] --> authsdk

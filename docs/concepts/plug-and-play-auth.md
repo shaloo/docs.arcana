@@ -19,9 +19,9 @@ Plug & Play Auth is the default login UI in {{config.extra.arcana.sdk_name}}. We
 flowchart LR 
     subgraph A [Plug & Play vs. Custom Login UI]
     direction LR
-        A1(((Developer))) -- 1. Register App --> B1(Dashboard Login)
+        A1(((Developer))) -- 1.Register App --> B1(Dashboard Login)
         B1  --> C1[Get Client ID] --> E1[Initialize <code>AuthProvider</code>]
-        A1 -- 2. Integrate App --> D1[Install Auth SDK] --> E1 --> O[Onboard Users]
+        A1 -- 2.Integrate App --> D1[Install Auth SDK] --> E1 --> O[Onboard Users]
     end
 classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
 class F1 an-pink
