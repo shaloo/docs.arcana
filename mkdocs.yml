@@ -448,6 +448,7 @@ nav:
     - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
     - Service Status: https://status.arcana.network/
     - Quick Start:
+      - CA SDK: quick-start/ca-quick-start.md
       - Auth SDK:
         - Web:
           - Wagmi: quick-start/wagmi-quick-start.md
@@ -724,6 +725,7 @@ nav:
           - Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
       - Tech Stack: 
+        - CA Assets: web3-stack/ca_stack.md
         - App Types: web3-stack/apps.md
         - Auth Providers: web3-stack/auth.md
         - Browsers: web3-stack/browsers.md

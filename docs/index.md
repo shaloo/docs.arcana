@@ -26,21 +26,39 @@ hide:
 
 ## Welcome!
 
-Onboard Web3 app users effortlessly via [[concept-social-login|social login]].
+=== "Web3 Users"
 
-Enable [[concept-gasless-transactions|account abstraction]] to sponsor gas fees and incentivize users.
+    Arcana's Chain Abstraction provides unified balance in your wallet. Use the standalone Arcana Wallet as your browser extension to combine fragmented liquidity across several blockchains and easily spend on any chain. 
+    
+    [Learn more...](https://arcana.network/chain-abstraction)
 
-Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]]. 
+=== "Web3 Developers"
+
+    Integrate Web3 apps with Arcana SDKs to enable unified balance, social login and gasless transactions.
+    
+    1. Chain Abstraction (CA) SDK: Enable **unified balance**. Let users spend on any chain and beat liquidity fragmentation across chains. 
+    
+    2. Auth SDK: Onboard Web3 app users effortlessly via [[concept-social-login|social login]] . Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]] and built-in gasless transactions.
+
+    3. Gasless SDK: Use [[concept-gasless-transactions|account abstraction]] to sponsor gas fees and incentivize users.
 
 {==
 
 **TL;DR**
 
-Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) sections!
+Head to the [Quick start](#quick-start) section. You can also try the [SDK Playground](#sdk-playground).
 
 ==}
 
 <div class="grid cards" markdown>
+
+-   :material-account-group:{ .lg .middle .icon-color} __Unified Balance__
+
+    ---
+
+    Let Web3 users instantly access unified balance across chains and spend on any chain without bridging or swapping tokens.
+
+    [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
 
 -   :material-account-group:{ .lg .middle .icon-color} __Social Login__
 
@@ -50,11 +68,11 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 
     [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
 
--   :material-gas-station-off:{ .lg .middle .icon-color} __Account Abstraction__
+-   :material-gas-station-off:{ .lg .middle .icon-color} __Gasless__
 
     ---
 
-    Enables gasless transactions via {{config.extra.arcana.wallet_name}} / third-party browser-based wallets
+    Sponsor gas fees and enable gasless transactions via {{config.extra.arcana.wallet_name}} / third-party browser-based wallets
 
     [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
 
@@ -66,7 +84,7 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 
     [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
 
--   :material-run-fast:{ .lg .middle .icon-color} __Integrate App__
+-   :material-run-fast:{ .lg .middle .icon-color} __Integration Examples__
 
     ---
 
@@ -74,15 +92,31 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 
     [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
 
+-   :material-run-fast:{ .lg .middle .icon-color} __Resources__
+
+    ---
+
+    Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists amd more!
+
+    [:octicons-arrow-right-24: Resources](http://localhost:8000/relnotes/latest-auth-release-note/)
+
+
 </div>
 
-## Auth Playground
+## SDK Playground
 
 <div class="tx-hero-container">
     <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
 </div>
 
 <div class="tx-hero-container">
+    <div class="tx-hero-content">
+        <a href="/auth/auth-try-now/">
+        <div class="tx-try-now-button-pink a-link-items">
+            <h3 style="color: var(--md-an-gray-light-color)">Try CA</h3>
+        </div>
+        </a>
+    </div>
     <div class="tx-hero-content">
         <a href="/auth/auth-try-now/">
         <div class="tx-try-now-button-blue a-link-items">
@@ -102,6 +136,12 @@ Head to [Auth Playground](#auth-playground) or [Quick start](#quick-start) secti
 ## Quick Start
 
 === "Web Apps"
+
+    **CA**
+
+    <hr>
+
+    [[ca-quick-start| CA ]]{ .md-button } [[ca-quick-start| Chain Abstraction ]]{ .md-button } 
 
     **Auth**
 
