@@ -19,7 +19,7 @@ arcana:
 
     ```mermaid
     flowchart LR
-        subgraph Register [1. Register App]
+        subgraph Register [1.Register App]
         direction LR
           A0(((Step 1))) --> B0([Dashboard])
           B0 --> C0[Register App] --> E0[Client ID] 
@@ -33,7 +33,7 @@ arcana:
 === "Install & Integrate"
     ```mermaid
     flowchart LR
-        subgraph Integrate [2. Integrate SDK with App]
+        subgraph Integrate [2.Integrate SDK with App]
         direction LR
           A00(((Step 2))) --> F00[Install SDK]
           F00 -- Integrate App --> G00[Initialize SDK]
@@ -54,9 +54,9 @@ arcana:
     flowchart LR 
         subgraph Step1 [{{config.extra.arcana.sdk_name}} Usage]
         direction LR
-            A1(((Start))) -- 1. Register App --> B1(Dashboard Login)
+            A1(((Start))) -- 1.Register App --> B1(Dashboard Login)
             B1  --> C1[Get Client ID] --> E1
-            A1 -- 2. Integrate App --> D1[Install Auth SDK] --> E1[Initialize <code>AuthProvider</code>] --> F1[Social Login Fns]
+            A1 -- 2.Integrate App --> D1[Install Auth SDK] --> E1[Initialize <code>AuthProvider</code>] --> F1[Social Login Fns]
             E1 --> G1[Web3 Wallet Ops]
             E1 --> H1[Whitelisted Gasless Txn]
         end
@@ -80,9 +80,9 @@ arcana:
     flowchart LR
           subgraph Step1 [{{config.extra.arcana.sdk_name}} Usage]
           direction LR
-          A1(((Start))) -- 1. Register App --> B1(Dashboard Login)
+          A1(((Start))) -- 1.Register App --> B1(Dashboard Login)
           B1  --> C1[Get Client ID] --> E1
-          A1 -- 2. Integrate App --> D1[Install Gasless SDK] --> E1[Initialize <code>SCW</code>] --> F1[Gasless Txn]
+          A1 -- 2.Integrate App --> D1[Install Gasless SDK] --> E1[Initialize <code>SCW</code>] --> F1[Gasless Txn]
           E1 --> G1[Get Accounts]
           end
 
