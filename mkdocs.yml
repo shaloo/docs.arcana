@@ -85,6 +85,9 @@ extra:
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
+    ca_sdk: CA SDK
+    auth_sdk: Auth SDK
+    gasless_sdk: Gasless SDK
     sdk_name: Arcana Auth SDK
     ca_sdk_name: Arcana CA SDK
     react_sdk_name: Arcana Auth React SDK
@@ -112,6 +115,8 @@ extra:
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.1.0']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
     latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.37']
+    latest_gca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.1']
+    ca_sdk_pkg_name: ca-sdk
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
     gasless_sdk_pkg_name: scw
