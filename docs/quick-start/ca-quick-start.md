@@ -10,25 +10,21 @@ arcana:
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
 
-# Get Started: Vue Apps
+# Get Started: CA Apps
 
-Integrate {{page.meta.arcana.app_type}} apps with {{config.extra.arcana.sdk_name}} and onboard users via [[concept-social-login|social login]]. Enable users to sign blockchain transactions with the in-app [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]].
+Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified balance.
 
 ## Prerequisites
 
 {% include "./text-snippets/quick-start-reg-config-auth.md" %}
 
-!!! an-note "Supported Vue Version"
-
-      We support apps using Vue [v3.3](https://www.npmjs.com/package/vue) or higher.
-
 ## 1. Install
 
-{% include "./code-snippets/auth_install.md" %}
+{% include "./code-snippets/casdk_install.md" %}
 
 ## 2. Integrate
 
-{% include "./text-snippets/quick-start-int-auth-evm.md" %}
+{% include "./text-snippets/quick-start-int-casdk.md" %}
 
 ### Onboard Users
 
