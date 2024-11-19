@@ -24,6 +24,16 @@ Developers start by [[register-app-auth|registering the app]] and [[index-config
 
 ## Key Features
 
+* [Unified Balance](#unified balance)
+* [Enhanced UX](#enhanced-ux)
+* [Enhanced DX](#enhanced-dx)
+
+Check out this demo video:
+
+<figure>
+  <iframe src="https://www.youtube.com/embed/PvS_zltnDyQ" allowfullscreen></iframe>
+</figure>
+
 ### Unified Balance
 
 Unified balance shows all the liquidity in a user's EoA account across multiple chains in one view. It lets users transact seamlessly on any chain without needing bridges or pre-provisioning gas for token swaps.

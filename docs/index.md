@@ -28,15 +28,17 @@ hide:
 
 === "Web3 Users"
 
-    Arcana's Chain Abstraction provides unified balance in your wallet. Use the standalone Arcana Wallet as your browser extension to combine fragmented liquidity across several blockchains and easily spend on any chain. 
+    Arcana's Chain Abstraction provides [[concept-casdk#unified-balance|unified balance]] in your wallet. Simply [download the standalone Arcana Wallet browser extension](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) to combine fragmented liquidity across several blockchains and easily spend on any chain. 
     
-    [Learn more...](https://arcana.network/chain-abstraction)
+     [View Demo](https://www.youtube.com/watch?v=PvS_zltnDyQ) 
+   
+     [Learn more...](https://arcana.network/chain-abstraction)
 
 === "Web3 Developers"
 
     Integrate Web3 apps with Arcana SDKs to enable unified balance, social login and gasless transactions.
     
-    1. Chain Abstraction (CA) SDK: Enable **unified balance**. Let users spend on any chain and beat liquidity fragmentation across chains. 
+    1. Chain Abstraction (CA) SDK: Enable [[concept-casdk#unified-balance|unified balance]]. Let users spend on any chain and beat liquidity fragmentation across chains. 
     
     2. Auth SDK: Onboard Web3 app users effortlessly via [[concept-social-login|social login]] . Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]] and built-in gasless transactions.
 
@@ -52,13 +54,13 @@ Head to the [Quick start](#quick-start) section. You can also try the [SDK Playg
 
 <div class="grid cards" markdown>
 
--   :material-account-group:{ .lg .middle .icon-color} __Unified Balance__
+-   :material-attachment-plus:{ .lg .middle .icon-color} __Unified Balance__
 
     ---
 
     Let Web3 users instantly access unified balance across chains and spend on any chain without bridging or swapping tokens.
 
-    [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
+    [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/casdk.md#unified-balance)
 
 -   :material-account-group:{ .lg .middle .icon-color} __Social Login__
 
