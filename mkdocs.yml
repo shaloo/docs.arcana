@@ -630,6 +630,7 @@ nav:
     - Support: 
       - Need Help?: support/index.md
   - Playground:
+    - Try CA!: ca/ca-try-now.md
     - Try Auth!: auth/auth-try-now.md
     - Try Gasless!: gasless/gl-try-now.md
     - Demo App: https://demo.arcana.network
