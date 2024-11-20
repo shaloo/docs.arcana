@@ -692,6 +692,7 @@ nav:
           - concepts/authtype/index.md
           - Auth Providers: concepts/authtype/socialauth.md
           - Custom Auth: concepts/authtype/custom-auth.md
+        - Chain Abstraction: concepts/ca.md
         - Configuration Profiles: concepts/config-profiles.md
         - Dashboard: concepts/dashboard.md
         - Gateway: concepts/gateway-node.md

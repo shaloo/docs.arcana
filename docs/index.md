@@ -18,156 +18,165 @@ hide:
 
       -- Douglas Adams (The Hitchhiker's Guide to the Galaxy)
 
-      {==
+{==
 
-      This documentation contains everything you need to get started using [[introduction|{{config.extra.arcana.company_name}} SDKs]].
+This documentation contains everything you need to get started using [[introduction|{{config.extra.arcana.company_name}} SDKs]].
 
-      ==}
+==}
 
 ## Welcome!
 
 === "Web3 Users"
 
-    Arcana's Chain Abstraction provides [[concept-casdk#unified-balance|unified balance]] in your wallet. Simply [download the standalone Arcana Wallet browser extension](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) to combine fragmented liquidity across several blockchains and easily spend on any chain. 
+    Arcana Wallet displays your [[concept-casdk#unified-balance|unified balance]] across several blockchains and tokens by combining fragmented liquidity in your account. You can now spend on any chain by leveraging Arcana's chain abstraction protocol. [Learn more...](https://arcana.network/chain-abstraction)
+
+    {==
     
-     [View Demo](https://www.youtube.com/watch?v=PvS_zltnDyQ) 
-   
-     [Learn more...](https://arcana.network/chain-abstraction)
+      **TL;DR**
+
+      Simply [download](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) the standalone Arcana Wallet browser extension and get started! 
+
+    ==}
+
+    See Arcana Wallet in action...
+    
+    <iframe align="left" src="https://www.youtube.com/embed/PvS_zltnDyQ" allowfullscreen></iframe>
+
 
 === "Web3 Developers"
 
-    Integrate Web3 apps with Arcana SDKs to enable unified balance, social login and gasless transactions.
+    Integrate Web3 apps with Arcana SDKs to enable *unified balance*, *social login* and *gasless transactions*.
     
-    1. Chain Abstraction (CA) SDK: Enable [[concept-casdk#unified-balance|unified balance]]. Let users spend on any chain and beat liquidity fragmentation across chains. 
+    1. **Chain Abstraction (CA) SDK:** Enable [[concept-casdk#unified-balance|unified balance]] for app users. Allow your app users to spend on any chain and beat liquidity fragmentation across chains. 
     
-    2. Auth SDK: Onboard Web3 app users effortlessly via [[concept-social-login|social login]] . Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]] and built-in gasless transactions.
+    2. **Auth SDK:** Onboard Web3 app users effortlessly via [[concept-social-login|social login]] . Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]] and built-in gasless transactions.
 
-    3. Gasless SDK: Use [[concept-gasless-transactions|account abstraction]] to sponsor gas fees and incentivize users.
+    3. **Gasless SDK:** Leverage account abstraction feature and sponsor gas fees to incentivize users through [[concept-gasless-transactions|gasless transactions]].
 
-{==
+    {==
 
-**TL;DR**
+    **TL;DR**
 
-Head to the [Quick start](#quick-start) section. You can also try the [SDK Playground](#sdk-playground).
+    Head to the [Quick start](#quick-start) section. You can also try the [SDK Playground](#sdk-playground).
 
-==}
+    ==}
 
-<div class="grid cards" markdown>
+    <div class="grid cards" markdown>
 
--   :material-attachment-plus:{ .lg .middle .icon-color} __Unified Balance__
+    -   :material-attachment-plus:{ .lg .middle .icon-color} __Unified Balance__
 
-    ---
+        ---
 
-    Let Web3 users instantly access unified balance across chains and spend on any chain without bridging or swapping tokens.
+        Unify cross-chain balances and enable user spending without bridging or swaps with the CA SDK. *Coming soon!*
 
-    [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/casdk.md#unified-balance)
+        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/casdk.md#unified-balance)
 
--   :material-account-group:{ .lg .middle .icon-color} __Social Login__
+    -   :material-account-group:{ .lg .middle .icon-color} __Social Login__
 
-    ---
+        ---
 
-    Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}
+        Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}
 
-    [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
+        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
 
--   :material-gas-station-off:{ .lg .middle .icon-color} __Gasless__
+    -   :material-gas-station-off:{ .lg .middle .icon-color} __Gasless__
 
-    ---
+        ---
 
-    Sponsor gas fees and enable gasless transactions via {{config.extra.arcana.wallet_name}} / third-party browser-based wallets
+        Sponsor gas fees and enable gasless transactions via {{config.extra.arcana.wallet_name}} / third-party browser-based wallets
 
-    [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
+        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
 
--   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2 min!__
+    -   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2 min!__
 
-    ---
+        ---
 
-    Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience
+        Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience
 
-    [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
+        [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
 
--   :material-run-fast:{ .lg .middle .icon-color} __Integration Examples__
+    -   :material-run-fast:{ .lg .middle .icon-color} __Integration Examples__
 
-    ---
+        ---
 
-    Get up and running quickly with these integration examples for various supported Web3 apps!
+        Get up and running quickly with these integration examples for various supported Web3 apps!
 
-    [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
+        [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
 
--   :material-run-fast:{ .lg .middle .icon-color} __Resources__
+    -   :material-run-fast:{ .lg .middle .icon-color} __Resources__
 
-    ---
+        ---
 
-    Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists amd more!
+        Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists amd more!
 
-    [:octicons-arrow-right-24: Resources](http://localhost:8000/relnotes/latest-auth-release-note/)
+        [:octicons-arrow-right-24: Resources](http://localhost:8000/relnotes/latest-auth-release-note/)
 
 
-</div>
-
-## SDK Playground
-
-<div class="tx-hero-container">
-    <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
-</div>
-
-<div class="tx-hero-container">
-    <div class="tx-hero-content">
-        <a href="/auth/auth-try-now/">
-        <div class="tx-try-now-button-pink a-link-items">
-            <h3 style="color: var(--md-an-gray-light-color)">Try CA</h3>
-        </div>
-        </a>
     </div>
-    <div class="tx-hero-content">
-        <a href="/auth/auth-try-now/">
-        <div class="tx-try-now-button-blue a-link-items">
-            <h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3>
-        </div>
-        </a>
+
+    ## SDK Playground
+
+    <div class="tx-hero-container">
+        <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
     </div>
-    <div class="tx-hero-content">
-        <a href="/gasless/gl-try-now/">
-            <div class="tx-try-now-button-green a-link-items">
-                <h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3>
+
+    <div class="tx-hero-container">
+        <div class="tx-hero-content">
+            <a href="/ca/ca-try-now/">
+            <div class="tx-try-now-button-pink a-link-items">
+                <h3 style="color: var(--md-an-gray-light-color)">Try CA</h3>
             </div>
-        </a>
+            </a>
+        </div>
+        <div class="tx-hero-content">
+            <a href="/auth/auth-try-now/">
+            <div class="tx-try-now-button-blue a-link-items">
+                <h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3>
+            </div>
+            </a>
+        </div>
+        <div class="tx-hero-content">
+            <a href="/gasless/gl-try-now/">
+                <div class="tx-try-now-button-green a-link-items">
+                    <h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3>
+                </div>
+            </a>
+        </div>
     </div>
-</div>
 
-## Quick Start
+    ## Quick Start
 
-=== "Web Apps"
+    === "Web Apps"
 
-    **CA**
+        **Unify Balance**
 
-    <hr>
+        <hr>
 
-    [[ca-quick-start| CA ]]{ .md-button } [[ca-quick-start| Chain Abstraction ]]{ .md-button } 
+        [[ca-quick-start| Chain Abstraction ]]{ .md-button } 
 
-    **Auth**
+        **Auth**
 
-    <hr>
+        <hr>
 
-     [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
-     
-     **Gasless**
-   
-     <hr>
+        [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
+        
+        **Gasless**
+    
+        <hr>
 
-     [[gasless-quick-start| Gasless ]]{ .md-button } [[gasless-standalone-quick-start| Gasless(3rd Party Wallets) ]]{ .md-button }
+        [[gasless-quick-start| Gasless ]]{ .md-button } [[gasless-standalone-quick-start| Gasless(3rd Party Wallets) ]]{ .md-button }
 
-=== "Non-EVM Apps"
+    === "Non-EVM Apps"
 
-    [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
+        [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
 
-=== "Mobile Apps"
+    === "Mobile Apps"
 
-     [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
+        [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
 
-=== "Gaming Apps"
+    === "Gaming Apps"
 
-    [[unity-quick-start| Unity ]]{ .md-button }
+        [[unity-quick-start| Unity ]]{ .md-button }
 
 ## Need Help?
 

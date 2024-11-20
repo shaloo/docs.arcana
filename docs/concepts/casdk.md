@@ -11,9 +11,11 @@ arcana:
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" width="50"/>
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" width="50"/>
 
-{{config.extra.arcana.ca_sdk_name}} unifies balances across supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]] for several [[ca-stack#apps|chains]] out of the box.  
+The {{config.extra.arcana.ca_sdk_name}} is meant for Web3 builders and app developers.
 
-Web3 app builders can integrate the Chain Abstraction feature via the CA SDK and let users spend on any chain, as long as they have sufficient funds across chains to cover for the transaction amount.
+It unifies user balance in the wallet account spread across multiple [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].  
+
+Web3 app builders can integrate Arcana's [[concept-ca|Chain Abstraction]] feature via the CA SDK and let users spend on any chain, as long as they have sufficient funds across chains to cover for the transaction amount.
 
 Developers start by [[register-app-auth|registering the app]] and [[index-configure-auth|configuring chain abstraction settings]] through the [{{config.extra.arcana.dashboard_name}}]({{page.meta.arcana.root_rel_path}}/concepts/dashboard.md). Each registered app gets a unique **{{config.extra.arcana.app_address}}** essential for integrating with the {{config.extra.arcana.sdk_name}}. 
 
