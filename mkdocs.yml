@@ -634,7 +634,8 @@ nav:
     - Try Auth!: auth/auth-try-now.md
     - Try Gasless!: gasless/gl-try-now.md
     - Demo App: https://demo.arcana.network
-  - APIs: 
+  - APIs:
+    - CA: ca/ca-usage-guide.md
     - Auth: auth/auth-usage-guide.md
     - Gasless: gasless/gasless-sdk-usage-guide.md
     - Auth-Core: auth/auth-core-usage-guide.md
