@@ -16,7 +16,7 @@
             <div><p style="color: var(--md-an-blue-color); font-size: 0.75rem"><i>If you don't see the Sandpack below, reload the page.</i></p></div>
         </div>
         
-        <div style="margin-top: 1rem; margin-bottom: 1rem" id="authsandpack"></div>
+        <div style="margin-top: 1rem; margin-bottom: 1rem" id="casandpack"></div>
         
     </section>
 
@@ -52,7 +52,7 @@
     import { createRoot } from "react-dom/client";
     import { Sandpack } from "@codesandbox/sandpack-react";
 
-    const authsandpack = createRoot(document.getElementById("authsandpack"));
+    const authsandpack = createRoot(document.getElementById("casandpack"));
 
     let themeType;
     let currentTheme;
@@ -135,7 +135,7 @@
                     dependencies: { 
                         "dotenv": "^16.3.1",
                         "parcel": "^2.9.3",
-                        "@arcana/auth": "1.0.11"
+                        "@arcana/ca-sdk": "1.0.0"
                     }
                 },
                 theme,
@@ -145,7 +145,7 @@
                     showConsole: true,
                     showConsoleButton: true,
                     externalResources: [
-                        "https://cdn.jsdelivr.net/npm/@arcana/auth",
+                        "https://cdn.jsdelivr.net/npm/@arcana/ca-sdk",
                     ],
                     editorHeight: '95vh',
                     autoReload: true,
@@ -160,9 +160,9 @@
     }
 
     const fileUrls = [
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.html',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/index.js',
-        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/auth/styles.css',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/ca/index.html',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/ca/index.js',
+        'https://raw.githubusercontent.com/arcana-network/sandpack-examples/main/ca/styles.css',
     ];
     const files = {};
     fetchAndStoreFiles(fileUrls, files)
