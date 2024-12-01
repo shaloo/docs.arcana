@@ -1,5 +1,3 @@
-{==
-
 **Release Date: Dec 3, 2024**  
 
 Version: **v0.0.1-beta.9**
