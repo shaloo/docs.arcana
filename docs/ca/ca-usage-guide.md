@@ -26,16 +26,6 @@ npm install --save @arcana/ca-sdk
 yarn add @arcana/ca-sdk
 ```
 
-### CDN Install
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/@arcana/ca-sdk"></script>
-```
-
-```html
-<script src="https://unpkg.com/@arcana/ca-sdk"></script>
-```
-
 ---
 
 ## Usage
@@ -51,9 +41,13 @@ import { CA } from '@arcana/ca-sdk' // From npm
 ```ts
 import { CA } from '@arcana/ca-sdk'
 
-const ca = new CA(window.ethereum)
+const provider = window.ethereum
+
+const ca = new CA(provider)
+//CA provider can be used as a drop in replacement for EIP1193 provider(like window.ethereum)
 
 await ca.init()
+//Initialize CA provider before calling any API function
 
 ```
 
@@ -61,33 +55,47 @@ See [Get Started with CA SDK](https://docs.arcana.network/quick-start/ca-quick-s
 
 ### CA APIs
 
-#### Allowance
+#### Get Allowance
 
 ```js
-  IntentSourceForAllowance: {
-      chainID: number;
-      currentAllowance: bigint;
-      requiredAllowance: bigint;
-      token: TokenInfo;
-  }
+// Get USDC allowance for Polygon
+await ca.allowance().tokens(["USDC"]).chain(137).get()
+// Get USDC & USDT allowance for all supported chains
+await ca.allowance().tokens(["USDC", "USDT"]).get()
+// Get all supported token allowances for all supported chains
+await ca.allowance().get()
+```
+
+#### Set Allowance
+
+```js
+await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
 ```
 
 #### Unified Balance
 
 ```js
-await ca.getUnifiedBalance()
+const balances = await ca.getUnifiedBalances()
+const usdtBalance = await ca.getUnifiedBalance("usdt")
 ```
 
 #### Bridge
 
 ```js
-ca.bridge()
+await ca.bridge().token("pol").amount(10).chain(137).exec();
 ```
 
 #### Request
 
 ```js
-await ca.request()
+await ca.request({
+    method: "eth_sendTransaction",
+    params: [{
+        to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
+        from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
+        value: "0x001"
+    }],
+})
 ```
 
 #### Intercept
@@ -96,10 +104,19 @@ await ca.request()
 await ca.intercept()
 ```
 
+#### Transfer
+
+```js
+await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
+
+// Note: Here chain() is optional.
+// The current chain will be used as input if not specified.
+```
+
 #### SendTx
 
 ```js
-await ca.sendTx()
+await ca.sendTx([Send Tx Input Params])
 ```
 
 #### Refund
@@ -108,18 +125,37 @@ await ca.sendTx()
 await ca.refundIntentTx(hash)
 ```
 
-### Hooks
+### CA Events Listener
 
-#### setOnAllowanceHook
+#### Add Listener
 
 ```js
-await ca.setOnAllowanceHook(hook)
+ca.addCAEventListener((data) => {
+    switch(data.type) {
+        case "EXPECTED_STEPS":{
+            // store data.data(an array of steps which will be followed)
+            state.value.steps = data.data.map(s => ({ ...s, done: false }))
+            state.value.inProgress = true
+            break;
+        }
+        case "STEP_DONE": {
+            const v = state.value.steps.find(s => {
+                return s.typeID === data.data.typeID
+            })
+            if (v) {
+                v.done = true
+            }
+            break;
+        }
+    }
+});
 ```
 
-#### setOnBeforeSendHook
+#### Remove Listener
+
 
 ```js
-await ca.setOnBeforeSendHook(hook)
+ca.removeCAEventListener((data) => {...})
 ```
 
 ---

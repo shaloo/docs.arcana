@@ -510,6 +510,7 @@ nav:
         - Register App: setup/config-gasless/register-app.md
         - Gasless Settings: setup/configure-standalone-gasless.md
     - Usage:
+      - CA SDK: ca/ca-usage-guide.md
       - Auth SDK: 
         - Install SDK: auth/sdk-installation.md
         - Integrate App:
@@ -643,6 +644,7 @@ nav:
     - Overview: introduction/index.md
     - Developers:
       - Release Notes:
+        - CA SDK: relnotes/latest-ca-release-note.md
         - Auth SDK: relnotes/latest-auth-release-note.md
         - Gasless SDK: relnotes/latest-gasless-release-note.md
       - Migration Guides:

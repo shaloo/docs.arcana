@@ -26,32 +26,96 @@ Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified ba
 
 {% include "./text-snippets/quick-start-int-casdk.md" %}
 
-### Onboard Users
+### Allowance
 
-{% include "./text-snippets/quick-start-auth-onboard.md" %}
+Allowances are required to enable unified balance in the wallet. It requires the wallet user to permit the Arcana Vault contract to set up ERC20 token allowances on their behalf for spending unified balance across supported chains. 
 
-### Sign Transactions
+#### Get Allowance
 
-{% include "./text-snippets/quick-start-sign-transactions.md" %}
+```js
+// Get USDC allowance for Polygon
+await ca.allowance().tokens(["USDC"]).chain(137).get()
+// Get USDC & USDT allowance for all supported chains
+await ca.allowance().tokens(["USDC", "USDT"]).get()
+// Get all supported token allowances for all supported chains
+await ca.allowance().get()
+```
 
-{% include "./text-snippets/quick-start-deploy.md" %}
+#### Set Allowance
+
+```js
+await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
+```
+
+### Unified Balance
+
+```js
+const balances = await ca.getUnifiedBalances()
+const usdtBalance = await ca.getUnifiedBalance("usdt")
+```
+
+#### Request
+
+```js
+await ca.request({
+    method: "eth_sendTransaction",
+    params: [{
+        to: "0xEa46Fb4b4Dc7755BA29D09Ef2a57C67bab383A2f", 
+        from: "0x7f521A827Ce5e93f0C6D773525c0282a21466f8d",
+        value: "0x001"
+    }],
+})
+```
 
 ## 3. Advanced Usage
 
-{% include "./text-snippets/quick-start-authprovider-optional.md" %}
+#### Bridge
 
-{% include "./text-snippets/adv_wallet_customization.md" %}
+```js
+await ca.bridge().token("pol").amount(10).chain(137).exec();
+```
 
-{% include "./text-snippets/quick-start-auth-onboard-custom-login.md" %}
+### Intercept
 
-{% include "./text-snippets/adv_pnp_compact_ui.md" %}
+TBD
 
-{% include "./text-snippets/jwt_token.md" %}
+### CA Events
+
+#### Add Listener
+
+```js
+ca.addCAEventListener((data) => {
+    switch(data.type) {
+        case "EXPECTED_STEPS":{
+            // store data.data(an array of steps which will be followed)
+            state.value.steps = data.data.map(s => ({ ...s, done: false }))
+            state.value.inProgress = true
+            break;
+        }
+        case "STEP_DONE": {
+            const v = state.value.steps.find(s => {
+                return s.typeID === data.data.typeID
+            })
+            if (v) {
+                v.done = true
+            }
+            break;
+        }
+    }
+});
+```
+
+#### Remove Listener
+
+
+```js
+ca.removeCAEventListener((data) => {...})
+```
 
 ## See Also
 
 {% include "./text-snippets/quick-start-common-examples.md" %}
 
-{% include "./text-snippets/auth_sdk_quicklinks.md" %}
+{% include "./text-snippets/ca_sdk_quicklinks.md" %}
 
-{% include "./text-snippets/demo/auth_sdk_demo.md" %}
+{% include "./text-snippets/demo/ca_sdk_demo.md" %}
