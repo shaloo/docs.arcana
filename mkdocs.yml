@@ -815,17 +815,17 @@ nav:
                   - Beta -> v0.0.25: migration/main-scw-v0.0.25-migration.md
             - Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
         - Docs @Partners:
-        - partner-docs/index.md
-        - MultiversX:
-          - Auth: https://multiversx.com/ecosystem/project/arcana
-        - Linea:
-          - Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
-          - Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
-        - Caduceus:
-          - Social Login: https://docs.caduceus.foundation/auth
-        - Alchemy:
-          - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
-          - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
+          - partner-docs/index.md
+          - MultiversX:
+            - Auth: https://multiversx.com/ecosystem/project/arcana
+          - Linea:
+            - Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
+            - Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
+          - Caduceus:
+            - Social Login: https://docs.caduceus.foundation/auth
+          - Alchemy:
+            - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
+            - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
   - Demos:
     - Aave: https://www.youtube.com/watch?v=Gu0VV6Z7wHY
     - UniSwap: https://www.youtube.com/watch?v=tB2DTw-_apQ
