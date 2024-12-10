@@ -444,7 +444,7 @@ not_in_nav: |
 
 nav:
   - Unified Balance:
-    - ca/index.md
+    - ca/ca-index.md
     - Introduction: 
       - Chain Abstraction: ca/introduction/ca.md
       - CA SDK: ca/introduction/ca-sdk.md
