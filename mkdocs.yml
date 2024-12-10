@@ -85,7 +85,11 @@ extra:
   arcana:
     company_name: Arcana
     product_name: Arcana Auth
+    ca_sdk: CA SDK
+    auth_sdk: Auth SDK
+    gasless_sdk: Gasless SDK
     sdk_name: Arcana Auth SDK
+    ca_sdk_name: Arcana CA SDK
     react_sdk_name: Arcana Auth React SDK
     wagmi_sdk_name: Arcana Auth Wagmi SDK
     web3_react_sdk_name: Arcana Auth Web3 React SDK
@@ -111,6 +115,8 @@ extra:
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.1.0']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
     latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.37']
+    latest_gca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.1']
+    ca_sdk_pkg_name: ca-sdk
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
     gasless_sdk_pkg_name: scw
@@ -442,6 +448,7 @@ nav:
     - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
     - Service Status: https://status.arcana.network/
     - Quick Start:
+      - CA SDK: quick-start/ca-quick-start.md
       - Auth SDK:
         - Web:
           - Wagmi: quick-start/wagmi-quick-start.md
@@ -503,6 +510,7 @@ nav:
         - Register App: setup/config-gasless/register-app.md
         - Gasless Settings: setup/configure-standalone-gasless.md
     - Usage:
+      - CA SDK: ca/ca-usage-guide.md
       - Auth SDK: 
         - Install SDK: auth/sdk-installation.md
         - Integrate App:
@@ -623,10 +631,12 @@ nav:
     - Support: 
       - Need Help?: support/index.md
   - Playground:
+    - Try CA!: ca/ca-try-now.md
     - Try Auth!: auth/auth-try-now.md
     - Try Gasless!: gasless/gl-try-now.md
     - Demo App: https://demo.arcana.network
-  - APIs: 
+  - APIs:
+    - CA: ca/ca-usage-guide.md
     - Auth: auth/auth-usage-guide.md
     - Gasless: gasless/gasless-sdk-usage-guide.md
     - Auth-Core: auth/auth-core-usage-guide.md
@@ -634,6 +644,7 @@ nav:
     - Overview: introduction/index.md
     - Developers:
       - Release Notes:
+        - CA SDK: relnotes/latest-ca-release-note.md
         - Auth SDK: relnotes/latest-auth-release-note.md
         - Gasless SDK: relnotes/latest-gasless-release-note.md
       - Migration Guides:
@@ -684,6 +695,7 @@ nav:
           - concepts/authtype/index.md
           - Auth Providers: concepts/authtype/socialauth.md
           - Custom Auth: concepts/authtype/custom-auth.md
+        - Chain Abstraction: concepts/ca.md
         - Configuration Profiles: concepts/config-profiles.md
         - Dashboard: concepts/dashboard.md
         - Gateway: concepts/gateway-node.md
@@ -704,6 +716,7 @@ nav:
         - Passkeys Login: concepts/authtype/auth-passkeys.md
         - Private Key: concepts/private-key.md
         - SDKs:
+          - CA SDK: concepts/casdk.md
           - Auth SDK: concepts/authsdk.md
           - Auth-Core SDK: concepts/auth-core-sdk.md
           - Gasless SDK: concepts/glsdk.md
@@ -717,6 +730,7 @@ nav:
           - Metrics: concepts/usage-metrics.md
         - Validator Nodes: concepts/validator-nodes.md
       - Tech Stack: 
+        - CA Assets: web3-stack/ca_stack.md
         - App Types: web3-stack/apps.md
         - Auth Providers: web3-stack/auth.md
         - Browsers: web3-stack/browsers.md
