@@ -827,6 +827,7 @@ nav:
             - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
             - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
   - Demos:
+    - Test: ca/ca-demo.md
     - Aave: https://www.youtube.com/watch?v=Gu0VV6Z7wHY
     - UniSwap: https://www.youtube.com/watch?v=tB2DTw-_apQ
     - Jumper: hhttps://www.youtube.com/watch?v=GwYCwZ7E-Ns
