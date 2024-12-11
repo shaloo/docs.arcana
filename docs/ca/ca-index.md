@@ -12,9 +12,16 @@ hide:
 
 # Chain Abstraction
 
-Welcome!
+**Welcome!**
 
-Use Arcana Chain Abstraction (CA) SDK to empower Web3 app users to cross the multi-chain chasm with [[concept-casdk#unified-balance|unified balance]]  across chains and spend anywhere without bridging.
+<figure markdown="span">
+  <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
+  <figcaption>Arcana's Chain Abstraction</figcaption>
+</figure>
+
+## Bridge no more!
+
+With Arcana’s Chain Abstraction (CA) SDK, give your Web3 app users a [[concept-casdk#unified-balance|unified balance]] across multiple chains. Let them spend freely on any chain — no manual bridging required.
 
 {==
 
@@ -30,13 +37,21 @@ The rise of L2s has fragmented liquidity across multiple chains, making it hard 
 
 Chain abstraction solves this by offering a unified balance. Users can access and spend funds across multiple chains without manual bridging. This reduces friction, lowers entry barriers, and simplifies the user experience.
 
-### Why it matters?
+## Why it matters?
 
 Not all Web3 users have the knowledge, patience, or resources to track down the best routes for liquidity. With chain abstraction, that complexity disappears. Users get seamless access to liquidity on any chain, boosting accessibility for both new apps and new users.
+
+## Why Arcana?
 
 ### Proven Tech
 
 Arcana's Chain Abstraction (CA) tech is already working with apps like Aave, UniSwap, and others. Developers can use the beta SDK to enable unified balances in their apps, streamlining the user experience and making Web3 as simple as Web2.
+
+### Infrastructure Expertise
+
+Arcana Network develops infrastructure SDKs designed to simplify Web3 user experiences and speed up onboarding. These SDKs work on both Web and Mobile platforms, enabling developers to create more user-friendly dApps.
+
+By reducing complexity, Arcana’s tools make it easier for apps to attract and retain users, bridging the gap between Web2 simplicity and Web3 potential. [[index-docs|Learn more...]]
 
 ## Need Help?
 
