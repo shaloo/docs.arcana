@@ -12,6 +12,8 @@ hide:
 
 # Web3 Made Effortless
 
+<!---
+
 !!! quote "Don't Panic!"
 
       All you really need to know for the moment is that the universe is a lot more complicated than you might think, even if you start from a position of thinking it’s pretty damn complicated in the first place.
@@ -23,6 +25,7 @@ hide:
 This documentation contains everything you need to get started using [[introduction|{{config.extra.arcana.company_name}} SDKs]].
 
 ==}
+-->
 
 ## Welcome!
 
@@ -45,13 +48,11 @@ This documentation contains everything you need to get started using [[introduct
 
 === "Web3 Developers"
 
-    Integrate Web3 apps with Arcana SDKs to enable *unified balance*, *social login* and *gasless transactions*.
+    Integrate Web3 apps with Arcana SDKs to onboard users quickly via *social login* and *gasless transactions*.
     
-    1. **Chain Abstraction (CA) SDK:** Enable [[concept-casdk#unified-balance|unified balance]] for app users. Allow your app users to spend on any chain and beat liquidity fragmentation across chains. 
-    
-    2. **Auth SDK:** Onboard Web3 app users effortlessly via [[concept-social-login|social login]] . Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]] and built-in gasless transactions.
+    1. **Auth SDK:** Onboard Web3 app users effortlessly via [[concept-social-login|social login]] . Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]] and built-in gasless transactions.
 
-    3. **Gasless SDK:** Leverage account abstraction feature and sponsor gas fees to incentivize users through [[concept-gasless-transactions|gasless transactions]].
+    2. **Gasless SDK:** Leverage account abstraction feature and sponsor gas fees to incentivize users through [[concept-gasless-transactions|gasless transactions]].
 
     {==
 
@@ -62,14 +63,6 @@ This documentation contains everything you need to get started using [[introduct
     ==}
 
     <div class="grid cards" markdown>
-
-    -   :material-attachment-plus:{ .lg .middle .icon-color} __Unified Balance__
-
-        ---
-
-        Unify cross-chain balances and enable user spending without bridging or swaps with the CA SDK. *Coming soon!*
-
-        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/casdk.md#unified-balance)
 
     -   :material-account-group:{ .lg .middle .icon-color} __Social Login__
 
@@ -122,13 +115,6 @@ This documentation contains everything you need to get started using [[introduct
 
     <div class="tx-hero-container">
         <div class="tx-hero-content">
-            <a href="/ca/ca-try-now/">
-            <div class="tx-try-now-button-pink a-link-items">
-                <h3 style="color: var(--md-an-gray-light-color)">Try CA</h3>
-            </div>
-            </a>
-        </div>
-        <div class="tx-hero-content">
             <a href="/auth/auth-try-now/">
             <div class="tx-try-now-button-blue a-link-items">
                 <h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3>
@@ -147,12 +133,6 @@ This documentation contains everything you need to get started using [[introduct
     ## Quick Start
 
     === "Web Apps"
-
-        **Unify Balance**
-
-        <hr>
-
-        [[ca-quick-start| Chain Abstraction ]]{ .md-button } 
 
         **Auth**
 

@@ -9,44 +9,38 @@ arcana:
 
 # Demos
 
-We've built Arcana Chain Abstraction demos for several Web3 apps. Developers can integrate the Arcana CA SDK to offer users a [[concept-casdk#unified-balance|unified balance]] across chains.
+We've built Arcana Chain Abstraction demos for several Web3 apps.
 
-*Got a demo of your app?*
 
-**Submit it**, and we'll feature it here!
 
 === "Aave"
 
-    <figure>
-        <iframe align="left" src="https://www.youtube.com/embed/Gu0VV6Z7wHY" allowfullscreen></iframe>
-    </figure>
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/Gu0VV6Z7wHY" allowfullscreen ></iframe>
 
 === "UniSwap"
 
-    <figure>
-        <iframe align="left" src="https://www.youtube.com/embed/tB2DTw-_apQ" allowfullscreen></iframe>
-    </figure>
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/tB2DTw-_apQ" allowfullscreen></iframe>
 
 === "Jumper"
 
-    <figure>
-        <iframe align="left" src="https://www.youtube.com/embed/GwYCwZ7E-Ns" allowfullscreen></iframe>
-    </figure>
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/GwYCwZ7E-Ns" allowfullscreen></iframe>
 
 === "Polymarket"
 
-    <figure>
-        <iframe align="left" src="https://www.youtube.com/embed/PvS_zltnDyQ" allowfullscreen></iframe>
-    </figure>
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/PvS_zltnDyQ" allowfullscreen></iframe>
 
 === "Hyperliquid"
 
-    <figure>
-        <iframe align="left" src="https://www.youtube.com/embed/MRErLIKB3s0" allowfullscreen></iframe>
-    </figure>
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/MRErLIKB3s0" allowfullscreen></iframe>
 
 === "Galaxy Exchange"
 
-    <figure>
-        <iframe align="left" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
-    </figure>
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
+
+Developers can integrate the Arcana CA SDK with other Web3 apps to let users spend [[concept-casdk#unified-balance|unified balance]] across chains.
+
+!!! an-tip "Have a Web3 app?"
+
+    *Got a demo of your app integrated with the Arcana CA SDK?*
+        
+    **Submit** a youtube link, and we'll feature it here!

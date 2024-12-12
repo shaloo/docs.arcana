@@ -21,13 +21,15 @@ hide:
 
 ## Bridge no more!
 
-With Arcana’s Chain Abstraction (CA) SDK, give your Web3 app users a [[concept-casdk#unified-balance|unified balance]] across multiple chains. Let them spend freely on any chain — no manual bridging required.
+With Arcana’s Chain Abstraction (CA) SDK, give your Web3 app users a [[concept-casdk#unified-balance|unified balance]] across chains. Let them spend anywhere, anytime — no bridging required.
 
 {==
 
 **TL;DR**
 
-Head to the [[ca-quick-start|Quick start Guide]] and begin integrating Web3 app with the SDK. See integration examples for sample code. 
+Get started fast!
+
+Check out the [[ca-quick-start|Quick start Guide]] to integrate your Web3 app with the SDK. Browse integration examples with sample code to jump right in.
 
 ==}
 
