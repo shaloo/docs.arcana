@@ -53,79 +53,79 @@ Call appropriate JSON-RPC functions and the supported Web3 wallet operations for
 
 ??? an-info "Sample Code"
 
-        The following code snippet shows how an HTML/CSS/JS app can integrate with the {{config.extra.arcana.sdk_name}}, onboard users via plug-and-play login UI and use the standard EIP-1193 Ethereum provider for issuing blockchain transactions through a custom wallet UI.
+    The following code snippet shows how an HTML/CSS/JS app can integrate with the {{config.extra.arcana.sdk_name}}, onboard users via plug-and-play login UI and use the standard EIP-1193 Ethereum provider for issuing blockchain transactions through a custom wallet UI.
 
-        ```js
+    ```js
 
-        import { AuthProvider } from "@arcana/auth";
-        import { ethers } from 'ethers';
+    import { AuthProvider } from "@arcana/auth";
+    import { ethers } from 'ethers';
 
-        let provider;
-        const auth = new AuthProvider('xar_live_nnnnnnnnnnnnnnncdddddddd')  //Use registered app client Id
+    let provider;
+    const auth = new AuthProvider('xar_live_nnnnnnnnnnnnnnncdddddddd')  //Use registered app client Id
 
-        // initialize the Arcana AuthProvider before calling any AuthProvider functions
-        ...
-        await auth.init()
-        ...
+    // initialize the Arcana AuthProvider before calling any AuthProvider functions
+    ...
+    await auth.init()
+    ...
 
-        // onboard users - for e.g. using plug-and-play ui
+    // onboard users - for e.g. using plug-and-play ui
 
-        const arcanaProvider = await auth.connect()
+    const arcanaProvider = await auth.connect()
 
-        // alternatively, onboard users by calling loginWithLink(deprecated), `loginWithOTPStart`, `loginWithOTPComplete`, loginWithSocial, loginWithBearer for passwordless, social or IAM providers.
-        ...
+    // alternatively, onboard users by calling loginWithLink(deprecated), `loginWithOTPStart`, `loginWithOTPComplete`, loginWithSocial, loginWithBearer for passwordless, social or IAM providers.
+    ...
 
-        const provider = new ethers.providers.Web3Provider(arcanaProvider)
+    const provider = new ethers.providers.Web3Provider(arcanaProvider)
 
-        // Call ethers provider APIs see https://docs.ethers.org/v5/api/providers/provider/ for details
-        await provider.getBlockNumber()
+    // Call ethers provider APIs see https://docs.ethers.org/v5/api/providers/provider/ for details
+    await provider.getBlockNumber()
 
-        // Use the Arcana provider to sign a message using JSON RPC calls
+    // Use the Arcana provider to sign a message using JSON RPC calls
 
-        async function signMessage() {
+    async function signMessage() {
 
-          // Display a notification in custom wallet UI  showing the message details and seeking user's approval
+      // Display a notification in custom wallet UI  showing the message details and seeking user's approval
 
-          ...
+      ...
 
-          // Once user approves, issue the request via the Arcana Auth SDK to sign transaction
+      // Once user approves, issue the request via the Arcana Auth SDK to sign transaction
 
-          const { sig } = await arcanaProvider.request({
-            method: 'eth_sign',
-            params: [
-              {
-                from, // sender account address
-                data: 'Some message data',
-              },
-            ],
-          })
-          console.log({ sig })
-        }
+      const { sig } = await arcanaProvider.request({
+        method: 'eth_sign',
+        params: [
+          {
+            from, // sender account address
+            data: 'Some message data',
+          },
+        ],
+      })
+      console.log({ sig })
+    }
 
-        ...
+    ...
 
-        // You can send tokens or use eth_sendtransaction functionality in custom wallet UI 
-        // Show a UI notification displaying the transaction details and ask for user's approval
+    // You can send tokens or use eth_sendtransaction functionality in custom wallet UI 
+    // Show a UI notification displaying the transaction details and ask for user's approval
 
-        ...
+    ...
 
-        // Use the Arcana provider to issue the send transaction
+    // Use the Arcana provider to issue the send transaction
 
-        async function sendTransaction() {
-          const hash = await arcanaProvider.request({
-            method: 'eth_sendTransaction',
-              params: [{
-              from,
-              gasPrice: 0,
-              to: '0xE28F01Cf69f27Ee17e552bFDFB7ff301ca07e780', // receiver account address
-              value: '0x0de0b6b3a7640000',
-            },],
-          })
-          console.log({ hash })
-        }
+    async function sendTransaction() {
+      const hash = await arcanaProvider.request({
+        method: 'eth_sendTransaction',
+          params: [{
+          from,
+          gasPrice: 0,
+          to: '0xE28F01Cf69f27Ee17e552bFDFB7ff301ca07e780', // receiver account address
+          value: '0x0de0b6b3a7640000',
+        },],
+      })
+      console.log({ hash })
+    }
 
-        ...
-        ```
+    ...
+    ```
 
 ??? an-tip "Getting Private Key with Custom Wallet UI"
 
