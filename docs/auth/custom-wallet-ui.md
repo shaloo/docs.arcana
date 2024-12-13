@@ -47,9 +47,15 @@ Apps that are integrated with the {{config.extra.arcana.sdk_name}} can choose th
 
 ## 6. Plug in Custom Wallet UI
 
-Once user onboarding logic is in place, add code to wire your custom wallet UI by using the standard Ethereum EIP-1193 provider, the `AuthProvider` created when the app is integrated with the {{config.extra.arcana.sdk_name}}. 
+Once user onboarding logic is in place, add code to wire your custom wallet UI to enable wallet operations. 
 
-Call appropriate JSON-RPC functions and the supported Web3 wallet operations for the blockchain network using the `AuthProvider`. Add code to display appropriate UI notifications and allow the users to approve or reject the blockchain request. 
+* Issue Wallet Ops
+* Manage User Control
+* Export Private Key
+
+###  Issue Wallet Ops
+
+During app integration with {{config.extra.arcana.sdk_name}}, an `AuthProvider` is created. This provider is a standard Ethereum EIP-1193 provider. It facilitates wallet interactions with the blockchain. Use `AuthProvider` to call the [JSON-RPC APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) and handle [[evm-web3-wallet-ops|Web3 wallet operations for the selected chains]]. Add code to trigger wallet actions like sending transactions, signing messages, and executing contract calls.
 
 ??? an-info "Sample Code"
 
@@ -127,10 +133,39 @@ Call appropriate JSON-RPC functions and the supported Web3 wallet operations for
     ...
     ```
 
-??? an-tip "Getting Private Key with Custom Wallet UI"
+### Manage User Control
 
-      {% include "./code-snippets/custom-wallet-ui-pvt-key.md" %}
+For a smooth user experience, ensure your custom UI displays clear approval/rejection prompts when blockchain requests are made. Users should be able to easily accept or reject these actions. 
 
+### Export Key Option
+
+When using the default {{config.extra.arcana.wallet_name}} UI, authenticated users can access and copy their private key from the profile tab. For custom wallet UIs, developers should include secure options for users to export their private key. Use the `AuthProvider` to access the private key and make a JSON/RPC `request` call with the `_arcana_getPrivateKey` method to retrieve the key securely in the user's context.
+
+??? an-info "Sample Code"
+
+    ```js
+
+    // Only valid when custom wallet UI is selected in the dashboard
+    // during app registration
+
+    async function onClickGetUserPrivateKey() {
+      const authProvider = window.ethereum //assuming setWindowProvider is set when AuthProvider was instantiated 
+      try {
+        const userPkey = await authProvider.request({
+          method: '_arcana_getPrivateKey',
+          params: []
+        });
+        // Do something with the key in custom wallet UI
+        // For e.g., display it in the app context, allow user to copy it
+      } catch(error) {
+            console.log(error);
+      };
+    }
+    ```
+    
+!!! an-caution "Access Limitation"
+
+    If the app is configured through the {{config.extra.arcana.dashboard_name}} for using the default [[concept-keyspace-type|app specific keys option]], then `_arcana_getPrivateKey` can be used. Not available for the Global Keys [[concept-keyspace-type|Keyspace configuration setting]] for security reason.
 ## What's Next?
 
 Add code to use the `AuthProvider` and issue blockchain transactions in the context of the authenticated user and seek the user's approval, if required. The JSON/RPC functions and Web3 wallet operations supported by the {{config.extra.arcana.sdk_name}} for [[evm-web3-wallet-ops| EVM chains]] may differ from those supported for the non-EVM chains. [[concept-non-evm-chains|Learn more...]]
