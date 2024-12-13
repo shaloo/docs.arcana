@@ -47,90 +47,125 @@ Apps that are integrated with the {{config.extra.arcana.sdk_name}} can choose th
 
 ## 6. Plug in Custom Wallet UI
 
-Once user onboarding logic is in place, add code to wire your custom wallet UI by using the standard Ethereum EIP-1193 provider, the `AuthProvider` created when the app is integrated with the {{config.extra.arcana.sdk_name}}. 
+Once user onboarding logic is in place, add code to wire your custom wallet UI to enable wallet operations. 
 
-Call appropriate JSON-RPC functions and the supported Web3 wallet operations for the blockchain network using the `AuthProvider`. Add code to display appropriate UI notifications and allow the users to approve or reject the blockchain request. 
+* Issue Wallet Ops
+* Manage User Control
+* Export Private Key
+
+###  Issue Wallet Ops
+
+During app integration with {{config.extra.arcana.sdk_name}}, an `AuthProvider` is created. This provider is a standard Ethereum EIP-1193 provider. It facilitates wallet interactions with the blockchain. Use `AuthProvider` to call the [JSON-RPC APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) and handle [[evm-web3-wallet-ops|Web3 wallet operations for the selected chains]]. Add code to trigger wallet actions like sending transactions, signing messages, and executing contract calls.
 
 ??? an-info "Sample Code"
 
-        The following code snippet shows how an HTML/CSS/JS app can integrate with the {{config.extra.arcana.sdk_name}}, onboard users via plug-and-play login UI and use the standard EIP-1193 Ethereum provider for issuing blockchain transactions through a custom wallet UI.
+    The following code snippet shows how an HTML/CSS/JS app can integrate with the {{config.extra.arcana.sdk_name}}, onboard users via plug-and-play login UI and use the standard EIP-1193 Ethereum provider for issuing blockchain transactions through a custom wallet UI.
 
-        ```js
+    ```js
 
-        import { AuthProvider } from "@arcana/auth";
-        import { ethers } from 'ethers';
+    import { AuthProvider } from "@arcana/auth";
+    import { ethers } from 'ethers';
 
-        let provider;
-        const auth = new AuthProvider('xar_live_nnnnnnnnnnnnnnncdddddddd')  //Use registered app client Id
+    let provider;
+    const auth = new AuthProvider('xar_live_nnnnnnnnnnnnnnncdddddddd')  //Use registered app client Id
 
-        // initialize the Arcana AuthProvider before calling any AuthProvider functions
-        ...
-        await auth.init()
-        ...
+    // initialize the Arcana AuthProvider before calling any AuthProvider functions
+    ...
+    await auth.init()
+    ...
 
-        // onboard users - for e.g. using plug-and-play ui
+    // onboard users - for e.g. using plug-and-play ui
 
-        const arcanaProvider = await auth.connect()
+    const arcanaProvider = await auth.connect()
 
-        // alternatively, onboard users by calling loginWithLink(deprecated), `loginWithOTPStart`, `loginWithOTPComplete`, loginWithSocial, loginWithBearer for passwordless, social or IAM providers.
-        ...
+    // alternatively, onboard users by calling loginWithLink(deprecated), `loginWithOTPStart`, `loginWithOTPComplete`, loginWithSocial, loginWithBearer for passwordless, social or IAM providers.
+    ...
 
-        const provider = new ethers.providers.Web3Provider(arcanaProvider)
+    const provider = new ethers.providers.Web3Provider(arcanaProvider)
 
-        // Call ethers provider APIs see https://docs.ethers.org/v5/api/providers/provider/ for details
-        await provider.getBlockNumber()
+    // Call ethers provider APIs see https://docs.ethers.org/v5/api/providers/provider/ for details
+    await provider.getBlockNumber()
 
-        // Use the Arcana provider to sign a message using JSON RPC calls
+    // Use the Arcana provider to sign a message using JSON RPC calls
 
-        async function signMessage() {
+    async function signMessage() {
 
-          // Display a notification in custom wallet UI  showing the message details and seeking user's approval
+      // Display a notification in custom wallet UI  showing the message details and seeking user's approval
 
-          ...
+      ...
 
-          // Once user approves, issue the request via the Arcana Auth SDK to sign transaction
+      // Once user approves, issue the request via the Arcana Auth SDK to sign transaction
 
-          const { sig } = await arcanaProvider.request({
-            method: 'eth_sign',
-            params: [
-              {
-                from, // sender account address
-                data: 'Some message data',
-              },
-            ],
-          })
-          console.log({ sig })
-        }
+      const { sig } = await arcanaProvider.request({
+        method: 'eth_sign',
+        params: [
+          {
+            from, // sender account address
+            data: 'Some message data',
+          },
+        ],
+      })
+      console.log({ sig })
+    }
 
-        ...
+    ...
 
-        // You can send tokens or use eth_sendtransaction functionality in custom wallet UI 
-        // Show a UI notification displaying the transaction details and ask for user's approval
+    // You can send tokens or use eth_sendtransaction functionality in custom wallet UI 
+    // Show a UI notification displaying the transaction details and ask for user's approval
 
-        ...
+    ...
 
-        // Use the Arcana provider to issue the send transaction
+    // Use the Arcana provider to issue the send transaction
 
-        async function sendTransaction() {
-          const hash = await arcanaProvider.request({
-            method: 'eth_sendTransaction',
-              params: [{
-              from,
-              gasPrice: 0,
-              to: '0xE28F01Cf69f27Ee17e552bFDFB7ff301ca07e780', // receiver account address
-              value: '0x0de0b6b3a7640000',
-            },],
-          })
-          console.log({ hash })
-        }
+    async function sendTransaction() {
+      const hash = await arcanaProvider.request({
+        method: 'eth_sendTransaction',
+          params: [{
+          from,
+          gasPrice: 0,
+          to: '0xE28F01Cf69f27Ee17e552bFDFB7ff301ca07e780', // receiver account address
+          value: '0x0de0b6b3a7640000',
+        },],
+      })
+      console.log({ hash })
+    }
 
-        ...
-        ```
+    ...
+    ```
 
-??? an-tip "Getting Private Key with Custom Wallet UI"
+### Manage User Control
 
-      {% include "./code-snippets/custom-wallet-ui-pvt-key.md" %}
+For a smooth user experience, ensure your custom UI displays clear approval/rejection prompts when blockchain requests are made. Users should be able to easily accept or reject these actions. 
 
+### Export Key Option
+
+When using the default {{config.extra.arcana.wallet_name}} UI, authenticated users can access and copy their private key from the profile tab. For custom wallet UIs, developers should include secure options for users to export their private key. Use the `AuthProvider` to access the private key and make a JSON/RPC `request` call with the `_arcana_getPrivateKey` method to retrieve the key securely in the user's context.
+
+??? an-info "Sample Code"
+
+    ```js
+
+    // Only valid when custom wallet UI is selected in the dashboard
+    // during app registration
+
+    async function onClickGetUserPrivateKey() {
+      const authProvider = window.ethereum //assuming setWindowProvider is set when AuthProvider was instantiated 
+      try {
+        const userPkey = await authProvider.request({
+          method: '_arcana_getPrivateKey',
+          params: []
+        });
+        // Do something with the key in custom wallet UI
+        // For e.g., display it in the app context, allow user to copy it
+      } catch(error) {
+            console.log(error);
+      };
+    }
+    ```
+    
+!!! an-caution "Access Limitation"
+
+    If the app is configured through the {{config.extra.arcana.dashboard_name}} for using the default [[concept-keyspace-type|app specific keys option]], then `_arcana_getPrivateKey` can be used. Not available for the Global Keys [[concept-keyspace-type|Keyspace configuration setting]] for security reason.
 ## What's Next?
 
 Add code to use the `AuthProvider` and issue blockchain transactions in the context of the authenticated user and seek the user's approval, if required. The JSON/RPC functions and Web3 wallet operations supported by the {{config.extra.arcana.sdk_name}} for [[evm-web3-wallet-ops| EVM chains]] may differ from those supported for the non-EVM chains. [[concept-non-evm-chains|Learn more...]]

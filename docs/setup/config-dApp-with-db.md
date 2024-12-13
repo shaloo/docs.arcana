@@ -73,7 +73,7 @@ When deploying an app on the {{config.extra.arcana.company_name}} Mainnet, use t
 
 Each registered app is displayed in the 'Manage Apps' dashboard. A [[concept-config-profile|Testnet configuration profile]] is associated with each app by default. The 'Mainnet' button is disabled for a newly registered app. For Mainnet deployment, the developer must create a new Mainnet profile. 
 
-!!! an-tip
+!!! an-tip "Testnet vs. Mainnet Settings"
 
       Both Testnet and Mainnet configuration profiles are maintained separately. Each profile is associated with a unique **{{config.extra.arcana.app_address}}**. 
 
@@ -170,7 +170,7 @@ The dashboard screen will display all the user onboarding options and configurat
 
 See [[index-config-social-providers|how to configure social login]] for details.
 
-!!! an-tip
+!!! an-tip "Login Providers: Social, IAM, Custom"
 
       Besides the social login providers, {{config.extra.arcana.sdk_name}} also supports [[index-config-iam-providers|IAM Providers]] and [[config-custom-auth|Custom Auth]] options to onboard users.
 
@@ -244,7 +244,7 @@ The *Manage Apps* screen displays Monthly Active Users (MAU) for the developer a
   <figcaption>App Usage Metrics</figcaption>
 </figure>
 
-!!! an-caution
+!!! an-caution "Mainnet Billing"
 
       The billing data only applies to Mainnet usage and will be available in the forthcoming releases.
 

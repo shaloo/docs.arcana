@@ -72,17 +72,17 @@ Specify all the fields appropriately. Do not leave the optional fields empty.
 - Terms of Service
 - Privacy Policy
 
-!!! an-caution
+!!! an-caution "Enable Email ID Access"
 
       {{config.extra.arcana.sdk_name}} requires the Twitter user's email ID to verify the logged-in user's credentials. To enable this, Twitter makes it necessary that the Privacy Policy and Terms of Service are appropriately provided while creating a new app entry. For details, see [here](https://developer.twitter.com/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/get-account-verify_credentials).
 
 Make sure you save all the settings.
 
-!!! an-tip 
+!!! an-tip "Where can I find API Key and Secrets?"
 
-      If you missed copying the **API Key** and the **API Key Secret** earlier, you can go **App Settings** section in the Twitter Developer Dashboard. Refer to the *Keys and Tokens* tab. You will see under the **Consumer Keys** section, there is an option to regenerate the API key and secret. Make sure you copy both of these details.
+      Copy the **API Key** and the **API Key Secret** from the **App Settings** section in the Twitter Developer Dashboard. Refer to the *Keys and Tokens* tab. In the **Consumer Keys** section, there is an option to regenerate the API key and secret. 
 
-      These details will be required in the next step while completing the app configuration using the {{config.extra.arcana.dashboard_name}}.
+      These details will be required in the next step while specifying the Twitter app configuration in the {{config.extra.arcana.dashboard_name}}.
 
 ### 3. Update Social Auth
 
