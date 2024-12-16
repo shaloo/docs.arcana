@@ -737,6 +737,7 @@ nav:
                   - Overview: concepts/ansmartc/an-smart-contracts.md
                   - Types of Contracts: concepts/ansmartc/an-smartc-types.md
                   - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
+                - Unified Balance: concepts/unified-balance.md
                 - Usage: 
                   - Billing: concepts/billing.md
                   - Metrics: concepts/usage-metrics.md

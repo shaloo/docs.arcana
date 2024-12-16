@@ -31,7 +31,7 @@ This documentation contains everything you need to get started using [[introduct
 
 === "Web3 Users"
 
-    Arcana Wallet displays your [[concept-casdk#unified-balance|unified balance]] across several blockchains and tokens by combining fragmented liquidity in your account. You can now spend on any chain by leveraging Arcana's chain abstraction protocol. [Learn more...](https://arcana.network/chain-abstraction)
+    Arcana Wallet displays your [[concept-unified-balance|unified balance]] across several blockchains and tokens by combining fragmented liquidity in your account. You can now spend on any chain by leveraging Arcana's chain abstraction protocol. [Learn more...](https://arcana.network/chain-abstraction)
 
     {==
     

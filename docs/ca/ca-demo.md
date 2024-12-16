@@ -37,7 +37,7 @@ We've built Arcana Chain Abstraction demos for several Web3 apps.
 
     <iframe width="70%" height="350" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
 
-Developers can integrate the Arcana CA SDK with other Web3 apps to let users spend [[concept-casdk#unified-balance|unified balance]] across chains.
+Developers can integrate the Arcana CA SDK with other Web3 apps to let users spend [[concept-unified-balance|unified balance]] across chains.
 
 !!! an-tip "Have a Web3 app?"
 
