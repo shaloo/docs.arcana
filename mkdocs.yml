@@ -443,20 +443,20 @@ not_in_nav: |
   audit/index.md
 
 nav:
-  - Unified Balance:
+  - Chain Abstraction: 
     - ca/ca-index.md
-    - Introduction: 
-      - Chain Abstraction: ca/introduction/ca.md
+    - Unified Balance: 
+      - ca/introduction/ca.md
       - CA SDK: ca/introduction/ca-sdk.md
       - How does it work?: ca/introduction/how-does-it-work.md
       - Use Cases: ca/introduction/use-cases.md
       - Futures: ca/introduction/futures.md
-    - FAQ: ca/faq.md
     - Developers:
       - Quick Start: quick-start/ca-quick-start.md
       - Usage Guide: ca/ca-usage-guide.md
       - Examples: ca/examples.md
       - Playground: ca/ca-try-now.md
+    - FAQ: ca/faq.md
     - Resources:
       - CA Whitepaper: https://www.notion.so/arcananetwork/ChA-Technical-Whitepaper-121f11ed0804808da2e5cdd1432b2b61?pvs=4
       - CA Audit Report: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf

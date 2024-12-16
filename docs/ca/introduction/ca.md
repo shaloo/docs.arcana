@@ -1,13 +1,13 @@
 ---
-alias: ca
-title: 'Chain Abstraction'
+alias: ca-top
+title: 'Introduction'
 template: ca-style.html
 description: 'What is Chain Abstraction and what does Arcana Offer.'
 arcana:
   root_rel_path: ..
 ---
 
-# Chain Abstraction (CA)
+# Introduction
 
 {% include "./text-snippets/ca/what_is_ca.md" %}
 

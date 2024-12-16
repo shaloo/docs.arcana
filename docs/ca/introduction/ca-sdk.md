@@ -15,7 +15,7 @@ arcana:
 
 === "Unified Balance"
 
-    {% include "./text-snippets/unified_balance.md" %}
+        {% include "./text-snippets/unified_balance.md" %}
 
 === "Enhanced UX"
 

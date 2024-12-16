@@ -2,7 +2,7 @@
 alias: ca-index-docs
 template: ca-style.html
 title: 'Welcome'
-description: 'Unified balance to spend on any chain in Web3 apps.'
+description: 'Get Unified balance to spend on any chain in Web3 apps with Arcana Network Chain Abstraction.'
 arcana:
   root_rel_path: .
 timetoread: False
@@ -10,18 +10,16 @@ hide:
     - toc
 ---
 
-# Chain Abstraction
+# Welcome!
 
-**Welcome!**
+## Bridge no more!
+
+With Arcana’s Chain Abstraction (CA) SDK, give your Web3 app users a [[concept-unified-balance|unified balance]] across chains. Let them spend anywhere, anytime — no bridging required.
 
 <figure markdown="span">
   <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
   <figcaption>Arcana's Chain Abstraction</figcaption>
 </figure>
-
-## Bridge no more!
-
-With Arcana’s Chain Abstraction (CA) SDK, give your Web3 app users a [[concept-unified-balance|unified balance]] across chains. Let them spend anywhere, anytime — no bridging required.
 
 {==
 
@@ -29,9 +27,15 @@ With Arcana’s Chain Abstraction (CA) SDK, give your Web3 app users a [[concept
 
 Get started fast!
 
-Check out the [[ca-quick-start|Quick start Guide]] to integrate your Web3 app with the SDK. Browse integration examples with sample code to jump right in.
+Check out the [[ca-quick-start|Quick start Guide]] to integrate your Web3 app with the SDK. Browse integration examples,  jump right in with the [[web-ca-usage-guide|usage guide]] and the {% include "./text-snippets/casdkref_url.md" %}.
 
 ==}
+
+## Why it matters?
+
+Not all Web3 users have the knowledge, patience, or resources to track down the best routes for liquidity. With chain abstraction, that complexity disappears. Users get seamless access to liquidity on any chain, boosting accessibility for both new apps and new users.
+
+[[ca-top|Learn more...]]
 
 ## Why Integrate?
 
@@ -39,9 +43,7 @@ The rise of L2s has fragmented liquidity across multiple chains, making it hard 
 
 Chain abstraction solves this by offering a unified balance. Users can access and spend funds across multiple chains without manual bridging. This reduces friction, lowers entry barriers, and simplifies the user experience.
 
-## Why it matters?
-
-Not all Web3 users have the knowledge, patience, or resources to track down the best routes for liquidity. With chain abstraction, that complexity disappears. Users get seamless access to liquidity on any chain, boosting accessibility for both new apps and new users.
+[Learn more...](https://blog.arcana.network/)
 
 ## Why Arcana?
 
