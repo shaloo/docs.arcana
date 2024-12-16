@@ -16,7 +16,7 @@ Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified ba
 
 ## Prerequisites
 
-{% include "./text-snippets/quick-start-reg-config-auth.md" %}
+{% include "./text-snippets/quick-start-reg-config-ca.md" %}
 
 ## 1. Install
 

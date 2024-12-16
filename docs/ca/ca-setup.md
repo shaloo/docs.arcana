@@ -1,12 +1,16 @@
 ---
 alias: setup-ca
-title: 'Register & Configure CA'
+title: 'Setup CA'
 description: 'Register and obtain a unique clientId. This clientId value is used to integrate the app with the Arcana CA SDK. Use the dashboard to configure SDK usage settings.'
 arcana:
   root_rel_path: ..
+  app_example_submodule: "'`sample-auth-ca`'"
+  app_type: "'CA'"
+
+
 ---
 
-# Register App
+# Setup Chain Abstraction
 
 Learn how to register a Web3 app through the [[concept-arcana-dashboard|{{config.extra.arcana.dashboard_name}}]] before using the {{config.extra.arcana.ca_sdk_name}} to enable [[concept-unified-balance|unified balance]]for users.
 

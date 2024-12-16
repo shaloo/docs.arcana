@@ -1,8 +1,8 @@
 ---
-alias: index-docs
-template: newintro.html
+alias: ca-index-docs
+template: ca-style.html
 title: 'Welcome'
-description: 'Fast, secure social login and gasless transactions in Web3 apps.'
+description: 'Get Unified balance to spend on any chain in Web3 apps with Arcana Network Chain Abstraction.'
 arcana:
   root_rel_path: .
 timetoread: False
@@ -10,164 +10,55 @@ hide:
     - toc
 ---
 
-# Web3 Made Effortless
+# Welcome!
 
-<!---
+## Bridge no more!
 
-!!! quote "Don't Panic!"
+With Arcana’s Chain Abstraction (CA) SDK, give your Web3 app users a [[concept-unified-balance|unified balance]] across chains. Let them spend blockchain assets anywhere, anytime — no bridging required.
 
-      All you really need to know for the moment is that the universe is a lot more complicated than you might think, even if you start from a position of thinking it’s pretty damn complicated in the first place.
-
-      -- Douglas Adams (The Hitchhiker's Guide to the Galaxy)
+<figure markdown="span">
+  <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
+  <figcaption>Arcana's Chain Abstraction</figcaption>
+</figure>
 
 {==
 
-This documentation contains everything you need to get started using [[introduction|{{config.extra.arcana.company_name}} SDKs]].
+**TL;DR**
+
+Get started fast!
+
+Check out the [[ca-quick-start|Quick start Guide]] to integrate your Web3 app with the SDK. Browse integration examples,  jump right in with the [[web-ca-usage-guide|usage guide]] and the {% include "./text-snippets/casdkref_url.md" %}.
 
 ==}
--->
 
-## Welcome!
+## Why it matters?
 
-=== "Web3 Users"
+Not all Web3 users have the knowledge, patience, or resources to track down the best routes for liquidity. With chain abstraction, that complexity disappears. Users get seamless access to liquidity on any chain, boosting accessibility for both new apps and new users.
 
-    Arcana Wallet displays your [[concept-unified-balance|unified balance]] across several blockchains and tokens by combining fragmented liquidity in your account. You can now spend on any chain by leveraging Arcana's chain abstraction protocol. [Learn more...](https://arcana.network/chain-abstraction)
+[[ca-top|Learn more...]]
 
-    {==
-    
-      **TL;DR**
+## Why Integrate?
 
-      Simply [download](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) the standalone Arcana Wallet browser extension and get started! 
+The rise of L2s has fragmented liquidity across multiple chains, making it hard for users to manage funds. Without chain abstraction, users are forced to bridge assets manually — a complex, time-consuming process, especially for newcomers. This makes onboarding millions (or billions) of users to Web3 an uphill battle.
 
-    ==}
+Chain abstraction solves this by offering a unified balance. Users can access and spend funds across multiple chains without manual bridging. This reduces friction, lowers entry barriers, and simplifies the user experience.
 
-    See Arcana Wallet in action...
-    
-    <iframe align="left" src="https://www.youtube.com/embed/PvS_zltnDyQ" allowfullscreen></iframe>
+[Learn more...](https://blog.arcana.network/)
 
+## Why Arcana?
 
-=== "Web3 Developers"
+### Proven Tech
 
-    Integrate Web3 apps with Arcana SDKs to onboard users quickly via *social login* and *gasless transactions*.
-    
-    1. **Auth SDK:** Onboard Web3 app users effortlessly via [[concept-social-login|social login]] . Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]] and built-in gasless transactions.
+Arcana's Chain Abstraction (CA) tech is already working with apps like Aave, UniSwap, and others. Developers can use the beta SDK to enable unified balances in their apps, streamlining the user experience and making Web3 as simple as Web2.[[ca-demo|Check Demos...]]
 
-    2. **Gasless SDK:** Leverage account abstraction feature and sponsor gas fees to incentivize users through [[concept-gasless-transactions|gasless transactions]].
+### Infrastructure Expertise
 
-    {==
+Arcana Network develops infrastructure SDKs designed to simplify Web3 user experiences and speed up onboarding. These SDKs work on both Web and Mobile platforms, enabling developers to create more user-friendly dApps.
 
-    **TL;DR**
-
-    Head to the [Quick start](#quick-start) section. You can also try the [SDK Playground](#sdk-playground).
-
-    ==}
-
-    <div class="grid cards" markdown>
-
-    -   :material-account-group:{ .lg .middle .icon-color} __Social Login__
-
-        ---
-
-        Enable Web2-like login in Web3 apps with {{config.extra.arcana.sdk_name}} and enable in-app {{config.extra.arcana.wallet_name}}
-
-        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/social-login.md)
-
-    -   :material-gas-station-off:{ .lg .middle .icon-color} __Gasless__
-
-        ---
-
-        Sponsor gas fees and enable gasless transactions via {{config.extra.arcana.wallet_name}} / third-party browser-based wallets
-
-        [:octicons-arrow-right-24: Learn More...]({{page.meta.arcana.root_rel_path}}/concepts/gasless-ops.md)
-
-    -   :material-clock-check-outline:{ .lg .middle .icon-color} __Set up in 2 min!__
-
-        ---
-
-        Use {{config.extra.arcana.dashboard_name}} to register app, configure settings and manage user experience
-
-        [:octicons-arrow-right-24: Configure]({{page.meta.arcana.root_rel_path}}/setup/config-dApp-with-db.md)
-
-    -   :material-run-fast:{ .lg .middle .icon-color} __Integration Examples__
-
-        ---
-
-        Get up and running quickly with these integration examples for various supported Web3 apps!
-
-        [:octicons-arrow-right-24: Integration Examples](https://github.com/arcana-network/auth-examples)
-
-    -   :material-run-fast:{ .lg .middle .icon-color} __Resources__
-
-        ---
-
-        Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists amd more!
-
-        [:octicons-arrow-right-24: Resources](http://localhost:8000/relnotes/latest-auth-release-note/)
-
-
-    </div>
-
-    ## SDK Playground
-
-    <div class="tx-hero-container">
-        <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Auth and Gasless Playground Escape Velocity"></img>
-    </div>
-
-    <div class="tx-hero-container">
-        <div class="tx-hero-content">
-            <a href="/auth/auth-try-now/">
-            <div class="tx-try-now-button-blue a-link-items">
-                <h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3>
-            </div>
-            </a>
-        </div>
-        <div class="tx-hero-content">
-            <a href="/gasless/gl-try-now/">
-                <div class="tx-try-now-button-green a-link-items">
-                    <h3 style="color: var(--md-an-gray-light-color)">Try Gasless</h3>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    ## Quick Start
-
-    === "Web Apps"
-
-        **Auth**
-
-        <hr>
-
-        [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
-        
-        **Gasless**
-    
-        <hr>
-
-        [[gasless-quick-start| Gasless ]]{ .md-button } [[gasless-standalone-quick-start| Gasless(3rd Party Wallets) ]]{ .md-button }
-
-    === "Non-EVM Apps"
-
-        [[solana-quick-start| Solana ]]{ .md-button } [[mvx-quick-start| MultiversX ]]{ .md-button } [[near-quick-start| Near ]]{ .md-button }
-
-    === "Mobile Apps"
-
-        [[react-native-quick-start| React-Native ]]{ .md-button } [[flutter-quick-start| Flutter ]]{ .md-button }
-
-    === "Gaming Apps"
-
-        [[unity-quick-start| Unity ]]{ .md-button }
+By reducing complexity, Arcana’s tools make it easier for apps to attract and retain users, bridging the gap between Web2 simplicity and Web3 potential. [[index-docs|Learn more...]]
 
 ## Need Help?
-
-</br>
-</br>
 
 Contact us at 📨 [Arcana Support](mailto:support@arcana.network). 
 
 Be a part of [[index-support|Arcana communities]] and stay informed!
-
-</br>
-</br>
-
-[[integration-checklist| Integration Checklist ]]{ .md-button }

@@ -444,7 +444,7 @@ not_in_nav: |
 
 nav:
   - Chain Abstraction: 
-    - ca/ca-index.md
+    - index.md
     - Unified Balance: 
       - ca/introduction/ca.md
       - CA SDK: ca/introduction/ca-sdk.md
@@ -454,6 +454,7 @@ nav:
     - Developers:
       - Quick Start: quick-start/ca-quick-start.md
       - Usage Guide: ca/ca-usage-guide.md
+      - Setup: ca/ca-setup.md
       - Examples: ca/examples.md
       - Playground: ca/ca-try-now.md
     - FAQ: ca/faq.md
@@ -462,7 +463,7 @@ nav:
       - CA Audit Report: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
       - CA Release Notes: relnotes/latest-ca-release-note.md
       - Web3 Onboarding: 
-        - index.md
+        - auth-index.md
         - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
         - Service Status: https://status.arcana.network/
         - Quick Start:
