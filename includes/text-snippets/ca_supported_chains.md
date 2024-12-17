@@ -3,3 +3,5 @@
 * Ethereum
 * Optimism
 * Polygon
+* Scroll
+* Linea

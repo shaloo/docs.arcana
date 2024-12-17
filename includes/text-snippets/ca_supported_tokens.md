@@ -2,3 +2,4 @@
 * USDT
 * ETH
 * wETH
+* SCR
