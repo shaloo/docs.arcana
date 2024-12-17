@@ -1,0 +1,5 @@
+* USDC
+* USDT
+* ETH
+* wETH
+* SCR
