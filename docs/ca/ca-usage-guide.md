@@ -98,12 +98,6 @@ await ca.request({
 })
 ```
 
-#### Intercept
-
-```js
-await ca.intercept()
-```
-
 #### Transfer
 
 ```js
@@ -111,12 +105,6 @@ await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
 
 // Note: Here chain() is optional.
 // The current chain will be used as input if not specified.
-```
-
-#### SendTx
-
-```js
-await ca.sendTx([Send Tx Input Params])
 ```
 
 #### Refund
