@@ -16,9 +16,8 @@ arcana:
 
 ??? an-faq "What tokens are supported as part of the unified balance feature?"
 
-            {% include "./text-snippets/ca_supported_tokens.md" %}
+    Refer to the latest [[ca-stack#tokens|supported token list]].
 
 ??? an-faq "What chains are supported as part of the unified balance feature?"
 
-            {% include "./text-snippets/ca_supported_chains.md" %}
-
+    Refer to the latest [[ca-stack#chains|supported chain list]].

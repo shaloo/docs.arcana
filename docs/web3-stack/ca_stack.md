@@ -10,9 +10,11 @@ arcana:
 
 {{config.extra.arcana.company_name}} Chain Abstraction feature supports unified balance across the following chains for these apps and tokens. Support for more apps, chains, tokens is coming soon!
 
+<!--- 
 ## Apps
 
 {% include "./text-snippets/ca_supported_apps.md" %}
+--->
 
 ## Chains
 
