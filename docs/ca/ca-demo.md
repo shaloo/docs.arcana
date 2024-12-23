@@ -9,9 +9,9 @@ arcana:
 
 # Demos
 
-We've built Arcana Chain Abstraction demos for several Web3 apps.
+We've built Arcana Chain Abstraction demos for several Web3 apps. In these PoCs the chain Abstraction protocol is part of Arcana's standalone wallet. 
 
-
+The CA SDK encapsulates the same functionality for any Web3 dApp.
 
 === "Aave"
 

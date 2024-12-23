@@ -14,9 +14,11 @@ arcana:
 
 Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified balance.
 
+<!---
 ## Prerequisites
 
 {% include "./text-snippets/quick-start-reg-config-ca.md" %}
+--->
 
 ## 1. Install
 
@@ -75,10 +77,6 @@ await ca.request({
 await ca.bridge().token("pol").amount(10).chain(137).exec();
 ```
 
-### Intercept
-
-TBD
-
 ### CA Events
 
 #### Add Listener
@@ -107,14 +105,15 @@ ca.addCAEventListener((data) => {
 
 #### Remove Listener
 
-
 ```js
 ca.removeCAEventListener((data) => {...})
 ```
 
 ## See Also
 
+<!---
 {% include "./text-snippets/quick-start-common-examples.md" %}
+-->
 
 {% include "./text-snippets/ca_sdk_quicklinks.md" %}
 
