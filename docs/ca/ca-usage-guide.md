@@ -70,6 +70,12 @@ await ca.allowance().get()
 
 ```js
 await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
+
+// You can specify custom values for tokens and amount in hex, for example
+// await ca.allowance().tokens(["USDC"]).chain(42161).amount("0x989680").set()
+
+// Alternatively, you can also specify the amount 10,000,000 for USDC tokens as follows:
+// await ca.allowance().tokens(["USDC"]).chain(42161).amount("10000000").set()
 ```
 
 #### Unified Balance

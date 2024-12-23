@@ -14,12 +14,6 @@ arcana:
 
 Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified balance.
 
-<!---
-## Prerequisites
-
-{% include "./text-snippets/quick-start-reg-config-ca.md" %}
---->
-
 ## 1. Install
 
 {% include "./code-snippets/casdk_install.md" %}
@@ -47,6 +41,12 @@ await ca.allowance().get()
 
 ```js
 await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
+
+// You can specify custom values for tokens and amount in hex, for example
+// await ca.allowance().tokens(["USDC"]).chain(42161).amount("0x989680").set()
+
+// Alternatively, you can also specify the amount 10,000,000 for USDC tokens as follows:
+// await ca.allowance().tokens(["USDC"]).chain(42161).amount("10000000").set()
 ```
 
 ### Unified Balance
