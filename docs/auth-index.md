@@ -29,6 +29,7 @@ This documentation contains everything you need to get started using [[introduct
 
 ## Welcome!
 
+<!--
 === "Web3 Users"
 
     Arcana Wallet displays your [[concept-unified-balance|unified balance]] across several blockchains and tokens by combining fragmented liquidity in your account. You can now spend on any chain by leveraging Arcana's chain abstraction protocol. [Learn more...](https://arcana.network/chain-abstraction)
@@ -44,15 +45,12 @@ This documentation contains everything you need to get started using [[introduct
     See Arcana Wallet in action...
     
     <iframe align="left" src="https://www.youtube.com/embed/PvS_zltnDyQ" allowfullscreen></iframe>
-
+-->
 
 === "Web3 Developers"
 
-    Integrate Web3 apps with Arcana SDKs to onboard users quickly via *social login* and *gasless transactions*.
+    Integrate Web3 apps with Arcana SDKs to onboard users quickly via [[concept-social-login|social login]] and [[concept-gasless-transactions|gasless transactions]].
     
-    1. **Auth SDK:** Onboard Web3 app users effortlessly via [[concept-social-login|social login]] . Users get instant access to the in-app [[concept-index-arcana-wallet|Arcana Wallet]] and built-in gasless transactions.
-
-    2. **Gasless SDK:** Leverage account abstraction feature and sponsor gas fees to incentivize users through [[concept-gasless-transactions|gasless transactions]].
 
     {==
 
