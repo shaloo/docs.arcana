@@ -102,7 +102,7 @@ This documentation contains everything you need to get started using [[introduct
 
         Release notes, migration guides, Dashboard Settings Guide, FAQ, integration checklists amd more!
 
-        [:octicons-arrow-right-24: Resources](http://localhost:8000/relnotes/latest-auth-release-note/)
+        [:octicons-arrow-right-24: Resources](https://docs.arcana.network/relnotes/latest-auth-release-note/)
 
 
     </div>
