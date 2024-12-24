@@ -15,7 +15,7 @@ of the file in the `ca` repo: https://github.com/arcana-network/ca-sdk/blob/main
 
 Use the {{config.extra.arcana.ca_sdk_name}} to leverage Arcana's Chain Abstraction and enable unified balance for Web3 app users.
 
-[:octicons-cross-reference-16:{ .icon-color } SDK Reference ](https://casdk-dev-ref-guide.netlify.app/){ .md-button }
+[:octicons-cross-reference-16:{ .icon-color } SDK Reference ](https://ca-sdk-ref-guide.netlify.app/){ .md-button }
 
 ## Installation
 
