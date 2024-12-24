@@ -45,7 +45,7 @@ Arcana’s SDK is designed to work flawlessly with your existing stack:
 
 - **Easy to Integrate:** Minimal changes to your existing front-end code
 - **No Smart Contract Changes**: Zero migration or updates to your smart contracts required
-- **Bring Existing Wallets**: Users can bring their existing EOA wallets such as Metamask, Rabby, Rainbow etc
+- **Bring Existing Wallets**: Users can bring their existing EOA wallets such as MetaMask, Rabby, Rainbow etc
 - **Zero Lockups or Transfers**: Users do not need to transfer their funds to a new wallet address or lockup in a smart contract
 - **No vendor Lock-In:** All assets are in users custody and do not have to rely on Arcana to access their funds. Users can freely spend their assets on any app
 
@@ -56,7 +56,7 @@ Arcana’s SDK is designed to onboard users from any chain:
 
 - **Unified Balance**: Display users' consolidated balance across chains. Use Arcana’s plug-and-play UI or design your own.
 - **Flexible Gas Payments**: Users can pay gas fees in USDC or USDT if they do not have native gas tokens
-- **Larger Transactions**: Users can seamlessly access and spend their entire multi-chain balance on the desired chain, in a si**ngle click.
+- **Larger Transactions**: Users can seamlessly access and spend their entire multi-chain balance on the desired chain, in a single click.
 
 ## Bridge no more!
 

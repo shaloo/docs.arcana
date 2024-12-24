@@ -17,7 +17,7 @@ Passkey is a digital credential that binds a user account with a website or appl
 
 Passkeys use public key cryptography that reduces the threat from potential data breaches. They are safer than passwords as they reduce the attack surface. Since passkeys are uniquely generated for every account by the user device and work only on the registered websites and apps, they are less vulnerable to phishing.
 
-The Passkeys Auth feature in the {{config.extra.arcana.sdk_name}} lets Web3 apps to onboard users through a biometric sensor (such as a fingerprint or facial recognition), a PIN, or a pattern supported by the OS or device where the app is running.
+The Passkeys Auth feature in the {{config.extra.arcana.sdk_name}} lets Web3 apps to onboard users through a biometrics sensor (such as a fingerprint or facial recognition), a PIN, or a pattern supported by the OS or device where the app is running.
 
 ```mermaid
 graph LR
@@ -31,7 +31,7 @@ class C,D an-pink
 
 Passkeys are based on [FIDO standards](https://en.wikipedia.org/wiki/FIDO_Alliance), they work on Android, Chrome, Microsoft Windows, Microsoft Edge, MacOS, iOS and Safari.
 
-Note that when logging in to an app via a passkey, there is no biometric information or any sensitive information that is shared with the associated website for authentication. Also, passkeys by themselves do not allow tracking of users or devices across sites. Passkeys use public key cryptography. A public–private key pair is generated when a user creates a passkey for a site or application. This is generated on the user's device. Only the public key is stored by the site. Device based passkey managers protect passkeys from unauthorized access and use. 
+Note that when logging in to an app via a passkey, there is no biometrics information or any sensitive information that is shared with the associated website for authentication. Also, passkeys by themselves do not allow tracking of users or devices across sites. Passkeys use public key cryptography. A public–private key pair is generated when a user creates a passkey for a site or application. This is generated on the user's device. Only the public key is stored by the site. Device based passkey managers protect passkeys from unauthorized access and use. 
 
 Passkeys do not expire but they can be unlinked/deleted and new ones linked/created, if required.
 

@@ -465,6 +465,8 @@ not_in_nav: |
   migration/main-scw-v0.0.30-migration.md
   migration/main-scw-v0.0.25-migration.md
   support/index.md
+  relnotes/rn-main-auth-v1.0.12.md
+  migration/main-auth-v1.0.12-migration.md
 
 nav:
   - Chain Abstraction: 

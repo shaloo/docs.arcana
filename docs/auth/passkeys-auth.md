@@ -15,7 +15,7 @@ Apps using {{config.extra.arcana.sdk_name}} can enable passkey login in two ways
 
 ## Passkey Sign-up
 
-To sign up with passkeys, use `registerWithPasskey()`, followed by `loginWithPasskey()` to sign up and log in in one step. The user must provide a unique identifier—this could be a name, email, device ID, biometric data, PIN, or pattern. This sign-up flow is ideal for apps that only allow passkey onboarding. [[onboard-passkey-signup| :material-note-text:{ .icon-color } See details...]]
+To sign up with passkeys, use `registerWithPasskey()`, followed by `loginWithPasskey()` to sign up and log in in one step. The user must provide a unique identifier—this could be a name, email, device ID, biometrics data, PIN, or pattern. This sign-up flow is ideal for apps that only allow passkey onboarding. [[onboard-passkey-signup| :material-note-text:{ .icon-color } See details...]]
 
 ## Passkey Login
 
