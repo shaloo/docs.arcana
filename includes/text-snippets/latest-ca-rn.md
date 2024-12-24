@@ -15,13 +15,14 @@ See supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 ---
 
 * [[ca-quick-start|{{config.extra.arcana.ca_sdk_name}} Quick Start Guides]]
-* [Integration examples](https://github.com/arcana-network/auth-examples)
-* Arcana Pay
+* [Integration example](https://github.com/arcana-network/ca-sdk/tree/main/example)
+* {% include "./text-snippets/casdkref_url.md" %}
 
+<!---
+* Arcana Pay
+-->
 ## Questions? 
 
 ---
-
-Refer to the developer resources section in the docs.
 
 Can't find what you are looking for? Contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
