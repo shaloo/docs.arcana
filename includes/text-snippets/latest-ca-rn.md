@@ -1,12 +1,14 @@
-**Release Date: Dec 3, 2024**  
+**Release Date: Dec 24, 2024**  
 
-Version: **v0.0.1-beta.9**
+Version: **v0.0.1**
 
 ## What is New?
 
 ---
  
-* **Unified Balance:** Integrate Web3 apps with the CA SDK to enable unified balance for users. Unified balance lets users view combined balance in the wallet and beat liquidity fragmentation via Arcana's chain abstraction. Users can spend unified balance on any chain.
+**Unified Balance:** Integrate Web3 apps with the CA-SDK to enable unified balance for users. Unified balance lets users view combined balance in the wallet and beat liquidity fragmentation via Arcana's chain abstraction. Users can spend unified balance on any chain. [[concept-unified-balance|Learn more...]]
+
+See supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]]. 
 
 ## Get Started
 
