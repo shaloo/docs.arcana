@@ -139,12 +139,6 @@ await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
 // The current chain will be used as input if not specified.
 ```
 
-#### Refund
-
-```js
-await ca.refundIntentTx(hash)
-```
-
 ### CA Events Listener
 
 #### Add Listener
@@ -172,7 +166,6 @@ ca.addCAEventListener((data) => {
 ```
 
 #### Remove Listener
-
 
 ```js
 ca.removeCAEventListener((data) => {...})

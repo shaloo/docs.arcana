@@ -115,6 +115,7 @@ Bootcamp
 Bundlers
 CA-SDK
 CDN
+CNAME
 CRA
 CSP
 CSS
@@ -556,6 +557,7 @@ appAddress
 appAddress=Addr1
 appMode
 app_example_submodule
+apple-social-auth
 arcana
 arcana-auth-usage
 arcana-coming-soon
@@ -638,6 +640,7 @@ concept-arcana-dashboard
 concept-arcana-jwt-token
 concept-arcana-smart-contract
 concept-arcana-wallet-overview
+concept-auth-passkeys
 concept-authcore
 concept-authsdk
 concept-casdk
@@ -1268,6 +1271,7 @@ pwdlessauth_authsdk
 quick-start-with-ethersjs
 quickstart
 rainbowkit-quick-start
+react-nextjs-apple-social-auth
 react-nextjs-build-iam-cognito-auth
 react-nextjs-build-iam-firebase-auth
 react-nextjs-build-password-less-auth
@@ -1276,6 +1280,7 @@ react-nextjs-github-social-auth
 react-nextjs-google-social-auth
 react-nextjs-quick-start
 react-nextjs-steam-social-auth
+react-nextjs-telegram-social-auth
 react-nextjs-twitch-social-auth
 react-nextjs-twitter-social-auth
 react-nextjs-use-plug-play-auth
@@ -1358,6 +1363,7 @@ solana-quick-start
 solana-user-onboarding
 solana-wallet-ops
 solana-web3-wallet-ops
+stablecoin
 stablecoins
 stackoverflow
 staking
@@ -1376,6 +1382,8 @@ submodules
 supported-blockchains
 supported-jsonrpc-functions
 supported-web3-wallet-operations
+telegram-social-auth
+telegram_custom_ui_tag
 testnet
 timetoread
 toc_depth
@@ -1398,6 +1406,7 @@ un-delegate
 understandingan
 unity-user-onboarding
 unity-web3-wallet-ops
+unlinked
 unstake
 unstaking
 upgradable
@@ -1456,6 +1465,7 @@ verifiers
 video-tutorials-gasless
 viewpvtnft
 vite
+vue-apple-social-auth
 vue-build-iam-cognito-auth
 vue-build-iam-firebase-auth
 vue-build-password-less-auth
@@ -1464,6 +1474,7 @@ vue-github-social-auth
 vue-google-social-auth
 vue-quick-start
 vue-steam-social-auth
+vue-telegram-social-auth
 vue-twitch-social-auth
 vue-twitter-social-auth
 vue-use-plug-play-auth
