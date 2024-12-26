@@ -12,19 +12,23 @@ hide:
 
 # Welcome!
 
+<div>
+    <img style="height: 75px" src="{{config.extra.arcana.img_dir}}/CA_Wordmark.{{config.extra.arcana.img_png}}" alt="Auth SDK Word Logo"></img>
+</div>
+
 {==
 
 **TL;DR**
 
 Get started fast!
 
-Check out the [[ca-quick-start|Quick start Guide]] to integrate your Web3 app with the SDK. Browse integration examples,  jump right in with the [[web-ca-usage-guide|usage guide]] and the {% include "./text-snippets/casdkref_url.md" %}.
+Check out the [[ca-quick-start|Quick start Guide]] to integrate your Web3 app with the Arcana Chain Abstraction SDK. Browse integration examples,  jump right in with the [[web-ca-usage-guide|usage guide]] and the {% include "./text-snippets/casdkref_url.md" %}.
 
 ==}
 
 ## Why Chain Abstraction?
 
-Chain Abstraction removes the friction of users having to bridge across different blockchains to try apps. Users get a single, unified balance of their assets across multiple chains and can seamlessly spend them on your app, on the chain it is built on.
+[[ca-top|Chain Abstraction]] removes the friction of users having to bridge across different blockchains to try apps. Users get a single, unified balance of their assets across multiple chains and can seamlessly spend them on your app, on the chain it is built on.
 
 With Chain Abstraction, users no longer need to:
 
