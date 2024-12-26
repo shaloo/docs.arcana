@@ -53,7 +53,33 @@ await ca.init()
 
 See [Get Started with CA SDK](https://docs.arcana.network/quick-start/ca-quick-start/) for more CA SDK usage insights.
 
-### CA APIs
+## CA APIs
+
+### UI Hooks
+
+Use the following UI Hooks for allowance and intent setup in the dApp:
+
+```js
+ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
+    // This is a hook for the dev to show user the allowances that need to be setup for the current tx to happen
+
+    // sources: an array of objects with minAllowance, chainID, token symbol etc
+    // allow(allowances): allowances is an array with allowance for each source (len(sources) == len(allowances))
+    // deny(): stop the flow
+})
+
+ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
+    // This is a hook for the dev to show user the intent, the sources and associated fees
+
+    // intent: Intent data containing sources and fees for display purpose
+    // allow(): accept the current intent
+    // deny(): deny the intent and stop the flow
+    // refresh(): should be on a timer of 5s to refresh the intent (if not refreshed old intents might fail due to fee changes)
+  })
+```
+### Allowance
+
+Allowances are required to enable unified balance in the wallet. It requires the wallet user to permit the Arcana Vault contract to set up ERC20 token allowances on their behalf for spending unified balance across supported chains. 
 
 #### Get Allowance
 
