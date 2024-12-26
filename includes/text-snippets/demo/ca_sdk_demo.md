@@ -1,1 +1,1 @@
-[Try Arcana Pay! :material-rocket-launch:](https://demo.arcana.network){ .md-button} *Link to be updated: TBD*
+[Try CA SDK Demo! :material-rocket-launch:](https://sdk.arcana.network){ .md-button}
