@@ -23,12 +23,14 @@ ACL
 ACLs
 ACSS
 ADKG
+ADKG's
 ALLOW_REFRESH_TOKEN_AUTH
 ANBlockChainURL
 ANBlockExplorerURL
 ANChainIDText
 ANConfig
 APIs
+ARB
 AVSS
 AccessControlOpsListText
 AccessStepsText
@@ -98,6 +100,7 @@ AuthWagmiConfigureText
 AuthWagmiCreateClientText
 AuthWagmiInstallText
 AuthWatchAssetText
+BICONOMY
 BLS
 BSC
 BYOK
@@ -110,7 +113,9 @@ Blockchain
 Blockchains
 Bootcamp
 Bundlers
+CA-SDK
 CDN
+CNAME
 CRA
 CSP
 CSS
@@ -135,6 +140,8 @@ Cryptosystems
 DAO's
 DAppToolingIssuesText
 DApps
+DEX
+DEXes
 DIDExplorerPortalText
 DIDExplorerPrivateURLText
 DIDExplorerPublicURLText
@@ -195,6 +202,7 @@ ERC-2771
 ERC-4337
 ERC-721
 ERC20
+ETH
 EVM
 EVM-compatible
 EmailID
@@ -231,6 +239,8 @@ HTML
 HW
 Hashicorp
 HighwayHash
+Hotmail
+Hyperliquid
 IAM
 IBFT
 ID1
@@ -267,6 +277,7 @@ Linea
 ListenDisconnEventText
 LugaNodes
 MAU
+MVX
 Mainnet
 Mainnet.
 MetaMask
@@ -299,6 +310,7 @@ NuGetForUnity
 OAuth
 OAuth2
 OAuth2.0
+OPT
 OTP
 Okta
 Onboarding
@@ -314,10 +326,12 @@ PasswordlessOptions
 Permissioned
 PersonalSign
 PnPLoginConnectText
+PoCs
 PoS
 Polyfill
 Polygon_Mainnet
 Polygon_Mumbai_Testnet
+Polymarket
 Pre
 Pre-configured
 Programmatically
@@ -341,6 +355,7 @@ Rarible
 Rebrand
 Reddit
 RedirectURIText
+Restaking
 Roadmap
 Ropsten
 RunDevServerText
@@ -464,6 +479,8 @@ UI
 UI.
 URI
 URIs
+USDC
+USDT
 UUPS
 UUPSProxy
 UX
@@ -487,6 +504,7 @@ Vn
 Vue
 Vue-CLI
 Vuplex
+WIP
 Wagmi
 Wagmi.
 WagmiConfig
@@ -539,6 +557,7 @@ appAddress
 appAddress=Addr1
 appMode
 app_example_submodule
+apple-social-auth
 arcana
 arcana-auth-usage
 arcana-coming-soon
@@ -556,6 +575,7 @@ auth-apis
 auth-architecture
 auth-core-quick-start
 auth-core-usage-guide
+auth-examples
 auth-mkdocs
 auth-overview
 auth-quick-start
@@ -576,6 +596,7 @@ autoRedirect
 backend
 backends
 base64
+biometrics
 blockchain
 blockchain-powered
 blockchains
@@ -587,6 +608,8 @@ bundler
 bundlers
 buysell-crypto
 byok
+ca-faq
+ca-usecases
 cairo
 cancelled
 cardIcon
@@ -617,16 +640,19 @@ concept-arcana-dashboard
 concept-arcana-jwt-token
 concept-arcana-smart-contract
 concept-arcana-wallet-overview
+concept-auth-passkeys
 concept-authcore
 concept-authsdk
+concept-casdk
 concept-config-profil
 concept-config-profile
-concept-custom-login-ui
 concept-custom-auth
+concept-custom-login-ui
 concept-custom-wallet-ui
 concept-dkg
 concept-gasless-transactions
 concept-gl-session-keys
+concept-glsdk
 concept-how-adkg-works
 concept-how-dkg-works
 concept-index-ansc
@@ -655,12 +681,15 @@ conceptsharedkeys
 conceptstgsdk
 conceptstore
 config
+config-auth-apple
 config-auth-cognito
 config-auth-discord
 config-auth-firebase
 config-auth-github
 config-auth-google
+config-auth-passkeys
 config-auth-steam
+config-auth-telegram
 config-auth-twitch
 config-auth-twitter
 config-custom-auth
@@ -1049,6 +1078,7 @@ idwalletuimodes
 idwalletwatchasset
 idwhatisan
 idwhyan
+impactful
 inPageProvider
 incentivize
 index-about-auth
@@ -1184,9 +1214,12 @@ octicons-cross-reference-16
 octicons-file-code-16
 octicons-key-24
 octicons-link-16
+octicons-passkey-fill-24
 octicons-people-16
 octicons-question-16
 octicons-stack-16
+onboard-passkey-auth
+onboard-passkey-signup
 onboard-rainbow-app-custom-ui
 onboard-rainbow-app-pnp-ui
 onboard-validators
@@ -1238,6 +1271,7 @@ pwdlessauth_authsdk
 quick-start-with-ethersjs
 quickstart
 rainbowkit-quick-start
+react-nextjs-apple-social-auth
 react-nextjs-build-iam-cognito-auth
 react-nextjs-build-iam-firebase-auth
 react-nextjs-build-password-less-auth
@@ -1246,6 +1280,7 @@ react-nextjs-github-social-auth
 react-nextjs-google-social-auth
 react-nextjs-quick-start
 react-nextjs-steam-social-auth
+react-nextjs-telegram-social-auth
 react-nextjs-twitch-social-auth
 react-nextjs-twitter-social-auth
 react-nextjs-use-plug-play-auth
@@ -1259,8 +1294,10 @@ register-app-auth
 register-app-gasless
 registerd
 repo
+restake
 revokefile
 rn-latest-auth
+rn-latest-ca
 rn-latest-gasless
 rn-main-auth-May27-24
 rn-main-auth-vOct12-23-gasless
@@ -1326,6 +1363,8 @@ solana-quick-start
 solana-user-onboarding
 solana-wallet-ops
 solana-web3-wallet-ops
+stablecoin
+stablecoins
 stackoverflow
 staking
 state-of-the-arcana-auth
@@ -1343,6 +1382,8 @@ submodules
 supported-blockchains
 supported-jsonrpc-functions
 supported-web3-wallet-operations
+telegram-social-auth
+telegram_custom_ui_tag
 testnet
 timetoread
 toc_depth
@@ -1365,6 +1406,7 @@ un-delegate
 understandingan
 unity-user-onboarding
 unity-web3-wallet-ops
+unlinked
 unstake
 unstaking
 upgradable
@@ -1423,6 +1465,7 @@ verifiers
 video-tutorials-gasless
 viewpvtnft
 vite
+vue-apple-social-auth
 vue-build-iam-cognito-auth
 vue-build-iam-firebase-auth
 vue-build-password-less-auth
@@ -1431,6 +1474,7 @@ vue-github-social-auth
 vue-google-social-auth
 vue-quick-start
 vue-steam-social-auth
+vue-telegram-social-auth
 vue-twitch-social-auth
 vue-twitter-social-auth
 vue-use-plug-play-auth

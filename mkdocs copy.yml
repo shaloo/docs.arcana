@@ -1,10 +1,10 @@
 site_name: '📖 Docs'
 
 # For dev
-site_url: !ENV [DOCS_SITE_URL,"https://docs.dev.arcana.network"]
+site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 # For main
-site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
+#site_url: !ENV [DOCS_SITE_URL,"https://docs.arcana.network"]
 
 # Check for broken links, etc.
 strict: true  #For reorg changing it to false
@@ -101,10 +101,10 @@ extra:
     dashboard_name: Arcana Developer Dashboard
     wallet_name: Arcana wallet
     app_address: Client ID
-    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1']
-    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.10']
+    product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1.0.12']
+    previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.11']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.6']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.11']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.12']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.9']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.9']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']
@@ -115,7 +115,7 @@ extra:
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.1.0']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
     latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.37']
-    latest_gca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.1-beta.9']
+    latest_gca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.1']
     ca_sdk_pkg_name: ca-sdk
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
@@ -441,56 +441,14 @@ validation:
 not_in_nav: |
   work-in-progress.md
   audit/index.md
-  ca/ca-setup.md
-  ca/ca-demo.md
-  quick-start/gasless-standalone-quick-start.md
-  setup/config-gasless/register-app.md
-  setup/configure-standalone-gasless.md 
-  gasless/gasless-install.md
-  gasless/gasless-integrate.md
-  gasless/gasless-transact.md
-  gasless/gasless-session-keys.md
-  gasless/gl-try-now.md
-  gasless/gasless-sdk-usage-guide.md
-  relnotes/latest-gasless-release-note.md
-  migration/latest-gasless-migration-guide.md
-  relnotes/rn-main-scw-v0.0.45.md
-  relnotes/rn-main-scw-v0.0.37.md
-  relnotes/rn-main-scw-v0.0.35.md
-  relnotes/rn-main-scw-v0.0.30.md
-  relnotes/rn-main-scw-v0.0.25.md
-  migration/main-scw-v0.0.45-migration.md
-  migration/main-scw-v0.0.37-migration.md
-  migration/main-scw-v0.0.35-migration.md
-  migration/main-scw-v0.0.30-migration.md
-  migration/main-scw-v0.0.25-migration.md
-  support/index.md
-  relnotes/rn-main-auth-v1.0.12.md
-  migration/main-auth-v1.0.12-migration.md
 
 nav:
-  - Chain Abstraction: 
+  - Products: 
     - index.md
-    - Developers:
-      - Quick Start: quick-start/ca-quick-start.md
-      - Usage Guide: ca/ca-usage-guide.md
-      - APIs: https://ca-sdk-ref-guide.netlify.app/
-      - Examples: ca/examples.md
-      - Playground: ca/ca-try-now.md
-    - FAQ: ca/faq.md
-    - Concepts: 
-      - ca/introduction/ca.md
-      - Use Cases: ca/introduction/use-cases.md
-      - Futures: ca/introduction/futures.md
-    - Resources:
-      - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Whitepaper-121f11ed0804808da2e5cdd1432b2b61
-      - CA Audit Report: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
-      - CA Release Notes: relnotes/latest-ca-release-note.md
-  - Auth: 
-    - auth-index.md
     - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
     - Service Status: https://status.arcana.network/
     - Quick Start:
+      - CA SDK: quick-start/ca-quick-start.md
       - Auth SDK:
         - Web:
           - Wagmi: quick-start/wagmi-quick-start.md
@@ -508,6 +466,7 @@ nav:
         - MultiversX: quick-start/mvx-quick-start.md
         - Near: quick-start/near-quick-start.md
         - Unity: quick-start/unity-quick-start.md
+      - Gasless SDK: quick-start/gasless-standalone-quick-start.md
     - Setup:
       - Configuration Profiles:
           - Testnet: deploy/deploy-app.md
@@ -547,7 +506,11 @@ nav:
             - Custom Wallet UI: setup/config-custom-wallet-ui.md
           - Gaming:
             - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
+      - Gasless SDK: 
+        - Register App: setup/config-gasless/register-app.md
+        - Gasless Settings: setup/configure-standalone-gasless.md
     - Usage:
+      - CA SDK: ca/ca-usage-guide.md
       - Auth SDK: 
         - Install SDK: auth/sdk-installation.md
         - Integrate App:
@@ -660,167 +623,191 @@ nav:
             - Sign-Up & Login: auth/onboard/passkey-auth/passkey-signup.md
             - Login: auth/onboard/passkey-auth/passkey-login.md
           - Auth-Core SDK: quick-start/auth-core-quick-start.md
-    - Playground:
-      - Try Auth!: auth/auth-try-now.md
-      - Demo App: https://demo.arcana.network
-    - APIs:
-      - Auth: auth/auth-usage-guide.md
-      - Auth-Core: auth/auth-core-usage-guide.md
-    - Guides:
-      - Overview: introduction/index.md
-      - Developers:
-        - Release Notes:
-          - Auth SDK: relnotes/latest-auth-release-note.md
-        - Migration Guides:
-          - Auth SDK: migration/latest-auth-migration-guide.md
-        - Dashboard User Guide: setup/config-dApp-with-db.md
-        - Error Handling:
-          - Auth: auth/auth-error-msg.md
-          - Gasless: gasless/gasless-error-msg.md
-          - Dashboard: setup/db-err-messages.md
-          - Wallet UI: auth/walletui-error-msg.md
-        - FAQ:
-          - General: faq/faq-gen.md
-          - Dashboard: faq/faq-db.md
-          - Auth: faq/faq-auth.md
-          - Gasless: faq/faq-gasless.md
-          - Solana: faq/faq-solana.md
-          - MultiversX: faq/faq-mvx.md
-          - Near: faq/faq-near.md
-        - Troubleshooting: troubleshooting.md
-        - Changelog: changelog/index.md
-        - Integration Examples: https://github.com/arcana-network/auth-examples
-        - Integration Checklists: checklists/index.md
-      - Wallet Users: 
-        - Wallet User Guide: 
-          - user-guides/wallet-ui/index.md
-          - Wallet Ops: user-guides/wallet-ui/use-wallet-ui.md
-          - Export Key: user-guides/wallet-ui/use-wallet-to-export-keys.md
-          - Manage NFTs: user-guides/wallet-ui/use-wallet-to-manage-nfts.md
-          - Manage Tokens: user-guides/wallet-ui/use-wallet-to-manage-tokens.md
-          - MFA Setup: user-guides/mfa/mfa-ug.md
-      - Validators:
-        - Onboarding Guide: validators/onboard-validators.md
-        - Validator FAQ: faq/faq-validator.md
-      - References:
-        - Learn:
-          - Concepts: 
-            - ADKG: concepts/adkg.md
-            - Aggregate Login: concepts/aggregatelogin.md
-            - Arcana Wallet: 
-              - concepts/anwallet/index.md
-              - UI Modes: concepts/anwallet/walletuimodes.md
-              - Account Types: concepts/anwallet/switch-account-type.md
-              - Transaction Types: concepts/anwallet/walletstgsigntx.md
-              - Network Switching: concepts/anwallet/walletntwkswitchmode.md
-              - Wallet Visibility: concepts/anwallet/walletvisibility.md
-              - Custom Wallet UI: concepts/custom-wallet-ui.md
-            - Authentication: 
-              - concepts/authtype/index.md
-              - Auth Providers: concepts/authtype/socialauth.md
-              - Custom Auth: concepts/authtype/custom-auth.md
-            - Chain Abstraction: concepts/ca.md
-            - Configuration Profiles: concepts/config-profiles.md
-            - Dashboard: concepts/dashboard.md
-            - Gateway: concepts/gateway-node.md
-            - Gasless: 
-              - Gasless Transactions: concepts/gasless-ops.md
-              - Session Keys: concepts/scw-session-keys.md
-            - Key Space Type: concepts/keyspace-types.md
-            - Login Token:
-              - Arcana JWT Token: concepts/an-jwt-token.md
-              - DID Token: concepts/an-did-token.md
-              - Verify JWT Token: concepts/jwt-token-validation.md
-            - Login UI:
-              - Custom Login UI: concepts/custom-login-ui.md
-              - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
-            - Login Session Type: concepts/session_type.md
-            - MFA: concepts/mfa.md
-            - Non-EVM Chains: concepts/non-evm-chains.md
-            - Passkeys Login: concepts/authtype/auth-passkeys.md
-            - Private Key: concepts/private-key.md
-            - SDKs:
-              - CA SDK: concepts/casdk.md
-              - Auth SDK: concepts/authsdk.md
-              - Auth-Core SDK: concepts/auth-core-sdk.md
-              - Gasless SDK: concepts/glsdk.md
-            - Social Login: concepts/social-login.md
-            - Smart Contracts:
-              - Overview: concepts/ansmartc/an-smart-contracts.md
-              - Types of Contracts: concepts/ansmartc/an-smartc-types.md
-              - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
-            - Unified Balance: concepts/unified-balance.md
-            - Usage: 
-              - Billing: concepts/billing.md
-              - Metrics: concepts/usage-metrics.md
-            - Validator Nodes: concepts/validator-nodes.md
-          - Tech Stack: 
-            - CA Assets: web3-stack/ca_stack.md
-            - App Types: web3-stack/apps.md
-            - Auth Providers: web3-stack/auth.md
-            - Browsers: web3-stack/browsers.md
-            - Chains: web3-stack/chains.md
-            - Protocol: web3-stack/protocol.md
-            - Validators: web3-stack/validators.md
-            - Wallets: web3-stack/wallets.md 
-          - Security:
-            - Overview: security/overview.md
-            - ADKG: security/adkg.md
-            - MFA: security/mfa.md
-        - Audit Reports: 
-          - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
-          - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
-          - Arcana Paymaster Contract: https://github.com/arcana-network/audit-reports/blob/main/Arcana_PayMaster_Final_Report.pdf
-        - Archives:
-          - Release Note Archives: 
-            - relnotes/archives/index.md
-            - Auth SDK:
-#              - Auth 1.0.12 : relnotes/rn-main-auth-v1.0.12.md
-              - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
-              - Auth May27-2024: relnotes/rn-main-auth-May27-24.md
-              - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
-              - Auth 1.0.9 : relnotes/rn-main-auth-v1.0.9.md
-              - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
-              - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
-              - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
-              - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
-              - Auth 1.0.5 : relnotes/rn-main-auth-v1.0.5.md
-              - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
-              - Auth May3-2023: relnotes/rn-main-auth-May3-23.md
-              - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
-              - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
-              - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
-              - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
-              - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
-          - Migration Guide Archives: 
-            - migration/archives/index.md
-            - Auth SDK:
-#              - Auth v1.0.11 -> v1.0.12: migration/main-auth-v1.0.12-migration.md
-              - Auth v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md
-              - Auth v1.0.9 -> v1.0.10: migration/main-auth-v1.0.10-migration.md
-              - Auth v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md
-              - vOct12-23-gasless -> v1.0.9: migration/main-auth-v1.0.9-migration.md
-              - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
-              - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
-              - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
-              - v1.0.5 -> v1.0.6: migration/main-auth-v1.0.6-migration.md
-              - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md                  
-              - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
-              - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
-              - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
-              - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
-              - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
-              - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
-        - Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
-    - Docs @Partners:
-      - partner-docs/index.md
-      - MultiversX:
-        - Auth: https://multiversx.com/ecosystem/project/arcana
-      - Linea:
-        - Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
-        - Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
-      - Caduceus:
-        - Social Login: https://docs.caduceus.foundation/auth
-      - Alchemy:
-        - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
-        - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
+      - Gasless SDK: 
+        - Install: gasless/gasless-install.md
+        - Integrate: gasless/gasless-integrate.md
+        - Transact: gasless/gasless-transact.md
+        - Session Keys: gasless/gasless-session-keys.md
+    - Support: 
+      - Need Help?: support/index.md
+  - Playground:
+    - Try CA!: ca/ca-try-now.md
+    - Try Auth!: auth/auth-try-now.md
+    - Try Gasless!: gasless/gl-try-now.md
+    - Demo App: https://demo.arcana.network
+  - APIs:
+    - CA: ca/ca-usage-guide.md
+    - Auth: auth/auth-usage-guide.md
+    - Gasless: gasless/gasless-sdk-usage-guide.md
+    - Auth-Core: auth/auth-core-usage-guide.md
+  - Resources:
+    - Overview: introduction/index.md
+    - Developers:
+      - Release Notes:
+        - CA SDK: relnotes/latest-ca-release-note.md
+        - Auth SDK: relnotes/latest-auth-release-note.md
+        - Gasless SDK: relnotes/latest-gasless-release-note.md
+      - Migration Guides:
+        - Auth SDK: migration/latest-auth-migration-guide.md
+        - Gasless SDK: migration/latest-gasless-migration-guide.md
+      - Dashboard User Guide: setup/config-dApp-with-db.md
+      - Error Handling:
+        - Auth: auth/auth-error-msg.md
+        - Gasless: gasless/gasless-error-msg.md
+        - Dashboard: setup/db-err-messages.md
+        - Wallet UI: auth/walletui-error-msg.md
+      - FAQ:
+        - General: faq/faq-gen.md
+        - Dashboard: faq/faq-db.md
+        - Auth: faq/faq-auth.md
+        - Gasless: faq/faq-gasless.md
+        - Solana: faq/faq-solana.md
+        - MultiversX: faq/faq-mvx.md
+        - Near: faq/faq-near.md
+      - Troubleshooting: troubleshooting.md
+      - Changelog: changelog/index.md
+      - Integration Checklists: checklists/index.md
+    - Wallet Users: 
+      - Wallet User Guide: 
+        - user-guides/wallet-ui/index.md
+        - Wallet Ops: user-guides/wallet-ui/use-wallet-ui.md
+        - Export Key: user-guides/wallet-ui/use-wallet-to-export-keys.md
+        - Manage NFTs: user-guides/wallet-ui/use-wallet-to-manage-nfts.md
+        - Manage Tokens: user-guides/wallet-ui/use-wallet-to-manage-tokens.md
+        - MFA Setup: user-guides/mfa/mfa-ug.md
+    - Validators:
+      - Onboarding Guide: validators/onboard-validators.md
+      - Validator FAQ: faq/faq-validator.md
+    - Learn:
+      - Integration Examples: https://github.com/arcana-network/auth-examples
+      - Concepts: 
+        - ADKG: concepts/adkg.md
+        - Aggregate Login: concepts/aggregatelogin.md
+        - Arcana Wallet: 
+          - concepts/anwallet/index.md
+          - UI Modes: concepts/anwallet/walletuimodes.md
+          - Account Types: concepts/anwallet/switch-account-type.md
+          - Transaction Types: concepts/anwallet/walletstgsigntx.md
+          - Network Switching: concepts/anwallet/walletntwkswitchmode.md
+          - Wallet Visibility: concepts/anwallet/walletvisibility.md
+          - Custom Wallet UI: concepts/custom-wallet-ui.md
+        - Authentication: 
+          - concepts/authtype/index.md
+          - Auth Providers: concepts/authtype/socialauth.md
+          - Custom Auth: concepts/authtype/custom-auth.md
+        - Chain Abstraction: concepts/ca.md
+        - Configuration Profiles: concepts/config-profiles.md
+        - Dashboard: concepts/dashboard.md
+        - Gateway: concepts/gateway-node.md
+        - Gasless: 
+          - Gasless Transactions: concepts/gasless-ops.md
+          - Session Keys: concepts/scw-session-keys.md
+        - Key Space Type: concepts/keyspace-types.md
+        - Login Token:
+          - Arcana JWT Token: concepts/an-jwt-token.md
+          - DID Token: concepts/an-did-token.md
+          - Verify JWT Token: concepts/jwt-token-validation.md
+        - Login UI:
+          - Custom Login UI: concepts/custom-login-ui.md
+          - Plug-and-Play Login UI: concepts/plug-and-play-auth.md
+        - Login Session Type: concepts/session_type.md
+        - MFA: concepts/mfa.md
+        - Non-EVM Chains: concepts/non-evm-chains.md
+        - Passkeys Login: concepts/authtype/auth-passkeys.md
+        - Private Key: concepts/private-key.md
+        - SDKs:
+          - CA SDK: concepts/casdk.md
+          - Auth SDK: concepts/authsdk.md
+          - Auth-Core SDK: concepts/auth-core-sdk.md
+          - Gasless SDK: concepts/glsdk.md
+        - Social Login: concepts/social-login.md
+        - Smart Contracts:
+          - Overview: concepts/ansmartc/an-smart-contracts.md
+          - Types of Contracts: concepts/ansmartc/an-smartc-types.md
+          - Deployed Contracts: concepts/ansmartc/an-smartc-deployed.md
+        - Usage: 
+          - Billing: concepts/billing.md
+          - Metrics: concepts/usage-metrics.md
+        - Validator Nodes: concepts/validator-nodes.md
+      - Tech Stack: 
+        - CA Assets: web3-stack/ca_stack.md
+        - App Types: web3-stack/apps.md
+        - Auth Providers: web3-stack/auth.md
+        - Browsers: web3-stack/browsers.md
+        - Chains: web3-stack/chains.md
+        - Protocol: web3-stack/protocol.md
+        - Validators: web3-stack/validators.md
+        - Wallets: web3-stack/wallets.md 
+      - Security:
+        - Overview: security/overview.md
+        - ADKG: security/adkg.md
+        - MFA: security/mfa.md
+    - Audit Reports: 
+      - Arcana Smart Contracts: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
+      - Arcana ADKG: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20230228T054948Z.pdf
+      - Arcana Paymaster Contract: https://github.com/arcana-network/audit-reports/blob/main/Arcana_PayMaster_Final_Report.pdf
+    - Archives:
+      - Release Note Archives: 
+        - relnotes/archives/index.md
+        - Auth SDK:
+          - Auth 1.0.12 : relnotes/rn-main-auth-v1.0.12.md
+          - Auth 1.0.11 : relnotes/rn-main-auth-v1.0.11.md
+          - Auth May27-2024: relnotes/rn-main-auth-May27-24.md
+          - Auth 1.0.10 : relnotes/rn-main-auth-v1.0.10.md
+          - Auth 1.0.9 : relnotes/rn-main-auth-v1.0.9.md
+          - Auth Oc12-2023: relnotes/rn-main-auth-vOct12-23-gasless.md
+          - Auth 1.0.8 : relnotes/rn-main-auth-v1.0.8.md
+          - Auth 1.0.7 : relnotes/rn-main-auth-v1.0.7.md
+          - Auth 1.0.6 : relnotes/rn-main-auth-v1.0.6.md
+          - Auth 1.0.5 : relnotes/rn-main-auth-v1.0.5.md
+          - Auth 1.0.4 : relnotes/rn-main-auth-v1.0.4.md
+          - Auth May3-2023: relnotes/rn-main-auth-May3-23.md
+          - Auth 1.0.3 : relnotes/rn-main-auth-v1.0.3.md
+          - Auth 1.0.2 : relnotes/rn-main-auth-v1.0.2.md
+          - Auth 1.0.1 : relnotes/rn-main-auth-v1.0.1.md
+          - Auth 1.0.0 (Mainnet): relnotes/rn-main-auth-v1.0.0.md
+          - Auth 0.3.0 (Testnet): relnotes/rn-beta-auth-v0.3.0.md
+        - Gasless SDK:
+          - Gasless 0.0.45: relnotes/rn-main-scw-v0.0.45.md
+          - Gasless 0.0.37: relnotes/rn-main-scw-v0.0.37.md
+          - Gasless 0.0.35: relnotes/rn-main-scw-v0.0.35.md
+          - Gasless 0.0.30: relnotes/rn-main-scw-v0.0.30.md
+          - Gasless 0.0.25: relnotes/rn-main-scw-v0.0.25.md
+      - Migration Guide Archives: 
+        - migration/archives/index.md
+        - Auth SDK:
+          - Auth v1.0.11 -> v1.0.12: migration/main-auth-v1.0.12-migration.md
+          - Auth v1.0.10 -> v1.0.11: migration/main-auth-v1.0.11-migration.md
+          - Auth v1.0.9 -> v1.0.10: migration/main-auth-v1.0.10-migration.md
+          - Auth v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md
+          - vOct12-23-gasless -> v1.0.9: migration/main-auth-v1.0.9-migration.md
+          - v1.0.8 -> vOct12-23-gasless: migration/main-auth-vOct12-23-gasless-migration.md
+          - v1.0.7 -> v1.0.8: migration/main-auth-v1.0.8-migration.md
+          - v1.0.6 -> v1.0.7: migration/main-auth-v1.0.7-migration.md
+          - v1.0.5 -> v1.0.6: migration/main-auth-v1.0.6-migration.md
+          - v1.0.4 -> v1.0.5: migration/main-auth-v1.0.5-migration.md                  
+          - v1.0.3 -> v1.0.4: migration/main-auth-v1.0.4-migration.md         
+          - v1.0.2 -> v1.0.3: migration/main-auth-v1.0.3-migration.md
+          - v1.0.1 -> v1.0.2: migration/main-auth-v1.0.2-migration.md
+          - v1.0.0 -> v1.0.1: migration/main-auth-v1.0.1-migration.md
+          - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
+          - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
+        - Gasless SDK:
+          - v0.0.37 -> v0.0.45: migration/main-scw-v0.0.45-migration.md
+          - v0.0.35 -> v0.0.37: migration/main-scw-v0.0.37-migration.md
+          - v0.0.30 -> v0.0.35: migration/main-scw-v0.0.35-migration.md
+          - v0.0.25 -> v0.0.30: migration/main-scw-v0.0.30-migration.md
+          - Beta -> v0.0.25: migration/main-scw-v0.0.25-migration.md
+    - Whitepaper: https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08
+  - Docs @Partners:
+    - partner-docs/index.md
+    - MultiversX:
+      - Auth: https://multiversx.com/ecosystem/project/arcana
+    - Linea:
+      - Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
+      - Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
+    - Caduceus:
+      - Social Login: https://docs.caduceus.foundation/auth
+    - Alchemy:
+      - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
+      - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
