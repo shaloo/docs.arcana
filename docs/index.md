@@ -60,7 +60,7 @@ Arcana’s SDK is designed to onboard users from any chain:
 
 ## Bridge no more!
 
-Arcana’s Chain Abstraction (CA) SDK enables [[concept-unified-balance|unified balance]] across chains. It lets your app users spend blockchain assets anywhere, anytime — no bridging required.
+Arcana’s Chain Abstraction (CA) SDK enables [[ca-top#unified-balance|unified balance]] across chains. It lets your app users spend blockchain assets anywhere, anytime — no bridging required.
 
 <figure markdown="span">
   <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>

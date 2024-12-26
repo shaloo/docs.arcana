@@ -9,7 +9,7 @@ Arcana has two CA offerings, one targeted at the Web3 Users and the other for We
 
     Arcana Wallet unifies user balance in the user's wallet account spread across multiple [[ca-stack#chains|chains]]and [[ca-stack#tokens|tokens]] for supported [[ca-stack#apps|apps]] out of the box.  
     
-    Powered by Arcana's [[concept-ca|chain abstraction protocol]], it displays user's [[concept-unified-balance|unified balance]] in the wallet account across several blockchains and tokens by combining fragmented liquidity. This allows users to spend on any chain. 
+    Powered by Arcana's [[concept-ca|chain abstraction protocol]], it displays user's [[ca-top#unified-balance|unified balance]] in the wallet account across several blockchains and tokens by combining fragmented liquidity. This allows users to spend on any chain. 
     
     [Download](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) the Arcana Wallet browser extension and get started!
     
@@ -19,7 +19,7 @@ Arcana has two CA offerings, one targeted at the Web3 Users and the other for We
 
     **Arcana CA SDK**
     
-    Integrate Arcana's [[concept-casdk|Chain Abstraction (CA) SDK]] into your Web3 app to enable [[concept-unified-balance|unified balance]] for app user. Let the user spend seamlessly on any chain, eliminating liquidity fragmentation.
+    Integrate Arcana's [[concept-casdk|Chain Abstraction (CA) SDK]] into your Web3 app to enable [[ca-top#nified-balance|unified balance]] for app user. Let the user spend seamlessly on any chain, eliminating liquidity fragmentation.
 
     If your app already integrates with the Arcana Auth SDK for social login, users can access the in-app Arcana Wallet directly, no browser extension is needed. Simplify onboarding and empower users with cross-chain functionality built right into your app.  
 

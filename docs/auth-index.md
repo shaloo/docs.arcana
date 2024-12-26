@@ -12,6 +12,10 @@ hide:
 
 # Web3 Made Effortless
 
+<div>
+    <img style="height: 300px" src="{{config.extra.arcana.img_dir}}/Auth_Wordmark.{{config.extra.arcana.img_png}}" alt="Auth SDK Word Logo"></img>
+</div>
+
 <!---
 
 !!! quote "Don't Panic!"

@@ -37,7 +37,7 @@ The CA SDK encapsulates the same functionality for any Web3 dApp.
 
     <iframe width="70%" height="350" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
 
-Developers can integrate the Arcana CA SDK with other Web3 apps to let users spend [[concept-unified-balance|unified balance]] across chains.
+Developers can integrate the Arcana CA SDK with other Web3 apps to let users spend [[ca-top#unified-balance|unified balance]] across chains.
 
 !!! an-tip "Have a Web3 app?"
 

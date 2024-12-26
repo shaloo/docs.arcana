@@ -26,6 +26,27 @@ Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified ba
 
 Allowances are required to enable unified balance in the wallet. It requires the wallet user to permit the Arcana Vault contract to set up ERC20 token allowances on their behalf for spending unified balance across supported chains. 
 
+Use the following UI Hooks for allowance and intent setup in the dApp:
+
+```js
+ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
+    // This is a hook for the dev to show user the allowances that need to be setup for the current tx to happen
+
+    // sources: an array of objects with minAllowance, chainID, token symbol etc
+    // allow(allowances): allowances is an array with allowance for each source (len(sources) == len(allowances))
+    // deny(): stop the flow
+})
+
+ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
+    // This is a hook for the dev to show user the intent, the sources and associated fees
+
+    // intent: Intent data containing sources and fees for display purpose
+    // allow(): accept the current intent
+    // deny(): deny the intent and stop the flow
+    // refresh(): should be on a timer of 5s to refresh the intent (if not refreshed old intents might fail due to fee changes)
+  })
+```
+
 #### Get Allowance
 
 ```js
@@ -47,6 +68,12 @@ await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
 
 // Alternatively, you can also specify the amount 10,000,000 for USDC tokens as follows:
 // await ca.allowance().tokens(["USDC"]).chain(42161).amount("10000000").set()
+```
+
+### Revoke Allowance
+
+```js
+await ca.allowance().tokens(["USDC"]).chain(42161).revoke()
 ```
 
 ### Unified Balance
@@ -75,6 +102,12 @@ await ca.request({
 
 ```js
 await ca.bridge().token("pol").amount(10).chain(137).exec();
+```
+
+#### Transfer
+
+```js
+await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
 ```
 
 ### CA Events

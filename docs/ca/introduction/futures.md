@@ -8,7 +8,7 @@ arcana:
 
 # Futures
 
-We have [[ca-demo|demonstrated]] Chain Abstraction technology through a standalone Arcana Wallet ([download here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi)). It allows [[concept-unified-balance|unified balance]] across the chains and tokens listed below.
+We have [[ca-demo|demonstrated]] Chain Abstraction technology through a standalone Arcana Wallet ([download here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi)). It allows [[ca-top#unified-balance|unified balance]] across the chains and tokens listed below.
 
 ## Chains
       

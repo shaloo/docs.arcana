@@ -10,7 +10,7 @@ arcana:
 
 **{{config.extra.arcana.company_name}}** offers client-side SDKs for Web3 apps:
 
-* **{{config.extra.arcana.ca_sdk}}:** Lets Web3 app users instantly [[concept-unified-balance|unify balance]] of assets across different chains and spend on any chain.
+* **{{config.extra.arcana.ca_sdk}}:** Lets Web3 app users instantly [[ca-top#unified-balance|unify balance]] of assets across different chains and spend on any chain.
 * **{{config.extra.arcana.auth_sdk}}:**  Onboard Web3 app users via [[concept-social-login|social login]] and enable [[concept-gasless-transactions|gasless transactions]] through the in-app, embedded, non-custodial {{config.extra.arcana.wallet_name}}.
 * **{{config.extra.arcana.gasless_sdk}}:**  Extends the gasless transaction feature to third-party browser-based wallets.
 

@@ -486,7 +486,7 @@ nav:
       - CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Whitepaper-121f11ed0804808da2e5cdd1432b2b61
       - CA Audit Report: https://github.com/arcana-network/audit-reports/blob/main/REP-final-20221228T082421Z.pdf
       - CA Release Notes: relnotes/latest-ca-release-note.md
-  - WaaS: 
+  - Auth: 
     - auth-index.md
     - Announcements: https://github.com/orgs/arcana-network/discussions/categories/announcements
     - Service Status: https://status.arcana.network/

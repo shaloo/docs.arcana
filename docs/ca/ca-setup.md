@@ -12,7 +12,7 @@ arcana:
 
 # Setup Chain Abstraction
 
-Learn how to register a Web3 app through the [[concept-arcana-dashboard|{{config.extra.arcana.dashboard_name}}]] before using the {{config.extra.arcana.ca_sdk_name}} to enable [[concept-unified-balance|unified balance]]for users.
+Learn how to register a Web3 app through the [[concept-arcana-dashboard|{{config.extra.arcana.dashboard_name}}]] before using the {{config.extra.arcana.ca_sdk_name}} to enable [[ca-top#unified-balance|unified balance]]for users.
 
 ## Prerequisites
 
