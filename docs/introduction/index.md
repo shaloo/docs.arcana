@@ -10,8 +10,9 @@ arcana:
 
 **{{config.extra.arcana.company_name}}** offers client-side SDKs for Web3 apps:
 
-* **Auth SDK:**  Onboard Web3 app users via [[concept-social-login|social login]] and enable [[concept-gasless-transactions|gasless transactions]] through the in-app, embedded, non-custodial {{config.extra.arcana.wallet_name}}.
-* **Gasless SDK:**  Extends the gasless transaction feature to third-party browser-based wallets.
+* **{{config.extra.arcana.ca_sdk}}:** Lets Web3 app users instantly [[ca-top#unified-balance|unify balance]] of assets across different chains and spend on any chain.
+* **{{config.extra.arcana.auth_sdk}}:**  Onboard Web3 app users via [[concept-social-login|social login]] and enable [[concept-gasless-transactions|gasless transactions]] through the in-app, embedded, non-custodial {{config.extra.arcana.wallet_name}}.
+* **{{config.extra.arcana.gasless_sdk}}:**  Extends the gasless transaction feature to third-party browser-based wallets.
 
 ## Get Started
 
@@ -46,6 +47,33 @@ arcana:
     ```
 
 ## Usage
+
+=== "{{config.extra.arcana.ca_sdk_name}}"
+
+    ```mermaid
+
+    flowchart LR 
+        subgraph Step1 [{{config.extra.arcana.ca_sdk_name}} Usage]
+        direction LR
+            A1(((Start))) -- 1.Register App --> B1(Dashboard Login)
+            B1  --> C1[Get Client ID] --> E1
+            A1 -- 2.Integrate App --> D1[Install CA SDK] --> E1[Initialize <code>SDK</code>] --> F1[Set up Allocations]
+            E1 --> G1[Set up Hooks]
+            E1 --> H1[Request/Send Tx]
+            E1 --> J1[Bridge Tx]
+        end
+
+    classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;
+    class C1 an-pink
+    ```
+
+    **Key Features**
+
+    * Enables unified balance in Web3 apps to let users spend on any chain.
+    * Allows users to bridge assets.
+    * Easy to customize and integrate with various [[sdk-installation|Web3 app types]].
+
+    {% include "./text-snippets/warn_latest_ca_sdk_version.md" %}
 
 === "{{config.extra.arcana.sdk_name}}"
 

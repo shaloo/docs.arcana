@@ -49,9 +49,17 @@ arcana:
 
     </div>
 
-=== "Report Issue"
+=== "CA Issues"
+
+    * [Report CA-SDK Bug](https://github.com/arcana-network/ca-sdk/issues/new)
+
+<!---
+
+=== "Web3 Onboarding Issues"
 
     * [Report Dashboard Bug](https://github.com/arcana-network/developer-dashboard/issues/new)
     * [Report Auth SDK Bug](https://github.com/arcana-network/auth/issues/new)
-    * [Report Gasless SDK Bug](https://github.com/arcana-network/scw/issues/new)
     * [Report Arcana Wallet Bug](https://github.com/arcana-network/wallet-ui/issues/new)
+    * [Report Gasless SDK Bug](https://github.com/arcana-network/scw/issues/new)
+
+--->
