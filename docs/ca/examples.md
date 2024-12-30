@@ -8,6 +8,6 @@ arcana:
 
 # Examples
 
-* [CA-SDK Example (Vue+TypeScript+Vite)](https://github.com/arcana-network/ca-sdk-example/tree/subham/AR-8841-arcana-pay-demo-design)
+* [CA-SDK Example (Vue+TypeScript+Vite)](https://github.com/arcana-network/ca-sdk-example/)
 * [Basic CA-SDK Integration](https://github.com/arcana-network/ca-sdk/tree/main/example)
 
