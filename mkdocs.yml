@@ -467,6 +467,7 @@ not_in_nav: |
   support/index.md
   relnotes/rn-main-auth-v1.0.12.md
   migration/main-auth-v1.0.12-migration.md
+  concepts/ca.md
 
 nav:
   - Chain Abstraction: 
@@ -719,7 +720,6 @@ nav:
               - concepts/authtype/index.md
               - Auth Providers: concepts/authtype/socialauth.md
               - Custom Auth: concepts/authtype/custom-auth.md
-            - Chain Abstraction: concepts/ca.md
             - Configuration Profiles: concepts/config-profiles.md
             - Dashboard: concepts/dashboard.md
             - Gateway: concepts/gateway-node.md
