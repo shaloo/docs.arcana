@@ -1,1 +1,1 @@
-<span><a href="https://cadk-ref-guide.netlify.app/" target="_blank">{{config.extra.arcana.ca_sdk_name}} Reference</a></span>
+<span><a href="https://ca-sdk-ref-guide.netlify.app/" target="_blank">{{config.extra.arcana.ca_sdk_name}} Reference</a></span>
