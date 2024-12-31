@@ -1,6 +1,6 @@
-**Release Date: Dec 27, 2024**  
+**Release Date: Dec 30, 2024**  
 
-Version: **v0.0.1**
+Version: **v0.0.2**
 
 ## What is New?
 
