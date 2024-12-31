@@ -468,6 +468,7 @@ not_in_nav: |
   relnotes/rn-main-auth-v1.0.12.md
   migration/main-auth-v1.0.12-migration.md
   concepts/ca.md
+  ca/ca-try-now.md
 
 nav:
   - Chain Abstraction: 
@@ -477,7 +478,7 @@ nav:
       - Usage Guide: ca/ca-usage-guide.md
       - APIs: https://ca-sdk-ref-guide.netlify.app/
       - Examples: ca/examples.md
-      - Playground: ca/ca-try-now.md
+#     - Playground: ca/ca-try-now.md
     - FAQ: ca/faq.md
     - Concepts: 
       - ca/introduction/ca.md
