@@ -104,7 +104,8 @@ extra:
     product_release_tag: !ENV [PRODUCT_RELEASE_TAG,'1']
     previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.10']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.6']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.11']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.12']
+    latest_sdk_release_date: !ENV [AUTH_SDK_REL_DATE, 'Jan 3, 2025']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.9']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.9']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']
@@ -115,7 +116,8 @@ extra:
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.1.0']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
     latest_gasless_sdk_version: !ENV [GASLESS_SDK_VERSION, '0.0.37']
-    latest_gca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.1-beta.9']
+    latest_ca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.1']
+    latest_ca_sdk_release_date: !ENV [CA_SDK_REL_DATE, 'Jan 3, 2025']
     ca_sdk_pkg_name: ca-sdk
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
