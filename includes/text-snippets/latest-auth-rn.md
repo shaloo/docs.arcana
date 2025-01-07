@@ -1,16 +1,16 @@
 {==
 
-**Release Date: Oct 28, 2024**  
+**Product Update Date: Oct 28, 2024**  
 
 Version: **{{config.extra.arcana.latest_version}}**
 
-This release consists of:
+The product consists of:
 
 1. {{config.extra.arcana.sdk_name}} 
   
     === "Web Apps"
 
-        - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
+        - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) Version: **{{config.extra.arcana.latest_version}}** Release Date: **{{config.extra.arcana.latest_sdk_release_date}}** 
         - [`{{config.extra.arcana.react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-react)
         - [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) 
         - [`{{config.extra.arcana.web3_react_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-web3-react)
@@ -47,10 +47,14 @@ This release consists of:
 
 ---
 
+
 There are **no usage changes** in this release. To migrate to the latest release, re-install the SDK.
+
 If you're using the Gasless feature, ensure the gas tank has enough balance to cover ERC-20 token transfer fees. Otherwise, users may incur gas charges for whitelisted operations.
 
 {% include "./text-snippets/gl_limitations.md" %}
+
+[Changelog](https://github.com/arcana-network/auth/releases/latest){ .md-button }
 
 ## Get Started
 
