@@ -30,7 +30,7 @@ Check out the [[ca-quick-start|Quick start Guide]] to integrate your Web3 app wi
 
 ## Why Chain Abstraction?
 
-[[ca-top|Chain Abstraction]] removes the friction of users having to bridge across different blockchains to try apps. Users get a single, unified balance of their assets across multiple chains and can seamlessly spend them on your app, on the chain it is built on.
+[[ca-top|Chain Abstraction]] removes the friction of users having to bridge across different blockchains to try apps. Users can spend a unified balance across multiple chains through your app, bypassing the hassle of procuring or converting funds for gas on new chains.
 
 With Chain Abstraction, users no longer need to:
 

@@ -7,11 +7,9 @@ arcana:
   root_rel_path: ..
 ---
 
-# Demos
+# Wallet Demo
 
-We've built Arcana Chain Abstraction demos for several Web3 apps. In these PoCs the chain Abstraction protocol is part of Arcana's standalone wallet. 
-
-The CA SDK encapsulates the same functionality for any Web3 dApp.
+To showcase the unified balance feature, we've built chain abstraction into Arcana's standalone Web3 wallet. Click on the tab below to view the demo video for these supported apps:
 
 === "Aave"
 
