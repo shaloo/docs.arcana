@@ -1,5 +1,4 @@
 * USDC
 * USDT
 * ETH
-* wETH
-* SCR
+* POL
