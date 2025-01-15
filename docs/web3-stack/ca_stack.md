@@ -8,7 +8,7 @@ arcana:
 
 # CA: Supported Chains & Tokens
 
-{{config.extra.arcana.ca_sdk_name}} supports unified balance across the following chains and tokens. 
+Unified balance through chain abstraction is supported across the following chains and tokens. Web3 dApps can integrate with the Arcana CA SDK to enable unified balance for users while deploying any third-party browser-based wallet to sign blockchain transactions.
 
 ## Chains
 
@@ -18,7 +18,7 @@ arcana:
 
 {% include "./text-snippets/ca_supported_tokens.md" %}
 
-The Standalone Arcana CA Wallet supports unified balance feature in the context of the following apps:
+Web3 wallet users can download the Arcana CA Wallet (standalone) and install it as a browser extension to use unified balance in the context of the following apps: 
 
 ## Apps
 

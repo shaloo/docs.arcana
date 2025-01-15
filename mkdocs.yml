@@ -396,12 +396,12 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
+  - pymdownx.details
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.snippets:

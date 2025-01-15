@@ -1,4 +1,3 @@
+* ETH
 * USDC
 * USDT
-* ETH
-* POL
