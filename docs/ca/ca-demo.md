@@ -7,7 +7,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Wallet Demo
+# CA Demo
 
 To showcase the unified balance feature, we've built chain abstraction into Arcana's standalone Web3 wallet. Click on the tab below to view the demo video for these supported apps:
 
@@ -35,7 +35,9 @@ To showcase the unified balance feature, we've built chain abstraction into Arca
 
     <iframe width="70%" height="350" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
 
-Developers can integrate the Arcana CA SDK with other Web3 apps to let users spend [[ca-top#unified-balance|unified balance]] across chains.
+Developers can integrate the Arcana CA SDK with other Web3 apps to let users spend [[ca-top#unified-balance|unified balance]] across chains. 
+
+[:material-presentation-play:{ .icon-color} CA SDK Demo](https://sdk.arcana.network){ .md-button }
 
 !!! an-tip "Have a Web3 app?"
 

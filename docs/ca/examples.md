@@ -14,10 +14,4 @@ arcana:
 
     [:material-github:{ .icon-color} GitHub ](https://github.com/arcana-network/ca-sdk-example/){ .md-button }
     
-    [:simple-codesandbox:{ .icon-color} CodeSandbox](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button } 
-
-=== "Basic CA-SDK Initialization"
-
-    This is a simple html/css/js based CA SDK integration and initialization only example.
-
-    [:material-github:{ .icon-color} GitHub ](https://github.com/arcana-network/ca-sdk/tree/main/example){ .md-button }
+    [:simple-codesandbox:{ .icon-color} CodeSandbox](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button }
