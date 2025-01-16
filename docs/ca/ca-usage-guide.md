@@ -173,4 +173,4 @@ ca.removeCAEventListener((data) => {...})
 
 ---
 
-Check out [CA SDK Reference Guide](https://casdk-dev-ref-guide.netlify.app/) for details.
+Check out {% include "./text-snippets/casdkref_url.md" %} for details.

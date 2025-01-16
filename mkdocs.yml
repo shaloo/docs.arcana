@@ -101,8 +101,8 @@ extra:
     app_address: Client ID
     previous_version: !ENV [PREVIOUS_AUTH_SDK_VERSION,'1.0.10']
     previous_version_dashboard: !ENV [PREVIOUS_DASHBOARD_VERSION, '1.0.6']
-    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.12']
-    latest_sdk_release_date: !ENV [AUTH_SDK_REL_DATE, 'Jan 3, 2025']
+    latest_version: !ENV [AUTH_SDK_VERSION,'1.0.11']
+    latest_sdk_release_date: !ENV [AUTH_SDK_REL_DATE, '02 Jul 2024 13:57:09 UTC']
     latest_version_dashboard: !ENV [DASHBOARD_VERSION, '1.0.9']
     latest_version_wallet_ui: !ENV [WALLET_UI_VERSION, '1.0.9']
     latest_auth_react_sdk_version: !ENV [AUTH_REACT_SDK_VERSION, '0.0.3']
@@ -112,8 +112,8 @@ extra:
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.1.0']
     latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
-    latest_ca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.1']
-    latest_ca_sdk_release_date: !ENV [CA_SDK_REL_DATE, 'Jan 3, 2025']
+    latest_ca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.3']
+    latest_ca_sdk_release_date: !ENV [CA_SDK_REL_DATE, '15 Jan 2025 12:23:07 UTC']
     ca_sdk_pkg_name: ca-sdk
     auth_sdk_pkg_name: auth
     auth_core_sdk_pkg_name: auth-core
