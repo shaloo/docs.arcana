@@ -6,6 +6,10 @@ Chain Abstraction allows users to view the unified balance across chains and spe
 
 {% include "./text-snippets/unified_balance.md" %}
 
+## Allowance
+
+{% include "./text-snippets/allowance.md" %}
+
 ## Benefits
 
 Chain abstraction and unified balances simplify and streamline Web3 transactions by offering:

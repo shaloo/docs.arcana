@@ -1,0 +1,5 @@
+Allowance, in the context of Arcana's Chain Abstraction solution, refers to the pre-authorization of funds for seamless multi-chain transactions in Web3 apps.
+
+Web3 developers can offer a unified balance experience by integrating their apps with the Arcana Chain Abstraction SDK. Users can access this feature through the Arcana CA Wallet, which consolidates balances across chains and tokens for select apps.
+
+To enable unified balance across chains with Chain Abstraction, the user must possess funds on the source chain(s) and set up an allowance. This allowance lets the Arcana Vault contract(s) on the source chain(s) access the required funds. By granting permission, the user authorizes Arcana to process transactions and spend funds as needed on the source chain(s) for seamless transactions across chains.

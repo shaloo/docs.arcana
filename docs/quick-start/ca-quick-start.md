@@ -24,7 +24,7 @@ Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified ba
 
 ### Allowance
 
-Allowances are required to enable unified balance in the wallet. It requires the wallet user to permit the Arcana Vault contract to set up ERC20 token allowances on their behalf for spending unified balance across supported chains. 
+[[ca-top#allowance|Allowances]] are required to enable unified balance in the wallet.
 
 Use the following UI Hooks for allowance and intent setup in the dApp:
 

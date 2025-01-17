@@ -27,8 +27,8 @@ It's key components include the Arcana Vault smart contracts deployed on support
 
 ## High-level Overview
 
-1. Developer sets up Arcana Chain Abstraction settings enabling cross chain transactions on selected chain types and required allowances.
-2. App users are required to permit the allowances or reconfigure them if the app allows. Allowances enable Arcana Vault to collect required funds from the EoA account on one or more source chains, as per the user's intent.
+1. Developer sets up Arcana Chain Abstraction settings enabling cross chain transactions on selected chain types and required [[ca-top#allowance|allowances]].
+2. App users are required to permit the allowance values or reconfigure them if the app allows. Allowances enable Arcana Vault to collect required funds from the EoA account on one or more source chains, as per the user's intent.
 3. User submits an intent to spend `n` tokens on a destination chain Y and transact via a Web3 app.
 4. Arcana verifies that user has sufficient funds across the source chains in the user's EoA account and adequate allowances are pre-configured to enable chain abstraction, pay gas fees.
 5. Funds are moved to the Arcana Vault and user's intent is announced to all listening solvers.

@@ -12,7 +12,9 @@ arcana:
 
 ??? an-faq "What is CA allowance and why are allowances needed?"
 
-    Allowances enable a third party, such as a smart contract, to perform transactions from a user's wallet for a specified amount—without accessing the user's private key. The Arcana Chain Abstraction protocol requires users to sign allowances on the source chain(s). This permits the Arcana Vault contract to escrow the necessary funds from the user's wallet for cross-chain transactions. To sign the transaction and establish a token allowance for the Arcana Vault contract, users need enough ETH in their wallet to cover gas fees.
+   Allowance or 'Permit' in the blockchain context allows a third party, such as a smart contract, to perform transactions from a user's EoA for a specified amount — without accessing the user's private key. 
+   
+    In Arcana chain abstraction context, [[ca-top#allowance|wllowances]] are needed to enable unified balance and allow user to spend on any destination chain as long as they have sufficient funds and the required gas fees on the source chain(s).
 
 ??? an-faq "Which ERC20 tokens does the unified balance feature support?"
 
