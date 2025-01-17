@@ -79,7 +79,7 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
 ```
 ### Allowance
 
-Allowances are required to enable unified balance in the wallet. It requires the wallet user to permit the Arcana Vault contract to set up ERC20 token allowances on their behalf for spending unified balance across supported chains. 
+To enable unified balance across chains with Chain Abstraction, the user must possess funds on the source chain(s) and set up an allowance. This allowance lets the Arcana Vault contract(s) on the source chain(s) access the required funds. By granting permission, the user authorizes Arcana to process transactions and spend funds as needed on the source chain(s) for seamless transactions across chains.
 
 #### Get Allowance
 
