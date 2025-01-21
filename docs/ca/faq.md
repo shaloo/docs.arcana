@@ -10,7 +10,7 @@ arcana:
 
     When setting up Arcana chain abstraction to include Layer 1 chains, users need ETH to pay gas fees for signing the token allowance transaction with the Arcana vault smart contract. The Arcana wallet doesn't cover these Layer 1 chain gas fees. As a result, users who choose to include Layer 1 chains in their CA scope must pay these gas fees themselves to set up the CA allowance.
 
-??? an-faq "What is CA allowance and why are allowances needed?"
+??? an-faq "What is a CA allowance and why are allowances needed?"
 
    Allowance or 'Permit' in the blockchain context allows a third party, such as a smart contract, to perform transactions from a user's EoA for a specified amount — without accessing the user's private key. 
    
@@ -34,9 +34,9 @@ arcana:
 
 ??? an-faq "Does CA-SDK work with a Web3 app that uses wallet connectors such as Wagmi to enable wallet selection by the user?"
 
-    No. At present, we are working on CA-SDK Wallet connector component. Stay tuned...
+    No. At present, we are working on a CA-SDK Wallet connector component. Stay tuned...
 
-??? an-faq "Who is the target audience for CA-SDK?"
+??? an-faq "Who is the target audience for the CA-SDK?"
 
     Arcana's CA SDK helps Web3 dApp developers handle fragmented blockchain assets, letting users spend on any chain. It integrates with dApps to offer unified balances across chains.
     
