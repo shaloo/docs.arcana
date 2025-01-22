@@ -1,6 +1,11 @@
-In the blockchain ecosystem, managing multiple chains, tokens, and accounts fragments user liquidity. Even with sufficient balances across chains, users face challenges executing transactions due to fragmented assets. To transact, they must first convert assets into those acceptable on the target chain. This often involves complex, multi-step conversions to find the best route, a task not every user has the expertise or time for.
+In blockchain, managing multiple chains, tokens, and accounts often leads to liquidity fragmentation. Even with sufficient overall balance, users struggle to transact due to funds being spread across chains. They must convert assets into those accepted on the target chain, a complex, time-consuming process not everyone can navigate.
 
-Chain Abstraction allows users to view the unified balance across chains and spend on any chain. With chain abstraction, users gain a simplified, cohesive view of their wallet and liquidity, empowering them to focus on **specifying clear intent** rather than the how part of transaction execution to realize the intent.
+Chain Abstraction lets users view and access a [[ca-top#unified-balance|unified balance]] across chains, enabling transactions on any chain. It shifts the focus to **specifying a clear intent** for the transaction, eliminating the need to manually gather funds spread across chains to execute and fulfill the intent.
+
+<figure markdown="span">
+  <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}"/>
+  <figcaption>Arcana's Chain Abstraction</figcaption>
+</figure>
 
 ## Unified balance
 
