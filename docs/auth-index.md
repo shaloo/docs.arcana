@@ -101,7 +101,7 @@ This documentation contains everything you need to get started using [[introduct
 
     </div>
 
-    ## SDK Playground
+    ## Auth Playground
 
     <div class="tx-hero-container">
         <img src="{{config.extra.arcana.img_dir}}/escape_velocity_arcana_ca.{{config.extra.arcana.img_png}}" alt="Web3 Escape Velocity"></img>

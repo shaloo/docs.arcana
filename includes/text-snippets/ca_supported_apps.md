@@ -1,8 +1,8 @@
-* Polymarket
-* Uniswap
 * Aave
-* Hyperliquid
-* Jumper
-* Renzo
 * CowSwap
 * Galaxy Platform
+* Hyperliquid
+* Jumper
+* Polymarket
+* Renzo
+* Uniswap

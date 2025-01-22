@@ -6,8 +6,6 @@ arcana:
   root_rel_path: ..
 ---
 
-# Chain Abstraction
-
 {% include "./text-snippets/ca/what_is_ca.md" %}
 
 ## Arcana's CA Offerings
@@ -16,16 +14,20 @@ arcana:
 
 ## How does CA-SDK work?
 
-Arcana Network's [[concept-casdk|Chain Abstraction SDK (CA SDK)]] offers a decentralized system that manages user's EoA state, user intents for chain abstraction, various state transitions during intent servicing, communication with the solvers that service the intents and netting the transactions to provide settlement to the solvers.
+The [[concept-casdk|Chain Abstraction SDK (CA SDK)]] uses Arcana Network's CA protocol to to manage balances across multiple chains and tokens in Web3 apps.
 
-It's key components include the Arcana Vault smart contracts deployed on supported chains and a solver ecosystem. In the current form, there is no auction process. The first solver that accepts intent is allowed to service it.
+It solves liquidity fragmentation by enabling a unified balance across supported chains.
+
+The SDK manages the user's EoA state and intents across multiple chains, publishing approved intents. Solvers compete to fulfill these intents and provide liquidity on the destination chain. The protocol handles state transitions and settles solver payments using transaction netting.
+
+The Arcana Vault smart contracts on each supported chain and the solver ecosystem are two key parts of the Arcana CA protocol. There’s no auction; it’s a first-come, first-served system where the first solver to accept an intent gets to fulfill it.
 
 <figure markdown="span">
   <img alt="How Arcana CA works" src="{{config.extra.arcana.img_dir}}/an_ca_how_it_works.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
   <figcaption>How Arcana CA Works</figcaption>
 </figure>
 
-## High-level Overview
+### High-level Overview
 
 1. Developer sets up Arcana Chain Abstraction settings enabling cross chain transactions on selected chain types and required [[ca-top#allowance|allowances]].
 2. App users are required to permit the allowance values or reconfigure them if the app allows. Allowances enable Arcana Vault to collect required funds from the EoA account on one or more source chains, as per the user's intent.

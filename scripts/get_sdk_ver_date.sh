@@ -2,7 +2,7 @@
 
 # Check if both arguments are provided
 if [[ $# -ne 1 ]]; then
-  echo "Usage: $0 <npmjs_sdk_url>"
+  echo "Usage: $0 <auth/ca-sdk>"
   exit 1
 fi
 
