@@ -3,7 +3,7 @@ In blockchain, managing multiple chains, tokens, and accounts often leads to liq
 Chain Abstraction lets users view and access a [[ca-top#unified-balance|unified balance]] across chains, enabling transactions on any chain. It shifts the focus to **specifying a clear intent** for the transaction, eliminating the need to manually gather funds spread across chains to execute and fulfill the intent.
 
 <figure markdown="span">
-  <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
+  <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}"/>
   <figcaption>Arcana's Chain Abstraction</figcaption>
 </figure>
 
