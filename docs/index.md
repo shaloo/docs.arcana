@@ -1,7 +1,7 @@
 ---
 alias: ca-index-docs
 template: ca-style.html
-title: 'Welcome'
+title: 'Welcome!'
 description: 'Get Unified balance to spend on any chain in Web3 apps with Arcana Network Chain Abstraction.'
 arcana:
   root_rel_path: .
@@ -20,9 +20,7 @@ hide:
 
 **TL;DR**
 
-Get started fast!
-
-Check out the [[ca-quick-start|Quick start Guide]] to integrate your Web3 app with the Arcana Chain Abstraction SDK. Browse integration examples,  jump right in with the [[web-ca-usage-guide|usage guide]] and the {% include "./text-snippets/casdkref_url.md" %}.
+*Get started* with [[ca-quick-start|Quick start Guide]], [[ca-examples| integration examples]] [[web-ca-usage-guide|Usage Guide]] and the {% include "./text-snippets/casdkref_url.md" %}.
 
 [Try now!](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button } 
 
