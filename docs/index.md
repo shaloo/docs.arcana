@@ -26,16 +26,28 @@ hide:
 
 ==}
 
+## Bridge no more!
+
+Arcana’s [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unified-balance|unified balance]] across chains. It lets your app users spend blockchain assets anywhere, anytime — no bridging required.
+
+<figure markdown="span">
+  <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
+  <figcaption>Arcana's Chain Abstraction</figcaption>
+</figure>
+
 ## Why Chain Abstraction?
 
-[[ca-top|Chain Abstraction]] removes the friction of users having to bridge across different blockchains to try apps. Users can spend a unified balance across multiple chains through your app, bypassing the hassle of procuring or converting funds for gas on new chains.
+Chain Abstraction removes the friction of users having to bridge across different blockchains to try apps. Users can spend a unified balance across multiple chains through your app, bypassing the hassle of procuring or converting funds for gas on new chains.
 
-With Chain Abstraction, users no longer need to:
+Chain Abstraction simplifies Web3 app UX:
 
-- Figure out which chain your app runs on
-- Hunt for the best bridge to move assets
-- Fund gas tokens on different chains
-- Track and transfer balances across chains
+| User Experience      |  Complex, Multi-step (No CA)    |  Simple, One-step (with CA) |
+| :---------- | :----------------------------------- | :-----------------------|
+| Figure out which chain your app runs on       | :one:{.icon-color}  | :no_entry:{.icon-color} |
+| Hunt for the best bridge to move assets     | :two:{.icon-color}  | :no_entry:{.icon-color} |
+| Fund gas tokens on different chains   | :three:{.icon-color}  | :no_entry:{.icon-color} |
+| Track and transfer balances across chains   | :four:{.icon-color}  | :no_entry:{.icon-color} |
+| Issue a transaction on a new chain  | :five:{.icon-color} | :one:{.icon-color} :white_check_mark:|
 
 [Learn more...](https://blog.arcana.network/)
 
@@ -43,33 +55,68 @@ With Chain Abstraction, users no longer need to:
 
 Arcana’s SDK enables apps to offer Chain Abstraction to users with a single integration. Users can spend their consolidated multi-chain balance of ETH, wETH, USDC, and USDT on your app. Onboard users from any ecosystem effortlessly
 
-### Simple Integration
+=== "Onboard Users on Any Chain"
 
-Arcana’s SDK is designed to work flawlessly with your existing stack:
+    <div class="grid cards" markdown>
 
-- **Easy to Integrate:** Minimal changes to your existing front-end code
-- **No Smart Contract Changes**: Zero migration or updates to your smart contracts required
-- **Bring Existing Wallets**: Users can bring their existing EOA wallets such as MetaMask, Rabby, Rainbow etc
-- **Zero Lockups or Transfers**: Users do not need to transfer their funds to a new wallet address or lockup in a smart contract
-- **No vendor Lock-In:** All assets are in users custody and do not have to rely on Arcana to access their funds. Users can freely spend their assets on any app
+      - :fontawesome-solid-money-bill-trend-up:{ .icon-color } __Unified Balance__
+
+        ---
+
+        Display users' consolidated balance across chains. Use Arcana’s plug-and-play UI or design your own.
+
+      - :material-gas-station:{ .icon-color } __Flexible Gas Payments__
+
+        ---
+
+        Users can pay gas fees in USDC or USDT if they do not have native gas tokens.
+
+      - :material-vector-union:{ .icon-color }  __Larger Transactions__
+
+        ---
+
+        Users can seamlessly access and spend their entire multi-chain balance on the desired chain, in a single click.
+        
+      - :material-lock-open:{ .icon-color }  __No Lock-In__
+
+        ---
+
+        All assets are in user's custody, no compulsion to rely on Arcana for accessing funds. Users can freely spend their assets on any app.
+             
+
+    </div>
 
 
-### Onboard Users on Any Chain
+=== "Simple Integration"
 
-Arcana’s SDK is designed to onboard users from any chain:
+    <div class="grid cards" markdown>
 
-- **Unified Balance**: Display users' consolidated balance across chains. Use Arcana’s plug-and-play UI or design your own.
-- **Flexible Gas Payments**: Users can pay gas fees in USDC or USDT if they do not have native gas tokens
-- **Larger Transactions**: Users can seamlessly access and spend their entire multi-chain balance on the desired chain, in a single click.
+      - :material-application-edit:{ .icon-color }  __Frontend Code Updates__
 
-## Bridge no more!
+        ---
 
-Arcana’s Chain Abstraction (CA) SDK enables [[ca-top#unified-balance|unified balance]] across chains. It lets your app users spend blockchain assets anywhere, anytime — no bridging required.
+        Requires **minimal** changes to the Web3 app's front-end code.
 
-<figure markdown="span">
-  <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
-  <figcaption>Arcana's Chain Abstraction</figcaption>
-</figure>
+      - :no_entry_sign:{ .icon-color }  __No Smart Contract Changes__
+      
+        ---
+        
+        Requires **zero** migration or updates to Web3 app's smart contracts.
+
+      - :material-wallet-plus:{ .icon-color }  __Bring Existing Wallets__
+       
+        ---
+         
+        Users can bring their existing EOA wallets such as MetaMask, Rabby, Rainbow, etc.
+
+       
+      - :octicons-stop-24:{ .icon-color }  __Assets: Zero Lockups or Transfers__ 
+      
+        ---
+        
+        Users do not need to transfer their funds to a new wallet address or lockup in a smart contract.
+
+    </div>
 
 ## Need Help?
 
