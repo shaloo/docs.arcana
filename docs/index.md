@@ -97,7 +97,7 @@ Arcana’s SDK enables apps to offer Chain Abstraction to users with a single in
 
         Requires **minimal** changes to the Web3 app's front-end code.
 
-      - :no_entry_sign:{ .icon-color }  __No Smart Contract Changes__
+      - :material-cancel:{ .icon-color }  __No Smart Contract Changes__
       
         ---
         
