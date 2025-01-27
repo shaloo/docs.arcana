@@ -6,6 +6,16 @@ arcana:
   root_rel_path: ..
 ---
 
+??? an-faq "I'm a Web3 wallet user, how can I benefit from unified balance with chain abstraction?"
+
+    Web3 wallet users can unify assets across chains and spend on any chain. For example, if you have 3 USDC on Arbitrum, 2 USDC on Optimism and wish to send 4 USDC on Base, your wallet has liquidity fragmentation, you cannot directly spend those USDC on Base even though you have sufficient tokens when put together on two chains.  Unified balance with chain abstraction can help you spend 4 USDC on base with a single click without first having to convert your tokens on Optimism or Arbitrum to make this transaction on Base.
+
+    Use the Arcana CA wallet to try unified balance. Download [here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi).
+
+??? an-faq "I'm a Web3 dApp developer, how can I enable unified balance with chain abstraction for dApp users?"
+
+    Download the [Arcana CA SDK ](https://www.npmjs.com/package/@arcana/ca-sdk) and integrate your dApp with the SDK. See [CA SDK integration demo](https://sdk.arcana.network) and the [[ca-examples|SDK integration example code]] for details.
+
 ??? an-faq "Why do users need to pay gas fees to set up CA with Layer 1 chains?"
 
     When setting up Arcana chain abstraction to include Layer 1 chains, users need ETH to pay gas fees for signing the token allowance transaction with the Arcana vault smart contract. The Arcana wallet doesn't cover these Layer 1 chain gas fees. As a result, users who choose to include Layer 1 chains in their CA scope must pay these gas fees themselves to set up the CA allowance.

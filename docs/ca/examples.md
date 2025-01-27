@@ -10,8 +10,8 @@ arcana:
 
 === "CA-SDK Integration"
 
-    This is a Vue+TypeScript+Vite based CA SDK integration example.
+    This is a Vue+TypeScript+Vite template that has been enhanced with the CA SDK integration code.
 
     [:material-github:{ .icon-color} GitHub ](https://github.com/arcana-network/ca-sdk-example/){ .md-button }
     
-    [:simple-codesandbox:{ .icon-color} CodeSandbox](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button }
+    [:simple-codesandbox:{ .icon-color} Try Now!](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button }
