@@ -47,7 +47,7 @@ Chain Abstraction simplifies Web3 app UX:
 | Hunt for the best bridge to move assets     | :material-numeric-2-circle::material-clipboard-text-clock::material-cursor-default-click-outline::octicons-ellipsis-16:  | :material-minus-circle-off:{ .icon-color } |
 | Fund gas tokens on different chains   | :material-numeric-3-circle::material-clipboard-text-clock::material-cursor-default-click-outline::octicons-ellipsis-16:  | :material-minus-circle-off:{ .icon-color } |
 | Track and transfer balances across chains   | :material-numeric-4-circle::material-clipboard-text-clock::material-cursor-default-click-outline::octicons-ellipsis-16:  | :material-minus-circle-off:{ .icon-color } |
-| Issue a transaction on a new chain  | :material-numeric-5-circle::material-cursor-default-click-outline::material-timer-sand-complete::material-check-outline: | :white_check_mark:{ .logo_icon_anim } |
+| Issue a transaction on a new chain  | :material-numeric-5-circle::material-cursor-default-click-outline::material-timer-sand-complete::material-check-outline: | :material-check-bold:{ .logo_icon_anim } |
 
 [Learn more...](https://blog.arcana.network/)
 
