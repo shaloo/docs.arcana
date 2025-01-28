@@ -51,11 +51,11 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 ---
 
-There are **no usage changes** in this release for the {{config.extra.arcana.sdk_name}}. 
+This release has **no usage changes** in the {{config.extra.arcana.sdk_name}}.
 
-To use the latest {{config.extra.arcana.wallet_name}} off-ramp feature, users can simply refresh the wallet or re-login to the app. 
+To use the latest {{config.extra.arcana.wallet_name}} off-ramp feature,  Web3 app users can refresh the wallet or re-login to the app. 
 
-Apps using the Wagmi SDK need to migrate to the latest {{config.extra.arcana.wagmi_sdk_name}} release. Simply re-install and upgrade the [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) package and update the integration code to use the new config settings for the `WagmiProvider`. See [[wagmi-quick-start|Wagmi Quick Start Guide]] for details.
+Apps using the Wagmi SDK need to migrate to the latest {{config.extra.arcana.wagmi_sdk_name}} release. Re-install and upgrade the [`{{config.extra.arcana.wagmi_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth-wagmi) package and update the integration code to use the new config settings for the `WagmiProvider`. See [[wagmi-quick-start|Wagmi Quick Start Guide]] for details.
 
 ## Get Started
 

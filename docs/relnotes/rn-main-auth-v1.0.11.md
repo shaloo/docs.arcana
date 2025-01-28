@@ -53,7 +53,7 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 ---
 
-There are **no usage changes** in this release. To migrate to the latest release, re-install and upgrade to the latest SDKs.
+This release has **no usage changes**. To migrate to the latest release, re-install and upgrade to the latest SDKs.
 
 ## Get Started
 

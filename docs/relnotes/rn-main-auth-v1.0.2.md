@@ -12,7 +12,7 @@ arcana:
 
 **Version: v1.0.2**
 
-**Release Date: February 21st, 2023**
+**Release Date: February 21, 2023**
 
 ==}
 
@@ -28,7 +28,7 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 ### Fiat On-ramp Providers
 
-{{config.extra.arcana.wallet_name}} supports fiat on-ramping that allows wallet users to buy cryptocurrency (native and ERC20 tokens) easily from any of the supported providers:
+{{config.extra.arcana.wallet_name}} supports fiat on-ramping that allows wallet users to buy cryptocurrency (native and ERC20 tokens) from any of the supported providers:
 
 {% include "./text-snippets/fiat_on_ramp_providers.md" %}
 
@@ -55,7 +55,7 @@ The circular widget displayed when a wallet was minimized by clicking the 'x' ic
 
 Typical React/Next.js apps <img alt="react logo" src="{{config.extra.arcana.img_dir}}/react_logo.{{config.extra.arcana.img_png}}" width="2%" /> <img alt="nextjs logo" src="{{config.extra.arcana.img_dir}}/nextjs_logo.{{config.extra.arcana.img_png}}" width="2%" /> integrate with the {{config.extra.arcana.sdk_name}} by installing the `auth` and `auth-react` npm packages and instantiating the `AuthProvider` and `ProviderAuth` before using them in the app. See [[integrate-react-nextjs-app|how to integrate a React app]] for details.
 
-The React/Next.js apps that use [Wagmi](https://wagmi.sh/) <img alt="wagmi logo" src="{{config.extra.arcana.img_dir}}/wagmi_logo.{{config.extra.arcana.img_png}}" width="2%" /> can be integrated with the {{config.extra.arcana.sdk_name}} by simply installing the `auth-wagmi` package and instantiating the `ArcanaConnector` wrapper component. For details, see [[integrate-wagmi-app|how to integrate a React app that uses Wagmi]] guide. 
+The React/Next.js apps that use [Wagmi](https://wagmi.sh/) <img alt="wagmi logo" src="{{config.extra.arcana.img_dir}}/wagmi_logo.{{config.extra.arcana.img_png}}" width="2%" /> can be integrated with the {{config.extra.arcana.sdk_name}} by installing the `auth-wagmi` package and instantiating the `ArcanaConnector` wrapper component. For details, see [[integrate-wagmi-app|how to integrate a React app that uses Wagmi]] guide. 
 
 Similarly, for React apps using the [RainbowKit framework](https://www.rainbowkit.com/), <img alt="rainbowkit logo" src="{{config.extra.arcana.img_dir}}/rainbowkit_logo.{{config.extra.arcana.img_png}}" width="2%" /> see [[integrate-rainbow-app|how to integrate a React app that uses RainbowKit]] guide.
 
@@ -71,7 +71,7 @@ Similarly, for React apps using the [RainbowKit framework](https://www.rainbowki
 
 In the previous release, the embedded wallet UI displayed for an authenticated user in the context of an application was also accessible in a different app's context, if the same tab was used to browse a different app. 
 
-Once a user authenticates and logs in to an app, say **app A**, using a browser and then before logging out of **app A**, simply types a new app URL in the same browser tab for accessing **app B**, the user was able to access the wallet associated with **app A** in the context of **app B** without explicit sign-in into **app B**.
+Once a user authenticates and logs in to an app, say **app A**, using a browser and then before logging out of **app A**, then types a new app URL in the same browser tab for accessing **app B**, the user was able to access the wallet associated with **app A** in the context of **app B** without explicit sign-in into **app B**.
 
 This issue is fixed in the current release. The user will have to log in to the new app before they can access the wallet UI.
 

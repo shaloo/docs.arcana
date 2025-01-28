@@ -39,7 +39,7 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 ---
 
-This is a major release that supports non-EVM blockchains (Solana). New product features include a brand new SDK that offers maximum customization. Also, there are some enhancements related to security besides bug fixes.
+This is a major release that supports non-EVM blockchains (Solana). New product features include a brand new SDK that offers maximum customization. Also, besides bug fixes it contains some enhancements related to security besides bug fixes.
 
 * Non-EVM Chain Support: Solana - See [[solana-quick-start|Solana Apps Quick Start Guide]].
 
@@ -55,7 +55,7 @@ This is a major release that supports non-EVM blockchains (Solana). New product 
 
 ### Global Keys
 
-There are no usage changes for applications that use app-specific keys (default). 
+This release won’t affect Web3 apps that rely on app-specific keys (default).
 
 If the app developer selects [[concept-keyspace-type| global keys]] while configuring the app via the {{config.extra.arcana.dashboard_name}}, the social auth settings for enabling the social login providers are **no longer** required.
 

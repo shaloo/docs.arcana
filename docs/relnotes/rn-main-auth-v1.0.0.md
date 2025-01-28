@@ -12,7 +12,7 @@ arcana:
 
 **Version: v1.0.0**
 
-**Release Date: February 1st, 2023**
+**Release Date: February 1, 2023**
 
 ==}
 
@@ -43,10 +43,10 @@ An under-development application can be deployed on the {{config.extra.arcana.co
   <figcaption>Developer Dashboard</figcaption>
 </figure>
 
-- Easily register and configure Web3 applications
+- Register and configure Web3 applications
 - Create, delete, and manage application configurations for 'Testnet' and 'Mainnet'
     - Copy settings or create a fresh 'Mainnet' profile
-    - While editing, easily toggle between 'Testnet' and 'Mainnet' configuration profiles
+    - While editing, toggle between 'Testnet' and 'Mainnet' configuration profiles
     - Each profile can be edited and managed independently
 - A new unique **{{config.extra.arcana.app_address}}** is associated with the 'Mainnet' configuration profile
 
@@ -59,7 +59,7 @@ See [[configure-wallet-chains|how to pre-configure wallet chains via the dashboa
 
 - App-specific keys are the default, developers can configure it to [[dashboard-user-guide#configure-keyspace|global keyspace type]]
 - Developers must submit a verification form and seek approval for enabling global keys 
-- Global keys enable a simpler user experience whereby users see the same wallet address across when they log into any app in the {{config.extra.arcana.company_name}} ecosystem. Users must ensure that they do not sign any malicious transactions of any fraudulent app. To mitigate this risk, {{config.extra.arcana.company_name}} requires developers to submit a verification form before the global keys feature is enabled for an app.
+- Global keys make for a better user experience whereby users see the same wallet address across when they log into any app in the {{config.extra.arcana.company_name}} ecosystem. Users must ensure that they do not sign any malicious transactions of any fraudulent app. To mitigate this risk, {{config.extra.arcana.company_name}} requires developers to submit a verification form before the global keys feature is enabled for an app.
 
 ### Monitor Application Usage Metrics
 

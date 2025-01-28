@@ -12,7 +12,7 @@ arcana:
 
 **Version: v1.0.3**
 
-**Release Date: March 8th, 2023**
+**Release Date: March 8, 2023**
 
 ==}
 
