@@ -42,7 +42,7 @@ Log out the dApp user when requested:
     
 {% include "./code-snippets/auth_logout.md" %}
 
-**That is all!**  :material-party-popper:
+**That is all.**  :material-party-popper:
 
 Your dApp is all set for onboarding users via the passwordless login option.
 

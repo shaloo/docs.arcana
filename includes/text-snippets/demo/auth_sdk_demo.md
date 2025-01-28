@@ -1,1 +1,1 @@
-[Try Demo App! :material-rocket-launch:](https://demo.arcana.network){ .md-button}
+[Try Demo App :material-rocket-launch:](https://demo.arcana.network){ .md-button}

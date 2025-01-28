@@ -26,7 +26,7 @@ Call `LoginWithSocial` or `LoginWithOTP` to onboard the user. Choose one of the 
 
 {% include "./code-snippets/auth_unity_onboard.md" %}
 
-That is all! :material-party-popper:
+That is all. :material-party-popper:
 
 The Unity Web3 gaming app can now onboard users via the configured social login providers. 
 

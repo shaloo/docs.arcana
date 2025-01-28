@@ -112,7 +112,7 @@ auth.provider.on('accountsChanged', handler: (accounts: Array<string>) => void);
       auth.provider.removeListener('someEvent', handleSomeEvent);
       ```
 
-**That is all!**  :material-party-popper:
+**That is all.**  :material-party-popper:
 
 *You are all set to handle the events emitted by the `AuthProvider`.*
 

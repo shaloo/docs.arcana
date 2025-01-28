@@ -32,7 +32,7 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 ### Auth for Mobile Apps
 
-The {{config.extra.arcana.product_name}} product now allows mobile apps built using Flutter and React-Native frameworks to easily onboard users through the {{config.extra.arcana.sdk_name}} and sign blockchain transactions. 
+The {{config.extra.arcana.product_name}} product now allows mobile apps built using Flutter and React-Native frameworks to onboardusers through the {{config.extra.arcana.sdk_name}} and sign blockchain transactions. 
 
 Flutter app developers must install the `{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package and refer to the [[flutter-quick-start|Arcana Auth Quick Start Guide for Flutter Apps]] to integrate Web3 Flutter apps with the {{config.extra.arcana.sdk_name}} SDK.
 

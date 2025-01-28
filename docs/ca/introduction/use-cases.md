@@ -14,7 +14,7 @@ Arcana's Chain Abstraction is designed for onboarding users across a wide range 
 
     - Remove friction of bridging with a unified multi-chain balance
     - Larger transaction values
-    - Launch apps on emerging chains while easily onboarding users from established ecosystems
+    - Launch apps on emerging chains while onboarding users from established ecosystems
 
 ## Swaps
 

@@ -14,13 +14,13 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
     
 ## Steps
 
-*Using {{page.meta.arcana.social_provider_name}} to onboard users in a {{page.meta.arcana.app_type}} app is simple!*
+*Using {{page.meta.arcana.social_provider_name}} to onboard users in a {{page.meta.arcana.app_type}} app requires a single line of code.*
 
 ## Step 1: Use `loginWithSocial`
 
 {% include "./code-snippets/auth_react_useauth_custom.md" %}
 
-**That is all!**  :material-party-popper:
+**That is all.**  :material-party-popper:
 
 The {{page.meta.arcana.app_type}} app is all set for onboarding users via {{page.meta.arcana.social_provider_name}}.
 

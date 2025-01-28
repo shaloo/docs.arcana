@@ -1,6 +1,6 @@
 # User Login with Steam OAuth
 
-In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} can easily onboard users via custom login UI and Steam as the authentication provider.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} can onboard users via custom login UI and Steam as the authentication provider.
 
 ## Prerequisites
 
@@ -14,9 +14,7 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
     
 ## Steps
 
-*Using Steam to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
-
-Just a single line of code!
+*Using Steam to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} requires a single line of code.*
 
 ## Step 1: Call `loginWithSocial` function
 
@@ -34,7 +32,7 @@ Add code in the application to log out an authenticated user:
 
 {% include "./code-snippets/auth_logout.md" %}
 
-**That is all!**  :material-party-popper:
+**That is all.**  :material-party-popper:
 
 Your app is all set for authenticating users via Steam OAuth. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 

@@ -1,4 +1,5 @@
-styles
+!vale/styles/config/**
+vale/styles/*
 libcairo*
 site
 **/.DS_Store
