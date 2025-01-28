@@ -22,7 +22,7 @@ Developers can programmatically add supported chains and issue blockchain transa
 
 * The [[register-app-auth| app must be registered]] using the [[concept-arcana-dashboard| {{config.extra.arcana.dashboard_name}}]].
 
-*Managing the displayed list of pre-configured chains for authenticated users in {{config.extra.arcana.wallet_name}} UI within the Web3 app is simple!*
+*Follow these steps to manage the list of pre-configured chains displayed in the in-app {{config.extra.arcana.wallet_name}}.*
 
 ## 1: Dashboard Log-in
 

@@ -10,7 +10,7 @@ hide:
     - toc
 ---
 
-# Welcome!
+# Welcome
 
 <div>
     <img style="height: 75px" src="{{config.extra.arcana.img_dir}}/CA_Wordmark.{{config.extra.arcana.img_png}}" alt="Auth SDK Word Logo"></img>
@@ -22,13 +22,13 @@ hide:
 
 *Get started* with [[ca-quick-start|Quick start Guide]], [[ca-examples| integration examples]] [[web-ca-usage-guide|Usage Guide]] and the {% include "./text-snippets/casdkref_url.md" %}.
 
-[Try now!](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button } 
+[Try Now](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button } 
 
 ==}
 
-## Bridge no more!
+## Bridge no More
 
-Arcana’s [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unified-balance|unified balance]] across chains. It lets your app users spend blockchain assets anywhere, anytime — no bridging required.
+Arcana’s [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unified-balance|unified balance]] across chains. It lets your app users spend blockchain assets anywhere, anytime. No bridging required.
 
 <figure markdown="span">
   <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
@@ -39,9 +39,9 @@ Arcana’s [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unifie
 
 Chain Abstraction removes the friction of users having to bridge across different blockchains to try apps. Users can spend a unified balance across multiple chains through your app, bypassing the hassle of procuring or converting funds for gas on new chains.
 
-To issue a blockchain transaction on a new chain where user does not have any assets yet, there are several hoops that a user must jump. The table below illustrates these steps when not using chain abstraction.  With chain abstraction, the user experience is much simpler with a single click transaction.
+To issue a blockchain transaction on a new chain where user does not have any assets yet, there are several hoops that a user must jump. The table below illustrates these steps when not using chain abstraction. With chain abstraction, the user experience is much simpler with a single click transaction.
 
-| UX: Transact on New Chain     |  No CA: Complex, Multi-step UX   |  With CA: Simple, One-step UX |
+| UX: Transact on New Chain     |  No CA: Complex, Multi-step UX   |  With CA: One-step UX |
 | :---------- | :----------------------------------- | :-----------------------|
 | :material-numeric-1-circle: Figure out which chain your app runs on       | :material-clipboard-text-clock::material-cursor-default-click-outline::octicons-ellipsis-16: | :material-minus-circle-off:{ .icon-color } |
 | :material-numeric-2-circle: Hunt for the best bridge to move assets     | :material-clipboard-text-clock::material-cursor-default-click-outline::octicons-ellipsis-16:  | :material-minus-circle-off:{ .icon-color } |
@@ -87,7 +87,7 @@ Arcana’s SDK enables apps to offer Chain Abstraction to users with a single in
     </div>
 
 
-=== "Simple Integration"
+=== "Quick Integration"
 
     <div class="grid cards" markdown>
 
@@ -120,6 +120,6 @@ Arcana’s SDK enables apps to offer Chain Abstraction to users with a single in
 
 ## Need Help?
 
-Contact us at 📨 [Arcana Support](mailto:support@arcana.network). 
+Contact us at 📨 [Arcana Support](mailto:support@arcana.network).
 
-Be a part of [[index-support|Arcana communities]] and stay informed!
+Be a part of [[index-support|Arcana communities]] and stay informed about the new upcoming features and capabilities in the Arcana offerings.

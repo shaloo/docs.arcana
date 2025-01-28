@@ -54,7 +54,7 @@ Provide a 6-digit alphanumeric PIN as an additional recovery method.
 </figure>
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_mfa_complete.{{config.extra.arcana.img_png}}" alt="MFA Enabled!" class="an-screenshots-noeffects width_35pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_mfa_complete.{{config.extra.arcana.img_png}}" alt="MFA Enabled" class="an-screenshots-noeffects width_35pc"/>
   <figcaption>MFA Enabled!</figcaption>
 </figure>
 

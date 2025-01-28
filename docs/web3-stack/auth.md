@@ -20,7 +20,7 @@ To enable [[concept-social-login|social login]] and onboard users in Web3 apps, 
 
 ## Custom Auth
 
-Apps that use custom authentication (e.g., Epic user authentication, Relative gaming user authentication mechanism) and require enabling authenticated users to sign blockchain transactions can use the [[concept-custom-auth|Custom Auth feature]].
+Apps that use custom authentication (for example, Epic user authentication, Relative gaming user authentication mechanism) and require enabling authenticated users to sign blockchain transactions can use the [[concept-custom-auth|Custom Auth feature]].
 
 ## Passkeys
 

@@ -12,11 +12,11 @@ The core algorithms that power {{config.extra.arcana.company_name}} SDKs are bas
 
 By design, {{config.extra.arcana.company_name}} aims for air-tight security and we understand that security is a constantly evolving target. 
 
-There are multiple considerations when it comes to securing the {{config.extra.arcana.company_name}} SDKs:
+Here are the key security considerations that are critical for {{config.extra.arcana.company_name}} SDKs:
 
 * **App Onboarding**: Are the users securely onboarded on the apps that integrate with the {{config.extra.arcana.company_name}} SDKs? Are user credentials safe? Does {{config.extra.arcana.company_name}} follow standard authentication protocols?
 
-* **Web3 Keys Ownership & Privacy**: Are the keys assigned to authenticated users safe? Can they be easily lost? Can the users control, manage and secure them or does the system ensure key security?
+* **Web3 Keys Ownership & Privacy**: Are the keys assigned to authenticated users safe? What happens if the keys are lost? Can they be recovered? Do the users own, control, manage and secure keys or does the system ensure key security?
 
 * **Protocol Security**: Is the core {{config.extra.arcana.company_name}} protocol and smart contracts that implement user authentication and key share assignment secure? Has it been battle-tested and audited?
 
@@ -69,4 +69,4 @@ Developers can choose to enable the additional domain validation checks for the 
 
 ## User Data Security
 
-Developers interact with the {{config.extra.arcana.dashboard_name}} to register and configure the apps for various SDK usage settings.  All the data provided by the developer in the context of the registered app is encrypted and secured. There is no app user credential data stored in the {{config.extra.arcana.company_name}} subsystem. The app user login and usage details data are secured via data encryption and access control. Only authorized users can access registered app usage data.
+Developers interact with the {{config.extra.arcana.dashboard_name}} to register and configure the apps for various SDK usage settings. All the data provided by the developer in the context of the registered app is encrypted and secured. Web3 app user credential data is never stored in the {{config.extra.arcana.company_name}} subsystem. User login and usage details are secured via data encryption and access control. The Web3 app usage data can only be accessed by the authorized developers via the dashboard.

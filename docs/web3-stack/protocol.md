@@ -25,7 +25,7 @@ The following services are active on Testnet as well as the Mainnet
 * User onboarding via social login
 * Asynchronous Distributed Key Generation that powers the {{config.extra.arcana.sdk_name}} and helps onboard users to Web3
 
-We are actively working towards adding newer features and capabilities to the SDKs. Watch out for our upcoming Chain Abstraction solution!
+We are actively working on adding newer features and capabilities to the SDKs, stay tuned.
 
 ## Infrastructure Providers
 
