@@ -16,7 +16,7 @@ Learn how to manage the user experience of having the same wallet address or uni
 
 ## 1. Dashboard Login
 
-Log in to the {{config.extra.arcana.dashboard_name}}. In the 'Manage Apps' screen, click the registered app card. Then click **Configure** dropdown in the LHS navigation area.  Select **Keyspace** to choose the keyspace type.
+Log in to the {{config.extra.arcana.dashboard_name}}. In the 'Manage Apps' screen, click the registered app card. Then click **Configure** dropdown in the LHS navigation area. Select **Keyspace** to choose the keyspace type.
 
 <figure markdown="span">
   ![Dashboard: Select Keyspace]({{config.extra.arcana.img_dir}}/an_db_keyspace_nav.{{config.extra.arcana.img_png}}){ .an-screenshots }

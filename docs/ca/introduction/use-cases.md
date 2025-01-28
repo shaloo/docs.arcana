@@ -30,15 +30,15 @@ Bridges enable users to move funds from Chain A to Chain B, but when users hold 
 
 ## Decentralized Exchanges (DEXes)
 
-For liquidity providers and traders, fragmented funds across chains often hinder participation in DEXes. With Arcana, users can trade or provide liquidity on a single-chain DEX (e.g., on Optimism) using their unified balance from multiple chains, such as Ethereum, Polygon, and Arbitrum. This enables more efficient capital utilization, increases trading volumes, and expands access to liquidity for DEX platforms.
+For liquidity providers and traders, fragmented funds across chains often hinder participation in DEXes. With Arcana, users can trade or provide liquidity on a single-chain DEX (for example, Optimism) using their unified balance from multiple chains, such as Ethereum, Polygon, and Arbitrum. This enables more efficient capital utilization, increases trading volumes, and expands access to liquidity for DEX platforms.
 
 ## Perpetuals Trading
 
-For protocols that need users to deposit stable coins to a particular address on a specific chain (e.g., Hyperliquid on Arbitrum) Arcana’s Chain Abstraction allows users to trade on a perpetual protocol on one chain, like Base, using a unified balance of funds held on Ethereum, Polygon, or other chains. This removes the need for manual bridging and ensures traders can respond quickly to market changes without delays in fund transfers.
+For protocols that need users to deposit stable coins to a particular address on a specific chain (for example, Hyperliquid on Arbitrum) Arcana’s Chain Abstraction allows users to trade on a perpetual protocol on one chain, like Base, using a unified balance of funds held on Ethereum, Polygon, or other chains. This removes the need for manual bridging and ensures traders can respond quickly to market changes without delays in fund transfers.
 
 ## Prediction Markets
 
-Prediction markets often have strong user bases tied to specific chains. Arcana’s Chain Abstraction allows users to stake or wager assets on a prediction market hosted on a single chain (e.g., Polymarket on Polygon) using funds held across multiple chains. For instance, a user can use their combined stablecoin holdings from Ethereum and Polygon to place a bet on Polygon, ensuring greater cross-chain participation and deeper liquidity for these markets.
+Prediction markets often have strong user bases tied to specific chains. Arcana’s Chain Abstraction allows users to stake or wager assets on a prediction market hosted on a single chain (for example, Polymarket on Polygon) using funds held across multiple chains. For instance, a user can use their combined stablecoin holdings from Ethereum and Polygon to place a bet on Polygon, ensuring greater cross-chain participation and deeper liquidity for these markets.
 
 ## Lending
 
@@ -46,7 +46,7 @@ Borrowers and lenders often face challenges when their assets are distributed ac
 
 ## Staking/Restaking
 
-Restaking requires users to bring assets or derivatives to specific chains. Arcana enables users to stake or restake assets on a protocol running on a single chain (e.g., Polygon) by leveraging their unified balance across multiple chains. For instance, a user with ETH on Ethereum and Arbitrum can stake and restake seamlessly on another chain without manual transfers.
+Restaking requires users to bring assets or derivatives to specific chains. Arcana enables users to stake or restake assets on a protocol running on a single chain (for example, Polygon) by leveraging their unified balance across multiple chains. For instance, a user with ETH on Ethereum and Arbitrum can stake and restake seamlessly on another chain without manual transfers.
 
 This allows users from multiple EVM ecosystems to participate in the protocol
 

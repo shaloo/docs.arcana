@@ -31,7 +31,7 @@ This documentation contains everything you need to get started using [[introduct
 ==}
 -->
 
-## Welcome!
+## Welcome
 
 <!--
 === "Web3 Users"
@@ -146,7 +146,7 @@ This documentation contains everything you need to get started using [[introduct
 
 Contact us at 📨 [Arcana Support](mailto:support@arcana.network). 
 
-Be a part of [[index-support|Arcana communities]] and stay informed!
+Be a part of [[index-support|Arcana communities]] and stay informed about the new upcoming features and capabilities in the Arcana offerings.
 
 </br>
 </br>

@@ -39,7 +39,7 @@ The product consists of:
  
 * **New Onboarding Options:** Apps integrating with the {{config.extra.arcana.sdk_name}} can now allow users to onboard via [[concept-auth-passkeys|Passkey]] or via new [[web3-stack-auth|supported social login providers]]: Telegram and Apple. See how to [[onboard-passkey-auth|onboard users via passkeys]] for details. Developers must first [[config-auth-passkeys|set up Passkeys]], and configure Telegram, Apple Settings through the dashboard before adding code in the app to onboard the user via these mechanisms. [[index-config-social-providers|Learn more...]]
 
-* **More Rebranding Options:** Apps can now customize the wallet UI with more theme options. You can also rebrand the OTP email for passwordless onboarding. [[configure-wallet-branding|Learn more...]]
+* **Additional branding Customizations:** Apps can now customize the wallet UI with more theme options. You can also rebrand the OTP email for passwordless onboarding. [[configure-wallet-branding|Learn more...]]
 
 * Bug fixes and performance enhancements related to user login.
 

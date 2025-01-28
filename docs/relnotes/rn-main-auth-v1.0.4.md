@@ -32,7 +32,7 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 ### Automatically Fetch NFTs
 
-Previously, the {{config.extra.arcana.wallet_name}} did not automatically display the NFTs owned by the wallet address. The user was required to manually add the NFT information (the contract address, token ID) to display the NFT assets in the Arcana wallet.  In this release, the {{config.extra.arcana.wallet_name}} automatically fetches the NFTs belonging to the wallet address for the selected blockchain network.
+Previously, the {{config.extra.arcana.wallet_name}} did not automatically display the NFTs owned by the wallet address. The user was required to manually add the NFT information (the contract address, token ID) to display the NFT assets in the Arcana wallet. In this release, the {{config.extra.arcana.wallet_name}} automatically fetches the NFTs belonging to the wallet address for the selected blockchain network.
 
 !!! an-note "Auto-fetching NFTs"
 
@@ -44,7 +44,7 @@ Previously, the {{config.extra.arcana.wallet_name}} did not automatically displa
 
 The latest release of the {{config.extra.arcana.product_name}} product supports Web3-React apps. 
 
-The newly released `{{config.extra.arcana.web3_react_sdk_pkg_name}}` package can be installed along with the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and Web3-React apps can be integrated easily for onboarding users just like other wallet connectors such as Wagmi and RainbowKit.
+The newly released `{{config.extra.arcana.web3_react_sdk_pkg_name}}` package can be installed along with the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and Web3-React apps can be integrated for onboarding users just like other wallet connectors such as Wagmi and RainbowKit.
 
 Web3-React apps can use either the [[onboard-web3-react-app-pnp-ui|built-in plug-and-play login UI]] or [[onboard-web3-react-app-custom-ui|build their own custom UI]] and use {{config.extra.arcana.product_name}} functions to onboard users via the configured authentication providers.
 
@@ -52,9 +52,9 @@ Web3-React apps can use either the [[onboard-web3-react-app-pnp-ui|built-in plug
 
 ### Custom Login UI
 
-In addition to the plug-and-play authentication feature that allows developers to use the built-in login UI to onboard users, now custom login UI support is available in the {{config.extra.arcana.sdk_name}}. App developers can build a custom login UI in their app and it can be easily wired to onboard users through the authentication providers configured via the {{config.extra.arcana.dashboard_name}}. 
+In addition to the plug-and-play authentication feature that allows developers to use the built-in login UI to onboard users, now custom login UI support is available in the {{config.extra.arcana.sdk_name}}. App developers can build a custom login UI in their app and it can be wired to onboard users through the authentication providers configured via the {{config.extra.arcana.dashboard_name}}. 
 
-Web3 app developers now have more flexibility in how they authenticate and onboard users into their apps. In the {{config.extra.arcana.sdk_name}}, developers can now build a custom login UI instead of using the default, built-in plug-and-play login UI. This allows app developers to design a login interface that matches their app's style and branding. The custom login UI can be used to call the authentication providers set up in the {{config.extra.arcana.dashboard_name}}, making it easy to onboard users through the app's custom login process. 
+Web3 app developers now have more flexibility in how they authenticate and onboard users into their apps. In the {{config.extra.arcana.sdk_name}}, developers can now build a custom login UI instead of using the default, built-in plug-and-play login UI. This allows app developers to design a login interface that matches their app's style and branding. The custom login UI can be used to onboard users through the app's custom login process by calling the authentication providers set up in the {{config.extra.arcana.dashboard_name}}.
 
 Select the app type and refer to the instructions for enabling [[index-custom-ui-onboard-users|custom login UI to onboard users]].
 
@@ -82,7 +82,7 @@ The {{config.extra.arcana.wallet_name}} allows users to buy cryptocurrency. In t
 
 ### Usage Update: `AuthProvider`
 
-* **`setWindowProvider`**: A new parameter is now supported in the `AuthProvider` constructor for explicitly setting the `window.ethereum` to the provider in the app's context. Previously, it was set by default. In the latest release, by default, it is **not set**. The developer must specify `setWindowProvider=true` while instantiating the `AuthProvider` to ensure that `window.ethereum` is set when `AuthProvider` is instantiated.  See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
+* **`setWindowProvider`**: A new parameter is now supported in the `AuthProvider` constructor for explicitly setting the `window.ethereum` to the provider in the app's context. Previously, it was set by default. In the latest release, by default, it is **not set**. The developer must specify `setWindowProvider=true` while instantiating the `AuthProvider` to ensure that `window.ethereum` is set when `AuthProvider` is instantiated. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
 
 * **`network`**: Previously, to deploy an app integrated with the {{config.extra.arcana.sdk_name}} on the Arcana Mainnet, developers were required to specify the `network` parameter in the `AuthProvider` constructor as the 'mainnet'. This is no longer mandatory. The {{config.extra.arcana.app_address}} value itself is sufficient to specify whether the deployment is meant for the Arcana Testnet or Mainnet.
 

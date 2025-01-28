@@ -39,7 +39,7 @@ See [[web-auth-usage-guide#auth-apis|usage guide]] for more details.
 
 ### Support for Wagmi 1.x.y and Viem
 
-The [`{{config.extra.arcana.wagmi_sdk_pkg_name}}` package](https://www.npmjs.com/package/@arcana/auth-wagmi) is now upgraded to version 2.0.0 and supports the latest Wagmi release v1.3.9 which uses Viem. For details, see [Wagmi 1.x.x migration guide](https://wagmi.sh/core/guides/migrate-from-v1-to-v2) and [sample integration code 'sample-auth-rainbow-viem'](https://github.com/arcana-network/auth-examples).
+The [`{{config.extra.arcana.wagmi_sdk_pkg_name}}` package](https://www.npmjs.com/package/@arcana/auth-wagmi) is now upgraded to version 2.0.0 and supports the latest Wagmi release v1.3.9 which uses Viem. For details, see [Wagmi 1.x.y migration guide](https://wagmi.sh/core/guides/migrate-from-v1-to-v2) and [sample integration code 'sample-auth-rainbow-viem'](https://github.com/arcana-network/auth-examples).
 
 ### Wagmi/RainbowKit App Connect
 
@@ -117,7 +117,7 @@ Check out the [sample dApp integration examples](https://github.com/arcana-netwo
 
 If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can choose to either continue to use it with the latest {{config.extra.arcana.product_name}} product release.
 
-To enable Steam or Firebase authentication, you must upgrade to the release v1.0.5 or higher. Upgrading is easy, simply follow the [[migration-guide-v1.0.6|migration guide]] for a swift upgrade.
+To enable Steam or Firebase authentication, you must upgrade to the release v1.0.5 or higher. To upgrade, follow the [[migration-guide-v1.0.6|migration guide]].
 
 Please note, in case are using an older version of the {{config.extra.arcana.sdk_name}} prior to v{{config.extra.arcana.previous_version}} then refer to the appropriate [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
 
