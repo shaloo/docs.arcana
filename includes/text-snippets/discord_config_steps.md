@@ -51,4 +51,4 @@ In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth >
 
 Save the **Social Auth** settings. 
 
-*You are all set with the Discord configuration!*
+*You are all set with the Discord configuration.*

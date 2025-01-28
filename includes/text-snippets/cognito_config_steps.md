@@ -28,7 +28,7 @@ Go to the [AWS Management Console](https://docs.aws.amazon.com/cognito/latest/de
   <figcaption>AWS Management Console</figcaption>
 </figure>
 
-If a user pool is already set up, simply select it from the list and double-click on it to see the details. Refer to the **App Integration** tab settings and click **Create App Client** on the bottom right of the page.
+If a user pool is already set up, select it from the list and double-click on it to see the details. Refer to the **App Integration** tab settings and click **Create App Client** on the bottom right of the page.
 
 <figure markdown="span">
   ![Create Cognito App Client]({{config.extra.arcana.img_dir}}/an_dApp_cognito_create_app_client.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -60,7 +60,7 @@ For the **OAuth 2.0 Grant Type** setting, make sure you specify *Authorization C
 
 In the **Custom Scope** section, ensure that the attribute **EmailID** has read access. This is used by {{config.extra.arcana.sdk_name}} to enable the [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature.
 
-Save the new client app settings.  You will see the new client app entry in the user pool page under the **App Client List** section. 
+Save the new client app settings. You will see the new client app entry in the user pool page under the **App Client List** section.
 
 <figure markdown="span">
   ![Cognito Client App List]({{config.extra.arcana.img_dir}}/an_dApp_cognito_app_client_list.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -80,4 +80,4 @@ In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**
 
 Save the **Social Auth** settings. 
 
-*You are all set with the Cognito configuration!*
+*You are all set with the Cognito configuration.*

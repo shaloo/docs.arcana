@@ -1,3 +1,7 @@
-In Arcana's Chain Abstraction solution, allowance means pre-authorizing funds from a user's EoA to enable a transaction that spans multiple chains in Web3 apps.
+Web3 dApp users must to set up the required allowance on two or more source chains for activating Arcana's chain abstracted transaction feature.
 
-To enable unified balance across chains with Chain Abstraction, the user must possess funds on the source chain(s) and set up an allowance. This allowance lets the Arcana Vault contract(s) on the source chain(s) access the required funds. By granting permission, the user authorizes Arcana to process transactions and spend funds as needed on the source chain(s) for seamless transactions across chains.
+This is requried to enable a transaction that spans multiple chains in Web3 apps. By setting up allowance, user pre-authorizes funds for a chain abstracted transaction processed via the user's EoA account.
+
+The Arcana Vault contract on the source chain can access the required funds once the allowance is set up by the user. By granting permission, the user authorizes Arcana to process transactions and spend funds as needed on the source chains so that the intended transaction can happen on the destination chain seamlessly.
+
+Besides setting up allowance, the user must have sufficient funds on two or more source chains for executing a successful chain abstracted transaction on the destination chain. 

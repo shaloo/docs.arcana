@@ -47,7 +47,7 @@ After this, you need to select OAuth Setup as shown below and configure the **Re
   <figcaption>Setup App OAuth</figcaption>
 </figure>
 
-When you click **Setup**, you will see OAuth options.  For the *Type of App* field, select the *Web App* option.
+When you click **Setup**, you will see OAuth options. For the *Type of App* field, select the *Web App* option.
 
 <figure markdown="span">
   ![Select Twitter Web App Option]({{config.extra.arcana.img_dir}}/twitter_oauth_typeofapp.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -95,4 +95,4 @@ In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**
 
 Save the **Social Auth** settings. 
 
-*You are all set with the Twitter configuration!*
+*You are all set with the Twitter configuration.*

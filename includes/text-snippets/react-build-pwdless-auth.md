@@ -6,7 +6,7 @@ Learn how {{page.meta.arcana.app_type}} app can use custom login UI and allow us
 
 * Make sure you can access the {{config.extra.arcana.dashboard_name}}: {% include "./text-snippets/db_portal_url.md" %}
 * The app must be [[register-app-auth|registered using the {{config.extra.arcana.dashboard_name}}]] and a unique {{config.extra.arcana.app_address}} must be already assigned to it. This {{config.extra.arcana.app_address}} is essential for integrating the app with the {{config.extra.arcana.sdk_name}}
-* Follow the instructions to [[integrate-react-nextjs-app|integrate the React app]] with the {{config.extra.arcana.sdk_name}} and initialize the `AuthProvider`.
+* Follow the instructions to [[integrate-react-nextjs-app|integrate the React app]] with the {{config.extra.arcana.sdk_name}} and initialize the `AuthProvider` instance.
 
 !!! an-info "No Setup Required for Passwordless"
 

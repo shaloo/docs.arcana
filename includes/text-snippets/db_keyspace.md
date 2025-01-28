@@ -1,6 +1,6 @@
-There are two keyspace options: [[concept-keyspace-type|App-specific and Global Keys]].
+{{config.extra.arcana.company_name}} offers two types of keyspace options for keys assigned to the Web3 apps: [[concept-keyspace-type|App-specific and Global Keys]].
 
-**App-specific** keyspace is the default.
+**App-specific** keys are the default.
 
 <figure markdown="span">
   ![Mainnet Keyspace Options]({{config.extra.arcana.img_dir}}/an_db_keyspace_options_switch.{{config.extra.arcana.img_gif}}){ .an-screenshots }

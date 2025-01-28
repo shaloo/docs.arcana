@@ -11,7 +11,7 @@ In this guide, you will learn how a Web3 app integrated with the {{config.extra.
 
 ## Steps
 
-*Enabling sign-up & login via passkeys in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is siple!*
+*Follow these steps to enable sign-up & login via passkeys in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}.*
 
 
  ### 1. Register Passkey

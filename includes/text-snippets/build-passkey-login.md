@@ -11,7 +11,7 @@ In this guide, you will learn how a Web3 app integrated with the {{config.extra.
 
 ## Steps
 
-*Enabling passkeys as an alternative login for users in a Web3 app integrated with the {{config.extra.arcana.sdk_name}} is siple!*
+*Follow these steps to enable passkeys as an alternative login for users in a Web3 app integrated with the {{config.extra.arcana.sdk_name}}.*
 
 ### 1. Authenticate User
 

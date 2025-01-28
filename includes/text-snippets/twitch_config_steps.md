@@ -46,4 +46,4 @@ Finally, supply the Twitch **ClientID** into the {{config.extra.arcana.dashboard
 
 Save the **Social Auth** settings.
 
-*You are all set with the Twitch configuration!*
+*You are all set with the Twitch configuration.*

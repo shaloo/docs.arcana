@@ -42,7 +42,7 @@ Go to the {{config.extra.arcana.dashboard_name}}. Click **Configure > {{config.e
 
 Save the **Social Auth** settings. 
 
-*You are all set with the Firebase configuration!*
+*You are all set with the Firebase configuration.*
 
 !!! an-warning "Plug-and-play login feature not supported for Firebase"
 
