@@ -14,7 +14,7 @@ If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick
 
 ## Backward Compatibility
 
-The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for apps that have already integrated with v1.0.4 of the {{config.extra.arcana.sdk_name}}. Simply install the latest version and upgrade your app. 
+The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for apps that have already integrated with v1.0.4 of the {{config.extra.arcana.sdk_name}}. Install the latest version and upgrade your app. 
 
 ### Same Wallet Address
 
@@ -22,7 +22,7 @@ Apps using {{config.extra.arcana.product_name}} v1.0.4 should see **no change** 
 
 ## New Release: What has Changed?
 
-There are **no usage changes** in the latest release in the previous functionality. New features have been added that allow user onboarding via Steam and Firebase.
+The latest SDK release has **no usage changes** in the former features. New features have been added that allow user onboarding via Steam and Firebase.
 
 ## How to Migrate to v1.0.5?
 

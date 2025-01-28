@@ -14,7 +14,7 @@ If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick
 
 ## Backward Compatibility
 
-The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for apps that have already integrated with v1.0.7 of the {{config.extra.arcana.sdk_name}}. Simply install the latest version and upgrade your app.
+The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for apps that have already integrated with v1.0.7 of the {{config.extra.arcana.sdk_name}}. Install the latest version and upgrade your app.
 
 ### Same Wallet Address
 
@@ -22,7 +22,7 @@ Apps using {{config.extra.arcana.product_name}} v1.0.7 should see **no change** 
 
 ## New Release: What has Changed?
 
-There are a few enhancements in the {{config.extra.arcana.sdk_name}} and a bug fix for email validation. **No usage changes** in the latest release. For details, see [[rn-main-auth-v1.0.8|{{config.extra.arcana.product_name}} v1.0.8 release notes]].
+{{config.extra.arcana.sdk_name}} release has no major changes, a few enhancements and a bug fix for email validation. **Usage** has not changed in the latest release. For details, see [[rn-main-auth-v1.0.8|{{config.extra.arcana.product_name}} v1.0.8 release notes]].
 
 ## How to Migrate to v1.0.8?
 

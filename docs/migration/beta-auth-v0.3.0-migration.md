@@ -10,7 +10,7 @@ arcana:
 
 This guide is meant for developers who have already integrated apps with an older version of the Arcana Auth SDK and run them using Arcana Network Testnet. If you are new to Arcana Network, see Quick Start Guides to get started.
 
-When you migrate from an older version of the {{config.extra.arcana.sdk_name}} to v0.3.0, there are some breaking changes. These changes are mostly related to deploying an app on the {{config.extra.arcana.company_name}} Testnet and the use of {{config.extra.arcana.company_name}} Storage SDK (no longer supported). There are no breaking changes in the {{config.extra.arcana.sdk_name}}  usage related to user onboarding or blockchain transaction signing functions.  Also, the Arcana wallet has a revamped, better look in this release.
+When you migrate from an older version of the {{config.extra.arcana.sdk_name}} to v0.3.0, there are some breaking changes. These changes are mostly related to deploying an app on the {{config.extra.arcana.company_name}} Testnet and the use of {{config.extra.arcana.company_name}} Storage SDK (no longer supported). No breaking changes are expected in the {{config.extra.arcana.sdk_name}}  usage related to user onboarding or blockchain transaction signing functions. Also, the Arcana wallet has a revamped, better look in this release.
 
 ## What has Changed?
 
@@ -24,14 +24,14 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 ### {{config.extra.arcana.dashboard_name}} 
 
-* There were some breaking changes in the registered application database schema. If you were already using an older version of the {{config.extra.arcana.sdk_name}}, you need to re-register and configure your application again using the latest {{config.extra.arcana.dashboard_name}}. The **{{config.extra.arcana.app_address}}** assigned to you earlier will not work. You need to re-register and obtain a new one. Make sure you use the new **{{config.extra.arcana.app_address}}** while integrating with the {{config.extra.arcana.sdk_name}} .
+* In this release there are some breaking changes in the registered application database schema. If you were already using an older version of the {{config.extra.arcana.sdk_name}}, you need to re-register and configure your application again using the latest {{config.extra.arcana.dashboard_name}}. The **{{config.extra.arcana.app_address}}** assigned to you earlier will not work. You need to re-register and obtain a new one. Make sure you use the new **{{config.extra.arcana.app_address}}** while integrating with the {{config.extra.arcana.sdk_name}} .
 
 ### {{config.extra.arcana.sdk_name}} 
 
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="50" />
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="50" />
 
-* There is no usage change in the {{config.extra.arcana.sdk_name}} in this release. 
+* In this release there is no usage change in the {{config.extra.arcana.sdk_name}}. 
 * After re-registering your app, the dashboard will assign a new **{{config.extra.arcana.app_address}}**. You need to use the new {{config.extra.arcana.app_address}} during integration with the {{config.extra.arcana.sdk_name}}.
 
 ## How to Migrate to v0.3.0
@@ -42,7 +42,7 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 3. You need to [[integrate-vanilla-app|re-integrate your app with the {{config.extra.arcana.sdk_name}}]] by providing the new **{{config.extra.arcana.app_address}}** after re-registering and configuring your application using the developer dashboard.
 
-4. If you had enabled the **{{config.extra.arcana.company_name}}  Testnet** blockchain network in Web3 wallet operations, you will need to remove this network altogether as it no longer exists.  Also, the {{config.extra.arcana.company_name}} Testnet Blockchain Explorer is no longer available.  {{config.extra.arcana.company_name}}  smart contracts are deployed on Polygon now. In this release, the {{config.extra.arcana.wallet_name}} supports all EVM-compatible chains besides the default ones that show in the drop-down.  See [[arcana-wallet-user-guide|Wallet User Guide]].
+4. If you had enabled the **{{config.extra.arcana.company_name}}  Testnet** blockchain network in Web3 wallet operations, you will need to remove this network altogether as it no longer exists. Also, the {{config.extra.arcana.company_name}} Testnet Blockchain Explorer is no longer available.  {{config.extra.arcana.company_name}}  smart contracts are deployed on Polygon now. In this release, the {{config.extra.arcana.wallet_name}} supports all EVM-compatible chains besides the default ones that show in the drop-down. See [[arcana-wallet-user-guide|Wallet User Guide]].
 
 5. The wallet activity tab on the wallet token asset tab is gone. A new 'notification' tab is available in the wallet. You can see the list of all activities in the [[arcana-wallet-user-guide#transaction-activity|activity tab]]. It lists send tokens, contract deployment, and contract interaction transactions performed by the wallet user.
 

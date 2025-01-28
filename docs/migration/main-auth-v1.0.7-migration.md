@@ -14,7 +14,7 @@ If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick
 
 ## Backward Compatibility
 
-The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for apps that have already integrated with v1.0.6 of the {{config.extra.arcana.sdk_name}}. Simply install the latest version and upgrade your app.
+The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for apps that have already integrated with v1.0.6 of the {{config.extra.arcana.sdk_name}}. Install the latest version and upgrade your app.
 
 ### Same Wallet Address
 

@@ -16,11 +16,11 @@ When you migrate from using the {{config.extra.arcana.sdk_name}} v1.0.2 to the l
 
 ## What has Changed?
 
-There are no usage changes in this release.
+**No Usage Changes**.
 
 ## How to Migrate to v1.0.3?
 
-Simply upgrade the {{config.extra.arcana.sdk_name}} from v1.0.2 to v1.0.3 and re-run your Web3 app.
+Upgrade the {{config.extra.arcana.sdk_name}} from v1.0.2 to v1.0.3 and re-run your Web3 app.
 
 ## What's New?
 
