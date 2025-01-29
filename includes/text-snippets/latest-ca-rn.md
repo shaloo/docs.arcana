@@ -6,7 +6,10 @@ Version: **v{{config.extra.arcana.latest_ca_sdk_version}}**
 
 ---
  
-**Unified Balance:** is now available across Linea and Scroll chains!
+Use **Unified Balance:** for chain abstracted transactions across these newly supported chains:
+
+* Linea
+* Scroll
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 

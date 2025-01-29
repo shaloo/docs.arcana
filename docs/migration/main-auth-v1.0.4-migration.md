@@ -15,7 +15,7 @@ If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick
 
 ## Backward Compatibility
 
-The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for most of the Web3 apps that may have integrated with the earlier release v1.0.3 of the {{config.extra.arcana.sdk_name}}. Those apps should continue to work with no changes to the app code. There may be some changes required in the {{config.extra.arcana.dashboard_name}} settings to ensure smooth operation. If the app has explicitly specified a default chain via the `chainConfig` option in the `AuthProvider` then make sure the chain appears in the list of blockchains configured in the {{config.extra.arcana.dashboard_name}}. If the chain does not show up, it can be manually added via the [[configure-wallet-chains|chain management configuration settings]] in the dashboard.  See the chain management section below for details.
+The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for most of the Web3 apps that may have integrated with the earlier release v1.0.3 of the {{config.extra.arcana.sdk_name}}. Those apps should continue to work with no changes to the app code. Some changes are required in the {{config.extra.arcana.dashboard_name}} settings to ensure smooth operation. If the app has explicitly specified a default chain via the `chainConfig` option in the `AuthProvider` then make sure the chain appears in the list of blockchains configured in the {{config.extra.arcana.dashboard_name}}. If the chain does not show up, it can be manually added via the [[configure-wallet-chains|chain management configuration settings]] in the dashboard. See the chain management section below for details.
 
 ### Same Wallet Address
 
@@ -49,7 +49,7 @@ When a blockchain transaction is triggered either by the app programmatically or
 
 We highly recommend that Web3 apps that are integrated with v1.0.3 releases of the {{config.extra.arcana.sdk_name}} migrate to the latest {{config.extra.arcana.sdk_name}} v1.0.4 release.
 
-For vanilla HTML/CSS/JS apps or simple React apps that do not use `window.ethereum` setting, no code changes are required. Just install and upgrade to the latest v1.0.4 release and redeploy the app. 
+For vanilla HTML/CSS/JS apps or React apps that do not use `window.ethereum` setting, no code changes are required. Just install and upgrade to the latest v1.0.4 release and redeploy the app. 
 
 However, if the apps use `window.ethereum` browser setting or wallet connectors such as Wagmi or RainbowKit then migrating to the latest release may require some integration code changes. In the case of Wagmi or RainbowKit apps, it requires not only upgrading the `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package but also installing an additional SDK package and some new code to use the SDK.  
 
@@ -63,7 +63,7 @@ For details, see [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage G
 
 If you are upgrading any app that is using `CHAIN` enum in the `chainConfig` option of the `AuthProvider` to v1.0.4, then there is a breaking change. 
 
-Update the integration code to **not** use the `CHAIN` enum as it is no longer supported.  Instead, use the chain identifier of the chain that you are specifying in the `chainConfig` parameter.  For example:
+Update the integration code to **not** use the `CHAIN` enum as it is no longer supported. Instead, use the chain identifier of the chain that you are specifying in the `chainConfig` parameter. For example:
 
 {% include "./code-snippets/chain_config.md" %}
 

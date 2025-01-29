@@ -1,6 +1,6 @@
 # User Login with Firebase
 
-In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} and Firebase SDK can easily onboard users via custom login UI and Firebase as the authentication provider.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} and Firebase SDK can onboard users via custom login UI and Firebase as the authentication provider.
 
 ## Prerequisites
 
@@ -16,9 +16,7 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
     
 ## Steps
 
-*Using Firebase to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
-
-Just a single line of code!
+*Using Firebase to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} requires a single line of code.*
 
 ### Call `loginWithBearer` function
 
@@ -30,7 +28,7 @@ Refer to the [Sample Firebase Vue app integration example](https://github.com/ar
 
 After onboarding users, developers can add code to access the other {{config.extra.arcana.sdk_name}} functions in the app. See [[web-auth-usage-guide|{{config.extra.arcana.sdk_name}} Usage Guide]] for details.
 
-**That is all!**  :material-party-popper:
+**That is all.**  :material-party-popper:
 
 Your app is all set for authenticating users via Firebase. Authenticated users can instantly access the {{config.extra.arcana.wallet_name}} to sign blockchain transactions.
 

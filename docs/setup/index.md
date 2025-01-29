@@ -6,8 +6,6 @@ arcana:
   root_rel_path: ../..
 ---
 
-# Auth Options  
-
 ## Social Providers   
 
 [[config-auth-apple|:material-apple:{ .icon-color} Apple]]{ .md-button }

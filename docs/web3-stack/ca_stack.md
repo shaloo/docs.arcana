@@ -24,4 +24,4 @@ Web3 wallet users can download the Arcana CA Wallet (standalone) and install it 
 
 {% include "./text-snippets/ca_supported_apps.md" %}
 
-We are actively working on supporting newer chains, tokens and apps, stay tuned!
+We're actively adding support for new chains, tokens, and apps—stay tuned.

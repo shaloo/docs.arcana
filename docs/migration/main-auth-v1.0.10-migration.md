@@ -14,7 +14,7 @@ Using an older version and want to migrate? Read on...
 
 ## What has Changed?
 
-There are no usage changes in this release if you are already using the SDK. 
+In this release there are **no usage changes** from the previous version of the SDK.
 
 This new release includes support for Web3 gaming apps based on the Unity framework, support for MultiversX chain in the {{config.extra.arcana.wallet_name}}, and minor bug fixes.
 

@@ -48,7 +48,7 @@ The product consists of:
 ---
 
 
-There are **no usage changes** in this release. To migrate to the latest release, re-install the SDK.
+To migrate to the latest release, re-install the SDK. This release does not require you to pay any **usage fee**.
 
 [Changelog](https://github.com/arcana-network/auth/releases/latest){ .md-button }
 

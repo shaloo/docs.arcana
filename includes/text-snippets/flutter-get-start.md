@@ -1,4 +1,4 @@
-{{page.meta.arcana.app_type}} Web3 apps can easily onboard users via social login by integrating with the {{config.extra.arcana.flutter_sdk_name}}!
+{{page.meta.arcana.app_type}} Web3 apps can onboard users via social login by integrating with the {{config.extra.arcana.flutter_sdk_name}}!
 
 ## Prerequisites
 

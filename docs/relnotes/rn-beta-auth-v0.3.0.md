@@ -34,7 +34,7 @@ A new wallet tab is now available to manage and view details related to the NFTs
 
   - View any NFT of the type image, audio, or video
   - Transfer NFTs from within the wallet
-  - Easily add NFTs to the wallet by searching from a list of popular collections on Ethereum Mainnet
+  - Add NFTs to the wallet by searching from a list of popular collections on Ethereum Mainnet
   
 Refer to the [[use-wallet-to-manage-nfts|documentation on managing NFT Assets]].
 

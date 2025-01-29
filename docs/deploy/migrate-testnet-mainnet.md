@@ -10,7 +10,7 @@ arcana:
 
 ## Prerequisites
 
-* Apps must be registered. A default Testnet [[concept-config-profile|configuration profile]] is assigned to each registered app. There is no default Mainnet configuration profile.
+* Apps must be registered. A default Testnet [[concept-config-profile|configuration profile]] is assigned to each registered app. The mainnet configuration profile must be created by the developer.
 
 ## 1. Create Mainnet Profile
 

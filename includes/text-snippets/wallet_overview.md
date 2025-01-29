@@ -24,7 +24,7 @@
 
 **Wallet Configuration**
 
-Wallet user experience can be configured at the time of registering the app via the dashboard.  The dashboard setting allows developers to specify whether they will use the built-in default wallet UI or use a custom wallet UI. Later, during app integration, developers can specify `alwaysVisible` to manage [[concept-wallet-visibility|wallet visibility]], wallet `position` parameters in `AuthProvider` and further fine tune the user experience.
+Wallet user experience can be configured at the time of registering the app via the dashboard. The dashboard setting allows developers to specify whether they will use the built-in default wallet UI or use a custom wallet UI. Later, during app integration, developers can specify `alwaysVisible` to manage [[concept-wallet-visibility|wallet visibility]], wallet `position` parameters in `AuthProvider` and further fine tune the user experience.
 
 **Adding Networks**
 

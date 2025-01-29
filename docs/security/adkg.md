@@ -12,7 +12,7 @@ Asynchronous Distributed Key Generation (ADKG) is a building block for any decen
 
 This key pair is used to bootstrap the cryptography subsystems without a trusted third party.
 
-Arcana Network ADKG implementation is used for non-custodial key pair generation and onboard the SDK users to sign blockchain transactions. It is a simple and effective mechanism that ensures no single node has access to the user’s key ensuring security and robustness. 
+Arcana Network ADKG implementation is used for non-custodial key pair generation and onboard the SDK users to sign blockchain transactions. None of the individual ADKG nodes have access to the user’s key  ensuring security and robustness of the system.
 
 <figure markdown="span">
   ![Asynchronous Distributed Key Generation (ADKG)]({{config.extra.arcana.img_dir}}/adkg_note.{{config.extra.arcana.img_png}}){ .an-screenshots-noeffects .width_85pc }
@@ -96,10 +96,10 @@ At the end of this phase, votes from all nodes are generated for every proposal 
 
 ### 4. Key Derivation
 
-This phase uses the union of elements in these key set proposals to derive the final secret key share for each node.
+During this phase, the union of elements in key set proposals is used to derive the final secret key share for each node.
 
 - If the ABA terminates with an output of 1, that means the key set proposal is accepted.
-- Each node uses the union of all accepted key set proposals to generate its own secret key share. So if node j was in the final accepted proposal union set, node k will generate its final share by including or adding the share given by node j to node k during the ACSS phase . So if **T = T ∪ T$_i$**, then for *j* in **T**, $Z_i=Z_i+S_{ij}$ where Z$_i:$ Final share of node$_i$
+- Each node uses the union of all accepted key set proposals to generate its own secret key share. What this means is that if node j was in the final accepted proposal union set, node k will generate its final share by including or adding the share given by node j to node k during the ACSS phase. In short, if **T = T ∪ T$_i$**, then for *j* in **T**, $Z_i=Z_i+S_{ij}$ where Z$_i:$ Final share of node$_i$
 - After sharing terminates, each node derives its share of the public key i.e $**h^{z_i}**$ where $i$ is the node number, using Lagrange’s interpolation.
 - Each node then shares its public key share with all the other participating nodes.
 

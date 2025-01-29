@@ -25,7 +25,7 @@ No changes
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="Auth SDK icon" width="3%" />
 <img src="{{config.extra.arcana.img_dir}}/icons/i_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="Auth SDK icon" width="3%" />
 
-When you migrate from using the {{config.extra.arcana.sdk_name}} v1.0.0 to the v1.0.1 release, there is no breaking change or reconfiguration required. There is just one change in the default setting of the `network` parameter in the `AuthProvider` constructor. Earlier it was set to 'mainnet' but now it is set to 'testnet' by default.
+When you migrate from using the {{config.extra.arcana.sdk_name}} v1.0.0 to the v1.0.1 release, there is no breaking change or reconfiguration required. The default setting of the `network` parameter in the `AuthProvider` constructor has changed. Earlier it was set to 'mainnet' but now it is set to 'testnet' by default.
 
 ## How to Migrate to v1.0.1?
 
@@ -68,6 +68,6 @@ Once a user authenticates, the following wallet UI is displayed when the app is 
 
 <img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="3%" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="3%" />
 
-There are no other new features in this release.
+This release has no new features.
 
 For more details about this release, see [[rn-main-auth-v1.0.1|{{config.extra.arcana.product_name}} v1.0.1 release notes]] for details.

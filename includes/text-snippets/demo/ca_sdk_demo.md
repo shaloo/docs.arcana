@@ -1,1 +1,1 @@
-[Try CA SDK Demo! :material-rocket-launch:](https://sdk.arcana.network){ .md-button}
+[Try CA SDK Demo :material-rocket-launch:](https://sdk.arcana.network){ .md-button}

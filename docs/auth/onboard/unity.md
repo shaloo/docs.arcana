@@ -20,15 +20,15 @@ Learn how to onboard users via [[concept-social-login|social login]] in a Web3 U
 
 ## Onboarding Users
 
-*Onboarding users in a Unity Web3 gaming app with the {{config.extra.arcana.gaming_sdk_name}} and allowing authenticated users to access the {{config.extra.arcana.wallet_name}} is simple!*
+*Follow these steps to onboard users in a Unity Web3 gaming app with the {{config.extra.arcana.gaming_sdk_name}} and allow authenticated users to access the {{config.extra.arcana.wallet_name}}.*
 
-Call `LoginWithSocial` or `LoginWithOTP` to onboard the user. Choose one of the [[web3-stack-auth|supported user onboarding options]] such as Google, Steam, etc. 
+Call `LoginWithSocial` or `LoginWithOTP` to onboard the user. Choose one of the [[web3-stack-auth|supported user onboarding options]] such as Google, Steam, etc.
 
 {% include "./code-snippets/auth_unity_onboard.md" %}
 
-That is all! :material-party-popper:
+That is all. :material-party-popper:
 
-The Unity Web3 gaming app can now onboard users via the configured social login providers. 
+The Unity Web3 gaming app can now onboard users via the configured social login providers.
 
 ## What's Next?
 

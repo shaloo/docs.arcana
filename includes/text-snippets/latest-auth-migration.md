@@ -4,7 +4,7 @@ Using an older version and want to migrate? Read on...
 
 ## What has Changed?
 
-There are no usage changes in this release if you are already using the SDK. 
+If you are already using the SDK, there are no usage changes in this release.
 
 This new release includes support for Custom Auth and wallet UI features for off-ramping crypto to fiat.
 

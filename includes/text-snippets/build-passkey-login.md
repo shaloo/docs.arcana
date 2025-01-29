@@ -11,7 +11,7 @@ In this guide, you will learn how a Web3 app integrated with the {{config.extra.
 
 ## Steps
 
-*Enabling passkeys as an alternative login for users in a Web3 app integrated with the {{config.extra.arcana.sdk_name}} is siple!*
+*Follow these steps to enable passkeys as an alternative login for users in a Web3 app integrated with the {{config.extra.arcana.sdk_name}}.*
 
 ### 1. Authenticate User
 
@@ -39,7 +39,7 @@ Once passkeys are set up by the user, enable a 'login with passkey' option in th
 
 {% include "./text-snippets/passkey_others.md" %}
 
-**That is all!**  :material-party-popper:
+**That is all.**  :material-party-popper:
 
 Your dApp is all set for onboarding users via the passkeys option.
 

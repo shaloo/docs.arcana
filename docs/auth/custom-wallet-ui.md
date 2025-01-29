@@ -135,7 +135,7 @@ During app integration with {{config.extra.arcana.sdk_name}}, an `AuthProvider` 
 
 ### Manage User Control
 
-For a smooth user experience, ensure your custom UI displays clear approval/rejection prompts when blockchain requests are made. Users should be able to easily accept or reject these actions. 
+For a smooth user experience, ensure your custom UI displays clear approval/rejection prompts when blockchain requests are made. Users must be able to view the details and accept or reject these actions.
 
 ### Export Key Option
 

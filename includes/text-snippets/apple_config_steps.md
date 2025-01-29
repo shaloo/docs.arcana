@@ -142,6 +142,6 @@ In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**
   <figcaption>Update Apple Sign-In Settings</figcaption>
 </figure>
 
-Save the **Social Auth** settings. 
+Save the **Social Auth** settings.
 
-*Your app is all set to onboard users via Apple Sign-In!*
+*Your app is all set to onboard users via Apple Sign-In.*

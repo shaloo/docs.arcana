@@ -6,7 +6,7 @@ Follow these steps to configure the **Social Auth** settings and enable user onb
 
 ### 1. Get Redirect URI 
 
-Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Google in the respective configuration profile.  Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
+Select the app in the **Manage Apps** dashboard screen and click Testnet/Mainnet to configure Google in the respective configuration profile. Go to **Configure > Social Auth**. Copy the redirect URI shown on the top right.
 
 <figure markdown="span">
   ![Copy Redirect URI]({{config.extra.arcana.img_dir}}/an_dApp_config_redirect_uri.{{config.extra.arcana.img_png}}){ .an-screenshots }
@@ -57,4 +57,4 @@ In the {{config.extra.arcana.dashboard_name}}, click **Configure > Social Auth**
 
 Save the **Social Auth** settings. 
 
-*You are all set with the Google configuration!*
+*You are all set with the Google configuration.*

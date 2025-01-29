@@ -16,7 +16,7 @@ In this guide, you will learn how to integrate {{page.meta.arcana.app_type}} app
 
 ## Steps
 
-*Enabling passwordless login in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
+*Follow these steps for enabling passwordless login in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}}.*
 
 After integrating the app, add the code to onboard users in a passwordless manner using the SDK method listed below. 
 
@@ -42,7 +42,7 @@ Log out the dApp user when requested:
     
 {% include "./code-snippets/auth_logout.md" %}
 
-**That is all!**  :material-party-popper:
+**That is all.**  :material-party-popper:
 
 Your dApp is all set for onboarding users via the passwordless login option.
 

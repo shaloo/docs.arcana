@@ -1,6 +1,6 @@
 # User Login with Twitch
 
-In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} can easily onboard users via custom login UI and Twitch as the authentication provider.
+In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated with the {{config.extra.arcana.sdk_name}} can onboard users via custom login UI and Twitch as the authentication provider.
 
 ## Prerequisites
 
@@ -14,9 +14,7 @@ In this guide, you will learn how a {{page.meta.arcana.app_type}} app integrated
       
 ## Steps
 
-*Using Twitch to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} is simple!*
-
-Just a single line of code!
+*Using Twitch to onboard users in a Web3 app that is integrated with the {{config.extra.arcana.sdk_name}} requires a single line of code.*
 
 ## Step 1: Call `loginWithSocial` function
 
@@ -32,7 +30,7 @@ Add code in the app to log out an authenticated user:
 
 {% include "./code-snippets/auth_logout.md" %}
 
-**That is all!**  :material-party-popper:
+**That is all.**  :material-party-popper:
 
 The Web3 app is all set for onboarding users via Twitch. 
 

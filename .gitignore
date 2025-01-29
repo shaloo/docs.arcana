@@ -1,4 +1,3 @@
-styles
 libcairo*
 site
 **/.DS_Store
@@ -6,3 +5,5 @@ site
 .cache
 .vscode
 .python-version
+vale/
+!vale/styles/config/
