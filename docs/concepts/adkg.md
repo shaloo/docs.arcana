@@ -23,13 +23,13 @@ Each party creates a partial private key and shares it with the others. Together
 
 *[Reference: ADKG Paper](https://eprint.iacr.org/2022/1389.pdf)*
 
-ADKG is ideal for geographically dispersed or poorly connected parties where traditional methods are impractical. ADKG's distributed trust also makes it more resistant to attacks compared to methods relying on a single central authority.
+ADKG is ideal for geographically dispersed or poorly connected parties where traditional methods are impractical. The distributed trust model in ADKG also makes it more resistant to attacks compared to methods relying on a single central authority.
 
 ## ADKG for Web3 Keys
 
 Web3 blockchain transactions require user approval through cryptographic keys.
 
-The {{config.extra.arcana.sdk_name}} uses ADKG to securely generate key shares for Web3 users. It allows users to securely access and generate their keys on the client side, handling security and privacy concerns. Users can easily sign transactions with the non-custodial {{config.extra.arcana.wallet_name}}.
+The {{config.extra.arcana.sdk_name}} uses ADKG to securely generate key shares for Web3 users. It allows users to securely access and generate their keys on the client side, handling security and privacy concerns. Users can sign transactions with the non-custodial {{config.extra.arcana.wallet_name}}.
 
 ADKG generates ECDSA keys on the [secp256k1](https://www.secg.org/sec2-v2.pdf) curve, compatible with all EVM chains. Future updates will support other curves, blockchains, and key regeneration.
 
@@ -55,7 +55,7 @@ At a very high level, the protocol requires each node to **independently generat
   <figcaption>How does ADKG work?</figcaption>
 </figure>
 
-There are four key phases in the ADKG protocol:
+The ADKG protocol has four phases:
 
 1. Asynchronous Complete Secret Sharing (ACSS)
 2. Keyset Proposal Broadcast Phase

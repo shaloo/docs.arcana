@@ -28,6 +28,6 @@ The following IAM providers are supported for user authentication:
 
 {% include "./text-snippets/custom_idm_supported.md" %}
 
-These third-party IAM providers may require separate configuration of the underlying user authentication mechanisms, e.g., social logins, OpenID, etc.
+These third-party IAM providers may require separate configuration of the underlying user authentication mechanisms such as social logins, OpenID, etc.
 
 {% include "./text-snippets/info_pwdless_login.md" %}

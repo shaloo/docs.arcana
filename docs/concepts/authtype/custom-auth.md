@@ -108,7 +108,7 @@ Audience: "arcana-login-nnnnnn"
 
 ### JWK Validation (Optional)
 
-Claims are pieces of information asserted about a subject or user. A JWT can contain a claim called name that asserts that the name of the user authenticating is "John Doe". JWT Validation entities specified by the developer via the  {{config.extra.arcana.dashboard_name}} are key, value pairs. These are used to validate the JWT provided by the developer to the {{config.extra.arcana.sdk_name}} via the `loginWithCustomProvider()` method for authenticated users. 
+Claims are pieces of information asserted about a subject or user. A JWT can contain a claim called name that asserts that the name of the user authenticating is "John Doe." JWT Validation entities specified by the developer via the  {{config.extra.arcana.dashboard_name}} are key, value pairs. These are used to validate the JWT provided by the developer to the {{config.extra.arcana.sdk_name}} via the `loginWithCustomProvider()` method for authenticated users. 
 
 Examples:
 

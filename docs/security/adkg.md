@@ -71,7 +71,7 @@ At the end of the ACSS phase, each node has a set **T** of share index from all 
 
 ### 2. Keyset Proposal Broadcast
 
-After the first phase, once each node has generated and shared key shares, each node has a set of key shares received from the other nodes. The index set of this set is shared with all the other nodes. Each node $i$ reliably broadcasts its complete set $**T_i**$ of share index that it collected in the previous ACSS phase.
+After the first phase, once each node has generated and shared key shares, each node has a set of key shares received from the other nodes. The index set of this set is shared with all the other nodes. Each node $i$ reliably broadcasts its complete set $T_i$ of share index that it collected in the previous ACSS phase.
 
 At the end of this phase, each node has *n* **T** sets containing share index from all the other participating nodes.
 
@@ -100,7 +100,7 @@ During this phase, the union of elements in key set proposals is used to derive 
 
 - If the ABA terminates with an output of 1, that means the key set proposal is accepted.
 - Each node uses the union of all accepted key set proposals to generate its own secret key share. What this means is that if node j was in the final accepted proposal union set, node k will generate its final share by including or adding the share given by node j to node k during the ACSS phase. In short, if **T = T ∪ T$_i$**, then for *j* in **T**, $Z_i=Z_i+S_{ij}$ where Z$_i:$ Final share of node$_i$
-- After sharing terminates, each node derives its share of the public key i.e $**h^{z_i}**$ where $i$ is the node number, using Lagrange’s interpolation.
+- After sharing terminates, each node derives its share of the public key, $h^{z_i}$ where $i$ is the node number, using Lagrange’s interpolation.
 - Each node then shares its public key share with all the other participating nodes.
 
 At the end of this phase, h$^z$ is derived from $h^{z_1}$,...,$h^{z_4}$ at all nodes. Using these public key shares from the threshold number of participating nodes, each node can generate the final agreed-upon public key.

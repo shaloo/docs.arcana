@@ -14,7 +14,7 @@ arcana:
 
 ## How does CA-SDK work?
 
-The [[concept-casdk|Chain Abstraction SDK (CA SDK)]] uses Arcana Network's CA protocol to to manage balances across multiple chains and tokens in Web3 apps.
+The [[concept-casdk|Chain Abstraction SDK (CA SDK)]] uses Arcana Network's CA protocol to manage balances across multiple chains and tokens in Web3 apps.
 
 It solves liquidity fragmentation by enabling a unified balance across supported chains.
 

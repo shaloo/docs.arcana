@@ -6,7 +6,7 @@ Use the built-in, [[concept-plug-and-play-auth|plug-and-play login UI modal]] to
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[register-app-auth|Register]] the app that uses `wagmi` and configure the SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
 * Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
 

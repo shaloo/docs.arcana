@@ -8,7 +8,7 @@ arcana:
 
 # EVM Wallet Ops
 
-The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) via the `AuthProvider`.
+The {{config.extra.arcana.wallet_name}} supports [standard Ethereum JSON-RPC specification API](https://ethereum.org/en/developers/docs/apis/json-rpc/) via the `AuthProvider`.
 
 {% include "./text-snippets/note_other_chain_wallet_ops.md" %}
 

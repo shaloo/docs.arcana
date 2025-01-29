@@ -8,7 +8,7 @@ arcana:
 
 # Social Login
 
-Social Logins eliminate the friction of setting up and managing wallets for new users, who might’ve dropped off the onboarding journey. It simplifies the onboarding process for new users by using familiar social authentication providers or email, making it super easy.
+Social Logins eliminate the friction of setting up and managing wallets for new users, who might’ve otherwise dropped off the onboarding journey. The familiar Web2 social authentication providers or email logins makes the Web3 onboarding process a breeze for the new users.
 
 Custodial wallets also offer social login, but they require users to sacrifice privacy and control, as a third party can access your keys and wallet funds.
 

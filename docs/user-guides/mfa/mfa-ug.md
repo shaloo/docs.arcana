@@ -36,7 +36,7 @@ Click **Proceed** at the very first login when prompted to set up MFA.
 Answer all five security questions. Select pre-configured security questions via the dropdown or create your own by clicking the question field.
 
 <figure markdown="span">
-  <img src="{{config.extra.arcana.img_dir}}/an_mfa_setup_qa.{{config.extra.arcana.img_png}}" alt="MFA qa setup" class="an-screenshots-noeffects width_35pc"/>
+  <img src="{{config.extra.arcana.img_dir}}/an_mfa_setup_qa.{{config.extra.arcana.img_png}}" alt="MFA QA setup" class="an-screenshots-noeffects width_35pc"/>
   <figcaption>Security Questions</figcaption>
 </figure>
 

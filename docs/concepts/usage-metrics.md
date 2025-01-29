@@ -19,7 +19,7 @@ The aggregate usage metrics are displayed in the *Manage Apps Screen*. The per-a
 - Number of paid MAU (Mainnet)
 
 <figure markdown="span">
-  <img alt="Per App Usage Usage Metrics" src="{{config.extra.arcana.img_dir}}/an_db_manage_apps_metrics.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
+  <img alt="Per App Usage Metrics" src="{{config.extra.arcana.img_dir}}/an_db_manage_apps_metrics.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
   <figcaption>Per App Usage Metrics</figcaption>
 </figure>
 

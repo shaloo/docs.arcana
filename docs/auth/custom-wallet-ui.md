@@ -55,7 +55,7 @@ Once user onboarding logic is in place, add code to wire your custom wallet UI t
 
 ###  Issue Wallet Ops
 
-During app integration with {{config.extra.arcana.sdk_name}}, an `AuthProvider` is created. This provider is a standard Ethereum EIP-1193 provider. It facilitates wallet interactions with the blockchain. Use `AuthProvider` to call the [JSON-RPC APIs](https://ethereum.org/en/developers/docs/apis/json-rpc/) and handle [[evm-web3-wallet-ops|Web3 wallet operations for the selected chains]]. Add code to trigger wallet actions like sending transactions, signing messages, and executing contract calls.
+During app integration with {{config.extra.arcana.sdk_name}}, an `AuthProvider` is created. This provider is a standard Ethereum EIP-1193 provider. It facilitates wallet interactions with the blockchain. Use `AuthProvider` to call the [JSON-RPC API](https://ethereum.org/en/developers/docs/apis/json-rpc/) and handle [[evm-web3-wallet-ops|Web3 wallet operations for the selected chains]]. Add code to trigger wallet actions like sending transactions, signing messages, and executing contract calls.
 
 ??? an-info "Sample Code"
 
@@ -139,7 +139,7 @@ For a smooth user experience, ensure your custom UI displays clear approval/reje
 
 ### Export Key Option
 
-When using the default {{config.extra.arcana.wallet_name}} UI, authenticated users can access and copy their private key from the profile tab. For custom wallet UIs, developers should include secure options for users to export their private key. Use the `AuthProvider` to access the private key and make a JSON/RPC `request` call with the `_arcana_getPrivateKey` method to retrieve the key securely in the user's context.
+When using the default {{config.extra.arcana.wallet_name}} UI, authenticated users can access and copy their private key from the profile tab. For custom wallet UI, developers should include secure options for users to export their private key. Use the `AuthProvider` to access the private key and make a JSON/RPC `request` call with the `_arcana_getPrivateKey` method to retrieve the key securely in the user's context.
 
 ??? an-info "Sample Code"
 

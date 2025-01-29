@@ -12,7 +12,7 @@ This guide explains the payment model for using {{config.extra.arcana.product_na
 
 ## Pricing
 
-Testnet usage is free!
+Testnet usage is free. 
 
 ### Mainnet
 
