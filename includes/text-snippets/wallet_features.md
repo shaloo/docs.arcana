@@ -8,7 +8,7 @@
     - List token assets
     - Add custom tokens (ERC-20)
     - Send and receive tokens 
-    - Buy/Sell cryptocurrency
+    - Buy/Sell crypto
 * Manage NFTs
     - List NFT assets
     - View NFT details

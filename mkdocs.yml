@@ -77,7 +77,9 @@ extra_css:
   - stylesheets/custom.css
 
 extra_javascript:
-  - javascripts/extra.js
+  - javascripts/extra.js   # Do not remove, required for ADKG formulae
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
   # Home page default is the landing
@@ -415,7 +417,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.arithmatex:
+  - pymdownx.arithmatex:   # do not remove, used in ADKG section
       generic: true
   - tables
   - toc:

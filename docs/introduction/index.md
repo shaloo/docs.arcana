@@ -35,7 +35,7 @@ arcana:
           A00(((Step 2))) --> F00[Install SDK]
           F00 -- Integrate App --> G00[Initialize SDK]
           E00[ClientID] --> G00
-          G00 --> H00(Call SDK Fns)
+          G00 --> H00(Call SDK Functions)
         end
 
     classDef an-pink stroke:#ff4e9f,stroke-width:0.25rem;

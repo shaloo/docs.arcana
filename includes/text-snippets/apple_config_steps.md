@@ -40,7 +40,7 @@ Login to your developer account using the [Apple Developer](https://developer.ap
   <figcaption>Apple Dev: Log In</figcaption>
 </figure>
 
-Use the 'Certificates, Identifiers & Profiles' menu option. Create, configure and register the Apple app identifier, Apple service identifier. As part of configuration you will be requried to verify your app domain, and associate the domain with an app identifier for app login page that uses 'Sign in with Apple'.
+Use the 'Certificates, Identifiers & Profiles' menu option. Create, configure and register the Apple app identifier, Apple service identifier. As part of configuration you will be required to verify your app domain, and associate the domain with an app identifier for app login page that uses 'Sign in with Apple'.
 
 #### 2a. App Id
 

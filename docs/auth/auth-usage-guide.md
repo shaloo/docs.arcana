@@ -124,7 +124,7 @@ await auth.init()
 
 See [Get Started with Auth SDK](https://docs.arcana.network/quick-start/wagmi-quick-start/) for more Auth SDK usage insights.
 
-### Auth APIs
+### Auth API
 
 #### Plug and Play Authentication
 
