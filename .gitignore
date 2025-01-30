@@ -1,3 +1,7 @@
+.github/styles/Google/
+.github/styles/Readability/
+.github/styles/alex/
+.github/styles/write-good/
 vale_out.txt
 libcairo*
 site
@@ -6,6 +10,3 @@ site
 .cache
 .vscode
 .python-version
-vale/
-vale/*/
-!vale/styles/config/
