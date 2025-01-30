@@ -4,7 +4,7 @@ set -e  # Exit on any error
 
 EXPECTED_DIR="auth-mkdocs"
 CONFIG_DIR="config"
-VALE_STYLES_DIR="vale/styles"
+VALE_STYLES_DIR=".github/styles"
 
 # Ensure script is run from the correct directory
 [ "$(basename "$(pwd)")" != "$EXPECTED_DIR" ] && { echo "Error: Run from '$EXPECTED_DIR' directory."; exit 1; }
@@ -23,10 +23,6 @@ if ! command -v vale >/dev/null; then
         Darwin) brew install vale ;;
         *) echo "Unsupported OS. Install Vale manually."; exit 1 ;;
     esac
-    # Set up Vale configuration symlinks
-    mkdir -p "$VALE_STYLES_DIR"
-    ln -sf "$CONFIG_DIR"/* "$VALE_STYLES_DIR/"
-    echo "Vale config symlinks created."
 fi
 
 # Run Vale tests

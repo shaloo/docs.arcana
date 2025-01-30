@@ -1,0 +1,6 @@
+iextends: substitution
+message: "Consider using '%s' instead."
+level: warning
+ignorecase: false
+swap:
+  - file: arcana_vocab.txt
