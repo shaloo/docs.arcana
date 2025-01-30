@@ -22,10 +22,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Add Vale Config
-        run: |
-          ln -s /home/runner/work/auth-mkdocs/auth-mkdocs/config  /home/runner/work/auth-mkdocs/auth-mkdocs/vale/styles/config 
-
       - uses: errata-ai/vale-action@v2.1.1              
         with:
           files: '["docs/**/*.md", "includes/**/*.md"]'
