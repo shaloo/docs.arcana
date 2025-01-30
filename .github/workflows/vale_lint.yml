@@ -21,11 +21,12 @@ jobs:
         
       - name: Checkout Repository
         uses: actions/checkout@v4
-              
-      - name: Set Up Vale
+
+      - uses: errata-ai/vale-action@v2.1.1              
+
+      - name: Check Vale version
         run: |
-          curl -fsSL https://github.com/errata-ai/vale/releases/latest/download/vale-linux.tar.gz | tar xz
-          sudo mv vale /usr/local/bin/
+          which vale
           vale --version
 
       - name: Run Vale Checks
