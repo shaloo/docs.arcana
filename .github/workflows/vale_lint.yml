@@ -19,20 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - uses: errata-ai/vale-action@v2.1.1              
         with:
           files: '["docs/**/*.md", "includes/**/*.md"]'
           fail_on_error: true
-
-      - name: Check Vale version
-        run: |
-          which vale
-          vale --version
-
-      - name: Run Vale Checks
-        run: |
-          ./scripts/run_vale_tests.sh
-
