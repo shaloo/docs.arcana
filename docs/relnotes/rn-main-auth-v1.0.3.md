@@ -16,7 +16,7 @@ arcana:
 
 ==}
 
-This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+This release of the {{config.extra.arcana.sdk_name}}  consists of the following components:
 
 * [{{config.extra.arcana.sdk_name}} v1.0.3](https://www.npmjs.com/package/@arcana/auth/v/1.0.3)
 * {{config.extra.arcana.dashboard_name}}
@@ -28,7 +28,7 @@ This release of the {{config.extra.arcana.product_name}} product consists of the
 
 ### Social Provider: AWS Cognito
 
-{{config.extra.arcana.product_name}} now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [[build-iam-cognito-auth|how to onboard users via Cognito]] for details.
+{{config.extra.arcana.sdk_name}} now allows Web3 apps to configure AWS Cognito as the social provider for user authentication. See [[build-iam-cognito-auth|how to onboard users via Cognito]] for details.
 
 ### New API: showWallet()
 
@@ -62,7 +62,7 @@ In the earlier releases, the built-in Arcana wallet UI **did not** utilize the e
 
 ==}
 
-See {{config.extra.arcana.product_name}} Quick Start Guides for details. 
+See {{config.extra.arcana.sdk_name}} Quick Start Guides for details. 
 
 Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
@@ -71,7 +71,7 @@ Check out the sample dApp integration example for apps using React, Next.js, and
 
 ---
 
-Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
+Are you using an older version of the {{config.extra.arcana.sdk_name}}? Use the [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
 
 ## Questions? 
 

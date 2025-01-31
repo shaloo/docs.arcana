@@ -98,7 +98,7 @@ toc_depth: 2
 
 ??? an-faq "Why do I need to specify Wallet Website Domain setting?"
 
-      This is an optional setting for additional security. If specified, the {{config.extra.arcana.product_name}} subsystem uses this setting to restrict the {{config.extra.arcana.wallet_name}} from loading anywhere else other than the application website domain that a developer specifies. for restricted domains, the [frame-ancestor Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/web/http/headers/content-security-policy#frame-ancestors) is used.
+      This is an optional setting for additional security. If specified, the {{config.extra.arcana.sdk_name}} configuration subsystem uses this setting to restrict the {{config.extra.arcana.wallet_name}} from loading anywhere else other than the application website domain that a developer specifies. for restricted domains, the [frame-ancestor Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/web/http/headers/content-security-policy#frame-ancestors) is used.
 
 ??? an-faq "Is there a way to control when, which position in the application window, and what kind of theme is used for displaying the {{config.extra.arcana.wallet_name}} in the apps' context?"
 

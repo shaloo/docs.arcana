@@ -1,7 +1,7 @@
 ---
 alias: index-build-social-providers
 title: 'Social Login Providers: Custom Login UI'
-description: 'List of Social Authentication Providers supported by Arcana Auth. Learn how developers can onboard app users with a custom login UI and enable social authentication in apps integrated with the Arcana SDK.'
+description: 'List of Social Authentication Providers supported by Arcana Auth. Learn how developers can onboard app users with a custom login UI and enable social authentication in apps integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../../../../..
   app_type: "Vanilla HTML/CSS/JS"

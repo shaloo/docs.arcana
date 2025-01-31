@@ -1,7 +1,7 @@
 ---
 alias: index-config-social-providers
 title: 'Auth Options'
-description: 'List of social login providers that are supported by Arcana Auth for onboarding Web3 app users in apps integrated with the Arcana SDK.'
+description: 'List of social login providers that are supported by Arcana Auth for onboarding Web3 app users in apps integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---

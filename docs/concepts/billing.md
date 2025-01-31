@@ -8,7 +8,7 @@ arcana:
 
 # Usage & Billing
 
-This guide explains the payment model for using {{config.extra.arcana.product_name}} in Web3 apps. 
+This guide explains the payment model for using [[concept-social-login|social login]] feature offered by the {{config.extra.arcana.sdk_name}} in Web3 apps.
 
 ## Pricing
 
@@ -25,7 +25,7 @@ For more details on the current billing rates and free tier limits contact [[ind
 
 ## Billing Metrics
 
-{{config.extra.arcana.product_name}} monitors app usage with the following metrics:
+{{config.extra.arcana.sdk_name}} monitors app usage with the following metrics:
 
 * **Aggregate App Usage**: This metric tracks the 'Monthly Active Users (MAU)' across all apps registered with {{config.extra.arcana.company_name}} per developer account on the Mainnet. Total MAU data includes free and paid usage.
 

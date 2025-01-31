@@ -25,7 +25,7 @@ We are working with more partners to fully decentralize the ADKG subsystem.
 
 ### Share Generation
 
-{{config.extra.arcana.product_name}} uses various algorithms for a secure ADKG subsystem. It includes a  [robust asynchronous DPSS mechanism](https://eprint.iacr.org/2022/971) to protect user keys and handle malicious nodes. We are adding features like key share repair and refresh, as well as {{config.extra.arcana.product_name}} multi-factor authentication (MFA) and multi-party computation (MPC) for enhanced security and ease of use.
+{{config.extra.arcana.sdk_name}} uses various algorithms for a secure ADKG subsystem. It includes a  [robust asynchronous DPSS mechanism](https://eprint.iacr.org/2022/971) to protect user keys and handle malicious nodes. We are adding features like key share repair and refresh, as well as {{config.extra.arcana.sdk_name}} multi-factor authentication (MFA) feature and multi-party computation (MPC) for enhanced security and ease of use.
 
 ### Assembly
 

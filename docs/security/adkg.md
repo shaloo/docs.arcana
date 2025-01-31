@@ -22,7 +22,7 @@ Arcana Network ADKG implementation is used for non-custodial key pair generation
 
 At {{config.extra.arcana.company_name}}, have come a long way since the {{config.extra.arcana.sdk_name}} alpha release that offered a distributed key generation feature (DKG). 
 
-Several shortcomings in the earlier DKG regarding trusted dealer, robustness have been resolved in the state-of-the-art asynchronous distributed key generation (ADKG) protocol built into the {{config.extra.arcana.company_name}} key generation subsystem. We have collaborated with some of the leading cryptography experts and researchers to fold recent advances in **asynchronous DKG** technology in {{config.extra.arcana.product_name}}. Refer to the [{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for more details on ADKG.
+Several shortcomings in the earlier DKG regarding trusted dealer, robustness have been resolved in the state-of-the-art asynchronous distributed key generation (ADKG) protocol built into the {{config.extra.arcana.company_name}} key generation subsystem. We have collaborated with some of the leading cryptography experts and researchers to fold recent advances in **asynchronous DKG** technology in {{config.extra.arcana.sdk_name}}. Refer to the [{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for more details on ADKG.
 
 ## Why is ADKG better?
 

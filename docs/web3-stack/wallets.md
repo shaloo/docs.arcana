@@ -1,18 +1,18 @@
 ---
 alias: web3-stack-wallets
 title: 'Wallets'
-description: 'Learn about the wallets supported by the Arcana SDKs.'
+description: 'Information regarding the wallets supported by the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 ---
 
 # Supported Wallets
 
-{{config.extra.arcana.company_name}} SDKs works with third-party browser-based wallets as well as the built-in, non-custodial, embedded {{config.extra.arcana.wallet_name}}. 
+The {{config.extra.arcana.sdk_name}} works with third-party browser-based wallets as well as the built-in, non-custodial, in-app {{config.extra.arcana.wallet_name}}.
 
 === "{{config.extra.arcana.wallet_name}}"
 
-    The {{config.extra.arcana.wallet_name}} is an embedded, built-in wallet available to all apps that integrate with the {{config.extra.arcana.sdk_name}}. 
+    The {{config.extra.arcana.wallet_name}} is a built-in, in-app wallet accessible to authenticated users of Web3 apps integrated with {{config.extra.arcana.sdk_name}}. 
 
     ### Built-in Wallet UI
 

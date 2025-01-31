@@ -10,16 +10,16 @@ arcana:
 
 This guide is meant for developers who have already integrated apps with v1.0.3 of the {{config.extra.arcana.sdk_name}} and deploy them using {{config.extra.arcana.company_name}} Testnet or Mainnet. 
 
-If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick Start Guides to get started.
+If you are new to Arcana Network, see {{config.extra.arcana.sdk_name}} Quick Start Guides to get started.
 
 
 ## Backward Compatibility
 
-The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for most of the Web3 apps that may have integrated with the earlier release v1.0.3 of the {{config.extra.arcana.sdk_name}}. Those apps should continue to work with no changes to the app code. Some changes are required in the {{config.extra.arcana.dashboard_name}} settings to ensure smooth operation. If the app has explicitly specified a default chain via the `chainConfig` option in the `AuthProvider` then make sure the chain appears in the list of blockchains configured in the {{config.extra.arcana.dashboard_name}}. If the chain does not show up, it can be manually added via the [[configure-wallet-chains|chain management configuration settings]] in the dashboard. See the chain management section below for details.
+The latest release of the {{config.extra.arcana.sdk_name}} does not cause any breaking changes for most of the Web3 apps that may have integrated with the earlier release v1.0.3 of the {{config.extra.arcana.sdk_name}}. Those apps should continue to work with no changes to the app code. Some changes are required in the {{config.extra.arcana.dashboard_name}} settings to ensure smooth operation. If the app has explicitly specified a default chain via the `chainConfig` option in the `AuthProvider` then make sure the chain appears in the list of blockchains configured in the {{config.extra.arcana.dashboard_name}}. If the chain does not show up, it can be manually added via the [[configure-wallet-chains|chain management configuration settings]] in the dashboard. See the chain management section below for details.
 
 ### Same Wallet Address
 
-Apps using {{config.extra.arcana.product_name}} v1.0.3 or the latest v1.0.4 should see **no change** in the user wallet address. This is true for all types of apps and supported frameworks, irrespective of whether they are using the global or app-specific keys. Apps deployed earlier will continue to work on the Arcana Testnet and Mainnet. 
+Apps using {{config.extra.arcana.sdk_name}} v1.0.3 or the latest v1.0.4 should see **no change** in the user wallet address. This is true for all types of apps and supported frameworks, irrespective of whether they are using the global or app-specific keys. Apps deployed earlier will continue to work on the Arcana Testnet and Mainnet. 
 
 ## New Release: What has Changed?
 
@@ -27,7 +27,7 @@ Apps using {{config.extra.arcana.product_name}} v1.0.3 or the latest v1.0.4 shou
 
 Earlier, apps using `{{config.extra.arcana.wagmi_sdk_pkg_name}}` package v0.0.4 were **not** required to install the `{{config.extra.arcana.auth_sdk_pkg_name}}` package v1.0.3 but this has changed in the current release.
 
-Now Wagmi / RainbowKit Apps need to install both the packages and then as part of integrating with the {{config.extra.arcana.product_name}} product, first create `AuthProvider` using the {{config.extra.arcana.app_address}}. Then use the `AuthProvider` to create the `ArcanaConnector`. 
+Now Wagmi / RainbowKit Apps need to install both the packages and then as part of integrating with the {{config.extra.arcana.sdk_name}}, first create `AuthProvider` using the {{config.extra.arcana.app_address}}. Then use the `AuthProvider` to create the `ArcanaConnector`. 
 
 For details, see how to onboard users in Web3 apps using [[integrate-wagmi-app| Wagmi]] or [[integrate-rainbow-app| RainbowKit]] wallet connectors.
 
@@ -79,4 +79,4 @@ Apps using the `chainConfig` setting to set the default chain in the {{config.ex
 
 <img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="3%" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="3%" />
 
-See [[rn-main-auth-v1.0.4|{{config.extra.arcana.product_name}} v1.0.4 release notes]] for details.
+See [[rn-main-auth-v1.0.4|{{config.extra.arcana.sdk_name}} v1.0.4 release notes]] for details.

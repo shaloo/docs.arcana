@@ -10,7 +10,7 @@ arcana:
 
 This guide is meant for developers who have already integrated apps with {{config.extra.arcana.sdk_name}} v1.0.0 and run them using {{config.extra.arcana.company_name}} Testnet. 
 
-If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick Start Guides to get started.
+If you are new to Arcana Network, see {{config.extra.arcana.sdk_name}} Quick Start Guides to get started.
 
 ## What has Changed?
 
@@ -70,4 +70,4 @@ Once a user authenticates, the following wallet UI is displayed when the app is 
 
 This release has no new features.
 
-For more details about this release, see [[rn-main-auth-v1.0.1|{{config.extra.arcana.product_name}} v1.0.1 release notes]] for details.
+For more details about this release, see [[rn-main-auth-v1.0.1|{{config.extra.arcana.sdk_name}} v1.0.1 release notes]] for details.

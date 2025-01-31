@@ -152,7 +152,7 @@ toc_depth: 2
 
 ??? an-faq "How does the {{config.extra.arcana.sdk_name}} ensure that the key shares are fetched by the correct user only?"
 
-      A user can log in only after the social login provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other identifiers with {{config.extra.arcana.product_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
+      A user can log in only after the social login provider authenticates or if the user provides the OTP shared via email during passwordless onboarding. Providers share JWT/other identifiers with {{config.extra.arcana.sdk_name}} once the user authenticates. So unless the user themselves share their social ID / OTP, only an authenticated user will be allowed to access their key shares. The token (idToken) is verified with the DKG nodes before the key shares are sent back to the user. The token can be used only once per user login session.
 
 ??? an-faq "Can a malicious entity reconstruct the user's private key if they get all the requisite key shares?"
 

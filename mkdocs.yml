@@ -86,14 +86,16 @@ extra:
   # homepage: https://arcana.network
   arcana:
     company_name: Arcana
-    product_name: Arcana Auth
-    ca_sdk: CA SDK
-    auth_sdk: Auth SDK
-    sdk_name: Arcana Auth SDK
+    ca_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-sdk
     ca_sdk_name: Arcana CA SDK
+    auth_sdk_download_url: https://www.npmjs.com/package/@arcana/auth
+    sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK
+    react_sdk_download_url: https://www.npmjs.com/package/@arcana/auth-react
     wagmi_sdk_name: Arcana Auth Wagmi SDK
+    wagmi_sdk_download_url: https://www.npmjs.com/package/@arcana/auth-wagmi
     web3_react_sdk_name: Arcana Auth Web3 React SDK
+    web3_react_sdk_download_url: https://www.npmjs.com/package/@arcana/auth-web3-react
     auth_core_sdk_name: Arcana Auth-Core SDK
     gaming_sdk_name: Arcana Auth Unity SDK
     flutter_sdk_name: Arcana Auth Flutter SDK
@@ -477,45 +479,44 @@ nav:
         - MultiversX: quick-start/mvx-quick-start.md
         - Near: quick-start/near-quick-start.md
         - Unity: quick-start/unity-quick-start.md
-      - Setup:
-        - Configuration Profiles:
-            - Testnet: deploy/deploy-app.md
-            - Mainnet: deploy/migrate-testnet-mainnet.md
-        - Register App: setup/config-auth/register-app.md
-        - Auth Settings:
-            - setup/config-auth/index.md
-            - Social Auth:
-              - setup/index.md
-              - Social Login: 
-                - Apple: setup/config-social/apple-oauth.md
-                - Discord: setup/config-social/discord-oauth.md
-                - GitHub: setup/config-social/github-oauth.md
-                - Google: setup/config-social/google-oauth.md
-                - Steam: setup/config-social/steam-oauth.md
-                - Telegram: setup/config-social/telegram-oauth.md
-                - Twitch: setup/config-social/twitch-oauth.md
-                - Twitter: setup/config-social/twitter-oauth.md
-              - IAM Providers: 
-                - setup/config-idm/index.md
-                - Cognito: setup/config-idm/cognito-oauth.md
-                - Firebase: setup/config-idm/firebase-auth.md
-              - Passkeys Auth: setup/config-auth-passkeys.md
-              - Custom Auth: setup/config-custom-auth.md
-            - Manage Chains: 
-              - setup/config-wallet-chains.md
-              - Solana Setup: setup/config-dApp-with-db-for-Solana.md
-              - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
-              - Near Setup: setup/config-dApp-with-db-for-near.md
-            - Wallet UX:
-              - setup/config-wallet/index.md
-              - Branding: setup/config-wallet/config-wallet-branding.md
-              - Keyspace: setup/config-wallet/config-wallet-keyspace.md
-              - Wallet Security: setup/config-wallet/config-wallet-settings.md
-              - Custom Wallet UI: setup/config-custom-wallet-ui.md
-            - Gaming:
-              - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
       - Usage:
         - Overview: introduction/index.md
+        - Register App: setup/config-auth/register-app.md
+        - Auth Settings:
+          - setup/config-auth/index.md
+          - Social Auth:
+            - setup/index.md
+            - Social Login: 
+              - Apple: setup/config-social/apple-oauth.md
+              - Discord: setup/config-social/discord-oauth.md
+              - GitHub: setup/config-social/github-oauth.md
+              - Google: setup/config-social/google-oauth.md
+              - Steam: setup/config-social/steam-oauth.md
+              - Telegram: setup/config-social/telegram-oauth.md
+              - Twitch: setup/config-social/twitch-oauth.md
+              - Twitter: setup/config-social/twitter-oauth.md
+            - IAM Providers: 
+              - setup/config-idm/index.md
+              - Cognito: setup/config-idm/cognito-oauth.md
+              - Firebase: setup/config-idm/firebase-auth.md
+            - Passkeys Auth: setup/config-auth-passkeys.md
+            - Custom Auth: setup/config-custom-auth.md
+          - Manage Chains: 
+            - setup/config-wallet-chains.md
+            - Solana Setup: setup/config-dApp-with-db-for-Solana.md
+            - MultiversX Setup: setup/config-dApp-with-db-for-mvx.md
+            - Near Setup: setup/config-dApp-with-db-for-near.md
+          - Wallet UX:
+            - setup/config-wallet/index.md
+            - Branding: setup/config-wallet/config-wallet-branding.md
+            - Keyspace: setup/config-wallet/config-wallet-keyspace.md
+            - Wallet Security: setup/config-wallet/config-wallet-settings.md
+            - Custom Wallet UI: setup/config-custom-wallet-ui.md
+          - Gaming:
+            - Unity Setup: setup/config-dApp-with-db-for-Unity.md 
+          - Configuration Profiles:
+              - Testnet: deploy/deploy-app.md
+              - Mainnet: deploy/migrate-testnet-mainnet.md
         - Install SDK: auth/sdk-installation.md
         - Integrate App:
           - Wagmi: auth/integrate/wagmi.md

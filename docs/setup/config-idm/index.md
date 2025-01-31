@@ -1,7 +1,7 @@
 ---
 alias: index-config-iam-providers
 title: 'IAM Providers Setup'
-description: 'List of third-party IAM Providers that are supported by Arcana Auth for onboarding Web3 app users in apps integrated with the Arcana SDK.'
+description: 'List of third-party IAM Providers that are supported by Arcana Auth for onboarding Web3 app users in apps integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../..
 ---

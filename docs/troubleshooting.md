@@ -31,7 +31,7 @@ Storage Region can be configured for any application using the dashboard just on
 
 ??? an-trbs "Is it possible to stop the {{config.extra.arcana.wallet_name}} UI from being displayed in the app's context."
 
-      The {{config.extra.arcana.product_name}} allows developers to manage the user experience for signing blockchain transactions by controlling when the wallet UI shows up. To manage [[concept-wallet-visibility|visibility mode]], integrate the app with the SDK, and create `AuthProvider` with the `alwaysVisible` parameter set to `false`. Use the `showWallet` function to display the wallet when required.
+      The {{config.extra.arcana.sdk_name}} allows developers to manage the user experience for signing blockchain transactions by controlling when the wallet UI shows up. To manage [[concept-wallet-visibility|visibility mode]], integrate the app with the SDK, and create `AuthProvider` with the `alwaysVisible` parameter set to `false`. Use the `showWallet` function to display the wallet when required.
 
       ```js hl_lines="6"
       const auth = new AuthProvider(
@@ -47,7 +47,7 @@ Storage Region can be configured for any application using the dashboard just on
 
       After logging into the {{config.extra.arcana.dashboard_name}}, the developer can view all the apps that were registered earlier displayed as cards in the 'Manage Apps' screen.  There is one card per registered application.
 
-      If you do not see your registered application card, check if you used a different social login provider or email ID to log into the {{config.extra.arcana.dashboard_name}}. {{config.extra.arcana.product_name}} supports [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature whereby if a developer uses different social login providers to log into the {{config.extra.arcana.dashboard_name}} in subsequent logins, both logins will be recognized as a single developer. This feature works if the **same** email ID is used by the developer across social login providers.
+      If you do not see your registered application card, check if you used a different social login provider or email ID to log into the {{config.extra.arcana.dashboard_name}}. {{config.extra.arcana.sdk_name}} supports [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature whereby if a developer uses different social login providers to log into the {{config.extra.arcana.dashboard_name}} in subsequent logins, both logins will be recognized as a single developer. This feature works if the **same** email ID is used by the developer across social login providers.
 
       **Note:** If you are migrating to the latest {{config.extra.arcana.sdk_name}} release from versions older than v1.0.0, you will not see your pre-registered apps in the {{config.extra.arcana.dashboard_name}} due to some breaking changes. You need to re-register your apps again.
 
@@ -55,17 +55,17 @@ Storage Region can be configured for any application using the dashboard just on
 
       **Issue Details**
 
-      A developer logs into the {{config.extra.arcana.dashboard_name}} for the very first time, using social authentication provider, say P1. The {{config.extra.arcana.dashboard_name}} displays the 'Manage Apps' screen with the 'Create New App' wizard and zero registered app configuration profile cards. The developer can register a new application and obtain a unique **{{config.extra.arcana.app_address}}** say Addr1. This will create a new app configuration profile card on the 'Manage Apps' screen for the newly registered app. Now if the developer logs out and logs back in using a different social authentication provider, say P2, {{config.extra.arcana.product_name}} can recognize that the login is by the same developer. This results in the 'Manage Apps' screen displaying the previously registered application configuration profile card. This behavior is supported only if the developer has the same email ID associated with both the social login providers P1 and P2.
+      A developer logs into the {{config.extra.arcana.dashboard_name}} for the very first time, using social authentication provider, say P1. The {{config.extra.arcana.dashboard_name}} displays the 'Manage Apps' screen with the 'Create New App' wizard and zero registered app configuration profile cards. The developer can register a new application and obtain a unique **{{config.extra.arcana.app_address}}** say Addr1. This will create a new app configuration profile card on the 'Manage Apps' screen for the newly registered app. Now if the developer logs out and logs back in using a different social authentication provider, say P2, {{config.extra.arcana.sdk_name}} can recognize that the login is by the same developer. This results in the 'Manage Apps' screen displaying the previously registered application configuration profile card. This behavior is supported only if the developer has the same email ID associated with both the social login providers P1 and P2.
 
       If the user has a different email ID associated P1 and P2 then during the second login with a different provider, the same developer cannot be recognized and associated with the apps registered earlier using the different social login provider. The {{config.extra.arcana.dashboard_name}} considers login with a new provider (different email ID) as a new identity and assumes this is a fresh login by a new developer. It brings up the 'Manage Apps' screen where the same user will not be able to see the application configuration card that was present earlier while logging in with a different social login provider.
 
-      If one of the providers is GitHub, then even if the same email ID is associated with all providers, {{config.extra.arcana.product_name}} may fail to associate the GitHub identity of the same developer with other providers.  
+      If one of the providers is GitHub, then even if the same email ID is associated with all providers, {{config.extra.arcana.sdk_name}} may fail to associate the GitHub identity of the same developer with other providers.  
 
       Is there a way to get this working?
 
       **Solution**
 
-      The [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature of {{config.extra.arcana.product_name}} allows an application developer to login into the {{config.extra.arcana.dashboard_name}} using any supported authentication providers to register and configure the application.
+      The [aggregate login]({{page.meta.arcana.root_rel_path}}/concepts/aggregatelogin.md) feature of {{config.extra.arcana.sdk_name}} allows an application developer to login into the {{config.extra.arcana.dashboard_name}} using any supported authentication providers to register and configure the application.
 
       With GitHub, the behavior is different, only if the GitHub user settings are not in place.  To ensure the same behavior as other social authentication providers, in the case of GitHub, make sure that you specify the following details in GitHub Settings:
 

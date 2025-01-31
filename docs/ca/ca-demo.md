@@ -9,7 +9,7 @@ arcana:
 
 # CA Demo
 
-To showcase the unified balance feature, we've built chain abstraction into the [standalone Arcana CA Wallet](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi). Click on the tab below to view the demo video for these supported apps:
+To showcase the unified balance feature, we've built chain abstraction into the [standalone {{config.extra.arcana.company_name}} CA Wallet](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi). Click on the tab below to view the demo video for these supported apps:
 
 === "Aave"
 
@@ -35,12 +35,12 @@ To showcase the unified balance feature, we've built chain abstraction into the 
 
     <iframe width="70%" height="350" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
 
-Developers can integrate the Arcana CA SDK with other Web3 apps to let users spend [[ca-top#unified-balance|unified balance]] across chains. 
+Developers can integrate the {{config.extra.arcana.ca_sdk_name}} with other Web3 apps to let users spend [[ca-top#unified-balance|unified balance]] across chains. 
 
 [:material-presentation-play:{ .icon-color} CA SDK Demo](https://sdk.arcana.network){ .md-button }
 
 !!! an-tip "Have a Web3 app?"
 
-    *Got a demo of your app integrated with the Arcana CA SDK?*
+    *Got a demo of your app integrated with the {{config.extra.arcana.ca_sdk_name}}?*
         
-    **Submit** a youtube link, and we'll feature it here!
+    **Submit** a YouTube link, and we'll feature it here!

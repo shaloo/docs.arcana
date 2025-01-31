@@ -8,24 +8,31 @@ arcana:
   
 # {{config.extra.arcana.company_name}} Protocol
 
-The {{config.extra.arcana.product_name}} protocol is built and operates using the [Proof of Stake](https://ethereum.org/en/developers/docs/consensus-mechanisms/#proof-of-stake) Polygon chain.
+The {{config.extra.arcana.ca_sdk_name}} components of the {{config.extra.arcana.company_name}} protocol that support unified balance feature are built using the Cosmos chain.
 
-It is deployed in the form of two networks: 
+Other components of the protocol that enable social login via the {{config.extra.arcana.sdk_name}} are built using the [Proof of Stake](https://ethereum.org/en/developers/docs/consensus-mechanisms/#proof-of-stake) Polygon chain.
 
-* {{config.extra.arcana.company_name}} Testnet
-* {{config.extra.arcana.company_name}} Mainnet
+The {{config.extra.arcana.company_name}} blockchain protocol is offered through Testnet and Mainnet.
 
 ## Mainnet Roadmap
 
-The {{config.extra.arcana.product_name}} Mainnet was released in January 2023 with the {{config.extra.arcana.sdk_name}} release v1.0.0.
+## Chain Abstraction
 
-The following services are active on Testnet as well as the Mainnet
+The {{config.extra.arcana.company_name}} unified balance feature is available through the {{config.extra.arcana.ca_sdk_name}} v0.0.3 released in January 2025 on the Testnet. A limited set of [[ca-stack#tokens|tokens]] and [[ca-stack#chains|chains]] are supported for chain abstraction as of this release.
 
-* Configuring {{config.extra.arcana.company_name}} SDK usage with {{config.extra.arcana.dashboard_name}}
+We are actively working towards enabling this feature on the Mainnet.
+
+## Social Login
+
+The {{config.extra.arcana.company_name}} social login feature is available through the {{config.extra.arcana.sdk_name}} v1.0.0, released in January 2023 on the Mainnet.
+
+The following services are active on Testnet as well as the Mainnet:
+
+* Configuring {{config.extra.arcana.sdk_name}} usage with {{config.extra.arcana.dashboard_name}}
 * User onboarding via social login
 * Asynchronous Distributed Key Generation that powers the {{config.extra.arcana.sdk_name}} and helps onboard users to Web3
 
-We are actively working on adding newer features and capabilities to the SDKs, stay tuned.
+We are actively working on adding newer features and capabilities to the {{config.extra.arcana.sdk_name}}, stay tuned.
 
 ## Infrastructure Providers
 
@@ -45,7 +52,7 @@ At {{config.extra.arcana.company_name}}, we take the security and privacy of app
 
 ## ADKG Subsystem
 
-{{config.extra.arcana.company_name}} has made great strides since our alpha SDK release. Our new [[concept-adkg|asynchronous distributed key generation (ADKG)]] algorithm is now part of the {{config.extra.arcana.company_name}} protocol, offering improved security and efficiency in key share generation.
+{{config.extra.arcana.sdk_name}} has evolved since its alpha release. The new [[concept-adkg|asynchronous distributed key generation (ADKG)]] algorithm is now part of the {{config.extra.arcana.company_name}} protocol, offering improved security and efficiency in key share generation.
 
 Refer to the [{{config.extra.arcana.company_name}} Technical Whitepaper](https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08) for more details on ADKG.
 

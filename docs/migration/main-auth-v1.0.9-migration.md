@@ -8,13 +8,13 @@ arcana:
 
 # Arcana Auth SDK v1.0.8 -> v1.0.9 Migration
 
-New to Arcana Network? see {{config.extra.arcana.product_name}} Quick Start Guides to get started. 
+New to Arcana Network? see {{config.extra.arcana.sdk_name}} Quick Start Guides to get started. 
 
 Using an older version and want to migrate? Read on...
 
 ## What has Changed?
 
-This is a major release of the {{config.extra.arcana.product_name}} product since the last release. The updates include:
+This is a major release of the {{config.extra.arcana.sdk_name}} since the last release. The updates include:
 
 * {{config.extra.arcana.sdk_name}}
   - Global Keys feature does not require setting up social logins via the social provider's console
@@ -28,11 +28,11 @@ Web3 apps using the **app-specific** keys (default) keyspace do not have to make
 
 If the app developer selects [[concept-keyspace-type| global keys]] while configuring the app via the {{config.extra.arcana.dashboard_name}}, the social auth settings for enabling the social login providers are **no longer** required.
 
-For details, see [[rn-main-auth-v1.0.9|{{config.extra.arcana.product_name}} v1.0.9 release notes]].
+For details, see [[rn-main-auth-v1.0.9|{{config.extra.arcana.sdk_name}} v1.0.9 release notes]].
 
 ## Backward Compatibility
 
-The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for apps integrated with v{{config.extra.arcana.previous_version}} of the {{config.extra.arcana.sdk_name}}. Install the latest version and upgrade.
+The latest release of the {{config.extra.arcana.sdk_name}} does not cause any breaking changes for apps integrated with v{{config.extra.arcana.previous_version}} of the {{config.extra.arcana.sdk_name}}. Install the latest version and upgrade.
 
 Apps using older versions of the {{config.extra.arcana.sdk_name}} must refer to the [[index-migration-guides|migration guides]] and upgrade to the latest release if they wish to enable Steam of Firebase user onboarding.
 

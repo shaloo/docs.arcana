@@ -56,7 +56,7 @@ To migrate to the latest release, re-install the SDK. This release does not requ
 
 ---
 
-* [[wagmi-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
+* [[wagmi-quick-start|{{config.extra.arcana.sdk_name}} Quick Start Guides]]
 * {% include "./text-snippets/unity_sample_url.md" %} 
 * [Integration examples](https://github.com/arcana-network/auth-examples)
 

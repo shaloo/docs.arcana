@@ -19,6 +19,10 @@ Developers start by [[register-app-auth|registering the app]] and [[index-config
 <img src="{{config.extra.arcana.img_dir}}/diagrams/d_an_authsdk_light.{{config.extra.arcana.img_png}}#only-light" alt="{{config.extra.arcana.sdk_name}} Diagram" height="20%"/>
 <img src="{{config.extra.arcana.img_dir}}/diagrams/d_an_authsdk_dark.{{config.extra.arcana.img_png}}#only-dark" alt="{{config.extra.arcana.sdk_name}} Diagram Dark" height="20%"/>
 
+## Download
+
+Multiple flavors of the {{config.extra.arcana.sdk_name}} are available for different types of Web3 apps such as web, mobile and gaming. See [[sdk-installation|Auth SDK installation section]] for details.
+
 ## Key Features
 
 **User Authentication**

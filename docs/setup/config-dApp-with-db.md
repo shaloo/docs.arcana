@@ -9,9 +9,9 @@ arcana:
 
 # Dashboard Users Guide
 
-The {{config.extra.arcana.dashboard_name}} helps Web3 developers set up the Arcana SDK.
+The {{config.extra.arcana.dashboard_name}} helps Web3 developers set up the {{config.extra.arcana.sdk_name}} configuration.
 
-Log in, register your app, grab your unique {{config.extra.arcana.app_address}}, configure the {{config.extra.arcana.sdk_name}}, then install and integrate the SDKs into your app.
+Log in, register your app, grab your unique {{config.extra.arcana.app_address}}, configure authentication settings, then install the {{config.extra.arcana.sdk_name}} and integrate it with the Web3 app.
 
 <figure markdown="span">
   <img alt="Arcana Dashboard" src="{{config.extra.arcana.img_dir}}/an_dashboard_login.{{config.extra.arcana.img_png}}" class="an-screenshots"/>
@@ -28,7 +28,7 @@ This guide covers how to:
     - Testnet/Mainnet
     - Switching configuration Profiles
 
-* Configure SDK Settings
+* Configure Auth Settings
 
     - Branding
     - Social Login Providers
@@ -125,7 +125,7 @@ Use one of these options to create the 'Mainnet' profile. A new **{{config.extra
 
       <figure markdown="span">
         ![Mainnet Redirect URI]({{config.extra.arcana.img_dir}}/an_db_example_add_mainnet_redirect_uri.{{config.extra.arcana.img_png}}){ .an-screenshots }
-        <figcaption>Mainnet Reddirect URI</figcaption>
+        <figcaption>Mainnet Redirect URI</figcaption>
       </figure>
 
 ### Switch Profile
@@ -149,7 +149,7 @@ If the Mainnet profile isn’t created, use the dropdown on the 'Testnet' page t
 
 ## Configuration Settings
 
-To configure SDK usage settings, the app must be registered. Click on the registered app card in the 'Manage Apps' screen to view the configuration settings and edit them.
+To configure {{config.extra.arcana.wallet_name}} usage settings, the app must be registered. Click on the registered app card in the 'Manage Apps' screen to view the configuration settings and edit them.
 
 ### Settings Overview
 

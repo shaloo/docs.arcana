@@ -8,7 +8,7 @@ arcana:
 
 # Arcana Auth SDK v0.2.x -> v0.3.0 Migration
 
-This guide is meant for developers who have already integrated apps with an older version of the Arcana Auth SDK and run them using Arcana Network Testnet. If you are new to Arcana Network, see Quick Start Guides to get started.
+This guide is meant for developers who have already integrated apps with an older version of the {{config.extra.arcana.sdk_name}} and run them using Arcana Network Testnet. If you are new to {{config.extra.arcana.sdk_name}}, see Quick Start Guides to get started.
 
 When you migrate from an older version of the {{config.extra.arcana.sdk_name}} to v0.3.0, there are some breaking changes. These changes are mostly related to deploying an app on the {{config.extra.arcana.company_name}} Testnet and the use of {{config.extra.arcana.company_name}} Storage SDK (no longer supported). No breaking changes are expected in the {{config.extra.arcana.sdk_name}}  usage related to user onboarding or blockchain transaction signing functions. Also, the Arcana wallet has a revamped, better look in this release.
 
@@ -50,4 +50,4 @@ When you migrate from an older version of the {{config.extra.arcana.sdk_name}} t
 
 <img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="50" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="50" />
 
-The new improved {{config.extra.arcana.product_name}} now supports NFT preview, NFT transactions, and management of NFT collections. A new combined notification screen displays blockchain transactions related to smart contracts, tokens as well as NFTs. For details, see [[rn-beta-auth-v0.3.0|{{config.extra.arcana.product_name}} release notes]].
+The new improved {{config.extra.arcana.sdk_name}} now supports NFT preview, NFT transactions, and management of NFT collections. A new combined notification screen displays blockchain transactions related to smart contracts, tokens as well as NFTs. For details, see [[rn-beta-auth-v0.3.0|{{config.extra.arcana.sdk_name}} release notes]].
