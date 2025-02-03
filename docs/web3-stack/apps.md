@@ -1,14 +1,14 @@
 ---
 alias: web3-stack-apps
 title: 'App Types'
-description: 'Learn about the various kinds of Web3 apps that are supported by the Arcana SDKs. For e.g., Web, Mobile, apps using different wallet connectors and more.'
+description: 'Information on app frameworks and wallet connectors used by Web3 apps that are supported by the Arcana Auth SDK.'
 arcana:
   root_rel_path: ..
 ---
 
 # Supported App Types
 
-{{config.extra.arcana.company_name}} SDKs can be used by different types of Web3 apps for enabling [[concept-social-login|social login]] and allowing users to sign blockchain transactions.
+Web3 apps built using these app frameworks and wallet connectors can integrate with {{config.extra.arcana.sdk_name}} to support [[concept-social-login|social login]] and the in-app {{config.extra.arcana.wallet_name}}.
 
 === "App Frameworks"
 

@@ -30,14 +30,14 @@ toc_depth: 2
       Web3 app developers can enable the in-app {{config.extra.arcana.wallet_name}} by:
 
       1. [[register-app-auth|Registering the app]] and [[index-configure-auth|configuring the app settings]] using the {{config.extra.arcana.dashboard_name}}. 
-      2. Download and install the SDK and then use the unique {{config.extra.arcana.app_address}} assigned to the registered app in the dashboard to [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. 
+      2. Download and install the [{{config.extra.arcana.sdk_name}}]({{config.extra.arcana.auth_sdk_download_url}}) and then use the unique {{config.extra.arcana.app_address}} assigned to the registered app in the dashboard to [[integrate-vanilla-app|integrate the app]] with the {{config.extra.arcana.sdk_name}}. 
       3. Add code in the app to use the {{config.extra.arcana.sdk_name}} functions and [[use-plug-play-auth|onboard users]]. 
       
       The authenticated users can instantly access the {{config.extra.arcana.wallet_name}} in the app context and sign blockchain transactions. Developers can control the user experience for signing blockchain transactions with the appropriate [[concept-wallet-visibility|wallet visibility]] specification. 
       
       The in-app wallet can be displayed for the authenticated users in the app context always or the app can be configured to display blockchain transaction request notifications for approval by the user only when a transaction is triggered. Developers can display the wallet as per the application logic using the `showWallet()` function.
 
-??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the Auth SDK is integrated with the Web3 app?"
+??? an-faq "How can developers access the standard EIP-1193 provider from the `AuthProvider` object once the {{config.extra.arcana.sdk_name}} is integrated with the Web3 app?"
 
       In the case of EVM chains, developers can access the EIP-1193 provider once an `AuthProvider` object is created and the `init` function is successful. See code snippets below for details:
 
@@ -87,7 +87,7 @@ toc_depth: 2
 
       The passwordless login option to onboard app users is enabled once the app registers through the {{config.extra.arcana.dashboard_name}} and then integrates with the {{config.extra.arcana.sdk_name}}. 
       
-      Initialize the SDK and use the `connect` method to bring up the built-in, [[use-plug-play-auth|plug-and-play login UI]] that allows passwordless login. Alternatively, add custom login UI and call the SDK methods for passwordless login. See [[build-password-less-auth|how to enable passwordless login]] for details.
+      Initialize the {{config.extra.arcana.sdk_name}} and use the `connect` method to bring up the built-in, [[use-plug-play-auth|plug-and-play login UI]] that allows passwordless login. Alternatively, add custom login UI and call the {{config.extra.arcana.sdk_name}} methods for passwordless login. See [[build-password-less-auth|how to enable passwordless login]] for details.
 
 ## Deployment
 
@@ -103,7 +103,7 @@ toc_depth: 2
 
 ??? an-faq "What is the difference between Testnet and Mainnet?"
 
-      Arcana Testnet and Mainnet are two **different** blockchain networks. The features offered by the {{config.extra.arcana.company_name}} SDKs available on Testnet may be different from the ones available on the Mainnet.  
+      Arcana Testnet and Mainnet are two **different** blockchain networks. The features offered by the {{config.extra.arcana.sdk_name}} available on Testnet may be different from the ones available on the Mainnet.  
 
       Following are the key differences between Arcana Testnet and Mainnet:
 

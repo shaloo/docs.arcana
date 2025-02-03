@@ -8,7 +8,9 @@ arcana:
 
 # Migration Guide Archives
 
-We recommend that you use the most recent {{config.extra.arcana.company_name}} SDKs. Use the appropriate migration guide to learn how to migrate to the latest version.
+Always use the latest [{{config.extra.arcana.sdk_name}}]({{config.extra.arcana.auth_sdk_download_url}}).
+
+For those using an older version of the SDK, refer to the appropriate migration guide:
 
 === "Auth SDK"
 

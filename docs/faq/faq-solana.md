@@ -13,7 +13,7 @@ toc_depth: 2
 
 ---
 
-??? an-faq "Is Solana the only non-EVM chain supported by the {{config.extra.arcana.product_name}} product?"
+??? an-faq "Is Solana the only non-EVM chain supported by the {{config.extra.arcana.sdk_name}}?"
 
       No.
 

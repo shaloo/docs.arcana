@@ -53,7 +53,7 @@ To issue a blockchain transaction on a new chain where user does not have any as
 
 ## Why Arcana?
 
-Arcana’s SDK enables apps to offer Chain Abstraction to users with a single integration. Users can spend their consolidated multi-chain balance of ETH, wETH, USDC, and USDT on your app. Onboard users from any ecosystem effortlessly
+Arcana’s Chain Abstraction SDK enables apps to offer Chain Abstraction to users with a single integration. Users can spend their consolidated multi-chain balance of ETH, wETH, USDC, and USDT on your app. Onboard users from any ecosystem effortlessly
 
 === "Onboard Users on Any Chain"
 

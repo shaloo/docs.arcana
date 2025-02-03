@@ -25,7 +25,7 @@ The custom Auth feature enables Web3 apps to use the {{config.extra.arcana.sdk_n
     graph TD
         DFLA{{Developer}} --Login --> setup
     
-        subgraph setup[Arcana Developer Dashboard]
+        subgraph setup[{{config.extra.arcana.dashboard_name}}]
         direction LR  
             SP1[1.Register App] --> CLID((Unique ClientID))
             SP2[2.Configure App] --> SP3[Edit/Save Custom Auth Settings]
@@ -60,22 +60,22 @@ The custom Auth feature enables Web3 apps to use the {{config.extra.arcana.sdk_n
         subgraph app[App]
             AUTHP[Create/Init AuthProvider] --> authsdk
             COA[Call loginWithCustomOAuth] --> authsdk
-            subgraph authsdk[Arcana Auth SDK]
+            subgraph authsdk[{{config.extra.arcana.sdk_name}}]
             direction TB 
                 SDK1[AuthProvider Interface] 
             end
         end
         linkStyle 1,2 stroke: deeppink;
         authsdk --Verify JWT Claims --> STD[Standard JWT/JWK Validation]
-        authsdk --Fetch Key Shares --> BEP[Arcana Auth Protocol] <--> BEK[DKG]
+        authsdk --Fetch Key Shares --> BEP[{{config.extra.arcana.company_name}} Auth Protocol] <--> BEK[DKG]
     ```
 
 4. The {{config.extra.arcana.sdk_name}} checks the JWT using dashboard settings. After verification, it gets the user's key shares from the {{config.extra.arcana.company_name}} backend and generates the key locally in the app. This key lets users securely sign blockchain transactions.
 
     ```mermaid
     graph LR
-        BED[Arcana Developer Dashboard] --Custom Auth Settings--> BEC{Gateway} 
-        BEC <--> BEA[Arcana Auth Protocol] <--> BEDKG[DKG]
+        BED[{{config.extra.arcana.company_name}} Auth Protocol] --Custom Auth Settings--> BEC{Gateway} 
+        BEC <--> BEA[{{config.extra.arcana.company_name}} Auth Protocol] <--> BEDKG[DKG]
     ```
 
 ## Custom Auth Settings
@@ -96,21 +96,22 @@ The 'User Identifier String' links a unique identifier with the user's key. Deve
 
 ### Issuer
 
-The issuer claim identifies the principal that issued the JWT.  For example, it could be the app identifier or deployed app URL. For example,
+The issuer claim identifies the principal that issued the JWT.  For example, it could be the app identifier or deployed app URL. 
 
-Issuer: "https://myapp.example.com"
+*Example:* `Issuer: "https://myapp.example.com"`
 
 ### Audience
 
-The audience claim identifies the recipients that the JWT is intended for. For example,
+The audience claim identifies the recipients that the JWT is intended for.
 
-Audience: "arcana-login-nnnnnn"
+*Example:* `Audience: "arcana-login-nnnnnn"`
 
 ### JWK Validation (Optional)
 
-Claims are pieces of information asserted about a subject or user. A JWT can contain a claim called name that asserts that the name of the user authenticating is "John Doe." JWT Validation entities specified by the developer via the  {{config.extra.arcana.dashboard_name}} are key, value pairs. These are used to validate the JWT provided by the developer to the {{config.extra.arcana.sdk_name}} via the `loginWithCustomProvider()` method for authenticated users. 
+Claims are pieces of information asserted about a subject or user. A JWT can contain a claim called name that asserts that the name of the user authenticating is "John Doe." JWT Validation entities specified by the developer via the  {{config.extra.arcana.dashboard_name}} are key, value pairs. These are used to validate the JWT provided by the developer to the {{config.extra.arcana.sdk_name}} via the `loginWithCustomProvider()` method for authenticated users.
 
-Examples:
+*Examples*
 
-purpose: 'login'
-keyUse: 'arcana'
+`purpose: 'login'`
+
+`keyUse: 'arcana'`

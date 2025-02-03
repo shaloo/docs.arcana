@@ -1,7 +1,7 @@
 ---
 alias: index-react-nextjs-build-iam-providers
 title: 'IAM Provider: Custom Login UI'
-description: 'List of IAM Providers that are supported by Arcana Auth and how to build user authentication for onboarding React/Next.js Web3 app users in apps integrated with the Arcana SDK.'
+description: 'List of IAM Providers that are supported by Arcana Auth SDK and instructions on how to build user authentication for onboarding React/Next.js Web3 app users in apps integrated with the Arcana Auth SDK.'
 arcana:
   root_rel_path: ../../../../..
 ---

@@ -104,7 +104,7 @@ After setting up passkey for an account, on the subsequent log in attempt to the
     graph TD
         DFLA{{Developer}} --Login --> setup
     
-        subgraph setup[Arcana Developer Dashboard]
+        subgraph setup[{{config.extra.arcana.dashboard_name}}]
         direction LR  
             SP1[1.Register App] --> CLID((Unique ClientID))
             SP2[2.Configure App] --> SP3[Edit/Save Passkey Usage Settings]
@@ -124,22 +124,22 @@ After setting up passkey for an account, on the subsequent log in attempt to the
             AUTHP[Create/Init AuthProvider] --> authsdk
             COA[B. Call loginWithPasskeys] --> authsdk
             POP[A. Call registerWithPasskey/linkPasskey]
-            subgraph authsdk[Arcana Auth SDK]
+            subgraph authsdk[{{config.extra.arcana.sdk_name}}]
             direction TB 
                 SDK1[AuthProvider Interface] 
             end
         end
         linkStyle 1,2 stroke: deeppink;
         authsdk --Process Passkeys Login --> STD[Standard Passkey Validation via OS/Browser]
-        authsdk --Fetch Key Shares --> BEP[Arcana Auth Protocol] <--> BEK[DKG]
+        authsdk --Fetch Key Shares --> BEP[{{config.extra.arcana.company_name}} Auth Protocol] <--> BEK[DKG]
     ```
 
 3. The {{config.extra.arcana.sdk_name}} uses the application details from the dashboard settings and `loginWithPasskeys` input data for Passkeys login processing. After verification, it gets the user's key shares from the {{config.extra.arcana.company_name}} backend and generates a user specific key locally in the app. This key lets users securely sign blockchain transactions.
 
     ```mermaid
     graph LR
-        BED[Arcana Developer Dashboard] --Passkey Usage Settings--> BEC{Gateway} 
-        BEC <--> BEA[Arcana Auth Protocol] <--> BEDKG[DKG]
+        BED[{{config.extra.arcana.dashboard_name}}] --Passkey Usage Settings--> BEC{Gateway} 
+        BEC <--> BEA[{{config.extra.arcana.company_name}} Auth Protocol] <--> BEDKG[DKG]
     ```
 
 ### Domain
