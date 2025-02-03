@@ -19,7 +19,7 @@ Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-sta
 
 ---
 
-* [[ca-quick-start|{{config.extra.arcana.ca_sdk_name}} Quick Start Guides]]
+* [[ca-quick-start|{{config.extra.arcana.ca_sdk_name}} Quick Start Guide]]
 * [Integration example](https://github.com/arcana-network/ca-sdk/tree/main/example)
 * {% include "./text-snippets/casdkref_url.md" %}
 
@@ -27,4 +27,4 @@ Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-sta
 
 ---
 
-Can't find what you are looking for? Contact [Arcana Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
+Can't find what you are looking for? Contact [{{config.extra.arcana.company_name}} Support]({{page.meta.arcana.root_rel_path}}/support/index.md).
