@@ -445,8 +445,8 @@ nav:
     - index.md
     - Developers:
       - Quick Start: quick-start/ca-quick-start.md
-      - Usage Guide: ca/ca-usage-guide.md
-      - APIs: https://ca-sdk-ref-guide.netlify.app/
+      - Usage: ca/ca-usage-overview.md
+      - APIs: ca/ca-usage-guide.md
       - Examples: ca/examples.md
     - FAQ: ca/faq.md
     - Concepts: 

@@ -13,9 +13,9 @@ of the file in the `ca` repo: https://github.com/arcana-network/ca-sdk/blob/main
 
 # {{config.extra.arcana.ca_sdk_name}} Usage
 
-Use the {{config.extra.arcana.ca_sdk_name}} to leverage Arcana's Chain Abstraction and enable unified balance for Web3 app users.
+Learn how to leverage {{config.extra.arcana.company_name}}'s Chain Abstraction and enable unified balance for Web3 app users.
 
-[:octicons-cross-reference-16:{ .icon-color } SDK Reference ](https://ca-sdk-ref-guide.netlify.app/){ .md-button }
+[:octicons-cross-reference-16:{ .icon-color } {% include "./text-snippets/casdkref_url.md" %} ](https://ca-sdk-ref-guide.netlify.app/){ .md-button }
 
 ## Installation
 
@@ -81,9 +81,9 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
 
 ### Allowance
 
-Allowances help activate the Chain Abstraction (CA) feature offered by the Arcana Network. They let Web3 users unlock fragmented liquidity across source chains and spend it on any destination chain, even when they lack sufficient balance there.
+Allowances help activate the Chain Abstraction (CA) feature offered by {{config.extra.arcana.company_name}}. They let Web3 users unlock fragmented liquidity across source chains and spend it on any destination chain, even when they lack sufficient balance there.
 
-With a unified balance on the source chains, users can request funds on the destination chain. By setting up allowances, users permit Arcana Vault contracts on the source chains to collect the funds required to execute the transaction seamlessly on the destination chain.
+With a unified balance on the source chains, users can request funds on the destination chain. By setting up allowances, users permit {{config.extra.arcana.company_name}} Vault contracts on the source chains to collect the funds required to execute the transaction seamlessly on the destination chain.
 
 Allowances can be set up anytime before a multi-chain transaction is initiated by the user.
 

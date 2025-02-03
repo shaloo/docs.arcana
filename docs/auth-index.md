@@ -12,10 +12,6 @@ hide:
 
 # Web3 Made Effortless
 
-<div>
-    <img style="height: 75px" src="{{config.extra.arcana.img_dir}}/Auth_Wordmark.{{config.extra.arcana.img_png}}" alt="Auth SDK Word Logo"></img>
-</div>
-
 <!---
 
 !!! quote "Don't Panic!"
@@ -60,9 +56,17 @@ This documentation contains everything you need to get started using [[introduct
 
     **TL;DR**
 
-    Head to the [Quick start](#quick-start) section. You can also try the [Auth Playground](#auth-playground).
+    [Quick start](#quick-start) | [Integration examples](https://github.com/arcana-network/auth-examples) | [[web-auth-usage-guide|Usage Guide]] | {% include "./text-snippets/authsdkref_url.md" %}
+
+    Try [[try-now-auth| Now.]]
+
+     
 
     ==}
+
+    <div>
+        <img style="height: 75px" src="{{config.extra.arcana.img_dir}}/Auth_Wordmark.{{config.extra.arcana.img_png}}" alt="Auth SDK Word Logo"></img>
+    </div>
 
     <div class="grid cards" markdown>
 

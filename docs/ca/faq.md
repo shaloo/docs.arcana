@@ -10,21 +10,21 @@ arcana:
 
     Web3 wallet users can unify assets across chains and spend on any chain. For example, if you have 3 USDC on Arbitrum, 2 USDC on Optimism and wish to send 4 USDC on Base, your wallet has liquidity fragmentation, you cannot directly spend those USDC on Base even though you have sufficient tokens when put together on two chains.  Unified balance with chain abstraction can help you spend 4 USDC on base with a single click without first having to convert your tokens on Optimism or Arbitrum to make this transaction on Base.
 
-    Use the Arcana CA wallet to try unified balance. Download [here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi).
+    Use the {{config.extra.arcana.company_name}} Standalone CA wallet to try unified balance. Download [here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi).
 
 ??? an-faq "I'm a Web3 dApp developer, how can I enable unified balance with chain abstraction for dApp users?"
 
-    Download the [Arcana CA SDK ](https://www.npmjs.com/package/@arcana/ca-sdk) and integrate your dApp with the SDK. See [CA SDK integration demo](https://sdk.arcana.network) and the [[ca-examples|SDK integration example code]] for details.
+    Download the [{{config.extra.arcana.ca_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-sdk) and integrate your dApp with the SDK. See [CA SDK integration demo](https://sdk.arcana.network) and the [[ca-examples|SDK integration example code]] for details.
 
 ??? an-faq "Why do users need to pay gas fees to set up CA with Layer 1 chains?"
 
-    When setting up Arcana chain abstraction to include Layer 1 chains, users need ETH to pay gas fees for signing the token allowance transaction with the Arcana vault smart contract. The Arcana wallet doesn't cover these Layer 1 chain gas fees. As a result, users who choose to include Layer 1 chains in their CA scope must pay these gas fees themselves to set up the CA allowance.
+    When setting up {{config.extra.arcana.company_name}} chain abstraction to include Layer 1 chains, users need ETH to pay gas fees for signing the token allowance transaction with the {{config.extra.arcana.company_name}} vault smart contract. The {{config.extra.arcana.company_name}} standalone CA wallet doesn't cover these Layer 1 chain gas fees. As a result, users who choose to include Layer 1 chains in their CA scope must pay these gas fees themselves to set up the CA allowance.
 
 ??? an-faq "What is a CA allowance and why are allowances needed?"
 
     Allowance or 'Permit' in the blockchain context allows a third party, such as a smart contract, to perform transactions from a user's EoA for a specified amount — without accessing the user's private key. 
     
-    In Arcana chain abstraction context, [[ca-top#allowance|allowances]] are needed to enable unified balance and allow user to spend on any destination chain as long as they have sufficient funds and the required gas fees on the source chain(s).
+    In {{config.extra.arcana.company_name}} chain abstraction context, [[ca-top#allowance|allowances]] are needed to enable unified balance and allow user to spend on any destination chain as long as they have sufficient funds and the required gas fees on the source chain(s).
 
 ??? an-faq "Which ERC20 tokens does the unified balance feature support?"
 
@@ -32,7 +32,7 @@ arcana:
 
 ??? an-faq "Which chains does the unified balance feature support?"
 
-    Arcana's chain abstraction and unified balance works for some select [[ca-stack#chains|chains ]] and [[ca-stack#tokens|tokens]]. We are working on adding support for more chains in the future.
+    {{config.extra.arcana.company_name}}'s chain abstraction and unified balance works for some select [[ca-stack#chains|chains ]] and [[ca-stack#tokens|tokens]]. We are working on adding support for more chains in the future.
 
 ??? an-faq "Does dApp integration with the CA-SDK enable an in-app wallet like the Auth SDK?"
 
@@ -48,19 +48,19 @@ arcana:
 
 ??? an-faq "Who is the target audience for the CA-SDK?"
 
-    Arcana's CA SDK helps Web3 dApp developers handle fragmented blockchain assets, letting users spend on any chain. It integrates with dApps to offer unified balances across chains.
+    {{config.extra.arcana.ca_sdk_name}} helps Web3 dApp developers handle fragmented blockchain assets, letting users spend on any chain. It integrates with dApps to offer unified balances across chains.
     
     For a complete list of real life applications of unified balance, see [[ca-usecases|use cases]] section.
 
-??? an-faq "Who is the target audience for the standalone Arcana CA wallet?"
+??? an-faq "Who is the target audience for the standalone {{config.extra.arcana.company_name}} standalone CA wallet?"
 
-    The standalone Arcana CA wallet is meant for wallet users and offers limited support at the moment. 
+    The standalone {{config.extra.arcana.company_name}} standalone CA wallet is meant for wallet users and offers limited support at the moment. 
     
     It enables unified balance and solves liquidity fragmentation when using any of the supported [[ca-stack#chains| chains]] and [[ca-stack#tokens|tokens]] in the context of the supported [[ca-stack#apps]]. We will be adding support for newer Web3 apps soon.
 
     !!! an-tip "$100 limit"
 
-        The standalone Arcana CA wallet has a $100 limit for transactions needing chain abstraction. Transfers on the same chain have no limit.
+        The standalone {{config.extra.arcana.company_name}} standalone CA wallet has a $100 limit for transactions needing chain abstraction. Transfers on the same chain have no limit.
 
 ??? an-faq "Can you give me an example of liquidity fragmentation and how the CA SDK solves it?"
 
@@ -81,9 +81,9 @@ arcana:
 
     In this case, the user signs an intent to send 5 USDC to Base by pledging 3 USDC from Arbitrum and 2.2 USDC from Optimism (including gas and service fees). The intent specifies the amount to be deposited on source chains and the agreed amount received on the destination chain.
 
-    Arcana’s Chain Abstraction protocol collects the pledged tokens and gas fees based on the user’s allowances. Once the intent is signed, Arcana processes the 5 USDC transaction on Base and deducts the gas fee from the pledged USDC.
+    {{config.extra.arcana.company_name}}’s Chain Abstraction protocol collects the pledged tokens and gas fees based on the user’s allowances. Once the intent is signed, {{config.extra.arcana.company_name}} processes the 5 USDC transaction on Base and deducts the gas fee from the pledged USDC.
 
-??? an-faq "Can I request gas tokens using ERC20 through Arcana Chain Abstraction??"
+??? an-faq "Can I request gas tokens using ERC20 through {{config.extra.arcana.company_name}} Chain Abstraction??"
 
     Yes, you can request gas tokens using ERC20 via Chain Abstraction.
 
@@ -91,6 +91,6 @@ arcana:
     
     You can pledge or sign an intent to pay the additional USDC and gas fees using funds from other supported chains like Arbitrum or Base, assuming you have enough USDC to cover the deficit and fees.
 
-    Once you sign the intent, Arcana CA supplies the needed USDC and gas in a single transaction. Charges include the deficit amount, CA Gas Fees, protocol fees, and Solver fees.
+    Once you sign the intent, {{config.extra.arcana.ca_sdk_name}} supplies the needed USDC and gas in a single transaction. Charges include the deficit amount, CA Gas Fees, protocol fees, and Solver fees.
 
-    Note: Fees are deducted from the main token requested, such as USDC. Arcana CA supports ETH, USDC, and USDT.
+    *Note: Fees are deducted from the main token requested, such as USDC. {{config.extra.arcana.ca_sdk_name}} supports ETH, USDC, and USDT.*
