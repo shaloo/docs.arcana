@@ -12,7 +12,6 @@ hide:
 
 # Web3 Made Effortless
 
-
 <!---
 
 !!! quote "Don't Panic!"
@@ -57,11 +56,9 @@ This documentation contains everything you need to get started using [[introduct
 
     **TL;DR**
 
-    Head to the {{config.extra.arcana.sdk_name}} [Quick start](#quick-start) section. 
+    [Quick start](#quick-start) | [Integration examples](https://github.com/arcana-network/auth-examples) | [[web-auth-usage-guide|Usage Guide]] | {% include "./text-snippets/authsdkref_url.md" %}
 
-    Check out the [integration examples](https://github.com/arcana-network/auth-examples), [[web-auth-usage-guide|Usage Guide]] and the {% include "./text-snippets/authsdkref_url.md" %}.
-    
-    You can also try the [Auth Playground](#auth-playground).
+    Try [[try-now-auth| Now.]]
 
     ==}
 
