@@ -8,9 +8,9 @@ arcana:
 
 # Futures
 
-## Arcana CA SDK
+## {{config.extra.arcana.ca_sdk_name}}
 
-Today, developers can enable [[ca-top#unified-balance|unified balance]] in any dApp by integrating it with the Arcana [[concept-casdk|CA SDK]]. It supports unified balance across the following chains and tokens. We are actively working on adding support to enable unified balance across newer chains and tokens.
+Today, developers can enable [[ca-top#unified-balance|unified balance]] in any dApp by integrating it with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]]. It supports unified balance across the following chains and tokens. We are actively working on adding support to enable unified balance across newer chains and tokens.
 
 ### Chains
       
@@ -20,9 +20,9 @@ Today, developers can enable [[ca-top#unified-balance|unified balance]] in any d
 
 {% include "./text-snippets/ca_supported_tokens.md" %}
 
-## Arcana CA Wallet (Standalone)
+## {{config.extra.arcana.company_name}} CA Wallet (Standalone)
 
-Besides the SDK, we have also [[ca-demo|demonstrated]] our **Chain Abstraction** technology through a standalone Arcana Wallet implementation ([download here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi)). It allows [[ca-top#unified-balance|unified balance]] across the following chains and tokens. Only a few Web3 apps are supported at present. We are working on adding support for more apps in the Arcana CA wallet. Stay tuned. 
+Besides the SDK, we have also [[ca-demo|demonstrated]] our **Chain Abstraction** technology through a standalone {{config.extra.arcana.company_name}} Wallet implementation ([download here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi)). It allows [[ca-top#unified-balance|unified balance]] across the following chains and tokens. Only a few Web3 apps are supported at present. We are working on adding support for more apps in the {{config.extra.arcana.company_name}} CA wallet. Stay tuned. 
 
 ### Apps
 

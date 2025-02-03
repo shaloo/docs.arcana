@@ -10,7 +10,7 @@ arcana:
 
 This guide is meant for developers who have already integrated apps with an older version of the {{config.extra.arcana.sdk_name}} and run them using {{config.extra.arcana.company_name}} Testnet. 
 
-If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick Start Guides to get started.
+If you are new to Arcana Network, see {{config.extra.arcana.sdk_name}} Quick Start Guides to get started.
 
 When you migrate from using the {{config.extra.arcana.sdk_name}}  v1.0.1 to the latest v1.0.2 release, there is no major update besides minor bug fixes and wallet UI updates.
 
@@ -43,4 +43,4 @@ Upgrade the {{config.extra.arcana.sdk_name}} to the latest package v1.0.2. No ot
 
 <img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="50" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="50" />
 
-See [[rn-main-auth-v1.0.2|{{config.extra.arcana.product_name}} v1.0.2 release notes]] for details.
+See [[rn-main-auth-v1.0.2|{{config.extra.arcana.sdk_name}} v1.0.2 release notes]] for details.

@@ -12,7 +12,7 @@ arcana:
 
 **Release Date: May 23, 2023**  
 
-The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
+The latest release of the {{config.extra.arcana.sdk_name}} consists of the following components:
 
 * {{config.extra.arcana.sdk_name}}
       - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
@@ -42,11 +42,11 @@ Previously, the {{config.extra.arcana.wallet_name}} did not automatically displa
 
 ### Web3-React App Support
 
-The latest release of the {{config.extra.arcana.product_name}} product supports Web3-React apps. 
+The latest release of the {{config.extra.arcana.sdk_name}} supports Web3-React apps. 
 
 The newly released `{{config.extra.arcana.web3_react_sdk_pkg_name}}` package can be installed along with the `{{config.extra.arcana.auth_sdk_pkg_name}}` package and Web3-React apps can be integrated for onboarding users just like other wallet connectors such as Wagmi and RainbowKit.
 
-Web3-React apps can use either the [[onboard-web3-react-app-pnp-ui|built-in plug-and-play login UI]] or [[onboard-web3-react-app-custom-ui|build their own custom UI]] and use {{config.extra.arcana.product_name}} functions to onboard users via the configured authentication providers.
+Web3-React apps can use either the [[onboard-web3-react-app-pnp-ui|built-in plug-and-play login UI]] or [[onboard-web3-react-app-custom-ui|build their own custom UI]] and use {{config.extra.arcana.sdk_name}} functions to onboard users via the configured authentication providers.
 
 ## Product Enhancements
 
@@ -103,7 +103,7 @@ The {{config.extra.arcana.wallet_name}} allows users to buy cryptocurrency. In t
 
 ==}
 
-See {{config.extra.arcana.product_name}} Quick Start Guides. 
+See {{config.extra.arcana.sdk_name}} Quick Start Guides. 
 
 Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
@@ -112,7 +112,7 @@ Check out the sample dApp integration example for apps using React, Next.js, and
 
 ---
 
-If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package you can choose to either continue to use it with the latest {{config.extra.arcana.product_name}} product release or upgrade. 
+If you have integrated the app with the {{config.extra.arcana.sdk_name}} v1.0.3 package you can choose to either continue to use it with the latest {{config.extra.arcana.sdk_name}} release or upgrade. 
 
 To use the new product features, enhancements and bug-fixes we **highly recommend** that you follow the [[migration-guide-v1.0.4|migration guide]] for a swift upgrade.
 

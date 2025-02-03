@@ -8,7 +8,7 @@ arcana:
 
 # Dashboard Usage Errors
 
-The {{config.extra.arcana.dashboard_name}} is used to register the Web3 app, configure SDK usage before integrating with the  {{config.extra.arcana.company_name}} SDKs.
+The {{config.extra.arcana.dashboard_name}} is used to register the Web3 app, configure {{config.extra.arcana.sdk_name}} usage settings before installing and integrating the SDK with the Web3 app.
 
 This guide lists common dashboard usage errors and potential causes.
 

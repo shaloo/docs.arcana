@@ -26,7 +26,7 @@ hide:
 
 {==
 
-This documentation contains everything you need to get started using [[introduction|{{config.extra.arcana.company_name}} SDKs]].
+This documentation contains everything you need to get started using [[introduction|{{config.extra.arcana.sdk_name}}]].
 
 ==}
 -->
@@ -53,14 +53,14 @@ This documentation contains everything you need to get started using [[introduct
 
 === "Web3 Developers"
 
-    Integrate Web3 apps with Arcana SDKs to onboard users quickly via [[concept-social-login|social login]].
+    Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and quickly onboard users via [[concept-social-login|social login]].
     
 
     {==
 
     **TL;DR**
 
-    Head to the [Quick start](#quick-start) section. You can also try the [SDK Playground](#sdk-playground).
+    Head to the [Quick start](#quick-start) section. You can also try the [Auth Playground](#auth-playground).
 
     ==}
 

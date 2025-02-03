@@ -67,7 +67,7 @@ This release has **no usage changes**. To migrate to the latest release, re-inst
 
 Check out:
 
-* {{config.extra.arcana.product_name}} Quick Start Guides
+* {{config.extra.arcana.sdk_name}} Quick Start Guides
 * {% include "./text-snippets/unity_sample_url.md" %} 
 * [Integration examples](https://github.com/arcana-network/auth-examples)
 

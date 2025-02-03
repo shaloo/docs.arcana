@@ -12,7 +12,7 @@ arcana:
 
 **Release Date: July 12, 2023**  
 
-The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
+The latest release of the {{config.extra.arcana.sdk_name}} product consists of the following components:
 
 * {{config.extra.arcana.sdk_name}}
       - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
@@ -35,7 +35,7 @@ Earlier, the {{config.extra.arcana.sdk_name}} had issues if the browser incognit
 
 Also, it is no longer required for a user to re-login in case the browser is refreshed in a 30-minute window since the last login. Developers can use the `canReconnect` and `reconnect` methods of the `AuthProvider` to enable this automatic re-login for the user, in a secure manner.
 
-See [[web-auth-usage-guide#auth-apis|usage guide]] for more details.
+See [[web-auth-usage-guide#api|usage guide]] for more details.
 
 ### Support for Wagmi 1.x.y and Viem
 
@@ -107,7 +107,7 @@ For more details, see [sample RainbowKit app integration with Auth](https://gith
 
 ==}
 
-See {{config.extra.arcana.product_name}} Quick Start Guides. 
+See {{config.extra.arcana.sdk_name}} Quick Start Guides. 
 
 Check out the [sample dApp integration examples](https://github.com/arcana-network/auth-examples) for various dApp types, wallet connectors and frameworks.
 
@@ -115,7 +115,7 @@ Check out the [sample dApp integration examples](https://github.com/arcana-netwo
 
 ---
 
-If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can choose to either continue to use it with the latest {{config.extra.arcana.product_name}} product release.
+If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can choose to either continue to use it with the latest {{config.extra.arcana.sdk_name}} release.
 
 To enable Steam or Firebase authentication, you must upgrade to the release v1.0.5 or higher. To upgrade, follow the [[migration-guide-v1.0.6|migration guide]].
 

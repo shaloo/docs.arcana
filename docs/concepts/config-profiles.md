@@ -8,7 +8,7 @@ arcana:
 
 # Configuration Profiles
 
-A configuration profile stores SDK settings for social login and wallet experience. Each registered app has two profiles:
+A configuration profile stores the {{config.extra.arcana.sdk_name}} usage settings for social login and wallet experience. Each registered app has two profiles:
 
 * Testnet
 * Mainnet
@@ -20,4 +20,4 @@ Use {{config.extra.arcana.sdk_name}} to view and update these profiles. By defau
 
 Each app gets one unique {{config.extra.arcana.app_address}} per profile, one for Testnet and one for Mainnet.
 
-When integrating a Web3 app with {{config.extra.arcana.company_name}} SDKs, specify the Testnet {{config.extra.arcana.app_address}} or Mainnet {{config.extra.arcana.app_address}} based on deployment. Note that wallet addresses will change when switching between Testnet and Mainnet profiles.
+When integrating a Web3 app with {{config.extra.arcana.sdk_name}}, specify the Testnet {{config.extra.arcana.app_address}} or Mainnet {{config.extra.arcana.app_address}} based on deployment. Note that wallet addresses will change when switching between Testnet and Mainnet profiles.

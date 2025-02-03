@@ -17,7 +17,7 @@ Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_nam
 
 ## Prerequisites
 
-* [[mvx-dashboard-user-guide|Register]] the {{page.meta.arcana.app_type}} app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[mvx-dashboard-user-guide|Register]] the {{page.meta.arcana.app_type}} app and configure the {{config.extra.arcana.sdk_name}} usage [[index-config-social-providers|settings for social login]] providers, manage app [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
 {% include "./text-snippets/non-evm-warning.md" %}
 
@@ -25,7 +25,7 @@ Integrate {{page.meta.arcana.app_type}} apps with [{{config.extra.arcana.sdk_nam
 
 ## 1. Install 
      
-Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more SDKs]] and the integration code may vary from one app type to another. 
+Depending upon the [[web3-stack-apps|app type]], you may need to [[sdk-installation|install one or more {{config.extra.arcana.sdk_name}} flavors]] and the integration steps may vary. 
 
 ## 2. Integrate App
 

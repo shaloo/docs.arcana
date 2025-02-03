@@ -16,7 +16,7 @@ arcana:
 
 ==}
 
-This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+This release of the {{config.extra.arcana.sdk_name}} product consists of the following components:
 
 * [{{config.extra.arcana.sdk_name}} v0.0.3](https://www.npmjs.com/package/@arcana/auth/v/0.3.0)
 * {{config.extra.arcana.dashboard_name}}
@@ -79,7 +79,7 @@ See the [[arcana-wallet-user-guide|notifications tab]] for details.
 
 !!! an-tip "Use Latest Release"
 
-      If you were using the {{config.extra.arcana.sdk_name}} v0.2.2 release or earlier, we highly recommend that you refer to the [[migration-guide-v0.3.0|{{config.extra.arcana.product_name}} 0.3.0 Migration Guide]].
+      If you were using the {{config.extra.arcana.sdk_name}} v0.2.2 release or earlier, we highly recommend that you refer to the [[migration-guide-v0.3.0|{{config.extra.arcana.sdk_name}} 0.3.0 Migration Guide]].
 
 ---
 
@@ -93,7 +93,7 @@ See the [[arcana-wallet-user-guide|notifications tab]] for details.
 
 ==}
 
-See {{config.extra.arcana.product_name}} Quick Start Guides for details. 
+See {{config.extra.arcana.sdk_name}} Quick Start Guides for details. 
 
 Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 

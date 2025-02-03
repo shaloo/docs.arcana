@@ -1,20 +1,19 @@
 ---
 alias: security-overview
 title: 'Overview'
-description: 'All your concerns about how Arcana SDKs ensure that the app user accounts are secured, access is recoverable and their cryptographic keys are completely owned, private and securely generated, distributed will be addressed here.'
+description: 'States how Arcana Network ensures that the Auth SDK secures access to app user accounts, enables recovery via MFA, ensures cryptographic keys are user owned, private and securely generated, handled with required care in the Auth protocol.'
 arcana:
   root_rel_path: ..
 ---
 
 # Security
 
-The core algorithms that power {{config.extra.arcana.company_name}} SDKs are based on a Proof of Stake (PoS) driven decentralized (by design) ecosystem. The security of various subsystems that are used to implement these SDKs is shared across {{config.extra.arcana.company_name}} run nodes and the ones owned and run by third-party trusted partners, the validators. 
 
-By design, {{config.extra.arcana.company_name}} aims for air-tight security and we understand that security is a constantly evolving target. 
+The {{config.extra.arcana.company_name}} {{config.extra.arcana.sdk_name}} is powered by the Proof of Stake (PoS) algorithms. The {{config.extra.arcana.company_name}} protocol is decentralized by design. The subsystems used to implement the {{config.extra.arcana.sdk_name}} are secured via testing and audits. The same underlying security is shared across all the {{config.extra.arcana.company_name}} protocol nodes, including the ones owned and run by third-party trusted partners ([[concept-validator-nodes|validators]]).
 
-Here are the key security considerations that are critical for {{config.extra.arcana.company_name}} SDKs:
+## Key Concerns
 
-* **App Onboarding**: Are the users securely onboarded on the apps that integrate with the {{config.extra.arcana.company_name}} SDKs? Are user credentials safe? Does {{config.extra.arcana.company_name}} follow standard authentication protocols?
+* **App Onboarding**: Are the users securely onboarded on the apps that integrate with the {{config.extra.arcana.sdk_name}}? Are user credentials safe? Does {{config.extra.arcana.company_name}} follow standard authentication protocols?
 
 * **Web3 Keys Ownership & Privacy**: Are the keys assigned to authenticated users safe? What happens if the keys are lost? Can they be recovered? Do the users own, control, manage and secure keys or does the system ensure key security?
 
@@ -24,49 +23,53 @@ Here are the key security considerations that are critical for {{config.extra.ar
 
 * **User Data Security**:  Is the data shared by the developers or users with the {{config.extra.arcana.company_name}} ecosystem safe and secure?
 
-In the following sections, we will try to answer these questions one by one.
+The {{config.extra.arcana.sdk_name}} addresses these security considerations related to Web3 authentication:
 
 ## App Onboarding
 
-Web3 apps integrate with the {{config.extra.arcana.sdk_name}} to enable user onboarding and enable authenticated users to sign blockchain transactions. This involves both securing user onboarding as well as ensuring that the keys used to sign blockchain transactions are access-controlled. Refer to the next section for key share security.
+Web3 apps integrate with the {{config.extra.arcana.sdk_name}} to enable user onboarding and enable authenticated users to sign blockchain transactions. This involves both securing user onboarding as well as ensuring that the keys used to sign blockchain transactions are access-controlled. User's keys are self-custodial meaning they are fully owned by the user. See key privacy details in the following section.
 
 {{config.extra.arcana.company_name}} supports standard OAuth 2.0 protocol and works with several social login providers to ensure user credentials are never stored in the {{config.extra.arcana.company_name}} ecosystem.
 
-Also, after a user logs in successfully, the {{config.extra.arcana.sdk_name}} generates a **time-bound JWT token** and associates it with the user account. The Web3 app can use this JWT token, verify it and ensure user onboarding is secured. They can generate their own JWT token for the user session. The time-bound JWT token ensures that any credentials stolen through phishing attacks have a limited shelf life.
+Once a user logs in successfully, the {{config.extra.arcana.sdk_name}} generates a **time-bound JWT token** and associates it with the user account. The Web3 app can use this JWT token, verify it and ensure user onboarding is secured. They can generate their own JWT token for the user session. The time-bound JWT token ensures that any credentials stolen through phishing attacks have a limited shelf life.
 
 ## Web3 Key Ownership & Privacy
 
-Once a user has been authenticated, it is imperative that the blockchain signing keys for that user are completely owned, secure and private. {{config.extra.arcana.company_name}} ensures this through the state-of-the-art asynchronous distributed key generation (ADKG) subsystem. The key shares generated by this subsystem are not stored or assembled ever within the {{config.extra.arcana.company_name}} subsystem.
+Once a user has been authenticated, it is imperative that the blockchain signing keys for that user are completely owned, secure and private. {{config.extra.arcana.adk_name}} ensures this through the state-of-the-art asynchronous distributed key generation (ADKG) subsystem. The key shares generated by this subsystem are not stored or assembled ever, within the {{config.extra.arcana.company_name}} subsystem.
 
 ### Key Share Generation
 
-{{config.extra.arcana.product_name}} combines several algorithms to have a highly secure and robust ADKG subsystem. It uses a [robust asynchronous DPSS mechanism](https://eprint.iacr.org/2022/971) to ensure that no single node in the system has access to the user's keys and that the system can handle malicious nodes. We are also working on other enhancements to this ADKG subsystem to enable key share repair, key share refresh, and more. Besides these other enhancements include {{config.extra.arcana.product_name}} [[concept-mfa|multi-factor authentication (MFA)]], and multi-party computation (MPC) for even stronger security without compromising on ease of use for Web3 users.
+{{config.extra.arcana.sdk_name}} combines several algorithms to have a highly secure and robust ADKG subsystem. It uses a [robust asynchronous DPSS mechanism](https://eprint.iacr.org/2022/971) to ensure that no single node in the system has access to the user's keys and that the system can handle malicious nodes. We are also working on other enhancements to this ADKG subsystem to enable key share repair, key share refresh, and more. Besides these other enhancements include {{config.extra.arcana.sdk_name}} [[concept-mfa|multi-factor authentication (MFA)]] feature, and multi-party computation (MPC) for even stronger security without compromising on ease of use for Web3 users.
 
 ### Key Share Assembly
 
-{{config.extra.arcana.company_name}} does not store any key shares that belong to the app user. The key shares are created by the ADKG subsystem and assigned to the authenticated user. Key shares are used to generate the user's private key **only in the context of the Web3 app, at the client end**, after user verification. Enhanced wallet security (MFA feature) further secures the key generation process even if the user changes the device used to log in to the Web3 app that is integrated with {{config.extra.arcana.sdk_name}}.
+{{config.extra.arcana.sdk_name}} does not store any key shares that belong to the app user. The key shares are created by the ADKG subsystem and assigned to the authenticated user. Key shares are used to generate the user's private key **only in the context of the Web3 app, at the client end**, after user verification. If the user changes the device used to log in to the Web3 app that is integrated with {{config.extra.arcana.sdk_name}}, the enhanced wallet security (MFA) feature addresses key recovery on the new device in a secure manner.
 
 ### Global & App-Specific Keys
 
-{{config.extra.arcana.company_name}} offers two kinds of keys that can be assigned to app users:
+{{config.extra.arcana.sdk_name}} [[concept-keyspace-type|Keyspace feature]] offers two kinds of keys that can be assigned to Web3 app users:
 
 * Global Keys
 * App-specific Keys
 
-Depending upon the kind of user experience and security needs of an app, developers can select keyspace type during configuration and [[concept-keyspace-type|choose the type of keys that are assigned to app users]]. Global keys have some usage limitations to ensure security as these keys can be accessed across all the apps that are integrated with the {{config.extra.arcana.sdk_name}} and have chosen the Global keys option.
+Developers can select keyspace type during configuration depending upon the kind of user experience and security needs of the app and choose the type of keys that are assigned to app users. 
+
+Global keys have some usage limitations to ensure key security as these keys can be accessed across all the apps that are integrated with the {{config.extra.arcana.sdk_name}} using the Global keys configuration option.
 
 ## Protocol Security
 
-{{config.extra.arcana.company_name}} smart contracts and the authentication protocol have been audited for any vulnerabilities and all known issues addressed. See {% include "./text-snippets/audit_report_url.md" %} for details.
+The smart contracts used to implement the {{config.extra.arcana.sdk_name}} and the authentication protocol have been audited for vulnerabilities. All known audit issues have been addressed. See {% include "./text-snippets/audit_report_url.md" %} for details.
 
 ## Embedded Wallet Security
 
-The {{config.extra.arcana.sdk_name}} offers a built-in, embedded, non-custodial wallet to apps that integrate with the SDK. The {{config.extra.arcana.wallet_name}} displays in the context of the app itself once the user authenticates. Developers can customize the wallet branding or replace the wallet UI with a custom one. The built-in wallet UI has been designed and hardened to ensure UI based attacks such as clickjacking etc., can be avoided altogether. 
+Web3 apps that integrate with the {{config.extra.arcana.sdk_name}} can enable the built-in, in-app, non-custodial {{config.extra.arcana.wallet_name}} for logged in users to sign blockchain transactions. The {{config.extra.arcana.wallet_name}} displays in the context of the app itself once the user authenticates. Developers can customize the wallet branding or replace the wallet UI with a custom wallet UI. The built-in wallet UI has been designed and hardened to handle UI based attacks such as clickjacking.
 
-The built-in wallet UI offers a way for the authenticated user to export their private key should the user choose to do the same. Every time the key is exported, an email alert is issued to the user to that user can verify whether the exports were authorized.
+If a users chooses to, they can use the in-app, built-in wallet UI to export private key. Every time the key is exported, an email alert is issued to the user to that user can verify whether the exports were authorized. If the built-in wallet UI is replace with a custom one, the onus is on the developers to provision user key export feature.
 
-Developers can choose to enable the additional domain validation checks for the embedded wallet security.
+Developers can choose to enable the additional domain validation security checks through the {{config.extra.arcana.dashboard_name}} to further secure the in-app wallet.
 
 ## User Data Security
 
-Developers interact with the {{config.extra.arcana.dashboard_name}} to register and configure the apps for various SDK usage settings. All the data provided by the developer in the context of the registered app is encrypted and secured. Web3 app user credential data is never stored in the {{config.extra.arcana.company_name}} subsystem. User login and usage details are secured via data encryption and access control. The Web3 app usage data can only be accessed by the authorized developers via the dashboard.
+Developers interact with the {{config.extra.arcana.dashboard_name}} to register and configure the apps for various {{config.extra.arcana.sdk_name}} usage settings. All the data provided by the developer in the context of the registered app is encrypted and secured. Web3 app user credential data is never stored in the {{config.extra.arcana.company_name}} subsystem. User login and usage details are secured via data encryption and access control. 
+
+The {{config.extra.arcana.sdk_name}} usage data for the Web3 app can only be accessed by the authorized developers via the dashboard.

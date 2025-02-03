@@ -1,7 +1,7 @@
 ---
 alias: register-app-auth
 title: 'Register App'
-description: 'Register and obtain a unique clientId. This clientId value is used to integrate the app with the Arcana SDKs. Use the dashboard to configure SDK usage settings.'
+description: 'Register and obtain a unique clientId. This clientId value is used to integrate the app with the Arcana Auth SDK. Use the dashboard to configure the Auth SDK usage settings.'
 arcana:
   root_rel_path: ../..
 ---

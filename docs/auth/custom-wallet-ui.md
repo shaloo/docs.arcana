@@ -94,7 +94,7 @@ During app integration with {{config.extra.arcana.sdk_name}}, an `AuthProvider` 
 
       ...
 
-      // Once user approves, issue the request via the Arcana Auth SDK to sign transaction
+      // Once user approves, issue the request via the {{config.extra.arcana.sdk_name}} to sign transaction
 
       const { sig } = await arcanaProvider.request({
         method: 'eth_sign',

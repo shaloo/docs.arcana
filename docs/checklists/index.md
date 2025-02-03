@@ -8,7 +8,7 @@ arcana:
 
 # Integration Checklist
 
-Quickly integrate the {{config.extra.arcana.company_name}} SDKs to enable [[concept-social-login|social login]] in your Web3 apps. Use these checklists, organized by your app’s specific use case:
+The integration checklists can help developers quickly integrate the {{config.extra.arcana.sdk_name}} with Web3 apps and enable [[concept-social-login|social login]] to onboard users. The process may vary depending upon the Web3 app type and the blockchain where the app is deployed.
 
 * [Chain Type](#chain-type): EVM or non-EVM
 * [App Type](#app-type): Web, Wallet connector, Mobile, Gaming
@@ -25,7 +25,7 @@ Quickly integrate the {{config.extra.arcana.company_name}} SDKs to enable [[conc
 
     - [ ] 3. [[index-config-social-providers|Configure Social Login providers]] through the dashboard (optional).
 
-    - [ ] 4. [[sdk-installation|Install required SDKs]]. Depending upon the app type and usage, you may have to install one or more SDKs. 
+    - [ ] 4. [[sdk-installation|Install the {{config.extra.arcana.sdk_name}}]]. Depending upon the app type and usage, you may have to install one or more SDK. 
 
     - [ ] 5. Integrate the app by following app-specific integration instructions: 
         * [[integrate-wagmi-app|Wagmi]] 
@@ -58,7 +58,7 @@ Quickly integrate the {{config.extra.arcana.company_name}} SDKs to enable [[conc
 
     - [ ] 2. [[index-config-social-providers|Configure Social Login providers]] through the dashboard (optional).
 
-    - [ ] 3. [[sdk-installation|Install required SDKs]]. Depending upon the app type and usage, you may have to install one or more SDKs. 
+    - [ ] 3. [[sdk-installation|Install the {{config.extra.arcana.sdk_name}}]]. Depending upon the app type and usage, you may have to install one or more SDK. 
 
     - [ ] 4. Integrate the app by following app-specific integration instructions: 
         * [[integrate-wagmi-app|Wagmi]] 
@@ -151,7 +151,7 @@ Quickly integrate the {{config.extra.arcana.company_name}} SDKs to enable [[conc
 
     Use this checklist for Web3 Unity apps.
 
-    - [ ] 1. [[unity-dashboard-user-guide|Set up Unity packages]] before using {{config.extra.arcana.company_name}} SDKs.
+    - [ ] 1. [[unity-dashboard-user-guide|Set up Unity packages]] before installing the {{config.extra.arcana.gaming_sdk_name}}.
 
     - [ ] 2. [[dashboard-user-guide#register-application|Register Web3 app]], choose EVM/non-EVM chain type as required and configure the active and default chains via the dashboard. Get {{config.extra.arcana.company_name}} {{config.extra.arcana.app_address}}. 
 
@@ -159,7 +159,7 @@ Quickly integrate the {{config.extra.arcana.company_name}} SDKs to enable [[conc
 
     - [ ] 4. [[sdk-installation|Install {{config.extra.arcana.gaming_sdk_name}}]].
 
-    - [ ] 5. [[integrate-unity-app|Integrate the Unity app]] with the SDK.
+    - [ ] 5. [[integrate-unity-app|Integrate the Unity app]] with the {{config.extra.arcana.gaming_sdk_name}}.
 
     - [ ] 6. [[unity-user-onboarding|Onboard users via a single line of code]] using the [[concept-plug-and-play-auth|plug-and-play login UI]].
 

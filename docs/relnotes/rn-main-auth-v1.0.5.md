@@ -12,7 +12,7 @@ arcana:
 
 **Release Date: June 12, 2023**  
 
-The latest release of the {{config.extra.arcana.product_name}} product consists of the following components:
+The latest release of the {{config.extra.arcana.sdk_name}} consists of the following components:
 
 * {{config.extra.arcana.sdk_name}}
       - [`{{config.extra.arcana.auth_sdk_pkg_name}}`](https://www.npmjs.com/package/@arcana/auth) 
@@ -32,11 +32,11 @@ The latest release of the {{config.extra.arcana.product_name}} product consists 
 
 ### Auth for Mobile Apps
 
-The {{config.extra.arcana.product_name}} product now allows mobile apps built using Flutter and React-Native frameworks to onboard users through the {{config.extra.arcana.sdk_name}} and sign blockchain transactions. 
+The {{config.extra.arcana.sdk_name}} now allows mobile apps built using Flutter and React-Native frameworks to onboard users through the {{config.extra.arcana.sdk_name}} and sign blockchain transactions. 
 
-Flutter app developers must install the `{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package and refer to the [[flutter-quick-start|Arcana Auth Quick Start Guide for Flutter Apps]] to integrate Web3 Flutter apps with the {{config.extra.arcana.sdk_name}} SDK.
+Flutter app developers must install the `{{config.extra.arcana.mobile_flutter_sdk_pkg_name}}` package and refer to the [[flutter-quick-start|Arcana Auth Quick Start Guide for Flutter Apps]] to integrate Web3 Flutter apps with the {{config.extra.arcana.sdk_name}}.
 
-React-Native app developers must install the `{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}` package and refer to the [[react-native-quick-start|Arcana Auth Quick Start Guide for React-Native Apps]] to integrate Web3 React-Native apps with the {{config.extra.arcana.sdk_name}} SDK.
+React-Native app developers must install the `{{config.extra.arcana.mobile_react_native_sdk_pkg_name}}` package and refer to the [[react-native-quick-start|Arcana Auth Quick Start Guide for React-Native Apps]] to integrate Web3 React-Native apps with the {{config.extra.arcana.sdk_name}}.
 
 ### White-labeled Auth 
 
@@ -70,7 +70,7 @@ Refer to the [Firebase auth integration example](https://github.com/arcana-netwo
 
 ==}
 
-See {{config.extra.arcana.product_name}} Quick Start Guides. 
+See {{config.extra.arcana.sdk_name}} Quick Start Guides. 
 
 Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
@@ -78,7 +78,7 @@ Check out the sample dApp integration example for apps using React, Next.js, and
 
 ---
 
-If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can choose to either continue to use it with the latest {{config.extra.arcana.product_name}} product release.
+If you have integrated the app with the {{config.extra.arcana.sdk_name}} v{{config.extra.arcana.previous_version}} package you can choose to either continue to use it with the latest {{config.extra.arcana.sdk_name}} release.
 
 To enable Steam or Firebase authentication, you must upgrade to the v1.0.5 or later. To upgrade. follow the [[migration-guide-v1.0.5|migration guide]].
 

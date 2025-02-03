@@ -69,7 +69,7 @@ Apps using the Wagmi SDK need to migrate to the latest {{config.extra.arcana.wag
 
 Check out:
 
-* [[wagmi-quick-start|{{config.extra.arcana.product_name}} Quick Start Guides]]
+* [[wagmi-quick-start|{{config.extra.arcana.wagmi_sdk_name}} Quick Start Guides]]
 * {% include "./text-snippets/unity_sample_url.md" %} 
 * [`sample-auth-wagmi-2` integration example](https://github.com/arcana-network/auth-examples)
 * [Other integration examples](https://github.com/arcana-network/auth-examples)

@@ -16,7 +16,7 @@ arcana:
 
 ==}
 
-This release of the {{config.extra.arcana.product_name}} product consists of the following components:
+This release of the {{config.extra.arcana.sdk_name}} consists of the following components:
 
 * [{{config.extra.arcana.sdk_name}} v1.0.2](https://www.npmjs.com/package/@arcana/auth/v/1.0.2)
 * {{config.extra.arcana.dashboard_name}}
@@ -87,7 +87,7 @@ This issue is fixed in the current release. The user will have to log in to the 
 
 ==}
 
-See {{config.extra.arcana.product_name}} Quick Start Guides for details. 
+See {{config.extra.arcana.sdk_name}} Quick Start Guides for details. 
 
 Check out the sample dApp integration example for apps using React, Next.js, and [Vue](https://github.com/arcana-network/basic-storage-wallet-integration) frameworks in [auth-examples](https://github.com/arcana-network/auth-examples) repository.
 
@@ -95,7 +95,7 @@ Check out the sample dApp integration example for apps using React, Next.js, and
 
 ---
 
-Are you using an older version of the {{config.extra.arcana.product_name}}? Use the [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
+Are you using an older version of the {{config.extra.arcana.sdk_name}}? Use the [[index-migration-guides|Migration Guides]] and upgrade to the latest version.
 
 ## Questions? 
 

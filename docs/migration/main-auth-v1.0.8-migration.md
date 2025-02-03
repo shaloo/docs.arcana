@@ -10,19 +10,19 @@ arcana:
 
 This guide is meant for developers who have already integrated apps with v1.0.7 of the {{config.extra.arcana.sdk_name}} and deploy them using {{config.extra.arcana.company_name}} Testnet or Mainnet.
 
-If you are new to Arcana Network, see {{config.extra.arcana.product_name}} Quick Start Guides to get started.
+If you are new to Arcana Network, see {{config.extra.arcana.sdk_name}} Quick Start Guides to get started.
 
 ## Backward Compatibility
 
-The latest release of the {{config.extra.arcana.product_name}} product does not cause any breaking changes for apps that have already integrated with v1.0.7 of the {{config.extra.arcana.sdk_name}}. Install the latest version and upgrade your app.
+The latest release of the {{config.extra.arcana.sdk_name}} does not cause any breaking changes for apps that have already integrated with v1.0.7 of the {{config.extra.arcana.sdk_name}}. Install the latest version and upgrade your app.
 
 ### Same Wallet Address
 
-Apps using {{config.extra.arcana.product_name}} v1.0.7 should see **no change** in the user wallet address irrespective of whether they continue to use the older version on the upgrade to the v1.0.8 release. This is true for all types of apps and supported frameworks, irrespective of whether they are using the global or app-specific keys. Apps deployed earlier will continue to work on the Arcana Testnet and Mainnet. 
+Apps using {{config.extra.arcana.sdk_name}} v1.0.7 should see **no change** in the user wallet address irrespective of whether they continue to use the older version on the upgrade to the v1.0.8 release. This is true for all types of apps and supported frameworks, irrespective of whether they are using the global or app-specific keys. Apps deployed earlier will continue to work on the Arcana Testnet and Mainnet. 
 
 ## New Release: What has Changed?
 
-{{config.extra.arcana.sdk_name}} release has no major changes, a few enhancements and a bug fix for email validation. **Usage** has not changed in the latest release. For details, see [[rn-main-auth-v1.0.8|{{config.extra.arcana.product_name}} v1.0.8 release notes]].
+{{config.extra.arcana.sdk_name}} release has no major changes, a few enhancements and a bug fix for email validation. **Usage** has not changed in the latest release. For details, see [[rn-main-auth-v1.0.8|{{config.extra.arcana.sdk_name}} v1.0.8 release notes]].
 
 ## How to Migrate to v1.0.8?
 
@@ -36,4 +36,4 @@ Apps using older versions of the {{config.extra.arcana.sdk_name}} must refer to 
 
 <img src="{{config.extra.arcana.img_dir}}/icon_new_light.{{config.extra.arcana.img_png}}#only-light" alt="New icon" width="3%" /><img src="{{config.extra.arcana.img_dir}}/icon_new_dark.{{config.extra.arcana.img_png}}#only-dark" alt="New icon" width="3%" />
 
-See [[rn-main-auth-v1.0.8|{{config.extra.arcana.product_name}} v1.0.8 release notes]] for details.
+See [[rn-main-auth-v1.0.8|{{config.extra.arcana.sdk_name}} v1.0.8 release notes]] for details.

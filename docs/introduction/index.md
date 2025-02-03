@@ -8,7 +8,7 @@ arcana:
 
 # Overview
 
-**{{config.extra.arcana.company_name}}** offers **{{config.extra.arcana.auth_sdk}}** that integrates with Web3 apps to enable user onboarding via [[concept-social-login|social login]]. It allows authenticated users to sign blockchain transactions through the in-app, embedded, non-custodial {{config.extra.arcana.wallet_name}}.
+**{{config.extra.arcana.company_name}}** offers **{{config.extra.arcana.sdk_name}}** that integrates with Web3 apps to enable user onboarding via [[concept-social-login|social login]]. It allows authenticated users to sign blockchain transactions through the in-app, embedded, non-custodial {{config.extra.arcana.wallet_name}}.
 
 ## Get Started
 
