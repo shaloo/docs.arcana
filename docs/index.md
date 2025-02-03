@@ -22,11 +22,9 @@ hide:
 
     **TL;DR**
 
-    Head to the {{config.extra.arcana.ca_sdk_name}} [[ca-quick-start|Quick start Guide]]. 
-    
-    Check out the [[ca-examples| integration examples]], [[web-ca-usage-guide|Usage Guide]] and the {% include "./text-snippets/casdkref_url.md" %}.
+    [[ca-quick-start|Quick start Guide]] | [[ca-examples| Integration examples]] | [[web-ca-usage-guide|Usage Guide]] | {% include "./text-snippets/casdkref_url.md" %}  
 
-    [Try Now](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button } 
+    Try [Now.](https://codesandbox.io/p/github/arcana-network/ca-sdk-example)
 
     ==}
 
@@ -36,11 +34,11 @@ hide:
 
     ## Bridge no More
 
-    Arcana’s [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unified-balance|unified balance]] across chains. It lets your app users spend blockchain assets anywhere, anytime. No bridging required.
+    {{config.extra.arcana.company_name}}’s [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unified-balance|unified balance]] across chains. It lets Web3 app users spend blockchain assets anywhere, anytime. No bridging required. [[ca-top|Learn more...]]
 
     <figure markdown="span">
       <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots"/>
-      <figcaption>Arcana's Chain Abstraction</figcaption>
+      <figcaption>{{config.extra.arcana.company_name}}'s Chain Abstraction</figcaption>
     </figure>
 
     ## Why Chain Abstraction?
@@ -59,9 +57,9 @@ hide:
 
     [Learn more...](https://blog.arcana.network/)
 
-    ## Why Arcana?
+    ## Why {{config.extra.arcana.company_name}}?
 
-    Arcana’s Chain Abstraction SDK enables apps to offer Chain Abstraction to users with a single integration. Users can spend their consolidated multi-chain balance of ETH, wETH, USDC, and USDT on your app. Onboard users from any ecosystem effortlessly
+    {{config.extra.arcana.company_name}}’s Chain Abstraction SDK can integrate with Web3 apps to offer unified balance to the wallet users. Unified balance allows users can spend consolidated multi-chain balance of supported [[ca-stack#tokens|tokens]] (for example, ETH, USDC, USDT) within the app context on any supported [[ca-stack#chains|chain]]. This allows Web3 apps to onboard users from any ecosystem effortlessly.
 
     === "Onboard Users on Any Chain"
 
@@ -71,7 +69,7 @@ hide:
 
             ---
 
-            Display users' consolidated balance across chains. Use Arcana’s plug-and-play UI or design your own.
+            Display users' consolidated balance across chains. Use {{config.extra.arcana.company_name}}’s plug-and-play UI (*coming soon*) or design your own.
 
           - :material-gas-station:{ .icon-color } __Flexible Gas Payments__
 
@@ -89,7 +87,7 @@ hide:
 
             ---
 
-            All assets are in user's custody, no compulsion to rely on Arcana for accessing funds. Users can freely spend their assets on any app.
+            All assets are in user's custody, no compulsion to rely on {{config.extra.arcana.company_name}} for accessing funds. Users can freely spend their assets on any app.
                 
 
         </div>
@@ -128,6 +126,6 @@ hide:
 
 ## Need Help?
 
-Contact us at 📨 [Arcana Support](mailto:support@arcana.network).
+Contact us at 📨 [{{config.extra.arcana.company_name}} Support](mailto:support@arcana.network).
 
-Be a part of [[index-support|Arcana communities]] and stay informed about the new upcoming features and capabilities in the Arcana offerings.
+Be a part of [[index-support|{{config.extra.arcana.company_name}} communities]] and stay informed about the new upcoming features and capabilities in the {{config.extra.arcana.company_name}} offerings.

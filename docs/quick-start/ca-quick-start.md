@@ -1,7 +1,7 @@
 ---
 alias: ca-quick-start
 title: 'Get Started: CA'
-description: 'Get Started quickly with Arcana Chain Abstraction and enable unified balance for users. Use the Arcana Developer Dashboard to register the app, get a client ID and then use the client ID to integrate the app with the Arcana CA SDK.'
+description: 'Get Started quickly with Arcana Chain Abstraction and enable unified balance for users. Learn how to integrate the app with the Arcana CA SDK.'
 arcana:
   root_rel_path: ..
   app_type: "'CA'"
