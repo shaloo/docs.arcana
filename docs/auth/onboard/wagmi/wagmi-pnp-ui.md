@@ -1,7 +1,7 @@
 ---
 alias: onboard-wagmi-app-pnp-ui
 title: 'Plug-and-Play Auth'
-description: 'Instructions on how to onboard Users via built-in plug-and-play login modal in Web3 Wagmi apps integrated with the Arcana Auth and Arcana Auth Wagmi SDKs.'
+description: 'Instructions on how to onboard Users via built-in plug-and-play login modal in Web3 Wagmi apps integrated with the Arcana Auth and the Arcana Auth Wagmi SDK.'
 arcana:
   root_rel_path: ../../../..
   app_type: "'Wagmi'"
@@ -18,7 +18,7 @@ Use the built-in, [[concept-plug-and-play-auth|plug-and-play login UI modal]] to
 
 ## Prerequisites
 
-* [[register-app-auth|Register]] the Wagmi app and configure SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
+* [[register-app-auth|Register]] the Wagmi app and configure {{config.extra.arcana.sdk_name}} SDK usage [[index-config-social-providers|settings for social login]] providers, [[configure-wallet-chains|manage app chains]] and [[index-setup-wallet|wallet user experience]].
 
 * Install the [[sdk-installation|required SDK packages]] for {{page.meta.arcana.app_type}}.
 
