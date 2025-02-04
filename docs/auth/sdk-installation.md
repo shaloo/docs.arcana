@@ -6,15 +6,15 @@ arcana:
   root_rel_path: ..
 ---
 
-# Install SDK
+# Install{{config.extra.arcana.sdk_name}}
 
-{{config.extra.arcana.sdk_name}} supports various [[web3-stack-apps|app types]]. You may be required to install one or more SDKs depending upon the app type.
+{{config.extra.arcana.sdk_name}} supports various [[web3-stack-apps|app types]]. You may be required to install one or more {{config.extra.arcana.sdk_name}} packages depending upon the app type.
 
 For example, Vue apps, HTML/CSS/JS apps only require installation of the `{{config.extra.arcana.auth_sdk_pkg_name}}` package. For other app types, you may need to install app-type-specific packages along with the companion `{{config.extra.arcana.auth_sdk_pkg_name}}` package. See table for more details:
 
 {% include "./text-snippets/auth_sdk_flavors.md" %}
 
-## Web SDKs
+## {{config.extra.arcana.sdk_name}}
 
 ### HTML/CSS/JS, Vue Apps
 
