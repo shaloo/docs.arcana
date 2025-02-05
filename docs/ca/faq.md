@@ -32,8 +32,8 @@ arcana:
 
 ??? an-faq "Which chains does the unified balance feature support?"
 
-    {{config.extra.arcana.company_name}}'s chain abstraction and unified balance works for some select [[ca-stack#chains|chains ]] and [[ca-stack#tokens|tokens]]. We are working on adding support for more chains in the future.
-
+    {{config.extra.arcana.company_name}}'s chain abstraction and unified balance works for some select [[ca-stack#chains|chains ]] and [[ca-stack#tokens|tokens]]. We are working on adding support for more chains in the future. 
+    
 ??? an-faq "Does dApp integration with the CA-SDK enable an in-app wallet like the Auth SDK?"
 
     No. Web3 apps integrating with the CA-SDK must use a third-party wallet for blockchain transactions.
