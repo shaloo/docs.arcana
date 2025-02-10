@@ -1,3 +1,5 @@
+CAProvider
+useBalance
 .an-screenshots
 .dmg
 .json
