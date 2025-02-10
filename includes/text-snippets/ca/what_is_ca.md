@@ -11,6 +11,10 @@ Chain Abstraction lets users view and access a [[ca-top#unified-balance|unified 
 
 {% include "./text-snippets/unified_balance.md" %}
 
+### Wagmi Plug & Play Widget
+
+{% include "./text-snippets/unified_balance_wagmi_pnp.md" %}
+
 ## Allowance
 
 {% include "./text-snippets/allowance.md" %}

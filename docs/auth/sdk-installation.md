@@ -6,7 +6,7 @@ arcana:
   root_rel_path: ..
 ---
 
-# Install{{config.extra.arcana.sdk_name}}
+# Install {{config.extra.arcana.sdk_name}}
 
 {{config.extra.arcana.sdk_name}} supports various [[web3-stack-apps|app types]]. You may be required to install one or more {{config.extra.arcana.sdk_name}} packages depending upon the app type.
 
