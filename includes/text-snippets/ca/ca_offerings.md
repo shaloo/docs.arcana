@@ -17,7 +17,7 @@ Users can install and download the standalone Arcana CA Wallet to unify user bal
 
 At present, the {{config.extra.arcana.company_name}} CA Wallet supports the following apps:
 
-{% include "./text-snippets/ca_supported_apps.md" %}
+{% include "./text-snippets/ca_wallet_supported_apps.md" %}
 
 Powered by {{config.extra.arcana.company_name}}'s [[ca-top#chain-abstraction|chain abstraction protocol]], it displays user's [[ca-top#unified-balance|unified balance]] in the user's wallet account enabling users to spend on any chain. [[ca-stack#apps|Learn more about supported chains and tokens...]]
 
