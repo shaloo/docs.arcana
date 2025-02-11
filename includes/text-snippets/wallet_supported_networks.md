@@ -43,8 +43,6 @@
 
 === "Non-EVM"
 
-    * Fuel Ignition
-    * Fuel Testnet
     * MultiversX 
     * MultiversX Testnet
     * MultiversX Devnet 
