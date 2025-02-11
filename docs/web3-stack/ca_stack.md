@@ -35,7 +35,7 @@ The {{config.extra.arcana.ca_sdk_name}} supports unified balance feature across 
 
 ## Standalone {{config.extra.arcana.company_name}} CA Wallet
 
-Web3 wallet users can solve liquidity fragmentation via chain abstraction by downloading the {{config.extra.arcana.company_name}} CA Wallet (standalone) browser extension.  This wallet supports unified balance feature across the following apps, chains and tokens:
+Web3 wallet users can solve liquidity fragmentation via chain abstraction by downloading the {{config.extra.arcana.company_name}} CA Wallet (standalone) browser extension. This wallet supports unified balance feature across the following apps, chains and tokens:
 
 ### Apps
 
