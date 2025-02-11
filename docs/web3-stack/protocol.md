@@ -20,13 +20,13 @@ The {{config.extra.arcana.company_name}} blockchain protocol is offered through 
 
 The {{config.extra.arcana.company_name}} unified balance feature is available through the {{config.extra.arcana.ca_sdk_name}} v0.0.3 released in January 2025 on the Testnet. A limited set of [[ca-stack#tokens|tokens]] and [[ca-stack#chains|chains]] are supported for chain abstraction as of this release.
 
-We are actively working towards enabling this feature on the Mainnet.
+Chain Abstraction is available on Arcana Testnet. We are actively working towards enabling this feature on the Arcana Mainnet.
 
 ## Social Login
 
 The {{config.extra.arcana.company_name}} social login feature is available through the {{config.extra.arcana.sdk_name}} v1.0.0, released in January 2023 on the Mainnet.
 
-The following services are active on Testnet as well as the Mainnet:
+The following Auth services are active on Testnet as well as the Mainnet:
 
 * Configuring {{config.extra.arcana.sdk_name}} usage with {{config.extra.arcana.dashboard_name}}
 * User onboarding via social login
