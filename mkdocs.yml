@@ -86,6 +86,7 @@ extra:
   # homepage: https://arcana.network
   arcana:
     company_name: Arcana
+    ca_wallet_download_url: https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi
     ca_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-sdk
     ca_sdk_name: Arcana CA SDK
     ca_wagmi_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-wagmi
