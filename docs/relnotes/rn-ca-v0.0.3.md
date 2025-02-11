@@ -31,6 +31,12 @@ Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-sta
 * [Integration example](https://github.com/arcana-network/ca-sdk/tree/main/example)
 * {% include "./text-snippets/casdkref_url.md" %}
 
+## Previous Releases
+
+Are you using an older version of the {{config.extra.arcana.ca_sdk_name}}?
+
+Refer to the [[ca-index-release-notes| release notes archive]]. Upgrade to the latest version.
+
 ## Questions? 
 
 ---
