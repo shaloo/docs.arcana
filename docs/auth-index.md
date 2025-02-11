@@ -143,14 +143,6 @@ This documentation contains everything you need to get started using [[introduct
 
 ## Need Help?
 
-</br>
-</br>
-
-Contact us at 📨 [Arcana Support](mailto:support@arcana.network). 
-
-Be a part of [[index-support|Arcana communities]] and stay informed about the new upcoming features and capabilities in the Arcana offerings.
-
-</br>
-</br>
+{% include "./text-snippets/need_help.md" %}
 
 [[integration-checklist| Integration Checklist ]]{ .md-button }
