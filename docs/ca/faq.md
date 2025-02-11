@@ -6,11 +6,15 @@ arcana:
   root_rel_path: ..
 ---
 
-??? an-faq "I'm a Web3 wallet user, how can I benefit from unified balance with chain abstraction?"
+??? an-faq "I'm a Web3 wallet user, how can I enjoy unified balance with chain abstraction?"
 
-    Web3 wallet users can unify assets across chains and spend on any chain. For example, if you have 3 USDC on Arbitrum, 2 USDC on Optimism and wish to send 4 USDC on Base, your wallet has liquidity fragmentation, you cannot directly spend those USDC on Base even though you have sufficient tokens when put together on two chains.  Unified balance with chain abstraction can help you spend 4 USDC on base with a single click without first having to convert your tokens on Optimism or Arbitrum to make this transaction on Base.
+    Web3 wallet users can unify assets across chains and spend on any chain. 
+    
+    Let us take a simple case of a user's wallet that contains 3 USDC on Arbitrum, 2 USDC on Optimism. If the user intends to send 4 USDC on Base, it is not possible as there is liquidity fragmentation for USDC in the wallet. The user cannot directly spend any USDC on Base even though there are enough USDC tokens when put together on the other two chains. 
+    
+    Chain abstraction enables unified balance that can help the user spend 4 USDC on Base with a single click without first having to convert the tokens on Optimism or Arbitrum to make this transaction on Base.
 
-    Use the {{config.extra.arcana.company_name}} Standalone CA wallet to try unified balance. Download [here](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi).
+    Use the {{config.extra.arcana.company_name}} Standalone CA wallet to try unified balance. Download [here]({{config.extra.arcana.ca_wallet_download_url}}).
 
 ??? an-faq "I'm a Web3 dApp developer, how can I enable unified balance with chain abstraction for dApp users?"
 
@@ -24,7 +28,7 @@ arcana:
 
     Allowance or 'Permit' in the blockchain context allows a third party, such as a smart contract, to perform transactions from a user's EoA for a specified amount — without accessing the user's private key. 
     
-    In {{config.extra.arcana.company_name}} chain abstraction context, [[ca-top#allowance|allowances]] are needed to enable unified balance and allow user to spend on any destination chain as long as they have sufficient funds and the required gas fees on the source chain(s).
+    In {{config.extra.arcana.company_name}} chain abstraction, [[ca-top#allowance|allowances]] enable unified balance. This lets users spend on any destination chain when they have enough funds and gas fees on their source chains.
 
 ??? an-faq "Which ERC20 tokens does the unified balance feature support?"
 
@@ -73,7 +77,7 @@ arcana:
     Base: 0 USDC
     Ethereum: 0.001 ETH
 
-    If the user wants to send 5 USDC to Base, they can’t because no single chain has enough funds. Liquidity fragmentation forces the user to make multiple transactions, complicating the process.
+    If the user wants to send 5 USDC to Base, they can't because no single chain has enough funds. Liquidity fragmentation forces the user to make multiple transactions, complicating the process.
 
     **How unified balance through chain abstraction solves this?**
 
@@ -81,7 +85,7 @@ arcana:
 
     In this case, the user signs an intent to send 5 USDC to Base by pledging 3 USDC from Arbitrum and 2.2 USDC from Optimism (including gas and service fees). The intent specifies the amount to be deposited on source chains and the agreed amount received on the destination chain.
 
-    {{config.extra.arcana.company_name}}’s Chain Abstraction protocol collects the pledged tokens and gas fees based on the user’s allowances. Once the intent is signed, {{config.extra.arcana.company_name}} processes the 5 USDC transaction on Base and deducts the gas fee from the pledged USDC.
+    {{config.extra.arcana.company_name}}'s Chain Abstraction protocol collects the pledged tokens and gas fees based on the user's allowances. Once the intent is signed, {{config.extra.arcana.company_name}} processes the 5 USDC transaction on Base and deducts the gas fee from the pledged USDC.
 
 ??? an-faq "Can I request gas tokens using ERC20 through {{config.extra.arcana.company_name}} Chain Abstraction??"
 
