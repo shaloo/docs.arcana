@@ -23,7 +23,7 @@ At present, the Arcana CA Wallet supports the following apps:
 
 Powered by Arcana's [[ca-top#chain-abstraction|chain abstraction protocol]], it displays user's [[ca-top#unified-balance|unified balance]] in the wallet account across several blockchains and tokens by combining fragmented liquidity. This allows users to spend on any chain. 
 
-[Download Wallet](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) the Arcana Wallet browser extension and get started.
+[Download Wallet]({{config.extra.arcana.ca_wallet_download_url}}) the Arcana Wallet browser extension and get started.
 
 [ :material-lightbulb-on:{ .icon-color } Help](https://arcananetwork.notion.site/Help-Content-127f11ed0804805fba4dc72ad3f8cdb2){ .md-button }   [ :material-help-box-multiple:{ .icon-color } FAQ](https://arcananetwork.notion.site/Frequently-Asked-Questions-128f11ed080480ed8679d90e4bb0b96d){ .md-button }
 
