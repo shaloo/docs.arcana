@@ -19,9 +19,9 @@ At present, the {{config.extra.arcana.company_name}} CA Wallet supports the foll
 
 {% include "./text-snippets/ca_wallet_supported_apps.md" %}
 
-Powered by {{config.extra.arcana.company_name}}'s [[ca-top#chain-abstraction|chain abstraction protocol]], it displays user's [[ca-top#unified-balance|unified balance]] in the user's wallet account enabling users to spend on any chain. [[ca-stack#apps|Learn more about supported chains and tokens...]]
+Powered by Arcana's [[ca-top#chain-abstraction|chain abstraction protocol]], it displays user's [[ca-top#unified-balance|unified balance]] in the wallet account across several blockchains and tokens by combining fragmented liquidity. This allows users to spend on any chain.
 
-[Download Wallet](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) the {{config.extra.arcana.company_name}} Wallet browser extension and get started.
+[Download]({{config.extra.arcana.ca_wallet_download_url}}) the Arcana Wallet browser extension and get started.
 
 [ :material-lightbulb-on:{ .icon-color } Help](https://arcananetwork.notion.site/Help-Content-127f11ed0804805fba4dc72ad3f8cdb2){ .md-button }   [ :material-help-box-multiple:{ .icon-color } FAQ](https://arcananetwork.notion.site/Frequently-Asked-Questions-128f11ed080480ed8679d90e4bb0b96d){ .md-button }
 

@@ -38,7 +38,7 @@ This documentation contains everything you need to get started using [[introduct
     
       **TL;DR**
 
-      Simply [download](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) the standalone Arcana Wallet browser extension and get started! 
+      Simply [download]({{config.extra.arcana.ca_wallet_download_url}}) the standalone Arcana Wallet browser extension and get started! 
 
     ==}
 
