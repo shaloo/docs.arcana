@@ -461,7 +461,13 @@ nav:
       - Demos:
         - CA Wallet Demo: ca/ca-demo.md
         - CA SDK Demo: https://sdk.arcana.network
-      - Supported Chains: web3-stack/ca_stack.md
+      - References:
+        - Supported Chains: web3-stack/ca_stack.md
+        - Archives: 
+          - relnotes/archives/ca-index.md
+          - CA:
+            - v0.0.2: relnotes/rn-ca-v0.0.2.md
+            - v0.0.3: relnotes/rn-ca-v0.0.3.md
   - Auth: 
     - auth-index.md
     - Developers:
