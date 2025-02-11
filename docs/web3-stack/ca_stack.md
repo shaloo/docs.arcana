@@ -12,14 +12,18 @@ Chain abstraction enables unified token balance across many chains. The {{config
 
 {% include "./text-snippets/warn_ca_mainnet_only.md" %}
 
-* {{config.extra.arcana.ca_sdk_name}}
-* Standalone {{config.extra.arcana.company_name}} CA wallet.
+!!! an-caution "Supported Chains & Tokens"
+
+    Note that the list of supported chains and tokens for the unified balance feature **may vary** across the {{config.extra.arcana.company_name}} chain abstraction offerings:
+    
+    * {{config.extra.arcana.ca_sdk_name}}
+    * Standalone {{config.extra.arcana.company_name}} CA wallet.
 
 ## {{config.extra.arcana.ca_sdk_name}}
 
 **Any Web3 app** can integrate with the {{config.extra.arcana.ca_sdk_name}} to enable unified balance for users while deploying any third-party browser-based wallet to sign blockchain transactions.
 
-The unified balance feature is supported across the following chains and tokens:
+The {{config.extra.arcana.ca_sdk_name}} supports unified balance feature across the following chains and tokens:
 
 ### Chains
 
@@ -31,7 +35,7 @@ The unified balance feature is supported across the following chains and tokens:
 
 ## Standalone {{config.extra.arcana.company_name}} CA Wallet
 
-Web3 wallet users can download the {{config.extra.arcana.company_name}} CA Wallet (standalone) and install it as a browser extension to use the unified balance feature in the context of the following apps:
+Web3 wallet users can solve liquidity fragmentation via chain abstraction by downloading the {{config.extra.arcana.company_name}} CA Wallet (standalone) browser extension.  This wallet supports unified balance feature across the following apps, chains and tokens:
 
 ### Apps
 
