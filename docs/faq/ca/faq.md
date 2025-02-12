@@ -14,7 +14,7 @@ arcana:
     
     First, there is no USDC on Base to be sent. The user cannot directly spend USDC on Base even though there are enough USDC tokens when put together on the other two chains in the same wallet account. To spend on Base, the user has to bridge tokens from one or more source chains. That is a complex, multi-step, multi-click, time-consuming process. It also needs non-trivial knowhow about secure bridging and getting the best token exchange deals. Next, the user is required to switch the network to Base and then send the tokens. 
     
-    [[ca-top#chain-abstraction|Chain Abstraction (CA)]] enables unified balance across source chains that can help the user spend 4 USDC on Base with a single click. The user is not required to manually convert the tokens on Optimism or Arbitrum to make this transaction on Base. With a unified balance, onboarding a new chain does not necessarily require the user to procure tokens on the new chain. The user can pledge or sign an intent to send tokens from any of the source chains to the destination chain.
+    [[concept-ca|Chain Abstraction (CA)]] enables unified balance across source chains that can help the user spend 4 USDC on Base with a single click. The user is not required to manually convert the tokens on Optimism or Arbitrum to make this transaction on Base. With a unified balance, onboarding a new chain does not necessarily require the user to procure tokens on the new chain. The user can pledge or sign an intent to send tokens from any of the source chains to the destination chain.
 
 ??? an-faq "I'm a Web3 dApp developer. how can I enable unified balance for dApp users?"
 
@@ -24,7 +24,7 @@ arcana:
 
     Web3 wallet users can unify assets across chains and spend on any chain. To do this, they must log into a Web3 app that is integrated with the {{config.extra.arcana.ca_sdk_name}} and supports any third-party browser-based wallet. 
     
-    Alternatively, wallet users can [download]({{config.extra.arcana.ca_wallet_download_url}}) and install the {{config.extra.arcana.company_name}} Standalone CA wallet browser extension to try [[ca-top#unified-balance|unified balance]] in the context of some of the popular [[ca-stack#apps|Web3 apps]].
+    Alternatively, wallet users can [download]({{config.extra.arcana.ca_wallet_download_url}}) and install the {{config.extra.arcana.company_name}} Standalone CA wallet browser extension to try [[concept-unified-balance|unified balance]] in the context of some of the popular [[ca-stack#apps|Web3 apps]].
 
 ??? an-faq "Why do users need to pay gas fees to set up CA with Layer 1 chains?"
 
@@ -34,7 +34,7 @@ arcana:
 
     Allowance or 'Permit' in the blockchain context allows a third party, such as a smart contract, to perform transactions from a user's EoA for a specified amount — without accessing the user's private key. 
     
-    In {{config.extra.arcana.company_name}} chain abstraction, [[ca-top#allowance|allowances]] enable unified balance. This lets users spend on any destination chain when they have enough funds and gas fees on their source chains.
+    In {{config.extra.arcana.company_name}} chain abstraction, [[concept-allowances|allowances]] enable unified balance. This lets users spend on any destination chain when they have enough funds and gas fees on their source chains.
 
 ??? an-faq "Which ERC20 tokens does the unified balance feature support?"
 
