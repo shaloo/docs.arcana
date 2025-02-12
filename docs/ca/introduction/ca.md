@@ -5,37 +5,26 @@ arcana:
   root_rel_path: ..
 ---
 
-# Chain Abstraction
+# Chain Abstraction Architecture
+
+Before we get into the details of {{config.extra.arcana.company_name}}'s Chain Abstraction (CA) architecture, let's first understand some key concepts.
+
+## What is CA?
 
 {% include "./text-snippets/ca/what_is_ca.md" %}
 
-## CA Offerings
+## {{config.extra.arcana.company_name}} CA Offerings
 
 {% include "./text-snippets/ca/ca_offerings.md" %}
 
-## How does CA-SDK work?
+## CA Benefits
 
-The [[concept-casdk|Chain Abstraction SDK (CA SDK)]] uses {{config.extra.arcana.company_name}}'s CA protocol to manage balances across multiple chains and tokens in Web3 apps.
+{% include "./text-snippets/ca/ca_benefits.md" %}
 
-It solves liquidity fragmentation by enabling a unified balance across supported chains.
+## Architecture
 
-The SDK manages the user's EoA state and intents across multiple chains, publishing approved intents. Solvers compete to fulfill these intents and provide liquidity on the destination chain. The protocol handles state transitions and settles solver payments using transaction netting.
+{% include "./text-snippets/ca/ca_arch.md" %}
 
-The {{config.extra.arcana.company_name}}Vault smart contracts on each supported chain and the solver ecosystem are two key parts of the {{config.extra.arcana.company_name}} CA protocol. There’s no auction; it’s a first-come, first-served system where the first solver to accept an intent gets to fulfill it.
+### CA Protocol
 
-<figure markdown="span">
-  <img alt="How {{config.extra.arcana.company_name}} CA works" src="{{config.extra.arcana.img_dir}}/an_ca_how_it_works.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
-  <figcaption>How {{config.extra.arcana.company_name}} CA Works</figcaption>
-</figure>
-
-### High-level Overview
-
-1. Developer sets up {{config.extra.arcana.company_name}} Chain Abstraction settings enabling cross chain transactions on selected chain types and required [[ca-top#allowance|allowances]].
-2. App users are required to permit the allowance values or reconfigure them if the app allows. Allowances enable {{config.extra.arcana.company_name}} Vault to collect required funds from the EoA account on one or more source chains, as per the user's intent.
-3. User submits an intent to spend `n` tokens on a destination chain Y and transact via a Web3 app.
-4. {{config.extra.arcana.company_name}} verifies that user has sufficient funds across the source chains in the user's EoA account and adequate allowances are pre-configured to enable chain abstraction, pay gas fees.
-5. Funds are moved to the {{config.extra.arcana.company_name}} Vault and user's intent is announced to all listening solvers.
-6. The assumption is that one of the available solvers in the system will agree to service the user's intent. As of today, only {{config.extra.arcana.company_name}} solver is supported. We are working with partners to onboard trusted third-party solvers into the ecosystem.
-7. Once the solver services the intent and provides the necessary liquidity on the desired destination chain into the user's EoA, the user can instantly spend it.
-8. {{config.extra.arcana.company_name}} takes care of managing the settlement at the agreed upon periodicity with the successful solvers. The settlement does not happen after every user transaction but after netting and verification process.
-9. In case a transaction fails, or times out waiting for a solver, user's funds deposited from the source chain are refunded within a stipulated time period after verification.
+{% include "./text-snippets/ca/ca_protocol.md" %}

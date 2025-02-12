@@ -8,7 +8,7 @@ arcana:
 
 # Overview
 
-The **{{config.extra.arcana.ca_sdk_name}}** integrates with Web3 apps to enable [[ca-top#unified-balance|unified balance]] through chain abstraction. 
+The **{{config.extra.arcana.ca_sdk_name}}** integrates with Web3 apps to enable [[concept-unified-balance|unified balance]] through chain abstraction. 
 
 ## Usage
 
@@ -28,6 +28,6 @@ The **{{config.extra.arcana.ca_sdk_name}}** integrates with Web3 apps to enable 
 
 ## See Also
 
-* [[ca-top#chain-abstraction|Chain Abstraction]]
+* [[concept-ca|Chain Abstraction]]
 * [[concept-casdk|CA SDK]]
 * [Download {{config.extra.arcana.ca_sdk_name}}]({{config.extra.arcana.ca_sdk_download_url}})

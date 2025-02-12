@@ -16,7 +16,7 @@ hide:
 
 === "Web3 Developers"
 
-    Allow app users to spend on any chain and beat liquidity fragmentation with [[ca-top#chain-abstraction|Chain Abstraction (CA)]]. Integrate Web3 apps with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]] to enable [[ca-top#unified-balance|unified balance]] for app users. 
+    Allow app users to spend on any chain and beat liquidity fragmentation with [[concept-ca|Chain Abstraction (CA)]]. Integrate Web3 apps with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]] to enable [[concept-unified-balance|unified balance]] for app users. 
 
     {==
 
@@ -38,7 +38,7 @@ hide:
     
     No bridging required. 
     
-    The {{config.extra.arcana.company_name}} [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unified-balance|unified balance]] across many chains. [[ca-top|Learn more...]]
+    The {{config.extra.arcana.company_name}} [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[concept-unified-balance|unified balance]] across many chains. [[concept-ca|Learn more...]]
 
     <figure markdown="span">
       <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots"/>
