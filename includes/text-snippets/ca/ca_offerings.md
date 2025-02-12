@@ -5,25 +5,8 @@
 
 **{{config.extra.arcana.ca_sdk_name}} **
 
-Integrate {{config.extra.arcana.company_name}}'s [[concept-casdk|Chain Abstraction (CA) SDK]] into your Web3 app to enable [[ca-top#unified-balance|unified balance]] for app user. Let the user spend seamlessly on any chain, eliminating liquidity fragmentation.
-
-[Download CA SDK](https://www.npmjs.com/package/@arcana/ca-sdk){ .md-button }
-
-[ :material-lightbulb-on:{ .icon-color } CA SDK Demo](https://sdk.arcana.network){ .md-button }
+{% include "./text-snippets/ca/ca_sdk.md" %}
 
 **{{config.extra.arcana.company_name}} CA Wallet (Standalone)**
 
-Users can install and download the standalone Arcana CA Wallet to unify user balance fragmented across many [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
-
-At present, the {{config.extra.arcana.company_name}} CA Wallet supports the following apps:
-
-{% include "./text-snippets/ca_wallet_supported_apps.md" %}
-
-Powered by Arcana's [[ca-top#chain-abstraction|chain abstraction protocol]], it displays user's [[ca-top#unified-balance|unified balance]] in the wallet account across several blockchains and tokens by combining fragmented liquidity. This allows users to spend on any chain.
-
-[Download]({{config.extra.arcana.ca_wallet_download_url}}) the Arcana Wallet browser extension and get started.
-
-[ :material-lightbulb-on:{ .icon-color } Help](https://arcananetwork.notion.site/Help-Content-127f11ed0804805fba4dc72ad3f8cdb2){ .md-button }   [ :material-help-box-multiple:{ .icon-color } FAQ](https://arcananetwork.notion.site/Frequently-Asked-Questions-128f11ed080480ed8679d90e4bb0b96d){ .md-button }
-
-
-[Learn more...](https://arcana.network/chain-abstraction)
+{% include "./text-snippets/ca/ca_wallet.md" %}

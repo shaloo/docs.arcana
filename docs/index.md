@@ -16,7 +16,7 @@ hide:
 
 === "Web3 Developers"
 
-    Integrate Web3 apps with {{config.extra.arcana.ca_sdk_name}} and enable [[ca-top#unified-balance|unified balance]] for app users. Let them spend on any chain by beating liquidity fragmentation across chains in the wallet.
+    Allow app users to spend on any chain and beat liquidity fragmentation with [[ca-top#chain-abstraction|Chain Abstraction (CA)]]. Integrate Web3 apps with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]] to enable [[ca-top#unified-balance|unified balance]] for app users. 
 
     {==
 
@@ -32,9 +32,13 @@ hide:
       <img style="height: 75px" src="{{config.extra.arcana.img_dir}}/CA_Wordmark.{{config.extra.arcana.img_png}}" alt="Auth SDK Word Logo"></img>
     </div>
 
-    ## Bridge no More
+    ## Bridge No More
 
-    {{config.extra.arcana.company_name}}’s [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unified-balance|unified balance]] across chains. It lets Web3 app users spend blockchain assets anywhere, anytime. No bridging required. [[ca-top|Learn more...]]
+    Let Web3 app users spend blockchain assets anywhere, anytime. 
+    
+    No bridging required. 
+    
+    The {{config.extra.arcana.company_name}} [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[ca-top#unified-balance|unified balance]] across many chains. [[ca-top|Learn more...]]
 
     <figure markdown="span">
       <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots"/>
@@ -56,6 +60,15 @@ hide:
     | Issue a transaction on a new chain  | :material-cursor-default-click-outline::material-timer-sand-complete::material-check-outline: | :material-check-bold:{ .icon-color .logo_icon_anim } |
 
     [Learn more...](https://blog.arcana.network/)
+
+    <span markdown="span">
+      </br>
+      <figure markdown="span">
+        <img alt="{{config.extra.arcana.ca_sdk_name}} Overview" src="{{config.extra.arcana.img_dir}}/ca_unified_balance.{{config.extra.arcana.img_png}}" class="an_screenshots width_85pc"/>
+        <figcaption>{{config.extra.arcana.company_name}} Chain Abstraction UX</figcaption>
+      </figure>
+      </br>
+    </span>
 
     ## Why {{config.extra.arcana.company_name}}?
 
@@ -123,6 +136,17 @@ hide:
             Users do not need to transfer their funds to a new wallet address or lockup in a smart contract.
 
         </div>
+
+=== "Web3 Users"
+
+    <span markdown="span">{% include "./text-snippets/ca/ca_wallet.md" %}</span>
+
+    <span markdown="span">
+      <figure markdown="span">
+        <img alt="{{config.extra.arcana.ca_sdk_name}} Overview" src="{{config.extra.arcana.img_dir}}/ca_wallet_unified_balance.{{config.extra.arcana.img_png}}" class="an_screenshots width_50pc"/>
+        <figcaption>{{config.extra.arcana.company_name}} CA Wallet</figcaption>
+      </figure>
+    </span>
 
 ## Need Help?
 
