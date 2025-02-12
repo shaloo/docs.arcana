@@ -56,7 +56,7 @@ import { CA } from "@arcana/ca-sdk";
 provider = window.ethereum;
 
 const ca = new CA();
-ca.setEVMprovider(provider);
+ca.setEVMProvider(provider);
 await ca.init();  // Initialize the CA provider before calling any API function
 ```
 
