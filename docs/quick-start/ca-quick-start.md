@@ -24,7 +24,7 @@ Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified ba
 
 ### Allowance
 
-[[ca-top#allowance|Allowances]] are required to enable unified balance in the wallet.
+[[concept-allowances|Allowances]] are required to enable unified balance in the wallet.
 
 Use the following UI Hooks for allowance and intent setup in the dApp:
 

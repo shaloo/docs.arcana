@@ -35,7 +35,7 @@ To showcase the unified balance feature, we've built chain abstraction in the co
 
     <iframe width="70%" height="350" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
 
-Developers can integrate the {{config.extra.arcana.ca_sdk_name}} with other Web3 apps to let users spend [[ca-top#unified-balance|unified balance]] across chains. 
+Developers can integrate the {{config.extra.arcana.ca_sdk_name}} with other Web3 apps to let users spend [[concept-unified-balance|unified balance]] across chains. 
 
 [:material-presentation-play:{ .icon-color} CA SDK Demo](https://sdk.arcana.network){ .md-button }
 
