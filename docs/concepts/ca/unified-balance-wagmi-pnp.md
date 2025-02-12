@@ -1,5 +1,5 @@
 ---
-alias: concept-unified-balance-pnp
+alias: concept-unified-balance-wagmi-pnp
 title: 'Wagmi Plug & Play Widget'
 description: 'Arcana CA SDK can be integrated with any dApp for enabling unified balance across supported chains and tokens.'
 arcana:
