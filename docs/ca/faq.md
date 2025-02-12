@@ -6,15 +6,15 @@ arcana:
   root_rel_path: ..
 ---
 
-??? an-faq "How does chain abstraction solve liquidity fragmentation?"
+??? an-faq "Why is liquidity fragmentation an issue and how does chain abstraction solve it?"
     
-    Let us take a simple case of a user's wallet that contains 3 USDC on Arbitrum, 2 USDC on Optimism. 
+    Liquidity fragmentation is an issue because it makes it difficult for users to spend their assets on any chain. 
     
-    If the user intends to send 4 USDC on Base, it is not possible to do so through a traditional wallet because there is liquidity fragmentation for USDC in the wallet across Arbitrum and Optimism. To be able to send USDC on Base, there are multiple complex steps for the user. 
+    Let us take a simple case of a user's wallet that contains 3 USDC on Arbitrum and 2 USDC on Optimism. If the user intends to send 4 USDC on Base, it is not possible to do so through a traditional wallet because there is liquidity fragmentation for USDC in the wallet across Arbitrum and Optimism. To be able to send USDC on Base, there are multiple complex steps for the user. 
     
-    First, there is no USDC on Base to be sent. The user cannot directly spend USDC on Base even though there are enough USDC tokens when put together on the other two chains. The user has to bridge tokens to the destination chain, which is a complex, multi-step, multi-click, time-consuming process. It also needs some knowhow about secure bridging and getting the best exchange deals. Next, the user is required to switch the network to Base and then send the tokens. 
+    First, there is no USDC on Base to be sent. The user cannot directly spend USDC on Base even though there are enough USDC tokens when put together on the other two chains in the same wallet account. To spend on Base, the user has to bridge tokens from one or more source chains. That is a complex, multi-step, multi-click, time-consuming process. It also needs non-trivial knowhow about secure bridging and getting the best token exchange deals. Next, the user is required to switch the network to Base and then send the tokens. 
     
-    [[ca-top#chain-abstraction|Chain Abstraction (CA)]] enables unified balance that can help the user spend 4 USDC on Base with a single click without first having to convert the tokens on Optimism or Arbitrum to make this transaction on Base.
+    [[ca-top#chain-abstraction|Chain Abstraction (CA)]] enables unified balance across source chains that can help the user spend 4 USDC on Base with a single click. The user is not required to manually convert the tokens on Optimism or Arbitrum to make this transaction on Base. With a unified balance, onboarding a new chain does not necessarily require the user to procure tokens on the new chain. The user can pledge or sign an intent to send tokens from any of the source chains to the destination chain.
 
 ??? an-faq "I'm a Web3 dApp developer. how can I enable unified balance for dApp users?"
 
