@@ -25,7 +25,7 @@ Integrate Web3 apps using the Wagmi framework with the {{config.extra.arcana.ca_
 
 ### Hooks
 
-The CA Wagmi SDK offers the same API as Wagmi `useSendTransaction()`. Use the `showBalance()` method to display the [[ca-top#unified-balance|unified balance]] via the plug-and-play widget.
+The CA Wagmi SDK offers the same API as Wagmi `useSendTransaction()`. Use the `showBalance()` method to display the [[concept-unified-balance|unified balance]] via the plug-and-play widget.
 
 #### `useSendTransaction`
 

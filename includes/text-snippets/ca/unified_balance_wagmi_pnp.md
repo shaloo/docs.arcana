@@ -1,4 +1,4 @@
-The {{config.extra.arcana.ca_sdk_name}} provides a plug and play widget that displays the [[ca-top#unified-balance|Unified balance]] associated with the user's wallet address. This widget is available only for the [Wagmi](https://wagmi.sh/) apps.
+{{config.extra.arcana.ca_wagmi_sdk_name}} provides a plug and play widget that displays the [[concept-unified-balance|Unified balance]] associated with the user's wallet address. This widget is available only for the [Wagmi](https://wagmi.sh/) apps.
 
 Follow these steps to use this widget:
 
