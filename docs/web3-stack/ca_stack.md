@@ -10,7 +10,7 @@ arcana:
 
 ## {{config.extra.arcana.company_name}} CA SDK
 
-[[ca-top#chain-abstraction|Chain abstraction]] enables [[ca-top#unified-balance|unified balance]] of assets across many chains. The {{config.extra.arcana.company_name}} [[ca-sdk-installation|CA SDK]] helps Web3 dApps enable unified balance for app users. Users can sign transactions using any third-aprty browser-based wallet.
+[[concept-chain-abstraction|Chain abstraction]] enables [[concept-unified-balance|unified balance]] of assets across many chains. The {{config.extra.arcana.company_name}} [[ca-sdk-installation|CA SDK]] helps Web3 dApps enable unified balance for app users. Users can sign transactions using any third-aprty browser-based wallet.
 
 {% include "./text-snippets/warn_ca_mainnet_only.md" %}
 
