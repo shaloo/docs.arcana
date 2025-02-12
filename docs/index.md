@@ -16,15 +16,15 @@ hide:
 
 === "Web3 Developers"
 
-    Allow app users to spend on any chain and beat liquidity fragmentation with [[concept-ca|Chain Abstraction (CA)]]. Integrate Web3 apps with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]] to enable [[concept-unified-balance|unified balance]] for app users. 
+    Allow app users to spend on any chain and beat liquidity fragmentation with [[concept-ca|Chain Abstraction (CA)]]. Integrate Web3 apps with the  {{config.extra.arcana.company_name}} Chain Abstraction SDK to enable [[concept-unified-balance|unified balance]] for app users. 
 
     {==
 
     **TL;DR**
 
-    [[ca-quick-start|Quick start Guide]] | [[ca-examples| Integration examples]] | [[web-ca-usage-guide|Usage Guide]] | {% include "./text-snippets/casdkref_url.md" %}  
+    [[ca-wagmi-quick-start|Quick start Guide]] | [[ca-examples| Integration examples]] | [[wagmi-ca-usage-guide|Usage Guide]] | {% include "./text-snippets/cawagmisdkref_url.md" %}  
 
-    Try [Now.](https://codesandbox.io/p/github/arcana-network/ca-sdk-example)
+    Try [Now.](https://codesandbox.io/p/github/arcana-network/ca-wagmi-example)
 
     ==}
 
@@ -38,7 +38,7 @@ hide:
     
     No bridging required. 
     
-    The {{config.extra.arcana.company_name}} [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[concept-unified-balance|unified balance]] across many chains. [[concept-ca|Learn more...]]
+    The {{config.extra.arcana.company_name}} Chain Abstraction SDK enables [[concept-unified-balance|unified balance]] across many chains. [[concept-ca|Learn more...]]
 
     <figure markdown="span">
       <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots"/>

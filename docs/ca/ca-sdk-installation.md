@@ -8,7 +8,7 @@ arcana:
 
 # Install {{config.extra.arcana.ca_sdk_name}}
 
-{{config.extra.arcana.company_name}} [[concept-chain-abstraction|chain abstraction]] unified balance feature is available for supported [[ca-stack#app-types|app types]]. Install and use the appropriate {{config.extra.arcana.company_name}} SDK packages for your app type.
+{{config.extra.arcana.company_name}} [[concept-ca|chain abstraction]] unified balance feature is available for supported [[ca-stack#app-types|app types]]. Install and use the appropriate {{config.extra.arcana.company_name}} SDK packages for your app type.
 
 {% include "./text-snippets/ca_sdk_flavors.md" %}
 
