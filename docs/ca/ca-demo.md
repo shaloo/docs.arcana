@@ -9,7 +9,7 @@ arcana:
 
 # CA Demo
 
-To showcase the unified balance feature, we've built chain abstraction into the [standalone {{config.extra.arcana.company_name}} CA Wallet]({{config.extra.arcana.ca_wallet_download_url}}). Click on the tab below to view the demo video for these supported apps:
+To showcase the unified balance feature, we've built chain abstraction in the context of some popular Web3 apps through the [standalone {{config.extra.arcana.company_name}} CA Wallet]({{config.extra.arcana.ca_wallet_download_url}}). Click on the tab below to view the demo video for these supported apps:
 
 === "Aave"
 
