@@ -233,6 +233,7 @@ GoogleStep1Text
 GoogleStep2Text
 GoogleStep3Text
 Grafana
+Griffy
 HD
 HDWallet
 HTML

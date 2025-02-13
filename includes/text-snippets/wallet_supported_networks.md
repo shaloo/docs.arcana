@@ -46,11 +46,11 @@
     * MultiversX 
     * MultiversX Testnet
     * MultiversX Devnet 
+    * Near 
+    * Near Testnet
     * Solana
     * Solana Testnet
     * Solana Dev
-    * Near 
-    * Near Testnet
 
 <figure markdown="span">
   <img src="{{config.extra.arcana.img_dir}}/an_wallet_default_chain_list.{{config.extra.arcana.img_png}}" alt="Pre-configured Blockchains" width="50%" class="an-screenshots"/>

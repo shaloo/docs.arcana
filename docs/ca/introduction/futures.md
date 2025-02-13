@@ -10,7 +10,9 @@ arcana:
 
 ## {{config.extra.arcana.ca_sdk_name}}
 
-Today, developers can enable [[concept-unified-balance|unified balance]] in any dApp by integrating it with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]]. It supports unified balance across the following chains and tokens. We are actively working on adding support to enable unified balance across newer chains and tokens.
+Developers can enable [[concept-unified-balance|unified balance]] in any dApp by integrating it with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]].
+
+Unified balance is supported across the following chains and tokens. We are actively working on adding support to enable unified balance across newer chains and tokens.
 
 ### Chains
       
@@ -22,8 +24,18 @@ Today, developers can enable [[concept-unified-balance|unified balance]] in any 
 
 ## {{config.extra.arcana.company_name}} CA Wallet (Standalone)
 
-Besides the SDK, we have also [[ca-demo|demonstrated]] our **Chain Abstraction** technology through a standalone {{config.extra.arcana.company_name}} Wallet implementation ([download here]({{config.extra.arcana.ca_wallet_download_url}})). It allows [[concept-unified-balance|unified balance]] across the following chains and tokens. Only a few Web3 apps are supported at present. We are working on adding support for more apps in the {{config.extra.arcana.company_name}} CA wallet. Stay tuned. 
+Besides the SDK, we offer a standalone {{config.extra.arcana.company_name}} Wallet with **Chain Abstraction** ([download here]({{config.extra.arcana.ca_wallet_download_url}}). This wallet supports [[concept-unified-balance|unified balance]] across many chains and tokens. Refer to the supported chains and tokens list below.
+
+Currently, it works with a limited set of Web3 apps. We are actively working to expand app support in our CA wallet.
 
 ### Apps
 
-{% include "./text-snippets/ca_supported_apps.md" %}
+{% include "./text-snippets/ca_wallet_supported_apps.md" %}
+
+### Chains
+      
+{% include "./text-snippets/ca_wallet_supported_chains.md" %}
+
+### Tokens
+
+{% include "./text-snippets/ca_supported_tokens.md" %}
