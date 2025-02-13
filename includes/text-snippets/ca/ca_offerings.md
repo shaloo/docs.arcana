@@ -7,6 +7,10 @@
 
 {% include "./text-snippets/ca/ca_sdk.md" %}
 
-**{{config.extra.arcana.company_name}} CA Wallet (Standalone)**
+**Arcana CA Wagmi SDK**
+
+{% include "./text-snippets/ca/ca_wagmi.md" %}
+
+**Arcana CA Wallet (Standalone)**
 
 {% include "./text-snippets/ca/ca_wallet.md" %}

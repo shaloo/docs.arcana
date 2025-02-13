@@ -4,5 +4,5 @@ Chain Abstraction lets users view and access a [[concept-unified-balance|unified
 
 <figure markdown="span">
   <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}"/>
-  <figcaption>Arcana's Chain Abstraction</figcaption>
+  <figcaption>{{config.extra.arcana.company_name}}'s Chain Abstraction</figcaption>
 </figure>
