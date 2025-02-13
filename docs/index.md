@@ -16,7 +16,7 @@ hide:
 
 === "Web3 Developers"
 
-    Allow app users to spend on any chain and beat liquidity fragmentation with [[concept-ca|Chain Abstraction (CA)]]. Integrate Web3 apps with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]] to enable [[concept-unified-balance|unified balance]] for app users. 
+    Allow app users to spend on any chain and beat liquidity fragmentation with {{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction (CA)]]. Integrate Web3 apps with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]] to enable [[concept-unified-balance|unified balance]] for app users. 
 
     {==
 
@@ -47,9 +47,11 @@ hide:
 
     ## Why Chain Abstraction?
 
-    Chain Abstraction removes the friction of users having to bridge across different blockchains to try apps. Users can spend a unified balance across multiple chains through your app, bypassing the hassle of procuring or converting funds for gas on new chains.
-
-    To issue a blockchain transaction on a new chain where user does not have any assets yet, there are several hoops that a user must jump. The table below illustrates these steps when not using chain abstraction. With chain abstraction, the user experience is much simpler with a single click transaction.
+    A user must cross several hoops to issue a blockchain transaction on a new chain where the user does not have any assets yet. 
+    
+    Chain Abstraction removes the friction of users having to bridge across different blockchains to try newer apps and chains. In {{config.extra.arcana.company_name}}'s chain abstraction enabled Web3 apps, users can spend the unified balance across multiple chains from within the app context, bypassing the hassle of procuring or converting tokens on a new chain.
+    
+    The table below illustrates these steps when not using chain abstraction. With chain abstraction, the user experience is much simpler with a single-click transaction.
 
     | UX: Transact on New Chain     |  No CA: Complex, Multi-step UX   |  With CA: One-step UX |
     | :---------- | :----------------------------------- | :-----------------------|
@@ -72,7 +74,7 @@ hide:
 
     ## Why {{config.extra.arcana.company_name}}?
 
-    {{config.extra.arcana.company_name}}’s Chain Abstraction SDK can integrate with Web3 apps to offer unified balance to the wallet users. Unified balance allows users can spend consolidated multi-chain balance of supported [[ca-stack#tokens|tokens]] (for example, ETH, USDC, USDT) within the app context on any supported [[ca-stack#chains|chain]]. This allows Web3 apps to onboard users from any ecosystem effortlessly.
+    {{config.extra.arcana.company_name}}’s Chain Abstraction SDK can integrate with Web3 apps and enable unified balance for the app users. Unified balance allows users to spend the consolidated multi-chain balance of supported [[ca-stack#tokens|tokens]] (for example, ETH, USDC, USDT) within the app context on any [[ca-stack#chains|chain]]. This allows Web3 apps to onboard users from any ecosystem effortlessly.
 
     === "Onboard Users on Any Chain"
 
