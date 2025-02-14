@@ -29,6 +29,8 @@
     * opBNB Testnet
     * Optimism 
     * Optimism Goerli
+    * Peaq
+    * Peaq Testnet (Agung)
     * Polygon 
     * Polygon Amoy 
     * Polygon zkEVM Testnet
