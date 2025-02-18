@@ -6,8 +6,6 @@ arcana:
   root_rel_path: ..
 ---
 
-# Use Cases
-
 {{config.extra.arcana.company_name}}'s Chain Abstraction is designed for onboarding users across a wide range of applications, but it is particularly impactful for DeFi applications that depend on deposits in stablecoins like USDC or USDT, as well as native tokens like ETH.
 
 !!! an-info "Benefits"
@@ -50,4 +48,4 @@ Restaking requires users to bring assets or derivatives to specific chains. {{co
 
 This allows users from multiple EVM ecosystems to participate in the protocol
 
-*Stay tuned, we are working on supporting additional use cases with the {{config.extra.arcana.ca_sdk_name}}.*
+*Stay tuned, {{config.extra.arcana.company_name}} is actively working on supporting additional use cases with the {{config.extra.arcana.ca_sdk_name}}.*
