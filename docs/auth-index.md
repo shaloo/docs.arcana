@@ -141,7 +141,7 @@ This documentation contains everything you need to get started using [[introduct
 
         [[unity-quick-start| Unity ]]{ .md-button }
 
-## Need Help?
+## Need help?
 
 {% include "./text-snippets/need_help.md" %}
 

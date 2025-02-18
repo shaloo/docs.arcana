@@ -150,7 +150,7 @@ hide:
       </figure>
     </span>
 
-## Need Help?
+## Need help?
 
 {% include "./text-snippets/need_help.md" %}
 
