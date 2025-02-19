@@ -1,6 +1,6 @@
 ---
 alias: ca-stack
-title: 'CA: Supported Apps, Tokens and Chains'
+title: 'Supported Apps, Tokens and Chains'
 description: 'List different apps, tokens and chains supported through the Arcana Chain Abstraction feature.'
 arcana:
   root_rel_path: ..
@@ -8,7 +8,9 @@ arcana:
 
 # Chain Abstraction Scope
 
-Chain abstraction enables unified token balance across many chains. The {{config.extra.arcana.ca_sdk_name}} helps Web3 dApps enable unified balance for app users. Users can sign transactions using any browser-based wallet.
+## {{config.extra.arcana.company_name}} CA SDK
+
+[[ca-top#chain-abstraction|Chain abstraction]] enables [[ca-top#unified-balance|unified balance]] of assets across many chains. The {{config.extra.arcana.company_name}} [[ca-sdk-installation|CA SDK]] helps Web3 dApps enable unified balance for app users. Users can sign transactions using any third-aprty browser-based wallet.
 
 {% include "./text-snippets/warn_ca_mainnet_only.md" %}
 
@@ -33,9 +35,9 @@ The {{config.extra.arcana.ca_sdk_name}} supports unified balance feature across 
 
 {% include "./text-snippets/ca_supported_tokens.md" %}
 
-## Standalone {{config.extra.arcana.company_name}} CA Wallet
+## {{config.extra.arcana.company_name}} CA Wallet
 
-Web3 wallet users can solve liquidity fragmentation via chain abstraction by downloading the {{config.extra.arcana.company_name}} CA Wallet (standalone) browser extension. This wallet supports unified balance feature across the following apps, chains and tokens:
+Web3 wallet users can install the [standalone {{config.extra.arcana.company_name}} CA Wallet](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) browser extension. This enables unified balance support for the following apps:
 
 ### Apps
 
