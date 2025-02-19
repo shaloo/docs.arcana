@@ -2,7 +2,7 @@
 
 # Check if both arguments are provided
 if [[ $# -ne 1 ]]; then
-  echo "Usage: $0 <auth/ca-sdk>"
+  echo "Usage: $0 <auth/ca-sdk/ca-wagmi>"
   exit 1
 fi
 
@@ -75,6 +75,12 @@ case "$sdk_name" in
          update_env_var "CA_SDK_VERSION" "$(cat VERSION)"
          update_env_var "CA_SDK_REL_DATE" "$(cat RELEASEDATE)"
          ;;
+
+    "ca-wagmi")
+         update_env_var "CA_WAGMI_SDK_VERSION" "$(cat VERSION)"
+         update_env_var "CA_WAGMI_SDK_REL_DATE" "$(cat RELEASEDATE)"
+         ;;
+
     *) 
         exit 1
         ;;

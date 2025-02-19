@@ -118,9 +118,11 @@ extra:
     latest_auth_flutter_sdk_version: !ENV [AUTH_FLUTTER_SDK_VERSION, '0.0.6']
     latest_auth_react_native_sdk_version: !ENV [AUTH_REACT_NATIVE_SDK_VERSION, '0.0.4']
     latest_auth_unity_sdk_version: !ENV [AUTH_UNITY_SDK_VERSION, '1.1.0']
-    latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSION,'2.0.0-alpha.3']
+    latest_auth_core_sdk_version: !ENV [AUTH_CORE_SDK_VERSIOpN,'2.0.0-alpha.3']
     latest_ca_sdk_version: !ENV [CA_SDK_VERSION, '0.0.3']
     latest_ca_sdk_release_date: !ENV [CA_SDK_REL_DATE, '15 Jan 2025 12:23:07 UTC']
+    latest_ca_wagmi_sdk_version: !ENV [CA_WAGMI_SDK_VERSION, '0.0.4']
+    latest_ca_wagmi_sdk_release_date: !ENV [CA_WAGMI_SDK_REL_DATE, '10 Feb 2025 12:23:07 UTC']
     ca_sdk_pkg_name: ca-sdk
     ca_wagmi_sdk_pkg_name: ca-wagmi
     auth_sdk_pkg_name: auth
