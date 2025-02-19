@@ -9,15 +9,15 @@ Chain Abstraction lets users view and access a [[concept-unified-balance|unified
 
 ## Unified balance
 
-{% include "./text-snippets/unified_balance.md" %}
+{% include "./text-snippets/ca/unified_balance.md" %}
 
 ### Wagmi Plug & Play Widget
 
-{% include "./text-snippets/unified_balance_wagmi_pnp.md" %}
+{% include "./text-snippets/ca/unified_balance_wagmi_pnp.md" %}
 
 ## Allowance
 
-{% include "./text-snippets/allowance.md" %}
+{% include "./text-snippets/ca/allowance.md" %}
 
 ## Benefits
 
