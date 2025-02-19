@@ -469,7 +469,9 @@ nav:
     - Resources:
       #- CA Whitepaper: https://arcananetwork.notion.site/Chain-Abstraction-Technical-Whitepaper-121f11ed0804808da2e5cdd1432b2b61
       - CA Audit Report: https://github.com/arcana-network/audit-reports/blob/main/Arcana%20Wallet%20Final%20Audit%20Report.pdf
-      - CA Release Notes: relnotes/latest-ca-release-note.md
+      - Release Notes: 
+        - CA SDK: relnotes/latest-ca-release-note.md
+        - CA Wagmi SDK: relnotes/latest-ca-wagmi-release-note.md
       - Demos:
         - CA Wallet Demo: ca/ca-demo.md
         - CA SDK Demo: https://sdk.arcana.network
