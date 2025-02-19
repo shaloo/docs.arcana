@@ -1,13 +1,11 @@
 ---
-alias: faq-gen
-title: 'FAQ: General queries about the Arcana Auth product'
+alias: faq-gen 
+title: 'General'
 description: 'Frequently asked questions about getting started with the Auth SDK, which application frameworks are supported, how can user onboarding be customized and more.'
 arcana:
   root_rel_path: ..
 toc_depth: 2
 ---
-
-# General
 
 ??? an-faq "Can any Web3 app user access the in-app {{config.extra.arcana.wallet_name}}?"
 

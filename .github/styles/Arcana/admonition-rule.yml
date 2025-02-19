@@ -3,4 +3,5 @@ message: "Admonition content should end with a period."
 level: error
 scope: raw
 raw:
-  - '(?<=\?\?\?.*?\n\s{4,}.*[^.?!])\n'
+  # - '(?<=\?\?\?.*?\n\s{4,}.*[^.?!]\]\]?(?!\]))\n'
+  - '(?<!^---)(?:(?!^---$).)*(?<=\?\?\?.*?\n\s{4,}.*[^.?!]\]\]?(?!\]))\n'

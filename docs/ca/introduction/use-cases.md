@@ -24,7 +24,7 @@ Bridges enable users to move funds from Chain A to Chain B, but when users hold 
 
 ??? an-info "Example"
 
-    User holds USDC on Ethereum, Polygon, and Optimism and wants to consolidate their funds on Arbitrum. Instead of manually bridging USDC from each chain one at a time, users can bridge their total USDC balance from all three chains to Arbitrum in a single step
+    User holds USDC on Ethereum, Polygon, and Optimism and wants to consolidate their funds on Arbitrum. Instead of manually bridging USDC from each chain one at a time, users can bridge their total USDC balance from all three chains to Arbitrum in a single step.
 
 ## Decentralized Exchanges (DEXes)
 
@@ -40,12 +40,14 @@ Prediction markets often have strong user bases tied to specific chains. {{confi
 
 ## Lending
 
-Borrowers and lenders often face challenges when their assets are distributed across chains and they want to access new yield products on specific chains. With {{config.extra.arcana.company_name}}, a user can supply liquidity to a lending protocol on one chain, such as Ethereum, using their unified balance aggregated from other chains like Optimism and Base. This leads to larger deposit and borrow transactions with the access to a larger pool of capital
+Borrowers and lenders often face challenges when their assets are distributed across chains and they want to access new yield products on specific chains. With {{config.extra.arcana.company_name}}, a user can supply liquidity to a lending protocol on one chain, such as Ethereum, using their unified balance aggregated from other chains like Optimism and Base.
+
+This leads to larger deposit and borrow transactions with the access to a larger pool of capital.
 
 ## Staking/Restaking
 
 Restaking requires users to bring assets or derivatives to specific chains. {{config.extra.arcana.company_name}} enables users to stake or restake assets on a protocol running on a single chain (for example, Polygon) by leveraging their unified balance across multiple chains. For instance, a user with ETH on Ethereum and Arbitrum can stake and restake seamlessly on another chain without manual transfers.
 
-This allows users from multiple EVM ecosystems to participate in the protocol
+This allows users from multiple EVM ecosystems to participate in the protocol.
 
 *Stay tuned, {{config.extra.arcana.company_name}} is actively working on supporting additional use cases with the {{config.extra.arcana.ca_sdk_name}}.*

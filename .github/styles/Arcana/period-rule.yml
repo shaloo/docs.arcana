@@ -1,9 +1,0 @@
-extends: existence
-message: "Paragraph should end with a period."
-level: error
-scope: paragraph
-raw:
-  # Match any paragraph that:
-  # 1. Isn't a list item (doesn't start with - or *)
-  # 2. Doesn't end with a period, question mark, or exclamation point
-  - '(?<!^[-\*]\s)(?<!^#)(?<!^>)[^\n]+[^.!?]$'
