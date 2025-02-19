@@ -37,7 +37,7 @@ The {{config.extra.arcana.ca_sdk_name}} supports unified balance feature across 
 
 ## {{config.extra.arcana.company_name}} CA Wallet
 
-Web3 wallet users can install the [standalone {{config.extra.arcana.company_name}} CA Wallet](https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi) browser extension. This enables unified balance support for the following apps:
+Web3 wallet users can install the [standalone {{config.extra.arcana.company_name}} CA Wallet]({{config.extra.arcana.ca_wallet_download_url}}) browser extension. This enables unified balance support for the following apps:
 
 ### Apps
 
