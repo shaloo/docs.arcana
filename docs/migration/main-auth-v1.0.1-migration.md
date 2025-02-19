@@ -18,7 +18,7 @@ The following section lists changes between {{config.extra.arcana.sdk_name}} v1.
 
 ### {{config.extra.arcana.dashboard_name}} 
 
-No changes
+No changes or updates in the dashboard usage.
 
 ### {{config.extra.arcana.sdk_name}} 
 

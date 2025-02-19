@@ -78,7 +78,7 @@ Outstanding dues must be paid in full; partial payments are not accepted.
 
 Invoices factor in all promotional and free-tier MAU usage across registered apps for a developer account. Payment is due upon monthly invoice generation, with a notification sent to the developer. Payment is automatically deducted via the configured method. If payment fails, there's a 21-day grace period, with retry attempts every 7 days. During this period, registered apps function normally. After the grace period, if payment remains unsuccessful, the developer account is suspended, barring user access to registered apps.
 
-Inactivity and non-payment for 3 months **may** result in app deletion and account termination."
+Inactivity and non-payment for 3 months **may** result in app deletion and account termination.
 
 ## Billing Notifications
 
