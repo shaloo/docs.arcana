@@ -73,7 +73,7 @@ function App() {
 
 ## Hooks
 
-### useSendTransaction
+### `useSendTransaction`
 
 ```ts
 import { useSendTransaction } from "@arcana/ca-wagmi"
@@ -82,7 +82,7 @@ import { useSendTransaction } from "@arcana/ca-wagmi"
 const { sendTransaction } = useSendTransaction() 
 ```
 
-### useBalance
+### `useBalance`
 
 ```ts
 import { useBalance } from "@arcana/ca-wagmi"

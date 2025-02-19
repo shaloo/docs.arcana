@@ -1,4 +1,4 @@
-=== "CAProvider"
+=== "`CAProvider`"
 
     ```jsx
     const queryClient = new QueryClient()
