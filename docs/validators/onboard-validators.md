@@ -58,13 +58,11 @@ Preferably deploy Ubuntu Linux v20.04.4 LTS or higher.
 
 **`ulimit` Settings**
 
-Use the following command to check the `ulimit` settings for open file descriptors (default):
+Use one of the following commands to check the `ulimit` settings for open file descriptors (default):
 
 ```sh
 ulimit -n
 ```
-
-or
 
 ```sh
 ulimit -aS
@@ -90,20 +88,18 @@ sysctl -p
 vi /etc/security/limits.conf
 ```
 
-  Specify the following limits in `/etc/security/limits.conf`
+Specify the following limits in the `/etc/security/limits.conf` file:
 
 ```sh
  * soft nofile 20000
  * hard nofile 20000
 ```
 
-After making these changes to both files, make sure that you reboot the ADKG node.
+After making these changes to both files, make sure that you reboot the ADKG node via one of these commands:
 
 ```sh
 reboot
 ```
-
-or
 
 ```sh
 init 6

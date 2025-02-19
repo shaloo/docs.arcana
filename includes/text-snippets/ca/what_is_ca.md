@@ -6,3 +6,24 @@ Chain Abstraction lets users view and access a [[concept-unified-balance|unified
   <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}"/>
   <figcaption>{{config.extra.arcana.company_name}}'s Chain Abstraction</figcaption>
 </figure>
+
+## Unified balance
+
+{% include "./text-snippets/ca/unified_balance.md" %}
+
+### Wagmi Plug & Play Widget
+
+{% include "./text-snippets/ca/unified_balance_wagmi_pnp.md" %}
+
+## Allowance
+
+{% include "./text-snippets/ca/allowances.md" %}
+
+## Benefits
+
+Chain abstraction and unified balances simplify and streamline Web3 transactions by offering:
+
+* **Lower Complexity:** Users specify their desired outcome and maximum price. Behind the scenes, solvers handle swaps, conversions, and routing securely and transparently.
+* **Unified Liquidity:** Users see a consolidated view of their assets across all chains without needing manual bridges or swaps.
+* **Simplified UX:** It eliminates the technical and time-consuming multi-step hurdles, creating a seamless experience for both experts and casual users by eliminating the clutter between user expectation and reality of blockchain ecosystem.
+* **Streamlined DX:** Developers can enable unified balances in dApps without altering existing stacks. With the Arcana Chain Abstraction SDK, they can integrate seamlessly—no need to write smart contracts or manage chain switching for transactions on new chains.

@@ -10,19 +10,17 @@ hide:
     - toc
 ---
 
-# Unify Web3 Balance 
-
-## Welcome
+# Unify Balance Across Chains
 
 === "Web3 Developers"
 
-    Allow app users to spend on any chain and beat liquidity fragmentation with {{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction (CA)]]. Integrate Web3 apps with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]] to enable [[concept-unified-balance|unified balance]] for app users. 
+    Allow app users to **spend on any chain** and beat liquidity fragmentation with {{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction ]](CA). Integrate Web3 apps with the  {{config.extra.arcana.company_name}} CA SDK to enable [[concept-unified-balance|unified balance]] for app users. 
 
     {==
 
     **TL;DR**
 
-    [[ca-wagmi-quick-start|Quick start Guide]] | [[ca-examples| Integration examples]] | [[wagmi-ca-usage-guide|Usage Guide]] | {% include "./text-snippets/cawagmisdkref_url.md" %}  
+    [[ca-sdk-installation| Install SDK]] | [[ca-quick-start|Quick start Guide]] | [[ca-examples| Integration examples]] | [[web-ca-usage-guide|Usage Guide]]
 
     Try [Now.](https://codesandbox.io/p/github/arcana-network/ca-wagmi-example)
 
