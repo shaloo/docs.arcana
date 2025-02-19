@@ -35,7 +35,7 @@ Earlier, the {{config.extra.arcana.sdk_name}} had issues if the browser incognit
 
 Also, it is no longer required for a user to re-login in case the browser is refreshed in a 30-minute window since the last login. Developers can use the `canReconnect` and `reconnect` methods of the `AuthProvider` to enable this automatic re-login for the user, in a secure manner.
 
-See [[web-auth-usage-guide#api|usage guide]] for more details.
+See [[web-auth-usage-guide#usage|usage guide]] for more details.
 
 ### Support for Wagmi 1.x.y and Viem
 

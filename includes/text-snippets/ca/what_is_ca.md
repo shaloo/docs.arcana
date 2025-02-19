@@ -17,7 +17,7 @@ Chain Abstraction lets users view and access a [[concept-unified-balance|unified
 
 ## Allowance
 
-{% include "./text-snippets/ca/allowance.md" %}
+{% include "./text-snippets/ca/allowances.md" %}
 
 ## Benefits
 
