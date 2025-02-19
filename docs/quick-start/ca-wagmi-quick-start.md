@@ -13,7 +13,7 @@ Integrate Web3 apps using the Wagmi framework with the {{config.extra.arcana.ca_
 
 !!! an-note "Wagmi Plug & Play Widget"
 
-    The {{config.extra.arcana.ca_wagmi_sdk_name}} supports a plug-and-play UI modal that displays the unified balance within the Wagmi app context. Developers can enable any third-party browser-based wallet through the Wagmi connectors. Authenticated app users can view the unified balance via the plug and play widget.
+    The [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]] supports a [[concept-unified-balance-wagmi-pnp|plug-and-play UI modal]] that displays the [[concept-unified-balance|unified balance]] within the Wagmi app context. Authenticated app users can view the unified balance via the plug-and-play widget and issue blockchain transactions through any browser-based third-party wallets connected to the Wagmi app.
 
 ## 1. Install
 
@@ -46,6 +46,11 @@ const { showBalance } = useBalance();
 // displays a modal with unified balance
 showBalance()
 ```
+
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_50pc" alt="With CA" src="{{config.extra.arcana.img_dir}}/pnp_wagmi_unified_balance.{{config.extra.arcana.img_gif}}"/>
+  <figcaption>Plug & Play Unified Balance Widget</figcaption>
+</figure>
 
 ## See Also
 
