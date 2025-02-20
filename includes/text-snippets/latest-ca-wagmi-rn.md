@@ -8,7 +8,7 @@ Version: **v{{config.extra.arcana.latest_ca_wagmi_sdk_version}}**
  
 This is the first release of the {{config.extra.arcana.ca_wagmi_sdk_name}}:
 
-It offers a simple and easy way to integrate {{config.extra.arcana.company_name}} chain abstraction into your dApp built using the Wagmi framework.
+Web3 apps built using the Wagmi framework can integrate with the {{config.extra.arcana.company_name}} to enable chain abstraction and allow users to spend on any chain.
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 
