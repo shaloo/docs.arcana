@@ -6,9 +6,14 @@ Version: **v{{config.extra.arcana.latest_ca_wagmi_sdk_version}}**
 
 ---
  
-This is the first release of the {{config.extra.arcana.ca_wagmi_sdk_name}}:
+This is the first release of the {{config.extra.arcana.ca_wagmi_sdk_name}}.
 
-Web3 apps built using the Wagmi framework can integrate with the {{config.extra.arcana.company_name}} to enable chain abstraction and allow users to spend on any chain.
+Wagmi-based Web3 apps can now use {{config.extra.arcana.ca_wagmi_sdk_name}} to:
+
+- Let users send transactions across any supported chain without switching networks
+- Access a [[concept-unified-balance|unified balance]] view through the[[wagmi-ca-usage-guide#usebalance|`useBalance`]] hook
+- Enable cross-chain functionality transparently with zero code changes within Web3 apps using the standard [`useSendTransaction`](https://wagmi.sh/react/api/hooks/useSendTransaction) and [`useWriteContract`](https://wagmi.sh/react/api/hooks/useWriteContract) hooks
+
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 
