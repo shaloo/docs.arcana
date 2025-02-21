@@ -15,3 +15,11 @@ arcana:
     [:material-github:{ .icon-color} GitHub ](https://github.com/arcana-network/ca-sdk-example/){ .md-button }
     
     [:simple-codesandbox:{ .icon-color} Try Now!](https://codesandbox.io/p/github/arcana-network/ca-sdk-example){ .md-button }
+
+=== "CA-Wagmi Integration"
+
+    This Wagmi example app demonstrates how to integrate the CA Wagmi SDK with a Wagmi app.
+
+    [:material-github:{ .icon-color} GitHub ](https://github.com/arcana-network/ca-wagmi-example/){ .md-button }
+    
+    [:simple-codesandbox:{ .icon-color} Try Now!](https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/){ .md-button }

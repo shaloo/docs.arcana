@@ -1,1 +1,11 @@
-Web3 users can enjoy [[concept-unified-balance|unified balance]] by logging into an app that is integrated with {{config.extra.arcana.company_name}} Chain Abstraction SDK and supports any third-party browser-based wallet. For demonstrating the [[concept-ca|chain abstraction]] solution and unified balance feature in the context of some of the popular [[ca-stack#apps|Web3 apps]], {{config.extra.arcana.company_name}} also offers a standalone CA Wallet. This wallet is available for [download]({{config.extra.arcana.ca_wallet_download_url}}) as a browser extension. Users can install it to try it out and unify user balance spread across many [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]]. See wallet [Help](https://arcananetwork.notion.site/Help-Content-127f11ed0804805fba4dc72ad3f8cdb2) and [FAQ](https://arcananetwork.notion.site/Frequently-Asked-Questions-128f11ed080480ed8679d90e4bb0b96d) resources for details. [Learn more...](https://arcana.network/chain-abstraction)
+Spend crypto on any blockchain instantly - no chain switching, no bridges, no hassle.
+
+    To enjoy [[concept-unified-balance|unified balance]] Web3 users have two options:
+    
+    1. Log in to an app integrated with {{config.extra.arcana.company_name}}'s' Chain Abstraction SDK and connect any third-party browser-based wallet to view unified balance and sign transactions.
+
+    2. [Download]({{config.extra.arcana.ca_wallet_download_url}}) {{config.extra.arcana.company_name}}'s' standalone CA Wallet browser extension to view unified balance across supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]]. This wallet is made available for demonstrating the [[concept-ca|chain abstraction]] solution and unified balance feature in the context of **only some of the popular** [[ca-stack#apps|Web3 apps]].
+
+    See wallet [Help](https://arcananetwork.notion.site/Help-Content-127f11ed0804805fba4dc72ad3f8cdb2) and [FAQ](https://arcananetwork.notion.site/Frequently-Asked-Questions-128f11ed080480ed8679d90e4bb0b96d) resources for details. 
+    
+    [Learn more...](https://arcana.network/chain-abstraction)

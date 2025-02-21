@@ -8,4 +8,4 @@ arcana:
 
 # Unified balance
 
-{% include "./text-snippets/unified_balance.md" %}
+{% include "./text-snippets/ca/unified_balance.md" %}
