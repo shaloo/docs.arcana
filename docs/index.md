@@ -10,35 +10,27 @@ hide:
     - toc
 ---
 
-# Unify Web3 Balance 
-
-## Welcome
+# Unify Balance Across Chains
 
 === "Web3 Developers"
 
-    Allow app users to spend on any chain and beat liquidity fragmentation with {{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction (CA)]]. Integrate Web3 apps with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]] to enable [[concept-unified-balance|unified balance]] for app users. 
+    Let users spend crypto on any blockchain instantly - no chain switching, no bridges, no hassle.
+    
+    Integrate Web3 app with the {{config.extra.arcana.company_name}}'s [[concept-ca|Chain Abstraction ]](CA) SDK. Enable app users to access [[concept-unified-balance|unified balance]] from all chains in one place.
 
     {==
 
     **TL;DR**
 
-    [[ca-quick-start|Quick start Guide]] | [[ca-examples| Integration examples]] | [[web-ca-usage-guide|Usage Guide]] | {% include "./text-snippets/casdkref_url.md" %}  
+    [[ca-sdk-installation| Install]] | [Quick Start](#quick-start) | [[ca-examples|Examples]] | [[web-ca-usage-guide|Usage]]
 
-    Try [Now.](https://codesandbox.io/p/github/arcana-network/ca-sdk-example)
+    Try [Now.](https://codesandbox.io/p/github/arcana-network/ca-wagmi-example)
 
     ==}
 
     <div>
       <img style="height: 75px" src="{{config.extra.arcana.img_dir}}/CA_Wordmark.{{config.extra.arcana.img_png}}" alt="Auth SDK Word Logo"></img>
     </div>
-
-    ## Bridge No More
-
-    Let Web3 app users spend blockchain assets anywhere, anytime. 
-    
-    No bridging required. 
-    
-    The {{config.extra.arcana.company_name}} [[concept-casdk|Chain Abstraction (CA) SDK ]] enables [[concept-unified-balance|unified balance]] across many chains. [[concept-ca|Learn more...]]
 
     <figure markdown="span">
       <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots"/>
@@ -49,7 +41,7 @@ hide:
 
     A user must cross several hoops to issue a blockchain transaction on a new chain where the user does not have any assets yet. 
     
-    Chain Abstraction removes the friction of users having to bridge across different blockchains to try newer apps and chains. In {{config.extra.arcana.company_name}}'s chain abstraction enabled Web3 apps, users can spend the unified balance across multiple chains from within the app context, bypassing the hassle of procuring or converting tokens on a new chain.
+    Chain Abstraction eliminates the need to bridge or convert tokens between blockchains. With {{config.extra.arcana.company_name}}'s solution, users can spend their combined balance from any chain directly within your app - no switching networks, no extra steps.
     
     The table below illustrates these steps when not using chain abstraction. With chain abstraction, the user experience is much simpler with a single-click transaction.
 
@@ -71,6 +63,10 @@ hide:
       </figure>
       </br>
     </span>
+
+    ## Quick Start
+
+    [[ca-quick-start|Web Apps]]{ .md-button } [[ca-wagmi-quick-start|Wagmi Apps]]{ .md-button } 
 
     ## Why {{config.extra.arcana.company_name}}?
 
@@ -153,4 +149,3 @@ hide:
 ## Need Help?
 
 {% include "./text-snippets/need_help.md" %}
-

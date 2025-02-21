@@ -1,0 +1,1 @@
+<span><a href="https://ca-wagmi-sdk-ref-guide.netlify.app/" target="_blank">{{config.extra.arcana.ca_wagmi_sdk_name}} Reference</a></span>

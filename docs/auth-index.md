@@ -27,36 +27,18 @@ This documentation contains everything you need to get started using [[introduct
 ==}
 -->
 
-## Welcome
-
-<!--
-=== "Web3 Users"
-
-    Arcana Wallet displays your [[concept-unified-balance|unified balance]] across several blockchains and tokens by combining fragmented liquidity in your account. You can now spend on any chain by leveraging Arcana's chain abstraction protocol. [Learn more...](https://arcana.network/chain-abstraction)
-
-    {==
-    
-      **TL;DR**
-
-      Simply [download]({{config.extra.arcana.ca_wallet_download_url}}) the standalone Arcana Wallet browser extension and get started! 
-
-    ==}
-
-    See Arcana Wallet in action...
-    
-    <iframe align="left" src="https://www.youtube.com/embed/PvS_zltnDyQ" allowfullscreen></iframe>
--->
-
 === "Web3 Developers"
 
-    Integrate Web3 apps with {{config.extra.arcana.sdk_name}} and quickly onboard users via [[concept-social-login|social login]].
+    Onboard Web3 app users via the familiar Web2 login providers, enable authenticated users to instantly access the in-app, non-custodial {{config.extra.arcana.wallet_name}} for signing blockchain transactions.
+
+    Integrate Web3 apps with the {{config.extra.arcana.sdk_name}} to enable [[concept-social-login|social login]].
     
 
     {==
 
     **TL;DR**
 
-    [Quick start](#quick-start) | [Integration examples](https://github.com/arcana-network/auth-examples) | [[web-auth-usage-guide|Usage Guide]] | {% include "./text-snippets/authsdkref_url.md" %}
+    [[sdk-installation|Install]] | [Quick Start](#quick-start) | [Examples](https://github.com/arcana-network/auth-examples) | [[web-auth-usage-guide|Usage]]
 
     Try [[try-now-auth| Now.]]
 
@@ -122,10 +104,6 @@ This documentation contains everything you need to get started using [[introduct
     ## Quick Start
 
     === "Web Apps"
-
-        **Auth**
-
-        <hr>
 
         [[wagmi-quick-start| Wagmi ]]{ .md-button } [[rainbowkit-quick-start| RainbowKit ]]{ .md-button } [[web3-react-quick-start| Web3-React ]]{ .md-button } [[walletconnect-quick-start| WalletConnect ]]{ .md-button } [[vanilla-web-apps-quick-start| HTML/CSS/JS ]]{ .md-button } [[react-nextjs-quick-start| React/NextJS ]]{ .md-button } [[vue-quick-start| Vue ]]{ .md-button }
 
