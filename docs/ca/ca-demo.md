@@ -15,9 +15,17 @@ To showcase the unified balance feature, we've built chain abstraction in the co
 
     <iframe width="70%" height="350" src="https://www.youtube.com/embed/Gu0VV6Z7wHY" allowfullscreen ></iframe>
 
-=== "UniSwap"
+=== "Galaxy Exchange"
 
-    <iframe width="70%" height="350" src="https://www.youtube.com/embed/tB2DTw-_apQ" allowfullscreen></iframe>
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
+
+=== "Griffy"
+
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/VaBk0tH0yq0" allowfullscreen></iframe>
+
+=== "Hyperliquid"
+
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/MRErLIKB3s0" allowfullscreen></iframe>
 
 === "Jumper"
 
@@ -27,13 +35,10 @@ To showcase the unified balance feature, we've built chain abstraction in the co
 
     <iframe width="70%" height="350" src="https://www.youtube.com/embed/PvS_zltnDyQ" allowfullscreen></iframe>
 
-=== "Hyperliquid"
+=== "UniSwap"
 
-    <iframe width="70%" height="350" src="https://www.youtube.com/embed/MRErLIKB3s0" allowfullscreen></iframe>
+    <iframe width="70%" height="350" src="https://www.youtube.com/embed/tB2DTw-_apQ" allowfullscreen></iframe>
 
-=== "Galaxy Exchange"
-
-    <iframe width="70%" height="350" src="https://www.youtube.com/embed/biuicLEBT7c" allowfullscreen></iframe>
 
 Developers can integrate the {{config.extra.arcana.ca_sdk_name}} with other Web3 apps to let users spend [[concept-unified-balance|unified balance]] across chains. 
 
