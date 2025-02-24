@@ -139,13 +139,6 @@ hide:
 
     <span markdown="span">{% include "./text-snippets/ca/ca_wallet.md" %}</span>
 
-    <span markdown="span">
-      <figure markdown="span">
-        <img alt="{{config.extra.arcana.ca_sdk_name}} Overview" src="{{config.extra.arcana.img_dir}}/ca_wallet_unified_balance.{{config.extra.arcana.img_png}}" class="an_screenshots width_50pc"/>
-        <figcaption>{{config.extra.arcana.company_name}} CA Wallet</figcaption>
-      </figure>
-    </span>
-
 ## Need Help?
 
 {% include "./text-snippets/need_help.md" %}
