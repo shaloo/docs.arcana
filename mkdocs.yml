@@ -726,9 +726,7 @@ nav:
       - Release Notes: relnotes/latest-auth-release-note.md
       - Migration Guides: migration/latest-auth-migration-guide.md 
       - Changelog: changelog/index.md  
-      - Demos:
-        - Auth Playground!: auth/auth-try-now.md
-        - Auth SDK Demo: https://demo.arcana.network 
+      - Demo: https://demo.arcana.network 
       - Validators:
         - Onboarding Guide: validators/onboard-validators.md
         - Validator FAQ: faq/faq-validator.md
