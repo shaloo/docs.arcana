@@ -40,7 +40,7 @@ This documentation contains everything you need to get started using [[introduct
 
     [[sdk-installation|Install]] | [Quick Start](#quick-start) | [Examples](https://github.com/arcana-network/auth-examples) | [[web-auth-usage-guide|Usage]]
 
-    Try [[try-now-auth| Now.]]
+    Try [Now.](https://codesandbox.io/p/sandbox/auth-sdk-example-qltjdc)
 
     ==}
 
@@ -93,7 +93,7 @@ This documentation contains everything you need to get started using [[introduct
 
     <div class="tx-hero-container">
         <div class="tx-hero-content">
-            <a href="/auth/auth-try-now/">
+            <a href="https://codesandbox.io/p/sandbox/auth-sdk-example-qltjdc">
             <div class="tx-try-now-button-blue a-link-items">
                 <h3 style="color: var(--md-an-gray-light-color)">Try Auth</h3>
             </div>
