@@ -654,7 +654,9 @@ nav:
       - APIs:
         - Auth: auth/auth-usage-guide.md
         - Auth-Core: auth/auth-core-usage-guide.md     
-      - Examples: https://github.com/arcana-network/auth-examples
+      - Examples: 
+        - Auth-Examples: https://github.com/arcana-network/auth-examples
+        - Try Auth: https://codesandbox.io/p/sandbox/latest-sample-auth-simple-html-css-js-mdx5dd
       - Auth Checklists: checklists/index.md
       - Error Handling:
         - Auth: auth/auth-error-msg.md
