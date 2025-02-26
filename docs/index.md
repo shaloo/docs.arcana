@@ -20,17 +20,19 @@ hide:
 
     {==
 
-    **TL;DR**
-
-    [[ca-sdk-installation| Install]] | [Quick Start](#quick-start) | [[ca-examples|Examples]] | [[web-ca-usage-guide|Usage]]
-
-    Try [Now.](https://codesandbox.io/p/github/arcana-network/ca-wagmi-example)
+    <div class="tx-hero-container">
+      <div class="tx-hero-content">
+         <span markdown="span">
+           **TL;DR** | [[ca-sdk-installation| Install]] | [Quick Start](#quick-start) | [[ca-examples|Examples]] | [[web-ca-usage-guide|Usage]]
+         </span>
+      </div>
+      <div class="tx-hero-content">
+        <img style="height: 45px" src="{{config.extra.arcana.img_dir}}/CA_Wordmark.{{config.extra.arcana.img_png}}" alt="CA SDK Word Logo"></img>
+      </div>
+    </div>
 
     ==}
 
-    <div>
-      <img style="height: 75px" src="{{config.extra.arcana.img_dir}}/CA_Wordmark.{{config.extra.arcana.img_png}}" alt="Auth SDK Word Logo"></img>
-    </div>
 
     <figure markdown="span">
       <img alt="With CA" src="{{config.extra.arcana.img_dir}}/an_ca_landing.{{config.extra.arcana.img_png}}" class="an_screenshots"/>
@@ -66,7 +68,22 @@ hide:
 
     ## Quick Start
 
-    [[ca-quick-start|Web Apps]]{ .md-button } [[ca-wagmi-quick-start|Wagmi Apps]]{ .md-button } 
+    <div class="tx-hero-container">
+      <div class="tx-hero-content">
+        <span markdown="span">
+        [[ca-quick-start|Web Apps]]{ .md-button } [[ca-wagmi-quick-start|Wagmi Apps]]{ .md-button } 
+        </span>
+      </div>
+    </div>
+    <div class="tx-hero-container">
+      <div class="tx-hero-content">
+        <a href="https://codesandbox.io/p/github/arcana-network/ca-wagmi-example">
+          <div class="tx-try-now-button-purple a-link-items">
+              <h3 style="color: var(--md-an-gray-light-color)">Try Now</h3>
+          </div>
+        </a>
+      </div>
+    </div>
 
     ## Why {{config.extra.arcana.company_name}}?
 
