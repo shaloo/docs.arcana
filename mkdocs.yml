@@ -90,8 +90,10 @@ extra:
     ca_sdk_demo_url: https://sdk.arcana.network
     ca_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-sdk
     ca_sdk_name: Arcana CA SDK
+    ca_sdk_ref_url: https://ca-sdk-ref-guide.netlify.app/
     ca_wagmi_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-wagmi
     ca_wagmi_sdk_name: Arcana CA Wagmi SDK
+    ca_wagmi_sdk_ref_url: https://ca-wagmi-sdk-ref-guide.netlify.app/
     auth_sdk_download_url: https://www.npmjs.com/package/@arcana/auth
     sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK

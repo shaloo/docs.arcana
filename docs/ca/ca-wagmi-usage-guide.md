@@ -15,7 +15,7 @@ of the file in the `ca` repo: https://github.com/arcana-network/ca-wagmi/blob/ma
 
 Learn how to leverage {{config.extra.arcana.company_name}}'s Chain Abstraction and enable unified balance for Web3 app users.
 
-[:octicons-cross-reference-16:{ .icon-color } {% include "./text-snippets/casdkref_url.md" %} ](https://ca-sdk-ref-guide.netlify.app/){ .md-button }
+[:octicons-cross-reference-16:{ .icon-color } {{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}){ .md-button }
 
 ## Installation
 
