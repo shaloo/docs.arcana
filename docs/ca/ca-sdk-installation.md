@@ -14,9 +14,9 @@ Web3 app developers must install the appropriate {{config.extra.arcana.company_n
 
 {% include "./text-snippets/ca_sdk_flavors.md" %}
 
-## {{config.extra.arcana.company_name}} CA SDKs
+## App Types
 
-### Web Apps (Vue, Vite, HTML/CSS/JS)
+### Web Apps
 
 {% include "./code-snippets/casdk_install.md" %}
 
