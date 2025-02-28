@@ -94,7 +94,7 @@ This documentation contains everything you need to get started using [[introduct
 
     <div class="tx-hero-container">
         <div class="tx-hero-content">
-            <a href="https://codesandbox.io/p/sandbox/latest-sample-auth-simple-html-css-js-mdx5dd">
+            <a href="https://codesandbox.io/p/github/shaloo/auth-sdk-example-vite-vue/main?import=true">
             <div class="tx-try-now-button-blue a-link-items">
                 <h3 style="color: var(--md-an-gray-light-color)">Try Now</h3>
             </div>
