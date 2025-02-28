@@ -12,7 +12,7 @@ arcana:
 
 # Get Started: CA Apps
 
-Integrate Web3 app with {{config.extra.arcana.ca_sdk_name}} to enable unified balance.
+Enable [[concept-unified-balance|unified-balance]] in Web3 apps by integrating with the [[concept-casdk|{{config.extra.arcana.ca_sdk_name}}]].
 
 ## 1. Install
 
