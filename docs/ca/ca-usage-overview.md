@@ -8,7 +8,9 @@ arcana:
 
 # Overview
 
-The **{{config.extra.arcana.ca_sdk_name}}** integrates with Web3 apps to enable [[concept-unified-balance|unified balance]] through chain abstraction. 
+Chain Abstraction allows Web3 app users to spend assets on **any** chain through [[concept-unified-balance|unified balance]]. 
+
+Web3 app developers can enable unified balance for app users by integrating the app with the **{{config.extra.arcana.ca_sdk_name}}**.
 
 ## Usage
 

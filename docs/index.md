@@ -97,7 +97,7 @@ hide:
 
             ---
 
-            Display users' consolidated balance across chains. Use {{config.extra.arcana.company_name}}’s plug-and-play UI (*coming soon*) or design your own.
+            Display users' consolidated balance across chains. Use {{config.extra.arcana.company_name}}’s plug-and-play UI or design your own.
 
           - :material-gas-station:{ .icon-color } __Flexible Gas Payments__
 

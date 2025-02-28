@@ -9,7 +9,7 @@ arcana:
 
 # Get Started: Wagmi Apps
 
-Integrate Web3 apps using the Wagmi framework with the {{config.extra.arcana.ca_wagmi_sdk_name}} to enable unified balance.
+Enable [[concept-unified-balance|unified-balance]] in Web3 apps built with the [Wagmi](https://wagmi.sh/) library by integrating with the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]].
 
 !!! an-note "Wagmi Plug & Play Widget"
 
