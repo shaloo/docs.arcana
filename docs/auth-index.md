@@ -39,7 +39,7 @@ This documentation contains everything you need to get started using [[introduct
     <div class="tx-hero-container">
         <div class="tx-hero-content">
             <span markdown="span">
-               **TL;DR** | [[sdk-installation|Install]] | [Quick Start](#quick-start) | [Examples](https://github.com/arcana-network/auth-examples) | [[web-auth-usage-guide|Usage]]
+                **TL;DR** | [[register-app-auth| Setup]] | [[sdk-installation|Install]] | [Quick Start](#quick-start)  | [Examples](https://github.com/arcana-network/auth-examples) | [[introduction|Usage]]
             </span>
         </div>
         <div class="tx-hero-content">
