@@ -22,7 +22,7 @@ arcana:
     ---   
 
     * [Social Login with Arcana](https://docs.linea.build/developers/tooling/social-login/arcana)
-    * [Account Abstraction with Arcana](https://docs.linea.build/developers/tooling/account-abstraction/arcana)
+    * [Cross-Chain with Arcana](https://docs.linea.build/get-started/tooling/cross-chain/arcana)
 
 -   :material-file-document-check:{ .lg .middle .icon-color} __Caduceus__
 
@@ -30,12 +30,4 @@ arcana:
 
     * [Social Login with Arcana](https://docs.caduceus.foundation/auth)
 
--   :simple-alchemy:{ .lg .middle .icon-color} __Alchemy__
-
-    ---
-
-    * [Arcana Auth Signer](https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html)
-    * [Arcana Auth Integration ](https://accountkit.alchemy.com/signers/guides/arcana-auth.html)
-
 </div>
-
