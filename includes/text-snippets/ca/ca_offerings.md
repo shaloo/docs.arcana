@@ -1,16 +1,11 @@
 {{config.extra.arcana.company_name}} has two CA offerings, one targeted at the Web3 Users and the other for Web3 builders and developers.
 
-* {{config.extra.arcana.ca_sdk_name}}: **Web3 Developers**
-* {{config.extra.arcana.company_name}} Wallet (standalone): **Web3 Users**
+=== "Web3 Developers"
 
-**{{config.extra.arcana.ca_sdk_name}} **
+    * Web Apps: {{config.extra.arcana.ca_sdk_name}}
+    * Wagmi Apps: {{config.extra.arcana.ca_wagmi_sdk_name}}
 
-{% include "./text-snippets/ca/ca_sdk.md" %}
 
-**Arcana CA Wagmi SDK**
+=== "Wallet Users"
 
-{% include "./text-snippets/ca/ca_wagmi.md" %}
-
-**Arcana CA Wallet (Standalone)**
-
-{% include "./text-snippets/ca/ca_wallet.md" %}
+    * {{config.extra.arcana.company_name}} Wallet (Standalone)
