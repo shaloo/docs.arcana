@@ -1,6 +1,6 @@
 ---
 alias: ca-quick-start
-title: 'Get Started: CA'
+title: 'Web Apps'
 description: 'Get Started quickly with Arcana Chain Abstraction and enable unified balance for users. Learn how to integrate the app with the Arcana CA SDK.'
 arcana:
   root_rel_path: ..
@@ -9,8 +9,6 @@ arcana:
   custom_login_ui_tag: "index-custom-ui-onboard-users"
   firebase_custom_ui_tag: "build-iam-firebase-auth"
 ---
-
-# Get Started: CA Apps
 
 Enable [[concept-unified-balance|unified-balance]] in Web3 apps by integrating with the [[concept-casdk|{{config.extra.arcana.ca_sdk_name}}]].
 
@@ -22,7 +20,7 @@ Enable [[concept-unified-balance|unified-balance]] in Web3 apps by integrating w
 
 {% include "./text-snippets/quick-start-int-casdk.md" %}
 
-### Allowance
+## 3. Use Chain Abstraction
 
 [[concept-allowances|Allowances]] are required to enable unified balance in the wallet.
 
@@ -47,7 +45,7 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
   })
 ```
 
-#### Get Allowance
+### Get Allowance
 
 ```js
 // Get USDC allowance for Polygon
@@ -58,7 +56,7 @@ await ca.allowance().tokens(["USDC", "USDT"]).get()
 await ca.allowance().get()
 ```
 
-#### Set Allowance
+### Set Allowance
 
 ```js
 await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
@@ -83,7 +81,7 @@ const balances = await ca.getUnifiedBalances()
 const usdtBalance = await ca.getUnifiedBalance("usdt")
 ```
 
-#### Request
+### Request
 
 ```js
 await ca.request({
@@ -96,21 +94,21 @@ await ca.request({
 })
 ```
 
-## 3. Advanced Usage
+## 4. Advanced Usage
 
-#### Bridge
+### Bridge
 
 ```js
 await ca.bridge().token("pol").amount(10).chain(137).exec();
 ```
 
-#### Transfer
+### Transfer
 
 ```js
 await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
 ```
 
-### CA Events
+### Event Handling
 
 #### Add Listener
 

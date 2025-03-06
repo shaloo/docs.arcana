@@ -10,7 +10,7 @@ arcana:
 
 ## {{config.extra.arcana.ca_sdk_name}}
 
-Developers can enable [[concept-unified-balance|unified balance]] in any dApp by integrating it with the [[concept-casdk| {{config.extra.arcana.ca_sdk_name}}]].
+Developers can enable [[concept-unified-balance|unified balance]] in any dApp by installing and integrating it with the appropriate {{config.extra.arcana.company_name}} [[ca-sdk-installation|CA SDK flavor as per the app type]].
 
 Unified balance is supported across the following chains and tokens. We are actively working on adding support to enable unified balance across newer chains and tokens.
 

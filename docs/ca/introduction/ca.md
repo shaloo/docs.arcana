@@ -17,14 +17,10 @@ Before we get into the details of {{config.extra.arcana.company_name}}'s Chain A
 
 {% include "./text-snippets/ca/ca_offerings.md" %}
 
-## CA Benefits
-
-{% include "./text-snippets/ca/ca_benefits.md" %}
-
 ## Architecture
 
 {% include "./text-snippets/ca/ca_arch.md" %}
 
-### CA Protocol
+## CA Protocol
 
 {% include "./text-snippets/ca/ca_protocol.md" %}
