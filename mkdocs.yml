@@ -489,8 +489,8 @@ nav:
           - relnotes/archives/ca-index.md
           - v0.0.3: relnotes/rn-ca-v0.0.3.md
           - v0.0.2: relnotes/rn-ca-v0.0.2.md
-        - Partner Docs:
-          - partner-docs/ca.md
+        - Docs @Partners:
+          - CA SDK: partner-docs/ca.md
           - Linea:
             - Cross-Chain: https://docs.linea.build/get-started/tooling/cross-chain/arcana
   - Auth:          
@@ -787,8 +787,8 @@ nav:
             - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
             - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
       - Service Status: https://status.arcana.network/
-      - Partner Docs:
-        - partner-docs/auth.md
+      - Docs @Partners:
+        - Auth SDK: partner-docs/auth.md
         - Caduceus:
           - Social Login: https://docs.caduceus.foundation/auth        
         - Linea:
