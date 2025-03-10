@@ -493,6 +493,7 @@ nav:
           - partner-docs/ca.md
           - Linea:
             - Cross-Chain: https://docs.linea.build/get-started/tooling/cross-chain/arcana
+  - Auth:          
     - auth-index.md
     - Developers:
       - Quick Start:
