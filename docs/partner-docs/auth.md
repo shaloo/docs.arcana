@@ -20,7 +20,6 @@ arcana:
     ---   
 
     * [Social Login with Arcana](https://docs.linea.build/developers/tooling/social-login/arcana)
-    * [Cross-Chain with Arcana](https://docs.linea.build/get-started/tooling/cross-chain/arcana)
 
 -   :octicons-note-16:{ .lg .middle .icon-color} __Caduceus__
 
