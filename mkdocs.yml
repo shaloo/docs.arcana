@@ -489,7 +489,10 @@ nav:
           - relnotes/archives/ca-index.md
           - v0.0.3: relnotes/rn-ca-v0.0.3.md
           - v0.0.2: relnotes/rn-ca-v0.0.2.md
-  - Auth: 
+        - Partner Docs:
+          - partner-docs/ca.md
+          - Linea:
+            - Cross-Chain: https://docs.linea.build/get-started/tooling/cross-chain/arcana
     - auth-index.md
     - Developers:
       - Quick Start:
@@ -783,16 +786,14 @@ nav:
             - v0.3.0 -> v1.0.0: migration/main-auth-v1.0.0-migration.md
             - v0.2.x -> v0.3.0: migration/beta-auth-v0.3.0-migration.md
       - Service Status: https://status.arcana.network/
-      - Docs @Partners:
-        - partner-docs/index.md
-        - MultiversX:
-          - Auth: https://multiversx.com/ecosystem/project/arcana
+      - Partner Docs:
+        - partner-docs/auth.md
+        - Caduceus:
+          - Social Login: https://docs.caduceus.foundation/auth        
         - Linea:
           - Social Login: https://docs.linea.build/developers/tooling/social-login/arcana
-          - Account Abstraction: https://docs.linea.build/developers/tooling/account-abstraction/arcana
-        - Caduceus:
-          - Social Login: https://docs.caduceus.foundation/auth
-        - Alchemy:
-          - Auth Signer: https://accountkit.alchemy.com/packages/aa-signers/arcana-auth/introduction.html
-          - Auth Integration: https://accountkit.alchemy.com/signers/guides/arcana-auth.html
+        - MultiversX:
+          - Auth: https://multiversx.com/ecosystem/project/arcana          
+        - Peaq:
+          - Account Abstraction: https://docs.peaq.network/docs/tooling-&-integrations/account-abstraction/arcana-social-login/
   - Need Help?: support/index.md

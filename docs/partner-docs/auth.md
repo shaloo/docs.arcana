@@ -1,6 +1,6 @@
 ---
-alias: index-partner-docs
-title: 'Docs @Partners'
+alias: index-partner-docs-auth
+title: 'Auth: Partner Docs'
 template: newintro.html
 description: 'The social login feature offered by the Arcana Auth SDK is available for partner chains that are pre-configured to use in the in-app Arcana wallet. Check out Arcana documentation on partner chain docs sites for more details.'
 arcana:
