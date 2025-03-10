@@ -7,8 +7,6 @@ arcana:
   root_rel_path: ..
 ---
 
-# Arcana Docs @Partners
-
 <div class="grid cards" markdown>
 
 -   :fontawesome-solid-infinity:{ .lg .middle .icon-color} __MultiversX__
@@ -24,10 +22,16 @@ arcana:
     * [Social Login with Arcana](https://docs.linea.build/developers/tooling/social-login/arcana)
     * [Cross-Chain with Arcana](https://docs.linea.build/get-started/tooling/cross-chain/arcana)
 
--   :material-file-document-check:{ .lg .middle .icon-color} __Caduceus__
+-   :octicons-note-16:{ .lg .middle .icon-color} __Caduceus__
 
     ---   
 
     * [Social Login with Arcana](https://docs.caduceus.foundation/auth)
+
+-   :octicons-book-16:{ .lg .middle .icon-color} __Peaq__
+
+    ---   
+
+    * [Social Login with Arcana](https://docs.peaq.network/docs/tooling-&-integrations/account-abstraction/arcana-social-login/)
 
 </div>
