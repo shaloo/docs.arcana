@@ -1,0 +1,7 @@
+# Arcana Network SDK LanguageTool and Markdownlinter rules
+
+default: true
+
+MD033:
+  allowed_elements: "br, div, p, ul"
+
