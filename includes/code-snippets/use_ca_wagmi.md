@@ -1,6 +1,6 @@
-=== "`CAProvider`"
+=== "`main.tsx`"
 
-    ```jsx
+    ```tsx
     const queryClient = new QueryClient()
 
     function App() {
@@ -16,16 +16,27 @@
     }
     ```
 
-=== "App.jsx"
+=== "App.tsx"
 
-    ```jsx
+    ```tsx
 
-    // import { useSendTransaction } from 'wagmi'
-    import { useSendTransaction } from '@arcana/ca-wagmi'
+    // Use Arcana hooks with the same name instead of Wagmi hooks
+    // import { useSendTransaction, 
+    //          useSendTransactionAsync, 
+    //          useWriteContract, 
+    //          useWriteContractAsync 
+    // } from 'wagmi'
+    import { useSendTransaction, 
+             useSendTransactionAsync,
+             useWriteContract,
+             useWriteContractAsync,
+             useUnifiedBalance,
+             useBalanceModal
+    } from '@arcana/ca-wagmi'
     import { parseEther } from 'viem'
 
     function App() {
-    const { sendTransaction } = useSendTransaction()
+    const { sendTransaction } = useSendTransaction();
 
     return (
         <button
@@ -38,5 +49,6 @@
         >
         Send transaction
         </button>
+
     )}
     ```
