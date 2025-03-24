@@ -104,3 +104,18 @@ arcana:
     Once you sign the intent, {{config.extra.arcana.ca_sdk_name}} supplies the needed USDC and gas in a single transaction. Charges include the deficit amount, CA Gas Fees, protocol fees, and Solver fees.
 
     *Note: Fees are deducted from the main token requested, such as USDC. {{config.extra.arcana.ca_sdk_name}} supports ETH, USDC, and USDT.*
+
+??? an-faq "Can a user review intent details before issuing a transaction that requires chain abstraction with two or more source chain tokens?"
+
+    Yes, user's can review the intent details before issuing a CA transaction via the {{config.extra.arcana.company_name}} CA Wallet. Before submitting a transaction, click 'View Intent' to see the intent details. Once the transaction is successful, there are options to view the intent details as well as the transaction details.
+
+    To view the intent details at a later point in time, you need to save the intent identifier displayed in the details during the transaction, before closing the wallet screen. 
+    
+    Use the {{config.extra.arcana.company_name}} Intent Explorer accessible at: [https://arcana-intent-dev.netlify.app/explorer]({{config.extra.arcana.ca_intent_explorer}}) and enter the intent ID to view details at a later time.
+
+    <figure markdown="span">
+        ![View Intent Details]({{config.extra.arcana.img_dir}}/an_wallet_view_intent_details.{{config.extra.arcana.img_gif}}){ .an-screenshots .width_85pc }
+        <figcaption>View Intent Details</figcaption>
+      </figure>
+
+
