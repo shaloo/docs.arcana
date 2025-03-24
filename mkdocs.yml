@@ -87,6 +87,7 @@ extra:
   arcana:
     company_name: Arcana
     ca_wallet_download_url: https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi
+    ca_intent_explorer: https://arcana-intent-dev.netlify.app/explorer
     ca_sdk_demo_url: https://sdk.arcana.network
     ca_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-sdk
     ca_sdk_name: Arcana CA SDK
