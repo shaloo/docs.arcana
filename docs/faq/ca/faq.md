@@ -116,6 +116,6 @@ arcana:
     <figure markdown="span">
         ![View Intent Details]({{config.extra.arcana.img_dir}}/an_wallet_view_intent_details.{{config.extra.arcana.img_gif}}){ .an-screenshots .width_85pc }
         <figcaption>View Intent Details</figcaption>
-      </figure>
+    </figure>
 
 
