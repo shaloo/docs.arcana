@@ -111,7 +111,7 @@ arcana:
 
     To view the intent details at a later point in time, you need to save the intent identifier displayed in the details during the transaction, before closing the wallet screen. 
     
-    Use the {{config.extra.arcana.company_name}} Intent Explorer accessible at: [https://arcana-intent-dev.netlify.app/explorer]({{config.extra.arcana.ca_intent_explorer}}) and enter the intent ID to view details at a later time.
+    Use the {{config.extra.arcana.company_name}} Intent Explorer accessible at: [https://explorer.arcana.network/]({{config.extra.arcana.ca_intent_explorer}}) and enter the intent ID to view details at a later time.
 
     <figure markdown="span">
         ![View Intent Details]({{config.extra.arcana.img_dir}}/an_wallet_view_intent_details.{{config.extra.arcana.img_gif}}){ .an-screenshots .width_85pc }
