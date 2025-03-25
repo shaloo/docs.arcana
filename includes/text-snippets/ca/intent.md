@@ -10,10 +10,20 @@ The following information is part of an intent:
 
 The intent processing begins when the user signs an intent and authorizes a transaction. A [[concept-solver|solver]] (a liquidity provider) steps in to supply the necessary funds on the destination chain. The protocol is responsible for settling the source chain funds with the respective solver. The intent details shows which solver provided liquidity once the intent is successfully processed.
 
-Intents are tracked via a unique identifier. Users can supply this identifier in the [{{config.extra.arcana.ca_intent_explorer_name}}]({{config.extra.arcana.ca_intent_explorer}}) to check the intent’s status or details later.
+Intents are tracked via a unique identifier. Users can supply this identifier in the [{{config.extra.arcana.ca_intent_explorer_name}}]({{config.extra.arcana.ca_intent_explorer}}]) to check the intent’s status or details later.
 
 
 <figure markdown="span">
     ![Example Intent Details]({{config.extra.arcana.img_dir}}/an_intent_details_example.{{config.extra.arcana.img_png}}){ .an-screenshots }
     <figcaption>Intent Details</figcaption>
 </figure>
+
+Following are some of the key stages of intent processing:
+
+* Intent Accepted  - User has agreed to chain abstracted transaction intent and accepted the associated fees
+* Intent Hash Signed - User has signed the intent hash
+* Intent Submitted - Intent for CA is submitted to the chain 
+* Intent Collection - Funds associated with the intent are collected on the source chains
+* Intent Mined - CA protocol has mined the intent on the chain
+* Intent Deposits Confirmed - Deposit on source chains is confirmed 
+* Intent Fulfilled - The liquidity is supplied on the destination chain by the solver
