@@ -10,15 +10,15 @@ arcana:
 
 ##Intent Identifier
 
-You can obtain the intent identifier by clicking 'View Intent.' 
+Each [[concept-intent| intent]] is associated with a unique identifier.
 
-How you access 'View Intent' depends on whether you’re using the {{config.extra.arcana.company_name}} CA Wallet or a third-party wallet in a Web3 app integrated with the {{config.extra.arcana.company_name}} CA SDK.
+How you access this identifier depends on whether you’re using the {{config.extra.arcana.company_name}} CA Wallet or a third-party wallet in a Web3 app integrated with the {{config.extra.arcana.company_name}} CA SDK.
 
 ### {{config.extra.arcana.company_name}} CA Wallet
 
-When using the {{config.extra.arcana.company_name}} CA Wallet for issuing a chain abstracted transaction, the 'View Intent' becomes available in the transaction UI after a user authorizes such a transaction. 
+When using the {{config.extra.arcana.company_name}} CA Wallet for issuing a chain abstracted transaction, you can obtain the intent identifier by clicking 'View Intent.'  
 
-The transaction is then published to solvers, who compete to provide liquidity on the destination chain as specified in the intent. Each stage of chain abstracted transaction processing can be viewed in the Intent Explorer. All the intent details are populated once the intent is fulfilled and the transaction is complete.
+The 'View Intent' option becomes available in the transaction UI after a user authorizes a transaction that involves chain abstraction. The transaction is then published to [[concept-solver|solvers]], who compete to provide liquidity on the destination chain as specified in the intent. 
 
 <figure markdown="span">
     ![Get Intent Identifier]({{config.extra.arcana.img_dir}}/an_get_intent_id.{{config.extra.arcana.img_gif}}){ .an-screenshots }
@@ -38,7 +38,7 @@ To find the intent identifier for past transactions:
 
 ### Third-party Wallets
 
-The way a Web3 app accesses the intent identifier for a chain-abstracted transaction through a third-party wallet depends on how the app is built. The app must be integrated with the {{config.extra.arcana.company_name}} chain abstraction SDK.
+Accessing the intent identifier for a chain-abstracted transaction issued through a third-party wallet depends on how the Web3 app is built and integrated with the {{config.extra.arcana.company_name}} chain abstraction SDK.
 
 The {{config.extra.arcana.ca_sdk_name}} provides methods and hooks that developers can use to:
 
@@ -48,7 +48,13 @@ The {{config.extra.arcana.ca_sdk_name}} provides methods and hooks that develope
 Developers can:
 
 * Add code to let users view intent details before authorizing a chain abstracted transaction.
-* Use SDK hooks to track events and progress after the intent is published, retrieving the intent identifier once it’s created.
+* Use SDK hooks to track events and [progress after the intent is published](https://ca-sdk-ref-guide.netlify.app/types/progressstep), retrieving the intent identifier once it’s created.
 * Offer options in the UI to display the intent identifier or a button to view details at different stages (e.g., when liquidity is supplied or the intent is fulfilled).
 
 For Web3 apps using the {{config.extra.arcana.ca_wagmi_sdk_name}}, no extra code is needed. The 'View Intent' option is already built into the transaction UI. Users can click it to open the Intent Explorer and see the intent details and identifier.
+
+!!! an-note "Previous Transactions"
+
+    Unlike the {{config.extra.arcana.company_name}} CA Wallet activity tab, the chain abstraction SDKs do not provide a mechanism to access the intent identifier for past transactions.
+
+    If required for transparency or compliance, the developers can provision saving and tracking the intent identifiers for past transactions in the context of the Web3 app by listening to the event data through SDK hooks.
