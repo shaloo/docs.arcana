@@ -14,6 +14,6 @@ Intents are tracked via a unique identifier. Users can supply this identifier in
 
 
 <figure markdown="span">
-    ![Example Intent Details]({{config.extra.arcana.img_dir}}/an_intent_details_example.{{config.extra.arcana.img_png}}){ .an-screenshots .width_85pc }
+    ![Example Intent Details]({{config.extra.arcana.img_dir}}/an_intent_details_example.{{config.extra.arcana.img_png}}){ .an-screenshots }
     <figcaption>Intent Details</figcaption>
 </figure>
