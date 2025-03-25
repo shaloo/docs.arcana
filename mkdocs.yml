@@ -87,7 +87,9 @@ extra:
   arcana:
     company_name: Arcana
     ca_wallet_download_url: https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi
-    ca_intent_explorer: https://arcana-intent-dev.netlify.app/explorer
+    ca_intent_explorer_name: Arcana Intent Explorer
+    ca_intent_explorer_dev: https://arcana-intent-dev.netlify.app/
+    ca_intent_explorer: https://explorer.arcana.network/
     ca_sdk_demo_url: https://sdk.arcana.network
     ca_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-sdk
     ca_sdk_name: Arcana CA SDK
@@ -469,6 +471,9 @@ nav:
       - Chain Abstraction: concepts/ca/chain-abstraction.md
       - Unified Balance: concepts/ca/unified-balance.md
       - Allowances: concepts/ca/allowances.md
+      - Intent: concepts/ca/intent.md
+      - Intent Explorer: concepts/ca/intent-explorer.md
+      - Solver: concepts/ca/solver.md
       - CA SDK: concepts/ca/casdk.md
       - CA Wagmi SDK: concepts/ca/ca_wagmi.md
       - Wagmi Plug & Play: concepts/ca/unified-balance-wagmi-pnp.md
