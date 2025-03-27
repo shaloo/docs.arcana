@@ -9,7 +9,9 @@ arcana:
 
 # Get Started: Wagmi Apps
 
-Enable [[concept-unified-balance|unified-balance]] in Web3 apps built with the [Wagmi](https://wagmi.sh/) library by integrating with the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]].
+Enable [[concept-unified-balance|unified-balance]] and chain abstracted transations in Web3 apps built with the [Wagmi](https://wagmi.sh/) library by integrating with the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]]. 
+
+{{config.extra.arcana.ca_wagmi_sdk_name}} lets you add chain abstracted `bridge` and `transfer` functions in `wagmi` apps. Replace the `useSendTransaction` and `useWriteContract` hooks of the Wagmi library with those provided by the SDK to enable chain abstraction in a transparent manner.
 
 !!! an-note "Wagmi Plug & Play Widget"
 
@@ -25,11 +27,11 @@ Enable [[concept-unified-balance|unified-balance]] in Web3 apps built with the [
 
 ## Hooks
 
-The {{config.extra.arcana.ca_wagmi_sdk_name}} supports hooks with the same name as the `wagmi` library. It also supports additional hooks for managing unified balance modal `useModal()`.
+The {{config.extra.arcana.ca_wagmi_sdk_name}} replaces `useSendTranaction` and `useWriteContract` hooks of the `wagmi` library. In addition, it provides hooks for managing unified balance.
 
 ### Wagmi Hooks
 
-Replace the following hooks from the Wagmi library with those from the {{config.extra.arcana.ca_wagmi_sdk_name}} package:
+Replace the following hooks used in the app from the Wagmi library with those from the {{config.extra.arcana.ca_wagmi_sdk_name}} package:
 
 ```js
 import { useSendTransaction, useWriteContract } from "@arcana/ca-wagmi";
@@ -43,13 +45,14 @@ const { writeContract, writeContractAsync } = useWriteContract();
 
 ### Arcana Hooks
 
-Use these Arcana hooks to access [[concept-unified-balance|unified balance]] via the plug-and-play widget and other CA functions.
+Use these Arcana hooks to access [[concept-unified-balance|unified balance]] via the plug-and-play widget. Additionally, you can enable chain abstraced bridge and transfer functions through `useCAFns`.
 
-* `useBalance()` - to get the unified balance value
-* `useBalanceModal()` - to display the unified balance modal
-* `useCAFn()`  - bridging and token transfer
+* [`useBalance`](#usebalance) - to get the unified balance value across all supported chains for the specified token string 
+* [`useBalances`](#usebalances) - to get the unified balance value across all supported chains for the specified token string 
+* [`useBalanceModal`](#usebalancemodal) - to display or hide the unified balance popup widget
+* [`useCAFn()`](#usecafn)  - for chain abstracted bridging and token transfer functionality
 
-#### `useBalance`
+#### useBalance
 
 `useBalance({ symbol: string })`
 
@@ -69,7 +72,7 @@ import { useBalance } from "@arcana/ca-wagmi"
 const balance = useBalance({ symbol: "eth" })
 ```
 
-??? Sample `useBalance` Response
+??? an-example "Sample `useBalance` Response"
 
     ```js
     {
@@ -84,42 +87,86 @@ const balance = useBalance({ symbol: "eth" })
     }
     ```
 
-#### `useBalanceModal`
+#### useBalances
 
-```jsx
+`useBalances()` returns response contains the following fields:
+
+| Parameter | Type |
+| :-------- | :--- |
+| loading   | `boolean` |
+| value     | `UseBalanceValue[] \| null` |
+| error     | `Error \| null` |
+
+```js
+import { useBalances } from "@arcana/ca-wagmi"
+
+const balances = useBalances()
+```
+??? an-example "Sample `useBalances` Response"
+
+    ```js
+    {
+      loading: false,
+      value: [{
+        symbol: "ETH",
+        decimals: 18,
+        formatted: "0.000785657313049966"
+        value: 785657313049966n,
+        breakdown: [{
+          chain: {
+            id: 1,
+            name: "Ethereum",
+            logo: "..."
+          },
+          formatted: "0.000785657313049966",
+          address: "0x0000000000000000000000000000000000000000",
+          value: 785657313049966n
+        }]
+      }],
+      error: null
+    } 
+    ```
+
+#### useBalanceModal
+
+`useBalanceModal()` returns response contains the following fields:
+
+| Field | Type |
+| :---- | :--- |
+| showModal | `() => void` |
+| hideModal | `() => void` |
+
+```js
 import { useBalanceModal } from "@arcana/ca-wagmi"
 
-const { showModal, hideModal } = useBalanceModal();
-
-// displays a modal with unified balance
-showModal()
+const { showModal, hideModal } = useBalanceModal()
 ```
 
-#### `useCAFn`
+#### useCAFn
 
-The `useCAFn()` does not require any input parameter. The return response contains the following fields:
+The `useCAFn()` response contains the following fields:
 
 | Parameter   | Type             |
 |-------------|-----------------------------------|
 | bridge     | `({ token: string, amount: string, chain: number }) => Promise<unknown>` |
 | transfer   | `({ token: string, amount: string, chain: number, to: "0x${string}" }) => Promise<unknown>` |
 
-```javascript
-import { useCAFn } from "@arcana/ca-wagmi"
+```js
+  import { useCAFn } from "@arcana/ca-wagmi"
 
-const { bridge, transfer } = useCAFn()
+  const { bridge, transfer } = useCAFn()
 
-await bridge({
-token: "usdt",
-amount: "1.5",
-chain: 42161
- })
+  await bridge({
+  token: "usdt",
+  amount: "1.5",
+  chain: 42161
+  })
 
-const hash = await transfer({to: "0x80129F3d408545e51d051a6D3e194983EB7801e8",
-token: "usdt",
-amount: "1.5",
-chain: 10
-})
+  const hash = await transfer({to: "0x80129F3d408545e51d051a6D3e194983EB7801e8",
+  token: "usdt",
+  amount: "1.5",
+  chain: 10
+  })
 ```
 
 <figure markdown="span">
@@ -129,10 +176,6 @@ chain: 10
 
 ## See Also
 
-<!---
-{% include "./text-snippets/quick-start-common-examples.md" %}
--->
+{% include "./text-snippets/ca_wagmi_sdk_quicklinks.md" %}
 
-{% include "./text-snippets/ca_sdk_quicklinks.md" %}
-
-{% include "./text-snippets/demo/ca_sdk_demo.md" %}
+{% include "./text-snippets/demo/ca_wagmi_sdk_demo.md" %}
