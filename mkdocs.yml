@@ -91,6 +91,7 @@ extra:
     ca_intent_explorer_dev: https://arcana-intent-dev.netlify.app/
     ca_intent_explorer: https://explorer.arcana.network/
     ca_sdk_demo_url: https://sdk.arcana.network
+    ca_sdk_sandbox_url: https://codesandbox.io/p/github/arcana-network/ca-sdk-example/main
     ca_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-sdk
     ca_sdk_name: Arcana CA SDK
     ca_sdk_ref_url: https://ca-sdk-ref-guide.netlify.app/
