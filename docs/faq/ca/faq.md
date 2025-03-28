@@ -18,7 +18,12 @@ arcana:
 
 ??? an-faq "I'm a Web3 dApp developer. how can I enable unified balance for dApp users?"
 
-    Download the [{{config.extra.arcana.ca_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-sdk) and integrate your dApp with the SDK. See [CA SDK integration demo](https://sdk.arcana.network) and the [[ca-examples|SDK integration example code]] for details.
+    Download and [[ca-sdk-installation|install the appropriate CA SDK flavor]] as per the app type. 
+    
+    * Web3 apps: [{{config.extra.arcana.ca_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-sdk) ([Example]({{config.extra.arcana.ca_sdk_sandbox_url}}))
+    * Web3 apps using Wagmi: [{{config.extra.arcana.ca_wagmi_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-wagmi) ([Example]({{config.extra.arcana.ca_wagmi_sdk_sandbox_url}}))
+    
+    Then follow the SDK specific instructions to integrate the dApp.
 
 ??? an-faq "I'm a Web3 wallet user, how can I enjoy unified balance with chain abstraction?"
 
@@ -44,21 +49,25 @@ arcana:
 
     {{config.extra.arcana.company_name}}'s chain abstraction and unified balance works for some select [[ca-stack#chains|chains ]] and [[ca-stack#tokens|tokens]]. We are working on adding support for more chains in the future. 
     
-??? an-faq "Does dApp integration with the CA-SDK enable an in-app wallet like the Auth SDK?"
+??? an-faq "Does dApp integration with the {{config.extra.arcana.company_name}} CA SDK enable an in-app wallet like the Auth SDK?"
 
-    No. Web3 apps integrating with the CA-SDK must use a third-party wallet for blockchain transactions.
+    No there is no built-in in-app wallet offered by the {{config.extra.arcana.company_name}} SDKs. Web3 apps integrating with the {{config.extra.arcana.company_name}} CA SDK must use a third-party wallet for blockchain transactions.
 
 ??? an-faq "How does a dApp access unified balance for a user account?"
 
     The dApp must download and integrate with the CA-SDK and use the EIP-1193 provider to access the unified balance in the context of an authenticated user. See {% include "./text-snippets/casdkref_url.md" %} and [[web-ca-usage-guide|the usage guide]] for details.
 
-??? an-faq "Does CA-SDK work with a Web3 app that uses wallet connectors such as Wagmi to enable wallet selection by the user?"
+??? an-faq "Does the {{config.extra.arcana.ca_sdk_name}} enable unified balance and chain abstracted transactions in a Web3 app built using Wagmi?"
 
-    No. At present, we are working on a CA-SDK Wallet connector component. Stay tuned...
+    For Web3 app built using Wagmi, integrate with the {{config.extra.arcana.ca_wagmi_sdk_name}}.
+   
+??? an-faq "How do I enable unified balance and chain abstracted `sendTransaction`, `bridge` and `transfer` functions in a Web3 app that uses the Wagmi library?"
 
-??? an-faq "Who is the target audience for the CA-SDK?"
+    To enable unified balance and chain abstraction in a Web3 app that uses the Wagmi library, integrate the app with the {{config.extra.arcana.ca_wagmi_sdk_name}}. This SDK replaces the Wagmi hooks: `useSendTransaction` and `useWriteContract`. Additionally, it provides hooks such as `useBalance`, `useBalanceModal` and `useCAFn` to enable unified balance plug-and-play popup modal and chain abstracted `bridge` and `transfer` functions. For details see [[ca-wagmi-quick-start|{{config.extra.arcana.ca_wagmi_sdk_name}} Quick Start Guide]] and the [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}).
 
-    {{config.extra.arcana.ca_sdk_name}} helps Web3 dApp developers handle fragmented blockchain assets, letting users spend on any chain. It integrates with dApps to offer unified balances across chains.
+??? an-faq "Who is the target audience for the {{config.extra.arcana.company_name}} CA SDKs?"
+
+    {{config.extra.arcana.company_name}} CA SDKs help Web3 dApp developers handle fragmented blockchain assets, letting users spend on any chain. These SDKs can integrates with dApps to offer unified balances across chains and chain abstracted transactions.
     
     For a complete list of real life applications of unified balance, see [[ca-usecases|use cases]] section.
 
