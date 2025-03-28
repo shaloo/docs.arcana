@@ -48,7 +48,7 @@ const { writeContract, writeContractAsync } = useWriteContract();
 Use these Arcana hooks to access [[concept-unified-balance|unified balance]] via the plug-and-play widget. Additionally, you can enable chain abstraced bridge and transfer functions through `useCAFns`.
 
 * [`useBalance`](#usebalance) - to get the unified balance value across all supported chains for the specified token string 
-* [`useBalances`](#usebalances) - to get the unified balance value across all supported chains for the specified token string 
+* [`useBalances`](#usebalances) - to get the unified balance values across all supported chains for all supported tokens associated with the EoA
 * [`useBalanceModal`](#usebalancemodal) - to display or hide the unified balance popup widget
 * [`useCAFn()`](#usecafn)  - for chain abstracted bridging and token transfer functionality
 
@@ -142,6 +142,11 @@ import { useBalanceModal } from "@arcana/ca-wagmi"
 const { showModal, hideModal } = useBalanceModal()
 ```
 
+<figure markdown="span">
+  <img class="an-screenshots-noeffects width_50pc" alt="With CA" src="{{config.extra.arcana.img_dir}}/pnp_wagmi_unified_balance.{{config.extra.arcana.img_gif}}"/>
+  <figcaption>Plug & Play Unified Balance Widget</figcaption>
+</figure>
+
 #### useCAFn
 
 The `useCAFn()` response contains the following fields:
@@ -170,8 +175,8 @@ The `useCAFn()` response contains the following fields:
 ```
 
 <figure markdown="span">
-  <img class="an-screenshots-noeffects width_50pc" alt="With CA" src="{{config.extra.arcana.img_dir}}/pnp_wagmi_unified_balance.{{config.extra.arcana.img_gif}}"/>
-  <figcaption>Plug & Play Unified Balance Widget</figcaption>
+  <img class="width_85pc an-screenshots-noeffects width_50pc" alt="With CA" src="{{config.extra.arcana.img_dir}}/ca-sdk-example-bridge-transfer.{{config.extra.arcana.img_gif}}"/>
+  <figcaption>`useCAFn`: Chain Abstracted Bridge and Transfer </figcaption>
 </figure>
 
 ## See Also

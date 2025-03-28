@@ -1,1 +1,1 @@
-[Try CA Wagmi SDK CodeSandbox :material-rocket-launch:](https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main){ .md-button}
+[Try CA Wagmi SDK CodeSandbox :material-rocket-launch:]({{config.extra.arcana.ca_wagmi_sdk_codesandbox_url}}){ .md-button}
