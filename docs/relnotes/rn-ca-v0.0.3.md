@@ -6,6 +6,8 @@ arcana:
   root_rel_path: ..
 ---
 
+# CA SDK Release Note
+
 **Release Date: Jan 15, 2025**  
 
 Version: **v0.0.3**
