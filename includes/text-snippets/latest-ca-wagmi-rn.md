@@ -6,14 +6,14 @@ Version: **v{{config.extra.arcana.latest_ca_wagmi_sdk_version}}**
 
 ---
  
-This is the first release of the {{config.extra.arcana.ca_wagmi_sdk_name}}.
+This release of {{config.extra.arcana.ca_wagmi_sdk_name}} includes enhancements and bug fixes. Some APIs have changed.
 
-Wagmi-based Web3 apps can now use {{config.extra.arcana.ca_wagmi_sdk_name}} to:
-
-- Let users send transactions across any supported chain without switching networks
-- Access a [[concept-unified-balance|unified balance]] view through the[[wagmi-ca-usage-guide#usebalance|`useBalance`]] hook
-- Enable cross-chain functionality transparently with zero code changes within Web3 apps using the standard [`useSendTransaction`](https://wagmi.sh/react/api/hooks/useSendTransaction) and [`useWriteContract`](https://wagmi.sh/react/api/hooks/useWriteContract) hooks
-
+- Supports unified balance and chain abstraction through [`sendTransactionAsync`](https://wagmi.sh/react/api/hooks/useSendTransaction#mutate-async) and [`writeContractAsync`](https://wagmi.sh/react/api/hooks/useWriteContract#mutate-async) replacement functions.
+- The `useBalance()` function is replaced by `useBalanceModal()`. See [usage details](https://docs.arcana.network/quick-start/ca-wagmi-quick-start/#usebalancemodal).
+- New hook added:  `useBalance({ symbol: string })` to get the specified token balance across the supported chains.
+- Added `transfer` and `bridge` functions to the hook `useCAFn()` for enabling chain abstracted functionality.
+- Added checks to disable chain abstraction and allow regular behavior for wallet transactions if the user denies the sign in with Arcana at the start of the transaction.
+- Other changes: UI enhancements, improved documentation. 
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 
@@ -29,7 +29,9 @@ Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-sta
 
 ## Previous Releases
 
-This is the first release of the {{config.extra.arcana.ca_wagmi_sdk_name}}.
+Are you using an older version of the {{config.extra.arcana.ca_wagmi_sdk_name}}?
+
+Refer to the [[ca-index-release-notes| release notes archive]]. Upgrade to the latest version.
 
 ## Questions? 
 
