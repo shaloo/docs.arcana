@@ -23,6 +23,22 @@ Enable [[concept-unified-balance|unified-balance]] and chain abstracted transati
 
 ## 2. Integrate
 
+Use the `CAProvider` component from {{config.extra.arcana.ca_wagmi_sdk_name}} in the app code. Make sure you import the following functions from the {{config.extra.arcana.ca_wagmi_sdk_pkg_name}} and **not from the wagmi SDK**.
+
+* `useBalance`  - Unify the specified token balance across chains - USDC, USDT, ETH
+* `useSendTransaction` - Chain abstracted Send Transaction
+* `useWriteContract` - Chain abstracted Write Contract
+* `useUnifiedBalance` - Get unified balance for all tokens across all chains
+
+The SDK also offers additional hooks: 
+
+* `useBalanceModal`  - Display a plug and play widget containing the unified balance
+* `useCAFn` - Allows chain abstracted bridge and transfer functions
+
+For details, see [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}).
+
+Refer to the following sample integration code and hook usage.
+
 {% include "./text-snippets/quick-start-int-ca-wagmi-sdk.md" %}
 
 ## Hooks
