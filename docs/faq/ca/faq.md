@@ -20,10 +20,10 @@ arcana:
 
     Download and [[ca-sdk-installation|install the appropriate CA SDK flavor]] as per the app type. 
     
-    * Web3 apps: [{{config.extra.arcana.ca_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-sdk) ([Example]({{config.extra.arcana.ca_sdk_sandbox_url}}))
-    * Web3 apps using Wagmi: [{{config.extra.arcana.ca_wagmi_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-wagmi) ([Example]({{config.extra.arcana.ca_wagmi_sdk_sandbox_url}}))
+    * **Web3 apps**: Install the [{{config.extra.arcana.ca_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-sdk). Check out the integration example in [codesandbox]({{config.extra.arcana.ca_sdk_sandbox_url}})
+    * Web3 apps using the **Wagmi library**: Install the [{{config.extra.arcana.ca_wagmi_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-wagmi). Try the [codesandbox]({{config.extra.arcana.ca_wagmi_sdk_sandbox_url}}) integration example.
     
-    Then follow the SDK specific instructions to integrate the dApp.
+    Refer to the respective SDK quick start guide for integration details.
 
 ??? an-faq "I'm a Web3 wallet user, how can I enjoy unified balance with chain abstraction?"
 
