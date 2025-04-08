@@ -1,4 +1,5 @@
 * Arbitrum
+* Avalanche
 * Base
 * Ethereum
 * Fuel
@@ -6,3 +7,4 @@
 * Optimism
 * Polygon
 * Scroll
+* Sophon
