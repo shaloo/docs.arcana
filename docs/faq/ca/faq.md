@@ -20,8 +20,8 @@ arcana:
 
     Download and [[ca-sdk-installation|install the appropriate CA SDK flavor]] as per the app type. 
     
-    * Web3 apps: [{{config.extra.arcana.ca_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-sdk) ([Example]({{config.extra.arcana.ca_sdk_sandbox_url}}))
-    * Web3 apps using Wagmi: [{{config.extra.arcana.ca_wagmi_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-wagmi) ([Example]({{config.extra.arcana.ca_wagmi_sdk_sandbox_url}}))
+    * Web3 apps: [{{config.extra.arcana.ca_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-sdk)(Try [codesandbox]({{config.extra.arcana.ca_sdk_sandbox_url}}))
+    * Web3 apps using Wagmi: [{{config.extra.arcana.ca_wagmi_sdk_name}}](https://www.npmjs.com/package/@arcana/ca-wagmi) (Try [codesandbox]({{config.extra.arcana.ca_wagmi_sdk_sandbox_url}}))
     
     Then follow the SDK specific instructions to integrate the dApp.
 
