@@ -61,7 +61,7 @@
         useDisconnect,
         useEnsName,
         useSwitchChain,
-    // useSendTransaction //Do not use from wagmi SDK
+    // useSendTransaction //DO NOT use from the wagmi SDK
     } from "wagmi";
     import {
         useBalance,
@@ -105,6 +105,7 @@
                 const to = toFV as `0x${string}`;
                 const chain = Number(chainFV);
                 const asset = assetFV as "usdc" | "usdt" | "eth";
+
                 await switchChainAsync({ chainId: chain });
 
                 let amount = new Decimal(amountFV as string);
@@ -118,7 +119,7 @@
                         },
                         {
                             onSuccess(hash) {
-                            createSuccessToast(chain, hash);
+                                createSuccessToast(chain, hash);
                                 form.reset();
                                 setLoading(false);
                                 console.log("success");
@@ -139,7 +140,6 @@
                     if (!s) {
                         throw new Error("asset not supported");
                     }
-
                     writeContract(
                         {
                             address: s,
@@ -147,17 +147,17 @@
                             functionName: "transfer",
                             args: [to, BigInt(amount.mul(new Decimal(10).pow(6)).toString())],
                         },
-                    {
-                        onSuccess(hash) {
-                            createSuccessToast(chain, hash);
-                            form.reset();
-                            setLoading(false);
-                            console.log("success");
+                        {
+                            onSuccess(hash) {
+                                createSuccessToast(chain, hash);
+                                form.reset();
+                                setLoading(false);
+                                console.log("success");
                             },
-                        onError(error) {
-                            form.reset();
-                            setLoading(false);
-                            console.log({ error });
+                            onError(error) {
+                                form.reset();
+                                setLoading(false);
+                                console.log({ error });
                             },
                         }
                     );
@@ -168,14 +168,101 @@
                 setLoading(false);
             }
         };
-        // return unified balance modal to be displayed     
-        // return (
-        //   <>
-        //   ...
-        //    <button onClick={() => showBalance()}>
-        //    ...
-        //);
-    }        
+
+        return (
+            <>
+                {loading ? (
+                    <div>
+                        <p>Loading...</p>
+                    </div>   
+                ) : (
+                    <>
+                        <p>
+                            {address && ensName ? `${ensName} (${address})` : address}
+                        </p>
+                        <div>
+                            <button onClick={() => disconnect()}>
+                                Disconnect
+                            </button>
+                            <button onClick={() => showModal()}> //Display Unified Balance
+                                Show balances
+                            </button>
+                        </div>
+                        <div className="mb-4 m-auto"></div>
+                        <form onSubmit={handleSubmit}>
+                            <div>
+                                <label>
+                                    To
+                                </label>
+                                <input
+                                    name="to"
+                                    type="text"
+                                    placeholder="0x..."
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label>
+                                    Destination Chain
+                                </label>
+                                <select
+                                    required
+                                    name="chain"
+                                    id="chain"
+                                    defaultValue={""}
+                                >
+                                    <option value="" disabled>
+                                        Select a chain
+                                    </option>
+                                    <option value="42161">Arbitrum One</option>
+                                    <option value="59144">Linea</option>
+                                    <option value="534352">Scroll</option>
+                                    <option value="10">Optimism</option>
+                                    <option value="8453">Base</option>
+                                    <option value="1">Ethereum</option>
+                                    <option value="137">Polygon POS</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label>
+                                    Asset
+                                </label>
+                                <select
+                                    name="asset"
+                                    id="asset"
+                                    defaultValue={""}
+                                >
+                                    <option value="" disabled>
+                                        Select an asset
+                                    </option>
+                                    <option value="usdt">USDT</option>
+                                    <option value="usdc">USDC</option>
+                                    <option value="eth">ETH</option>
+                                </select>
+                            </div>
+                            <div className="mb-5">
+                                <label>
+                                    Amount
+                                </label>
+                                <input
+                                    name="amount"
+                                    type="text"
+                                    id="amount"
+                                    required
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                disabled={allLoading}
+                            >
+                                {allLoading ? "Loading..." : "Submit"}
+                            </button>
+                        </form>
+                    </>
+                )}
+            </>
+        );
+    }      
     ```
 === "utils/config.ts"
 
@@ -205,4 +292,67 @@
             [polygon.id]: http(),
         },
     });
+    ```
+
+=== "wallet-options.ts"
+    ```ts
+    import * as React from "react";
+    import { Connector, useConnect } from "wagmi";
+
+    function WalletOption({
+    connector,
+    onClick,
+    }: {
+    connector: Connector;
+    onClick: () => void;
+    }) {
+    const [ready, setReady] = React.useState(false);
+
+    React.useEffect(() => {
+        (async () => {
+        const provider = await connector.getProvider();
+        setReady(!!provider);
+        })();
+    }, [connector]);
+
+    return (
+        <>
+        <div>
+            <button
+            disabled={!ready}
+            type="button"
+            onClick={onClick}
+            >
+            <img
+                src={connector.icon}
+                aria-hidden="true"
+            />
+            {connector.name}
+            </button>
+        </div>
+        </>
+    );
+    }
+
+    export function WalletOptions() {
+    const { connectors, connect } = useConnect();
+
+    return (
+        <>
+        <h3>
+            Wallets
+        </h3>
+        <hr></hr>
+        {connectors
+            .filter((c) => c.id !== "injected")
+            .map((connector) => (
+            <WalletOption
+                key={connector.uid}
+                connector={connector}
+                onClick={() => connect({ connector })}
+            />
+            ))}
+        </>
+    );
+    }
     ```

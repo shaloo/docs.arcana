@@ -6,5 +6,4 @@
 * Jumper
 * Polymarket
 * Renzo
-* Sushiswap
 * Uniswap
