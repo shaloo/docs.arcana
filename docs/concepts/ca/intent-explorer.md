@@ -6,6 +6,8 @@ arcana:
   root_rel_path: ..
 ---
 
+# Intent Explorer
+
 {% include "./text-snippets/ca/intent_explorer.md" %}
 
 ##Intent Identifier
@@ -49,7 +51,7 @@ Developers can:
 
 * Add code to let users view intent details before authorizing a chain abstracted transaction.
 * Use SDK hooks to track events and [progress after the intent is published](https://ca-sdk-ref-guide.netlify.app/types/progressstep), retrieving the intent identifier once it’s created.
-* Offer options in the UI to display the intent identifier or a button to view details at different stages (e.g., when liquidity is supplied or the intent is fulfilled).
+* Offer options in the UI to display the intent identifier or a button to view details at different stages (for example, when liquidity is supplied or the intent is fulfilled).
 
 For Web3 apps using the {{config.extra.arcana.ca_wagmi_sdk_name}}, no extra code is needed. The 'View Intent' option is already built into the transaction UI. Users can click it to open the Intent Explorer and see the intent details and identifier.
 
