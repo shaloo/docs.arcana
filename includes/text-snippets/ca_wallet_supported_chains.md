@@ -1,5 +1,4 @@
 * Arbitrum
-* Avalanche
 * Base
 * Ethereum
 * Fuel
