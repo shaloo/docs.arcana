@@ -73,8 +73,7 @@ function App() {
 
 ## Hooks
 
-
-There are two kinds of hooks implemented by the `ca-wagmi` SDK. 
+The `ca-wagmi` SDK implements two kinds of hooks:
 
 * Wagmi hooks (Re-implemented / Replaced)
 * Arcana `ca-wagmi` hooks to enable unified balance and chain abstracted transactions

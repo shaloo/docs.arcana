@@ -9,7 +9,7 @@ arcana:
 
 # Get Started: Wagmi Apps
 
-Enable [[concept-unified-balance|unified-balance]] and chain abstracted transations in Web3 apps built with the [Wagmi](https://wagmi.sh/) library by integrating with the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]]. 
+Enable [[concept-unified-balance|unified-balance]] and chain abstracted transactions in Web3 apps built with the [Wagmi](https://wagmi.sh/) library by integrating with the [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]]. 
 
 {{config.extra.arcana.ca_wagmi_sdk_name}} lets you add chain abstracted `bridge` and `transfer` functions in `wagmi` apps. Replace the `useSendTransaction` and `useWriteContract` hooks of the Wagmi library with those provided by the SDK to enable chain abstraction in a transparent manner.
 
@@ -61,7 +61,7 @@ const { writeContract, writeContractAsync } = useWriteContract();
 
 ### Arcana Hooks
 
-Use these Arcana hooks to access [[concept-unified-balance|unified balance]] via the plug-and-play widget. Additionally, you can enable chain abstraced bridge and transfer functions through `useCAFns`.
+Use these Arcana hooks to access [[concept-unified-balance|unified balance]] via the plug-and-play widget. Additionally, you can enable chain abstracted bridge and transfer functions through `useCAFns`.
 
 * [`useBalance`](#usebalance) - to get the unified balance value across all supported chains for the specified token string 
 * [`useBalances`](#usebalances) - to get the unified balance values across all supported chains for all supported tokens associated with the EoA

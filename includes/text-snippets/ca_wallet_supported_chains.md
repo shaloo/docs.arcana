@@ -7,4 +7,3 @@
 * Optimism
 * Polygon
 * Scroll
-* Sophon
