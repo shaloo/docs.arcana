@@ -25,26 +25,26 @@ arcana:
 
 The {{config.extra.arcana.ca_sdk_name}} supports unified balance feature across the following chains and tokens:
 
-### Chains
-
-{% include "./text-snippets/ca_supported_chains.md" %}
-
 ### Tokens
 
 {% include "./text-snippets/ca_supported_tokens.md" %}
+
+### Chains
+
+{% include "./text-snippets/ca_supported_chains.md" %}
 
 ## {{config.extra.arcana.company_name}} CA Wallet
 
 Web3 wallet users can install the [standalone {{config.extra.arcana.company_name}} CA Wallet]({{config.extra.arcana.ca_wallet_download_url}}) browser extension. This enables unified balance support for the following apps:
 
-### Apps
+### Tokens
 
-{% include "./text-snippets/ca_wallet_supported_apps.md" %}
+{% include "./text-snippets/ca_supported_tokens.md" %}
 
 ### Chains
       
 {% include "./text-snippets/ca_wallet_supported_chains.md" %}
 
-### Tokens
+### Apps
 
-{% include "./text-snippets/ca_supported_tokens.md" %}
+{% include "./text-snippets/ca_wallet_supported_apps.md" %}
