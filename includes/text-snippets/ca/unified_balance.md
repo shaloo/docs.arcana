@@ -1,4 +1,4 @@
-Unified balance shows all the liquidity in a user's EoA account across multiple chains in one view. It lets users transact seamlessly on any chain without needing bridges or pre-provisioning gas for token swaps. Chain abstraction handles all the complexity involved in a cross-chain transaction while enabling better UX through a single intent approval.
+Unified balance shows all the liquidity in a user's EOA account across multiple chains in one view. It lets users transact seamlessly on any chain without needing bridges or pre-provisioning gas for token swaps. Chain abstraction handles all the complexity involved in a cross-chain transaction while enabling better UX through a single intent approval.
 
 For instance, let us take the case where a user intends to spend 18 USDC on Scroll and does not have any balance on Scroll.
 

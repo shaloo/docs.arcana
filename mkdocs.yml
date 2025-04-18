@@ -174,7 +174,7 @@ extra:
     provider: google
     property: !ENV [GOOGLE_ANALYTICS_ID, default='XXXXXXXXXX']
     feedback:
-      title: Make your opinion matter...... Was this information useful?
+      title: Are you happy with this documentation?
       ratings:
         - icon: material/thumb-up-outline
           name: Yes, it was useful.
@@ -211,7 +211,8 @@ plugins:
         #background_image: img/social_card_image.png #sponsors only
   - git-authors:
       show_email_address: false
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      enable_creation_date: false
   - glightbox:
       touchNavigation: true
       loop: false
