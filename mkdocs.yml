@@ -475,6 +475,7 @@ nav:
       - Quick Start: 
         - Web Apps: quick-start/ca-quick-start.md
         - Wagmi Apps: quick-start/ca-wagmi-quick-start.md
+        - Auth & CA Apps: quick-start/auth-ca-wagmi-quick-start.md
       - Usage: 
         - Overview: ca/ca-usage-overview.md
         - Install: ca/ca-sdk-installation.md
