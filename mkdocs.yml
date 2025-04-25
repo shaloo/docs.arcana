@@ -98,7 +98,8 @@ extra:
     ca_wagmi_sdk_download_url: https://www.npmjs.com/package/@arcana/ca-wagmi
     ca_wagmi_sdk_name: Arcana CA Wagmi SDK
     ca_wagmi_sdk_ref_url: https://ca-wagmi-sdk-ref-guide.netlify.app/
-    ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main    
+    ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main
+    auth_ca_wagmi_sdk_codesandbox_url: https://codesandbox.io/p/github/arcana-network/ca-wagmi-example/main    
     auth_sdk_download_url: https://www.npmjs.com/package/@arcana/auth
     sdk_name: Arcana Auth SDK
     react_sdk_name: Arcana Auth React SDK
