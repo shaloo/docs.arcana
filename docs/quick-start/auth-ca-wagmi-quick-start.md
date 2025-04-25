@@ -4,19 +4,25 @@ title: 'Get Started: Auth+CA'
 description: 'Get Started quickly with Arcana Account and Chain Abstraction to enable user onboarding and unified balance in Wagmi apps. Learn how to integrate the Arcana Auth and CA Wagmi SDK.'
 arcana:
   root_rel_path: ..
-  app_type: "'Auth-CA-Wagmi'"
+  app_type: "Auth-CA-Wagmi"
 ---
 
-# Get Started: Social Login & Chain Abstraction
+# Get Started: Auth+CA
 
-This guide explains how a *Web3 app using the [Wagmi](https://wagmi.sh/)* librar can onboard users via social login and enable chain abstracted transactions by integrating with **both** the {{config.extra.arcana.company_name}} SDKs: 
+Follow this guide to onboard users in a Web3 app via social login and enable chain abstracted transactions. It explains how *Web3 apps built using the [Wagmi](https://wagmi.sh/)* library can integrate with the {{config.extra.arcana.company_name}} SDKs for social login and chain abstraction. 
 
-* [[concept-authsdk|{{config.extra.arcana.wagmi_sdk_name}}]]
-* [[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]].
+=== "[[concept-authsdk|{{config.extra.arcana.wagmi_sdk_name}}]]"
 
-The {{config.extra.arcana.wagmi_sdk_name}} allows user onboarding via [[concept-social-login|social login]] in Web3 apps. The authenticated users can instantly access the in-app, built-in [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]] to sign blockchain transactions. 
+    * Integrate with the {{config.extra.arcana.wagmi_sdk_name}} to enable user onboarding via [[concept-social-login|social login]] in Web3 apps. 
+    
+    * Once authenticated, users can instantly access the in-app, built-in [[concept-index-arcana-wallet|{{config.extra.arcana.wallet_name}}]] to sign blockchain transactions.
 
-The {{config.extra.arcana.ca_wagmi_sdk_name}} lets users spend on any chain with unified balance. It implements Wagmi `useSendTransaction` and `useWriteContract` hooks such that the integrating Web3 apps can seamlessly switch to using these same hooks from the {{config.extra.arcana.ca_wagmi_sdk_name}} and allow chain abstracted transactions. The SDK offers additional hooks for Web3 apps to access and show unified balance via `useBalance`, `useBalanceModal`. The `useCAFn` hook allows chain abstracted `bridge` and `transfer` functions for tokens.
+=== "[[concept-cawagmi|{{config.extra.arcana.ca_wagmi_sdk_name}}]]"
+
+    * Integrate with the {{config.extra.arcana.ca_wagmi_sdk_name}} and let users spend on any chain with unified balance. 
+    * The SDK implements Wagmi `useSendTransaction` and `useWriteContract` hooks so that the Web3 apps can seamlessly switch to using these same hooks from the {{config.extra.arcana.ca_wagmi_sdk_name}} for enabling chain abstracted transactions. 
+    * It offers additional hooks to enable unified balance: `useBalance`, `useBalanceModal`.
+    * The `useCAFn` hook allows chain abstracted `bridge` and `transfer` functionality for [[ca-stack#tokens|tokens]] on [[ca-stack#chains|supported chains]].
 
 ## Prerequisites
 
@@ -36,11 +42,11 @@ Before installing and integrating with the {{config.extra.arcana.wagmi_sdk_name}
 
 ## 2. Integrate
 
-The Web3 app must add code to integrate the social login and unified balance features offered by the respective {{config.extra.arcana.company_name}} SDKs.
+The Web3 app must add code to integrate the social login and chain abstraction features offered by the respective {{config.extra.arcana.company_name}} SDKs.
 
 ### Social Login
 
-To enable social login, you need to integrate with the {{config.extra.arcana.sdk_name}} and add code to create the `AuthProvider`. Use it to onboard Web3 app users via the configured Arcana Wagmi connector. Once authenticatedd, the users can automatically access the built-in, in-app {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
+To enable social login, you need to integrate with the {{config.extra.arcana.sdk_name}} and add code to create the `AuthProvider`. Use it to onboard Web3 app users via the configured Arcana Wagmi connector. Once authenticated, the users can automatically access the built-in, in-app {{config.extra.arcana.wallet_name}} and sign blockchain transactions.
 
 #### AuthProvider
 
@@ -88,6 +94,8 @@ For details, see [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.
 
 ## See Also
 
-{% include "./text-snippets/demo/auth_ca_wagmi_sdk_demo.md" %}  
+{% include "./text-snippets/demo/auth_ca_wagmi_sdk_demo.md" %}
+
 {% include "./text-snippets/auth_wagmi_sdk_quicklinks.md" %}
+
 {% include "./text-snippets/ca_wagmi_sdk_quicklinks.md" %}

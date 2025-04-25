@@ -1,7 +1,3 @@
-<!---
-Finally, [[deploy-app|deploy the app]] on Testnet (default). For Mainnet deployment, see [[migrate-app-testnet-mainnet|Testnet > Mainnet Migration Guide]].
---->
-
 {==
 
 **Finished.** :material-party-popper:{.icon-color} 
