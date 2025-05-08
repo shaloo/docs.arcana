@@ -5,9 +5,7 @@ description: 'Get Started quickly with Arcana Chain Abstraction and enable unifi
 arcana:
   root_rel_path: ..
   app_type: "'CA'"
-  app_example_submodule: "'`sample-auth-ca`'"
-  custom_login_ui_tag: "index-custom-ui-onboard-users"
-  firebase_custom_ui_tag: "build-iam-firebase-auth"
+  app_example_submodule: "'`ca-sdk-example`'"
 ---
 
 Enable [[concept-unified-balance|unified-balance]] in Web3 apps by integrating with the [[concept-casdk|{{config.extra.arcana.ca_sdk_name}}]].
@@ -45,34 +43,6 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
   })
 ```
 
-### Get Allowance
-
-```js
-// Get USDC allowance for Polygon
-await ca.allowance().tokens(["USDC"]).chain(137).get()
-// Get USDC & USDT allowance for all supported chains
-await ca.allowance().tokens(["USDC", "USDT"]).get()
-// Get all supported token allowances for all supported chains
-await ca.allowance().get()
-```
-
-### Set Allowance
-
-```js
-await ca.allowance().tokens(["USDC"]).chain(42161).amount("max").set()
-
-// You can specify custom values for tokens and amount in hex, for example
-// await ca.allowance().tokens(["USDC"]).chain(42161).amount("0x989680").set()
-
-// Alternatively, you can also specify the amount 10,000,000 for USDC tokens as follows:
-// await ca.allowance().tokens(["USDC"]).chain(42161).amount("10000000").set()
-```
-
-### Revoke Allowance
-
-```js
-await ca.allowance().tokens(["USDC"]).chain(42161).revoke()
-```
 
 ### Unified Balance
 
@@ -94,57 +64,9 @@ await ca.request({
 })
 ```
 
-## 4. Advanced Usage
-
-### Bridge
-
-```js
-await ca.bridge().token("pol").amount(10).chain(137).exec();
-```
-
-### Transfer
-
-```js
-await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
-```
-
-### Event Handling
-
-#### Add Listener
-
-```js
-ca.addCAEventListener((data) => {
-    switch(data.type) {
-        case "EXPECTED_STEPS":{
-            // store data.data(an array of steps which will be followed)
-            state.value.steps = data.data.map(s => ({ ...s, done: false }))
-            state.value.inProgress = true
-            break;
-        }
-        case "STEP_DONE": {
-            const v = state.value.steps.find(s => {
-                return s.typeID === data.data.typeID
-            })
-            if (v) {
-                v.done = true
-            }
-            break;
-        }
-    }
-});
-```
-
-#### Remove Listener
-
-```js
-ca.removeCAEventListener((data) => {...})
-```
+For details on managing allowances, handling events and advanced chain abstracted functionality, see [[ca-integrate-web| enabling chain abstracted transactions]].
 
 ## See Also
-
-<!---
-{% include "./text-snippets/quick-start-common-examples.md" %}
--->
 
 {% include "./text-snippets/ca_sdk_quicklinks.md" %}
 
