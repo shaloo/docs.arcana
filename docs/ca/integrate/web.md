@@ -24,7 +24,7 @@ Download and install the SDK.
 
 ## Set up Allowance
 
-Let app users set up [[concept-allowances|Allowances]] for chain abstracted transactions and enable unified balance in the wallet with the  `setOnAllowanceHook`.
+Let the app users set up [[concept-allowances|Allowances]] for chain abstracted transactions and enable unified balance in the wallet with the  `setOnAllowanceHook`.
 
 ```js
 ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
@@ -36,7 +36,7 @@ ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
 })
 ```
 
-Use `setOnIntentHook` to display the intent, source of funcs and associated fees for chain abstracted transactions and seek confirmation before issuing such a transaction whereby user can spend on any destination chain specified in the intent.
+Use the `setOnIntentHook` UI hook to display the intent, source of funds and the associated fees for the chain abstracted transactions. Allow the users to confirm before issuing such a transaction and let them spend on any destination chain specified in the intent.
 
 ```js
 ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {

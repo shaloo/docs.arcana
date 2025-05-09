@@ -4,11 +4,11 @@ title: 'Web Apps'
 description: 'Get Started quickly with Arcana Chain Abstraction and enable unified balance for users. Learn how to integrate the app with the Arcana CA SDK.'
 arcana:
   root_rel_path: ..
-  app_type: "'CA'"
+  app_type: "'Web'"
   app_example_submodule: "'`ca-sdk-example`'"
 ---
 
-Enable [[concept-unified-balance|unified-balance]] in Web3 apps by integrating with the [[concept-casdk|{{config.extra.arcana.ca_sdk_name}}]].
+Enable [[concept-unified-balance|unified-balance]] in {{page.meta.arcana.app_type}} apps by integrating with the [[concept-casdk|{{config.extra.arcana.ca_sdk_name}}]]. Let the app users spend anywhere with chain abstracted transactions.
 
 ## 1. Install
 
@@ -18,11 +18,11 @@ Enable [[concept-unified-balance|unified-balance]] in Web3 apps by integrating w
 
 {% include "./text-snippets/quick-start-int-casdk.md" %}
 
-## 3. Use Chain Abstraction
+## 3. Set up Chain Abstraction
 
-[[concept-allowances|Allowances]] are required to enable unified balance in the wallet.
+Web3 app developers must add code to allow the users to set up [[concept-allowances|allowances]]. These allowances let users spend the unified balance on any chain if there are sufficient funds on the source chains.
 
-Use the following UI Hooks for allowance and intent setup in the dApp:
+Use `setOnAllowanceHook` UI Hook to set up allowance:
 
 ```js
 ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
@@ -32,6 +32,11 @@ ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
     // allow(allowances): allowances is an array with allowance for each source (len(sources) == len(allowances))
     // deny(): stop the flow
 })
+```
+
+Use `setOnIntentHook` to let the users specify the intent for a chain abstracted transaction:
+
+```js
 
 ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
     // This is a hook for the dev to show user the intent, the sources and associated fees
@@ -43,8 +48,7 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
   })
 ```
 
-
-### Unified Balance
+### Access Unified Balance
 
 ```js
 const balances = await ca.getUnifiedBalances()
@@ -64,7 +68,9 @@ await ca.request({
 })
 ```
 
-For details on managing allowances, handling events and advanced chain abstracted functionality, see [[ca-integrate-web| enabling chain abstracted transactions]].
+Developers can let users manage allowances in the Web3 app by accessing current allowance configurations associated with their EOA wallet and modify or revoke them.
+
+ [[ca-integrate-web#advanced|Learn more]] about how to handle chain abstraction user intent processing events and other advanced functionality in the app.
 
 ## See Also
 
