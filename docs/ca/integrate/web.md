@@ -1,10 +1,10 @@
 ---
 alias: ca-integrate-web
 title: 'Web Apps'
-description: 'Integrate dApp with hte CA SDK offering Arcana Chain Abstraction and enable unified balance for users.'
+description: 'Integrate dApp with the CA SDK offering Arcana Chain Abstraction and enable unified balance for users.'
 arcana:
   root_rel_path: ../..
-  app_type: "'Web3'"
+  app_type: "'Web'"
   app_example_submodule: "'`ca-sdk-example`'"
 ---
 
@@ -169,6 +169,8 @@ ca.addCAEventListener((data) => {
 ```js
 ca.removeCAEventListener((data) => {...})
 ```
+
+{% include "./text-snippets/quick-start-deploy-ca.md" %}
 
 ## See Also
 

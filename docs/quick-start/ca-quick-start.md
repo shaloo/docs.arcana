@@ -48,14 +48,14 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
   })
 ```
 
-### Access Unified Balance
+### 4. Access Unified Balance
 
 ```js
 const balances = await ca.getUnifiedBalances()
 const usdtBalance = await ca.getUnifiedBalance("usdt")
 ```
 
-### Request
+### 5. Issue CA Transaction
 
 ```js
 await ca.request({
@@ -71,6 +71,9 @@ await ca.request({
 Developers can let users manage allowances in the Web3 app by accessing current allowance configurations associated with their EOA wallet and modify or revoke them.
 
  [[ca-integrate-web#advanced|Learn more]] about how to handle chain abstraction user intent processing events and other advanced functionality in the app.
+
+
+{% include "./text-snippets/quick-start-deploy-ca.md" %}
 
 ## See Also
 
