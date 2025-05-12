@@ -1,6 +1,6 @@
 **Release Date: {{config.extra.arcana.latest_ca_sdk_release_date}}**  
 
-Version: **v{{config.extra.arcana.latest_ca_sdk_version}}**
+**Version: v{{config.extra.arcana.latest_ca_sdk_version}}**
 
 ## What is New?
 
