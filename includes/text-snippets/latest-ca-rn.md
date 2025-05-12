@@ -6,18 +6,12 @@ Version: **v{{config.extra.arcana.latest_ca_sdk_version}}**
 
 ---
  
-This is a minor update release with the following improvements:
-
-1. Support for Avalanche chain.
-2. When creating the CA object, developers can specify the testnet:
+This is a minor update release with support for the Avalanche chain and a few bug fixes, improvements.
 
 ```typescript
-let provider: window.ethereum;
-const network = Network.CERISE;
+let provider = window.ethereum;
 
-const ca = new CA({
-  network,
-});
+const ca = new CA();
 ca.setEVMProvider(provider);
 ```
 
