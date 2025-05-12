@@ -7,8 +7,8 @@
 * Jumper
 * Polymarket
 * Renzo
-* Sushiswap
 * Uniswap
+--->
 
 <div class="img-grid-cards">
 
@@ -61,4 +61,3 @@
         <figcaption>Uniswap</figcaption>
       </figure>     
 </div>
->>>>>>> main

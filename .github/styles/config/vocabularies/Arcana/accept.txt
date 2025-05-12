@@ -127,7 +127,7 @@ AuthWagmiCreateClientText
 AuthWagmiInstallText
 AuthWatchAssetText
 autoRedirect
-Avalancheκ
+Avalanche
 AVSS
 backend
 backends
