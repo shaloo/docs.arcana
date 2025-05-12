@@ -6,26 +6,20 @@ Version: **v{{config.extra.arcana.latest_ca_sdk_version}}**
 
 ---
  
-This is a minor update release with the following changes:
+This is a minor update release with the following improvements:
 
-1. Earlier, to instantiate a `CA` object, you had to pass in the `provider`. Now, there is no input parameter to the constructor.
-2. A new `setEVMProvider` method is added to the `CA` class. This method can be used to set the EVM provider later.
+1. Support for Avalanche chain.
+2. When creating the CA object, developers can specify the testnet:
 
+```typescript
+let provider: window.ethereum;
+const network = Network.CERISE;
 
-=== "Old"
-
-    ```typescript
-    let provider: window.ethereum;
-    const ca = new CA(provider);
-    ```
-
-=== "New"
-
-    ```typescript
-    let provider: window.ethereum;
-    const ca = new CA();
-    ca.setEVMProvider(provider);
-    ```
+const ca = new CA({
+  network,
+});
+ca.setEVMProvider(provider);
+```
 
 Check out the complete list of supported [[ca-stack#chains|chains]] and [[ca-stack#tokens|tokens]].
 
