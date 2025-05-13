@@ -170,6 +170,8 @@ ca.addCAEventListener((data) => {
 ca.removeCAEventListener((data) => {...})
 ```
 
+Check out the integration example in [codesandbox]({{config.extra.arcana.ca_sdk_sandbox_url}})
+
 {% include "./text-snippets/quick-start-deploy-ca.md" %}
 
 ## See Also
@@ -178,3 +180,4 @@ ca.removeCAEventListener((data) => {...})
 
 {% include "./text-snippets/demo/ca_sdk_demo.md" %}
 
+{% include "./text-snippets/demo/ca_sdk_vite_example.md" %}
