@@ -10,21 +10,25 @@ arcana:
 
 # Integrate Web App
 
-Integrate {{page.meta.arcana.app_type}} apps with the [{{config.extra.arcana.ca_sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/ca/casdk.md) to enable [[concept-unified-balance|unified balance]]. Let app users spend on any chain through chain abstracted transactions. No need to switch chains or bridge tokens for procuring gas on a new chain.
+Integrate {{page.meta.arcana.app_type}} Web3 apps with the [{{config.extra.arcana.ca_sdk_name}}]({{page.meta.arcana.root_rel_path}}/concepts/ca/casdk.md) to enable [[concept-unified-balance|unified balance]]. 
+
+With unified balance, Web3 app users can access funds across chains.
+They can spend assets on any chain using chain abstraction.
+No need to switch chains or bridge assets for gas.
 
 ## Prerequisites
 
-Download and install the SDK.
+[Download]({{config.extra.arcana.ca_sdk_download_url}}) and install the SDK.
 
 {% include "./code-snippets/casdk_install.md" %}
 
-## Initialize `CA Provider`
+## Initialize `CA`
 
 {% include "./text-snippets/quick-start-int-casdk.md" %}
 
 ## Set up Allowance
 
-Let the app users set up [[concept-allowances|Allowances]] for chain abstracted transactions and enable unified balance in the wallet with the  `setOnAllowanceHook`.
+Use the `setOnAllowanceHook` to enable unified balance by letting the app users confirm [[concept-allowances|allowances]] for chain abstracted transactions.
 
 ```js
 ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
@@ -36,7 +40,8 @@ ca.setOnAllowanceHook(async ({ allow, deny, sources }) => {
 })
 ```
 
-Use the `setOnIntentHook` UI hook to display the intent, source of funds and the associated fees for the chain abstracted transactions. Allow the users to confirm before issuing such a transaction and let them spend on any destination chain specified in the intent.
+Use the `setOnIntentHook` UI hook to show the intent, funds source, and fees. 
+Let users confirm the transaction before spending on the target chain.
 
 ```js
 ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
@@ -49,23 +54,25 @@ ca.setOnIntentHook(({ intent, allow, deny, refresh }) => {
   })
 ```
 
-## Unified Balance
+## Access Unified Balance
 
-Use `getUnifiedBalances` to access unified balances aggregated for all the supported chains and tokens associated with the wallet's EOA.
+Use `getUnifiedBalances` to get the unified balance that covers all the supported tokens across all the chains in the wallet.
+It shows the total of every token across all chains in the wallet.
 
 ```js
 const balances = await ca.getUnifiedBalances()
 ```
 
-Use `getUnifiedBalance` to access the unified balance of a specific token aggregated for all the supported chains.
+Use `getUnifiedBalance` to get the total balance of a specified token.
+It sums up the input token balance across all chains in your wallet.
 
 ```js
 const usdtBalance = await ca.getUnifiedBalance("usdt")
 ```
 
-## Request
+## CA Transaction
 
-Use `request` to issue a chain abstracted transaction for the specified amount from the source EOA to the destination EOA.
+Use `request` to issue a chain abstracted `eth_sendTransaction` operation:
 
 ```js
 await ca.request({
@@ -80,22 +87,24 @@ await ca.request({
 
 ## Advanced
 
-Besides `sendTransaction`, the SDK also supports other wallet functions such as `bridge` and `transfer`.
+The SDK supports `eth_sendTransaction` for basic transfers. 
+It also offers chain abstracted `bridge` and `transfer` operations.
 
 ### Bridge
 
-Use  `bridge` function to transfer tokens across different blockchain networks in a chain abstracted manner. 
+Use the `bridge` function to get tokens on any chain. 
+Chain abstraction uses your allowed funds from other chains to complete the transfer.
 
-If no `chain()` is specified, then the current chain in the wallet EOA is used.
+The function uses your current chain when you don't specify a `chain()` parameter.
 This is effectively swapping tokens on the current chain.
 
 ```js
 await ca.bridge().token("pol").amount(10).chain(137).exec();
 ```
-
 ### Transfer
 
-The `transfer` function uses unified balance and chain abstraction under the covers to let the user spend on the destination chain. It uses the allowance setup and availability of funds in the source chains to make the final transaction on the specified destination chain.
+The `transfer` function lets users spend on any chain using unified balance. 
+It uses your allowed funds from other chains to complete the transfer.
 
 ```js
 await ca.transfer().to("0x...").amount(5).chain(10).token("eth").exec()
@@ -170,7 +179,7 @@ ca.addCAEventListener((data) => {
 ca.removeCAEventListener((data) => {...})
 ```
 
-Check out the integration example in [codesandbox]({{config.extra.arcana.ca_sdk_sandbox_url}})
+Check out the [integration example]({{config.extra.arcana.ca_sdk_sandbox_url}}) code.
 
 {% include "./text-snippets/quick-start-deploy-ca.md" %}
 

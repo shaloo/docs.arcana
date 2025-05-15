@@ -16,7 +16,7 @@ Users benefit from the simplicity and ease of onboarding any new app or chain. N
 
 ## Prerequisites
 
-Download and install the SDK:
+[Download]({{config.extra.arcana. ca_wagmi_sdk_codesandbox_url}}) and install the SDK:
 
 {% include "./code-snippets/ca_wagmi_sdk_install.md" %}
 
@@ -28,7 +28,7 @@ It offers hooks with the same name as the Wagmi library. Once the developer swit
 
 The SDK also provides other non-Wagmi chain abstraction hooks that can be added to the app code for accessing unified balance associated with the user's EOA. Any third-party browser based wallet can be used to issue chain abstracted transactions via the `CAProvider`.
 
-### Initialize `CAProvider`
+### Initialize
 
 {% include "./code-snippets/new_ca_provider.md" %}
 
