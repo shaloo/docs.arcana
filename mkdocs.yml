@@ -480,6 +480,9 @@ nav:
       - Usage: 
         - Overview: ca/ca-usage-overview.md
         - Install: ca/ca-sdk-installation.md
+        - Integrate: 
+          - ca/integrate/web.md
+          - ca/integrate/wagmi.md
       - APIs: 
         - Web: ca/ca-usage-guide.md
         - Wagmi: ca/ca-wagmi-usage-guide.md
