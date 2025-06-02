@@ -43,7 +43,7 @@ The product consists of:
 
 * **Additional branding Customizations:** Apps can now customize the wallet UI with more theme options. You can also rebrand the OTP email for passwordless onboarding. [[configure-wallet-branding|Learn more...]]
 
-* Bug fixes and performance enhancements related to user login.
+* Bug fixes and performance enhancements related to user login and polyfilling.
 
 ## What has changed?
 
