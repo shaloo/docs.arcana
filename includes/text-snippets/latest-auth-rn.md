@@ -1,6 +1,6 @@
 {==
 
-**Product Update Date: Oct 28, 2024**  
+**Product Update Date: 22 May 2025**  
 
 **Version: {{config.extra.arcana.latest_version}}**
 
