@@ -127,4 +127,10 @@ arcana:
         <figcaption>View Intent Details</figcaption>
     </figure>
 
+??? an-faq "Can I use `transfer` function to move chain abstracted unified balance funds to a smart contract?"
+
+    No. Use `request` and issue `sendTransaction` operation to deposit funds into a smart contract. [[web-ca-usage-guide#transfer|Learn more...]]
+
+    {% include "./text-snippets/ca/transfer_note.md" %}
+
 
