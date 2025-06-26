@@ -157,6 +157,8 @@ extra:
       social_auth: Social Auth
       iam_providers: Identity Access Managers
   social:
+    - icon: material/home
+      link: https://arcana.network
     - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/arcananetwork
     - icon: fontawesome/brands/telegram

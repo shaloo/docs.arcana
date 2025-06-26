@@ -279,6 +279,10 @@ li.md-nav__item, a.md-nav__link, .md-nav__link {
   border-bottom: 1px solid var(--md-an-color-h2-bottom-rule);
 }
 
+.md-typeset ol li, .md-typeset ul li {
+  font-size: 0.75rem;
+  font-weight: 200;
+}
 /* Fix tabbed overflow of background in mobile view*/
 
 @media screen and (max-width: 44.984375em) {
@@ -853,7 +857,9 @@ details.an-abstract {
 
 .tx-hero-card {
   margin: 1rem;
-  box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.2);
+  /*
+  box-shadow: 0 0 9px 0px var(--md-an-pink-color);
+  */
   border-radius: 0.6rem;
   display: flex;
   flex-direction: column;
@@ -864,8 +870,10 @@ details.an-abstract {
 
 .tx-hero-content {
   text-align: left;
+  text-size: 1rem;
+  /*
   padding: 1.5rem;
-  /* color: var(--md-primary-fg-color);*/
+  */
   border-radius: 0.6rem;
 }
 
@@ -936,14 +944,6 @@ details.an-abstract {
   align-items: center;
   display: flex;
   justify-content: center;
-}
-
-.tx-hero-content,
-.tx-hero-content-auth {
-  text-align: left;
-  padding: 1.5rem;
-  color: var(--md-primary-fg-color);
-  border-radius: 0.6rem;
 }
 
 .tx-hero-content h1 {
