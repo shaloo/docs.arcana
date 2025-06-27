@@ -44,6 +44,7 @@
   --md-an-admonition-abstract: #e9f2f663;
   --md-an-header-shadow-color: #eaeaea;
   --md-an-pink-color: #FF4E9F;
+  --md-an-pink-color-light: rgba(255,78,159,0.5);
   --md-an-blue-color: #2730FE;
   --md-an-blue-color-light: rgba(39, 48, 254, 0.25);
   --md-an-green-color: #0FB600;
@@ -868,22 +869,18 @@ details.an-abstract {
   font-size: 1.25rem;
 }
 
+.tx-hero-card-highlight {
+    padding: 0.5rem;
+    box-shadow: 0 0 9px 0px var(--md-an-pink-color-light);
+    border: 0.25px solid var(--md-an-pink-color-light);
+    border-radius: 0.6rem;
+}
+
 .tx-hero-content {
   text-align: left;
   text-size: 1rem;
-  /*
   padding: 1.5rem;
-  */
   border-radius: 0.6rem;
-}
-
-.tx-hero-container,
-.tx-hero-card,
-.tx-hero-card-auth,
-.tx-try-now-container {
-    flex: 1;
-    min-width: 0;
-    cursor: pointer;
 }
 
 .pill-button {
@@ -946,9 +943,20 @@ details.an-abstract {
   justify-content: center;
 }
 
+.an-seamless-glow {
+  background-color: var(--md-an-pink-color); /* For browsers that do not support gradients */
+  background-image: conic-gradient(lightgray, white, var(--md-an-pink-color),lightgray,white, var(--md-an-pink-color),lightgray,white, var(--md-an-pink-color),lightgray,white);
+}
+
 .tx-hero-content h1 {
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+.an-seamless-glow h1{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .tx-hero-content h2 {
@@ -997,6 +1005,8 @@ details.an-abstract {
 .tx-button-container .md-button {
   flex: 1;
   text-align: center;
+  background: var(--md-an-pink-color);
+  color: white;
 }
 
 .top-hr {
