@@ -253,27 +253,50 @@ plugins:
         - auth/onboard/walletconnect/*.md
         - auth/onboard/passkey-auth/*.md
         - auth/onboard/vue/*.md
+        - auth/onboard/vue/custom-ui/*.md
         - auth/onboard/vanilla/*.md
+        - auth/onboard/vanilla/custom-ui/*.md
         - auth/onboard/react-nextjs/*.md
+        - auth/onboard/react-nextjs/custom-ui/*.md
+        - auth/onboard/rainbow/*.md
+        - auth/onboard/web3-react/*.md
         - auth/web3-ops/*.md
         - auth/mobile/*.md
         - auth/*/**.md
         Reference:
         - index.md
-        - ../includes/*.md
-        - audit/*.md
+        - ../includes/text-snippets/*.md
+        - ../includes/code-snippets/*.md
+        - audit/ca/*.md
+        - audit/auth/*.md
         - concepts/*.md
         - faq/*.md
         - introduction/*.md
         - migration/*.md
         - quick-start/*.md
         - relnotes/*.md
+        - relnotes/archives/*.md
         - solvers/*.md
         - support/*/**.md
-        - user-guides/*/**.md
+        - user-guides/*.md
+        - user-guides/wallet-ui/*.md
+        - user-guides/mfa/*.md
         - validators/*.md
         - web3-stack/*.md
         - setup/*.md
+        - changelog/*.md
+        - checklist/*.md
+        - concepts/ansmartc/*.md
+        - concepts/anwallet/*.md
+        - concepts/authtype/*.md
+        - concepts/ca/*.md
+        - deploy/*.md
+        - faq/*.md
+        - faq/ca/*.md
+        - introduction/*.md
+        - migration/*.md
+        - quick-start/*.md
+        - partner-docs/*.md
   - redirects:
         redirect_maps:
           # Linea docs backlinks
