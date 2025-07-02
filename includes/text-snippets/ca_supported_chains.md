@@ -4,7 +4,7 @@
 * Ethereum
 * HyperEVM
 * Kaia
-* ~~Linea~~
+<!---* ~~Linea~~--->
 * Optimism
 * Polygon
 * Scroll
