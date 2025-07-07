@@ -1,3 +1,5 @@
-* ETH
-* USDC
-* USDT
+|Tokens|Status|
+|:---|:---|
+|ETH  | ✅ |
+|USDT | ✅ |
+|USDC | ✅ |

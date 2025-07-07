@@ -1,13 +1,16 @@
 
-* Arbitrum
-* Base
-* Ethereum
-* HyperEVM
-* Kaia
-* Optimism
-* Polygon
-* Scroll
-* Sophon
+| Network   | Chain ID | Native Currency | Status |
+| :-------- | :------- | :-------------- | :----- |
+| Ethereum  | 1        | ETH             | ✅     |
+| Optimism  | 10       | ETH             | ✅     |
+| Polygon   | 137      | MATIC           | ✅     |
+| HyperEVM  | 999      | HYPE            | ✅     |
+| Kaia      | 8217     | KAIA            | ✅     |
+| Base      | 8453     | ETH             | ✅     |
+| Arbitrum  | 42161    | ARB             | ✅     |
+| Avalanche | 43114    | AVAX            | ✅     |
+| Sophon    | 50104    | SOPH            | ✅     |
+| Scroll    | 534351   | ETH             | ✅     |
 
 <!---* ~~Linea~~--->
 
