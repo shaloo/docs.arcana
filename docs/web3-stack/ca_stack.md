@@ -8,11 +8,9 @@ arcana:
 
 # Supported Chains
 
-{{config.extra.arcana.company_name}}'s offers [[concept-ca|chain abstraction]] SDKs for Web3 apps to provide unified balances across supported chains^*^. It also offers a [standalone {{config.extra.arcana.company_name}} CA Wallet]({{config.extra.arcana.ca_wallet_download_url}}) for select apps, enabling chain-abstracted transactions.
-
-^*^ *The chains supported by the SDK and those available in the wallet may not always be the same.* 
-
 {% include "./text-snippets/warn_ca_mainnet_only.md" %}
+
+Web3 apps integrated with the {{config.extra.arcana.company_name}}'s [[concept-ca|chain abstraction]] SDKs can enable chain abstracted transactions and view unified balances. Chain abstraction is supported^*^ for the following [tokens](#tokens) and [chains](#chains):
 
 ## {{config.extra.arcana.company_name}} CA SDKs
 
@@ -26,6 +24,8 @@ arcana:
 
 ## {{config.extra.arcana.company_name}} CA Wallet
 
+To try unified balance and chain abstracted transactions, connect the [standalone {{config.extra.arcana.company_name}} CA Wallet]({{config.extra.arcana.ca_wallet_download_url}}) with any of the the supported apps. Note the supported^*^ [tokens](#tokens_1) and [chains](#chains_1).
+
 ### Tokens
 
 {% include "./text-snippets/ca_supported_tokens.md" %}
@@ -37,3 +37,5 @@ arcana:
 ### Apps
 
 {% include "./text-snippets/ca_wallet_supported_apps.md" %}
+
+^*^*The chains supported by the SDK and those available in the wallet may not always be the same.* 
