@@ -6,7 +6,14 @@
 
 ## What is New?
  
-This major SDK release supports the Fuel chain.
+This major SDK release supports chain abstracted transaction for the following chains:
+
+* BSC chain,  BNB token
+* Fuel chain
+
+Web3 apps integrating with the SDK do not need any integration code changes if they are using BSC chain for chain abstracted transactions.
+
+For Fuel, the integration code will need some updates.
 
 Refer to the code below for details on how to enable Fuel in a Web3 app 
 and utilize the [Fuel connector](https://github.com/FuelLabs/fuel-connectors/wiki)
