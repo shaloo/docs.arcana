@@ -18,9 +18,9 @@ arcana:
  
 This major SDK release contains refactored, optimized code and several usage improvements. It requires some changes to the  integration code that uses the following SDK methods. 
 
-* [[rn-latest-ca#transfer|`transfer`]]
-* [[rn-latest-ca#bridge|`bridge`]]
-* [[rn-latest-ca#request|`request`]]
+* [[rn-ca-v1.0.3#transfer|`transfer`]]
+* [[rn-ca-v1.0.3#bridge|`bridge`]]
+* [[rn-ca-v1.0.3#request|`request`]]
 
 ### `transfer`
 
