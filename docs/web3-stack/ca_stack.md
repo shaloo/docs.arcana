@@ -12,7 +12,7 @@ The {{config.extra.arcana.ca_sdk_name}} supports [[concept-unified-balance|unifi
 
 To execute a chain-abstracted transaction, you need enough unified balance of the token type on the source chain. This balance must cover both the gas fee and the transaction amount on the destination chain.
 
-^*^ *Every chain may not support all tokens. The list of supported chains and tokens may differ for the Coral and the Folly testnets. The chains supported by the SDK and those supported in the standalone, CA wallet used in the demos may not always be the same.*
+^*^ *Every chain may not support all tokens. The list of supported chains and tokens may differ for the Coral and the Folly testnet. The chains supported by the SDK and those supported in the standalone, CA wallet used in the demos may not always be the same.*
 
 {% include "./text-snippets/ca_token_qualifier.md" %}
 
@@ -28,94 +28,144 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
 
 === "Sepolia"
 
-      | Tokens | Coral | Folly |
-      | :--- | :--- | :---|
-      | ETH | ✅  | ✅  |
-      | USDC | ✅  | ✅  |
-      | USDT | ✅  | ✅  |
+      | Tokens | Folly |
+      | :--- | :---|
+      | ETH |  ✅  |
+      | USDC |  ✅  |
+      | USDT |  ✅  |
 
 ## Optimism
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral |
+      | :--- | :--- |
+      | USDC | ✅  |
+      | USDT | ✅  |
+
+=== "OP Sepolia"
+
+      | Tokens | Folly |
+      | :--- | :--- |
+      | USDC | ✅  |
+      | USDT | ✅  |
 
 ## BSC
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| ETH | ✅  | ✅  |
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
-| BNB | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral |
+      | :--- | :--- |
+      | ETH | ✅  |
+      | USDC | ✅  |
+      | USDT | ✅  |
+      | BNB | ✅  |
 
 ## Polygon
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
-| POL | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral 
+      | :--- | :--- |
+      | USDC | ✅  |
+      | USDT | ✅  | 
+      | POL | ✅  |
+
+=== "Polygon Amoy"
+
+      | Tokens |  Folly |
+      | :--- | :--- |
+      | USDC | ✅  |
+      | POL | ✅  |
 
 ## HyperEVM
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
-| HYPE | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral |
+      | :--- | :--- | 
+      | USDT | ✅  |
+      | HYPE | ✅  |
 
 ## Kaia
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
-| KAIA | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral | 
+      | :--- | :--- | 
+      | USDC | ✅  | 
+      | USDT | ✅  | 
+      | KAIA | ✅  |
 
 ## Base
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral | 
+      | :--- | :--- | 
+      | USDC | ✅  |
+      | USDT | ✅  |
+
+=== "Base Sepolia"
+
+      | Tokens | Folly |
+      | :--- | :--- |
+      | USDC | ✅  |
+      | ETH | ✅  |  
 
 ## Fuel
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral |
+      | :--- | :--- |
+      | USDC | ✅  |
+      | USDT | ✅  |
 
 ## Arbitrum
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
-| ARB | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral |
+      | :--- | :--- |
+      | USDC | ✅  |
+      | USDT | ✅  |
+      | ARB | ✅  |
+
+=== "Arbitrum Sepolia"
+
+      | Tokens | Folly |
+      | :--- | :---|
+      | ETH |  ✅ |
+      | USDC |  ✅  |
+      | USDT |  ✅  |
 
 ## Avalanche
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
-| AVAX | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral | 
+      | :--- | :--- |
+      | USDC | ✅  |
+      | USDT | ✅  |
+      | AVAX | ✅  |
 
 ## Sophon
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| ETH | ✅  | ✅  |
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
-| SOPH | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral |
+      | :--- | :--- |
+      | ETH | ✅  |
+      | USDC | ✅  |
+      | USDT | ✅  | 
+      | SOPH | ✅  |
 
 ## Scroll
 
-| Tokens | Coral | Folly |
-| :--- | :--- | :---|
-| USDC | ✅  | ✅  |
-| USDT | ✅  | ✅  |
+=== "Mainnet"
+
+      | Tokens | Coral |
+      | :--- | :--- | 
+      | USDC | ✅  |
+      | USDT | ✅  |
