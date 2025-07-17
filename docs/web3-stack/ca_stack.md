@@ -48,6 +48,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
 
       | Tokens | Folly |
       | :--- | :--- |
+      | ETH |  ✅  |    
       | USDC | ✅  |
       | USDT | ✅  |
 
