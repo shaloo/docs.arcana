@@ -13,7 +13,6 @@
 | Avalanche | 43114    | AVAX            | ✅     |
 | Sophon    | 50104    | SOPH            | ✅     |
 | Scroll    | 534351   | ETH             | ✅     |
-| Fuel      | -        | FUEL            | ✅     |
 
 <!---* ~~Linea~~--->
 
