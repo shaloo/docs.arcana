@@ -48,6 +48,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
       | Tokens | Coral |
       | :--- | :--- |
+      | ETH |  ✅  |  
       | USDC | ✅  |
       | USDT | ✅  |
 
@@ -55,6 +56,7 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
       | Tokens | Folly |
       | :--- | :--- |
+      | ETH |  ✅  |    
       | USDC | ✅  |
       | USDT | ✅  |
 
@@ -136,9 +138,9 @@ To try unified balance and chain abstracted transactions, connect the [standalon
 
       | Tokens | Coral |
       | :--- | :--- |
+      | ETH | ✅  |  
       | USDC | ✅  |
       | USDT | ✅  |
-      | ARB | ✅  |
 
 === "Arbitrum Sepolia"
 
