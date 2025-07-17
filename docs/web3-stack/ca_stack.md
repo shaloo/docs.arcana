@@ -105,6 +105,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
 
       | Tokens | Coral | 
       | :--- | :--- | 
+      | ETH | ✅  |  
       | USDC | ✅  |
       | USDT | ✅  |
 
@@ -112,8 +113,8 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
 
       | Tokens | Folly |
       | :--- | :--- |
-      | USDC | ✅  |
       | ETH | ✅  |  
+      | USDC | ✅  |
 
 ## Fuel
 
@@ -121,6 +122,7 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
 
       | Tokens | Coral |
       | :--- | :--- |
+      | ETH | ✅  |  
       | USDC | ✅  |
       | USDT | ✅  |
 
