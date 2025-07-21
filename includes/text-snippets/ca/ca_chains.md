@@ -99,7 +99,7 @@
 | BNB | ✅ |
 
 
-## pointledger
+## Fuel
 | Token | Coral |
 |:--- |:---|
 | USDC | ✅ |
