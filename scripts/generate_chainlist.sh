@@ -168,7 +168,7 @@ echo "$chain_data" | while IFS='|' read chain_id currencies; do
     fi
 
     # Append chain information to markdown file
-    echo "## $chain_name" >> "$output_file"
+    echo "### $chain_name" >> "$output_file"
     if [[ "$testnet" == "true" ]]; then
         echo "| Token | Folly |" >> "$output_file"
     else

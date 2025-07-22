@@ -6,9 +6,40 @@ arcana:
   root_rel_path: ..
 ---
 
+## General
+
+??? an-faq "Why is CA not supported by all apps out of the box?"
+
+    There's no universal approach to interoperability in the blockchain
+    world. There are many ways to address interoperability and Chain
+    Abstraction (CA) is one of them.
+    
+    Enabling interoperability into every app is complex. App contracts
+    have to be ported to enable cross chain transactions across all chains
+    where interoperability must work. This is not scalable.
+
+    The {{config.extra.arcana.company_name}} chain abstraction protocol is a more scalable approach to
+    interoperability. It offers intent-based chain abstraction to Web3 apps.
+
+??? an-faq "How can I try chain abstraction?"
+
+    You can use a Web3 app integrated with the {{config.extra.arcana.company_name}} chain abstraction SDK.
+
+    Alternatively, you can try the standalone {{config.extra.arcana.company_name}}
+    CA wallet. This is a limited feature Web3 wallet. Its purpose is to showcase unified
+    balance and chain abstracted transactions when using some of the select Web3 apps.
+    
+    **Developers**: Integrate Web3 app with {{config.extra.arcana.company_name}} `ca-sdk` and enable
+    unified balance. With unified balance Web3 app users can spend on any
+    chain. Refer to the list of [[ca-stack|supported chains and assets]] for details.
+
+    **Wallet Users:** [Download]({{config.extra.arcana.ca_wallet_download_url}})
+    and use the {{config.extra.arcana.company_name}} CA wallet in the context of any 
+    [[ca-stack-wallet|supported app, chains and tokens]]. 
+
 ## CA SDK
 
-??? an-faq "How do I fix the polyfilling issues right after import statement when integrating React and Vite app with the {{config.extra.arcana.ca_sdk_name}}?"
+??? an-faq "How do I fix the polyfill issues right after import statement when integrating React and Vite app with the {{config.extra.arcana.ca_sdk_name}}?"
 
     To fix polyfilling issues, make sure `vite.config.ts` has the polyfilling options configured.
 
@@ -73,10 +104,11 @@ arcana:
    
     4. **Track your transaction:** Use the 
        [{{config.extra.arcana.ca_intent_explorer_name}}]({{config.extra.arcana.ca_intent_explorer}})
-       with your intent ID to monitor status. 
+       with your intent ID to track status. 
        
-       **Critical:** Keep your app/wallet open and logged. Especially if you encounter a failed
-       transaction. Refunds require an active session and typically complete within 15 minutes.
+       **Critical:** Keep your app/wallet open and logged. Especially if you 
+       encounter a failed transaction. Refunds often complete within 15 minutes.
+       Note that the session must stay active for a refund to happen.
    
     5. **No refund after 1 hour:** The protocol auto-retries, but you must stay logged in.
        If you closed the app/wallet, reopen and log back in to enable refund processing.
@@ -84,14 +116,19 @@ arcana:
        Use any [[index-support|support]] channel. Make sure you mention the **intent
        identifier** that failed to refund or your wallet address with date / time of the transaction.
 
-    **Bottom line:** Your funds are protected - failed transactions always get refunded, either automatically or with the team's assistance.
+    **Bottom line:** Your funds are protected. Failed transactions always get refunded.
+    For failed transactions, the protocol itself starts the refund process. If for
+    some reason that does not work, contact [support@arcana.network](mailto:support@arcana.network).
 
     !!! an-caution "Viewing Refund"
 
-        To view the refund, the user must open or log into the app and access the wallet that was used to sign the intent and confirm the chain abstracted transaction.
+        To view the refund, a user must open or log into the app and access the wallet.
+        For refunds, ensure that an active session exists. The same wallet should
+        be active as the one used to sign the intent and confirm the chain 
+        abstracted transaction.
 
 ??? an-faq "Why is liquidity fragmentation an issue and how does CA solve it?"
-    
+
     Liquidity fragmentation is an issue because it makes it difficult for users
     to spend their assets on any chain. 
     
@@ -144,16 +181,15 @@ arcana:
 ??? an-faq "I'm a Web3 wallet user, how can I enjoy unified balance with chain abstraction?"
 
     Web3 wallet users can unify assets across chains and spend on any chain.
-    To do this, they must log into a Web3 app that is integrated with the 
-    {{config.extra.arcana.ca_sdk_name}} and supports any third-party
-    browser-based wallet. 
+    Log into a Web3 app integrated with the {{config.extra.arcana.ca_sdk_name}},
+    use any third-party browser-based wallet to issue chain abstracted transactions. 
     
-    Alternatively, wallet users can [download]({{config.extra.arcana.ca_wallet_download_url}})
-    and install the {{config.extra.arcana.company_name}} Standalone CA wallet browser extension
-    to try [[concept-unified-balance|unified balance]] in the context of some of
-    the popular [[ca-stack-wallet#apps|Web3 apps]].
+    Alternatively, users can [download]({{config.extra.arcana.ca_wallet_download_url}})
+    and install the standalone {{config.extra.arcana.company_name}} CA wallet. It is
+    a browser extension that can be deployed and used in the context of any supported
+    [[ca-stack-wallet#apps|Web3 app]].
 
-??? an-faq "Why do Arcana CA wallet users need to pay gas fees to set up CA with Layer 1 chains?"
+??? an-faq "Why do {{config.extra.arcana.company_name}} CA wallet users need to pay gas fees to set up CA with Layer 1 chains?"
 
     When setting up {{config.extra.arcana.company_name}} chain abstraction to include Layer 1 chains,
     users need ETH to pay gas fees for signing the token allowance transaction
@@ -192,9 +228,9 @@ arcana:
     {{config.extra.arcana.company_name}} CA SDK must use a third-party wallet
     for blockchain transactions.
 
-??? an-faq "How does a dApp access unified balance for a user account?"
+??? an-faq "How can a Web3 app enable unified balance for a user account?"
 
-    The dApp must download and integrate with the CA-SDK and use
+    The app must download, install and integrate with the CA-SDK. Then use
     the EIP-1193 provider to access the unified balance in the context of an
     authenticated user. See {% include "./text-snippets/casdkref_url.md" %}
     and [[web-ca-usage-guide|the usage guide]] for details.
@@ -203,16 +239,22 @@ arcana:
 
     For Web3 app built using Wagmi, integrate with the {{config.extra.arcana.ca_wagmi_sdk_name}}.
 
-??? an-faq "How can Wagmi apps enable unified balance chain abstracted transactions?"
+??? an-faq "Can the Wagmi apps enable unified balance and chain abstraction?"
 
-    To enable unified balance and chain abstraction in a Web3 app that uses the
-    Wagmi library, integrate the app with the {{config.extra.arcana.ca_wagmi_sdk_name}}.
+    Yes. 
+    Integrate teh app with both the CA SDKs to enable unified balance and chain abstraction:
+    * {{config.extra.arcana.ca_sdk_name}} 
+    * {{config.extra.arcana.ca_wagmi_sdk_name}}
     
-    This SDK replaces the Wagmi hooks: `useSendTransaction` and `useWriteContract`. 
+    The `ca-wagmi` SDK replaces the Wagmi hooks: `useSendTransaction` and 
+    `useWriteContract`. 
     
-    Additionally, it provides hooks such as `useBalance`, `useBalanceModal` and `useCAFn`.
-    These hooks enable unified balance plug-and-play popup modal and chain abstracted `bridge`,
-    `transfer` functions. For details see [[ca-wagmi-quick-start|{{config.extra.arcana.ca_wagmi_sdk_name}} Quick Start Guide]]
+    It also provides hooks such as `useBalance`, `useBalanceModal` and `useCAFn`.
+    These hooks enable unified balance plug-and-play popup modal and chain 
+    abstracted `bridge`, `transfer` functions. 
+    
+    For details see
+    [[ca-wagmi-quick-start|{{config.extra.arcana.ca_wagmi_sdk_name}} Quick Start Guide]]
     and the [{{config.extra.arcana.ca_wagmi_sdk_name}} Reference]({{config.extra.arcana.ca_wagmi_sdk_ref_url}}).
 
 ??? an-faq "Who is the target audience for the {{config.extra.arcana.company_name}} CA SDKs?"
@@ -226,75 +268,116 @@ arcana:
     For a complete list of real life applications of unified balance, see 
     [[ca-usecases|use cases]] section.
 
-??? an-faq "Who is the target audience for the standalone {{config.extra.arcana.company_name}} standalone CA wallet?"
+??? an-faq "Who is the target audience for the standalone {{config.extra.arcana.company_name}} CA wallet?"
 
-    The standalone {{config.extra.arcana.company_name}} standalone CA wallet is meant for wallet users
-    that want to try unified balance in the context of some of the popular [[ca-stack-wallet|Web3 apps]]. 
+    The standalone {{config.extra.arcana.company_name}} CA wallet is meant for
+    wallet users. It is not a full featured wallet.
     
-    It enables unified balance and solves liquidity fragmentation when using any of the
-    supported [[ca-stack-wallet| chains and tokens]] in the context of these supported [[ca-stack-wallet#apps|Web3 apps]]. We will be adding support for newer Web3 apps soon.
+    It showcases chain abstracted transactions for some of the popular 
+    [[ca-stack-wallet|Web3 apps]]. Users can try viewing unified balance and 
+    trying out chain abstraction.
 
-    !!! an-tip "$100 limit"
+    !!! an-tip "CA Transaction Limit"
 
-        The standalone {{config.extra.arcana.company_name}} standalone CA wallet has a $100 limit for transactions needing chain abstraction. Transfers on the same chain have no limit.
+        The standalone {{config.extra.arcana.company_name}} CA wallet has a 
+        {{config.extra.arcana.ca_transaction_limit}} limit for any
+        chain abstracted transactions
+        
+        Transfers on the same chain have no such limit.
 
-??? an-faq "Can you give me an example of liquidity fragmentation and how the CA SDK solves it?"
+??? an-faq "Give an example of how the CA SDK solves liquidity fragmentation?"
 
     **Liquidity Fragmentation**
 
-    Imagine a user with assets spread across chains:
+    Suppose a user has:
+    - Arbitrum: 3 USDC
+    - Optimism: 4 USDC
+    - Base: 0 USDC
+    - Ethereum: 0.001 ETH
 
-    Arbitrum: 3 USDC
-    Optimism: 4 USDC
-    Base: 0 USDC
-    Ethereum: 0.001 ETH
+    The user wants to send 5 USDC to Base. 
 
-    If the user wants to send 5 USDC to Base, they can't because no single chain has enough funds. Liquidity fragmentation forces the user to make multiple transactions, complicating the process.
+    No single chain has enough funds, so liquidity fragmentation complicates 
+    the process. The user must figure out how to bridge, convert, and move 
+    assets to Base, which is complex and time-consuming.
 
-    **How unified balance through chain abstraction solves this?**
+    **How unified balance and chain abstraction solve this**
 
-    With chain abstraction, users first set up allowances before issuing a multi-chain transaction intent.
+    With chain abstraction, the user sets up allowances once. 
+    Allowances control how much can be deposited from each source chain to
+    {{config.extra.arcana.company_name}} vaults. Solvers provide liquidity on Base, and the protocol
+    settles payments using these deposits.
 
-    In this case, the user signs an intent to send 5 USDC to Base. They pledge 3 USDC from Arbitrum and 2.2 USDC from Optimism (including gas and service fees). The intent specifies the amount to be deposited on source chains and the agreed amount received on the destination chain.
-
-    {{config.extra.arcana.company_name}}'s Chain Abstraction protocol collects the pledged tokens and gas fees based on the user's allowances. Once the intent is signed, {{config.extra.arcana.company_name}} processes the 5 USDC transaction on Base and deducts the gas fee from the pledged USDC.
+    The user signs an intent specifying the amount to deposit from source chains
+    for the destination chain. {{config.extra.arcana.company_name}} CA collects pledged tokens and fees based
+    on allowances. Solvers compete to provide liquidity in the user's Base EOA.
+    After signing, the user gets liquidity almost instantly and can complete the
+    5 USDC transaction on Base seamlessly.
 
 ??? an-faq "Can I request gas tokens using ERC20 through {{config.extra.arcana.company_name}} Chain Abstraction??"
 
     Yes, you can request gas tokens using ERC20 via Chain Abstraction.
 
-    For example, if you have 13 USDC and 0 ETH on Optimism but need to make a 15 USDC transaction requiring 0.0000001 ETH for gas, you'll need an extra 2 USDC plus the gas fee. 
+    For example, if you have 13 USDC and 0 ETH on Optimism but need to make
+    a 15 USDC transaction requiring 0.0000001 ETH for gas, you'll need an
+    extra 2 USDC plus the gas fee. 
     
-    You can pledge or sign an intent to pay the additional USDC and gas fees using funds from other supported chains like Arbitrum or Base, assuming you have enough USDC to cover the deficit and fees.
+    You can pledge or sign an intent to cover for the total USDC and gas fees.
+    You can use the funds from other supported chains like Arbitrum or Base.
+    Assumption: You have enough USDC to cover the deficit and fees.
 
-    Once you sign the intent, {{config.extra.arcana.ca_sdk_name}} supplies the needed USDC and gas in a single transaction. Charges include the deficit amount, CA Gas Fees, protocol fees, and Solver fees.
+    Once you sign the intent, {{config.extra.arcana.ca_sdk_name}} supplies the
+    needed USDC and gas in a single transaction.
 
-    *Note: Fees are deducted from the main token requested, such as USDC. {{config.extra.arcana.ca_sdk_name}} supports ETH, USDC, and USDT.*
 
-??? an-faq "Can a user review intent details before issuing a transaction that requires chain abstraction with two or more source chain tokens?"
+??? an-faq "Can a user review intent details before issuing a chain abstracted transaction?"
 
-    Yes, user's can review the intent details before issuing a CA transaction via the {{config.extra.arcana.company_name}} CA Wallet. Before submitting a transaction, click 'View Intent' to see the intent details. Once the transaction is successful, there are options to view the intent details as well as the transaction details.
-
-    To view the intent details at a later point in time, you need to save the intent identifier displayed in the details during the transaction, before closing the wallet screen. 
+    Yes.
     
-    Use the {{config.extra.arcana.company_name}} Intent Explorer accessible at: [https://explorer.arcana.network/]({{config.extra.arcana.ca_intent_explorer}}) and enter the intent ID to view details at a later time.
+    Users can review the intent details before issuing a CA transaction issued
+    through the {{config.extra.arcana.company_name}} CA wallet. Apps integrated with 
+    the CA SDK displays the intent details from within app's context. The chain abstracted
+    transaction occurs when a user approves it. The app can
+    enable any third-party browser-based wallet to let the user issue a chain abstracted
+    transaction.
+    
+    Before submitting a transaction, user can click 'View Intent' to see the 
+    intent details. Once the transaction is successful, there are options to view
+    the intent details as well as the transaction details.
+
+    To view the intent details later, user must note the intent
+    identifier. Refer tot the intent details displayed in the 'View Intent' screen. 
+    Note it before confirming the transaction. 
+    
+    Use the {{config.extra.arcana.company_name}} Intent Explorer accessible at: 
+    [https://explorer.arcana.network/]({{config.extra.arcana.ca_intent_explorer}})
+    to view the intent details.
+    
+    You must enter the intent ID to view details at a later time.
 
     <figure markdown="span">
         ![View Intent Details]({{config.extra.arcana.img_dir}}/an_wallet_view_intent_details.{{config.extra.arcana.img_gif}}){ .an-screenshots }
         <figcaption>View Intent Details</figcaption>
     </figure>
 
-??? an-faq "Can I use `transfer` function to deposit chain abstracted unified balance funds to a smart contract and update the blockchain state?"
+??? an-faq "Does chain abstracted `transfer` allow funds deposit in a smart contract? Does it cause blockchain state update?"
 
-    No. `transfer` does not support `data`. Use [`request` with `sendTransaction`](https://ca-sdk-ref-guide.netlify.app/#quick-start) to deposit funds to a smart contract and update the blockchain state.
+    No. `transfer` does not support `data`. 
     
-??? an-faq "Sending 0.1 USDC from 0.3 USDC balance uses funds from other chains. Why isn't this a normal transaction since sufficient balance exists locally?"
+    Use [`request` with 
+    `sendTransaction`](https://ca-sdk-ref-guide.netlify.app/#quick-start)
+    to deposit funds to a smart contract and update the blockchain state.
+    
+??? an-faq "Why isn't this a normal transaction as balance exists on the destination chain?"
 
-    The transaction uses chain abstraction because you need both sufficient tokens AND gas fees for a normal transaction.
-    
-    Even though 0.1 USDC < 0.3 USDC balance, the remaining 0.2 USDC may not cover the gas fees. 
-    
-    When local funds can't cover transaction amount + gas fees, the system pulls from other chains' allowances to make up the difference, making it a chain-abstracted transaction instead of normal.
+    Suppose you try to send 0.2 USDC from a 0.25 USDC balance, but the
+    transaction uses funds from other chains. This is not an error.
+
+    A normal transaction requires both enough tokens and enough gas for fees.
+    Even if you have enough tokens (0.2 < 0.25 USDC), the remaining balance may 
+    not cover gas fees. If native funds can't cover both the transaction and gas,
+    the protocol pulls from other chains' allowances. This makes it a 
+    chain-abstracted transaction instead of a normal one.
 
 ## CA Wallet
 
@@ -307,39 +390,157 @@ arcana:
     This is not a full-featured wallet. It does not work with any Web3 app. Use
     this wallet with any of the [[ca-stack-wallet#apps|supported Web3 applications]].
 
-??? an-faq "Where can a user download the  {{config.extra.arcana.company_name}} CA wallet?"
+??? an-faq "Where can a user download the {{config.extra.arcana.company_name}} CA wallet?"
 
-    [Download]({{config.extra.arcana.ca_wallet_download_url}}) the CA wallet in the Chrome Store.
+    [Download]({{config.extra.arcana.ca_wallet_download_url}}) the CA wallet in 
+    the Chrome Store.
 
-??? an-faq "What options are available for allowance setup in the  {{config.extra.arcana.company_name}} CA wallet?"
+??? an-faq "What are the available options for allowance setup?"
 
     There are two options:
 
-    Try chain abstraction with one of the following combination of source chains:
+    To use chain abstraction, you can select different types of chains. It can
+    be a combination of L1 and L2 chains or the L2 chains only:
 
     1.  L1 + L2 + Avalanche 
-        - Ethereum, Avalanche and/or any other supported EVM-compatible chains
-        - Ethereum and any other supported EVM-compatible chains
-        - Fuel, Avalanche and/or any other supported EVM-compatible chains
-        - Fuel and any other supported EVM-compatible chains
+
+        For example:
+
+        - Ethereum, Avalanche and/or any other supported L2 EVM-compatible chains
+        - Ethereum and any other supported L2 EVM-compatible chains
+        - Fuel, Avalanche and/or any other supported L2 EVM-compatible chains
+        - Fuel and any other supported L2 EVM-compatible chains
         - Ethereum and Fuel
+
     2. L2 + Avalanche
-        - Avalanche and any other supported EVM-compatible chains
-        - Any supported EVM-compatible chains
+
+        For example,
+
+        - Avalanche and any other supported L2 EVM-compatible chains
+        - Any supported L2 EVM-compatible chains
 
 ??? an-faq "How do the allowance setup options differ in usage?"
 
     If you choose option 1, your wallet must have native token to cover
     gas fees on the L1 chain for the allowance transaction.
 
-    If you select option 2 (Only L2 chains, Avalanche ) then it is not mandatory.
+    If you select option 2 (Only L2 chains and/or Avalanche ) then it is not mandatory.
     {{config.extra.arcana.company_name}} sponsors the gas fee for the allowance transaction.
 
 ??? an-faq "Why must a user set up allowance before using the CA wallet?"
 
-    Allowances give users control over their funds
-    ([[concept-unified-balance|unified balance]]). 
+    Allowances let users set the largest amount they permit for transfer from a 
+    source chain. The [[concept-ca|chain abstraction]] protocol pulls these funds
+    and deposits them into the {{config.extra.arcana.company_name}} vaults on the
+    source chains. The protocol uses these deposits to pay for the transaction
+    on the destination chain. 
+
+??? an-faq "Why must a user have gas tokens in the wallet to set up allowance for Layer 1 blockchains?"
+
+    Layer 1 chains such as Ethereum and Fuel require the user to pay for the gas fee
+    and pay for the allowance set up transaction. For Layer 2 chains and Avalanche, 
+    the gas fee required to make the allowance set up transaction is sponsored by
+    {{config.extra.arcana.company_name}} until further notice.
+
+??? an-faq "Does the {{config.extra.arcana.company_name}} CA wallet allow any CA transactions?"
+
+    The chain abstracted transaction request for funds (RFF) limit is {{config.extra.arcana.ca_transaction_limit}}.
+
+??? an-faq "Does the {{config.extra.arcana.company_name}} CA wallet support Testnet as well as Mainnet?"
+
+    Use the {{config.extra.arcana.company_name}} CA wallet to issue chain abstracted transactions
+    for any of the supported Web3 *apps, chains and tokens*. See 
+    [[ca-stack-wallet| here]] for the complete list. 
     
-    Allowances define the amount of funds that a user has permitted. This
-    is the largest amount that can be pulled from a source chain.
-    These funds pay for transactions on a destination chain using [[concept-ca|chain abstraction]].
+??? an-faq "Why is {{config.extra.arcana.company_name}} CA Wallet not shown as an option when using WalletConnect?"
+
+    When using WalletConnect, if you do not see the 
+
+    - You haven’t installed the standalone {{config.extra.arcana.company_name}} 
+      CA wallet from the Chrome Store.
+    - You have installed the it but the browser extension is disabled.
+
+    If the issue persists, contact [support@arcana.network](mailto:support@arcana.network).
+
+??? an-faq "Does the {{config.extra.arcana.company_name}} CA wallet support cross-chain token swaps?"
+
+    For now, the {{config.extra.arcana.company_name}} CA Wallet allows users to combine a single type of token 
+    across supported source chains. They can spend the unified balance of that token 
+    on any destination chain. 
+
+    We are actively working on the cross-chain token swap feature.
+
+    Cross-Chain Swap Functionality:
+
+    - Allows users to spend assets on a destination chain without prior liquidity.
+    - Enables asset combination across source chains for unified balance.
+    - Users can spend the combined balance in any supported token on any
+      destination chain.
+
+??? an-faq "Is `window.ethereum` supported by {{config.extra.arcana.company_name}} CA wallet?"
+
+    Yes. 
+
+    Note that apps using the EIP-1193 provider that use the {{config.extra.arcana.company_name}} CA wallet
+    may face issues sometimes if they use `window.ethereum`.
+    
+    This is because `window.ethereum` can be overridden by the latest installed
+    wallet or the last used wallet in the browser. 
+
+    Apps using EIP-6963 will not see such an issue when using `window.ethereum`.
+
+??? an-faq "What is the `bridge` feature in the {{config.extra.arcana.company_name}} CA wallet?"
+
+    The `bridge` feature in {{config.extra.arcana.company_name}} CA wallet allows users to move tokens in a
+    chain abstracted manner. They can move tokens from two or more source chains
+    to a destination chain near instantly in their wallet.
+
+    This feature uses {{config.extra.arcana.company_name}}’s intent-based chain abstraction to bridge user’s funds. 
+    No third-party bridge is involved.
+
+??? an-faq "Does the {{config.extra.arcana.company_name}} CA wallet support addition of custom ERC-20 tokens?"
+
+    Yes.
+
+    Users can add custom ERC-20 tokens and view token balances in the {{config.extra.arcana.company_name}} CA wallet.
+    The wallet displays default supported tokens such as USDT, USDC, and ETH.
+
+    !!! an-note "Supported tokens"
+        
+        Custom tokens are not supported for chain abstracted transactions and 
+        unified balance. 
+        
+        Unified balance and chain abstracted transactions are applicable for 
+        [[ca-stack-wallet|supported apps, chains, and tokens]]. 
+
+??? an-faq "What is allowance and why is must allowances be set up for using the {{config.extra.arcana.company_name}} CA wallet?"
+
+    Allowances enable a third party, such as a smart contract, to perform transactions
+    on behalf of the user. It can issue a deposit transaction from the user's wallet
+    for a specified amount, without accessing the user's private key. 
+    
+    Users must sign allowances on the source chain(s) to enable the {{config.extra.arcana.company_name}} chain
+    abstraction protocol. This permits the {{config.extra.arcana.company_name}} Vault contract to deposit
+    the necessary funds from the source chains. 
+    
+    The deposits are done as per the user controlled allowance settings on the
+    source chains.
+
+    This lets the protocol to enables liquidity on the destination chain. A chain 
+    abstracted transaction on the destination chain addresses the user's intent.
+
+??? an-faq "For some websites the {{config.extra.arcana.company_name}} CA wallet is not displayed despite having the browser extension active?"
+
+    {{config.extra.arcana.company_name}} Network’s Chain Abstraction Wallet is an injected wallet.
+    This is same as how a wallet such as Rabby works. 
+    
+    If a website does not allow injected Web3 wallets, then it will not show up. 
+
+    Many websites support one injected provider (like MetaMask) 
+    at a time. If more than one injected wallets are active, the website might not
+    recognize all but one, leading to others being hidden. 
+
+    Also, some websites that need user authorization for security reasons. Such websites
+    ensure that they can accesses the wallet data once the user explicitly grants
+    permission. Such sites may not allow the injected wallets or may be optimized
+    for popular injected wallets such as MetaMask.
