@@ -130,6 +130,8 @@ To execute a chain-abstracted transaction, you need enough unified balance of th
       | USDC | ✅  |
       | USDT | ✅  |
 
+{% include "./text-snippets/warn_no_fuel_support_ca_wagmi.md" %}
+
 ### Arbitrum
 
 === "Mainnet"
