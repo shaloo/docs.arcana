@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block announce %}
+  <div>
+    <p style="text-align: center;">
+      <b>What's new?</b> Check out 📢 <a href="https://github.com/orgs/arcana-network/discussions">Arcana SDK release announcements</a> 📢
+{% endblock %}
+
+{% block fonts %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Ribeye&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<style>
+
+  .md-main {
+    flex-grow: 0;
+    margin-top: -2%;
+  }
+
+  .md-main__inner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  .md-sidebar.md-sidebar--secondary {
+    display: none;
+    width: 0.1vw;
+  }
+
+  .an-docs-landing-left, h1.an-docs-landing-left {
+    text-align: left;
+  }
+
+  .an-docs-landing-center, h1.an-docs-landing-center {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 30em) {
+    .tx-hero-container,
+    .tx-hero-card {
+      display: block;
+      max-width: 100%;
+    }
+
+
+    .tx-button-container {
+      flex-direction: column;
+    }
+
+    .tx-hero-content h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--md-primary-fg-color);
+    }
+  }
+
+  @media screen and (min-width: 60em) {
+    .tx-hero-container,
+    .tx-hero-card {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
+  @media screen and (min-width: 76.25em) {
+
+    .md-sidebar.md-sidebar--primary {
+      display: none;
+      width: 0.1vw;
+    }
+
+    .top-hr {
+      max-width: 61rem;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+<!---
+div class="top-hr">
+  <div class="hr">
+    <h1 class="an-docs-landing-left">Arcana Documentation</h1>
+  </div>
+</div>
+--->
+<div class="an-seamless-glow">
+  <h1 style="word-spacing: 1.5rem; letter-spacing:0.5rem;font-size: 1.5rem; font-family: 'Ribeye', cursive;">Build Seamless Web3 UX</h1>
+</div>
+<div class="tx-hero-container">
+    <p>
+      <i>Let Web3 users spend on any chain with <a href="./concepts/ca/unified-balance/">unified balance</a> and <a href="./concepts/ca/chain-abstraction/"> chain abstracted</a> transactions.</i> 
+    </p>
+  </div>
+  <div class="tx-hero-container">
+    <p>
+      <i>Use <a href="./concepts/social-login/">social login</a> for onboarding Web3 app users.</i>
+    </p>
+</div>
+</hr>
+<div class = "hr">
+  <div class="tx-hero-container">
+    <div class="tx-hero-card">
+      <div class="tx-hero-content">
+        <h1 class="an-docs-landing-center">Chain Abstraction (CA)</h1>
+        <p class="an-docs-landing-center">Web3 app + <a href="https://www.npmjs.com/package/@arcana/ca-sdk">CA SDK</a> lets users: </p>
+        <ul>
+          <li>Beat liquidity fragmentation, no bridging</li>
+          <li>Use unified balance across chains</li>
+          <li>Spend on any chain</li>
+          <li>Transact on a new chain with zero assets</li>
+        </ul>
+        <p style="text-transform:uppercase; text-align: center;">| <a href="https://ca-sdk-ref-guide.netlify.app/" target=“_blank”>CA API</a> | <a href="./ca-index/">Tutorials & Guides</a> | <a href="./web3-stack/ca_stack/">Chains</a> |</p>
+      </div>
+    </div>
+    <div class="tx-hero-card">
+      <div class="tx-hero-content">
+        <h1 class="an-docs-landing-center">Social Login</h1>
+        <p class="an-docs-landing-center">Web3 app + <a href="https://www.npmjs.com/package/@arcana/auth">Auth SDK</a> lets users:</p>
+        <ul>
+          <li>Onboard Web3 with Web2 login</li>
+          <li>Access Web3 apps without prior wallet or keys</li>
+          <li>Use Web3 without having to download a wallet</li>
+          <li>Sign blockchain transactions within app context</li>
+        </ul>
+        <p style="text-transform:uppercase; text-align: center">| <a href="https://authsdk-ref-guide.netlify.app/" target=“_blank”>Auth API</a> | <a href="./auth-index/">Tutorials & Guides</a> | <a href="./web3-stack/chains/">Chains</a> |</p>
+      </div>
+    </div>
+  </div>
+  <div class="tx-hero-container">
+      <div class="tx-button-container">
+        <a href="./quick-start/ca-quick-start/" target=“_blank” class="md-button">Quick Start CA</a>
+      </div>
+      <div class="tx-button-container">
+        <a href="./quick-start/wagmi-quick-start/" target=“_blank” class="md-button">Quick Start Auth</a>
+      </div>
+  </div>
+  <div class="tx-hero-container">
+    <div class="tx-hero-card tx-hero-content">
+      <p></p>
+        <h1>Give it a go!</h1>
+      </div>
+    </div>
+  </div>
+  <div class="tx-hero-container">
+    <div class="tx-hero-card tx-hero-card-highlight">
+      <div class="tx-hero-content">
+        <p><b>Experience Chain Abstraction:</b></p>
+        <ul>
+          <li><a href="https://chromewebstore.google.com/detail/arcana-wallet/nieddmedbnibfkfokcionggafcmcgkpi?hl=en-GB&authuser=0&pli=1"> Download</a> the Arcana CA wallet and use with <a href="./web3-stack/ca_wallet_stack/#apps">supported dApps</a></li>
+          <li>Use MetaMask or third-party wallet with<a href="https://sdk.arcana.network"> CA SDK Demo app</a></li>
+          <li>View CA intent details with the<a href="https://explorer.arcana.network/"> Arcana Intent Explorer</a></li>
+        </ul>
+        </div>
+      </div>
+    <div class="tx-hero-card tx-hero-card-highlight">
+      <div class="tx-hero-content">
+        <p><b>Try Social Login: </b> </p>
+        <ul>
+          <li>Use Web2 authentication to onboard the<a href="https://demo.arcana.network/"> demo Web3 app</a> integrated with the Arcana's Auth SDK</li>
+          <li>Get instant access to your self-custodial, in-app Arcana wallet within the demo app context</li>
+          <li>Sign blockchain transactions in the demo app right after Web2 login</li>
+        </ul>
+      </div>
+    </div>
+</div>
+<hr>
+<p class="an-docs-landing-center"><i>Questions?</i> <a href="mailto:support@arcana.network">support@arcana.network</a></p>
+
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    window.chatbaseConfig = {
+      chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
+    }
+  </script>
+  <script src="https://www.chatbase.co/embed.min.js" id="Fbi0FsddfX1zz_DWM5jwJ" defer></script>
+{% endblock %}

@@ -1,0 +1,2312 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Validator onboarding guide contains instructions for the trusted partners on how to become a validator by setting up an Arcana ADKG node, install, upgrade, restart and more.">
+      
+      
+      
+        <link rel="canonical" href="https://docs.arcana.network/validators/onboard-validators/">
+      
+      
+        <link rel="prev" href="../../audit/auth/">
+      
+      
+        <link rel="next" href="../../faq/faq-validator/">
+      
+      
+      <link rel="icon" href="/img/favicon-pink.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Validator Onboarding Guide - 📖 Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%2032C28.7%2032%200%2060.7%200%2096v320c0%2035.3%2028.7%2064%2064%2064h224V368c0-26.5%2021.5-48%2048-48h112V96c0-35.3-28.7-64-64-64zm384%20320H336c-8.8%200-16%207.2-16%2016v112l32-32%2064-64z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","default='XXXXXXXXXX'"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","default='XXXXXXXXXX'",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=default='XXXXXXXXXX'",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="auto" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#adkg-validator-onboarding-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="📖 Documentation" class="md-header__button md-logo" aria-label="📖 Documentation" data-md-component="logo">
+      
+  <img src="../../img/arcana-logo-pink.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            📖 Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Validator Onboarding Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="auto" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Light Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Light Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to System Mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to System Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ca-index/" class="md-tabs__link">
+          
+  
+  
+  Chain Abstraction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../auth-index/" class="md-tabs__link">
+          
+  
+  
+  Auth
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://status.arcana.network/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Service Status
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../support/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Need Help?
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="📖 Documentation" class="md-nav__button md-logo" aria-label="📖 Documentation" data-md-component="logo">
+      
+  <img src="../../img/arcana-logo-pink.png" alt="logo">
+
+    </a>
+    📖 Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../ca-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Chain Abstraction
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Auth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Auth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Login
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Developers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../quick-start/wagmi-quick-start/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../web3-stack/chains/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Tech Stack
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../introduction/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../auth/auth-usage-guide/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Auth API
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="https://github.com/arcana-network/auth-examples" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../auth/auth-demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Auth Demo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/config-dApp-with-db/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboard User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../user-guides/wallet-ui/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    In-app Wallet
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../faq/faq-gen/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../concepts/adkg/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Concepts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Auth Checklists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../auth/auth-error-msg/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Error Handling
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../relnotes/latest-auth-release-note/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release Notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../migration/latest-auth-migration-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Migration Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../audit/auth/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Audit
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Auth Whitepaper
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Validators
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Validators
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Onboarding Guide
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Onboarding Guide
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        
+<li class="md-nav__item">
+  <a href="#entry-exit" class="md-nav__link">
+    Entry/ Exit
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#node-setup" class="md-nav__link">
+    Node Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Node Setup">
+      <ul class="md-nav__list">
+        
+          
+<li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#responsibilities" class="md-nav__link">
+    Responsibilities
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#migrating-validator-node" class="md-nav__link">
+    Migrating Validator Node
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    Rewards
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    Questions?
+  </a>
+  
+</li>
+
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/faq-validator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Validator FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../auth/introduction/auth-architecture/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../partner-docs/auth/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Docs Collab
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://status.arcana.network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Service Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Need Help?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        
+<li class="md-nav__item">
+  <a href="#entry-exit" class="md-nav__link">
+    Entry/ Exit
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#node-setup" class="md-nav__link">
+    Node Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Node Setup">
+      <ul class="md-nav__list">
+        
+          
+<li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#responsibilities" class="md-nav__link">
+    Responsibilities
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#migrating-validator-node" class="md-nav__link">
+    Migrating Validator Node
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#rewards" class="md-nav__link">
+    Rewards
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    Questions?
+  </a>
+  
+</li>
+
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="adkg-validator-onboarding-guide">ADKG Validator Onboarding Guide</h1><p style="color:#bdbdbd"><i>Estimated time to read: 7 minutes</i></p>
+
+<p>This guide is for <strong>trusted partners</strong>, known as 'validators,' selected for the Arcana ADKG protocol. Validators run crucial <a href="../../concepts/validator-nodes/"> ADKG validator nodes</a>, central to Arcana's DKG subsystem decentralization.</p>
+<p>To become a validator, you must be a trusted partner of Arcana and run a validator node. In return, validators earn rewards based on node uptime and key generation output</p>
+<h2 id="entry-exit">Entry/ Exit</h2>
+<p>Initially, Arcana partners exclusively with trusted validators. Future processes will allow validator entry and exit. The DKG subsystem deployed at Mainnet comprises of seven nodes, four owned and run by Arcana, and the rest by trusted partners.</p>
+<h2 id="node-setup">Node Setup</h2>
+<p>Arcana DKG is a permissioned system that only allows a trusted group of partners to join. To become an external validator node in the DKG subsystem, partners must be whitelisted by Arcana. This process involves providing an Ethereum address, which will be associated with a private key that verifies the node's identity and grants it access to the Arcana DKG subsystem.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>Validator node</li>
+<li>Monitoring tools</li>
+<li>Have a Hashicorp cloud server (or self-hosted server) preferably on a separate server from the validator node</li>
+<li>Enable a <a href="https://developer.hashicorp.com/vault/docs/secrets/kv">KV Secrets Engine</a> with the path value set to <code>secret</code>. </li>
+</ol>
+<div class="highlight"><pre><span></span><code>vault<span class="w"> </span>secrets<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>-path<span class="o">=</span>secret<span class="w"> </span>kv
+</code></pre></div>
+<figure>
+  <a class="glightbox" href="/img/validator_kv_engine_setup.webp" data-type="image" data-width="100%" data-height="auto" data-title="HashiCorp KV Setup" data-desc-position="bottom"><img alt="HashiCorp KV Setup" class="an-screenshots width_85pc" src="/img/validator_kv_engine_setup.webp" /></a>
+<br />
+<figcaption>HashiCorp KV Setup</figcaption>
+</figure>
+<p><strong>HW Configuration</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Minimum</th>
+<th style="text-align: left;">Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">4 GB RAM</td>
+<td style="text-align: left;">8-16 GB RAM</td>
+</tr>
+<tr>
+<td style="text-align: left;">500 GB SSD</td>
+<td style="text-align: left;">1 TB SSD</td>
+</tr>
+<tr>
+<td style="text-align: left;">4 core CPU</td>
+<td style="text-align: left;">8 core CPU</td>
+</tr>
+</tbody>
+</table>
+<h3 id="steps">Steps</h3>
+<h4 id="1-node-configuration">1. Node Configuration</h4>
+<p><strong>Operating System</strong>:</p>
+<p>Preferably deploy Ubuntu Linux v20.04.4 LTS or higher.</p>
+<!---
+* [Install Golang](https://go.dev/doc/install) v1.17
+--->
+
+<p><strong><code>ulimit</code> Settings</strong></p>
+<p>Use one of the following commands to check the <code>ulimit</code> settings for open file descriptors (default):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">ulimit</span><span class="w"> </span>-n
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">ulimit</span><span class="w"> </span>-aS
+</code></pre></div>
+<p>If the soft limit for <strong>open files</strong> is lower than 20,000 use the following instructions to update it:</p>
+<ul>
+<li>Edit the Linux Kernel parameter file <code>/etc/sysctl.conf</code></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="w">  </span>vi<span class="w"> </span>/etc/sysctl.conf<span class="w"> </span>
+</code></pre></div>
+<p>Add " fs.file-max = 20000 " in the file. To apply the changes, execute:</p>
+<div class="highlight"><pre><span></span><code>sysctl<span class="w"> </span>-p
+</code></pre></div>
+<ul>
+<li>Change the ulimit setting in the file <code>/etc/security/limits.conf</code></li>
+</ul>
+<div class="highlight"><pre><span></span><code>vi<span class="w"> </span>/etc/security/limits.conf
+</code></pre></div>
+<p>Specify the following limits in the <code>/etc/security/limits.conf</code> file:</p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span>*<span class="w"> </span>soft<span class="w"> </span>nofile<span class="w"> </span><span class="m">20000</span>
+<span class="w"> </span>*<span class="w"> </span>hard<span class="w"> </span>nofile<span class="w"> </span><span class="m">20000</span>
+</code></pre></div>
+<p>After making these changes to both files, make sure that you reboot the ADKG node via one of these commands:</p>
+<div class="highlight"><pre><span></span><code>reboot
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>init<span class="w"> </span><span class="m">6</span>
+</code></pre></div>
+<ul>
+<li>Validate that <code>ulimit</code> for open files has been updated to 20000 by using the command:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="nb">ulimit</span><span class="w"> </span>-n
+</code></pre></div>
+<p><strong>Network Settings</strong>:</p>
+<ol>
+<li>
+<p>Obtain a domain name for your server and set up associated SSL certificates. </p>
+</li>
+<li>
+<p>Keep the following ports open on the validator node:</p>
+<ul>
+<li>26656</li>
+<li>1080</li>
+</ul>
+</li>
+</ol>
+<p><strong>Setup DKG Software</strong></p>
+<ol>
+<li>
+<p>Copy the <a href="https://github.com/arcana-network/adkg/releases/tag/v1.0.1">DKG binary v1.0.1</a> locally on your node.</p>
+</li>
+<li>
+<p>Change the binary file permissions to 'executable'.</p>
+</li>
+</ol>
+<h4 id="2-validator-secrets">2. Validator Secrets</h4>
+<p>The process of setting up validator secrets involves two steps. First, you must initiate a secrets configuration manager. Then, you must generate secret keys for the validator node. Currently, only the Hashicorp vault is supported.</p>
+<p><strong>2a. Initiate Secrets Configuration Manager</strong></p>
+<p>Use Hashicorp to initiate the secret configuration manager. Make sure you have already enabled the KV secrets engine as listed in the prerequisites, before running the command listed below.</p>
+<div class="highlight"><pre><span></span><code>dkg<span class="w"> </span>secret<span class="w"> </span>generate<span class="w"> </span>--secret-config<span class="o">=</span>&lt;path&gt;<span class="w"> </span>--token<span class="o">=</span>&lt;token&gt;<span class="w"> </span>--server-url<span class="o">=</span>&lt;url&gt;<span class="w"> </span>
+</code></pre></div>
+<p><strong>Command Line Options</strong></p>
+<p><code>--secret-config</code></p>
+<p>Specify the <code>path</code> where the secret manager configuration will be written. Defaults to the <code>secretConfig.json</code> file in the current directory.</p>
+<p><code>--token</code></p>
+<p>The access token for the Hashicorp vault. The access token is used for accessing <a href="https://developer.hashicorp.com/vault/docs/secrets">the KV secret storage engine</a>.</p>
+<p><code>--server-url</code></p>
+<p>The API URL of the Hashicorp Vault server.</p>
+<p><strong>2b: Generate Secret Keys</strong></p>
+<p>After initiating the secret configuration manager, generate keys for the validator node. <strong>The following command will provide the Node Address, which should be shared with the Arcana Team</strong>.</p>
+<div class="highlight"><pre><span></span><code>dkg<span class="w"> </span>secret<span class="w"> </span>init<span class="w"> </span>--secret-config<span class="o">=</span>&lt;path&gt;
+</code></pre></div>
+<p><strong>Command Line Options</strong></p>
+<p><code>--secret-config</code></p>
+<p>The <code>path</code> specified in the previous step where the secret manager configuration will be written. Defaults to <code>secretConfig.json</code> file in the current directory.</p>
+<div class="admonition an-warning">
+<p class="admonition-title">Follow Start Ceremony</p>
+<p>Start the node <strong>only</strong> when you have set up the validator secret and shared the Node Address with the Arcana Team.</p>
+</div>
+<h4 id="3-start-ceremony">3. Start Ceremony</h4>
+<p>Validator DKG nodes cannot be started individually; all participating nodes must start at the same time for the protocol to work properly. Keep an eye on this space for updates on when to start your DKG node as a validator.</p>
+<p>The key generation begins only when <strong>all</strong> the nodes in the DKG subsystem, Arcana DKG nodes, and all validator DKG nodes, have joined in.</p>
+<h4 id="4-node-startup">4. Node Startup</h4>
+<p>Before you start the validator node, make sure you have completed all the prerequisites and followed the steps defined in the <strong>DKG Start Ceremony</strong>.</p>
+<div class="admonition an-note">
+<p class="admonition-title">Node Start Command</p>
+<p>You can run the <code>dkg start</code> command and specify validator node configuration details using <strong>one</strong> of ways listed below:</p>
+<ul>
+<li>run <code>dkg start</code> with a JSON configuration file that contains all the configuration, or</li>
+<li>run <code>dkg start</code> with various flags/parameter values on the command line itself </li>
+</ul>
+<p>Registration of validator node happens automatically using the information that is provided in the configuration file or via the command line.</p>
+</div>
+<div class="admonition an-warning">
+<p class="admonition-title">Restart</p>
+<p>If this is not the first time you are starting the node, please make sure that you perform a clean re-start. Refer to the 'Stop/Restart' section below to see how to perform a clean restart.</p>
+</div>
+<p><strong>Option1: Use Configuration File</strong></p>
+<div class="highlight"><pre><span></span><code>dkg<span class="w"> </span>start<span class="w"> </span>--config<span class="o">=</span>/path/to/config.json
+</code></pre></div>
+<div class="highlight"><span class="filename">config.json</span><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="err">ipAddress</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;172.23.22.231&quot;</span><span class="p">,</span><span class="w">      </span><span class="c1">//Example value. Replace with public IP Addres of your node</span>
+<span class="w">  </span><span class="err">domai</span><span class="kc">n</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;keyserver.example.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// Example value. Do not specify https://</span>
+<span class="w">  </span><span class="err">da</span><span class="kc">ta</span><span class="err">Dir</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/path/to/data&quot;</span><span class="p">,</span><span class="w">        </span><span class="c1">// Ensure dataDir directory access permissions allow DKG binary to access it</span>
+<span class="w">  </span><span class="err">secre</span><span class="kc">t</span><span class="err">Co</span><span class="kc">nf</span><span class="err">ig</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/path/to/secret/config.json&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">//Use appropriate file access permissions for DKG binary to access it</span>
+<span class="w">  </span><span class="err">por</span><span class="kc">t</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;3000&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Option 2: Use Command Line</strong></p>
+<div class="highlight"><pre><span></span><code>dkg<span class="w"> </span>start<span class="w"> </span>--secret-config<span class="o">=</span>/path/to/secret/config<span class="w"> </span>--data-dir<span class="o">=</span>/path/to/data<span class="w"> </span>--domain<span class="o">=</span>keyserver.example.com<span class="w"> </span>--ip-address<span class="o">=</span><span class="m">172</span>.23.22.231<span class="w">  </span>--server-port<span class="o">=</span><span class="m">3000</span>
+</code></pre></div>
+<p><strong>Node Start Options</strong></p>
+<p><code>--secret-config</code></p>
+<p>The path to secret configuration. See 'Validator Secrets section' for details.</p>
+<p><code>--data-dir</code></p>
+<p>The data directory where all the node-specific and shared data will be stored, this data will have to be backed up regularly by the nodes to maintain some redundancy.</p>
+<div class="admonition an-warning">
+<p class="admonition-title">Keep your data directory strictly private!</p>
+<p>The data directory specified above is used for storing multiple items that are secret. Besides initializing the directories for holding the <a href="https://tendermint.com/">Tendermint</a> state and key share data, it also stores private keys on a file. </p>
+<p>This directory should be secured and kept fully secret. If someone were to obtain access to this directory and the secrets, they could potentially impersonate you as a node in the network.</p>
+</div>
+<p><code>--domain</code></p>
+<p>The domain name for the validator node that you are running. This is needed to enable users and other nodes to be able to access the validator node via RPC calls.</p>
+<p><code>--ip-address</code></p>
+<p>The IP Address of the validator node that is used by DKG nodes for communicating within themselves.</p>
+<p><code>--server-port=3000</code></p>
+<p>The port number at which the <strong>http server</strong> is listening for requests.</p>
+<div class="admonition an-warning">
+<p class="admonition-title">SSL Termination</p>
+<p>The SSL termination can happen on an <strong>Nginx</strong> server which can then map the port 443 to the <code>--server-port</code> specified in the <code>dkg start</code> command above.</p>
+</div>
+<h4 id="5-stoprestart-node">5. Stop/Restart Node</h4>
+<p>You need to kill the running DKG process to stop the validator node. </p>
+<p>We are working on providing a cleaner way to stop and restart the node. Until then, follow these steps to cleanly restart your validator node:</p>
+<ol>
+<li>Stop all nodes.</li>
+<li>Replace the DKG binary with the <a href="https://github.com/arcana-network/adkg/releases">latest one</a>.</li>
+<li>Remove <code>dkg.sock</code> file, if present.</li>
+<li>DO NOT REMOVE the directory that your specified for <code>--data-dir</code>.</li>
+<li>Start the nodes using the <code>dkg start</code> command.</li>
+</ol>
+<h2 id="responsibilities">Responsibilities</h2>
+<ul>
+<li>
+<p>Perform all the required technical node operations done by each DKG node.</p>
+</li>
+<li>
+<p>Maintain a high uptime.</p>
+</li>
+<li>
+<p>Back up the validator node reliably.</p>
+</li>
+<li>
+<p>Always use the latest release of the DKG binaries.</p>
+</li>
+<li>
+<p>Check node-related services and processes daily and monitor health.</p>
+</li>
+<li>
+<p>Use node monitoring tools. We plan to support <a href="https://prometheus.io/">Prometheus</a> in the future, which will allow partners to monitor their nodes using the Grafana dashboard.</p>
+</li>
+<li>
+<p>Communicate any issues with the Arcana team on the DKG Slack channel.</p>
+</li>
+<li>
+<p><strong>Monitoring Metrics</strong>: At present, besides CPU and memory, we do not have any other specific metrics that need to be monitored for the validator node. Stay tuned for updates.</p>
+</li>
+<li>
+<p>Provide feedback and suggestions.</p>
+</li>
+</ul>
+<h2 id="migrating-validator-node">Migrating Validator Node</h2>
+<p>If you want to migrate the validator node to another server (for backup or temporary purposes) there are a couple of options available. Make sure you have addressed the prerequisites first before migrating the validator setup to another node.</p>
+<div class="admonition an-warning">
+<p class="admonition-title">Migration Prerequisites</p>
+<p>Before migrating a validator node to another physical or virtual server, make sure that the following are addressed:</p>
+<ul>
+<li>Backup the 'data' directory of the validator node</li>
+<li>Backup the Hashicorp vault data on a separate node</li>
+</ul>
+</div>
+<p><strong>Case 1: Migrating to a Node with same Domain and IP Address</strong></p>
+<p>Follow the steps listed under <a href="#node-setup">starting a validator node</a> section except the instructions in step 2b to bring up a new validator node. Now start the new node and join in the ADKG protocol. The other nodes are not required to be restarted for migration to work.</p>
+<p><strong>Case 2: Migrating to a Node with same Domain and different IP Address</strong></p>
+<p>You need to notify the Arcana team as this may require coordinating with other validator node operators. Follow the steps listed under <a href="#node-setup">starting a validator node</a> section except the instructions in step 2b to bring up a new validator node. Before starting up the node, wait for all the other nodes in the ADKG subsystem to restart in a synchronized manner. In this case, all validator nodes have to restart together.</p>
+<p><strong>Case 3: Migrating to a Node with different IP Address and Domain</strong></p>
+<p>We <strong>do not support</strong> migrating the validator node to a different one that has a different domain and a different IP address. In future releases too, the new node with a different domain and IP address will not be treated as a reincarnate of the previous node but as a brand 'new' replacement node. Adding such a node will follow Arcana ADKG recovery and repair protocol enhancements. In that case, there is no use backing up the validator node data. Our protocol will re-generate and repair key shares where applicable, in case one node goes down and a different one joins in the ADKG subsystem.</p>
+<div class="admonition an-warning">
+<p class="admonition-title">Backup Data Directory of the Validator Node</p>
+<p>ADKG protocol is under active development for robustness and key repair, regeneration mechanisms. We highly recommend that you back up the 'data' directory of the validator node in any case.</p>
+</div>
+<h2 id="rewards">Rewards</h2>
+<p>We are working on providing more details regarding validator rewards that answer the following questions:</p>
+<ul>
+<li>
+<p>What are the incentives for validator node providers?</p>
+</li>
+<li>
+<p>When are the rewards realized and how?</p>
+</li>
+</ul>
+<p>Check out <a href="../../faq/faq-validator/">Validator FAQ</a> if you have any questions or write to us: 📨 <a href="mailto:support@arcana.network">support@arcana.network</a></p>
+<h2 id="questions">Questions?</h2>
+<p>Write to us at the special validator slack channel if you have any further queries.</p>
+
+
+<hr />
+<div class="md-source-file">
+<small>
+
+    <!-- mkdocs-git-revision-date-localized-plugin -->
+    
+    Last update:
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 29, 2025</span> by <span class='git-page-authors git-authors'>shaloo, shalz</span> 
+    
+
+    <!-- mkdocs-git-revision-date-plugin -->
+    
+</small>
+</div>  
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this information helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Yes, it was useful." data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="No, not really." data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              You rock! Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Oops! Share some details at hello@arcana.network
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../audit/auth/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Audit Reports">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Audit Reports
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../faq/faq-validator/" class="md-footer__link md-footer__link--next" aria-label="Next: Validator FAQ">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Validator FAQ
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Arcana Network
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://arcana.network" target="_blank" rel="noopener" title="arcana.network" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/arcananetwork" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://t.me/ArcanaNetwork" target="_blank" rel="noopener" title="t.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8m114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716 43.8 43.8 0 0 1 .417 9.769"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/9vrxze3JRR" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/orgs/arcana-network/discussions" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/llms.txt" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.top", "navigation.sections", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "content.code.copy", "content.tabs.link", "header.autohide"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../js/open_in_new_tab.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "fade"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

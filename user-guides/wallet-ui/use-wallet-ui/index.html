@@ -1,0 +1,2731 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Arcana Wallet UI Usage Guide. Learn how to use the wallet for signing blockchain transactions, switching chains and more.">
+      
+      
+      
+        <link rel="canonical" href="https://docs.arcana.network/user-guides/wallet-ui/use-wallet-ui/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../use-wallet-to-export-keys/">
+      
+      
+      <link rel="icon" href="/img/favicon-pink.webp">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Basic Wallet Operations - 📖 Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%206.7.2%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202024%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%2032C28.7%2032%200%2060.7%200%2096v320c0%2035.3%2028.7%2064%2064%2064h224V368c0-26.5%2021.5-48%2048-48h112V96c0-35.3-28.7-64-64-64zm384%20320H336c-8.8%200-16%207.2-16%2016v112l32-32%2064-64z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","default='XXXXXXXXXX'"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","default='XXXXXXXXXX'",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=default='XXXXXXXXXX'",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="auto" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#basic-wallet-operations" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="📖 Documentation" class="md-header__button md-logo" aria-label="📖 Documentation" data-md-component="logo">
+      
+  <img src="../../../img/arcana-logo-pink.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            📖 Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Basic Wallet Operations
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="auto" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Light Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Light Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to System Mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to System Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ca-index/" class="md-tabs__link">
+          
+  
+  
+  Chain Abstraction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../auth-index/" class="md-tabs__link">
+          
+  
+  
+  Auth
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://status.arcana.network/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Service Status
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../support/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Need Help?
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="📖 Documentation" class="md-nav__button md-logo" aria-label="📖 Documentation" data-md-component="logo">
+      
+  <img src="../../../img/arcana-logo-pink.png" alt="logo">
+
+    </a>
+    📖 Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../ca-index/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Chain Abstraction
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Auth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Auth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../auth-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Social Login
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Developers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../quick-start/wagmi-quick-start/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../web3-stack/chains/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Tech Stack
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../introduction/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Usage
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../auth/auth-usage-guide/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Auth API
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="https://github.com/arcana-network/auth-examples" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../auth/auth-demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Auth Demo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../setup/config-dApp-with-db/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dashboard User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_8" id="__nav_3_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    In-app Wallet
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            In-app Wallet
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_8_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_8_1" id="__nav_3_2_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_8_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Web3 Wallet Ops
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Web3 Wallet Ops
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        
+<li class="md-nav__item">
+  <a href="#minimizemaximize-ui" class="md-nav__link">
+    Minimize/Maximize UI
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#switch-wallet-tabs" class="md-nav__link">
+    Switch Wallet Tabs
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#view-wallet-balance" class="md-nav__link">
+    View Wallet Balance
+  </a>
+  
+    <nav class="md-nav" aria-label="View Wallet Balance">
+      <ul class="md-nav__list">
+        
+          
+<li class="md-nav__item">
+  <a href="#addselect-a-network" class="md-nav__link">
+    Add/Select a Network
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#switch-network" class="md-nav__link">
+    Switch Network
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#sign-transaction" class="md-nav__link">
+    Sign Transaction
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#speed-up-transaction" class="md-nav__link">
+    Speed Up Transaction
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#transaction-details" class="md-nav__link">
+    Transaction Details
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#buysell-crypto" class="md-nav__link">
+    Buy/Sell Crypto
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#add-tokens" class="md-nav__link">
+    Add Tokens
+  </a>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#manage-nft-assets" class="md-nav__link">
+    Manage NFT Assets
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#view-user-profile" class="md-nav__link">
+    View User Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="View User Profile">
+      <ul class="md-nav__list">
+        
+          
+<li class="md-nav__item">
+  <a href="#export-private-key" class="md-nav__link">
+    Export Private Key
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#view-status-enable-mfa" class="md-nav__link">
+    View Status / Enable MFA
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#logout" class="md-nav__link">
+    Logout
+  </a>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#transaction-activity" class="md-nav__link">
+    Transaction Activity
+  </a>
+  
+    <nav class="md-nav" aria-label="Transaction Activity">
+      <ul class="md-nav__list">
+        
+          
+<li class="md-nav__item">
+  <a href="#pending-transactions" class="md-nav__link">
+    Pending Transactions
+  </a>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+  
+</li>
+
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-wallet-to-export-keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Export Key
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-wallet-to-manage-nfts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manage NFTs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-wallet-to-manage-tokens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Manage Tokens
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mfa/mfa-ug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MFA Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../faq/faq-gen/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../concepts/adkg/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Concepts
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../checklists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Auth Checklists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../auth/auth-error-msg/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Error Handling
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../relnotes/latest-auth-release-note/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release Notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../migration/latest-auth-migration-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Migration Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Resources
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../audit/auth/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Audit
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.notion.so/Arcana-Technical-Docs-a1d7fd0d2970452586c693e4fee14d08" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Auth Whitepaper
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../validators/onboard-validators/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Validators
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../auth/introduction/auth-architecture/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../partner-docs/auth/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Docs Collab
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://status.arcana.network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Service Status
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Need Help?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        
+<li class="md-nav__item">
+  <a href="#minimizemaximize-ui" class="md-nav__link">
+    Minimize/Maximize UI
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#switch-wallet-tabs" class="md-nav__link">
+    Switch Wallet Tabs
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#view-wallet-balance" class="md-nav__link">
+    View Wallet Balance
+  </a>
+  
+    <nav class="md-nav" aria-label="View Wallet Balance">
+      <ul class="md-nav__list">
+        
+          
+<li class="md-nav__item">
+  <a href="#addselect-a-network" class="md-nav__link">
+    Add/Select a Network
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#switch-network" class="md-nav__link">
+    Switch Network
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#sign-transaction" class="md-nav__link">
+    Sign Transaction
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#speed-up-transaction" class="md-nav__link">
+    Speed Up Transaction
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#transaction-details" class="md-nav__link">
+    Transaction Details
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#buysell-crypto" class="md-nav__link">
+    Buy/Sell Crypto
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#add-tokens" class="md-nav__link">
+    Add Tokens
+  </a>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#manage-nft-assets" class="md-nav__link">
+    Manage NFT Assets
+  </a>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#view-user-profile" class="md-nav__link">
+    View User Profile
+  </a>
+  
+    <nav class="md-nav" aria-label="View User Profile">
+      <ul class="md-nav__list">
+        
+          
+<li class="md-nav__item">
+  <a href="#export-private-key" class="md-nav__link">
+    Export Private Key
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#view-status-enable-mfa" class="md-nav__link">
+    View Status / Enable MFA
+  </a>
+  
+</li>
+
+        
+          
+<li class="md-nav__item">
+  <a href="#logout" class="md-nav__link">
+    Logout
+  </a>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+  
+</li>
+
+      
+        
+<li class="md-nav__item">
+  <a href="#transaction-activity" class="md-nav__link">
+    Transaction Activity
+  </a>
+  
+    <nav class="md-nav" aria-label="Transaction Activity">
+      <ul class="md-nav__list">
+        
+          
+<li class="md-nav__item">
+  <a href="#pending-transactions" class="md-nav__link">
+    Pending Transactions
+  </a>
+  
+</li>
+
+        
+      </ul>
+    </nav>
+  
+</li>
+
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="basic-wallet-operations">Basic Wallet Operations</h1><p style="color:#bdbdbd"><i>Estimated time to read: 11 minutes</i></p>
+
+<p>This guide covers basic Arcana wallet operations that are accessible through the user interface.</p>
+<div class="admonition an-note">
+<p class="admonition-title">Arcana wallet Access</p>
+<p>Users can access Arcana wallet from within the app's browser context. The app must be integrated with the Arcana Auth SDK to enable Arcana wallet for the user.</p>
+</div>
+<h2 id="minimizemaximize-ui">Minimize/Maximize UI</h2>
+<p>Right after a user authenticates, the wallet is displayed in its minimized state.</p>
+<p><img class="an-screenshots-noeffects" src="/img/an_wallet_min_light.webp#only-dark" width="15%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_min_dark.webp#only-light" width="15%"/></p>
+<p>On clicking, it expands to display the wallet in its maximized state. It can be minimized again by clicking the '∨' icon on the top in the wallet UI. </p>
+<p><img class="an-screenshots-noeffects" src="/img/an_wallet_max_light.webp#only-dark" width="35%"/><img class="an-screenshots-noeffects" src="/img/an_wallet_max_dark.webp#only-light" width="35%"/></p>
+<h2 id="switch-wallet-tabs">Switch Wallet Tabs</h2>
+<p>The following functions can be accessed from any of the wallet tabs:</p>
+<ul>
+<li>View the dApp name, logo</li>
+<li>View wallet address and type</li>
+<li>View/Switch/Add Blockchain Network</li>
+<li>Copy wallet address</li>
+<li>Display QR code for the wallet</li>
+</ul>
+<p>Other wallet features can be accessed via specific tabs in the wallet UI:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Wallet Balance</label><label for="__tabbed_1_2">NFT Assets</label><label for="__tabbed_1_3">User Profile</label><label for="__tabbed_1_4">Activity</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>This is the default home tab of the Arcana wallet: <a class="glightbox" href="/img/icons/an_wallet_token_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_token_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_dark.webp#only-dark" width="20"/></a></p>
+<p>It displays the wallet token balance across available chains. User can switch chains, send cryptocurrency and tokens, buy/sell cryptocurrency and manage ERC-20 tokens.  See <a href="" title="View Wallet Balance">#view-wallet-balance</a> for details.</p>
+<p><figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_home_tokens.webp" alt="Wallet Balance Home Tab"/>
+  <figcaption>Wallet Home: Token Balance</figcaption>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p>Use this tab to view the NFT assets linked with your Arcana wallet on the selected chain: <a class="glightbox" href="/img/icons/an_wallet_nft_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_nft_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_nft_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_nft_icon_dark.webp#only-dark" width="20"/></a></p>
+<p>See <a href="../use-wallet-to-manage-nfts/"> <span class="twemoji icon-color"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 16V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-11-4 2.03 2.71L16 11l4 5H8M2 6v14a2 2 0 0 0 2 2h14v-2H4V6"/></svg></span> how to manage NFTs</a>, for details.</p>
+<p><figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_nft_assets.webp" alt="View NFT Assets"/>
+  <figcaption>View NFT Assets</figcaption>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p>View your user profile details associated with the Arcana wallet in this tab: <a class="glightbox" href="/img/icons/an_wallet_profile_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_profile_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_profile_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_profile_icon_dark.webp#only-dark" width="20"/></a></p>
+<p>You can view wallet address, export private keys, check MFA status (or enable it) and log out of the wallet through this tab. </p>
+<p>See <a href="../use-wallet-to-export-keys/"> <span class="twemoji icon-color"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.67 13.67c-.47.46-1.04.83-1.67 1.06V23H8v-2H5v-3h3v-3.28c-1.74-.62-3-2.26-3-4.22C5 8 7 6 9.5 6h.1c-.47.95-.68 2-.57 3.08-.59.2-1.03.76-1.03 1.42 0 .83.67 1.5 1.5 1.5.23 0 .45-.06.65-.15.64.84 1.52 1.47 2.52 1.82m8.06 5.77-2.76 1.16-.78-1.84-2.76 1.17-1.17-2.77L16.03 16l-1.27-3c-1.85.08-3.65-.95-4.41-2.75-.96-2.29.12-4.93 2.41-5.9.24-.1.5-.17.74-.23C12.84 2.87 11.5 2 10 2 7.79 2 6 3.79 6 6v.24c-.3.26-.6.58-.85.91C5.06 6.78 5 6.4 5 6c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.42-.6 2.67-1.55 3.57.42.43 1.05.56 1.63.31.77-.32 1.12-1.2.8-1.96a1 1 0 0 0-.14-.26C15.9 7.13 16 6.58 16 6c0-.63-.1-1.24-.28-1.81 1.28.36 2.38 1.25 2.93 2.57.76 1.8.24 3.81-1.15 5.05zM13 8.6c.37-.41.65-.89.82-1.42-.54.27-.85.82-.82 1.42"/></svg></span> how to export private keys</a> for details.</p>
+<div class="admonition an-tip">
+<p class="admonition-title">Multi-Factor Authentication (MFA)</p>
+<p>MFA is a one-time setting. See <a href="../../mfa/mfa-ug/"> <span class="twemoji icon-color"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.67 13.67c-.47.46-1.04.83-1.67 1.06V23H8v-2H5v-3h3v-3.28c-1.74-.62-3-2.26-3-4.22C5 8 7 6 9.5 6h.1c-.47.95-.68 2-.57 3.08-.59.2-1.03.76-1.03 1.42 0 .83.67 1.5 1.5 1.5.23 0 .45-.06.65-.15.64.84 1.52 1.47 2.52 1.82m8.06 5.77-2.76 1.16-.78-1.84-2.76 1.17-1.17-2.77L16.03 16l-1.27-3c-1.85.08-3.65-.95-4.41-2.75-.96-2.29.12-4.93 2.41-5.9.24-.1.5-.17.74-.23C12.84 2.87 11.5 2 10 2 7.79 2 6 3.79 6 6v.24c-.3.26-.6.58-.85.91C5.06 6.78 5 6.4 5 6c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.42-.6 2.67-1.55 3.57.42.43 1.05.56 1.63.31.77-.32 1.12-1.2.8-1.96a1 1 0 0 0-.14-.26C15.9 7.13 16 6.58 16 6c0-.63-.1-1.24-.28-1.81 1.28.36 2.38 1.25 2.93 2.57.76 1.8.24 3.81-1.15 5.05zM13 8.6c.37-.41.65-.89.82-1.42-.54.27-.85.82-.82 1.42"/></svg></span> how to ensable MFA</a>, for details.</p>
+</div>
+<p><figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_profile_tab.webp" alt="View wallet User Profile"/>
+  <figcaption>View Wallet User Profile</figcaption>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p>Check your Arcana wallet activities through the activity tab: <a class="glightbox" href="/img/icons/an_wallet_notification_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_notification_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_notification_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_notification_icon_dark.webp#only-dark" width="20"/></a></p>
+<p>It shows the wallet activity, transactions processed in the current user login session. <a href="./#transaction-activity">Learn more...</a></p>
+<p><figure markdown="span">
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_activity.gif" alt="View Wallet Activity"/>
+  <figcaption>View Wallet Activity</figcaption>
+</figure></p>
+</div>
+</div>
+</div>
+<h2 id="view-wallet-balance">View Wallet Balance</h2>
+<h3 id="addselect-a-network">Add/Select a Network</h3>
+<p>By default, the Arcana wallet UI displays a pre-configured list of blockchain networks that are configured by the app developer. Users can select a different network from the drop-down list or add newer networks that are <a href="../../../web3-stack/chains/">supported by the app</a>.</p>
+<p>To add or select a network, click the dropdown next to the blockchain network icon on the top right: <img class="an-screenshots-noeffects" src="/img/icons/wallet_add_network_icon.webp" alt="Network Icon" width="10%"/></p>
+<p>Choose one of the available networks in the list and switch to it or click <strong>Add Network</strong> to add a new one with the following details:</p>
+<ul>
+<li>Add the following details:<ul>
+<li><strong>Network Name</strong>: Name of the network. For example, Shardeum</li>
+<li><strong>RPC URL</strong>: https://liberty10.shardeum.org</li>
+<li><strong>Chain ID</strong>: 8080</li>
+<li><strong>Currency Symbol</strong>: SHM</li>
+<li><strong>Explorer URL (Optional)</strong>: https://explorer.liberty10.shardeum.org/</li>
+</ul>
+</li>
+</ul>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_add_network_button.gif" alt="Add Network"/>
+<br />
+<figcaption>Add Network</figcaption>
+</figure>
+<p>Click Save to automatically set the newly added network as the active chain in the wallet UI.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/wallet_added_network.gif" alt="Network List"/>
+<br />
+<figcaption>Network List</figcaption>
+</figure>
+<h3 id="switch-network">Switch Network</h3>
+<p>Click on the dropdown next to the network icon on the top right of the wallet UI:<a class="glightbox" href="/img/icons/an_wallet_token_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_token_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_dark.webp#only-dark" width="20"/></a> </p>
+<p>Choose one of the available networks in the pre-configured blockchain networks list to switch networks.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_switch_ntwk.gif" alt="Switch Network"/>
+<br />
+<figcaption>Switch Network</figcaption>
+</figure>
+<h3 id="sign-transaction">Sign Transaction</h3>
+<p>A blockchain sign transaction notification can be triggered programmatically via the app or in response to a user action in the Arcana wallet UI. Users can scroll through the notification to view the details before selecting <strong>Reject</strong> or <strong>Approve</strong> option.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_85pc" src="/img/an_wallet_personalsign.webp" alt="Sign Transactions"/>
+<br />
+<figcaption>Sign Transactions</figcaption>
+</figure>
+<h3 id="speed-up-transaction">Speed Up Transaction</h3>
+<p>For every blockchain transaction, users pay gas fees with the network’s native token. It is possible to speed up the transaction by paying higher gas fees. When issuing a send transaction through the Arcana wallet UI, users have three options for gas fees selection:</p>
+<ul>
+<li><strong>Normal</strong>: Default network gas fees</li>
+<li><strong>Fast</strong>: Pay a premium for quicker transactions</li>
+<li><strong>Custom</strong>: Choose gas limits, priority fee and max gas fees setting and customize fees</li>
+</ul>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_speedup.gif" alt="Speedup Transactions"/>
+<br />
+<figcaption>Speed up Transactions</figcaption>
+</figure>
+<h3 id="transaction-details">Transaction Details</h3>
+<p>If a blockchain transaction is triggered via the app that requires the user's approval, the user will see a transaction notification. If the wallet was in a minimized state at the time the request was generated, then the notification will show up with a summary of the transaction along with the buttons to approve or reject. </p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_smtx_sign_msg.webp" alt="Transaction Notification"/>
+<br />
+<figcaption>Transaction Notification</figcaption>
+</figure>
+<p>The user can click on the top right arrow icon in the transaction notification to view its details. </p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_sign_msg.webp" alt="View Transaction Details"/>
+<br />
+<figcaption>Transaction Notification</figcaption>
+</figure>
+<details class="an-example">
+<summary>Transaction Notification Example</summary>
+<p>Here is an example of how an <code>eth_sendTransaction</code> triggers a transaction notification and approval request for the user. The send transaction notification summary is displayed:</p>
+<p><figure markdown="span">
+    <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_smtx_send_tx.webp" alt="Example: Send Transaction Notification"/>
+    <figcaption>Example: Send Transaction Notification</figcaption>
+  </figure></p>
+<p>In the case of the send transaction request or sign transaction request, the notification details allow the user to edit the gas fees before approving the request. </p>
+<p><figure markdown="span">
+    <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_send_tx.webp" alt="Send Transaction Details"/>
+    <figcaption>Example: Send Transaction Notification</figcaption>
+  </figure></p>
+<p>For other transactions that do not involve gas fees such as personal sign or signature requests, the notification details allow users to review transaction message details before taking an action to approve or reject.</p>
+</details>
+<details class="an-example">
+<summary>Signature Request Example</summary>
+<p>Here is an example of a signature request notification summary:</p>
+<p><figure markdown="span">
+    <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_smtx_req_sign.webp" alt="Example: Signature Request Summary"/>
+    <figcaption>Example: Signature Request Summary</figcaption>
+  </figure></p>
+<p>On clicking the topmost arrow icon, the user can see the signature request transaction notification details view:</p>
+<p><figure markdown="span">
+    <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_req_sign.webp" alt="Example: Signature Request Details"/>
+    <figcaption>Example: Signature Request Details</figcaption>
+  </figure></p>
+</details>
+<h3 id="buysell-crypto">Buy/Sell Crypto</h3>
+<p>Arcana wallet uses third-party providers to enable buying and selling (on-ramping and off-ramping) of crypto assets.</p>
+<h4 id="fiat-on-ramp">Fiat On-ramp</h4>
+<p>The Arcana wallet users can <strong>buy</strong> cryptocurrency using fiat through one of the supported providers: </p>
+<ul>
+<li><span><a href="https://transak.com/" target="_blank">Transak</a></span></li>
+<!--
+<li><span><a href="https://ramp.network/" target="_blank">Ramp Network</a></span></li>
+<li><span><a href="https://onramp.money/" target="_blank">Onramp Money</a></span></li>
+-->
+</ul>
+
+<p>Click <strong>Buy</strong> to purchase ERC20 or native tokens for supported blockchains from the chosen on-ramp provider. Select the 'Tokens' <a class="glightbox" href="/img/icons/an_wallet_token_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_token_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_dark.webp#only-dark" width="20"/></a> tab, then choose the required blockchain network from the drop-down list. The selected chain determines which cryptocurrencies and tokens can be purchased, following local regulations.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_onramp_buy.webp" alt="Buy Crypto"/>
+<br />
+<figcaption>Buy Crypto</figcaption>
+</figure>
+<p>Pick up one of the providers and click <strong>Proceed</strong>. </p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_onramp_providers.webp" alt="On Ramp Providers"/>
+<br />
+<figcaption>On Ramp Providers</figcaption>
+</figure>
+<p>Clicking will open the provider interface in a new tab. Arcana wallet will notify you of the 'buy' process. Dismiss the notification and continue using the wallet while the purchase is completed in the other tab.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_onramp_provider_select.webp" alt="Confirm Buy Transaction"/>
+<br />
+<figcaption>Confirm Buy Transaction</figcaption>
+</figure>
+<details class="an-example">
+<summary>On-Ramp Provider Usage</summary>
+<p>Fiat on-ramp providers may require users to follow country-specific KYC procedures and list only the available cryptocurrencies for the selected chain. Minimum purchase amounts can vary by country and provider.</p>
+<p>For example, Transak requires each user to complete KYC by submitting country-specific identification documents. Once the verification is complete, the user can purchase the cryptocurrency with Transak.  This verification is a one-time thing and subsequent purchases will not require this additional step. The figure below shows an example of a purchase transaction using Transak.</p>
+<p><figure markdown="span">
+    <img alt="Using Transak" class="an-screenshots-noeffects width_50pc" src="/img/an_wallet_fiat_transak.gif"/>
+    <figcaption>Using Transak</figcaption>
+  </figure></p>
+<p>Refer to the provider documentation for details regarding usage and coverage:</p>
+<ul>
+<li>
+<p><a href="https://support.transak.com/en/articles/7846055-buying-cryptocurrency-for-beginners">Transak User Guide</a></p>
+</li>
+<li>
+<p><a href="https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits">Transak coverage</a></p>
+</li>
+</ul>
+</details>
+<details class="an-warning">
+<summary>Buy Limitations</summary>
+<ol>
+<li>
+<p>Purchased ERC20 and ERC721 tokens will not update automatically in the Arcana wallet assets screen. Users must manually add custom tokens, as on-ramp providers do not supply the token's contract address.</p>
+</li>
+<li>
+<p>The notification tab in the Arcana wallet UI will not show activity for a successful purchase. On-ramp providers do not consistently share this information. We may add this feature in future releases.</p>
+</li>
+</ol>
+</details>
+<h4 id="fiat-off-ramp">Fiat Off-ramp</h4>
+<p>The Arcana wallet users can <strong>sell</strong> cryptocurrency using fiat through one of the supported providers: </p>
+<ul>
+<li><span><a href="https://transak.com/" target="_blank">Transak</a></span></li>
+<!--
+<li><span><a href="https://ramp.network/" target="_blank">Ramp Network</a></span></li>
+-->
+ </ul>
+
+<p>Click <strong>Sell</strong> to off-ramp ERC20 tokens or execute native cryptocurrency sell transactions for supported blockchains via the selected provider. The chosen off-ramp provider executes the 'sell' and deposits proceeds into the configured bank account. Select the 'Tokens' <a class="glightbox" href="/img/icons/an_wallet_token_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_token_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_dark.webp#only-dark" width="20"/></a> tab, then choose the required blockchain network from the drop-down list. The selected chain determines which cryptocurrencies and tokens can be sold, following local regulations.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_offramp_sell.webp" alt="Sell Crypto"/>
+<br />
+<figcaption>Sell Crypto</figcaption>
+</figure>
+<p>Pick up one of the providers and click <strong>Proceed</strong>.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_offramp_providers.webp" alt="Off-Ramp Providers"/>
+<br />
+<figcaption>Off-Ramp Providers</figcaption>
+</figure>
+<p>Clicking opens the provider interface in a new tab. Complete the sale there. Arcana wallet will notify you of the 'sell' initiation. Dismiss the notification and continue using the wallet.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_offramp_provider_select.webp" alt="Confirm Sell Transaction"/>
+<br />
+<figcaption>Confirm Sell Transaction</figcaption>
+</figure>
+<details class="an-example">
+<summary>Off-ramp Provider Usage</summary>
+<p>Fiat off-ramp providers may ask the user to follow country-specific procedures for KYC and list available cryptocurrencies for the selected chain. Note that the basic maximum sell amount for a country or cryptocurrency may vary across countries and providers.</p>
+<p>Transak requires each user to complete KYC by submitting country-specific identification documents. Once the verification is complete, the user can sell cryptocurrency via Transak.  This verification is a one-time thing; subsequent purchases will not require this additional step. The figure below shows an example of a sell transaction using Transak.</p>
+<p><figure markdown="span">
+    <img alt="Using Transak" class="an-screenshots-noeffects width_50pc" src="/img/an_wallet_fiat_transak_sell.webp"/>
+      <figcaption>Using Transak</figcaption>
+  </figure></p>
+<p>Refer to provider documentation for more details on usage and coverage.</p>
+<ul>
+<li><a href="https://support.transak.com/en/articles/7846055-buying-cryptocurrency-for-beginners">Transak User Guide</a></li>
+<li><a href="https://docs.transak.com/docs/fiat-currency-country-payment-method-coverage-plus-fees-and-limits">Transak coverage</a></li>
+</ul>
+</details>
+<p>The activity tab in the Arcana wallet UI displays details of the 'sell' transaction issued from the wallet.</p>
+<h3 id="add-tokens">Add Tokens</h3>
+<p>Click the <a class="glightbox" href="/img/icons/an_wallet_token_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_token_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_token_icon_dark.webp#only-dark" width="20"/></a> 'Tokens' tab on the bottom left of the Arcana wallet to bring up the token assets screen.</p>
+<p>You can add custom ERC-20 and ERC-1155 token assets to the Arcana wallet UI by clicking <strong>Manage</strong>. <a href="../use-wallet-to-manage-tokens/">Learn more...</a></p>
+<h2 id="manage-nft-assets">Manage NFT Assets</h2>
+<p>Click the 'NFT' tab on the bottom of the Arcana wallet UI to view and manage NFTs associated with the wallet address on the selected blockchain network and perform these actions:</p>
+<ul>
+<li>List NFT assets associated with the wallet address</li>
+<li>View NFT details</li>
+<li>Send NFT</li>
+<li>Receive NFT</li>
+<li>
+<p>Manage NFTs</p>
+<ul>
+<li>Add an NFT</li>
+<li>Edit NFT entry</li>
+<li>Delete NFT entry</li>
+</ul>
+</li>
+</ul>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_nft_asset_thumbnail.gif" alt="NFT Assets"/>
+<br />
+<figcaption>NFT Assets</figcaption>
+</figure>
+<p><a href="../use-wallet-to-manage-nfts/">Learn more...</a></p>
+<h2 id="view-user-profile">View User Profile</h2>
+<p>Click the <a class="glightbox" href="/img/icons/an_wallet_profile_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_profile_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_profile_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_profile_icon_dark.webp#only-dark" width="20"/></a> 'Profile' tab on the bottom of the Arcana wallet and perform these actions:</p>
+<ul>
+<li>View User name</li>
+<li>View User Email ID</li>
+<li>View / Copy Wallet Address</li>
+<li>Export the private key / Save seed phrase for exporting MultiversX wallet </li>
+<li>View MFA Status / Enable MFA</li>
+<li>Logout</li>
+</ul>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_profile.webp" alt="User Profile"/>
+<br />
+<figcaption>User Profile</figcaption>
+</figure>
+<h3 id="export-private-key">Export Private Key</h3>
+<p>Click the Profile <a class="glightbox" href="/img/icons/an_wallet_profile_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_profile_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_profile_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_profile_icon_dark.webp#only-dark" width="20"/></a> tab on the bottom of the Arcana wallet to see the user profile screen and choose <a href="../use-wallet-to-export-keys/">export private key</a> option.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_export_key.webp" alt="Export Private Key" />
+<br />
+<figcaption>Export Private Key</figcaption>
+</figure>
+<div class="admonition an-warning">
+<p class="admonition-title">Exporting MultiversX Wallet</p>
+<p>For exporting the MultiversX Wallet, there is no private key export feature unlike EVM chains. The user must refer to the saved copy of the secret seed phrase (displayed on first user login) and recover or import the MultiversX wallet. <a href="../../../faq/faq-mvx/#export-mvx-wallet">Learn more...</a></p>
+</div>
+<h3 id="view-status-enable-mfa">View Status / Enable MFA</h3>
+<p>In the profile tab of the wallet, users can check the current MFA status, whether it is enabled or not. <a href="../../../concepts/mfa/">MFA</a> is a one-time setting for the user's wallet. Click <strong>Set up MFA</strong> to turn on MFA by setting up security questions and a PIN. You will need to enter either of them to authenticate when you login to a new device or browser. <a href="../../mfa/mfa-ug/">Learn more...</a></p>
+<h3 id="logout">Logout</h3>
+<p>To log out of the app and the wallet, click the Profile <a class="glightbox" href="/img/icons/an_wallet_profile_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_profile_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_profile_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_profile_icon_dark.webp#only-dark" width="20"/></a> tab at the bottom of the Arcana wallet UI and select <strong>Logout</strong>.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_profile.webp" alt="Logout"/>
+<br />
+<figcaption>Logout</figcaption>
+</figure>
+<h2 id="transaction-activity">Transaction Activity</h2>
+<p>Click the <a class="glightbox" href="/img/icons/an_wallet_notification_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_notification_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_notification_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_notification_icon_dark.webp#only-dark" width="20"/></a> 'Activity' tab on the bottom right of the Arcana wallet to view the activity screen. It lists any pending transactions and the status of the following user actions via the wallet:</p>
+<ul>
+<li>Sell transaction</li>
+<li>Send tokens transaction</li>
+<li>Contract deployment</li>
+</ul>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_combined_notify.webp" alt="Wallet Activity"/>
+<br />
+<figcaption>User Profile</figcaption>
+</figure>
+<details>
+<summary>Notification Example</summary>
+<p></p>
+<h4 id="pending-contract-deployment-request">Pending Contract Deployment Request</h4>
+<p>A red dot on the <a class="glightbox" href="/img/icons/an_wallet_notification_icon_light.webp#only-light" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_notification_icon_light.webp#only-light" width="20"/></a><a class="glightbox" href="/img/icons/an_wallet_notification_icon_dark.webp#only-dark" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img src="/img/icons/an_wallet_notification_icon_dark.webp#only-dark" width="20"/></a>'Activity' tab icon at the bottom right of the Arcana wallet indicates a pending blockchain transaction. </p>
+<p>Click on the red dot to see details of the pending transaction and take appropriate action. </p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_pending_contract.gif" alt="View Pending Notifications" />
+<br />
+<figcaption>View Pending Notifications</figcaption>
+</figure>
+</p>
+</details>
+<h3 id="pending-transactions">Pending Transactions</h3>
+<p>When a transaction notification appears, the user can click 'Do this later' to ignore it. Pending transactions are marked with a red dot in the 'Activity' tab and on the minimized wallet icon.</p>
+<p>Once the user addresses the notification, it disappears from the 'Activity' tab.</p>
+<figure>
+  <img class="an-screenshots-noeffects width_35pc" src="/img/an_wallet_pending_sign_anim.gif" alt="Pending Transactions"/>
+<br />
+<figcaption>Pending Transactions</figcaption>
+</figure>
+
+
+<hr />
+<div class="md-source-file">
+<small>
+
+    <!-- mkdocs-git-revision-date-localized-plugin -->
+    
+    Last update:
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 29, 2025</span> by <span class='git-page-authors git-authors'>shaloo, shalz</span> 
+    
+
+    <!-- mkdocs-git-revision-date-plugin -->
+    
+</small>
+</div>  
+
+  
+
+
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this information helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="Yes, it was useful." data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 9v12H1V9zm4 12a2 2 0 0 1-2-2V9c0-.55.22-1.05.59-1.41L14.17 1l1.06 1.06c.27.27.44.64.44 1.05l-.03.32L14.69 8H21a2 2 0 0 1 2 2v2c0 .26-.05.5-.14.73l-3.02 7.05C19.54 20.5 18.83 21 18 21zm0-2h9.03L21 12v-2h-8.79l1.13-5.32L9 9.03z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="No, not really." data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 15V3h4v12zM15 3a2 2 0 0 1 2 2v10c0 .55-.22 1.05-.59 1.41L9.83 23l-1.06-1.06c-.27-.27-.44-.64-.44-1.06l.03-.31.95-4.57H3a2 2 0 0 1-2-2v-2c0-.26.05-.5.14-.73l3.02-7.05C4.46 3.5 5.17 3 6 3zm0 2H5.97L3 12v2h8.78l-1.13 5.32L15 14.97z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              You rock! Thanks for your feedback!
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+              
+                
+                
+              
+              Oops! Share some details at hello@arcana.network
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../use-wallet-to-export-keys/" class="md-footer__link md-footer__link--next" aria-label="Next: Export Key">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Export Key
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Arcana Network
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://arcana.network" target="_blank" rel="noopener" title="arcana.network" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/arcananetwork" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://t.me/ArcanaNetwork" target="_blank" rel="noopener" title="t.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8m114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.45 10.45 0 0 1 3.53 6.716 43.8 43.8 0 0 1 .417 9.769"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/9vrxze3JRR" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485 485 0 0 0 404.081 32.03a1.82 1.82 0 0 0-1.923.91 338 338 0 0 0-14.9 30.6 447.9 447.9 0 0 0-134.426 0 310 310 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.7 483.7 0 0 0-119.688 37.107 1.7 1.7 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.02 2.02 0 0 0 .765 1.375 487.7 487.7 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348 348 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321 321 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251 251 0 0 0 9.109-7.137 1.82 1.82 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.81 1.81 0 0 1 1.924.233 235 235 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.4 301.4 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391 391 0 0 0 30.014 48.815 1.86 1.86 0 0 0 2.063.7A486 486 0 0 0 610.7 405.729a1.88 1.88 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541M222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241m195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/orgs/arcana-network/discussions" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/llms.txt" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2M7.5 13A2.5 2.5 0 0 0 5 15.5 2.5 2.5 0 0 0 7.5 18a2.5 2.5 0 0 0 2.5-2.5A2.5 2.5 0 0 0 7.5 13m9 0a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.prune", "navigation.top", "navigation.sections", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.follow", "content.code.copy", "content.tabs.link", "header.autohide"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../js/open_in_new_tab.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "fade"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

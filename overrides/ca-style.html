@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+
+{{ super() }}
+
+<!---
+    Note: Mkdocs returns {{ config.site_url }} with a terminating '/' 
+-->
+
+{% block announce %}
+  <!-- Add Chain Abstraction wallet links here to avoid confusion with the built-in in-app wallet in the Auth SDK-->
+  <div>
+    <p style="text-align: center;">
+        ⛳ <b> Latest</b><i> CA SDK</i><a href="/relnotes/latest-ca-release-note/"> Release</a> v<a href="https://www.npmjs.com/package/@arcana/ca-sdk">{{config.extra.arcana.latest_ca_sdk_version}}</a>      <i>CA Wagmi SDK</i><a href="/relnotes/latest-ca-wagmi-release-note/"> Release</a> v<a href="https://www.npmjs.com/package/@arcana/ca-sdk">{{config.extra.arcana.latest_ca_wagmi_sdk_version}}</a> ⛳
+    </p>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    .md-sidebar--secondary {
+        display: none;
+    }
+
+    .logo-styling {
+        padding: 0.25rem;
+        border-radius: 0.6rem;
+        background-color: #eaeaea;
+        margin-right: 0.75rem;
+        margin-left: 1rem;
+        background-color: var(--md-an-gray-dark-color);
+    }
+
+    .an-card-container {
+        display: flex;
+        justify-content: space-between;
+        justify-items: start;
+    }
+
+    .card-cell-left {
+        padding: 1rem;
+        /*border-right: 0.5px solid var(--md-an-color-h2-bottom-rule);
+        line-height: 80%;*/
+        word-break: keep-all;
+    }
+
+    .card-cell-right {
+        padding: 1rem;
+        color: var(--md-default-fg-color);
+    }
+
+    .md-an-marquee {
+        padding: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem;
+            color: var(--md-an-hero-content-color);
+            font-style: bold;
+        }
+
+        .card-cell-left,
+        .card-cell-right {
+            max-width: 100%;
+            display: block;
+        }
+
+        .tx-try-now-button-blue {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none;
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__content {
+            max-width: 22rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+            color: var(--md-an-hero-content-color);
+        }
+    }
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: block
+        }
+
+        .md-sidebar--secondary {
+            display: none;
+        }
+
+        .bottom-hr {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 .2rem;
+        }
+
+        .tx-try-now-button-blue {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .hr {
+        width: 100%;
+    }
+
+    .md-footer-meta__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1.0rem;
+    }
+</style>
+
+{% include "partials/content.html" %}
+
+{% endblock %}
+
+{% block scripts %}
+<!-- Add scripts that need to run before here -->
+{{ super() }}
+<!-- Add scripts that need to run afterwards here -->
+
+<!-- Marker.io feedback tool for Arcana Documentation -->
+<!--- September 7, 2023 Marker.io subscription has expired, disabling for now.-->
+<!---
+  <script>
+    window.markerConfig = {
+      project: '62f387c6d3d3e6c6c720fc40', 
+      source: 'snippet'
+    };
+  </script>
+  
+  <script>
+  !function(e,r,a){if(!e.__Marker){e.__Marker={};var t=[],n={__cs:t};["show","hide","isVisible","capture","cancelCapture","unload","reload","isExtensionInstalled","setReporter","setCustomData","on","off"].forEach(function(e){n[e]=function(){var r=Array.prototype.slice.call(arguments);r.unshift(e),t.push(r)}}),e.Marker=n;var s=r.createElement("script");s.async=1,s.src="https://edge.marker.io/latest/shim.js";var i=r.getElementsByTagName("script")[0];i.parentNode.insertBefore(s,i)}}(window,document);
+  </script>
+  --->
+
+<!-- Chatbase bot script -->
+<script>
+    window.chatbaseConfig = {
+        chatbotId: "Fbi0FsddfX1zz_DWM5jwJ",
+    }
+</script>
+<script src="https://www.chatbase.co/embed.min.js" id="Fbi0FsddfX1zz_DWM5jwJ" defer>
+</script>
+
+{% endblock %}

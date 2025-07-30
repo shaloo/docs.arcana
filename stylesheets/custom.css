@@ -1,0 +1,1006 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=block");
+
+:root > * {
+  --md-nav-padding: 0.05rem;
+  --md-an-pink-color: #FF4E9F;
+  --md-an-pink-color-light: #f8eaf0;
+  --md-an-highlight-color: var(--md-an-pink-color); /* Theme switch */
+  --md-an-highlight-color-light: var(--md-an-pink-color-light); /* Theme switch */
+  --md-an-blue-color: #3169b3;
+  --md-an-blue-color-light: rgba(49, 105, 179, 0.25);
+  --md-an-green-color: #0f8584;
+  --md-an-green-color-light: #d1eeec70;
+  --md-an-black-color: #19191D;
+  --md-an-gray-light-color: #DBDFE7;
+  --md-an-gray-dark-color: #5F6776;
+  --md-an-orange-color: #FF823F;
+  --md-an-orange-color-light:#FFEBD2;
+  --md-typeset-mark-color: var(--md-an-yellow-color-light);
+  --md-an-red-color: #ED473D;
+  --md-an-red-color-light: #FEE7E1;
+  --md-an-yellow-color: #FFE15A;
+  --md_an_yellow-color-light: #FFF9DE;
+  --md-an-purple-color: #5A2ABD;
+  --md-an-cyan-color: #25BAEF;
+  --md-an-cyan-color-light: #bfe4f4bf;
+  --md-an-admonition-blue-color: #406edad0;
+  --md-an-admonition-blue-color-light: #406eda26;
+  --md-an-gray-color-lighter: #ece6e81c;
+  --md-an-img-bg: var(--md-an-gray-color-lighter);
+  --md-default-bg-color--light: #aaaaaa;
+  --md-default-bg-color--lighter: #e7f6ff;
+  --md-typeset-a-color: var(--md-an-highlight-color);
+  --md-accent-fg-color: rgb(132, 144, 149);
+  --md-accent-fg-color--transparent: hsla(190, 5%, 49%, 0.1);
+  --md-accent-bg-color: hsl(56, 84%, 93%);
+  --md-text-font: "Inter";
+  --md-admonition-icon-an-faq: url('/img/icons/icons8-question-mark-48.webp');
+  --md-admonition-icon-an-trbs: url('/img/icons/exclamation.webp');
+  --md-primary-an-banner-text-color: var(--md-an-blink-me-link-color);
+  --md-banner-color-1: var(--md-primary-bg-color);
+  --md-banner-color-2: var(--md-an-hero-slate-gradient-dark);
+  --md-an-hero-slate-gradient-dark: rgba(34, 36, 47, 0.99);
+  --md-banner-color-yellow: var(--md-typeset-mark-color);
+  --md-an-banner-color-purple: rgb(85, 65, 190);
+  --md-an-header-color-purple: rgb(24,21,59);
+  --md-an-color-light-purple: rgb(192, 188, 223);
+  --md-an-blink-me-link-color: blue;
+  --md-an-banner-bg: var(--md-an-highlight-color);
+  --md-text-font-family: "Inter";
+  --md-mermaid-node-bg-color: var(--md-default-bg-color);
+  --md-nav-bg-hover-color: #eaeaea;
+  --md-an-admonition-note: var(--md-an-admonition-blue-color-light);
+  --md-admonition-icon-an-note-color: var(--md-an-admonition-blue-color);
+  --md-an-admonition-info: var(--md-an-gray-light-color);
+  --md-admonition-icon-an-info-color: var(--md-an-gray-dark-color);
+  --md-an-admonition-tip: var(--md-an-green-color-light);
+  --md-admonition-icon-an-tip-color: var(--md-an-green-color);
+  --md-an-admonition-warning: var(--md-an-orange-color-light);
+  --md-admonition-icon-an-warning-color: var(--md-an-orange-color);
+  --md-an-admonition-danger: #var(var(--md-an-red-color-light));
+  --md-admonition-icon-an-danger-color: var(--md-an-red-color);
+  --md-an-admonition-example: #f6e3f865;
+  --md-admonition-icon-an-example-color: var(--md-an-purple-color);
+  --md-an-admonition-abstract: var(--md-an-cyan-color-light);
+  --md-admonition-icon-an-abstract-color: var(--md-an-cyan-color);
+  --md-an-header-shadow-color: #eaeaea;
+  --md-an-img-bg: var(--md-an-gray-color-lighter);
+  --md-primary-fg-color: #101010;
+  --md-primary-fg-color--lighter: #929292;
+  --md-primary-fg-color--light: #c2c2c2;
+  --md-primary-fg-color--dark: #070707;
+  --md-default-bg-color--lighter: #acacac;
+  --md-primary-bg-color: #f6f6c2;
+  --md-primary-an-heading-color: var(--md-primary-fg-color);
+  --md-an-card-color: var(--md-primary-bg-color);
+  --md-an-card-color-hover: rgba(247, 246, 245, 0.9);
+  --md-an-hero-content-color: rgba(6, 6, 5, 0.9);
+  --md-an-hero-button-bg-color: #070707;
+  --md-an-secondary-button-bg-color: #2a2a2a;
+  --md-an-color-h2-bottom-rule: var(--md-an-color-light-purple);
+  --md-an-feature-item-2-border: #F6F6F6;
+  --md-feature-item-2-box-shadow: rgba(0, 0, 0, 0.2);
+  --md-an-card-hero-header-color: #ffffff;
+}
+
+:root > [data-md-color-scheme="slate"] {
+  --md-an-blue-color: #3169b3;
+  --md-an-highlight-color: var(--md-an-blue-color);
+  --md-an-highlight-color-light: var(--md-an-blue-color-light);
+  --md-typeset-mark-color: #fdff9f20;
+  --md-typeset-a-color: var(--md-an-highlight-color);
+  --md-banner-color-yellow: rgba(247, 247, 163, 0.25);
+  --md-an-banner-color-purple: rgb(59, 52, 150);
+  --md-an-header-color-purple: rgb(16,14,36);
+  --md-an-color-light-purple: rgb(26, 24, 38);
+  --md-accent-bg-color: var(--md-default-bg-color);
+  --md-an-img-bg: rgba(36, 37, 46, 0.85);
+  --md-nav-bg-hover-color: rgb(#321724);
+  --md-an-admonition-note: #202331;
+  --md-admonition-icon-an-note-color: var(--md-an-blue-color);
+  --md-an-admonition-info: #27373b;
+  --md-admonition-icon-an-info-color: var(--md-primary-fg-color:);
+  --md-an-admonition-tip: #1b2a1a;
+  --md-admonition-icon-an-info-color: var(--md-an-green-color);
+  --md-an-admonition-warning: #462d20;
+  --md-admonition-icon-an-warning-color: var(--md-an-orange-color);
+  --md-an-admonition-danger: #3f141c;
+  --md-admonition-icon-an-danger-color: var(--md-an-red-color);
+  --md-an-admonition-example: #2e1431;
+  --md-admonition-icon-an-example-color: var(--md-an-color-light-purple);
+  --md-an-admonition-abstract: #0e232b;
+  --md-admonition-icon-an-abstract-color: var(--md-an-cyan-color);
+  --md-an-header-shadow-color: #eaeaea33;
+  --md-an-gray-light-color: #333233;
+  --md-an-gray-dark-color: #232323;
+  --md-primary-fg-color: #f6f6f6;
+  --md-primary-fg-color--light: #929292;
+  --md-primary-fg-color--lighter: #c2c2c2;
+  --md-an-card-color: rgba(31, 33, 40, 0.8);
+  --md-an-card-color-hover: #212123;
+  --md-an-hero-button-bg-color: transparent;
+  --md-an-secondary-button-bg-color: #d0d0d0;
+  --md-an-color-h2-bottom-rule: var(--md-an-banner-color-purple);
+  --md-an-feature-item-2-border: #212123;
+  --md-feature-item-2-box-shadow: rgba(0, 0, 0, 0.2);
+  --md-an-card-hero-header-color: #f7f7f7;
+}
+
+/* Top Header: Arcana Styling */
+.md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-header--shadow {
+  box-shadow: 0 0.0125rem var(--md-an-header-shadow-color);
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-header__inner {
+  border-bottom: 0.025rem solid var(--md-an-header-shadow-color);
+}
+
+.md-source-file {
+  display: block;  /* Set display to none to not show the author and */text-align: center; /* publish date time on the landing page */
+}
+
+/* Top Header: Arcana Styling */
+
+.md-header--shadow {
+  box-shadow: 0 0.025rem #eaeaea;
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+/* Top Tabs: Arcana Styling */
+
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-tabs__item {
+  border: 1px 1px 1px 0 solid gray;
+  border-radius: 5px 5px 0 0;
+} 
+
+.md-tabs__item--active {
+  /*background-color: var(--md-accent-bg-color);*/
+  font-weight: 800;
+} 
+
+.md-tabs__item:hover {
+  /*text-decoration: underline;*/
+  text-decoration-color: var(--md-accent-fg-color);
+} 
+
+.md-tabs__link--active, .md-tabs__link:focus, .md-tabs__item--active, .md-tabs__link:hover  {
+  text-decoration: underline;
+  /*text-decoration-color: var(--md-accent-bg-color);*/
+  text-decoration-color: var(--md-an-highlight-color);
+  text-underline-offset: 0.7rem;
+  color: var(--md-an-highlight-color);
+}
+
+/* Fontawesome icon: Arcana Styling */
+
+.icon-color {
+  color: var(--md-an-highlight-color);
+}
+
+/* Adjust Chatbase icon overlap on footer social icons */
+
+/* Footer: Arcana Styling */
+
+.md-footer {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-social {
+  margin-right: 6%; /*To accommodate chatbase bot icon */
+}
+
+/* LHS Nav section highlight: Arcana Styling */
+
+/*
+.md-nav__link{
+  border-bottom: 0.0125rem ridge var(--md-primary-fg-color--light);
+}
+*/
+
+.md-nav__link--active{
+  /*background-color: #f4c3d9e6;*/
+  /*padding-top: 0.25rem;
+  padding-bottom: 0.25rem;*/
+  border-radius: 5px;
+  background-color: var(--md-an-highlight-color-light);  /*background-color: #f4c3d9e6;*/
+  color: var(--md-an-highlight-color);
+}
+
+.md-nav__item--section {
+  padding-top: var(--md-nav-padding);
+  padding-bottom: var(--md-nav-padding);
+  padding-left: 0.25rem;
+  margin: auto;
+}
+
+.md-nav__item--section > .md-nav__link {
+  font-weight: 800; !important
+  border: 2px solid red;
+}
+
+li.md-nav__item, a.md-nav__link, .md-nav__link {
+  padding-top: var(--md-nav-padding);
+  padding-bottom: var(--md-nav-padding);
+  padding-left: 0.25rem;
+  /*margin: auto;*/
+}
+
+.md-nav__link:hover {
+  /*padding-top: var(--md-nav-padding);
+  padding-bottom: var(--md-nav-padding);
+  padding-left: 0.25rem;*/
+  background-color: var(--md-nav-bg-hover-color);  /*background-color: #f4c3d9e6;*/
+  border-radius: 5px;
+  /*margin: auto;*/
+}
+
+/* Button: Arcana Styling */
+
+.md-button {
+  border-radius: 0.9rem !important;
+  box-shadow: 0 0 9px 0px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  border: 1px solid #F6F6F6;
+}
+
+.md-typeset .md-button {
+  /*border: 0.0025rem solid var(--md-default-fg-color--light);*/
+  border: 0.0025rem solid var(--md-an-highlight-color);
+  border-radius: 0.6rem !important;
+  color: var(--md-default-fg-color--light);
+  margin: 0.5rem;
+}
+
+/* Tabbed text: Arcana Styling */
+
+/*.md-typeset .tabbed-labels>label:focus {
+  border-bottom: 2px solid var(--md-an-highlight-color);
+}*/
+
+.md-typeset .tabbed-set {
+  border: 0.0125rem solid var(--md-an-highlight-color-light);
+  border-radius: 9px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset .tabbed-labels>label>[href]:first-child {
+  /*background-color: var(--md-an-highlight-color-light);*/
+}
+
+.md-typeset h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid var(--md-an-color-h2-bottom-rule);
+}
+
+.md-typeset ol li, .md-typeset ul li {
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+/* Fix tabbed overflow of background in mobile view*/
+
+@media screen and (max-width: 44.984375em) {
+  .md-content__inner>.tabbed-set .tabbed-labels {
+    margin: 0;
+    max-width: 92vw;
+  }
+  /* code width reduce to 95% */
+
+  .md-typeset pre>code {
+    border-radius: 9px;
+    padding: 1rem;
+    max-width: 95vw;
+    margin: auto;
+  }
+}
+
+.tabbed-content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.md-typeset .tabbed-labels {
+  /*background-color: var(--md-an-highlight-color-light);*/
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+}
+
+/* Tabbed Content: Arcana Styling */
+
+.md-typeset .tabbed-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*.md-typeset .tabbed-block>.highlight:first-child {*/
+  .md-typeset .tabbed-set>input:target {
+   font-size: 0.5rem;
+   color: var(--md-an-highlight-color-light);
+}
+
+/* Tabbed Code Content: Arcana Styling */
+
+.md-typeset .tabbed-block>.highlight:first-child>pre>code, .md-typeset .tabbed-block>pre:first-child>code {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+/* Code: Arcana Styling */
+
+.md-typeset pre>code {
+  border-radius: 9px;
+  padding: 1rem;
+  margin: auto;
+}
+
+.highlight .hll {
+  box-shadow: inset 0.075rem 0 0 0 var(--md-an-highlight-color);
+}
+
+/* Highlight: Quote */
+
+.admonition.quote {
+  border: 1px solid var(--md-default-bg-color);
+}
+
+/* Admonition: Arcana Styling */
+
+:root {
+  --md-admonition-icon-an-note: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"/></svg>');
+  --md-admonition-icon-an-info: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>');
+  --md-admonition-icon-an-tip: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M323.8 34.8c-38.2-10.9-78.1 11.2-89 49.4l-5.7 20c-3.7 13-10.4 25-19.5 35l-51.3 56.4c-8.9 9.8-8.2 25 1.6 33.9s25 8.2 33.9-1.6l51.3-56.4c14.1-15.5 24.4-34 30.1-54.1l5.7-20c3.6-12.7 16.9-20.1 29.7-16.5s20.1 16.9 16.5 29.7l-5.7 20c-5.7 19.9-14.7 38.7-26.6 55.5c-5.2 7.3-5.8 16.9-1.7 24.9s12.3 13 21.3 13L448 224c8.8 0 16 7.2 16 16c0 6.8-4.3 12.7-10.4 15c-7.4 2.8-13 9-14.9 16.7s.1 15.8 5.3 21.7c2.5 2.8 4 6.5 4 10.6c0 7.8-5.6 14.3-13 15.7c-8.2 1.6-15.1 7.3-18 15.2s-1.6 16.7 3.6 23.3c2.1 2.7 3.4 6.1 3.4 9.9c0 6.7-4.2 12.6-10.2 14.9c-11.5 4.5-17.7 16.9-14.4 28.8c.4 1.3 .6 2.8 .6 4.3c0 8.8-7.2 16-16 16H286.5c-12.6 0-25-3.7-35.5-10.7l-61.7-41.1c-11-7.4-25.9-4.4-33.3 6.7s-4.4 25.9 6.7 33.3l61.7 41.1c18.4 12.3 40 18.8 62.1 18.8H384c34.7 0 62.9-27.6 64-62c14.6-11.7 24-29.7 24-50c0-4.5-.5-8.8-1.3-13c15.4-11.7 25.3-30.2 25.3-51c0-6.5-1-12.8-2.8-18.7C504.8 273.7 512 257.7 512 240c0-35.3-28.6-64-64-64l-92.3 0c4.7-10.4 8.7-21.2 11.8-32.2l5.7-20c10.9-38.2-11.2-78.1-49.4-89zM32 192c-17.7 0-32 14.3-32 32V448c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H32z"/></svg>');
+  --md-admonition-icon-an-warning: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>');
+  --md-admonition-icon-an-example: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 46.3 14.3 32 32 32H96h64 64c17.7 0 32 14.3 32 32s-14.3 32-32 32V266.8c-20.2 28.6-32 63.5-32 101.2c0 25.2 5.3 49.1 14.8 70.8C189.5 463.7 160.6 480 128 480c-53 0-96-43-96-96V96C14.3 96 0 81.7 0 64zM96 96v96h64V96H96zM224 368a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm211.3-43.3c-6.2-6.2-16.4-6.2-22.6 0L352 385.4l-28.7-28.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l40 40c6.2 6.2 16.4 6.2 22.6 0l72-72c6.2-6.2 6.2-16.4 0-22.6z"/></svg>');
+  --md-admonition-icon-an-abstract: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z"/></svg>');
+  --md-admonition-icon-an-danger: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M368 128c0 44.4-25.4 83.5-64 106.4V256c0 17.7-14.3 32-32 32H176c-17.7 0-32-14.3-32-32V234.4c-38.6-23-64-62.1-64-106.4C80 57.3 144.5 0 224 0s144 57.3 144 128zM168 176a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm144-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM3.4 273.7c7.9-15.8 27.1-22.2 42.9-14.3L224 348.2l177.7-88.8c15.8-7.9 35-1.5 42.9 14.3s1.5 35-14.3 42.9L295.6 384l134.8 67.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3L224 419.8 46.3 508.6c-15.8 7.9-35 1.5-42.9-14.3s-1.5-35 14.3-42.9L152.4 384 17.7 316.6C1.9 308.7-4.5 289.5 3.4 273.7z"/></svg>');
+}
+
+.md-typeset .md-admonition {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Admonition Summary: Common styling */
+
+/* Underline admonition title*/
+/*
+.md-typeset .an-note > .admonition-title {
+  border-bottom: 2px solid var(--md-an-blue-color);
+}
+
+.md-typeset .an-info > .admonition-title {
+  border-bottom: 2px solid var(--md-an-cyan-color);
+}
+
+.md-typeset .an-tip > .admonition-title {
+  border-bottom: 2px solid var(--md-an-green-color);
+}
+
+.md-typeset .an-warning > .admonition-title {
+  border-bottom: 2px solid var(--md-an-orange-color-light);
+}
+
+.md-typeset .an-danger > .admonition-title {
+  border-bottom: 2px solid var(--md-an-red-color);
+}
+
+.md-typeset .an-example > .admonition-title {
+  border-bottom: 2px solid var(--md-an-purple-color);
+}
+
+.md-typeset .an-abstract > .admonition-title {
+  border-bottom: 2px solid var(--md-an-black-color);
+}
+*/
+
+/* Admonition Details: Common styling */
+
+.md-typeset .admonition, 
+.md-typeset details:not([open])>summary  {
+    border-radius: 9px;
+    border: none;
+} 
+
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 9px;
+    border: none;
+    overflow: hidden;
+} 
+
+.md-typeset .admonition:focus-within, .md-typeset details:focus-within {
+  box-shadow: 0 0 0 0 var(--md-default-bg-color);
+  border-radius: 9px;
+}
+
+/* Admonition: Note */
+
+.admonition.an-note {
+  background-color: var(--md-default-bg-color );
+  border-radius: 9px;
+  border: 1px solid var(--md-an-admonition-note);
+}
+
+.md-typeset .an-note > .admonition-title::before,
+.md-typeset .an-note > summary::before {
+  background-color: var(--md-admonition-icon-an-note-color);
+  -webkit-mask-image: var(--md-admonition-icon-an-note);
+  mask-image: var(--md-admonition-icon-an-note);
+}
+
+.md-typeset .an-note > .admonition-title,
+details.an-note summary {
+  background-color: var(--md-an-admonition-note);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-note {
+  border: 0.075rem solid var(--md-an-admonition-note);
+}
+
+/* Admonition: Info */
+
+.admonition.an-info {
+  background-color: var(--md-default-bg-color);
+  border-radius: 9px;
+  border: 1px solid var(--md-an-admonition-info);
+}
+
+.md-typeset .an-info > .admonition-title::before,
+.md-typeset .an-info > summary::before {
+  background-color: var(--md-admonition-icon-an-info-color);
+  -webkit-mask-image: var(--md-admonition-icon-an-info);
+  mask-image: var(--md-admonition-icon-an-info);
+}
+.md-typeset .an-info > .admonition-title,
+details.an-info summary {
+  background-color: var(--md-an-admonition-info);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-info {
+  border: 0.075rem solid var(--md-an-admonition-info);
+}
+
+/* Admonition: Tip */
+
+.admonition.an-tip {
+  background-color: var(--md-default-bg-color);
+  border-radius: 9px;
+  border: 1px solid var(--md-an-admonition-tip);
+}
+
+.md-typeset .an-tip > .admonition-title::before,
+.md-typeset .an-tip > summary::before {
+  background-color: var(--md-admonition-icon-an-tip-color);
+  -webkit-mask-image: var(--md-admonition-icon-an-tip);
+  mask-image: var(--md-admonition-icon-an-tip);
+}
+
+.md-typeset .an-tip > .admonition-title,
+details.an-tip summary {
+  background-color: var(--md-an-admonition-tip);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-tip {
+  border: 0.075rem solid var(--md-an-admonition-tip);
+}
+
+/* Admonition: Warning */
+
+.admonition.an-warning {
+  background-color: var(--md-default-bg-color);
+  border-radius: 9px;
+  border: 1px solid var(--md-an-admonition-warning);
+}
+
+.md-typeset .an-warning > .admonition-title::before,
+.md-typeset .an-warning > summary::before {
+  background-color: var(--md-admonition-icon-an-warning-color);
+  -webkit-mask-image: var(--md-admonition-icon-an-warning);
+  mask-image: var(--md-admonition-icon-an-warning);
+}
+
+.md-typeset .an-warning > .admonition-title,
+details.an-warning summary {
+  background-color: var(--md-an-admonition-warning);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-warning {
+  border: 0.075rem solid var(--md-an-admonition-warning);
+}
+
+/* Admonition: Danger */
+
+.admonition.an-danger {
+  background-color: var(--md-default-bg-color);
+  border-radius: 9px;
+  border: 1px solid var(--md-an-admonition-danger);
+}
+
+.md-typeset .an-danger > .admonition-title::before,
+.md-typeset .an-danger > summary::before {
+  background-color: var(--md-admonition-icon-an-danger-color);
+  -webkit-mask-image: var(--md-admonition-icon-an-danger);
+  mask-image: var(--md-admonition-icon-an-danger);
+}
+
+.md-typeset .an-danger > .admonition-title,
+details.an-danger summary {
+  background-color: var(--md-an-admonition-danger);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-danger {
+  border: 0.075rem solid var(--md-an-admonition-danger);
+}
+
+/* Admonition: Example */
+
+.admonition.an-example {
+  background-color: var(--md-default-bg-color);
+  border-radius: 9px;
+  border: 1px solid var(--md-an-admonition-example);
+}
+
+.md-typeset .an-example > .admonition-title::before,
+.md-typeset .an-example > summary::before {
+  background-color: var(--md-admonition-icon-an-example-color);
+  -webkit-mask-image: var(--md-admonition-icon-an-example);
+  mask-image: var(--md-admonition-icon-an-example);
+}
+
+.md-typeset .an-example > .admonition-title,
+details.an-example summary {
+  background-color: var(--md-an-admonition-example);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-example {
+  border: 0.075rem solid var(--md-an-admonition-example);
+}
+
+/* Admonition: Abstract */
+
+.admonition.an-abstract {
+  background-color: var(--md-default-bg-color);
+  border-radius: 9px;
+  border: 1px solid var(--md-an-admonition-abstract);
+}
+
+.md-typeset .an-abstract > .admonition-title::before,
+.md-typeset .an-abstract > summary::before {
+  background-color: var(--md-admonition-icon-an-abstract-color);
+  -webkit-mask-image: var(--md-admonition-icon-an-abstract);
+  mask-image: var(--md-admonition-icon-an-abstract);
+}
+
+.md-typeset .an-abstract > .admonition-title ,
+details.an-abstract summary {
+  background-color: var(--md-an-admonition-abstract);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+details.an-abstract {
+  border: 0.075rem solid var(--md-an-admonition-abstract);
+}
+
+/* Custom Admonitions: Arcana Styling */
+
+.md-typeset .admonition.an-faq,
+  .md-typeset details.an-faq {
+    border-bottom: var(--md-primary-fg-color--light);
+    border-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-faq > .admonition-title,
+  .md-typeset .an-faq > summary {
+    background-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-faq > .admonition-title::before,
+  .md-typeset .an-faq > summary::before {
+    -webkit-mask-image: var(--md-admonition-icon-an-faq);
+    mask-image: var(--md-admonition-icon-an-faq);
+}
+
+.md-typeset .admonition.an-trbs,
+  .md-typeset details.an-trbs {
+    border-bottom: var(--md-primary-fg-color--light);
+    border-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-trbs > .admonition-title,
+  .md-typeset .an-trbs > summary {
+    background-color: var(--md-default-bg-color);
+}
+  
+.md-typeset .an-trbs > .admonition-title::before,
+  .md-typeset .an-trbs > summary::before {
+    -webkit-mask-image: var(--md-admonition-icon-an-trbs);
+    mask-image: var(--md-admonition-icon-an-trbs);
+}
+
+/* Figure and Image Component: Arcana Styling */
+
+.md-typeset figure  {
+  margin-top: 3rem;
+  margin-bottom: 3fr;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: var(--md-an-img-bg);
+  border-radius: 0.6rem;
+}
+
+.md-typeset figcaption {
+  border-top: 2px solid var(--md-an-highlight-color);
+}
+
+.an-img-border-small-75pc {
+  border-radius: 0.6rem; 
+  width: 75%;
+}
+
+.an-screenshots {
+  border-radius: 0.6rem;
+  display: block;
+  /* Use these to centre all screenshots (if required )*/
+
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Use these to left align all screenshots */
+  /*
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  */
+}
+
+.an-screenshots-noeffects {
+  border-radius: 0.6rem;
+  /* Use these to centre all screenshots (if required )*/
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width_35pc {
+  width: 35%;
+  align-items: center;
+}
+
+.width_50pc {
+  width: 50%;
+}
+
+.width_85pc {
+  width: 85%;
+}
+
+/* Video component: Arcana Styling */
+
+.video_container {
+  display: flexbox;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.arcana_video {
+  flex-grow: 1;
+  border: solid 0.2em transparent;
+}
+
+/* Critic Block: Arcana Styling*/
+
+.md-typeset .critic.block {
+  border-radius: 9px;
+  background-color: var(--md-accent-bg-color);
+}
+
+/* Text Marker Highlight: Arcana Styling */
+
+.an-marker-text-highlight {
+  /*background-color: yellow;*/
+  background-color: rgb(249, 249, 247);
+}
+
+/* Grid Cards: Arcana Styling */
+
+/* Img card styling */
+
+.img-grid-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem; /* Spacing between cards */
+  justify-content: space-between; /* Center cards horizontally */
+}
+
+.img-grid-cards > * {
+  flex: 0 0 20vw; /* Fixed width for cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.1rem; /* Inner padding */
+  border: 1px solid #e0e0e0; /* Tiling border */
+  border-radius: 0.5rem; /* Rounded corners */
+  background: #fff; /* Card background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.img-grid-cards > *, :after, :before {
+  box-sizing: content-box;
+}
+
+.img-grid-cards img {
+  display: block;
+  max-width: 100%;
+  height: 2vw;
+  margin-bottom: 0.5rem; /* Space between logo and text */
+}
+
+/* Adjust card width for different viewports */
+@media (max-width: 600px) {
+  .img-grid-cards > * {
+      flex: 0 0 120px; /* Smaller cards on mobile */
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-grid-cards > * {
+      flex: 0 0 160px; /* Larger cards on desktop */
+  }
+}
+
+/*.md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card {*/
+.md-typeset .grid.cards>ul>li{
+  border-radius: 9px;
+}
+.md-typeset .grid.cards>ul>li:hover{
+  border: 0.0125rem solid var(--md-an-highlight-color);
+}
+
+.md-typeset .grid {
+  grid-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  margin: 1em 0;
+  padding: 1rem;
+}
+
+/* Pill Button: Arcana Styling */
+
+.tx-hero-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.75rem;
+  margin-bottom: 0;
+}
+
+.tx-hero-card {
+  /*margin: 1rem;*/
+  /*
+  box-shadow: 0 0 9px 0px var(--md-an-highlight-color);
+  */
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.tx-hero-card-highlight {
+    padding: 0.5rem;
+    box-shadow: 0 0 9px 0px var(--md-an-highlight-color-light);
+    border: 0.25px solid var(--md-an-highlight-color-light);
+    border-radius: 0.6rem;
+}
+
+.tx-hero-content {
+  text-align: left;
+  text-size: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+}
+
+.pill-button {
+  margin: 6rem;
+  border-radius: 1.5rem;
+  height: 2.5rem;
+  padding: 1rem;
+}
+
+.blue {
+  background-color: var(--md-an-blue-color);
+}
+
+
+.tx-try-now-button-blue {
+  border-radius: 1.5rem;
+  height: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--md-an-blue-color);
+}
+
+
+.tx-try-now-button-purple {
+  border-radius: 1.5rem;
+  height: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: var(--md-an-purple-color);
+}
+
+.a-link-color {
+  color: var(--md-primary-fg-color);
+}
+
+.a-link-color-black {
+  color: var(--md-an-black-color);
+}
+
+.a-link-container {
+  display: flex;
+  justify-content: left;
+}
+
+.a-link-items {
+  display: grid;
+  align-items: center;
+}
+
+.tx-hero-content-auth:hover {
+  background-color: var(--md-an-blue-color-light);
+}
+
+.tx-hero-header {
+  /*background-color: var(--md-an-card-hero-header-color);*/
+  border-top-right-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.an-seamless-glow {
+  background-color: var(--md-an-highlight-color); /* For browsers that do not support gradients */
+  background-image: conic-gradient(lightgray, white, var(--md-an-highlight-color),lightgray,white, var(--md-an-highlight-color),lightgray,white, var(--md-an-highlight-color),lightgray,white);
+}
+
+.tx-hero-content h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.an-seamless-glow h1{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.tx-hero-content h2 {
+  font-size: 1.00rem;
+  font-weight: 400;
+}
+
+.tx-hero-content p {
+  font-size: 0.75rem;
+}
+
+.tx-hero__content>h1 {
+  padding-bottom: 1rem;
+  color: var(--md-an-hero-content-color);
+}
+
+.tx-hero__content {
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  color: var(--md-an-hero-content-color);
+}
+
+.tx-hero .md-button {
+  background-color: var(--md-an-hero-button-bg-color);
+  color: var(--md-an-hero-button-fg-color);
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 0.6rem;
+  padding: 0.5rem 1rem;
+}
+
+.tx-hero .md-button:hover,
+.tx-hero .md-button:focus,
+.tx-try-now-button-blue:hover,
+.tx-try-now-button-purple:hover {
+  background-color: var(--md-an-highlight-color);
+  border-color: var(--md-accent-fg-color);
+  color: var(--md-an-hero-button-fg-color);
+}
+
+.tx-button-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tx-button-container .md-button {
+  flex: 1;
+  text-align: center;
+  background: var(--md-an-highlight-color);
+  color: white;
+}
+
+.top-hr {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.1rem;
+  border-radius: 5px;
+}
+
+.hr {
+  width: 100%;
+}
+
+/* Feedback section: Arcana Styling */
+
+.md-feedback__title {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.5rem;
+}
+
+.md-feedback__note {
+  color: var(--md-an-highlight-color);
+  font-weight: 200;
+  font-size: 0.4rem;
+}
+
+/* Footer Git Author and commit information: Arcana Styling */
+
+.md-typeset small {
+  font-size: 0.5rem;
+}
+
+/* Landing page Arcana Favicon animation */
+
+@keyframes logo_icon_anim {
+  0%, 40%, 80%, 100% {
+    transform: scale(1);
+  }
+  20%, 60% {
+    transform: scale(1.15);
+  }
+}
+
+.logo_icon_anim {
+  animation: logo_icon_anim 1000ms infinite;
+}
