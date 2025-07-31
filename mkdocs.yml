@@ -57,12 +57,16 @@ theme:
     # Auto Mode
     - media: "(prefers-color-scheme)"
       scheme: auto
+      primary: white
+      accent: yellow
       toggle: 
         icon: material/brightness-auto
         name: Switch to Light Mode
     # Light Mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: white
+      accent: yellow
       toggle: 
         icon: material/brightness-7
         name: Switch to Dark Mode
