@@ -392,7 +392,7 @@ search:
     No. `transfer` does not support `data`. 
     
     Use [`request` with 
-    `sendTransaction`](https://ca-sdk-ref-guide.netlify.app/#quick-start)
+    `sendTransaction`](https://arcana-ca-sdk.netlify.app/#quick-start)
     to deposit funds to a smart contract and update the blockchain state.
     
 ??? an-faq "Why isn't this a normal transaction as balance exists on the destination chain?"

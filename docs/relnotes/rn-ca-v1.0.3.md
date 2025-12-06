@@ -79,7 +79,7 @@ Get the handler to simulate the bridge execution for intent details.
 
 ### `getEVMProviderWithCA`
 
-The new [`getEVMProviderWithCA`](https://ca-sdk-ref-guide.netlify.app/#quick-start) method 
+The new [`getEVMProviderWithCA`](https://arcana-ca-sdk.netlify.app/#quick-start) method 
 retrieves the chain abstraction enabled EIP-1193 provider. Use this provider to
 issue `request`] with `eth_sendTransaction` for chain abstracted transactions.
 
