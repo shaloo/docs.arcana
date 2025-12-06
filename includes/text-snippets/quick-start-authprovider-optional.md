@@ -19,7 +19,7 @@
 
       ---
 
-      See [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) for details.
+      See [`AuthProvider` constructor parameters](https://arcana-auth.netlify.app/interfaces/constructorparams) for details.
 
 <!-----
       **`setWindowProvider`:** set `window.ethereum` in the app context with the standard EIP-1193 Ethereum provider value

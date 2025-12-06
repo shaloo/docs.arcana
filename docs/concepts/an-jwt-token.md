@@ -21,7 +21,7 @@ The JWT token returned by the {{config.extra.arcana.sdk_name}} expires after 3 m
 
 It is recommended that the app developer must first [[concept-jwt-token-validation|verify the token returned by {{config.extra.arcana.company_name}}]] before generating an app-specific JWT token for further use within the app context.
 
-Developers can use `getUser()` method to access the JWT token returned by the {{config.extra.arcana.sdk_name}} via the [`UserInfo`](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) return value. 
+Developers can use `getUser()` method to access the JWT token returned by the {{config.extra.arcana.sdk_name}} via the [`UserInfo`](https://arcana-auth.netlify.app/interfaces/userinfo) return value.
 
 ```js
 /* Make sure

@@ -28,7 +28,7 @@ The {{config.extra.arcana.sdk_name}} returns `userDIDToken` once an app user log
 * Plug-and-play login `connect()` 
 * Custom login UI methods such as `loginWithSocial()`, `loginWithLink()` (deprecated), `loginWithOTPStart`,`loginWithOTPComplete` and `loginWithBearer()`
 
-Developers can use `getUser()` method to access the user's DID token via the [`UserInfo`](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) return value. 
+Developers can use `getUser()` method to access the user's DID token via the [`UserInfo`](https://arcana-auth.netlify.app/interfaces/userinfo) return value.
 
 ### Verify DID Token
 

@@ -79,7 +79,7 @@ toc_depth: 2
 
       The {{config.extra.arcana.wallet_name}} supports Chrome browser `Incognito Window` as well as `Private Window` in the case of Safari browsers. Earlier, if third-party cookies were disabled, the built-in, plug-and-play login pop-up modal did not show up in some cases.  These use cases are now addressed by the SDK.
 
-      Developers can use the `canReconnect` and `reconnect` [functions of the `AuthProvider`](https://authsdk-ref-guide.netlify.app/classes/authprovider) to check before allowing users to reconnect whereby users do not need to re-login if they refresh the page or close the tab and re-open it again within a 30-minute window.
+      Developers can use the `canReconnect` and `reconnect` [functions of the `AuthProvider`](https://arcana-auth.netlify.app/classes/authprovider) to check before allowing users to reconnect whereby users do not need to re-login if they refresh the page or close the tab and re-open it again within a 30-minute window.
 
 ??? an-faq "Does {{config.extra.arcana.sdk_name}} return a JWT token to verify users post social login?"
 
@@ -87,7 +87,7 @@ toc_depth: 2
 
 ??? an-faq "How does the app access an authenticated user's information such as name, email, login token, the wallet address?"
 
-      Apps can use the [`getUser()`](https://authsdk-ref-guide.netlify.app/classes/authprovider#getUser) method to obtain the user's name, email, login token ([[concept-arcana-jwt-token|{{config.extra.arcana.company_name}} JWT Token]], [[concept-did-token|DID Token]]), wallet address, etc. See [Auth SDK Reference]({{config.extra.arcana.auth_sdk_ref_url}}) for details.
+      Apps can use the [`getUser()`](https://arcana-auth.netlify.app/classes/authprovider#getUser) method to obtain the user's name, email, login token ([[concept-arcana-jwt-token|{{config.extra.arcana.company_name}} JWT Token]], [[concept-did-token|DID Token]]), wallet address, etc. See [Auth SDK Reference]({{config.extra.arcana.auth_sdk_ref_url}}) for details.
 
 ??? an-faq "For Twitter, the `getUser()` function of the `AuthProvider` does not always return the user's email?"
 

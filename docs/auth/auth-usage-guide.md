@@ -312,4 +312,4 @@ await provider.request({
 })
 ```
 
-Check out [Auth SDK Reference Guide](https://authsdk-ref-guide.netlify.app/) for details.
+Check out [Auth SDK Reference Guide](https://arcana-auth.netlify.app/) for details.

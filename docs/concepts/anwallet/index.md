@@ -25,7 +25,7 @@ arcana:
 
 {{config.extra.arcana.wallet_name}} offers great flexibility and customization options as per the app requirements. 
 
-* **UX:** Developers can manage the users' blockchain signing experience by [[dashboard-user-guide#settings-overview|customizing branding, theme]], [wallet positioning](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams) in the app, selecting the default active chain, [[arcana-wallet-user-guide#addselect-a-network|modifying pre-configured networks]], and using [[concept-wallet-visibility|visibility]] options.
+* **UX:** Developers can manage the users' blockchain signing experience by [[dashboard-user-guide#settings-overview|customizing branding, theme]], [wallet positioning](https://arcana-auth.netlify.app/interfaces/constructorparams) in the app, selecting the default active chain, [[arcana-wallet-user-guide#addselect-a-network|modifying pre-configured networks]], and using [[concept-wallet-visibility|visibility]] options.
 * **Custom Wallet UI:** Replace the built-in, default wallet UI with a [[concept-custom-wallet-ui|custom wallet UI]].
 
 ## Supported Chains

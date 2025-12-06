@@ -45,7 +45,7 @@ In addition to the {{config.extra.arcana.sdk_name}}, now we also provide {{confi
 
 * New **Login Session Management** feature in the {{config.extra.arcana.dashboard_name}} allows developers to specify whether a user session persists if the browser is closed. This enhances user experience and makes session security configurable. Learn more about [[concept-session-type|supported session types]] and [[dashboard-user-guide#login-session-management|configuration settings]].
 
-* The [`UserInfo`structure](https://authsdk-ref-guide.netlify.app/interfaces/userinfo) now provides a [[concept-did-token|DID identifier]] for user verification. The `loginToken` will be deprecated in a future release.
+* The [`UserInfo`structure](https://arcana-auth.netlify.app/interfaces/userinfo) now provides a [[concept-did-token|DID identifier]] for user verification. The `loginToken` will be deprecated in a future release.
 
 * Bug fixes and performance enhancements related to user login.
 

@@ -43,7 +43,7 @@ This is a major release that supports non-EVM blockchains (Solana). New product 
 
 * Non-EVM Chain Support: Solana - See [[solana-quick-start|Solana Apps Quick Start Guide]].
 
-* Passwordless Login with OTP: Use [`loginWithOTPStart`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPStart), and [`loginWithOTPComplete`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithOTPComplete) instead of [`loginWithLink`](https://authsdk-ref-guide.netlify.app/classes/authprovider#loginWithLink) (deprecated)
+* Passwordless Login with OTP: Use [`loginWithOTPStart`](https://arcana-auth.netlify.app/classes/authprovider#loginWithOTPStart), and [`loginWithOTPComplete`](https://arcana-auth.netlify.app/classes/authprovider#loginWithOTPComplete) instead of [`loginWithLink`](https://arcana-auth.netlify.app/classes/authprovider#loginWithLink) (deprecated)
 
 * New SDK: {{config.extra.arcana.auth_core_sdk_name}} - See [[auth-core-quick-start|Auth Core SDK Quick Start Guide]].
 

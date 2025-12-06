@@ -76,7 +76,7 @@ await auth.init()
   <figcaption>Compact Login UI</figcaption>
 </figure>
 
-For more details, see [`AuthProvider` constructor parameters](https://authsdk-ref-guide.netlify.app/interfaces/constructorparams).
+For more details, see [`AuthProvider` constructor parameters](https://arcana-auth.netlify.app/interfaces/constructorparams).
 
 ### Bug Fixes
 
