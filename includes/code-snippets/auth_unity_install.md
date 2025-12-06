@@ -1,1 +1,0 @@
-Download the {{config.extra.arcana.gaming_sdk_name}} package: {% include "./text-snippets/unity_registry_url.md" %}. Unzip the contents and copy them to the **Assets** folder of the Unity Project.

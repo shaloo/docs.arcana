@@ -1,1 +1,0 @@
-<span><a href="{{config.extra.arcana.ca_sdk_ref_url}}" target="_blank">{{config.extra.arcana.ca_sdk_name}} Reference</a></span>

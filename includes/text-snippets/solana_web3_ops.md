@@ -1,4 +1,0 @@
-* `signMessage`
-* `signTransaction`
-* `signAllTransactions`
-* `signAndSendTransaction`

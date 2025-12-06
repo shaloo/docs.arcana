@@ -1,1 +1,0 @@
-[Sample Integration CodeSandbox :material-rocket-launch:]({{config.extra.arcana.auth_ca_wagmi_sdk_codesandbox_url}}){ .md-button}

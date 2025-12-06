@@ -1,1 +1,0 @@
-<span><a href="https://github.com/arcana-network/audit-reports/" target="_blank">{{config.extra.arcana.company_name}} Audit Reports</a></span>

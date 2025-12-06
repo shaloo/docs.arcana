@@ -1,1 +1,0 @@
-<span><b>{{page.meta.arcana.app_type}}</b> integration example: See `{{page.meta.arcana.app_example_submodule}}` submodule in<a href="https://github.com/arcana-network/auth-examples" target="_blank"> SDK Example GitHub repository.</a></span>

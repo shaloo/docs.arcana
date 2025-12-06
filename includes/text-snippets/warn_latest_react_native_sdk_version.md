@@ -1,1 +1,0 @@
-Use the latest {{config.extra.arcana.react_native_sdk_name}} release **v{{config.extra.arcana.latest_auth_react_native_sdk_version}}** available at [npm](https://www.npmjs.com/package/@arcana/auth-react-native).

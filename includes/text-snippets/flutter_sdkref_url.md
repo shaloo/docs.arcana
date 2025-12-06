@@ -1,1 +1,0 @@
-<span><a href="https://flutter-authsdk-ref-guide.netlify.app/" target="_blank">{{config.extra.arcana.flutter_sdk_name}} Reference Guide</a></span>
