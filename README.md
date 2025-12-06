@@ -1,4 +1,5 @@
-# Arcana Documentation
+# For Reference in Portfolio
+#Arcana Documentation
 
 The repository `docs.arcana` contains the documentation sources and scripts for building 
 the Arcana Network's SDKs:
